@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[BRAND] — AI-Generated Music for Retail</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #080808;
+            color: #E8E4DE;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Manrope', sans-serif;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            line-height: 1.1;
+        }
+
+        h2 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            line-height: 1.2;
+        }
+
+        h3 {
+            font-size: clamp(1.25rem, 3vw, 1.75rem);
+            line-height: 1.3;
+        }
+
+        p {
+            font-size: 1rem;
+            color: rgba(232, 228, 222, 0.85);
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: #D4A843;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #E8C960;
+        }
+
+        /* Accent color palette */
+        .accent-primary {
+            color: #D4A843;
+        }
+
+        .accent-light {
+            color: #E8C960;
+        }
+
+        /* Layout & Spacing */
+        section {
+            padding: 8rem 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .container-md {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 70px;
+            background-color: rgba(8, 8, 8, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(212, 168, 67, 0.1);
+        }
+
+        nav .container {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-brand {
+            font-family: 'Manrope', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #E8E4DE;
+            letter-spacing: 0.05em;
+        }
+
+        .nav-brand .bracket {
+            color: #D4A843;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 0.95rem;
+            color: rgba(232, 228, 222, 0.7);
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #D4A843;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            padding-top: 12rem;
+            padding-bottom: 6rem;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0f0f0f 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(212, 168, 67, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 900px;
+        }
+
+        .hero h1 {
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #E8E4DE 0%, #D4A843 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subline {
+            font-size: clamp(1rem, 2vw, 1.25rem);
+            color: rgba(232, 228, 222, 0.75);
+            margin-bottom: 3rem;
+            max-width: 700px;
+            line-height: 1.7;
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            letter-spacing: 0.02em;
+        }
+
+        .btn-primary {
+            background-color: #D4A843;
+            color: #080808;
+        }
+
+        .btn-primary:hover {
+            background-color: #E8C960;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(212, 168, 67, 0.2);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #D4A843;
+            border: 2px solid #D4A843;
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(212, 168, 67, 0.1);
+            transform: translateY(-2px);
+        }
+
+        /* Fade-in animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .fade-in.visible {
+            animation: fadeUp 0.8s ease-out forwards;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Problem Section */
+        .problem {
+            background-color: #0a0a0a;
+            position: relative;
+        }
+
+        .problem::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #D4A843, transparent);
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+
+        .problem-stat {
+            background: linear-gradient(135deg, rgba(212, 168, 67, 0.1), rgba(212, 168, 67, 0.05));
+            padding: 2rem;
+            border-radius: 0.75rem;
+            border-left: 3px solid #D4A843;
+        }
+
+        .problem-stat .number {
+            font-family: 'Manrope', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            color: #D4A843;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .problem-stat p {
+            color: rgba(232, 228, 222, 0.8);
+        }
+
+        @media (max-width: 768px) {
+            .problem-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* How It Works */
+        .how-it-works {
+            background-color: #080808;
+        }
+
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .step-card {
+            background: linear-gradient(135deg, rgba(212, 168, 67, 0.05), rgba(212, 168, 67, 0.02));
+            padding: 2.5rem 2rem;
+            border-radius: 0.75rem;
+            border: 1px solid rgba(212, 168, 67, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .step-card:hover {
+            border-color: rgba(212, 168, 67, 0.35);
+            background: linear-gradient(135deg, rgba(212, 168, 67, 0.1), rgba(212, 168, 67, 0.05));
+            transform: translateY(-5px);
+        }
+
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background-color: #D4A843;
+            color: #080808;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            border-radius: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .step-card h3 {
+            margin-bottom: 1rem;
+            color: #E8E4DE;
+        }
+
+        .step-card p {
+            font-size: 0.95rem;
+            color: rgba(232, 228, 222, 0.7);
+        }
+
+        /* Retailers Section */
+        .retailers {
+            background-color: #0a0a0a;
+        }
+
+        .retailers-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+
+        .benefits-list {
+            list-style: none;
+        }
+
+        .benefits-list li {
+            padding: 1rem 0;
+            padding-left: 3rem;
+            position: relative;
+            color: rgba(232, 228, 222, 0.85);
+            font-size: 1.05rem;
+        }
+
+        .benefits-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #D4A843;
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+
+        .pricing-preview {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .pricing-card {
+            background: linear-gradient(135deg, rgba(212, 168, 67, 0.08), rgba(212, 168, 67, 0.02));
+            padding: 2rem;
+            border-radius: 0.75rem;
+            border: 1px solid rgba(212, 168, 67, 0.2);
+            text-align: center;
+        }
+
+        .pricing-card h4 {
+            font-family: 'Manrope', sans-serif;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #E8E4DE;
+        }
+
+        .pricing-card p {
+            font-size: 0.9rem;
+            color: rgba(232, 228, 222, 0.7);
+        }
+
+        .testimonial {
+            background: linear-gradient(135deg, rgba(212, 168, 67, 0.1), rgba(212, 168, 67, 0.05));
+            padding: 2rem;
+            border-radius: 0.75rem;
+            border-left: 3px solid #D4A843;
+            margin-top: 2rem;
+            font-style: italic;
+            color: rgba(232, 228, 222, 0.85);
+        }
+
+        .testimonial-author {
+            font-style: normal;
+            color: #D4A843;
+            margin-top: 1rem;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .retailers-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-preview {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Investors Section */
+        .investors {
+            background-color: #080808;
+        }
+
+        .investor-highlights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .highlight-card {
+            background: linear-gradient(135deg, rgba(212, 168, 67, 0.08), rgba(212, 168, 67, 0.02));
+            padding: 2rem;
+            border-radius: 0.75rem;
+            border: 1px solid rgba(212, 168, 67, 0.15);
+        }
+
+        .highlight-card h4 {
+            font-family: 'Manrope', sans-serif;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #D4A843;
+        }
+
+        .highlight-card p {
+            color: rgba(232, 228, 222, 0.8);
+            font-size: 0.95rem;
+        }
+
+        .highlight-card .stat {
+            font-family: 'Manrope', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #D4A843;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .investor-highlights {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Science Section */
+        .science {
+            background-color: #0a0a0a;
+        }
+
+        .science-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .science-point {
+            background: linear-gradient(135deg, rgba(212, 168, 67, 0.05), rgba(212, 168, 67, 0.02));
+            padding: 2rem;
+            border-radius: 0.75rem;
+            border: 1px solid rgba(212, 168, 67, 0.1);
+        }
+
+        .science-point h4 {
+            font-family: 'Manrope', sans-serif;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #E8E4DE;
+        }
+
+        .science-point p {
+            font-size: 0.95rem;
+            color: rgba(232, 228, 222, 0.75);
+        }
+
+        @media (max-width: 768px) {
+            .science-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Founder Section */
+        .founder {
+            background-color: #080808;
+        }
+
+        .founder-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .founder-avatar {
+            width: 100%;
+            aspect-ratio: 1;
+            background: linear-gradient(135deg, #D4A843, #C9953C);
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Manrope', sans-serif;
+            font-size: 3rem;
+            color: rgba(8, 8, 8, 0.2);
+            font-weight: 700;
+        }
+
+        .founder-text h3 {
+            margin-bottom: 1.5rem;
+        }
+
+        .founder-text p {
+            margin-bottom: 1rem;
+            color: rgba(232, 228, 222, 0.8);
+        }
+
+        @media (max-width: 768px) {
+            .founder-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Footer */
+        footer {
+            background-color: #050505;
+            border-top: 1px solid rgba(212, 168, 67, 0.1);
+            padding: 4rem 2rem 2rem;
+        }
+
+        footer .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-brand {
+            font-family: 'Manrope', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #E8E4DE;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+        }
+
+        .footer-brand .bracket {
+            color: #D4A843;
+        }
+
+        .footer-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: rgba(232, 228, 222, 0.6);
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #D4A843;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(212, 168, 67, 0.1);
+            font-size: 0.85rem;
+            color: rgba(232, 228, 222, 0.5);
+        }
+
+        .patent-notice {
+            color: #D4A843;
+        }
+
+        @media (max-width: 768px) {
+            footer .container {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-info {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+        }
+
+        /* Utility */
+        .text-center {
+            text-align: center;
+        }
+
+        .mt-3 {
+            margin-top: 3rem;
+        }
+
+        .section-subtitle {
+            color: #D4A843;
+            font-family: 'Manrope', sans-serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="nav-brand"><span class="bracket">[</span>BRAND<span class="bracket">]</span></div>
+            <ul class="nav-links">
+                <li><a href="#retailers">For Retailers</a></li>
+                <li><a href="#investors">For Investors</a></li>
+                <li><a href="#science">The Science</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1>Sound that sells.</h1>
+                <p class="hero-subline">[BRAND] generates psychographically-targeted music for retail environments. Your customers hear what moves them. You see what moves your numbers.</p>
+                <div class="hero-ctas">
+                    <button class="btn btn-primary" onclick="document.getElementById('retailers').scrollIntoView({behavior: 'smooth'})">I'm a Retailer</button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('investors').scrollIntoView({behavior: 'smooth'})">I'm an Investor</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem">
+        <div class="container">
+            <div class="text-center fade-in">
+                <p class="section-subtitle">The Problem</p>
+                <h2>Retail music is broken.</h2>
+                <p style="max-width: 700px; margin: 1.5rem auto; font-size: 1.1rem;">Current solutions like Mood Media play generic playlists disconnected from your actual customers. There's a massive gap between who's shopping and what's playing.</p>
+            </div>
+
+            <div class="problem-grid">
+                <div class="problem-stat fade-in">
+                    <div class="number">25%</div>
+                    <p>Stores with adaptive, psychographically-aligned music see up to 25% higher customer engagement and dwell time.</p>
+                </div>
+                <div class="problem-stat fade-in">
+                    <div class="number">$2.78B</div>
+                    <p>Total addressable market for retail audio by 2031. Most of it still captured by decade-old licensing incumbents.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="text-center fade-in">
+                <p class="section-subtitle">How It Works</p>
+                <h2>From psychology to sound, in four steps.</h2>
+            </div>
+
+            <div class="steps-container">
+                <div class="step-card fade-in">
+                    <div class="step-number">1</div>
+                    <h3>Profile</h3>
+                    <p>We collaborate with you to deeply profile your ideal customer — demographics, psychographics, values, music taste affinities.</p>
+                </div>
+
+                <div class="step-card fade-in">
+                    <div class="step-number">2</div>
+                    <h3>Translate</h3>
+                    <p>Our proprietary translation engine converts psychology into musicology — specific tempo, mode, instrumentation, and emotional signatures.</p>
+                </div>
+
+                <div class="step-card fade-in">
+                    <div class="step-number">3</div>
+                    <h3>Generate</h3>
+                    <p>AI generates original, never-heard-before compositions tuned to your ICP — no licensing headaches, 100% brand-owned.</p>
+                </div>
+
+                <div class="step-card fade-in">
+                    <div class="step-number">4</div>
+                    <h3>Stream & Optimize</h3>
+                    <p>Stream to your stores. Watch engagement and sales metrics in real-time. Continuously optimize based on behavioral feedback.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Retailers Section -->
+    <section class="retailers" id="retailers">
+        <div class="container">
+            <div class="fade-in">
+                <p class="section-subtitle">For Retailers</p>
+                <h2>Music that moves merchandise.</h2>
+            </div>
+
+            <div class="retailers-grid">
+                <div>
+                    <ul class="benefits-list">
+                        <li>Proven sales lift — measurable increase in basket size and transaction value</li>
+                        <li>Extended dwell time — customers linger longer, browse deeper</li>
+                        <li>Brand halo — music becomes part of your brand identity, not a commodity</li>
+                        <li>Zero licensing headaches — we handle all IP; you own the compositions</li>
+                        <li>Real-time analytics — see what's working, optimize on the fly</li>
+                        <li>Multi-location scalability — deploy across your entire network</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p class="section-subtitle">Pricing Tiers</p>
+                    <div class="pricing-preview">
+                        <div class="pricing-card fade-in">
+                            <h4>Essentials</h4>
+                            <p>Single location. Pre-built psychographic profiles. Basic analytics.</p>
+                        </div>
+                        <div class="pricing-card fade-in">
+                            <h4>Professional</h4>
+                            <p>Multi-location. Custom ICP profiling. Advanced real-time dashboards.</p>
+                        </div>
+                        <div class="pricing-card fade-in">
+                            <h4>Enterprise</h4>
+                            <p>Unlimited locations. White-label option. Dedicated support & optimization.</p>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 2rem;">Book a Pilot</button>
+                </div>
+            </div>
+
+            <div class="testimonial fade-in">
+                <p>"We deployed [BRAND] across our three flagship locations in Q4 2025. Within 30 days, we saw a 18% increase in average basket size and a noticeable shift in how customers moved through the space. The music felt <em>theirs</em>."</p>
+                <div class="testimonial-author">— [Client Name], Director of Retail Operations</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investors Section -->
+    <section class="investors" id="investors">
+        <div class="container">
+            <div class="fade-in">
+                <p class="section-subtitle">For Investors</p>
+                <h2>The opportunity.</h2>
+            </div>
+
+            <div class="investor-highlights">
+                <div class="highlight-card fade-in">
+                    <h4>Market Size</h4>
+                    <div class="stat">$2.78B</div>
+                    <p>Total addressable market for retail audio by 2031. Currently fragmented across legacy licensing, in-store systems, and ad-hoc solutions.</p>
+                </div>
+
+                <div class="highlight-card fade-in">
+                    <h4>The Gap</h4>
+                    <p>Nobody has built the end-to-end pipeline from customer psychographics → musicology → AI generation. This is defensible IP.</p>
+                </div>
+
+                <div class="highlight-card fade-in">
+                    <h4>IP Moat</h4>
+                    <p>Provisional patent filed on the psychology-to-music translation engine. Trade secrets around psychographic profiling methodology.</p>
+                </div>
+
+                <div class="highlight-card fade-in">
+                    <h4>Founder Triple-Threat</h4>
+                    <p>Musicologist + ML engineer + sales founder. Rare combination of domain expertise in music, AI, and go-to-market.</p>
+                </div>
+            </div>
+
+            <div class="fade-in" style="margin-top: 3rem; padding: 2rem; background: linear-gradient(135deg, rgba(212, 168, 67, 0.1), rgba(212, 168, 67, 0.05)); border-radius: 0.75rem; border: 1px solid rgba(212, 168, 67, 0.15);">
+                <h3 style="margin-bottom: 1rem;">The Ask</h3>
+                <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">$500K–$750K pre-seed to scale customer acquisition, finalize product, and expand the translation engine.</p>
+                <button class="btn btn-primary">Request the Deck</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Science Section -->
+    <section class="science" id="science">
+        <div class="container">
+            <div class="text-center fade-in">
+                <p class="section-subtitle">The Science</p>
+                <h2>Music drives behavior.</h2>
+                <p style="max-width: 700px; margin: 1.5rem auto; color: rgba(232, 228, 222, 0.8);">Decades of research show music isn't decoration — it's a behavioral lever. Here's what the science tells us:</p>
+            </div>
+
+            <div class="science-grid">
+                <div class="science-point fade-in">
+                    <h4>Tempo & Dwell</h4>
+                    <p>Slower tempos (60-80 BPM) increase shopping time; faster tempos (120+ BPM) accelerate decisions. Tune to your customer's pace.</p>
+                </div>
+
+                <div class="science-point fade-in">
+                    <h4>Genre Congruence</h4>
+                    <p>When music aligns with a customer's identity and values, willingness to pay increases 8-12%. Mismatch triggers departure.</p>
+                </div>
+
+                <div class="science-point fade-in">
+                    <h4>Luxury Priming</h4>
+                    <p>Classical and refined instrumental music prime luxury perception and increase average transaction value — even in non-luxury segments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section class="founder">
+        <div class="container">
+            <div class="founder-content">
+                <div class="founder-avatar fade-in">D</div>
+                <div>
+                    <h3>Built by deep expertise.</h3>
+                    <p>Daniel is a classically-trained musicologist with 8 years in music psychology research, combined with 5 years founding and scaling B2B SaaS. He speaks both the language of music and the language of sales — a rare combination that translates psychology into product.</p>
+                    <p style="color: #D4A843;">The future of retail isn't generic playlists. It's sound that understands your customer's soul.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div>
+                <div class="footer-brand"><span class="bracket">[</span>BRAND<span class="bracket">]</span></div>
+                <p style="color: rgba(232, 228, 222, 0.6); font-size: 0.95rem;">Psychographically-targeted music for retail. Built by musicians and engineers who understand that sound shapes behavior.</p>
+            </div>
+            <div class="footer-info">
+                <div>
+                    <h4 style="font-family: 'Manrope', sans-serif; margin-bottom: 1rem; color: #E8E4DE;">Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:hello@brand.com">hello@brand.com</a></li>
+                        <li><a href="#">Schedule a demo</a></li>
+                        <li><a href="#">Request investor deck</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="font-family: 'Manrope', sans-serif; margin-bottom: 1rem; color: #E8E4DE;">Legal</h4>
+                    <ul class="footer-links">
+                        <li><span class="patent-notice">Patent Pending</span></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 [BRAND]. All rights reserved.</p>
+            <p>Designed & built for the future of retail audio.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scroll for buttons
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Placeholder button handlers
+        document.querySelectorAll('.btn').forEach(btn => {
+            if (btn.textContent.includes('Book a Pilot') || btn.textContent.includes('Request the Deck')) {
+                btn.addEventListener('click', function() {
+                    alert('Contact: hello@brand.com\n\n' + this.textContent);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
