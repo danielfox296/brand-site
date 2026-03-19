@@ -1,299 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entuned Blog | Retail Audio Strategy & Music Science</title>
-    <meta name="description" content="Insights on retail background music, customer psychology, and AI-generated audio. Learn how music strategy drives retail performance.">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background-color: #080808;
-            color: #e8e8e8;
-            line-height: 1.6;
-        }
-        
-        header {
-            background-color: #0d0d0d;
-            border-bottom: 1px solid #2a2a2a;
-            padding: 1.5rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        nav {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-weight: 700;
-            font-size: 1.3rem;
-            color: #D4A843;
-            text-decoration: none;
-            letter-spacing: 0.05em;
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-        
-        nav a {
-            color: #e8e8e8;
-            text-decoration: none;
-            font-size: 0.95rem;
-            transition: color 0.3s;
-        }
-        
-        nav a:hover,
-        nav a.active {
-            color: #D4A843;
-        }
-        
-        .hero {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-            text-align: center;
-        }
-        
-        .hero h1 {
-            font-size: 2.5rem;
-            color: #ffffff;
-            margin-bottom: 1rem;
-            line-height: 1.2;
-        }
-        
-        .hero p {
-            font-size: 1.1rem;
-            color: #b0b0b0;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        main {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        
-        .articles-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-            margin-bottom: 4rem;
-        }
-        
-        .article-card {
-            background-color: #0d0d0d;
-            border: 1px solid #2a2a2a;
-            border-radius: 4px;
-            padding: 2rem;
-            transition: all 0.3s;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .article-card:hover {
-            border-color: #D4A843;
-            box-shadow: 0 0 20px rgba(212, 168, 67, 0.1);
-        }
-        
-        .article-card a {
-            text-decoration: none;
-            color: inherit;
-            flex-grow: 1;
-        }
-        
-        .article-date {
-            color: #8a8a8a;
-            font-size: 0.85rem;
-            margin-bottom: 1rem;
-        }
-        
-        .article-card h2 {
-            font-size: 1.4rem;
-            color: #ffffff;
-            margin-bottom: 1rem;
-            line-height: 1.3;
-        }
-        
-        .article-card h2:hover {
-            color: #D4A843;
-        }
-        
-        .article-summary {
-            color: #b0b0b0;
-            font-size: 0.95rem;
-            margin-bottom: 1.5rem;
-            line-height: 1.5;
-            flex-grow: 1;
-        }
-        
-        .article-meta {
-            color: #8a8a8a;
-            font-size: 0.85rem;
-            display: flex;
-            gap: 1rem;
-            border-top: 1px solid #2a2a2a;
-            padding-top: 1rem;
-        }
-        
-        .read-more {
-            color: #D4A843;
-            font-weight: 600;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 1rem;
-            transition: color 0.3s;
-        }
-        
-        .read-more:hover {
-            color: #e5b95c;
-        }
-        
-        footer {
-            background-color: #0d0d0d;
-            border-top: 1px solid #2a2a2a;
-            padding: 2rem;
-            margin-top: 4rem;
-            text-align: center;
-            color: #8a8a8a;
-            font-size: 0.9rem;
-        }
-        
-        footer p {
-            margin-bottom: 0.5rem;
-        }
-        
-        footer a {
-            color: #D4A843;
-            text-decoration: none;
-        }
-        
-        footer a:hover {
-            text-decoration: underline;
-        }
-        
-        .category-tag {
-            display: inline-block;
-            background-color: #1a1a1a;
-            color: #D4A843;
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            margin-bottom: 1rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Entuned</title>
+  <meta name="description" content="Insights on retail music strategy, customer psychology, and the science of sound in commercial spaces.">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .blog-hero {
+      padding: 10rem 2rem 4rem;
+      text-align: center;
+    }
+    .blog-hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: 1rem;
+    }
+    .blog-hero p {
+      font-size: 1.1rem;
+      opacity: 0.7;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .articles-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 2rem 6rem;
+    }
+    .article-card {
+      padding: 2.5rem 0;
+      border-bottom: 1px solid rgba(212, 168, 67, 0.1);
+    }
+    .article-card:first-child {
+      border-top: 1px solid rgba(212, 168, 67, 0.1);
+    }
+    .article-card a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .article-card h2 {
+      font-size: 1.5rem;
+      line-height: 1.3;
+      margin-bottom: 0.75rem;
+      color: #E8E4DE;
+      transition: color 0.3s;
+    }
+    .article-card h2:hover {
+      color: #D4A843;
+    }
+    .article-date {
+      font-size: 0.85rem;
+      opacity: 0.45;
+      margin-bottom: 0.75rem;
+    }
+    .article-summary {
+      font-size: 1rem;
+      opacity: 0.7;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+    .read-more {
+      color: #D4A843;
+      font-size: 0.9rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .read-more:hover {
+      opacity: 0.8;
+    }
+    .featured-card {
+      padding: 3rem 0;
+    }
+    .featured-card h2 {
+      font-size: 1.75rem;
+    }
+    .featured-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #D4A843;
+      margin-bottom: 0.75rem;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="/" class="logo">ENTUNED</a>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/#how-it-works">How It Works</a></li>
-                <li><a href="/#science">The Science</a></li>
-                <li><a href="/blog" class="active">Blog</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="container">
+      <div class="logo">Entuned</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="science.html">The Science</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+      </ul>
+      <button class="mobile-menu-toggle">☰</button>
+    </div>
+  </nav>
 
-    <div class="hero">
-        <h1>Retail Audio Science</h1>
-        <p>Data-backed insights on background music, customer psychology, and music strategy for retail. Learn how music impacts dwell time, basket size, and brand perception.</p>
+  <div class="blog-hero fade-up">
+    <h1>Blog</h1>
+    <p>The science and strategy of music in retail.</p>
+  </div>
+
+  <div class="articles-grid">
+
+    <!-- FEATURED: Music Was Never Made For Your Store -->
+    <div class="article-card featured-card fade-up">
+      <div class="featured-label">Featured</div>
+      <a href="blog/music-was-never-made-for-your-store.html">
+        <h2>Music Was Never Made For Your Store</h2>
+      </a>
+      <div class="article-date">March 2026 &middot; 5 min read</div>
+      <div class="article-summary">Bob Dylan wrote "Like a Rolling Stone" because he was angry. Nobody was thinking about foot traffic. That's true of basically every piece of music you've ever heard in a retail environment. The question is why retail got left out.</div>
+      <a href="blog/music-was-never-made-for-your-store.html" class="read-more">Read &rarr;</a>
     </div>
 
-    <main>
-        <div class="articles-grid">
-            <!-- Article 1 -->
-            <div class="article-card">
-                <span class="category-tag">Business Strategy</span>
-                <a href="/blog/why-background-music-costs-you-sales.html">
-                    <div class="article-date">March 18, 2026</div>
-                    <h2>Why Your Store's Background Music Is Costing You Sales</h2>
-                    <div class="article-summary">Generic playlists disconnect from customers. Learn how mismatched music reduces dwell time and basket size—and what data-driven stores are doing instead.</div>
-                </a>
-                <div class="article-meta">
-                    <span>7 min read</span>
-                </div>
-                <a href="/blog/why-background-music-costs-you-sales.html" class="read-more">Read Article →</a>
-            </div>
+    <!-- Why Your Store's Background Music Is Costing You Sales -->
+    <div class="article-card fade-up">
+      <a href="blog/why-background-music-costs-you-sales.html">
+        <h2>Why Your Store's Background Music Is Costing You Sales</h2>
+      </a>
+      <div class="article-date">March 2026 &middot; 7 min read</div>
+      <div class="article-summary">Generic playlists disconnect from customers. How mismatched music reduces dwell time and basket size — and what data-driven stores are doing instead.</div>
+      <a href="blog/why-background-music-costs-you-sales.html" class="read-more">Read &rarr;</a>
+    </div>
 
-            <!-- Article 2 -->
-            <div class="article-card">
-                <span class="category-tag">Music Science</span>
-                <a href="/blog/science-of-tempo-retail.html">
-                    <div class="article-date">March 18, 2026</div>
-                    <h2>The Science of Tempo: How BPM Controls Retail Behavior</h2>
-                    <div class="article-summary">Discover how music tempo (BPM) influences customer movement and shopping speed. Learn the optimal tempos for different retail categories and why it matters.</div>
-                </a>
-                <div class="article-meta">
-                    <span>9 min read</span>
-                </div>
-                <a href="/blog/science-of-tempo-retail.html" class="read-more">Read Article →</a>
-            </div>
+    <!-- The Science of Tempo -->
+    <div class="article-card fade-up">
+      <a href="blog/science-of-tempo-retail.html">
+        <h2>The Science of Tempo: How BPM Controls Retail Behavior</h2>
+      </a>
+      <div class="article-date">March 2026 &middot; 9 min read</div>
+      <div class="article-summary">How music tempo influences customer movement and shopping speed. The optimal tempos for different retail categories and why subtle dynamics prevent adaptation fatigue.</div>
+      <a href="blog/science-of-tempo-retail.html" class="read-more">Read &rarr;</a>
+    </div>
 
-            <!-- Article 3 -->
-            <div class="article-card">
-                <span class="category-tag">Market Analysis</span>
-                <a href="/blog/what-spotify-gets-wrong.html">
-                    <div class="article-date">March 18, 2026</div>
-                    <h2>What Spotify Gets Wrong About Business Music</h2>
-                    <div class="article-summary">Why consumer playlists and even Soundtrack Your Brand fail at retail. The critical difference between catalog curation and music generation.</div>
-                </a>
-                <div class="article-meta">
-                    <span>8 min read</span>
-                </div>
-                <a href="/blog/what-spotify-gets-wrong.html" class="read-more">Read Article →</a>
-            </div>
+    <!-- What Spotify Gets Wrong -->
+    <div class="article-card fade-up">
+      <a href="blog/what-spotify-gets-wrong.html">
+        <h2>What Spotify Gets Wrong About Business Music</h2>
+      </a>
+      <div class="article-date">March 2026 &middot; 8 min read</div>
+      <div class="article-summary">Why consumer playlists and even Soundtrack Your Brand fail at psychographic targeting. The critical difference between catalog curation and music generation.</div>
+      <a href="blog/what-spotify-gets-wrong.html" class="read-more">Read &rarr;</a>
+    </div>
 
-            <!-- Article 4 -->
-            <div class="article-card">
-                <span class="category-tag">Customer Psychology</span>
-                <a href="/blog/psychographic-profiling-retail.html">
-                    <div class="article-date">March 18, 2026</div>
-                    <h2>Psychographic Profiling for Retail: Beyond Demographics</h2>
-                    <div class="article-summary">How understanding your customer's values, aesthetics, and emotional drivers changes everything—including what music you play in your store.</div>
-                </a>
-                <div class="article-meta">
-                    <span>10 min read</span>
-                </div>
-                <a href="/blog/psychographic-profiling-retail.html" class="read-more">Read Article →</a>
-            </div>
+    <!-- Psychographic Profiling -->
+    <div class="article-card fade-up">
+      <a href="blog/psychographic-profiling-retail.html">
+        <h2>Psychographic Profiling for Retail: Beyond Demographics</h2>
+      </a>
+      <div class="article-date">March 2026 &middot; 10 min read</div>
+      <div class="article-summary">How understanding your customer's values, aesthetic preferences, and emotional drivers changes everything — including what music you play.</div>
+      <a href="blog/psychographic-profiling-retail.html" class="read-more">Read &rarr;</a>
+    </div>
 
-            <!-- Article 5 -->
-            <div class="article-card">
-                <span class="category-tag">AI & Technology</span>
-                <a href="/blog/ai-generated-music-retail.html">
-                    <div class="article-date">March 18, 2026</div>
-                    <h2>AI-Generated Music for Retail: What's Real and What's Hype</h2>
-                    <div class="article-summary">An honest assessment of AI music generation in 2026. What's actually possible today. Where Suno stands. How to think about it for retail.</div>
-                </a>
-                <div class="article-meta">
-                    <span>11 min read</span>
-                </div>
-                <a href="/blog/ai-generated-music-retail.html" class="read-more">Read Article →</a>
-            </div>
-        </div>
-    </main>
+    <!-- AI-Generated Music -->
+    <div class="article-card fade-up">
+      <a href="blog/ai-generated-music-retail.html">
+        <h2>AI-Generated Music for Retail: What's Real and What's Hype</h2>
+      </a>
+      <div class="article-date">March 2026 &middot; 11 min read</div>
+      <div class="article-summary">An honest assessment of AI music generation today. Where Suno V5 actually is, what's possible right now, and how a hybrid approach outperforms both pure AI and pure catalog.</div>
+      <a href="blog/ai-generated-music-retail.html" class="read-more">Read &rarr;</a>
+    </div>
 
-    <footer>
-        <p>&copy; 2026 Entuned. All rights reserved.</p>
-        <p><a href="/">Home</a> | <a href="/#contact">Contact</a> | <a href="/#about">About</a></p>
-    </footer>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-section">
+        <h4>Entuned</h4>
+        <p style="opacity: 0.7; font-size: 0.95rem;">AI-generated music engineered for your customer's psychology.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="science.html">The Science</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="investors.html">For Investors</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#privacy">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+      <p class="small-text">Patent pending on psychographic-to-musicological translation engine.</p>
+    </div>
+  </footer>
+
+  <script>
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
