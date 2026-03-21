@@ -73,6 +73,10 @@ def build():
 
         config_path = os.path.join(page_path, 'config.json')
         config      = json.loads(read(config_path))
+
+        if config.get('skip'):
+            continue
+
         title       = config.get('title', 'Entuned')
         description = config.get('description', '')
         output      = config.get('output', f'{page_name}.html')
