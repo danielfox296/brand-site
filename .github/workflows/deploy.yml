@@ -3,8 +3,9 @@ name: Deploy entuned.co
 on:
   push:
     branches: [main]
-  # Allow manual trigger (useful when entuned-player updates)
   workflow_dispatch:
+  repository_dispatch:
+    types: [player-updated]
 
 jobs:
   deploy:
