@@ -1,0 +1,61 @@
+name: Deploy entuned.co
+
+on:
+  push:
+    branches: [main]
+  # Allow manual trigger (useful when entuned-player updates)
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout brand-site
+        uses: actions/checkout@v4
+
+      # --- Build the player app into /play/ ---
+      - name: Checkout entuned-player
+        uses: actions/checkout@v4
+        with:
+          repository: danielfox296/entuned-player
+          path: _player
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build player
+        working-directory: _player
+        run: |
+          npm ci
+          npm run build
+        env:
+          VITE_API_BASE_URL: ${{ secrets.VITE_API_BASE_URL }}
+
+      # --- Assemble the full site ---
+      - name: Stage site
+        run: |
+          mkdir -p _site
+          # Copy all static site files (excluding git, workflows, deployment docs)
+          cp -r *.html styles.css CNAME _site/ 2>/dev/null || true
+          cp -r img _site/img 2>/dev/null || true
+          cp -r blog _site/blog 2>/dev/null || true
+          # Drop player build into /play/
+          mkdir -p _site/play
+          cp -r _player/dist/* _site/play/
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
