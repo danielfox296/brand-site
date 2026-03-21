@@ -39,11 +39,15 @@ jobs:
         env:
           VITE_API_BASE_URL: ${{ secrets.VITE_API_BASE_URL }}
 
+      # --- Build the brand site from _src/ modules ---
+      - name: Build site
+        run: python3 build.py
+
       # --- Assemble the full site ---
       - name: Stage site
         run: |
           mkdir -p _site
-          # Copy all static site files (excluding git, workflows, deployment docs)
+          # Copy built HTML files and static assets
           cp -r *.html styles.css CNAME _site/ 2>/dev/null || true
           cp -r img _site/img 2>/dev/null || true
           cp -r blog _site/blog 2>/dev/null || true

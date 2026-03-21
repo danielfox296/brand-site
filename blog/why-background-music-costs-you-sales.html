@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Why Your Store's Background Music Is Costing You Sales | Entuned</title>
-    <meta name="description" content="Generic playlists disconnect from customers. Learn how mismatched music reduces dwell time and basket size—and what to do about it.">
-    <meta name="keywords" content="retail music, background music strategy, customer experience, store playlist, AI music">
-    <style>
-        * {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Your Store's Background Music Is Costing You Sales | Entuned</title>
+  
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -176,20 +176,25 @@
             padding-top: 1.5rem;
             border-top: 1px solid #2a2a2a;
         }
-    </style>
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="/" class="logo">ENTUNED</a>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/#how-it-works">How It Works</a></li>
-                <li><a href="/#science">The Science</a></li>
-                <li><a href="/blog" class="active">Blog</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- NAVIGATION -->
+<nav>
+  <div class="container">
+    <div class="logo">Entuned</div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../how-it-works.html">How It Works</a></li>
+      <li><a href="../science.html">The Science</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+      <li><a href="../play/">Listen</a></li>
+    </ul>
+    <button class="mobile-menu-toggle">&#9776;</button>
+  </div>
+</nav>
+
+  </header>
 
     <main>
         <article>
@@ -280,9 +285,64 @@
         </article>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Entuned. All rights reserved.</p>
-        <p><a href="/" style="color: #D4A843; text-decoration: none;">Home</a> | <a href="/#contact" style="color: #D4A843; text-decoration: none;">Contact</a></p>
-    </footer>
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4>Entuned</h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">AI-generated music engineered for your customer's psychology.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="../how-it-works.html">How It Works</a></li>
+        <li><a href="../science.html">The Science</a></li>
+        <li><a href="../download.html">Download App</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="../investors.html">For Investors</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#privacy">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+    <p class="small-text">Patent pending on psychographic-to-musicological translation engine.</p>
+    <p class="small-text" style="opacity: 0.3; margin-top: 0.5rem;">v2 — modular build</p>
+  </div>
+</footer>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
 </body>
 </html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  {{meta_description}}
+  <link rel="stylesheet" href="{{css_path}}styles.css">
+  {{page_style}}
+</head>
+<body>
+  {{header}}
+
+  {{content}}
+
+  {{footer}}
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

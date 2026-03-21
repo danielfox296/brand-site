@@ -1,0 +1,55 @@
+.article-body {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    .article-body p {
+      font-size: 1.1rem;
+      line-height: 1.95;
+      opacity: 0.9;
+      margin-bottom: 1.75rem;
+    }
+    .article-meta {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 2rem 3rem;
+      opacity: 0.5;
+      font-size: 0.9rem;
+    }
+    .article-hero {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 8rem 2rem 2rem;
+    }
+    .article-hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.15;
+      margin-bottom: 1.5rem;
+    }
+    .article-cta {
+      max-width: 720px;
+      margin: 3rem auto;
+      padding: 2.5rem;
+      background: rgba(212, 168, 67, 0.06);
+      border-left: 3px solid #D4A843;
+      border-radius: 4px;
+    }
+    .article-cta p {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      opacity: 0.9;
+      margin-bottom: 1.5rem;
+    }
+    .back-link {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    .back-link a {
+      color: #D4A843;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+    .back-link a:hover {
+      opacity: 0.8;
+    }

@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Music Was Never Made For Your Store — Entuned Blog</title>
+  
   <link rel="stylesheet" href="../styles.css">
   <style>
-    .article-body {
+.article-body {
       max-width: 720px;
       margin: 0 auto;
       padding: 0 2rem;
@@ -65,18 +66,19 @@
 </head>
 <body>
   <!-- NAVIGATION -->
-  <nav>
-    <div class="container">
-      <div class="logo">Entuned</div>
-      <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../how-it-works.html">How It Works</a></li>
-        <li><a href="../science.html">The Science</a></li>
-        <li><a href="../blog.html" class="active">Blog</a></li>
-      </ul>
-      <button class="mobile-menu-toggle">☰</button>
-    </div>
-  </nav>
+<nav>
+  <div class="container">
+    <div class="logo">Entuned</div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../how-it-works.html">How It Works</a></li>
+      <li><a href="../science.html">The Science</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+      <li><a href="../play/">Listen</a></li>
+    </ul>
+    <button class="mobile-menu-toggle">&#9776;</button>
+  </div>
+</nav>
 
   <div class="back-link fade-up">
     <a href="../blog.html">&larr; Back to Blog</a>
@@ -128,37 +130,51 @@
   </div>
 
   <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <div class="footer-section">
-        <h4>Entuned</h4>
-        <p style="opacity: 0.7; font-size: 0.95rem;">AI-generated music engineered for your customer's psychology.</p>
-      </div>
-      <div class="footer-section">
-        <h4>Product</h4>
-        <ul>
-          <li><a href="../how-it-works.html">How It Works</a></li>
-          <li><a href="../science.html">The Science</a></li>
-          <li><a href="../blog.html">Blog</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="../investors.html">For Investors</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#privacy">Privacy Policy</a></li>
-        </ul>
-      </div>
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4>Entuned</h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">AI-generated music engineered for your customer's psychology.</p>
     </div>
-    <div class="footer-bottom">
-      <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
-      <p class="small-text">Patent pending on psychographic-to-musicological translation engine.</p>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="../how-it-works.html">How It Works</a></li>
+        <li><a href="../science.html">The Science</a></li>
+        <li><a href="../download.html">Download App</a></li>
+      </ul>
     </div>
-  </footer>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="../investors.html">For Investors</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#privacy">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+    <p class="small-text">Patent pending on psychographic-to-musicological translation engine.</p>
+    <p class="small-text" style="opacity: 0.3; margin-top: 0.5rem;">v2 — modular build</p>
+  </div>
+</footer>
 
   <script>
-    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -167,7 +183,10 @@
         }
       });
     }, observerOptions);
-    document.querySelectorAll('.fade-up, .fade-in').forEach(el => observer.observe(el));
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
   </script>
 </body>
 </html>
