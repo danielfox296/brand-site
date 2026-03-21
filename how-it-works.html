@@ -6,7 +6,55 @@
   <title>How It Works — Entuned</title>
   
   <link rel="stylesheet" href="styles.css">
-  
+  <style>
+/* Step rows: text + image side by side */
+    .step-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    .step-row-reverse {
+      direction: rtl;
+    }
+    .step-row-reverse > * {
+      direction: ltr;
+    }
+
+    /* Step images */
+    .step-img img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 8px 32px rgba(212, 168, 67, 0.12);
+      opacity: 0.92;
+    }
+
+    /* Card icons */
+    .card-icon {
+      margin-bottom: 1.25rem;
+      width: 56px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(212, 168, 67, 0.08);
+      border-radius: 12px;
+      border: 1px solid rgba(212, 168, 67, 0.15);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .step-row,
+      .step-row-reverse {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        direction: ltr;
+      }
+      .step-img {
+        order: -1;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- NAVIGATION -->
@@ -38,56 +86,73 @@
     <div class="steps-container">
       <!-- Step 1 -->
       <div class="step fade-up">
-        <div>
-          <div class="step-number">01</div>
-          <div class="step-content">
-            <h3>We profile your ideal customer.</h3>
-            <p>This isn't demographic boxes. We dig into the psychology of who you actually serve. What do they value? What's their aesthetic? What music did they listen to at 18? What inspires them? What makes them feel premium?</p>
-            <p>Through a detailed onboarding conversation, we build a rich psychographic model of your Ideal Customer Profile (ICP). This becomes the DNA of your store's soundtrack.</p>
+        <div class="step-row">
+          <div class="step-text">
+            <div class="step-number">01</div>
+            <div class="step-content">
+              <h3>We profile your ideal customer.</h3>
+              <p>This isn't demographic boxes. We dig into the psychology of who you actually serve. What do they value? What's their aesthetic? What music did they listen to at 18? What inspires them? What makes them feel premium?</p>
+              <p>Through a detailed onboarding conversation, we build a rich psychographic model of your Ideal Customer Profile (ICP). This becomes the DNA of your store's soundtrack.</p>
+            </div>
+          </div>
+          <div class="step-img">
+            <img src="img/step-profile.jpg" alt="Customer profiling in retail environment">
           </div>
         </div>
       </div>
 
       <!-- Step 2 -->
       <div class="step fade-up">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
-          <div>
+        <div class="step-row step-row-reverse">
+          <div class="step-text">
             <div class="step-number">02</div>
             <div class="step-content">
               <h3>Our engine translates psychology into music.</h3>
-              <p>Your ICP isn't a playlist—it's a set of instructions. Our proprietary translation layer converts psychological attributes into musicological parameters: tempo, key, instrumentation, harmonic complexity, lyrical themes, genre DNA.</p>
-              <p>A minimalist customer values space and clarity—we generate music that breathes. A luxury-conscious customer wants refinement—we compose orchestral elements that prime that perception. Every psychographic dimension maps to a musical choice.</p>
+              <p>Your ICP isn't a playlist -- it's a set of instructions. Our proprietary translation layer converts psychological attributes into musicological parameters: tempo, key, instrumentation, harmonic complexity, lyrical themes, genre DNA.</p>
+              <p>A minimalist customer values space and clarity -- we generate music that breathes. A luxury-conscious customer wants refinement -- we compose orchestral elements that prime that perception. Every psychographic dimension maps to a musical choice.</p>
             </div>
           </div>
-          <div style="text-align: center;">
-            <img src="img/speakers.jpg" alt="Modern audio speakers" style="width: 100%; max-width: 350px; border-radius: 8px; box-shadow: 0 8px 32px rgba(212, 168, 67, 0.15); opacity: 0.95;">
+          <div class="step-img">
+            <img src="img/step-translate.jpg" alt="Audio mixing console">
           </div>
         </div>
       </div>
 
       <!-- Step 3 -->
       <div class="step fade-up">
-        <div>
-          <div class="step-number">03</div>
-          <div class="step-content">
-            <h3>AI generates original music for your store.</h3>
-            <p>We don't pull from a catalog. Every track in your soundtrack is original composition, generated specifically for your customer's psychology. No licensing fees. No ASCAP headaches. No track repeats across stores.</p>
-            <p>Your music is as unique as your customer. And it evolves. As we learn more about what works in your space, we fine-tune the generation parameters and create music that gets better at moving your needle.</p>
+        <div class="step-row">
+          <div class="step-text">
+            <div class="step-number">03</div>
+            <div class="step-content">
+              <h3>AI generates original music for your store.</h3>
+              <p>We don't pull from a catalog. Every track in your soundtrack is original composition, generated specifically for your customer's psychology. No licensing fees. No ASCAP headaches. No track repeats across stores.</p>
+              <p>Your music is as unique as your customer. And it evolves. As we learn more about what works in your space, we fine-tune the generation parameters and create music that gets better at moving your needle.</p>
+            </div>
+          </div>
+          <div class="step-img">
+            <img src="img/step-generate.jpg" alt="AI-generated sound visualization">
           </div>
         </div>
       </div>
 
       <!-- Step 4 -->
       <div class="step fade-up">
-        <div>
-          <div class="step-number">04</div>
-          <div class="step-content">
-            <h3>Stream it. Measure it. Optimize it.</h3>
-            <p>Connect to your speakers, press play. That's it. Entuned streams your psychographically-optimized soundtrack continuously, 24/7.</p>
-            <p>Real-time analytics dashboard shows you dwell time, foot traffic patterns, peak engagement hours, and sales correlation. We see what's working. You get continuous optimization through behavioral feedback loops — the music gets smarter over time.</p>
+        <div class="step-row step-row-reverse">
+          <div class="step-text">
+            <div class="step-number">04</div>
+            <div class="step-content">
+              <h3>Stream it. Measure it. Optimize it.</h3>
+              <p>Connect to your speakers, press play. That's it. Entuned streams your psychographically-optimized soundtrack continuously, 24/7.</p>
+              <p>Real-time analytics dashboard shows you dwell time, foot traffic patterns, peak engagement hours, and sales correlation. We see what's working. You get continuous optimization through behavioral feedback loops -- the music gets smarter over time.</p>
+            </div>
+          </div>
+          <div class="step-img">
+            <img src="img/step-stream.jpg" alt="Analytics dashboard">
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
   <!-- WHAT'S INCLUDED -->
   <section class="section">
@@ -95,26 +160,44 @@
       <h2 style="text-align: center; margin-bottom: 3rem;">What you get</h2>
       <div class="card-grid">
         <div class="card fade-up">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
           <div class="card-title">Psychographic Profiling</div>
-          <p class="card-text">We understand your customer deeply. Not just who they are—who they want to be. That's what we compose for.</p>
+          <p class="card-text">We understand your customer deeply. Not just who they are -- who they want to be. That's what we compose for.</p>
         </div>
         <div class="card fade-up">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+          </div>
           <div class="card-title">Original Compositions</div>
           <p class="card-text">Zero licensing fees. Zero catalog constraints. Every track is generated fresh for your store. Infinite variety. One soundtrack.</p>
         </div>
         <div class="card fade-up">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+          </div>
           <div class="card-title">Real-Time Analytics</div>
           <p class="card-text">See dwell time, foot traffic, engagement spikes, and sales correlation as it happens. Data-driven optimization at your fingertips.</p>
         </div>
         <div class="card fade-up">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
           <div class="card-title">Continuous Optimization</div>
           <p class="card-text">We monitor what's working and adjust the generation parameters to fit your store's reality. Your music gets smarter every week.</p>
         </div>
         <div class="card fade-up">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
           <div class="card-title">Universal Compatibility</div>
           <p class="card-text">Works with any Bluetooth or AirPlay speaker system. Plug in an iPad, connect to your store speakers, press play. That's the whole setup.</p>
         </div>
         <div class="card fade-up">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
           <div class="card-title">24/7 Streaming</div>
           <p class="card-text">Uninterrupted audio. The app runs in the background indefinitely. Your store's soundtrack never stops.</p>
         </div>

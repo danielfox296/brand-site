@@ -1,0 +1,47 @@
+/* Step rows: text + image side by side */
+    .step-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    .step-row-reverse {
+      direction: rtl;
+    }
+    .step-row-reverse > * {
+      direction: ltr;
+    }
+
+    /* Step images */
+    .step-img img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 8px 32px rgba(212, 168, 67, 0.12);
+      opacity: 0.92;
+    }
+
+    /* Card icons */
+    .card-icon {
+      margin-bottom: 1.25rem;
+      width: 56px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(212, 168, 67, 0.08);
+      border-radius: 12px;
+      border: 1px solid rgba(212, 168, 67, 0.15);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .step-row,
+      .step-row-reverse {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        direction: ltr;
+      }
+      .step-img {
+        order: -1;
+      }
+    }
