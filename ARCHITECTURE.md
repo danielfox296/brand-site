@@ -92,7 +92,8 @@ For non-blog pages, content starts directly with `<section>` tags.
 - **Cards:** `.card`, `.card-grid`, `.card-title`, `.card-text`
 - **Stats:** `.stats-section`, `.stats-grid`, `.stat-item`, `.stat-number`, `.stat-label`
 - **Pricing:** `.pricing-grid`, `.pricing-card`, `.pricing-card.featured`
-- **Steps:** `.steps-container`, `.step`, `.step-number`, `.step-content`
+- **Steps (How It Works):** `.hiw-step`, `.hiw-step-number`, `.hiw-step-body` (page-level CSS)
+- **Research cards:** `.research-grid`, `.research-card`, `.research-stat`, `.research-title`, `.research-cite` (page-level CSS)
 - **Audio:** `.audio-player-wrap`, `.audio-track`, `.audio-play-btn`, `.audio-progress`, `.audio-time`
 - **Animations:** `.fade-up`, `.fade-in` (triggered by Intersection Observer in base.html)
 
@@ -120,6 +121,17 @@ GitHub Actions (`.github/workflows/deploy.yml`) runs on push to `main`:
 5. Deploys to GitHub Pages at entuned.co
 
 To deploy: `git add -A && git commit -m "message" && git push origin main`
+
+## Agent rules
+
+**IMPORTANT — rules for AI agents working on this codebase:**
+
+1. **Always provide push commands.** After completing any update, always give the user ready-to-copy git commands (add, commit, push) with absolute paths. The user deploys manually from their local machine. Never end a task without providing the push commands.
+2. **Never edit built HTML files.** Only edit source files in `_src/`, `styles.css`, or static assets. Then run `python3 build.py`.
+3. **Rebuild after every change.** Always run `python3 build.py` and confirm it succeeds before declaring work done.
+4. **Respect the design system.** Use the colors, fonts, and component classes documented above. Don't invent one-off inline styles when a reusable class exists.
+5. **Page-specific CSS goes in `style.css`** inside the page's `_src/pages/<name>/` directory, not in the global `styles.css`, unless the component is reused across multiple pages.
+6. **Keep it simple.** No build tools, no npm, no bundler. Vanilla HTML/CSS/JS only.
 
 ## Testing locally
 
