@@ -141,6 +141,9 @@ To deploy: `git add -A && git commit -m "message" && git push origin main`
 4. **Respect the design system.** Use the colors, fonts, and component classes documented above. Don't invent one-off inline styles when a reusable class exists.
 5. **Page-specific CSS goes in `style.css`** inside the page's `_src/pages/<name>/` directory, not in the global `styles.css`, unless the component is reused across multiple pages.
 6. **Keep it simple.** No build tools, no npm, no bundler. Vanilla HTML/CSS/JS only.
+7. **Follow brand voice.** Read `../VOICE.md` before writing any copy. Lead with outcomes, not technology. Never put "AI" in a page title or hero. Use "retail music strategy" as the category term, not "AI music."
+8. **Every page needs SEO.** Every config.json must have a `title` and `description`. Titles lead with the outcome. Descriptions include a stat and the pilot CTA. See `../VOICE.md` for patterns.
+9. **Read `../brain.md` for context.** It has product details, pricing, competitive landscape, research citations, and key decisions. Reference it before making content decisions.
 
 ## Testing locally
 
