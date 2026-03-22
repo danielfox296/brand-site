@@ -7,29 +7,124 @@
   
   <link rel="stylesheet" href="styles.css">
   <style>
-/* Step rows: text + image side by side */
-    .step-row {
+/* ===== HOW IT WORKS — STEPS ===== */
+    .hiw-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 2.5rem;
+      padding: 3rem 0;
+      border-bottom: 1px solid rgba(212, 168, 67, 0.08);
+    }
+
+    .hiw-step:last-child {
+      border-bottom: none;
+    }
+
+    .hiw-step-number {
+      font-family: 'Manrope', sans-serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: #D4A843;
+      line-height: 1;
+      min-width: 80px;
+      opacity: 0.25;
+    }
+
+    .hiw-step-body h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .hiw-step-body p {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      opacity: 0.85;
+      max-width: 720px;
+    }
+
+    @media (max-width: 600px) {
+      .hiw-step {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+      .hiw-step-number {
+        font-size: 2.5rem;
+        min-width: auto;
+      }
+    }
+
+    /* ===== RESEARCH CARDS ===== */
+    .research-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      align-items: center;
-    }
-    .step-row-reverse {
-      direction: rtl;
-    }
-    .step-row-reverse > * {
-      direction: ltr;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
     }
 
-    /* Step images */
-    .step-img img {
-      width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 8px 32px rgba(212, 168, 67, 0.12);
-      opacity: 0.92;
+    .research-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(212, 168, 67, 0.12);
+      padding: 2.5rem;
+      transition: border-color 0.3s ease;
     }
 
-    /* Card icons */
+    .research-card:hover {
+      border-color: rgba(212, 168, 67, 0.35);
+    }
+
+    .research-card-wide {
+      grid-column: 1 / -1;
+    }
+
+    .research-stat {
+      font-family: 'Manrope', sans-serif;
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: #D4A843;
+      line-height: 1.1;
+    }
+
+    .research-stat-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      opacity: 0.55;
+      margin-bottom: 1.25rem;
+    }
+
+    .research-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: #E8E4DE;
+    }
+
+    .research-desc {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      opacity: 0.8;
+    }
+
+    .research-cite {
+      font-size: 0.8rem !important;
+      opacity: 0.4 !important;
+      font-style: italic;
+      margin-top: 1rem;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+      .research-grid {
+        grid-template-columns: 1fr;
+      }
+      .research-card {
+        padding: 2rem 1.5rem;
+      }
+      .research-stat {
+        font-size: 1.75rem;
+      }
+    }
+
+    /* ===== CARD ICONS ===== */
     .card-icon {
       margin-bottom: 1.25rem;
       width: 56px;
@@ -40,19 +135,6 @@
       background: rgba(212, 168, 67, 0.08);
       border-radius: 12px;
       border: 1px solid rgba(212, 168, 67, 0.15);
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      .step-row,
-      .step-row-reverse {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        direction: ltr;
-      }
-      .step-img {
-        order: -1;
-      }
     }
   </style>
 </head>
@@ -83,140 +165,90 @@
 
   <!-- STEPS -->
   <section class="section">
-    <div class="steps-container">
-      <!-- Step 1 -->
-      <div class="step fade-up">
-        <div class="step-row">
-          <div class="step-text">
-            <div class="step-number">01</div>
-            <div class="step-content">
-              <h3>We profile your ideal customer.</h3>
-              <p>Not demographics. Psychology. What do they value? What's their aesthetic? What makes them feel premium? Through a detailed onboarding conversation, we build a psychographic model of your ICP. This becomes the DNA of your store's soundtrack.</p>
-            </div>
-          </div>
-          <div class="step-img">
-            <img src="img/step-profile.jpg" alt="Customer profiling in retail environment">
-          </div>
+    <div class="container">
+
+      <div class="hiw-step fade-up">
+        <div class="hiw-step-number">01</div>
+        <div class="hiw-step-body">
+          <h3>We profile your ideal customer.</h3>
+          <p>Not demographics. Psychology. What do they value? What's their aesthetic? What makes them feel premium? Through a detailed onboarding conversation, we build a psychographic model of your ICP. This becomes the DNA of your store's soundtrack.</p>
         </div>
       </div>
 
-      <!-- Step 2 -->
-      <div class="step fade-up">
-        <div class="step-row step-row-reverse">
-          <div class="step-text">
-            <div class="step-number">02</div>
-            <div class="step-content">
-              <h3>Our engine translates psychology into music.</h3>
-              <p>Your ICP becomes a set of musical instructions. Our proprietary translation layer converts psychological attributes into musicological parameters: tempo, key, instrumentation, harmonic complexity, genre DNA. Every psychographic dimension maps to a musical choice.</p>
-            </div>
-          </div>
-          <div class="step-img">
-            <img src="img/step-translate.jpg" alt="Audio mixing console">
-          </div>
+      <div class="hiw-step fade-up">
+        <div class="hiw-step-number">02</div>
+        <div class="hiw-step-body">
+          <h3>Our engine translates psychology into music.</h3>
+          <p>Your ICP becomes a set of musical instructions. Our proprietary translation layer converts psychological attributes into musicological parameters — tempo, key, instrumentation, harmonic complexity, genre DNA. Every psychographic dimension maps to a musical choice.</p>
         </div>
       </div>
 
-      <!-- Step 3 -->
-      <div class="step fade-up">
-        <div class="step-row">
-          <div class="step-text">
-            <div class="step-number">03</div>
-            <div class="step-content">
-              <h3>AI generates original music for your store.</h3>
-              <p>Every track is original composition, generated for your customer's psychology. No licensing fees. No ASCAP compliance. No catalog constraints. Your music is as unique as your customer — and it evolves as we learn what works.</p>
-            </div>
-          </div>
-          <div class="step-img">
-            <img src="img/step-generate.jpg" alt="AI-generated sound visualization">
-          </div>
+      <div class="hiw-step fade-up">
+        <div class="hiw-step-number">03</div>
+        <div class="hiw-step-body">
+          <h3>AI generates original music for your store.</h3>
+          <p>Every track is original composition, generated for your customer's psychology. No licensing fees. No ASCAP compliance. No catalog constraints. Your music is as unique as your customer — and it evolves as we learn what works.</p>
         </div>
       </div>
 
-      <!-- Step 4 -->
-      <div class="step fade-up">
-        <div class="step-row step-row-reverse">
-          <div class="step-text">
-            <div class="step-number">04</div>
-            <div class="step-content">
-              <h3>Stream it. Measure it. Optimize it.</h3>
-              <p>Connect to your speakers, press play. Real-time analytics show dwell time, foot traffic, peak engagement, and sales correlation. The music gets smarter over time through behavioral feedback loops.</p>
-            </div>
-          </div>
-          <div class="step-img">
-            <img src="img/step-stream.jpg" alt="Analytics dashboard">
-          </div>
+      <div class="hiw-step fade-up">
+        <div class="hiw-step-number">04</div>
+        <div class="hiw-step-body">
+          <h3>Stream it. Measure it. Optimize it.</h3>
+          <p>Connect to your speakers, press play. Real-time analytics show dwell time, foot traffic, peak engagement, and sales correlation. The music gets smarter over time through behavioral feedback loops.</p>
         </div>
       </div>
+
     </div>
   </section>
 
-  <!-- THE SCIENCE — ACCORDIONS -->
-  <section class="section" style="background: rgba(212, 168, 67, 0.02);">
-    <div class="container" style="max-width: 900px;">
-      <div class="fade-up" style="text-align: center; margin-bottom: 3rem;">
+  <!-- THE RESEARCH -->
+  <section class="section" style="background: rgba(212, 168, 67, 0.03); border-top: 1px solid rgba(212, 168, 67, 0.08); border-bottom: 1px solid rgba(212, 168, 67, 0.08);">
+    <div class="container">
+      <div class="fade-up" style="text-align: center; margin-bottom: 4rem;">
         <h2>The research behind the engine.</h2>
-        <p style="font-size: 1.05rem; opacity: 0.85;">Decades of peer-reviewed research. Five behavioral variables. Each one maps to a musical decision.</p>
+        <p class="subline">Five behavioral variables. Decades of peer-reviewed research. Each one maps to a musical decision.</p>
       </div>
 
-      <div class="accordion-group fade-up">
+      <div class="research-grid fade-up">
 
-        <div class="accordion">
-          <button class="accordion-trigger" aria-expanded="false">
-            <span class="accordion-title">Tempo & Dwell Time</span>
-            <span class="accordion-stat">15–25% longer visits</span>
-            <span class="accordion-icon">+</span>
-          </button>
-          <div class="accordion-panel">
-            <p>Slower tempos (60–80 BPM) increase shopping time and deeper browsing. Faster tempos (120+ BPM) accelerate decisions and reduce time-in-store. We compose tempo specifically for the psychology of the person you serve.</p>
-            <p class="accordion-cite">Smith & Curnow, 1966 — Journal of Applied Psychology</p>
-          </div>
+        <div class="research-card">
+          <div class="research-stat">15–25%</div>
+          <div class="research-stat-label">longer visits</div>
+          <h4 class="research-title">Tempo & Dwell Time</h4>
+          <p class="research-desc">Slower tempos (60–80 BPM) increase shopping time and deeper browsing. Faster tempos accelerate decisions and reduce time-in-store. We compose tempo specifically for your customer's psychology.</p>
+          <p class="research-cite">Smith & Curnow, 1966 — Journal of Applied Psychology</p>
         </div>
 
-        <div class="accordion">
-          <button class="accordion-trigger" aria-expanded="false">
-            <span class="accordion-title">Genre Congruence</span>
-            <span class="accordion-stat">8–12% higher willingness to pay</span>
-            <span class="accordion-icon">+</span>
-          </button>
-          <div class="accordion-panel">
-            <p>When music matches a customer's identity, they feel "seen" by the space. Willingness to pay increases 8–12%. When it mismatches, they leave faster — no matter how good the products are.</p>
-            <p class="accordion-cite">Areni & Kim, 1993; North, Hargreaves & McKendrick, 1999</p>
-          </div>
+        <div class="research-card">
+          <div class="research-stat">8–12%</div>
+          <div class="research-stat-label">higher willingness to pay</div>
+          <h4 class="research-title">Genre Congruence</h4>
+          <p class="research-desc">When music matches a customer's identity, they feel "seen" by the space. Willingness to pay increases measurably. When it mismatches, they leave faster — no matter how good the products are.</p>
+          <p class="research-cite">Areni & Kim, 1993; North, Hargreaves & McKendrick, 1999</p>
         </div>
 
-        <div class="accordion">
-          <button class="accordion-trigger" aria-expanded="false">
-            <span class="accordion-title">Luxury Priming</span>
-            <span class="accordion-stat">Perceived value shifts without price changes</span>
-            <span class="accordion-icon">+</span>
-          </button>
-          <div class="accordion-panel">
-            <p>Refined instrumental music — orchestral and classical elements — primes luxury perception, even in non-luxury segments. You don't need to be luxury to benefit. If your customer values quality and craft, the right music raises their perception of what your products are worth.</p>
-            <p class="accordion-cite">Chebat & Michon, 2003 — Journal of Business Research</p>
-          </div>
+        <div class="research-card">
+          <div class="research-stat">&uarr;</div>
+          <div class="research-stat-label">perceived value</div>
+          <h4 class="research-title">Luxury Priming</h4>
+          <p class="research-desc">Refined instrumental music primes luxury perception, even in non-luxury segments. You don't need to be luxury to benefit. The right music raises your customer's perception of what your products are worth.</p>
+          <p class="research-cite">Chebat & Michon, 2003 — Journal of Business Research</p>
         </div>
 
-        <div class="accordion">
-          <button class="accordion-trigger" aria-expanded="false">
-            <span class="accordion-title">Volume & Arousal</span>
-            <span class="accordion-stat">Inversely correlated with browsing time</span>
-            <span class="accordion-icon">+</span>
-          </button>
-          <div class="accordion-panel">
-            <p>Lower volume encourages browsing and longer visits. Higher volume creates urgency and faster turnover. The right level depends on your purchase cycle — considered purchases need space to think.</p>
-            <p class="accordion-cite">Caldwell & Hibbert, 2002 — Psychology & Marketing</p>
-          </div>
+        <div class="research-card">
+          <div class="research-stat">&darr;</div>
+          <div class="research-stat-label">browsing time at high volume</div>
+          <h4 class="research-title">Volume & Arousal</h4>
+          <p class="research-desc">Lower volume encourages browsing and longer visits. Higher volume creates urgency and faster turnover. The right level depends on your purchase cycle — considered purchases need space to think.</p>
+          <p class="research-cite">Caldwell & Hibbert, 2002 — Psychology & Marketing</p>
         </div>
 
-        <div class="accordion">
-          <button class="accordion-trigger" aria-expanded="false">
-            <span class="accordion-title">The Brand Halo Effect</span>
-            <span class="accordion-stat">Intentional audio signals intentional brand</span>
-            <span class="accordion-icon">+</span>
-          </button>
-          <div class="accordion-panel">
-            <p>When music feels right for a space, customers assume everything else is right too — the products, the brand, the quality. Music acts as a signal of intentionality. Generic playlists signal carelessness.</p>
-          </div>
+        <div class="research-card research-card-wide">
+          <div class="research-stat">&#10003;</div>
+          <div class="research-stat-label">intentional audio = intentional brand</div>
+          <h4 class="research-title">The Brand Halo Effect</h4>
+          <p class="research-desc">When music feels right for a space, customers assume everything else is right too — the products, the brand, the quality. Music acts as a signal of intentionality. Generic playlists signal carelessness.</p>
         </div>
 
       </div>

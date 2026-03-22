@@ -1,26 +1,121 @@
-/* Step rows: text + image side by side */
-    .step-row {
+/* ===== HOW IT WORKS — STEPS ===== */
+    .hiw-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 2.5rem;
+      padding: 3rem 0;
+      border-bottom: 1px solid rgba(212, 168, 67, 0.08);
+    }
+
+    .hiw-step:last-child {
+      border-bottom: none;
+    }
+
+    .hiw-step-number {
+      font-family: 'Manrope', sans-serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: #D4A843;
+      line-height: 1;
+      min-width: 80px;
+      opacity: 0.25;
+    }
+
+    .hiw-step-body h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .hiw-step-body p {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      opacity: 0.85;
+      max-width: 720px;
+    }
+
+    @media (max-width: 600px) {
+      .hiw-step {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+      .hiw-step-number {
+        font-size: 2.5rem;
+        min-width: auto;
+      }
+    }
+
+    /* ===== RESEARCH CARDS ===== */
+    .research-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      align-items: center;
-    }
-    .step-row-reverse {
-      direction: rtl;
-    }
-    .step-row-reverse > * {
-      direction: ltr;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
     }
 
-    /* Step images */
-    .step-img img {
-      width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 8px 32px rgba(212, 168, 67, 0.12);
-      opacity: 0.92;
+    .research-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(212, 168, 67, 0.12);
+      padding: 2.5rem;
+      transition: border-color 0.3s ease;
     }
 
-    /* Card icons */
+    .research-card:hover {
+      border-color: rgba(212, 168, 67, 0.35);
+    }
+
+    .research-card-wide {
+      grid-column: 1 / -1;
+    }
+
+    .research-stat {
+      font-family: 'Manrope', sans-serif;
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: #D4A843;
+      line-height: 1.1;
+    }
+
+    .research-stat-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      opacity: 0.55;
+      margin-bottom: 1.25rem;
+    }
+
+    .research-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: #E8E4DE;
+    }
+
+    .research-desc {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      opacity: 0.8;
+    }
+
+    .research-cite {
+      font-size: 0.8rem !important;
+      opacity: 0.4 !important;
+      font-style: italic;
+      margin-top: 1rem;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+      .research-grid {
+        grid-template-columns: 1fr;
+      }
+      .research-card {
+        padding: 2rem 1.5rem;
+      }
+      .research-stat {
+        font-size: 1.75rem;
+      }
+    }
+
+    /* ===== CARD ICONS ===== */
     .card-icon {
       margin-bottom: 1.25rem;
       width: 56px;
@@ -31,17 +126,4 @@
       background: rgba(212, 168, 67, 0.08);
       border-radius: 12px;
       border: 1px solid rgba(212, 168, 67, 0.15);
-    }
-
-    /* Responsive */
-    @media (max-width: 768px) {
-      .step-row,
-      .step-row-reverse {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        direction: ltr;
-      }
-      .step-img {
-        order: -1;
-      }
     }
