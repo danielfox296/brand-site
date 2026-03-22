@@ -6,7 +6,280 @@
   <title>Start a Free 90-Day Pilot | Entuned</title>
   
   <link rel="stylesheet" href="styles.css">
-  
+  <style>
+/* ===== SECTION EYEBROW ===== */
+    .section-eyebrow {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #D4A843;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+
+    /* ===== TIMELINE ===== */
+    .timeline {
+      max-width: 720px;
+      margin: 0 auto;
+      position: relative;
+      padding-left: 48px;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 19px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: rgba(212, 168, 67, 0.15);
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-bottom: 3rem;
+    }
+
+    .timeline-item:last-child {
+      padding-bottom: 0;
+    }
+
+    .timeline-marker {
+      position: absolute;
+      left: -48px;
+      top: 0;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #080808;
+      border: 2px solid rgba(212, 168, 67, 0.3);
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .timeline-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #D4A843;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    .timeline-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-content p {
+      font-size: 0.95rem;
+      opacity: 0.75;
+      line-height: 1.7;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 600px) {
+      .timeline {
+        padding-left: 36px;
+      }
+      .timeline::before {
+        left: 14px;
+      }
+      .timeline-marker {
+        left: -36px;
+        width: 32px;
+        height: 32px;
+      }
+      .timeline-marker svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    /* ===== METRIC CARDS ===== */
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .metric-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(212, 168, 67, 0.12);
+      padding: 2rem;
+      transition: border-color 0.3s ease;
+    }
+
+    .metric-card:hover {
+      border-color: rgba(212, 168, 67, 0.3);
+    }
+
+    .metric-icon {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(212, 168, 67, 0.08);
+      border: 1px solid rgba(212, 168, 67, 0.15);
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .metric-card h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .metric-card p {
+      font-size: 0.9rem;
+      opacity: 0.7;
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    /* ===== REQUIREMENTS ===== */
+    .req-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .req-item {
+      display: flex;
+      gap: 1.25rem;
+      align-items: flex-start;
+      padding: 1.5rem;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(212, 168, 67, 0.1);
+      transition: border-color 0.3s ease;
+    }
+
+    .req-item:hover {
+      border-color: rgba(212, 168, 67, 0.25);
+    }
+
+    .req-icon {
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(212, 168, 67, 0.08);
+      border: 1px solid rgba(212, 168, 67, 0.15);
+      border-radius: 10px;
+    }
+
+    .req-item h4 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+    }
+
+    .req-item p {
+      font-size: 0.85rem;
+      opacity: 0.7;
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    /* ===== COST CARDS ===== */
+    .cost-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .cost-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(212, 168, 67, 0.12);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      transition: border-color 0.3s ease;
+    }
+
+    .cost-card:hover {
+      border-color: rgba(212, 168, 67, 0.3);
+    }
+
+    .cost-price {
+      font-family: 'Manrope', sans-serif;
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: #D4A843;
+      margin-bottom: 0.25rem;
+    }
+
+    .cost-name {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      opacity: 0.5;
+      margin-bottom: 1rem;
+    }
+
+    .cost-card p {
+      font-size: 0.9rem;
+      opacity: 0.7;
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+      .cost-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+      }
+    }
+
+    /* ===== FAQ ===== */
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(212, 168, 67, 0.1);
+      padding: 2rem;
+      transition: border-color 0.3s ease;
+    }
+
+    .faq-item:hover {
+      border-color: rgba(212, 168, 67, 0.25);
+    }
+
+    .faq-item h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #D4A843;
+      margin-bottom: 0.75rem;
+    }
+
+    .faq-item p {
+      font-size: 0.9rem;
+      opacity: 0.75;
+      line-height: 1.65;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- NAVIGATION -->
@@ -24,195 +297,259 @@
   </div>
 </nav>
 
-  <!-- Hero Section -->
-<section class="hero">
+  <!-- HERO -->
+<section class="hero hero-alt" style="background: linear-gradient(rgba(8,8,8,0.7), rgba(8,8,8,0.85)), url('img/hero-pilot.jpg'); background-size: cover; background-position: center;">
   <div class="container">
-    <div class="fade-up">
+    <div class="fade-up" style="max-width: 800px; margin: 0 auto;">
       <h1>90 days. Two stores. Real data.</h1>
       <p class="subline">Start free. Pay only when the numbers prove it.</p>
     </div>
   </div>
 </section>
 
-<!-- How the Pilot Works -->
+<!-- TIMELINE -->
 <section class="section">
   <div class="container">
-    <h2 style="text-align: center; margin-bottom: 3rem; font-family: 'Manrope', sans-serif;">How the Pilot Works</h2>
-    <div class="steps-container">
-      <!-- Week 1 -->
-      <div class="step fade-up">
-        <div class="step-number">Week 1</div>
-        <div class="step-content">
+    <div class="fade-up" style="text-align: center; margin-bottom: 4rem;">
+      <p class="section-eyebrow">The Process</p>
+      <h2>How the pilot works</h2>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item fade-up">
+        <div class="timeline-marker">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-label">Week 1</div>
           <h3>Discovery Call + ICP Workshop</h3>
           <p>We learn about your customer, your brand, and your goals. 60–90 minutes with your team. This is where we understand the psychology we'll translate into music.</p>
         </div>
       </div>
 
-      <!-- Weeks 2-3 -->
-      <div class="step fade-up">
-        <div class="step-number">Weeks 2–3</div>
-        <div class="step-content">
+      <div class="timeline-item fade-up">
+        <div class="timeline-marker">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-label">Weeks 2–3</div>
           <h3>Build & Review Your Soundtrack</h3>
           <p>We build your psychographic profile and generate your first custom soundtrack. You review and approve before anything goes live.</p>
         </div>
       </div>
 
-      <!-- Week 4 -->
-      <div class="step fade-up">
-        <div class="step-number">Week 4</div>
-        <div class="step-content">
+      <div class="timeline-item fade-up">
+        <div class="timeline-marker">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-label">Week 4</div>
           <h3>Go Live</h3>
           <p>Connect an iPad to your store speakers. Press play. That's the full hardware setup. Your test location is now streaming psychographically-optimized music.</p>
         </div>
       </div>
 
-      <!-- Weeks 4-12 -->
-      <div class="step fade-up">
-        <div class="step-number">Weeks 4–12</div>
-        <div class="step-content">
+      <div class="timeline-item fade-up">
+        <div class="timeline-marker">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-label">Weeks 4–12</div>
           <h3>Measure & Compare</h3>
-          <p>Music streams in your test location. Your control location runs whatever you currently play. You measure both. Real-time analytics dashboard tracks dwell time, foot traffic, and transaction patterns.</p>
+          <p>Music streams in your test location. Your control location runs whatever you currently play. Real-time analytics track dwell time, foot traffic, and transaction patterns.</p>
         </div>
       </div>
 
-      <!-- Week 13 -->
-      <div class="step fade-up">
-        <div class="step-number">Week 13</div>
-        <div class="step-content">
+      <div class="timeline-item fade-up">
+        <div class="timeline-marker">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-label">Week 13</div>
           <h3>Review Results & Decide</h3>
-          <p>We review the data together. Dwell time lift, transaction value increase, traffic patterns. If the lift is there, you convert to a paid plan. If not, you walk away with real data—no financial risk.</p>
+          <p>We review the data together. Dwell time lift, transaction value increase, traffic patterns. If the lift is there, you convert to a paid plan. If not, you walk away with real data — no financial risk.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE MEASURE -->
+<section class="section" style="background: rgba(212, 168, 67, 0.03); border-top: 1px solid rgba(212, 168, 67, 0.08); border-bottom: 1px solid rgba(212, 168, 67, 0.08);">
+  <div class="container">
+    <div class="fade-up" style="text-align: center; margin-bottom: 4rem;">
+      <p class="section-eyebrow">Analytics</p>
+      <h2>What we measure</h2>
+      <p class="subline">Test location vs. control location. Real numbers, not projections.</p>
+    </div>
+    <div class="metric-grid fade-up">
+      <div class="metric-card">
+        <div class="metric-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h4>Average Dwell Time</h4>
+        <p>How much longer customers stay when they hear music optimized for their psychology.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <h4>Average Transaction Value</h4>
+        <p>Are customers buying more per visit? Audio environment priming directly influences willingness to pay.</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </div>
+        <h4>Items Per Transaction</h4>
+        <p>Does the soundtrack encourage customers to browse longer and add more to their basket?</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h4>Foot Traffic Patterns</h4>
+        <p>Peak hours, visit frequency, and traffic flow. Does music draw more customers in and keep them longer?</p>
+      </div>
+      <div class="metric-card">
+        <div class="metric-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+        </div>
+        <h4>Return Visit Frequency</h4>
+        <p>Do customers come back more often when they've experienced music designed for them?</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU NEED -->
+<section class="section">
+  <div class="container">
+    <div class="fade-up" style="text-align: center; margin-bottom: 4rem;">
+      <p class="section-eyebrow">Requirements</p>
+      <h2>What you need to get started</h2>
+    </div>
+    <div class="req-grid fade-up">
+      <div class="req-item">
+        <div class="req-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <div>
+          <h4>iPad or Tablet with WiFi</h4>
+          <p>We provide the app. Any modern tablet works. Tuck it behind a counter or in your office.</p>
+        </div>
+      </div>
+      <div class="req-item">
+        <div class="req-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><circle cx="12" cy="14" r="4"/><line x1="12" y1="6" x2="12.01" y2="6"/></svg>
+        </div>
+        <div>
+          <h4>Bluetooth or AirPlay Speakers</h4>
+          <p>Most commercial speaker systems work. We can integrate with whatever you have.</p>
+        </div>
+      </div>
+      <div class="req-item">
+        <div class="req-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <div>
+          <h4>Two Comparable Store Locations</h4>
+          <p>Test + control. Similar demographics, traffic, and product mix. One location? We do before/after instead.</p>
+        </div>
+      </div>
+      <div class="req-item">
+        <div class="req-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+        </div>
+        <div>
+          <h4>Access to POS & Analytics Data</h4>
+          <p>Transaction data, hourly traffic counts, and loyalty program data if available. This is how we measure ROI.</p>
+        </div>
+      </div>
+      <div class="req-item">
+        <div class="req-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D4A843" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <div>
+          <h4>60–90 Minutes for ICP Workshop</h4>
+          <p>Your team meets with us to define your ideal customer profile. This is the foundation for everything.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- What We Measure -->
+<!-- WHAT IT COSTS -->
+<section class="section" style="background: rgba(212, 168, 67, 0.03); border-top: 1px solid rgba(212, 168, 67, 0.08); border-bottom: 1px solid rgba(212, 168, 67, 0.08);">
+  <div class="container">
+    <div class="fade-up" style="text-align: center; margin-bottom: 3rem;">
+      <p class="section-eyebrow">Investment</p>
+      <h2>What it costs</h2>
+    </div>
+    <div class="cost-grid fade-up">
+      <div class="cost-card">
+        <div class="cost-price">Free</div>
+        <div class="cost-name">Pilot Music Streaming</div>
+        <p>90 days. You don't pay anything until you see results and decide to convert to a paid plan.</p>
+      </div>
+      <div class="cost-card">
+        <div class="cost-price">$2,500–$10,000</div>
+        <div class="cost-name">Onboarding Fee</div>
+        <p>Covers psychographic research, musicological translation, and soundtrack generation. Complexity and store size determine the cost.</p>
+      </div>
+      <div class="cost-card">
+        <div class="cost-price">$299–$599/mo</div>
+        <div class="cost-name">After Conversion</div>
+        <p>Per location. Plan tier depends on scale and features. Monthly billing, no long-term lock-in.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
 <section class="section">
   <div class="container">
-    <h2 style="text-align: center; margin-bottom: 3rem; font-family: 'Manrope', sans-serif;">What We Measure</h2>
-    <div class="card-grid">
-      <div class="card fade-up">
-        <div class="card-title">Average Dwell Time</div>
-        <p class="card-text">Test location vs. control location. How much longer are customers staying when they hear music optimized for their psychology?</p>
+    <div class="fade-up" style="text-align: center; margin-bottom: 3rem;">
+      <p class="section-eyebrow">FAQ</p>
+      <h2>Common Questions</h2>
+    </div>
+    <div class="faq-grid fade-up">
+      <div class="faq-item">
+        <h4>What if I only have one location?</h4>
+        <p>No problem. We do before/after testing instead of A/B testing. We measure your store's performance for 2 weeks without music, then 8 weeks with music.</p>
       </div>
-      <div class="card fade-up">
-        <div class="card-title">Average Transaction Value</div>
-        <p class="card-text">Are customers buying more per visit? Willingness to pay is directly influenced by audio environment priming.</p>
+      <div class="faq-item">
+        <h4>What speakers work?</h4>
+        <p>Any Bluetooth or AirPlay compatible system. That's most commercial speakers. Proprietary system? Let us know and we'll figure it out.</p>
       </div>
-      <div class="card fade-up">
-        <div class="card-title">Items Per Transaction</div>
-        <p class="card-text">Does the soundtrack encourage customers to browse longer and add more to their basket?</p>
+      <div class="faq-item">
+        <h4>Who manages the music day-to-day?</h4>
+        <p>Fully automated. The app runs 24/7. Once you press play, it streams continuously. Zero daily management required.</p>
       </div>
-      <div class="card fade-up">
-        <div class="card-title">Foot Traffic Patterns</div>
-        <p class="card-text">Peak hours, visit frequency, and traffic flow distribution. Does music draw more customers in and keep them longer?</p>
+      <div class="faq-item">
+        <h4>Can staff override the music?</h4>
+        <p>Yes. Pause and skip controls in the app. But it's rarely needed — the music is designed to work all day.</p>
       </div>
-      <div class="card fade-up">
-        <div class="card-title">Return Visit Frequency</div>
-        <p class="card-text">If trackable through your POS or loyalty program. Do customers come back more often when they've experienced music designed for them?</p>
+      <div class="faq-item">
+        <h4>What if the pilot doesn't show results?</h4>
+        <p>You walk away with the data. No strings attached. You pay nothing for streaming and only pay the onboarding fee.</p>
+      </div>
+      <div class="faq-item">
+        <h4>How much data do I get?</h4>
+        <p>Complete weekly analytics dashboards — dwell time, traffic, transaction data, and ROI calculations. Everything you need to make a confident decision.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- What You Need -->
-<section class="section" style="background-color: rgba(212, 168, 67, 0.05); padding: 4rem 0;">
-  <div class="container">
-    <h2 style="text-align: center; margin-bottom: 3rem; font-family: 'Manrope', sans-serif;">What You Need to Get Started</h2>
-    <div class="card-grid">
-      <div class="card fade-up" style="border: 1px solid #D4A843;">
-        <div class="card-title">iPad or Tablet with WiFi</div>
-        <p class="card-text">We provide the app. Any modern iPad or tablet works. This runs continuously and can be tucked behind a counter or in your office.</p>
-      </div>
-      <div class="card fade-up" style="border: 1px solid #D4A843;">
-        <div class="card-title">Bluetooth or AirPlay Speakers</div>
-        <p class="card-text">Most commercial speaker systems work. If you have any audio system already installed, we can integrate with it.</p>
-      </div>
-      <div class="card fade-up" style="border: 1px solid #D4A843;">
-        <div class="card-title">Two Comparable Store Locations</div>
-        <p class="card-text">Test location + control location. Similar demographics, traffic, and product mix. If you only have one location, we can do before/after instead of A/B testing.</p>
-      </div>
-      <div class="card fade-up" style="border: 1px solid #D4A843;">
-        <div class="card-title">Access to POS & Analytics Data</div>
-        <p class="card-text">Transaction data, hourly traffic counts, and (if available) customer loyalty program data. This is how we measure ROI.</p>
-      </div>
-      <div class="card fade-up" style="border: 1px solid #D4A843;">
-        <div class="card-title">60–90 Minutes for ICP Workshop</div>
-        <p class="card-text">Your team meets with us to define your ideal customer profile. This is the foundation for everything—worthwhile time investment.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- What It Costs -->
-<section class="section">
-  <div class="container">
-    <h2 style="text-align: center; margin-bottom: 3rem; font-family: 'Manrope', sans-serif;">What It Costs</h2>
-    <div style="max-width: 700px; margin: 0 auto;">
-      <div class="cost-item" style="margin-bottom: 2.5rem; padding: 2rem; border-left: 3px solid #D4A843;">
-        <h4 style="color: #D4A843; margin-bottom: 0.5rem;">Pilot Music Streaming</h4>
-        <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">Free for 90 days</p>
-        <p style="opacity: 0.8;">You don't pay anything until you see results and decide to convert to a paid plan.</p>
-      </div>
-      <div class="cost-item" style="margin-bottom: 2.5rem; padding: 2rem; border-left: 3px solid #D4A843;">
-        <h4 style="color: #D4A843; margin-bottom: 0.5rem;">Onboarding Fee</h4>
-        <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">$2,500–$10,000</p>
-        <p style="opacity: 0.8;">Covers psychographic research, musicological translation, and soundtrack generation. Complexity and store size determine the cost within this range.</p>
-      </div>
-      <div class="cost-item" style="padding: 2rem; border-left: 3px solid #D4A843;">
-        <h4 style="color: #D4A843; margin-bottom: 0.5rem;">After Conversion</h4>
-        <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">$299–$599/location/month</p>
-        <p style="opacity: 0.8;">Plan tier depends on scale and features. Monthly billing with no long-term lock-in.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ Section -->
-<section class="section">
-  <div class="container">
-    <h2 style="text-align: center; margin-bottom: 3rem; font-family: 'Manrope', sans-serif;">Common Questions</h2>
-    <div class="faq-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
-      <div class="faq-item">
-        <h4 style="color: #D4A843; margin-bottom: 1rem;">What if I only have one location?</h4>
-        <p>No problem. We do before/after testing instead of A/B testing. We measure your store's performance for 2 weeks without music, then 8 weeks with music. You'll see the lift clearly.</p>
-      </div>
-
-      <div class="faq-item">
-        <h4 style="color: #D4A843; margin-bottom: 1rem;">What speakers work?</h4>
-        <p>Any Bluetooth or AirPlay compatible system. That's most commercial speakers. If you have something proprietary, let us know and we'll figure it out.</p>
-      </div>
-
-      <div class="faq-item">
-        <h4 style="color: #D4A843; margin-bottom: 1rem;">Who manages the music day-to-day?</h4>
-        <p>Fully automated. The app runs in the background 24/7. Once you press play, your music streams continuously. Zero daily management required.</p>
-      </div>
-
-      <div class="faq-item">
-        <h4 style="color: #D4A843; margin-bottom: 1rem;">Can staff override the music?</h4>
-        <p>Yes. There are pause and skip controls in the app if staff ever need to pause or manually jump to another track. But it's rarely needed—the music is designed to work all day.</p>
-      </div>
-
-      <div class="faq-item">
-        <h4 style="color: #D4A843; margin-bottom: 1rem;">What if the pilot doesn't show results?</h4>
-        <p>You walk away. We'll give you the data. No strings attached. You pay nothing for streaming and only pay the onboarding fee if you learned something valuable about your customer.</p>
-      </div>
-
-      <div class="faq-item">
-        <h4 style="color: #D4A843; margin-bottom: 1rem;">How much data do I get after 90 days?</h4>
-        <p>Complete weekly analytics dashboards showing dwell time, traffic, transaction data, and ROI calculations. You'll have everything you need to make a confident decision about converting to a paid plan.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Final CTA Section -->
-<section class="section" style="text-align: center; padding: 5rem 0;">
+<!-- CTA -->
+<section class="section" style="text-align: center;">
   <div class="container">
     <h2 style="margin-bottom: 1rem;">Ready to run the test?</h2>
-    <p style="font-size: 1.1rem; opacity: 0.85; margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">90 days. No upfront cost for music. Real data. If it works, you know exactly what you're getting into. If it doesn't, you learned something about your customer.</p>
-    <a href="mailto:hello@entuned.co?subject=Entuned%20Pilot%20Inquiry" class="btn btn-primary" style="font-size: 1.05rem; padding: 1rem 2.5rem;">Start Your Pilot</a>
+    <p class="subline">90 days. No upfront cost for music. Real data. If it works, you know exactly what you're getting into.</p>
+    <a href="mailto:hello@entuned.co?subject=Entuned%20Pilot%20Inquiry" class="btn btn-primary">Start Your Pilot</a>
   </div>
 </section>
 
