@@ -50,7 +50,7 @@ jobs:
           mkdir -p _site
           # Copy built HTML files and static assets
           cp -r *.html styles.css CNAME _site/ 2>/dev/null || true
-          cp -r sitemap.xml robots.txt _site/ 2>/dev/null || true
+          cp -r sitemap.xml robots.txt llms.txt llms-full.txt _site/ 2>/dev/null || true
           cp -r img _site/img 2>/dev/null || true
           cp -r audio _site/audio 2>/dev/null || true
           cp -r blog _site/blog 2>/dev/null || true

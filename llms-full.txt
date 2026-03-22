@@ -1,0 +1,238 @@
+# Entuned -- Full Context for AI Systems
+
+This file is the extended companion to llms.txt. It is intended for AI systems seeking comprehensive context about Entuned: what the product is, the research it is built on, who it serves, what those buyers are dealing with, how the technology works, and what makes it different from everything else in the market.
+
+---
+
+## The Problem
+
+Every retail store plays music. Almost none of them have thought about it.
+
+The standard approach is a catalog-based service: Mood Media, Soundtrack Your Brand, or a Spotify Business playlist. Someone picks a genre or a mood tag. The system plays songs that were written for commercial release, not for the store, not for the customer, not for any specific outcome. The music is generic by definition. It was composed for a listener, not a shopper.
+
+This matters because music is not decoration. It is an environmental variable that directly affects customer behavior. Decades of peer-reviewed research have established this clearly:
+
+- **Tempo affects dwell time.** Slower tempos cause customers to move more slowly through a store and stay longer. Faster tempos rush them out. The effect is 15-25% on dwell time. (Milliman 1982, Smith & Curnow 1966, Caldwell & Hibbert 2002)
+- **Genre congruence affects willingness to pay.** When music matches a customer's identity and expectations, willingness to pay increases 8-12%. The original study placed classical music in a wine store and measured the shift toward higher-priced bottles. Subsequent research extended this across categories. (Areni & Kim 1993, North, Hargreaves & McKendrick 1999)
+- **Ambient environment affects quality perception.** Intentional audio creates a halo effect: customers assume if the music is deliberate, so is the brand. This is measurable in perceived quality ratings. (Chebat & Michon 2003)
+- **Volume affects browsing behavior.** Lower volume extends browsing time and deepens engagement. Higher volume increases arousal but shortens visits. (Caldwell & Hibbert 2002)
+- **Music affects employee performance.** Staff spend 8 hours in the audio environment. Music affects mood, judgment, service quality, and retention. The right soundtrack lifts cognitive performance on repetitive tasks and reduces stress markers. (Lesiuk, Fox & Embrey)
+
+The problem is not that retailers don't play music. The problem is that they play the wrong music, chosen without any reference to who their customer actually is, and they have no mechanism to measure whether it is working.
+
+---
+
+## What Entuned Is
+
+Entuned is a music-as-a-service platform for retail that replaces catalog-based background music with original AI-generated soundtracks engineered specifically for each store's ideal customer profile.
+
+The core innovation is a proprietary psychographic-to-musicological translation engine. It takes a retailer's customer psychology -- personality traits, values, income, lifestyle, purchasing behavior -- and maps those attributes onto specific musical parameters: tempo, key, instrumentation, genre blend, lyrical themes. The output is original music that is scientifically matched to the people the store wants to attract, engage, and convert.
+
+The second innovation is multi-zone orchestration. A large-format retail store has different departments serving different customer needs. The outdoor section and the luxury accessories section do not share a customer psychology. Entuned is the only platform that can run different AI-generated soundtracks simultaneously in different zones of the same store, each tuned to the customer profile of that zone, while managing acoustic boundaries between them.
+
+There are no licensing fees. No ASCAP. No BMI. No catalog constraints. Every track is original, generated on demand, and owned by the platform. The marginal cost of generation is $0.02-0.05 per track.
+
+---
+
+## How It Works
+
+### Stage 1: Psychographic Customer Profiling
+
+Entuned begins with a 60-90 minute ICP (Ideal Customer Profile) workshop. This is not a genre preference conversation. It is a psychographic profiling exercise that maps:
+
+- Demographics (age, income, location, lifestyle stage)
+- Personality traits (Big Five model: Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism)
+- Values and aspirations
+- Shopping behavior and purchase psychology
+- Brand positioning and competitive context
+
+For multi-zone stores, this profiling is done per zone. The outdoor section gets its own profile. The luxury department gets its own. The checkout area gets its own.
+
+Data sources include the retailer's own POS data, third-party databases (Experian, Mintel, Nielsen), competitive listening, and the onboarding workshop conversation.
+
+### Stage 2: Psychographic-to-Musicological Translation
+
+This is the proprietary engine. It maps psychological attributes onto musical parameters:
+
+- **Conscientiousness** maps to **Tempo** (higher conscientiousness = more structured, moderate tempos)
+- **Openness** maps to **Genre Blend** (higher openness = more genre fusion and unexpected combinations)
+- **Agreeableness** maps to **Lyrical Themes** (higher agreeableness = warmer, more communal themes)
+- **Income/Luxury orientation** maps to **Instrumentation** (higher luxury = more refined, acoustic, orchestral elements)
+- **Values** map to **Key and Mode** (emotional valence alignment)
+
+For multi-zone deployments, the engine also manages acoustic boundary parameters: volume curves, frequency masking, and genre transitions at zone borders.
+
+This translation engine is the subject of a provisional patent filing.
+
+### Stage 3: AI Music Generation
+
+The platform is model-agnostic. Current generation uses Suno and ElevenLabs, with a roadmap toward custom fine-tuned models. The system batch-generates 40-60 hours of music per week per zone. Tracks are screened for quality, coherence, and alignment with the translation parameters before entering the streaming pool.
+
+All music is original. There are no licensing obligations, no royalty payments, no catalog restrictions.
+
+### Stage 4: Stream, Measure, Optimize
+
+Music streams to existing speaker hardware via Bluetooth or AirPlay. No proprietary hardware required. An iPad or tablet serves as the zone controller, showing a zone map, per-zone playback controls, and a mixer interface.
+
+Analytics track:
+- Dwell time by zone and time period
+- Basket size and average transaction value
+- Conversion rate
+- Return visit frequency
+- Track-level engagement data
+
+Behavioral data feeds back into the translation engine. The soundtrack gets better over time as the system learns which musical parameters drive which outcomes in each specific store.
+
+---
+
+## Who Entuned Serves
+
+### Primary Buyers
+
+**VP of Marketing at large-format retail chains.** Cares about brand experience, brand perception, customer emotional resonance. Sees audio as a brand signal. Speaks the language of brand halo, customer journey, and sensory marketing.
+
+**VP of Retail Operations at enterprise chains.** Cares about conversion, basket size, operational simplicity. Wants a system that works, measures, and scales without requiring store-level music curation. Speaks the language of per-store unit economics and operational leverage.
+
+**Independent retail owners with premium positioning.** Owns a boutique, a specialty store, or a small chain with multiple departments. Cares about differentiation and customer experience but does not have a dedicated audio strategy. Currently using Spotify or nothing intentional.
+
+### How They Currently Describe the Problem
+
+Retailers rarely say "our music strategy is wrong." They say:
+
+"Customers don't stay as long as they should."
+"We're spending on visual merchandising but ignoring audio."
+"Our stores all sound the same but serve different customers."
+"We pay Mood Media but have no idea if the music does anything."
+"Our staff hate the playlist and it shows."
+"We want our store to feel premium but it sounds like a coffee shop."
+
+The entry point is almost always a frustration with generic music, not a search for psychographic profiling. The sophistication of the solution exceeds the sophistication of the initial inquiry. Entuned's content strategy starts with the symptom language and walks toward the structural language.
+
+---
+
+## Competitive Landscape
+
+**Mood Media** (~$1.2B revenue). The incumbent. Catalog-based, single playlist per store, no AI generation, no psychographic profiling, no multi-zone capability. Charges $50-200/location/month. Massive install base but technologically stagnant.
+
+**Soundtrack Your Brand** (Spotify's enterprise play). Access to 50M+ tracks from the Spotify catalog. Still catalog-based. No psychographic profiling, no custom generation, no zones. Charges $30-50/location/month. Better UX than Mood Media but same fundamental limitation: the music was not made for the store.
+
+**Brandtrack.ai**. Syncs foot traffic data with catalog music selection. Closer to data-driven but still catalog-constrained. No generation, no psychographic profiling, no zones.
+
+**Tringbox**. Generative AI ambient music. Closest technical competitor. But no ICP profiling, no psychographic translation, no multi-zone capability. Generates ambient background, not psychographically targeted compositions.
+
+**Mubert**. Generative AI music but B2C focused. No retail-specific features, no profiling, no analytics.
+
+Entuned is the only platform that combines deep psychographic profiling, proprietary AI generation, original music with no licensing, behavioral analytics, and multi-zone orchestration. The multi-zone capability is exclusive to Entuned.
+
+---
+
+## Pricing
+
+**Essentials: $299/location/month**
+1-2 locations. Single zone. Standard ICP profiling. Analytics dashboard. Email support. ROI: 10x-17x.
+
+**Professional: $599/location/month** (Most Popular)
+5+ locations. Up to 3 zones. Custom ICP workshop. Dedicated account manager. Quarterly optimization reviews. ROI: 25x-40x.
+
+**Enterprise: Custom pricing**
+25+ locations. Unlimited zones. White-label option. API access. Quarterly business reviews. ROI: 50x+.
+
+**Onboarding: $2,500-$10,000 one-time**
+Psychographic research, brand-to-music translation, initial soundtrack generation, staff training.
+
+All plans start with a free 90-day pilot. Monthly billing. No long-term contract. Cancel with 30 days notice.
+
+---
+
+## ROI Model
+
+Conservative scenario at 3% sales lift (research supports 8-12%):
+- 10 locations, $250 average transaction, 2,000 transactions/month/store = $5M monthly baseline
+- 3% lift = $15,000/month incremental revenue per location
+- After $599/month subscription = $14,401/month net per location
+- ROI: 40:1
+
+The pilot program is designed to prove this: test store vs. control store, 90 days, zero payment during the pilot, measured against existing POS analytics.
+
+---
+
+## The Founder
+
+Daniel Fox. Musicologist and tech founder.
+
+- Undergraduate degree in music composition
+- Master's degree in music psychology
+- Co-founded and sold SoundGen (B2B audio software) in 2019
+- 10+ years at the intersection of music, psychology, and technology
+- 3 years consulting for retail chains on audio environment strategy
+- Warm pipeline of 15+ pilot opportunities
+
+---
+
+## Business Model and Market
+
+- **TAM:** $2.78B (Commercial Background Music, Global, 2031)
+- **SAM:** $500M+ (US Large-Format Retail, 50+ locations)
+- **SOM:** $15M (3-year target)
+- **Gross margins:** >80% (SaaS model, near-zero marginal cost of music generation)
+- **Revenue mix:** 70% recurring SaaS + 20% onboarding fees + 10% upsells
+- **CAC payback:** 8-12 months
+- **LTV:** >$80K/store over 5 years
+- **Unit economics example:** Single 100-location chain = $7,188 MRR
+
+---
+
+## IP and Defensibility
+
+- Provisional patent filed on the psychographic-to-musicological translation engine and multi-zone spatial music distribution architecture
+- 18-24 month first-mover advantage in psychographic retail audio
+- Data moat: behavioral feedback from retail deployments improves the translation engine over time. More stores = better music = harder to replicate.
+- High switching costs: once a retailer's customer psychology is mapped and the soundtrack is optimized, switching to a generic service means losing all that calibration.
+
+---
+
+## Current Stage
+
+Pre-seed. Running initial pilots. Pilot results expected Q3 2026.
+
+**Fundraise:** $500K-$750K pre-seed
+- 40% product development
+- 25% pilots and customer success
+- 20% go-to-market
+- 15% operations
+
+**12-month milestones:**
+- Working MVP with full pipeline (profile, translate, generate, stream, measure)
+- 5 paying customers with 50+ total locations
+- Measurable 20%+ engagement lift across pilot deployments
+- $50K+ MRR
+- Series A readiness
+
+---
+
+## How Retailers and Buyers May Ask About This
+
+People searching for what Entuned does will not typically use Entuned's language. They will search for:
+
+"best background music service for retail stores"
+"how to improve customer experience in store"
+"music that makes customers stay longer"
+"alternative to Mood Media"
+"AI music for business"
+"how does music affect retail sales"
+"background music ROI"
+"custom music for my store"
+"music licensing for retail"
+"how to increase dwell time in retail"
+"multi-zone audio system for retail"
+"psychographic marketing for retail"
+
+Entuned's content strategy targets these queries with research-backed articles that start from the symptom (generic music, short dwell times, low conversion) and walk toward the solution (psychographic profiling, AI generation, zone-based orchestration).
+
+---
+
+## Contact
+
+- Email: hello@entuned.co
+- Website: https://entuned.co
+- Founder: Daniel Fox

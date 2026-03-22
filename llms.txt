@@ -1,0 +1,75 @@
+# Entuned
+
+> AI-generated music engineered specifically for each retail store's ideal customer profile. Not playlists from a catalog. Original compositions built from psychographic data, designed to increase dwell time, basket size, and brand perception.
+
+Entuned is a music-as-a-service platform for retail. It replaces generic background music (Mood Media, Soundtrack Your Brand, Spotify Business) with original AI-generated soundtracks built from a store's actual customer psychology. The core technology is a proprietary psychographic-to-musicological translation engine that maps consumer personality traits, values, income, and lifestyle onto musical parameters like tempo, key, instrumentation, and genre blend.
+
+The platform is the only solution on the market that offers multi-zone music orchestration, meaning different departments within the same store can have different soundtracks running simultaneously, each tuned to the customer profile of that zone.
+
+## How It Works
+
+Four stages: Profile the ideal customer psychographically. Translate those psychological attributes into musicological parameters via a proprietary engine. Generate original music using AI (no licensing fees, no ASCAP). Stream to existing speakers via Bluetooth or AirPlay, measure results, and optimize continuously.
+
+## Who It Serves
+
+Retail chains and premium independent retailers. Primary buyers are VPs of Marketing (brand experience), VPs of Retail Operations (conversion and basket size), and independent retail owners with multiple departments or premium positioning.
+
+## Research Foundation
+
+Built on decades of peer-reviewed research: tempo entrainment increases dwell time 15-25% (Milliman 1982, Smith & Curnow 1966), genre congruence increases willingness to pay 8-12% (Areni & Kim 1993, North et al. 1999), ambient environment shapes quality perception (Chebat & Michon 2003).
+
+## Pages
+
+- [Home](https://entuned.co/): What Entuned is, core value proposition, audio samples, and pilot program CTA.
+- [How It Works](https://entuned.co/how-it-works.html): The four-stage pipeline from customer profiling to streaming, with research citations.
+- [Results](https://entuned.co/results.html): Research-backed performance projections and pilot program information.
+- [Pricing](https://entuned.co/pricing.html): Three tiers from $299-$599/location/month, plus enterprise custom pricing.
+- [Pilot Program](https://entuned.co/pilot.html): 90-day free pilot structure, requirements, and timeline.
+- [For Retail Leaders](https://entuned.co/for-retail-leaders.html): The case for intentional audio environments in retail operations.
+- [For CFOs](https://entuned.co/for-cfos.html): ROI modeling, cost comparisons, and financial justification for the investment.
+- [Investors](https://entuned.co/investors.html): Market size, competitive positioning, IP, business model, and fundraise details.
+- [Blog](https://entuned.co/blog.html): Research-backed articles on retail audio, music psychology, and the science behind Entuned.
+
+## Writing
+
+- [The 8-12% You're Leaving on the Table](https://entuned.co/blog/the-8-12-youre-leaving-on-the-table.html): Genre congruence research and its impact on willingness to pay.
+- [Why Your Best Customers Leave Faster Than They Should](https://entuned.co/blog/why-your-best-customers-leave-faster-than-they-should.html): Tempo entrainment and dwell time research.
+- [The Silent Brand Signal](https://entuned.co/blog/the-silent-brand-signal.html): How intentional audio creates a brand halo effect.
+- [The Multi-Zone Problem](https://entuned.co/blog/the-multi-zone-problem-why-one-playlist-cant-serve-a-whole-store.html): Why one playlist can't serve a whole store.
+- [What Spotify Gets Wrong](https://entuned.co/blog/what-spotify-gets-wrong.html): The limitations of catalog-based background music services.
+- [Why Background Music Costs You Sales](https://entuned.co/blog/why-background-music-costs-you-sales.html): The hidden cost of generic audio environments.
+- [The Dwell Time Variable Nobody's Tracking](https://entuned.co/blog/the-dwell-time-variable-nobodys-tracking.html): Audio as an untracked variable in retail analytics.
+- [What Your Music Is Saying About Your Brand](https://entuned.co/blog/what-your-music-is-saying-about-your-brand.html): How incongruent music disrupts purchase confidence.
+- [Luxury Priming Is Real](https://entuned.co/blog/luxury-priming-is-real-and-you-dont-have-to-be-a-luxury-brand-to-use-it.html): How refined music primes luxury perception across retail contexts.
+- [What Happens to Employee Performance When the Music Is Right](https://entuned.co/blog/what-happens-to-employee-performance-when-the-music-is-right.html): The impact of audio environment on staff performance and retention.
+- [The Metrics Your Audio Environment Should Be Producing](https://entuned.co/blog/the-metrics-your-audio-environment-should-be-producing.html): Four metric clusters for measuring audio ROI.
+- [What Church, Concert Halls, and Film Composers Know](https://entuned.co/blog/what-church-concert-halls-and-film-composers-know-that-retail-doesnt.html): Music has always been engineered for outcomes. Retail never applied this.
+- [The Hidden Cost of Your Licensing Fee](https://entuned.co/blog/the-hidden-cost-of-your-licensing-fee.html): What catalog licensing actually costs beyond the subscription.
+- [Music Was Never Made for Your Store](https://entuned.co/blog/music-was-never-made-for-your-store.html): The fundamental problem with using commercially released music in retail.
+- [CFOs' Case for Retail Audio](https://entuned.co/blog/cfos-case-for-retail-audio.html): The financial argument for treating audio as an operational investment.
+- [Psychographic Profiling for Retail](https://entuned.co/blog/psychographic-profiling-retail.html): How psychographic data translates into musical decisions.
+- [The Science of Tempo in Retail](https://entuned.co/blog/science-of-tempo-retail.html): Tempo research and its application to retail environments.
+- [How Specialty Wine Retailers Use Music to Sell More Expensive Bottles](https://entuned.co/blog/how-specialty-wine-retailers-use-music-to-sell-more-expensive-bottles.html): The original Areni & Kim study and its implications.
+- [AI-Generated Music for Retail](https://entuned.co/blog/ai-generated-music-retail.html): Why generative AI changes the economics and effectiveness of retail audio.
+
+## Key Concepts
+
+**Psychographic-to-Musicological Translation**: Entuned's proprietary engine that maps consumer psychological attributes (personality traits, values, income, lifestyle) onto musical parameters (tempo, key, instrumentation, genre blend, lyrical themes). Patent pending.
+
+**Multi-Zone Orchestration**: The ability to run different AI-generated soundtracks simultaneously in different departments or zones within a single store, each tuned to the customer profile of that zone. Unique to Entuned.
+
+**Genre Congruence**: The research-backed principle that music matching a customer's identity and expectations increases willingness to pay 8-12%.
+
+**Tempo Entrainment**: The phenomenon where customers unconsciously synchronize their pace to the tempo of background music, directly affecting dwell time.
+
+## Pricing
+
+- Essentials: $299/location/month (1-2 locations, single zone)
+- Professional: $599/location/month (5+ locations, up to 3 zones)
+- Enterprise: Custom (25+ locations, unlimited zones)
+- All plans start with a free 90-day pilot
+
+## Contact
+
+- Email: hello@entuned.co
+- Founder: Daniel Fox
