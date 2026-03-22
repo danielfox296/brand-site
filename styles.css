@@ -138,7 +138,14 @@ nav .container {
   font-size: 1.25rem;
   font-weight: 700;
   color: #D4A843;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.logo:hover {
+  opacity: 0.7;
 }
 
 .nav-links {
