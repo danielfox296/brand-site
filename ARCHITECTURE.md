@@ -1,6 +1,6 @@
 # Entuned Website — Architecture
 
-**This is a modular static site generator. Do NOT edit the HTML files directly.**
+**This is a modular static site generator. Do NOT edit the built HTML files directly.**
 
 ## How it works
 
@@ -17,21 +17,20 @@ _src/
     header.html             ← Shared nav — edit here, updates ALL pages
     footer.html             ← Shared footer — same deal
   pages/
-    index/                  ← One directory per page
+    <page-name>/            ← One directory per page
       config.json           ← Title, output filename
       style.css             ← Page-specific CSS (optional)
       sections/
-        01-content.html     ← Page body content
-    how-it-works/
-    science/
-    blog/                   ← Blog index page
-    investors/
-    download/
+        01-content.html     ← Page body content (HTML fragment, no doctype)
+    blog/                   ← Blog index/listing page
     blog-<slug>/            ← Individual blog posts (output to blog/<slug>.html)
 
 build.py                    ← The build script (pure Python, no dependencies)
 styles.css                  ← Global stylesheet (NOT generated — edit directly)
 img/                        ← Static images (NOT generated — edit directly)
+img/blog/                   ← Blog hero images — filename matches the blog slug
+audio/                      ← Static audio files (NOT generated — edit directly)
+.github/workflows/deploy.yml ← GitHub Actions deploy to GitHub Pages
 ```
 
 ## Key rules
@@ -42,11 +41,91 @@ img/                        ← Static images (NOT generated — edit directly)
 - **To add a blog post**: create `_src/pages/blog-<slug>/` with config output set to `blog/<slug>.html`
 - **Global CSS** lives in `styles.css` at the repo root (not inside `_src/`)
 - **Page-specific CSS** goes in `_src/pages/<name>/style.css` — injected as inline `<style>`
+- **Static assets** (`img/`, `audio/`) live at the repo root and are referenced with relative paths from the HTML
 
-## Blog posts
+## config.json format
 
-Blog posts live in `_src/pages/blog-<slug>/`. Their `config.json` sets `"output": "blog/<slug>.html"`. The build script automatically adjusts all nav/footer links to use `../` so relative paths work from the subdirectory.
+Every page needs a `config.json`:
+
+```json
+{
+  "title": "Page Title | Entuned",
+  "output": "page-slug.html"
+}
+```
+
+For blog posts, output goes into the `blog/` subdirectory:
+
+```json
+{
+  "title": "Blog Post Title | Entuned",
+  "output": "blog/post-slug.html"
+}
+```
+
+The build script uses the output path depth to set `nav_prefix` — blog posts at `blog/slug.html` get `../` so relative links to styles, images, and other pages resolve correctly.
+
+## Content files
+
+Section files are plain HTML fragments. They do NOT include `<!DOCTYPE>`, `<html>`, `<head>`, or `<body>` tags. The first line of blog post content files is typically `</header>` (closing the header partial), followed by `<main>`.
+
+For non-blog pages, content starts directly with `<section>` tags.
+
+## Adding a blog post
+
+1. Create `_src/pages/blog-<slug>/`
+2. Add `config.json` with `"output": "blog/<slug>.html"`
+3. Add `sections/01-content.html` — HTML fragment starting with `</header>` then `<main><article>...`
+4. Optionally add `style.css` for page-specific styles
+5. Add hero image to `img/blog/<slug>.jpg`
+6. Add a card entry in `_src/pages/blog/sections/01-content.html` (the blog listing)
+7. Run `python3 build.py`
+
+## Design system
+
+- **Background:** #080808
+- **Gold accent:** #D4A843
+- **Text:** #E8E4DE
+- **Fonts:** Manrope (headings, via Google Fonts CDN), Inter (body)
+- **Button classes:** `.btn .btn-primary` (gold bg), `.btn .btn-secondary` (gold border)
+- **Layout:** `.container` (max-width 1200px), `.section` (8rem padding)
+- **Cards:** `.card`, `.card-grid`, `.card-title`, `.card-text`
+- **Stats:** `.stats-section`, `.stats-grid`, `.stat-item`, `.stat-number`, `.stat-label`
+- **Pricing:** `.pricing-grid`, `.pricing-card`, `.pricing-card.featured`
+- **Steps:** `.steps-container`, `.step`, `.step-number`, `.step-content`
+- **Audio:** `.audio-player-wrap`, `.audio-track`, `.audio-play-btn`, `.audio-progress`, `.audio-time`
+- **Animations:** `.fade-up`, `.fade-in` (triggered by Intersection Observer in base.html)
+
+## JavaScript (in base.html)
+
+The base layout includes vanilla JS for:
+- **Nav active state** — highlights current page link
+- **Intersection Observer** — triggers `.fade-up` and `.fade-in` animations on scroll
+- **Mobile menu toggle** — opens/closes `.nav-links` on mobile via `.mobile-open` class
+- **Audio player** — play/pause, progress bar, time display for `.audio-track` elements
+
+No build tools, no npm, no bundler. Everything is vanilla JS in a single `<script>` block.
+
+## CTAs and contact
+
+All CTAs that require user contact point to `mailto:hello@entuned.co` with contextual subject lines, or to the pilot program page (`pilot.html`).
 
 ## Deploy
 
-GitHub Actions runs `python3 build.py` then deploys to GitHub Pages. The player app (separate repo: `entuned-player`) gets built and dropped into `/play/`. See `.github/workflows/deploy.yml`.
+GitHub Actions (`.github/workflows/deploy.yml`) runs on push to `main`:
+1. Checks out `brand-site` repo
+2. Checks out `entuned-player` repo, builds it with Vite, drops output into `_site/play/`
+3. Runs `python3 build.py` to generate all HTML from `_src/`
+4. Stages everything into `_site/` (HTML, CSS, img, audio, blog, play)
+5. Deploys to GitHub Pages at entuned.co
+
+To deploy: `git add -A && git commit -m "message" && git push origin main`
+
+## Testing locally
+
+```bash
+python3 -m http.server 8000
+# Visit http://localhost:8000
+```
+
+Note: the audio player requires HTTP (not `file://`) to load audio files, so use the local server.

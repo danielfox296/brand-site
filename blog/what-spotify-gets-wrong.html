@@ -222,8 +222,9 @@
       <li><a href="../index.html">Home</a></li>
       <li><a href="../how-it-works.html">How It Works</a></li>
       <li><a href="../science.html">The Science</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="../pilot.html">Pilot Program</a></li>
       <li><a href="../blog.html">Blog</a></li>
-      <li><a href="../play/">Listen</a></li>
     </ul>
     <button class="mobile-menu-toggle">&#9776;</button>
   </div>
@@ -359,14 +360,24 @@
       <ul>
         <li><a href="../how-it-works.html">How It Works</a></li>
         <li><a href="../science.html">The Science</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="../pilot.html">Pilot Program</a></li>
+        <li><a href="../results.html">Results</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For You</h4>
+      <ul>
+        <li><a href="../for-cfos.html">For CFOs</a></li>
+        <li><a href="../for-retail-leaders.html">For Retail Leaders</a></li>
+        <li><a href="../investors.html">For Investors</a></li>
         <li><a href="../blog.html">Blog</a></li>
       </ul>
     </div>
     <div class="footer-section">
       <h4>Company</h4>
       <ul>
-        <li><a href="../investors.html">For Investors</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="mailto:hello@entuned.co">Contact</a></li>
         <li><a href="#privacy">Privacy Policy</a></li>
       </ul>
     </div>
@@ -405,6 +416,51 @@
     document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
       observer.observe(el);
     });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = navLinksEl.classList.contains('mobile-open') ? '✕' : '☰';
+      });
+    }
+
+    // Audio player
+    (function() {
+      let currentAudio = null;
+      let currentTrack = null;
+      document.querySelectorAll('.audio-track').forEach(track => {
+        const btn = track.querySelector('.audio-play-btn');
+        const bar = track.querySelector('.audio-progress-bar');
+        const time = track.querySelector('.audio-time');
+        if (!btn) return;
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          if (currentAudio && currentTrack === track) {
+            if (currentAudio.paused) { currentAudio.play(); btn.innerHTML = '&#9646;&#9646;'; track.classList.add('playing'); }
+            else { currentAudio.pause(); btn.innerHTML = '&#9654;'; track.classList.remove('playing'); }
+            return;
+          }
+          if (currentAudio) { currentAudio.pause(); currentTrack.querySelector('.audio-play-btn').innerHTML = '&#9654;'; currentTrack.classList.remove('playing'); currentTrack.querySelector('.audio-progress-bar').style.width = '0%'; }
+          currentAudio = new Audio(track.dataset.src);
+          currentTrack = track;
+          currentAudio.play();
+          btn.innerHTML = '&#9646;&#9646;';
+          track.classList.add('playing');
+          currentAudio.addEventListener('timeupdate', () => {
+            if (!currentAudio.duration) return;
+            const pct = (currentAudio.currentTime / currentAudio.duration) * 100;
+            bar.style.width = pct + '%';
+            const m = Math.floor(currentAudio.currentTime / 60);
+            const s = Math.floor(currentAudio.currentTime % 60);
+            time.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+          });
+          currentAudio.addEventListener('ended', () => { btn.innerHTML = '&#9654;'; track.classList.remove('playing'); bar.style.width = '0%'; time.textContent = '0:00'; currentAudio = null; currentTrack = null; });
+        });
+      });
+    })();
   </script>
 </body>
 </html>

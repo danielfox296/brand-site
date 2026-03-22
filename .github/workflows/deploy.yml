@@ -51,6 +51,7 @@ jobs:
           # Copy built HTML files and static assets
           cp -r *.html styles.css CNAME _site/ 2>/dev/null || true
           cp -r img _site/img 2>/dev/null || true
+          cp -r audio _site/audio 2>/dev/null || true
           cp -r blog _site/blog 2>/dev/null || true
           # Drop player build into /play/
           mkdir -p _site/play
