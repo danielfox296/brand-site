@@ -53,6 +53,16 @@
       });
     }
 
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
     // Audio player
     (function() {
       let currentAudio = null;
