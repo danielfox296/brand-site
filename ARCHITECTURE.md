@@ -107,6 +107,15 @@ The base layout includes vanilla JS for:
 
 No build tools, no npm, no bundler. Everything is vanilla JS in a single `<script>` block.
 
+## Email
+
+Email for entuned.co is handled by Cloudflare Email Routing (free). See `ops/Email_Setup.txt` for full details.
+
+- **Forwarding:** hello@entuned.co and daniel@entuned.co both forward to Gmail
+- **Send-as:** Both addresses are configured in Gmail Settings → Accounts → Send mail as
+- **DNS:** Managed by Cloudflare (nameservers: malcolm.ns.cloudflare.com / roxy.ns.cloudflare.com)
+- **To add more addresses:** Cloudflare dashboard → entuned.co → Email → Routing → Create address
+
 ## CTAs and contact
 
 All CTAs that require user contact point to `mailto:hello@entuned.co` with contextual subject lines, or to the pilot program page (`pilot.html`).
