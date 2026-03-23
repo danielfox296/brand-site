@@ -40,7 +40,7 @@ audio/                      ← Static audio files (NOT generated — edit direc
 - **To add a page**: create a new directory in `_src/pages/` with `config.json` and `sections/`
 - **To add a blog post**: create `_src/pages/blog-<slug>/` with config output set to `blog/<slug>.html`
 - **Global CSS** lives in `styles.css` at the repo root (not inside `_src/`)
-- **Page-specific CSS** goes in `_src/pages/<name>/style.css` — injected as inline `<style>`
+- **CSS is centralized.** Blog article layout, blog listing, blog content components (`.stat-box`, `.warning-box`, `.cta`, `.highlight`, `.byline`, `.meta`, `.hero-image`), `.section-eyebrow`, and `.icon-box` all live in `styles.css`. Page-specific `style.css` files should only contain styles truly unique to that page (e.g., `.tempo-grid` for the tempo blog post, `.timeline` for the pilot page).
 - **Static assets** (`img/`, `audio/`) live at the repo root and are referenced with relative paths from the HTML
 
 ## config.json format
@@ -85,15 +85,21 @@ For non-blog pages, content starts directly with `<section>` tags.
 
 - **Background:** #080808
 - **Gold accent:** #d7af74
-- **Accent:** #829eac
+- **Blue accent:** #829eac
 - **Text:** #E8E4DE
 - **Fonts:** Manrope (headings, via Google Fonts CDN), Inter (body)
-- **Button classes:** `.btn .btn-primary` (gold bg), `.btn .btn-secondary` (gold border)
+- **Logo:** `img/Entuned_logo.png` (transparent PNG logotype, used in header and footer via `.logo-img` and `.footer-logo-img`)
+- **Button classes:** `.btn .btn-primary` (gold bg), `.btn .btn-secondary` (gold border), `.btn-accent` (blue bg), `.btn-accent-outline` (blue border)
+- **Accent utilities:** `.accent` (blue text), `.accent-bg` (blue background)
 - **Layout:** `.container` (max-width 1200px), `.section` (8rem padding)
 - **Cards:** `.card`, `.card-grid`, `.card-title`, `.card-text`
 - **Stats:** `.stats-section`, `.stats-grid`, `.stat-item`, `.stat-number`, `.stat-label`
 - **Pricing:** `.pricing-grid`, `.pricing-card`, `.pricing-card.featured`
-- **Steps (How It Works):** `.hiw-step`, `.hiw-step-number`, `.hiw-step-body` (page-level CSS)
+- **Blog article layout (global):** `.article-hero`, `.article-body`, `.article-meta`, `.article-cta`, `.back-link`, `.hero-image`
+- **Blog content components (global):** `.stat-box`, `.warning-box`, `.cta`, `.highlight`, `.byline`, `.meta`
+- **Blog listing (global):** `.blog-hero`, `.articles-grid`, `.article-card`, `.card-img`, `.card-body`, `.featured-card`, `.featured-label`
+- **Shared components (global):** `.section-eyebrow`, `.icon-box`
+- **Steps (How It Works):** `.hiw-step`, `.hiw-step-icon`, `.hiw-step-label`, `.hiw-step-body` (page-level CSS)
 - **Research cards:** `.research-grid`, `.research-card`, `.research-stat`, `.research-title`, `.research-cite` (page-level CSS)
 - **Audio:** `.audio-player-wrap`, `.audio-track`, `.audio-play-btn`, `.audio-progress`, `.audio-time`
 - **Animations:** `.fade-up`, `.fade-in` (triggered by Intersection Observer in base.html)
@@ -140,7 +146,7 @@ To deploy: `git add -A && git commit -m "message" && git push origin main`
 2. **Never edit built HTML files.** Only edit source files in `_src/`, `styles.css`, or static assets. Then run `python3 build.py`.
 3. **Rebuild after every change.** Always run `python3 build.py` and confirm it succeeds before declaring work done.
 4. **Respect the design system.** Use the colors, fonts, and component classes documented above. Don't invent one-off inline styles when a reusable class exists.
-5. **Page-specific CSS goes in `style.css`** inside the page's `_src/pages/<name>/` directory, not in the global `styles.css`, unless the component is reused across multiple pages.
+5. **CSS is centralized.** Most component styles live in global `styles.css`. Page-specific `style.css` files should only contain styles truly unique to that one page. Blog posts generally need no page-specific CSS — their layout and content components are all global. Before adding a new class to a page CSS file, check if a global class already covers it.
 6. **Keep it simple.** No build tools, no npm, no bundler. Vanilla HTML/CSS/JS only.
 7. **Follow brand voice.** Read `../VOICE.md` before writing any copy. Lead with outcomes, not technology. Never put "AI" in a page title or hero. Use "retail music strategy" as the category term, not "AI music."
 8. **Every page needs SEO.** Every config.json must have a `title` and `description`. Titles lead with the outcome. Descriptions include a stat and the pilot CTA. See `../VOICE.md` for patterns.
