@@ -1,20 +1,10 @@
-/* ===== SECTION EYEBROW ===== */
-    .section-eyebrow {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: #D4A843;
-      font-weight: 600;
-      margin-bottom: 0.75rem;
-    }
-
-    /* ===== HOW IT WORKS — STEPS ===== */
+/* ===== HOW IT WORKS — STEPS ===== */
     .hiw-step {
       display: flex;
       align-items: flex-start;
       gap: 2rem;
       padding: 2.5rem 0;
-      border-bottom: 1px solid rgba(212, 168, 67, 0.08);
+      border-bottom: 1px solid rgba(215, 175, 116, 0.08);
     }
 
     .hiw-step:last-child {
@@ -28,8 +18,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: rgba(212, 168, 67, 0.08);
-      border: 1px solid rgba(212, 168, 67, 0.15);
+      background: rgba(215, 175, 116, 0.08);
+      border: 1px solid rgba(215, 175, 116, 0.15);
       border-radius: 12px;
       margin-top: 0.25rem;
     }
@@ -38,7 +28,7 @@
       font-size: 0.75rem;
       text-transform: uppercase;
       letter-spacing: 0.1em;
-      color: #D4A843;
+      color: #d7af74;
       font-weight: 600;
       margin-bottom: 0.5rem;
     }
@@ -76,13 +66,13 @@
 
     .research-card {
       background: rgba(255, 255, 255, 0.02);
-      border: 1px solid rgba(212, 168, 67, 0.12);
+      border: 1px solid rgba(215, 175, 116, 0.12);
       padding: 2.5rem;
       transition: border-color 0.3s ease;
     }
 
     .research-card:hover {
-      border-color: rgba(212, 168, 67, 0.35);
+      border-color: rgba(215, 175, 116, 0.35);
     }
 
     .research-card-wide {
@@ -93,7 +83,7 @@
       font-family: 'Manrope', sans-serif;
       font-size: 2.25rem;
       font-weight: 700;
-      color: #D4A843;
+      color: #d7af74;
       line-height: 1.1;
     }
 
@@ -146,7 +136,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: rgba(212, 168, 67, 0.08);
+      background: rgba(215, 175, 116, 0.08);
       border-radius: 12px;
-      border: 1px solid rgba(212, 168, 67, 0.15);
+      border: 1px solid rgba(215, 175, 116, 0.15);
     }

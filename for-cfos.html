@@ -17,19 +17,17 @@
 
   <link rel="stylesheet" href="styles.css">
   <style>
-/* For-CFOs Page Styles */
+/* For-CFOs Page — overrides of global components */
 
-/* Hero Alt Override */
 .hero-alt {
-  background: linear-gradient(135deg, rgba(212, 168, 67, 0.08) 0%, rgba(212, 168, 67, 0.03) 100%);
-  border-bottom: 1px solid rgba(212, 168, 67, 0.15);
+  background: linear-gradient(135deg, rgba(215, 175, 116, 0.08) 0%, rgba(215, 175, 116, 0.03) 100%);
+  border-bottom: 1px solid rgba(215, 175, 116, 0.15);
 }
 
 .hero-alt h1 {
   font-size: 3.5rem;
   font-weight: 800;
   line-height: 1.1;
-  color: #E8E4DE;
 }
 
 .hero-alt .subline {
@@ -39,53 +37,17 @@
   font-weight: 400;
 }
 
-/* Stats Section */
-.stats-section {
-  padding: 4rem 0;
-  background: #080808;
-}
-
-.stats-section h2 {
-  font-size: 2rem;
-  margin-bottom: 2.5rem;
-  color: #E8E4DE;
-  font-weight: 700;
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 2rem;
-}
-
+/* Stat card overrides */
 .stat-item {
-  padding: 2rem;
-  background: rgba(212, 168, 67, 0.08);
-  border: 1px solid rgba(212, 168, 67, 0.15);
+  background: rgba(215, 175, 116, 0.08);
+  border: 1px solid rgba(215, 175, 116, 0.15);
   border-radius: 6px;
-  text-align: center;
-  transition: all 0.3s ease;
 }
 
 .stat-item:hover {
-  background: rgba(212, 168, 67, 0.12);
-  border-color: rgba(212, 168, 67, 0.25);
+  background: rgba(215, 175, 116, 0.12);
+  border-color: rgba(215, 175, 116, 0.25);
   transform: translateY(-2px);
-}
-
-.stat-number {
-  font-size: 2.75rem;
-  font-weight: 800;
-  color: #D4A843;
-  display: block;
-  margin-bottom: 0.75rem;
-}
-
-.stat-label {
-  font-size: 0.95rem;
-  color: #E8E4DE;
-  font-weight: 600;
-  line-height: 1.4;
 }
 
 .stat-label .small-text {
@@ -96,80 +58,25 @@
   margin-top: 0.5rem;
 }
 
-/* Section Headings */
-.section h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: #E8E4DE;
-  font-weight: 700;
-}
-
-.section h3 {
-  font-size: 1.25rem;
-  color: #E8E4DE;
-  font-weight: 700;
-}
-
-/* Card Grid Adjustments */
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-
+/* Card overrides */
 .card {
-  padding: 2rem;
-  background: rgba(212, 168, 67, 0.07);
-  border: 1px solid rgba(212, 168, 67, 0.15);
+  background: rgba(215, 175, 116, 0.07);
+  border: 1px solid rgba(215, 175, 116, 0.15);
   border-radius: 6px;
-  transition: all 0.3s ease;
 }
 
 .card:hover {
-  background: rgba(212, 168, 67, 0.1);
-  border-color: rgba(212, 168, 67, 0.25);
+  background: rgba(215, 175, 116, 0.1);
+  border-color: rgba(215, 175, 116, 0.25);
 }
 
 .card-title {
-  font-size: 1.25rem;
-  font-weight: 700;
   color: #E8E4DE;
 }
 
-.card-text {
-  font-size: 0.95rem;
-  color: rgba(232, 228, 222, 0.8);
-  line-height: 1.6;
-}
-
-/* Small Text */
-.small-text {
-  font-size: 0.75rem;
-  color: rgba(232, 228, 222, 0.6);
-}
-
-/* Button */
-.btn {
-  display: inline-block;
-  padding: 0.875rem 1.75rem;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  border: none;
-  font-size: 0.95rem;
-}
-
-.btn-primary {
-  background: #D4A843;
-  color: #080808;
-}
-
+/* Button override */
 .btn-primary:hover {
-  background: #E8C76D;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 16px rgba(212, 168, 67, 0.2);
+  box-shadow: 0 8px 16px rgba(215, 175, 116, 0.2);
 }
 
 /* Table */
@@ -186,27 +93,8 @@ table td {
   .hero-alt h1 {
     font-size: 2.25rem;
   }
-  
   .hero-alt .subline {
     font-size: 1rem;
-  }
-  
-  .section h2 {
-    font-size: 1.5rem;
-  }
-  
-  .stat-number {
-    font-size: 2rem;
-  }
-  
-  .stats-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  
-  .card-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
   }
 }
   </style>
@@ -265,11 +153,11 @@ table td {
       <div class="card">
         <div class="card-title">3% Revenue Lift</div>
         <div style="margin-top: 1rem;">
-          <div style="font-size: 2rem; font-weight: 700; color: #D4A843; margin-bottom: 0.5rem;">$15,000</div>
+          <div style="font-size: 2rem; font-weight: 700; color: #d7af74; margin-bottom: 0.5rem;">$15,000</div>
           <div class="card-text">Incremental monthly per location</div>
-          <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(212, 168, 67, 0.2);">
+          <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(215, 175, 116, 0.2);">
             <div style="font-size: 0.875rem; color: #E8E4DE;">During the pilot</div>
-            <div style="font-size: 1.25rem; font-weight: 600; color: #D4A843; margin-top: 0.5rem;">100% incremental</div>
+            <div style="font-size: 1.25rem; font-weight: 600; color: #d7af74; margin-top: 0.5rem;">100% incremental</div>
           </div>
         </div>
       </div>
@@ -277,11 +165,11 @@ table td {
       <div class="card">
         <div class="card-title">5% Revenue Lift</div>
         <div style="margin-top: 1rem;">
-          <div style="font-size: 2rem; font-weight: 700; color: #D4A843; margin-bottom: 0.5rem;">$25,000</div>
+          <div style="font-size: 2rem; font-weight: 700; color: #d7af74; margin-bottom: 0.5rem;">$25,000</div>
           <div class="card-text">Incremental monthly per location</div>
-          <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(212, 168, 67, 0.2);">
+          <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(215, 175, 116, 0.2);">
             <div style="font-size: 0.875rem; color: #E8E4DE;">During the pilot</div>
-            <div style="font-size: 1.25rem; font-weight: 600; color: #D4A843; margin-top: 0.5rem;">100% incremental</div>
+            <div style="font-size: 1.25rem; font-weight: 600; color: #d7af74; margin-top: 0.5rem;">100% incremental</div>
           </div>
         </div>
       </div>
@@ -289,11 +177,11 @@ table td {
       <div class="card">
         <div class="card-title">8% Revenue Lift</div>
         <div style="margin-top: 1rem;">
-          <div style="font-size: 2rem; font-weight: 700; color: #D4A843; margin-bottom: 0.5rem;">$40,000</div>
+          <div style="font-size: 2rem; font-weight: 700; color: #d7af74; margin-bottom: 0.5rem;">$40,000</div>
           <div class="card-text">Incremental monthly per location</div>
-          <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(212, 168, 67, 0.2);">
+          <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(215, 175, 116, 0.2);">
             <div style="font-size: 0.875rem; color: #E8E4DE;">During the pilot</div>
-            <div style="font-size: 1.25rem; font-weight: 600; color: #D4A843; margin-top: 0.5rem;">100% incremental</div>
+            <div style="font-size: 1.25rem; font-weight: 600; color: #d7af74; margin-top: 0.5rem;">100% incremental</div>
           </div>
         </div>
       </div>
@@ -305,7 +193,7 @@ table td {
   </div>
 </section>
 
-<section class="section" style="background: rgba(212, 168, 67, 0.05); padding: 4rem 0;">
+<section class="section" style="background: rgba(215, 175, 116, 0.05); padding: 4rem 0;">
   <div class="container">
     <h2>The Pilot is Free</h2>
 
@@ -313,7 +201,7 @@ table td {
       <div class="card">
         <div class="card-title">Founding Pilot</div>
         <div style="margin-top: 1rem;">
-          <div style="font-size: 1.5rem; font-weight: 600; color: #D4A843;">$0</div>
+          <div style="font-size: 1.5rem; font-weight: 600; color: #d7af74;">$0</div>
           <div class="card-text" style="margin-top: 1rem;">No subscription. No commitment. We deploy music in your stores and measure what happens. If the results are there, we talk about what comes next.</div>
         </div>
       </div>
@@ -321,13 +209,13 @@ table td {
       <div class="card">
         <div class="card-title">What You Get</div>
         <div style="margin-top: 1rem;">
-          <div style="font-size: 1.5rem; font-weight: 600; color: #D4A843;">Real Data</div>
+          <div style="font-size: 1.5rem; font-weight: 600; color: #d7af74;">Real Data</div>
           <div class="card-text" style="margin-top: 1rem;">Psychographic profiling, original music generated for your customer, and performance measurement against dwell time, traffic, and sales data.</div>
         </div>
       </div>
     </div>
 
-    <div style="margin-top: 3rem; padding: 1.5rem; background: rgba(212, 168, 67, 0.1); border-left: 3px solid #D4A843;">
+    <div style="margin-top: 3rem; padding: 1.5rem; background: rgba(215, 175, 116, 0.1); border-left: 3px solid #d7af74;">
       <h3 style="font-size: 1.125rem; margin-bottom: 1rem;">Why This is Different</h3>
       <p style="font-size: 0.9rem; opacity: 0.8; line-height: 1.7;">Mood Media and Soundtrack Your Brand charge monthly fees for catalog music with no measurement. Entuned generates original music for your specific customer and measures whether it works. The pilot costs you nothing. The data tells the story.</p>
     </div>
@@ -339,19 +227,19 @@ table td {
     <h2>The Pilot as Proof</h2>
     <p>Start with a 90-day free pilot. Pick two stores: one control, one test. Same product mix, same time period. You measure it with your existing analytics infrastructure.</p>
     
-    <div class="card" style="margin-top: 2rem; background: rgba(212, 168, 67, 0.08); border-left: 4px solid #D4A843;">
+    <div class="card" style="margin-top: 2rem; background: rgba(215, 175, 116, 0.08); border-left: 4px solid #d7af74;">
       <div class="card-title">The Pilot Framework</div>
       <div style="margin-top: 1.5rem;">
         <div style="margin-bottom: 1.5rem;">
-          <div style="font-weight: 600; color: #D4A843; margin-bottom: 0.5rem;">Test Store</div>
+          <div style="font-weight: 600; color: #d7af74; margin-bottom: 0.5rem;">Test Store</div>
           <div class="card-text">Entuned system installed. 90 days of behavioral audio optimization.</div>
         </div>
         <div style="margin-bottom: 1.5rem;">
-          <div style="font-weight: 600; color: #D4A843; margin-bottom: 0.5rem;">Control Store</div>
+          <div style="font-weight: 600; color: #d7af74; margin-bottom: 0.5rem;">Control Store</div>
           <div class="card-text">Current audio setup maintained. Identical merchandising and promotion schedule.</div>
         </div>
         <div>
-          <div style="font-weight: 600; color: #D4A843; margin-bottom: 0.5rem;">Measurement</div>
+          <div style="font-weight: 600; color: #d7af74; margin-bottom: 0.5rem;">Measurement</div>
           <div class="card-text">Revenue, transaction count, average ticket, dwell time—whatever your POS tracks. We don't add complexity; we layer on top of your existing data.</div>
         </div>
       </div>
@@ -363,23 +251,23 @@ table td {
   </div>
 </section>
 
-<section class="section" style="background: rgba(212, 168, 67, 0.05);">
+<section class="section" style="background: rgba(215, 175, 116, 0.05);">
   <div class="container">
     <h2>What the Pilot Looks Like Financially</h2>
 
     <div style="max-width: 600px; margin: 2rem 0;">
       <div style="margin-bottom: 2rem; padding: 1rem; background: rgba(232, 228, 222, 0.05); border-radius: 4px;">
-        <div style="font-weight: 600; color: #D4A843; margin-bottom: 0.5rem;">During the Pilot</div>
+        <div style="font-weight: 600; color: #d7af74; margin-bottom: 0.5rem;">During the Pilot</div>
         <div class="card-text">Zero cost for music streaming. We deploy, you measure. Standard vendor evaluation process.</div>
       </div>
 
       <div style="margin-bottom: 2rem; padding: 1rem; background: rgba(232, 228, 222, 0.05); border-radius: 4px;">
-        <div style="font-weight: 600; color: #D4A843; margin-bottom: 0.5rem;">After the Pilot</div>
+        <div style="font-weight: 600; color: #d7af74; margin-bottom: 0.5rem;">After the Pilot</div>
         <div class="card-text">If the data shows lift, we discuss terms. If it doesn't, you walk away with the insights. No obligation.</div>
       </div>
 
       <div style="margin-bottom: 2rem; padding: 1rem; background: rgba(232, 228, 222, 0.05); border-radius: 4px;">
-        <div style="font-weight: 600; color: #D4A843; margin-bottom: 0.5rem;">No Lock-In</div>
+        <div style="font-weight: 600; color: #d7af74; margin-bottom: 0.5rem;">No Lock-In</div>
         <div class="card-text">No long-term contracts. No special procurement complexity. Standard vendor evaluation.</div>
       </div>
     </div>

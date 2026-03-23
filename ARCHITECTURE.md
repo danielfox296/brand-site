@@ -84,7 +84,8 @@ For non-blog pages, content starts directly with `<section>` tags.
 ## Design system
 
 - **Background:** #080808
-- **Gold accent:** #D4A843
+- **Gold accent:** #d7af74
+- **Accent:** #829eac
 - **Text:** #E8E4DE
 - **Fonts:** Manrope (headings, via Google Fonts CDN), Inter (body)
 - **Button classes:** `.btn .btn-primary` (gold bg), `.btn .btn-secondary` (gold border)
