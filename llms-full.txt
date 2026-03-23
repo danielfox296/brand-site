@@ -156,16 +156,13 @@ The pilot program is designed to prove this: test store vs. control store, 90 da
 
 ---
 
-## The Founder
+## Founder-market fit
 
-Daniel Fox. Musicologist and tech founder.
+This company requires someone who understands music structurally, has operated retail firsthand, and has built generative AI that produces audience-calibrated content. Daniel Fox is all three.
 
-- Undergraduate degree in music composition
-- Master's degree in music psychology
-- Co-founded and sold SoundGen (B2B audio software) in 2019
-- 10+ years at the intersection of music, psychology, and technology
-- 3 years consulting for retail chains on audio environment strategy
-- Warm pipeline of 15+ pilot opportunities
+He bootstrapped an online custom retail platform to 180 employees and thousands of monthly active users, with a flagship retail store and multiple industry awards. He previously built a generative AI platform that constructed ICPs and produced original content calibrated to each one -- the same core mechanism powering Entuned. He's a working music theoretician who understands how compositional parameters drive behavioral response across audiences.
+
+Music science. Retail operations. Generative AI. Entuned sits at their intersection. So does its founder.
 
 ---
 
