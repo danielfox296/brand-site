@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Entuned — Music Engineered for Retail</title>
+  
 
   <!-- Google Analytics (GA4) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
@@ -15,16 +16,155 @@
   </script>
 
   <link rel="stylesheet" href="styles.css">
+  <style>
+/* Pricing page redirects to how-it-works.html#pilot */
+  </style>
 </head>
 <body>
+  <!-- NAVIGATION -->
+<nav>
+  <div class="container">
+    <a href="index.html" class="logo">ENTUNED</a>
+    <ul class="nav-links">
+      <li><a href="how-it-works.html">How It Works</a></li>
+      <li><a href="pilot.html">Pilot Program</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+    <button class="mobile-menu-toggle">&#9776;</button>
+  </div>
+</nav>
+
   <script>window.location.replace('how-it-works.html#pilot');</script>
-  <noscript>
-    <meta http-equiv="refresh" content="0;url=how-it-works.html#pilot">
-  </noscript>
-  <section class="section" style="text-align: center;">
-    <div class="container">
-      <p>This page has moved. <a href="how-it-works.html#pilot">See the Pilot Program &rarr;</a></p>
+<noscript>
+  <meta http-equiv="refresh" content="0;url=how-it-works.html#pilot">
+</noscript>
+<section class="section" style="text-align: center;">
+  <div class="container">
+    <p>This page has moved. <a href="how-it-works.html#pilot">See the Pilot Program &rarr;</a></p>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4>Entuned</h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Retail music strategy driven by customer psychology.</p>
     </div>
-  </section>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="pilot.html">Pilot Program</a></li>
+        <li><a href="results.html">Results</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For You</h4>
+      <ul>
+        <li><a href="for-cfos.html">For CFOs</a></li>
+        <li><a href="for-retail-leaders.html">For Retail Leaders</a></li>
+        <li><a href="investors.html">For Investors</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="mailto:hello@entuned.co">Contact</a></li>
+        <li><a href="#privacy">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+    <p class="small-text">Patent pending on psychographic-to-musicological translation engine.</p>
+    <p class="small-text" style="opacity: 0.3; margin-top: 0.5rem;">v2 — modular build</p>
+  </div>
+</footer>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = navLinksEl.classList.contains('mobile-open') ? '✕' : '☰';
+      });
+    }
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+    // Audio player
+    (function() {
+      let currentAudio = null;
+      let currentTrack = null;
+      document.querySelectorAll('.audio-track').forEach(track => {
+        const btn = track.querySelector('.audio-play-btn');
+        const bar = track.querySelector('.audio-progress-bar');
+        const time = track.querySelector('.audio-time');
+        if (!btn) return;
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          if (currentAudio && currentTrack === track) {
+            if (currentAudio.paused) { currentAudio.play(); btn.innerHTML = '&#9646;&#9646;'; track.classList.add('playing'); }
+            else { currentAudio.pause(); btn.innerHTML = '&#9654;'; track.classList.remove('playing'); }
+            return;
+          }
+          if (currentAudio) { currentAudio.pause(); currentTrack.querySelector('.audio-play-btn').innerHTML = '&#9654;'; currentTrack.classList.remove('playing'); currentTrack.querySelector('.audio-progress-bar').style.width = '0%'; }
+          currentAudio = new Audio(track.dataset.src);
+          currentTrack = track;
+          currentAudio.play();
+          btn.innerHTML = '&#9646;&#9646;';
+          track.classList.add('playing');
+          currentAudio.addEventListener('timeupdate', () => {
+            if (!currentAudio.duration) return;
+            const pct = (currentAudio.currentTime / currentAudio.duration) * 100;
+            bar.style.width = pct + '%';
+            const m = Math.floor(currentAudio.currentTime / 60);
+            const s = Math.floor(currentAudio.currentTime % 60);
+            time.textContent = m + ':' + (s < 10 ? '0' : '') + s;
+          });
+          currentAudio.addEventListener('ended', () => { btn.innerHTML = '&#9654;'; track.classList.remove('playing'); bar.style.width = '0%'; time.textContent = '0:00'; currentAudio = null; currentTrack = null; });
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
