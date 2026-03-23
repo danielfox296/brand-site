@@ -808,6 +808,14 @@ input:focus, textarea:focus, select:focus {
   }
 }
 
+@media (max-width: 768px) {
+  /* Force all inline 2-column grids inside containers to stack on mobile */
+  .container [style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+}
+
 @media (max-width: 480px) {
   h1 {
     font-size: 2rem;
