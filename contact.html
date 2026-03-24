@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy | Entuned</title>
-  
+  <title>Contact — Entuned</title>
+  <meta name="description" content="Get in touch with the Entuned team. Retail leaders, investors, technology partners, and media inquiries welcome.">
 
   <!-- Google Analytics (GA4) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
@@ -32,54 +32,105 @@
   </div>
 </nav>
 
-  <section class="section" style="padding-top: 10rem;">
-  <div class="container" style="max-width: 800px;">
-    <h1 style="font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 0.5rem;">Privacy Policy</h1>
-    <p style="opacity: 0.5; margin-bottom: 3rem;">Last updated: March 23, 2026</p>
-
-    <div style="line-height: 1.8; font-size: 1rem; opacity: 0.85;">
-
-      <h2 style="font-size: 1.4rem; margin-top: 2.5rem;">1. Information We Collect</h2>
-      <p>When you visit our website or interact with our services, we may collect the following types of information:</p>
-      <ul style="margin: 1rem 0 1.5rem 1.5rem;">
-        <li style="margin-bottom: 0.5rem;"><strong>Contact information</strong> you provide voluntarily, such as your name and email address when you reach out to us.</li>
-        <li style="margin-bottom: 0.5rem;"><strong>Usage data</strong> collected automatically, including pages visited, time spent on site, browser type, and referring URL.</li>
-        <li style="margin-bottom: 0.5rem;"><strong>Device information</strong> such as IP address, operating system, and screen resolution.</li>
-      </ul>
-
-      <h2 style="font-size: 1.4rem; margin-top: 2.5rem;">2. How We Use Your Information</h2>
-      <p>We use the information we collect to:</p>
-      <ul style="margin: 1rem 0 1.5rem 1.5rem;">
-        <li style="margin-bottom: 0.5rem;">Respond to your inquiries and provide customer support.</li>
-        <li style="margin-bottom: 0.5rem;">Improve our website, products, and services.</li>
-        <li style="margin-bottom: 0.5rem;">Analyze usage trends to enhance the user experience.</li>
-        <li style="margin-bottom: 0.5rem;">Send you information you have requested or that may be relevant to your interests.</li>
-      </ul>
-
-      <h2 style="font-size: 1.4rem; margin-top: 2.5rem;">3. Cookies and Analytics</h2>
-      <p>We use Google Analytics to understand how visitors interact with our website. Google Analytics uses cookies to collect anonymous usage data. You can opt out of Google Analytics by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-on</a>.</p>
-
-      <h2 style="font-size: 1.4rem; margin-top: 2.5rem;">4. Data Sharing</h2>
-      <p>We do not sell, rent, or trade your personal information to third parties. We may share information with trusted service providers who assist us in operating our website and conducting our business, provided they agree to keep your information confidential.</p>
-
-      <h2 style="font-size: 1.4rem; margin-top: 2.5rem;">5. Data Security</h2>
-      <p>We implement reasonable security measures to protect the information we collect. However, no method of transmission over the internet or electronic storage is completely secure, and we cannot guarantee absolute security.</p>
-
-      <h2 style="font-size: 1.4rem; margin-top: 2.5rem;">6. Third-Party Links</h2>
-      <p>Our website may contain links to third-party websites. We are not responsible for the privacy practices or content of those sites. We encourage you to review the privacy policies of any third-party sites you visit.</p>
-
-      <h2 style="font-size: 1.4rem; margin-top: 2.5rem;">7. Your Rights</h2>
-      <p>You may request access to, correction of, or deletion of your personal information at any time by contacting us. Depending on your jurisdiction, you may have additional rights under applicable data protection laws.</p>
-
-      <h2 style="font-size: 1.4rem; margin-top: 2.5rem;">8. Changes to This Policy</h2>
-      <p>We may update this privacy policy from time to time. Any changes will be posted on this page with a revised "Last updated" date.</p>
-
-      <h2 style="font-size: 1.4rem; margin-top: 2.5rem;">9. Contact Us</h2>
-      <p>If you have questions about this privacy policy, please contact us at <a href="mailto:hello@entuned.co">hello@entuned.co</a>.</p>
-
+  <!-- HERO -->
+  <section class="hero hero-alt">
+    <div class="container">
+      <div class="fade-up" style="max-width: 600px;">
+        <h1>Get in touch.</h1>
+        <p class="subline">Whether you're exploring a pilot, evaluating an investment, or looking to partner — we'd like to hear from you.</p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section class="section">
+    <div class="container" style="max-width: 640px;">
+      <form class="fade-up" action="https://formspree.io/f/xpwzgkpj" method="POST" id="contact-form">
+
+        <div class="form-group">
+          <label for="contact-role">I am a...</label>
+          <select id="contact-role" name="role" required>
+            <option value="" disabled selected>Select one</option>
+            <option value="Retail Leader">Retail Leader</option>
+            <option value="Investor">Investor</option>
+            <option value="Technology Partner">Technology Partner</option>
+            <option value="Media / Press">Media / Press</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+          <div class="form-group">
+            <label for="contact-first">First name</label>
+            <input type="text" id="contact-first" name="first_name" required placeholder="Jane">
+          </div>
+          <div class="form-group">
+            <label for="contact-last">Last name</label>
+            <input type="text" id="contact-last" name="last_name" required placeholder="Doe">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-email">Email</label>
+          <input type="email" id="contact-email" name="email" required placeholder="jane@company.com">
+        </div>
+
+        <div class="form-group">
+          <label for="contact-company">Company <span style="opacity: 0.4; font-weight: 400;">(optional)</span></label>
+          <input type="text" id="contact-company" name="company" placeholder="Acme Retail">
+        </div>
+
+        <div class="form-group">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" rows="5" required placeholder="Tell us what you're looking for..."></textarea>
+        </div>
+
+        <!-- Honeypot -->
+        <input type="text" name="_gotcha" style="display:none">
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">Send Message</button>
+
+        <div id="form-status" style="text-align: center; margin-top: 1.5rem; display: none;"></div>
+      </form>
+    </div>
+  </section>
+
+  <script>
+  (function() {
+    var form = document.getElementById('contact-form');
+    var status = document.getElementById('form-status');
+    if (!form) return;
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var btn = form.querySelector('button[type="submit"]');
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(function(response) {
+        if (response.ok) {
+          status.style.display = 'block';
+          status.style.color = '#d7af74';
+          status.textContent = 'Message sent. We\u2019ll be in touch.';
+          form.reset();
+          btn.textContent = 'Sent';
+        } else {
+          throw new Error('Form submission failed');
+        }
+      }).catch(function() {
+        status.style.display = 'block';
+        status.style.color = '#E24B4A';
+        status.textContent = 'Something went wrong. Try emailing hello@entuned.co directly.';
+        btn.textContent = 'Send Message';
+        btn.disabled = false;
+      });
+    });
+  })();
+  </script>
 
   <!-- FOOTER -->
 <footer>
