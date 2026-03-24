@@ -33,8 +33,9 @@
 </nav>
 
   <!-- HERO -->
-  <section class="hero hero-home" style="background: linear-gradient(rgba(8,8,8,0.55), rgba(8,8,8,0.68)), url('img/retail-store.jpg'); background-size: cover; background-position: center;">
-    <div class="container">
+  <section class="hero hero-home" id="heroSection" style="position: relative; overflow: hidden; cursor: crosshair;">
+    <canvas id="heroCanvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;"></canvas>
+    <div class="container" style="position: relative; z-index: 1;">
       <div class="fade-up">
         <h1>Sound that sells.</h1>
         <p class="subline">In-store music designed for your customer's psychology. Not picked from a catalog.</p>
@@ -42,6 +43,99 @@
       </div>
     </div>
   </section>
+
+  <script>
+  (function() {
+    const section = document.getElementById('heroSection');
+    const cv = document.getElementById('heroCanvas');
+    if (!section || !cv) return;
+    const ctx = cv.getContext('2d');
+
+    let mouseX = 0.3, mouseY = 0.5;
+    let targetX = 0.3, targetY = 0.5;
+
+    section.addEventListener('mousemove', function(e) {
+      const rect = section.getBoundingClientRect();
+      targetX = (e.clientX - rect.left) / rect.width;
+      targetY = (e.clientY - rect.top) / rect.height;
+    });
+
+    function resize() {
+      const dpr = window.devicePixelRatio || 1;
+      cv.width = section.offsetWidth * dpr;
+      cv.height = section.offsetHeight * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    var cols = 40, rows = 28;
+
+    function render() {
+      mouseX += (targetX - mouseX) * 0.06;
+      mouseY += (targetY - mouseY) * 0.06;
+
+      var w = section.offsetWidth;
+      var h = section.offsetHeight;
+      var sx = w / cols;
+      var sy = h / rows;
+      var cx = mouseX * w;
+      var cy = mouseY * h;
+      var influence = 140;
+
+      var dpr = window.devicePixelRatio || 1;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.fillStyle = '#080808';
+      ctx.fillRect(0, 0, w, h);
+
+      for (var i = 0; i < cols; i++) {
+        for (var j = 0; j < rows; j++) {
+          var bx = (i + 0.5) * sx;
+          var by = (j + 0.5) * sy;
+
+          var distToMouse = Math.sqrt((bx - cx) * (bx - cx) + (by - cy) * (by - cy));
+          var inf = Math.max(0, 1 - distToMouse / influence);
+          var angle = Math.atan2(by - cy, bx - cx);
+
+          var ambientDx = Math.sin(i * 0.25 + j * 0.18) * 2;
+          var ambientDy = Math.cos(j * 0.22 + i * 0.12) * 2;
+
+          var pushDx = Math.cos(angle) * inf * inf * 24;
+          var pushDy = Math.sin(angle) * inf * inf * 24;
+
+          var x = bx + ambientDx + pushDx;
+          var y = by + ambientDy + pushDy;
+
+          var size = 1.2 + inf * 5;
+
+          var r, g, b, a;
+          if (inf > 0.35) {
+            r = 215; g = 175; b = 116;
+            a = 0.4 + inf * 0.6;
+          } else if (inf > 0.15) {
+            var t = (inf - 0.15) / 0.2;
+            r = Math.round(130 + (215 - 130) * t);
+            g = Math.round(126 + (175 - 126) * t);
+            b = Math.round(120 + (116 - 120) * t);
+            a = 0.15 + t * 0.3;
+          } else {
+            r = 130; g = 126; b = 120;
+            a = 0.06 + inf * 0.3;
+          }
+
+          ctx.beginPath();
+          ctx.arc(x, y, size, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(' + r + ',' + g + ',' + b + ',' + a + ')';
+          ctx.fill();
+        }
+      }
+
+      requestAnimationFrame(render);
+    }
+
+    render();
+  })();
+  </script>
 
   <!-- PROBLEM -->
   <section class="section">
