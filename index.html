@@ -120,7 +120,7 @@
             a = 0.15 + t * 0.3;
           } else {
             r = 130; g = 126; b = 120;
-            a = 0.06 + inf * 0.3;
+            a = 0.20 + inf * 0.3;
           }
 
           ctx.beginPath();
@@ -129,6 +129,13 @@
           ctx.fill();
         }
       }
+
+      // Fade to black at bottom
+      var grad = ctx.createLinearGradient(0, h * 0.6, 0, h);
+      grad.addColorStop(0, 'rgba(8,8,8,0)');
+      grad.addColorStop(1, 'rgba(8,8,8,1)');
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, h * 0.6, w, h * 0.4);
 
       requestAnimationFrame(render);
     }
