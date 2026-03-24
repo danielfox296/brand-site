@@ -37,7 +37,7 @@
   <div class="deck-gate-inner">
     <img src="img/Entuned_logo.png" alt="Entuned" style="height: 24px; margin-bottom: 2rem; opacity: 0.7;">
     <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Investor Deck</h2>
-    <p style="opacity: 0.6; margin-bottom: 2rem; font-size: 0.95rem;">This document is confidential. Enter the password to continue.</p>
+    <p style="opacity: 0.5; margin-bottom: 2rem; font-size: 0.95rem;">This document is confidential. Enter the password to continue.</p>
     <form id="deck-gate-form" onsubmit="return false;">
       <input type="password" id="deck-password" class="deck-gate-input" placeholder="Password" autocomplete="off" autofocus>
       <button type="submit" class="btn btn-primary deck-gate-btn" onclick="checkDeckPassword()">Enter</button>
@@ -47,344 +47,356 @@
 </div>
 
 <!-- DECK CONTENT (hidden until password entered) -->
-<div id="deck-content" class="deck-content" style="display:none;">
+<div id="deck-content" style="display:none;">
 
-  <!-- SLIDE 1: COVER -->
-  <section class="deck-slide deck-slide-hero">
-    <div class="container" style="text-align: center;">
+  <!-- COVER -->
+  <section class="hero hero-alt" style="text-align: center;">
+    <div class="container">
       <div class="fade-up">
-        <p class="section-eyebrow" style="color: #d7af74; margin-bottom: 1rem;">Investor Presentation</p>
-        <h1 style="font-size: clamp(2.5rem, 7vw, 4.5rem); margin-bottom: 1rem;">entuned</h1>
-        <p class="subline" style="font-size: 1.4rem; opacity: 0.7;">The Data-Driven DJ for Retail</p>
-        <p style="opacity: 0.4; font-size: 0.85rem; margin-top: 2rem;">entuned.co</p>
+        <p class="section-eyebrow" style="margin-bottom: 1.5rem;">Investor Presentation</p>
+        <h1 style="margin-bottom: 1rem;">entuned</h1>
+        <p class="subline">The Data-Driven DJ for Retail</p>
+        <p style="opacity: 0.35; font-size: 0.85rem; margin-top: 3rem;">entuned.co</p>
       </div>
     </div>
   </section>
 
-  <!-- SLIDE 2: THE PROBLEM -->
+  <!-- THE PROBLEM -->
   <section class="section">
-    <div class="container" style="max-width: 1000px;">
+    <div class="container" style="max-width: 900px;">
       <div class="fade-up">
         <p class="section-eyebrow">The Problem</p>
-        <h2 style="margin-bottom: 2.5rem;">Every retail store plays music.<br>Almost none of it is optimized.</h2>
+        <h2>Every retail store plays music. Almost none of it is optimized.</h2>
+      </div>
 
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
-          <div>
-            <div class="deck-text-block">
-              <p>Chains pay $10–$50/mo for generic streaming. Music is chosen by intuition, not data.</p>
-            </div>
-            <div class="deck-text-block">
-              <p>No visibility into whether music helps or hurts sales.</p>
-            </div>
-            <div class="deck-text-block">
-              <p>The real cost isn't the streaming bill — it's the revenue lost every day to music that doesn't speak to the customer in front of it.</p>
-            </div>
+      <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 3rem; margin-top: 3rem; align-items: start;">
+        <div>
+          <div class="fade-up" style="border-top: 1px solid rgba(215, 175, 116, 0.15); padding: 1rem 0;">
+            <p style="font-size: 1.05rem; opacity: 0.85; line-height: 1.8;">Chains pay $10–$50/mo for generic streaming. Music is chosen by intuition, not data.</p>
           </div>
+          <div class="fade-up" style="border-top: 1px solid rgba(215, 175, 116, 0.15); padding: 1rem 0;">
+            <p style="font-size: 1.05rem; opacity: 0.85; line-height: 1.8;">No visibility into whether music helps or hurts sales.</p>
+          </div>
+          <div class="fade-up" style="border-top: 1px solid rgba(215, 175, 116, 0.15); padding: 1rem 0;">
+            <p style="font-size: 1.05rem; opacity: 0.85; line-height: 1.8;">The real cost isn't the streaming bill — it's the revenue lost every day to music that doesn't speak to the customer in front of it.</p>
+          </div>
+        </div>
 
-          <div class="deck-callout-box">
-            <div class="stat-number" style="font-size: 3.5rem; color: #d7af74;">$100K</div>
-            <p style="opacity: 0.6; font-size: 0.9rem; margin-bottom: 1rem;">monthly store revenue</p>
-            <div style="border-top: 1px solid rgba(215, 175, 116, 0.2); padding-top: 1rem;">
-              <p style="opacity: 0.6; font-size: 0.9rem;">1% music lift =</p>
-              <div style="font-size: 1.6rem; font-weight: 700; margin: 0.25rem 0;">$1,000 left on the table</div>
-              <p style="opacity: 0.6; font-size: 0.9rem;">every month</p>
-            </div>
+        <div class="fade-up" style="background: rgba(215, 175, 116, 0.06); border: 1px solid rgba(215, 175, 116, 0.15); padding: 2rem; border-radius: 4px;">
+          <div style="font-family: 'Manrope', sans-serif; font-size: 3rem; font-weight: 700; color: #d7af74;">$100K</div>
+          <p style="opacity: 0.5; font-size: 0.9rem; margin-bottom: 1.25rem;">monthly store revenue</p>
+          <div style="border-top: 1px solid rgba(215, 175, 116, 0.15); padding-top: 1.25rem;">
+            <p style="opacity: 0.5; font-size: 0.9rem;">1% music lift =</p>
+            <div style="font-family: 'Manrope', sans-serif; font-size: 1.5rem; font-weight: 700; margin: 0.25rem 0;">$1,000 left on the table</div>
+            <p style="opacity: 0.5; font-size: 0.9rem;">every month</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SLIDE 3: THE INSIGHT -->
-  <section class="section" style="background: rgba(215, 175, 116, 0.02);">
-    <div class="container" style="max-width: 1000px;">
-      <div class="fade-up" style="text-align: center;">
+  <!-- THE INSIGHT -->
+  <section class="section" style="background: rgba(215, 175, 116, 0.03); border-top: 1px solid rgba(215, 175, 116, 0.08); border-bottom: 1px solid rgba(215, 175, 116, 0.08);">
+    <div class="container" style="max-width: 900px; text-align: center;">
+      <div class="fade-up">
         <p class="section-eyebrow">The Insight</p>
-        <h2 style="font-size: clamp(1.8rem, 4vw, 2.8rem); max-width: 800px; margin: 0 auto 3rem; line-height: 1.4;">Music is a proven behavioral lever. Nobody has measured it at scale in real stores. Until now.</h2>
+        <h2 style="max-width: 750px; margin: 0 auto 3rem;">Music is a proven behavioral lever. Nobody has measured it at scale in real stores. Until now.</h2>
+      </div>
 
-        <div class="stats-grid" style="grid-template-columns: repeat(3, 1fr); gap: 2rem;">
-          <div class="stat-item">
-            <div class="stat-number" style="font-size: 1.4rem; color: #d7af74;">Dwell Time</div>
-            <div class="stat-label">↑ with optimized tempo</div>
-          </div>
-          <div class="stat-item" style="border-left: 1px solid rgba(215, 175, 116, 0.15); border-right: 1px solid rgba(215, 175, 116, 0.15);">
-            <div class="stat-number" style="font-size: 1.4rem; color: #d7af74;">Conversion Rate</div>
-            <div class="stat-label">↑ with ICP-matched genre</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number" style="font-size: 1.4rem; color: #d7af74;">Ticket Size</div>
-            <div class="stat-label">↑ with cultural resonance</div>
-          </div>
+      <div class="stats-grid fade-up" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="stat-item">
+          <div class="stat-number" style="font-size: 1.3rem;">Dwell Time</div>
+          <div class="stat-label">↑ with optimized tempo</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" style="font-size: 1.3rem;">Conversion Rate</div>
+          <div class="stat-label">↑ with ICP-matched genre</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" style="font-size: 1.3rem;">Ticket Size</div>
+          <div class="stat-label">↑ with cultural resonance</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SLIDE 4: THE SOLUTION -->
+  <!-- THE SOLUTION -->
   <section class="section">
-    <div class="container" style="max-width: 1000px;">
+    <div class="container" style="max-width: 900px;">
       <div class="fade-up">
         <p class="section-eyebrow">The Solution</p>
-        <h2 style="margin-bottom: 2.5rem;">A Data-Driven DJ Powered by Musical Semiotics</h2>
+        <h2>A Data-Driven DJ Powered by Musical Semiotics</h2>
+      </div>
 
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
-          <div>
-            <div class="deck-step">
-              <span class="deck-step-num">1</span>
-              <div>
-                <strong>Define ICP</strong>
-                <p>Brand or store level, supplemented by shopping district demographics.</p>
-              </div>
-            </div>
-            <div class="deck-step">
-              <span class="deck-step-num">2</span>
-              <div>
-                <strong>Map to Musical Language</strong>
-                <p>31 parameters translated through proprietary semiotics lexicon.</p>
-              </div>
-            </div>
-            <div class="deck-step">
-              <span class="deck-step-num">3</span>
-              <div>
-                <strong>Deploy & Adapt</strong>
-                <p>Curated sequences delivered, RetailNext data feeds continuous adjustment.</p>
-              </div>
-            </div>
-            <div class="deck-step">
-              <span class="deck-step-num">4</span>
-              <div>
-                <strong>See Results</strong>
-                <p>VP of retail sees conversion rate and dwell time move. Nothing else.</p>
-              </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 3rem;">
+        <div>
+          <div class="fade-up" style="display: flex; gap: 1rem; margin-bottom: 2rem; align-items: baseline;">
+            <span style="font-family: 'Manrope', sans-serif; font-size: 1.5rem; font-weight: 700; color: #d7af74;">1</span>
+            <div>
+              <strong>Define ICP</strong>
+              <p style="opacity: 0.75; margin-top: 0.25rem; font-size: 0.95rem; line-height: 1.6;">Brand or store level, supplemented by shopping district demographics.</p>
             </div>
           </div>
-
-          <div class="deck-flow">
-            <div class="deck-flow-box" style="background: #1A1A2E; color: #fff;">ICP Profile</div>
-            <div class="deck-flow-arrow">↓</div>
-            <div class="deck-flow-box" style="background: #d7af74; color: #080808;">Semiotics Lexicon · 31 Parameters</div>
-            <div class="deck-flow-arrow">↓</div>
-            <div class="deck-flow-box" style="background: #1a1a1a; color: #fff;">RetailNext Data Feed</div>
-            <div class="deck-flow-arrow">↓</div>
-            <div class="deck-flow-box" style="background: #d7af74; color: #080808; font-weight: 700;">Sales Lift + Dwell Time</div>
+          <div class="fade-up" style="display: flex; gap: 1rem; margin-bottom: 2rem; align-items: baseline;">
+            <span style="font-family: 'Manrope', sans-serif; font-size: 1.5rem; font-weight: 700; color: #d7af74;">2</span>
+            <div>
+              <strong>Map to Musical Language</strong>
+              <p style="opacity: 0.75; margin-top: 0.25rem; font-size: 0.95rem; line-height: 1.6;">31 parameters translated through proprietary semiotics lexicon.</p>
+            </div>
           </div>
+          <div class="fade-up" style="display: flex; gap: 1rem; margin-bottom: 2rem; align-items: baseline;">
+            <span style="font-family: 'Manrope', sans-serif; font-size: 1.5rem; font-weight: 700; color: #d7af74;">3</span>
+            <div>
+              <strong>Deploy & Adapt</strong>
+              <p style="opacity: 0.75; margin-top: 0.25rem; font-size: 0.95rem; line-height: 1.6;">Curated sequences delivered, RetailNext data feeds continuous adjustment.</p>
+            </div>
+          </div>
+          <div class="fade-up" style="display: flex; gap: 1rem; align-items: baseline;">
+            <span style="font-family: 'Manrope', sans-serif; font-size: 1.5rem; font-weight: 700; color: #d7af74;">4</span>
+            <div>
+              <strong>See Results</strong>
+              <p style="opacity: 0.75; margin-top: 0.25rem; font-size: 0.95rem; line-height: 1.6;">VP of retail sees conversion rate and dwell time move. Nothing else.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="fade-up" style="display: flex; flex-direction: column; align-items: center; gap: 0; padding-top: 0.25rem;">
+          <div style="background: #1A1A2E; color: #fff; padding: 0.85rem 1.5rem; border-radius: 4px; text-align: center; font-size: 0.9rem; width: 100%; max-width: 260px;">ICP Profile</div>
+          <div style="color: #d7af74; font-size: 1.1rem; padding: 0.2rem 0;">↓</div>
+          <div style="background: #d7af74; color: #080808; padding: 0.85rem 1.5rem; border-radius: 4px; text-align: center; font-size: 0.85rem; width: 100%; max-width: 260px;">Semiotics Lexicon · 31 Parameters</div>
+          <div style="color: #d7af74; font-size: 1.1rem; padding: 0.2rem 0;">↓</div>
+          <div style="background: #1a1a1a; border: 1px solid rgba(255,255,255,0.08); color: #fff; padding: 0.85rem 1.5rem; border-radius: 4px; text-align: center; font-size: 0.9rem; width: 100%; max-width: 260px;">RetailNext Data Feed</div>
+          <div style="color: #d7af74; font-size: 1.1rem; padding: 0.2rem 0;">↓</div>
+          <div style="background: #d7af74; color: #080808; padding: 0.85rem 1.5rem; border-radius: 4px; text-align: center; font-size: 0.9rem; font-weight: 700; width: 100%; max-width: 260px;">Sales Lift + Dwell Time</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SLIDE 5: THE DATA MOAT -->
-  <section class="section" style="background: rgba(215, 175, 116, 0.02);">
-    <div class="container" style="max-width: 1000px;">
+  <!-- THE DATA MOAT -->
+  <section class="section" style="background: rgba(215, 175, 116, 0.03); border-top: 1px solid rgba(215, 175, 116, 0.08); border-bottom: 1px solid rgba(215, 175, 116, 0.08);">
+    <div class="container" style="max-width: 900px;">
       <div class="fade-up">
         <p class="section-eyebrow">The Moat</p>
-        <h2 style="margin-bottom: 1.5rem;">We're Not a Music Company. We're a Data Company.</h2>
-        <p style="font-size: 1.1rem; opacity: 0.85; line-height: 1.9; margin-bottom: 1.5rem;">Every store-month of Entuned running generates a new data point. 31 musical parameters × real retail environments × time = a dataset that has never existed. The more stores we run, the smarter we get. The smarter we get, the more defensible we become.</p>
-        <p style="color: #d7af74; font-style: italic; font-size: 1.05rem; margin-top: 2rem;">No competitor can replicate years of cross-retail musical data without years of access to real stores.</p>
+        <h2>We're Not a Music Company. We're a Data Company.</h2>
+        <p style="font-size: 1.1rem; opacity: 0.85; line-height: 1.9; margin-top: 1.5rem;">Every store-month of Entuned running generates a new data point. 31 musical parameters × real retail environments × time = a dataset that has never existed. The more stores we run, the smarter we get. The smarter we get, the more defensible we become.</p>
+      </div>
+      <div class="fade-up" style="margin-top: 2.5rem; padding: 1.5rem 2rem; background: rgba(215, 175, 116, 0.06); border-left: 4px solid #d7af74;">
+        <p style="color: #d7af74; font-style: italic; font-size: 1.05rem; line-height: 1.7;">No competitor can replicate years of cross-retail musical data without years of access to real stores.</p>
       </div>
     </div>
   </section>
 
-  <!-- SLIDE 6: EXPERIMENT DESIGN -->
+  <!-- EXPERIMENT DESIGN -->
   <section class="section">
-    <div class="container" style="max-width: 1000px;">
-      <div class="fade-up">
+    <div class="container" style="max-width: 900px;">
+      <div class="fade-up" style="text-align: center; margin-bottom: 3rem;">
         <p class="section-eyebrow">The Experiment</p>
-        <h2 style="margin-bottom: 2.5rem;">Built for Proof, Not Just Promise.</h2>
+        <h2>Built for Proof, Not Just Promise.</h2>
+      </div>
 
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 3rem;">
-          <div class="deck-pilot-col">
-            <div class="deck-pilot-header" style="background: #d7af74; color: #080808;">Active Stores</div>
-            <div class="deck-pilot-body">
-              <div style="font-size: 4rem; font-weight: 700; color: #d7af74; font-family: 'Manrope', sans-serif;">40</div>
-              <p style="opacity: 0.7; font-size: 0.9rem;">Running Entuned — ICP-matched, semiotic-optimized music sequences</p>
-            </div>
-          </div>
-          <div class="deck-pilot-col">
-            <div class="deck-pilot-header" style="background: #1a1a1a; color: #E8E4DE;">Control Stores</div>
-            <div class="deck-pilot-body">
-              <div style="font-size: 4rem; font-weight: 700; opacity: 0.4; font-family: 'Manrope', sans-serif;">40</div>
-              <p style="opacity: 0.5; font-size: 0.9rem;">Existing playlist — historical + live data shared by chain</p>
-            </div>
+      <div class="fade-up" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 3rem;">
+        <div style="border: 1px solid rgba(215, 175, 116, 0.15); border-radius: 4px; overflow: hidden;">
+          <div style="background: #d7af74; color: #080808; padding: 0.7rem 1rem; text-align: center; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em;">Active Stores</div>
+          <div style="padding: 2rem; text-align: center;">
+            <div style="font-family: 'Manrope', sans-serif; font-size: 3.5rem; font-weight: 700; color: #d7af74;">40</div>
+            <p style="opacity: 0.6; font-size: 0.9rem; margin-top: 0.5rem;">Running Entuned — ICP-matched, semiotic-optimized music sequences</p>
           </div>
         </div>
+        <div style="border: 1px solid rgba(255,255,255,0.06); border-radius: 4px; overflow: hidden;">
+          <div style="background: #1a1a1a; color: #E8E4DE; padding: 0.7rem 1rem; text-align: center; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em;">Control Stores</div>
+          <div style="padding: 2rem; text-align: center;">
+            <div style="font-family: 'Manrope', sans-serif; font-size: 3.5rem; font-weight: 700; opacity: 0.35;">40</div>
+            <p style="opacity: 0.4; font-size: 0.9rem; margin-top: 0.5rem;">Existing playlist — historical + live data shared by chain</p>
+          </div>
+        </div>
+      </div>
 
-        <div class="stats-grid" style="grid-template-columns: repeat(3, 1fr);">
-          <div class="stat-item" style="background: rgba(215, 175, 116, 0.05); padding: 1.5rem; border: 1px solid rgba(215, 175, 116, 0.1); border-radius: 4px;">
-            <div class="stat-number" style="font-size: 1.6rem; color: #d7af74;">10 months</div>
-            <div class="stat-label">Duration</div>
-          </div>
-          <div class="stat-item" style="background: rgba(215, 175, 116, 0.05); padding: 1.5rem; border: 1px solid rgba(215, 175, 116, 0.1); border-radius: 4px;">
-            <div class="stat-number" style="font-size: 1.6rem; color: #d7af74;">400 store-months</div>
-            <div class="stat-label">Data Volume</div>
-          </div>
-          <div class="stat-item" style="background: rgba(215, 175, 116, 0.05); padding: 1.5rem; border: 1px solid rgba(215, 175, 116, 0.1); border-radius: 4px;">
-            <div class="stat-number" style="font-size: 1.4rem; color: #d7af74;">90% certainty · 1% lift</div>
-            <div class="stat-label">Statistical Target</div>
-          </div>
+      <div class="stats-grid fade-up" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="stat-item" style="background: rgba(215, 175, 116, 0.04); padding: 1.5rem; border: 1px solid rgba(215, 175, 116, 0.1); border-radius: 4px;">
+          <div class="stat-number" style="font-size: 1.5rem;">10 months</div>
+          <div class="stat-label">Duration</div>
+        </div>
+        <div class="stat-item" style="background: rgba(215, 175, 116, 0.04); padding: 1.5rem; border: 1px solid rgba(215, 175, 116, 0.1); border-radius: 4px;">
+          <div class="stat-number" style="font-size: 1.5rem;">400</div>
+          <div class="stat-label">Store-months of data</div>
+        </div>
+        <div class="stat-item" style="background: rgba(215, 175, 116, 0.04); padding: 1.5rem; border: 1px solid rgba(215, 175, 116, 0.1); border-radius: 4px;">
+          <div class="stat-number" style="font-size: 1.3rem;">90% certainty · 1% lift</div>
+          <div class="stat-label">Statistical target</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SLIDE 7: BUSINESS MODEL -->
-  <section class="section" style="background: rgba(215, 175, 116, 0.02);">
-    <div class="container" style="max-width: 1000px;">
-      <div class="fade-up">
+  <!-- BUSINESS MODEL -->
+  <section class="section" style="background: rgba(215, 175, 116, 0.03); border-top: 1px solid rgba(215, 175, 116, 0.08); border-bottom: 1px solid rgba(215, 175, 116, 0.08);">
+    <div class="container" style="max-width: 900px;">
+      <div class="fade-up" style="text-align: center; margin-bottom: 3rem;">
         <p class="section-eyebrow">The Business Model</p>
+      </div>
 
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
-          <div>
-            <div style="font-size: 3.5rem; font-weight: 700; font-family: 'Manrope', sans-serif; margin-bottom: 0.5rem;">FREE</div>
-            <p style="opacity: 0.7; margin-bottom: 1.5rem;">During pilot. No strings.</p>
-            <div class="deck-text-block"><p>Replaces existing $10–$50/mo streaming spend</p></div>
-            <div class="deck-text-block"><p>Churn risk near zero — why go back to dumber + expensive?</p></div>
-            <div class="deck-text-block"><p>Every month free = another month of data collection</p></div>
-            <div class="deck-text-block"><p>The dataset is worth more than early SaaS revenue</p></div>
+      <div class="fade-up" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+        <div>
+          <div style="font-family: 'Manrope', sans-serif; font-size: 3rem; font-weight: 700; margin-bottom: 0.5rem;">FREE</div>
+          <p style="opacity: 0.6; margin-bottom: 2rem;">During pilot. No strings.</p>
+          <div style="border-top: 1px solid rgba(215, 175, 116, 0.15); padding: 0.75rem 0;">
+            <p style="font-size: 0.95rem; opacity: 0.8;">Replaces existing $10–$50/mo streaming spend</p>
           </div>
+          <div style="border-top: 1px solid rgba(215, 175, 116, 0.15); padding: 0.75rem 0;">
+            <p style="font-size: 0.95rem; opacity: 0.8;">Churn risk near zero — why go back to dumber + expensive?</p>
+          </div>
+          <div style="border-top: 1px solid rgba(215, 175, 116, 0.15); padding: 0.75rem 0;">
+            <p style="font-size: 0.95rem; opacity: 0.8;">Every month free = another month of data collection</p>
+          </div>
+          <div style="border-top: 1px solid rgba(215, 175, 116, 0.15); padding: 0.75rem 0;">
+            <p style="font-size: 0.95rem; opacity: 0.8;">The dataset is worth more than early SaaS revenue</p>
+          </div>
+        </div>
 
-          <div>
-            <div style="font-size: 3.5rem; font-weight: 700; color: #d7af74; font-family: 'Manrope', sans-serif; margin-bottom: 0.5rem;">50%</div>
-            <p style="opacity: 0.7; margin-bottom: 1.5rem;">of incremental lift generated</p>
-            <div style="background: rgba(215, 175, 116, 0.08); border: 1px solid rgba(215, 175, 116, 0.2); padding: 1.5rem; border-radius: 4px;">
-              <p style="margin-bottom: 0.5rem;">$100K store + 1% lift = $1,000 incremental</p>
-              <p style="margin-bottom: 0.5rem;">Our fee: $500/mo per store</p>
-              <p style="font-weight: 700; color: #d7af74; margin-bottom: 0.5rem;">100 stores = $50K MRR</p>
-              <p style="opacity: 0.6; font-size: 0.9rem;">Near-zero marginal cost per additional location</p>
-            </div>
+        <div>
+          <div style="font-family: 'Manrope', sans-serif; font-size: 3rem; font-weight: 700; color: #d7af74; margin-bottom: 0.5rem;">50%</div>
+          <p style="opacity: 0.6; margin-bottom: 2rem;">of incremental lift generated</p>
+          <div style="background: rgba(215, 175, 116, 0.06); border: 1px solid rgba(215, 175, 116, 0.15); padding: 1.5rem; border-radius: 4px;">
+            <p style="margin-bottom: 0.5rem; font-size: 0.95rem;">$100K store + 1% lift = $1,000 incremental</p>
+            <p style="margin-bottom: 0.75rem; font-size: 0.95rem;">Our fee: $500/mo per store</p>
+            <p style="font-weight: 700; color: #d7af74; margin-bottom: 0.5rem;">100 stores = $50K MRR</p>
+            <p style="opacity: 0.5; font-size: 0.85rem;">Near-zero marginal cost per additional location</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SLIDE 8: MARKET -->
+  <!-- MARKET -->
   <section class="section">
-    <div class="container" style="max-width: 1000px;">
+    <div class="container" style="max-width: 900px;">
       <div class="fade-up">
         <p class="section-eyebrow">The Market</p>
-        <h2 style="margin-bottom: 2.5rem;">High-Ticket. Measurable Outcomes. Scalable Playbook.</h2>
-
-        <div class="deck-market-bands">
-          <div class="deck-market-band" style="background: #d7af74; color: #080808; max-width: 70%;">
-            <strong>Phase 1 — Luxury Retail</strong>
-            <p>$50–$500 avg ticket · RetailNext integration · 20+ locations</p>
-          </div>
-          <div class="deck-market-band" style="background: #1A1A2E; color: #E8E4DE; max-width: 85%;">
-            <strong>Phase 2 — Gaming & Casinos</strong>
-            <p>High-ticket · proven music-behavior science · granular player data</p>
-          </div>
-          <div class="deck-market-band" style="background: #1a1a1a; color: #E8E4DE; max-width: 100%;">
-            <strong>Phase 3 — Premium Fitness & Wellness</strong>
-            <p>Membership metrics · session duration · class conversion</p>
-          </div>
-        </div>
-
-        <p style="text-align: center; opacity: 0.5; font-size: 0.85rem; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(215, 175, 116, 0.1);">Downstream revenue: data licensing · generative model API · brand insights product</p>
+        <h2>High-Ticket. Measurable Outcomes. Scalable Playbook.</h2>
       </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 0.75rem; margin-top: 3rem;">
+        <div class="fade-up" style="background: #d7af74; color: #080808; padding: 1.25rem 2rem; border-radius: 4px; width: 65%; text-align: center;">
+          <strong>Phase 1 — Luxury Retail</strong>
+          <p style="font-size: 0.85rem; opacity: 0.7; margin-top: 0.25rem;">$50–$500 avg ticket · RetailNext integration · 20+ locations</p>
+        </div>
+        <div class="fade-up" style="background: #1A1A2E; color: #E8E4DE; padding: 1.25rem 2rem; border-radius: 4px; width: 80%; text-align: center;">
+          <strong>Phase 2 — Gaming & Casinos</strong>
+          <p style="font-size: 0.85rem; opacity: 0.6; margin-top: 0.25rem;">High-ticket · proven music-behavior science · granular player data</p>
+        </div>
+        <div class="fade-up" style="background: #1a1a1a; border: 1px solid rgba(255,255,255,0.06); color: #E8E4DE; padding: 1.25rem 2rem; border-radius: 4px; width: 95%; text-align: center;">
+          <strong>Phase 3 — Premium Fitness & Wellness</strong>
+          <p style="font-size: 0.85rem; opacity: 0.6; margin-top: 0.25rem;">Membership metrics · session duration · class conversion</p>
+        </div>
+      </div>
+
+      <p class="fade-up" style="text-align: center; opacity: 0.4; font-size: 0.85rem; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(215, 175, 116, 0.08);">Downstream revenue: data licensing · generative model API · brand insights product</p>
     </div>
   </section>
 
-  <!-- SLIDE 9: ROADMAP -->
-  <section class="section" style="background: rgba(215, 175, 116, 0.02);">
-    <div class="container" style="max-width: 1000px;">
-      <div class="fade-up">
+  <!-- ROADMAP -->
+  <section class="section" style="background: rgba(215, 175, 116, 0.03); border-top: 1px solid rgba(215, 175, 116, 0.08); border-bottom: 1px solid rgba(215, 175, 116, 0.08);">
+    <div class="container" style="max-width: 900px;">
+      <div class="fade-up" style="text-align: center; margin-bottom: 3rem;">
         <p class="section-eyebrow">Roadmap</p>
-        <h2 style="margin-bottom: 3rem;">Pilot → Proof → Platform</h2>
+        <h2>Pilot → Proof → Platform</h2>
+      </div>
 
-        <div class="deck-timeline">
-          <div class="deck-timeline-node">
-            <div class="deck-timeline-dot"></div>
-            <div class="deck-timeline-label">Month 1–3</div>
-            <p>Sign chain. Integrate RetailNext. Deploy music. 40 active stores live.</p>
-          </div>
-          <div class="deck-timeline-node">
-            <div class="deck-timeline-dot"></div>
-            <div class="deck-timeline-label">Month 4–10</div>
-            <p>400 active store-months collected. Parameter weighting refined. Model training.</p>
-          </div>
-          <div class="deck-timeline-node deck-timeline-key">
-            <div class="deck-timeline-dot"></div>
-            <div class="deck-timeline-label">Month 12</div>
-            <p>Proof of concept published. 90% certainty. 1% lift. Second chain outreach begins.</p>
-          </div>
-          <div class="deck-timeline-node deck-timeline-future">
-            <div class="deck-timeline-dot"></div>
-            <div class="deck-timeline-label">Year 2</div>
-            <p>10+ chains. 500+ locations. Generative model live. Performance pricing across all clients.</p>
-          </div>
+      <div class="fade-up" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
+        <div style="text-align: center;">
+          <div style="width: 14px; height: 14px; background: #d7af74; border-radius: 50%; margin: 0 auto 1rem;"></div>
+          <div style="font-weight: 700; font-size: 0.9rem; color: #d7af74; margin-bottom: 0.5rem;">Month 1–3</div>
+          <p style="font-size: 0.8rem; opacity: 0.55; line-height: 1.5;">Sign chain. Integrate RetailNext. Deploy music. 40 active stores live.</p>
+        </div>
+        <div style="text-align: center;">
+          <div style="width: 14px; height: 14px; background: #d7af74; border-radius: 50%; margin: 0 auto 1rem;"></div>
+          <div style="font-weight: 700; font-size: 0.9rem; color: #d7af74; margin-bottom: 0.5rem;">Month 4–10</div>
+          <p style="font-size: 0.8rem; opacity: 0.55; line-height: 1.5;">400 active store-months collected. Parameter weighting refined. Model training.</p>
+        </div>
+        <div style="text-align: center;">
+          <div style="width: 18px; height: 18px; background: #d7af74; border-radius: 50%; margin: 0 auto 1rem; box-shadow: 0 0 0 4px rgba(215, 175, 116, 0.2);"></div>
+          <div style="font-weight: 700; font-size: 0.9rem; color: #d7af74; margin-bottom: 0.5rem;">Month 12</div>
+          <p style="font-size: 0.8rem; opacity: 0.55; line-height: 1.5;">Proof of concept published. 90% certainty. 1% lift. Second chain outreach begins.</p>
+        </div>
+        <div style="text-align: center;">
+          <div style="width: 14px; height: 14px; background: transparent; border: 2px solid #d7af74; border-radius: 50%; margin: 0 auto 1rem;"></div>
+          <div style="font-weight: 700; font-size: 0.9rem; color: #d7af74; margin-bottom: 0.5rem;">Year 2</div>
+          <p style="font-size: 0.8rem; opacity: 0.55; line-height: 1.5;">10+ chains. 500+ locations. Generative model live. Performance pricing.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SLIDE 10: THE ASK -->
+  <!-- THE ASK -->
   <section class="section">
-    <div class="container" style="max-width: 1000px;">
+    <div class="container" style="max-width: 900px;">
       <div class="fade-up">
         <p class="section-eyebrow">The Ask</p>
-        <h2 style="margin-bottom: 1rem;">[AMOUNT] to reach 100 active store-months in 12 months.</h2>
-        <p style="opacity: 0.6; margin-bottom: 3rem; font-size: 1.05rem;">Proof of lift. Proprietary dataset. A pricing model that sells itself. Optionality to expand, license, or raise Series A.</p>
+        <h2>[AMOUNT] to reach 100 active store-months in 12 months.</h2>
+        <p style="font-size: 1.05rem; opacity: 0.6; margin-top: 0.5rem; margin-bottom: 3rem;">Proof of lift. Proprietary dataset. A pricing model that sells itself. Optionality to expand, license, or raise Series A.</p>
+      </div>
 
-        <div class="deck-bars">
-          <div class="deck-bar-row">
-            <span class="deck-bar-label">Sales & Onboarding</span>
-            <div class="deck-bar" style="width: 100%;"><span>30%</span></div>
-          </div>
-          <div class="deck-bar-row">
-            <span class="deck-bar-label">Development</span>
-            <div class="deck-bar" style="width: 83%;"><span>25%</span></div>
-          </div>
-          <div class="deck-bar-row">
-            <span class="deck-bar-label">Compute</span>
-            <div class="deck-bar" style="width: 67%;"><span>20%</span></div>
-          </div>
-          <div class="deck-bar-row">
-            <span class="deck-bar-label">Storage & Streaming</span>
-            <div class="deck-bar" style="width: 50%;"><span>15%</span></div>
-          </div>
-          <div class="deck-bar-row">
-            <span class="deck-bar-label">Operations & CS</span>
-            <div class="deck-bar" style="width: 33%;"><span>10%</span></div>
-          </div>
+      <div class="fade-up" style="display: flex; flex-direction: column; gap: 0.6rem;">
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <span style="width: 150px; text-align: right; font-size: 0.85rem; opacity: 0.5; flex-shrink: 0;">Sales & Onboarding</span>
+          <div style="height: 24px; width: 100%; background: linear-gradient(90deg, #d7af74, rgba(215, 175, 116, 0.6)); border-radius: 2px; display: flex; align-items: center; justify-content: flex-end; padding-right: 0.75rem;"><span style="font-size: 0.75rem; font-weight: 600; color: #080808;">30%</span></div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <span style="width: 150px; text-align: right; font-size: 0.85rem; opacity: 0.5; flex-shrink: 0;">Development</span>
+          <div style="height: 24px; width: 83%; background: linear-gradient(90deg, #d7af74, rgba(215, 175, 116, 0.6)); border-radius: 2px; display: flex; align-items: center; justify-content: flex-end; padding-right: 0.75rem;"><span style="font-size: 0.75rem; font-weight: 600; color: #080808;">25%</span></div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <span style="width: 150px; text-align: right; font-size: 0.85rem; opacity: 0.5; flex-shrink: 0;">Compute</span>
+          <div style="height: 24px; width: 67%; background: linear-gradient(90deg, #d7af74, rgba(215, 175, 116, 0.6)); border-radius: 2px; display: flex; align-items: center; justify-content: flex-end; padding-right: 0.75rem;"><span style="font-size: 0.75rem; font-weight: 600; color: #080808;">20%</span></div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <span style="width: 150px; text-align: right; font-size: 0.85rem; opacity: 0.5; flex-shrink: 0;">Storage & Streaming</span>
+          <div style="height: 24px; width: 50%; background: linear-gradient(90deg, #d7af74, rgba(215, 175, 116, 0.6)); border-radius: 2px; display: flex; align-items: center; justify-content: flex-end; padding-right: 0.75rem;"><span style="font-size: 0.75rem; font-weight: 600; color: #080808;">15%</span></div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <span style="width: 150px; text-align: right; font-size: 0.85rem; opacity: 0.5; flex-shrink: 0;">Operations & CS</span>
+          <div style="height: 24px; width: 33%; background: linear-gradient(90deg, #d7af74, rgba(215, 175, 116, 0.6)); border-radius: 2px; display: flex; align-items: center; justify-content: flex-end; padding-right: 0.75rem;"><span style="font-size: 0.75rem; font-weight: 600; color: #080808;">10%</span></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SLIDE 11: WHY US -->
-  <section class="section" style="background: rgba(215, 175, 116, 0.02);">
-    <div class="container" style="max-width: 1000px;">
-      <div class="fade-up">
+  <!-- WHY US -->
+  <section class="section" style="background: rgba(215, 175, 116, 0.03); border-top: 1px solid rgba(215, 175, 116, 0.08); border-bottom: 1px solid rgba(215, 175, 116, 0.08);">
+    <div class="container" style="max-width: 900px;">
+      <div class="fade-up" style="text-align: center; margin-bottom: 3rem;">
         <p class="section-eyebrow">Why Us</p>
-        <h2 style="margin-bottom: 2.5rem;">The founder match is real.</h2>
-
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 3rem;">
-          <div class="deck-card">
-            <h3 style="color: #d7af74; font-size: 1.1rem; margin-bottom: 0.75rem;">Music</h3>
-            <p style="font-size: 0.9rem; opacity: 0.8; line-height: 1.7;">Pro jazz musician. Multi-instrumentalist. Music theoretician. Amateur musicologist. We didn't hire someone who knows music. The founder IS the music.</p>
-          </div>
-          <div class="deck-card">
-            <h3 style="color: #d7af74; font-size: 1.1rem; margin-bottom: 0.75rem;">Retail</h3>
-            <p style="font-size: 0.9rem; opacity: 0.8; line-height: 1.7;">Founded award-winning Skreenced (custom apparel, Columbus OH). Currently studying retail operations hands-on under veteran store management. 2026.</p>
-          </div>
-          <div class="deck-card">
-            <h3 style="color: #d7af74; font-size: 1.1rem; margin-bottom: 0.75rem;">Data & AI</h3>
-            <p style="font-size: 0.9rem; opacity: 0.8; line-height: 1.7;">Founded Deep Avatar — gen AI marketing platform. Built ICP-to-content pipelines. Provisional patent. F&F round. PMF insights carried directly into Entuned.</p>
-          </div>
-        </div>
-
-        <p style="text-align: center; font-size: 1.05rem; opacity: 0.85; line-height: 1.8; max-width: 800px; margin: 0 auto;">This product sits at the intersection of music theory, retail behavior psychology, and machine learning. We didn't bolt data onto a music player. We built a data system that outputs music.</p>
+        <h2>The founder match is real.</h2>
       </div>
+
+      <div class="card-grid fade-up" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="card" style="border-top: 3px solid #d7af74;">
+          <div class="card-title" style="color: #d7af74;">Music</div>
+          <p class="card-text">Pro jazz musician. Multi-instrumentalist. Music theoretician. Amateur musicologist. We didn't hire someone who knows music. The founder IS the music.</p>
+        </div>
+        <div class="card" style="border-top: 3px solid #d7af74;">
+          <div class="card-title" style="color: #d7af74;">Retail</div>
+          <p class="card-text">Founded award-winning Skreenced (custom apparel, Columbus OH). Currently studying retail operations hands-on under veteran store management. 2026.</p>
+        </div>
+        <div class="card" style="border-top: 3px solid #d7af74;">
+          <div class="card-title" style="color: #d7af74;">Data & AI</div>
+          <p class="card-text">Founded Deep Avatar — gen AI marketing platform. Built ICP-to-content pipelines. Provisional patent. F&F round. PMF insights carried directly into Entuned.</p>
+        </div>
+      </div>
+
+      <p class="fade-up" style="text-align: center; font-size: 1.05rem; opacity: 0.8; line-height: 1.8; max-width: 750px; margin: 3rem auto 0;">This product sits at the intersection of music theory, retail behavior psychology, and machine learning. We didn't bolt data onto a music player. We built a data system that outputs music.</p>
     </div>
   </section>
 
   <!-- CTA -->
   <section class="section" style="text-align: center;">
     <div class="container">
-      <h2 style="margin-bottom: 1rem;">Interested?</h2>
-      <p style="opacity: 0.7; margin-bottom: 2.5rem;">Let's talk about what Entuned can do for retail.</p>
-      <a href="mailto:hello@entuned.co?subject=Investor%20Inquiry%20—%20Entuned" class="btn btn-primary">Get in Touch</a>
+      <div class="fade-up">
+        <h2 style="margin-bottom: 1rem;">Interested?</h2>
+        <p style="font-size: 1.05rem; opacity: 0.7; margin-bottom: 2.5rem;">Let's talk about what Entuned can do for retail.</p>
+        <a href="mailto:hello@entuned.co?subject=Investor%20Inquiry%20—%20Entuned" class="btn btn-primary">Get in Touch</a>
+      </div>
     </div>
   </section>
 
@@ -409,13 +421,9 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('deck-content').style.display = 'block';
   }
   var form = document.getElementById('deck-gate-form');
-  if (form) {
-    form.addEventListener('submit', function(e) { e.preventDefault(); checkDeckPassword(); });
-  }
+  if (form) form.addEventListener('submit', function(e) { e.preventDefault(); checkDeckPassword(); });
   var input = document.getElementById('deck-password');
-  if (input) {
-    input.addEventListener('keydown', function(e) { if (e.key === 'Enter') { e.preventDefault(); checkDeckPassword(); } });
-  }
+  if (input) input.addEventListener('keydown', function(e) { if (e.key === 'Enter') { e.preventDefault(); checkDeckPassword(); } });
 });
 </script>
 
@@ -448,6 +456,11 @@ document.addEventListener('DOMContentLoaded', function() {
       <ul>
         <li><a href="mailto:hello@entuned.co">Contact</a></li>
         <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Decks <span style="font-weight: 400; font-size: 0.7rem; opacity: 0.5; text-transform: none; letter-spacing: 0;">(password required)</span></h4>
+      <ul>
         <li><a href="deck-investor.html">Investor Deck</a></li>
         <li><a href="deck-retail.html">Retail Pilot Deck</a></li>
       </ul>
