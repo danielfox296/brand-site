@@ -1,0 +1,257 @@
+
+<!-- PASSWORD GATE -->
+<div id="deck-gate" class="deck-gate">
+  <div class="deck-gate-inner">
+    <img src="img/Entuned_logo.png" alt="Entuned" style="height: 24px; margin-bottom: 2rem; opacity: 0.7;">
+    <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Retail Pilot Deck</h2>
+    <p style="opacity: 0.6; margin-bottom: 2rem; font-size: 0.95rem;">This document is confidential. Enter the password to continue.</p>
+    <form id="deck-gate-form" onsubmit="return false;">
+      <input type="password" id="deck-password" class="deck-gate-input" placeholder="Password" autocomplete="off" autofocus>
+      <button type="submit" class="btn btn-primary deck-gate-btn" onclick="checkDeckPassword()">Enter</button>
+    </form>
+    <p id="deck-gate-error" class="deck-gate-error" style="display:none;">Incorrect password.</p>
+  </div>
+</div>
+
+<!-- DECK CONTENT (hidden until password entered) -->
+<div id="deck-content" class="deck-content" style="display:none;">
+
+  <!-- SLIDE 1: COVER -->
+  <section class="deck-slide deck-slide-hero">
+    <div class="container">
+      <div class="fade-up" style="max-width: 800px;">
+        <p class="section-eyebrow" style="color: #d7af74; margin-bottom: 1rem;">Pilot Program Invitation</p>
+        <h1 style="font-size: clamp(2.5rem, 7vw, 4rem); margin-bottom: 1rem;">Is your music working?</h1>
+        <p class="subline" style="font-size: 1.25rem; opacity: 0.6;">We honestly don't know either. Let's find out together.</p>
+        <p style="color: #d7af74; font-size: 0.85rem; margin-top: 2rem;">entuned.co</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 2: THE REAL COST -->
+  <section class="section">
+    <div class="container" style="max-width: 1000px;">
+      <div class="fade-up">
+        <p class="section-eyebrow">The Opportunity</p>
+        <h2 style="margin-bottom: 3rem;">You're probably leaving money on the table. Every day.</h2>
+
+        <div class="stats-grid" style="grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 3rem;">
+          <div class="stat-item">
+            <div class="stat-number" style="color: #d7af74;">$10–$50</div>
+            <div class="stat-label">per month on background music</div>
+          </div>
+          <div class="stat-item" style="border-left: 1px solid rgba(215, 175, 116, 0.15); border-right: 1px solid rgba(215, 175, 116, 0.15);">
+            <div class="stat-number">0%</div>
+            <div class="stat-label">of chains can prove their music drives sales</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" style="color: #d7af74;">$1,000+</div>
+            <div class="stat-label">monthly revenue at stake per $100K store</div>
+          </div>
+        </div>
+
+        <p style="text-align: center; font-size: 1.1rem; opacity: 0.85; padding-top: 1.5rem; border-top: 1px solid rgba(215, 175, 116, 0.1);">The problem isn't your streaming bill. It's the revenue your music isn't generating.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 3: WHAT ENTUNED DOES -->
+  <section class="section" style="background: rgba(215, 175, 116, 0.02);">
+    <div class="container" style="max-width: 1000px;">
+      <div class="fade-up">
+        <h2 style="margin-bottom: 2.5rem;">We tune your music to your customer. Automatically.</h2>
+
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem;">
+          <div class="deck-process-box" style="background: rgba(215, 175, 116, 0.1); border: 1px solid rgba(215, 175, 116, 0.25);">
+            <div style="font-size: 1.5rem; margin-bottom: 0.75rem;">👤</div>
+            <strong style="display: block; margin-bottom: 0.5rem;">Profile Your Customer</strong>
+            <p style="font-size: 0.85rem; opacity: 0.7; line-height: 1.6;">ICP at brand or store level, enriched with shopping district demographics.</p>
+          </div>
+          <div class="deck-process-box" style="background: rgba(26, 26, 46, 0.6); border: 1px solid rgba(26, 26, 46, 0.8);">
+            <div style="font-size: 1.5rem; margin-bottom: 0.75rem;">♫</div>
+            <strong style="display: block; margin-bottom: 0.5rem;">Map to Musical Language</strong>
+            <p style="font-size: 0.85rem; opacity: 0.7; line-height: 1.6;">31 parameters. Proprietary semiotics lexicon. Genre, tempo, mode, era, culture.</p>
+          </div>
+          <div class="deck-process-box" style="background: rgba(26, 26, 26, 0.6); border: 1px solid rgba(255,255,255,0.08);">
+            <div style="font-size: 1.5rem; margin-bottom: 0.75rem;">〰</div>
+            <strong style="display: block; margin-bottom: 0.5rem;">Deploy & Adapt</strong>
+            <p style="font-size: 0.85rem; opacity: 0.7; line-height: 1.6;">Music plays. RetailNext data feeds continuous adjustment. Zero manual input required.</p>
+          </div>
+          <div class="deck-process-box" style="background: rgba(215, 175, 116, 0.1); border: 1px solid rgba(215, 175, 116, 0.25);">
+            <div style="font-size: 1.5rem; margin-bottom: 0.75rem;">↑</div>
+            <strong style="display: block; margin-bottom: 0.5rem;">See Results</strong>
+            <p style="font-size: 0.85rem; opacity: 0.7; line-height: 1.6;">Conversion rate. Dwell time. That's it. That's all you watch.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 4: THE PILOT STRUCTURE -->
+  <section class="section">
+    <div class="container" style="max-width: 1000px;">
+      <div class="fade-up">
+        <h2 style="margin-bottom: 2.5rem;">How we'd work together.</h2>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2.5rem;">
+          <div>
+            <div class="deck-pilot-header" style="background: #d7af74; color: #080808;">Your 40 Active Stores</div>
+            <div class="deck-pilot-body">
+              <div class="deck-text-block"><p>Entuned music system — ICP-matched, continuously optimizing</p></div>
+              <div class="deck-text-block"><p>RetailNext integration — we read your existing data feed</p></div>
+              <div class="deck-text-block"><p>10 months — no changes, no management required from your team</p></div>
+            </div>
+          </div>
+          <div>
+            <div class="deck-pilot-header" style="background: #1a1a1a; color: #E8E4DE;">Your 40 Control Stores</div>
+            <div class="deck-pilot-body">
+              <div class="deck-text-block"><p>Your existing playlist continues unchanged</p></div>
+              <div class="deck-text-block"><p>Historical + live data shared with us at chain level</p></div>
+              <div class="deck-text-block"><p>Zero disruption to operations — they don't even know they're a control</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div style="border: 2px solid #d7af74; padding: 2rem; border-radius: 4px; text-align: center;">
+          <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">Your time investment: ~2 hours for onboarding. That's it.</p>
+          <p style="font-size: 1.1rem;">Cost to you: <strong>$0</strong>. We replace your existing music spend. Free.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 5: THE EXPERIMENT -->
+  <section class="section" style="background: rgba(215, 175, 116, 0.02);">
+    <div class="container" style="max-width: 1000px;">
+      <div class="fade-up">
+        <p class="section-eyebrow">The Science</p>
+        <h2 style="margin-bottom: 2.5rem;">This is a real study. We designed it for proof.</h2>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2.5rem;">
+          <div class="deck-stat-card">
+            <div style="font-size: 3rem; font-weight: 700; color: #d7af74; font-family: 'Manrope', sans-serif;">400</div>
+            <p>active store-months of data</p>
+          </div>
+          <div class="deck-stat-card">
+            <div style="font-size: 3rem; font-weight: 700; opacity: 0.4; font-family: 'Manrope', sans-serif;">400</div>
+            <p style="opacity: 0.6;">control store-months</p>
+          </div>
+          <div class="deck-stat-card">
+            <div style="font-size: 3rem; font-weight: 700; color: #d7af74; font-family: 'Manrope', sans-serif;">90%</div>
+            <p>statistical certainty target</p>
+          </div>
+          <div class="deck-stat-card">
+            <div style="font-size: 3rem; font-weight: 700; font-family: 'Manrope', sans-serif;">1%</div>
+            <p style="opacity: 0.6;">minimum lift we're proving</p>
+          </div>
+        </div>
+
+        <div style="border-left: 3px solid #d7af74; padding: 1.25rem 1.5rem; background: rgba(215, 175, 116, 0.04);">
+          <p style="font-size: 0.95rem; line-height: 1.8; opacity: 0.85;">We're not promising 10%. We're promising a provable, reproducible 1%. Conservative enough to be credible. Meaningful enough to matter. On a $100K/month store, 1% = $1,000. Across 40 stores, $40,000/month. Every month.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 6: AFTER THE PILOT -->
+  <section class="section">
+    <div class="container" style="max-width: 1000px;">
+      <div class="fade-up">
+        <p class="section-eyebrow">What Comes Next</p>
+        <h2 style="margin-bottom: 2.5rem;">You'll have the data. Then we'll talk.</h2>
+
+        <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 1.5rem; align-items: center; margin-bottom: 3rem;">
+          <div style="padding: 2rem; border: 1px solid rgba(215, 175, 116, 0.15); border-radius: 4px;">
+            <p style="font-size: 0.85rem; opacity: 0.5; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem;">Phase 1 — Pilot</p>
+            <div style="font-size: 2.2rem; font-weight: 700; margin-bottom: 0.75rem; font-family: 'Manrope', sans-serif;">FREE</div>
+            <p style="font-size: 0.95rem; opacity: 0.8;">10 months. Zero cost. Data collected.</p>
+            <p style="font-size: 0.85rem; opacity: 0.5; margin-top: 0.5rem;">You keep all the music benefits during the trial.</p>
+          </div>
+
+          <div style="font-size: 2rem; color: #d7af74; padding: 0 0.5rem;">→</div>
+
+          <div style="padding: 2rem; background: rgba(215, 175, 116, 0.08); border: 1px solid rgba(215, 175, 116, 0.25); border-radius: 4px;">
+            <p style="font-size: 0.85rem; opacity: 0.5; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem;">Phase 2 — Performance</p>
+            <div style="font-size: 2.2rem; font-weight: 700; color: #d7af74; margin-bottom: 0.75rem; font-family: 'Manrope', sans-serif;">% of Lift</div>
+            <p style="font-size: 0.95rem; opacity: 0.8;">Pay only on results we demonstrably generate.</p>
+            <p style="font-size: 0.85rem; opacity: 0.5; margin-top: 0.5rem;">If we don't move your numbers, you owe us nothing.</p>
+          </div>
+        </div>
+
+        <div style="text-align: center;">
+          <p style="font-size: 1.05rem; font-weight: 600; margin-bottom: 0.25rem;">We're not selling software. We're selling a performance partnership.</p>
+          <p style="opacity: 0.6;">Our revenue depends on your results. That's the alignment you want.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 7: WHY NOW -->
+  <section class="section" style="background: rgba(215, 175, 116, 0.04);">
+    <div class="container" style="max-width: 900px;">
+      <div class="fade-up">
+        <h2 style="margin-bottom: 2.5rem;">The window to participate at no cost won't stay open.</h2>
+
+        <div class="deck-numbered-list">
+          <div class="deck-numbered-item">
+            <span class="deck-numbered-num">01</span>
+            <p>Founding pilot chains shape how the system learns. Your stores define the model.</p>
+          </div>
+          <div class="deck-numbered-item">
+            <span class="deck-numbered-num">02</span>
+            <p>You get proof specific to your customer base — not generic research, your data.</p>
+          </div>
+          <div class="deck-numbered-item">
+            <span class="deck-numbered-num">03</span>
+            <p>Once we raise institutional capital based on this pilot data, free closes. Pricing begins.</p>
+          </div>
+        </div>
+
+        <p style="text-align: center; color: #d7af74; font-size: 1.15rem; font-weight: 600; margin-top: 3rem;">This is your window to get in before anyone else.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 8: CLOSE -->
+  <section class="deck-slide deck-slide-hero" style="min-height: 70vh;">
+    <div class="container" style="text-align: center;">
+      <div class="fade-up">
+        <h1 style="font-size: clamp(2rem, 5vw, 3.2rem); margin-bottom: 1rem;">In 10 months, you'll know.</h1>
+        <p style="opacity: 0.5; font-size: 1.15rem; margin-bottom: 1.5rem;">We don't know if your music is working. Neither do you.</p>
+        <p style="color: #d7af74; font-size: 1.4rem; font-weight: 700; margin-bottom: 2rem;">Let's find out together.</p>
+        <a href="mailto:hello@entuned.co?subject=Pilot%20Program%20Inquiry%20—%20Entuned" class="btn btn-primary">Get in Touch</a>
+        <p style="opacity: 0.4; font-size: 0.85rem; margin-top: 2rem;">entuned.co</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+function checkDeckPassword() {
+  var pw = document.getElementById('deck-password').value;
+  if (pw === 'letmein') {
+    document.getElementById('deck-gate').style.display = 'none';
+    document.getElementById('deck-content').style.display = 'block';
+    sessionStorage.setItem('entuned_deck_auth', '1');
+  } else {
+    document.getElementById('deck-gate-error').style.display = 'block';
+    document.getElementById('deck-password').value = '';
+    document.getElementById('deck-password').focus();
+  }
+}
+document.addEventListener('DOMContentLoaded', function() {
+  if (sessionStorage.getItem('entuned_deck_auth') === '1') {
+    document.getElementById('deck-gate').style.display = 'none';
+    document.getElementById('deck-content').style.display = 'block';
+  }
+  var form = document.getElementById('deck-gate-form');
+  if (form) {
+    form.addEventListener('submit', function(e) { e.preventDefault(); checkDeckPassword(); });
+  }
+  var input = document.getElementById('deck-password');
+  if (input) {
+    input.addEventListener('keydown', function(e) { if (e.key === 'Enter') { e.preventDefault(); checkDeckPassword(); } });
+  }
+});
+</script>
