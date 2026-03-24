@@ -2,34 +2,14 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { isAuthenticated } from './lib/auth';
 import Shell from './components/layout/Shell';
 import Login from './pages/Login';
-
-/* ------------------------------------------------------------------ */
-/*  Placeholder pages — each will be replaced by a dedicated module   */
-/* ------------------------------------------------------------------ */
-function Dashboard() {
-  return <div className="text-[#a0a0a0]">Dashboard — coming soon</div>;
-}
-function Pilots() {
-  return <div className="text-[#a0a0a0]">Pilots — coming soon</div>;
-}
-function PilotDetail() {
-  return <div className="text-[#a0a0a0]">Pilot Detail — coming soon</div>;
-}
-function ICPDetail() {
-  return <div className="text-[#a0a0a0]">ICP Detail — coming soon</div>;
-}
-function TrackLibrary() {
-  return <div className="text-[#a0a0a0]">Track Library — coming soon</div>;
-}
-function Playlists() {
-  return <div className="text-[#a0a0a0]">Playlists — coming soon</div>;
-}
-function PromptGenerator() {
-  return <div className="text-[#a0a0a0]">Prompt Generator — coming soon</div>;
-}
-function Settings() {
-  return <div className="text-[#a0a0a0]">Settings — coming soon</div>;
-}
+import Dashboard from './pages/Dashboard';
+import Pilots from './pages/Pilots';
+import PilotDetail from './pages/PilotDetail';
+import ICPDetail from './pages/ICPDetail';
+import TrackLibrary from './pages/TrackLibrary';
+import Playlists from './pages/Playlists';
+import PromptGenerator from './pages/PromptGenerator';
+import Settings from './pages/Settings';
 
 /* ------------------------------------------------------------------ */
 /*  Auth guard                                                        */
