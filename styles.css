@@ -440,7 +440,7 @@ footer .container {
 
 /* ==================== STATS BAR ==================== */
 .stats-section {
-  background: rgba(215, 175, 116, 0.05);
+  background: rgba(215, 175, 116, 0.08);
   border: 1px solid rgba(215, 175, 116, 0.15);
   padding: 3rem 2rem;
   margin: 4rem 0;
