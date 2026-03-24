@@ -880,6 +880,46 @@ select option {
 }
 
 /* ==================== BLOG POST LAYOUT ==================== */
+
+/* Blog article layout — covers both template patterns */
+main > article {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 8rem 2rem 4rem;
+}
+
+main > article > h1,
+.article-hero h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+main > article > h2,
+.article-body h2 {
+  font-size: 1.4rem;
+  margin-top: 3rem;
+  margin-bottom: 1.25rem;
+  color: #E8E4DE;
+}
+
+main > article > h3,
+.article-body h3 {
+  font-size: 1.15rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  color: #E8E4DE;
+}
+
+main > article > p,
+.article-body > p {
+  font-size: 1.1rem;
+  line-height: 1.95;
+  opacity: 0.9;
+  margin-bottom: 1.75rem;
+}
+
+/* Wrapper-div blog posts */
 .article-hero {
   max-width: 720px;
   margin: 0 auto;
