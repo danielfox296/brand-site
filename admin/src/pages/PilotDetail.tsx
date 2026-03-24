@@ -348,7 +348,7 @@ export default function PilotDetail() {
           deleteContact={deleteContact}
         />
       )}
-      {activeTab === 'icps' && <ICPsTab icps={icps} loading={icpsLoading} />}
+      {activeTab === 'icps' && <ICPsTab icps={icps} loading={icpsLoading} pilotId={id!} onDelete={fetchIcps} />}
       {activeTab === 'tracks' && <TracksTab tracks={tracks} loading={tracksLoading} />}
     </div>
   );
@@ -565,7 +565,15 @@ function ContactsTab(props: ContactsTabProps) {
 // ──────────────────────────────────────────────
 // ICPs Tab
 // ──────────────────────────────────────────────
-function ICPsTab({ icps, loading }: { icps: ICP[]; loading: boolean }) {
+function ICPsTab({ icps, loading, pilotId, onDelete }: { icps: ICP[]; loading: boolean; pilotId: string; onDelete: () => void }) {
+  const handleDelete = async (e: React.MouseEvent, icpId: string, label: string) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (!confirm(`Delete ICP "${label}"? This cannot be undone.`)) return;
+    const { error } = await supabase.from('icps').delete().eq('id', icpId);
+    if (!error) onDelete();
+  };
+
   if (loading) {
     return (
       <div className="flex items-center justify-center h-32">
@@ -576,11 +584,17 @@ function ICPsTab({ icps, loading }: { icps: ICP[]; loading: boolean }) {
 
   if (icps.length === 0) {
     return (
-      <div className="border-2 border-dashed border-[#2a2a2a] rounded-lg py-16 flex flex-col items-center gap-2">
+      <div className="border-2 border-dashed border-[#2a2a2a] rounded-lg py-16 flex flex-col items-center gap-3">
         <svg className="w-8 h-8 text-[#2a2a2a]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
         </svg>
         <p className="text-sm text-[#555]">No ICP profiles created yet.</p>
+        <Link
+          to={`/pilots/${pilotId}/icps/new`}
+          className="mt-2 px-4 py-2 bg-[#d7af74] text-black text-sm font-medium rounded-lg hover:bg-[#c9a060] transition-colors"
+        >
+          + New ICP
+        </Link>
       </div>
     );
   }
@@ -589,11 +603,30 @@ function ICPsTab({ icps, loading }: { icps: ICP[]; loading: boolean }) {
     <div>
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-sm font-medium text-[#a0a0a0]">{icps.length} ICP profile{icps.length !== 1 ? 's' : ''}</h3>
+        <Link
+          to={`/pilots/${pilotId}/icps/new`}
+          className="px-3 py-1.5 bg-[#d7af74] text-black text-sm font-medium rounded-lg hover:bg-[#c9a060] transition-colors"
+        >
+          + New ICP
+        </Link>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {icps.map((icp) => (
-          <div key={icp.id} className="bg-[#141414] border border-[#2a2a2a] rounded-lg p-5 hover:border-[#3a3a3a] transition-colors">
-            <h4 className="text-white font-medium mb-3 truncate">{icp.label}</h4>
+          <Link
+            key={icp.id}
+            to={`/pilots/${pilotId}/icps/${icp.id}`}
+            className="relative bg-[#141414] border border-[#2a2a2a] rounded-lg p-5 hover:border-[#d7af74]/40 transition-colors block"
+          >
+            <button
+              onClick={(e) => handleDelete(e, icp.id, icp.label)}
+              className="absolute top-3 right-3 w-6 h-6 flex items-center justify-center rounded text-[#555] hover:text-red-400 hover:bg-red-400/10 transition-colors"
+              title="Delete ICP"
+            >
+              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <h4 className="text-white font-medium mb-3 truncate pr-6">{icp.label}</h4>
             <dl className="space-y-2 text-sm">
               <div className="flex justify-between">
                 <dt className="text-[#666]">Age Range</dt>
@@ -611,14 +644,16 @@ function ICPsTab({ icps, loading }: { icps: ICP[]; loading: boolean }) {
                 <dt className="text-[#666]">Cultural Capital</dt>
                 <dd className="text-[#a0a0a0]">{icp.cultural_capital || '--'}</dd>
               </div>
-              {icp.life_stage && (
-                <div className="flex justify-between">
-                  <dt className="text-[#666]">Life Stage</dt>
-                  <dd className="text-[#a0a0a0]">{icp.life_stage}</dd>
-                </div>
-              )}
+              <div className="flex justify-between">
+                <dt className="text-[#666]">Primary State</dt>
+                <dd className="text-[#a0a0a0]">{icp.primary_state || '--'}</dd>
+              </div>
+              <div className="flex justify-between">
+                <dt className="text-[#666]">Emotional Promise</dt>
+                <dd className="text-[#a0a0a0] truncate max-w-[50%]">{icp.emotional_promise || '--'}</dd>
+              </div>
             </dl>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
