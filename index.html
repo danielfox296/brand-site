@@ -70,10 +70,12 @@
     window.addEventListener('resize', resize);
 
     var cols = 40, rows = 28;
+    var time = 0;
 
     function render() {
       mouseX += (targetX - mouseX) * 0.06;
       mouseY += (targetY - mouseY) * 0.06;
+      time += 0.008;
 
       var w = section.offsetWidth;
       var h = section.offsetHeight;
@@ -106,21 +108,29 @@
           var x = bx + ambientDx + pushDx;
           var y = by + ambientDy + pushDy;
 
-          var size = 1.2 + inf * 5;
+          var size = 1.2 + inf * 3.5;
+
+          // Autonomous ripple: slow wave radiating from center
+          var rippleDist = Math.sqrt((bx - w * 0.5) * (bx - w * 0.5) + (by - h * 0.5) * (by - h * 0.5));
+          var ripple = Math.sin(rippleDist * 0.018 - time * 3) * 0.5 + 0.5;
 
           var r, g, b, a;
           if (inf > 0.35) {
-            r = 215; g = 175; b = 116;
-            a = 0.4 + inf * 0.6;
+            // Cursor hotspot — toned down
+            r = 200; g = 170; b = 120;
+            a = 0.3 + inf * 0.35;
           } else if (inf > 0.15) {
             var t = (inf - 0.15) / 0.2;
-            r = Math.round(130 + (215 - 130) * t);
-            g = Math.round(126 + (175 - 126) * t);
-            b = Math.round(120 + (116 - 120) * t);
-            a = 0.15 + t * 0.3;
+            r = Math.round(140 + (200 - 140) * t);
+            g = Math.round(135 + (170 - 135) * t);
+            b = Math.round(128 + (120 - 128) * t);
+            a = 0.25 + t * 0.15;
           } else {
-            r = 130; g = 126; b = 120;
-            a = 0.20 + inf * 0.3;
+            // Base dots — visible, with subtle ripple tint
+            r = Math.round(130 + ripple * 18);
+            g = Math.round(126 + ripple * 12);
+            b = Math.round(120 + ripple * 4);
+            a = 0.30 + ripple * 0.08;
           }
 
           ctx.beginPath();
