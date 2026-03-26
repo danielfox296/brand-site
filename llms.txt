@@ -51,6 +51,11 @@ Built on decades of peer-reviewed research: tempo entrainment increases dwell ti
 - [The Science of Tempo in Retail](https://entuned.co/blog/science-of-tempo-retail.html): Tempo research and its application to retail environments.
 - [How Specialty Wine Retailers Use Music to Sell More Expensive Bottles](https://entuned.co/blog/how-specialty-wine-retailers-use-music-to-sell-more-expensive-bottles.html): The original Areni & Kim study and its implications.
 - [AI-Generated Music for Retail](https://entuned.co/blog/ai-generated-music-retail.html): Why generative AI changes the economics and effectiveness of retail audio.
+- [You Hired a Lighting Designer. Why Didn't You Hire a Sound Designer?](https://entuned.co/blog/sound-designer.html): The parallel between lighting design and sound design in retail is exact.
+- [What Happens After Ninety Days](https://entuned.co/blog/after-ninety-days.html): How correlated deployment data turns noise into actionable hypotheses about music and sales.
+- [The Store Manager Problem](https://entuned.co/blog/store-manager-problem.html): Ten locations, ten managers, ten different soundtracks — and no brand specification for sound.
+- [Why the Next Big Retail Tech Acquisition Will Be in Audio](https://entuned.co/blog/next-retail-tech-acquisition.html): Audio is the last major environmental variable nobody is measuring. The acquisition window is open.
+- [Your Employees Hear It 2,000 Hours a Year](https://entuned.co/blog/employees-hear-it.html): The music that works for the customer's twenty-minute visit should also work for the employee's eight-hour shift.
 - [No Gaps. No Silence. No Jolt.](https://entuned.co/blog/seamless-playback.html): Why seamless music transitions matter in retail and why most services still can't clear the bar.
 - [Every Store Teaches the Next One](https://entuned.co/blog/fleet-learning.html): How Entuned's fleet learning model turns every deployment into a compounding data asset.
 - [Your Store Already Has a Mood](https://entuned.co/blog/your-store-already-has-a-mood.html): Music is a compound signal — and you're already conditioning every customer who walks in.
