@@ -41,6 +41,7 @@ SRC      = os.path.join(REPO, '_src')
 LAYOUTS  = os.path.join(SRC, 'layouts')
 PARTIALS = os.path.join(SRC, 'partials')
 PAGES    = os.path.join(SRC, 'pages')
+SITE_URL = 'https://entuned.co'
 
 
 def read(path):
@@ -115,10 +116,17 @@ def build():
         page_header = header.strip().replace('{{nav_prefix}}', nav_prefix)
         page_footer = footer.strip().replace('{{nav_prefix}}', nav_prefix)
 
+        # Compute canonical URL
+        if output == 'index.html':
+            canonical_url = f'{SITE_URL}/'
+        else:
+            canonical_url = f'{SITE_URL}/{output}'
+
         # Substitute into base layout
         html = base
         html = html.replace('{{title}}',            title)
         html = html.replace('{{meta_description}}', meta_desc)
+        html = html.replace('{{canonical_url}}',    canonical_url)
         html = html.replace('{{css_path}}',         css_path)
         html = html.replace('{{page_style}}',       page_style)
         html = html.replace('{{header}}',           page_header)
