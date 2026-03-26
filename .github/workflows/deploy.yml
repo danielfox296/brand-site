@@ -4,8 +4,6 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
-  repository_dispatch:
-    types: [player-updated]
 
 jobs:
   deploy:
@@ -19,37 +17,6 @@ jobs:
     steps:
       - name: Checkout brand-site
         uses: actions/checkout@v4
-
-      # --- Build the player app into /play/ ---
-      - name: Checkout entuned-player
-        uses: actions/checkout@v4
-        with:
-          repository: danielfox296/entuned-player
-          path: _player
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Build player
-        working-directory: _player
-        run: |
-          npm ci
-          npm run build
-        env:
-          VITE_API_BASE_URL: ${{ secrets.VITE_API_BASE_URL }}
-
-      # --- Build the admin dashboard into /admin/ ---
-      - name: Build admin dashboard
-        working-directory: admin
-        run: |
-          npm ci
-          npm run build
-        env:
-          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
-          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
-          VITE_AUTH_ENDPOINT: ${{ secrets.VITE_AUTH_ENDPOINT }}
 
       # --- Build the brand site from _src/ modules ---
       - name: Build site
@@ -65,12 +32,6 @@ jobs:
           cp -r img _site/img 2>/dev/null || true
           cp -r audio _site/audio 2>/dev/null || true
           cp -r blog _site/blog 2>/dev/null || true
-          # Drop player build into /play/
-          mkdir -p _site/play
-          cp -r _player/dist/* _site/play/
-          # Drop admin build into /admin/
-          mkdir -p _site/admin
-          cp -r admin/dist/* _site/admin/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
