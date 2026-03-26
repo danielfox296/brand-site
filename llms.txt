@@ -51,6 +51,8 @@ Built on decades of peer-reviewed research: tempo entrainment increases dwell ti
 - [The Science of Tempo in Retail](https://entuned.co/blog/science-of-tempo-retail.html): Tempo research and its application to retail environments.
 - [How Specialty Wine Retailers Use Music to Sell More Expensive Bottles](https://entuned.co/blog/how-specialty-wine-retailers-use-music-to-sell-more-expensive-bottles.html): The original Areni & Kim study and its implications.
 - [AI-Generated Music for Retail](https://entuned.co/blog/ai-generated-music-retail.html): Why generative AI changes the economics and effectiveness of retail audio.
+- [Every Store Teaches the Next One](https://entuned.co/blog/fleet-learning.html): How Entuned's fleet learning model turns every deployment into a compounding data asset.
+- [Your Store Already Has a Mood](https://entuned.co/blog/your-store-already-has-a-mood.html): Music is a compound signal — and you're already conditioning every customer who walks in.
 
 ## Key Concepts
 

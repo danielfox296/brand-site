@@ -183,7 +183,7 @@ Music science. Retail operations. Generative AI. Entuned sits at their intersect
 
 - Provisional patent filed on the psychographic-to-musicological translation engine and multi-zone spatial music distribution architecture
 - 18-24 month first-mover advantage in psychographic retail audio
-- Data moat: behavioral feedback from retail deployments improves the translation engine over time. More stores = better music = harder to replicate.
+- Data moat: behavioral feedback from retail deployments improves the translation engine over time. More stores = better music = harder to replicate. This is a fleet learning model — like Tesla's autonomous driving network, every store deployment adds correlated data (musical variables mapped to commercial outcomes) that makes every other store's music sharper. The compounding data asset is not something a competitor can purchase or reverse-engineer.
 - High switching costs: once a retailer's customer psychology is mapped and the soundtrack is optimized, switching to a generic service means losing all that calibration.
 
 ---
