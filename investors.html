@@ -198,17 +198,80 @@
     </div>
   </section>
 
-  <!-- INTERESTED -->
-  <section class="section" style="text-align: center;">
-    <div class="container">
-      <h2 style="margin-bottom: 1rem;">Interested?</h2>
-      <p style="font-size: 1.05rem; opacity: 0.85; margin-bottom: 2.5rem;">We're looking for angels who understand data assets, retail technology, or the intersection of AI and creative industries.</p>
-      <div class="btn-group">
-        <a href="mailto:hello@entuned.co?subject=Investor%20Deck%20Request" class="btn btn-primary">Request the Deck</a>
-        <a href="index.html" class="btn btn-secondary">Back Home</a>
+  <!-- INVESTOR FORM -->
+  <section class="section" style="background: rgba(215, 175, 116, 0.06); border-top: 1px solid rgba(215, 175, 116, 0.12);">
+    <div class="container" style="max-width: 580px;">
+      <div class="fade-up" style="text-align: center; margin-bottom: 3rem;">
+        <p class="section-eyebrow">Get the Materials</p>
+        <h2>Request the Deck</h2>
+        <p style="font-size: 1.05rem; opacity: 0.85;">We're looking for angels who understand data assets, retail technology, or the intersection of AI and creative industries.</p>
       </div>
+      <form class="fade-up" action="https://formspree.io/f/xgopwepl" method="POST" id="investor-form">
+        <input type="hidden" name="_subject" value="Investor Deck Request — Entuned">
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+          <div class="form-group">
+            <label for="inv-first">First name</label>
+            <input type="text" id="inv-first" name="first_name" required placeholder="Jane">
+          </div>
+          <div class="form-group">
+            <label for="inv-last">Last name</label>
+            <input type="text" id="inv-last" name="last_name" required placeholder="Doe">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inv-fund">Fund or firm <span style="opacity: 0.4; font-weight: 400;">(optional)</span></label>
+          <input type="text" id="inv-fund" name="fund" placeholder="Acme Ventures">
+        </div>
+
+        <div class="form-group">
+          <label for="inv-email">Email</label>
+          <input type="email" id="inv-email" name="email" required placeholder="jane@acmevc.com">
+        </div>
+
+        <!-- Honeypot -->
+        <input type="text" name="_gotcha" style="display:none">
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">Request the Deck</button>
+
+        <div id="investor-form-status" style="text-align: center; margin-top: 1.5rem; display: none;"></div>
+      </form>
     </div>
   </section>
+
+  <script>
+  (function() {
+    var form = document.getElementById('investor-form');
+    var status = document.getElementById('investor-form-status');
+    if (!form) return;
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var btn = form.querySelector('button[type="submit"]');
+      btn.textContent = 'Sending\u2026';
+      btn.disabled = true;
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(function(response) {
+        if (response.ok) {
+          status.style.display = 'block';
+          status.style.color = '#d7af74';
+          status.textContent = 'Got it. We\u2019ll send the deck to your inbox shortly.';
+          form.reset();
+          btn.textContent = 'Request Sent';
+        } else { throw new Error(); }
+      }).catch(function() {
+        status.style.display = 'block';
+        status.style.color = '#E24B4A';
+        status.textContent = 'Something went wrong. Email us at hello@entuned.co.';
+        btn.textContent = 'Request the Deck';
+        btn.disabled = false;
+      });
+    });
+  })();
+  </script>
 
   <!-- FOOTER -->
 <footer>
