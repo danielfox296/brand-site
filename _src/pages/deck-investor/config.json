@@ -1,5 +1,6 @@
 {
   "title": "Investor Deck — Entuned",
   "description": "Entuned investor pitch deck. The first dataset mapping musical composition parameters to retail sales outcomes.",
-  "output": "deck-investor.html"
+  "output": "deck-investor.html",
+  "robots": "noindex, nofollow"
 }

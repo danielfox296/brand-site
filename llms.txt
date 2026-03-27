@@ -74,12 +74,6 @@ Built on decades of peer-reviewed research: tempo entrainment increases dwell ti
 - [Every Store Teaches the Next One](https://entuned.co/blog/fleet-learning.html): How Entuned's fleet learning model turns every deployment into a compounding data asset.
 - [Your Store Already Has a Mood](https://entuned.co/blog/your-store-already-has-a-mood.html): Music is a compound signal — and you're already conditioning every customer who walks in.
 
-- [What Is Entuned?](https://entuned.co/blog/what-is-entuned.html): Factual company overview — technology, research foundation, founding story, competitive differentiation.
-- [What Are Musical Flow Factors?](https://entuned.co/blog/what-are-flow-factors.html): The 31-parameter framework mapping musical properties to verified retail behavioral outcomes.
-- [AI vs. Traditional In-Store Music: What's Changed](https://entuned.co/blog/ai-vs-traditional-retail-music.html): Generative AI vs. catalog-based music for retail — five dimensions of comparison.
-- [How to Measure the ROI of In-Store Music](https://entuned.co/blog/measure-roi-retail-music.html): Methodology and metrics for measuring audio's effect on retail performance.
-- [The State of Retail Atmospherics in 2026](https://entuned.co/blog/retail-atmospherics-2026.html): Industry overview of where retail sensory design stands and what's changing in audio.
-
 ## Key Concepts
 
 **Flow Factors**: The 31 discrete musical parameters — tempo, harmonic density, spectral brightness, rhythmic regularity, dynamic range, timbral warmth, and 25 others — that Entuned uses to specify and generate AI retail music. Each factor maps to a verified behavioral outcome. The framework is Entuned's proprietary translation layer between customer psychology and musical output. No other retail music provider uses a parameterized approach of this resolution.

@@ -91,6 +91,9 @@ def build():
         # CSS path prefix (same logic)
         css_path = nav_prefix
 
+        # Robots meta tag
+        robots_value = config.get('robots', 'index, follow')
+
         # Meta description tag
         meta_desc = ''
         if description:
@@ -136,7 +139,7 @@ def build():
         og_type = 'article' if is_blog else 'website'
 
         # OG image
-        og_image = f'{SITE_URL}/img/Entuned_logo.png'
+        og_image = f'{SITE_URL}/img/og-default.png'
         if config.get('og_image'):
             og_image = config['og_image'] if config['og_image'].startswith('http') else f'{SITE_URL}/{config["og_image"]}'
         elif is_blog:
@@ -222,6 +225,21 @@ def build():
 
         schema_json = f'<script type="application/ld+json">\n{json.dumps(schema, indent=2)}\n  </script>'
 
+        # WebSite schema — added to homepage only
+        if output == 'index.html':
+            website_schema = {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "name": "Entuned",
+                "url": SITE_URL,
+                "description": "AI-powered retail music optimization backed by music psychology research.",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Entuned"
+                }
+            }
+            schema_json += f'\n  <script type="application/ld+json">\n{json.dumps(website_schema, indent=2)}\n  </script>'
+
         # FAQPage schema — if config has a 'faq' key with [{q, a}, ...] entries
         faq_items = config.get('faq', [])
         if faq_items:
@@ -245,6 +263,7 @@ def build():
         # Substitute into base layout
         html = base
         html = html.replace('{{title}}',            title)
+        html = html.replace('{{robots}}',           robots_value)
         html = html.replace('{{meta_description}}', meta_desc)
         html = html.replace('{{canonical_url}}',    canonical_url)
         html = html.replace('{{css_path}}',         css_path)

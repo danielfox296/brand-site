@@ -13,18 +13,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://entuned.co/deck-investor.html</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://entuned.co/deck-retail.html</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://entuned.co/for-cfos.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
@@ -47,12 +35,6 @@
     <lastmod>2026-03-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://entuned.co/investors.html</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://entuned.co/pilot.html</loc>
@@ -314,6 +296,12 @@
   </url>
   <url>
     <loc>https://entuned.co/blog/what-are-flow-factors.html</loc>
+    <lastmod>2026-03-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://entuned.co/blog/mood-media-alternatives.html</loc>
     <lastmod>2026-03-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
