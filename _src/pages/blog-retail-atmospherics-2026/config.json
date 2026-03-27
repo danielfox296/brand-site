@@ -1,5 +1,27 @@
 {
   "title": "The State of Retail Atmospherics in 2026 — Entuned Blog",
   "meta_description": "Visual merchandising is data-driven. Audio is stuck in the 1990s. The state of retail atmospherics in 2026 and what comes next.",
-  "output": "blog/retail-atmospherics-2026.html"
+  "output": "blog/retail-atmospherics-2026.html",
+  "faq": [
+    {
+      "q": "Why did audio fall behind other retail sensory channels like visual merchandising?",
+      "a": "Three factors: music licensing made experimentation legally complex and expensive; background music providers were distribution systems, not optimization systems; and there was no measurement infrastructure to create a feedback loop between audio and outcomes."
+    },
+    {
+      "q": "What is changing in retail audio in 2026?",
+      "a": "Three trends converge: AI-generated music has reached commercial quality, eliminating catalog constraints and licensing overhead; broader AI adoption in retail has created organizational readiness; and e-commerce pressure is forcing brick-and-mortar to differentiate through sensory experience."
+    },
+    {
+      "q": "What does the research say about audio's impact on retail outcomes?",
+      "a": "Four decades of peer-reviewed studies show meaningful effects: Milliman (1982) found tempo controls dwell time; Areni and Kim (1993) found 8–12% higher willingness to pay with genre congruence; North et al. (1999) showed music tripled matching product selection."
+    },
+    {
+      "q": "Who is closing the gap between audio and other data-driven retail channels?",
+      "a": "Entuned is designed specifically to close this gap, using AI generation with 31 parameterized flow factors, zone-level deployment, and integrated performance measurement — bringing audio to the same data and accountability standard as visual merchandising."
+    },
+    {
+      "q": "What should retail leaders do now about their audio environment?",
+      "a": "Start with a diagnostic audit: who chose this music, what data informed the choice, and how do you know it's working? Then begin correlating audio conditions with dwell time, conversion rate, and basket size to establish a performance baseline."
+    }
+  ]
 }
