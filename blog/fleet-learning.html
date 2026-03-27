@@ -197,40 +197,6 @@
       });
     });
 
-    // Audio player
-    (function() {
-      let currentAudio = null;
-      let currentTrack = null;
-      document.querySelectorAll('.audio-track').forEach(track => {
-        const btn = track.querySelector('.audio-play-btn');
-        const bar = track.querySelector('.audio-progress-bar');
-        const time = track.querySelector('.audio-time');
-        if (!btn) return;
-        btn.addEventListener('click', (e) => {
-          e.stopPropagation();
-          if (currentAudio && currentTrack === track) {
-            if (currentAudio.paused) { currentAudio.play(); btn.innerHTML = '&#9646;&#9646;'; track.classList.add('playing'); }
-            else { currentAudio.pause(); btn.innerHTML = '&#9654;'; track.classList.remove('playing'); }
-            return;
-          }
-          if (currentAudio) { currentAudio.pause(); currentTrack.querySelector('.audio-play-btn').innerHTML = '&#9654;'; currentTrack.classList.remove('playing'); currentTrack.querySelector('.audio-progress-bar').style.width = '0%'; }
-          currentAudio = new Audio(track.dataset.src);
-          currentTrack = track;
-          currentAudio.play();
-          btn.innerHTML = '&#9646;&#9646;';
-          track.classList.add('playing');
-          currentAudio.addEventListener('timeupdate', () => {
-            if (!currentAudio.duration) return;
-            const pct = (currentAudio.currentTime / currentAudio.duration) * 100;
-            bar.style.width = pct + '%';
-            const m = Math.floor(currentAudio.currentTime / 60);
-            const s = Math.floor(currentAudio.currentTime % 60);
-            time.textContent = m + ':' + (s < 10 ? '0' : '') + s;
-          });
-          currentAudio.addEventListener('ended', () => { btn.innerHTML = '&#9654;'; track.classList.remove('playing'); bar.style.width = '0%'; time.textContent = '0:00'; currentAudio = null; currentTrack = null; });
-        });
-      });
-    })();
   </script>
 </body>
 </html>
