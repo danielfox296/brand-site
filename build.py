@@ -79,7 +79,7 @@ def build():
             continue
 
         title       = config.get('title', 'Entuned')
-        description = config.get('description', '')
+        description = config.get('description', '') or config.get('meta_description', '')
         output      = config.get('output', f'{page_name}.html')
 
         # Determine nav_prefix based on output depth
@@ -122,6 +122,126 @@ def build():
         else:
             canonical_url = f'{SITE_URL}/{output}'
 
+        # Determine if blog post
+        is_blog = output.startswith('blog/')
+
+        # Clean title for OG/schema (strip suffixes)
+        og_title = title
+        for suffix in [' — Entuned Blog', ' — Entuned']:
+            if og_title.endswith(suffix):
+                og_title = og_title[:-len(suffix)]
+                break
+
+        # OG type
+        og_type = 'article' if is_blog else 'website'
+
+        # OG image
+        og_image = f'{SITE_URL}/img/Entuned_logo.png'
+        if config.get('og_image'):
+            og_image = config['og_image'] if config['og_image'].startswith('http') else f'{SITE_URL}/{config["og_image"]}'
+        elif is_blog:
+            slug = output.replace('blog/', '').replace('.html', '')
+            for ext in ['jpg', 'png']:
+                img_path = os.path.join(REPO, 'img', 'blog', f'{slug}.{ext}')
+                if os.path.exists(img_path):
+                    og_image = f'{SITE_URL}/img/blog/{slug}.{ext}'
+                    break
+
+        # Build OG tags
+        og_tags = '\n  '.join([
+            f'<meta property="og:title" content="{og_title}">',
+            f'<meta property="og:description" content="{description}">',
+            f'<meta property="og:url" content="{canonical_url}">',
+            f'<meta property="og:type" content="{og_type}">',
+            f'<meta property="og:image" content="{og_image}">',
+            f'<meta property="og:site_name" content="Entuned">',
+        ])
+
+        # Build Twitter Card tags
+        twitter_tags = '\n  '.join([
+            f'<meta name="twitter:card" content="summary_large_image">',
+            f'<meta name="twitter:title" content="{og_title}">',
+            f'<meta name="twitter:description" content="{description}">',
+            f'<meta name="twitter:image" content="{og_image}">',
+        ])
+
+        # Build JSON-LD schema
+        if is_blog:
+            date_published = config.get('date_published', '2026-03-25')
+            date_modified = config.get('date_modified', '2026-03-25')
+            schema = {
+                "@context": "https://schema.org",
+                "@type": "Article",
+                "headline": og_title,
+                "author": {
+                    "@type": "Person",
+                    "name": "Daniel Fox"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Entuned",
+                    "url": SITE_URL
+                },
+                "datePublished": date_published,
+                "dateModified": date_modified,
+                "description": description,
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": canonical_url
+                },
+                "about": [
+                    {"@type": "Thing", "name": "retail music strategy"},
+                    {"@type": "Thing", "name": "in-store customer behavior"},
+                    {"@type": "Thing", "name": "AI-powered retail music optimization"}
+                ]
+            }
+        else:
+            schema = {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "Entuned",
+                "url": SITE_URL,
+                "description": "Entuned maps musical flow factors to verified retail behavioral outcomes using AI-generated music, turning in-store sound into a measurable performance channel.",
+                "foundingDate": "2025",
+                "founder": {
+                    "@type": "Person",
+                    "name": "Daniel Fox"
+                },
+                "knowsAbout": [
+                    "retail atmospherics",
+                    "music psychology",
+                    "generative AI music",
+                    "in-store customer behavior",
+                    "retail analytics",
+                    "AI-powered retail music optimization"
+                ],
+                "sameAs": [
+                    "https://www.linkedin.com/company/entuned"
+                ]
+            }
+
+        schema_json = f'<script type="application/ld+json">\n{json.dumps(schema, indent=2)}\n  </script>'
+
+        # FAQPage schema — if config has a 'faq' key with [{q, a}, ...] entries
+        faq_items = config.get('faq', [])
+        if faq_items:
+            faq_schema = {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": item["q"],
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": item["a"]
+                        }
+                    }
+                    for item in faq_items
+                ]
+            }
+            schema_json += f'\n  <script type="application/ld+json">\n{json.dumps(faq_schema, indent=2)}\n  </script>'
+
         # Substitute into base layout
         html = base
         html = html.replace('{{title}}',            title)
@@ -129,6 +249,9 @@ def build():
         html = html.replace('{{canonical_url}}',    canonical_url)
         html = html.replace('{{css_path}}',         css_path)
         html = html.replace('{{page_style}}',       page_style)
+        html = html.replace('{{og_tags}}',          og_tags)
+        html = html.replace('{{twitter_tags}}',     twitter_tags)
+        html = html.replace('{{schema_json}}',      schema_json)
         html = html.replace('{{header}}',           page_header)
         html = html.replace('{{content}}',          content)
         html = html.replace('{{footer}}',           page_footer)

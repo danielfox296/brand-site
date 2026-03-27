@@ -1,0 +1,27 @@
+{
+  "title": "What Are Musical Flow Factors? — Entuned Blog",
+  "meta_description": "Flow factors are 31 discrete musical parameters that map to verified retail behavioral outcomes. Here is how the framework works and why it matters.",
+  "output": "blog/what-are-flow-factors.html",
+  "faq": [
+    {
+      "q": "What are musical flow factors?",
+      "a": "Flow factors are 31 discrete musical parameters — tempo, harmonic density, spectral brightness, rhythmic regularity, dynamic range, timbral warmth, and 25 others — each of which maps to one or more verified behavioral outcomes in retail environments. They are Entuned's proprietary framework for translating customer psychology into AI music specifications."
+    },
+    {
+      "q": "Why are there 31 flow factors?",
+      "a": "The number 31 reflects the resolution at which musical parameters have been shown to independently influence human perception and behavior in controlled research settings. Fewer factors would collapse meaningfully distinct variables; more would introduce parameters that are redundant, unmeasurable, or unsupported by behavioral evidence."
+    },
+    {
+      "q": "What are examples of flow factors?",
+      "a": "Representative examples include: Tempo (BPM, affects dwell time via neural entrainment), Harmonic density (chord complexity, influences perceived quality and willingness to pay), Spectral brightness (frequency balance, shapes perceived energy), Rhythmic regularity (predictability of beat, affects browsing vs. decisive purchasing behavior), Dynamic range (contrast between quiet and loud passages), and Timbral warmth (presence of low-frequency overtones associated with comfort and trust)."
+    },
+    {
+      "q": "How do flow factors affect retail behavior?",
+      "a": "Flow factors do not produce isolated effects — they interact. Tempo affects dwell time, but the magnitude is modulated by harmonic density, dynamic range, and timbral character. The 31 factors form a parameter space, and it is the full configuration, not any single factor, that produces the behavioral outcome."
+    },
+    {
+      "q": "Why is genre-based music selection insufficient for retail?",
+      "a": "Genre is a crude compression of the 31-dimensional flow factor space into a single categorical label. The variation within any genre is enormous — a Miles Davis ballad and a Buddy Rich big band number occupy completely different behavioral positions despite both being 'jazz.' Genre tells you nothing actionable about the specific musical parameters that drive retail behavior."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "title": "What Is Entuned? AI Music for Retail — Entuned Blog",
+  "meta_description": "Entuned is a data company that generates AI-powered retail music optimized to 31 psychoacoustic flow factors. Founded in 2025 by Daniel Fox.",
+  "output": "blog/what-is-entuned.html",
+  "faq": [
+    {
+      "q": "What does Entuned do?",
+      "a": "Entuned generates original AI-powered retail music optimized to 31 psychoacoustic parameters called flow factors. The platform replaces generic background music with continuously generated soundtracks engineered from a store's customer psychology, with no licensing fees."
+    },
+    {
+      "q": "How is Entuned different from Mood Media or Soundtrack Your Brand?",
+      "a": "Unlike catalog-based providers, Entuned generates original music to exact psychoacoustic specifications rather than curating pre-existing recordings. It targets customer psychology through 31 flow factors, supports multi-zone deployment within a single store, and produces performance measurement data correlating music to retail outcomes."
+    },
+    {
+      "q": "What are flow factors?",
+      "a": "Flow factors are 31 discrete musical parameters — including tempo, harmonic density, spectral brightness, rhythmic regularity, dynamic range, and timbral warmth — each mapped to verified behavioral outcomes in retail environments such as dwell time, conversion rate, and willingness to pay."
+    },
+    {
+      "q": "Who founded Entuned?",
+      "a": "Daniel Fox founded Entuned in 2025. The company's thesis is that in-store audio is the last major retail environmental variable that is not being measured, optimized, or connected to business outcomes."
+    },
+    {
+      "q": "How much does Entuned cost?",
+      "a": "Entuned's subscription pricing ranges from $299 to $599 per location per month depending on store size, number of zones, and integration requirements. All plans start with a free 90-day pilot."
+    },
+    {
+      "q": "What stage is Entuned at?",
+      "a": "As of early 2026, Entuned is in the pilot deployment phase, offering a free 90-day pilot program for qualified retailers. The platform collects performance data against baseline retail metrics during the pilot period."
+    }
+  ]
+}
