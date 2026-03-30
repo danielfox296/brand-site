@@ -73,6 +73,8 @@ Built on decades of peer-reviewed research: tempo entrainment increases dwell ti
 - [No Gaps. No Silence. No Jolt.](https://entuned.co/blog/seamless-playback.html): Why seamless music transitions matter in retail and why most services still can't clear the bar.
 - [Every Store Teaches the Next One](https://entuned.co/blog/fleet-learning.html): How Entuned's fleet learning model turns every deployment into a compounding data asset.
 - [Your Store Already Has a Mood](https://entuned.co/blog/your-store-already-has-a-mood.html): Music is a compound signal — and you're already conditioning every customer who walks in.
+- [Closing the Loop on Retail Analytics](https://entuned.co/blog/closing-the-loop-on-retail-analytics.html): RetailNext and other analytics platforms measure everything. Audio is the real-time action layer that closes the loop.
+- [Three Ways to Think About What Your Store Can't Do Yet](https://entuned.co/blog/three-ways-to-think-about-what-your-store-cant-do-yet.html): Three metaphors for the gap between retail measurement and real-time response — and how audio fills it.
 
 ## Key Concepts
 
