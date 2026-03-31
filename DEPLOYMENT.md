@@ -21,8 +21,7 @@ git push origin main
 
 GitHub Actions will:
 1. Run `python3 build.py` (rebuilds from source in CI too)
-2. Build the player app from `entuned-player` repo and drop it into `/play/`
-3. Stage everything into `_site/` and deploy to GitHub Pages
+2. Stage everything into `_site/` and deploy to GitHub Pages
 
 ## What gets deployed
 
@@ -33,7 +32,6 @@ The workflow copies these into `_site/`:
 - `img/` directory
 - `audio/` directory
 - `blog/` directory
-- `play/` directory (built from entuned-player repo)
 
 ## Testing locally
 
@@ -48,5 +46,5 @@ Use the HTTP server, not `file://` — the audio player needs HTTP to load MP3 f
 ## Important notes
 
 - **Never edit root `.html` files directly.** They get overwritten by `build.py`. Edit source in `_src/`.
-- **The player app is a separate repo** (`entuned-player`). It gets pulled in during CI. To update the player, push to that repo — a `repository_dispatch` event triggers a brand-site rebuild.
+- **The player app is a separate repo** (`wonder-player` → github.com/danielfox296/wonder-player) deployed independently to `play.entuned.co` via its own GitHub Pages. It is not part of this deploy pipeline.
 - **See `ARCHITECTURE.md`** for the full source file structure and build process.

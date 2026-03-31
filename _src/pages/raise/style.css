@@ -1,0 +1,259 @@
+/* ============================================================
+   RAISE — Private investor hub, noindexed
+   ============================================================ */
+
+nav, footer, .footer-bottom {
+  display: none !important;
+}
+
+/* ── Hero ─────────────────────────────────────────────────── */
+.raise-hero {
+  padding: 5rem 0 3rem;
+  text-align: center;
+}
+
+.raise-eyebrow {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #d7af74;
+  font-weight: 700;
+  font-family: 'Manrope', sans-serif;
+  margin-bottom: 1.25rem;
+}
+
+.raise-headline {
+  font-family: 'Manrope', sans-serif;
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #E8E4DE;
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+}
+
+.raise-sub {
+  font-size: 1rem;
+  color: #8a8680;
+  line-height: 1.75;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* ── Stats bar ────────────────────────────────────────────── */
+.raise-stats-bar {
+  padding: 2rem 0;
+  border-top: 1px solid rgba(215, 175, 116, 0.12);
+  border-bottom: 1px solid rgba(215, 175, 116, 0.12);
+  margin-bottom: 4rem;
+}
+
+.raise-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+
+.raise-stat {
+  text-align: center;
+  padding: 0.5rem 2.5rem;
+}
+
+.raise-stat-divider {
+  width: 1px;
+  height: 2rem;
+  background: rgba(215, 175, 116, 0.2);
+}
+
+.raise-stat-number {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #d7af74;
+  line-height: 1.1;
+}
+
+.raise-stat-label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #5a5752;
+  margin-top: 0.3rem;
+  font-family: 'Manrope', sans-serif;
+}
+
+/* ── Section label ────────────────────────────────────────── */
+.raise-section-label {
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #d7af74;
+  font-weight: 700;
+  font-family: 'Manrope', sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+/* ── Material cards ───────────────────────────────────────── */
+.raise-materials {
+  padding: 0 0 4rem;
+}
+
+.raise-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 640px;
+}
+
+.raise-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.raise-card:hover {
+  border-color: rgba(215, 175, 116, 0.35);
+  background: rgba(215, 175, 116, 0.04);
+}
+
+.raise-card-dataroom {
+  border-color: rgba(215, 175, 116, 0.2);
+}
+
+.raise-card-icon {
+  color: #d7af74;
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+.raise-card-body {
+  flex: 1;
+}
+
+.raise-card-title {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #E8E4DE;
+  margin-bottom: 0.2rem;
+}
+
+.raise-card-desc {
+  font-size: 0.82rem;
+  color: #6a6660;
+  line-height: 1.5;
+}
+
+.raise-card-arrow {
+  color: #d7af74;
+  font-size: 1rem;
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
+/* ── Thesis grid ──────────────────────────────────────────── */
+.raise-thesis {
+  padding: 0 0 4rem;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  padding-top: 3.5rem;
+}
+
+.raise-thesis-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem 3rem;
+  max-width: 840px;
+}
+
+.raise-thesis-heading {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #d7af74;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+}
+
+.raise-thesis-block p {
+  font-size: 0.875rem;
+  color: #6a6660;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ── Contact ──────────────────────────────────────────────── */
+.raise-contact {
+  padding: 3.5rem 0 4rem;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.raise-contact-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  max-width: 840px;
+}
+
+.raise-contact-name {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #E8E4DE;
+  margin: 0.25rem 0 0.6rem;
+}
+
+.raise-contact-desc {
+  font-size: 0.875rem;
+  color: #6a6660;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 420px;
+}
+
+.raise-contact-cta {
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.raise-contact-email {
+  font-size: 0.78rem;
+  color: #5a5752;
+  margin-top: 0.6rem;
+  font-family: 'Manrope', sans-serif;
+}
+
+/* ── Footer note ──────────────────────────────────────────── */
+.raise-footer-note {
+  padding: 1.5rem 0 3rem;
+  border-top: 1px solid rgba(255,255,255,0.04);
+}
+
+.raise-footer-note p {
+  font-size: 0.72rem;
+  color: #3a3835;
+  text-align: center;
+  font-family: 'Manrope', sans-serif;
+}
+
+.raise-footer-note a {
+  color: #4a4845;
+  text-decoration: none;
+}
+
+/* ── Mobile ───────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .raise-headline { font-size: 2rem; }
+  .raise-stat { padding: 0.5rem 1.25rem; }
+  .raise-stat-divider { display: none; }
+  .raise-thesis-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .raise-contact-inner { flex-direction: column; align-items: flex-start; }
+}
