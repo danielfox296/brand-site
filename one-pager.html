@@ -61,17 +61,17 @@
   <link rel="stylesheet" href="styles.css">
   <style>
 /* ============================================================
-   ONE-PAGER — Standalone investor document
-   Hides site nav/footer; designed for print-to-PDF output
+   ONE-PAGER — Standalone investor document, light mode
+   White background, print-ready
    ============================================================ */
 
-/* Hide site chrome — this page is a document, not a site page */
+/* Hide site chrome */
 nav, footer, .footer-bottom {
   display: none !important;
 }
 
 body {
-  background: #080808;
+  background: #ffffff;
 }
 
 /* ── Wrapper ─────────────────────────────────────────────── */
@@ -80,7 +80,7 @@ body {
   margin: 0 auto;
   padding: 2.5rem 2rem 2rem;
   font-family: 'Inter', sans-serif;
-  color: #E8E4DE;
+  color: #111111;
 }
 
 /* ── Header row ──────────────────────────────────────────── */
@@ -92,8 +92,8 @@ body {
 }
 
 .op-logo {
-  height: 22px;
-  opacity: 0.9;
+  height: 20px;
+  filter: brightness(0);
 }
 
 .op-header-meta {
@@ -106,7 +106,7 @@ body {
   font-size: 0.65rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: #d7af74;
+  color: #b8922e;
   font-weight: 700;
   font-family: 'Manrope', sans-serif;
 }
@@ -115,17 +115,18 @@ body {
   font-size: 0.65rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  opacity: 0.3;
+  color: #aaaaaa;
   font-family: 'Manrope', sans-serif;
 }
 
-/* ── Hero ────────────────────────────────────────────────── */
+/* ── Divider ─────────────────────────────────────────────── */
 .op-divider {
   height: 1px;
-  background: rgba(215, 175, 116, 0.18);
+  background: #e0e0e0;
   margin: 1.25rem 0;
 }
 
+/* ── Hero ────────────────────────────────────────────────── */
 .op-hero {
   margin-bottom: 0;
 }
@@ -134,14 +135,14 @@ body {
   font-family: 'Manrope', sans-serif;
   font-size: 1.85rem;
   font-weight: 700;
-  color: #d7af74;
+  color: #111111;
   margin-bottom: 0.6rem;
   line-height: 1.15;
 }
 
 .op-desc {
   font-size: 0.95rem;
-  opacity: 0.8;
+  color: #444444;
   line-height: 1.7;
   max-width: 700px;
   margin: 0;
@@ -168,7 +169,7 @@ body {
   font-size: 0.62rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  color: #d7af74;
+  color: #b8922e;
   font-weight: 700;
   font-family: 'Manrope', sans-serif;
   margin-bottom: 0.35rem;
@@ -177,15 +178,15 @@ body {
 .op-block p,
 .op-side-block p {
   font-size: 0.875rem;
-  opacity: 0.75;
+  color: #444444;
   line-height: 1.65;
   margin: 0;
 }
 
 /* ── Raise box ───────────────────────────────────────────── */
 .op-raise-box {
-  background: rgba(215, 175, 116, 0.08);
-  border: 1px solid rgba(215, 175, 116, 0.25);
+  background: #fdf8f0;
+  border: 1px solid #e8d5a3;
   border-radius: 4px;
   padding: 1.25rem 1.5rem;
   text-align: center;
@@ -196,14 +197,14 @@ body {
   font-family: 'Manrope', sans-serif;
   font-size: 2.6rem;
   font-weight: 700;
-  color: #d7af74;
+  color: #b8922e;
   line-height: 1.05;
   margin: 0.25rem 0;
 }
 
 .op-raise-detail {
   font-size: 0.78rem;
-  opacity: 0.55;
+  color: #888888;
   margin-top: 0.2rem;
   line-height: 1.5;
 }
@@ -223,14 +224,14 @@ body {
   justify-content: space-between;
   align-items: center;
   font-size: 0.72rem;
-  opacity: 0.4;
+  color: #aaaaaa;
   font-family: 'Manrope', sans-serif;
   margin-top: 0.25rem;
 }
 
 /* ============================================================
    PRINT STYLES
-   Print → PDF from Chrome: File → Print → Save as PDF
+   Chrome: ⌘P → Save as PDF (no need to check "Background graphics")
    Target: US Letter, single page
    ============================================================ */
 
@@ -240,19 +241,11 @@ body {
     margin: 0.6in 0.7in;
   }
 
-  body,
-  html {
-    background: #080808 !important;
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
-    color-adjust: exact !important;
+  body, html {
+    background: #ffffff !important;
   }
 
-  nav, footer, .footer-bottom {
-    display: none !important;
-  }
-
-  .section, .hero {
+  nav, footer, .footer-bottom, .section, .hero {
     display: none !important;
   }
 
@@ -280,10 +273,7 @@ body {
     font-size: 2.1rem;
   }
 
-  .op-block {
-    margin-bottom: 1.1rem;
-  }
-
+  .op-block,
   .op-side-block {
     margin-bottom: 1.1rem;
   }
@@ -294,10 +284,6 @@ body {
 
   .op-divider {
     margin: 1rem 0;
-  }
-
-  .op-hero {
-    margin-bottom: 0;
   }
 }
   </style>
