@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://entuned.co/about.html">
+  <meta name="robots" content="index, follow">
+  <title>Why Entuned Exists — About</title>
+  <meta name="description" content="A $1.9B industry has never measured whether what it sells works. Entuned is building the first dataset mapping musical composition to verified retail outcomes.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Why Entuned Exists — About">
+  <meta property="og:description" content="A $1.9B industry has never measured whether what it sells works. Entuned is building the first dataset mapping musical composition to verified retail outcomes.">
+  <meta property="og:url" content="https://entuned.co/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://entuned.co/img/og-default.png">
+  <meta property="og:site_name" content="Entuned">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Why Entuned Exists — About">
+  <meta name="twitter:description" content="A $1.9B industry has never measured whether what it sells works. Entuned is building the first dataset mapping musical composition to verified retail outcomes.">
+  <meta name="twitter:image" content="https://entuned.co/img/og-default.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Entuned",
+  "url": "https://entuned.co",
+  "description": "Entuned maps musical flow factors to verified retail behavioral outcomes using AI-generated music, turning in-store sound into a measurable performance channel.",
+  "foundingDate": "2025",
+  "founder": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "knowsAbout": [
+    "retail atmospherics",
+    "music psychology",
+    "generative AI music",
+    "in-store customer behavior",
+    "retail analytics",
+    "AI-powered retail music optimization"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/entuned"
+  ]
+}
+  </script>
+
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG');
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+  <style>
+/* ============================================================
+   ABOUT — Editorial long-read, company narrative
+   ============================================================ */
+
+.about-main {
+  padding-bottom: 6rem;
+}
+
+/* ── Hero ─────────────────────────────────────────────────── */
+.about-hero {
+  padding: 7rem 0 5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.about-hero-inner {
+  max-width: 820px;
+}
+
+.about-eyebrow {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #d7af74;
+  font-weight: 700;
+  font-family: 'Manrope', sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+.about-headline {
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: #E8E4DE;
+  line-height: 1.15;
+  margin: 0;
+}
+
+/* ── Sections ─────────────────────────────────────────────── */
+.about-section {
+  padding: 5rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.about-section-label {
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #d7af74;
+  font-weight: 700;
+  font-family: 'Manrope', sans-serif;
+  margin-bottom: 2rem;
+}
+
+/* ── Prose ────────────────────────────────────────────────── */
+.about-prose {
+  max-width: 680px;
+}
+
+.about-prose p {
+  font-size: 1.05rem;
+  color: #8a8680;
+  line-height: 1.85;
+  margin: 0 0 1.5rem;
+}
+
+.about-prose p:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Pull quote ───────────────────────────────────────────── */
+.about-pull-quote-section {
+  padding: 4rem 0;
+  background: rgba(215, 175, 116, 0.04);
+  border-top: 1px solid rgba(215, 175, 116, 0.1);
+  border-bottom: 1px solid rgba(215, 175, 116, 0.1);
+}
+
+.about-pull-quote {
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(1.2rem, 2.5vw, 1.65rem);
+  font-weight: 600;
+  color: #E8E4DE;
+  line-height: 1.5;
+  max-width: 780px;
+  margin: 0;
+  border: none;
+  padding: 0;
+  position: relative;
+  padding-left: 1.5rem;
+  border-left: 3px solid #d7af74;
+}
+
+/* ── Convergence diagram ──────────────────────────────────── */
+.about-convergence {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 3.5rem;
+  flex-wrap: wrap;
+}
+
+.about-convergence-item {
+  flex: 1;
+  min-width: 200px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 6px;
+  padding: 1.5rem;
+}
+
+.about-convergence-result {
+  border-color: rgba(215, 175, 116, 0.3);
+  background: rgba(215, 175, 116, 0.04);
+}
+
+.about-convergence-year {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #d7af74;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.about-convergence-label {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #E8E4DE;
+  margin-bottom: 0.6rem;
+  line-height: 1.3;
+}
+
+.about-convergence-desc {
+  font-size: 0.82rem;
+  color: #5a5752;
+  line-height: 1.6;
+}
+
+.about-convergence-plus,
+.about-convergence-equals {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgba(215, 175, 116, 0.4);
+  flex-shrink: 0;
+}
+
+/* ── Founder ──────────────────────────────────────────────── */
+.about-section-founder {
+  background: rgba(255,255,255,0.01);
+}
+
+.about-founder-grid {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.about-founder-name {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: #E8E4DE;
+  margin: 0 0 1.5rem;
+}
+
+.about-founder-prose p {
+  font-size: 1.05rem;
+  color: #8a8680;
+  line-height: 1.85;
+  margin: 0 0 1.25rem;
+}
+
+.about-founder-credentials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.about-credential {
+  font-size: 0.75rem;
+  font-family: 'Manrope', sans-serif;
+  color: #d7af74;
+  border: 1px solid rgba(215, 175, 116, 0.25);
+  border-radius: 3px;
+  padding: 0.3rem 0.75rem;
+  white-space: nowrap;
+}
+
+/* ── Bet stats ────────────────────────────────────────────── */
+.about-bet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.about-bet-item {
+  border-top: 2px solid rgba(215, 175, 116, 0.25);
+  padding-top: 1.25rem;
+}
+
+.about-bet-number {
+  font-family: 'Manrope', sans-serif;
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #d7af74;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.about-bet-desc {
+  font-size: 0.875rem;
+  color: #5a5752;
+  line-height: 1.65;
+}
+
+/* ── Closing ──────────────────────────────────────────────── */
+.about-closing {
+  border-bottom: none;
+}
+
+.about-closing .about-prose p {
+  font-size: 1.1rem;
+  color: #8a8680;
+}
+
+.about-closing .about-prose p:last-child {
+  color: #E8E4DE;
+  font-weight: 600;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.15rem;
+}
+
+.about-ctas {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+/* ── Mobile ───────────────────────────────────────────────── */
+@media (max-width: 700px) {
+  .about-hero { padding: 4rem 0 3rem; }
+  .about-founder-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .about-founder-label-col .about-section-label { margin-bottom: 0.5rem; }
+  .about-bet-grid { grid-template-columns: 1fr; }
+  .about-convergence { flex-direction: column; }
+  .about-convergence-plus, .about-convergence-equals { transform: rotate(90deg); }
+}
+  </style>
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav>
+  <div class="container">
+    <a href="index.html" class="logo"><img src="img/Entuned_logo.png" alt="Entuned" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="how-it-works.html">How It Works</a></li>
+      <li><a href="pilot.html">Pilot Program</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+    <button class="mobile-menu-toggle">&#9776;</button>
+  </div>
+</nav>
+
+  <main class="about-main">
+
+  <!-- Hero -->
+  <section class="about-hero">
+    <div class="container">
+      <div class="about-hero-inner fade-up">
+        <p class="about-eyebrow">Why Entuned Exists</p>
+        <h1 class="about-headline">Every retail store in the&nbsp;world plays music. Not one of them can tell you whether it's&nbsp;working.</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- Opening -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-prose fade-up">
+        <p>That's not an oversight. It's a structural problem. The commercial music industry — Mood Media, Soundtrack Your Brand, the rest — was built on catalog licensing. You pick a genre, you pick a mood, you pipe it into the store. The music fills the silence. That's the product. Whether it moves people, whether it changes how long they stay or what they buy or how they feel about the brand — nobody measures that. Nobody has the data to measure it.</p>
+        <p>The academic literature has known for decades that music affects purchasing behavior. Tempo influences dwell time. Harmonic language primes willingness to pay. Genre congruence — music that matches a customer's identity — increases basket size by 8 to 12 percent. These aren't fringe findings. They're replicated, peer-reviewed, and cited. And they've been sitting in journals for thirty years while an entire industry continued selling playlists.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pull quote -->
+  <section class="about-pull-quote-section">
+    <div class="container">
+      <blockquote class="about-pull-quote fade-up">
+        The dataset that would prove any of this commercially has never been built. It doesn't exist. Not because nobody wanted it. Because building it required things that weren't possible until now.
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- The Moment -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-section-label fade-up">The Moment</div>
+      <div class="about-prose fade-up">
+        <p>In late 2024, two things happened at once.</p>
+        <p>AI music generation crossed a quality threshold. Not incremental improvement — a step change. Original compositions, specified at the variable level: tempo, key, mode, instrumentation, timbral profile, dynamic arc. Generated at near-zero marginal cost, without licensing constraints, without catalog limits. Music made for a specific purpose rather than pulled from a library.</p>
+        <p>At the same time, retail analytics platforms opened their store-level behavioral data via API. Foot traffic. Dwell time. Conversion rates. Transaction counts. The sensor infrastructure had existed for years — thousands of stores already instrumented. What hadn't existed was a system that could act on that data through a musical intervention and close the measurement loop.</p>
+        <p>The pieces were there. What was missing was someone who understood both sides — the musicological and the behavioral — well enough to connect them.</p>
+      </div>
+
+      <div class="about-convergence fade-up">
+        <div class="about-convergence-item">
+          <div class="about-convergence-year">2024</div>
+          <div class="about-convergence-label">AI music generation crosses quality threshold</div>
+          <div class="about-convergence-desc">Parametric composition. No licensing costs. No catalog constraints. Music made for a purpose.</div>
+        </div>
+        <div class="about-convergence-plus">+</div>
+        <div class="about-convergence-item">
+          <div class="about-convergence-year">2024</div>
+          <div class="about-convergence-label">Retail analytics opens store-level data via API</div>
+          <div class="about-convergence-desc">Foot traffic. Dwell time. Conversion. The sensor layer already existed. The intervention layer didn't.</div>
+        </div>
+        <div class="about-convergence-equals">=</div>
+        <div class="about-convergence-item about-convergence-result">
+          <div class="about-convergence-year">Now</div>
+          <div class="about-convergence-label">The first dataset mapping music to retail outcomes</div>
+          <div class="about-convergence-desc">Something that has never existed and cannot be replicated without doing the work.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Founder -->
+  <section class="about-section about-section-founder">
+    <div class="container">
+      <div class="about-founder-grid">
+        <div class="about-founder-label-col fade-up">
+          <div class="about-section-label">The Founder</div>
+        </div>
+        <div class="about-founder-prose fade-up">
+          <h2 class="about-founder-name">Daniel Fox</h2>
+          <p>Daniel spent his career at the intersection of music and human experience. As a professional jazz musician and music theoretician, he developed a working model of how specific musical parameters interact with psychology — how tempo affects arousal and decision-making pace, how harmonic mode primes emotional state, how timbral warmth changes perception of brand authenticity.</p>
+          <p>That model became the foundation of Entuned's core IP: a psychographic-to-musicological translation engine that converts a retail brand's ideal customer profile into specific musical composition parameters, and generates original music from them. The methodology is covered by a provisional patent.</p>
+          <p>He'd built companies before — two of them. He knew how to take an idea through the gap between insight and product. And he recognized something the music industry had missed: the value was never in the music itself. It was in the proof that the music worked.</p>
+          <div class="about-founder-credentials">
+            <div class="about-credential">Pro jazz musician &amp; music theoretician</div>
+            <div class="about-credential">Two-time founder</div>
+            <div class="about-credential">Provisional patent filed on the translation engine</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pull quote 2 -->
+  <section class="about-pull-quote-section">
+    <div class="container">
+      <blockquote class="about-pull-quote fade-up">
+        The value was never in the music itself. It was in the proof that the music worked.
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- The Bet -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-section-label fade-up">The Bet</div>
+      <div class="about-prose fade-up">
+        <p>Entuned deploys original soundtracks in retail stores and uses existing behavioral analytics to build something that has never existed: a dataset mapping musical composition parameters — dozens of variables, across real environments, across time — to verified commercial outcomes.</p>
+        <p>The pilot is free. The music is original. The data is ours.</p>
+        <p>The more stores we run, the richer the dataset becomes. The richer the dataset, the better the translation model gets. The better the model, the more defensible Entuned becomes — because no competitor can replicate years of cross-retail musical data without years of access to real stores.</p>
+      </div>
+
+      <div class="about-bet-grid fade-up">
+        <div class="about-bet-item">
+          <div class="about-bet-number">$1.9B</div>
+          <div class="about-bet-desc">Global commercial music market — spent every year without a single data point proving the investment works.</div>
+        </div>
+        <div class="about-bet-item">
+          <div class="about-bet-number">0</div>
+          <div class="about-bet-desc">Datasets mapping musical composition variables to verified commercial retail outcomes. That's what we're building.</div>
+        </div>
+        <div class="about-bet-item">
+          <div class="about-bet-number">First</div>
+          <div class="about-bet-desc">The company that builds the proof owns the category. No shortcut to the data. You have to do the work.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing -->
+  <section class="about-section about-closing">
+    <div class="container">
+      <div class="about-prose fade-up">
+        <p>The bet isn't that music matters. The science already proved that. The bet is that nobody has built the commercial proof — and that the company that builds it first owns the category.</p>
+        <p>That's why Entuned exists.</p>
+      </div>
+      <div class="about-ctas fade-up">
+        <a href="pilot.html" class="btn btn-primary">Join the Pilot</a>
+        <a href="mailto:hello@entuned.co" class="btn btn-secondary">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4><img src="img/Entuned_logo.png" alt="Entuned" class="footer-logo-img"></h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Retail music strategy driven by customer psychology.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="pilot.html">Pilot Program</a></li>
+        <li><a href="results.html">Results</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>More Info</h4>
+      <ul>
+        <li><a href="for-cfos.html">For CFOs</a></li>
+        <li><a href="for-retail-leaders.html">For Retail Leaders</a></li>
+        <li><a href="investors.html">For Investors</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Decks</h4>
+      <ul>
+        <li><a href="deck-investor.html">Investor Deck</a></li>
+        <li><a href="deck-retail.html">Retail Pilot Deck</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+    <a href="http://saasbison.com" target="_blank" rel="dofollow"><img src="http://saasbison.com/badge.png" alt="Featured on SaaSBison" width="200" height="54" /></a>
+  </div>
+</footer>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = navLinksEl.classList.contains('mobile-open') ? '✕' : '☰';
+      });
+    }
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>
