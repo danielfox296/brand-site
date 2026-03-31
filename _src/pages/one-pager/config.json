@@ -1,4 +1,5 @@
 {
   "title": "Investor One-Pager — Entuned",
-  "output": "one-pager.html"
+  "output": "one-pager.html",
+  "robots": "noindex, nofollow"
 }
