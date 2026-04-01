@@ -284,27 +284,18 @@ nav .container {
   visibility: hidden;
   opacity: 0;
   position: absolute;
-  top: calc(100% + 10px);
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
   background: rgba(8, 8, 8, 0.98);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(215, 175, 116, 0.15);
   border-radius: 4px;
-  padding: 0.5rem 0;
+  padding: 0.75rem 0 0.5rem;
   min-width: 160px;
   list-style: none;
   z-index: 1001;
   transition: opacity 0.15s ease, visibility 0.15s ease;
-}
-
-.nav-dropdown-menu::before {
-  content: '';
-  position: absolute;
-  top: -10px;
-  left: 0;
-  right: 0;
-  height: 10px;
 }
 
 .nav-dropdown:hover .nav-dropdown-menu,
