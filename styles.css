@@ -287,10 +287,9 @@ nav .container {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(8, 8, 8, 0.98);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(215, 175, 116, 0.15);
-  border-radius: 4px;
+  background: none;
+  border: none;
+  border-radius: 0;
   padding: 0.75rem 0 0.5rem;
   min-width: 160px;
   list-style: none;
