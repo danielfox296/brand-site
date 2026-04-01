@@ -70,6 +70,14 @@
     <a href="index.html" class="logo"><img src="img/Entuned_logo.png" alt="Entuned" class="logo-img"></a>
     <ul class="nav-links">
       <li><a href="how-it-works.html">How It Works</a></li>
+      <li class="nav-dropdown">
+        <a href="#" class="nav-dropdown-trigger">For Your Industry</a>
+        <ul class="nav-dropdown-menu">
+          <li><a href="for-apparel.html">Apparel</a></li>
+          <li><a href="for-wine.html">Wine</a></li>
+          <li><a href="for-hospitality.html">Hospitality</a></li>
+        </ul>
+      </li>
       <li><a href="pilot.html">Pilot Program</a></li>
       <li><a href="blog.html">Blog</a></li>
     </ul>
@@ -575,7 +583,10 @@
       <h4>Company</h4>
       <ul>
         <li><a href="about.html">About</a></li>
+        <li><a href="team.html">Team</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="why-entuned.html">Why Entuned</a></li>
+        <li><a href="data.html">Data Practices</a></li>
         <li><a href="privacy-policy.html">Privacy Policy</a></li>
       </ul>
     </div>
@@ -630,6 +641,15 @@
         menuToggle.textContent = navLinksEl.classList.contains('mobile-open') ? '✕' : '☰';
       });
     }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
 
     // Accordion toggle
     document.querySelectorAll('.accordion-trigger').forEach(trigger => {

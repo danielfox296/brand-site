@@ -28,6 +28,12 @@ Built on decades of peer-reviewed research: tempo entrainment increases dwell ti
 - [For Retail Leaders](https://entuned.co/for-retail-leaders.html): The case for intentional audio environments in retail operations.
 - [For CFOs](https://entuned.co/for-cfos.html): ROI modeling, cost comparisons, and financial justification for the investment.
 - [Investors](https://entuned.co/investors.html): Market size, competitive positioning, IP, business model, and fundraise details.
+- [For Apparel](https://entuned.co/for-apparel.html): How Entuned optimizes audio for clothing and fashion retail environments.
+- [For Wine](https://entuned.co/for-wine.html): How Entuned optimizes audio for wine retail to increase dwell time and average bottle price.
+- [For Hospitality](https://entuned.co/for-hospitality.html): Multi-zone audio strategy for hotels, resorts, and hospitality retail environments.
+- [Team](https://entuned.co/team.html): Founder background and advisor domains.
+- [Why Entuned](https://entuned.co/why-entuned.html): How Entuned differs from licensed playlist services, mood-based curation, and background music providers.
+- [Data Practices](https://entuned.co/data.html): What data Entuned collects, how it is protected, and retailer data ownership.
 - [Blog](https://entuned.co/blog.html): Research-backed articles on retail audio, music psychology, and the science behind Entuned.
 
 ## Key Reference Posts (start here)
