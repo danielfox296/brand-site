@@ -34,6 +34,12 @@ Built on decades of peer-reviewed research: tempo entrainment increases dwell ti
 - [Team](https://entuned.co/team.html): Founder background and advisor domains.
 - [Why Entuned](https://entuned.co/why-entuned.html): How Entuned differs from licensed playlist services, mood-based curation, and background music providers.
 - [Data Practices](https://entuned.co/data.html): What data Entuned collects, how it is protected, and retailer data ownership.
+- [Case Studies](https://entuned.co/case-studies.html): Pilot deployment results (coming soon — pilots currently in progress).
+- [Partners](https://entuned.co/partners.html): Technology and integration partnerships (coming soon).
+- [Careers](https://entuned.co/careers.html): Open roles at Entuned (not currently hiring).
+- [Enterprise](https://entuned.co/enterprise.html): Multi-location deployment and fleet-level analytics (coming soon).
+- [Press](https://entuned.co/press.html): Media coverage and press resources (coming soon).
+- [The Dataset](https://entuned.co/dataset.html): The proprietary dataset connecting musical parameters to retail outcomes (details forthcoming).
 - [Blog](https://entuned.co/blog.html): Research-backed articles on retail audio, music psychology, and the science behind Entuned.
 
 ## Key Reference Posts (start here)
