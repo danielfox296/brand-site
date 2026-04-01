@@ -267,6 +267,8 @@ nav .container {
 /* ==================== NAV DROPDOWN ==================== */
 .nav-dropdown {
   position: relative;
+  padding-bottom: 1rem;
+  margin-bottom: -1rem;
 }
 
 .nav-dropdown-trigger {
@@ -283,7 +285,7 @@ nav .container {
 .nav-dropdown-menu {
   display: none;
   position: absolute;
-  top: 100%;
+  top: calc(100% + 1rem);
   left: 50%;
   transform: translateX(-50%);
   background: rgba(8, 8, 8, 0.98);
@@ -291,19 +293,9 @@ nav .container {
   border: 1px solid rgba(215, 175, 116, 0.15);
   border-radius: 4px;
   padding: 0.5rem 0;
-  padding-top: 0.75rem;
   min-width: 160px;
   list-style: none;
   z-index: 1001;
-}
-
-.nav-dropdown-menu::before {
-  content: '';
-  position: absolute;
-  top: -12px;
-  left: 0;
-  right: 0;
-  height: 12px;
 }
 
 .nav-dropdown:hover .nav-dropdown-menu,
