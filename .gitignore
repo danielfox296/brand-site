@@ -1,14 +1,6 @@
-# Dependencies
-admin/node_modules/
-admin/dist/
-
-# Environment
-admin/.env
-
 # OS
 .DS_Store
 
 # Editor
 .vscode/
 *.swp
-supabase/.temp/

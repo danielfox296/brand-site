@@ -131,10 +131,9 @@ All CTAs that require user contact point to `mailto:hello@entuned.co` with conte
 
 GitHub Actions (`.github/workflows/deploy.yml`) runs on push to `main`:
 1. Checks out `brand-site` repo
-2. Checks out `entuned-player` repo, builds it with Vite, drops output into `_site/play/`
-3. Runs `python3 build.py` to generate all HTML from `_src/`
-4. Stages everything into `_site/` (HTML, CSS, img, audio, blog, play)
-5. Deploys to GitHub Pages at entuned.co
+2. Runs `python3 build.py` to generate all HTML from `_src/`
+3. Stages everything into `_site/` (HTML, CSS, img, audio, blog)
+4. Deploys to GitHub Pages at entuned.co
 
 To deploy: `git add -A && git commit -m "message" && git push origin main`
 
