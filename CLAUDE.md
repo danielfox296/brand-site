@@ -77,7 +77,7 @@ Template:
 
     <div class="article-cta fade-up">
       <p>CTA text about what Entuned does, relevant to this post's topic.</p>
-      <a href="../pilot.html" class="btn btn-primary">Start a Free 90-Day Pilot</a>
+      <a href="../pilot.html" class="btn btn-primary">Start a Free Pilot</a>
     </div>
   </div>
 ```

@@ -66,7 +66,7 @@ Use this exact structure for `sections/01-content.html`:
     <p class="fade-up">...</p>
     <h2 class="fade-up">Section Heading</h2>
 
-    <!-- Available components: -->
+    <!-- Available inline components: -->
     <div class="stat-box fade-up">
       <p><span class="highlight">Key callout text.</span></p>
     </div>
@@ -75,16 +75,24 @@ Use this exact structure for `sections/01-content.html`:
       <p>Contrarian or cautionary point.</p>
     </div>
 
-    <!-- Always end with: -->
+    <!-- Always end with this exact sequence (all 5 blocks, in this order): -->
     <div class="byline fade-up">
       <p>Daniel<br>Founder, Entuned</p>
     </div>
 
     <p class="fade-up">Related reading: <a href="../blog/slug1.html">Title 1</a>, <a href="../blog/slug2.html">Title 2</a>, and <a href="../blog/slug3.html">Title 3</a>.</p>
 
+    <div class="takeaway-box fade-up">
+      <p><strong>TL;DR:</strong> One-to-two sentence summary of the post's core argument or insight.</p>
+    </div>
+
+    <div class="author-bio fade-up">
+      <p><strong>Daniel Fox</strong> is the founder of Entuned, where he builds music systems engineered for retail customer psychology. Background in music theory, behavioral research, and data-driven product design. <a href="../about.html">More about Daniel</a></p>
+    </div>
+
     <div class="article-cta fade-up">
       <p>CTA text relevant to the post topic.</p>
-      <a href="../pilot.html" class="btn btn-primary">Start a Free 90-Day Pilot</a>
+      <a href="../pilot.html" class="btn btn-primary">Start a Free Pilot</a>
     </div>
   </div>
 ```
@@ -157,7 +165,7 @@ cd /Users/fox296/Desktop/entuned/website
 python3 build.py
 ```
 
-Verify it says "Built N pages" and "Done" with no errors.
+Verify it says "Built N pages" and "Done" with no errors. The build also regenerates `rss.xml` — make sure to stage it in the commit.
 
 ### 9. Commit and push
 

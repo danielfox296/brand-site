@@ -24,7 +24,7 @@ Built on decades of peer-reviewed research: tempo entrainment increases dwell ti
 - [How It Works](https://entuned.co/how-it-works.html): The four-stage pipeline from customer profiling to streaming, with research citations.
 - [Results](https://entuned.co/results.html): Research-backed performance projections and pilot program information.
 - [Pricing](https://entuned.co/pricing.html): Three tiers from $299-$599/location/month, plus enterprise custom pricing.
-- [Pilot Program](https://entuned.co/pilot.html): 90-day free pilot structure, requirements, and timeline.
+- [Pilot Program](https://entuned.co/pilot.html): Free pilot structure, requirements, and timeline.
 - [For Retail Leaders](https://entuned.co/for-retail-leaders.html): The case for intentional audio environments in retail operations.
 - [For CFOs](https://entuned.co/for-cfos.html): ROI modeling, cost comparisons, and financial justification for the investment.
 - [Investors](https://entuned.co/investors.html): Market size, competitive positioning, IP, business model, and fundraise details.
@@ -119,7 +119,7 @@ Built on decades of peer-reviewed research: tempo entrainment increases dwell ti
 - Essentials: $299/location/month (1-2 locations, single zone)
 - Professional: $599/location/month (5+ locations, up to 3 zones)
 - Enterprise: Custom (25+ locations, unlimited zones)
-- All plans start with a free 90-day pilot
+- All plans start with a free pilot
 
 ## Contact
 

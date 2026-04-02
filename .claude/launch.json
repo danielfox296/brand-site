@@ -3,7 +3,7 @@
   "configurations": [
     {
       "name": "entuned-site",
-      "runtimeExecutable": "/usr/bin/python3",
+      "runtimeExecutable": "/opt/homebrew/bin/python3",
       "runtimeArgs": ["-m", "http.server", "8765"],
       "port": 8765
     }
