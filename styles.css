@@ -401,25 +401,6 @@ footer .footer-section:first-child p {
   opacity: 0.5;
 }
 
-.footer-legal {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.footer-bottom .footer-legal a {
-  font-size: 0.875rem;
-  color: #E8E4DE !important;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  font-weight: 300;
-  text-decoration: none;
-  opacity: 0.5;
-}
-
-.footer-bottom .footer-legal a:hover {
-  opacity: 0.7;
-  color: #E8E4DE !important;
-}
 
 @media (max-width: 768px) {
   footer .container {
