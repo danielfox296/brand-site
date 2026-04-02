@@ -158,7 +158,12 @@ def build():
             f'<meta property="og:type" content="{og_type}">',
             f'<meta property="og:image" content="{og_image}">',
             f'<meta property="og:site_name" content="Entuned">',
+            f'<meta property="og:locale" content="en_US">',
         ])
+
+        if is_blog:
+            og_tags += '\n  ' + f'<meta property="article:published_time" content="{config.get("date_published", "2026-03-25")}">'
+            og_tags += '\n  ' + f'<meta property="article:author" content="Daniel Fox">'
 
         # Build Twitter Card tags
         twitter_tags = '\n  '.join([
@@ -188,6 +193,7 @@ def build():
                 "datePublished": date_published,
                 "dateModified": date_modified,
                 "description": description,
+                "image": og_image,
                 "mainEntityOfPage": {
                     "@type": "WebPage",
                     "@id": canonical_url
@@ -259,6 +265,36 @@ def build():
                 ]
             }
             schema_json += f'\n  <script type="application/ld+json">\n{json.dumps(faq_schema, indent=2)}\n  </script>'
+
+        # BreadcrumbList schema — all pages except homepage
+        if output != 'index.html':
+            # Build breadcrumb items
+            crumbs = [{"@type": "ListItem", "position": 1, "name": "Home", "item": SITE_URL + "/"}]
+
+            if is_blog:
+                crumbs.append({"@type": "ListItem", "position": 2, "name": "Blog", "item": SITE_URL + "/blog.html"})
+                crumbs.append({"@type": "ListItem", "position": 3, "name": og_title})
+            elif output.startswith('for-'):
+                crumbs.append({"@type": "ListItem", "position": 2, "name": "For Your Industry", "item": SITE_URL + "/for-apparel.html"})
+                # Determine industry name from output
+                industry_names = {
+                    'for-apparel.html': 'Apparel',
+                    'for-cosmetics.html': 'Cosmetics',
+                    'for-home-goods.html': 'Home Goods',
+                    'for-cfos.html': 'For CFOs',
+                    'for-retail-leaders.html': 'For Retail Leaders'
+                }
+                industry_name = industry_names.get(output, og_title)
+                crumbs.append({"@type": "ListItem", "position": 3, "name": industry_name})
+            else:
+                crumbs.append({"@type": "ListItem", "position": 2, "name": og_title})
+
+            breadcrumb_schema = {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": crumbs
+            }
+            schema_json += f'\n  <script type="application/ld+json">\n{json.dumps(breadcrumb_schema, indent=2)}\n  </script>'
 
         # Substitute into base layout
         html = base

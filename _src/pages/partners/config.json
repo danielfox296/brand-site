@@ -1,5 +1,6 @@
 {
   "title": "Partners | Entuned",
   "description": "Technology and integration partners working with Entuned to connect retail audio optimization with existing store infrastructure.",
-  "output": "partners.html"
+  "output": "partners.html",
+  "robots": "noindex, follow"
 }

@@ -1,5 +1,6 @@
 {
   "title": "Entuned — Music Engineered for Retail",
   "description": "",
-  "output": "pricing.html"
+  "output": "pricing.html",
+  "skip": true
 }

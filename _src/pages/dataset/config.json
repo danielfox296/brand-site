@@ -1,5 +1,6 @@
 {
   "title": "The Dataset | Entuned",
   "description": "How Entuned's growing proprietary dataset connects musical parameters to retail behavioral outcomes at scale.",
-  "output": "dataset.html"
+  "output": "dataset.html",
+  "robots": "noindex, follow"
 }

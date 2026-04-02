@@ -1,5 +1,6 @@
 {
   "title": "Case Studies | Entuned",
   "description": "Real-world results from Entuned pilot deployments. Measured behavioral outcomes across apparel, wine, and hospitality retail environments.",
-  "output": "case-studies.html"
+  "output": "case-studies.html",
+  "robots": "noindex, follow"
 }

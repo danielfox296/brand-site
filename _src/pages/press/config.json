@@ -1,5 +1,6 @@
 {
   "title": "Press | Entuned",
   "description": "Media coverage and press resources for Entuned, the retail audio optimization platform.",
-  "output": "press.html"
+  "output": "press.html",
+  "robots": "noindex, follow"
 }
