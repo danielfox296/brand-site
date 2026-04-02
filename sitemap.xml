@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://entuned.co/about.html</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://entuned.co/blog.html</loc>
-    <lastmod>2026-03-30</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
@@ -32,19 +32,19 @@
   </url>
   <url>
     <loc>https://entuned.co/how-it-works.html</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://entuned.co/</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://entuned.co/pilot.html</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -374,19 +374,19 @@
   </url>
   <url>
     <loc>https://entuned.co/for-apparel.html</loc>
-    <lastmod>2026-03-31</lastmod>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://entuned.co/for-cosmetics.html</loc>
-    <lastmod>2026-03-31</lastmod>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://entuned.co/for-home-goods.html</loc>
-    <lastmod>2026-03-31</lastmod>
+    <lastmod>2026-04-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -443,5 +443,11 @@
     <lastmod>2026-03-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://entuned.co/rss.xml</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>

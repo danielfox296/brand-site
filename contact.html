@@ -12,6 +12,7 @@
   <meta name="description" content="Get in touch with the Entuned team. Retail leaders, investors, technology partners, and media inquiries welcome.">
 
   <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="rss.xml">
   <meta property="og:title" content="Contact">
   <meta property="og:description" content="Get in touch with the Entuned team. Retail leaders, investors, technology partners, and media inquiries welcome.">
   <meta property="og:url" content="https://entuned.co/contact.html">
@@ -88,7 +89,7 @@
 </head>
 <body>
   <!-- NAVIGATION -->
-<nav>
+<nav aria-label="Main navigation">
   <div class="container">
     <a href="index.html" class="logo"><img src="img/Entuned_logo.png" alt="Entuned" class="logo-img"></a>
     <ul class="nav-links">
@@ -106,9 +107,43 @@
       <li class="nav-cta-mobile"><a href="contact.html">Contact</a></li>
     </ul>
     <a href="contact.html" class="btn btn-primary nav-cta">Contact</a>
-    <button class="mobile-menu-toggle">&#9776;</button>
+    <button class="mobile-menu-toggle" aria-label="Menu">&#9776;</button>
   </div>
 </nav>
+
+  <main>
+  <style>
+input:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown),
+select:invalid:not(:placeholder-shown) {
+  border-color: #e74c3c;
+}
+
+input:valid:not(:placeholder-shown),
+textarea:valid:not(:placeholder-shown) {
+  border-color: #27ae60;
+}
+
+.form-success {
+  background: rgba(39, 174, 96, 0.1);
+  border: 1px solid rgba(39, 174, 96, 0.3);
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  display: none;
+}
+
+.form-success.visible {
+  display: block;
+}
+
+.form-error {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  display: none;
+}
+</style>
 
   <!-- HERO -->
   <section class="hero hero-alt">
@@ -170,6 +205,11 @@
 
         <div id="form-status" style="text-align: center; margin-top: 1.5rem; display: none;"></div>
       </form>
+
+      <div class="form-success" id="form-success" style="display:none; background: rgba(39, 174, 96, 0.1); border: 1px solid rgba(39, 174, 96, 0.3); border-radius: 8px; padding: 2rem; text-align: center; margin-top: 2rem;">
+        <h3 style="color: #d7af74; margin-bottom: 1rem;">Message Received</h3>
+        <p>Thank you for reaching out. We'll be in touch within one business day.</p>
+      </div>
     </div>
   </section>
 
@@ -191,11 +231,9 @@
         headers: { 'Accept': 'application/json' }
       }).then(function(response) {
         if (response.ok) {
-          status.style.display = 'block';
-          status.style.color = '#d7af74';
-          status.textContent = 'Message sent. We\u2019ll be in touch.';
-          form.reset();
-          btn.textContent = 'Sent';
+          form.style.display = 'none';
+          var successDiv = document.getElementById('form-success');
+          if (successDiv) successDiv.style.display = 'block';
         } else {
           throw new Error('Form submission failed');
         }
@@ -209,6 +247,7 @@
     });
   })();
   </script>
+  </main>
 
   <!-- FOOTER -->
 <footer>
@@ -216,6 +255,7 @@
     <div class="footer-section">
       <h4><img src="img/Entuned_logo.png" alt="Entuned" class="footer-logo-img"></h4>
       <p style="opacity: 0.7; font-size: 0.95rem;">Retail music strategy driven by customer psychology.</p>
+      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entuned" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
     </div>
     <div class="footer-section">
       <h4>Product</h4>
