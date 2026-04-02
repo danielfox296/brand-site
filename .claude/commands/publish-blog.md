@@ -92,7 +92,7 @@ Use this exact structure for `sections/01-content.html`:
 
     <div class="article-cta fade-up">
       <p>CTA text relevant to the post topic.</p>
-      <a href="../pilot.html" class="btn btn-primary">Start a Free Pilot</a>
+      <a href="../pilot.html" class="btn btn-primary">Ask About a Pilot Program</a>
     </div>
   </div>
 ```
