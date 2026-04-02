@@ -407,18 +407,17 @@ footer .footer-section:first-child p {
 }
 
 .footer-legal a {
-  font-size: 0.7rem;
-  color: #777;
+  font-size: 0.875rem;
+  color: #E8E4DE;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   font-weight: 300;
   text-decoration: none;
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .footer-legal a:hover {
-  opacity: 1;
-  color: #999;
+  opacity: 0.7;
 }
 
 @media (max-width: 768px) {
