@@ -1,22 +1,22 @@
 # why-entuned — editable text content
 
-h1_1: Retail Audio Has Never Been Measured. Until Now.
+h1_1: Your Analytics Platform and Your Music Provider Share Zero Data.
 h2_1: The Existing Options
-h2_2: What's Missing
+h2_2: The $1.9 Billion Blind Spot
 h2_3: How Entuned Is Different
 h2_4: Related Reading
 h2_5: See How It Works
 btn_1: How It Works
-p_1: Background music providers sell playlists. Entuned measures what happens when the music changes.
-p_2: Retailers currently choose from three categories of audio solution. Licensed playlist services aggregate commercial music into themed collections and handle the licensing paperwork. Mood-based curation tools let managers pick from preset categories organized by energy level, genre, or time of day. Background music providers deliver a managed stream designed to fill silence without attracting attention.
-p_3: Each of these categories optimizes for a different version of the same goal: making sure the music is not objectionable. The selection criteria are listener preference, brand alignment by genre, and licensing compliance. The question they answer is "what should we play." None of them ask what happened after they played it.
-p_4: These tools treat audio as a fixed input. Pick a playlist, press play, move on. There is no feedback loop. There is no measurement. There is no mechanism to determine whether the audio environment helped or hurt the business on any given day.
-p_5: Existing solutions treat music as either a cost center or a brand signal. A line item for compliance, or a creative expression of store identity. In both cases, the music is chosen and the job is considered done.
-p_6: What none of them do is close the loop between what plays and what customers do. No existing retail audio provider measures dwell time changes, transaction value shifts, or traffic pattern differences as a function of the audio environment. The connection between soundtrack and commercial outcome is assumed, never verified.
-p_7: This means every retail audio decision is made without evidence. Millions of dollars spent annually on solutions that have never demonstrated measurable impact on the metrics retailers actually care about.
-p_8: Entuned measures behavioral outcomes, not listener preference. The question is not whether customers like the music. The question is whether they stayed longer, spent more, and came back.
-p_9: Every deployment generates data that improves the next optimization. Each store's performance feeds a growing dataset connecting musical parameters to commercial outcomes across retail environments.
-p_10: The system gets more accurate over time. As the dataset grows, the relationship between specific musical variables and specific behavioral outcomes becomes more precise. Every retailer benefits from the aggregate learning.
+p_1: Mood Media, Soundtrack Your Brand, and the rest sell playlists. Entuned measures what happens after the music plays.
+p_2: "Retailers currently choose from three categories of audio solution. Mood Media and similar licensed playlist services aggregate commercial music into themed collections and handle the licensing paperwork. Soundtrack Your Brand and other mood-based tools let managers pick from preset categories organized by energy level, genre, or time of day. Background music providers deliver a managed stream designed to fill silence without attracting attention."
+p_3: "All three categories answer the same question: \"what should we play?\" The selection criteria are listener preference, brand alignment by genre, and licensing compliance. None of them ask what happened after they played it. Try this with your current provider: \"Can you tell me what the music did for the business this quarter?\" That question eliminates most vendors."
+p_4: "Retailers spend $1.9 billion annually on in-store analytics. Millions of sensors tracking foot traffic, heat maps, conversion funnels. But audio, the one environmental variable you can change instantly at zero marginal cost, connects to none of it. Your POS data and your playlist live in different universes."
+p_5: "Audio is the last unmeasured environmental variable in retail. Every other input, lighting, layout, signage, staffing, gets tracked and tested. Music gets picked and forgotten. No retailer would accept this from any other part of the store experience."
+p_6: "The gap is structural, not accidental. Existing providers have no incentive to measure outcomes because the results might not flatter their product. They sell content. We sell measured performance."
+p_7: "That $1.9 billion analytics infrastructure gives retailers millions of sensors and zero real-time levers. Audio is the only intervention that changes the environment instantly, costs nothing to deploy, and leaves a measurable trace in transaction data. It's probably the highest-ROI lever nobody is pulling."
+p_8: "Entuned measures behavioral outcomes, not listener preference. The question is not whether customers like the music. The question is whether they stayed longer, spent more, and came back. Areni and Kim (1993) showed identity-congruent music nearly doubled transaction value. Andersson et al. (2012) showed incongruent music actively reduced willingness to pay. Getting the direction right is worth more than getting the volume right."
+p_9: "Every deployment produces data that no competitor can buy. Each store-hour connects specific musical parameters to specific commercial outcomes. By the time you have 50 locations, the system knows things about your customer that took the first four stores months to discover."
+p_10: "The data compounds. Your 50th store benefits from what every store before it learned. Competitors starting from scratch will always be 50 stores behind. This is not a content library advantage. It's a measurement advantage, and it grows with every hour of operation."
 p_11: <a href="blog/what-spotify-gets-wrong.html" style="color: #d7af74;">What Spotify Gets Wrong</a>
 p_12: <a href="blog/music-was-never-made-for-your-store.html" style="color: #d7af74;">Music Was Never Made for Your Store</a>
 p_13: <a href="blog/ai-vs-traditional-retail-music.html" style="color: #d7af74;">AI vs. Traditional In-Store Music: What's Changed</a>

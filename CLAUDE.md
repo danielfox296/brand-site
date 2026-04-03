@@ -10,6 +10,17 @@ Read `ARCHITECTURE.md` for the full site structure, design system, and build pro
 - **Remote:** `danielfox296/brand-site`
 - **Domain:** entuned.co
 
+## Content Editing (YAML Layer)
+
+Every page has a `content.yaml` file alongside its HTML sections. **When editing text content, edit the YAML file — not the HTML.**
+
+- **Content files:** `_src/pages/<page-name>/content.yaml`
+- **HTML templates** use `{{content.key}}` placeholders — don't put raw text in these
+- **After any content edit:** run `python3 build.py` before committing
+- The how-it-works page uses nested keys (`content.hero.headline`); all other pages use flat sequential keys (`content.h1_1`, `content.p_3`, etc.)
+- Inline HTML (links, `<span>`, `<strong>`) is stored inside YAML values — that's intentional
+- To read all site copy at once: `grep -r "" _src/pages/*/content.yaml`
+
 ## Publishing a Blog Post
 
 Every blog post requires **6 touchpoints**. Miss one and the post is orphaned.

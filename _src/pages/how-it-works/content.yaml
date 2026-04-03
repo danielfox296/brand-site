@@ -3,27 +3,27 @@
 
 hero:
   headline: "How It Works"
-  subline: "From your customer's psychology to your store's soundtrack."
+  subline: "Four steps from customer psychology to measured sales lift."
 
 step1:
   label: "Step 01"
   title: "We profile your ideal customer."
-  text: "Not demographics. Psychology. What do they value? What's their aesthetic? What makes them feel like a space was built for them? Through a detailed onboarding conversation, we build a psychographic model of your target customer. This becomes the foundation of your store's soundtrack."
+  text: "Not demographics. Psychology. What do they value? What aesthetic makes them feel like a space was built for them? Through a detailed onboarding conversation, we build a psychographic model of your target customer. This profile becomes the blueprint for every musical decision your store makes."
 
 step2:
   label: "Step 02"
   title: "We translate that profile into music."
-  text: "Your customer profile becomes a set of precise musical specifications. Our proprietary translation layer converts psychological attributes into the parameters that determine what the music sounds like. Every element of the composition is specified, not guessed."
+  text: "Your customer profile becomes a set of precise musical specifications. Tempo, mode, harmonic density, instrumentation. Our proprietary translation layer converts psychological attributes into compositional parameters. Every element is specified, not guessed. The difference matters. Areni and Kim (1993) and North et al. (1999) found that identity-congruent music lifts willingness to pay 8-12%. Incongruent music actively reduces it (Andersson et al. 2012, 601 real transactions)."
 
 step3:
   label: "Step 03"
-  title: "AI generates original music for your store."
-  text: "Every track is an original composition, generated specifically for your customer's psychology. No catalog. No licensing fees. No track repeats. The music is as unique as your customer, and it evolves as we learn what works in your space."
+  title: "We create original music for your store."
+  text: "Every track is an original composition, built specifically for your customer's psychology. No catalog. No licensing fees. No track repeats. And because the music is unfamiliar by design, customers stay longer. Yalch and Spangenberg (2000) found that familiar music drives shoppers out 8% faster."
 
 step4:
   label: "Step 04"
-  title: "Stream it. Measure it."
-  text: "Connect to your speakers, press play. The app streams your soundtrack continuously. We correlate what's playing against your store's performance data: dwell time, foot traffic patterns, and transaction outcomes. You see what's working. The music gets smarter over time."
+  title: "Stream it. Measure it. Improve it."
+  text: "Connect to your speakers, press play. We correlate what's playing against your store's performance data: dwell time, foot traffic patterns, transaction outcomes. Every store-hour produces data no competitor can buy. By week four, the system knows which musical parameters move your numbers. By week twelve, your 10th store benefits from what the first four discovered."
 
 includes:
   eyebrow: "What Every Deployment Includes"
@@ -31,39 +31,39 @@ includes:
 
 card1:
   title: "Psychographic Profiling"
-  text: "We build a detailed model of your target customer's values, aesthetics, and emotional needs."
+  text: "A detailed model of your target customer's values, aesthetics, and purchase psychology. This is the foundation every musical decision builds on."
 
 card2:
   title: "Original Compositions"
-  text: "Every track generated fresh. Zero licensing fees. Zero catalog constraints. Infinite variety."
+  text: "Every track created fresh for your specific customer profile. Zero licensing fees. Zero catalog constraints. Infinite variety, zero repeats."
 
 card3:
-  title: "Performance Data"
-  text: "Dwell time, foot traffic, transaction correlation. Measured against your baseline."
+  title: "Performance Measurement"
+  text: "Dwell time, transaction value, traffic patterns. All correlated against what was playing and when. Your analytics platform and your music provider finally share data."
 
 card4:
-  title: "Continuous Improvement"
-  text: "The music adapts as the data accumulates. Your soundtrack gets more precise over time."
+  title: "Fleet Learning"
+  text: "Every store-hour feeds the model. The relationship between specific musical variables and specific commercial outcomes gets more precise with every data point. Your 50th location benefits from what the first four discovered."
 
 card5:
   title: "Simple Setup"
-  text: "Works with any Bluetooth or AirPlay speaker system. No special hardware required."
+  text: "Works with any Bluetooth or AirPlay speaker system. No special hardware. Streaming starts in minutes."
 
 pilot:
   headline: "Pilots are free."
-  description: "The founding pilot program runs at no cost. At the end, you have your own data showing what the audio environment contributed to your store's performance. If the numbers move, we talk about what comes next."
+  description: "The founding pilot program runs at no cost. At the end, you have your own data showing what the audio environment contributed to dwell time, basket size, and return visits. If the numbers move, we talk about what comes next."
 
 pilot1:
   title: "Custom psychographic profiling."
-  text: "We build a detailed profile of your ideal customer — their values, their aesthetic, their relationship with music — and translate that into a soundtrack built specifically for them."
+  text: "We build a detailed profile of your ideal customer. Their values, their aesthetic, their relationship with music. That profile becomes a soundtrack built specifically for them."
 
 pilot2:
-  title: "Original music, generated for your store."
-  text: "Every composition is created for your customer's psychology. No licensing fees. No catalog. No music that could belong to any other brand."
+  title: "Original music, created for your store."
+  text: "Every composition is built for your customer's psychology. No licensing fees. No catalog. No music that could belong to any other brand."
 
 pilot3:
   title: "Performance measurement."
-  text: "We track what happens when the music changes. Dwell time, traffic patterns, and sales data tell the story. You get the insights."
+  text: "We track what happens when the music changes. Dwell time, traffic patterns, transaction data. You see what the music did for the business this quarter. Not what it sounded like."
 
 pilot4:
   title: "Zero cost to participate."
@@ -72,5 +72,5 @@ pilot4:
 cta:
   headline: "Let's design your soundtrack."
   subline: "Tell us about your store, your customer, and what you've tried. We'll tell you what we'd build."
-  button_text: "Book a Call"
-  button_link: "contact.html"
+  button_text: "Ask About a Pilot Program"
+  button_link: "pilot.html"
