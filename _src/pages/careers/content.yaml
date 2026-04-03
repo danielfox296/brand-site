@@ -1,13 +1,13 @@
 # careers — editable text content
 
 h1_1: Careers
-h2_1: No Open Roles Yet
-h2_2: Get on the List
-btn_1: Contact Us
-p_1: Build the measurement layer for retail audio.
-p_2: Entuned is early-stage and not currently hiring. When we do, the roles will sit at the intersection of music psychology, data science, retail operations, and generative audio technology.
-p_3: If that intersection describes your background and you want to be considered when roles open, reach out. We keep a short list of people we want to talk to when the time comes.
-p_4: Domains we will hire across
-p_5: Data science and behavioral analytics. Music production and audio engineering. Retail operations and go-to-market. Full-stack engineering.
-p_6: Send a note with your background and what draws you to this problem.
+h2_1: We're Not Hiring Yet
+h2_2: Reach Out Early
+btn_1: Say Hello
+p_1: The space between what stores play and what shoppers do is unmeasured. We're changing that.
+p_2: Entuned is a one-person company, founded in 2025, raising a pre-seed round. The first hires will come after the raise closes. This page exists because the right people tend to show up before the roles do.
+p_3: We are building a translation engine that converts consumer psychology research into musical parameters, then measures what happens in real stores. The data moat is correlated music-to-outcome data across retail deployments. Nobody else has it, because nobody else is collecting it.
+p_4: Where the work lives
+p_5: "Music psychology and psychoacoustics: turning published research into production rules that actually hold up in noisy retail environments. Data science and behavioral analytics: building the measurement layer that connects what plays to what sells, visit by visit. Retail operations and go-to-market: selling into a category where buyers have been burned by vendors who never proved anything. Full-stack engineering and generative audio: shipping a system that writes, schedules, and deploys original music to physical locations in real time."
+p_6: If one of those areas is yours and this problem sounds like the right kind of hard, send a note. Tell us what you work on and why this caught your attention.
 p_7: Learn more: <a href="about.html" style="color: #d7af74;">About Entuned</a> · <a href="team.html" style="color: #d7af74;">Team</a>
