@@ -35,6 +35,7 @@ Notes:
 import os
 import json
 import glob
+import re
 
 REPO     = os.path.dirname(os.path.abspath(__file__))
 SRC      = os.path.join(REPO, '_src')
@@ -47,6 +48,63 @@ SITE_URL = 'https://entuned.co'
 def read(path):
     with open(path, 'r', encoding='utf-8') as f:
         return f.read()
+
+
+def parse_simple_yaml(text):
+    """Parse the subset of YAML used by content files (no PyYAML needed).
+    Supports: nested string maps (key: value, with indented children)."""
+    root = {}
+    stack = [(root, -1)]  # (dict, indent_level)
+
+    for raw_line in text.split('\n'):
+        stripped = raw_line.strip()
+        if not stripped or stripped.startswith('#'):
+            continue
+
+        indent = len(raw_line) - len(raw_line.lstrip())
+
+        if ':' in stripped:
+            k, v = stripped.split(':', 1)
+            k = k.strip()
+            v = v.strip()
+
+            # Pop stack back to correct parent
+            while len(stack) > 1 and stack[-1][1] >= indent:
+                stack.pop()
+
+            parent = stack[-1][0]
+
+            if v:
+                # Strip quotes
+                if (v.startswith('"') and v.endswith('"')) or \
+                   (v.startswith("'") and v.endswith("'")):
+                    v = v[1:-1]
+                parent[k] = v
+            else:
+                # Nested map
+                child = {}
+                parent[k] = child
+                stack.append((child, indent))
+
+    return root
+
+
+def resolve_content(template, data):
+    """Replace {{content.x.y}} placeholders with values from data dict."""
+    if not data:
+        return template
+
+    def replace_placeholder(m):
+        path = m.group(1).strip()
+        obj = data
+        for key in path.split('.'):
+            if isinstance(obj, dict):
+                obj = obj.get(key)
+            else:
+                return m.group(0)
+        return str(obj) if obj is not None else m.group(0)
+
+    return re.sub(r'\{\{(content\.[\w.]+)\}\}', replace_placeholder, template)
 
 
 def collect_sections(sections_dir):
@@ -114,6 +172,12 @@ def build():
             content = '\n\n'.join(read(f).strip() for f in section_files)
         else:
             content = ''
+
+        # Apply content.yaml substitutions (if present)
+        content_yaml_path = os.path.join(page_path, 'content.yaml')
+        if os.path.exists(content_yaml_path):
+            yaml_data = parse_simple_yaml(read(content_yaml_path))
+            content = resolve_content(content, {'content': yaml_data})
 
         # Apply nav_prefix to header and footer
         page_header = header.strip().replace('{{nav_prefix}}', nav_prefix)
