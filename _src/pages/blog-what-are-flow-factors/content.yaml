@@ -1,0 +1,25 @@
+# blog-what-are-flow-factors — editable text content
+
+h1_1: What Are Flow Factors?
+h2_1: Why a framework exists at all
+h2_2: Why 31
+h2_3: What the framework makes possible
+meta_1: Daniel Fox &middot; March 2026 &middot; 5 min read
+btn_1: Ask About a Pilot Program
+p_1: Walk into a store playing the wrong music and you know it immediately. Something feels off. You might not be able to name what, but you shorten your visit, touch fewer products, and leave without buying. The music told you this place wasn't built for you.
+p_2: Walk into a store playing the right music and you don't notice it at all. You stay longer. You browse more. You buy more. The music disappears into the experience, which is exactly what it's supposed to do.
+p_3: The difference between those two outcomes is measurable. And the variables that determine which one you get are specific, discrete, and controllable.
+p_4: Flow Factors are Entuned's proprietary framework for specifying those variables. There are 31 of them. Each one describes a measurable property of a musical composition, and each one maps to documented behavioral effects in retail environments. The framework is what allows us to translate a customer profile into a musical specification that an AI generation system can act on.
+p_5: Four decades of peer-reviewed research have established that specific properties of music drive specific retail behaviors. Tempo affects how fast people move through a space. Certain harmonic characteristics influence how much people are willing to pay. The perceived energy of the music shapes arousal and engagement.
+p_6: These findings are well-documented. The problem is that nobody built a system for using them. A retail leader who reads that tempo affects dwell time cannot call a music provider and request a specific behavioral outcome. Traditional providers think in genres and moods. The research thinks in acoustic variables. The translation between the two has been handled by intuition, or not handled at all.
+p_7: Flow Factors replace that gap with a specification language. They give the science a way to talk to a generation engine, and they give the generation engine's output a way to be evaluated against the science.
+p_8: The number reflects the resolution at which musical properties have been shown to independently affect human perception and behavior. Fewer factors would collapse variables that are meaningfully distinct. A five-variable model (the level most background music providers implicitly operate at) cannot distinguish between "warm and inviting" and "warm and sophisticated." For a retailer whose brand positioning depends on exactly that distinction, it's the difference between music that works and music that undermines everything else in the store.
+p_9: More than 31 would introduce variables that are either redundant, unmeasurable in practical retail settings, or unsupported by behavioral evidence. Every factor in the framework meets two criteria: it can be independently controlled in AI music generation, and it has at least one documented pathway to a retail outcome that matters.
+p_10: Without parameterization, music is a black box. A playlist goes in, ambiance comes out, and nobody can explain the relationship between the two or change it with any precision.
+p_11: With parameterization, every musical decision has a rationale. Every deployment has measurable characteristics. Every outcome can be traced to a specific set of inputs. When something works, you know what worked. When something doesn't, you know what to adjust.
+p_12: That's what allows audio to be managed the same way retailers already manage lighting, layout, and visual merchandising: with data, with testing, and with accountability to business outcomes.
+p_13: The 31 Flow Factors are proprietary to Entuned. We don't publish the full parameter set because it represents years of work translating behavioral research into an operational specification. What we do publish is what the framework produces: music that is engineered for a specific customer psychology, deployed in a specific store, and measured against specific commercial outcomes.
+p_14: If you want to see what it sounds like in your space, that's what the pilot is for.
+p_15: <strong>Key Takeaway:</strong> Flow Factors are the bridge between behavioral research and operational music strategy &mdash; they turn abstract psychological effects into controllable, measurable composition parameters.
+p_16: <strong>Daniel Fox</strong> is the founder of Entuned, where he builds music systems engineered for retail customer psychology. Background in music theory, behavioral research, and data-driven product design. <a href="../about.html">More about Daniel</a>
+p_17: See how Entuned's proprietary framework translates your customer's psychology into music that moves retail metrics.

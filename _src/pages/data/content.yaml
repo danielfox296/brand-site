@@ -1,0 +1,20 @@
+# data — editable text content
+
+h1_1: How We Handle Your Data
+h2_1: What Data We Work With
+h2_2: How It's Stored and Protected
+h2_3: What We Do With It
+h2_4: Your Data Stays Yours
+h2_5: Questions About Data?
+btn_1: Contact Us
+p_1: What we collect, how we protect it, and why your data stays yours.
+p_2: Entuned works with four categories of retailer data. Point-of-sale transaction records tell us what customers purchased and when. Foot traffic patterns show how people move through your space. Dwell time measurements reveal how long customers spend in each zone. Existing audio environment data documents what was playing when each of those behaviors occurred.
+p_3: We do not collect personal customer information. We do not use cameras or facial recognition. We do not track individual shoppers. The data we work with describes aggregate behavioral patterns, not individual people.
+p_4: All retailer data is encrypted in transit and at rest. Access is restricted to authorized personnel on a need-to-know basis. We maintain strict access controls and audit logs for every data interaction.
+p_5: Data retention follows your contract terms. We do not retain retailer data beyond what is necessary to deliver the service and fulfill our reporting obligations. When a contract ends, your data is returned or deleted at your direction.
+p_6: Your data serves two purposes. First, it drives the optimization of your specific audio environment. We use your behavioral data to refine the musical parameters that produce the best outcomes for your stores.
+p_7: Second, anonymized and aggregated behavioral insights contribute to a broader dataset that improves optimization accuracy across all deployments. This aggregate dataset contains no retailer-identifiable information. Individual retailer data is never shared with or exposed to other retailers. The patterns that emerge from the aggregate improve the system for everyone without compromising anyone's competitive position.
+p_8: Retailers own their data. This is not a qualified statement. Your transaction records, your traffic data, your behavioral measurements belong to you. Entuned uses this data to optimize your environment and to contribute anonymized aggregate signal to the broader optimization dataset.
+p_9: On contract termination, you receive a complete export of all data associated with your account, or we delete it entirely. Your choice. There is no lock-in, no data hostage situation, and no ambiguity about who owns what.
+p_10: We are happy to discuss our data practices in detail. Transparency is the point.
+p_11: See also: <a href="privacy-policy.html" style="color: #d7af74;">Privacy Policy</a> · <a href="pilot.html" style="color: #d7af74;">Pilot Program</a>

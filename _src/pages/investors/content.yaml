@@ -1,0 +1,31 @@
+# investors — editable text content
+
+h1_1: The first dataset mapping music to retail behavior.
+h2_1: The thesis
+h2_2: Why this matters
+h2_3: What we're building
+h2_4: The IP
+h2_5: Founder-market fit
+h2_6: Current status
+h2_7: The ask
+h2_8: Request the Deck
+p_1: Nobody has this data. We're building it.
+p_2: Thirty years of peer-reviewed research shows that music affects retail behavior: dwell time, willingness to pay, brand perception, purchase confidence. The findings are consistent and well-replicated.
+p_3: What doesn't exist is a dataset mapping <em>specific musical parameters</em> to <em>specific retail outcomes</em> at scale. The research tells us tempo matters. It tells us genre congruence matters. But nobody has measured which tempo, which harmonic structure, which production style, which combination of thirty-one distinct compositional variables produces lift in a given retail context.
+p_4: That dataset is what Entuned is building.
+p_5: Every dollar of it is spent without data. Mood Media and Soundtrack Your Brand serve thousands of stores with catalog music selected by genre and mood. No measurement. No attribution. No feedback loop between what plays and what sells.
+p_6: A dataset that maps musical composition parameters to verified retail sales outcomes — even partially — changes the economics of that entire market. A retailer who knows that a specific tempo range, harmonic language, and production style produces 3% lift in their stores will pay for that knowledge. A music generation engine trained on that dataset produces measurably better outcomes than any catalog.
+p_7: Even 1% reliable, repeatable lift applied across retail is GDP-moving.
+p_8: Entuned generates original music for retail environments based on a psychographic profile of the store's ideal customer. The music is deployed in-store and correlated with behavioral and sales data — initially through integration with retail analytics platforms like RetailNext.
+p_9: We've identified a proprietary set of compositional parameters — we call them flow factors — that can be independently measured and manipulated: tempo, mode, harmonic complexity, rhythmic density, melodic contour, production era, vocal character, familiarity, and twenty-three others. Each composition is tagged across all of them. Each hour of in-store playback generates correlation data against traffic, dwell time, and sales.
+p_10: The dataset grows with every store-hour. The more stores we work with, the more precisely we understand which parameters drive behavior. That understanding trains the next generation of the music engine.
+p_11: <strong>Patent pending.</strong> Provisional patent filed covering the proprietary translation system and multi-zone deployment architecture.
+p_12: <strong>The dataset itself is the primary moat.</strong> Competitors starting today would need to build the musicological expertise, the generation pipeline, the retail analytics integration, and then accumulate thousands of store-hours of correlation data before they could replicate our findings. We estimate an 18–24 month head start that compounds with every pilot deployed.
+p_13: This company requires someone who understands music structurally, has operated retail firsthand, and has built generative AI that produces audience-calibrated content. Daniel Fox is all three.
+p_14: He bootstrapped an online custom retail platform to 180 employees and thousands of monthly active users, with a flagship retail store and multiple industry awards. He previously built a generative AI platform that constructed ICPs and produced original content calibrated to each one -- the same core mechanism powering Entuned. He's a working music theoretician who understands how compositional parameters drive behavioral response across audiences.
+p_15: Music science. Retail operations. Generative AI. Entuned sits at their intersection. So does its founder.
+p_16: <strong>We're raising a pre-seed round to fund the first RetailNext-integrated pilots.</strong>
+p_17: $300K–$350K SAFE at a $4–5M cap. 12–14 months of runway. This funds 3–5 pilot partners — treatment and control store pairs generating proprietary data across the full pilot period. At the end, we either have statistically significant proof that specific musical variables cause measurable lift — or we know the thesis doesn't hold.
+p_18: Binary outcome. Enormous ceiling.
+p_19: Get the Materials
+p_20: We're looking for angels who understand data assets, retail technology, or the intersection of AI and creative industries.

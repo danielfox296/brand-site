@@ -3,13 +3,13 @@
 <div id="deck-gate" class="deck-gate">
   <div class="deck-gate-inner">
     <img src="img/Entuned_logo.png" alt="Entuned" style="height: 24px; margin-bottom: 2rem; opacity: 0.7;">
-    <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem;">Retail Pilot Deck</h2>
-    <p style="opacity: 0.5; margin-bottom: 2rem; font-size: 0.95rem;">This document is confidential. Enter the password to continue.</p>
+    <h2 style="font-size: 1.8rem; margin-bottom: 0.5rem;">{{content.h2_1}}</h2>
+    <p style="opacity: 0.5; margin-bottom: 2rem; font-size: 0.95rem;">{{content.p_1}}</p>
     <form id="deck-gate-form" onsubmit="return false;">
       <input type="password" id="deck-password" class="deck-gate-input" placeholder="Password" autocomplete="off" autofocus>
       <button type="submit" class="btn btn-primary deck-gate-btn" onclick="checkDeckPassword()">Enter</button>
     </form>
-    <p id="deck-gate-error" class="deck-gate-error" style="display:none;">Incorrect password.</p>
+    <p id="deck-gate-error" class="deck-gate-error" style="display:none;">{{content.p_2}}</p>
   </div>
 </div>
 
@@ -20,9 +20,9 @@
   <section class="hero hero-alt">
     <div class="container">
       <div class="fade-up" style="max-width: 800px;">
-        <p class="section-eyebrow" style="margin-bottom: 1.5rem;">Pilot Program Invitation</p>
-        <h1>Is your music working?</h1>
-        <p class="subline">We honestly don't know either. Let's find out together.</p>
+        <p class="section-eyebrow" style="margin-bottom: 1.5rem;">{{content.p_3}}</p>
+        <h1>{{content.h1_1}}</h1>
+        <p class="subline">{{content.p_4}}</p>
       </div>
     </div>
   </section>
@@ -31,8 +31,8 @@
   <section class="section">
     <div class="container" style="max-width: 900px;">
       <div class="fade-up">
-        <p class="section-eyebrow">The Opportunity</p>
-        <h2>You're probably leaving money on the table. Every day.</h2>
+        <p class="section-eyebrow">{{content.p_5}}</p>
+        <h2>{{content.h2_2}}</h2>
       </div>
 
       <div class="stats-grid fade-up" style="grid-template-columns: repeat(3, 1fr); margin-top: 3rem;">
@@ -50,7 +50,7 @@
         </div>
       </div>
 
-      <p class="fade-up" style="text-align: center; font-size: 1.05rem; opacity: 0.85; margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid rgba(215, 175, 116, 0.08);">The problem isn't your streaming bill. It's the revenue your music isn't generating.</p>
+      <p class="fade-up" style="text-align: center; font-size: 1.05rem; opacity: 0.85; margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid rgba(215, 175, 116, 0.08);">{{content.p_6}}</p>
     </div>
   </section>
 
@@ -58,29 +58,29 @@
   <section class="section" style="background: rgba(215, 175, 116, 0.06); border-top: 1px solid rgba(215, 175, 116, 0.12); border-bottom: 1px solid rgba(215, 175, 116, 0.12);">
     <div class="container" style="max-width: 900px;">
       <div class="fade-up" style="text-align: center; margin-bottom: 3rem;">
-        <h2>We tune your music to your customer. Automatically.</h2>
+        <h2>{{content.h2_3}}</h2>
       </div>
 
       <div class="card-grid fade-up" style="grid-template-columns: repeat(4, 1fr); gap: 1.25rem;">
         <div class="card" style="border-top: 3px solid #d7af74; text-align: center;">
           <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">👤</div>
-          <div class="card-title" style="font-size: 0.95rem;">Profile Your Customer</div>
-          <p class="card-text" style="font-size: 0.85rem;">ICP at brand or store level, enriched with shopping district demographics.</p>
+          <div class="card-title" style="font-size: 0.95rem;">{{content.card_title_1}}</div>
+          <p class="card-text" style="font-size: 0.85rem;">{{content.p_7}}</p>
         </div>
         <div class="card" style="border-top: 3px solid #829eac; text-align: center;">
           <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">♫</div>
-          <div class="card-title" style="font-size: 0.95rem;">Map to Musical Language</div>
-          <p class="card-text" style="font-size: 0.85rem;">Proprietary parameters. Proprietary semiotics lexicon. Genre, tempo, mode, era, culture.</p>
+          <div class="card-title" style="font-size: 0.95rem;">{{content.card_title_2}}</div>
+          <p class="card-text" style="font-size: 0.85rem;">{{content.p_8}}</p>
         </div>
         <div class="card" style="border-top: 3px solid #829eac; text-align: center;">
           <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">〰</div>
-          <div class="card-title" style="font-size: 0.95rem;">Deploy & Adapt</div>
-          <p class="card-text" style="font-size: 0.85rem;">Music plays. RetailNext data feeds continuous adjustment. Zero manual input required.</p>
+          <div class="card-title" style="font-size: 0.95rem;">{{content.card_title_3}}</div>
+          <p class="card-text" style="font-size: 0.85rem;">{{content.p_9}}</p>
         </div>
         <div class="card" style="border-top: 3px solid #d7af74; text-align: center;">
           <div style="font-size: 1.5rem; margin-bottom: 0.5rem;">↑</div>
-          <div class="card-title" style="font-size: 0.95rem;">See Results</div>
-          <p class="card-text" style="font-size: 0.85rem;">Conversion rate. Dwell time. That's it. That's all you watch.</p>
+          <div class="card-title" style="font-size: 0.95rem;">{{content.card_title_4}}</div>
+          <p class="card-text" style="font-size: 0.85rem;">{{content.p_10}}</p>
         </div>
       </div>
     </div>
@@ -90,7 +90,7 @@
   <section class="section">
     <div class="container" style="max-width: 900px;">
       <div class="fade-up" style="text-align: center; margin-bottom: 3rem;">
-        <h2>How we'd work together.</h2>
+        <h2>{{content.h2_4}}</h2>
       </div>
 
       <div class="fade-up" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 3rem;">
@@ -98,13 +98,13 @@
           <div style="background: #d7af74; color: #080808; padding: 0.7rem 1rem; text-align: center; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em;">Your 40 Active Stores</div>
           <div style="padding: 1.5rem;">
             <div style="border-top: 1px solid rgba(215, 175, 116, 0.1); padding: 0.75rem 0;">
-              <p style="font-size: 0.95rem; opacity: 0.85;">Entuned music system — ICP-matched, continuously optimizing</p>
+              <p style="font-size: 0.95rem; opacity: 0.85;">{{content.p_11}}</p>
             </div>
             <div style="border-top: 1px solid rgba(215, 175, 116, 0.1); padding: 0.75rem 0;">
-              <p style="font-size: 0.95rem; opacity: 0.85;">RetailNext integration — we read your existing data feed</p>
+              <p style="font-size: 0.95rem; opacity: 0.85;">{{content.p_12}}</p>
             </div>
             <div style="border-top: 1px solid rgba(215, 175, 116, 0.1); padding: 0.75rem 0;">
-              <p style="font-size: 0.95rem; opacity: 0.85;">10 months — no changes, no management required from your team</p>
+              <p style="font-size: 0.95rem; opacity: 0.85;">{{content.p_13}}</p>
             </div>
           </div>
         </div>
@@ -112,20 +112,20 @@
           <div style="background: #1a1a1a; color: #E8E4DE; padding: 0.7rem 1rem; text-align: center; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em;">Your 40 Control Stores</div>
           <div style="padding: 1.5rem;">
             <div style="border-top: 1px solid rgba(255,255,255,0.05); padding: 0.75rem 0;">
-              <p style="font-size: 0.95rem; opacity: 0.6;">Your existing playlist continues unchanged</p>
+              <p style="font-size: 0.95rem; opacity: 0.6;">{{content.p_14}}</p>
             </div>
             <div style="border-top: 1px solid rgba(255,255,255,0.05); padding: 0.75rem 0;">
-              <p style="font-size: 0.95rem; opacity: 0.6;">Historical + live data shared with us at chain level</p>
+              <p style="font-size: 0.95rem; opacity: 0.6;">{{content.p_15}}</p>
             </div>
             <div style="border-top: 1px solid rgba(255,255,255,0.05); padding: 0.75rem 0;">
-              <p style="font-size: 0.95rem; opacity: 0.6;">Zero disruption to operations — they don't even know they're a control</p>
+              <p style="font-size: 0.95rem; opacity: 0.6;">{{content.p_16}}</p>
             </div>
           </div>
         </div>
       </div>
 
       <div class="fade-up" style="border: 2px solid #d7af74; padding: 2rem; border-radius: 4px; text-align: center;">
-        <p style="font-size: 1.05rem;">Cost to you: <strong>$0</strong>. We replace your existing music spend. Free.</p>
+        <p style="font-size: 1.05rem;">{{content.p_17}}</p>
       </div>
     </div>
   </section>
@@ -134,8 +134,8 @@
   <section class="section" style="background: rgba(215, 175, 116, 0.06); border-top: 1px solid rgba(215, 175, 116, 0.12); border-bottom: 1px solid rgba(215, 175, 116, 0.12);">
     <div class="container" style="max-width: 900px;">
       <div class="fade-up" style="text-align: center; margin-bottom: 3rem;">
-        <p class="section-eyebrow">The Science</p>
-        <h2>This is a real study. We designed it for proof.</h2>
+        <p class="section-eyebrow">{{content.p_18}}</p>
+        <h2>{{content.h2_5}}</h2>
       </div>
 
       <div class="stats-grid fade-up" style="grid-template-columns: repeat(4, 1fr); margin-bottom: 3rem;">
@@ -158,7 +158,7 @@
       </div>
 
       <div class="fade-up" style="border-left: 4px solid #d7af74; padding: 1.25rem 1.5rem; background: rgba(215, 175, 116, 0.04);">
-        <p style="font-size: 0.95rem; line-height: 1.8; opacity: 0.85;">We're not promising 1~0%. We're promising a provable, reproducible 1%. Conservative enough to be credible. Meaningful enough to matter. On a $100K/month store, 1% = $1,000. Across 40 stores, $40,000/month. Every month.</p>
+        <p style="font-size: 0.95rem; line-height: 1.8; opacity: 0.85;">{{content.p_19}}</p>
       </div>
     </div>
   </section>
@@ -167,31 +167,31 @@
   <section class="section">
     <div class="container" style="max-width: 900px;">
       <div class="fade-up">
-        <p class="section-eyebrow">What Comes Next</p>
-        <h2>You'll have the data. Then we'll talk.</h2>
+        <p class="section-eyebrow">{{content.p_20}}</p>
+        <h2>{{content.h2_6}}</h2>
       </div>
 
       <div class="fade-up" style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 1.5rem; align-items: center; margin-top: 3rem; margin-bottom: 3rem;">
         <div style="padding: 2rem; border: 1px solid rgba(215, 175, 116, 0.12); border-radius: 4px;">
-          <p style="font-size: 0.8rem; opacity: 0.4; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.75rem;">Phase 1 — Pilot</p>
+          <p style="font-size: 0.8rem; opacity: 0.4; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.75rem;">{{content.p_21}}</p>
           <div style="font-family: 'Manrope', sans-serif; font-size: 2rem; font-weight: 700; margin-bottom: 0.75rem;">FREE</div>
-          <p style="font-size: 0.95rem; opacity: 0.8;">10 months. Zero cost. Data collected.</p>
-          <p style="font-size: 0.85rem; opacity: 0.45; margin-top: 0.5rem;">You keep all the music benefits during the trial.</p>
+          <p style="font-size: 0.95rem; opacity: 0.8;">{{content.p_22}}</p>
+          <p style="font-size: 0.85rem; opacity: 0.45; margin-top: 0.5rem;">{{content.p_23}}</p>
         </div>
 
         <div style="font-size: 1.8rem; color: #d7af74;">→</div>
 
         <div style="padding: 2rem; background: rgba(215, 175, 116, 0.06); border: 1px solid rgba(215, 175, 116, 0.2); border-radius: 4px;">
-          <p style="font-size: 0.8rem; opacity: 0.4; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.75rem;">Phase 2 — Partnership</p>
+          <p style="font-size: 0.8rem; opacity: 0.4; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.75rem;">{{content.p_24}}</p>
           <div style="font-family: 'Manrope', sans-serif; font-size: 2rem; font-weight: 700; color: #d7af74; margin-bottom: 0.75rem;">Results First</div>
-          <p style="font-size: 0.95rem; opacity: 0.8;">We discuss terms only after you've seen the data.</p>
-          <p style="font-size: 0.85rem; opacity: 0.45; margin-top: 0.5rem;">If we don't move your numbers, you owe us nothing.</p>
+          <p style="font-size: 0.95rem; opacity: 0.8;">{{content.p_25}}</p>
+          <p style="font-size: 0.85rem; opacity: 0.45; margin-top: 0.5rem;">{{content.p_26}}</p>
         </div>
       </div>
 
       <div class="fade-up" style="text-align: center;">
-        <p style="font-size: 1.05rem; font-weight: 600; margin-bottom: 0.25rem;">We're not selling software. We're selling a performance partnership.</p>
-        <p style="opacity: 0.55;">Our revenue depends on your results. That's the alignment you want.</p>
+        <p style="font-size: 1.05rem; font-weight: 600; margin-bottom: 0.25rem;">{{content.p_27}}</p>
+        <p style="opacity: 0.55;">{{content.p_28}}</p>
       </div>
     </div>
   </section>
@@ -200,25 +200,25 @@
   <section class="section" style="background: rgba(215, 175, 116, 0.06); border-top: 1px solid rgba(215, 175, 116, 0.12); border-bottom: 1px solid rgba(215, 175, 116, 0.12);">
     <div class="container" style="max-width: 900px;">
       <div class="fade-up">
-        <h2 style="margin-bottom: 2.5rem;">The window to participate at no cost won't stay open.</h2>
+        <h2 style="margin-bottom: 2.5rem;">{{content.h2_7}}</h2>
       </div>
 
       <div style="display: flex; flex-direction: column; gap: 1.5rem;">
         <div class="fade-up" style="display: flex; gap: 1.25rem; align-items: baseline;">
           <span style="font-family: 'Manrope', sans-serif; font-size: 1.3rem; font-weight: 700; color: #d7af74; flex-shrink: 0;">01</span>
-          <p style="font-size: 1.05rem; opacity: 0.85; line-height: 1.7;">Founding pilot chains shape how the system learns. Your stores define the model.</p>
+          <p style="font-size: 1.05rem; opacity: 0.85; line-height: 1.7;">{{content.p_29}}</p>
         </div>
         <div class="fade-up" style="display: flex; gap: 1.25rem; align-items: baseline;">
           <span style="font-family: 'Manrope', sans-serif; font-size: 1.3rem; font-weight: 700; color: #d7af74; flex-shrink: 0;">02</span>
-          <p style="font-size: 1.05rem; opacity: 0.85; line-height: 1.7;">You get proof specific to your customer base — not generic research, your data.</p>
+          <p style="font-size: 1.05rem; opacity: 0.85; line-height: 1.7;">{{content.p_30}}</p>
         </div>
         <div class="fade-up" style="display: flex; gap: 1.25rem; align-items: baseline;">
           <span style="font-family: 'Manrope', sans-serif; font-size: 1.3rem; font-weight: 700; color: #d7af74; flex-shrink: 0;">03</span>
-          <p style="font-size: 1.05rem; opacity: 0.85; line-height: 1.7;">Once we raise institutional capital based on this pilot data, free closes. Pricing begins.</p>
+          <p style="font-size: 1.05rem; opacity: 0.85; line-height: 1.7;">{{content.p_31}}</p>
         </div>
       </div>
 
-      <p class="fade-up" style="text-align: center; color: #d7af74; font-size: 1.1rem; font-weight: 600; margin-top: 3rem;">This is your window to get in before anyone else.</p>
+      <p class="fade-up" style="text-align: center; color: #d7af74; font-size: 1.1rem; font-weight: 600; margin-top: 3rem;">{{content.p_32}}</p>
     </div>
   </section>
 
@@ -226,11 +226,11 @@
   <section class="hero hero-alt" style="min-height: 70vh; text-align: center;">
     <div class="container">
       <div class="fade-up">
-        <h1 style="margin-bottom: 1rem;">In 10 months, you'll know.</h1>
-        <p style="opacity: 0.45; font-size: 1.15rem; margin-bottom: 1.5rem;">We don't know if your music is working. Neither do you.</p>
-        <p style="color: #d7af74; font-size: 1.4rem; font-weight: 700; margin-bottom: 2.5rem;">Let's find out together.</p>
-        <a href="mailto:hello@entuned.co?subject=Pilot%20Program%20Inquiry%20—%20Entuned" class="btn btn-primary">Get in Touch</a>
-        <p style="opacity: 0.3; font-size: 0.85rem; margin-top: 3rem;">entuned.co</p>
+        <h1 style="margin-bottom: 1rem;">{{content.h1_2}}</h1>
+        <p style="opacity: 0.45; font-size: 1.15rem; margin-bottom: 1.5rem;">{{content.p_33}}</p>
+        <p style="color: #d7af74; font-size: 1.4rem; font-weight: 700; margin-bottom: 2.5rem;">{{content.p_34}}</p>
+        <a href="mailto:hello@entuned.co?subject=Pilot%20Program%20Inquiry%20—%20Entuned" class="btn btn-primary">{{content.btn_1}}</a>
+        <p style="opacity: 0.3; font-size: 0.85rem; margin-top: 3rem;">{{content.p_35}}</p>
       </div>
     </div>
   </section>

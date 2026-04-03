@@ -1,0 +1,34 @@
+# for-home-goods — editable text content
+
+h1_1: Six departments. One playlist. That is the problem.
+h2_1: What We Measure
+h2_2: How Entuned Works for Home Goods Retail
+h2_3: Implementation Overview
+h2_4: Schedule a Consultation
+h2_5: Related Reading
+card_title_1: Dwell Time by Department
+card_title_2: Cross-Department Traffic
+card_title_3: Average Transaction Value
+card_title_4: Browsing Depth
+btn_1: Get Started
+p_1: Home goods retail is multi-zone by nature. The customer buying a sofa and the customer buying a candle have nothing in common except the building they are standing in.
+p_2: Home goods stores are consideration-purchase environments. Customers browse slowly, compare options, and make decisions over minutes, not seconds. The audio environment either supports that process or interrupts it. Entuned measures the behavioral outcomes that tell you which is happening.
+p_3: How long customers spend in each zone. In home goods, dwell time is the leading indicator of purchase intent. Customers who stay longer in the living room section buy from it. The ones who leave after two minutes do not.
+p_4: Whether customers who came for one category discover another. The path from lighting to tableware to textiles is a revenue path. Audio environment affects whether customers feel comfortable enough to keep exploring.
+p_5: Whether customers trade up. In home goods, the difference between the $200 option and the $400 option is often a perception of quality shaped by the environment. Audio is one of the strongest environmental signals influencing that perception.
+p_6: How many product interactions a customer has before reaching the register. Deeper browsing correlates with larger baskets and higher-value selections. The audio environment either encourages continued exploration or creates a subtle pressure to leave.
+p_7: We profile your customer by department. The person shopping for premium furniture has a different psychology than the person browsing kitchen accessories. Both are in your store, but they respond to different sonic environments. Entuned maps each zone to the customer it serves and generates compositions accordingly.
+p_8: Every composition is original and license-free. The furniture showroom gets music calibrated for slow, considered browsing. The seasonal decor section gets music that encourages discovery and impulse. The premium zone gets music that reinforces quality perception without feeling aspirational. Each soundtrack is built from customer psychology, not genre tags.
+p_9: Entuned integrates with RetailNext to track traffic flow, dwell time by zone, and conversion across departments. The data from your analytics platform feeds directly into the optimization loop. When we adjust the soundtrack in your outdoor furniture section and dwell time increases 18%, that is not a coincidence — it is a measured outcome connected to a specific musical change.
+p_10: Psychographic profiling and zone mapping. We learn your customer by department, your brand positioning, and the function of each zone. You share floor plans, department layouts, and any existing RetailNext or analytics access.
+p_11: Zone-specific soundtracks generated and shared for review. Each composition calibrated to the purchase psychology of its department. Refinement based on your team's feedback.
+p_12: Go live across all zones. Streaming via Bluetooth or AirPlay to existing speaker systems. Behavioral measurement through POS and RetailNext begins tracking dwell time, cross-department traffic, and transaction value from day one.
+p_13: Monthly optimization cycles informed by zone-level performance data. Seasonal adjustments as product mix and customer traffic patterns shift. Reporting aligned to your operations cadence.
+p_14: What we need from you
+p_15: Point-of-sale access for measurement. Floor plans with department and zone designations. RetailNext or equivalent analytics access if available. Any existing audio direction or brand guidelines.
+p_16: See how Entuned works for home goods retail. The pilot is free and the measurement is rigorous.
+p_17: See also: <a href="how-it-works.html" style="color: #d7af74;">How It Works</a> · <a href="science.html" style="color: #d7af74;">The Science</a> · <a href="pilot.html" style="color: #d7af74;">Pilot Program</a>
+p_18: Other verticals: <a href="for-apparel.html" style="color: #d7af74;">Apparel</a> · <a href="for-cosmetics.html" style="color: #d7af74;">Cosmetics</a>
+p_19: <a href="blog/the-multi-zone-problem-why-one-playlist-cant-serve-a-whole-store.html" style="color: #d7af74;">The Multi-Zone Problem</a>
+p_20: <a href="blog/why-your-best-customers-leave-faster-than-they-should.html" style="color: #d7af74;">Why Your Best Customers Leave Faster Than They Should</a>
+p_21: <a href="blog/music-provider-doesnt-know-retailnext.html" style="color: #d7af74;">Your Music Provider Doesn't Know What RetailNext Knows</a>

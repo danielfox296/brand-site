@@ -1,0 +1,48 @@
+# blog-what-spotify-gets-wrong — editable text content
+
+h1_1: What Spotify Gets Wrong About Business Music
+h2_1: The Consumer Playlist Problem
+h2_2: Why Curated "Business" Playlists Miss
+h2_3: The Catalog vs. Generation Problem
+h2_4: Why Generation Beats Curation for Retail
+h2_5: Why Should Retailers Switch From Curation to Generation?
+h3_1: Problem 1: Psychographic Targeting Doesn't Scale
+h3_2: Problem 2: Licensing Cost Scales Badly
+h3_3: Problem 3: No Optimization Loop
+btn_1: Ask About a Pilot Program
+p_1: Spotify is great for personal listening. It's terrible for retail.
+p_2: Even Spotify for Business. Even its premium offering, Soundtrack Your Brand. Even when you hire a curator to build custom playlists. The fundamental model is broken for what retail actually needs.
+p_3: This isn't a knock on Spotify. It's a structural limitation that exposes a bigger problem in how most retailers think about background music.
+p_4: Start with the obvious: consumer playlists—the ones built by Spotify's editorial team or by algorithm for "workout" or "focus" or "indie vibes"—were never designed for retail. They're designed for individual taste.
+p_5: That means they optimize for novelty, discovery, and personal emotional resonance. Great for headphones. Terrible for a storefront.
+p_6: When you play "Discover Weekly" in your store, you're playing music built for someone sitting alone with their feelings, not for a customer walking past a product display. The songs are longer, the emotional arcs are deeper, the transitions are more about surprise than flow.
+p_7: After 20 plays, your customer has heard every quirky indie deep cut and started noticing the repetition. Then they start noticing the repetition is *weird* for a store. It breaks the spell.
+p_8: Spotify's business offering improves this slightly. Better selection for commercial contexts. Shorter songs sometimes. Better transition thinking.
+p_9: But it still fundamentally operates under the wrong model: <span class="highlight">It curates from *existing* music. It doesn't generate for your specific customer.</span>
+p_10: Here's what that means in practice:
+p_11: Spotify's curators are smart. But they can't build thousands of distinct playlists for thousands of distinct retail contexts. So they build for categories: "contemporary boutique," "luxury retail," "casual dining."
+p_12: Your store isn't a category. It's a specific brand with a specific customer and specific values. Spotify's curator playlist for "contemporary boutique" is built for an *average* contemporary boutique. Not for your brand voice.
+p_13: This means you're still settling. You're playing music that's *close* to your brand rather than *your* brand.
+p_14: Here's what most retailers don't realize: <span class="highlight">Streaming music for commercial use is surprisingly expensive, and the math gets worse the more you use it.</span>
+p_15: Spotify for Business charges based on store location and usage. If you have three stores, you're paying licensing fees for three locations. If you build a 50-store chain, those fees become a real line item. And because Spotify charges per location, dynamic music that changes by season, by customer segment, or by store performance gets complicated fast.
+p_16: You end up paying for scale without the benefits of scale.
+p_17: When you're curating from existing music, you have no data feedback. You can't know if a song is performing better than another because you're not measuring performance. You set it and forget it. Maybe you swap a playlist every quarter. But that's not optimization—that's negligence.
+p_18: Retail music should *improve* over time as you learn what works. Standard licensing models don't enable that.
+p_19: This is the deeper issue: Spotify's model is *catalog-based*. It works by selecting songs from an existing library. It's curation. It's smart curation, but it's still bounded by what exists.
+p_20: Modern retail needs something different: <span class="highlight">music *generated* for a specific use case, rather than curated from a catalog.</span>
+p_21: Generation means building music that fits your exact specifications:
+p_22: You can't curate your way to this level of specificity. You can only generate your way there.
+p_23: When you generate music instead of curate it, several things change:
+p_24: <strong>Curation:</strong> Selecting from catalog. "This indie song fits the vibe." <strong>Generation:</strong> Building for your specs. "This song was built from your customer's psychographic profile, not selected from a catalog. Zero licensing overhead."
+p_25: <strong>Curation:</strong> Pay per stream, per location, per license holder. Scales badly. <strong>Generation:</strong> Own the music. No per-stream costs. Scales perfectly.
+p_26: <strong>Curation:</strong> Static playlists. Maybe swap quarterly. <strong>Generation:</strong> Dynamic improvement. As you learn what works, regenerate better versions. Continuous optimization loop.
+p_27: <strong>Curation:</strong> "Close enough" to your brand. <strong>Generation:</strong> Built explicitly for your brand voice and customer.
+p_28: To be fair: transitioning from catalog-based to generation-based music is a shift. Most retailers are used to the streaming model. It feels familiar. It feels safe.
+p_29: But it's also why most retailers settle for mediocre background music. Because the model is optimized for consumer listening, not for commercial strategy.
+p_30: The question isn't "Should I keep using Spotify?" The question is "What if my music was engineered for my store instead of for an average consumer?" Learn more about <a href="../how-it-works.html">how Entuned builds music for your specific customer</a> — and why generation beats curation at every level.
+p_31: That's the difference between settling and winning.
+p_32: Related reading: <a href="../blog/ai-generated-music-retail.html">AI-Generated Music for Retail: What's Real and What's Hype</a>, <a href="../blog/ai-vs-traditional-retail-music.html">AI vs. Traditional In-Store Music</a>, and <a href="../blog/music-was-never-made-for-your-store.html">Music Was Never Made For Your Store</a>.
+p_33: <strong>Key Takeaway:</strong> Curation from existing catalogs can only get you "close enough" &mdash; generation lets you build music to your exact brand, customer, and performance specifications with no licensing overhead.
+p_34: Entuned generates music for retail—not curated from catalogs, but built for your customer, your brand, and your sales strategy. License-free. Optimizable. Yours.
+p_35: <strong>Daniel Fox</strong> is the founder of Entuned, where he builds music systems engineered for retail customer psychology. Background in music theory, behavioral research, and data-driven product design. <a href="../about.html">More about Daniel</a>
+p_36: Spotify was built for personal listening — not for converting browsers into buyers. Entuned generates music owned by you, engineered for your customer, and optimized over time. No per-stream fees. No settling for close enough.

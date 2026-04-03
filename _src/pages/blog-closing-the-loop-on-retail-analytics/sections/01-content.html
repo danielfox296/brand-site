@@ -3,90 +3,88 @@
   </div>
 
   <div class="article-hero fade-up">
-    <h1>Your Store Already Knows What's Happening. It Just Can't Do Anything About It.</h1>
+    <h1>{{content.h1_1}}</h1>
     <img src="../img/blog/closing-the-loop.jpg" alt="Data analytics dashboard representing the gap between measurement and action in retail" class="hero-image">
   </div>
 
-  <div class="article-meta">
-    Daniel Fox &middot; March 2026 &middot; 7 min read
-  </div>
+  <div class="article-meta">{{content.meta_1}}</div>
 
   <div class="article-body">
 
-    <p class="fade-up">Retail analytics has gotten very good at measurement. Platforms like <a href="https://retailnext.net/" target="_blank" rel="noopener">RetailNext</a> can tell you how many people walked through your door, where they went, how long they stayed, whether they bought something, and what time of day the whole pattern shifts. That data is real. The sensors are accurate. The dashboards are dense with signal.</p>
+    <p class="fade-up">{{content.p_1}}</p>
 
-    <p class="fade-up">And then what.</p>
+    <p class="fade-up">{{content.p_2}}</p>
 
-    <p class="fade-up">A VP of Store Ops opens the RetailNext dashboard on a Tuesday morning and sees that dwell time in the east wall fixture zone dropped 14% last week. Conversion is flat. Traffic is up slightly. The data is clean. The question it raises is obvious: what do you change?</p>
+    <p class="fade-up">{{content.p_3}}</p>
 
-    <p class="fade-up">The options are slow. Remerchandise the fixture. Retrain the floor staff on engagement in that zone. Adjust the lighting, if your system even supports zone-level control. Test a new layout, wait six weeks, compare the numbers. Every intervention available to a store operator today requires either a capital expense, a labor reallocation, or a merchandise cycle. None of them happen in real time. None of them respond to what the data is showing while it's still showing it.</p>
-
-    <div class="stat-box fade-up">
-      <p>There is one variable in a retail environment that can change continuously, costs nothing per adjustment, requires no labor, and reaches every person in the space simultaneously. <span class="highlight">The sound.</span></p>
-    </div>
-
-    <h2 class="fade-up">The Measurement Problem Is Solved</h2>
-
-    <p class="fade-up"><a href="https://retailnext.net/" target="_blank" rel="noopener">RetailNext</a> has been at this for nearly two decades. They've deployed sensors in over 100 countries, process data from roughly 100,000 devices, and their platform integrates traffic counting, zone analytics, shopper journey pathing, POS correlation, and demographic inference into a single API. In January 2025, Battery Ventures made a majority growth investment in the company, specifically earmarking capital for acquisitions and product expansion.</p>
-
-    <p class="fade-up">The competitive field tells the same story from different angles. Sensormatic (Johnson Controls) runs 1.5 million data collection devices globally. Standard AI just completed its sixth acquisition, buying Pathr.ai to add spatial intelligence to its computer vision platform. V-Count operates in 130 countries with dedicated 3D depth sensors.</p>
-
-    <p class="fade-up">The measurement layer is mature. Multiple companies can tell you exactly what's happening inside your store, down to the zone, down to the minute. The gap is what happens after the measurement.</p>
-
-    <h2 class="fade-up">The Pikato Precedent</h2>
-
-    <p class="fade-up">RetailNext's own acquisition history tells you where the category is headed. In 2015, they acquired Pikato, a mobile marketing platform that turned RetailNext's traffic and behavior data into triggered, personalized communications delivered to shoppers' phones. The thesis was straightforward: analytics data becomes more valuable when it drives an action, not just a report.</p>
-
-    <p class="fade-up">That acquisition pattern repeated in 2022 with Ipsos Retail Performance for geographic reach, and the Battery Ventures investment in 2025 came with an explicit mandate to pursue more acquisitions. The company is actively looking for technology that turns measurement into intervention. They've said so publicly. And the intervention they haven't explored yet is the one that's on in every store, all day, every day.</p>
-
-    <h2 class="fade-up">Audio Is the Only Real-Time Environmental Variable</h2>
-
-    <p class="fade-up">A store manager can't change the lighting zone by zone in response to a dwell time reading. Can't remerchandise a wall in the middle of a Tuesday. Can't retrain staff between the 11am lull and the 1pm rush.</p>
-
-    <p class="fade-up">But the audio environment changes the moment you change it. <a href="../blog/science-of-tempo-retail.html">Tempo affects walking pace</a>. Harmonic complexity affects how long people linger with products. Mode and register affect perceived price point. Production era and genre signal cultural alignment with your customer base. These relationships are documented across decades of research in environmental psychology and consumer behavior.</p>
-
-    <p class="fade-up">The problem has always been that nobody built the infrastructure to connect what the analytics platforms measure to what the audio environment does. The music in most retail stores is still a playlist someone chose based on personal taste, or a licensed feed from a provider whose product is songs, not outcomes.</p>
-
-    <h2 class="fade-up">What a Closed Loop Looks Like</h2>
-
-    <p class="fade-up">Take the <a href="https://retailnext.net/product/traffic" target="_blank" rel="noopener">RetailNext API</a>. It exposes traffic counts, zone dwell times, conversion rates, demographic data, and POS transactions through a REST interface. A retailer already running RetailNext is producing this data continuously.</p>
-
-    <p class="fade-up">Now connect that data to an audio engine that understands the relationship between musical parameters and shopper behavior. Not a playlist. A generative system that adjusts based on what the store's own sensors are reporting. Traffic surges, the tempo shifts. Dwell drops in a zone, the audio feed adjusts. Conversion correlates with a particular production register during afternoon hours, and the system learns to lean into that register during those hours without anyone telling it to.</p>
+    <p class="fade-up">{{content.p_4}}</p>
 
     <div class="stat-box fade-up">
-      <p>That's a <span class="highlight">closed loop</span>. The store measures behavior, the audio responds, the store measures again. Every cycle produces data that makes the next cycle more precise.</p>
+      <p>{{content.p_5}}</p>
     </div>
 
-    <h2 class="fade-up">The Integration, Not the Competition</h2>
+    <h2 class="fade-up">{{content.h2_1}}</h2>
 
-    <p class="fade-up">This isn't a competitive play against RetailNext or any analytics platform. It's the opposite. <a href="../blog/what-is-entuned.html">Entuned</a> requires measurement infrastructure to function. Without traffic data, dwell data, and conversion data, there's nothing to close the loop against. RetailNext, Sensormatic, Standard AI, V-Count &mdash; any platform producing reliable in-store behavioral data is a potential integration partner, because Entuned turns their data into a new category of outcome.</p>
+    <p class="fade-up">{{content.p_6}}</p>
 
-    <p class="fade-up">A retailer running RetailNext who adds Entuned doesn't replace anything. They add an action layer that makes their existing analytics investment produce a return it couldn't produce before. The measurement gets more valuable because something is finally responding to it.</p>
+    <p class="fade-up">{{content.p_7}}</p>
 
-    <h2 class="fade-up">What's Next</h2>
+    <p class="fade-up">{{content.p_8}}</p>
 
-    <p class="fade-up">We're building the integration. RetailNext's public API documentation gives us the data surface. Our generative audio engine gives us the intervention surface. The connection between them is the product.</p>
+    <h2 class="fade-up">{{content.h2_2}}</h2>
 
-    <p class="fade-up">If you're a retailer running RetailNext or any in-store analytics platform, and you want to be part of the first live test of a closed-loop audio environment, we're looking for pilot partners.</p>
+    <p class="fade-up">{{content.p_9}}</p>
 
-    <p class="fade-up">If you're at RetailNext or Battery Ventures and this caught your attention, that's the point. Your data layer is the best in the industry. We think we know what to build on top of it.</p>
+    <p class="fade-up">{{content.p_10}}</p>
+
+    <h2 class="fade-up">{{content.h2_3}}</h2>
+
+    <p class="fade-up">{{content.p_11}}</p>
+
+    <p class="fade-up">{{content.p_12}}</p>
+
+    <p class="fade-up">{{content.p_13}}</p>
+
+    <h2 class="fade-up">{{content.h2_4}}</h2>
+
+    <p class="fade-up">{{content.p_14}}</p>
+
+    <p class="fade-up">{{content.p_15}}</p>
+
+    <div class="stat-box fade-up">
+      <p>{{content.p_16}}</p>
+    </div>
+
+    <h2 class="fade-up">{{content.h2_5}}</h2>
+
+    <p class="fade-up">{{content.p_17}}</p>
+
+    <p class="fade-up">{{content.p_18}}</p>
+
+    <h2 class="fade-up">{{content.h2_6}}</h2>
+
+    <p class="fade-up">{{content.p_19}}</p>
+
+    <p class="fade-up">{{content.p_20}}</p>
+
+    <p class="fade-up">{{content.p_21}}</p>
 
     <div class="byline fade-up">
-      <p>Daniel<br>Founder, Entuned</p>
+      <p>{{content.p_22}}</p>
     </div>
 
-    <p class="fade-up">Related reading: <a href="../blog/three-ways-to-think-about-what-your-store-cant-do-yet.html">Three Ways to Think About What Your Store Can't Do Yet</a>, <a href="../blog/the-metrics-your-audio-environment-should-be-producing.html">The Metrics Your Audio Environment Should Be Producing</a>, and <a href="../blog/measure-roi-retail-music.html">How to Measure the ROI of In-Store Music</a>.</p>
+    <p class="fade-up">{{content.p_23}}</p>
 
     <div class="takeaway-box fade-up">
-      <p><strong>Key Takeaway:</strong> Connect your music system to the behavioral data your sensors already produce, and the store gets a closed loop &mdash; measure behavior, adjust the audio, measure again, improve.</p>
+      <p>{{content.p_24}}</p>
     </div>
 
     <div class="author-bio fade-up">
-      <p><strong>Daniel Fox</strong> is the founder of Entuned, where he builds music systems engineered for retail customer psychology. Background in music theory, behavioral research, and data-driven product design. <a href="../about.html">More about Daniel</a></p>
+      <p>{{content.p_25}}</p>
     </div>
 
     <div class="article-cta fade-up">
-      <p>Entuned turns your store's behavioral data into a real-time audio response. No licensing. No playlists. Built from your customer's profile and optimized against your own metrics.</p>
-      <a href="../pilot.html" class="btn btn-primary">Ask About a Pilot Program</a>
+      <p>{{content.p_26}}</p>
+      <a href="../pilot.html" class="btn btn-primary">{{content.btn_1}}</a>
     </div>
   </div>

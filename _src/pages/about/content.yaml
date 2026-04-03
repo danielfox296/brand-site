@@ -1,0 +1,21 @@
+# about — editable text content
+
+h1_1: Every retail store in the&nbsp;world plays music. Not one of them can tell you whether it's&nbsp;working.
+h2_1: Daniel Fox
+btn_1: Join the Pilot
+btn_2: Get in Touch
+p_1: Why Entuned Exists
+p_2: That's not an oversight. It's a structural problem. The commercial music industry — Mood Media, Soundtrack Your Brand, the rest — was built on catalog licensing. You pick a genre, you pick a mood, you pipe it into the store. The music fills the silence. That's the product. Whether it moves people, whether it changes how long they stay or what they buy or how they feel about the brand — nobody measures that. Nobody has the data to measure it.
+p_3: The academic literature has known for decades that music affects purchasing behavior. Tempo influences dwell time. Harmonic language primes willingness to pay. Genre congruence — music that matches a customer's identity — increases basket size by 8 to 12 percent. These aren't fringe findings. They're replicated, peer-reviewed, and cited. And they've been sitting in journals for thirty years while an entire industry continued selling playlists.
+p_4: In late 2024, two things happened at once.
+p_5: AI music generation crossed a quality threshold. Not incremental improvement — a step change. Original compositions, specified at the variable level: tempo, key, mode, instrumentation, timbral profile, dynamic arc. Generated at near-zero marginal cost, without licensing constraints, without catalog limits. Music made for a specific purpose rather than pulled from a library.
+p_6: At the same time, retail analytics platforms opened their store-level behavioral data via API. Foot traffic. Dwell time. Conversion rates. Transaction counts. The sensor infrastructure had existed for years — thousands of stores already instrumented. What hadn't existed was a system that could act on that data through a musical intervention and close the measurement loop.
+p_7: The pieces were there. What was missing was someone who understood both sides — the musicological and the behavioral — well enough to connect them.
+p_8: Daniel spent his career at the intersection of music and human experience. As a gigging musician and music producer, and music theoretician, he developed a working model of how specific musical parameters interact with psychology — how tempo affects arousal and decision-making pace, how harmonic mode primes emotional state, how timbral warmth changes perception of brand authenticity.
+p_9: That model became the foundation of Entuned's core IP: a psychographic-to-musicological translation engine that converts a retail brand's ideal customer profile into specific musical composition parameters, and generates original music from them. The methodology is covered by a provisional patent.
+p_10: He'd built companies before — two of them. He knew how to take an idea through the gap between insight and product. And he recognized something the music industry had missed: the value was never in the music itself. It was in the proof that the music worked.
+p_11: Entuned deploys original soundtracks in retail stores and uses existing behavioral analytics to build something that has never existed: a dataset mapping musical composition parameters — dozens of variables, across real environments, across time — to verified commercial outcomes.
+p_12: The pilot is free. The music is original. The data is ours.
+p_13: The more stores we run, the richer the dataset becomes. The richer the dataset, the better the translation model gets. The better the model, the more defensible Entuned becomes — because no competitor can replicate years of cross-retail musical data without years of access to real stores.
+p_14: The bet isn't that music matters. The science already proved that. The bet is that nobody has built the commercial proof — and that the company that builds it first owns the category.
+p_15: That's why Entuned exists.
