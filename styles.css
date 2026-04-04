@@ -308,7 +308,7 @@ nav .container {
 }
 
 .btn-secondary {
-  background: transparent;
+  background: rgba(8, 8, 8, 0.9);
   color: #d7af74;
   border: 2px solid #d7af74;
 }
@@ -338,6 +338,8 @@ nav .container {
 
 /* ==================== FOOTER ==================== */
 footer {
+  position: relative;
+  z-index: 1;
   background: #000000;
   border-top: 1px solid rgba(215, 175, 116, 0.1);
   padding: 4rem 2rem 2rem;
