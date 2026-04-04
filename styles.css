@@ -501,9 +501,18 @@ footer .footer-section:first-child p {
   font-weight: 500;
 }
 
+/* ==================== CYMATICS OVERLAY ==================== */
+.cymatics-over {
+  position: relative;
+  z-index: 1;
+  background: rgba(8, 8, 8, 0.88);
+}
+
 /* ==================== HERO VARIATIONS ==================== */
 .hero-home {
-  background: linear-gradient(135deg, #0a0a0a 0%, #1a1612 100%);
+  position: relative;
+  z-index: 1;
+  background: transparent;
 }
 
 .hero-alt {

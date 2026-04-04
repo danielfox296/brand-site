@@ -1,7 +1,10 @@
 
+  <!-- CYMATICS CANVAS — fixed behind all content, scroll-driven -->
+  <canvas id="cymaticsCanvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 0; pointer-events: none;"></canvas>
+  <div id="cymaticsFreq" style="position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%); font-family: 'SF Mono', 'Fira Code', monospace; font-size: 10px; letter-spacing: 0.12em; color: rgba(255,248,240,0.12); pointer-events: none; z-index: 2;"></div>
+
   <!-- HERO -->
-  <section class="hero hero-home" id="heroSection" style="position: relative; overflow: hidden; cursor: crosshair;">
-    <canvas id="heroCanvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;"></canvas>
+  <section class="hero hero-home" id="heroSection" style="position: relative; overflow: hidden; background: transparent;">
     <div class="container" style="position: relative; z-index: 1;">
       <div class="fade-up">
         <h1>{{content.h1_1}}</h1>
@@ -11,118 +14,8 @@
     </div>
   </section>
 
-  <script>
-  (function() {
-    const section = document.getElementById('heroSection');
-    const cv = document.getElementById('heroCanvas');
-    if (!section || !cv) return;
-    const ctx = cv.getContext('2d');
-
-    let mouseX = 0.3, mouseY = 0.5;
-    let targetX = 0.3, targetY = 0.5;
-
-    section.addEventListener('mousemove', function(e) {
-      const rect = section.getBoundingClientRect();
-      targetX = (e.clientX - rect.left) / rect.width;
-      targetY = (e.clientY - rect.top) / rect.height;
-    });
-
-    function resize() {
-      const dpr = window.devicePixelRatio || 1;
-      cv.width = section.offsetWidth * dpr;
-      cv.height = section.offsetHeight * dpr;
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    }
-    resize();
-    window.addEventListener('resize', resize);
-
-    var cols = 40, rows = 28;
-    var time = 0;
-
-    function render() {
-      mouseX += (targetX - mouseX) * 0.06;
-      mouseY += (targetY - mouseY) * 0.06;
-      time += 0.008;
-
-      var w = section.offsetWidth;
-      var h = section.offsetHeight;
-      var sx = w / cols;
-      var sy = h / rows;
-      var cx = mouseX * w;
-      var cy = mouseY * h;
-      var influence = 140;
-
-      var dpr = window.devicePixelRatio || 1;
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      ctx.fillStyle = '#080808';
-      ctx.fillRect(0, 0, w, h);
-
-      for (var i = 0; i < cols; i++) {
-        for (var j = 0; j < rows; j++) {
-          var bx = (i + 0.5) * sx;
-          var by = (j + 0.5) * sy;
-
-          var distToMouse = Math.sqrt((bx - cx) * (bx - cx) + (by - cy) * (by - cy));
-          var inf = Math.max(0, 1 - distToMouse / influence);
-          var angle = Math.atan2(by - cy, bx - cx);
-
-          var ambientDx = Math.sin(i * 0.25 + j * 0.18) * 2;
-          var ambientDy = Math.cos(j * 0.22 + i * 0.12) * 2;
-
-          var pushDx = Math.cos(angle) * inf * inf * 24;
-          var pushDy = Math.sin(angle) * inf * inf * 24;
-
-          var x = bx + ambientDx + pushDx;
-          var y = by + ambientDy + pushDy;
-
-          var size = 1.2 + inf * 3.5;
-
-          // Autonomous ripple: slow wave radiating from center
-          var rippleDist = Math.sqrt((bx - w * 0.5) * (bx - w * 0.5) + (by - h * 0.5) * (by - h * 0.5));
-          var ripple = Math.sin(rippleDist * 0.018 - time * 3) * 0.5 + 0.5;
-
-          var r, g, b, a;
-          if (inf > 0.35) {
-            // Cursor hotspot — toned down
-            r = 200; g = 170; b = 120;
-            a = 0.3 + inf * 0.35;
-          } else if (inf > 0.15) {
-            var t = (inf - 0.15) / 0.2;
-            r = Math.round(140 + (200 - 140) * t);
-            g = Math.round(135 + (170 - 135) * t);
-            b = Math.round(128 + (120 - 128) * t);
-            a = 0.25 + t * 0.15;
-          } else {
-            // Base dots — visible, with subtle ripple tint
-            r = Math.round(130 + ripple * 18);
-            g = Math.round(126 + ripple * 12);
-            b = Math.round(120 + ripple * 4);
-            a = 0.30 + ripple * 0.08;
-          }
-
-          ctx.beginPath();
-          ctx.arc(x, y, size, 0, Math.PI * 2);
-          ctx.fillStyle = 'rgba(' + r + ',' + g + ',' + b + ',' + a + ')';
-          ctx.fill();
-        }
-      }
-
-      // Fade to black at bottom
-      var grad = ctx.createLinearGradient(0, h * 0.6, 0, h);
-      grad.addColorStop(0, 'rgba(8,8,8,0)');
-      grad.addColorStop(1, 'rgba(8,8,8,1)');
-      ctx.fillStyle = grad;
-      ctx.fillRect(0, h * 0.6, w, h * 0.4);
-
-      requestAnimationFrame(render);
-    }
-
-    render();
-  })();
-  </script>
-
   <!-- PROBLEM -->
-  <section class="section">
+  <section class="section cymatics-over">
     <div class="container">
       <div class="fade-up">
         <h2>{{content.h2_1}}</h2>
@@ -132,7 +25,7 @@
   </section>
 
   <!-- WHAT ENTUNED DOES -->
-  <section class="section" style="background: rgba(215, 175, 116, 0.06);">
+  <section class="section cymatics-over" style="background: rgba(215, 175, 116, 0.04);">
     <div class="container">
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
         <div class="fade-up">
@@ -148,7 +41,7 @@
   </section>
 
   <!-- WHAT YOU GET -->
-  <section class="section">
+  <section class="section cymatics-over">
     <div class="container">
       <div style="text-align: center; margin-bottom: 3rem;">
         <h2>{{content.h2_3}}</h2>
@@ -170,10 +63,8 @@
     </div>
   </section>
 
-
-
   <!-- STATS BAR -->
-  <section class="stats-section">
+  <section class="stats-section cymatics-over">
     <div class="container">
       <div class="stats-grid">
         <div class="stat-item fade-up">
@@ -193,7 +84,7 @@
   </section>
 
   <!-- CTA SECTION -->
-  <section class="section" style="text-align: center;">
+  <section class="section cymatics-over" style="text-align: center;">
     <div class="container">
       <h2 style="margin-bottom: 1rem;">{{content.h2_4}}</h2>
       <p style="font-size: 1.05rem; opacity: 0.85; margin-bottom: 2.5rem;">{{content.p_8}}</p>
@@ -204,3 +95,203 @@
     </div>
   </section>
 
+  <script>
+  (function() {
+    const canvas = document.getElementById('cymaticsCanvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const freqEl = document.getElementById('cymaticsFreq');
+
+    let W, H, cx, cy;
+    let mouseX = 0.5, mouseY = 0.5, mouseSmX = 0.5, mouseSmY = 0.5;
+    const DPR = Math.min(window.devicePixelRatio || 1, 2);
+
+    // Mobile detection — lower resolution for performance
+    const isMobile = window.innerWidth < 768;
+    const GRID = isMobile ? 160 : 260;
+    const field = new Float32Array(GRID * GRID);
+
+    function resize() {
+      W = window.innerWidth; H = window.innerHeight;
+      canvas.width = W * DPR; canvas.height = H * DPR;
+      ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+      cx = W / 2; cy = H / 2;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+    window.addEventListener('mousemove', function(e) {
+      mouseX = e.clientX / W;
+      mouseY = e.clientY / H;
+    });
+
+    // --- Chladni function ---
+    function chladni(x, y, n, m, mix) {
+      var PI = Math.PI;
+      var a = Math.sin(n * PI * x) * Math.sin(m * PI * y);
+      var b = Math.sin(m * PI * x) * Math.sin(n * PI * y);
+      return a * mix + b * (1 - mix);
+    }
+
+    function chladniBlend(x, y, n1, m1, n2, m2, blend, mix) {
+      var v1 = chladni(x, y, n1, m1, mix);
+      var v2 = chladni(x, y, n2, m2, mix);
+      return v1 * (1 - blend) + v2 * blend;
+    }
+
+    // --- Marching squares ---
+    function marchingSquares(field, cols, rows, threshold) {
+      var segments = [];
+      for (var j = 0; j < rows - 1; j++) {
+        for (var i = 0; i < cols - 1; i++) {
+          var tl = field[j * cols + i];
+          var tr = field[j * cols + i + 1];
+          var br = field[(j+1) * cols + i + 1];
+          var bl = field[(j+1) * cols + i];
+          var idx = 0;
+          if (tl > threshold) idx |= 8;
+          if (tr > threshold) idx |= 4;
+          if (br > threshold) idx |= 2;
+          if (bl > threshold) idx |= 1;
+          if (idx === 0 || idx === 15) continue;
+
+          var t = threshold;
+          function lerp(v1, v2) {
+            if (Math.abs(v2 - v1) < 0.0001) return 0.5;
+            return (t - v1) / (v2 - v1);
+          }
+          var top    = { x: i + lerp(tl, tr), y: j };
+          var right  = { x: i + 1, y: j + lerp(tr, br) };
+          var bottom = { x: i + lerp(bl, br), y: j + 1 };
+          var left   = { x: i, y: j + lerp(tl, bl) };
+
+          switch (idx) {
+            case 1: case 14: segments.push(left, bottom); break;
+            case 2: case 13: segments.push(bottom, right); break;
+            case 3: case 12: segments.push(left, right); break;
+            case 4: case 11: segments.push(top, right); break;
+            case 5: segments.push(top, left); segments.push(bottom, right); break;
+            case 6: case 9: segments.push(top, bottom); break;
+            case 7: case 8: segments.push(top, left); break;
+            case 10: segments.push(top, right); segments.push(bottom, left); break;
+          }
+        }
+      }
+      return segments;
+    }
+
+    // --- Mode sequence (scroll-driven) ---
+    var modes = [
+      [1, 1], [1, 2], [2, 2], [2, 3], [3, 3], [3, 4],
+      [4, 4], [4, 5], [5, 5], [5, 6], [6, 6], [6, 7],
+      [7, 7], [7, 8], [8, 8], [8, 9], [9, 9], [9, 10],
+      [10, 10], [10, 12], [12, 12], [12, 14], [14, 14],
+      [14, 16], [16, 16], [16, 18], [18, 20], [20, 22],
+      [22, 25], [25, 28]
+    ];
+
+    // Color palette — tuned to Entuned brand
+    // Primary nodal lines: warm cream/gold
+    var CREAM = 'rgba(215, 185, 130,';  // gold-shifted cream
+    // Secondary contours: dusty blue
+    var BLUE = 'rgba(130, 158, 172,';   // #829eac range
+
+    var smoothScroll = 0;
+    var time = 0;
+
+    function draw() {
+      time += 0.016;
+
+      // Scroll progress across full page
+      var scrollMax = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+      var rawScroll = window.scrollY / scrollMax;
+      smoothScroll += (rawScroll - smoothScroll) * 0.08;
+
+      mouseSmX += (mouseX - mouseSmX) * 0.03;
+      mouseSmY += (mouseY - mouseSmY) * 0.03;
+
+      // Map scroll to mode progression
+      var modeProgress = smoothScroll * (modes.length - 1);
+      var modeIdx = Math.floor(modeProgress);
+      var modeFrac = modeProgress - modeIdx;
+      modeIdx = Math.min(modeIdx, modes.length - 2);
+
+      var n1 = modes[modeIdx][0], m1 = modes[modeIdx][1];
+      var n2 = modes[modeIdx + 1][0], m2 = modes[modeIdx + 1][1];
+
+      // Mouse X subtly shifts the ± balance
+      var mix = 0.35 + mouseSmX * 0.3;
+      var timeDrift = Math.sin(time * 0.15) * 0.02;
+
+      // Frequency label
+      if (freqEl) {
+        var dn = n1 + (n2 - n1) * modeFrac;
+        var dm = m1 + (m2 - m1) * modeFrac;
+        freqEl.textContent = 'mode ' + dn.toFixed(1) + ' \u00b7 ' + dm.toFixed(1);
+      }
+
+      // Compute field
+      for (var j = 0; j < GRID; j++) {
+        for (var i = 0; i < GRID; i++) {
+          var x = (i / (GRID - 1)) * 2 - 1;
+          var y = (j / (GRID - 1)) * 2 - 1;
+          var dist = Math.sqrt(x * x + y * y);
+          if (dist > 1.0) {
+            field[j * GRID + i] = 999;
+            continue;
+          }
+          var val = chladniBlend(x, y, n1 + timeDrift, m1, n2 + timeDrift, m2, modeFrac, mix);
+          if (dist > 0.85) {
+            var edge = (dist - 0.85) / 0.15;
+            val *= (1 - edge * edge);
+          }
+          field[j * GRID + i] = val;
+        }
+      }
+
+      // Clear — match site background
+      ctx.fillStyle = '#080808';
+      ctx.fillRect(0, 0, W, H);
+
+      // Plate sizing — 2x zoom so circle edge is off-screen
+      var plateSize = Math.min(W, H) * 1.8;
+      var offX = (W - plateSize) / 2;
+      var offY = (H - plateSize) / 2;
+      var cellW = plateSize / (GRID - 1);
+      var cellH = plateSize / (GRID - 1);
+
+      // Contour layers — primary nodal lines (cream/gold)
+      var segs0 = marchingSquares(field, GRID, GRID, 0);
+      drawSegs(segs0, CREAM, 0.45, 1.0, offX, offY, cellW, cellH);
+
+      // Secondary contours (blue)
+      var segs1 = marchingSquares(field, GRID, GRID, 0.12);
+      drawSegs(segs1, BLUE, 0.15, 0.5, offX, offY, cellW, cellH);
+      var segs2 = marchingSquares(field, GRID, GRID, -0.12);
+      drawSegs(segs2, BLUE, 0.15, 0.5, offX, offY, cellW, cellH);
+
+      // Faint tertiary for depth
+      var segs3 = marchingSquares(field, GRID, GRID, 0.3);
+      drawSegs(segs3, BLUE, 0.05, 0.3, offX, offY, cellW, cellH);
+      var segs4 = marchingSquares(field, GRID, GRID, -0.3);
+      drawSegs(segs4, BLUE, 0.05, 0.3, offX, offY, cellW, cellH);
+
+      requestAnimationFrame(draw);
+    }
+
+    function drawSegs(segs, colorStr, alpha, lineWidth, offX, offY, cellW, cellH) {
+      if (segs.length < 2) return;
+      ctx.strokeStyle = colorStr + alpha + ')';
+      ctx.lineWidth = lineWidth;
+      ctx.lineCap = 'round';
+      ctx.beginPath();
+      for (var i = 0; i < segs.length; i += 2) {
+        var a = segs[i], b = segs[i + 1];
+        ctx.moveTo(offX + a.x * cellW, offY + a.y * cellH);
+        ctx.lineTo(offX + b.x * cellW, offY + b.y * cellH);
+      }
+      ctx.stroke();
+    }
+
+    requestAnimationFrame(draw);
+  })();
+  </script>
