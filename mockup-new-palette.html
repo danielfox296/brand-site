@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entuned — New Palette Mockup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* ==========================================================
+       ENTUNED — NEW PALETTE MOCKUP
+       ==========================================================
+       #20201c  — base background (warm charcoal)
+       #343232  — elevated surfaces (cards, nav, stats bar)
+       #50929c  — teal (links, borders, secondary accents)
+       #cac3bf  — cream (cymatics lines)
+       #d4e1e5  — icy blue-white (headings, body text, buttons)
+       ========================================================== */
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: #20201c;
+      color: #d4e1e5;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      font-weight: 400;
+    }
+
+    a {
+      color: #50929c;
+      text-decoration: none;
+      transition: opacity 0.3s ease;
+    }
+    a:hover { opacity: 0.8; }
+
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid #50929c;
+      outline-offset: 2px;
+    }
+
+    button {
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+      border: none;
+      transition: all 0.3s ease;
+    }
+
+    /* TYPOGRAPHY */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Manrope', sans-serif;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      color: #d4e1e5;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 9vw, 5.4rem);
+      letter-spacing: -0.02em;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 6vw, 4.2rem);
+      margin-bottom: 1.25rem;
+    }
+
+    h3 {
+      font-size: clamp(1.5rem, 4.5vw, 2.7rem);
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+      font-weight: 300;
+    }
+
+    /* EYEBROW — pre-heading label */
+    .eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: #50929c;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    .subline {
+      font-size: 1.25rem;
+      opacity: 0.8;
+      font-weight: 400;
+      margin-bottom: 2rem;
+    }
+
+    /* LAYOUT */
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 clamp(1.5rem, 5vw, 4rem);
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6rem 2rem;
+      text-align: center;
+      background: transparent;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .section {
+      padding: 10rem 2rem;
+    }
+
+    .cymatics-over {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* NAVIGATION */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: rgba(32, 32, 28, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      z-index: 1000;
+      padding: 1.25rem 2rem;
+      border-bottom: 1px solid rgba(80, 146, 156, 0.1);
+    }
+
+    nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Manrope', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #d4e1e5;
+      letter-spacing: 0.15em;
+      text-decoration: none;
+      opacity: 1;
+    }
+    .logo:hover { opacity: 0.7; }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #d4e1e5;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      opacity: 0.7;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      opacity: 1;
+      color: #50929c;
+    }
+
+    .nav-links a.active::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0; right: 0;
+      height: 2px;
+      background: #50929c;
+    }
+
+    /* BUTTONS */
+    .btn {
+      display: inline-block;
+      padding: 0.9rem 2rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 0;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+
+    .btn-primary {
+      background: #d4e1e5;
+      color: #20201c;
+    }
+
+    .btn-primary:hover {
+      background: #e8eff2;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: rgba(32, 32, 28, 0.9);
+      color: #d4e1e5;
+      border: 2px solid #d4e1e5;
+    }
+
+    .btn-secondary:hover {
+      background: #d4e1e5;
+      color: #20201c;
+      transform: translateY(-2px);
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    /* CARDS (research section) */
+    .research-card {
+      background: #343232;
+      border-top: 3px solid #50929c;
+      padding: 2.5rem 2rem;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    .research-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(80, 146, 156, 0.1);
+    }
+
+    .research-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .research-card p {
+      font-size: 1rem;
+      line-height: 1.7;
+      opacity: 0.85;
+    }
+
+    /* STATS BAR */
+    .stats-section {
+      background: #343232;
+      border-top: 1px solid rgba(80, 146, 156, 0.2);
+      border-bottom: 1px solid rgba(80, 146, 156, 0.2);
+      padding: 3rem 2rem;
+      margin: 4rem 0;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .stat-item { padding: 2rem 0; }
+
+    .stat-number {
+      font-family: 'Manrope', sans-serif;
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      font-weight: 700;
+      color: #50929c;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+      opacity: 0.7;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    /* "WHAT ENTUNED DOES" SECTION — subtle surface lift */
+    .section-surface {
+      background: rgba(52, 50, 50, 0.8);
+    }
+
+    /* FOOTER */
+    footer {
+      position: relative;
+      z-index: 1;
+      background: #1a1a17;
+      border-top: 1px solid rgba(80, 146, 156, 0.12);
+      padding: 4rem 2rem 2rem;
+      margin-top: 4rem;
+    }
+
+    footer .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 3rem;
+      margin-bottom: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid rgba(80, 146, 156, 0.1);
+    }
+
+    .footer-section h4 {
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      font-size: 0.75rem;
+      color: #d4e1e5;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid rgba(212, 225, 229, 0.1);
+    }
+
+    .footer-section ul { list-style: none; }
+    .footer-section ul li { margin-bottom: 0.75rem; }
+
+    .footer-section a {
+      text-transform: uppercase;
+      font-weight: 300;
+      color: #999;
+      font-size: 0.8rem;
+      letter-spacing: 0.04em;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-bottom .small-text {
+      font-size: 0.875rem;
+      opacity: 0.5;
+    }
+
+    /* ANIMATIONS */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .section { padding: 6rem 2rem; }
+      .hero { padding: 4rem 2rem; }
+      .two-col { grid-template-columns: 1fr !important; }
+      .three-col { grid-template-columns: 1fr !important; }
+      .nav-links { display: none; }
+      .mobile-menu-toggle { display: block; }
+      .btn-group { flex-direction: column; }
+      .btn { width: 100%; }
+      footer .container { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+
+    .mobile-menu-toggle {
+      display: none;
+      background: none;
+      color: #d4e1e5;
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CYMATICS CANVAS -->
+  <canvas id="cymaticsCanvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 0; pointer-events: none;"></canvas>
+  <div id="cymaticsFreq" style="position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%); font-family: 'SF Mono', 'Fira Code', monospace; font-size: 10px; letter-spacing: 0.12em; color: rgba(212, 225, 229, 0.12); pointer-events: none; z-index: 2;"></div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="container">
+      <a href="#" class="logo">ENTUNED</a>
+      <ul class="nav-links">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">How It Works</a></li>
+        <li><a href="#">Pilot</a></li>
+        <li><a href="#">Research</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+      <button class="mobile-menu-toggle">&#9776;</button>
+    </div>
+  </nav>
+
+  <main>
+
+  <!-- HERO -->
+  <section class="hero" id="heroSection">
+    <div class="container" style="position: relative; z-index: 1;">
+      <div class="fade-up">
+        <h1>Sound that sells.</h1>
+        <p class="subline">Original music built from your customer's psychology. Stores using it see 15-25% longer dwell time and 8-12% larger baskets.</p>
+        <a href="#" class="btn btn-primary">See How It Works</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="section cymatics-over">
+    <div class="container">
+      <div class="fade-up">
+        <span class="eyebrow">The Problem</span>
+        <h2>Your store plays music for no one.</h2>
+        <p style="font-size: 1.15rem; opacity: 0.85; max-width: 750px; line-height: 1.9;">Right now, your background music is a coin flip. Generic playlists from a catalog that knows nothing about your customer. Yalch and Spangenberg found that familiar music actually drives shoppers out faster, cutting dwell time by 8%. The songs your customers already know are working against you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT ENTUNED DOES -->
+  <section class="section cymatics-over section-surface">
+    <div class="container">
+      <div class="two-col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+        <div class="fade-up">
+          <span class="eyebrow">The Solution</span>
+          <h2>From customer psychology to store soundtrack.</h2>
+          <p style="font-size: 1.1rem; opacity: 0.85; line-height: 1.9; margin-bottom: 2rem;">Entuned profiles your ideal customer, their values, their aesthetic, what moves them, and creates original music to shape how they behave in your store. Original means no borrowed lyrics, no borrowed identity, no risk that "Santeria" is describing a murder in your family store. The music is yours. It speaks to who your customer actually is.</p>
+          <p style="font-size: 1.1rem; opacity: 0.85; line-height: 1.9;">The result: longer dwell time, bigger baskets, stronger brand perception. A $1.9B in-store analytics industry tracks every footstep but controls nothing. Audio is the only variable that responds instantly at zero cost per adjustment. We built the action layer.</p>
+        </div>
+        <div class="fade-up">
+          <div style="width: 100%; aspect-ratio: 4/3; background: linear-gradient(135deg, #343232 0%, rgba(80, 146, 156, 0.45) 100%); border-radius: 8px; box-shadow: 0 8px 32px rgba(80, 146, 156, 0.15); display: flex; align-items: center; justify-content: center;">
+            <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.4;">[shopping.jpg]</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT THE RESEARCH SAYS -->
+  <section class="section cymatics-over">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <span class="eyebrow">Proven Results</span>
+        <h2>What the research says.</h2>
+      </div>
+      <div class="three-col" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem;">
+        <div class="fade-up research-card">
+          <h3>Your Customers Stay Longer</h3>
+          <p>Music matched to your customer's psychology slows them down, increasing dwell time and product exposure. Researchers have documented dwell time increases of 15-25% when tempo and genre match the customer profile. Every additional minute in the store is another chance to convert.</p>
+        </div>
+        <div class="fade-up research-card">
+          <h3>Their Baskets get Bigger</h3>
+          <p>Areni and Kim (1993) and North, Hargreaves, and McKendrick (1999) showed that identity-congruent music increases willingness to pay by 8-12%. At an $85 average transaction across 4,000 monthly visits, an 8% lift adds $27,200 per month. The right tempo, the right mode, the right production style. It compounds.</p>
+        </div>
+        <div class="fade-up research-card">
+          <h3>Your Brand Stops Borrowing Someone Else's Voice</h3>
+          <p>Licensed playlists carry someone else's brand, someone else's lyrics, someone else's associations. You hired a lighting designer. You spec'd the paint color. The music should have the same standard. Entuned builds your brand's sonic identity from scratch. Zero licensing fees.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <section class="stats-section cymatics-over">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item fade-up">
+          <div class="stat-number">30+ Years</div>
+          <div class="stat-label">Of Peer-Reviewed Research</div>
+        </div>
+        <div class="stat-item fade-up">
+          <div class="stat-number">8&ndash;12%</div>
+          <div class="stat-label">Increase in Willingness To Pay in Published Studies</div>
+        </div>
+        <div class="stat-item fade-up">
+          <div class="stat-number">Zero</div>
+          <div class="stat-label">Licensing Fees</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cymatics-over" style="text-align: center;">
+    <div class="container">
+      <span class="eyebrow">Get Started</span>
+      <h2 style="margin-bottom: 1rem;">We're selecting founding pilot partners.</h2>
+      <p style="font-size: 1.05rem; opacity: 0.85; margin-bottom: 2.5rem;">Every store is different. We're looking for retail brands ready to put thirty years of behavioral research to work, and to own the data that proves it.</p>
+      <div class="btn-group">
+        <a href="#" class="btn btn-primary">Book a Pilot</a>
+        <a href="#" class="btn btn-secondary">Read the Research</a>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-section">
+        <a href="#" class="logo" style="margin-bottom: 1rem; display: inline-block;">ENTUNED</a>
+        <p style="font-size: 0.85rem; opacity: 0.7; margin-top: 0.5rem;">Original music built from behavioral science. Designed for retail.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">How It Works</a></li>
+          <li><a href="#">Pilot Program</a></li>
+          <li><a href="#">Research</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container" style="padding-top: 1.5rem;">
+      <span class="small-text">&copy; 2025 Entuned. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script>
+    // Intersection Observer for fade-up
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+
+  <script>
+  // Cymatics canvas — adapted to new palette
+  (function() {
+    const canvas = document.getElementById('cymaticsCanvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const freqEl = document.getElementById('cymaticsFreq');
+
+    let W, H, cx, cy;
+    let mouseX = 0.5, mouseY = 0.5, mouseSmX = 0.5, mouseSmY = 0.5;
+    const DPR = Math.min(window.devicePixelRatio || 1, 2);
+    const isMobile = window.innerWidth < 768;
+    const GRID = isMobile ? 160 : 260;
+    const field = new Float32Array(GRID * GRID);
+
+    function resize() {
+      W = window.innerWidth; H = window.innerHeight;
+      canvas.width = W * DPR; canvas.height = H * DPR;
+      ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+      cx = W / 2; cy = H / 2;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+    window.addEventListener('mousemove', function(e) {
+      mouseX = e.clientX / W;
+      mouseY = e.clientY / H;
+    });
+
+    function chladni(x, y, n, m, mix) {
+      var PI = Math.PI;
+      var a = Math.sin(n * PI * x) * Math.sin(m * PI * y);
+      var b = Math.sin(m * PI * x) * Math.sin(n * PI * y);
+      return a * mix + b * (1 - mix);
+    }
+
+    function chladniBlend(x, y, n1, m1, n2, m2, blend, mix) {
+      return chladni(x, y, n1, m1, mix) * (1 - blend) + chladni(x, y, n2, m2, mix) * blend;
+    }
+
+    function marchingSquares(field, cols, rows, threshold) {
+      var segments = [];
+      for (var j = 0; j < rows - 1; j++) {
+        for (var i = 0; i < cols - 1; i++) {
+          var tl = field[j * cols + i];
+          var tr = field[j * cols + i + 1];
+          var br = field[(j+1) * cols + i + 1];
+          var bl = field[(j+1) * cols + i];
+          var idx = 0;
+          if (tl > threshold) idx |= 8;
+          if (tr > threshold) idx |= 4;
+          if (br > threshold) idx |= 2;
+          if (bl > threshold) idx |= 1;
+          if (idx === 0 || idx === 15) continue;
+          var t = threshold;
+          function lerp(v1, v2) {
+            if (Math.abs(v2 - v1) < 0.0001) return 0.5;
+            return (t - v1) / (v2 - v1);
+          }
+          var top = { x: i + lerp(tl, tr), y: j };
+          var right = { x: i + 1, y: j + lerp(tr, br) };
+          var bottom = { x: i + lerp(bl, br), y: j + 1 };
+          var left = { x: i, y: j + lerp(tl, bl) };
+          switch (idx) {
+            case 1: case 14: segments.push(left, bottom); break;
+            case 2: case 13: segments.push(bottom, right); break;
+            case 3: case 12: segments.push(left, right); break;
+            case 4: case 11: segments.push(top, right); break;
+            case 5: segments.push(top, left); segments.push(bottom, right); break;
+            case 6: case 9: segments.push(top, bottom); break;
+            case 7: case 8: segments.push(top, left); break;
+            case 10: segments.push(top, right); segments.push(bottom, left); break;
+          }
+        }
+      }
+      return segments;
+    }
+
+    var modes = [
+      [1,1],[1,2],[2,2],[2,3],[3,3],[3,4],
+      [4,4],[4,5],[5,5],[5,6],[6,6],[6,7],
+      [7,7],[7,8],[8,8],[8,9],[9,9],[9,10],
+      [10,10],[10,12],[12,12],[12,14],[14,14],
+      [14,16],[16,16],[16,18],[18,20],[20,22],
+      [22,25],[25,28]
+    ];
+
+    // New palette cymatics colors
+    // Primary nodal lines: cream (#cac3bf)
+    var CREAM = 'rgba(202, 195, 191,';
+    // Secondary contours: teal (#50929c)
+    var TEAL = 'rgba(80, 146, 156,';
+
+    var smoothScroll = 0, time = 0;
+
+    function draw() {
+      time += 0.016;
+      var scrollMax = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+      var rawScroll = window.scrollY / scrollMax;
+      smoothScroll += (rawScroll - smoothScroll) * 0.08;
+      mouseSmX += (mouseX - mouseSmX) * 0.03;
+      mouseSmY += (mouseY - mouseSmY) * 0.03;
+
+      var modeProgress = smoothScroll * (modes.length - 1);
+      var modeIdx = Math.floor(modeProgress);
+      var modeFrac = modeProgress - modeIdx;
+      modeIdx = Math.min(modeIdx, modes.length - 2);
+
+      var n1 = modes[modeIdx][0], m1 = modes[modeIdx][1];
+      var n2 = modes[modeIdx + 1][0], m2 = modes[modeIdx + 1][1];
+      var mix = 0.35 + mouseSmX * 0.3;
+      var timeDrift = Math.sin(time * 0.15) * 0.02;
+
+      if (freqEl) {
+        var dn = n1 + (n2 - n1) * modeFrac;
+        var dm = m1 + (m2 - m1) * modeFrac;
+        freqEl.textContent = 'mode ' + dn.toFixed(1) + ' \u00b7 ' + dm.toFixed(1);
+      }
+
+      for (var j = 0; j < GRID; j++) {
+        for (var i = 0; i < GRID; i++) {
+          var x = (i / (GRID - 1)) * 2 - 1;
+          var y = (j / (GRID - 1)) * 2 - 1;
+          var dist = Math.sqrt(x * x + y * y);
+          if (dist > 1.0) { field[j * GRID + i] = 999; continue; }
+          var val = chladniBlend(x, y, n1 + timeDrift, m1, n2 + timeDrift, m2, modeFrac, mix);
+          if (dist > 0.85) { val *= 1 - Math.pow((dist - 0.85) / 0.15, 2); }
+          field[j * GRID + i] = val;
+        }
+      }
+
+      // Background — new base color
+      ctx.fillStyle = '#20201c';
+      ctx.fillRect(0, 0, W, H);
+
+      var plateSize = Math.min(W, H) * 1.8;
+      var offX = (W - plateSize) / 2;
+      var offY = (H - plateSize) / 2;
+      var cellW = plateSize / (GRID - 1);
+      var cellH = plateSize / (GRID - 1);
+
+      // Primary nodal lines — cream (40% intensity)
+      drawSegs(marchingSquares(field, GRID, GRID, 0), CREAM, 0.18, 0.7, offX, offY, cellW, cellH);
+
+      // Secondary contours — teal (40% intensity)
+      drawSegs(marchingSquares(field, GRID, GRID, 0.12), TEAL, 0.06, 0.4, offX, offY, cellW, cellH);
+      drawSegs(marchingSquares(field, GRID, GRID, -0.12), TEAL, 0.06, 0.4, offX, offY, cellW, cellH);
+
+      // Faint tertiary — cream at low opacity (40% intensity)
+      drawSegs(marchingSquares(field, GRID, GRID, 0.3), CREAM, 0.03, 0.2, offX, offY, cellW, cellH);
+      drawSegs(marchingSquares(field, GRID, GRID, -0.3), CREAM, 0.03, 0.2, offX, offY, cellW, cellH);
+
+      requestAnimationFrame(draw);
+    }
+
+    function drawSegs(segs, colorStr, alpha, lineWidth, offX, offY, cellW, cellH) {
+      if (segs.length < 2) return;
+      ctx.strokeStyle = colorStr + alpha + ')';
+      ctx.lineWidth = lineWidth;
+      ctx.lineCap = 'round';
+      ctx.beginPath();
+      for (var i = 0; i < segs.length; i += 2) {
+        ctx.moveTo(offX + segs[i].x * cellW, offY + segs[i].y * cellH);
+        ctx.lineTo(offX + segs[i+1].x * cellW, offY + segs[i+1].y * cellH);
+      }
+      ctx.stroke();
+    }
+
+    requestAnimationFrame(draw);
+  })();
+  </script>
+
+</body>
+</html>

@@ -195,15 +195,15 @@ nav .container {
 }
 
 .logo-img {
-  height: 20px;
+  height: 30px;
   width: auto;
-  max-width: 140px;
+  max-width: 210px;
   display: block;
   object-fit: contain;
 }
 
 .footer-logo-img {
-  height: 18px;
+  height: 27px;
   width: auto;
   display: block;
 }
