@@ -1,37 +1,37 @@
-/* For-CFOs Page — overrides of global components */
+/* For-CFOs Page — scoped styles (cfo- prefix avoids global collisions) */
 
-.hero-alt {
+.cfo-hero {
   background: linear-gradient(135deg, rgba(80, 146, 156, 0.08) 0%, rgba(80, 146, 156, 0.03) 100%);
   border-bottom: 1px solid rgba(80, 146, 156, 0.15);
 }
 
-.hero-alt h1 {
+.cfo-hero h1 {
   font-size: 3.5rem;
   font-weight: 800;
   line-height: 1.1;
 }
 
-.hero-alt .subline {
+.cfo-hero .subline {
   font-size: 1.25rem;
   color: rgba(232, 228, 222, 0.8);
   margin-top: 1rem;
   font-weight: 400;
 }
 
-/* Stat card overrides */
-.stat-item {
+/* Stat card styles */
+.cfo-stat {
   background: rgba(80, 146, 156, 0.08);
   border: 1px solid rgba(80, 146, 156, 0.15);
   border-radius: 6px;
 }
 
-.stat-item:hover {
+.cfo-stat:hover {
   background: rgba(80, 146, 156, 0.12);
   border-color: rgba(80, 146, 156, 0.25);
   transform: translateY(-2px);
 }
 
-.stat-label .small-text {
+.cfo-stat .small-text {
   display: block;
   font-size: 0.75rem;
   color: rgba(232, 228, 222, 0.6);
@@ -39,42 +39,42 @@
   margin-top: 0.5rem;
 }
 
-/* Card overrides */
-.card {
+/* Card styles */
+.cfo-card {
   background: rgba(80, 146, 156, 0.07);
   border: 1px solid rgba(80, 146, 156, 0.15);
   border-radius: 6px;
 }
 
-.card:hover {
+.cfo-card:hover {
   background: rgba(80, 146, 156, 0.1);
   border-color: rgba(80, 146, 156, 0.25);
 }
 
-.card-title {
+.cfo-card-title {
   color: #d4e1e5;
 }
 
-/* Button override */
-.btn-primary:hover {
+/* Button style */
+.cfo-btn-primary:hover {
   box-shadow: 0 8px 16px rgba(80, 146, 156, 0.2);
 }
 
 /* Table */
-table {
+.cfo-table {
   width: 100%;
 }
 
-table td {
+.cfo-table td {
   padding: 0.75rem 0;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .hero-alt h1 {
+  .cfo-hero h1 {
     font-size: 2.25rem;
   }
-  .hero-alt .subline {
+  .cfo-hero .subline {
     font-size: 1rem;
   }
 }
