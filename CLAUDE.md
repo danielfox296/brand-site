@@ -30,7 +30,6 @@ Every blog post requires **6 touchpoints**. Miss one and the post is orphaned.
 ```
 _src/pages/blog-<slug>/
   config.json
-  style.css
   sections/01-content.html
 ```
 
@@ -38,15 +37,12 @@ _src/pages/blog-<slug>/
 ```json
 {
   "title": "Post Title — Entuned Blog",
-  "meta_description": "One-sentence description with outcome language.",
+  "meta_description": "150-160 chars. Summarize what the reader will learn.",
   "output": "blog/<slug>.html"
 }
 ```
 
-**style.css** — always just:
-```css
-/* Page styles — see global styles.css */
-```
+**No `style.css` needed** — all blog layout is handled by global classes. Only add a page-specific `style.css` if the post has a truly unique component (e.g., a data visualization grid).
 
 ### 2. Write the HTML content (`sections/01-content.html`)
 
@@ -104,6 +100,7 @@ Template:
 ### 3. Add hero image
 
 - Save to `img/blog/<descriptive-name>.jpg`
+- **Max 500KB, 1600px wide** — compress with `sips --resampleWidth 1600 -s format jpeg -s formatOptions 80`
 - **No portrait-style faces** — abstract, tech, data visualization, store interiors preferred
 - Source from Unsplash (download URL: `https://unsplash.com/photos/<ID>/download?force=true`)
 - Check for duplicates: `md5 -q img/blog/new.jpg` against existing images
@@ -162,3 +159,11 @@ git add -A && git commit -m "Add blog post: Post Title" && git push origin main
 - Read `../brain.md` for product details, pricing, competitive landscape, research citations.
 - Only edit source files in `_src/`, `styles.css`, or static assets. Never edit built HTML.
 - CSS is centralized in `styles.css`. Blog posts almost never need page-specific CSS.
+
+## CSS Rules
+
+- **Use CSS custom properties** — colors and fonts are defined as variables in `:root` in `styles.css`. Use `var(--accent)`, `var(--text)`, `var(--bg)`, etc. instead of hardcoding hex values in page-specific CSS.
+- **Never override global class names in page CSS.** If a page needs a variant, prefix it (e.g., `.cfo-hero` not `.hero-alt`). See `for-cfos/style.css` for the pattern.
+- **Avoid inline `style` attributes.** Use a class in `styles.css` or the page's `style.css` instead. Existing inline styles are technical debt — don't add more.
+- **All `<img>` tags need descriptive `alt` text.** Never use `alt=""` on content images.
+- **Images must be under 500KB.** Compress before committing with `sips --resampleWidth 1600 -s format jpeg -s formatOptions 80`.

@@ -45,11 +45,12 @@ audio/                      ← Static audio files (NOT generated — edit direc
 
 ## config.json format
 
-Every page needs a `config.json`:
+Every page needs a `config.json` with `title`, `meta_description`, and `output`:
 
 ```json
 {
   "title": "Page Title | Entuned",
+  "meta_description": "150-160 chars. Lead with outcome, include a stat. No AI.",
   "output": "page-slug.html"
 }
 ```
@@ -58,43 +59,70 @@ For blog posts, output goes into the `blog/` subdirectory:
 
 ```json
 {
-  "title": "Blog Post Title | Entuned",
+  "title": "Blog Post Title — Entuned Blog",
+  "meta_description": "150-160 chars. Summarize what the reader will learn.",
   "output": "blog/post-slug.html"
 }
 ```
+
+**Title separator conventions:**
+- Non-blog pages: `" | Entuned"` (pipe)
+- Blog posts: `" — Entuned Blog"` (em dash)
 
 The build script uses the output path depth to set `nav_prefix` — blog posts at `blog/slug.html` get `../` so relative links to styles, images, and other pages resolve correctly.
 
 ## Content files
 
-Section files are plain HTML fragments. They do NOT include `<!DOCTYPE>`, `<html>`, `<head>`, or `<body>` tags. The first line of blog post content files is typically `</header>` (closing the header partial), followed by `<main>`.
+Section files are plain HTML fragments. They do NOT include `<!DOCTYPE>`, `<html>`, `<head>`, or `<body>` tags.
 
-For non-blog pages, content starts directly with `<section>` tags.
+Blog posts start with `<div class="back-link fade-up">` followed by `<div class="article-hero fade-up">`, `<div class="article-meta">`, and `<div class="article-body">`. See CLAUDE.md for the full blog post template.
+
+Non-blog pages start directly with `<section>` tags.
 
 ## Adding a blog post
 
 1. Create `_src/pages/blog-<slug>/`
-2. Add `config.json` with `"output": "blog/<slug>.html"`
-3. Add `sections/01-content.html` — HTML fragment starting with `</header>` then `<main><article>...`
-4. Optionally add `style.css` for page-specific styles
-5. Add hero image to `img/blog/<slug>.jpg`
-6. Add a card entry in `_src/pages/blog/sections/01-content.html` (the blog listing)
-7. Run `python3 build.py`
+2. Add `config.json` with `"title"`, `"meta_description"`, and `"output": "blog/<slug>.html"`
+3. Add `sections/01-content.html` using the modern blog template (see CLAUDE.md)
+4. Blog posts do NOT need a `style.css` — all blog layout is global. Only add one if the post has truly unique components (e.g., a data grid).
+5. Add hero image to `img/blog/<slug>.jpg` — **max 500KB**, landscape, 1600px wide
+6. Add a card entry in `_src/pages/blog/sections/01-content.html` (the blog listing) — card `<img>` must have descriptive `alt` text
+7. Add sitemap.xml and llms.txt entries
+8. Run `python3 build.py`
 
 ## Design system
 
-- **Background:** #20201c
-- **Accent:** #50929c
-- **Text:** #d4e1e5
-- **Fonts:** Manrope (headings, loaded via `<link>` in base.html), Inter (body, same)
-- **Font loading:** Google Fonts are loaded as a `<link rel="stylesheet">` in `base.html` `<head>` (not via CSS `@import`) to avoid waterfall delays. The preconnect hints sit directly above the font link.
-- **Logo:** `img/Entuned_logo.png` (transparent PNG logotype, used in header and footer via `.logo-img` and `.footer-logo-img`)
-- **Button classes:** `.btn .btn-primary` (gold bg), `.btn .btn-secondary` (gold border), `.btn-accent` (blue bg), `.btn-accent-outline` (blue border)
+### CSS custom properties
+
+All core values are defined as CSS variables in `:root` in `styles.css`. Use these instead of hardcoding colors:
+
+```css
+:root {
+  --bg: #20201c;
+  --bg-card: rgba(80, 146, 156, 0.07);
+  --accent: #50929c;
+  --accent-light: rgba(80, 146, 156, 0.15);
+  --accent-glow: rgba(80, 146, 156, 0.08);
+  --text: #d4e1e5;
+  --text-muted: rgba(212, 225, 229, 0.5);
+  --gold: #d7af74;
+  --font-heading: 'Manrope', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+```
+
+### Tokens
+
+- **Fonts:** Manrope (headings), Inter (body) — loaded via `<link>` in base.html, not CSS `@import`
+- **Logo:** `img/entuned-logo-ice.svg` (SVG logotype, used in header `.logo-img` and footer `.footer-logo-img`)
+
+### Component classes
+
+- **Buttons:** `.btn .btn-primary` (gold bg), `.btn .btn-secondary` (gold border), `.btn-accent` (blue bg), `.btn-accent-outline` (blue border)
 - **Accent utilities:** `.accent` (blue text), `.accent-bg` (blue background)
 - **Layout:** `.container` (max-width 1200px), `.section` (8rem padding)
 - **Cards:** `.card`, `.card-grid`, `.card-title`, `.card-text`
 - **Stats:** `.stats-section`, `.stats-grid`, `.stat-item`, `.stat-number`, `.stat-label`
-- **Pricing:** `.pricing-grid`, `.pricing-card`, `.pricing-card.featured`
 - **Blog article layout (global):** `.article-hero`, `.article-body`, `.article-meta`, `.article-cta`, `.back-link`, `.hero-image`
 - **Blog content components (global):** `.stat-box`, `.warning-box`, `.cta`, `.highlight`, `.byline`, `.meta`
 - **Blog listing (global):** `.blog-hero`, `.articles-grid`, `.article-card`, `.card-img`, `.card-body`, `.featured-card`, `.featured-label`
@@ -103,6 +131,17 @@ For non-blog pages, content starts directly with `<section>` tags.
 - **Research cards:** `.research-grid`, `.research-card`, `.research-stat`, `.research-title`, `.research-cite` (page-level CSS)
 - **Audio:** `.audio-player-wrap`, `.audio-track`, `.audio-play-btn`, `.audio-progress`, `.audio-time`
 - **Animations:** `.fade-up`, `.fade-in` (triggered by Intersection Observer in base.html)
+
+### Removed (no longer in styles.css)
+
+The following were pruned as unused. Do not reference them:
+- Pricing system: `.pricing-grid`, `.pricing-card`, `.pricing-features`, etc.
+- Step timeline: `.steps-container`, `.step-row`, `.step-content`, etc.
+- Comparison table: `.comparison-table`
+- Accordion sub-classes: `.accordion-group`, `.accordion-title`, `.accordion-panel`, `.accordion-stat`, `.accordion-icon`, `.accordion-cite` (`.accordion` and `.accordion-trigger` still exist)
+- `.breadcrumbs`, `.lead`, `.section-alt`
+
+If a future page needs pricing or comparison tables, build new classes — don't re-add the old ones.
 
 ## JavaScript (in base.html)
 
