@@ -1,6 +1,19 @@
 /* Fonts loaded via <link> in base.html — no @import needed */
 
 /* ==================== RESET & BASE ==================== */
+:root {
+  --bg: #20201c;
+  --bg-card: rgba(80, 146, 156, 0.07);
+  --accent: #50929c;
+  --accent-light: rgba(80, 146, 156, 0.15);
+  --accent-glow: rgba(80, 146, 156, 0.08);
+  --text: #d4e1e5;
+  --text-muted: rgba(212, 225, 229, 0.5);
+  --gold: #d7af74;
+  --font-heading: 'Manrope', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,16 +25,16 @@ html {
 }
 
 body {
-  background-color: #20201c;
-  color: #d4e1e5;
-  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
   font-size: 16px;
   line-height: 1.6;
   font-weight: 300;
 }
 
 a {
-  color: #50929c;
+  color: var(--accent);
   text-decoration: none;
   transition: opacity 0.3s ease;
 }
@@ -41,7 +54,7 @@ select:focus-visible {
 }
 
 button {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-body);
   cursor: pointer;
   border: none;
   transition: all 0.3s ease;
@@ -49,11 +62,11 @@ button {
 
 /* ==================== TYPOGRAPHY ==================== */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-heading);
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1rem;
-  color: #d4e1e5;
+  color: var(--text);
 }
 
 h1 {
@@ -106,8 +119,8 @@ p + p {
 }
 
 .btn-accent {
-  background: #50929c;
-  color: #20201c;
+  background: var(--accent);
+  color: var(--bg);
 }
 
 .btn-accent:hover {
@@ -526,78 +539,6 @@ footer .footer-section:first-child p {
   background: linear-gradient(135deg, #20201c 0%, #252520 100%);
 }
 
-/* ==================== PRICING SECTION ==================== */
-.pricing-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
-}
-
-.pricing-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(80, 146, 156, 0.2);
-  padding: 3rem 2rem;
-  border-radius: 0;
-  position: relative;
-}
-
-.pricing-card.featured {
-  border-color: #50929c;
-  background: rgba(80, 146, 156, 0.08);
-  transform: scale(1.05);
-}
-
-@media (max-width: 768px) {
-  .pricing-card.featured {
-    transform: scale(1);
-  }
-}
-
-.pricing-header {
-  margin-bottom: 2rem;
-}
-
-.pricing-name {
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-
-.pricing-price {
-  font-family: 'Manrope', sans-serif;
-  font-size: 2.25rem;
-  font-weight: 700;
-  color: #50929c;
-  margin-bottom: 0.5rem;
-}
-
-.pricing-period {
-  font-size: 0.9rem;
-  opacity: 0.7;
-}
-
-.pricing-features {
-  list-style: none;
-  margin: 2rem 0;
-}
-
-.pricing-features li {
-  padding: 0.75rem 0;
-  padding-left: 1.75rem;
-  position: relative;
-  opacity: 0.85;
-  font-size: 0.95rem;
-}
-
-.pricing-features li::before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: #50929c;
-  font-weight: 700;
-}
-
 /* ==================== FORM ELEMENTS ==================== */
 input, textarea, select {
   background: rgba(255, 255, 255, 0.03);
@@ -653,113 +594,7 @@ select option {
   color: #d4e1e5;
 }
 
-/* ==================== STEP TIMELINE ==================== */
-.steps-container {
-  max-width: 900px;
-  margin: 4rem auto;
-}
-
-.step {
-  margin-bottom: 6rem;
-  padding-bottom: 6rem;
-  border-bottom: 1px solid rgba(80, 146, 156, 0.1);
-}
-
-.step:last-child {
-  border-bottom: none;
-}
-
-.step-number {
-  font-family: 'Manrope', sans-serif;
-  font-size: 4rem;
-  font-weight: 700;
-  color: rgba(80, 146, 156, 0.2);
-  line-height: 1;
-  margin-bottom: 1rem;
-}
-
-.step h3 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-.step-content {
-  direction: ltr;
-}
-
-/* step mobile handled by .step-row responsive above */
-
-/* ==================== COMPARISON TABLE ==================== */
-.comparison-table {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(80, 146, 156, 0.1);
-  border-collapse: collapse;
-  margin: 3rem 0;
-}
-
-.comparison-table th,
-.comparison-table td {
-  padding: 1.25rem;
-  text-align: left;
-  border-bottom: 1px solid rgba(80, 146, 156, 0.1);
-}
-
-.comparison-table th {
-  background: rgba(80, 146, 156, 0.05);
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 0.85rem;
-  letter-spacing: 0.05em;
-}
-
-.comparison-table td {
-  opacity: 0.85;
-}
-
-.comparison-table tr:hover {
-  background: rgba(80, 146, 156, 0.02);
-}
-
-/* ==================== AUDIO PLAYER ==================== */
-/* ==================== STEP ROWS (How It Works) ==================== */
-.step-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-}
-
-.step-row-reverse {
-  direction: rtl;
-}
-
-.step-row-reverse > * {
-  direction: ltr;
-}
-
-.step-img img {
-  width: 100%;
-  border-radius: 4px;
-  opacity: 0.85;
-}
-
-@media (max-width: 768px) {
-  .step-row,
-  .step-row-reverse {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    direction: ltr;
-  }
-}
-
 /* ==================== ACCORDIONS ==================== */
-.accordion-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
 .accordion {
   border-bottom: 1px solid rgba(80, 146, 156, 0.12);
 }
@@ -777,8 +612,8 @@ select option {
   padding: 1.25rem 0;
   background: none;
   border: none;
-  color: #d4e1e5;
-  font-family: 'Inter', sans-serif;
+  color: var(--text);
+  font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 500;
   text-align: left;
@@ -787,63 +622,7 @@ select option {
 }
 
 .accordion-trigger:hover {
-  color: #50929c;
-}
-
-.accordion-title {
-  flex: 1;
-  font-weight: 600;
-}
-
-.accordion-stat {
-  font-size: 0.85rem;
-  color: #50929c;
-  opacity: 0.85;
-  white-space: nowrap;
-}
-
-.accordion-icon {
-  font-size: 1.25rem;
-  font-weight: 300;
-  opacity: 0.6;
-  min-width: 1.25rem;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.accordion[data-open="true"] .accordion-icon {
-  transform: rotate(45deg);
-}
-
-.accordion-panel {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.4s ease;
-  padding: 0 0 0 0;
-}
-
-.accordion[data-open="true"] .accordion-panel {
-  max-height: 300px;
-  padding: 0 0 1.5rem 0;
-}
-
-.accordion-panel p {
-  font-size: 0.95rem;
-  opacity: 0.85;
-  line-height: 1.7;
-}
-
-.accordion-cite {
-  font-size: 0.8rem !important;
-  opacity: 0.5 !important;
-  font-style: italic;
-  margin-top: 0.5rem;
-}
-
-@media (max-width: 768px) {
-  .accordion-stat {
-    display: none;
-  }
+  color: var(--accent);
 }
 
 /* ==================== BLOG POST LAYOUT ==================== */
@@ -1269,14 +1048,6 @@ main > article > p,
 
 /* ==================== UTILITY CLASSES ==================== */
 
-/* Lead paragraph */
-.lead {
-  font-size: 1.25rem;
-  font-weight: 400;
-  line-height: 1.7;
-  opacity: 1.0;
-}
-
 /* Label/category */
 .label {
   text-transform: uppercase;
@@ -1286,15 +1057,8 @@ main > article > p,
   font-weight: 500;
 }
 
-/* Alternating section background */
-.section-alt {
-  background: #252522;
-}
-
 /* Section divider line */
-.section + .section,
-.section + .section-alt,
-.section-alt + .section {
+.section + .section {
   border-top: 1px solid rgba(80, 146, 156, 0.12);
 }
 
@@ -1322,26 +1086,6 @@ main > article > p,
 
 .takeaway-box strong {
   color: #50929c;
-}
-
-/* ==================== BREADCRUMBS ==================== */
-.breadcrumbs {
-  padding: 1rem 0;
-  font-size: 0.8rem;
-  opacity: 0.6;
-}
-
-.breadcrumbs a {
-  color: #d4e1e5;
-  text-decoration: none;
-}
-
-.breadcrumbs a:hover {
-  color: #50929c;
-}
-
-.breadcrumbs span {
-  margin: 0 0.5rem;
 }
 
 /* ==================== SMALL SCREEN ==================== */
