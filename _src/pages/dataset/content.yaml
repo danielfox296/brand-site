@@ -9,4 +9,4 @@ p_2: Every Entuned deployment generates data that no one else has. The relations
 p_3: As the dataset matures, this page will describe its structure, its scale, and what it makes possible. The dataset is the core asset of the business. It compounds with every deployment, and its value grows as the number and diversity of retail environments increases.
 p_4: Until the dataset reaches a scale worth describing publicly, the details remain internal. What we can say now is that the optimization accuracy improves with every store that runs Entuned, and every store benefits from the aggregate learning of every store that came before it.
 p_5: If you are an investor or researcher interested in the dataset thesis, reach out.
-p_6: See also: <a href="data.html" style="color: #d7af74;">Data Practices</a> · <a href="science.html" style="color: #d7af74;">The Science</a> · <a href="investors.html" style="color: #d7af74;">For Investors</a>
+p_6: See also: <a href="data.html" style="color: #50929c;">Data Practices</a> · <a href="science.html" style="color: #50929c;">The Science</a> · <a href="investors.html" style="color: #50929c;">For Investors</a>

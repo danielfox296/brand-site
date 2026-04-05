@@ -1,7 +1,7 @@
 
   <!-- CYMATICS CANVAS — fixed behind all content, scroll-driven -->
   <canvas id="cymaticsCanvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 0; pointer-events: none;"></canvas>
-  <div id="cymaticsFreq" style="position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%); font-family: 'SF Mono', 'Fira Code', monospace; font-size: 10px; letter-spacing: 0.12em; color: rgba(255,248,240,0.12); pointer-events: none; z-index: 2;"></div>
+  <div id="cymaticsFreq" style="position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%); font-family: 'SF Mono', 'Fira Code', monospace; font-size: 10px; letter-spacing: 0.12em; color: rgba(212,225,229,0.12); pointer-events: none; z-index: 2;"></div>
 
   <!-- HERO -->
   <section class="hero hero-home" id="heroSection" style="position: relative; overflow: hidden; background: transparent;">
@@ -18,6 +18,7 @@
   <section class="section cymatics-over">
     <div class="container">
       <div class="fade-up">
+        <span class="eyebrow">The Problem</span>
         <h2>{{content.h2_1}}</h2>
         <p style="font-size: 1.15rem; opacity: 0.85; max-width: 750px; line-height: 1.9;">{{content.p_2}}</p>
       </div>
@@ -25,16 +26,17 @@
   </section>
 
   <!-- WHAT ENTUNED DOES -->
-  <section class="section cymatics-over" style="background: rgba(215, 175, 116, 0.04);">
+  <section class="section cymatics-over" style="background: rgba(52, 50, 50, 0.8);">
     <div class="container">
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
         <div class="fade-up">
+          <span class="eyebrow">The Solution</span>
           <h2>{{content.h2_2}}</h2>
           <p style="font-size: 1.1rem; opacity: 0.85; line-height: 1.9; margin-bottom: 2rem;">{{content.p_3}}</p>
           <p style="font-size: 1.1rem; opacity: 0.85; line-height: 1.9;">{{content.p_4}}</p>
         </div>
         <div class="fade-up">
-          <img src="img/shopping.jpg" alt="Customer browsing in a retail store" style="width: 100%; border-radius: 8px; box-shadow: 0 8px 32px rgba(215, 175, 116, 0.1); opacity: 0.95;">
+          <img src="img/shopping.jpg" alt="Customer browsing in a retail store" style="width: 100%; border-radius: 8px; box-shadow: 0 8px 32px rgba(80, 146, 156, 0.15); opacity: 0.95;">
         </div>
       </div>
     </div>
@@ -44,18 +46,19 @@
   <section class="section cymatics-over">
     <div class="container">
       <div style="text-align: center; margin-bottom: 3rem;">
+        <span class="eyebrow">Proven Results</span>
         <h2>{{content.h2_3}}</h2>
       </div>
       <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem;">
-        <div class="fade-up" style="background: rgba(215, 175, 116, 0.05); border-top: 3px solid #d7af74; padding: 2.5rem 2rem; border-radius: 4px;">
+        <div class="fade-up" style="background: #343232; border-top: 3px solid #50929c; padding: 2.5rem 2rem; border-radius: 4px;">
           <h3 style="margin-bottom: 1rem; font-size: 1.25rem;">{{content.h3_1}}</h3>
           <p style="font-size: 1rem; line-height: 1.7; opacity: 0.85;">{{content.p_5}}</p>
         </div>
-        <div class="fade-up" style="background: rgba(215, 175, 116, 0.05); border-top: 3px solid #d7af74; padding: 2.5rem 2rem; border-radius: 4px;">
+        <div class="fade-up" style="background: #343232; border-top: 3px solid #50929c; padding: 2.5rem 2rem; border-radius: 4px;">
           <h3 style="margin-bottom: 1rem; font-size: 1.25rem;">{{content.h3_2}}</h3>
           <p style="font-size: 1rem; line-height: 1.7; opacity: 0.85;">{{content.p_6}}</p>
         </div>
-        <div class="fade-up" style="background: rgba(215, 175, 116, 0.05); border-top: 3px solid #d7af74; padding: 2.5rem 2rem; border-radius: 4px;">
+        <div class="fade-up" style="background: #343232; border-top: 3px solid #50929c; padding: 2.5rem 2rem; border-radius: 4px;">
           <h3 style="margin-bottom: 1rem; font-size: 1.25rem;">{{content.h3_3}}</h3>
           <p style="font-size: 1rem; line-height: 1.7; opacity: 0.85;">{{content.p_7}}</p>
         </div>
@@ -86,6 +89,7 @@
   <!-- CTA SECTION -->
   <section class="section cymatics-over" style="text-align: center;">
     <div class="container">
+      <span class="eyebrow">Get Started</span>
       <h2 style="margin-bottom: 1rem;">{{content.h2_4}}</h2>
       <p style="font-size: 1.05rem; opacity: 0.85; margin-bottom: 2.5rem;">{{content.p_8}}</p>
       <div class="btn-group">
@@ -190,10 +194,10 @@
     ];
 
     // Color palette — tuned to Entuned brand
-    // Primary nodal lines: warm cream/gold
-    var CREAM = 'rgba(215, 185, 130,';  // gold-shifted cream
-    // Secondary contours: dusty blue
-    var BLUE = 'rgba(130, 158, 172,';   // #829eac range
+    // Primary nodal lines: cream (#cac3bf)
+    var CREAM = 'rgba(202, 195, 191,';
+    // Secondary contours: teal (#50929c)
+    var TEAL = 'rgba(80, 146, 156,';
 
     var smoothScroll = 0;
     var time = 0;
@@ -249,7 +253,7 @@
       }
 
       // Clear — match site background
-      ctx.fillStyle = '#080808';
+      ctx.fillStyle = '#20201c';
       ctx.fillRect(0, 0, W, H);
 
       // Plate sizing — 2x zoom so circle edge is off-screen
@@ -259,21 +263,21 @@
       var cellW = plateSize / (GRID - 1);
       var cellH = plateSize / (GRID - 1);
 
-      // Contour layers — primary nodal lines (cream/gold)
+      // Primary nodal lines — cream (40% intensity)
       var segs0 = marchingSquares(field, GRID, GRID, 0);
-      drawSegs(segs0, CREAM, 0.45, 1.0, offX, offY, cellW, cellH);
+      drawSegs(segs0, CREAM, 0.18, 0.7, offX, offY, cellW, cellH);
 
-      // Secondary contours (blue)
+      // Secondary contours — teal (40% intensity)
       var segs1 = marchingSquares(field, GRID, GRID, 0.12);
-      drawSegs(segs1, BLUE, 0.15, 0.5, offX, offY, cellW, cellH);
+      drawSegs(segs1, TEAL, 0.06, 0.4, offX, offY, cellW, cellH);
       var segs2 = marchingSquares(field, GRID, GRID, -0.12);
-      drawSegs(segs2, BLUE, 0.15, 0.5, offX, offY, cellW, cellH);
+      drawSegs(segs2, TEAL, 0.06, 0.4, offX, offY, cellW, cellH);
 
-      // Faint tertiary for depth
+      // Faint tertiary — cream at low opacity (40% intensity)
       var segs3 = marchingSquares(field, GRID, GRID, 0.3);
-      drawSegs(segs3, BLUE, 0.05, 0.3, offX, offY, cellW, cellH);
+      drawSegs(segs3, CREAM, 0.03, 0.2, offX, offY, cellW, cellH);
       var segs4 = marchingSquares(field, GRID, GRID, -0.3);
-      drawSegs(segs4, BLUE, 0.05, 0.3, offX, offY, cellW, cellH);
+      drawSegs(segs4, CREAM, 0.03, 0.2, offX, offY, cellW, cellH);
 
       requestAnimationFrame(draw);
     }
