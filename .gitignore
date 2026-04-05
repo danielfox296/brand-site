@@ -10,3 +10,6 @@ Thumbs.db
 
 # Dev/test files
 mockup-*.html
+
+# Claude worktrees
+.claude/worktrees/

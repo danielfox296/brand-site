@@ -10,14 +10,14 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="canonical" href="https://entuned.co/for-cfos.html">
   <meta name="robots" content="index, follow">
-  <title>Retail Audio ROI — The CFO's Case | Entuned</title>
-  <meta name="description" content="The financial case for psychology-driven retail audio. Published research shows 8-12% WTP lift. Free founding pilot, zero risk. Real measurement.">
+  <title>Retail Audio ROI | Entuned</title>
+  <meta name="description" content="The financial case for retail music strategy. Published research shows 8-12% willingness-to-pay lift. Free founding pilot, zero risk, real measurement.">
   <meta name="theme-color" content="#20201c">
 
   <!-- Open Graph -->
   <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="rss.xml">
-  <meta property="og:title" content="Retail Audio ROI — The CFO&#x27;s Case | Entuned">
-  <meta property="og:description" content="The financial case for psychology-driven retail audio. Published research shows 8-12% WTP lift. Free founding pilot, zero risk. Real measurement.">
+  <meta property="og:title" content="Retail Audio ROI | Entuned">
+  <meta property="og:description" content="The financial case for retail music strategy. Published research shows 8-12% willingness-to-pay lift. Free founding pilot, zero risk, real measurement.">
   <meta property="og:url" content="https://entuned.co/for-cfos.html">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://entuned.co/img/og-default.png">
@@ -26,8 +26,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Retail Audio ROI — The CFO&#x27;s Case | Entuned">
-  <meta name="twitter:description" content="The financial case for psychology-driven retail audio. Published research shows 8-12% WTP lift. Free founding pilot, zero risk. Real measurement.">
+  <meta name="twitter:title" content="Retail Audio ROI | Entuned">
+  <meta name="twitter:description" content="The financial case for retail music strategy. Published research shows 8-12% willingness-to-pay lift. Free founding pilot, zero risk, real measurement.">
   <meta name="twitter:image" content="https://entuned.co/img/og-default.png">
 
   <!-- Structured Data -->
@@ -87,40 +87,40 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
   <link rel="stylesheet" href="styles.css">
   <style>
-/* For-CFOs Page — overrides of global components */
+/* For-CFOs Page — scoped styles (cfo- prefix avoids global collisions) */
 
-.hero-alt {
+.cfo-hero {
   background: linear-gradient(135deg, rgba(80, 146, 156, 0.08) 0%, rgba(80, 146, 156, 0.03) 100%);
   border-bottom: 1px solid rgba(80, 146, 156, 0.15);
 }
 
-.hero-alt h1 {
+.cfo-hero h1 {
   font-size: 3.5rem;
   font-weight: 800;
   line-height: 1.1;
 }
 
-.hero-alt .subline {
+.cfo-hero .subline {
   font-size: 1.25rem;
   color: rgba(232, 228, 222, 0.8);
   margin-top: 1rem;
   font-weight: 400;
 }
 
-/* Stat card overrides */
-.stat-item {
+/* Stat card styles */
+.cfo-stat {
   background: rgba(80, 146, 156, 0.08);
   border: 1px solid rgba(80, 146, 156, 0.15);
   border-radius: 6px;
 }
 
-.stat-item:hover {
+.cfo-stat:hover {
   background: rgba(80, 146, 156, 0.12);
   border-color: rgba(80, 146, 156, 0.25);
   transform: translateY(-2px);
 }
 
-.stat-label .small-text {
+.cfo-stat .small-text {
   display: block;
   font-size: 0.75rem;
   color: rgba(232, 228, 222, 0.6);
@@ -128,42 +128,42 @@
   margin-top: 0.5rem;
 }
 
-/* Card overrides */
-.card {
+/* Card styles */
+.cfo-card {
   background: rgba(80, 146, 156, 0.07);
   border: 1px solid rgba(80, 146, 156, 0.15);
   border-radius: 6px;
 }
 
-.card:hover {
+.cfo-card:hover {
   background: rgba(80, 146, 156, 0.1);
   border-color: rgba(80, 146, 156, 0.25);
 }
 
-.card-title {
+.cfo-card-title {
   color: #d4e1e5;
 }
 
-/* Button override */
-.btn-primary:hover {
+/* Button style */
+.cfo-btn-primary:hover {
   box-shadow: 0 8px 16px rgba(80, 146, 156, 0.2);
 }
 
 /* Table */
-table {
+.cfo-table {
   width: 100%;
 }
 
-table td {
+.cfo-table td {
   padding: 0.75rem 0;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .hero-alt h1 {
+  .cfo-hero h1 {
     font-size: 2.25rem;
   }
-  .hero-alt .subline {
+  .cfo-hero .subline {
     font-size: 1rem;
   }
 }
@@ -185,7 +185,7 @@ table td {
 </nav>
 
   <main>
-  <section class="hero hero-alt">
+  <section class="hero cfo-hero">
   <div class="container">
     <h1>What Your Current Audio Is Costing You</h1>
     <p class="subline">Your stores play music every hour they are open. Ask your current provider one question: what did the music contribute to revenue this quarter? If they cannot answer, you are paying for an uncontrolled variable.</p>
@@ -196,19 +196,19 @@ table td {
   <div class="container">
     <h2>The Numbers Behind Retail Audio</h2>
     <div class="stats-grid">
-      <div class="stat-item">
+      <div class="stat-item cfo-stat">
         <div class="stat-number">40:1</div>
         <div class="stat-label">Return Ratio<br><span class="small-text">Conservative scenario</span></div>
       </div>
-      <div class="stat-item">
+      <div class="stat-item cfo-stat">
         <div class="stat-number">8–12%</div>
         <div class="stat-label">Willingness to Pay Lift<br><span class="small-text">Areni & Kim 1993, North et al. 1999</span></div>
       </div>
-      <div class="stat-item">
+      <div class="stat-item cfo-stat">
         <div class="stat-number">15–25%</div>
         <div class="stat-label">Dwell Time Increase<br><span class="small-text">Peer-reviewed studies</span></div>
       </div>
-      <div class="stat-item">
+      <div class="stat-item cfo-stat">
         <div class="stat-number">95%+</div>
         <div class="stat-label">Margin at 3% Lift<br><span class="small-text">Based on published research</span></div>
       </div>
@@ -222,8 +222,8 @@ table td {
     <p>A concrete example: 10 retail locations, $250 average transaction, 2,000 transactions per month per store. That is $5M in monthly revenue. Areni & Kim (1993) and North et al. (1999) found 8-12% willingness-to-pay lift from congruent music. Even at 3%, a single location adds $15,000/month. At 8%, it is $40,000. Meanwhile, Andersson et al. (2012) measured 601 real transactions and found that incongruent music actively reduced willingness to pay. Your current audio probably is not neutral. It is probably costing you revenue.</p>
     
     <div class="card-grid" style="margin-top: 2.5rem;">
-      <div class="card">
-        <div class="card-title">3% Revenue Lift</div>
+      <div class="card cfo-card">
+        <div class="card-title cfo-card-title">3% Revenue Lift</div>
         <div style="margin-top: 1rem;">
           <div style="font-size: 2rem; font-weight: 700; color: #50929c; margin-bottom: 0.5rem;">$15,000</div>
           <div class="card-text">Incremental monthly per location</div>
@@ -234,8 +234,8 @@ table td {
         </div>
       </div>
 
-      <div class="card">
-        <div class="card-title">5% Revenue Lift</div>
+      <div class="card cfo-card">
+        <div class="card-title cfo-card-title">5% Revenue Lift</div>
         <div style="margin-top: 1rem;">
           <div style="font-size: 2rem; font-weight: 700; color: #50929c; margin-bottom: 0.5rem;">$25,000</div>
           <div class="card-text">Incremental monthly per location</div>
@@ -246,8 +246,8 @@ table td {
         </div>
       </div>
 
-      <div class="card">
-        <div class="card-title">8% Revenue Lift</div>
+      <div class="card cfo-card">
+        <div class="card-title cfo-card-title">8% Revenue Lift</div>
         <div style="margin-top: 1rem;">
           <div style="font-size: 2rem; font-weight: 700; color: #50929c; margin-bottom: 0.5rem;">$40,000</div>
           <div class="card-text">Incremental monthly per location</div>
@@ -268,16 +268,16 @@ table td {
     <h2>The Pilot Is Free</h2>
 
     <div class="card-grid" style="margin-top: 2rem;">
-      <div class="card">
-        <div class="card-title">Founding Pilot</div>
+      <div class="card cfo-card">
+        <div class="card-title cfo-card-title">Founding Pilot</div>
         <div style="margin-top: 1rem;">
           <div style="font-size: 1.5rem; font-weight: 600; color: #50929c;">$0</div>
           <div class="card-text" style="margin-top: 1rem;">No subscription. No commitment. We deploy music in your stores and measure what happens. If the results are there, we talk about what comes next.</div>
         </div>
       </div>
 
-      <div class="card">
-        <div class="card-title">What You Get</div>
+      <div class="card cfo-card">
+        <div class="card-title cfo-card-title">What You Get</div>
         <div style="margin-top: 1rem;">
           <div style="font-size: 1.5rem; font-weight: 600; color: #50929c;">Real Data</div>
           <div class="card-text" style="margin-top: 1rem;">Psychographic profiling, original music generated for your customer, and performance measurement against dwell time, traffic, and sales data.</div>
@@ -297,8 +297,8 @@ table td {
     <h2>The Pilot as Controlled Experiment</h2>
     <p>The founding pilot starts with 2 locations. For enterprise validation at scale, the ideal structure is 40 active stores against 40 control stores. Same product mix, same promotional calendar, same time window. You measure it with your existing POS and analytics infrastructure.</p>
     
-    <div class="card" style="margin-top: 2rem; background: rgba(80, 146, 156, 0.08); border-left: 4px solid #50929c;">
-      <div class="card-title">The Validation Structure</div>
+    <div class="card cfo-card" style="margin-top: 2rem; background: rgba(80, 146, 156, 0.08); border-left: 4px solid #50929c;">
+      <div class="card-title cfo-card-title">The Validation Structure</div>
       <div style="margin-top: 1.5rem;">
         <div style="margin-bottom: 1.5rem;">
           <div style="font-weight: 600; color: #50929c; margin-bottom: 0.5rem;">Active Stores</div>
@@ -347,7 +347,7 @@ table td {
     <div style="text-align: center; padding: 3rem 0;">
       <h2 style="margin-bottom: 1.5rem;">One Question Worth Asking</h2>
       <p style="color: rgba(232, 228, 222, 0.8); margin-bottom: 2rem;">We will walk through the ROI arithmetic for your specific store portfolio, transaction volume, and average ticket. No decks. Just numbers.</p>
-      <a href="mailto:hello@entuned.co?subject=CFO%20Brief%20%E2%80%94%20Entuned%20ROI%20Discussion" class="btn btn-primary" style="display: inline-block;">See the Numbers for Your Stores</a>
+      <a href="mailto:hello@entuned.co?subject=CFO%20Brief%20%E2%80%94%20Entuned%20ROI%20Discussion" class="btn btn-primary cfo-btn-primary" style="display: inline-block;">See the Numbers for Your Stores</a>
     </div>
   </div>
 </section>
