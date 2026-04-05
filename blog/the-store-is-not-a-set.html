@@ -11,12 +11,13 @@
   <link rel="canonical" href="https://entuned.co/blog/the-store-is-not-a-set.html">
   <meta name="robots" content="index, follow">
   <title>The Store Is Not a Set — Entuned Blog</title>
-  <meta name="description" content="Retail experience design borrows from theater, but the best stores aren't stages performing a fixed script — they're instruments responding to the room in real time.">
+  <meta name="description" content="Retail experience design borrows from theater, but the best stores aren&#x27;t stages performing a fixed script — they&#x27;re instruments responding to the room in real time.">
+  <meta name="theme-color" content="#20201c">
 
   <!-- Open Graph -->
   <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="../rss.xml">
   <meta property="og:title" content="The Store Is Not a Set">
-  <meta property="og:description" content="Retail experience design borrows from theater, but the best stores aren't stages performing a fixed script — they're instruments responding to the room in real time.">
+  <meta property="og:description" content="Retail experience design borrows from theater, but the best stores aren&#x27;t stages performing a fixed script — they&#x27;re instruments responding to the room in real time.">
   <meta property="og:url" content="https://entuned.co/blog/the-store-is-not-a-set.html">
   <meta property="og:type" content="article">
   <meta property="og:image" content="https://entuned.co/img/og-default.png">
@@ -28,7 +29,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="The Store Is Not a Set">
-  <meta name="twitter:description" content="Retail experience design borrows from theater, but the best stores aren't stages performing a fixed script — they're instruments responding to the room in real time.">
+  <meta name="twitter:description" content="Retail experience design borrows from theater, but the best stores aren&#x27;t stages performing a fixed script — they&#x27;re instruments responding to the room in real time.">
   <meta name="twitter:image" content="https://entuned.co/img/og-default.png">
 
   <!-- Structured Data -->
@@ -96,17 +97,9 @@
 }
   </script>
 
-  <!-- Google Analytics (GA4) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-SGMVDBYXFG');
-  </script>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
   <link rel="stylesheet" href="../styles.css">
   <style>
 /* Page styles — see global styles.css */
@@ -123,7 +116,7 @@
       <li><a href="../blog.html">Blog</a></li>
       <li><a href="../contact.html">Contact</a></li>
     </ul>
-    <button class="mobile-menu-toggle" aria-label="Menu">&#9776;</button>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
   </div>
 </nav>
 
@@ -254,12 +247,22 @@
   </div>
 </footer>
 
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG');
+  </script>
+
   <script>
     // Navigation active state
     const navLinks = document.querySelectorAll('.nav-links a');
     navLinks.forEach(link => {
       if (link.href === window.location.href) {
         link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
       }
     });
 
@@ -287,8 +290,9 @@
     const navLinksEl = document.querySelector('.nav-links');
     if (menuToggle && navLinksEl) {
       menuToggle.addEventListener('click', () => {
-        navLinksEl.classList.toggle('mobile-open');
-        menuToggle.textContent = navLinksEl.classList.contains('mobile-open') ? '✕' : '☰';
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
       });
     }
 

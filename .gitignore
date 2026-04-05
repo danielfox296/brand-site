@@ -1,6 +1,12 @@
 # OS
 .DS_Store
+**/.DS_Store
+Thumbs.db
 
 # Editor
 .vscode/
 *.swp
+*.code-workspace
+
+# Dev/test files
+mockup-*.html

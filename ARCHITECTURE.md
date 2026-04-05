@@ -83,11 +83,11 @@ For non-blog pages, content starts directly with `<section>` tags.
 
 ## Design system
 
-- **Background:** #080808
-- **Gold accent:** #d7af74
-- **Blue accent:** #829eac
-- **Text:** #E8E4DE
-- **Fonts:** Manrope (headings, via Google Fonts CDN), Inter (body)
+- **Background:** #20201c
+- **Accent:** #50929c
+- **Text:** #d4e1e5
+- **Fonts:** Manrope (headings, loaded via `<link>` in base.html), Inter (body, same)
+- **Font loading:** Google Fonts are loaded as a `<link rel="stylesheet">` in `base.html` `<head>` (not via CSS `@import`) to avoid waterfall delays. The preconnect hints sit directly above the font link.
 - **Logo:** `img/Entuned_logo.png` (transparent PNG logotype, used in header and footer via `.logo-img` and `.footer-logo-img`)
 - **Button classes:** `.btn .btn-primary` (gold bg), `.btn .btn-secondary` (gold border), `.btn-accent` (blue bg), `.btn-accent-outline` (blue border)
 - **Accent utilities:** `.accent` (blue text), `.accent-bg` (blue background)
@@ -106,13 +106,21 @@ For non-blog pages, content starts directly with `<section>` tags.
 
 ## JavaScript (in base.html)
 
-The base layout includes vanilla JS for:
-- **Nav active state** — highlights current page link
+The base layout includes vanilla JS (at end of `<body>`) for:
+- **Nav active state** — highlights current page link and adds `aria-current="page"`
 - **Intersection Observer** — triggers `.fade-up` and `.fade-in` animations on scroll
-- **Mobile menu toggle** — opens/closes `.nav-links` on mobile via `.mobile-open` class
+- **Mobile menu toggle** — opens/closes `.nav-links` on mobile via `.mobile-open` class; toggles `aria-expanded` on the button
 - **Audio player** — play/pause, progress bar, time display for `.audio-track` elements
 
+Google Analytics (GA4) is also loaded at end of `<body>` with `defer` to avoid render-blocking.
+
 No build tools, no npm, no bundler. Everything is vanilla JS in a single `<script>` block.
+
+## Security
+
+- **Build script** escapes all user-provided strings (`html.escape`) before injecting into meta/OG/Twitter tags to prevent HTML injection. It also validates output paths stay within the repo root.
+- **GitHub Pages** does not support custom response headers. Security headers (CSP, X-Frame-Options, etc.) should be added via Cloudflare if needed — see Cloudflare dashboard → Rules → Transform Rules → Managed Transforms or custom response headers.
+- **Deck pages** use client-side password gates (not secure for truly confidential content). Treat them as deterrents, not access control.
 
 ## Email
 
@@ -146,9 +154,11 @@ To deploy: `git add -A && git commit -m "message" && git push origin main`
 3. **Rebuild after every change.** Always run `python3 build.py` and confirm it succeeds before declaring work done.
 4. **Respect the design system.** Use the colors, fonts, and component classes documented above. Don't invent one-off inline styles when a reusable class exists.
 5. **CSS is centralized.** Most component styles live in global `styles.css`. Page-specific `style.css` files should only contain styles truly unique to that one page. Blog posts generally need no page-specific CSS — their layout and content components are all global. Before adding a new class to a page CSS file, check if a global class already covers it.
+5a. **Never override global class names in page CSS.** If a page needs a variant of a global class (e.g., `.hero-alt`), create a scoped version (e.g., `.cfo-hero-alt`) instead of redefining the global class in the page stylesheet. This prevents cross-page side effects.
+5b. **All images need alt text.** Every `<img>` must have a descriptive `alt` attribute for SEO and accessibility. Never use `alt=""` on content images.
 6. **Keep it simple.** No build tools, no npm, no bundler. Vanilla HTML/CSS/JS only.
 7. **Follow brand voice.** Read `../VOICE.md` before writing any copy. Lead with outcomes, not technology. Never put "AI" in a page title or hero. Use "retail music strategy" as the category term, not "AI music."
-8. **Every page needs SEO.** Every config.json must have a `title` and `description`. Titles lead with the outcome. Descriptions include a stat and the pilot CTA. See `../VOICE.md` for patterns.
+8. **Every page needs SEO.** Every config.json must have a `title` and `meta_description`. Titles lead with the outcome. Descriptions include a stat and the pilot CTA. See `../VOICE.md` for patterns. Use `" | Entuned"` separator for pages and `" — Entuned Blog"` for blog posts.
 9. **Read `../brain.md` for context.** It has product details, pricing, competitive landscape, research citations, and key decisions. Reference it before making content decisions.
 
 ## Testing locally

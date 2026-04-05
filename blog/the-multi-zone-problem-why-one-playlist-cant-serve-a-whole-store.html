@@ -12,10 +12,11 @@
   <meta name="robots" content="index, follow">
   <title>The Multi-Zone Problem: Why One Playlist Can't Serve a Whole Store — Entuned Blog</title>
   <meta name="description" content="Different zones serve customers with different psychologies and purchase dynamics. One playlist makes a compromise with all of them and optimizes for none.">
+  <meta name="theme-color" content="#20201c">
 
   <!-- Open Graph -->
   <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="../rss.xml">
-  <meta property="og:title" content="The Multi-Zone Problem: Why One Playlist Can't Serve a Whole Store">
+  <meta property="og:title" content="The Multi-Zone Problem: Why One Playlist Can&#x27;t Serve a Whole Store">
   <meta property="og:description" content="Different zones serve customers with different psychologies and purchase dynamics. One playlist makes a compromise with all of them and optimizes for none.">
   <meta property="og:url" content="https://entuned.co/blog/the-multi-zone-problem-why-one-playlist-cant-serve-a-whole-store.html">
   <meta property="og:type" content="article">
@@ -27,7 +28,7 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="The Multi-Zone Problem: Why One Playlist Can't Serve a Whole Store">
+  <meta name="twitter:title" content="The Multi-Zone Problem: Why One Playlist Can&#x27;t Serve a Whole Store">
   <meta name="twitter:description" content="Different zones serve customers with different psychologies and purchase dynamics. One playlist makes a compromise with all of them and optimizes for none.">
   <meta name="twitter:image" content="https://entuned.co/img/og-default.png">
 
@@ -96,17 +97,9 @@
 }
   </script>
 
-  <!-- Google Analytics (GA4) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-SGMVDBYXFG');
-  </script>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
   <link rel="stylesheet" href="../styles.css">
   <style>
 /* Page styles — see global styles.css */
@@ -123,7 +116,7 @@
       <li><a href="../blog.html">Blog</a></li>
       <li><a href="../contact.html">Contact</a></li>
     </ul>
-    <button class="mobile-menu-toggle" aria-label="Menu">&#9776;</button>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
   </div>
 </nav>
 
@@ -242,12 +235,22 @@
   </div>
 </footer>
 
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG');
+  </script>
+
   <script>
     // Navigation active state
     const navLinks = document.querySelectorAll('.nav-links a');
     navLinks.forEach(link => {
       if (link.href === window.location.href) {
         link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
       }
     });
 
@@ -275,8 +278,9 @@
     const navLinksEl = document.querySelector('.nav-links');
     if (menuToggle && navLinksEl) {
       menuToggle.addEventListener('click', () => {
-        navLinksEl.classList.toggle('mobile-open');
-        menuToggle.textContent = navLinksEl.classList.contains('mobile-open') ? '✕' : '☰';
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
       });
     }
 

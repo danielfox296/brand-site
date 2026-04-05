@@ -12,6 +12,7 @@
   <meta name="robots" content="{{robots}}">
   <title>{{title}}</title>
   {{meta_description}}
+  <meta name="theme-color" content="#20201c">
 
   <!-- Open Graph -->
   {{og_tags}}
@@ -22,17 +23,9 @@
   <!-- Structured Data -->
   {{schema_json}}
 
-  <!-- Google Analytics (GA4) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-SGMVDBYXFG');
-  </script>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
   <link rel="stylesheet" href="{{css_path}}styles.css">
   {{page_style}}
 </head>
@@ -45,12 +38,22 @@
 
   {{footer}}
 
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG');
+  </script>
+
   <script>
     // Navigation active state
     const navLinks = document.querySelectorAll('.nav-links a');
     navLinks.forEach(link => {
       if (link.href === window.location.href) {
         link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
       }
     });
 
@@ -78,8 +81,9 @@
     const navLinksEl = document.querySelector('.nav-links');
     if (menuToggle && navLinksEl) {
       menuToggle.addEventListener('click', () => {
-        navLinksEl.classList.toggle('mobile-open');
-        menuToggle.textContent = navLinksEl.classList.contains('mobile-open') ? '✕' : '☰';
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
       });
     }
 

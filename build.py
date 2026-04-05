@@ -36,6 +36,7 @@ import os
 import json
 import glob
 import re
+import html as html_mod
 
 REPO     = os.path.dirname(os.path.abspath(__file__))
 SRC      = os.path.join(REPO, '_src')
@@ -152,10 +153,11 @@ def build():
         # Robots meta tag
         robots_value = config.get('robots', 'index, follow')
 
-        # Meta description tag
+        # Meta description tag (escape to prevent HTML injection)
         meta_desc = ''
         if description:
-            meta_desc = f'<meta name="description" content="{description}">'
+            safe_desc = html_mod.escape(description, quote=True)
+            meta_desc = f'<meta name="description" content="{safe_desc}">'
 
         # Load page-specific CSS
         style_path = os.path.join(page_path, 'style.css')
@@ -214,10 +216,12 @@ def build():
                     og_image = f'{SITE_URL}/img/blog/{slug}.{ext}'
                     break
 
-        # Build OG tags
+        # Build OG tags (escape user-provided strings)
+        safe_og_title = html_mod.escape(og_title, quote=True)
+        safe_og_desc  = html_mod.escape(description, quote=True)
         og_tags = '\n  '.join([
-            f'<meta property="og:title" content="{og_title}">',
-            f'<meta property="og:description" content="{description}">',
+            f'<meta property="og:title" content="{safe_og_title}">',
+            f'<meta property="og:description" content="{safe_og_desc}">',
             f'<meta property="og:url" content="{canonical_url}">',
             f'<meta property="og:type" content="{og_type}">',
             f'<meta property="og:image" content="{og_image}">',
@@ -232,8 +236,8 @@ def build():
         # Build Twitter Card tags
         twitter_tags = '\n  '.join([
             f'<meta name="twitter:card" content="summary_large_image">',
-            f'<meta name="twitter:title" content="{og_title}">',
-            f'<meta name="twitter:description" content="{description}">',
+            f'<meta name="twitter:title" content="{safe_og_title}">',
+            f'<meta name="twitter:description" content="{safe_og_desc}">',
             f'<meta name="twitter:image" content="{og_image}">',
         ])
 
@@ -402,8 +406,11 @@ def build():
         html = html.replace('{{content}}',          content)
         html = html.replace('{{footer}}',           page_footer)
 
-        # Write output file
+        # Write output file (validate path stays within repo)
         out_path = os.path.join(REPO, output)
+        if not os.path.abspath(out_path).startswith(os.path.abspath(REPO)):
+            print(f'  ✗ SKIPPED {output} — path escapes repo root')
+            continue
         os.makedirs(os.path.dirname(out_path), exist_ok=True)
         with open(out_path, 'w', encoding='utf-8') as f:
             f.write(html)
