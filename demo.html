@@ -171,22 +171,154 @@
   line-height: 1.25;
 }
 
-.demo-problem-text {
-  font-size: 1.1rem;
+.demo-problem-lede {
+  font-size: 1.15rem;
   line-height: 1.9;
   opacity: 0.85;
-  margin-bottom: 1.75rem;
-}
-
-.demo-problem-text:last-of-type {
   margin-bottom: 0;
 }
 
-.demo-problem-divider {
-  width: 60px;
+.demo-problem-text {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  opacity: 0.85;
+  margin-bottom: 1.5rem;
+}
+
+.demo-problem-pullquote {
+  max-width: 720px;
+  margin: 3.5rem auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.demo-problem-pullquote p {
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  font-weight: 700;
+  font-style: italic;
+  color: var(--accent);
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+
+/* Three bad options */
+.demo-options-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin: 2rem 0 2.5rem;
+}
+
+.demo-option-card {
+  padding: 1.75rem 1.5rem;
+  border-top: 2px solid rgba(80, 146, 156, 0.25);
+  background: rgba(80, 146, 156, 0.03);
+}
+
+.demo-option-icon {
+  display: block;
+  font-size: 1.25rem;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+  opacity: 0.7;
+}
+
+.demo-option-label {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text);
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+.demo-option-text {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.demo-problem-kicker {
+  font-size: 1rem;
+  line-height: 1.8;
+  opacity: 0.7;
+  margin-bottom: 0;
+}
+
+.demo-problem-divider-full {
+  max-width: 720px;
+  margin: 3.5rem auto;
   height: 1px;
-  background: rgba(80, 146, 156, 0.25);
-  margin: 3rem 0;
+  background: rgba(80, 146, 156, 0.12);
+}
+
+/* Musical factors grid */
+.demo-factors-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  margin: 2rem 0 2.5rem;
+  border-top: 1px solid rgba(80, 146, 156, 0.1);
+}
+
+.demo-factor {
+  padding: 1.5rem 1.5rem 1.5rem 0;
+  border-bottom: 1px solid rgba(80, 146, 156, 0.08);
+}
+
+.demo-factor:nth-child(even) {
+  padding-left: 1.5rem;
+  border-left: 1px solid rgba(80, 146, 156, 0.08);
+}
+
+.demo-factor:last-child {
+  grid-column: 1 / -1;
+  border-left: none;
+  padding-left: 0;
+}
+
+.demo-factor-key {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.demo-factor-val {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  opacity: 0.8;
+}
+
+.demo-problem-answer {
+  margin-top: 2.5rem;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 700px) {
+  .demo-options-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .demo-factors-grid {
+    grid-template-columns: 1fr;
+  }
+  .demo-factor:nth-child(even) {
+    padding-left: 0;
+    border-left: none;
+  }
+  .demo-factor:last-child {
+    grid-column: auto;
+  }
 }
 
 /* ---- ICP Section ---- */
@@ -448,31 +580,81 @@
     <span class="eyebrow fade-up">The Problem</span>
     <h2 class="demo-problem-headline fade-up">The music in most stores was never designed to support purchases.</h2>
 
-    <p class="demo-problem-text fade-up">
+    <p class="demo-problem-lede fade-up">
       Alcott sells elevated everyday objects. Ceramics, textiles, small furniture. Their customers don't rush. They browse with intent. They pick things up, put them down, pick them up again.
     </p>
+  </div>
 
+  <div class="demo-problem-pullquote fade-up">
+    <p>What music should be playing for them?</p>
+  </div>
+
+  <div class="demo-problem-inner">
     <p class="demo-problem-text fade-up">
-      What music should be playing for them?
+      Right now, most stores like this have three options:
     </p>
 
-    <p class="demo-problem-text fade-up">
-      Right now, most stores like this have three options: a poorly curated playlist, the associate's personal Spotify (which risks licensing violations because consumer accounts aren't licensed for commercial use), or outsourcing the vibe to a big-box commercial music provider. In all three cases, the content of the songs was never designed to support customer behavior. It just has to be inviting enough not to drive people out. That's the bar.
+    <div class="demo-options-grid">
+      <div class="demo-option-card fade-up">
+        <span class="demo-option-icon">&#9835;</span>
+        <span class="demo-option-label">The Playlist</span>
+        <p class="demo-option-text">A poorly curated playlist that no one is responsible for. Songs picked for taste, not outcomes.</p>
+      </div>
+      <div class="demo-option-card fade-up">
+        <span class="demo-option-icon">&#9888;</span>
+        <span class="demo-option-label">Personal Spotify</span>
+        <p class="demo-option-text">The associate's account. Consumer licenses aren't cleared for commercial use. Every play is a violation.</p>
+      </div>
+      <div class="demo-option-card fade-up">
+        <span class="demo-option-icon">&#9724;</span>
+        <span class="demo-option-label">Big-Box Provider</span>
+        <p class="demo-option-text">Outsourced vibe. Thousands of stores get the same catalog. Nothing is built for your customer.</p>
+      </div>
+    </div>
+
+    <p class="demo-problem-kicker fade-up">
+      In all three cases, the content of the songs was never designed to support customer behavior. It just has to be inviting enough not to drive people out. That's the bar.
+    </p>
+  </div>
+
+  <div class="demo-problem-divider-full"></div>
+
+  <div class="demo-problem-inner">
+    <span class="eyebrow fade-up">What Music Actually Does</span>
+    <p class="demo-problem-text fade-up" style="margin-top: 1.5rem;">
+      Music does more than "not drive people out." Every track carries dozens of variables that shape behavior &mdash; most of them invisible in a typical setup:
     </p>
 
-    <div class="demo-problem-divider"></div>
+    <div class="demo-factors-grid">
+      <div class="demo-factor fade-up">
+        <span class="demo-factor-key">Tempo</span>
+        <p class="demo-factor-val">Affects walking pace. Slower tempos extend dwell time. Faster tempos clear the floor.</p>
+      </div>
+      <div class="demo-factor fade-up">
+        <span class="demo-factor-key">Key &amp; Mode</span>
+        <p class="demo-factor-val">Major keys lift mood. Minor keys create introspection. The wrong one changes the decision environment.</p>
+      </div>
+      <div class="demo-factor fade-up">
+        <span class="demo-factor-key">Instrumentation</span>
+        <p class="demo-factor-val">Carries cultural meaning. Acoustic signals craft and care. Synths signal trend. Each shapes brand perception.</p>
+      </div>
+      <div class="demo-factor fade-up">
+        <span class="demo-factor-key">Lyrics</span>
+        <p class="demo-factor-val">Words suggest things. A lyric about leaving primes departure. Lyrical content is never neutral.</p>
+      </div>
+      <div class="demo-factor fade-up">
+        <span class="demo-factor-key">Familiarity</span>
+        <p class="demo-factor-val">When a customer hears a song she knows, she perceives time passing faster. She feels like she's been there longer. She wants to leave sooner.</p>
+      </div>
+    </div>
 
-    <p class="demo-problem-text fade-up">
-      But music does more than "not drive people out." Tempo affects walking pace. Major and minor keys affect mood differently. Instrumentation carries cultural meaning. Lyrical content suggests things. And familiarity cuts both ways: when a customer hears a song she knows and likes, research shows she perceives time as passing faster. She feels like she's been in the store longer. She wants to leave sooner. Even the songs that seem like wins are working against the sale.
+    <p class="demo-problem-kicker fade-up">
+      None of these factors are deliberate in a typical retail music setup. They're incidental. Every song is a roll of the dice.
     </p>
 
-    <p class="demo-problem-text fade-up">
-      None of these factors are deliberate in a typical retail music setup. They're incidental. Every song is a roll of the dice across dozens of variables that affect whether a customer stays, browses, and buys.
-    </p>
-
-    <p class="demo-problem-text fade-up">
+    <div class="demo-problem-answer fade-up">
       Entuned makes all of it intentional.
-    </p>
+    </div>
   </div>
 </section>
 
