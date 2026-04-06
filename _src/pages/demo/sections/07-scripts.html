@@ -1,0 +1,127 @@
+<script>
+(function() {
+  /* ---- Mara photo clip-path reveal ---- */
+  var photoWrap = document.querySelector('[data-reveal]');
+  if (photoWrap) {
+    var photoObs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) {
+          photoWrap.classList.add('revealed');
+          photoObs.unobserve(photoWrap);
+        }
+      });
+    }, { threshold: 0.2 });
+    photoObs.observe(photoWrap);
+  }
+
+  /* ---- Staggered data row reveal ---- */
+  var staggerWrap = document.querySelector('[data-stagger]');
+  if (staggerWrap) {
+    var rows = staggerWrap.querySelectorAll('.demo-mara-data-row');
+    var staggerObs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) {
+          rows.forEach(function(row, i) {
+            setTimeout(function() {
+              row.classList.add('revealed');
+            }, i * 120);
+          });
+          staggerObs.unobserve(staggerWrap);
+        }
+      });
+    }, { threshold: 0.3 });
+    staggerObs.observe(staggerWrap);
+  }
+
+  /* ---- Timeline: scroll-activated moments + click ---- */
+  var moments = document.querySelectorAll('.demo-moment');
+  var activeMoment = null;
+
+  function setActive(moment) {
+    if (activeMoment === moment) return;
+    moments.forEach(function(m) { m.classList.remove('active'); });
+    moment.classList.add('active');
+    activeMoment = moment;
+  }
+
+  // Click still works
+  moments.forEach(function(moment) {
+    moment.addEventListener('click', function() {
+      setActive(moment);
+    });
+  });
+
+  // Scroll-activated: whichever moment is most centered in viewport
+  var timelineObs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) {
+        setActive(e.target);
+      }
+    });
+  }, { rootMargin: '-35% 0px -35% 0px', threshold: 0.2 });
+
+  moments.forEach(function(m) { timelineObs.observe(m); });
+
+  /* ---- Outcome count-up animation ---- */
+  var counted = false;
+  var counters = document.querySelectorAll('[data-count]');
+
+  function animateCounters() {
+    if (counted) return;
+    counted = true;
+    counters.forEach(function(el) {
+      var target = parseInt(el.getAttribute('data-count'), 10);
+      var prefix = el.getAttribute('data-prefix') || '';
+      var suffix = el.getAttribute('data-suffix') || '';
+      var duration = 1800;
+      var start = performance.now();
+
+      function step(now) {
+        var elapsed = now - start;
+        var progress = Math.min(elapsed / duration, 1);
+        // Ease out cubic
+        var eased = 1 - Math.pow(1 - progress, 3);
+        var current = Math.round(eased * target);
+        el.textContent = prefix + current + suffix;
+        if (progress < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+
+    // Animate bars
+    var bars = document.querySelectorAll('.demo-outcome-bar-fill');
+    setTimeout(function() {
+      bars.forEach(function(bar) {
+        var w = bar.getAttribute('data-width');
+        bar.style.width = w + '%';
+      });
+    }, 200);
+  }
+
+  var outcomesSection = document.querySelector('.demo-outcomes-section');
+  if (outcomesSection) {
+    var outcomeObs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) {
+          animateCounters();
+          outcomeObs.unobserve(outcomesSection);
+        }
+      });
+    }, { threshold: 0.25 });
+    outcomeObs.observe(outcomesSection);
+  }
+
+  /* ---- Hero parallax on scroll ---- */
+  var heroBg = document.querySelector('.demo-store-bg');
+  if (heroBg) {
+    var heroSection = document.querySelector('.demo-store-header');
+    window.addEventListener('scroll', function() {
+      var rect = heroSection.getBoundingClientRect();
+      if (rect.bottom > 0) {
+        var scrolled = -rect.top;
+        heroBg.style.transform = 'scale(1.08) translateY(' + (scrolled * 0.25) + 'px)';
+      }
+    }, { passive: true });
+  }
+})();
+</script>
