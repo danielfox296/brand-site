@@ -1,0 +1,103 @@
+<section class="demo-timeline-section">
+  <div class="demo-timeline-inner">
+
+    <div class="demo-timeline-header fade-up">
+      <span class="eyebrow">The Story</span>
+      <h2 class="demo-timeline-headline">Mara's 18 minutes.</h2>
+      <p class="demo-timeline-sub">The music shifted four times. Each shift was a decision.</p>
+
+      <!-- Track pip indicators -->
+      <div class="demo-track-count" id="demoTrackPips" aria-hidden="true">
+        <div class="demo-track-pip active" data-pip="1"></div>
+        <div class="demo-track-pip" data-pip="2"></div>
+        <div class="demo-track-pip" data-pip="3"></div>
+        <div class="demo-track-pip" data-pip="4"></div>
+        <span class="demo-track-label">Track 1 of 4</span>
+      </div>
+    </div>
+
+    <div class="demo-timeline" id="demoTimeline">
+
+      <!-- Moment 1 — Entry -->
+      <div class="demo-moment active fade-up" data-moment="1">
+        <span class="demo-moment-time">0:00</span>
+        <div class="demo-moment-dot"></div>
+        <div class="demo-moment-card">
+          <span class="demo-moment-activity">Entry</span>
+          <p class="demo-moment-desc">Mara walks in. The music is already there. It does not announce itself.</p>
+          <div class="demo-moment-expanded">
+            <p class="demo-moment-music">80 BPM, acoustic texture, major key, muted voicings. No percussion. The room says welcome before she reads the price tag.</p>
+            <div class="demo-moment-instruction">&#9654;&nbsp; Start the Wonder player from the beginning.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Moment 2 — Active Browse -->
+      <div class="demo-moment fade-up" data-moment="2">
+        <span class="demo-moment-time">4:32</span>
+        <div class="demo-moment-dot"></div>
+        <div class="demo-moment-card">
+          <span class="demo-moment-activity">Active Browse</span>
+          <p class="demo-moment-desc">She has picked up three things. The system detected movement and engagement. The music shifted.</p>
+          <div class="demo-moment-expanded">
+            <p class="demo-moment-music">94 BPM, light rhythmic pulse. Same temperature as Entry. Slightly more present. Keeps pace without leading.</p>
+            <div class="demo-moment-instruction">&#9654;&nbsp; Skip to 4:32 in the Wonder player.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Moment 3 — Extended Dwell -->
+      <div class="demo-moment fade-up" data-moment="3">
+        <span class="demo-moment-time">11:15</span>
+        <div class="demo-moment-dot"></div>
+        <div class="demo-moment-card">
+          <span class="demo-moment-activity">Extended Dwell</span>
+          <p class="demo-moment-desc">She has not moved from the ceramics shelf in 90 seconds. The system detected it. The music slowed.</p>
+          <div class="demo-moment-expanded">
+            <p class="demo-moment-music">68 BPM. Major sevenths and suspended chords. No percussion. The moment belongs to her, not to the store.</p>
+            <div class="demo-moment-instruction">&#9654;&nbsp; Skip to 11:15 in the Wonder player.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Moment 4 — Exit Approach -->
+      <div class="demo-moment fade-up" data-moment="4">
+        <span class="demo-moment-time">16:48</span>
+        <div class="demo-moment-dot"></div>
+        <div class="demo-moment-card">
+          <span class="demo-moment-activity">Exit Approach</span>
+          <p class="demo-moment-desc">She started toward the door. She had not bought anything yet. The music shifted again.</p>
+          <div class="demo-moment-expanded">
+            <p class="demo-moment-music">87 BPM. More textural. A melodic idea that does not resolve. A question, not a conclusion.</p>
+            <div class="demo-moment-instruction">&#9654;&nbsp; Skip to 16:48 in the Wonder player.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  var moments = document.querySelectorAll('.demo-moment');
+  var pips    = document.querySelectorAll('.demo-track-pip');
+  var label   = document.querySelector('.demo-track-label');
+
+  moments.forEach(function(m) {
+    m.addEventListener('click', function() {
+      var idx = parseInt(m.getAttribute('data-moment'), 10);
+
+      // Deactivate all
+      moments.forEach(function(x) { x.classList.remove('active'); });
+      pips.forEach(function(p)    { p.classList.remove('active'); });
+
+      // Activate clicked
+      m.classList.add('active');
+      var activePip = document.querySelector('[data-pip="' + idx + '"]');
+      if (activePip) activePip.classList.add('active');
+      if (label) label.textContent = 'Track ' + idx + ' of 4';
+    });
+  });
+})();
+</script>

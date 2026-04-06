@@ -1,14 +1,47 @@
-<!-- HERO: THE STORE -->
-<section class="demo-store-header fade-in">
+<section class="demo-hero fade-in">
   <img
     src="img/alcott-store.jpg"
-    alt="Interior of Alcott and Co., a lifestyle home goods boutique"
-    class="demo-store-bg"
+    alt="Interior of Alcott and Co., a minimalist home goods boutique in Denver"
+    class="demo-hero-bg"
   >
-  <div class="demo-store-overlay"></div>
-  <div class="demo-store-content">
-    <span class="demo-store-label">Demo Store</span>
-    <div class="demo-store-name">Alcott &amp; Co.</div>
-    <div class="demo-store-meta">Lifestyle Home Goods &nbsp;&middot;&nbsp; Denver, Colorado</div>
+  <div class="demo-hero-overlay"></div>
+
+  <!-- Top-left live badge -->
+  <div class="demo-hero-badge">
+    <span class="demo-hero-badge-dot"></span>
+    Entuned Pilot &nbsp;&middot;&nbsp; Alcott &amp; Co.
+  </div>
+
+  <!-- Bottom-left main content -->
+  <div class="demo-hero-content">
+    <span class="demo-hero-eyebrow">A Story in Sound</span>
+    <div class="demo-hero-name" id="demoStoreName" aria-label="Alcott &amp; Co."></div>
+    <p class="demo-hero-tagline">Music built for one customer. Running in a real store.</p>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="demo-scroll-hint" aria-hidden="true">
+    <span>Scroll</span>
+    <svg class="demo-scroll-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+      <path d="M5 7l5 5 5-5"/>
+    </svg>
   </div>
 </section>
+
+<script>
+(function() {
+  // Letter stagger animation for store name
+  var nameEl = document.getElementById('demoStoreName');
+  if (!nameEl) return;
+  var text = 'Alcott & Co.';
+  var baseDelay = 700; // ms after page load
+  var perLetterDelay = 55;
+  text.split('').forEach(function(char, i) {
+    var span = document.createElement('span');
+    span.className = 'demo-letter';
+    span.textContent = char === ' ' ? '\u00A0' : char;
+    span.style.animationDelay = (baseDelay + i * perLetterDelay) + 'ms';
+    nameEl.appendChild(span);
+  });
+})();
+</script>

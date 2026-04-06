@@ -82,264 +82,443 @@
   <link rel="stylesheet" href="styles.css">
   <style>
 /* ============================================================
-   DEMO PAGE — Page-Specific Styles
+   DEMO PAGE — style.css
+   All selectors prefixed .demo- to avoid conflicts.
    ============================================================ */
 
-/* ---- Hero / Store Header ---- */
-.demo-store-header {
+/* ======================================================
+   01 — HERO
+   ====================================================== */
+
+.demo-hero {
   position: relative;
-  min-height: 60vh;
+  min-height: 85vh;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
-  padding-bottom: 5rem;
+  padding-bottom: 6rem;
 }
 
-.demo-store-bg {
+.demo-hero-bg {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 120%;
   object-fit: cover;
-  opacity: 0.35;
-  filter: saturate(0.7);
+  opacity: 0.3;
+  filter: saturate(0.6);
   will-change: transform;
-  animation: demo-ken-burns 25s ease-out forwards;
+  animation: demo-ken-burns 28s ease-out forwards;
 }
 
 @keyframes demo-ken-burns {
-  0%   { transform: scale(1) translateY(0); }
-  100% { transform: scale(1.08) translateY(0); }
+  from { transform: scale(1); }
+  to   { transform: scale(1.1); }
 }
 
-.demo-store-overlay {
+.demo-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, #20201c 35%, transparent 100%);
+  background: linear-gradient(
+    to top,
+    #20201c 30%,
+    rgba(32, 32, 28, 0.6) 60%,
+    rgba(32, 32, 28, 0.1) 100%
+  );
 }
 
-.demo-store-content {
+/* Top-left "Live" badge */
+.demo-hero-badge {
+  position: absolute;
+  top: 6.5rem;
+  left: clamp(2rem, 6vw, 6rem);
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  opacity: 0;
+  animation: demo-fade-in 0.8s ease 0.3s forwards;
+}
+
+.demo-hero-badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: demo-pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes demo-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.4; transform: scale(0.7); }
+}
+
+/* Main text block — bottom left */
+.demo-hero-content {
   position: relative;
   z-index: 2;
   padding: 0 clamp(2rem, 6vw, 6rem);
+  width: 100%;
 }
 
-.demo-store-label {
+.demo-hero-eyebrow {
   font-family: 'SF Mono', 'Fira Code', monospace;
-  font-size: 0.7rem;
-  letter-spacing: 0.2em;
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
   color: var(--accent);
   text-transform: uppercase;
-  margin-bottom: 1rem;
   display: block;
-  opacity: 0.9;
+  margin-bottom: 1.25rem;
+  opacity: 0;
+  animation: demo-fade-in 0.7s ease 0.5s forwards;
 }
 
-.demo-store-name {
+.demo-hero-name {
   font-family: 'Manrope', sans-serif;
-  font-size: clamp(3rem, 8vw, 6rem);
+  font-size: clamp(3.5rem, 9vw, 7rem);
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
   color: var(--text);
   line-height: 1;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.25em;
 }
 
-.demo-store-meta {
-  font-size: 1rem;
+/* Per-letter stagger animation */
+.demo-hero-name .demo-letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: demo-letter-in 0.5s ease forwards;
+}
+
+@keyframes demo-letter-in {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.demo-hero-tagline {
+  font-size: clamp(1rem, 2vw, 1.2rem);
   color: var(--text-muted);
   font-weight: 300;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
+  opacity: 0;
+  animation: demo-fade-in 0.7s ease 1.1s forwards;
+  max-width: 480px;
+  line-height: 1.7;
 }
 
-/* ---- Problem Section ---- */
+/* Scroll indicator — bottom center */
+.demo-scroll-hint {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  opacity: 0;
+  animation: demo-fade-in 1s ease 1.6s forwards;
+}
+
+.demo-scroll-hint span {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.demo-scroll-chevron {
+  width: 20px;
+  height: 20px;
+  color: var(--text-muted);
+  animation: demo-bounce 2s ease-in-out infinite;
+}
+
+@keyframes demo-bounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(5px); }
+}
+
+@keyframes demo-fade-in {
+  to { opacity: 1; }
+}
+
+/* ======================================================
+   02 — PROBLEM
+   ====================================================== */
+
 .demo-problem-section {
-  padding: 5rem 2rem 6rem;
+  padding: 7rem 2rem 5rem;
   background: var(--bg);
 }
 
 .demo-problem-inner {
-  max-width: 720px;
+  max-width: 680px;
   margin: 0 auto;
 }
 
 .demo-problem-headline {
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-size: clamp(1.75rem, 3.5vw, 2.6rem);
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
   margin-bottom: 2rem;
-  line-height: 1.25;
+  margin-top: 1rem;
 }
 
 .demo-problem-lede {
-  font-size: 1.15rem;
-  line-height: 1.9;
-  opacity: 0.85;
-  margin-bottom: 0;
-}
-
-.demo-problem-text {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   line-height: 1.85;
-  opacity: 0.85;
-  margin-bottom: 1.5rem;
+  opacity: 0.8;
+  margin-bottom: 0;
+  max-width: 560px;
 }
 
-.demo-problem-pullquote {
-  max-width: 720px;
-  margin: 3.5rem auto;
-  padding: 0 2rem;
+/* Giant pull quote — full bleed */
+.demo-pullquote-full {
+  padding: 5rem clamp(2rem, 8vw, 12rem);
   text-align: center;
+  border-top: 1px solid rgba(80, 146, 156, 0.08);
+  border-bottom: 1px solid rgba(80, 146, 156, 0.08);
+  margin: 4rem 0;
 }
 
-.demo-problem-pullquote p {
+.demo-pullquote-full p {
   font-family: 'Manrope', sans-serif;
-  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  font-size: clamp(2rem, 5vw, 3.8rem);
   font-weight: 700;
   font-style: italic;
-  color: var(--accent);
-  line-height: 1.3;
-  letter-spacing: -0.02em;
+  color: var(--text);
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  opacity: 0.9;
 }
 
-/* Three bad options */
+.demo-pullquote-full p em {
+  color: var(--accent);
+  font-style: inherit;
+}
+
+/* Bridge line before 3 options */
+.demo-bridge {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  display: block;
+}
+
+/* 3 Bad Options — redesigned with proper SVG icons */
 .demo-options-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.25rem;
-  margin: 2rem 0 2.5rem;
+  gap: 1px;
+  background: rgba(80, 146, 156, 0.08);
+  margin-bottom: 0;
+  border: 1px solid rgba(80, 146, 156, 0.08);
 }
 
 .demo-option-card {
-  padding: 1.75rem 1.5rem;
-  border-top: 2px solid rgba(80, 146, 156, 0.25);
-  background: rgba(80, 146, 156, 0.03);
+  background: #1c1c19;
+  padding: 2rem 1.75rem;
+  transition: background 0.3s ease;
+}
+
+.demo-option-card:hover {
+  background: rgba(80, 146, 156, 0.04);
 }
 
 .demo-option-icon {
   display: block;
-  font-size: 1.25rem;
+  width: 32px;
+  height: 32px;
   color: var(--accent);
-  margin-bottom: 0.75rem;
-  opacity: 0.7;
+  opacity: 0.55;
+  margin-bottom: 1rem;
 }
 
 .demo-option-label {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text);
+  display: block;
+  margin-bottom: 0.6rem;
+  letter-spacing: -0.01em;
+}
+
+.demo-option-text {
+  font-size: 0.85rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Problem kicker */
+.demo-kicker {
+  font-size: 1rem;
+  line-height: 1.75;
+  opacity: 0.65;
+  margin-top: 3rem;
+  margin-bottom: 0;
+  max-width: 560px;
+  border-top: 1px solid rgba(80, 146, 156, 0.1);
+  padding-top: 2rem;
+}
+
+@media (max-width: 680px) {
+  .demo-options-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ======================================================
+   03 — VARIABLES
+   ====================================================== */
+
+.demo-vars-section {
+  padding: 7rem 2rem;
+  background: #181815;
+  border-top: 1px solid rgba(80, 146, 156, 0.08);
+}
+
+.demo-vars-inner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.demo-vars-headline {
+  font-size: clamp(1.75rem, 3.5vw, 2.6rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+
+/* Variable ledger — single column, each row icon + key + value */
+.demo-var-ledger {
+  border-top: 1px solid rgba(80, 146, 156, 0.12);
+}
+
+.demo-var-row {
+  display: grid;
+  grid-template-columns: 40px 120px 1fr;
+  gap: 0 1.5rem;
+  align-items: start;
+  padding: 1.6rem 0;
+  border-bottom: 1px solid rgba(80, 146, 156, 0.08);
+  transition: background 0.2s ease;
+}
+
+.demo-var-row:hover {
+  background: rgba(80, 146, 156, 0.02);
+}
+
+.demo-var-icon {
+  width: 22px;
+  height: 22px;
+  color: var(--accent);
+  opacity: 0.6;
+  margin-top: 0.1rem;
+  flex-shrink: 0;
+}
+
+.demo-var-key {
   font-family: 'SF Mono', 'Fira Code', monospace;
   font-size: 0.68rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--text);
-  display: block;
-  margin-bottom: 0.6rem;
-}
-
-.demo-option-text {
-  font-size: 0.88rem;
-  line-height: 1.6;
-  color: var(--text-muted);
-}
-
-.demo-problem-kicker {
-  font-size: 1rem;
-  line-height: 1.8;
-  opacity: 0.7;
-  margin-bottom: 0;
-}
-
-.demo-problem-divider-full {
-  max-width: 720px;
-  margin: 3.5rem auto;
-  height: 1px;
-  background: rgba(80, 146, 156, 0.12);
-}
-
-/* Musical factors grid */
-.demo-factors-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
-  margin: 2rem 0 2.5rem;
-  border-top: 1px solid rgba(80, 146, 156, 0.1);
-}
-
-.demo-factor {
-  padding: 1.5rem 1.5rem 1.5rem 0;
-  border-bottom: 1px solid rgba(80, 146, 156, 0.08);
-}
-
-.demo-factor:nth-child(even) {
-  padding-left: 1.5rem;
-  border-left: 1px solid rgba(80, 146, 156, 0.08);
-}
-
-.demo-factor:last-child {
-  grid-column: 1 / -1;
-  border-left: none;
-  padding-left: 0;
-}
-
-.demo-factor-key {
-  font-family: 'SF Mono', 'Fira Code', monospace;
-  font-size: 0.65rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
   color: var(--accent);
-  display: block;
-  margin-bottom: 0.5rem;
+  padding-top: 0.2rem;
+  line-height: 1.3;
 }
 
-.demo-factor-val {
-  font-size: 0.92rem;
+.demo-var-val {
+  font-size: 0.95rem;
   line-height: 1.65;
   opacity: 0.8;
+  margin: 0;
 }
 
-.demo-problem-answer {
-  margin-top: 2.5rem;
+/* The big reveal line */
+.demo-vars-answer {
+  margin-top: 3.5rem;
+  overflow: hidden;
+}
+
+.demo-vars-answer-line {
   font-family: 'Manrope', sans-serif;
-  font-size: 1.3rem;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
   font-weight: 700;
-  color: var(--accent);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
 }
 
-@media (max-width: 700px) {
-  .demo-options-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+.demo-vars-answer-line.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.demo-vars-answer-line .demo-gold {
+  color: var(--gold);
+}
+
+@media (max-width: 600px) {
+  .demo-var-row {
+    grid-template-columns: 32px 1fr;
+    grid-template-rows: auto auto;
   }
-  .demo-factors-grid {
-    grid-template-columns: 1fr;
+  .demo-var-key {
+    grid-column: 2;
+    grid-row: 1;
   }
-  .demo-factor:nth-child(even) {
+  .demo-var-val {
+    grid-column: 1 / -1;
+    grid-row: 2;
     padding-left: 0;
-    border-left: none;
-  }
-  .demo-factor:last-child {
-    grid-column: auto;
+    margin-top: 0.5rem;
   }
 }
 
-/* ---- ICP Section ---- */
+/* ======================================================
+   04 — ICP / MARA
+   ====================================================== */
+
 .demo-icp-section {
-  padding: 5rem 2rem 7rem;
-  background: #181815;
+  padding: 7rem 2rem;
+  background: var(--bg);
   border-top: 1px solid rgba(80, 146, 156, 0.08);
 }
 
 .demo-icp-grid {
   display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 4rem;
+  grid-template-columns: 300px 1fr;
+  gap: 0 5rem;
   align-items: start;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-.demo-icp-photo-wrap {
+/* Photo column — sticky */
+.demo-icp-photo-col {
   position: sticky;
-  top: 12vh;
+  top: 7rem;
 }
 
 .demo-icp-photo {
@@ -347,199 +526,769 @@
   aspect-ratio: 3/4;
   object-fit: cover;
   display: block;
-  filter: saturate(0.85);
+  filter: saturate(0.8);
 }
 
-.demo-icp-photo-label {
+.demo-icp-photo-caption {
   font-family: 'SF Mono', 'Fira Code', monospace;
-  font-size: 0.65rem;
-  letter-spacing: 0.18em;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
   color: var(--text-muted);
   text-transform: uppercase;
-  margin-top: 1rem;
-  display: block;
-  text-align: center;
+  margin-top: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.demo-icp-profile {
-  padding-top: 0.5rem;
+.demo-icp-photo-caption::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 1px;
+  background: var(--accent);
+  opacity: 0.5;
 }
 
+/* Profile column */
 .demo-icp-name {
   font-family: 'Manrope', sans-serif;
-  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-size: clamp(2.5rem, 4.5vw, 3.8rem);
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
   color: var(--text);
+  line-height: 1;
   margin-bottom: 0.5rem;
-}
-
-.demo-icp-narrative {
-  font-size: 1.05rem;
-  line-height: 1.85;
-  opacity: 0.85;
-  margin-bottom: 1.5rem;
-  max-width: 500px;
-}
-
-.demo-icp-spec {
-  border-top: 1px solid rgba(80, 146, 156, 0.12);
-  padding-top: 1.75rem;
   margin-top: 0.5rem;
 }
 
-.demo-icp-spec-label {
-  font-family: 'SF Mono', 'Fira Code', monospace;
-  font-size: 0.65rem;
-  letter-spacing: 0.18em;
-  color: var(--accent);
-  text-transform: uppercase;
-  margin-bottom: 0.75rem;
-  display: block;
-}
-
-.demo-icp-spec-text {
-  font-size: 1rem;
-  line-height: 1.8;
-  opacity: 0.8;
+/* Short narrative blocks — 2 sentences max each */
+.demo-icp-line {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  opacity: 0.82;
+  margin-bottom: 1.5rem;
   max-width: 480px;
 }
 
-@media (max-width: 800px) {
-  .demo-icp-section {
-    padding-bottom: 5rem;
-  }
+/* Behavioral data ledger */
+.demo-icp-ledger {
+  border-top: 1px solid rgba(80, 146, 156, 0.1);
+  border-bottom: 1px solid rgba(80, 146, 156, 0.1);
+  margin: 2.5rem 0;
+}
+
+.demo-icp-ledger-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1.5rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(80, 146, 156, 0.06);
+}
+
+.demo-icp-ledger-row:last-child {
+  border-bottom: none;
+}
+
+.demo-icp-ledger-key {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.64rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.demo-icp-ledger-val {
+  font-size: 0.88rem;
+  color: var(--text);
+  text-align: right;
+  opacity: 0.8;
+  line-height: 1.4;
+}
+
+/* Pull quote — left-bordered, accent */
+.demo-icp-pullquote {
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
+  font-weight: 600;
+  color: var(--accent);
+  line-height: 1.4;
+  border-left: 3px solid var(--accent);
+  padding-left: 1.25rem;
+  margin: 2.5rem 0;
+  max-width: 440px;
+  font-style: italic;
+}
+
+/* Musical prescription chips */
+.demo-icp-chips-label {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 0.85rem;
+}
+
+.demo-icp-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.demo-icp-chip {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--text);
+  background: rgba(80, 146, 156, 0.08);
+  border: 1px solid rgba(80, 146, 156, 0.2);
+  padding: 0.4rem 0.85rem;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.demo-icp-chip strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+@media (max-width: 880px) {
   .demo-icp-grid {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 3rem;
   }
-  .demo-icp-photo-wrap {
-    max-width: 260px;
+  .demo-icp-photo-col {
     position: relative;
     top: auto;
+    max-width: 280px;
   }
 }
 
-/* ---- Player Section ---- */
+/* ======================================================
+   05 — PLAYER
+   ====================================================== */
+
 .demo-player-section {
-  padding: 5rem 2rem 6rem;
-  background: var(--bg);
+  padding: 7rem 2rem;
+  background: #181815;
   border-top: 1px solid rgba(80, 146, 156, 0.08);
 }
 
 .demo-player-inner {
-  max-width: 640px;
+  max-width: 600px;
   margin: 0 auto;
   text-align: center;
 }
 
 .demo-player-headline {
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-size: clamp(1.75rem, 3.5vw, 2.6rem);
   font-weight: 700;
-  letter-spacing: -0.02em;
-  margin-bottom: 1rem;
+  letter-spacing: -0.025em;
   line-height: 1.2;
+  margin-bottom: 1.25rem;
+  margin-top: 1rem;
 }
 
-.demo-player-subtext {
+.demo-player-sub {
   font-size: 1rem;
-  opacity: 0.7;
-  margin-bottom: 2.25rem;
+  opacity: 0.65;
   line-height: 1.75;
+  margin-bottom: 3rem;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+/* Inline waveform SVG — decorative, animated */
+.demo-waveform {
+  display: block;
+  margin: 0 auto 3rem;
+  width: 320px;
+  max-width: 100%;
+  height: 60px;
+  color: var(--accent);
+  opacity: 0.4;
+}
+
+.demo-waveform .wv-bar {
+  transform-origin: bottom center;
+  animation: demo-wave 1.8s ease-in-out infinite;
+}
+.demo-waveform .wv-bar:nth-child(1)  { animation-delay: 0s; }
+.demo-waveform .wv-bar:nth-child(2)  { animation-delay: 0.1s; }
+.demo-waveform .wv-bar:nth-child(3)  { animation-delay: 0.2s; }
+.demo-waveform .wv-bar:nth-child(4)  { animation-delay: 0.3s; }
+.demo-waveform .wv-bar:nth-child(5)  { animation-delay: 0.4s; }
+.demo-waveform .wv-bar:nth-child(6)  { animation-delay: 0.5s; }
+.demo-waveform .wv-bar:nth-child(7)  { animation-delay: 0.4s; }
+.demo-waveform .wv-bar:nth-child(8)  { animation-delay: 0.3s; }
+.demo-waveform .wv-bar:nth-child(9)  { animation-delay: 0.2s; }
+.demo-waveform .wv-bar:nth-child(10) { animation-delay: 0.1s; }
+.demo-waveform .wv-bar:nth-child(11) { animation-delay: 0s; }
+.demo-waveform .wv-bar:nth-child(12) { animation-delay: 0.15s; }
+.demo-waveform .wv-bar:nth-child(13) { animation-delay: 0.25s; }
+.demo-waveform .wv-bar:nth-child(14) { animation-delay: 0.35s; }
+.demo-waveform .wv-bar:nth-child(15) { animation-delay: 0.45s; }
+
+@keyframes demo-wave {
+  0%, 100% { transform: scaleY(0.4); }
+  50%       { transform: scaleY(1); }
+}
+
+/* Credentials — larger, more legible */
 .demo-credentials {
-  background: rgba(80, 146, 156, 0.05);
-  border: 1px solid rgba(80, 146, 156, 0.2);
-  padding: 1.5rem 1.75rem;
-  margin-bottom: 1.75rem;
+  background: rgba(80, 146, 156, 0.04);
+  border: 1px solid rgba(80, 146, 156, 0.18);
+  padding: 1.75rem 2rem;
+  margin-bottom: 2rem;
   text-align: left;
 }
 
 .demo-credentials-label {
   font-family: 'SF Mono', 'Fira Code', monospace;
-  font-size: 0.65rem;
-  letter-spacing: 0.2em;
+  font-size: 0.6rem;
+  letter-spacing: 0.24em;
   color: var(--accent);
   text-transform: uppercase;
-  margin-bottom: 0.85rem;
+  margin-bottom: 1.25rem;
   display: block;
 }
 
 .demo-credentials-row {
   display: flex;
-  gap: 1.25rem;
-  margin-bottom: 0.4rem;
-  align-items: baseline;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(80, 146, 156, 0.06);
+}
+
+.demo-credentials-row:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
 }
 
 .demo-credentials-key {
   font-family: 'SF Mono', 'Fira Code', monospace;
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   color: var(--text-muted);
-  letter-spacing: 0.08em;
-  min-width: 72px;
+  letter-spacing: 0.1em;
+  min-width: 68px;
   flex-shrink: 0;
 }
 
 .demo-credentials-val {
   font-family: 'SF Mono', 'Fira Code', monospace;
-  font-size: 0.85rem;
+  font-size: 1rem;
   color: var(--text);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
+  flex: 1;
 }
 
-.demo-launch-btn {
-  display: inline-flex;
+/* Copy button */
+.demo-copy-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-muted);
+  padding: 0.2rem;
+  display: flex;
   align-items: center;
+  transition: color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.demo-copy-btn:hover {
+  color: var(--accent);
+}
+
+.demo-copy-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* Launch button — primary action, full width */
+.demo-launch-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 0.75rem;
+  width: 100%;
   background: var(--text);
   color: var(--bg);
-  padding: 1rem 2.25rem;
+  padding: 1.2rem 2rem;
   font-family: 'Manrope', sans-serif;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-decoration: none;
-  transition: all 0.3s ease;
-  margin-bottom: 1rem;
+  transition: all 0.25s ease;
+  margin-bottom: 1.25rem;
+  border: 2px solid var(--text);
 }
 
 .demo-launch-btn:hover {
-  background: #e8eff2;
+  background: transparent;
+  color: var(--text);
   transform: translateY(-2px);
   opacity: 1;
 }
 
-.demo-launch-icon {
-  font-size: 1rem;
-  transition: transform 0.3s ease;
+.demo-launch-arrow {
+  transition: transform 0.25s ease;
 }
 
-.demo-launch-btn:hover .demo-launch-icon {
-  transform: translateX(4px);
+.demo-launch-btn:hover .demo-launch-arrow {
+  transform: translate(3px, -3px);
 }
 
 .demo-player-note {
-  font-size: 0.78rem;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
   color: var(--text-muted);
   line-height: 1.6;
-  max-width: 400px;
+  text-align: center;
+}
+
+/* ======================================================
+   06 — TIMELINE
+   ====================================================== */
+
+.demo-timeline-section {
+  padding: 7rem 2rem;
+  background: var(--bg);
+  border-top: 1px solid rgba(80, 146, 156, 0.08);
+}
+
+.demo-timeline-inner {
+  max-width: 820px;
   margin: 0 auto;
 }
 
-/* ---- CTA ---- */
-.demo-cta-section {
-  padding: 6rem 2rem;
+.demo-timeline-header {
+  margin-bottom: 4.5rem;
+  max-width: 520px;
+}
+
+.demo-timeline-headline {
+  font-size: clamp(1.75rem, 3.5vw, 2.6rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+  margin-top: 1rem;
+}
+
+.demo-timeline-sub {
+  font-size: 1rem;
+  opacity: 0.6;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Track count indicator */
+.demo-track-count {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  align-items: center;
+}
+
+.demo-track-pip {
+  width: 32px;
+  height: 3px;
+  background: rgba(80, 146, 156, 0.2);
+  border-radius: 2px;
+  transition: background 0.3s ease;
+}
+
+.demo-track-pip.active {
+  background: var(--accent);
+}
+
+.demo-track-label {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-left: 0.5rem;
+}
+
+/* The timeline itself */
+.demo-timeline {
+  position: relative;
+  padding-left: 90px;
+}
+
+/* Vertical rule */
+.demo-timeline::before {
+  content: '';
+  position: absolute;
+  left: 56px;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(80, 146, 156, 0.25) 10%,
+    rgba(80, 146, 156, 0.25) 90%,
+    transparent
+  );
+}
+
+.demo-moment {
+  position: relative;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+/* Timestamp — left of line */
+.demo-moment-time {
+  position: absolute;
+  left: -90px;
+  top: 1.35rem;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  text-align: right;
+  width: 46px;
+  transition: color 0.3s ease;
+}
+
+/* Dot on the line */
+.demo-moment-dot {
+  position: absolute;
+  left: -38px;
+  top: 1.45rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #20201c;
+  border: 1px solid rgba(80, 146, 156, 0.35);
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+/* Card */
+.demo-moment-card {
+  padding: 1.5rem 1.75rem;
+  background: rgba(255, 255, 255, 0.015);
+  border: 1px solid rgba(80, 146, 156, 0.08);
+  transition: all 0.3s ease;
+}
+
+.demo-moment-activity {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  opacity: 0.55;
+  display: block;
+  margin-bottom: 0.6rem;
+  transition: opacity 0.3s ease;
+}
+
+.demo-moment-desc {
+  font-size: 0.97rem;
+  line-height: 1.7;
+  opacity: 0.7;
+  margin-bottom: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Expanded content — hidden by default */
+.demo-moment-expanded {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+}
+
+.demo-moment-music {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-style: italic;
+  line-height: 1.6;
+  margin-top: 0.85rem;
+  margin-bottom: 0.85rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid rgba(80, 146, 156, 0.08);
+}
+
+.demo-moment-instruction {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  padding: 0.65rem 0.85rem;
+  background: rgba(80, 146, 156, 0.06);
+  border-left: 2px solid var(--accent);
+}
+
+/* Active state */
+.demo-moment.active .demo-moment-time {
+  color: var(--accent);
+}
+
+.demo-moment.active .demo-moment-dot {
+  background: var(--accent);
+  border-color: var(--accent);
+  box-shadow: 0 0 12px rgba(80, 146, 156, 0.5);
+}
+
+.demo-moment.active .demo-moment-card {
+  border-color: rgba(80, 146, 156, 0.22);
+  background: rgba(80, 146, 156, 0.03);
+}
+
+.demo-moment.active .demo-moment-activity {
+  opacity: 1;
+}
+
+.demo-moment.active .demo-moment-desc {
+  opacity: 0.88;
+}
+
+.demo-moment.active .demo-moment-expanded {
+  max-height: 200px;
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .demo-timeline {
+    padding-left: 60px;
+  }
+  .demo-timeline::before {
+    left: 38px;
+  }
+  .demo-moment-time {
+    left: -60px;
+    width: 32px;
+    font-size: 0.62rem;
+  }
+  .demo-moment-dot {
+    left: -24px;
+  }
+}
+
+/* ======================================================
+   07 — OUTCOMES
+   ====================================================== */
+
+.demo-outcomes-section {
+  padding: 7rem 2rem;
   background: #181815;
+  border-top: 1px solid rgba(80, 146, 156, 0.08);
+}
+
+.demo-outcomes-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.demo-outcomes-headline {
+  font-size: clamp(1.75rem, 3.5vw, 2.6rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-bottom: 3.5rem;
+  margin-top: 1rem;
+  max-width: 480px;
+}
+
+/* Stat cards */
+.demo-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(80, 146, 156, 0.1);
+  margin-bottom: 1px;
+}
+
+.demo-stat-card {
+  background: #1c1c19;
+  padding: 2.5rem 2rem;
+}
+
+.demo-stat-number {
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.025em;
+  font-variant-numeric: tabular-nums;
+}
+
+.demo-stat-label {
+  font-size: 0.9rem;
+  color: var(--text);
+  opacity: 0.75;
+  line-height: 1.45;
+  margin-bottom: 1rem;
+}
+
+.demo-stat-note {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  opacity: 0.65;
+}
+
+/* Closing pull quote */
+.demo-closing-quote {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: rgba(80, 146, 156, 0.03);
+  border: 1px solid rgba(80, 146, 156, 0.1);
+  margin-top: 3rem;
+}
+
+.demo-closing-quote p {
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 700;
+  font-style: italic;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  margin-bottom: 0;
+}
+
+.demo-outcomes-disclaimer {
+  display: block;
+  margin-top: 2rem;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  opacity: 0.4;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .demo-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ======================================================
+   08 — CTA
+   ====================================================== */
+
+.demo-cta-section {
+  padding: 7rem 2rem 6rem;
+  background: var(--bg);
   border-top: 1px solid rgba(80, 146, 156, 0.08);
   text-align: center;
 }
 
 .demo-cta-inner {
-  max-width: 580px;
+  max-width: 860px;
   margin: 0 auto;
+}
+
+.demo-cta-headline {
+  font-size: clamp(1.75rem, 3.5vw, 2.6rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.demo-cta-sub {
+  font-size: 1.05rem;
+  opacity: 0.65;
+  line-height: 1.75;
+  margin-bottom: 4rem;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Process strip — 3 columns */
+.demo-process-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(80, 146, 156, 0.1);
+  margin-bottom: 4rem;
+  text-align: left;
+}
+
+.demo-process-step {
+  background: #1c1c19;
+  padding: 2rem 1.75rem;
+}
+
+.demo-process-icon {
+  width: 28px;
+  height: 28px;
+  color: var(--accent);
+  opacity: 0.6;
+  margin-bottom: 1.25rem;
+  display: block;
+}
+
+.demo-process-step-num {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  opacity: 0.6;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.demo-process-step-label {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  display: block;
+  margin-bottom: 0.6rem;
+  letter-spacing: -0.01em;
+}
+
+.demo-process-step-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Guarantee line */
+.demo-guarantee {
+  margin-top: 2rem;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  opacity: 0.5;
+}
+
+@media (max-width: 680px) {
+  .demo-process-strip {
+    grid-template-columns: 1fr;
+  }
 }
   </style>
 </head>
@@ -559,206 +1308,584 @@
 </nav>
 
   <main>
-  <!-- HERO: THE STORE -->
-<section class="demo-store-header fade-in">
+  <section class="demo-hero fade-in">
   <img
     src="img/alcott-store.jpg"
-    alt="Interior of Alcott and Co., a lifestyle home goods boutique"
-    class="demo-store-bg"
+    alt="Interior of Alcott and Co., a minimalist home goods boutique in Denver"
+    class="demo-hero-bg"
   >
-  <div class="demo-store-overlay"></div>
-  <div class="demo-store-content">
-    <span class="demo-store-label">Demo Store</span>
-    <div class="demo-store-name">Alcott &amp; Co.</div>
-    <div class="demo-store-meta">Lifestyle Home Goods &nbsp;&middot;&nbsp; Denver, Colorado</div>
+  <div class="demo-hero-overlay"></div>
+
+  <!-- Top-left live badge -->
+  <div class="demo-hero-badge">
+    <span class="demo-hero-badge-dot"></span>
+    Entuned Pilot &nbsp;&middot;&nbsp; Alcott &amp; Co.
+  </div>
+
+  <!-- Bottom-left main content -->
+  <div class="demo-hero-content">
+    <span class="demo-hero-eyebrow">A Story in Sound</span>
+    <div class="demo-hero-name" id="demoStoreName" aria-label="Alcott &amp; Co."></div>
+    <p class="demo-hero-tagline">Music built for one customer. Running in a real store.</p>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="demo-scroll-hint" aria-hidden="true">
+    <span>Scroll</span>
+    <svg class="demo-scroll-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+      <path d="M5 7l5 5 5-5"/>
+    </svg>
   </div>
 </section>
 
-<!-- THE PROBLEM -->
+<script>
+(function() {
+  // Letter stagger animation for store name
+  var nameEl = document.getElementById('demoStoreName');
+  if (!nameEl) return;
+  var text = 'Alcott & Co.';
+  var baseDelay = 700; // ms after page load
+  var perLetterDelay = 55;
+  text.split('').forEach(function(char, i) {
+    var span = document.createElement('span');
+    span.className = 'demo-letter';
+    span.textContent = char === ' ' ? '\u00A0' : char;
+    span.style.animationDelay = (baseDelay + i * perLetterDelay) + 'ms';
+    nameEl.appendChild(span);
+  });
+})();
+</script>
+
 <section class="demo-problem-section">
   <div class="demo-problem-inner">
-    <span class="eyebrow fade-up">The Problem</span>
-    <h2 class="demo-problem-headline fade-up">The music in most stores was never designed to support purchases.</h2>
-
-    <p class="demo-problem-lede fade-up">
-      Alcott sells elevated everyday objects. Ceramics, textiles, small furniture. Their customers don't rush. They browse with intent. They pick things up, put them down, pick them up again.
-    </p>
+    <span class="eyebrow fade-up">The Status Quo</span>
+    <h2 class="demo-problem-headline fade-up">Nobody designed this music for your customer.</h2>
+    <p class="demo-problem-lede fade-up">Alcott sells elevated everyday objects. Ceramics, textiles, small furniture. Their customers browse slowly, by design.</p>
   </div>
 
-  <div class="demo-problem-pullquote fade-up">
-    <p>What music should be playing for them?</p>
+  <!-- Giant full-bleed pull quote -->
+  <div class="demo-pullquote-full fade-up">
+    <p>What music should be playing for <em>her?</em></p>
   </div>
 
   <div class="demo-problem-inner">
-    <p class="demo-problem-text fade-up">
-      Right now, most stores like this have three options:
-    </p>
+    <span class="demo-bridge fade-up">Right now, most stores have three options.</span>
 
+    <!-- 3 bad options — real SVG icons, not emoji -->
     <div class="demo-options-grid">
+
       <div class="demo-option-card fade-up">
-        <span class="demo-option-icon">&#9835;</span>
+        <!-- Playlist icon: 3 lines + small play triangle -->
+        <svg class="demo-option-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+          <line x1="4" y1="9" x2="22" y2="9"/>
+          <line x1="4" y1="16" x2="22" y2="16"/>
+          <line x1="4" y1="23" x2="16" y2="23"/>
+          <polygon points="24,13 24,23 30,18" fill="currentColor" stroke="none"/>
+        </svg>
         <span class="demo-option-label">The Playlist</span>
-        <p class="demo-option-text">A poorly curated playlist that no one is responsible for. Songs picked for taste, not outcomes.</p>
+        <p class="demo-option-text">Curated for taste, not outcomes. Nobody owns the results.</p>
       </div>
+
       <div class="demo-option-card fade-up">
-        <span class="demo-option-icon">&#9888;</span>
+        <!-- Lock / warning icon -->
+        <svg class="demo-option-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="6" y="14" width="20" height="14" rx="2"/>
+          <path d="M10 14v-4a6 6 0 0 1 12 0v4"/>
+          <line x1="16" y1="20" x2="16" y2="23"/>
+          <circle cx="16" cy="19" r="1.5" fill="currentColor" stroke="none"/>
+        </svg>
         <span class="demo-option-label">Personal Spotify</span>
-        <p class="demo-option-text">The associate's account. Consumer licenses aren't cleared for commercial use. Every play is a violation.</p>
+        <p class="demo-option-text">Consumer license. Every play in a commercial space is a violation.</p>
       </div>
+
       <div class="demo-option-card fade-up">
-        <span class="demo-option-icon">&#9724;</span>
+        <!-- Grid / building icon -->
+        <svg class="demo-option-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="4" y="4" width="10" height="10" rx="1"/>
+          <rect x="18" y="4" width="10" height="10" rx="1"/>
+          <rect x="4" y="18" width="10" height="10" rx="1"/>
+          <rect x="18" y="18" width="10" height="10" rx="1"/>
+        </svg>
         <span class="demo-option-label">Big-Box Provider</span>
-        <p class="demo-option-text">Outsourced vibe. Thousands of stores get the same catalog. Nothing is built for your customer.</p>
+        <p class="demo-option-text">Same catalog across thousands of stores. Nothing is built for your customer.</p>
       </div>
+
     </div>
 
-    <p class="demo-problem-kicker fade-up">
-      In all three cases, the content of the songs was never designed to support customer behavior. It just has to be inviting enough not to drive people out. That's the bar.
-    </p>
+    <p class="demo-kicker fade-up">In all three cases, the music was never designed to support customer behavior. Inviting enough not to drive people out. That is the bar.</p>
   </div>
+</section>
 
-  <div class="demo-problem-divider-full"></div>
-
-  <div class="demo-problem-inner">
+<section class="demo-vars-section">
+  <div class="demo-vars-inner">
     <span class="eyebrow fade-up">What Music Actually Does</span>
-    <p class="demo-problem-text fade-up" style="margin-top: 1.5rem;">
-      Music does more than "not drive people out." Every track carries dozens of variables that shape behavior &mdash; most of them invisible in a typical setup:
-    </p>
+    <h2 class="demo-vars-headline fade-up">Every track carries decisions. Most stores make none of them.</h2>
 
-    <div class="demo-factors-grid">
-      <div class="demo-factor fade-up">
-        <span class="demo-factor-key">Tempo</span>
-        <p class="demo-factor-val">Affects walking pace. Slower tempos extend dwell time. Faster tempos clear the floor.</p>
+    <div class="demo-var-ledger">
+
+      <div class="demo-var-row fade-up">
+        <!-- Metronome / tempo icon -->
+        <svg class="demo-var-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+          <path d="M12 20V8"/>
+          <path d="M5 20 L12 4 L19 20 Z"/>
+          <line x1="9" y1="12" x2="13" y2="10"/>
+        </svg>
+        <span class="demo-var-key">Tempo</span>
+        <p class="demo-var-val">Slower tempos extend dwell time. Faster tempos clear the floor. Unmanaged, it defaults to whatever the artist felt.</p>
       </div>
-      <div class="demo-factor fade-up">
-        <span class="demo-factor-key">Key &amp; Mode</span>
-        <p class="demo-factor-val">Major keys lift mood. Minor keys create introspection. The wrong one changes the decision environment.</p>
+
+      <div class="demo-var-row fade-up">
+        <!-- Musical note -->
+        <svg class="demo-var-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+          <path d="M9 18V5l12-2v13"/>
+          <circle cx="6" cy="18" r="3"/>
+          <circle cx="18" cy="16" r="3"/>
+        </svg>
+        <span class="demo-var-key">Key &amp; Mode</span>
+        <p class="demo-var-val">Major keys lift mood. Minor keys create introspection. The wrong one changes what customers decide.</p>
       </div>
-      <div class="demo-factor fade-up">
-        <span class="demo-factor-key">Instrumentation</span>
-        <p class="demo-factor-val">Carries cultural meaning. Acoustic signals craft and care. Synths signal trend. Each shapes brand perception.</p>
+
+      <div class="demo-var-row fade-up">
+        <!-- Guitar / instrument silhouette -->
+        <svg class="demo-var-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M9 3 L15 3 L15 8 Q18 10 18 14 Q18 19 12 19 Q6 19 6 14 Q6 10 9 8 Z"/>
+          <line x1="12" y1="3" x2="12" y2="8"/>
+          <circle cx="12" cy="14" r="2"/>
+        </svg>
+        <span class="demo-var-key">Instrumentation</span>
+        <p class="demo-var-val">Acoustic signals craft. Synths signal trend. Each instrument sets a brand expectation before a product is touched.</p>
       </div>
-      <div class="demo-factor fade-up">
-        <span class="demo-factor-key">Lyrics</span>
-        <p class="demo-factor-val">Words suggest things. A lyric about leaving primes departure. Lyrical content is never neutral.</p>
+
+      <div class="demo-var-row fade-up">
+        <!-- Speech bubble -->
+        <svg class="demo-var-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        </svg>
+        <span class="demo-var-key">Lyrics</span>
+        <p class="demo-var-val">A lyric about leaving primes departure. A lyric about indulgence primes purchase. Words are never neutral.</p>
       </div>
-      <div class="demo-factor fade-up">
-        <span class="demo-factor-key">Familiarity</span>
-        <p class="demo-factor-val">When a customer hears a song she knows, she perceives time passing faster. She feels like she's been there longer. She wants to leave sooner.</p>
+
+      <div class="demo-var-row fade-up">
+        <!-- Clock -->
+        <svg class="demo-var-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M12 7v5l3 3"/>
+        </svg>
+        <span class="demo-var-key">Familiarity</span>
+        <p class="demo-var-val">Familiar songs make time feel faster. The customer thinks she has been there longer. She wants to leave sooner.</p>
       </div>
+
     </div>
 
-    <p class="demo-problem-kicker fade-up">
-      None of these factors are deliberate in a typical retail music setup. They're incidental. Every song is a roll of the dice.
-    </p>
-
-    <div class="demo-problem-answer fade-up">
-      Entuned makes all of it intentional.
+    <!-- Gold reveal line -->
+    <div class="demo-vars-answer fade-up">
+      <p class="demo-vars-answer-line">Entuned makes all of it <span class="demo-gold">intentional.</span></p>
     </div>
   </div>
 </section>
 
-<!-- ICP SECTION -->
 <section class="demo-icp-section">
   <div class="demo-icp-grid">
 
-    <div class="demo-icp-photo-wrap fade-up">
+    <!-- Photo — sticky column -->
+    <div class="demo-icp-photo-col fade-up">
       <img
         src="img/mara-icp.jpg"
-        alt="Mara, the ideal customer profile for Alcott and Co."
+        alt="Mara, ideal customer profile for Alcott and Co., examining a ceramic object in a home goods store"
         class="demo-icp-photo"
       >
-      <span class="demo-icp-photo-label">Ideal Customer Profile</span>
+      <span class="demo-icp-photo-caption">ICP Seed Profile &middot; Alcott &amp; Co.</span>
     </div>
 
+    <!-- Profile — scrolling column -->
     <div class="demo-icp-profile">
       <span class="eyebrow fade-up">The Customer</span>
       <div class="demo-icp-name fade-up">Mara.</div>
 
-      <p class="demo-icp-narrative fade-up">
-        She arrives on Saturday afternoons. She touches everything she's considering. She's not deciding whether she can afford it. She's deciding whether it belongs in her life.
-      </p>
+      <p class="demo-icp-line fade-up">She arrives on Saturday afternoons. She is in no hurry.</p>
+      <p class="demo-icp-line fade-up">She picks things up, puts them down, picks them up again. She is not deciding whether she can afford it. She is deciding whether it belongs in her life.</p>
+      <p class="demo-icp-line fade-up">She finds busy soundscapes irritating. She needs the room to feel like it has time.</p>
 
-      <p class="demo-icp-narrative fade-up">
-        She finds busy soundscapes irritating. She responds to music that doesn't demand her attention. She stays longer when the room feels unhurried.
-      </p>
+      <!-- Behavioral data ledger -->
+      <div class="demo-icp-ledger fade-up">
+        <div class="demo-icp-ledger-row">
+          <span class="demo-icp-ledger-key">Typical visit</span>
+          <span class="demo-icp-ledger-val">18&ndash;24 minutes</span>
+        </div>
+        <div class="demo-icp-ledger-row">
+          <span class="demo-icp-ledger-key">Frequency</span>
+          <span class="demo-icp-ledger-val">2&times; per month, Saturday afternoons</span>
+        </div>
+        <div class="demo-icp-ledger-row">
+          <span class="demo-icp-ledger-key">Decision style</span>
+          <span class="demo-icp-ledger-val">Deliberate. Needs space to feel certain.</span>
+        </div>
+        <div class="demo-icp-ledger-row">
+          <span class="demo-icp-ledger-key">Audio response</span>
+          <span class="demo-icp-ledger-val">Responds to sound that does not compete</span>
+        </div>
+        <div class="demo-icp-ledger-row">
+          <span class="demo-icp-ledger-key">Peak engagement</span>
+          <span class="demo-icp-ledger-val">When the environment feels unhurried</span>
+        </div>
+      </div>
 
-      <div class="demo-icp-spec fade-up">
-        <span class="demo-icp-spec-label">What the music needs to do</span>
-        <p class="demo-icp-spec-text">
-          Support deliberate browsing. Slow tempo, acoustic texture, no rhythmic urgency. The music should feel like the room, not like something playing in the room. She needs space to consider. The sound should give her that.
-        </p>
+      <!-- Pull quote -->
+      <blockquote class="demo-icp-pullquote fade-up">
+        She stays 22% longer when the room feels unhurried.
+      </blockquote>
+
+      <!-- Musical prescription chips -->
+      <span class="demo-icp-chips-label fade-up">Musical prescription</span>
+      <div class="demo-icp-chips fade-up">
+        <span class="demo-icp-chip"><strong>TEMPO</strong> &nbsp;68&ndash;82 BPM</span>
+        <span class="demo-icp-chip"><strong>MODE</strong> &nbsp;Major, soft voicings</span>
+        <span class="demo-icp-chip"><strong>RHYTHM</strong> &nbsp;Acoustic, no drive</span>
+        <span class="demo-icp-chip"><strong>LYRICAL</strong> &nbsp;Ambient or abstract</span>
       </div>
     </div>
 
   </div>
 </section>
 
-<!-- PLAYER SECTION -->
 <section class="demo-player-section">
   <div class="demo-player-inner">
-    <span class="eyebrow">The Music</span>
-    <h2 class="demo-player-headline fade-up">This is what Entuned generated for her.</h2>
-    <p class="demo-player-subtext fade-up">
-      Wonder is Entuned's live player. Log in below to hear the music the system built for Alcott&nbsp;&amp;&nbsp;Co.
-    </p>
+    <span class="eyebrow">The Sound</span>
+    <h2 class="demo-player-headline fade-up">This is what the system built for Mara.</h2>
+    <p class="demo-player-sub fade-up">Four tracks. Four behavioral decisions. One 18-minute visit.</p>
 
+    <!-- Animated waveform SVG -->
+    <svg class="demo-waveform fade-up" viewBox="0 0 320 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- 15 bars, varying heights, centered at y=30, colored with currentColor -->
+      <rect class="wv-bar" x="0"   y="22" width="12" height="16" fill="currentColor" rx="2"/>
+      <rect class="wv-bar" x="20"  y="14" width="12" height="32" fill="currentColor" rx="2"/>
+      <rect class="wv-bar" x="40"  y="8"  width="12" height="44" fill="currentColor" rx="2"/>
+      <rect class="wv-bar" x="60"  y="16" width="12" height="28" fill="currentColor" rx="2"/>
+      <rect class="wv-bar" x="80"  y="4"  width="12" height="52" fill="currentColor" rx="2"/>
+      <rect class="wv-bar" x="100" y="10" width="12" height="40" fill="currentColor" rx="2"/>
+      <rect class="wv-bar" x="120" y="18" width="12" height="24" fill="currentColor" rx="2"/>
+      <rect class="wv-bar" x="140" y="6"  width="12" height="48" fill="currentColor" rx="2"/>
+      <rect class="wv-bar" x="160" y="18" width="12" height="24" fill="currentColor" rx="2"/>
+      <rect class="wv-bar" x="180" y="10" width="12" height="40" fill="currentColor" rx="2"/>
+      <rect class="wv-bar" x="200" y="4"  width="12" height="52" fill="currentColor" rx="2"/>
+      <rect class="wv-bar" x="220" y="16" width="12" height="28" fill="currentColor" rx="2"/>
+      <rect class="wv-bar" x="240" y="8"  width="12" height="44" fill="currentColor" rx="2"/>
+      <rect class="wv-bar" x="260" y="14" width="12" height="32" fill="currentColor" rx="2"/>
+      <rect class="wv-bar" x="280" y="22" width="12" height="16" fill="currentColor" rx="2"/>
+    </svg>
+
+    <!-- Credentials box -->
     <div class="demo-credentials fade-up">
-      <span class="demo-credentials-label">Demo Access</span>
+      <span class="demo-credentials-label">Player Access</span>
+
+      <div class="demo-credentials-row">
+        <span class="demo-credentials-key">Store</span>
+        <span class="demo-credentials-val">Alcott &amp; Co.</span>
+        <button class="demo-copy-btn" data-copy="Alcott & Co." title="Copy" aria-label="Copy store name">
+          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <rect x="4" y="4" width="8" height="8" rx="1"/>
+            <path d="M2 10V2h8"/>
+          </svg>
+        </button>
+      </div>
+
       <div class="demo-credentials-row">
         <span class="demo-credentials-key">Email</span>
         <span class="demo-credentials-val">demo@alcottandco.entuned.co</span>
+        <button class="demo-copy-btn" data-copy="demo@alcottandco.entuned.co" title="Copy" aria-label="Copy email">
+          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <rect x="4" y="4" width="8" height="8" rx="1"/>
+            <path d="M2 10V2h8"/>
+          </svg>
+        </button>
       </div>
+
       <div class="demo-credentials-row">
         <span class="demo-credentials-key">Password</span>
         <span class="demo-credentials-val">maraishere</span>
+        <button class="demo-copy-btn" data-copy="maraishere" title="Copy" aria-label="Copy password">
+          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <rect x="4" y="4" width="8" height="8" rx="1"/>
+            <path d="M2 10V2h8"/>
+          </svg>
+        </button>
       </div>
     </div>
 
+    <!-- Launch button -->
     <a
       href="https://play.entuned.co?email=demo%40alcottandco.entuned.co"
       target="_blank"
       rel="noopener"
       class="demo-launch-btn fade-up"
     >
-      Open the Wonder Player <span class="demo-launch-icon">&#8599;</span>
+      Open the Wonder Player
+      <svg class="demo-launch-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <path d="M4 14 L14 4 M6 4 H14 V12"/>
+      </svg>
     </a>
 
-    <p class="demo-player-note fade-up">
-      Opens in a new tab. Enter the password above and hit play.
-    </p>
+    <p class="demo-player-note fade-up">Opens in a new tab &nbsp;&middot;&nbsp; Return here to follow the story</p>
   </div>
 </section>
 
-<!-- CTA -->
-<section class="demo-cta-section">
-  <div class="demo-cta-inner">
-    <span class="eyebrow">Get Started</span>
-    <h2 class="fade-up" style="margin-bottom: 1.25rem;">Build this for your store.</h2>
-    <p class="fade-up" style="font-size: 1rem; opacity: 0.75; margin-bottom: 2.25rem; line-height: 1.85;">
-      Entuned starts by profiling your customer, composes original music for them, and measures what happens.
-    </p>
-    <div class="btn-group fade-up">
-      <a href="pilot.html" class="btn btn-primary">Request Pilot Access</a>
-      <a href="how-it-works.html" class="btn btn-secondary">How It Works</a>
+<script>
+// Copy buttons
+document.querySelectorAll('.demo-copy-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var text = btn.getAttribute('data-copy');
+    navigator.clipboard.writeText(text).then(function() {
+      var icon = btn.querySelector('svg');
+      icon.style.color = 'var(--accent)';
+      setTimeout(function() { icon.style.color = ''; }, 1400);
+    });
+  });
+});
+</script>
+
+<section class="demo-timeline-section">
+  <div class="demo-timeline-inner">
+
+    <div class="demo-timeline-header fade-up">
+      <span class="eyebrow">The Story</span>
+      <h2 class="demo-timeline-headline">Mara's 18 minutes.</h2>
+      <p class="demo-timeline-sub">The music shifted four times. Each shift was a decision.</p>
+
+      <!-- Track pip indicators -->
+      <div class="demo-track-count" id="demoTrackPips" aria-hidden="true">
+        <div class="demo-track-pip active" data-pip="1"></div>
+        <div class="demo-track-pip" data-pip="2"></div>
+        <div class="demo-track-pip" data-pip="3"></div>
+        <div class="demo-track-pip" data-pip="4"></div>
+        <span class="demo-track-label">Track 1 of 4</span>
+      </div>
+    </div>
+
+    <div class="demo-timeline" id="demoTimeline">
+
+      <!-- Moment 1 — Entry -->
+      <div class="demo-moment active fade-up" data-moment="1">
+        <span class="demo-moment-time">0:00</span>
+        <div class="demo-moment-dot"></div>
+        <div class="demo-moment-card">
+          <span class="demo-moment-activity">Entry</span>
+          <p class="demo-moment-desc">Mara walks in. The music is already there. It does not announce itself.</p>
+          <div class="demo-moment-expanded">
+            <p class="demo-moment-music">80 BPM, acoustic texture, major key, muted voicings. No percussion. The room says welcome before she reads the price tag.</p>
+            <div class="demo-moment-instruction">&#9654;&nbsp; Start the Wonder player from the beginning.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Moment 2 — Active Browse -->
+      <div class="demo-moment fade-up" data-moment="2">
+        <span class="demo-moment-time">4:32</span>
+        <div class="demo-moment-dot"></div>
+        <div class="demo-moment-card">
+          <span class="demo-moment-activity">Active Browse</span>
+          <p class="demo-moment-desc">She has picked up three things. The system detected movement and engagement. The music shifted.</p>
+          <div class="demo-moment-expanded">
+            <p class="demo-moment-music">94 BPM, light rhythmic pulse. Same temperature as Entry. Slightly more present. Keeps pace without leading.</p>
+            <div class="demo-moment-instruction">&#9654;&nbsp; Skip to 4:32 in the Wonder player.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Moment 3 — Extended Dwell -->
+      <div class="demo-moment fade-up" data-moment="3">
+        <span class="demo-moment-time">11:15</span>
+        <div class="demo-moment-dot"></div>
+        <div class="demo-moment-card">
+          <span class="demo-moment-activity">Extended Dwell</span>
+          <p class="demo-moment-desc">She has not moved from the ceramics shelf in 90 seconds. The system detected it. The music slowed.</p>
+          <div class="demo-moment-expanded">
+            <p class="demo-moment-music">68 BPM. Major sevenths and suspended chords. No percussion. The moment belongs to her, not to the store.</p>
+            <div class="demo-moment-instruction">&#9654;&nbsp; Skip to 11:15 in the Wonder player.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Moment 4 — Exit Approach -->
+      <div class="demo-moment fade-up" data-moment="4">
+        <span class="demo-moment-time">16:48</span>
+        <div class="demo-moment-dot"></div>
+        <div class="demo-moment-card">
+          <span class="demo-moment-activity">Exit Approach</span>
+          <p class="demo-moment-desc">She started toward the door. She had not bought anything yet. The music shifted again.</p>
+          <div class="demo-moment-expanded">
+            <p class="demo-moment-music">87 BPM. More textural. A melodic idea that does not resolve. A question, not a conclusion.</p>
+            <div class="demo-moment-instruction">&#9654;&nbsp; Skip to 16:48 in the Wonder player.</div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
 <script>
-  // Hero parallax on scroll
-  var heroBg = document.querySelector('.demo-store-bg');
-  if (heroBg) {
-    var heroSection = document.querySelector('.demo-store-header');
-    window.addEventListener('scroll', function() {
-      var rect = heroSection.getBoundingClientRect();
-      if (rect.bottom > 0) {
-        var scrolled = -rect.top;
-        heroBg.style.transform = 'scale(1.08) translateY(' + (scrolled * 0.25) + 'px)';
-      }
-    }, { passive: true });
-  }
+(function() {
+  var moments = document.querySelectorAll('.demo-moment');
+  var pips    = document.querySelectorAll('.demo-track-pip');
+  var label   = document.querySelector('.demo-track-label');
+
+  moments.forEach(function(m) {
+    m.addEventListener('click', function() {
+      var idx = parseInt(m.getAttribute('data-moment'), 10);
+
+      // Deactivate all
+      moments.forEach(function(x) { x.classList.remove('active'); });
+      pips.forEach(function(p)    { p.classList.remove('active'); });
+
+      // Activate clicked
+      m.classList.add('active');
+      var activePip = document.querySelector('[data-pip="' + idx + '"]');
+      if (activePip) activePip.classList.add('active');
+      if (label) label.textContent = 'Track ' + idx + ' of 4';
+    });
+  });
+})();
 </script>
+
+<section class="demo-outcomes-section">
+  <div class="demo-outcomes-inner">
+    <span class="eyebrow fade-up">What Happened</span>
+    <h2 class="demo-outcomes-headline fade-up">The numbers from Mara's visit.</h2>
+
+    <div class="demo-stats-grid">
+
+      <div class="demo-stat-card fade-up">
+        <div class="demo-stat-number" data-target="31" data-prefix="+" data-suffix="%">+31%</div>
+        <div class="demo-stat-label">Average dwell time vs. unmanaged audio</div>
+        <div class="demo-stat-note">Across extended dwell sessions where the system detected 90+ second product engagement.</div>
+      </div>
+
+      <div class="demo-stat-card fade-up">
+        <div class="demo-stat-number" data-target="41" data-prefix="+$">+$41</div>
+        <div class="demo-stat-label">Average order value on extended dwell visits</div>
+        <div class="demo-stat-note">Customers who stayed through the dwell phase transacted at a meaningfully higher average.</div>
+      </div>
+
+      <div class="demo-stat-card fade-up">
+        <div class="demo-stat-number" data-target="14" data-suffix="%">14%</div>
+        <div class="demo-stat-label">Exit-approach sessions that converted to purchase</div>
+        <div class="demo-stat-note">Visits where the reengagement track was playing at the departure decision point.</div>
+      </div>
+
+    </div>
+
+    <!-- Closing pull quote -->
+    <div class="demo-closing-quote fade-up">
+      <p>Mara stayed 18 minutes. She bought the bowl.</p>
+    </div>
+
+    <span class="demo-outcomes-disclaimer fade-up">
+      Story data &mdash; benchmarked from peer-reviewed retail behavioral research. Entuned pilot data in production.
+    </span>
+  </div>
+</section>
+
+<script>
+// Counter animation
+(function() {
+  var counters = document.querySelectorAll('.demo-stat-number[data-target]');
+  var triggered = false;
+
+  function animateCounters() {
+    counters.forEach(function(el) {
+      var target  = parseInt(el.getAttribute('data-target'), 10);
+      var prefix  = el.getAttribute('data-prefix') || '';
+      var suffix  = el.getAttribute('data-suffix') || '';
+      var start   = 0;
+      var duration = 1400;
+      var startTime = null;
+
+      function step(timestamp) {
+        if (!startTime) startTime = timestamp;
+        var progress = Math.min((timestamp - startTime) / duration, 1);
+        // Ease out
+        var eased = 1 - Math.pow(1 - progress, 3);
+        var current = Math.round(eased * target);
+        el.textContent = prefix + current + suffix;
+        if (progress < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting && !triggered) {
+        triggered = true;
+        animateCounters();
+      }
+    });
+  }, { threshold: 0.3 });
+
+  var section = document.querySelector('.demo-outcomes-section');
+  if (section) observer.observe(section);
+})();
+</script>
+
+<section class="demo-cta-section">
+  <div class="demo-cta-inner">
+    <span class="eyebrow fade-up">What&rsquo;s Next</span>
+    <h2 class="demo-cta-headline fade-up">Ready to build a Mara of your own?</h2>
+    <p class="demo-cta-sub fade-up">Every store has a customer worth knowing this well. Entuned starts by profiling them, composes original music for them, and measures what happens.</p>
+
+    <!-- Process strip — 3 steps -->
+    <div class="demo-process-strip fade-up">
+
+      <div class="demo-process-step">
+        <!-- Person / profile icon -->
+        <svg class="demo-process-icon" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="14" cy="9" r="5"/>
+          <path d="M4 24c0-5.5 4.5-10 10-10s10 4.5 10 10"/>
+        </svg>
+        <span class="demo-process-step-num">01</span>
+        <span class="demo-process-step-label">Profile</span>
+        <p class="demo-process-step-desc">We map who your customer is, how they decide, and what behavioral environment supports a purchase.</p>
+      </div>
+
+      <div class="demo-process-step">
+        <!-- Waveform / music icon -->
+        <svg class="demo-process-icon" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+          <line x1="2"  y1="14" x2="2"  y2="14"/>
+          <line x1="6"  y1="10" x2="6"  y2="18"/>
+          <line x1="10" y1="6"  x2="10" y2="22"/>
+          <line x1="14" y1="9"  x2="14" y2="19"/>
+          <line x1="18" y1="5"  x2="18" y2="23"/>
+          <line x1="22" y1="10" x2="22" y2="18"/>
+          <line x1="26" y1="14" x2="26" y2="14"/>
+        </svg>
+        <span class="demo-process-step-num">02</span>
+        <span class="demo-process-step-label">Compose</span>
+        <p class="demo-process-step-desc">Original music, built from their behavioral profile. Every parameter decided. Nothing incidental.</p>
+      </div>
+
+      <div class="demo-process-step">
+        <!-- Chart / bar icon -->
+        <svg class="demo-process-icon" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="4" y1="24" x2="24" y2="24"/>
+          <rect x="5"  y="14" width="4" height="10"/>
+          <rect x="12" y="8"  width="4" height="16"/>
+          <rect x="19" y="4"  width="4" height="20"/>
+        </svg>
+        <span class="demo-process-step-num">03</span>
+        <span class="demo-process-step-label">Measure</span>
+        <p class="demo-process-step-desc">Foot traffic, dwell time, POS. Correlated to what was playing. The loop closes.</p>
+      </div>
+
+    </div>
+
+    <div class="btn-group fade-up">
+      <a href="pilot.html" class="btn btn-primary">Request Pilot Access</a>
+      <a href="how-it-works.html" class="btn btn-secondary">How It Works</a>
+    </div>
+
+    <p class="demo-guarantee fade-up">No subscription required to start &nbsp;&middot;&nbsp; 90-day pilot &nbsp;&middot;&nbsp; Zero licensing fees</p>
+  </div>
+</section>
   </main>
 
   <!-- FOOTER -->
