@@ -10,14 +10,14 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="canonical" href="https://entuned.co/demo.html">
   <meta name="robots" content="noindex, nofollow">
-  <title>Live Demo — Alcott & Co. | Entuned</title>
-  <meta name="description" content="See how Entuned builds music for a real retail customer. A live demo of the Wonder player with a fictional pilot store and behavioral seed profile.">
+  <title>Live Demo | Entuned</title>
+  <meta name="description" content="Hear what Entuned sounds like. A live demo of the Wonder player with a fictional pilot store.">
   <meta name="theme-color" content="#20201c">
 
   <!-- Open Graph -->
   <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="rss.xml">
-  <meta property="og:title" content="Live Demo — Alcott &amp; Co. | Entuned">
-  <meta property="og:description" content="See how Entuned builds music for a real retail customer. A live demo of the Wonder player with a fictional pilot store and behavioral seed profile.">
+  <meta property="og:title" content="Live Demo | Entuned">
+  <meta property="og:description" content="Hear what Entuned sounds like. A live demo of the Wonder player with a fictional pilot store.">
   <meta property="og:url" content="https://entuned.co/demo.html">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://entuned.co/img/og-default.png">
@@ -26,8 +26,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Live Demo — Alcott &amp; Co. | Entuned">
-  <meta name="twitter:description" content="See how Entuned builds music for a real retail customer. A live demo of the Wonder player with a fictional pilot store and behavioral seed profile.">
+  <meta name="twitter:title" content="Live Demo | Entuned">
+  <meta name="twitter:description" content="Hear what Entuned sounds like. A live demo of the Wonder player with a fictional pilot store.">
   <meta name="twitter:image" content="https://entuned.co/img/og-default.png">
 
   <!-- Structured Data -->
@@ -70,7 +70,7 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Live Demo \u2014 Alcott & Co. | Entuned"
+      "name": "Live Demo | Entuned"
     }
   ]
 }
@@ -83,13 +83,12 @@
   <style>
 /* ============================================================
    DEMO PAGE — Page-Specific Styles
-   Prefix all class names with .demo- to avoid conflicts
    ============================================================ */
 
 /* ---- Hero / Store Header ---- */
 .demo-store-header {
   position: relative;
-  min-height: 70vh;
+  min-height: 65vh;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
@@ -153,28 +152,27 @@
   letter-spacing: 0.04em;
 }
 
-/* ---- Mara Section ---- */
-.demo-mara-section {
-  padding: 8rem 2rem 12rem;
+/* ---- ICP Section ---- */
+.demo-icp-section {
+  padding: 6rem 2rem 8rem;
   background: var(--bg);
 }
 
-.demo-mara-grid {
+.demo-icp-grid {
   display: grid;
-  grid-template-columns: 380px 1fr;
-  gap: 5rem;
+  grid-template-columns: 320px 1fr;
+  gap: 4rem;
   align-items: start;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-/* Sticky photo — pins center-viewport on desktop */
-.demo-mara-photo-wrap {
+.demo-icp-photo-wrap {
   position: sticky;
-  top: 15vh;
+  top: 12vh;
 }
 
-.demo-mara-photo {
+.demo-icp-photo {
   width: 100%;
   aspect-ratio: 3/4;
   object-fit: cover;
@@ -182,7 +180,7 @@
   filter: saturate(0.85);
 }
 
-.demo-mara-photo-label {
+.demo-icp-photo-label {
   font-family: 'SF Mono', 'Fira Code', monospace;
   font-size: 0.65rem;
   letter-spacing: 0.18em;
@@ -193,106 +191,59 @@
   text-align: center;
 }
 
-.demo-mara-profile {
+.demo-icp-profile {
   padding-top: 0.5rem;
 }
 
-.demo-mara-name {
+.demo-icp-name {
   font-family: 'Manrope', sans-serif;
-  font-size: clamp(2.8rem, 5vw, 4rem);
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
   font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--text);
   margin-bottom: 0.5rem;
 }
 
-.demo-mara-narrative {
+.demo-icp-narrative {
   font-size: 1.1rem;
   line-height: 1.9;
   opacity: 0.85;
   margin-bottom: 2.5rem;
-  max-width: 560px;
+  max-width: 540px;
 }
 
-.demo-mara-data {
+.demo-icp-spec {
   border-top: 1px solid rgba(80, 146, 156, 0.12);
-  border-bottom: 1px solid rgba(80, 146, 156, 0.12);
-  padding: 2rem 0;
-  margin-bottom: 2.5rem;
-}
-
-.demo-mara-data-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 0.6rem 0;
-  border-bottom: 1px solid rgba(80, 146, 156, 0.06);
-  gap: 2rem;
-  opacity: 0;
-  transform: translateX(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.demo-mara-data-row.revealed {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.demo-mara-data-row:last-child {
-  border-bottom: none;
-}
-
-.demo-mara-data-key {
-  font-family: 'SF Mono', 'Fira Code', monospace;
-  font-size: 0.68rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  flex-shrink: 0;
-}
-
-.demo-mara-data-val {
-  font-size: 0.95rem;
-  color: var(--text);
-  text-align: right;
-  opacity: 0.85;
-}
-
-.demo-mara-pullquote {
-  font-family: 'Manrope', sans-serif;
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: var(--accent);
-  line-height: 1.4;
-  border-left: 3px solid var(--accent);
-  padding-left: 1.5rem;
-  max-width: 520px;
-  margin-bottom: 3rem;
-}
-
-.demo-mara-insight {
   padding-top: 2rem;
-  border-top: 1px solid rgba(80, 146, 156, 0.08);
 }
 
-.demo-mara-insight-text {
-  font-size: 0.95rem;
+.demo-icp-spec-label {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.demo-icp-spec-text {
+  font-size: 1rem;
   line-height: 1.85;
-  opacity: 0.7;
+  opacity: 0.8;
   max-width: 520px;
-  margin-top: 0.75rem;
 }
 
-@media (max-width: 900px) {
-  .demo-mara-section {
-    padding-bottom: 6rem;
+@media (max-width: 850px) {
+  .demo-icp-section {
+    padding-bottom: 5rem;
   }
-  .demo-mara-grid {
+  .demo-icp-grid {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
   }
-  .demo-mara-photo-wrap {
-    max-width: 340px;
+  .demo-icp-photo-wrap {
+    max-width: 280px;
     position: relative;
     top: auto;
   }
@@ -300,38 +251,37 @@
 
 /* ---- Player Section ---- */
 .demo-player-section {
-  padding: 8rem 2rem;
+  padding: 6rem 2rem 8rem;
   background: #181815;
   border-top: 1px solid rgba(80, 146, 156, 0.08);
-  border-bottom: 1px solid rgba(80, 146, 156, 0.08);
 }
 
 .demo-player-inner {
-  max-width: 720px;
+  max-width: 680px;
   margin: 0 auto;
   text-align: center;
 }
 
 .demo-player-headline {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
   font-weight: 700;
   letter-spacing: -0.02em;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   line-height: 1.2;
 }
 
 .demo-player-subtext {
   font-size: 1.05rem;
   opacity: 0.7;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
   line-height: 1.75;
 }
 
 .demo-credentials {
   background: rgba(80, 146, 156, 0.05);
   border: 1px solid rgba(80, 146, 156, 0.2);
-  padding: 2rem 2.5rem;
-  margin-bottom: 2.5rem;
+  padding: 1.75rem 2rem;
+  margin-bottom: 2rem;
   text-align: left;
 }
 
@@ -341,14 +291,14 @@
   letter-spacing: 0.2em;
   color: var(--accent);
   text-transform: uppercase;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   display: block;
 }
 
 .demo-credentials-row {
   display: flex;
   gap: 1.5rem;
-  margin-bottom: 0.65rem;
+  margin-bottom: 0.5rem;
   align-items: baseline;
 }
 
@@ -382,7 +332,7 @@
   letter-spacing: 0.06em;
   text-decoration: none;
   transition: all 0.3s ease;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .demo-launch-btn:hover {
@@ -404,254 +354,73 @@
   font-size: 0.8rem;
   color: var(--text-muted);
   line-height: 1.6;
-  max-width: 480px;
+  max-width: 440px;
   margin: 0 auto;
 }
 
-/* ---- Visit Timeline ---- */
-.demo-visit-section {
-  padding: 8rem 2rem;
+/* ---- How This Works Section ---- */
+.demo-how-section {
+  padding: 6rem 2rem;
   background: var(--bg);
-}
-
-.demo-visit-inner {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.demo-visit-header {
-  margin-bottom: 4rem;
-}
-
-.demo-timeline {
-  position: relative;
-}
-
-.demo-timeline::before {
-  content: '';
-  position: absolute;
-  left: 72px;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  background: rgba(80, 146, 156, 0.15);
-}
-
-.demo-moment {
-  display: grid;
-  grid-template-columns: 72px 1fr;
-  gap: 0 2.5rem;
-  margin-bottom: 3.5rem;
-  cursor: pointer;
-  position: relative;
-}
-
-.demo-moment-time {
-  font-family: 'SF Mono', 'Fira Code', monospace;
-  font-size: 0.72rem;
-  color: var(--text-muted);
-  letter-spacing: 0.08em;
-  padding-top: 0.4rem;
-  text-align: right;
-  transition: color 0.3s ease;
-  flex-shrink: 0;
-}
-
-.demo-moment-dot {
-  position: absolute;
-  left: 68px;
-  top: 0.55rem;
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: rgba(80, 146, 156, 0.3);
-  border: 1px solid rgba(80, 146, 156, 0.4);
-  transition: all 0.3s ease;
-  z-index: 2;
-}
-
-.demo-moment-body {
-  padding: 1.5rem 1.75rem;
-  background: rgba(255, 255, 255, 0.015);
-  border: 1px solid rgba(80, 146, 156, 0.08);
-  transition: all 0.3s ease;
-}
-
-.demo-moment-activity {
-  font-family: 'SF Mono', 'Fira Code', monospace;
-  font-size: 0.65rem;
-  letter-spacing: 0.18em;
-  color: var(--accent);
-  text-transform: uppercase;
-  margin-bottom: 0.6rem;
-  display: block;
-  opacity: 0.7;
-  transition: opacity 0.3s ease;
-}
-
-.demo-moment-description {
-  font-size: 1rem;
-  line-height: 1.75;
-  opacity: 0.75;
-  margin-bottom: 0.75rem;
-  transition: opacity 0.3s ease;
-}
-
-.demo-moment-music {
-  font-size: 0.82rem;
-  color: var(--text-muted);
-  font-style: italic;
-  line-height: 1.5;
-}
-
-.demo-moment-instruction {
-  display: none;
-  margin-top: 1rem;
-  padding: 0.75rem 1rem;
-  background: rgba(80, 146, 156, 0.08);
-  border-left: 2px solid var(--accent);
-  font-family: 'SF Mono', 'Fira Code', monospace;
-  font-size: 0.72rem;
-  color: var(--accent);
-  letter-spacing: 0.06em;
-}
-
-/* Active moment state */
-.demo-moment.active .demo-moment-dot {
-  background: var(--accent);
-  border-color: var(--accent);
-  box-shadow: 0 0 10px rgba(80, 146, 156, 0.4);
-}
-
-.demo-moment.active .demo-moment-time {
-  color: var(--accent);
-}
-
-.demo-moment.active .demo-moment-body {
-  border-color: rgba(80, 146, 156, 0.25);
-  background: rgba(80, 146, 156, 0.04);
-}
-
-.demo-moment.active .demo-moment-activity {
-  opacity: 1;
-}
-
-.demo-moment.active .demo-moment-description {
-  opacity: 0.9;
-}
-
-.demo-moment.active .demo-moment-instruction {
-  display: block;
-}
-
-/* ---- Outcomes ---- */
-.demo-outcomes-section {
-  padding: 7rem 2rem;
-  background: #181815;
   border-top: 1px solid rgba(80, 146, 156, 0.08);
 }
 
-.demo-outcomes-inner {
-  max-width: 960px;
+.demo-how-inner {
+  max-width: 720px;
   margin: 0 auto;
 }
 
-.demo-outcomes-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 3.5rem;
-}
-
-.demo-outcome-card {
-  padding: 2.5rem 2rem;
-  border-top: 2px solid var(--accent);
-  background: rgba(80, 146, 156, 0.03);
-}
-
-.demo-outcome-number {
-  font-family: 'Manrope', sans-serif;
-  font-size: clamp(2.5rem, 4vw, 3.5rem);
+.demo-how-headline {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
   font-weight: 700;
-  color: var(--accent);
-  line-height: 1;
-  margin-bottom: 0.75rem;
   letter-spacing: -0.02em;
+  margin-bottom: 2rem;
 }
 
-.demo-outcome-label {
-  font-size: 0.95rem;
-  color: var(--text);
-  opacity: 0.8;
-  line-height: 1.5;
-  margin-bottom: 1rem;
+.demo-how-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
 }
 
-.demo-outcome-note {
-  font-size: 0.78rem;
-  color: var(--text-muted);
-  line-height: 1.5;
+.demo-how-step {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 1.25rem;
+  align-items: start;
 }
 
-.demo-outcome-bar {
-  height: 3px;
-  background: rgba(80, 146, 156, 0.1);
-  margin-top: 1.5rem;
-  overflow: hidden;
-}
-
-.demo-outcome-bar-fill {
-  height: 100%;
-  width: 0;
-  background: var(--accent);
-  transition: width 2s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.demo-outcomes-disclaimer {
-  margin-top: 2.5rem;
+.demo-how-step-num {
   font-family: 'SF Mono', 'Fira Code', monospace;
-  font-size: 0.65rem;
-  letter-spacing: 0.1em;
-  color: var(--text-muted);
-  opacity: 0.5;
-  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: var(--accent);
+  background: rgba(80, 146, 156, 0.1);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
 }
 
-.demo-outcomes-closing {
-  margin-top: 3rem;
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--text);
+.demo-how-step-text {
+  font-size: 1rem;
+  line-height: 1.75;
   opacity: 0.85;
-  font-style: italic;
-}
-
-@media (max-width: 768px) {
-  .demo-outcomes-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  .demo-timeline::before {
-    left: 52px;
-  }
-  .demo-moment {
-    grid-template-columns: 52px 1fr;
-    gap: 0 1.5rem;
-  }
-  .demo-moment-dot {
-    left: 48px;
-  }
+  padding-top: 0.4rem;
 }
 
 /* ---- CTA ---- */
 .demo-cta-section {
-  padding: 8rem 2rem;
-  background: var(--bg);
+  padding: 7rem 2rem;
+  background: #181815;
+  border-top: 1px solid rgba(80, 146, 156, 0.08);
   text-align: center;
 }
 
 .demo-cta-inner {
-  max-width: 680px;
+  max-width: 600px;
   margin: 0 auto;
 }
   </style>
@@ -672,82 +441,50 @@
 </nav>
 
   <main>
-  <section class="demo-store-header fade-in">
+  <!-- HERO: THE STORE -->
+<section class="demo-store-header fade-in">
   <img
     src="img/alcott-store.jpg"
-    alt="Interior of Alcott and Co., a lifestyle home goods boutique in Denver"
+    alt="Interior of Alcott and Co., a lifestyle home goods boutique"
     class="demo-store-bg"
   >
   <div class="demo-store-overlay"></div>
   <div class="demo-store-content">
-    <span class="demo-store-label">Live Demo &mdash; Founding Pilot Store</span>
+    <span class="demo-store-label">Demo Store</span>
     <div class="demo-store-name">Alcott &amp; Co.</div>
-    <div class="demo-store-meta">Denver, Colorado &nbsp;&middot;&nbsp; 7 Locations &nbsp;&middot;&nbsp; Lifestyle Home Goods</div>
+    <div class="demo-store-meta">Lifestyle Home Goods &nbsp;&middot;&nbsp; Denver, Colorado</div>
   </div>
 </section>
 
-<section style="padding: 5rem 2rem; background: var(--bg);">
-  <div class="container" style="max-width: 760px;">
-    <p class="fade-up" style="font-size: 1.2rem; line-height: 1.95; opacity: 0.85;">
-      Alcott &amp; Co. sells elevated everyday objects: ceramics, textiles, small furniture, things worth considering. Their customers don't rush. They browse with intent. They pick things up, put them down, pick them up again.
-    </p>
-    <p class="fade-up" style="font-size: 1.2rem; line-height: 1.95; opacity: 0.85;">
-      What music should be playing for them?
-    </p>
-  </div>
-</section>
+<!-- ICP SECTION -->
+<section class="demo-icp-section">
+  <div class="demo-icp-grid">
 
-<section class="demo-mara-section">
-  <div class="demo-mara-grid">
-
-    <div class="demo-mara-photo-wrap fade-up">
+    <div class="demo-icp-photo-wrap fade-up">
       <img
         src="img/mara-icp.jpg"
-        alt="Mara, Alcott and Co. ideal customer profile, browsing home goods"
-        class="demo-mara-photo"
+        alt="Mara, the ideal customer profile for Alcott and Co."
+        class="demo-icp-photo"
       >
-      <span class="demo-mara-photo-label">ICP Seed Profile &middot; Alcott &amp; Co.</span>
+      <span class="demo-icp-photo-label">Ideal Customer Profile</span>
     </div>
 
-    <div class="demo-mara-profile">
+    <div class="demo-icp-profile">
       <span class="eyebrow fade-up">The Customer</span>
-      <div class="demo-mara-name fade-up">Meet Mara.</div>
+      <div class="demo-icp-name fade-up">Mara.</div>
 
-      <p class="demo-mara-narrative fade-up">
-        She arrives on Saturday afternoons, usually after brunch. She&rsquo;s in no hurry. She touches everything she&rsquo;s considering. She&rsquo;s not deciding whether she can afford it &mdash; she&rsquo;s deciding whether it belongs in her life. She responds to music that doesn&rsquo;t demand her attention. She finds busy soundscapes irritating.
+      <p class="demo-icp-narrative fade-up">
+        She arrives on Saturday afternoons. She touches everything she's considering. She's not deciding whether she can afford it. She's deciding whether it belongs in her life.
       </p>
 
-      <div class="demo-mara-data" data-stagger>
-        <div class="demo-mara-data-row">
-          <span class="demo-mara-data-key">Typical visit</span>
-          <span class="demo-mara-data-val">18&ndash;24 minutes</span>
-        </div>
-        <div class="demo-mara-data-row">
-          <span class="demo-mara-data-key">Frequency</span>
-          <span class="demo-mara-data-val">2&times; per month, Saturday afternoons</span>
-        </div>
-        <div class="demo-mara-data-row">
-          <span class="demo-mara-data-key">Decision style</span>
-          <span class="demo-mara-data-val">Deliberate &mdash; needs space to feel certain</span>
-        </div>
-        <div class="demo-mara-data-row">
-          <span class="demo-mara-data-key">Audio response</span>
-          <span class="demo-mara-data-val">Responds to sound that doesn&rsquo;t compete for attention</span>
-        </div>
-        <div class="demo-mara-data-row">
-          <span class="demo-mara-data-key">Peak engagement</span>
-          <span class="demo-mara-data-val">When the environment feels unhurried</span>
-        </div>
-      </div>
-
-      <p class="demo-mara-pullquote fade-up">
-        &ldquo;She stays 22% longer when the room feels unhurried.&rdquo;
+      <p class="demo-icp-narrative fade-up">
+        She finds busy soundscapes irritating. She responds to music that doesn't demand her attention. She stays longer when the room feels unhurried.
       </p>
 
-      <div class="demo-mara-insight fade-up">
-        <span class="demo-mara-data-key">What the system learned</span>
-        <p class="demo-mara-insight-text">
-          Mara needs acoustic simplicity during decision windows. The system reduces rhythmic density when dwell time exceeds 60 seconds. It never introduces percussion during extended product engagement. The music becomes the room &mdash; not something in it.
+      <div class="demo-icp-spec fade-up">
+        <span class="demo-icp-spec-label">What the music needs to do</span>
+        <p class="demo-icp-spec-text">
+          Support deliberate browsing. Slow tempo, acoustic texture, no rhythmic urgency. The music should feel like the room, not like something playing in the room. She needs space to consider. The sound should give her that.
         </p>
       </div>
     </div>
@@ -755,20 +492,17 @@
   </div>
 </section>
 
+<!-- PLAYER SECTION -->
 <section class="demo-player-section">
   <div class="demo-player-inner">
-    <span class="eyebrow">What We Built for Her</span>
-    <h2 class="demo-player-headline fade-up">This is what Entuned composed for Mara&rsquo;s visit.</h2>
+    <span class="eyebrow">The Music</span>
+    <h2 class="demo-player-headline fade-up">This is what Entuned generated for her.</h2>
     <p class="demo-player-subtext fade-up">
-      Wonder is Entuned&rsquo;s live player &mdash; the same system that runs in a real store. Log in below to hear the music the system built for Alcott &amp; Co.
+      Wonder is Entuned's live player. Log in below to hear the music the system built for Alcott&nbsp;&amp;&nbsp;Co.
     </p>
 
     <div class="demo-credentials fade-up">
       <span class="demo-credentials-label">Demo Access</span>
-      <div class="demo-credentials-row">
-        <span class="demo-credentials-key">Store</span>
-        <span class="demo-credentials-val">Alcott &amp; Co.</span>
-      </div>
       <div class="demo-credentials-row">
         <span class="demo-credentials-key">Email</span>
         <span class="demo-credentials-val">demo@alcottandco.entuned.co</span>
@@ -789,143 +523,59 @@
     </a>
 
     <p class="demo-player-note fade-up">
-      Wonder opens in a new tab with the email pre-filled. Enter the password above, hit play, then scroll down to follow Mara&rsquo;s visit.
+      Opens in a new tab. Enter the password above and hit play.
     </p>
   </div>
 </section>
 
-<section class="demo-visit-section">
-  <div class="demo-visit-inner">
-    <div class="demo-visit-header fade-up">
-      <span class="eyebrow">The Story</span>
-      <h2>Mara&rsquo;s 18-minute visit.</h2>
-      <p style="font-size: 1.05rem; opacity: 0.7; max-width: 580px; margin-top: 0.5rem;">
-        The music shifted four times. Each shift was a decision the system made in response to what she was doing. Scroll through her visit &mdash; or click any moment to jump ahead.
-      </p>
-    </div>
+<!-- HOW THIS WORKS SECTION -->
+<section class="demo-how-section">
+  <div class="demo-how-inner">
+    <span class="eyebrow fade-up">How This Works</span>
+    <h2 class="demo-how-headline fade-up">From customer profile to in-store sound.</h2>
 
-    <div class="demo-timeline" id="demoTimeline">
-
-      <!-- Moment 1 -->
-      <div class="demo-moment fade-up" data-moment="1">
-        <div class="demo-moment-time">0:00</div>
-        <div class="demo-moment-dot"></div>
-        <div class="demo-moment-body">
-          <span class="demo-moment-activity">Entry</span>
-          <p class="demo-moment-description">
-            Mara walks in. The music is already present. It doesn&rsquo;t announce itself. It just makes the room feel right &mdash; warm, unhurried, without any urgency signal.
-          </p>
-          <p class="demo-moment-music">
-            Acoustic texture, 80 BPM. Major key, muted voicings. No percussion. A room that says you&rsquo;re welcome without saying it.
-          </p>
-          <div class="demo-moment-instruction">
-            &#9654; Start the Wonder player from the beginning to hear this moment.
-          </div>
-        </div>
+    <div class="demo-how-steps">
+      <div class="demo-how-step fade-up">
+        <div class="demo-how-step-num">1</div>
+        <p class="demo-how-step-text">
+          You describe your ideal customer. Who they are, how they shop, what state of mind supports their purchase decision.
+        </p>
       </div>
-
-      <!-- Moment 2 -->
-      <div class="demo-moment fade-up" data-moment="2">
-        <div class="demo-moment-time">4:32</div>
-        <div class="demo-moment-dot"></div>
-        <div class="demo-moment-body">
-          <span class="demo-moment-activity">Active Browse</span>
-          <p class="demo-moment-description">
-            She&rsquo;s moving through the floor. She&rsquo;s picked up three things. The system detected movement and engagement. The music shifted &mdash; same temperature, slightly more present.
-          </p>
-          <p class="demo-moment-music">
-            Light rhythmic pulse, 94 BPM. The customer is in motion. The music keeps pace without leading.
-          </p>
-          <div class="demo-moment-instruction">
-            &#9654; Skip to 4:32 in the Wonder player to hear this moment.
-          </div>
-        </div>
+      <div class="demo-how-step fade-up">
+        <div class="demo-how-step-num">2</div>
+        <p class="demo-how-step-text">
+          Entuned translates that profile into musical parameters: tempo, harmonic density, rhythmic texture, instrumentation, production style. These parameters are designed to induce the psychological state your customer needs.
+        </p>
       </div>
-
-      <!-- Moment 3 -->
-      <div class="demo-moment fade-up" data-moment="3">
-        <div class="demo-moment-time">11:15</div>
-        <div class="demo-moment-dot"></div>
-        <div class="demo-moment-body">
-          <span class="demo-moment-activity">Extended Dwell</span>
-          <p class="demo-moment-description">
-            She&rsquo;s been at the ceramics display for 90 seconds. The system detected it. The music slowed. Warmer. No percussion. Less hurried. The moment belongs to her &mdash; not to the store, not to a sale.
-          </p>
-          <p class="demo-moment-music">
-            68 BPM. Major sevenths and suspended chords. No urgency signal. This is the money track.
-          </p>
-          <div class="demo-moment-instruction">
-            &#9654; Skip to 11:15 in the Wonder player to hear this moment.
-          </div>
-        </div>
+      <div class="demo-how-step fade-up">
+        <div class="demo-how-step-num">3</div>
+        <p class="demo-how-step-text">
+          The system generates original music to those specifications. No licensing. No playlist curation. Music built for your store.
+        </p>
       </div>
-
-      <!-- Moment 4 -->
-      <div class="demo-moment fade-up" data-moment="4">
-        <div class="demo-moment-time">16:48</div>
-        <div class="demo-moment-dot"></div>
-        <div class="demo-moment-body">
-          <span class="demo-moment-activity">Exit Approach</span>
-          <p class="demo-moment-description">
-            She started moving toward the door. She hadn&rsquo;t bought anything yet. The music shifted &mdash; not louder, not faster. Different. A subtle reengagement cue. A question not yet answered.
-          </p>
-          <p class="demo-moment-music">
-            87 BPM. Slightly more textural. A melodic idea that doesn&rsquo;t resolve. 14% of exit-approach sessions convert.
-          </p>
-          <div class="demo-moment-instruction">
-            &#9654; Skip to 16:48 in the Wonder player to hear this moment.
-          </div>
-        </div>
+      <div class="demo-how-step fade-up">
+        <div class="demo-how-step-num">4</div>
+        <p class="demo-how-step-text">
+          The music plays in your store. Your existing traffic measurement system records behavioral outcomes: dwell time, conversion, basket size. Entuned correlates the musical parameters with the results.
+        </p>
       </div>
-
+      <div class="demo-how-step fade-up">
+        <div class="demo-how-step-num">5</div>
+        <p class="demo-how-step-text">
+          Over time, the correlation engine learns what works. The musical specification tightens. The lift compounds.
+        </p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="demo-outcomes-section">
-  <div class="demo-outcomes-inner">
-    <div class="fade-up">
-      <span class="eyebrow">The Results</span>
-      <h2>What the data shows.</h2>
-    </div>
-
-    <div class="demo-outcomes-grid">
-      <div class="demo-outcome-card fade-up">
-        <div class="demo-outcome-number" data-count="31" data-prefix="+" data-suffix="%">0%</div>
-        <div class="demo-outcome-label">Average dwell time vs. unmanaged audio</div>
-        <div class="demo-outcome-note">Across extended dwell sessions where the system detected 90+ second product engagement.</div>
-        <div class="demo-outcome-bar"><div class="demo-outcome-bar-fill" data-width="62"></div></div>
-      </div>
-      <div class="demo-outcome-card fade-up">
-        <div class="demo-outcome-number" data-count="41" data-prefix="+$" data-suffix="">$0</div>
-        <div class="demo-outcome-label">Average order value on extended dwell visits</div>
-        <div class="demo-outcome-note">Customers who stayed through the dwell phase transacted at a meaningfully higher average.</div>
-        <div class="demo-outcome-bar"><div class="demo-outcome-bar-fill" data-width="48"></div></div>
-      </div>
-      <div class="demo-outcome-card fade-up">
-        <div class="demo-outcome-number" data-count="14" data-prefix="" data-suffix="%">0%</div>
-        <div class="demo-outcome-label">Exit-approach sessions that converted to purchase</div>
-        <div class="demo-outcome-note">Exit-intent visits where the reengagement track was playing at the point of departure decision.</div>
-        <div class="demo-outcome-bar"><div class="demo-outcome-bar-fill" data-width="28"></div></div>
-      </div>
-    </div>
-
-    <p class="demo-outcomes-disclaimer fade-up">
-      Story data &mdash; benchmarked from peer-reviewed retail behavioral research. Entuned pilot data in production.
-    </p>
-
-    <p class="demo-outcomes-closing fade-up">
-      Mara stayed 18 minutes. She bought the bowl.
-    </p>
-  </div>
-</section>
-
+<!-- CTA -->
 <section class="demo-cta-section">
   <div class="demo-cta-inner">
     <span class="eyebrow">Get Started</span>
-    <h2 class="fade-up" style="margin-bottom: 1.25rem;">Ready to build a Mara of your own?</h2>
-    <p class="fade-up" style="font-size: 1.1rem; opacity: 0.75; margin-bottom: 2.5rem; line-height: 1.85;">
-      Every store has a customer worth knowing this well. Entuned starts by profiling them, composes original music for them, and measures what happens.
+    <h2 class="fade-up" style="margin-bottom: 1.25rem;">Build this for your store.</h2>
+    <p class="fade-up" style="font-size: 1.05rem; opacity: 0.75; margin-bottom: 2.5rem; line-height: 1.85;">
+      Entuned starts by profiling your customer, composes original music for them, and measures what happens.
     </p>
     <div class="btn-group fade-up">
       <a href="pilot.html" class="btn btn-primary">Request Pilot Access</a>
@@ -935,105 +585,7 @@
 </section>
 
 <script>
-(function() {
-  /* ---- Staggered data row reveal ---- */
-  var staggerWrap = document.querySelector('[data-stagger]');
-  if (staggerWrap) {
-    var rows = staggerWrap.querySelectorAll('.demo-mara-data-row');
-    var staggerObs = new IntersectionObserver(function(entries) {
-      entries.forEach(function(e) {
-        if (e.isIntersecting) {
-          rows.forEach(function(row, i) {
-            setTimeout(function() {
-              row.classList.add('revealed');
-            }, i * 120);
-          });
-          staggerObs.unobserve(staggerWrap);
-        }
-      });
-    }, { threshold: 0.3 });
-    staggerObs.observe(staggerWrap);
-  }
-
-  /* ---- Timeline: scroll-activated moments + click ---- */
-  var moments = document.querySelectorAll('.demo-moment');
-  var activeMoment = null;
-
-  function setActive(moment) {
-    if (activeMoment === moment) return;
-    moments.forEach(function(m) { m.classList.remove('active'); });
-    moment.classList.add('active');
-    activeMoment = moment;
-  }
-
-  // Click still works
-  moments.forEach(function(moment) {
-    moment.addEventListener('click', function() {
-      setActive(moment);
-    });
-  });
-
-  // Scroll-activated: whichever moment is most centered in viewport
-  var timelineObs = new IntersectionObserver(function(entries) {
-    entries.forEach(function(e) {
-      if (e.isIntersecting) {
-        setActive(e.target);
-      }
-    });
-  }, { rootMargin: '-35% 0px -35% 0px', threshold: 0.2 });
-
-  moments.forEach(function(m) { timelineObs.observe(m); });
-
-  /* ---- Outcome count-up animation ---- */
-  var counted = false;
-  var counters = document.querySelectorAll('[data-count]');
-
-  function animateCounters() {
-    if (counted) return;
-    counted = true;
-    counters.forEach(function(el) {
-      var target = parseInt(el.getAttribute('data-count'), 10);
-      var prefix = el.getAttribute('data-prefix') || '';
-      var suffix = el.getAttribute('data-suffix') || '';
-      var duration = 1800;
-      var start = performance.now();
-
-      function step(now) {
-        var elapsed = now - start;
-        var progress = Math.min(elapsed / duration, 1);
-        // Ease out cubic
-        var eased = 1 - Math.pow(1 - progress, 3);
-        var current = Math.round(eased * target);
-        el.textContent = prefix + current + suffix;
-        if (progress < 1) requestAnimationFrame(step);
-      }
-      requestAnimationFrame(step);
-    });
-
-    // Animate bars
-    var bars = document.querySelectorAll('.demo-outcome-bar-fill');
-    setTimeout(function() {
-      bars.forEach(function(bar) {
-        var w = bar.getAttribute('data-width');
-        bar.style.width = w + '%';
-      });
-    }, 200);
-  }
-
-  var outcomesSection = document.querySelector('.demo-outcomes-section');
-  if (outcomesSection) {
-    var outcomeObs = new IntersectionObserver(function(entries) {
-      entries.forEach(function(e) {
-        if (e.isIntersecting) {
-          animateCounters();
-          outcomeObs.unobserve(outcomesSection);
-        }
-      });
-    }, { threshold: 0.25 });
-    outcomeObs.observe(outcomesSection);
-  }
-
-  /* ---- Hero parallax on scroll ---- */
+  // Hero parallax on scroll
   var heroBg = document.querySelector('.demo-store-bg');
   if (heroBg) {
     var heroSection = document.querySelector('.demo-store-header');
@@ -1045,7 +597,6 @@
       }
     }, { passive: true });
   }
-})();
 </script>
   </main>
 

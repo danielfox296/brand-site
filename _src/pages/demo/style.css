@@ -1,12 +1,11 @@
 /* ============================================================
    DEMO PAGE — Page-Specific Styles
-   Prefix all class names with .demo- to avoid conflicts
    ============================================================ */
 
 /* ---- Hero / Store Header ---- */
 .demo-store-header {
   position: relative;
-  min-height: 70vh;
+  min-height: 65vh;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
@@ -70,28 +69,27 @@
   letter-spacing: 0.04em;
 }
 
-/* ---- Mara Section ---- */
-.demo-mara-section {
-  padding: 8rem 2rem 12rem;
+/* ---- ICP Section ---- */
+.demo-icp-section {
+  padding: 6rem 2rem 8rem;
   background: var(--bg);
 }
 
-.demo-mara-grid {
+.demo-icp-grid {
   display: grid;
-  grid-template-columns: 380px 1fr;
-  gap: 5rem;
+  grid-template-columns: 320px 1fr;
+  gap: 4rem;
   align-items: start;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-/* Sticky photo — pins center-viewport on desktop */
-.demo-mara-photo-wrap {
+.demo-icp-photo-wrap {
   position: sticky;
-  top: 15vh;
+  top: 12vh;
 }
 
-.demo-mara-photo {
+.demo-icp-photo {
   width: 100%;
   aspect-ratio: 3/4;
   object-fit: cover;
@@ -99,7 +97,7 @@
   filter: saturate(0.85);
 }
 
-.demo-mara-photo-label {
+.demo-icp-photo-label {
   font-family: 'SF Mono', 'Fira Code', monospace;
   font-size: 0.65rem;
   letter-spacing: 0.18em;
@@ -110,106 +108,59 @@
   text-align: center;
 }
 
-.demo-mara-profile {
+.demo-icp-profile {
   padding-top: 0.5rem;
 }
 
-.demo-mara-name {
+.demo-icp-name {
   font-family: 'Manrope', sans-serif;
-  font-size: clamp(2.8rem, 5vw, 4rem);
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
   font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--text);
   margin-bottom: 0.5rem;
 }
 
-.demo-mara-narrative {
+.demo-icp-narrative {
   font-size: 1.1rem;
   line-height: 1.9;
   opacity: 0.85;
   margin-bottom: 2.5rem;
-  max-width: 560px;
+  max-width: 540px;
 }
 
-.demo-mara-data {
+.demo-icp-spec {
   border-top: 1px solid rgba(80, 146, 156, 0.12);
-  border-bottom: 1px solid rgba(80, 146, 156, 0.12);
-  padding: 2rem 0;
-  margin-bottom: 2.5rem;
-}
-
-.demo-mara-data-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 0.6rem 0;
-  border-bottom: 1px solid rgba(80, 146, 156, 0.06);
-  gap: 2rem;
-  opacity: 0;
-  transform: translateX(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.demo-mara-data-row.revealed {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.demo-mara-data-row:last-child {
-  border-bottom: none;
-}
-
-.demo-mara-data-key {
-  font-family: 'SF Mono', 'Fira Code', monospace;
-  font-size: 0.68rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  flex-shrink: 0;
-}
-
-.demo-mara-data-val {
-  font-size: 0.95rem;
-  color: var(--text);
-  text-align: right;
-  opacity: 0.85;
-}
-
-.demo-mara-pullquote {
-  font-family: 'Manrope', sans-serif;
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: var(--accent);
-  line-height: 1.4;
-  border-left: 3px solid var(--accent);
-  padding-left: 1.5rem;
-  max-width: 520px;
-  margin-bottom: 3rem;
-}
-
-.demo-mara-insight {
   padding-top: 2rem;
-  border-top: 1px solid rgba(80, 146, 156, 0.08);
 }
 
-.demo-mara-insight-text {
-  font-size: 0.95rem;
+.demo-icp-spec-label {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.demo-icp-spec-text {
+  font-size: 1rem;
   line-height: 1.85;
-  opacity: 0.7;
+  opacity: 0.8;
   max-width: 520px;
-  margin-top: 0.75rem;
 }
 
-@media (max-width: 900px) {
-  .demo-mara-section {
-    padding-bottom: 6rem;
+@media (max-width: 850px) {
+  .demo-icp-section {
+    padding-bottom: 5rem;
   }
-  .demo-mara-grid {
+  .demo-icp-grid {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
   }
-  .demo-mara-photo-wrap {
-    max-width: 340px;
+  .demo-icp-photo-wrap {
+    max-width: 280px;
     position: relative;
     top: auto;
   }
@@ -217,38 +168,37 @@
 
 /* ---- Player Section ---- */
 .demo-player-section {
-  padding: 8rem 2rem;
+  padding: 6rem 2rem 8rem;
   background: #181815;
   border-top: 1px solid rgba(80, 146, 156, 0.08);
-  border-bottom: 1px solid rgba(80, 146, 156, 0.08);
 }
 
 .demo-player-inner {
-  max-width: 720px;
+  max-width: 680px;
   margin: 0 auto;
   text-align: center;
 }
 
 .demo-player-headline {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
   font-weight: 700;
   letter-spacing: -0.02em;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   line-height: 1.2;
 }
 
 .demo-player-subtext {
   font-size: 1.05rem;
   opacity: 0.7;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
   line-height: 1.75;
 }
 
 .demo-credentials {
   background: rgba(80, 146, 156, 0.05);
   border: 1px solid rgba(80, 146, 156, 0.2);
-  padding: 2rem 2.5rem;
-  margin-bottom: 2.5rem;
+  padding: 1.75rem 2rem;
+  margin-bottom: 2rem;
   text-align: left;
 }
 
@@ -258,14 +208,14 @@
   letter-spacing: 0.2em;
   color: var(--accent);
   text-transform: uppercase;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   display: block;
 }
 
 .demo-credentials-row {
   display: flex;
   gap: 1.5rem;
-  margin-bottom: 0.65rem;
+  margin-bottom: 0.5rem;
   align-items: baseline;
 }
 
@@ -299,7 +249,7 @@
   letter-spacing: 0.06em;
   text-decoration: none;
   transition: all 0.3s ease;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .demo-launch-btn:hover {
@@ -321,253 +271,72 @@
   font-size: 0.8rem;
   color: var(--text-muted);
   line-height: 1.6;
-  max-width: 480px;
+  max-width: 440px;
   margin: 0 auto;
 }
 
-/* ---- Visit Timeline ---- */
-.demo-visit-section {
-  padding: 8rem 2rem;
+/* ---- How This Works Section ---- */
+.demo-how-section {
+  padding: 6rem 2rem;
   background: var(--bg);
-}
-
-.demo-visit-inner {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.demo-visit-header {
-  margin-bottom: 4rem;
-}
-
-.demo-timeline {
-  position: relative;
-}
-
-.demo-timeline::before {
-  content: '';
-  position: absolute;
-  left: 72px;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  background: rgba(80, 146, 156, 0.15);
-}
-
-.demo-moment {
-  display: grid;
-  grid-template-columns: 72px 1fr;
-  gap: 0 2.5rem;
-  margin-bottom: 3.5rem;
-  cursor: pointer;
-  position: relative;
-}
-
-.demo-moment-time {
-  font-family: 'SF Mono', 'Fira Code', monospace;
-  font-size: 0.72rem;
-  color: var(--text-muted);
-  letter-spacing: 0.08em;
-  padding-top: 0.4rem;
-  text-align: right;
-  transition: color 0.3s ease;
-  flex-shrink: 0;
-}
-
-.demo-moment-dot {
-  position: absolute;
-  left: 68px;
-  top: 0.55rem;
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: rgba(80, 146, 156, 0.3);
-  border: 1px solid rgba(80, 146, 156, 0.4);
-  transition: all 0.3s ease;
-  z-index: 2;
-}
-
-.demo-moment-body {
-  padding: 1.5rem 1.75rem;
-  background: rgba(255, 255, 255, 0.015);
-  border: 1px solid rgba(80, 146, 156, 0.08);
-  transition: all 0.3s ease;
-}
-
-.demo-moment-activity {
-  font-family: 'SF Mono', 'Fira Code', monospace;
-  font-size: 0.65rem;
-  letter-spacing: 0.18em;
-  color: var(--accent);
-  text-transform: uppercase;
-  margin-bottom: 0.6rem;
-  display: block;
-  opacity: 0.7;
-  transition: opacity 0.3s ease;
-}
-
-.demo-moment-description {
-  font-size: 1rem;
-  line-height: 1.75;
-  opacity: 0.75;
-  margin-bottom: 0.75rem;
-  transition: opacity 0.3s ease;
-}
-
-.demo-moment-music {
-  font-size: 0.82rem;
-  color: var(--text-muted);
-  font-style: italic;
-  line-height: 1.5;
-}
-
-.demo-moment-instruction {
-  display: none;
-  margin-top: 1rem;
-  padding: 0.75rem 1rem;
-  background: rgba(80, 146, 156, 0.08);
-  border-left: 2px solid var(--accent);
-  font-family: 'SF Mono', 'Fira Code', monospace;
-  font-size: 0.72rem;
-  color: var(--accent);
-  letter-spacing: 0.06em;
-}
-
-/* Active moment state */
-.demo-moment.active .demo-moment-dot {
-  background: var(--accent);
-  border-color: var(--accent);
-  box-shadow: 0 0 10px rgba(80, 146, 156, 0.4);
-}
-
-.demo-moment.active .demo-moment-time {
-  color: var(--accent);
-}
-
-.demo-moment.active .demo-moment-body {
-  border-color: rgba(80, 146, 156, 0.25);
-  background: rgba(80, 146, 156, 0.04);
-}
-
-.demo-moment.active .demo-moment-activity {
-  opacity: 1;
-}
-
-.demo-moment.active .demo-moment-description {
-  opacity: 0.9;
-}
-
-.demo-moment.active .demo-moment-instruction {
-  display: block;
-}
-
-/* ---- Outcomes ---- */
-.demo-outcomes-section {
-  padding: 7rem 2rem;
-  background: #181815;
   border-top: 1px solid rgba(80, 146, 156, 0.08);
 }
 
-.demo-outcomes-inner {
-  max-width: 960px;
+.demo-how-inner {
+  max-width: 720px;
   margin: 0 auto;
 }
 
-.demo-outcomes-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 3.5rem;
-}
-
-.demo-outcome-card {
-  padding: 2.5rem 2rem;
-  border-top: 2px solid var(--accent);
-  background: rgba(80, 146, 156, 0.03);
-}
-
-.demo-outcome-number {
-  font-family: 'Manrope', sans-serif;
-  font-size: clamp(2.5rem, 4vw, 3.5rem);
+.demo-how-headline {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
   font-weight: 700;
-  color: var(--accent);
-  line-height: 1;
-  margin-bottom: 0.75rem;
   letter-spacing: -0.02em;
+  margin-bottom: 2rem;
 }
 
-.demo-outcome-label {
-  font-size: 0.95rem;
-  color: var(--text);
-  opacity: 0.8;
-  line-height: 1.5;
-  margin-bottom: 1rem;
+.demo-how-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
 }
 
-.demo-outcome-note {
-  font-size: 0.78rem;
-  color: var(--text-muted);
-  line-height: 1.5;
+.demo-how-step {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 1.25rem;
+  align-items: start;
 }
 
-.demo-outcome-bar {
-  height: 3px;
-  background: rgba(80, 146, 156, 0.1);
-  margin-top: 1.5rem;
-  overflow: hidden;
-}
-
-.demo-outcome-bar-fill {
-  height: 100%;
-  width: 0;
-  background: var(--accent);
-  transition: width 2s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.demo-outcomes-disclaimer {
-  margin-top: 2.5rem;
+.demo-how-step-num {
   font-family: 'SF Mono', 'Fira Code', monospace;
-  font-size: 0.65rem;
-  letter-spacing: 0.1em;
-  color: var(--text-muted);
-  opacity: 0.5;
-  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: var(--accent);
+  background: rgba(80, 146, 156, 0.1);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  flex-shrink: 0;
 }
 
-.demo-outcomes-closing {
-  margin-top: 3rem;
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--text);
+.demo-how-step-text {
+  font-size: 1rem;
+  line-height: 1.75;
   opacity: 0.85;
-  font-style: italic;
-}
-
-@media (max-width: 768px) {
-  .demo-outcomes-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  .demo-timeline::before {
-    left: 52px;
-  }
-  .demo-moment {
-    grid-template-columns: 52px 1fr;
-    gap: 0 1.5rem;
-  }
-  .demo-moment-dot {
-    left: 48px;
-  }
+  padding-top: 0.4rem;
 }
 
 /* ---- CTA ---- */
 .demo-cta-section {
-  padding: 8rem 2rem;
-  background: var(--bg);
+  padding: 7rem 2rem;
+  background: #181815;
+  border-top: 1px solid rgba(80, 146, 156, 0.08);
   text-align: center;
 }
 
 .demo-cta-inner {
-  max-width: 680px;
+  max-width: 600px;
   margin: 0 auto;
 }
