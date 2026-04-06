@@ -172,21 +172,6 @@
 .demo-mara-photo-wrap {
   position: sticky;
   top: 15vh;
-  clip-path: inset(100% 0 0 0);
-  transition: clip-path 1.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.demo-mara-photo-wrap.revealed,
-.demo-mara-photo-wrap.no-js {
-  clip-path: inset(0 0 0 0);
-}
-
-/* Fallback: if JS hasn't run after 2s, reveal anyway */
-@keyframes demo-mara-reveal-fallback {
-  to { clip-path: inset(0 0 0 0); }
-}
-.demo-mara-photo-wrap {
-  animation: demo-mara-reveal-fallback 0s 2s forwards;
 }
 
 .demo-mara-photo {
@@ -715,7 +700,7 @@
 <section class="demo-mara-section">
   <div class="demo-mara-grid">
 
-    <div class="demo-mara-photo-wrap" data-reveal>
+    <div class="demo-mara-photo-wrap fade-up">
       <img
         src="img/mara-icp.jpg"
         alt="Mara, Alcott and Co. ideal customer profile, browsing home goods"
@@ -951,22 +936,6 @@
 
 <script>
 (function() {
-  /* ---- Mara photo clip-path reveal ---- */
-  var photoWrap = document.querySelector('[data-reveal]');
-  if (photoWrap) {
-    var photoObs = new IntersectionObserver(function(entries) {
-      entries.forEach(function(e) {
-        if (e.isIntersecting) {
-          photoWrap.classList.add('revealed');
-          photoObs.unobserve(photoWrap);
-        }
-      });
-    }, { threshold: 0.05 });
-    photoObs.observe(photoWrap);
-    // Safety net: reveal after 3s if observer never fires
-    setTimeout(function() { photoWrap.classList.add('revealed'); }, 3000);
-  }
-
   /* ---- Staggered data row reveal ---- */
   var staggerWrap = document.querySelector('[data-stagger]');
   if (staggerWrap) {
