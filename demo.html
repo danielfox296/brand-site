@@ -88,7 +88,7 @@
 /* ---- Hero / Store Header ---- */
 .demo-store-header {
   position: relative;
-  min-height: 65vh;
+  min-height: 60vh;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
@@ -152,18 +152,56 @@
   letter-spacing: 0.04em;
 }
 
+/* ---- Problem Section ---- */
+.demo-problem-section {
+  padding: 5rem 2rem 6rem;
+  background: var(--bg);
+}
+
+.demo-problem-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.demo-problem-headline {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 2rem;
+  line-height: 1.25;
+}
+
+.demo-problem-text {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  opacity: 0.85;
+  margin-bottom: 1.75rem;
+}
+
+.demo-problem-text:last-of-type {
+  margin-bottom: 0;
+}
+
+.demo-problem-divider {
+  width: 60px;
+  height: 1px;
+  background: rgba(80, 146, 156, 0.25);
+  margin: 3rem 0;
+}
+
 /* ---- ICP Section ---- */
 .demo-icp-section {
-  padding: 6rem 2rem 8rem;
-  background: var(--bg);
+  padding: 5rem 2rem 7rem;
+  background: #181815;
+  border-top: 1px solid rgba(80, 146, 156, 0.08);
 }
 
 .demo-icp-grid {
   display: grid;
-  grid-template-columns: 320px 1fr;
+  grid-template-columns: 280px 1fr;
   gap: 4rem;
   align-items: start;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -197,7 +235,7 @@
 
 .demo-icp-name {
   font-family: 'Manrope', sans-serif;
-  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-size: clamp(2.2rem, 4vw, 3rem);
   font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--text);
@@ -205,16 +243,17 @@
 }
 
 .demo-icp-narrative {
-  font-size: 1.1rem;
-  line-height: 1.9;
+  font-size: 1.05rem;
+  line-height: 1.85;
   opacity: 0.85;
-  margin-bottom: 2.5rem;
-  max-width: 540px;
+  margin-bottom: 1.5rem;
+  max-width: 500px;
 }
 
 .demo-icp-spec {
   border-top: 1px solid rgba(80, 146, 156, 0.12);
-  padding-top: 2rem;
+  padding-top: 1.75rem;
+  margin-top: 0.5rem;
 }
 
 .demo-icp-spec-label {
@@ -223,18 +262,18 @@
   letter-spacing: 0.18em;
   color: var(--accent);
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   display: block;
 }
 
 .demo-icp-spec-text {
   font-size: 1rem;
-  line-height: 1.85;
+  line-height: 1.8;
   opacity: 0.8;
-  max-width: 520px;
+  max-width: 480px;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 800px) {
   .demo-icp-section {
     padding-bottom: 5rem;
   }
@@ -243,7 +282,7 @@
     gap: 2.5rem;
   }
   .demo-icp-photo-wrap {
-    max-width: 280px;
+    max-width: 260px;
     position: relative;
     top: auto;
   }
@@ -251,37 +290,37 @@
 
 /* ---- Player Section ---- */
 .demo-player-section {
-  padding: 6rem 2rem 8rem;
-  background: #181815;
+  padding: 5rem 2rem 6rem;
+  background: var(--bg);
   border-top: 1px solid rgba(80, 146, 156, 0.08);
 }
 
 .demo-player-inner {
-  max-width: 680px;
+  max-width: 640px;
   margin: 0 auto;
   text-align: center;
 }
 
 .demo-player-headline {
-  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
   font-weight: 700;
   letter-spacing: -0.02em;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   line-height: 1.2;
 }
 
 .demo-player-subtext {
-  font-size: 1.05rem;
+  font-size: 1rem;
   opacity: 0.7;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.25rem;
   line-height: 1.75;
 }
 
 .demo-credentials {
   background: rgba(80, 146, 156, 0.05);
   border: 1px solid rgba(80, 146, 156, 0.2);
-  padding: 1.75rem 2rem;
-  margin-bottom: 2rem;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.75rem;
   text-align: left;
 }
 
@@ -291,29 +330,29 @@
   letter-spacing: 0.2em;
   color: var(--accent);
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 0.85rem;
   display: block;
 }
 
 .demo-credentials-row {
   display: flex;
-  gap: 1.5rem;
-  margin-bottom: 0.5rem;
+  gap: 1.25rem;
+  margin-bottom: 0.4rem;
   align-items: baseline;
 }
 
 .demo-credentials-key {
   font-family: 'SF Mono', 'Fira Code', monospace;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   color: var(--text-muted);
   letter-spacing: 0.08em;
-  min-width: 80px;
+  min-width: 72px;
   flex-shrink: 0;
 }
 
 .demo-credentials-val {
   font-family: 'SF Mono', 'Fira Code', monospace;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--text);
   letter-spacing: 0.04em;
 }
@@ -324,15 +363,15 @@
   gap: 0.75rem;
   background: var(--text);
   color: var(--bg);
-  padding: 1rem 2.5rem;
+  padding: 1rem 2.25rem;
   font-family: 'Manrope', sans-serif;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   text-decoration: none;
   transition: all 0.3s ease;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .demo-launch-btn:hover {
@@ -351,76 +390,23 @@
 }
 
 .demo-player-note {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--text-muted);
   line-height: 1.6;
-  max-width: 440px;
+  max-width: 400px;
   margin: 0 auto;
-}
-
-/* ---- How This Works Section ---- */
-.demo-how-section {
-  padding: 6rem 2rem;
-  background: var(--bg);
-  border-top: 1px solid rgba(80, 146, 156, 0.08);
-}
-
-.demo-how-inner {
-  max-width: 720px;
-  margin: 0 auto;
-}
-
-.demo-how-headline {
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  margin-bottom: 2rem;
-}
-
-.demo-how-steps {
-  display: flex;
-  flex-direction: column;
-  gap: 1.75rem;
-}
-
-.demo-how-step {
-  display: grid;
-  grid-template-columns: 36px 1fr;
-  gap: 1.25rem;
-  align-items: start;
-}
-
-.demo-how-step-num {
-  font-family: 'SF Mono', 'Fira Code', monospace;
-  font-size: 0.75rem;
-  color: var(--accent);
-  background: rgba(80, 146, 156, 0.1);
-  width: 36px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
-.demo-how-step-text {
-  font-size: 1rem;
-  line-height: 1.75;
-  opacity: 0.85;
-  padding-top: 0.4rem;
 }
 
 /* ---- CTA ---- */
 .demo-cta-section {
-  padding: 7rem 2rem;
+  padding: 6rem 2rem;
   background: #181815;
   border-top: 1px solid rgba(80, 146, 156, 0.08);
   text-align: center;
 }
 
 .demo-cta-inner {
-  max-width: 600px;
+  max-width: 580px;
   margin: 0 auto;
 }
   </style>
@@ -453,6 +439,40 @@
     <span class="demo-store-label">Demo Store</span>
     <div class="demo-store-name">Alcott &amp; Co.</div>
     <div class="demo-store-meta">Lifestyle Home Goods &nbsp;&middot;&nbsp; Denver, Colorado</div>
+  </div>
+</section>
+
+<!-- THE PROBLEM -->
+<section class="demo-problem-section">
+  <div class="demo-problem-inner">
+    <span class="eyebrow fade-up">The Problem</span>
+    <h2 class="demo-problem-headline fade-up">The music in most stores was never designed to support purchases.</h2>
+
+    <p class="demo-problem-text fade-up">
+      Alcott sells elevated everyday objects. Ceramics, textiles, small furniture. Their customers don't rush. They browse with intent. They pick things up, put them down, pick them up again.
+    </p>
+
+    <p class="demo-problem-text fade-up">
+      What music should be playing for them?
+    </p>
+
+    <p class="demo-problem-text fade-up">
+      Right now, most stores like this have three options: a poorly curated playlist, the associate's personal Spotify (which risks licensing violations because consumer accounts aren't licensed for commercial use), or outsourcing the vibe to a big-box commercial music provider. In all three cases, the content of the songs was never designed to support customer behavior. It just has to be inviting enough not to drive people out. That's the bar.
+    </p>
+
+    <div class="demo-problem-divider"></div>
+
+    <p class="demo-problem-text fade-up">
+      But music does more than "not drive people out." Tempo affects walking pace. Major and minor keys affect mood differently. Instrumentation carries cultural meaning. Lyrical content suggests things. And familiarity cuts both ways: when a customer hears a song she knows and likes, research shows she perceives time as passing faster. She feels like she's been in the store longer. She wants to leave sooner. Even the songs that seem like wins are working against the sale.
+    </p>
+
+    <p class="demo-problem-text fade-up">
+      None of these factors are deliberate in a typical retail music setup. They're incidental. Every song is a roll of the dice across dozens of variables that affect whether a customer stays, browses, and buys.
+    </p>
+
+    <p class="demo-problem-text fade-up">
+      Entuned makes all of it intentional.
+    </p>
   </div>
 </section>
 
@@ -528,53 +548,12 @@
   </div>
 </section>
 
-<!-- HOW THIS WORKS SECTION -->
-<section class="demo-how-section">
-  <div class="demo-how-inner">
-    <span class="eyebrow fade-up">How This Works</span>
-    <h2 class="demo-how-headline fade-up">From customer profile to in-store sound.</h2>
-
-    <div class="demo-how-steps">
-      <div class="demo-how-step fade-up">
-        <div class="demo-how-step-num">1</div>
-        <p class="demo-how-step-text">
-          You describe your ideal customer. Who they are, how they shop, what state of mind supports their purchase decision.
-        </p>
-      </div>
-      <div class="demo-how-step fade-up">
-        <div class="demo-how-step-num">2</div>
-        <p class="demo-how-step-text">
-          Entuned translates that profile into musical parameters: tempo, harmonic density, rhythmic texture, instrumentation, production style. These parameters are designed to induce the psychological state your customer needs.
-        </p>
-      </div>
-      <div class="demo-how-step fade-up">
-        <div class="demo-how-step-num">3</div>
-        <p class="demo-how-step-text">
-          The system generates original music to those specifications. No licensing. No playlist curation. Music built for your store.
-        </p>
-      </div>
-      <div class="demo-how-step fade-up">
-        <div class="demo-how-step-num">4</div>
-        <p class="demo-how-step-text">
-          The music plays in your store. Your existing traffic measurement system records behavioral outcomes: dwell time, conversion, basket size. Entuned correlates the musical parameters with the results.
-        </p>
-      </div>
-      <div class="demo-how-step fade-up">
-        <div class="demo-how-step-num">5</div>
-        <p class="demo-how-step-text">
-          Over time, the correlation engine learns what works. The musical specification tightens. The lift compounds.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- CTA -->
 <section class="demo-cta-section">
   <div class="demo-cta-inner">
     <span class="eyebrow">Get Started</span>
     <h2 class="fade-up" style="margin-bottom: 1.25rem;">Build this for your store.</h2>
-    <p class="fade-up" style="font-size: 1.05rem; opacity: 0.75; margin-bottom: 2.5rem; line-height: 1.85;">
+    <p class="fade-up" style="font-size: 1rem; opacity: 0.75; margin-bottom: 2.25rem; line-height: 1.85;">
       Entuned starts by profiling your customer, composes original music for them, and measures what happens.
     </p>
     <div class="btn-group fade-up">
