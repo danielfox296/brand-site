@@ -10,8 +10,10 @@
           photoObs.unobserve(photoWrap);
         }
       });
-    }, { threshold: 0.2 });
+    }, { threshold: 0.05 });
     photoObs.observe(photoWrap);
+    // Safety net: reveal after 3s if observer never fires
+    setTimeout(function() { photoWrap.classList.add('revealed'); }, 3000);
   }
 
   /* ---- Staggered data row reveal ---- */
