@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/raise/miles.html">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Miles | Entuned</title>
+  <meta name="description" content="Adaptive intelligence that plays the room. Miles is the closed-loop system connecting generative music to measurable retail outcomes.">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="../rss.xml">
+  <meta property="og:title" content="Miles | Entuned">
+  <meta property="og:description" content="Adaptive intelligence that plays the room. Miles is the closed-loop system connecting generative music to measurable retail outcomes.">
+  <meta property="og:url" content="https://entuned.co/raise/miles.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://entuned.co/img/og-default.png">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Miles | Entuned">
+  <meta name="twitter:description" content="Adaptive intelligence that plays the room. Miles is the closed-loop system connecting generative music to measurable retail outcomes.">
+  <meta name="twitter:image" content="https://entuned.co/img/og-default.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Entuned",
+  "url": "https://entuned.co",
+  "description": "Entuned maps musical flow factors to verified retail behavioral outcomes using AI-generated music, turning in-store sound into a measurable performance channel.",
+  "foundingDate": "2025",
+  "founder": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "knowsAbout": [
+    "retail atmospherics",
+    "music psychology",
+    "generative AI music",
+    "in-store customer behavior",
+    "retail analytics",
+    "AI-powered retail music optimization"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/entuned"
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Miles | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+/* Miles Vision Page — Dark theme override + page-specific styles */
+/* Scoped under .miles-page to avoid global side effects */
+
+/* === THEME OVERRIDE === */
+.miles-page {
+  --bg: #0a0a0c;
+  --bg-surface: #111114;
+  --accent: #D4A84B;
+  --accent-dim: rgba(212, 168, 75, 0.15);
+  --accent-glow: rgba(212, 168, 75, 0.08);
+  --text: #e0e0e0;
+  --text-muted: rgba(224, 224, 224, 0.5);
+  --text-faint: rgba(224, 224, 224, 0.3);
+  --chaos: #6b7280;
+
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* Hide site nav and footer — .miles-active added via JS */
+body.miles-active > nav,
+body.miles-active > footer {
+  display: none !important;
+}
+
+/* === SHARED SECTION RHYTHM === */
+.miles-section {
+  padding: 8rem 0;
+  position: relative;
+}
+
+.miles-section .container {
+  max-width: 960px;
+}
+
+.miles-section-header {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+
+.miles-body {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  font-weight: 300;
+  color: var(--text-muted);
+  max-width: 640px;
+}
+
+.miles-body p + p {
+  margin-top: 1.5rem;
+}
+
+.miles-body strong {
+  color: var(--text);
+  font-weight: 400;
+}
+
+/* === SECTION 1: HERO === */
+.miles-hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 0;
+}
+
+.miles-hero-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.6;
+}
+
+.miles-hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.miles-hero h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(4rem, 12vw, 8rem);
+  font-weight: 200;
+  letter-spacing: -0.04em;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+
+.miles-hero-sub {
+  font-size: clamp(1rem, 2.5vw, 1.35rem);
+  font-weight: 300;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+
+/* === SECTION 2: THE PROBLEM === */
+.miles-problem {
+  background: var(--bg);
+}
+
+.miles-contrast {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.miles-contrast-panel {
+  position: relative;
+  border-radius: 12px;
+  padding: 2.5rem;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.miles-contrast-chaos {
+  background: rgba(107, 114, 128, 0.06);
+  border: 1px solid rgba(107, 114, 128, 0.12);
+}
+
+.miles-contrast-clean {
+  background: var(--accent-dim);
+  border: 1px solid rgba(212, 168, 75, 0.15);
+}
+
+.miles-contrast-canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.miles-data-points {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.miles-data-point {
+  position: absolute;
+  font-size: 0.7rem;
+  color: var(--text-faint);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: 0;
+  animation: miles-float 8s ease-in-out infinite;
+}
+
+.miles-data-point:nth-child(1) { top: 15%; left: 10%; animation-delay: 0s; }
+.miles-data-point:nth-child(2) { top: 30%; right: 8%; animation-delay: 2s; }
+.miles-data-point:nth-child(3) { bottom: 30%; left: 15%; animation-delay: 4s; }
+.miles-data-point:nth-child(4) { bottom: 15%; right: 12%; animation-delay: 6s; }
+
+@keyframes miles-float {
+  0%, 100% { opacity: 0; transform: translateY(4px); }
+  30%, 70% { opacity: 0.7; transform: translateY(0); }
+}
+
+/* === SECTION 3: WHAT MILES IS === */
+.miles-system {
+  background: var(--bg-surface);
+}
+
+.miles-diagram {
+  margin: 3rem auto;
+  max-width: 600px;
+}
+
+.miles-diagram svg {
+  width: 100%;
+  height: auto;
+}
+
+/* === SECTION 4: TWO LOOPS === */
+.miles-loops {
+  background: var(--bg);
+}
+
+.miles-rings {
+  margin: 3rem auto;
+  max-width: 480px;
+  position: relative;
+  aspect-ratio: 1;
+}
+
+.miles-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.miles-ring-outer {
+  inset: 0;
+  border-color: rgba(255, 255, 255, 0.1);
+  animation: miles-rotate 60s linear infinite;
+}
+
+.miles-ring-inner {
+  inset: 22%;
+  border-color: rgba(212, 168, 75, 0.25);
+  animation: miles-rotate 45s linear infinite reverse;
+}
+
+.miles-ring-label {
+  position: absolute;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+}
+
+.miles-ring-outer .miles-ring-label {
+  top: -1.5rem;
+  color: var(--text-faint);
+}
+
+.miles-ring-inner .miles-ring-label {
+  top: -1.5rem;
+  color: var(--accent);
+}
+
+.miles-ring-text {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 2rem;
+  line-height: 1.5;
+}
+
+.miles-ring-inner .miles-ring-text {
+  color: rgba(212, 168, 75, 0.7);
+}
+
+/* Ring node dots */
+.miles-ring-node {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.miles-ring-outer .miles-ring-node:nth-child(2) { top: -3px; left: 50%; }
+.miles-ring-outer .miles-ring-node:nth-child(3) { bottom: -3px; left: 50%; }
+.miles-ring-outer .miles-ring-node:nth-child(4) { left: -3px; top: 50%; }
+.miles-ring-outer .miles-ring-node:nth-child(5) { right: -3px; top: 50%; }
+.miles-ring-outer .miles-ring-node:nth-child(6) { top: 14%; left: 14%; }
+.miles-ring-outer .miles-ring-node:nth-child(7) { top: 14%; right: 14%; }
+.miles-ring-outer .miles-ring-node:nth-child(8) { bottom: 14%; left: 14%; }
+.miles-ring-outer .miles-ring-node:nth-child(9) { bottom: 14%; right: 14%; }
+
+.miles-ring-node-active {
+  background: var(--accent);
+  box-shadow: 0 0 8px rgba(212, 168, 75, 0.4);
+  animation: miles-pulse 3s ease-in-out infinite;
+}
+
+@keyframes miles-rotate {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes miles-pulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.5); }
+}
+
+/* === SECTION 5: WHY GENERATIVE === */
+.miles-generative {
+  background: var(--bg-surface);
+}
+
+.miles-assembly {
+  margin: 3rem auto;
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.miles-param-block {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  background: rgba(212, 168, 75, 0.04);
+  border: 1px solid rgba(212, 168, 75, 0.08);
+  border-radius: 6px;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.miles-param-block.miles-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.miles-param-bar {
+  height: 3px;
+  border-radius: 2px;
+  background: var(--accent);
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+
+.miles-param-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.miles-assembly-result {
+  margin-top: 1.5rem;
+  text-align: center;
+  padding: 1.5rem;
+  border: 1px solid rgba(212, 168, 75, 0.15);
+  border-radius: 8px;
+  background: var(--accent-dim);
+  opacity: 0;
+  transition: opacity 0.6s ease 0.8s;
+}
+
+.miles-assembly-result.miles-visible {
+  opacity: 1;
+}
+
+.miles-assembly-result-text {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+}
+
+/* === SECTION 6: THE OUTCOME === */
+.miles-outcome {
+  background: var(--bg);
+  text-align: center;
+}
+
+.miles-outcome .container {
+  max-width: 800px;
+}
+
+.miles-big-number {
+  font-family: var(--font-heading);
+  font-size: clamp(4rem, 10vw, 7rem);
+  font-weight: 200;
+  color: var(--accent);
+  letter-spacing: -0.03em;
+  margin-bottom: 0.5rem;
+}
+
+.miles-big-number-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  margin-bottom: 3rem;
+}
+
+.miles-timeline {
+  margin-top: 3rem;
+  position: relative;
+  height: 120px;
+}
+
+.miles-timeline canvas {
+  width: 100%;
+  height: 100%;
+}
+
+/* === SECTION 7: THE NAME === */
+.miles-name {
+  background: var(--bg-surface);
+  text-align: center;
+  padding: 10rem 0;
+}
+
+.miles-name h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 8vw, 5rem);
+  font-weight: 200;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+
+.miles-name-tagline {
+  font-size: 1.125rem;
+  color: var(--text-muted);
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* === SECTION 8: CTA === */
+.miles-cta {
+  background: var(--bg);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding: 10rem 0;
+}
+
+.miles-cta-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.miles-cta-content {
+  position: relative;
+  z-index: 1;
+}
+
+.miles-cta h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 2.5rem;
+}
+
+.miles-cta-link {
+  display: inline-block;
+  font-size: 1rem;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(212, 168, 75, 0.3);
+  padding-bottom: 0.25rem;
+  transition: border-color 0.3s ease, opacity 0.3s ease;
+}
+
+.miles-cta-link:hover {
+  border-color: var(--accent);
+  opacity: 1;
+}
+
+/* === BACK LINK === */
+.miles-back {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+  z-index: 100;
+  font-size: 0.8rem;
+  color: var(--text-faint);
+  letter-spacing: 0.04em;
+  transition: color 0.3s ease;
+}
+
+.miles-back:hover {
+  color: var(--text);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .miles-section {
+    padding: 5rem 0;
+  }
+
+  .miles-contrast {
+    grid-template-columns: 1fr;
+  }
+
+  .miles-contrast-panel {
+    min-height: 240px;
+  }
+
+  .miles-rings {
+    max-width: 320px;
+  }
+
+  .miles-name {
+    padding: 6rem 0;
+  }
+
+  .miles-cta {
+    padding: 6rem 0;
+  }
+
+  .miles-back {
+    top: 1rem;
+    left: 1rem;
+  }
+}
+  </style>
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav aria-label="Main navigation">
+  <div class="container">
+    <a href="../index.html" class="logo"><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="../how-it-works.html">How It Works</a></li>
+      <li><a href="../pilot.html">Pilot Program</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+  </div>
+</nav>
+
+  <main>
+  <script>
+  // Hide site nav and footer for this cinematic page
+  document.body.classList.add('miles-active');
+  // Also hide the outer <main> wrapper from base layout
+  var outerMain = document.querySelector('body > main');
+  if (outerMain) outerMain.style.display = 'contents';
+</script>
+
+<a href="../raise.html" class="miles-back">&larr; Back to Raise</a>
+
+<main class="miles-page">
+
+  <!-- SECTION 1: HERO -->
+  <section class="miles-hero">
+    <canvas class="miles-hero-canvas" id="miles-hero-wave"></canvas>
+    <div class="miles-hero-content">
+      <h1>Miles</h1>
+      <p class="miles-hero-sub">Adaptive intelligence that plays the room.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 2: THE PROBLEM -->
+  <section class="miles-section miles-problem">
+    <div class="container">
+      <div class="miles-contrast fade-up">
+        <div class="miles-contrast-panel miles-contrast-chaos">
+          <canvas class="miles-contrast-canvas" id="miles-chaos-wave"></canvas>
+          <div class="miles-data-points">
+            <span class="miles-data-point">Written for self-expression</span>
+            <span class="miles-data-point">Unknown tempo</span>
+            <span class="miles-data-point">Semantic noise</span>
+            <span class="miles-data-point">No feedback loop</span>
+          </div>
+        </div>
+        <div class="miles-contrast-panel miles-contrast-clean">
+          <canvas class="miles-contrast-canvas" id="miles-clean-wave"></canvas>
+        </div>
+      </div>
+      <h2 class="miles-section-header fade-up">Licensed music was never designed for this.</h2>
+      <div class="miles-body fade-up">
+        <p>Every track on a retail playlist was written by an artist solving a different problem. Self-expression. Commercial appeal. Artistic vision. None of those goals align with what a store actually needs.</p>
+        <p>The result is noise. Not acoustic noise. <strong>Data noise.</strong> Every variable that matters to behavioral outcomes is uncontrolled. Tempo is a guess. Lyrics carry unintended meaning. Sonic texture clashes with brand. And there's no signal traveling back.</p>
+        <p>The playlist plays. Customers move through the space. Sales happen or they don't. Nobody knows why.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: WHAT MILES IS -->
+  <section class="miles-section miles-system">
+    <div class="container">
+      <h2 class="miles-section-header fade-up">A closed loop between music and commerce.</h2>
+      <div class="miles-diagram fade-up">
+        <svg viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Sensor nodes around perimeter -->
+          <g opacity="0.5">
+            <!-- Foot traffic -->
+            <circle cx="100" cy="80" r="24" stroke="#6b7280" stroke-width="0.75"/>
+            <text x="100" y="84" text-anchor="middle" fill="#6b7280" font-size="9" font-family="Inter, sans-serif">Traffic</text>
+            <!-- POS -->
+            <circle cx="500" cy="80" r="24" stroke="#6b7280" stroke-width="0.75"/>
+            <text x="500" y="84" text-anchor="middle" fill="#6b7280" font-size="9" font-family="Inter, sans-serif">POS</text>
+            <!-- Weather -->
+            <circle cx="100" cy="320" r="24" stroke="#6b7280" stroke-width="0.75"/>
+            <text x="100" y="324" text-anchor="middle" fill="#6b7280" font-size="9" font-family="Inter, sans-serif">Weather</text>
+            <!-- Clock -->
+            <circle cx="500" cy="320" r="24" stroke="#6b7280" stroke-width="0.75"/>
+            <text x="500" y="324" text-anchor="middle" fill="#6b7280" font-size="9" font-family="Inter, sans-serif">Time</text>
+            <!-- Dwell -->
+            <circle cx="60" cy="200" r="24" stroke="#6b7280" stroke-width="0.75"/>
+            <text x="60" y="204" text-anchor="middle" fill="#6b7280" font-size="9" font-family="Inter, sans-serif">Dwell</text>
+          </g>
+
+          <!-- Lines flowing inward -->
+          <g stroke="#6b7280" stroke-width="0.5" opacity="0.3">
+            <line x1="124" y1="92" x2="250" y2="180"/>
+            <line x1="476" y1="92" x2="350" y2="180"/>
+            <line x1="124" y1="308" x2="250" y2="220"/>
+            <line x1="476" y1="308" x2="350" y2="220"/>
+            <line x1="84" y1="200" x2="250" y2="200"/>
+          </g>
+
+          <!-- Central Miles node -->
+          <circle cx="300" cy="200" r="50" stroke="#D4A84B" stroke-width="1" fill="rgba(212,168,75,0.05)">
+            <animate attributeName="r" values="48;52;48" dur="4s" repeatCount="indefinite"/>
+          </circle>
+          <text x="300" y="205" text-anchor="middle" fill="#D4A84B" font-size="14" font-family="Manrope, sans-serif" font-weight="300">Miles</text>
+
+          <!-- Output waveform extending right -->
+          <path d="M350 200 Q380 180 410 200 Q440 220 470 200 Q500 180 530 200 Q560 220 580 200" stroke="#D4A84B" stroke-width="1.5" fill="none" opacity="0.6">
+            <animate attributeName="d" values="M350 200 Q380 180 410 200 Q440 220 470 200 Q500 180 530 200 Q560 220 580 200;M350 200 Q380 215 410 200 Q440 185 470 200 Q500 215 530 200 Q560 185 580 200;M350 200 Q380 180 410 200 Q440 220 470 200 Q500 180 530 200 Q560 220 580 200" dur="4s" repeatCount="indefinite"/>
+          </path>
+
+          <!-- Blueprint grid lines -->
+          <g stroke="#6b7280" stroke-width="0.15" opacity="0.2">
+            <line x1="0" y1="100" x2="600" y2="100"/>
+            <line x1="0" y1="200" x2="600" y2="200"/>
+            <line x1="0" y1="300" x2="600" y2="300"/>
+            <line x1="150" y1="0" x2="150" y2="400"/>
+            <line x1="300" y1="0" x2="300" y2="400"/>
+            <line x1="450" y1="0" x2="450" y2="400"/>
+          </g>
+        </svg>
+      </div>
+      <div class="miles-body fade-up">
+        <p>Miles sees what's happening in the store. Foot traffic. Dwell time. Transactions. Time of day. Weather outside. It processes that data against everything it has learned from every store in the network.</p>
+        <p>Then it acts.</p>
+        <p>Miles generates the next track in near real-time. Parameters tuned to the current state of the room. Transition seamless. No interruption. No human in the loop unless they want one.</p>
+        <p>The store doesn't see Miles working. They see sales going up.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: TWO LOOPS -->
+  <section class="miles-section miles-loops">
+    <div class="container">
+      <h2 class="miles-section-header fade-up">Two kinds of intelligence. One system.</h2>
+      <div class="miles-rings fade-up">
+        <div class="miles-ring miles-ring-outer">
+          <span class="miles-ring-label">Fleet Learning</span>
+          <div class="miles-ring-node"></div>
+          <div class="miles-ring-node"></div>
+          <div class="miles-ring-node"></div>
+          <div class="miles-ring-node"></div>
+          <div class="miles-ring-node"></div>
+          <div class="miles-ring-node"></div>
+          <div class="miles-ring-node"></div>
+          <div class="miles-ring-node"></div>
+        </div>
+        <div class="miles-ring miles-ring-inner">
+          <span class="miles-ring-label">Store Learning</span>
+          <div class="miles-ring-node miles-ring-node-active"></div>
+          <div class="miles-ring-text">Cultural and semantic parameters that work here.</div>
+        </div>
+      </div>
+      <div class="miles-body fade-up">
+        <p>Some things work everywhere. The relationship between tempo and attention. Volume curves that extend dwell without fatigue. These are physiological. Miles learns them across the entire fleet.</p>
+        <p>Other things are local. The neighborhood. The brand. The customer who walks in at 4pm on a Wednesday versus 11am on a Saturday. These are cultural, semantic, specific. Miles learns them store by store.</p>
+        <p>Both loops run continuously. Both get sharper over time. The fleet makes every store smarter. Every store makes the fleet smarter.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: WHY GENERATIVE -->
+  <section class="miles-section miles-generative">
+    <div class="container">
+      <h2 class="miles-section-header fade-up">Every parameter. Intentional.</h2>
+      <div class="miles-assembly fade-up" id="miles-assembly">
+        <div class="miles-param-block" data-delay="0">
+          <div class="miles-param-bar" style="width: 80px;"></div>
+          <span class="miles-param-label">Tempo</span>
+        </div>
+        <div class="miles-param-block" data-delay="100">
+          <div class="miles-param-bar" style="width: 120px;"></div>
+          <span class="miles-param-label">Key &amp; Harmony</span>
+        </div>
+        <div class="miles-param-block" data-delay="200">
+          <div class="miles-param-bar" style="width: 60px;"></div>
+          <span class="miles-param-label">Timbral Texture</span>
+        </div>
+        <div class="miles-param-block" data-delay="300">
+          <div class="miles-param-bar" style="width: 100px;"></div>
+          <span class="miles-param-label">Energy Arc</span>
+        </div>
+        <div class="miles-param-block" data-delay="400">
+          <div class="miles-param-bar" style="width: 40px;"></div>
+          <span class="miles-param-label">Rhythmic Density</span>
+        </div>
+        <div class="miles-param-block" data-delay="500">
+          <div class="miles-param-bar" style="width: 90px;"></div>
+          <span class="miles-param-label">Lyrical Fragments</span>
+        </div>
+        <div class="miles-assembly-result">
+          <span class="miles-assembly-result-text">Intentional. Measurable. Learnable.</span>
+        </div>
+      </div>
+      <div class="miles-body fade-up">
+        <p>Generative music means every detail is a choice. Tempo isn't inherited from whatever the artist felt like. Lyrics aren't semantic accidents. Harmonic rhythm, rhythmic density, timbral texture, energy arc. All specified, all measurable, all learnable.</p>
+        <p>This is what makes the loop trainable. Without control over the input variables, there's nothing to correlate. Nothing to optimize. Nothing to learn from.</p>
+        <p><strong>Miles can only exist because the music was built to be understood.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: THE OUTCOME -->
+  <section class="miles-section miles-outcome">
+    <div class="container">
+      <div class="fade-up">
+        <div class="miles-big-number" id="miles-counter">0%</div>
+        <div class="miles-big-number-label">Average lift in dwell time</div>
+      </div>
+      <h2 class="miles-section-header fade-up" style="text-align: center; max-width: 100%;">Invisible when it works.</h2>
+      <div class="miles-body fade-up" style="margin: 0 auto;">
+        <p>The store manager doesn't interact with Miles. The customer doesn't notice. The playlist doesn't announce itself.</p>
+        <p>What changes is the outcome. More time in the store. More transactions at the register. Higher average ticket. The music did that. But nobody thinks about the music.</p>
+        <p>That's the point.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: THE NAME -->
+  <section class="miles-section miles-name">
+    <div class="container">
+      <h2 class="fade-up">Miles.</h2>
+      <p class="miles-name-tagline fade-up">Feels the room. Plays the room.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 8: CTA -->
+  <section class="miles-cta">
+    <canvas class="miles-cta-canvas" id="miles-cta-wave"></canvas>
+    <div class="miles-cta-content">
+      <h2 class="fade-up">The future of retail sound.</h2>
+      <a href="../contact.html" class="miles-cta-link fade-up">Talk to Entuned &rarr;</a>
+    </div>
+  </section>
+
+</main>
+
+<script>
+(function() {
+  'use strict';
+
+  // === WAVEFORM RENDERER ===
+  function initWaveform(canvasId, opts) {
+    var canvas = document.getElementById(canvasId);
+    if (!canvas) return;
+    var ctx = canvas.getContext('2d');
+    var dpr = window.devicePixelRatio || 1;
+
+    function resize() {
+      var rect = canvas.parentElement.getBoundingClientRect();
+      canvas.width = rect.width * dpr;
+      canvas.height = rect.height * dpr;
+      ctx.scale(dpr, dpr);
+      canvas.style.width = rect.width + 'px';
+      canvas.style.height = rect.height + 'px';
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    var time = Math.random() * 100;
+
+    function draw() {
+      var w = canvas.width / dpr;
+      var h = canvas.height / dpr;
+      ctx.clearRect(0, 0, w, h);
+
+      var waves = opts.waves || 1;
+      for (var wi = 0; wi < waves; wi++) {
+        var color = Array.isArray(opts.color) ? opts.color[wi % opts.color.length] : opts.color;
+        var amp = (opts.amplitude || 30) * (1 - wi * 0.15);
+        var freq = (opts.frequency || 0.008) * (1 + wi * 0.3);
+        var phase = wi * 2.1;
+        var yOff = opts.yOffset || 0.5;
+
+        ctx.beginPath();
+        ctx.strokeStyle = color;
+        ctx.lineWidth = opts.lineWidth || 1.5;
+        ctx.globalAlpha = 1 - wi * 0.2;
+
+        for (var x = 0; x < w; x++) {
+          var y = h * yOff +
+            Math.sin(x * freq + time * (opts.speed || 0.5) + phase) * amp +
+            Math.sin(x * freq * 1.8 + time * (opts.speed || 0.5) * 0.7 + phase) * amp * 0.4;
+          if (x === 0) ctx.moveTo(x, y);
+          else ctx.lineTo(x, y);
+        }
+        ctx.stroke();
+        ctx.globalAlpha = 1;
+      }
+
+      time += 0.016;
+      requestAnimationFrame(draw);
+    }
+    draw();
+  }
+
+  // === HERO WAVEFORM ===
+  initWaveform('miles-hero-wave', {
+    color: '#D4A84B',
+    amplitude: 40,
+    frequency: 0.006,
+    speed: 0.3,
+    lineWidth: 1.5,
+    waves: 1
+  });
+
+  // === CHAOS WAVEFORM (Section 2 left) ===
+  initWaveform('miles-chaos-wave', {
+    color: ['#6b7280', '#9ca3af', '#4b5563', '#78716c', '#a1a1aa'],
+    amplitude: 25,
+    frequency: 0.015,
+    speed: 0.8,
+    lineWidth: 1,
+    waves: 5
+  });
+
+  // === CLEAN WAVEFORM (Section 2 right) ===
+  initWaveform('miles-clean-wave', {
+    color: '#D4A84B',
+    amplitude: 20,
+    frequency: 0.01,
+    speed: 0.25,
+    lineWidth: 1.5,
+    waves: 1
+  });
+
+  // === CTA WAVEFORM ===
+  initWaveform('miles-cta-wave', {
+    color: '#D4A84B',
+    amplitude: 30,
+    frequency: 0.005,
+    speed: 0.2,
+    lineWidth: 1,
+    waves: 1
+  });
+
+  // === PARAMETER ASSEMBLY ANIMATION (Section 5) ===
+  var assemblyEl = document.getElementById('miles-assembly');
+  if (assemblyEl) {
+    var observed = false;
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting && !observed) {
+          observed = true;
+          var blocks = assemblyEl.querySelectorAll('.miles-param-block');
+          blocks.forEach(function(block, i) {
+            setTimeout(function() {
+              block.classList.add('miles-visible');
+            }, parseInt(block.dataset.delay || 0) + i * 120);
+          });
+          // Show result after all blocks
+          setTimeout(function() {
+            var result = assemblyEl.querySelector('.miles-assembly-result');
+            if (result) result.classList.add('miles-visible');
+          }, blocks.length * 120 + 400);
+        }
+      });
+    }, { threshold: 0.3 });
+    observer.observe(assemblyEl);
+  }
+
+  // === COUNTER ANIMATION (Section 6) ===
+  var counterEl = document.getElementById('miles-counter');
+  if (counterEl) {
+    var counted = false;
+    var counterObs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting && !counted) {
+          counted = true;
+          var target = 12;
+          var current = 0;
+          var duration = 2000;
+          var start = performance.now();
+          function tick(now) {
+            var elapsed = now - start;
+            var progress = Math.min(elapsed / duration, 1);
+            // Ease out cubic
+            var eased = 1 - Math.pow(1 - progress, 3);
+            current = Math.round(eased * target);
+            counterEl.textContent = '+' + current + '%';
+            if (progress < 1) requestAnimationFrame(tick);
+          }
+          requestAnimationFrame(tick);
+        }
+      });
+    }, { threshold: 0.5 });
+    counterObs.observe(counterEl);
+  }
+
+})();
+</script>
+  </main>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Retail music strategy driven by customer psychology.</p>
+      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="../how-it-works.html">How It Works</a></li>
+        <li><a href="../pilot.html">Pilot Program</a></li>
+        <li><a href="../why-entuned.html">Why Entuned</a></li>
+        <li><a href="../enterprise.html">Enterprise</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For Your Industry</h4>
+      <ul>
+        <li><a href="../for-apparel.html">Apparel</a></li>
+        <li><a href="../for-cosmetics.html">Cosmetics</a></li>
+        <li><a href="../for-home-goods.html">Home Goods</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
+      <ul>
+        <li><a href="../for-retail-leaders.html">Retail Leaders</a></li>
+        <li><a href="../for-cfos.html">CFOs</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Research</h4>
+      <ul>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../results.html">Results</a></li>
+        <li><a href="../case-studies.html">Case Studies</a></li>
+        <li><a href="../science.html">The Science</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../investors.html">Investors</a></li>
+        <li><a href="../careers.html">Careers</a></li>
+        <li><a href="../press.html">Press</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="../data.html">Data Practices</a></li>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG');
+  </script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>

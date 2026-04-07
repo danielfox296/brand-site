@@ -1,0 +1,372 @@
+<script>
+  // Hide site nav and footer for this cinematic page
+  document.body.classList.add('miles-active');
+  // Also hide the outer <main> wrapper from base layout
+  var outerMain = document.querySelector('body > main');
+  if (outerMain) outerMain.style.display = 'contents';
+</script>
+
+<a href="../raise.html" class="miles-back">&larr; Back to Raise</a>
+
+<main class="miles-page">
+
+  <!-- SECTION 1: HERO -->
+  <section class="miles-hero">
+    <canvas class="miles-hero-canvas" id="miles-hero-wave"></canvas>
+    <div class="miles-hero-content">
+      <h1>Miles</h1>
+      <p class="miles-hero-sub">Adaptive intelligence that plays the room.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 2: THE PROBLEM -->
+  <section class="miles-section miles-problem">
+    <div class="container">
+      <div class="miles-contrast fade-up">
+        <div class="miles-contrast-panel miles-contrast-chaos">
+          <canvas class="miles-contrast-canvas" id="miles-chaos-wave"></canvas>
+          <div class="miles-data-points">
+            <span class="miles-data-point">Written for self-expression</span>
+            <span class="miles-data-point">Unknown tempo</span>
+            <span class="miles-data-point">Semantic noise</span>
+            <span class="miles-data-point">No feedback loop</span>
+          </div>
+        </div>
+        <div class="miles-contrast-panel miles-contrast-clean">
+          <canvas class="miles-contrast-canvas" id="miles-clean-wave"></canvas>
+        </div>
+      </div>
+      <h2 class="miles-section-header fade-up">Licensed music was never designed for this.</h2>
+      <div class="miles-body fade-up">
+        <p>Every track on a retail playlist was written by an artist solving a different problem. Self-expression. Commercial appeal. Artistic vision. None of those goals align with what a store actually needs.</p>
+        <p>The result is noise. Not acoustic noise. <strong>Data noise.</strong> Every variable that matters to behavioral outcomes is uncontrolled. Tempo is a guess. Lyrics carry unintended meaning. Sonic texture clashes with brand. And there's no signal traveling back.</p>
+        <p>The playlist plays. Customers move through the space. Sales happen or they don't. Nobody knows why.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: WHAT MILES IS -->
+  <section class="miles-section miles-system">
+    <div class="container">
+      <h2 class="miles-section-header fade-up">A closed loop between music and commerce.</h2>
+      <div class="miles-diagram fade-up">
+        <svg viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Sensor nodes around perimeter -->
+          <g opacity="0.5">
+            <!-- Foot traffic -->
+            <circle cx="100" cy="80" r="24" stroke="#6b7280" stroke-width="0.75"/>
+            <text x="100" y="84" text-anchor="middle" fill="#6b7280" font-size="9" font-family="Inter, sans-serif">Traffic</text>
+            <!-- POS -->
+            <circle cx="500" cy="80" r="24" stroke="#6b7280" stroke-width="0.75"/>
+            <text x="500" y="84" text-anchor="middle" fill="#6b7280" font-size="9" font-family="Inter, sans-serif">POS</text>
+            <!-- Weather -->
+            <circle cx="100" cy="320" r="24" stroke="#6b7280" stroke-width="0.75"/>
+            <text x="100" y="324" text-anchor="middle" fill="#6b7280" font-size="9" font-family="Inter, sans-serif">Weather</text>
+            <!-- Clock -->
+            <circle cx="500" cy="320" r="24" stroke="#6b7280" stroke-width="0.75"/>
+            <text x="500" y="324" text-anchor="middle" fill="#6b7280" font-size="9" font-family="Inter, sans-serif">Time</text>
+            <!-- Dwell -->
+            <circle cx="60" cy="200" r="24" stroke="#6b7280" stroke-width="0.75"/>
+            <text x="60" y="204" text-anchor="middle" fill="#6b7280" font-size="9" font-family="Inter, sans-serif">Dwell</text>
+          </g>
+
+          <!-- Lines flowing inward -->
+          <g stroke="#6b7280" stroke-width="0.5" opacity="0.3">
+            <line x1="124" y1="92" x2="250" y2="180"/>
+            <line x1="476" y1="92" x2="350" y2="180"/>
+            <line x1="124" y1="308" x2="250" y2="220"/>
+            <line x1="476" y1="308" x2="350" y2="220"/>
+            <line x1="84" y1="200" x2="250" y2="200"/>
+          </g>
+
+          <!-- Central Miles node -->
+          <circle cx="300" cy="200" r="50" stroke="#D4A84B" stroke-width="1" fill="rgba(212,168,75,0.05)">
+            <animate attributeName="r" values="48;52;48" dur="4s" repeatCount="indefinite"/>
+          </circle>
+          <text x="300" y="205" text-anchor="middle" fill="#D4A84B" font-size="14" font-family="Manrope, sans-serif" font-weight="300">Miles</text>
+
+          <!-- Output waveform extending right -->
+          <path d="M350 200 Q380 180 410 200 Q440 220 470 200 Q500 180 530 200 Q560 220 580 200" stroke="#D4A84B" stroke-width="1.5" fill="none" opacity="0.6">
+            <animate attributeName="d" values="M350 200 Q380 180 410 200 Q440 220 470 200 Q500 180 530 200 Q560 220 580 200;M350 200 Q380 215 410 200 Q440 185 470 200 Q500 215 530 200 Q560 185 580 200;M350 200 Q380 180 410 200 Q440 220 470 200 Q500 180 530 200 Q560 220 580 200" dur="4s" repeatCount="indefinite"/>
+          </path>
+
+          <!-- Blueprint grid lines -->
+          <g stroke="#6b7280" stroke-width="0.15" opacity="0.2">
+            <line x1="0" y1="100" x2="600" y2="100"/>
+            <line x1="0" y1="200" x2="600" y2="200"/>
+            <line x1="0" y1="300" x2="600" y2="300"/>
+            <line x1="150" y1="0" x2="150" y2="400"/>
+            <line x1="300" y1="0" x2="300" y2="400"/>
+            <line x1="450" y1="0" x2="450" y2="400"/>
+          </g>
+        </svg>
+      </div>
+      <div class="miles-body fade-up">
+        <p>Miles sees what's happening in the store. Foot traffic. Dwell time. Transactions. Time of day. Weather outside. It processes that data against everything it has learned from every store in the network.</p>
+        <p>Then it acts.</p>
+        <p>Miles generates the next track in near real-time. Parameters tuned to the current state of the room. Transition seamless. No interruption. No human in the loop unless they want one.</p>
+        <p>The store doesn't see Miles working. They see sales going up.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: TWO LOOPS -->
+  <section class="miles-section miles-loops">
+    <div class="container">
+      <h2 class="miles-section-header fade-up">Two kinds of intelligence. One system.</h2>
+      <div class="miles-rings fade-up">
+        <div class="miles-ring miles-ring-outer">
+          <span class="miles-ring-label">Fleet Learning</span>
+          <div class="miles-ring-node"></div>
+          <div class="miles-ring-node"></div>
+          <div class="miles-ring-node"></div>
+          <div class="miles-ring-node"></div>
+          <div class="miles-ring-node"></div>
+          <div class="miles-ring-node"></div>
+          <div class="miles-ring-node"></div>
+          <div class="miles-ring-node"></div>
+        </div>
+        <div class="miles-ring miles-ring-inner">
+          <span class="miles-ring-label">Store Learning</span>
+          <div class="miles-ring-node miles-ring-node-active"></div>
+          <div class="miles-ring-text">Cultural and semantic parameters that work here.</div>
+        </div>
+      </div>
+      <div class="miles-body fade-up">
+        <p>Some things work everywhere. The relationship between tempo and attention. Volume curves that extend dwell without fatigue. These are physiological. Miles learns them across the entire fleet.</p>
+        <p>Other things are local. The neighborhood. The brand. The customer who walks in at 4pm on a Wednesday versus 11am on a Saturday. These are cultural, semantic, specific. Miles learns them store by store.</p>
+        <p>Both loops run continuously. Both get sharper over time. The fleet makes every store smarter. Every store makes the fleet smarter.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: WHY GENERATIVE -->
+  <section class="miles-section miles-generative">
+    <div class="container">
+      <h2 class="miles-section-header fade-up">Every parameter. Intentional.</h2>
+      <div class="miles-assembly fade-up" id="miles-assembly">
+        <div class="miles-param-block" data-delay="0">
+          <div class="miles-param-bar" style="width: 80px;"></div>
+          <span class="miles-param-label">Tempo</span>
+        </div>
+        <div class="miles-param-block" data-delay="100">
+          <div class="miles-param-bar" style="width: 120px;"></div>
+          <span class="miles-param-label">Key &amp; Harmony</span>
+        </div>
+        <div class="miles-param-block" data-delay="200">
+          <div class="miles-param-bar" style="width: 60px;"></div>
+          <span class="miles-param-label">Timbral Texture</span>
+        </div>
+        <div class="miles-param-block" data-delay="300">
+          <div class="miles-param-bar" style="width: 100px;"></div>
+          <span class="miles-param-label">Energy Arc</span>
+        </div>
+        <div class="miles-param-block" data-delay="400">
+          <div class="miles-param-bar" style="width: 40px;"></div>
+          <span class="miles-param-label">Rhythmic Density</span>
+        </div>
+        <div class="miles-param-block" data-delay="500">
+          <div class="miles-param-bar" style="width: 90px;"></div>
+          <span class="miles-param-label">Lyrical Fragments</span>
+        </div>
+        <div class="miles-assembly-result">
+          <span class="miles-assembly-result-text">Intentional. Measurable. Learnable.</span>
+        </div>
+      </div>
+      <div class="miles-body fade-up">
+        <p>Generative music means every detail is a choice. Tempo isn't inherited from whatever the artist felt like. Lyrics aren't semantic accidents. Harmonic rhythm, rhythmic density, timbral texture, energy arc. All specified, all measurable, all learnable.</p>
+        <p>This is what makes the loop trainable. Without control over the input variables, there's nothing to correlate. Nothing to optimize. Nothing to learn from.</p>
+        <p><strong>Miles can only exist because the music was built to be understood.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: THE OUTCOME -->
+  <section class="miles-section miles-outcome">
+    <div class="container">
+      <div class="fade-up">
+        <div class="miles-big-number" id="miles-counter">0%</div>
+        <div class="miles-big-number-label">Average lift in dwell time</div>
+      </div>
+      <h2 class="miles-section-header fade-up" style="text-align: center; max-width: 100%;">Invisible when it works.</h2>
+      <div class="miles-body fade-up" style="margin: 0 auto;">
+        <p>The store manager doesn't interact with Miles. The customer doesn't notice. The playlist doesn't announce itself.</p>
+        <p>What changes is the outcome. More time in the store. More transactions at the register. Higher average ticket. The music did that. But nobody thinks about the music.</p>
+        <p>That's the point.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: THE NAME -->
+  <section class="miles-section miles-name">
+    <div class="container">
+      <h2 class="fade-up">Miles.</h2>
+      <p class="miles-name-tagline fade-up">Feels the room. Plays the room.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 8: CTA -->
+  <section class="miles-cta">
+    <canvas class="miles-cta-canvas" id="miles-cta-wave"></canvas>
+    <div class="miles-cta-content">
+      <h2 class="fade-up">The future of retail sound.</h2>
+      <a href="../contact.html" class="miles-cta-link fade-up">Talk to Entuned &rarr;</a>
+    </div>
+  </section>
+
+</main>
+
+<script>
+(function() {
+  'use strict';
+
+  // === WAVEFORM RENDERER ===
+  function initWaveform(canvasId, opts) {
+    var canvas = document.getElementById(canvasId);
+    if (!canvas) return;
+    var ctx = canvas.getContext('2d');
+    var dpr = window.devicePixelRatio || 1;
+
+    function resize() {
+      var rect = canvas.parentElement.getBoundingClientRect();
+      canvas.width = rect.width * dpr;
+      canvas.height = rect.height * dpr;
+      ctx.scale(dpr, dpr);
+      canvas.style.width = rect.width + 'px';
+      canvas.style.height = rect.height + 'px';
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    var time = Math.random() * 100;
+
+    function draw() {
+      var w = canvas.width / dpr;
+      var h = canvas.height / dpr;
+      ctx.clearRect(0, 0, w, h);
+
+      var waves = opts.waves || 1;
+      for (var wi = 0; wi < waves; wi++) {
+        var color = Array.isArray(opts.color) ? opts.color[wi % opts.color.length] : opts.color;
+        var amp = (opts.amplitude || 30) * (1 - wi * 0.15);
+        var freq = (opts.frequency || 0.008) * (1 + wi * 0.3);
+        var phase = wi * 2.1;
+        var yOff = opts.yOffset || 0.5;
+
+        ctx.beginPath();
+        ctx.strokeStyle = color;
+        ctx.lineWidth = opts.lineWidth || 1.5;
+        ctx.globalAlpha = 1 - wi * 0.2;
+
+        for (var x = 0; x < w; x++) {
+          var y = h * yOff +
+            Math.sin(x * freq + time * (opts.speed || 0.5) + phase) * amp +
+            Math.sin(x * freq * 1.8 + time * (opts.speed || 0.5) * 0.7 + phase) * amp * 0.4;
+          if (x === 0) ctx.moveTo(x, y);
+          else ctx.lineTo(x, y);
+        }
+        ctx.stroke();
+        ctx.globalAlpha = 1;
+      }
+
+      time += 0.016;
+      requestAnimationFrame(draw);
+    }
+    draw();
+  }
+
+  // === HERO WAVEFORM ===
+  initWaveform('miles-hero-wave', {
+    color: '#D4A84B',
+    amplitude: 40,
+    frequency: 0.006,
+    speed: 0.3,
+    lineWidth: 1.5,
+    waves: 1
+  });
+
+  // === CHAOS WAVEFORM (Section 2 left) ===
+  initWaveform('miles-chaos-wave', {
+    color: ['#6b7280', '#9ca3af', '#4b5563', '#78716c', '#a1a1aa'],
+    amplitude: 25,
+    frequency: 0.015,
+    speed: 0.8,
+    lineWidth: 1,
+    waves: 5
+  });
+
+  // === CLEAN WAVEFORM (Section 2 right) ===
+  initWaveform('miles-clean-wave', {
+    color: '#D4A84B',
+    amplitude: 20,
+    frequency: 0.01,
+    speed: 0.25,
+    lineWidth: 1.5,
+    waves: 1
+  });
+
+  // === CTA WAVEFORM ===
+  initWaveform('miles-cta-wave', {
+    color: '#D4A84B',
+    amplitude: 30,
+    frequency: 0.005,
+    speed: 0.2,
+    lineWidth: 1,
+    waves: 1
+  });
+
+  // === PARAMETER ASSEMBLY ANIMATION (Section 5) ===
+  var assemblyEl = document.getElementById('miles-assembly');
+  if (assemblyEl) {
+    var observed = false;
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting && !observed) {
+          observed = true;
+          var blocks = assemblyEl.querySelectorAll('.miles-param-block');
+          blocks.forEach(function(block, i) {
+            setTimeout(function() {
+              block.classList.add('miles-visible');
+            }, parseInt(block.dataset.delay || 0) + i * 120);
+          });
+          // Show result after all blocks
+          setTimeout(function() {
+            var result = assemblyEl.querySelector('.miles-assembly-result');
+            if (result) result.classList.add('miles-visible');
+          }, blocks.length * 120 + 400);
+        }
+      });
+    }, { threshold: 0.3 });
+    observer.observe(assemblyEl);
+  }
+
+  // === COUNTER ANIMATION (Section 6) ===
+  var counterEl = document.getElementById('miles-counter');
+  if (counterEl) {
+    var counted = false;
+    var counterObs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting && !counted) {
+          counted = true;
+          var target = 12;
+          var current = 0;
+          var duration = 2000;
+          var start = performance.now();
+          function tick(now) {
+            var elapsed = now - start;
+            var progress = Math.min(elapsed / duration, 1);
+            // Ease out cubic
+            var eased = 1 - Math.pow(1 - progress, 3);
+            current = Math.round(eased * target);
+            counterEl.textContent = '+' + current + '%';
+            if (progress < 1) requestAnimationFrame(tick);
+          }
+          requestAnimationFrame(tick);
+        }
+      });
+    }, { threshold: 0.5 });
+    counterObs.observe(counterEl);
+  }
+
+})();
+</script>
