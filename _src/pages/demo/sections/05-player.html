@@ -1,8 +1,8 @@
 <section class="demo-player-section">
   <div class="demo-player-inner">
-    <span class="eyebrow">The Sound</span>
-    <h2 class="demo-player-headline fade-up">This is what the system built for Mara.</h2>
-    <p class="demo-player-sub fade-up">Four tracks. Four behavioral decisions. One 18-minute visit.</p>
+    <span class="eyebrow">{{content.eyebrow_5}}</span>
+    <h2 class="demo-player-headline fade-up">{{content.h2_3}}</h2>
+    <p class="demo-player-sub fade-up">{{content.p_4}}</p>
 
     <!-- Animated waveform SVG -->
     <svg class="demo-waveform fade-up" viewBox="0 0 320 60" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -26,11 +26,11 @@
 
     <!-- Credentials box -->
     <div class="demo-credentials fade-up">
-      <span class="demo-credentials-label">Player Access</span>
+      <span class="demo-credentials-label">{{content.credentials_label_1}}</span>
 
       <div class="demo-credentials-row">
-        <span class="demo-credentials-key">Store</span>
-        <span class="demo-credentials-val">Alcott &amp; Co.</span>
+        <span class="demo-credentials-key">{{content.credentials_key_1}}</span>
+        <span class="demo-credentials-val">{{content.credentials_val_1}}</span>
         <button class="demo-copy-btn" data-copy="Alcott & Co." title="Copy" aria-label="Copy store name">
           <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
             <rect x="4" y="4" width="8" height="8" rx="1"/>
@@ -40,8 +40,8 @@
       </div>
 
       <div class="demo-credentials-row">
-        <span class="demo-credentials-key">Email</span>
-        <span class="demo-credentials-val">demo@alcottandco.entuned.co</span>
+        <span class="demo-credentials-key">{{content.credentials_key_2}}</span>
+        <span class="demo-credentials-val">{{content.credentials_val_2}}</span>
         <button class="demo-copy-btn" data-copy="demo@alcottandco.entuned.co" title="Copy" aria-label="Copy email">
           <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
             <rect x="4" y="4" width="8" height="8" rx="1"/>
@@ -51,8 +51,8 @@
       </div>
 
       <div class="demo-credentials-row">
-        <span class="demo-credentials-key">Password</span>
-        <span class="demo-credentials-val">maraishere</span>
+        <span class="demo-credentials-key">{{content.credentials_key_3}}</span>
+        <span class="demo-credentials-val">{{content.credentials_val_3}}</span>
         <button class="demo-copy-btn" data-copy="maraishere" title="Copy" aria-label="Copy password">
           <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
             <rect x="4" y="4" width="8" height="8" rx="1"/>
@@ -69,13 +69,13 @@
       rel="noopener"
       class="demo-launch-btn fade-up"
     >
-      Open the Wonder Player
+      {{content.btn_1}}
       <svg class="demo-launch-arrow" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
         <path d="M4 14 L14 4 M6 4 H14 V12"/>
       </svg>
     </a>
 
-    <p class="demo-player-note fade-up">Opens in a new tab &nbsp;&middot;&nbsp; Return here to follow the story</p>
+    <p class="demo-player-note fade-up">{{content.player_note_1}}</p>
   </div>
 </section>
 

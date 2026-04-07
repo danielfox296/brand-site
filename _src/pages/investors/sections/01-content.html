@@ -31,8 +31,8 @@
           <div class="container" style="max-width: 100%;">
             <div class="stats-grid" style="grid-template-columns: 1fr;">
               <div class="stat-item fade-up">
-                <div class="stat-number">$1.9B</div>
-                <div class="stat-label">Global commercial music market (2025) · projected $2.78B by 2031</div>
+                <div class="stat-number">{{content.stat_number_1}}</div>
+                <div class="stat-label">{{content.stat_label_1}}</div>
               </div>
             </div>
           </div>
@@ -87,22 +87,22 @@
         <h2>{{content.h2_6}}</h2>
         <ul style="list-style: none; margin: 0; padding: 0;">
           <li style="padding: 0.75rem 0; padding-left: 1.75rem; position: relative; font-size: 1.05rem; opacity: 0.9;">
-            <span style="position: absolute; left: 0; color: #50929c;">—</span> Patent pending (provisional filed)
+            <span style="position: absolute; left: 0; color: #50929c;">—</span> {{content.li_1}}
           </li>
           <li style="padding: 0.75rem 0; padding-left: 1.75rem; position: relative; font-size: 1.05rem; opacity: 0.9;">
-            <span style="position: absolute; left: 0; color: #50929c;">—</span> Proprietary parameters catalogued with measurement specifications
+            <span style="position: absolute; left: 0; color: #50929c;">—</span> {{content.li_2}}
           </li>
           <li style="padding: 0.75rem 0; padding-left: 1.75rem; position: relative; font-size: 1.05rem; opacity: 0.9;">
-            <span style="position: absolute; left: 0; color: #50929c;">—</span> Music generation pipeline operational
+            <span style="position: absolute; left: 0; color: #50929c;">—</span> {{content.li_3}}
           </li>
           <li style="padding: 0.75rem 0; padding-left: 1.75rem; position: relative; font-size: 1.05rem; opacity: 0.9;">
-            <span style="position: absolute; left: 0; color: #50929c;">—</span> iOS streaming app in development
+            <span style="position: absolute; left: 0; color: #50929c;">—</span> {{content.li_4}}
           </li>
           <li style="padding: 0.75rem 0; padding-left: 1.75rem; position: relative; font-size: 1.05rem; opacity: 0.9;">
-            <span style="position: absolute; left: 0; color: #50929c;">—</span> Founding pilot program open — seeking retail partners with 40+ locations
+            <span style="position: absolute; left: 0; color: #50929c;">—</span> {{content.li_5}}
           </li>
           <li style="padding: 0.75rem 0; padding-left: 1.75rem; position: relative; font-size: 1.05rem; opacity: 0.9;">
-            <span style="position: absolute; left: 0; color: #50929c;">—</span> We're raising a pre-seed round to fund the first RetailNext-integrated pilots.
+            <span style="position: absolute; left: 0; color: #50929c;">—</span> {{content.li_6}}
           </li>
         </ul>
       </div>
@@ -135,29 +135,29 @@
 
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
           <div class="form-group">
-            <label for="inv-first">First name</label>
-            <input type="text" id="inv-first" name="first_name" required placeholder="Jane">
+            <label for="inv-first">{{content.form_label_1}}</label>
+            <input type="text" id="inv-first" name="first_name" required placeholder="{{content.form_placeholder_1}}">
           </div>
           <div class="form-group">
-            <label for="inv-last">Last name</label>
-            <input type="text" id="inv-last" name="last_name" required placeholder="Doe">
+            <label for="inv-last">{{content.form_label_2}}</label>
+            <input type="text" id="inv-last" name="last_name" required placeholder="{{content.form_placeholder_2}}">
           </div>
         </div>
 
         <div class="form-group">
-          <label for="inv-fund">Fund or firm <span style="opacity: 0.4; font-weight: 400;">(optional)</span></label>
-          <input type="text" id="inv-fund" name="fund" placeholder="Acme Ventures">
+          <label for="inv-fund">{{content.form_label_3}}</label>
+          <input type="text" id="inv-fund" name="fund" placeholder="{{content.form_placeholder_3}}">
         </div>
 
         <div class="form-group">
-          <label for="inv-email">Email</label>
-          <input type="email" id="inv-email" name="email" required placeholder="jane@acmevc.com">
+          <label for="inv-email">{{content.form_label_4}}</label>
+          <input type="email" id="inv-email" name="email" required placeholder="{{content.form_placeholder_4}}">
         </div>
 
         <!-- Honeypot -->
         <input type="text" name="_gotcha" style="display:none">
 
-        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">Request the Deck</button>
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">{{content.btn_1}}</button>
 
         <div id="investor-form-status" style="text-align: center; margin-top: 1.5rem; display: none;"></div>
       </form>

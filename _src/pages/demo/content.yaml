@@ -1,0 +1,133 @@
+# demo — editable text content
+
+# 01-intro
+badge_1: "Entuned Pilot &nbsp;&middot;&nbsp; Alcott &amp; Co."
+eyebrow_1: A Story in Sound
+store_name_1: "Alcott & Co."
+p_1: Music built for one customer. Running in a real store.
+scroll_hint_1: Scroll
+
+# 02-problem
+eyebrow_2: The Status Quo
+h2_1: Nobody designed this music for your customer.
+p_2: Alcott sells elevated everyday objects. Ceramics, textiles, small furniture. Their customers browse slowly, by design.
+pullquote_1: "What music should be playing for <em>her?</em>"
+bridge_1: "Right now, most stores have three options."
+card_label_1: The Playlist
+card_text_1: Curated for taste, not outcomes. Nobody owns the results.
+card_label_2: Personal Spotify
+card_text_2: Consumer license. Every play in a commercial space is a violation.
+card_label_3: Big-Box Provider
+card_text_3: Nothing is built for your customer.
+p_3: In all three cases, the music was never designed to support customer behavior. Inviting enough not to drive people out. That is the bar.
+
+# 03-variables
+eyebrow_3: What Music Actually Does
+h2_2: Every track carries decisions. Most stores make none of them.
+var_key_1: Tempo
+var_val_1: Slower tempos extend dwell time. Faster tempos clear the floor. Unmanaged, it defaults to whatever the artist felt.
+var_key_2: "Key &amp; Mode"
+var_val_2: Major keys lift mood. Minor keys create introspection. The wrong one changes what customers decide.
+var_key_3: Instrumentation
+var_val_3: Acoustic signals craft. Synths signal trend. Each instrument sets a brand expectation before a product is touched.
+var_key_4: Lyrics
+var_val_4: A lyric about leaving primes departure. A lyric about indulgence primes purchase. Words are never neutral.
+var_key_5: Familiarity
+var_val_5: Familiar songs make time feel faster. The customer thinks she has been there longer. She wants to leave sooner.
+vars_answer_1: "Entuned makes all of it <span class=\"demo-gold\">intentional.</span>"
+
+# 04-icp
+icp_caption_1: "ICP Seed Profile &middot; Alcott &amp; Co."
+eyebrow_4: The Customer
+icp_name_1: Mara.
+icp_line_1: She arrives on Saturday afternoons. She is in no hurry.
+icp_line_2: She picks things up, puts them down, picks them up again. She is not deciding whether she can afford it. She is deciding whether it belongs in her life.
+icp_line_3: She finds busy soundscapes irritating. She needs the room to feel like it has time.
+ledger_key_1: Typical visit
+ledger_val_1: "18&ndash;24 minutes"
+ledger_key_2: Frequency
+ledger_val_2: "2&times; per month, Saturday afternoons"
+ledger_key_3: Decision style
+ledger_val_3: Deliberate. Needs space to feel certain.
+ledger_key_4: Audio response
+ledger_val_4: Responds to sound that does not compete
+ledger_key_5: Peak engagement
+ledger_val_5: When the environment feels unhurried
+icp_pullquote_1: She stays 22% longer when the room feels unhurried.
+icp_chips_label_1: Musical prescription
+icp_chip_1: "<strong>TEMPO</strong> &nbsp;68&ndash;82 BPM"
+icp_chip_2: "<strong>MODE</strong> &nbsp;Major, soft voicings"
+icp_chip_3: "<strong>RHYTHM</strong> &nbsp;Acoustic, no drive"
+icp_chip_4: "<strong>LYRICAL</strong> &nbsp;Ambient or abstract"
+
+# 05-player
+eyebrow_5: The Sound
+h2_3: This is what the system built for Mara.
+p_4: Four tracks. Four behavioral decisions. One 18-minute visit.
+credentials_label_1: Player Access
+credentials_key_1: Store
+credentials_val_1: "Alcott &amp; Co."
+credentials_key_2: Email
+credentials_val_2: demo@alcottandco.entuned.co
+credentials_key_3: Password
+credentials_val_3: maraishere
+btn_1: Open the Wonder Player
+player_note_1: "Opens in a new tab &nbsp;&middot;&nbsp; Return here to follow the story"
+
+# 06-timeline
+eyebrow_6: The Story
+h2_4: "Mara's 18 minutes."
+timeline_sub_1: The music shifted four times. Each shift was a decision.
+track_label_1: Track 1 of 4
+moment_time_1: "0:00"
+moment_activity_1: Entry
+moment_desc_1: Mara walks in. The music is already there. It does not announce itself.
+moment_music_1: 80 BPM, acoustic texture, major key, muted voicings. No percussion. The room says welcome before she reads the price tag.
+moment_instruction_1: "&#9654;&nbsp; Start the Wonder player from the beginning."
+moment_time_2: "4:32"
+moment_activity_2: Active Browse
+moment_desc_2: She has picked up three things. The system detected movement and engagement. The music shifted.
+moment_music_2: 94 BPM, light rhythmic pulse. Same temperature as Entry. Slightly more present. Keeps pace without leading.
+moment_instruction_2: "&#9654;&nbsp; Skip to 4:32 in the Wonder player."
+moment_time_3: "11:15"
+moment_activity_3: Extended Dwell
+moment_desc_3: She has not moved from the ceramics shelf in 90 seconds. The system detected it. The music slowed.
+moment_music_3: 68 BPM. Major sevenths and suspended chords. No percussion. The moment belongs to her, not to the store.
+moment_instruction_3: "&#9654;&nbsp; Skip to 11:15 in the Wonder player."
+moment_time_4: "16:48"
+moment_activity_4: Exit Approach
+moment_desc_4: She started toward the door. She had not bought anything yet. The music shifted again.
+moment_music_4: 87 BPM. More textural. A melodic idea that does not resolve. A question, not a conclusion.
+moment_instruction_4: "&#9654;&nbsp; Skip to 16:48 in the Wonder player."
+
+# 07-outcomes
+eyebrow_7: What Happened
+h2_5: "The numbers from Mara's visit."
+stat_number_1: "+31%"
+stat_label_1: Average dwell time vs. unmanaged audio
+stat_note_1: Across extended dwell sessions where the system detected 90+ second product engagement.
+stat_number_2: "+$41"
+stat_label_2: Average order value on extended dwell visits
+stat_note_2: Customers who stayed through the dwell phase transacted at a meaningfully higher average.
+stat_number_3: "14%"
+stat_label_3: Exit-approach sessions that converted to purchase
+stat_note_3: Visits where the reengagement track was playing at the departure decision point.
+closing_quote_1: Mara stayed 18 minutes. She bought the bowl.
+disclaimer_1: "Story data &mdash; benchmarked from peer-reviewed retail behavioral research. Entuned pilot data in production."
+
+# 08-cta
+eyebrow_8: "What&rsquo;s Next"
+h2_6: Ready to build a Mara of your own?
+p_5: "Every store has a customer worth knowing this well. Entuned starts by profiling them, composes original music for them, and measures what happens."
+step_num_1: "01"
+step_label_1: Profile
+step_desc_1: "We map who your customer is, how they decide, and what behavioral environment supports a purchase."
+step_num_2: "02"
+step_label_2: Compose
+step_desc_2: "Original music, built from their behavioral profile. Every parameter decided. Nothing incidental."
+step_num_3: "03"
+step_label_3: Measure
+step_desc_3: "Foot traffic, dwell time, POS. Correlated to what was playing. The loop closes."
+btn_2: Request Pilot Access
+btn_3: How It Works
+p_6: "No subscription required to start &nbsp;&middot;&nbsp; 90-day pilot &nbsp;&middot;&nbsp; Zero licensing fees"

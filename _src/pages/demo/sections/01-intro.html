@@ -9,19 +9,19 @@
   <!-- Top-left live badge -->
   <div class="demo-hero-badge">
     <span class="demo-hero-badge-dot"></span>
-    Entuned Pilot &nbsp;&middot;&nbsp; Alcott &amp; Co.
+    {{content.badge_1}}
   </div>
 
   <!-- Bottom-left main content -->
   <div class="demo-hero-content">
-    <span class="demo-hero-eyebrow">A Story in Sound</span>
+    <span class="demo-hero-eyebrow">{{content.eyebrow_1}}</span>
     <div class="demo-hero-name" id="demoStoreName" aria-label="Alcott &amp; Co."></div>
-    <p class="demo-hero-tagline">Music built for one customer. Running in a real store.</p>
+    <p class="demo-hero-tagline">{{content.p_1}}</p>
   </div>
 
   <!-- Scroll indicator -->
   <div class="demo-scroll-hint" aria-hidden="true">
-    <span>Scroll</span>
+    <span>{{content.scroll_hint_1}}</span>
     <svg class="demo-scroll-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
       <path d="M5 7l5 5 5-5"/>
     </svg>
@@ -33,7 +33,7 @@
   // Letter stagger animation for store name
   var nameEl = document.getElementById('demoStoreName');
   if (!nameEl) return;
-  var text = 'Alcott & Co.';
+  var text = '{{content.store_name_1}}';
   var baseDelay = 700; // ms after page load
   var perLetterDelay = 55;
   text.split('').forEach(function(char, i) {
