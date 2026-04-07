@@ -528,6 +528,26 @@ footer .footer-section:first-child p {
   background: rgba(32, 32, 28, 0.85);
 }
 
+/* ==================== PARALLAX IMAGE SECTIONS ==================== */
+.parallax-image-section {
+  position: relative;
+  z-index: 1;
+  height: 50vh;
+  min-height: 320px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .parallax-image-section {
+    background-attachment: scroll;
+    height: 40vh;
+    min-height: 240px;
+  }
+}
+
 /* ==================== HERO VARIATIONS ==================== */
 .hero-home {
   position: relative;
