@@ -1,3 +1,38 @@
 # science — editable text content
 
-p_1: This page has moved. <a href="how-it-works.html">See How It Works →</a>
+h1_1: The Science Behind the Soundtrack
+h2_1: Your Store Has a Blind Spot
+h2_2: What the Research Found
+h2_3: The Results Are Research-Backed
+h2_4: Put the Research to Work
+eyebrow_1: Four Decades of Evidence
+btn_1: Start a Pilot
+btn_2: See the Results
+p_1: Four decades of peer-reviewed research prove music changes retail behavior. Tempo, genre congruence, and volume measurably affect dwell time and spending.
+p_2: "Your store tracks foot traffic, conversion, dwell time, and basket size. You optimize lighting, layout, signage, and staffing. But the audio environment\u2014the one variable that touches every customer from the moment they walk in\u2014runs on a playlist nobody measured."
+p_3: "That is not a music problem. It is a data problem. Thirty years of controlled experiments show that specific musical parameters produce specific behavioral outcomes in retail environments. The research exists. The application layer did not\u2014until now."
+p_4: "Entuned translates peer-reviewed behavioral science into original compositions built for your customer\u2019s psychology. Every track is specified by tempo, mode, harmonic density, and instrumentation\u2014parameters that published studies have directly linked to dwell time, willingness to pay, and purchase behavior."
+p_5: "Every decision Entuned makes maps to a published finding. These are not projections. They are controlled experiments with named researchers, sample sizes, and effect magnitudes."
+p_6: Every store is different. We are looking for retail brands ready to put thirty years of behavioral research to work and to own the data that proves it.
+
+card_title_1: Dwell Time Increase
+card_text_1: "Milliman (1982) found slow tempo increased grocery dwell time by 38%. Knoferle et al. (2011) showed the lift requires slow tempo in a minor mode. Major mode eliminates the effect. Most retail music providers have the thermostat. They don\u2019t have the engine."
+card_title_2: Willingness to Pay
+card_text_2: "Areni and Kim (1993) found identity-congruent music nearly doubled average transaction value in a wine store. North et al. (1999) found French music tripled French wine sales. The mechanism is congruence: when the music matches the customer, spending rises."
+card_title_3: Familiarity Hurts
+card_text_3: "Yalch and Spangenberg (2000) found familiar music drove shoppers out 8% faster. Customers reported enjoying it more, but they left sooner. Original music is unfamiliar by definition. That is not a limitation. It is the point."
+card_title_4: Transaction Value Lift
+card_text_4: "Areni and Kim (1993) measured average transaction value jumping from $6.93 to $12.31 with classical music in a wine cellar. Customers selected more expensive items, not more items. The music changed perceived value."
+
+cite_1: Milliman (1982)
+cite_desc_1: "Slow tempo music increased grocery store dwell time by 38% and daily gross receipts by 32%. The foundational study proving tempo directly affects shopping behavior."
+cite_2: Areni & Kim (1993)
+cite_desc_2: "Classical music in a wine cellar nearly doubled average transaction value. Customers selected more expensive bottles, not more bottles. Music changed perceived value."
+cite_3: North, Hargreaves & McKendrick (1999)
+cite_desc_3: "French music tripled French wine sales over two weeks. German music doubled German wine sales. Customers denied being influenced. Congruence operates below awareness."
+cite_4: Yalch & Spangenberg (2000)
+cite_desc_4: "Familiar music drove shoppers out 8% faster in a department store. They reported enjoying it more but left sooner. Unfamiliar music extended dwell time."
+cite_5: Knoferle et al. (2011)
+cite_desc_5: "Demonstrated that tempo alone does not predict sales. Slow tempo in minor mode produced a sales lift. Slow tempo in major mode did not. The interaction matters."
+cite_6: Andersson et al. (2012)
+cite_desc_6: "Ran 601 real transactions and found incongruent music actively reduced willingness to pay. Getting the music wrong costs you money. Silence would be better."
