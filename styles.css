@@ -1108,6 +1108,24 @@ main > article > p,
   color: #50929c;
 }
 
+/* ==================== SOUND CHECK SERIES NAV ==================== */
+.sound-check-nav {
+  background: var(--accent-light);
+  border-left: 3px solid var(--accent);
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  margin: 1.5rem 0 2rem;
+  max-width: 800px;
+}
+.sound-check-nav .section-eyebrow {
+  margin-bottom: 0.5rem;
+}
+.sound-check-nav p:last-child {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
 /* ==================== SMALL SCREEN ==================== */
 @media (max-width: 480px) {
   h1 {
