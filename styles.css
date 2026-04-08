@@ -450,6 +450,17 @@ footer .footer-section:first-child p {
   transition: opacity 0.8s ease;
 }
 
+.fade-up-delay {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.fade-up-delay.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s ease 0.4s, transform 0.8s ease 0.4s;
+}
+
 /* ==================== CARDS ==================== */
 .card {
   background: rgba(255, 255, 255, 0.02);
