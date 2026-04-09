@@ -21,6 +21,7 @@ Built on decades of peer-reviewed research: tempo entrainment increases dwell ti
 ## Pages
 
 - [Home](https://entuned.co/): What Entuned is, core value proposition, audio samples, and pilot program CTA.
+- [What Is Entuned](https://entuned.co/demo.html): Interactive story demo — three fictional retail stores (Meridian, Accord, Waverly & Sons) showing how wrong vs. right music shapes customer behavior.
 - [How It Works](https://entuned.co/how-it-works.html): The four-stage pipeline from customer profiling to streaming, with research citations.
 - [Results](https://entuned.co/results.html): Research-backed performance projections and pilot program information.
 - [Pricing](https://entuned.co/pricing.html): Three tiers from $299-$599/location/month, plus enterprise custom pricing.
