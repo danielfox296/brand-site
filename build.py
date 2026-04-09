@@ -279,7 +279,7 @@ def build():
                 "name": "Entuned",
                 "url": SITE_URL,
                 "description": "Entuned maps musical flow factors to verified retail behavioral outcomes using AI-generated music, turning in-store sound into a measurable performance channel.",
-                "foundingDate": "2025",
+                "foundingDate": "2026",
                 "founder": {
                     "@type": "Person",
                     "name": "Daniel Fox"
