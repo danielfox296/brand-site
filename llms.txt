@@ -124,6 +124,10 @@ Built on decades of peer-reviewed research: tempo entrainment increases dwell ti
 - Enterprise: Custom (25+ locations, unlimited zones)
 - All plans start with a free pilot
 
+## Tools
+
+- [ROI Calculator](https://entuned.co/impact.html): Client-side calculator estimating music-attributable revenue lift by scenario (Conservative/Moderate/Optimistic) based on locations, weekly transactions, and average transaction value. Uses conservative peer-reviewed research ranges.
+
 ## Contact
 
 - Contact: https://entuned.co/contact.html

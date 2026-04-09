@@ -2,10 +2,10 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "entuned-site",
+      "name": "website",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8743"],
-      "port": 8743
+      "runtimeArgs": ["-m", "http.server", "8765"],
+      "port": 8765
     }
   ]
 }

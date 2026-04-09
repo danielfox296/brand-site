@@ -1,0 +1,274 @@
+
+<!-- ABOVE-FOLD HEADER -->
+<section class="impact-hero">
+  <div class="container">
+    <div class="fade-up" style="text-align: center; max-width: 820px; margin: 0 auto;">
+      <span class="eyebrow">{{content.eyebrow}}</span>
+      <h1>{{content.h1}}</h1>
+      <p class="impact-subhead">{{content.subhead}}</p>
+    </div>
+  </div>
+</section>
+
+<!-- CALCULATOR -->
+<section class="impact-calc-section">
+  <div class="container">
+    <div class="calc-card fade-up">
+
+      <!-- Inputs -->
+      <div class="calc-inputs">
+        <div class="calc-input-group">
+          <label for="stores">Locations</label>
+          <input type="number" id="stores" value="8" min="1" max="999" step="1">
+        </div>
+        <div class="calc-input-group">
+          <label for="weekly_tx">Weekly transactions / store</label>
+          <input type="number" id="weekly_tx" value="400" min="1" step="1">
+        </div>
+        <div class="calc-input-group">
+          <label for="atv">Average transaction value ($)</label>
+          <input type="number" id="atv" value="85" min="1" step="1">
+        </div>
+      </div>
+
+      <!-- Baseline -->
+      <div class="calc-baseline">
+        <span class="baseline-label">Annual baseline:</span>
+        <span class="baseline-value" id="baseline-display">—</span>
+      </div>
+
+      <!-- Scenario Cards -->
+      <div class="scenario-cards">
+        <div class="scenario-card">
+          <div class="scenario-label">Conservative</div>
+          <div class="scenario-detail">2% ATV &middot; 1% UPT</div>
+          <div class="scenario-amount" id="val-conservative">—</div>
+        </div>
+        <div class="scenario-card scenario-card--featured">
+          <div class="scenario-badge">Likely range</div>
+          <div class="scenario-label">Moderate</div>
+          <div class="scenario-detail">3.5% ATV &middot; 2% UPT</div>
+          <div class="scenario-amount" id="val-moderate">—</div>
+        </div>
+        <div class="scenario-card">
+          <div class="scenario-label">Optimistic</div>
+          <div class="scenario-detail">5% ATV &middot; 3% UPT</div>
+          <div class="scenario-amount" id="val-optimistic">—</div>
+        </div>
+      </div>
+
+      <!-- Chart -->
+      <div class="chart-wrapper">
+        <div class="chart-legend">
+          <span class="legend-item">
+            <span class="legend-swatch legend-swatch--dark"></span>
+            Transaction value lift
+          </span>
+          <span class="legend-item">
+            <span class="legend-swatch legend-swatch--light"></span>
+            UPT lift
+          </span>
+        </div>
+        <div class="chart-canvas-wrap">
+          <canvas id="impactChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Methodology Accordion -->
+      <details class="methodology-accordion">
+        <summary>Methodology</summary>
+        <div class="methodology-body">
+          <p>These figures represent the music-attributable share of revenue outcomes, not total potential lift from all variables. Based on peer-reviewed literature on acoustic environment and consumer behavior (Milliman 1982; Yalch &amp; Spangenberg 2000; Kn&ouml;ferle et al. 2012; Renwick &amp; Woolhouse 2023).</p>
+          <p><strong>Transaction value component:</strong> Tempo, mode, and volume affect arousal and purchase depth. Conservative range: 2&ndash;5% ATV improvement on optimized transactions.</p>
+          <p><strong>UPT component:</strong> Extended dwell time increases inventory exposure. Conservative range: 1&ndash;3% UPT improvement.</p>
+          <p>These ranges are intentionally below published study averages. A pilot replaces them with measured outcomes from your locations.</p>
+        </div>
+      </details>
+
+      <!-- CTA -->
+      <a href="contact.html" class="btn btn-primary calc-cta-btn">Measure your actual lift &mdash; start a pilot &rarr;</a>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHAT A PILOT MEASURES -->
+<section class="impact-pilot-section">
+  <div class="container">
+    <div class="fade-up" style="text-align: center; margin-bottom: 2.5rem;">
+      <span class="eyebrow">What a pilot measures</span>
+    </div>
+    <div class="pilot-callouts fade-up">
+      <div class="pilot-callout">
+        <span class="callout-number">01</span>
+        <span class="callout-label">Dwell time by music condition</span>
+      </div>
+      <div class="pilot-callout">
+        <span class="callout-number">02</span>
+        <span class="callout-label">Transaction value by music condition</span>
+      </div>
+      <div class="pilot-callout">
+        <span class="callout-number">03</span>
+        <span class="callout-label">Units per transaction by session type</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTNOTE -->
+<div class="impact-footnote">
+  <div class="container">
+    <p>Lift estimates are music-attributable only. Conservative ranges were applied intentionally. Published study averages run higher.</p>
+  </div>
+</div>
+
+<!-- Chart.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" defer></script>
+
+<script>
+(function () {
+  // Currency formatter per spec:
+  // <$1K → $XXX, $1K–$999K → $XXK, $1M+ → $X.XM
+  function fmt(v) {
+    if (v < 1000)       return '$' + Math.round(v);
+    if (v < 1000000)    return '$' + Math.round(v / 1000) + 'K';
+    return '$' + (v / 1000000).toFixed(1) + 'M';
+  }
+
+  // Scenario definitions: [atv_lift, upt_lift]
+  var scenarios = {
+    conservative: [0.02, 0.01],
+    moderate:     [0.035, 0.02],
+    optimistic:   [0.05, 0.03]
+  };
+
+  var labels = ['Conservative', 'Moderate', 'Optimistic'];
+
+  var chart;
+
+  function getInputs() {
+    var stores    = Math.max(1, parseInt(document.getElementById('stores').value)    || 1);
+    var weekly_tx = Math.max(1, parseInt(document.getElementById('weekly_tx').value) || 1);
+    var atv       = Math.max(1, parseFloat(document.getElementById('atv').value)     || 1);
+    return { stores: stores, weekly_tx: weekly_tx, atv: atv };
+  }
+
+  function calculate() {
+    var inp = getInputs();
+    var baseline = inp.stores * inp.weekly_tx * inp.atv * 52;
+
+    document.getElementById('baseline-display').textContent = fmt(baseline);
+
+    var keys = ['conservative', 'moderate', 'optimistic'];
+    var ids  = ['val-conservative', 'val-moderate', 'val-optimistic'];
+    var atvLifts = [], uptLifts = [];
+
+    keys.forEach(function (key, i) {
+      var atv_pct = scenarios[key][0];
+      var upt_pct = scenarios[key][1];
+      var atv_lift = atv_pct * baseline;
+      var upt_lift = upt_pct * baseline;
+      var total    = atv_lift + upt_lift;
+
+      document.getElementById(ids[i]).textContent = fmt(total);
+      atvLifts.push(atv_lift);
+      uptLifts.push(upt_lift);
+    });
+
+    if (chart) {
+      chart.data.datasets[0].data = atvLifts;
+      chart.data.datasets[1].data = uptLifts;
+      chart.update();
+    }
+
+    return { atvLifts: atvLifts, uptLifts: uptLifts };
+  }
+
+  function initChart(atvLifts, uptLifts) {
+    var canvas = document.getElementById('impactChart');
+    if (!canvas) return;
+    var ctx = canvas.getContext('2d');
+
+    chart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: labels,
+        datasets: [
+          {
+            label: 'Transaction value lift',
+            data: atvLifts,
+            backgroundColor: '#50929c',
+            borderRadius: 3,
+            borderSkipped: false
+          },
+          {
+            label: 'UPT lift',
+            data: uptLifts,
+            backgroundColor: '#8abdc4',
+            borderRadius: 3,
+            borderSkipped: false
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: function (ctx) {
+                return ctx.dataset.label + ': ' + fmt(ctx.parsed.y);
+              }
+            }
+          }
+        },
+        scales: {
+          x: {
+            stacked: true,
+            grid: { display: false },
+            ticks: {
+              color: 'rgba(212, 225, 229, 0.6)',
+              font: { family: 'Inter, sans-serif', size: 12 }
+            },
+            border: { color: 'rgba(80, 146, 156, 0.15)' }
+          },
+          y: {
+            stacked: true,
+            grid: { color: 'rgba(80, 146, 156, 0.08)' },
+            ticks: {
+              color: 'rgba(212, 225, 229, 0.6)',
+              font: { family: 'Inter, sans-serif', size: 11 },
+              callback: function (value) { return fmt(value); }
+            },
+            border: { display: false }
+          }
+        }
+      }
+    });
+  }
+
+  // Wait for Chart.js to be available
+  function tryInit() {
+    if (typeof Chart === 'undefined') {
+      setTimeout(tryInit, 80);
+      return;
+    }
+    var initial = calculate();
+    initChart(initial.atvLifts, initial.uptLifts);
+  }
+
+  // Wire inputs
+  ['stores', 'weekly_tx', 'atv'].forEach(function (id) {
+    var el = document.getElementById(id);
+    if (el) el.addEventListener('input', calculate);
+  });
+
+  // Kick off once DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', tryInit);
+  } else {
+    tryInit();
+  }
+})();
+</script>
