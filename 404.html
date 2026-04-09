@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/404.html">
+  <meta name="robots" content="index, follow">
+  <title>Page Not Found | Entuned</title>
+  <meta name="description" content="The page you&#x27;re looking for doesn&#x27;t exist. Head back to Entuned to learn how music drives measurable retail outcomes.">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="rss.xml">
+  <meta property="og:title" content="Page Not Found | Entuned">
+  <meta property="og:description" content="The page you&#x27;re looking for doesn&#x27;t exist. Head back to Entuned to learn how music drives measurable retail outcomes.">
+  <meta property="og:url" content="https://entuned.co/404.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://entuned.co/img/og-default.png">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Page Not Found | Entuned">
+  <meta name="twitter:description" content="The page you&#x27;re looking for doesn&#x27;t exist. Head back to Entuned to learn how music drives measurable retail outcomes.">
+  <meta name="twitter:image" content="https://entuned.co/img/og-default.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Entuned",
+  "url": "https://entuned.co",
+  "description": "Entuned maps musical flow factors to verified retail behavioral outcomes using AI-generated music, turning in-store sound into a measurable performance channel.",
+  "foundingDate": "2025",
+  "founder": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "knowsAbout": [
+    "retail atmospherics",
+    "music psychology",
+    "generative AI music",
+    "in-store customer behavior",
+    "retail analytics",
+    "AI-powered retail music optimization"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/entuned"
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Page Not Found | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+.not-found-main {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.not-found-inner {
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.not-found-code {
+  font-family: var(--font-heading);
+  font-size: 6rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.not-found-headline {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.not-found-body {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .not-found-code {
+    font-size: 4rem;
+  }
+  .not-found-headline {
+    font-size: 1.5rem;
+  }
+}
+  </style>
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav aria-label="Main navigation">
+  <div class="container">
+    <a href="index.html" class="logo"><img src="img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="how-it-works.html">How It Works</a></li>
+      <li><a href="pilot.html">Pilot Program</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+  </div>
+</nav>
+
+  <main>
+  <!-- CYMATICS CANVAS — fixed behind all content, scroll-driven -->
+  <canvas id="cymaticsCanvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 0; pointer-events: none;"></canvas>
+  <div id="cymaticsFreq" style="position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%); font-family: 'SF Mono', 'Fira Code', monospace; font-size: 10px; letter-spacing: 0.12em; color: rgba(212,225,229,0.12); pointer-events: none; z-index: 2;"></div>
+
+<div class="not-found-main cymatics-over">
+  <div class="container">
+    <div class="not-found-inner fade-up">
+      <p class="not-found-code">404</p>
+      <h1 class="not-found-headline">Page not found.</h1>
+      <p class="not-found-body">This page doesn't exist&mdash;but your store's sound strategy probably should.</p>
+      <a href="/" class="btn btn-primary">Back to Entuned</a>
+    </div>
+  </div>
+</div>
+
+  <script>
+  (function() {
+    const canvas = document.getElementById('cymaticsCanvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const freqEl = document.getElementById('cymaticsFreq');
+
+    let W, H, cx, cy;
+    let mouseX = 0.5, mouseY = 0.5, mouseSmX = 0.5, mouseSmY = 0.5;
+    const DPR = Math.min(window.devicePixelRatio || 1, 2);
+
+    const isMobile = window.innerWidth < 768;
+    const GRID = isMobile ? 160 : 260;
+    const field = new Float32Array(GRID * GRID);
+
+    function resize() {
+      W = window.innerWidth; H = window.innerHeight;
+      canvas.width = W * DPR; canvas.height = H * DPR;
+      ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+      cx = W / 2; cy = H / 2;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+    window.addEventListener('mousemove', function(e) {
+      mouseX = e.clientX / W;
+      mouseY = e.clientY / H;
+    });
+
+    function chladni(x, y, n, m, mix) {
+      var PI = Math.PI;
+      var a = Math.sin(n * PI * x) * Math.sin(m * PI * y);
+      var b = Math.sin(m * PI * x) * Math.sin(n * PI * y);
+      return a * mix + b * (1 - mix);
+    }
+
+    function chladniBlend(x, y, n1, m1, n2, m2, blend, mix) {
+      var v1 = chladni(x, y, n1, m1, mix);
+      var v2 = chladni(x, y, n2, m2, mix);
+      return v1 * (1 - blend) + v2 * blend;
+    }
+
+    function marchingSquares(field, cols, rows, threshold) {
+      var segments = [];
+      for (var j = 0; j < rows - 1; j++) {
+        for (var i = 0; i < cols - 1; i++) {
+          var tl = field[j * cols + i];
+          var tr = field[j * cols + i + 1];
+          var br = field[(j+1) * cols + i + 1];
+          var bl = field[(j+1) * cols + i];
+          var idx = 0;
+          if (tl > threshold) idx |= 8;
+          if (tr > threshold) idx |= 4;
+          if (br > threshold) idx |= 2;
+          if (bl > threshold) idx |= 1;
+          if (idx === 0 || idx === 15) continue;
+
+          var t = threshold;
+          function lerp(v1, v2) {
+            if (Math.abs(v2 - v1) < 0.0001) return 0.5;
+            return (t - v1) / (v2 - v1);
+          }
+          var top    = { x: i + lerp(tl, tr), y: j };
+          var right  = { x: i + 1, y: j + lerp(tr, br) };
+          var bottom = { x: i + lerp(bl, br), y: j + 1 };
+          var left   = { x: i, y: j + lerp(tl, bl) };
+
+          switch (idx) {
+            case 1: case 14: segments.push(left, bottom); break;
+            case 2: case 13: segments.push(bottom, right); break;
+            case 3: case 12: segments.push(left, right); break;
+            case 4: case 11: segments.push(top, right); break;
+            case 5: segments.push(top, left); segments.push(bottom, right); break;
+            case 6: case 9: segments.push(top, bottom); break;
+            case 7: case 8: segments.push(top, left); break;
+            case 10: segments.push(top, right); segments.push(bottom, left); break;
+          }
+        }
+      }
+      return segments;
+    }
+
+    var modes = [
+      [1, 1], [1, 2], [2, 2], [2, 3], [3, 3], [3, 4],
+      [4, 4], [4, 5], [5, 5], [5, 6], [6, 6], [6, 7],
+      [7, 7], [7, 8], [8, 8], [8, 9], [9, 9], [9, 10],
+      [10, 10], [10, 12], [12, 12], [12, 14], [14, 14],
+      [14, 16], [16, 16], [16, 18], [18, 20], [20, 22],
+      [22, 25], [25, 28]
+    ];
+
+    var CREAM = 'rgba(202, 195, 191,';
+    var TEAL = 'rgba(80, 146, 156,';
+
+    var smoothScroll = 0;
+    var time = 0;
+
+    function draw() {
+      time += 0.016;
+
+      var scrollMax = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+      var rawScroll = window.scrollY / scrollMax;
+      smoothScroll += (rawScroll - smoothScroll) * 0.08;
+
+      mouseSmX += (mouseX - mouseSmX) * 0.03;
+      mouseSmY += (mouseY - mouseSmY) * 0.03;
+
+      var modeProgress = smoothScroll * (modes.length - 1);
+      var modeIdx = Math.floor(modeProgress);
+      var modeFrac = modeProgress - modeIdx;
+      modeIdx = Math.min(modeIdx, modes.length - 2);
+
+      var n1 = modes[modeIdx][0], m1 = modes[modeIdx][1];
+      var n2 = modes[modeIdx + 1][0], m2 = modes[modeIdx + 1][1];
+
+      var mix = 0.35 + mouseSmX * 0.3;
+      var timeDrift = Math.sin(time * 0.15) * 0.02;
+
+      if (freqEl) {
+        var dn = n1 + (n2 - n1) * modeFrac;
+        var dm = m1 + (m2 - m1) * modeFrac;
+        freqEl.textContent = 'mode ' + dn.toFixed(1) + ' \u00b7 ' + dm.toFixed(1);
+      }
+
+      for (var j = 0; j < GRID; j++) {
+        for (var i = 0; i < GRID; i++) {
+          var x = (i / (GRID - 1)) * 2 - 1;
+          var y = (j / (GRID - 1)) * 2 - 1;
+          var dist = Math.sqrt(x * x + y * y);
+          if (dist > 1.0) {
+            field[j * GRID + i] = 999;
+            continue;
+          }
+          var val = chladniBlend(x, y, n1 + timeDrift, m1, n2 + timeDrift, m2, modeFrac, mix);
+          if (dist > 0.85) {
+            var edge = (dist - 0.85) / 0.15;
+            val *= (1 - edge * edge);
+          }
+          field[j * GRID + i] = val;
+        }
+      }
+
+      ctx.fillStyle = '#20201c';
+      ctx.fillRect(0, 0, W, H);
+
+      var plateSize = Math.min(W, H) * 1.8;
+      var offX = (W - plateSize) / 2;
+      var offY = (H - plateSize) / 2;
+      var cellW = plateSize / (GRID - 1);
+      var cellH = plateSize / (GRID - 1);
+
+      var segs0 = marchingSquares(field, GRID, GRID, 0);
+      drawSegs(segs0, CREAM, 0.18, 0.7, offX, offY, cellW, cellH);
+
+      var segs1 = marchingSquares(field, GRID, GRID, 0.12);
+      drawSegs(segs1, TEAL, 0.06, 0.4, offX, offY, cellW, cellH);
+      var segs2 = marchingSquares(field, GRID, GRID, -0.12);
+      drawSegs(segs2, TEAL, 0.06, 0.4, offX, offY, cellW, cellH);
+
+      var segs3 = marchingSquares(field, GRID, GRID, 0.3);
+      drawSegs(segs3, CREAM, 0.03, 0.2, offX, offY, cellW, cellH);
+      var segs4 = marchingSquares(field, GRID, GRID, -0.3);
+      drawSegs(segs4, CREAM, 0.03, 0.2, offX, offY, cellW, cellH);
+
+      requestAnimationFrame(draw);
+    }
+
+    function drawSegs(segs, colorStr, alpha, lineWidth, offX, offY, cellW, cellH) {
+      if (segs.length < 2) return;
+      ctx.strokeStyle = colorStr + alpha + ')';
+      ctx.lineWidth = lineWidth;
+      ctx.lineCap = 'round';
+      ctx.beginPath();
+      for (var i = 0; i < segs.length; i += 2) {
+        var a = segs[i], b = segs[i + 1];
+        ctx.moveTo(offX + a.x * cellW, offY + a.y * cellH);
+        ctx.lineTo(offX + b.x * cellW, offY + b.y * cellH);
+      }
+      ctx.stroke();
+    }
+
+    requestAnimationFrame(draw);
+  })();
+  </script>
+  </main>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4><img src="img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Retail music strategy driven by customer psychology.</p>
+      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="pilot.html">Pilot Program</a></li>
+        <li><a href="why-entuned.html">Why Entuned</a></li>
+        <li><a href="enterprise.html">Enterprise</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For Your Industry</h4>
+      <ul>
+        <li><a href="for-apparel.html">Apparel</a></li>
+        <li><a href="for-cosmetics.html">Cosmetics</a></li>
+        <li><a href="for-home-goods.html">Home Goods</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
+      <ul>
+        <li><a href="for-retail-leaders.html">Retail Leaders</a></li>
+        <li><a href="for-cfos.html">CFOs</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Research</h4>
+      <ul>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="science.html">The Science</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="investors.html">Investors</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="press.html">Press</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="data.html">Data Practices</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG');
+  </script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>
