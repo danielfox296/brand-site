@@ -41,34 +41,24 @@
       <div class="scenario-cards">
         <div class="scenario-card">
           <div class="scenario-label">Conservative</div>
-          <div class="scenario-detail">2% ATV &middot; 1% UPT</div>
+          <div class="scenario-detail">2% ATV lift</div>
           <div class="scenario-amount" id="val-conservative">—</div>
         </div>
         <div class="scenario-card scenario-card--featured">
           <div class="scenario-badge">Likely range</div>
           <div class="scenario-label">Moderate</div>
-          <div class="scenario-detail">3.5% ATV &middot; 2% UPT</div>
+          <div class="scenario-detail">3.5% ATV lift</div>
           <div class="scenario-amount" id="val-moderate">—</div>
         </div>
         <div class="scenario-card">
           <div class="scenario-label">Optimistic</div>
-          <div class="scenario-detail">5% ATV &middot; 3% UPT</div>
+          <div class="scenario-detail">5% ATV lift</div>
           <div class="scenario-amount" id="val-optimistic">—</div>
         </div>
       </div>
 
       <!-- Chart -->
       <div class="chart-wrapper">
-        <div class="chart-legend">
-          <span class="legend-item">
-            <span class="legend-swatch legend-swatch--dark"></span>
-            Transaction value lift
-          </span>
-          <span class="legend-item">
-            <span class="legend-swatch legend-swatch--light"></span>
-            UPT lift
-          </span>
-        </div>
         <div class="chart-canvas-wrap">
           <canvas id="impactChart"></canvas>
         </div>
@@ -76,12 +66,10 @@
 
       <!-- Methodology Accordion -->
       <details class="methodology-accordion">
-        <summary>Methodology</summary>
+        <summary><span>How these numbers are calculated</span></summary>
         <div class="methodology-body">
           <p>These figures represent the music-attributable share of revenue outcomes, not total potential lift from all variables. Based on peer-reviewed literature on acoustic environment and consumer behavior (Milliman 1982; Yalch &amp; Spangenberg 2000; Kn&ouml;ferle et al. 2012; Renwick &amp; Woolhouse 2023).</p>
-          <p><strong>Transaction value component:</strong> Tempo, mode, and volume affect arousal and purchase depth. Conservative range: 2&ndash;5% ATV improvement on optimized transactions.</p>
-          <p><strong>UPT component:</strong> Extended dwell time increases inventory exposure. Conservative range: 1&ndash;3% UPT improvement.</p>
-          <p>These ranges are intentionally below published study averages. A pilot replaces them with measured outcomes from your locations.</p>
+          <p><strong>Transaction value component:</strong> Tempo, mode, and volume affect arousal and purchase depth. Conservative range: 2&ndash;5% ATV improvement on optimized transactions. These ranges are intentionally below published study averages. A pilot replaces them with measured outcomes from your locations.</p>
         </div>
       </details>
 
@@ -95,7 +83,7 @@
 <!-- WHAT A PILOT MEASURES -->
 <section class="impact-pilot-section">
   <div class="container">
-    <div class="fade-up" style="text-align: center; margin-bottom: 2.5rem;">
+    <div class="fade-up" style="text-align: center; margin-bottom: 3rem;">
       <span class="eyebrow">What a pilot measures</span>
     </div>
     <div class="pilot-callouts fade-up">
@@ -127,23 +115,14 @@
 
 <script>
 (function () {
-  // Currency formatter per spec:
-  // <$1K → $XXX, $1K–$999K → $XXK, $1M+ → $X.XM
   function fmt(v) {
-    if (v < 1000)       return '$' + Math.round(v);
-    if (v < 1000000)    return '$' + Math.round(v / 1000) + 'K';
+    if (v < 1000)     return '$' + Math.round(v);
+    if (v < 1000000)  return '$' + Math.round(v / 1000) + 'K';
     return '$' + (v / 1000000).toFixed(1) + 'M';
   }
 
-  // Scenario definitions: [atv_lift, upt_lift]
-  var scenarios = {
-    conservative: [0.02, 0.01],
-    moderate:     [0.035, 0.02],
-    optimistic:   [0.05, 0.03]
-  };
-
-  var labels = ['Conservative', 'Moderate', 'Optimistic'];
-
+  var atvLifts = [0.02, 0.035, 0.05];
+  var labels   = ['Conservative', 'Moderate', 'Optimistic'];
   var chart;
 
   function getInputs() {
@@ -154,37 +133,26 @@
   }
 
   function calculate() {
-    var inp = getInputs();
+    var inp      = getInputs();
     var baseline = inp.stores * inp.weekly_tx * inp.atv * 52;
 
     document.getElementById('baseline-display').textContent = fmt(baseline);
 
-    var keys = ['conservative', 'moderate', 'optimistic'];
+    var vals = atvLifts.map(function (pct) { return pct * baseline; });
     var ids  = ['val-conservative', 'val-moderate', 'val-optimistic'];
-    var atvLifts = [], uptLifts = [];
-
-    keys.forEach(function (key, i) {
-      var atv_pct = scenarios[key][0];
-      var upt_pct = scenarios[key][1];
-      var atv_lift = atv_pct * baseline;
-      var upt_lift = upt_pct * baseline;
-      var total    = atv_lift + upt_lift;
-
-      document.getElementById(ids[i]).textContent = fmt(total);
-      atvLifts.push(atv_lift);
-      uptLifts.push(upt_lift);
+    vals.forEach(function (v, i) {
+      document.getElementById(ids[i]).textContent = fmt(v);
     });
 
     if (chart) {
-      chart.data.datasets[0].data = atvLifts;
-      chart.data.datasets[1].data = uptLifts;
+      chart.data.datasets[0].data = vals;
       chart.update();
     }
 
-    return { atvLifts: atvLifts, uptLifts: uptLifts };
+    return vals;
   }
 
-  function initChart(atvLifts, uptLifts) {
+  function initChart(vals) {
     var canvas = document.getElementById('impactChart');
     if (!canvas) return;
     var ctx = canvas.getContext('2d');
@@ -193,22 +161,13 @@
       type: 'bar',
       data: {
         labels: labels,
-        datasets: [
-          {
-            label: 'Transaction value lift',
-            data: atvLifts,
-            backgroundColor: '#50929c',
-            borderRadius: 3,
-            borderSkipped: false
-          },
-          {
-            label: 'UPT lift',
-            data: uptLifts,
-            backgroundColor: '#8abdc4',
-            borderRadius: 3,
-            borderSkipped: false
-          }
-        ]
+        datasets: [{
+          label: 'Transaction value lift',
+          data: vals,
+          backgroundColor: '#50929c',
+          borderRadius: 4,
+          borderSkipped: false
+        }]
       },
       options: {
         responsive: true,
@@ -217,28 +176,24 @@
           legend: { display: false },
           tooltip: {
             callbacks: {
-              label: function (ctx) {
-                return ctx.dataset.label + ': ' + fmt(ctx.parsed.y);
-              }
+              label: function (ctx) { return 'ATV lift: ' + fmt(ctx.parsed.y); }
             }
           }
         },
         scales: {
           x: {
-            stacked: true,
             grid: { display: false },
             ticks: {
-              color: 'rgba(212, 225, 229, 0.6)',
-              font: { family: 'Inter, sans-serif', size: 12 }
+              color: 'rgba(212, 225, 229, 0.7)',
+              font: { family: 'Inter, sans-serif', size: 13 }
             },
             border: { color: 'rgba(80, 146, 156, 0.15)' }
           },
           y: {
-            stacked: true,
             grid: { color: 'rgba(80, 146, 156, 0.08)' },
             ticks: {
-              color: 'rgba(212, 225, 229, 0.6)',
-              font: { family: 'Inter, sans-serif', size: 11 },
+              color: 'rgba(212, 225, 229, 0.7)',
+              font: { family: 'Inter, sans-serif', size: 12 },
               callback: function (value) { return fmt(value); }
             },
             border: { display: false }
@@ -248,23 +203,16 @@
     });
   }
 
-  // Wait for Chart.js to be available
   function tryInit() {
-    if (typeof Chart === 'undefined') {
-      setTimeout(tryInit, 80);
-      return;
-    }
-    var initial = calculate();
-    initChart(initial.atvLifts, initial.uptLifts);
+    if (typeof Chart === 'undefined') { setTimeout(tryInit, 80); return; }
+    initChart(calculate());
   }
 
-  // Wire inputs
   ['stores', 'weekly_tx', 'atv'].forEach(function (id) {
     var el = document.getElementById(id);
     if (el) el.addEventListener('input', calculate);
   });
 
-  // Kick off once DOM is ready
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', tryInit);
   } else {
