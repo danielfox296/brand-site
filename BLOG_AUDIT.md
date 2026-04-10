@@ -62,7 +62,6 @@ P = Pass, F = Fail
 | 24 | the-dwell-time-variable-nobodys-tracking | 56 | -- | P | F | P | F | F | P | P | P | F | 4 |
 | 25 | the-hidden-cost-of-your-licensing-fee | 52 | -- | P | F | P | F | F | P | P | P | F | 4 |
 | 26 | the-metrics-your-audio-environment-should-... | 69 | -- | F | F | P | F | F | P | P | P | F | 5 |
-| 27 | the-multi-zone-problem-why-one-playlist-ca... | 81 | -- | F | F | F | F | F | P | P | P | F | 6 |
 | 28 | the-real-cost-of-retail-music | 44 | -- | P | F | P | F | F | P | P | P | F | 4 |
 | 29 | the-silent-brand-signal | 38 | -- | P | F | F | F | F | P | P | P | P | 4 |
 | 30 | volume-knob | 90 | 126 | F | P | P | F | F | P | F | P | P | 4 |
@@ -90,7 +89,6 @@ P = Pass, F = Fail
 | what-church-concert-halls-and-film-composers-know-that-retail-doesnt | What Church, Concert Halls, and Film Composers Know That Retail Doesn't — Entuned Blog | **86** |
 | how-specialty-wine-retailers-use-music-to-sell-more-expensive-bottles | How Specialty Wine Retailers Use Music to Sell More Expensive Bottles — Entuned Blog | **84** |
 | sound-designer | You Hired a Lighting Designer. Why Didn't You Hire a Sound Designer? — Entuned Blog | **83** |
-| the-multi-zone-problem-why-one-playlist-cant-serve-a-whole-store | The Multi-Zone Problem: Why One Playlist Can't Serve a Whole Store — Entuned Blog | **81** |
 | what-happens-to-employee-performance-when-the-music-is-right | What Happens to Employee Performance When the Music Is Right — Entuned Blog | **75** |
 | longer-visits | Why Longer Visits Don't Automatically Mean Bigger Receipts — Entuned Blog | **73** |
 | next-retail-tech-acquisition | Why the Next Big Retail Tech Acquisition Will Be in Audio — Entuned Blog | **72** |
@@ -122,7 +120,6 @@ P = Pass, F = Fail
 - `the-dwell-time-variable-nobodys-tracking`
 - `the-hidden-cost-of-your-licensing-fee`
 - `the-metrics-your-audio-environment-should-be-producing`
-- `the-multi-zone-problem-why-one-playlist-cant-serve-a-whole-store`
 - `the-real-cost-of-retail-music`
 - `the-silent-brand-signal`
 - `what-church-concert-halls-and-film-composers-know-that-retail-doesnt`
@@ -158,7 +155,6 @@ P = Pass, F = Fail
 - `sound-designer`
 - `store-manager-problem`
 - `the-8-12-youre-leaving-on-the-table`
-- `the-multi-zone-problem-why-one-playlist-cant-serve-a-whole-store`
 - `the-silent-brand-signal`
 - `what-church-concert-halls-and-film-composers-know-that-retail-doesnt`
 - `what-happens-to-employee-performance-when-the-music-is-right`
@@ -190,7 +186,6 @@ These posts should add a 1-2 sentence definition or direct statement as the very
 - `the-dwell-time-variable-nobodys-tracking`
 - `the-hidden-cost-of-your-licensing-fee`
 - `the-metrics-your-audio-environment-should-be-producing`
-- `the-multi-zone-problem-why-one-playlist-cant-serve-a-whole-store`
 - `the-silent-brand-signal`
 - `what-church-concert-halls-and-film-composers-know-that-retail-doesnt`
 - `what-happens-to-employee-performance-when-the-music-is-right`
@@ -207,7 +202,7 @@ These posts should add a 1-2 sentence definition or direct statement as the very
 - `measure-roi-retail-music`: 3 links to ['../blog/the-dwell-time-variable-nobodys-tracking.html', '../blog/what-are-flow-factors.html', '../blog/tempo-controls.html']
 - `retail-atmospherics-2026`: 4 links to ['../blog/tempo-controls.html', '../blog/what-is-entuned.html', '../blog/what-are-flow-factors.html', '../blog/measure-roi-retail-music.html']
 - `what-are-flow-factors`: 3 links to ['../blog/tempo-controls.html', '../blog/science-of-tempo-retail.html', '../blog/cfos-case-for-retail-audio.html']
-- `what-is-entuned`: 5 links to ['../blog/what-are-flow-factors.html', '../blog/the-multi-zone-problem-why-one-playlist-cant-serve-a-whole-store.html', '../blog/the-dwell-time-variable-nobodys-tracking.html', '../blog/the-multi-zone-problem-why-one-playlist-cant-serve-a-whole-store.html', '../blog/ai-vs-traditional-retail-music.html']
+- `what-is-entuned`: 5 links to ['../blog/what-are-flow-factors.html', '../blog/the-dwell-time-variable-nobodys-tracking.html', '../blog/ai-vs-traditional-retail-music.html']
 
 **The other 34 posts have zero blog-to-blog cross-links.** This is the single biggest structural SEO problem.
 
@@ -262,7 +257,6 @@ These posts should add a 1-2 sentence definition or direct statement as the very
 | Current Slug | Words | Suggested Revision |
 |:-------------|:-----:|:-------------------|
 | `luxury-priming-is-real-and-you-dont-have-to-be-a-luxury-brand-to-use-it` | 16 | `luxury-priming-retail` |
-| `the-multi-zone-problem-why-one-playlist-cant-serve-a-whole-store` | 12 | `multi-zone-music` |
 | `how-specialty-wine-retailers-use-music-to-sell-more-expensive-bottles` | 11 | `wine-music-premium-sales` |
 | `what-church-concert-halls-and-film-composers-know-that-retail-doesnt` | 11 | `sound-design-retail` |
 | `what-happens-to-employee-performance-when-the-music-is-right` | 10 | `employee-music-performance` |
@@ -298,7 +292,6 @@ Note: Changing slugs requires 301 redirects from the old URLs.
 - **`music-was-never-made-for-your-store`** (6 failures): no meta; narrative opening; no H2?; no blog links; no stats; slug 7w
 - **`psychographic-profiling-retail`** (6 failures): title 65ch; no meta; no H2?; no blog links; no core link; no CTA
 - **`science-of-tempo-retail`** (6 failures): title 64ch; no meta; no H2?; no blog links; no core link; no CTA
-- **`the-multi-zone-problem-why-one-playlist-cant-serve-a-whole-store`** (6 failures): title 81ch; no meta; narrative opening; no H2?; no blog links; slug 12w
 - **`what-church-concert-halls-and-film-composers-know-that-retail-doesnt`** (6 failures): title 86ch; no meta; narrative opening; no H2?; no blog links; slug 11w
 - **`what-happens-to-employee-performance-when-the-music-is-right`** (6 failures): title 75ch; no meta; narrative opening; no H2?; no blog links; slug 10w
 - **`why-your-best-customers-leave-faster-than-they-should`** (6 failures): title 68ch; no meta; narrative opening; no H2?; no blog links; slug 9w

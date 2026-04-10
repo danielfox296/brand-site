@@ -57,7 +57,6 @@ Built on decades of peer-reviewed research: tempo entrainment increases dwell ti
 - [The 8-12% You're Leaving on the Table](https://entuned.co/blog/the-8-12-youre-leaving-on-the-table.html): Genre congruence research and its impact on willingness to pay.
 - [Why Your Best Customers Leave Faster Than They Should](https://entuned.co/blog/why-your-best-customers-leave-faster-than-they-should.html): Tempo entrainment and dwell time research.
 - [The Silent Brand Signal](https://entuned.co/blog/the-silent-brand-signal.html): How intentional audio creates a brand halo effect.
-- [The Multi-Zone Problem](https://entuned.co/blog/the-multi-zone-problem-why-one-playlist-cant-serve-a-whole-store.html): Why one playlist can't serve a whole store.
 - [What Spotify Gets Wrong](https://entuned.co/blog/what-spotify-gets-wrong.html): The limitations of catalog-based background music services.
 - [Why Background Music Costs You Sales](https://entuned.co/blog/why-background-music-costs-you-sales.html): The hidden cost of generic audio environments.
 - [The Dwell Time Variable Nobody's Tracking](https://entuned.co/blog/the-dwell-time-variable-nobodys-tracking.html): Audio as an untracked variable in retail analytics.

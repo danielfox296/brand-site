@@ -111,7 +111,6 @@ Supporting blogs:
 - `blog/the-store-is-not-a-set.html`
 - `blog/what-happens-to-employee-performance.html`
 - `blog/read-the-lyrics-on-your-speakers-right-now.html`
-- `blog/the-multi-zone-problem-why-one-playlist-cant-serve-a-whole-store.html`
 
 ### Cluster 7: Dwell Time & Behavioral Outcomes
 **Pillar:** `results.html` (primary), `pilot.html` (secondary)
