@@ -70,6 +70,13 @@
     <guid>https://entuned.co/blog/employees-hear-it.html</guid>
   </item>
   <item>
+    <title>Every Song In Your Store Is Either Working Or It Isn't</title>
+    <link>https://entuned.co/blog/every-song-working-or-not.html</link>
+    <description>A scatter plot of every track your store played last week shows where the music falls between noise and signal. Here's where each provider lands.</description>
+    <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
+    <guid>https://entuned.co/blog/every-song-working-or-not.html</guid>
+  </item>
+  <item>
     <title>Every Store Teaches the Next One</title>
     <link>https://entuned.co/blog/fleet-learning.html</link>
     <description>How Entuned's fleet learning model turns every retail deployment into a data asset — correlating musical variables with sales outcomes across locations.</description>
@@ -138,13 +145,6 @@
     <description>Every track in your licensing catalog was created for something other than your store. That mismatch has consequences most retailers never examine.</description>
     <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
     <guid>https://entuned.co/blog/music-was-never-made-for-your-store.html</guid>
-  </item>
-  <item>
-    <title>Why the Next Big Retail Tech Acquisition Will Be in Audio</title>
-    <link>https://entuned.co/blog/next-retail-tech-acquisition.html</link>
-    <description>Retail tech acquisitions follow a pattern. Audio is the next surface — and the window is open now.</description>
-    <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
-    <guid>https://entuned.co/blog/next-retail-tech-acquisition.html</guid>
   </item>
 </channel>
 </rss>

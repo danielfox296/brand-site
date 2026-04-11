@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/blog/every-song-working-or-not.html">
+  <meta name="robots" content="index, follow">
+  <title>Every Song In Your Store Is Either Working Or It Isn't — Entuned Blog</title>
+  <meta name="description" content="A scatter plot of every track your store played last week shows where the music falls between noise and signal. Here&#x27;s where each provider lands.">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="../rss.xml">
+  <meta property="og:title" content="Every Song In Your Store Is Either Working Or It Isn&#x27;t">
+  <meta property="og:description" content="A scatter plot of every track your store played last week shows where the music falls between noise and signal. Here&#x27;s where each provider lands.">
+  <meta property="og:url" content="https://entuned.co/blog/every-song-working-or-not.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://entuned.co/img/og-default.png">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-03-25">
+  <meta property="article:author" content="Daniel Fox">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Every Song In Your Store Is Either Working Or It Isn&#x27;t">
+  <meta name="twitter:description" content="A scatter plot of every track your store played last week shows where the music falls between noise and signal. Here&#x27;s where each provider lands.">
+  <meta name="twitter:image" content="https://entuned.co/img/og-default.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Every Song In Your Store Is Either Working Or It Isn't",
+  "author": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "datePublished": "2026-03-25",
+  "dateModified": "2026-03-25",
+  "description": "A scatter plot of every track your store played last week shows where the music falls between noise and signal. Here's where each provider lands.",
+  "image": "https://entuned.co/img/og-default.png",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://entuned.co/blog/every-song-working-or-not.html"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "retail music strategy"
+    },
+    {
+      "@type": "Thing",
+      "name": "in-store customer behavior"
+    },
+    {
+      "@type": "Thing",
+      "name": "AI-powered retail music optimization"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://entuned.co/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Every Song In Your Store Is Either Working Or It Isn't"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+/* Scatter-plot hero: full opacity, card background, comfortable padding */
+.scatter-hero {
+  opacity: 1;
+  background: rgba(80, 146, 156, 0.06);
+  border: 1px solid rgba(80, 146, 156, 0.22);
+  padding: 1.25rem 1rem 0.75rem;
+  border-radius: 12px;
+}
+  </style>
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav aria-label="Main navigation">
+  <div class="container">
+    <a href="../index.html" class="logo"><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="../demo.html">What Is Entuned</a></li>
+      <li><a href="../how-it-works.html">How It Works</a></li>
+      <li><a href="../pilot.html">Pilot Program</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+      <li><a href="../impact.html">Impact</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+  </div>
+</nav>
+
+  <main>
+  <div class="back-link fade-up">
+    <a href="../blog.html">&larr; Back to Blog</a>
+  </div>
+
+  <div class="article-hero fade-up">
+    <h1>Every Song In Your Store Is Either Working Or It Isn't</h1>
+    <img src="../img/blog/signal-noise-scatter.svg" alt="Scatter plot of 400 tracks across four music providers, plotted by brand alignment and behavioral signal" class="hero-image scatter-hero">
+  </div>
+
+  <div class="article-meta">Daniel Fox &middot; April 2026 &middot; 5 min read</div>
+
+  <div class="article-body">
+
+    <p class="fade-up">Imagine pulling up a scatter plot of every track that played in your store last week.</p>
+
+    <p class="fade-up">On one axis, how aligned the song was to your brand. On the other, whether the words and the mood were moving customers toward a purchase or away from one. Each track is a dot. A week of music is a cloud of dots.</p>
+
+    <p class="fade-up">Most retailers have never seen this chart. The chart above is what one looks like. 400 tracks, 100 from each of the four dominant sources of retail audio, plotted by how much brand alignment the track has and how much behavioral lift it produces in the store. The red band at the bottom is the zone where a track is actively working against the transaction &mdash; familiar research on semantic priming and mode-driven mood effects says this zone is real and measurable.</p>
+
+    <div class="stat-box fade-up">
+      <p><span class="highlight">The gap between "we chose this music carefully" and "we know this music is working" is where most retail audio investment disappears.</span></p>
+    </div>
+
+    <h2 class="fade-up">Where the Dots Land Depends on Where the Music Comes From</h2>
+
+    <p class="fade-up">If the store is on a <strong>licensed radio station</strong>, a good portion of those dots land in the bottom left. Radio wasn't designed for retail. The format was built around interruption &mdash; music, then a commercial for a car dealership or a competing brand. Whoever sold the ad slot had a goal in that moment, and the goal wasn't yours. A customer in a fitting room is being pitched a mattress sale happening across town.</p>
+
+    <p class="fade-up"><strong>Mood Media, CloudCover</strong>, and services like them improve on that. A playlist means no competing ads, a more consistent sound. The dots shift toward the middle. But a curated playlist is still a static object. Someone built it, probably with taste, based on a sense of the brand's identity. It plays. Nothing about it adjusts for who's actually in the store, what they came in for, what a given track is doing to their behavior in that moment. The dots scatter across the middle of the chart with no particular logic. (If this is you, here are the <a href="../blog/mood-media-alternatives.html">alternatives worth looking at</a>.)</p>
+
+    <p class="fade-up"><strong>Spotify for Business</strong> moves the intentionality up. You're closer to the brand, closer to the vibe. The dots cluster in the right half. But the measurement problem persists. Something is being chosen. Nobody's watching what it does. <a href="../blog/what-spotify-gets-wrong.html">More on what Spotify misses</a>.</p>
+
+    <h2 class="fade-up">Chosen Carefully Is Not the Same as Working</h2>
+
+    <p class="fade-up">A track that's brand-aligned but lyrically inert is a missed opportunity. A track that's sonically pleasant but semantically pointing the customer somewhere else is a liability. Both get counted as "music was playing." Neither tells you anything about what happened in the store while it played.</p>
+
+    <p class="fade-up">This is the measurement gap that every major playlist service shares. The track gets chosen, queued, delivered, paid for. What it did once it left the speaker is nobody's job.</p>
+
+    <div class="warning-box fade-up">
+      <p>Retail audio is one of the only customer experience variables that runs continuously, touches every visitor, and goes completely unmeasured. A retailer will A/B test a subject line in an email to three percent of their list. They won't question what the room sounds like during the transaction.</p>
+    </div>
+
+    <h2 class="fade-up">What the Right Side of the Chart Looks Like</h2>
+
+    <p class="fade-up">The tracks Entuned deploys are specified at the compositional level. Tempo, key, arrangement density, lyrical content &mdash; all of it is set against a target behavioral state for the customer segment in the store. And because the music is <a href="../blog/ai-generated-music-retail.html">created rather than pulled from a catalog</a>, the lyrical layer can be pointed at something specific: a discovery mindset, a quality orientation, a willingness to spend. Those outcomes are correlated against sensor data already in the store. The chart updates.</p>
+
+    <p class="fade-up">That's what the cluster on the right side of the scatter looks like. Tracks built to move a specific metric, playing in a store where someone is watching whether they did.</p>
+
+    <h2 class="fade-up">Pull the Chart</h2>
+
+    <p class="fade-up">Most retailers have no idea what's happening in their speakers. Not because nobody thought to ask, but because until recently there wasn't a way to get an answer. The music played. Customers came and went. The two things were assumed to be unrelated.</p>
+
+    <p class="fade-up">That assumption has a cost. Every one of those 400 dots represents a moment a customer was being moved somewhere &mdash; toward a purchase, away from one, or nowhere at all. A week of retail audio is a week of those moments, and for most stores, nobody has ever looked.</p>
+
+    <p class="fade-up">Pull the scatter plot. See where the dots land.</p>
+
+    <div class="byline fade-up">
+      <p>Daniel<br>Founder, Entuned</p>
+    </div>
+
+    <p class="fade-up">Related reading: <a href="../blog/read-the-lyrics-on-your-speakers-right-now.html">Nobody Read the Lyrics on Your Speakers Right Now</a>, <a href="../blog/what-your-music-is-saying-about-your-brand.html">What Your Music Is Saying About Your Brand</a>, and <a href="../blog/the-metrics-your-audio-environment-should-be-producing.html">The Metrics Your Audio Environment Should Be Producing</a>.</p>
+
+    <div class="article-cta fade-up">
+      <p>Entuned generates tracks specified against your customer profile and the outcome you care about &mdash; and correlates them against the sensor data already in your store. No licensing. No playlists. The dots land in the top right, and you can prove it.</p>
+      <a href="../pilot.html" class="btn btn-primary">Ask About a Pilot Program</a>
+    </div>
+  </div>
+  </main>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Retail music strategy driven by customer psychology.</p>
+      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="../how-it-works.html">How It Works</a></li>
+        <li><a href="../pilot.html">Pilot Program</a></li>
+        <li><a href="../why-entuned.html">Why Entuned</a></li>
+        <li><a href="../enterprise.html">Enterprise</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For Your Industry</h4>
+      <ul>
+        <li><a href="../for-apparel.html">Apparel</a></li>
+        <li><a href="../for-cosmetics.html">Cosmetics</a></li>
+        <li><a href="../for-home-goods.html">Home Goods</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
+      <ul>
+        <li><a href="../for-retail-leaders.html">Retail Leaders</a></li>
+        <li><a href="../for-cfos.html">CFOs</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Research</h4>
+      <ul>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../results.html">Results</a></li>
+        <li><a href="../case-studies.html">Case Studies</a></li>
+        <li><a href="../science.html">The Science</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../investors.html">Investors</a></li>
+        <li><a href="../careers.html">Careers</a></li>
+        <li><a href="../press.html">Press</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="../data.html">Data Practices</a></li>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG');
+  </script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>

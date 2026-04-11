@@ -53,6 +53,7 @@ Built on decades of peer-reviewed research: tempo entrainment increases dwell ti
 
 ## Writing
 
+- [Every Song In Your Store Is Either Working Or It Isn't](https://entuned.co/blog/every-song-working-or-not.html): A scatter plot of 400 tracks across four retail audio providers showing where each lands on brand alignment and behavioral signal — and why most retail audio investment lives in the gap between "chose carefully" and "working."
 - [What Happens When You Measure Something You Used to Ignore](https://entuned.co/blog/measure-what-you-ignore.html): Why measuring a previously ignored variable — like in-store music — creates compounding improvements that turn a playlist into a proprietary asset.
 - [The 8-12% You're Leaving on the Table](https://entuned.co/blog/the-8-12-youre-leaving-on-the-table.html): Genre congruence research and its impact on willingness to pay.
 - [Why Your Best Customers Leave Faster Than They Should](https://entuned.co/blog/why-your-best-customers-leave-faster-than-they-should.html): Tempo entrainment and dwell time research.
