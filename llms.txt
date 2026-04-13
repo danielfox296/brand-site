@@ -102,6 +102,7 @@ Built on decades of peer-reviewed research: tempo entrainment increases dwell ti
 - [Sound Check: The Science You're Already Ignoring](https://entuned.co/blog/sound-check-science-youre-ignoring.html): Five research-backed variables — tempo, mode, reminiscence bump, volume, genre congruence — with documented effects on retail spending behavior.
 - [Sound Check: Music Is a Variable](https://entuned.co/blog/sound-check-music-is-a-variable.html): Kotler's atmospherics framework and the Mehrabian-Russell model established music as a design variable fifty years ago. Most retailers still treat it as background filler.
 - [Sound Check: Close the Loop](https://entuned.co/blog/sound-check-close-the-loop.html): The compound dataset concept — correlating musical parameters with commercial outcomes creates non-transferable competitive intelligence that grows with every deployment cycle.
+- [What to Do When Retail Dwell Time Goes Up](https://entuned.co/blog/retail-dwell-time.html): Dwell time is a condition, not an outcome. What retail operators can do with longer visits when the environment supports engagement.
 - [Read the Lyrics on Your Speakers Right Now](https://entuned.co/blog/read-the-lyrics-on-your-speakers-right-now.html): Songs about stalking, school shootings, and slavery are on retail playlists right now because nobody read the words. Generated music eliminates this entirely.
 
 ## Key Concepts
