@@ -1,7 +1,7 @@
 # team — editable text content
 
 h1_1: Team
-h2_1: Founder
+h2_1: Team
 h2_2: Advisors
 h2_3: Interested in Working With Us?
 card_title_1: Daniel Fox
@@ -11,9 +11,18 @@ card_title_4: Music Production and Audio Technology
 card_title_5: Go-to-Market and Enterprise Sales
 btn_1: Get in Touch
 p_1: The people building the measurement layer for retail audio.
-p_2: Background in music theory and performance, with formal design education and previous experience building and operating companies. Currently studying retail operations at the intersection of environmental psychology and commercial outcomes. Built Entuned to close the gap between what plays in a store and what customers actually do.
+p_2: Daniel bootstrapped Skreened to eight-figure annual revenue in six years: 180 employees, multiple production facilities, and dual recognition in 2013 as one of Ohio's fastest-growing and best places to work. After exiting, he returned to a long-standing interest in the technical language of music, the mechanics of why specific parameters produce specific responses in people. Entuned is where those two things meet. Denver, CO.
 p_3: Advisor announcement coming soon.
 p_4: Advisor announcement coming soon.
 p_5: Advisor announcement coming soon.
 p_6: Advisor announcement coming soon.
+card_title_6: Mrinmayi Katti
+card_subtitle_6: Data Scientist
+p_8: Mrinmayi builds the infrastructure that makes data credible. At Loxo, she designed distributed migration workflows processing 200K+ records per run at 99%+ integrity, integrated seven external data systems, and shipped containerized pipelines on Kubernetes for production-grade reliability. Her internship at Reliance Jio put her inside A/B testing infrastructure at scale, where her pipelines contributed to an 18% retention lift. At Entuned, she owns the measurement layer connecting behavioral and environmental signals to verified commercial outcomes. B.S. Data Science, NJIT, 3.8 GPA. Dean's List. Merit Scholar.
+card_title_7: Coming Soon
+card_subtitle_7: ""
+p_9: We are actively looking for people who want to work at the intersection of music psychology, data science, and retail operations. If that sounds like your kind of problem, reach out.
+card_title_8: Coming Soon
+card_subtitle_8: ""
+p_10: We are actively looking for people who want to work at the intersection of music psychology, data science, and retail operations. If that sounds like your kind of problem, reach out.
 p_7: We are building at the intersection of music, psychology, and retail analytics. If that sounds like your kind of problem, reach out.
