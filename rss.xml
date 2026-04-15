@@ -63,6 +63,13 @@
     <guid>https://entuned.co/blog/closing-the-loop-on-retail-analytics.html</guid>
   </item>
   <item>
+    <title>The Difference Between Art and Design</title>
+    <link>https://entuned.co/blog/difference-between-art-and-design.html</link>
+    <description>Art is craft for self-expression. Design is craft for an intended outcome. Retail music sits closer to the toothpaste commercial than the concert hall.</description>
+    <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
+    <guid>https://entuned.co/blog/difference-between-art-and-design.html</guid>
+  </item>
+  <item>
     <title>Your Employees Hear It 2,000 Hours a Year</title>
     <link>https://entuned.co/blog/employees-hear-it.html</link>
     <description>Your customer is in the store for twenty minutes. Your staff is in it for eight hours. The music that works for both is the same music.</description>
@@ -75,6 +82,13 @@
     <description>A scatter plot of every track your store played last week shows where the music falls between noise and signal. Here's where each provider lands.</description>
     <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
     <guid>https://entuned.co/blog/every-song-working-or-not.html</guid>
+  </item>
+  <item>
+    <title>Everything in a Store Is Designed to Make You Buy, Except the Music</title>
+    <link>https://entuned.co/blog/everything-designed-except-music.html</link>
+    <description>A well-designed store curates every visual element down to the light falling on the product. The music has been on shuffle. That gap is closing.</description>
+    <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
+    <guid>https://entuned.co/blog/everything-designed-except-music.html</guid>
   </item>
   <item>
     <title>Every Store Teaches the Next One</title>
@@ -131,20 +145,6 @@
     <description>The difference between a variable you ignore and one you measure is the difference between a fixed condition and something that gets better every day.</description>
     <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
     <guid>https://entuned.co/blog/measure-what-you-ignore.html</guid>
-  </item>
-  <item>
-    <title>The Most Famous Study in Retail Music Is Wrong. Sort Of.</title>
-    <link>https://entuned.co/blog/milliman-study.html</link>
-    <description>Milliman's 38% sales lift is the most cited retail music finding. The dwell time effect replicates. The sales effect does not — and the reason matters.</description>
-    <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
-    <guid>https://entuned.co/blog/milliman-study.html</guid>
-  </item>
-  <item>
-    <title>Your Music Provider Doesn't Know What RetailNext Knows</title>
-    <link>https://entuned.co/blog/music-provider-doesnt-know-retailnext.html</link>
-    <description>Your analytics platform and your music provider share the same store and have never exchanged a single data point. That gap is costing you.</description>
-    <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
-    <guid>https://entuned.co/blog/music-provider-doesnt-know-retailnext.html</guid>
   </item>
 </channel>
 </rss>

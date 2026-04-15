@@ -53,6 +53,11 @@ Built on decades of peer-reviewed research: tempo entrainment increases dwell ti
 
 ## Writing
 
+- [Retail Has Designed Everything Except the Most Powerful Thing](https://entuned.co/blog/retail-designed-everything.html): Every element in a well-run store is a deliberate composition. The music is still left to chance.
+- [The Difference Between Art and Design](https://entuned.co/blog/difference-between-art-and-design.html): Art is craft for self-expression, design is craft for an outcome. Retail music is a design problem that was never treated as one.
+- [Why I Went Back to Folding Shirts](https://entuned.co/blog/why-i-went-back-to-folding-shirts.html): The Entuned origin story. Daniel Fox took a retail floor job at UNTUCKit and noticed the music was working against everything the store had built.
+- [Everything in a Store Is Designed to Make You Buy, Except the Music](https://entuned.co/blog/everything-designed-except-music.html): Music was always constrained by the effort required to create it. That constraint is gone.
+- [What a Producer Hears That You Don't](https://entuned.co/blog/what-a-producer-hears.html): Frequency, compression, tempo, mic placement, lyrical mismatch. A producer diagnoses what the store manager has stopped hearing.
 - [Welcoming Mrinmayi Katti to Entuned](https://entuned.co/blog/welcoming-mrinmayi-katti.html): Mrinmayi Katti joins as Data Scientist, bringing production-grade pipeline experience and A/B testing infrastructure to retail audio measurement.
 - [Every Song In Your Store Is Either Working Or It Isn't](https://entuned.co/blog/every-song-working-or-not.html): A scatter plot of 400 tracks across four retail audio providers showing where each lands on brand alignment and behavioral signal — and why most retail audio investment lives in the gap between "chose carefully" and "working."
 - [What Happens When You Measure Something You Used to Ignore](https://entuned.co/blog/measure-what-you-ignore.html): Why measuring a previously ignored variable — like in-store music — creates compounding improvements that turn a playlist into a proprietary asset.
