@@ -76,9 +76,10 @@ def parse_simple_yaml(text):
             parent = stack[-1][0]
 
             if v:
-                # Strip quotes
-                if (v.startswith('"') and v.endswith('"')) or \
-                   (v.startswith("'") and v.endswith("'")):
+                # Strip quotes and unescape
+                if v.startswith('"') and v.endswith('"'):
+                    v = v[1:-1].replace('\\"', '"')
+                elif v.startswith("'") and v.endswith("'"):
                     v = v[1:-1]
                 parent[k] = v
             else:
