@@ -277,6 +277,26 @@ def render_block(block: dict, ctx: dict, env: jinja2.Environment) -> str:
                 '<p style="color:#d7af74;">[data_viz: install data_viz.py]</p>'
             )
 
+    # Resolve related posts slugs to full post objects
+    if block_type == 'related':
+        block = dict(block)
+        all_posts = ctx.get('all_posts', [])
+        posts_by_slug = {p.get('slug', ''): p for p in all_posts}
+        resolved = []
+        for item in block.get('posts', []):
+            slug = item.get('slug', '') if isinstance(item, dict) else str(item)
+            if slug in posts_by_slug:
+                resolved.append(posts_by_slug[slug])
+            else:
+                # Fallback: show slug as title so the link still works
+                resolved.append({
+                    'slug': slug,
+                    'title': slug.replace('-', ' ').title(),
+                    'eyebrow': '',
+                    'dek': '',
+                })
+        block['posts'] = resolved
+
     template = env.get_template(f"blocks/{block_type}.html")
     return template.render(block=block, ctx=ctx)
 
@@ -415,8 +435,9 @@ def render_post(post_dir: str, env: jinja2.Environment,
 def collect_all_post_frontmatter(pages_dir: str) -> list:
     """Scan all blog-* directories and return a list of frontmatter dicts.
 
-    Only includes new-format posts (those with a sections array).
-    Each dict includes the extra key 'post_dir' for reference.
+    Includes BOTH new-format and old-format posts so the related block
+    can resolve slugs across the entire blog.  Each dict includes at
+    minimum: title, slug, eyebrow, dek, post_dir.
     """
     posts = []
     for entry in sorted(os.listdir(pages_dir)):
@@ -424,15 +445,37 @@ def collect_all_post_frontmatter(pages_dir: str) -> list:
             continue
         post_dir = os.path.join(pages_dir, entry)
         yaml_path = os.path.join(post_dir, 'content.yaml')
-        if not os.path.exists(yaml_path):
-            continue
-        if not is_new_format(yaml_path):
-            continue
-        try:
-            data = load_post(yaml_path)
-            data['post_dir'] = post_dir
-            posts.append(data)
-        except Exception:
-            # Skip posts that fail to parse — they'll error at build time
-            continue
+        config_path = os.path.join(post_dir, 'config.json')
+
+        if is_new_format(yaml_path) if os.path.exists(yaml_path) else False:
+            # New-format post — full YAML frontmatter
+            try:
+                data = load_post(yaml_path)
+                data['post_dir'] = post_dir
+                posts.append(data)
+            except Exception:
+                continue
+        elif os.path.exists(config_path):
+            # Old-format post — extract basics from config.json + content.yaml
+            try:
+                import json
+                with open(config_path, 'r', encoding='utf-8') as f:
+                    config = json.load(f)
+                raw_title = config.get('title', '')
+                # Strip " — Entuned Blog" suffix
+                clean_title = raw_title
+                for suffix in [' — Entuned Blog', ' — Entuned']:
+                    if clean_title.endswith(suffix):
+                        clean_title = clean_title[:-len(suffix)]
+                        break
+                slug = entry.replace('blog-', '', 1)
+                posts.append({
+                    'title': clean_title,
+                    'slug': slug,
+                    'eyebrow': '',
+                    'dek': config.get('meta_description', ''),
+                    'post_dir': post_dir,
+                })
+            except Exception:
+                continue
     return posts
