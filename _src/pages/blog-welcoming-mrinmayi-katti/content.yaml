@@ -8,7 +8,7 @@ author:
   name: "Daniel Fox"
   role: "Founder & CEO"
 hero:
-  src: "../img/blog/welcoming-mrinmayi-katti.jpg"
+  src: "../img/katti-headshot.png"
   alt: "Entuned team announcement"
   caption: "Photo: Unsplash"
 meta_description: "Mrinmayi Katti joins Entuned as Data Scientist, bringing pipeline experience and A/B testing infrastructure to retail audio measurement."

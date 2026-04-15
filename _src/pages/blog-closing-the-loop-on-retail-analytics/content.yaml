@@ -8,7 +8,7 @@ author:
   name: "Daniel Fox"
   role: "Founder & CEO"
 hero:
-  src: "../img/blog/closing-the-loop-on-retail-analytics.jpg"
+  src: "../img/blog/closing-the-loop.jpg"
   alt: "Retail analytics dashboard showing zone-level behavioral data"
   caption: "Photo: Unsplash"
 meta_description: "Retail analytics can tell you exactly what's happening in your store. But it can't do anything about it in real time. Audio is the missing action layer."
