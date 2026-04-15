@@ -33,6 +33,7 @@ Notes:
 """
 
 import os
+import sys
 import json
 import glob
 import re
@@ -44,6 +45,57 @@ LAYOUTS  = os.path.join(SRC, 'layouts')
 PARTIALS = os.path.join(SRC, 'partials')
 PAGES    = os.path.join(SRC, 'pages')
 SITE_URL = 'https://entuned.co'
+
+# ---------------------------------------------------------------------------
+# New blog renderer (Jinja2 + YAML pipeline)
+# ---------------------------------------------------------------------------
+# These imports are deferred so the existing build still works even when
+# jinja2/markdown/pyyaml are not installed — they're only needed when a
+# new-format blog post is encountered or --lint is used.
+
+_blog_renderer = None   # lazy-loaded module reference
+_jinja_env = None       # lazy-loaded Jinja2 Environment
+
+
+def _ensure_blog_renderer():
+    """Lazy-import the blog renderer and its dependencies.
+
+    Returns (blog_renderer_module, jinja_env) or raises ImportError
+    with a helpful install message.
+    """
+    global _blog_renderer, _jinja_env
+    if _blog_renderer is not None:
+        return _blog_renderer, _jinja_env
+
+    # Make _src importable
+    if REPO not in sys.path:
+        sys.path.insert(0, REPO)
+
+    try:
+        from _src.lib import blog_renderer as br
+        from _src.lib import reading_time  # noqa: F401 — validates import
+    except ImportError as e:
+        raise ImportError(
+            f"Blog renderer dependency missing: {e}\n"
+            "Install with: pip install jinja2 markdown pyyaml"
+        ) from e
+
+    templates_dir = os.path.join(SRC, 'templates')
+    _blog_renderer = br
+    _jinja_env = br.create_jinja_env(templates_dir)
+    return _blog_renderer, _jinja_env
+
+
+def _is_new_format_blog(page_path: str) -> bool:
+    """Check if a page directory contains a new-format blog content.yaml."""
+    yaml_path = os.path.join(page_path, 'content.yaml')
+    if not os.path.exists(yaml_path):
+        return False
+    try:
+        br, _ = _ensure_blog_renderer()
+        return br.is_new_format(yaml_path)
+    except ImportError:
+        return False
 
 
 def read(path):
@@ -115,6 +167,51 @@ def collect_sections(sections_dir):
     return files
 
 
+def lint():
+    """Validate all new-format blog posts without generating HTML.
+
+    Prints errors and warnings.  Returns True if all posts pass
+    (warnings are OK), False if any errors were found.
+    """
+    br, _ = _ensure_blog_renderer()
+
+    print('Linting new-format blog posts...\n')
+    total_errors = []
+    total_warnings = []
+
+    for entry in sorted(os.listdir(PAGES)):
+        if not entry.startswith('blog-'):
+            continue
+        page_path = os.path.join(PAGES, entry)
+        yaml_path = os.path.join(page_path, 'content.yaml')
+        if not os.path.exists(yaml_path):
+            continue
+        if not br.is_new_format(yaml_path):
+            continue
+
+        data = br.load_post(yaml_path)
+        errors, warnings = br.validate_post(data, yaml_path)
+
+        for w in warnings:
+            print(f'  ⚠ {w}')
+            total_warnings.append(w)
+        for e in errors:
+            print(f'  ✗ {e}')
+            total_errors.append(e)
+
+        if not errors and not warnings:
+            print(f'  ✓ {entry}')
+        elif not errors:
+            print(f'  ✓ {entry} (with warnings)')
+
+    print(f'\nLint complete: {len(total_errors)} error(s), {len(total_warnings)} warning(s).')
+
+    if total_errors:
+        print('\nLint FAILED — fix errors before building.')
+        return False
+    return True
+
+
 def build():
     # Load shared pieces
     base   = read(os.path.join(LAYOUTS,  'base.html'))
@@ -138,23 +235,78 @@ def build():
         if config.get('skip'):
             continue
 
-        title       = config.get('title', 'Entuned')
-        description = config.get('description', '') or config.get('meta_description', '')
-        output      = config.get('output', f'{page_name}.html')
+        # ---------------------------------------------------------------
+        # NEW-FORMAT BLOG POST DETECTION
+        # If this page has a new-format content.yaml (with sections array),
+        # render it through the Jinja2 blog pipeline instead of the old
+        # section-file pipeline.  Old-format posts fall through untouched.
+        # ---------------------------------------------------------------
+        output_check = config.get('output', f'{page_name}.html')
+        use_new_renderer = (
+            output_check.startswith('blog/')
+            and _is_new_format_blog(page_path)
+        )
 
-        # Determine nav_prefix based on output depth
-        # Root pages (index.html) → ""
-        # Blog posts (blog/slug.html) → "../"
-        depth = output.count('/')
-        nav_prefix = '../' * depth
+        if use_new_renderer:
+            # --- New blog renderer path ---
+            br, env = _ensure_blog_renderer()
+            all_posts = br.collect_all_post_frontmatter(PAGES)
 
-        # CSS path prefix (same logic)
-        css_path = nav_prefix
+            try:
+                content_html, post_data = br.render_post(page_path, env, all_posts)
+            except (ValueError, FileNotFoundError) as exc:
+                print(f'  ✗ {output_check} — {exc}')
+                raise SystemExit(1)
+
+            # Pull metadata from the YAML frontmatter
+            title = post_data.get('title', config.get('title', 'Entuned'))
+            if not title.endswith('— Entuned Blog'):
+                title = f"{title} — Entuned Blog"
+            description = post_data.get('meta_description',
+                                        config.get('meta_description', ''))
+            output      = output_check
+            nav_prefix  = '../'
+            css_path    = nav_prefix
+            content     = content_html
+
+            # Store new-format post data for RSS generation later
+            if not hasattr(build, '_new_format_posts'):
+                build._new_format_posts = []
+            build._new_format_posts.append(post_data)
+
+        else:
+            # --- Original pipeline (unchanged) ---
+            title       = config.get('title', 'Entuned')
+            description = config.get('description', '') or config.get('meta_description', '')
+            output      = config.get('output', f'{page_name}.html')
+
+            # Determine nav_prefix based on output depth
+            depth = output.count('/')
+            nav_prefix = '../' * depth
+            css_path = nav_prefix
+
+            # Assemble content from sections in order
+            sections_dir  = os.path.join(page_path, 'sections')
+            if os.path.isdir(sections_dir):
+                section_files = collect_sections(sections_dir)
+                content = '\n\n'.join(read(f).strip() for f in section_files)
+            else:
+                content = ''
+
+            # Apply content.yaml substitutions (if present)
+            content_yaml_path = os.path.join(page_path, 'content.yaml')
+            if os.path.exists(content_yaml_path):
+                yaml_data = parse_simple_yaml(read(content_yaml_path))
+                content = resolve_content(content, {'content': yaml_data})
+
+        # ---------------------------------------------------------------
+        # SHARED LAYOUT ASSEMBLY (both old and new pipelines converge)
+        # ---------------------------------------------------------------
 
         # Robots meta tag
         robots_value = config.get('robots', 'index, follow')
 
-        # Meta description tag (escape to prevent HTML injection)
+        # Meta description tag
         meta_desc = ''
         if description:
             safe_desc = html_mod.escape(description, quote=True)
@@ -168,19 +320,10 @@ def build():
             if css_content:
                 page_style = f'<style>\n{css_content}\n  </style>'
 
-        # Assemble content from sections in order
-        sections_dir  = os.path.join(page_path, 'sections')
-        if os.path.isdir(sections_dir):
-            section_files = collect_sections(sections_dir)
-            content = '\n\n'.join(read(f).strip() for f in section_files)
-        else:
-            content = ''
-
-        # Apply content.yaml substitutions (if present)
-        content_yaml_path = os.path.join(page_path, 'content.yaml')
-        if os.path.exists(content_yaml_path):
-            yaml_data = parse_simple_yaml(read(content_yaml_path))
-            content = resolve_content(content, {'content': yaml_data})
+        # New-format blog posts need the blog.css stylesheet
+        if use_new_renderer:
+            blog_css_link = f'<link rel="stylesheet" href="{css_path}styles/blog.css">'
+            page_style = blog_css_link + '\n  ' + page_style
 
         # Apply nav_prefix to header and footer
         page_header = header.strip().replace('{{nav_prefix}}', nav_prefix)
@@ -205,9 +348,12 @@ def build():
         # OG type
         og_type = 'article' if is_blog else 'website'
 
-        # OG image
+        # OG image — check new-format YAML first, then config.json
         og_image = f'{SITE_URL}/img/og-default.png'
-        if config.get('og_image'):
+        _og_from_yaml = post_data.get('og_image', '') if use_new_renderer else ''
+        if _og_from_yaml:
+            og_image = _og_from_yaml if _og_from_yaml.startswith('http') else f'{SITE_URL}/{_og_from_yaml.lstrip("/")}'
+        elif config.get('og_image'):
             og_image = config['og_image'] if config['og_image'].startswith('http') else f'{SITE_URL}/{config["og_image"]}'
         elif is_blog:
             slug = output.replace('blog/', '').replace('.html', '')
@@ -231,8 +377,15 @@ def build():
         ])
 
         if is_blog:
-            og_tags += '\n  ' + f'<meta property="article:published_time" content="{config.get("date_published", "2026-03-25")}">'
-            og_tags += '\n  ' + f'<meta property="article:author" content="Daniel Fox">'
+            # For new-format posts, dates come from YAML; for old, from config.json
+            if use_new_renderer:
+                _pub_time = post_data.get('date', '2026-03-25')
+                _author_name = post_data.get('author', {}).get('name', 'Daniel Fox') if isinstance(post_data.get('author'), dict) else 'Daniel Fox'
+            else:
+                _pub_time = config.get('date_published', '2026-03-25')
+                _author_name = 'Daniel Fox'
+            og_tags += '\n  ' + f'<meta property="article:published_time" content="{_pub_time}">'
+            og_tags += '\n  ' + f'<meta property="article:author" content="{_author_name}">'
 
         # Build Twitter Card tags
         twitter_tags = '\n  '.join([
@@ -244,15 +397,20 @@ def build():
 
         # Build JSON-LD schema
         if is_blog:
-            date_published = config.get('date_published', '2026-03-25')
-            date_modified = config.get('date_modified', '2026-03-25')
+            if use_new_renderer:
+                date_published = post_data.get('date', '2026-03-25')
+                date_modified = post_data.get('last_updated', date_published)
+            else:
+                date_published = config.get('date_published', '2026-03-25')
+                date_modified = config.get('date_modified', '2026-03-25')
+            _schema_author = _author_name
             schema = {
                 "@context": "https://schema.org",
                 "@type": "Article",
                 "headline": og_title,
                 "author": {
                     "@type": "Person",
-                    "name": "Daniel Fox"
+                    "name": _schema_author
                 },
                 "publisher": {
                     "@type": "Organization",
@@ -426,6 +584,33 @@ def build():
     import datetime
 
     rss_items = []
+    # Track slugs already added by the new renderer to avoid duplicates
+    new_format_slugs = set()
+    if hasattr(build, '_new_format_posts'):
+        for post_data in build._new_format_posts:
+            slug = post_data.get('slug', '')
+            new_format_slugs.add(slug)
+
+            rss_title = post_data.get('title', 'Entuned')
+            rss_desc = post_data.get('meta_description', post_data.get('dek', ''))
+            rss_date = post_data.get('date', '2026-03-25')
+            rss_link = f'{SITE_URL}/blog/{slug}.html'
+
+            try:
+                dt = datetime.datetime.strptime(rss_date, '%Y-%m-%d')
+                pub_date = dt.strftime('%a, %d %b %Y 00:00:00 +0000')
+            except Exception:
+                pub_date = 'Tue, 25 Mar 2026 00:00:00 +0000'
+
+            rss_items.append({
+                'title': rss_title,
+                'link': rss_link,
+                'description': rss_desc,
+                'pubDate': pub_date,
+                'date_sort': rss_date,
+            })
+
+    # Old-format posts (from config.json)
     for page_path in sorted(page_dirs):
         config_path = os.path.join(page_path, 'config.json')
         config = json.loads(read(config_path))
@@ -433,6 +618,11 @@ def build():
             continue
         output = config.get('output', '')
         if not output.startswith('blog/'):
+            continue
+
+        # Skip if this post was already added by the new renderer
+        old_slug = output.replace('blog/', '').replace('.html', '')
+        if old_slug in new_format_slugs:
             continue
 
         title = config.get('title', 'Entuned')
@@ -498,6 +688,11 @@ def build():
 
 
 if __name__ == '__main__':
-    print('Building Entuned...\n')
-    build()
-    print('\nDone.')
+    if '--lint' in sys.argv:
+        print('Entuned — Lint mode\n')
+        ok = lint()
+        sys.exit(0 if ok else 1)
+    else:
+        print('Building Entuned...\n')
+        build()
+        print('\nDone.')

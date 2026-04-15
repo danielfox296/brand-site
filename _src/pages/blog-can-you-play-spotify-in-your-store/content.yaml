@@ -1,68 +1,170 @@
-# blog-can-you-play-spotify-in-your-store — editable text content
+title: "Can You Play Spotify in Your Store? The Legal Answer"
+slug: "can-you-play-spotify-in-your-store"
+eyebrow: "MARKET INTEL"
+dek: "Consumer streaming in a retail store is copyright infringement. Here's what the fines look like and what actually works."
+date: "2026-04-01"
+last_updated: "2026-04-15"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/can-you-play-spotify-in-your-store.jpg"
+  alt: "Retail store speaker system with a legal compliance warning overlay"
+  caption: "Photo: Entuned"
+meta_description: "No, you cannot legally play Spotify in your retail store. Here's why, what the fines look like, and what commercial music options actually exist in 2026."
+og_image: "/blog/can-you-play-spotify-in-your-store/og.png"
+tags: [licensing, commercial-music, compliance, retail-music]
+sections:
+  - type: key_takeaways
+    items:
+      - "Spotify, Apple Music, and every consumer streaming service prohibit commercial use — playing them in a store is copyright infringement"
+      - "Fines range from $750 to $150,000 per song. A 40-song playlist is 40 separate violations."
+      - "Compliant commercial music starts at $16.95/month — cheaper than one enforcement letter"
+      - "AI-generated original music requires no performance licenses and no PRO fees"
 
-h1_1: "Can You Play Spotify in Your Store? The Legal Answer"
-meta_1: Daniel Fox &middot; April 2026 &middot; 8 min read
+  - type: prose
+    body: |
+      This is probably the most common question in retail music, and the answer is straightforward. You cannot legally play Spotify in your store. Same goes for Apple Music, Amazon Music, YouTube Music, Tidal, and every other consumer streaming platform. Their terms of service explicitly prohibit commercial use, and the distinction matters more than most retailers realize.
 
-p_takeaway: "<strong>TL;DR:</strong> No. Spotify, Apple Music, Amazon Music, and every other consumer streaming service are licensed for personal use only. Playing them in a retail store is copyright infringement. Fines start at $750 per song and can reach $150,000 per willful violation. Commercial music services run $17 to $80 per location per month and include the licensing you need."
+      The number of stores doing it anyway is substantial. And the number of stores that get caught is growing.
 
-p_1: "This is probably the most common question in retail music, and the answer is straightforward. You cannot legally play Spotify in your store. Same goes for Apple Music, Amazon Music, YouTube Music, Tidal, and every other consumer streaming platform. Their terms of service explicitly prohibit commercial use, and the distinction matters more than most retailers realize."
+  - type: subhead
+    level: 2
+    text: "How consumer streaming licensing actually works"
+    anchor: "consumer-licensing"
 
-p_2: "The number of stores doing it anyway is substantial. And the number of stores that get caught is growing."
+  - type: prose
+    body: |
+      When you pay $10.99 a month for Spotify Premium, you are purchasing a personal, non-commercial license. Spotify's terms of service (Section 3) state that the service is for "personal, non-commercial, entertainment use only." Apple Music's terms contain equivalent language. So does every other consumer platform.
 
-h2_1: How Consumer Streaming Licensing Actually Works
+      The reason is mechanical, not philosophical. Consumer streaming services pay royalties to rights holders based on per-stream rates negotiated for individual listeners. A retail store with 200 customers per day is not an individual listener. The royalty structure does not account for public performance, and the platform has not secured the public performance rights that commercial use requires.
 
-p_3: "When you pay $10.99 a month for Spotify Premium, you are purchasing a personal, non-commercial license. Spotify's terms of service (Section 3) state that the service is for 'personal, non-commercial, entertainment use only.' Apple Music's terms contain equivalent language. So does every other consumer platform."
+  - type: prose
+    body: |
+      Public performance rights in the United States are administered by three performing rights organizations: ASCAP, BMI, and SESAC. Any music played in a commercial space — whether from a streaming service, a CD, a vinyl record, or a radio — requires a public performance license from each PRO whose catalog is represented. Consumer streaming subscriptions do not include these licenses.
 
-p_4: "The reason is mechanical, not philosophical. Consumer streaming services pay royalties to rights holders based on per-stream rates negotiated for individual listeners. A retail store with 200 customers per day is not an individual listener. The royalty structure does not account for public performance, and the platform has not secured the public performance rights that commercial use requires."
+      A retail store playing Spotify is, in the legal sense, performing copyrighted music publicly without authorization. The fact that you are paying for a subscription does not change this. The subscription covers personal listening. Public performance is a separate right under U.S. copyright law ([17 U.S.C. § 106(4)](https://www.law.cornell.edu/uscode/text/17/106)), and it requires separate authorization. If you're curious what else your streaming subscription gets wrong about retail use, we broke that down in [What Spotify Gets Wrong About Business Music](../blog/what-spotify-gets-wrong.html).
 
-p_5: "Public performance rights in the United States are administered by three performing rights organizations: ASCAP, BMI, and SESAC. Any music played in a commercial space, whether from a streaming service, a CD, a vinyl record, or a radio, requires a public performance license from each PRO whose catalog is represented. Consumer streaming subscriptions do not include these licenses."
+  - type: subhead
+    level: 2
+    text: "What the fines look like"
+    anchor: "fines"
 
-p_6: "A retail store playing Spotify is, in the legal sense, performing copyrighted music publicly without authorization. The fact that you are paying for a subscription does not change this. The subscription covers personal listening. Public performance is a separate right under U.S. copyright law (17 U.S.C. &sect; 106(4)), and it requires separate authorization."
+  - type: stat_callout
+    number: "$750–$150K"
+    label: "Statutory damages per song infringed"
+    source: "U.S. Copyright Act, 17 U.S.C. § 504(c)"
+    accent: gold
 
-h2_2: What the Fines Look Like
+  - type: prose
+    body: |
+      Copyright infringement penalties under U.S. law are structured to be painful. Statutory damages range from $750 to $30,000 per work infringed. For willful infringement — meaning you knew or should have known it was illegal — courts can award up to $150,000 per work.
 
-p_7: "Copyright infringement penalties under U.S. law are structured to be painful. Statutory damages range from $750 to $30,000 per work infringed. For willful infringement, meaning you knew or should have known it was illegal, courts can award up to $150,000 per work."
+  - type: pullquote
+    text: "Per work. Not per incident. Every song played without authorization is a separate infringement. A store playing a 40-song playlist on repeat has 40 potential violations running simultaneously."
+    accent: teal
 
-p_8: "Per work. Not per incident. Every song played without authorization is a separate infringement. A store playing a 40-song playlist on repeat has 40 potential violations running simultaneously."
+  - type: prose
+    body: |
+      In practice, most enforcement actions result in settlements rather than court judgments. BMI and ASCAP send cease-and-desist letters first, then escalate. Settlements for small retailers typically land in the $3,000 to $15,000 range. A juice bar in Oregon settled with ASCAP for $12,500 after refusing to stop using a consumer Pandora account. A gym in Texas paid $8,000 to BMI for similar use.
 
-p_9: "In practice, most enforcement actions result in settlements rather than court judgments. BMI and ASCAP send cease-and-desist letters first, then escalate. Settlements for small retailers typically land in the $3,000 to $15,000 range. A juice bar in Oregon settled with ASCAP for $12,500 after refusing to stop using a consumer Pandora account. A gym in Texas paid $8,000 to BMI for similar use."
+      These are not hypothetical scenarios. ASCAP, BMI, and SESAC employ field investigators who visit commercial establishments to verify licensing compliance. They also use automated monitoring tools. If your store is playing recognizable music and you do not have a commercial license on file, you will eventually receive a letter.
 
-p_10: "These are not hypothetical scenarios. ASCAP, BMI, and SESAC employ field investigators who visit commercial establishments to verify licensing compliance. They also use automated monitoring tools. If your store is playing recognizable music and you do not have a commercial license on file, you will eventually receive a letter."
+  - type: subhead
+    level: 2
+    text: "The small retailer exemption"
+    anchor: "small-retailer-exemption"
 
-h2_3: The Small Retailer Exemption (and Why It Probably Does Not Apply to You)
+  - type: aside
+    title: "Does the Fairness in Music Licensing Act apply to you?"
+    body: |
+      Under Section 110(5)(B), retail stores **under 2,000 square feet** can play radio or television broadcasts without a performance license, provided they use **no more than six external speakers**.
 
-p_11: "There is a narrow exemption in U.S. copyright law for small establishments. Under the Fairness in Music Licensing Act (Section 110(5)(B)), retail stores under 2,000 square feet can play radio or television broadcasts without a performance license, provided they use no more than six external speakers."
+      Two critical limitations: (1) This covers over-the-air radio and TV broadcasts only — streaming services, satellite radio, CDs, and digital playlists are not covered. (2) 2,000 square feet is small. Most retail locations exceed this threshold.
 
-p_12: "Two important limitations. First, this exemption covers over-the-air radio and television broadcasts only. Streaming services, satellite radio, CDs, and digital playlists are not covered. Second, 2,000 square feet is small. Most retail locations exceed this threshold."
+      **Bottom line:** If your store is under 2,000 sq ft and you're playing FM radio through six or fewer speakers, you're probably fine. If you're doing anything else, the exemption does not apply.
 
-p_13: "If your store is under 2,000 square feet and you are playing FM radio through six or fewer speakers, you are probably fine. If you are doing anything else, the exemption does not apply."
+  - type: subhead
+    level: 2
+    text: "What legal commercial music actually costs"
+    anchor: "commercial-music-costs"
 
-h2_4: What Legal Commercial Music Actually Costs
+  - type: prose
+    body: |
+      Commercial music services exist specifically to solve this problem. They bundle music streaming with the required performance licenses, so the retailer's legal exposure is covered by the subscription.
 
-p_14: "Commercial music services exist specifically to solve this problem. They bundle music streaming with the required performance licenses, so the retailer's legal exposure is covered by the subscription."
+  - type: comparison_table
+    title: "Commercial music service pricing (2026)"
+    columns: ["Service", "Monthly cost per location", "Notes"]
+    rows:
+      - ["Pandora CloudCover", "$16.95+", "Prepaid annual pricing"]
+      - ["StoreStreams", "$20+", "Simple setup"]
+      - ["SiriusXM for Business", "$26.95–$80", "Tiered by features"]
+      - ["Soundtrack Your Brand", "$35", "Spotify-backed"]
+      - ["Mood Media", "$30–$80", "Multi-year contracts typical"]
 
-p_15: "Here is what the market looks like in 2026. Pandora CloudCover starts at $16.95 per month per location when prepaid annually. StoreStreams starts at $20 per month. SiriusXM for Business runs $26.95 to $80 per month depending on features and volume. Soundtrack Your Brand is $35 per month. Mood Media contracts typically land between $30 and $80 per location per month, often with multi-year commitments."
+  - type: stat_callout
+    number: "$200–$960/yr"
+    label: "Annual cost of compliant music for a single-location boutique"
+    source: "Entuned market survey, 2026"
+    accent: teal
 
-p_16: "For a single-location boutique, compliant music costs somewhere between $200 and $960 per year. Compare that to a single ASCAP settlement of $12,500 and the math is not complicated."
+  - type: prose
+    body: |
+      Compare that to a single ASCAP settlement of $12,500 and the math is not complicated.
 
-p_17: "For a 10-location chain, the annual cost for a service like CloudCover is roughly $2,000 to $3,600. SiriusXM or Soundtrack runs $3,200 to $9,600. Mood Media, with contracts and add-ons, can push past $10,000 annually. The price range is wide, but every option in it is cheaper than one enforcement action."
+      For a 10-location chain, the annual cost for a service like CloudCover is roughly $2,000 to $3,600. SiriusXM or Soundtrack runs $3,200 to $9,600. Mood Media, with contracts and add-ons, can push past $10,000 annually. The price range is wide, but every option in it is cheaper than one enforcement action. For a deeper look at what you're actually paying for with these services, see [The Hidden Cost of Your Licensing Fee](../blog/the-hidden-cost-of-your-licensing-fee.html).
 
-h2_5: What These Services Do Not Do
+  - type: data_viz
+    chart_type: comparison
+    title: "One enforcement action vs. a year of compliance"
+    caption: "Typical single-location cost comparison"
+    source: "ASCAP settlement data; commercial service published pricing, 2026"
+    data:
+      - label: "ASCAP settlement (typical)"
+        value: 12500
+      - label: "Annual commercial license"
+        value: 480
 
-p_18: "Commercial music services solve the legal problem. They give you licensed music at a predictable monthly cost. Most of them also give you some control over genre, mood, and scheduling."
+  - type: subhead
+    level: 2
+    text: "What these services don't do"
+    anchor: "services-gap"
 
-p_19: "What they do not do is tell you whether the music is working. They log what was scheduled to play. They do not measure what happened when it played. You get compliance and convenience. You do not get data connecting your audio environment to customer behavior, dwell time, or sales."
+  - type: prose
+    body: |
+      Commercial music services solve the legal problem. They give you licensed music at a predictable monthly cost. Most of them also give you some control over genre, mood, and scheduling.
 
-p_20: "For many retailers, compliance and convenience are enough. The store needs legal background music and the problem is solved. But if you are spending $300 to $600 per month per location on audio and you cannot answer the question 'is this music helping or hurting my sales,' that is a gap worth noticing."
+      What they do not do is tell you whether the music is working. They log what was scheduled to play. They do not measure what happened when it played. You get compliance and convenience. You do not get data connecting your audio environment to customer behavior, dwell time, or sales.
 
-h2_6: The AI-Generated Alternative
+      For many retailers, compliance and convenience are enough. The store needs legal background music and the problem is solved. But if you are spending $300 to $600 per month per location on audio and you cannot answer the question "is this music helping or hurting my sales," that is a gap worth noticing. We wrote about this measurement gap in [The Metrics Your Audio Environment Should Be Producing](../blog/the-metrics-your-audio-environment-should-be-producing.html).
 
-p_21: "There is a category of music that sidesteps the entire licensing infrastructure. AI-generated original music has no songwriters, no publishers, no PRO affiliations. It was not written by a human artist, so there are no performance rights to clear. No ASCAP fees. No BMI fees. No SESAC fees."
+  - type: subhead
+    level: 2
+    text: "The AI-generated alternative"
+    anchor: "ai-generated"
 
-p_22: "This is not a loophole. The Copyright Office has consistently held that works created by AI without substantial human authorship are not eligible for copyright protection. No copyright means no infringement claim. The legal landscape is still evolving, but in 2026, multiple jurisdictions have issued guidance supporting commercial use of AI-generated music provided the underlying training data was properly licensed."
+  - type: prose
+    body: |
+      There is a category of music that sidesteps the entire licensing infrastructure. AI-generated original music has no songwriters, no publishers, no PRO affiliations. It was not written by a human artist, so there are no performance rights to clear. No ASCAP fees. No BMI fees. No SESAC fees.
 
-p_23: "The practical implication for retailers: AI-generated music can be played in commercial spaces without performance licenses, without PRO fees, and without the legal exposure that comes with every licensed catalog. The music can also be created specifically for your store's customer profile rather than selected from a generic catalog. That is a different proposition than picking a mood channel."
+      This is not a loophole. The Copyright Office has consistently held that works created by AI without substantial human authorship are not eligible for copyright protection. No copyright means no infringement claim. The legal landscape is still evolving, but in 2026, multiple jurisdictions have issued guidance supporting commercial use of AI-generated music provided the underlying training data was properly licensed. For a side-by-side comparison of how this stacks up against traditional catalog services, see [AI vs. Traditional In-Store Music: What's Changed](../blog/ai-vs-traditional-retail-music.html).
 
-p_24: "Entuned generates original music from your customer's psychographic profile. No licensing fees. No catalog. Every track is created for your specific customer. The founding pilot is free."
+  - type: prose
+    body: |
+      The practical implication for retailers: AI-generated music can be played in commercial spaces without performance licenses, without PRO fees, and without the legal exposure that comes with every licensed catalog. The music can also be created specifically for your store's customer profile rather than selected from a generic catalog. That is a different proposition than picking a mood channel.
 
-h3_related: Related reading
+      Entuned generates original music from your customer's psychographic profile. No licensing fees. No catalog. Every track is created for your specific customer.
+
+  - type: cta
+    variant: pilot
+    headline: "Run a free pilot"
+    body: "90-day pilot with behavioral measurement. No licensing fees. No PRO exposure."
+    link: "/pilot"
+    link_text: "Learn about the pilot program"
+
+  - type: related
+    posts:
+      - slug: "the-hidden-cost-of-your-licensing-fee"
+      - slug: "mood-media-alternatives"
+      - slug: "what-spotify-gets-wrong"

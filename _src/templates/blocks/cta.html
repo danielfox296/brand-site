@@ -1,0 +1,6 @@
+{% set variant = block.variant|default('pilot') %}
+<aside class="blog-cta blog-cta--{{ variant }}">
+  <div class="blog-cta__headline">{{ block.headline }}</div>
+  <div class="blog-cta__body">{{ block.body }}</div>
+  <a href="{{ block.link }}" class="blog-cta__link">{{ block.link_text }} &rarr;</a>
+</aside>

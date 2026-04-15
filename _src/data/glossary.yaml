@@ -1,0 +1,45 @@
+# Entuned glossary — proprietary terms and jargon.
+# The auto-linker (glossary.py) reads this file and links the first
+# occurrence of each term in every blog post.
+#
+# Fields:
+#   term:    Canonical display form
+#   slug:    URL fragment for /glossary#slug
+#   aliases: Alternate forms that should also trigger a link
+
+- term: "flow factor"
+  slug: "flow-factor"
+  aliases:
+    - "flow factors"
+
+- term: "lyrical priming"
+  slug: "lyrical-priming"
+  aliases: []
+
+- term: "State Recipe"
+  slug: "state-recipe"
+  aliases:
+    - "State Recipes"
+    - "state recipe"
+    - "state recipes"
+
+- term: "ICP Seed Profile"
+  slug: "icp-seed-profile"
+  aliases:
+    - "ICP Seed Profiles"
+
+- term: "dwell time"
+  slug: "dwell-time"
+  aliases: []
+
+- term: "Universal parameters"
+  slug: "universal-parameters"
+  aliases:
+    - "Universal parameter"
+    - "universal parameters"
+
+- term: "Cultural parameters"
+  slug: "cultural-parameters"
+  aliases:
+    - "Cultural parameter"
+    - "cultural parameters"
