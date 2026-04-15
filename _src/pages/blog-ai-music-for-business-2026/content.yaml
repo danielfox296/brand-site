@@ -1,0 +1,41 @@
+# blog-ai-music-for-business-2026
+
+h1_1: "AI Music for Business in 2026: What Works, What Doesn't, and What to Watch"
+meta_1: Daniel Fox &middot; April 2026 &middot; 9 min read
+
+p_takeaway: "<strong>TL;DR:</strong> AI music generation crossed the commercial quality threshold in late 2025. It eliminates licensing costs, enables psychographic targeting, and produces measurement data that catalog-based services cannot. It does not yet match human composition in every genre, and the legal landscape is still settling. Here is what matters for retail and commercial environments."
+
+p_1: "Suno released V5 in September 2025 and the quality floor for AI-generated music moved permanently. Tracks that a year earlier sounded like tech demos now sounded like records. ElevenLabs launched Eleven Music. Udio, SOUNDRAW, and Mubert continued iterating. The consumer story was about creators making songs for fun. The commercial story was different and less covered."
+p_2: "For businesses that play music in their physical spaces, AI generation changes three things at once: how the music is licensed, how it is targeted, and whether it produces data. Each of these shifts has practical consequences."
+
+h2_1: The Licensing Shift
+p_3: "Licensed music requires performance rights clearance. In the United States, that means blanket licenses from ASCAP, BMI, and SESAC. For a 10-location retailer, the annual cost is $8,000 to $20,000 in PRO fees, on top of whatever the streaming subscription costs."
+p_4: "AI-generated original music has no songwriter, no publisher, and no PRO affiliation. The U.S. Copyright Office has consistently held that works created by AI without substantial human authorship are not eligible for copyright registration. No copyright means no performance right to license."
+p_5: "The practical result: a retailer using AI-generated music can eliminate the entire PRO licensing layer. That is a real cost reduction, especially at scale. A 50-location chain saves $40,000 to $100,000 per year in licensing fees alone."
+p_6: "One important caveat. The legal landscape is evolving. Multiple jurisdictions have issued guidance in 2025 and 2026 supporting commercial use of AI-generated music, with the primary constraint being that the AI model's training data was properly sourced and licensed. Retailers should verify that their AI music provider uses models trained on licensed or properly attributed datasets."
+
+h2_2: The Targeting Shift
+p_7: "Catalog-based music services target by genre, mood, and energy level. These are categories defined by musical style. They are not connected to the customer."
+p_8: "AI-generated music can be targeted to any input because the music is created in response to a prompt, not selected from a fixed set. If the input is 'female, 28 to 42, values curation and quality, aspirational but practical, shopping for premium apparel,' the generation can translate those psychological characteristics into specific musical parameters: tempo range, instrumentation palette, timbral warmth, melodic complexity, lyrical themes."
+p_9: "This is a fundamentally different targeting resolution. Genre labels are a bucket with thousands of tracks in it. Psychographic parameters are a specification with a narrow output. The difference between selecting from a catalog and generating to a specification is the difference between buying off the rack and commissioning a custom piece."
+p_10: "The quality of the targeting depends entirely on the quality of the translation layer between customer psychology and musical parameters. This is where the science meets the technology, and where most AI music providers have a gap. They can generate music. They cannot specify what music to generate for a specific customer profile."
+
+h2_3: The Measurement Shift
+p_11: "This is the shift that matters most for retailers, and it receives the least attention."
+p_12: "When music is generated with specific parameters (tempo: 74 BPM, key: G major, instrumentation: acoustic guitar and piano, energy: moderate-low), those parameters are logged. When the music changes, the change is deliberate and documented. This creates a dataset: at 2pm, the music shifted from 74 BPM acoustic to 92 BPM electronic. What happened to dwell time and average transaction value?"
+p_13: "Catalog-based services cannot produce this dataset. They log song names and play times. They do not log parameterized musical characteristics because they did not control them. The songs have whatever characteristics the original artist gave them."
+p_14: "For retailers who already have foot traffic counters, POS data, and dwell time analytics, AI-generated music adds the missing variable. The store's behavioral data can be correlated against the musical parameters that were running concurrently. Over time, patterns emerge. Specific parameters produce specific outcomes in specific stores with specific customer populations."
+
+h2_4: What Does Not Work Yet
+p_15: "AI music generation is not universally excellent. Several limitations are worth understanding."
+p_16: "Genre fidelity is uneven. Pop, electronic, ambient, lo-fi, and acoustic singer-songwriter styles sound convincingly human. Complex jazz improvisation, orchestral composition, and genre-specific production techniques (authentic reggae, cumbia, or Afrobeat production) remain inconsistent. If your customer profile calls for a specific genre that current models handle poorly, the quality gap is noticeable."
+p_17: "Vocal quality has improved dramatically but is still identifiable as AI in some cases. For retail environments, this matters less than for consumer music. Background music with minimal or atmospheric vocals works well. Full vocal tracks with lyrical narrative are more exposed to the quality gap."
+p_18: "Repetition management across long operating days requires thoughtful prompt variation. A store running 10 hours of AI-generated music needs sufficient variety that neither customers nor staff perceive repetition. This is a curation and prompt engineering problem, not a generation quality problem."
+
+h2_5: What to Watch
+p_19: "Generation quality will continue improving on a steep curve. The gap between AI and human composition is narrowing by the quarter, not by the year."
+p_20: "The legal and regulatory landscape will continue clarifying. Expect more explicit guidance from the Copyright Office and from international jurisdictions on commercial use of AI-generated music."
+p_21: "The real competitive surface is not generation. It is the translation layer between customer psychology and musical parameters. Any company can generate music. The company that can specify the right music for a specific customer in a specific retail context, and measure whether it worked, is building a different kind of asset."
+p_22: "Entuned generates original music from your customer's psychographic profile and measures its effect on your store's performance data. The founding pilot is free."
+
+h3_related: Related reading
