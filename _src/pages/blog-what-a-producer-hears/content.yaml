@@ -1,56 +1,114 @@
-# blog-what-a-producer-hears — editable text content
+title: "What a Producer Hears That You Don't"
+slug: "what-a-producer-hears"
+eyebrow: "FIELD NOTES"
+dek: "A producer hears frequency, compression, tempo, mic placement, and lyrical mismatch. Your store manager stopped noticing weeks ago."
+date: "2026-04-01"
+last_updated: "2026-04-15"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/what-a-producer-hears.jpg"
+  alt: "Close-up of a mixing console with faders and meters in a recording studio"
+  caption: "Photo: Unsplash"
+meta_description: "A producer hears strata the store manager can't: frequency, compression, tempo, mic placement, lyrical mismatch. Taste is the wrong tool for retail audio."
+og_image: "/blog/what-a-producer-hears/og.png"
+tags: [production, audio-quality, store-manager, retail-audio]
+sections:
+  - type: key_takeaways
+    items:
+      - "A producer hears strata the store manager can't — frequency, compression, tempo, mic placement, production era"
+      - "Repetition legitimizes: the store manager has heard the playlist so many times they've stopped noticing what's wrong"
+      - "The customer walks in fresh and evaluates the music on a completely different basis"
+      - "Taste is the wrong tool — what the room needs is a producer working at the scale of a retail floor"
 
-h1_1: What a Producer Hears That You Don't
-h2_1: The Subtler Stuff
-h2_2: What the Store Manager Hears
-h2_3: The Wrong Instrument for the Job
-meta_1: Daniel Fox &middot; April 2026 &middot; 3 min read
-btn_1: Ask About a Pilot Program
+  - type: prose
+    body: |
+      When I walk into a retail store and the music is wrong, I'm running a diagnosis.
 
-p_tldr: "<strong>TL;DR:</strong> A producer hears strata the store manager can't: frequency, compression, tempo, mic placement, lyrical mismatch, and production era. The store manager has heard the playlist so many times they've stopped noticing what's wrong. The customer walks in fresh. Taste is the wrong tool for this. What the room needs is a producer, and for the first time, a producer can work at the scale of a retail floor."
+      There are strata to what can go wrong. The actual frequencies might be irritating — something harsh in the upper midrange that nobody consciously clocks but that makes people want to leave. The compression might be too aggressive, making everything feel loud and relentless even at a moderate volume. The tempo might be a mismatch for the activity: frantic when the room calls for ease, or so slow it starts to feel like a waiting room. The lyrics might be describing something that has no business in this space — violence, heartbreak, explicit content — playing over a floor full of people trying to decide whether to spend money. The production era might be thirty years off from anything the customer would choose to listen to.
 
-p_1: When I walk into a retail store and the music is wrong, I'm running a diagnosis.
+      Those are just some of the things. There are more.
 
-p_2: "There are strata to what can go wrong. The actual frequencies might be irritating, something harsh in the upper midrange that nobody consciously clocks but that makes people want to leave. The compression might be too aggressive, making everything feel loud and relentless even at a moderate volume. The tempo might be a mismatch for the activity: frantic when the room calls for ease, or so slow it starts to feel like a waiting room. The lyrics might be describing something that has no business in this space, violence, heartbreak, explicit content, playing over a floor full of people trying to decide whether to spend money. The production era might be thirty years off from anything the customer would choose to listen to."
+  - type: stat_callout
+    number: "100s"
+    label: "Distinct audio levers a producer evaluates — frequency, compression, tempo, era, lyric, mic placement, room relationship"
+    source: "Entuned production framework"
+    accent: teal
 
-p_3: Those are just some of the things. There are more.
+  - type: prose
+    body: |
+      But the gap between what I hear and what most people hear is probably widest when it comes to [tempo](../blog/science-of-tempo-retail.html). To someone trained to notice it, tempo exerts a physical pull. It asks your body to entrain to it, to find its cadence, to speed up or slow down. Most people can't name this. But they respond to it. A tempo that's too fast introduces a low-grade urgency that doesn't belong in a store where the goal is considered browsing. A tempo that's too slow makes the room feel like it's barely alive. The customer doesn't know why they feel rushed or why they want to leave. They just reach for the door.
 
-p_4: "But the gap between what I hear and what most people hear is probably widest when it comes to <a href=\"../blog/science-of-tempo-retail.html\">tempo</a>. To someone trained to notice it, tempo exerts a physical pull. It asks your body to entrain to it, to find its cadence, to speed up or slow down. Most people can't name this. But they respond to it. A tempo that's too fast introduces a low-grade urgency that doesn't belong in a store where the goal is considered browsing. A tempo that's too slow makes the room feel like it's barely alive. The customer doesn't know why they feel rushed or why they want to leave. They just reach for the door."
+  - type: subhead
+    level: 2
+    text: "The Subtler Stuff"
 
-p_5: The subtler stuff is where the real distance opens up between a producer's ear and everyone else's.
+  - type: prose
+    body: |
+      The subtler stuff is where the real distance opens up between a producer's ear and everyone else's.
 
-p_6: Take vocal mic placement. It sounds technical. It makes immediate sense once you feel it.
+      Take vocal mic placement. It sounds technical. It makes immediate sense once you feel it.
 
-p_7: "Billie Eilish records with a microphone a quarter inch from her lips, capturing a voice at almost no volume, a whisper with presence. The result is a vocal that feels like it's inside your skull. Intimate. Close. Unavoidable. Finneas, her producer and brother, built that sound deliberately, the mic distance is a choice that defines the relationship between her voice and the listener's body."
+      Billie Eilish records with a microphone a quarter inch from her lips, capturing a voice at almost no volume — a whisper with presence. The result is a vocal that feels like it's inside your skull. Intimate. Close. Unavoidable.
 
-p_8: "Sammy Hagar screams. When Sammy Hagar is at full volume, the mic has to be nearly two feet away to avoid overloading the signal. The result is a voice that fills a room, that was built for a stadium, that projects outward rather than inward."
+      Sammy Hagar screams. When he's at full volume, the mic has to be nearly two feet away to avoid overloading the signal. The result is a voice that fills a room, that was built for a stadium, that projects outward rather than inward.
 
-p_9: "Both are correct for what they're doing. Put Billie's vocal delivery into Sammy's setup and no one hears her. Put Sammy's delivery into Finneas's setup and you clip the signal into noise."
+      Both are correct for what they're doing. Put one vocal delivery into the other's setup and the result is either inaudible or distorted. In a retail environment, one of those relationships between voice and listener is right for the room. The other makes customers feel something they can't name — crowded, or weirdly distant, or vaguely unsettled. They don't trace it back to mic placement. They just feel it, and they act on the feeling.
 
-p_10: "In a retail environment, one of those relationships between voice and listener is right for the room. The other makes customers feel something they can't name, crowded, or weirdly distant, or vaguely unsettled. They don't trace it back to mic placement. They just feel it, and they act on the feeling."
+      This is one lever. There are hundreds.
 
-p_11: This is one lever. There are hundreds.
+  - type: subhead
+    level: 2
+    text: "What the Store Manager Hears"
 
-p_12: None of this is what the store manager is hearing when they listen to their own playlist.
+  - type: prose
+    body: |
+      None of this is what the store manager is hearing when they listen to their own playlist.
 
-p_13: "What they hear is songs they have come to know. Songs associated with their workday, their routines, the rhythms of a Tuesday afternoon or a Saturday rush. Songs that have become, through sheer repetition, familiar."
+      What they hear is songs they have come to know. Songs associated with their workday, their routines, the rhythms of a Tuesday afternoon or a Saturday rush. Songs that have become, through sheer repetition, familiar.
 
-p_14: "<a href=\"../blog/the-familiarity-trap.html\">Repetition legitimizes.</a> This is absolutely true, and it's especially true in music. The more times you hear something, the more your brain files it as normal, as acceptable, as fine. The rough edges smooth out. The mismatches stop registering. The song that was grating in week one is just part of the ambient texture by month three."
+      [Repetition legitimizes.](../blog/the-familiarity-trap.html) This is absolutely true, and it's especially true in music. The more times you hear something, the more your brain files it as normal, as acceptable, as fine. The rough edges smooth out. The mismatches stop registering. The song that was grating in week one is just part of the ambient texture by month three.
 
-p_15: The problem is that this process only works for the person doing the repeating.
+      The problem is that this process only works for the person doing the repeating.
 
-p_16: "The customer walks in fresh. They have no accumulated exposure to this playlist, no dopamine firing from lyrical recognition, no associations built between these songs and the comfortable rituals of their workday. They're evaluating the music on a completely different basis, one built from their own history with nostalgia, their own sense of what feels aspirational, their own body's response to tempo and frequency and vocal presence."
+  - type: stat_callout
+    number: "2,000 hrs"
+    label: "Annual hours staff spend exposed to the store's audio environment"
+    source: "Entuned estimate, based on standard retail shift patterns"
+    accent: gold
 
-p_17: "The <a href=\"../blog/store-manager-problem.html\">store manager</a> and the customer are never hearing the same thing. The store is only getting feedback from one of them."
+  - type: prose
+    body: |
+      The customer walks in fresh. They have no accumulated exposure to this playlist, no dopamine firing from lyrical recognition, no associations built between these songs and the comfortable rituals of their workday. They're evaluating the music on a completely different basis — one built from their own history with nostalgia, their own sense of what feels aspirational, their own body's response to tempo and frequency and vocal presence.
 
-p_18: "This is the problem that a playlist, however carefully assembled, cannot solve on its own. The person building it is the wrong instrument for the job. Not because they lack taste, but because taste is the wrong tool. What the room needs is someone who can hear all the levers at once, frequency, compression, tempo, era, lyric, mic placement, room relationship, and pull them deliberately, in the direction of a specific customer and a specific outcome."
+      The [store manager](../blog/store-manager-problem.html) and the customer are never hearing the same thing. The store is only getting feedback from one of them.
 
-p_19: That's not a music fan. That's a producer.
+  - type: subhead
+    level: 2
+    text: "The Wrong Instrument for the Job"
 
-p_20: "And a producer, for the first time, can now work at the scale of a retail floor."
+  - type: prose
+    body: |
+      This is the problem that a playlist, however carefully assembled, cannot solve on its own. The person building it is the wrong instrument for the job. Not because they lack taste, but because taste is the wrong tool. What the room needs is someone who can hear all the levers at once — frequency, compression, tempo, era, lyric, mic placement, room relationship — and pull them deliberately, in the direction of a specific customer and a specific outcome.
 
-p_byline: Daniel<br>Founder, Entuned
+      That's not a music fan. That's a producer.
 
-p_bio: "<strong>Daniel Fox</strong> is the founder of Entuned, where he builds music systems engineered for retail customer psychology. Background in music theory, behavioral research, and data-driven product design. <a href=\"../about.html\">More about Daniel</a>"
+      And a producer, for the first time, can now work at the scale of a retail floor.
 
-p_cta: "Entuned gives every store access to what a producer hears. Music engineered for the customer in front of the product, measured in real time."
+  - type: pullquote
+    text: "Taste is the wrong tool. What the room needs is a producer. And a producer, for the first time, can now work at the scale of a retail floor."
+    accent: teal
+
+  - type: cta
+    variant: pilot
+    headline: "Run a pilot"
+    body: "Entuned gives every store access to what a producer hears. Music engineered for the customer in front of the product, measured in real time."
+    link: "/pilot"
+    link_text: "Start a conversation"
+
+  - type: related
+    posts:
+      - slug: "store-manager-problem"
+      - slug: "employees-hear-it"
+      - slug: "the-familiarity-trap"

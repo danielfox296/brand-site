@@ -20,17 +20,17 @@
   <meta property="og:description" content="Your customer is in the store for twenty minutes. Your staff is in it for eight hours. The music that works for both is the same music.">
   <meta property="og:url" content="https://entuned.co/blog/employees-hear-it.html">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="https://entuned.co/img/blog/employees-hear-it.jpg">
+  <meta property="og:image" content="https://entuned.co/blog/employees-hear-it/og.png">
   <meta property="og:site_name" content="Entuned">
   <meta property="og:locale" content="en_US">
-  <meta property="article:published_time" content="2026-03-25">
+  <meta property="article:published_time" content="2026-03-15">
   <meta property="article:author" content="Daniel Fox">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Your Employees Hear It 2,000 Hours a Year">
   <meta name="twitter:description" content="Your customer is in the store for twenty minutes. Your staff is in it for eight hours. The music that works for both is the same music.">
-  <meta name="twitter:image" content="https://entuned.co/img/blog/employees-hear-it.jpg">
+  <meta name="twitter:image" content="https://entuned.co/blog/employees-hear-it/og.png">
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -47,10 +47,10 @@
     "name": "Entuned",
     "url": "https://entuned.co"
   },
-  "datePublished": "2026-03-25",
-  "dateModified": "2026-03-25",
+  "datePublished": "2026-03-15",
+  "dateModified": "2026-04-15",
   "description": "Your customer is in the store for twenty minutes. Your staff is in it for eight hours. The music that works for both is the same music.",
-  "image": "https://entuned.co/img/blog/employees-hear-it.jpg",
+  "image": "https://entuned.co/blog/employees-hear-it/og.png",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://entuned.co/blog/employees-hear-it.html"
@@ -101,6 +101,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
   <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../styles/blog.css">
   <style>
 /* Page styles — see global styles.css */
   </style>
@@ -122,58 +123,153 @@
 </nav>
 
   <main>
-  <div class="back-link fade-up">
-    <a href="../blog.html">&larr; Back to Blog</a>
+  
+<!-- Reading progress bar -->
+<div class="blog-progress" aria-hidden="true">
+  <div class="blog-progress__bar" id="reading-progress"></div>
+</div>
+
+<article class="blog-article">
+
+  <!-- Article header -->
+  <header class="blog-article__header">
+    <div class="blog-eyebrow">FIELD NOTES</div>
+    <h1 class="blog-headline">Your Employees Hear It 2,000 Hours a Year</h1>
+    <p class="blog-dek">Your customer is in the store for twenty minutes. Your staff is in it for eight hours. The music that works for both is the same music.</p>
+    <div class="blog-byline">
+      <span class="blog-byline__author">Daniel Fox</span>
+      <span class="blog-byline__role">Founder &amp; CEO</span>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <time class="blog-byline__date" datetime="2026-03-15">2026-03-15</time>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <span class="blog-byline__reading-time">4 min read</span>
+    </div>
+  </header>
+
+  <!-- Hero image -->
+  <figure class="blog-hero fade-up">
+    <img src="../img/blog/employees-hear-it.jpg" alt="Retail store interior with ceiling speakers and staff working" class="blog-hero__img" loading="lazy">
+    <figcaption class="blog-hero__caption">Photo: Unsplash</figcaption>
+  </figure>
+
+  <!-- Key takeaways -->
+  <div class="blog-takeaways">
+  <div class="blog-takeaways__title">Key takeaways</div>
+  <ul>
+    <li>Retail employees are exposed to in-store music for roughly 2,000 hours per year — 10x longer than any customer</li>
+    <li>A 500-track playlist repeats fully every 2-3 days; employees hear the same song 50+ times per month</li>
+    <li>Compressed, fatiguing mixes designed for streaming produce flat sonic texture that drains energy over a shift</li>
+    <li>The sonic qualities that support purchase behavior in premium retail also produce a better working environment</li>
+  </ul>
+</div>
+
+  <!-- Article body (all sections except key_takeaways, cta, related) -->
+  <div class="blog-article__body">
+    <div class="blog-prose">
+  <p>Retail employees are exposed to in-store music for approximately 2,000 hours per year — roughly ten times longer than any customer — yet most audio environment decisions treat staff as an afterthought, optimizing only for the brief customer visit rather than the full-shift experience that shapes employee mood, energy, and service quality.</p>
+<p>Every conversation about retail music focuses on the customer. How does it affect their mood? How long do they stay? What do they buy? Those are the right questions. But they skip the person who spends the most time in the sonic environment by a factor of ten.</p>
+</div>
+
+<div class="blog-stat blog-stat--teal">
+  <div class="blog-stat__number">2,000 hrs</div>
+  <div class="blog-stat__label">Annual hours a retail employee is exposed to in-store music — 10x longer than any customer</div>
+  <div class="blog-stat__source">Standard retail shift calculation (8 hrs x 5 days x 50 weeks)</div>
+</div>
+
+<h2 id="what-bad-music-does-to-staff" class="blog-subhead blog-subhead--h2">
+  What Bad Music Does to Staff
+  <a href="#what-bad-music-does-to-staff" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Your customer is in the store for twenty minutes. Your staff is in it for eight hours. Five days a week. Fifty weeks a year. That is roughly 2,000 hours of continuous exposure to whatever you are playing.</p>
+<p>The most common complaint from retail employees about in-store music is repetition. A playlist that loops every three or four hours means hearing the same songs twice in a shift. Over a five-day week, that is ten exposures to the same track. After a month, fifty. The songs stop being music and start being an ambient irritant — something the brain cannot stop tracking even when the employee is trying to ignore it.</p>
+<p>The second most common complaint is mismatch. The music was chosen for the customer, or for a generic idea of the customer, and the employee&rsquo;s relationship with it ranges from indifference to active dislike. Eight hours of music you would never choose to listen to is a specific kind of low-grade stress. It is not dramatic. It does not cause anyone to quit on the spot. But it accumulates in the same way that bad lighting or an uncomfortable uniform accumulates: as a background drag on energy and mood that shows up in how staff interact with customers. It is one more version of the <a href="../blog/the-familiarity-trap.html">familiarity trap</a> that plagues catalog-based services.</p>
+</div>
+
+<h2 id="the-loudness-war-hits-hardest-at-hour-six" class="blog-subhead blog-subhead--h2">
+  The Loudness War Hits Hardest at Hour Six
+  <a href="#the-loudness-war-hits-hardest-at-hour-six" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Compressed, fatiguing mixes (the loudness war problem that affects most commercially released music) compound the issue. A track mastered for maximum streaming loudness is designed to grab attention through headphones for three minutes. Playing it on a loop through ceiling speakers for eight hours is a different proposition. The narrow dynamic range produces a flat, relentless sonic texture. After a few hours of that, people get tired in ways they cannot easily attribute to a cause. They just know <a href="../blog/what-happens-to-employee-performance-when-the-music-is-right.html">the shift felt long</a>.</p>
+</div>
+
+<figure class="blog-pullquote blog-pullquote--teal">
+  <blockquote>The store that sounds good for the customer&#39;s twenty-minute visit should also sound good for the employee&#39;s eight-hour shift. When it does not, the staff is enduring the music rather than being supported by it.</blockquote>
+</figure>
+
+<h2 id="why-does-staff-wellbeing-depend-on-the-same-music-that-serves-customers" class="blog-subhead blog-subhead--h2">
+  Why Does Staff Wellbeing Depend on the Same Music That Serves Customers?
+  <a href="#why-does-staff-wellbeing-depend-on-the-same-music-that-serves-customers" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Here is the thing that gets missed: the sonic qualities that tend to support purchase behavior in premium retail also tend to produce a better working environment for the people staffing that retail. Lower arousal, more dynamic range, warmer production, thoughtful transitions, groove that sits behind the beat instead of pushing. These are the characteristics of music that both customers and employees can exist inside for extended periods without fatigue.</p>
+<p>The store that sounds good for the customer&rsquo;s twenty-minute visit should also sound good for the employee&rsquo;s eight-hour shift. When it does, the staff is calmer, more present, and more capable of the kind of attentive, unhurried service that premium retail depends on. When it does not, the staff is enduring the music rather than being supported by it, and that endurance has a cost that shows up in interaction quality long before it shows up in turnover numbers.</p>
+<p>Entuned generates music with enough depth and variation that it holds up across a full shift, not just a customer visit. Low repetition, natural dynamics, production that does not fatigue. A room that is good to work in tends to be good to shop in. The mechanism is the same. <a href="../how-it-works.html">Learn more about how it works</a>.</p>
+</div>
+
+<div class="blog-stat blog-stat--teal">
+  <div class="blog-stat__number">50+</div>
+  <div class="blog-stat__label">Times per month an employee hears the same track on a standard 4-hour playlist loop</div>
+  <div class="blog-stat__source">Standard playlist rotation math</div>
+</div>
   </div>
 
-  <div class="article-hero fade-up">
-    <h1>Your Employees Hear It 2,000 Hours a Year</h1>
-    <img src="../img/blog/employees-hear-it.jpg" alt="Retail employees working in a store environment" class="hero-image">
+  <!-- CTA -->
+  <aside class="blog-cta blog-cta--pilot">
+  <div class="blog-cta__headline">Music that holds up all shift</div>
+  <div class="blog-cta__body">Entuned generates purpose-built music for retail environments. No licensing. No compromise. Built around your ideal customer.</div>
+  <a href="/pilot" class="blog-cta__link">Join the pilot &rarr;</a>
+</aside>
+
+  <!-- Related posts -->
+  <section class="blog-related" aria-label="Related posts">
+  <h2 class="blog-related__title">Keep reading</h2>
+  <div class="blog-related__grid">
+    <a href="../blog/what-happens-to-employee-performance-when-the-music-is-right.html" class="blog-related__card">
+      <img src="../img/blog/employee-performance.jpg" alt="What Happens to Employee Performance When the Music Is Right" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FLOW FACTORS</span>
+      <span class="blog-related__card-title">What Happens to Employee Performance When the Music Is Right</span>
+      <span class="blog-related__dek">Your staff spend eight hours in the audio environment your customers spend thirty minutes in. The cumulative effect is an order of magnitude larger.</span>
+    </a>
+    <a href="../blog/store-manager-problem.html" class="blog-related__card">
+      <img src="../img/blog/store-manager-problem.jpg" alt="The Store Manager Problem" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">The Store Manager Problem</span>
+      <span class="blog-related__dek">Ten locations means ten managers making independent sonic decisions. The brand sounds like ten different stores.</span>
+    </a>
+    <a href="../blog/the-silent-brand-signal.html" class="blog-related__card">
+      <img src="../img/blog/the-silent-brand-signal.jpg" alt="The Silent Brand Signal" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">The Silent Brand Signal</span>
+      <span class="blog-related__dek">Customers use the intentionality of your audio environment as a proxy for overall brand quality. Generic music signals generic standards.</span>
+    </a>
   </div>
+</section>
 
-  <div class="article-meta">Daniel Fox &middot; March 2026 &middot; 5 min read</div>
+</article>
 
-  <div class="article-body">
+<!-- Blog-specific JS (reading progress + anchor copy) -->
+<script>
+  // Reading progress bar
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    document.getElementById('reading-progress').style.width = pct + '%';
+  });
 
-    <div class="takeaway-box fade-up">
-      <p><strong>Key Takeaway:</strong> Music that supports a twenty-minute customer visit should also support an eight-hour shift &mdash; low repetition, natural dynamics, and production that does not fatigue are good for both shoppers and staff.</p>
-    </div>
-
-    <p class="fade-up">Retail employees are exposed to in-store music for approximately 2,000 hours per year — roughly ten times longer than any customer — yet most audio environment decisions treat staff as an afterthought, optimizing only for the brief customer visit rather than the full-shift experience that shapes employee mood, energy, and service quality.</p>
-
-    <p class="fade-up">Every conversation about retail music focuses on the customer. How does it affect their mood? How long do they stay? What do they buy? Those are the right questions. But they skip the person who spends the most time in the sonic environment by a factor of ten.</p>
-
-    <p class="fade-up">Your customer is in the store for twenty minutes. Your staff is in it for eight hours. Five days a week. Fifty weeks a year. That is roughly 2,000 hours of continuous exposure to whatever you are playing.</p>
-
-    <h2 class="fade-up">What Bad Music Does to Staff</h2>
-
-    <p class="fade-up">The most common complaint from retail employees about in-store music is repetition. A playlist that loops every three or four hours means hearing the same songs twice in a shift. Over a five-day week, that is ten exposures to the same track. After a month, fifty. The songs stop being music and start being an ambient irritant — something the brain cannot stop tracking even when the employee is trying to ignore it.</p>
-
-    <p class="fade-up">The second most common complaint is mismatch. The music was chosen for the customer, or for a generic idea of the customer, and the employee's relationship with it ranges from indifference to active dislike. Eight hours of music you would never choose to listen to is a specific kind of low-grade stress. It is not dramatic. It does not cause anyone to quit on the spot. But it accumulates in the same way that bad lighting or an uncomfortable uniform accumulates: as a background drag on energy and mood that shows up in how staff interact with customers.</p>
-
-    <p class="fade-up">Compressed, fatiguing mixes (the loudness war problem that affects most commercially released music) compound the issue. A track mastered for maximum streaming loudness is designed to grab attention through headphones for three minutes. Playing it on a loop through ceiling speakers for eight hours is a different proposition. The narrow dynamic range produces a flat, relentless sonic texture. After a few hours of that, people get tired in ways they cannot easily attribute to a cause. They just know the shift felt long.</p>
-
-    <h2 class="fade-up">Why Does Staff Wellbeing Depend on the Same Music That Serves Customers?</h2>
-
-    <p class="fade-up">Here is the thing that gets missed: the sonic qualities that tend to support purchase behavior in premium retail also tend to produce a better working environment for the people staffing that retail. Lower arousal, more dynamic range, warmer production, thoughtful transitions, groove that sits behind the beat instead of pushing. These are the characteristics of music that both customers and employees can exist inside for extended periods without fatigue.</p>
-
-    <p class="fade-up">The store that sounds good for the customer's twenty-minute visit should also sound good for the employee's eight-hour shift. When it does, the staff is calmer, more present, and more capable of the kind of attentive, unhurried service that premium retail depends on. When it does not, the staff is enduring the music rather than being supported by it, and that endurance has a cost that shows up in interaction quality long before it shows up in turnover numbers.</p>
-
-    <p class="fade-up">Entuned generates music with enough depth and variation that it holds up across a full shift, not just a customer visit. Low repetition, natural dynamics, production that does not fatigue. A room that is good to work in tends to be good to shop in. The mechanism is the same.</p>
-
-    <p class="fade-up">Related reading: <a href="../blog/what-happens-to-employee-performance-when-the-music-is-right.html">What Happens to Employee Performance When the Music Is Right</a>, <a href="../blog/store-manager-problem.html">The Store Manager Problem</a>, and <a href="../blog/the-silent-brand-signal.html">The Silent Brand Signal</a>.</p>
-
-    <div class="author-bio fade-up">
-      <p><strong>Daniel Fox</strong> is the founder of Entuned, where he builds music systems engineered for retail customer psychology. Background in music theory, behavioral research, and data-driven product design. <a href="../about.html">More about Daniel</a></p>
-    </div>
-
-    <p class="fade-up">Related reading: <a href="../for-retail-leaders.html">For Retail Leaders</a>.</p>
-
-    <div class="article-cta fade-up">
-      <p>Entuned generates purpose-built music for retail environments. No licensing. No compromise. Built around your ideal customer.</p>
-      <a href="../pilot.html" class="btn btn-primary">Join the Pilot</a>
-    </div>
-  </div>
+  // Anchor link copy-to-clipboard
+  document.querySelectorAll('.anchor-link').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      navigator.clipboard.writeText(window.location.origin + window.location.pathname + a.getAttribute('href'));
+      a.textContent = '\u2713'; setTimeout(() => a.textContent = '#', 1500);
+    });
+  });
+</script>
   </main>
 
   <!-- FOOTER -->

@@ -1,59 +1,166 @@
-# blog-commercial-music-services-compared
+title: "Commercial Music Services Compared (2026)"
+slug: "commercial-music-services-compared"
+eyebrow: "MARKET INTEL"
+dek: "An honest comparison of Mood Media, Soundtrack, Cloud Cover, SiriusXM, and AI-powered alternatives. Pricing, features, and tradeoffs."
+date: "2026-04-01"
+last_updated: "2026-04-15"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/commercial-music-services-compared.jpg"
+  alt: "Commercial audio equipment and speaker systems in retail setting"
+  caption: "Photo: Unsplash"
+meta_description: "Honest comparison of Mood Media, Soundtrack, Cloud Cover, SiriusXM, and AI-powered alternatives. Pricing, features, and tradeoffs."
+og_image: "/blog/commercial-music-services-compared/og.png"
+tags: [comparison, mood-media, soundtrack, cloud-cover, siriusxm, pricing, retail-music]
+sections:
+  - type: key_takeaways
+    items:
+      - "Commercial music services range from $17 to $80+ per location per month"
+      - "Mood Media dominates on scale (500K+ locations) but locks you into multi-year contracts with no behavioral measurement"
+      - "AI-powered services eliminate licensing costs, add psychographic targeting, and produce measurement data"
+      - "None of the catalog-based services can tell you whether the music is actually affecting your business"
 
-h1_1: "Commercial Music Services Compared: Mood Media vs Soundtrack vs Cloud Cover vs AI (2026)"
-meta_1: Daniel Fox &middot; April 2026 &middot; 12 min read
+  - type: prose
+    body: |
+      The commercial music market in 2026 has more options than at any point in its history, and the differences between them are larger than the marketing pages suggest. Some of these services are solving the same problem they solved in 2005: get licensed music into a store legally. Others are attempting something different. This comparison covers the major providers, what they actually do, what they cost, and what they cannot do.
 
-p_takeaway: "<strong>TL;DR:</strong> Commercial music services range from $17 to $80+ per location per month. Mood Media dominates on scale (500K+ locations) but locks you into multi-year contracts with no behavioral measurement. Soundtrack Your Brand has the largest catalog. Cloud Cover is cheapest. SiriusXM is most familiar. AI-powered services eliminate licensing costs and can target music to customer psychology. None of the catalog-based services tell you whether the music is working."
+  - type: subhead
+    level: 2
+    text: "Mood Media"
 
-p_1: "The commercial music market in 2026 has more options than at any point in its history, and the differences between them are larger than the marketing pages suggest. Some of these services are solving the same problem they solved in 2005: get licensed music into a store legally. Others are attempting something different. This comparison covers the major providers, what they actually do, what they cost, and what they cannot do."
+  - type: stat_callout
+    number: "500K+"
+    label: "Locations served globally by Mood Media — the largest commercial music provider by installed base"
+    source: "Mood Media, 2026"
+    accent: teal
 
-h2_1: Mood Media
-p_2: "<strong>Scale:</strong> 500,000+ locations globally. The largest commercial music provider by installed base."
-p_3: "<strong>Pricing:</strong> $30 to $80 per location per month. Pricing is not transparent. Contracts are typically three to five years with early termination penalties. Per-location costs depend on bundled services including hardware, scent marketing, and digital signage."
-p_4: "<strong>Music:</strong> Licensed catalog organized by genre, mood, and daypart. Professional curation teams build playlists. Large library, but fixed. Rotation is inevitable over time."
-p_5: "<strong>Licensing:</strong> Included in subscription."
-p_6: "<strong>Measurement:</strong> Schedule adherence reporting. No behavioral measurement. No connection between what plays and what sells."
-p_7: "<strong>Best for:</strong> Large enterprises that need a proven, scaled provider and can accept multi-year commitments. If your primary requirement is 'legal music in 500 locations by next quarter,' Mood Media can do that."
-p_8: "<strong>Limitations:</strong> Long contracts reduce switching flexibility. No psychographic targeting. No behavioral data. Pricing opacity makes cost comparison difficult. Technology stack reflects acquisition-driven assembly rather than unified product design."
+  - type: prose
+    body: |
+      **Scale:** 500,000+ locations globally. The largest commercial music provider by installed base.
 
-h2_2: Soundtrack Your Brand
-p_9: "<strong>Scale:</strong> Spotify-adjacent. Originally Spotify for Business before rebranding. Claims over 100 million tracks available."
-p_10: "<strong>Pricing:</strong> $35 per month per location. $119 per month for up to five locations. Volume discounts negotiated for larger deployments."
-p_11: "<strong>Music:</strong> The largest commercial catalog available. Business-exclusive channels. Genre, mood, and energy-based filtering. Remote playlist management."
-p_12: "<strong>Licensing:</strong> Included. Blanket commercial license covers ASCAP, BMI, SESAC."
-p_13: "<strong>Measurement:</strong> Play history and scheduling reports. No behavioral measurement."
-p_14: "<strong>Best for:</strong> Retailers who want a large catalog, modern interface, no hardware requirement, and monthly billing without multi-year lock-in. The most straightforward upgrade from an illegal Spotify setup."
-p_15: "<strong>Limitations:</strong> Targeting is genre and mood based, not customer based. Catalog size is a selling point but size does not equal relevance. 100 million tracks and no way to know which ones match your customer."
+      **Pricing:** $30 to $80 per location per month. Pricing is not transparent. Contracts are typically three to five years with early termination penalties. Per-location costs depend on bundled services including hardware, scent marketing, and digital signage.
 
-h2_3: Pandora CloudCover (Cloud Cover Music)
-p_16: "<strong>Scale:</strong> US-focused, primarily small and mid-size businesses."
-p_17: "<strong>Pricing:</strong> $16.95 per month per location (annual prepay). $19.95 month to month. The lowest price point in the market for fully licensed commercial music."
-p_18: "<strong>Music:</strong> 300+ curated stations. Explicit content filters. Basic scheduling tools. Adequate for stores where music is important but not a strategic lever."
-p_19: "<strong>Licensing:</strong> Included."
-p_20: "<strong>Measurement:</strong> None beyond play logs."
-p_21: "<strong>Best for:</strong> Single-location or small multi-unit operators who need compliant background music at minimal cost. The 'just make it legal' option."
-p_22: "<strong>Limitations:</strong> Limited customization. No multi-location management tools comparable to enterprise services. At scale, the operational limitations become visible."
+      **Music:** Licensed catalog organized by genre, mood, and daypart. Professional curation teams build playlists. Large library, but fixed. Rotation is inevitable over time.
 
-h2_4: SiriusXM for Business
-p_23: "<strong>Scale:</strong> Broad US deployment. Rides consumer brand recognition."
-p_24: "<strong>Pricing:</strong> $26.95 per month base tier. Enterprise pricing $40 to $80 per location depending on features and volume."
-p_25: "<strong>Music:</strong> 200+ channels including Pandora artist stations. Genre diversity. Scheduling and dayparting available at higher tiers."
-p_26: "<strong>Licensing:</strong> Included."
-p_27: "<strong>Measurement:</strong> Scheduling reports. No behavioral analytics."
-p_28: "<strong>Best for:</strong> Retailers who want familiar brand, reliable infrastructure, and moderate customization. The safe enterprise choice."
-p_29: "<strong>Limitations:</strong> Channel-based model is essentially the same architecture as the consumer product. No targeting beyond genre selection."
+      **Licensing:** Included in subscription.
 
-h2_5: AI-Powered Alternatives
-p_30: "A new category. Instead of selecting from a licensed catalog, these services generate original music. The implications are structural, not cosmetic."
-p_31: "<strong>Licensing:</strong> AI-generated original music has no songwriters, no publishers, no PRO affiliations. No ASCAP, BMI, or SESAC fees. No performance rights to clear. This eliminates an entire cost layer and liability category."
-p_32: "<strong>Targeting:</strong> Because the music is generated rather than selected, it can be parameterized against any input. Customer psychology. Brand positioning. Time of day. Behavioral data. The resolution of targeting is limited only by the quality of the generation model and the specificity of the input profile."
-p_33: "<strong>Measurement:</strong> This is where the category diverges most sharply. Because every parameter of the music is logged (tempo, key, instrumentation, energy, genre blend), and because the music changes are deliberate rather than random, it becomes possible to correlate musical variables with business outcomes. Dwell time, conversion, average transaction value."
-p_34: "<strong>Limitations:</strong> AI music generation quality crossed the commercial threshold with Suno V5 in September 2025, but it is not yet indistinguishable from human composition in every genre. The category is young. Pilot data, not decade-long track records, is what you get."
+      **Measurement:** Schedule adherence reporting. No behavioral measurement. No connection between what plays and what sells.
 
-h2_6: The Comparison Table
-p_35: "Here is the honest summary. Catalog services solve the compliance problem and give you genre-level control. AI services solve the compliance problem, eliminate licensing costs, add psychographic targeting, and produce behavioral measurement data. Catalog services have scale and track record. AI services have precision and data."
-p_36: "The question for your store is which set of tradeoffs matters more. If you need legal music at the lowest cost with the least decision-making, CloudCover at $17 per month is hard to argue with. If you need the largest catalog with modern management tools, Soundtrack is the answer. If you want to know whether the music is actually affecting your business, none of the catalog services can tell you."
+      **Best for:** Large enterprises that need a proven, scaled provider and can accept multi-year commitments. If your primary requirement is "legal music in 500 locations by next quarter," Mood Media can do that.
 
-p_37: "Entuned generates original music from your customer's psychographic profile and correlates it against your store's performance data. The founding pilot is free."
+      **Limitations:** Long contracts reduce switching flexibility. No psychographic targeting. No behavioral data. Pricing opacity makes cost comparison difficult. Technology stack reflects acquisition-driven assembly rather than unified product design. (See [Mood Media alternatives](../blog/mood-media-alternatives.html) for more.)
 
-h3_related: Related reading
+  - type: subhead
+    level: 2
+    text: "Soundtrack Your Brand"
+
+  - type: prose
+    body: |
+      **Scale:** Spotify-adjacent. Originally Spotify for Business before rebranding. Claims over 100 million tracks available.
+
+      **Pricing:** $35 per month per location. $119 per month for up to five locations. Volume discounts negotiated for larger deployments.
+
+      **Music:** The largest commercial catalog available. Business-exclusive channels. Genre, mood, and energy-based filtering. Remote playlist management.
+
+      **Licensing:** Included. Blanket commercial license covers ASCAP, BMI, SESAC.
+
+      **Measurement:** Play history and scheduling reports. No behavioral measurement.
+
+      **Best for:** Retailers who want a large catalog, modern interface, no hardware requirement, and monthly billing without multi-year lock-in. The most straightforward upgrade from an illegal Spotify setup.
+
+      **Limitations:** Targeting is genre and mood based, not customer based. Catalog size is a selling point but size does not equal relevance. 100 million tracks and no way to know which ones match your customer.
+
+  - type: subhead
+    level: 2
+    text: "Pandora CloudCover (Cloud Cover Music)"
+
+  - type: prose
+    body: |
+      **Scale:** US-focused, primarily small and mid-size businesses.
+
+      **Pricing:** $16.95 per month per location (annual prepay). $19.95 month to month. The lowest price point in the market for fully licensed commercial music.
+
+      **Music:** 300+ curated stations. Explicit content filters. Basic scheduling tools. Adequate for stores where music is important but not a strategic lever.
+
+      **Licensing:** Included.
+
+      **Measurement:** None beyond play logs.
+
+      **Best for:** Single-location or small multi-unit operators who need compliant background music at minimal cost. The "just make it legal" option.
+
+      **Limitations:** Limited customization. No multi-location management tools comparable to enterprise services. At scale, the operational limitations become visible.
+
+  - type: subhead
+    level: 2
+    text: "SiriusXM for Business"
+
+  - type: prose
+    body: |
+      **Scale:** Broad US deployment. Rides consumer brand recognition.
+
+      **Pricing:** $26.95 per month base tier. Enterprise pricing $40 to $80 per location depending on features and volume.
+
+      **Music:** 200+ channels including Pandora artist stations. Genre diversity. Scheduling and dayparting available at higher tiers.
+
+      **Licensing:** Included.
+
+      **Measurement:** Scheduling reports. No behavioral analytics.
+
+      **Best for:** Retailers who want familiar brand, reliable infrastructure, and moderate customization. The safe enterprise choice.
+
+      **Limitations:** Channel-based model is essentially the same architecture as the consumer product. No targeting beyond genre selection.
+
+  - type: subhead
+    level: 2
+    text: "AI-Powered Alternatives"
+
+  - type: prose
+    body: |
+      A new category. Instead of selecting from a licensed catalog, these services generate original music. The implications are structural, not cosmetic.
+
+      **Licensing:** AI-generated original music has no songwriters, no publishers, no PRO affiliations. No ASCAP, BMI, or SESAC fees. No performance rights to clear. This eliminates an entire [cost layer and liability category](../blog/how-much-does-retail-music-cost.html).
+
+      **Targeting:** Because the music is generated rather than selected, it can be parameterized against any input. Customer psychology. Brand positioning. Time of day. Behavioral data. The resolution of targeting is limited only by the quality of the generation model and the specificity of the input profile.
+
+      **Measurement:** This is where the category diverges most sharply. Because every parameter of the music is logged (tempo, key, instrumentation, energy, genre blend), and because the music changes are deliberate rather than random, it becomes possible to correlate musical variables with business outcomes. [Dwell time, conversion, average transaction value](../blog/the-metrics-your-audio-environment-should-be-producing.html). [See how measurement works in practice](../how-it-works.html).
+
+      **Limitations:** AI music generation quality crossed the commercial threshold with Suno V5 in September 2025, but it is not yet indistinguishable from human composition in every genre. The category is young. Pilot data, not decade-long track records, is what you get.
+
+  - type: comparison_table
+    title: "Commercial Music Services at a Glance"
+    columns: ["Provider", "Price/Location/Mo", "Targeting", "Measurement"]
+    rows:
+      - ["Mood Media", "$30-$80", "Genre/mood", "None"]
+      - ["Soundtrack Your Brand", "$35", "Genre/mood", "None"]
+      - ["CloudCover", "$17-$20", "Station-based", "None"]
+      - ["SiriusXM Business", "$27-$80", "Channel-based", "None"]
+      - ["AI-Powered (Entuned)", "Free pilot", "Psychographic", "Full behavioral"]
+
+  - type: pullquote
+    text: "If you want to know whether the music is actually affecting your business, none of the catalog services can tell you."
+    accent: teal
+
+  - type: prose
+    body: |
+      The question for your store is which set of tradeoffs matters more. If you need legal music at the lowest cost with the least decision-making, CloudCover at $17 per month is hard to argue with. If you need the largest catalog with modern management tools, Soundtrack is the answer. If you want to know whether the music is actually affecting your business, none of the catalog services can tell you.
+
+  - type: stat_callout
+    number: "$16.95"
+    label: "Lowest monthly price for fully licensed commercial music (CloudCover annual prepay)"
+    source: "Cloud Cover Music pricing, 2026"
+    accent: gold
+
+  - type: cta
+    variant: pilot
+    headline: "Try the alternative that measures"
+    body: "Entuned generates original music from your customer's psychographic profile and correlates it against your store's performance data. The founding pilot is free."
+    link: "/pilot"
+    link_text: "Learn about the free pilot program"
+
+  - type: related
+    posts:
+      - slug: "mood-media-alternatives"
+      - slug: "how-much-does-retail-music-cost"
+      - slug: "ai-vs-traditional-retail-music"

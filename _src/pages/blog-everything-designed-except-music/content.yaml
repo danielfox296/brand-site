@@ -1,59 +1,120 @@
-# blog-everything-designed-except-music — editable text content
+title: "Everything Is Designed to Make You Buy"
+slug: "everything-designed-except-music"
+eyebrow: "FIELD NOTES"
+dek: "Every element in a well-designed store removes friction between a person and a desire. The music has been on shuffle."
+date: "2026-04-01"
+last_updated: "2026-04-15"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/everything-designed-except-music.jpg"
+  alt: "Carefully designed retail store interior with thoughtful lighting and fixtures"
+  caption: "Photo: Unsplash"
+meta_description: "A well-designed store curates every visual element down to the light on the product. The music has been on shuffle. That gap is closing."
+og_image: "/blog/everything-designed-except-music/og.png"
+tags: [retail-design, sensory-marketing, music-design, founder-essay]
+sections:
+  - type: key_takeaways
+    items:
+      - "Every element in a premium store is curated to remove friction between a person and a desire — except the music"
+      - "The constraint was never indifference; creating music at the volume and specificity retail requires was impossible until now"
+      - "Music can now be created to spec, measured against sales data, and adjusted in real time"
+      - "The tools finally caught up to the intention — the gap between visual design and sonic design is closing"
 
-h1_1: "Everything in a Store Is Designed to Make You Buy, Except the Music"
-h2_1: What a Well-Designed Store Does
-h2_2: What the Music Does
-h2_3: Why Music Was Left Out
-h2_4: The Constraint Is Gone
-meta_1: Daniel Fox &middot; April 2026 &middot; 3 min read
-btn_1: Ask About a Pilot Program
+  - type: prose
+    body: |
+      Think about the last time you walked into a store and stayed longer than you planned. Or picked something up you weren't looking for. Or left having spent more than you intended and felt basically fine about it.
 
-p_tldr: "<strong>TL;DR:</strong> Every element in a well-designed store removes friction between a person and a desire they didn't know they had. Music is a massive part of how this works, but it was always constrained by the effort required to create it. That constraint is gone. Music can now be designed to spec, measured against sales data, and adjusted in real time."
+      Something was happening in that room. You probably didn't notice it at the time. That's the point.
 
-p_1: Think about the last time you walked into a store and stayed longer than you planned. Or picked something up you weren't looking for. Or left having spent more than you intended and felt basically fine about it.
+  - type: subhead
+    level: 2
+    text: "What a Well-Designed Store Does"
 
-p_2: Something was happening in that room. You probably didn't notice it at the time. That's the point.
+  - type: prose
+    body: |
+      A well-designed retail environment is a curation. Every object in it was chosen. The way those objects are presented — the spacing, the height, the light falling on them — was considered. Beautiful things, presented with care, do something to the people standing near them. They inspire possession. They make you want to be the kind of person who owns this, wears this, lives with this.
 
-p_3: "A well-designed retail environment is a curation. Every object in it was chosen. The way those objects are presented, the spacing, the height, the light falling on them, was considered. Beautiful things, presented with care, do something to the people standing near them. They inspire possession. They make you want to be the kind of person who owns this, wears this, lives with this."
+      If the objects are cheap or ugly, none of the rest matters. But if the objects are beautiful and the presentation is sloppy, that's its own problem. It points to someone in the chain of custody with low standards, and customers feel that even when they can't name it.
 
-p_4: "If the objects are cheap or ugly, none of the rest matters. But if the objects are beautiful and the presentation is sloppy, that's its own problem. It points to someone in the chain of custody with low standards, and customers feel that even when they can't name it."
+      The best stores remove friction between a person and a desire they didn't fully know they had. The lighting is warm. The fixtures are considered. The staff move through the floor in a way that feels unhurried, present, available without being aggressive. All of it is pointing your attention somewhere. Toward the product. Toward a version of yourself holding it.
 
-p_5: "The best stores remove friction between a person and a desire they didn't fully know they had. The lighting is warm. The fixtures are considered. The staff move through the floor in a way that feels unhurried, present, available without being aggressive. All of it is pointing your attention somewhere. Toward the product. Toward a version of yourself holding it."
+  - type: pullquote
+    text: "The practice of design, at its core, is the removal of distraction. The ushering of attention into the presence of something desirable, useful, beautiful."
+    accent: teal
 
-p_6: "The practice of design, at its core, is the removal of distraction. The ushering of attention into the presence of something desirable, useful, beautiful."
+  - type: prose
+    body: |
+      When it works, you don't feel the design. You just feel the desire. And feeling desire is feeling human. Nobody walks out of a store that did this well feeling manipulated. They feel like they found something.
 
-p_7: When it works, you don't feel the design. You just feel the desire. And feeling desire is feeling human. Nobody walks out of a store that did this well feeling manipulated. They feel like they found something.
+  - type: subhead
+    level: 2
+    text: "What the Music Does"
 
-p_8: Music is a massive part of how this works.
+  - type: prose
+    body: |
+      Music is a massive part of how this works.
 
-p_9: "The right music doesn't call attention to itself. It completes the room. It tells you, underneath everything else, that you belong here. That this place was built for someone like you. It can make you linger. It can make a decision feel easier. It operates below the threshold of conscious attention and shapes the experience anyway."
+      The right music doesn't call attention to itself. It completes the room. It tells you, underneath everything else, that you belong here. That this place was built for someone like you. It can make you linger. It can make a decision feel easier. It operates below the threshold of conscious attention and shapes the experience anyway.
 
-p_10: "The wrong music breaks the whole thing. Suddenly you're not inside the experience, you're outside it, evaluating it. The spell cracks. The desire cools. You start noticing the seams."
+      The wrong music breaks the whole thing. Suddenly you're not inside the experience, you're outside it, evaluating it. The spell cracks. The desire cools. You start noticing the seams.
 
-p_11: "So why, given all of this, has music been the one element that most retail environments leave to chance?"
+  - type: stat_callout
+    number: "8-12%"
+    label: "Increase in willingness to pay when music matches the customer's identity and values"
+    source: "Areni and Kim, 1993; North et al., 1999"
+    accent: gold
 
-p_12: "The honest answer is that it wasn't indifference. It was a constraint."
+  - type: subhead
+    level: 2
+    text: "Why Music Was Left Out"
 
-p_13: "Music has always required enormous effort to create. Writing it, practicing it, performing it, recording it, distributing it. Each of those steps demanded trained people, expensive equipment, and significant time. Even licensing existing music for a commercial space meant working within a catalog of songs made for entirely different purposes, by artists making work for audiences who chose to listen to it. The fit was always approximate at best."
+  - type: prose
+    body: |
+      So why, given all of this, has music been the one element that most retail environments leave to chance?
 
-p_14: "Hiring live musicians for a retail floor was never economically serious. Those are skilled people with real value, and the return on that investment in a clothing store doesn't pencil out."
+      The honest answer is that it wasn't indifference. It was a constraint.
 
-p_15: "So the category defaulted. Streaming services built retail music products that were better than silence and cheaper than anything else. Playlists got built by <a href=\"../blog/store-manager-problem.html\">people with taste but no methodology</a>, and then repeated on a loop until the staff <a href=\"../blog/the-familiarity-trap.html\">stopped hearing them</a>. The customer walked in fresh every time and encountered whatever happened to be playing."
+      Music has always required enormous effort to create. Writing it, practicing it, performing it, recording it, distributing it. Each of those steps demanded trained people, expensive equipment, and significant time. Even licensing existing music for a commercial space meant working within a catalog of songs made for entirely different purposes — by artists making work for audiences who chose to listen to them. The fit was always approximate at best.
 
-p_16: That constraint is gone now.
+      Hiring live musicians for a retail floor was never economically serious. Those are skilled people with real value, and the return on that investment in a clothing store doesn't pencil out.
 
-p_17: "Music can be created to spec, on the fly, without a single musician in the room. Designed for a specific customer, a specific brand, a specific outcome. <a href=\"../blog/sound-check-music-is-a-variable.html\">Measured against what actually happens to sales when it plays.</a> Adjusted based on what the data shows."
+      So the category defaulted. Streaming services built retail music products that were better than silence and cheaper than anything else. Playlists got built by [people with taste but no methodology](../blog/store-manager-problem.html), and then repeated on a loop until the staff [stopped hearing them](../blog/the-familiarity-trap.html). The customer walked in fresh every time and encountered whatever happened to be playing.
 
-p_18: "Every other element in a well-designed store has been getting this treatment for years. The lighting has specs. The fixtures have specs. The staff have training and scripts. The layout has been tested."
+  - type: stat_callout
+    number: "2,000 hrs"
+    label: "Annual hours an employee is exposed to music that was never designed for an 8-hour shift"
+    source: "Standard retail shift calculation"
+    accent: teal
 
-p_19: The music has been on shuffle.
+  - type: subhead
+    level: 2
+    text: "The Constraint Is Gone"
 
-p_20: "That gap is what's closing. The tools finally caught up to the intention."
+  - type: prose
+    body: |
+      That constraint is gone now.
 
-p_21: The store was always trying to tell you something. Now the music can be part of what it's saying.
+      Music can be created to spec, on the fly, without a single musician in the room. Designed for a specific customer, a specific brand, a specific outcome. [Measured against what actually happens to sales when it plays.](../blog/sound-check-music-is-a-variable.html) Adjusted based on what the data shows.
 
-p_byline: Daniel<br>Founder, Entuned
+      Every other element in a well-designed store has been getting this treatment for years. The lighting has specs. The fixtures have specs. The staff have training and scripts. The layout has been tested.
 
-p_bio: "<strong>Daniel Fox</strong> is the founder of Entuned, where he builds music systems engineered for retail customer psychology. Background in music theory, behavioral research, and data-driven product design. <a href=\"../about.html\">More about Daniel</a>"
+      The music has been on shuffle.
 
-p_cta: "Entuned closes the gap between what your store was designed to say and what the music is actually saying. Built for your customer, measured against your data."
+      That gap is what's closing. The tools finally caught up to the intention.
+
+      The store was always trying to tell you something. Now the music can be part of what it's saying. [See how Entuned closes the gap](../how-it-works.html).
+
+  - type: cta
+    variant: pilot
+    headline: "Design the sound, not just the space"
+    body: "Entuned closes the gap between what your store was designed to say and what the music is actually saying. Built for your customer, measured against your data."
+    link: "/pilot"
+    link_text: "Ask about a pilot program"
+
+  - type: related
+    posts:
+      - slug: "difference-between-art-and-design"
+      - slug: "the-silent-brand-signal"
+      - slug: "music-was-never-made-for-your-store"

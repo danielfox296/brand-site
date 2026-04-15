@@ -1,44 +1,131 @@
-# blog-sound-check-playlist-problem — editable text content
+title: "Sound Check: The Playlist Problem"
+slug: "sound-check-playlist-problem"
+eyebrow: "FIELD NOTES"
+dek: "Personal streaming is illegal in commercial spaces, employee-picked music optimizes for staff, and familiar hits shorten visits."
+date: "2026-04-01"
+last_updated: "2026-04-15"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/sound-check-playlist-problem.jpg"
+  alt: "Retail store speaker system with a generic playlist interface visible"
+  caption: "Photo: Unsplash"
+meta_description: "Employee playlists, consumer Spotify accounts, and static playlists are all broken approaches to retail music. The structural failures run deep."
+og_image: "/blog/sound-check-playlist-problem/og.png"
+tags: [sound-check-series, playlists, licensing, familiarity, dwell-time]
+sections:
+  - type: key_takeaways
+    items:
+      - "Personal streaming is illegal in commercial spaces — penalties can reach $150,000 per song for willful infringement"
+      - "Employee-picked music optimizes for staff comfort, not customer behavior — the bias is structural"
+      - "Familiar hits actually shorten visits by nearly 8% — the intuitive choice is the wrong one"
 
-h1_1: Sound Check: The Playlist Problem
-h2_1: The Employee DJ Problem
-h2_2: The Familiarity Trap
-h2_3: The Calendar Problem
-h2_4: What This Means
-meta_1: Daniel Fox &middot; April 2026 &middot; 7 min read
-btn_1: Ask About a Pilot Program
-p_1: <em>This is Part 2 of the Sound Check series, exploring the science and structure behind retail music.</em>
-p_2: There's a decent chance your store is breaking federal copyright law right now. Not in a dramatic way. In the way that feels like nothing. Someone logged into their personal Spotify account, connected it to the store speakers, and hit play.
-p_3: <a href="https://www.spotify.com/us/legal/end-user-agreement/" target="_blank" rel="noopener">Spotify's terms of service</a> are explicit: the platform is "only for personal, non-commercial use." Apple Music, Pandora, Amazon Music, same deal. Playing any of them in a commercial space violates the license agreement. But that's the minor problem.
-p_4: The larger issue is the U.S. Copyright Act. <a href="https://www.law.cornell.edu/uscode/text/17/106" target="_blank" rel="noopener">Title 17, Section 106</a> requires businesses to obtain public performance licenses from performing rights organizations, groups like ASCAP, BMI, SESAC, and GMR, before playing music in any commercial environment. A personal streaming subscription does not satisfy that requirement. The subscription gives you the right to listen. It does not give you the right to broadcast.
-p_5: ASCAP has filed suit against individual bars and restaurants. In Chicago, two venues, Fatpour in Wicker Park and Kirkwood Bar in Lakeview, faced lawsuits seeking $150,000 in damages. Under the Copyright Act, penalties for willful infringement can reach $150,000 per song.
-p_6: Most retailers who stream personal accounts in-store aren't trying to steal anything. They just don't know. But "I didn't know" has never been a defense under copyright law, and it won't become one.
-p_7: So the personal streaming account is off the table. The next instinct is usually to hand the music selection to someone on the floor. A manager, a shift lead, whoever seems to have decent taste. This feels reasonable. You're delegating to someone who's there, who knows the vibe, who cares enough to put something on.
-p_8: The problem is structural.
-p_9: Richard Yalch and Eric Spangenberg published a study in the <a href="https://scholar.google.com/scholar?q=Yalch+Spangenberg+effects+store+music+shopping+behavior+1990" target="_blank" rel="noopener"><em>Journal of Consumer Marketing</em> in 1990</a> that looked at how store music affects shopping behavior. What they found is that the relationship between music and customer response depends on the match between the music and the customer demographic. Not the quality of the music. Not whether the person selecting it thinks it sounds good. The match.
-p_10: Employees are almost never a demographic match for the ideal customer profile. They're typically younger. Their taste skews toward whatever is current in their own listening habits, which is built around their social world, not the store's customer base. When an employee picks the playlist, they're selecting music that makes an eight-hour shift more tolerable for themselves. That's a completely rational thing to do. It also has nothing to do with what a 44-year-old customer browsing for 20 minutes needs to hear.
-p_11: This isn't about employees having bad taste. The bias is structural and consistent: the person choosing the music is selecting for their own experience in a space that exists for someone else's experience. Even a well-intentioned employee with broad musical knowledge is still anchoring on personal preference. The question they're answering is "what do I want to listen to?" The question that matters is "what should this room sound like for the person spending money in it?" Those are different questions with different answers.
-p_12: Here's where it gets genuinely counterintuitive.
-p_13: The default assumption in retail music is that you should play songs people recognize. Familiar music. Hits. The logic seems obvious: people like songs they know, they'll feel good, they'll stay longer, they'll buy more.
-p_14: Yalch and Spangenberg tested this directly. <a href="https://scholar.google.com/scholar?q=Yalch+Spangenberg+music+retail+setting+real+perceived+shopping+times+2000" target="_blank" rel="noopener">Their 2000 study, published in the <em>Journal of Business Research</em></a>, measured how familiar versus unfamiliar music affected actual shopping duration. Not how long shoppers said they were in the store. How long they actually stayed.
-p_15: <span class="highlight">Shoppers who heard familiar, recognizable music spent nearly 8% less time in the store than shoppers who heard unfamiliar music.</span>
-p_16: The recognizable hits drove people out faster.
-p_17: The mechanism works like this. Familiar music increases arousal. Your brain recognizes the song, engages with it, processes it actively. That heightened arousal makes time feel like it's passing more slowly. You feel like you've been in the store longer than you have. So you leave.
-p_18: Unfamiliar music does something different. Because your brain isn't actively processing a song it knows, your subjective sense of time compresses. Time feels like it's moving faster. Shoppers perceive a shorter visit. But the clock says otherwise. They actually stay longer.
-p_19: This is a clean inversion of the common intuition. Playing "good songs people know" is probably costing you floor time with every customer who walks in. The songs that feel like the obvious right choice are the ones accelerating departure.
-p_20: Set aside the legal question. Set aside who picks the music. Set aside whether the songs are familiar or not. There's a more fundamental problem with how most retail environments handle music, and it has nothing to do with song selection.
-p_21: A playlist is a fixed object. Someone builds it on a Tuesday in April. It reflects the mood of that Tuesday, the energy of that week, whatever felt right at the time. Then it plays. In May. In August. On a rainy Wednesday when foot traffic is half of normal. During a clearance event. During the holiday rush. During a slow Sunday morning when three people are in the store and two of them are browsing with no intent to buy.
-p_22: The playlist doesn't know any of that. It can't. A static sequence of songs has no mechanism to respond to what's actually happening in the space where it's playing.
-p_23: This isn't a subtle point. The research on music and consumer behavior consistently shows that context determines effect. The same song at the same volume can produce different behavioral outcomes depending on time of day, customer density, shopping occasion, and pace of movement through the store. A playlist that works well at 11am on a Saturday might be wrong for 3pm on a Tuesday. Not because the songs are bad. Because the room is different.
-p_24: Retail is a living environment. The number of people changes. The weather changes. The promotional calendar changes. The ratio of browsers to buyers changes hour by hour. Music that can't respond to any of those conditions is just background noise with good production value.
-p_25: And background noise is fine if music doesn't matter. But if you've read this far, you probably suspect it does.
-p_26: Most retailers have settled on a music approach by default rather than by decision. Someone plugged in a phone. Someone made a playlist. Someone put on a satellite radio station. It felt close enough to fine, so it stayed.
-p_27: The problem with "close enough to fine" is that you can't see what it costs you. You can't watch a customer leave eight minutes earlier than they would have. You can't measure the sale that didn't happen because the room felt slightly wrong in a way nobody could articulate. The losses are invisible, which makes them easy to ignore.
-p_28: The licensing risk is visible, if you look. The demographic mismatch between employee taste and customer need is measurable, if you measure it. The familiarity effect on dwell time is documented, if you read the research. The static playlist problem is obvious, if you think about it for ten seconds.
-p_29: Four failure modes. All of them common. All of them running right now in stores that care deeply about every other aspect of their customer experience.
-p_30: The next post in this series looks at what the research actually says about how music changes spending behavior. Not whether it matters. How much.
-p_31: Daniel<br>Founder, Entuned
-p_32: Related reading: <a href="../blog/sound-check-music-selling-against-you.html">Sound Check: Your Music Is Actively Selling Against You</a>, <a href="../blog/what-spotify-gets-wrong.html">What Spotify Gets Wrong About Business Music</a>, and <a href="../blog/the-real-cost-of-retail-music.html">The Real Cost of Retail Music</a>.
-p_33: <strong>Key Takeaway:</strong> Personal streaming is illegal in commercial spaces, employee-picked music optimizes for staff comfort instead of customer behavior, and familiar hits actually shorten visits &mdash; the default playlist approach fails on every dimension.
-p_34: <strong>Daniel Fox</strong> is the founder of Entuned, where he builds music systems engineered for retail customer psychology. Background in music theory, behavioral research, and data-driven product design. <a href="../about.html">More about Daniel</a>
-p_35: Playlists are static. Your store isn't. Entuned generates music that responds to your customer, your brand, and your conditions in real time.
+  - type: prose
+    body: |
+      *This is Part 2 of the Sound Check series, exploring the science and structure behind retail music.*
+
+      There's a decent chance your store is breaking federal copyright law right now. Not in a dramatic way. In the way that feels like nothing. Someone logged into their personal Spotify account, connected it to the store speakers, and hit play.
+
+      [Spotify's terms of service](https://www.spotify.com/us/legal/end-user-agreement/) are explicit: the platform is "only for personal, non-commercial use." Apple Music, Pandora, Amazon Music, same deal. Playing any of them in a commercial space violates the license agreement. But that's the minor problem.
+
+      The larger issue is the U.S. Copyright Act. [Title 17, Section 106](https://www.law.cornell.edu/uscode/text/17/106) requires businesses to obtain public performance licenses from performing rights organizations before playing music in any commercial environment. A personal streaming subscription does not satisfy that requirement.
+
+  - type: stat_callout
+    number: "$150,000"
+    label: "Maximum penalty per song for willful copyright infringement in a commercial space"
+    source: "U.S. Copyright Act, 17 U.S.C. Section 504"
+    accent: gold
+
+  - type: prose
+    body: |
+      ASCAP has filed suit against individual bars and restaurants. In Chicago, two venues faced lawsuits seeking $150,000 in damages. Most retailers who stream personal accounts in-store aren't trying to steal anything. They just don't know. But "I didn't know" has never been a defense under copyright law.
+
+  - type: subhead
+    level: 2
+    text: "The Employee DJ Problem"
+
+  - type: prose
+    body: |
+      So the personal streaming account is off the table. The next instinct is usually to hand the music selection to someone on the floor. A manager, a shift lead, whoever seems to have decent taste.
+
+      The problem is structural.
+
+      [Yalch and Spangenberg published a study in the *Journal of Consumer Marketing* in 1990](https://scholar.google.com/scholar?q=Yalch+Spangenberg+effects+store+music+shopping+behavior+1990) that looked at how store music affects shopping behavior. The relationship between music and customer response depends on the match between the music and the customer demographic. Not the quality of the music. The match.
+
+      Employees are almost never a demographic match for the ideal customer profile. They're typically younger. Their taste skews toward whatever is current in their own listening habits. When an employee picks the playlist, they're selecting music that makes an eight-hour shift more tolerable for themselves. That's a completely rational thing to do. It also has nothing to do with what a 44-year-old customer browsing for 20 minutes needs to hear.
+
+  - type: pullquote
+    text: "The person choosing the music is selecting for their own experience in a space that exists for someone else's experience."
+    accent: teal
+
+  - type: prose
+    body: |
+      This isn't about employees having bad taste. The bias is structural and consistent: the question they're answering is "what do I want to listen to?" The question that matters is "what should this room sound like for the person spending money in it?" Those are different questions with different answers.
+
+  - type: subhead
+    level: 2
+    text: "The Familiarity Trap"
+
+  - type: prose
+    body: |
+      The default assumption in retail music is that you should play songs people recognize. Familiar music. Hits. The logic seems obvious: people like songs they know, they'll feel good, they'll stay longer.
+
+      [Yalch and Spangenberg tested this directly](https://scholar.google.com/scholar?q=Yalch+Spangenberg+music+retail+setting+real+perceived+shopping+times+2000). Their 2000 study, published in the *Journal of Business Research*, measured how familiar versus unfamiliar music affected actual shopping duration.
+
+  - type: stat_callout
+    number: "~8%"
+    label: "Less time spent in store when shoppers heard familiar, recognizable music versus unfamiliar music"
+    source: "Yalch & Spangenberg, Journal of Business Research, 2000"
+    accent: teal
+
+  - type: prose
+    body: |
+      The recognizable hits drove people out faster.
+
+      The mechanism works like this. Familiar music increases arousal. Your brain recognizes the song, engages with it, processes it actively. That heightened arousal makes time feel like it's passing more slowly. You feel like you've been in the store longer than you have. So you leave.
+
+      Unfamiliar music does something different. Because your brain isn't actively processing a song it knows, your subjective sense of time compresses. Time feels like it's moving faster. Shoppers perceive a shorter visit. But the clock says otherwise. They actually stay longer.
+
+      This is a clean inversion of the common intuition. Playing "good songs people know" is probably costing you floor time with every customer who walks in.
+
+  - type: subhead
+    level: 2
+    text: "The Calendar Problem"
+
+  - type: prose
+    body: |
+      Set aside the legal question. Set aside who picks the music. Set aside whether the songs are familiar or not. There's a more fundamental problem with how most retail environments handle music.
+
+      A playlist is a fixed object. Someone builds it on a Tuesday in April. It reflects the mood of that Tuesday, the energy of that week, whatever felt right at the time. Then it plays. In May. In August. On a rainy Wednesday when foot traffic is half of normal. During the holiday rush. During a slow Sunday morning when three people are in the store.
+
+      The playlist doesn't know any of that. A static sequence of songs has no mechanism to respond to what's actually happening in the space where it's playing.
+
+      The research on music and consumer behavior consistently shows that context determines effect. The same song at the same volume can produce different behavioral outcomes depending on time of day, customer density, and pace of movement. A playlist that works well at 11am on a Saturday might be wrong for 3pm on a Tuesday.
+
+  - type: subhead
+    level: 2
+    text: "What This Means"
+
+  - type: prose
+    body: |
+      Most retailers have settled on a music approach by default rather than by decision. Someone plugged in a phone. Someone made a playlist. It felt close enough to fine, so it stayed.
+
+      The problem with "close enough to fine" is that you can't see what it costs you. You can't watch a customer leave eight minutes earlier than they would have. You can't measure the sale that didn't happen because the room felt slightly wrong in a way nobody could articulate. The losses are invisible, which makes them easy to ignore.
+
+      The [licensing risk](../blog/retail-music-licensing-2026.html) is visible, if you look. The demographic mismatch between employee taste and customer need is measurable, if you measure it. The familiarity effect on [dwell time](../blog/retail-dwell-time.html) is documented, if you read the research. The static playlist problem is obvious, if you think about it for ten seconds.
+
+      Four failure modes. All of them common. All of them running right now in stores that care deeply about every other aspect of their customer experience. [See how Entuned solves them](../how-it-works.html).
+
+  - type: cta
+    variant: pilot
+    headline: "Replace the playlist"
+    body: "Playlists are static. Your store isn't. Entuned generates music that responds to your customer, your brand, and your conditions in real time."
+    link: "/pilot"
+    link_text: "Ask About a Pilot Program"
+
+  - type: related
+    posts:
+      - slug: "sound-check-music-selling-against-you"
+      - slug: "what-spotify-gets-wrong"
+      - slug: "the-real-cost-of-retail-music"

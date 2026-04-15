@@ -1,17 +1,97 @@
-# blog-in-store-music-strategy — editable text content
+title: "Song Selection Is Not Music Strategy"
+slug: "in-store-music-strategy"
+eyebrow: "FIELD NOTES"
+dek: "Every song carries its cultural baggage into your store. Music strategy starts with the outcome, not the playlist."
+date: "2026-04-01"
+last_updated: "2026-04-15"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/in-store-music-strategy.jpg"
+  alt: "Abstract view of a retail environment with ambient lighting"
+  caption: "Photo: Unsplash"
+meta_description: "Retailers have known for decades that music changes buying behavior. Most are still picking songs the wrong way. Here is what song selection misses."
+og_image: "/blog/in-store-music-strategy/og.png"
+tags: [field-notes, music-strategy, cultural-congruence, tempo]
+sections:
+  - type: key_takeaways
+    items:
+      - "Song selection inherits every cultural association a track has ever carried — mood, tempo, era, lyrical context"
+      - "A song at 136 BPM moves shoppers toward the exit faster regardless of genre or mood"
+      - "41% of shoppers spend more time in stores with the right background music"
+      - "Music strategy starts with the behavioral outcome, not the playlist"
 
-h1_1: "In-Store Music Strategy: Why Song Selection Isn't the Same as Music Strategy"
-meta_1: Entuned &middot; April 2026 &middot; 4 min read
-btn_1: Join the Pilot
-p_1: Retailers have known for decades that music changes buying behavior. Most are still picking songs the wrong way.
-p_2: "Walk into almost any mid-market clothing boutique on a Saturday afternoon and there's a reasonable chance you'll hear The Weeknd's \"Earned It\" drifting over the speakers. Moody, R&B-adjacent, vaguely luxurious. Someone in a corporate playlist office decided it signals aspiration, and they're not entirely wrong about the feeling."
-p_3: "What they probably didn't think about is that the song was released as the lead single from the <em>Fifty Shades of Grey</em> soundtrack, and that its music video carries a BDSM theme. For a lot of shoppers, that context doesn't disappear because they're browsing a rack of linen blazers. The association follows the song into the room."
-p_4: "That's the structural problem with pulling music from cultural touchstones. The song carries everything it has ever meant. A retailer picks up the mood they wanted, but they also get the cultural fingerprint they didn't ask for, broadcast to every demographic in the store at the same time."
-p_5: "The same logic applies in a different direction with \"Dress You Up\" by Madonna. The track runs at 136 BPM. A retailer who puts it on because it feels upbeat and era-appropriate for a certain customer is right about the feeling. What they're also doing is running a tempo that moves shoppers through the store faster and toward the exit sooner. A 1982 study by Ronald Milliman found that fast-tempo music quickened shopper pace in a supermarket, while slow-tempo music encouraged customers to slow down, examine more items, and buy more. That finding has held across store types for 40 years."
-p_6: "The familiarity piece adds another layer. \"Dress You Up\" is from 1985. A 60-year-old woman browsing your store knows every word and associates it with a specific chapter of her life. Whether that lands as comfort or distraction depends entirely on her, not you. The 35-year-old two racks over has never heard it, so the era fingerprint reads as background noise at best."
-p_7: "When music matches the environment, customers experience the brand as authentic and cohesive. When it doesn't, the experience becomes confusing. Playlist services frame this as a curation problem, something solvable by choosing the right genre or mood category. But genre and mood are properties of songs that already exist, songs that were written for a specific artist, audience, and cultural moment. A retailer deploying them inherits all of that."
-p_8: "The instinct to use music as a behavioral tool is correct. Research shows that the right background music causes 41% of shoppers to spend more time in a store. The variable that determines whether any individual store captures that effect isn't which playlist service they subscribe to. It's whether the music playing actually matches the shopper in front of the product, at that tempo, in that moment, without the cultural baggage of a film most of her customers have an opinion about."
-p_9: Playlist curation gets you closer. It doesn't get you there.
-p_10: "<strong>Key Takeaway:</strong> Song selection inherits every cultural association a track has ever carried &mdash; mood, tempo, era, lyrical context. Music strategy starts with the behavioral outcome you need and builds backward from there, without the baggage."
-p_11: "<strong>Daniel Fox</strong> is the founder of Entuned, where he builds music systems engineered for retail customer psychology. Background in music theory, behavioral research, and data-driven product design. <a href=\"../about.html\">More about Daniel</a>"
-p_12: Entuned generates purpose-built music for retail environments. No licensing. No compromise. Built around your ideal customer.
+  - type: prose
+    body: |
+      Retailers have known for decades that music changes buying behavior. Most are still picking songs the wrong way.
+
+  - type: subhead
+    level: 2
+    text: "The cultural baggage problem"
+    anchor: "cultural-baggage"
+
+  - type: prose
+    body: |
+      Walk into almost any mid-market clothing boutique on a Saturday afternoon and there's a reasonable chance you'll hear a moody, R&B-adjacent track drifting over the speakers. Someone in a corporate playlist office decided it signals aspiration, and they're not entirely wrong about the feeling.
+
+      What they probably didn't think about is the cultural context the song carries. For a lot of shoppers, that context doesn't disappear because they're browsing a rack of linen blazers. The association follows the song into the room.
+
+      That's the structural problem with pulling music from cultural touchstones. The song carries everything it has ever meant. A retailer picks up the mood they wanted, but they also get the cultural fingerprint they didn't ask for, broadcast to every demographic in the store at the same time.
+
+  - type: subhead
+    level: 2
+    text: "Tempo is not a feeling — it is a pace"
+    anchor: "tempo-pace"
+
+  - type: prose
+    body: |
+      The same logic applies in a different direction with high-energy tracks. A retailer who puts on an upbeat song because it feels right for the customer is correct about the feeling. What they're also doing is running a tempo that moves shoppers through the store faster and toward the exit sooner. A [1982 study by Ronald Milliman](../blog/milliman-study.html) found that fast-tempo music quickened shopper pace in a supermarket, while slow-tempo music encouraged customers to slow down, examine more items, and buy more. That finding has held across store types for 40 years.
+
+  - type: stat_callout
+    number: "136 BPM"
+    label: "tempo fast enough to push customers toward the exit regardless of genre"
+    source: "Milliman tempo research, replicated 1982-2025"
+    accent: teal
+
+  - type: prose
+    body: |
+      The familiarity piece adds another layer. A well-known hit from 1985 lands differently for a 60-year-old customer who knows every word than for a 35-year-old two racks over who has never heard it. Whether that lands as comfort or distraction depends entirely on the customer, not the store manager who selected it.
+
+  - type: subhead
+    level: 2
+    text: "Congruence vs. curation"
+    anchor: "congruence-curation"
+
+  - type: prose
+    body: |
+      When music matches the environment, customers experience the brand as authentic and cohesive. When it doesn't, the experience becomes confusing. Playlist services frame this as a curation problem, something solvable by choosing the right genre or mood category. But genre and mood are properties of songs that already exist, songs that were written for a specific artist, audience, and cultural moment. A retailer deploying them inherits all of that.
+
+  - type: stat_callout
+    number: "41%"
+    label: "of shoppers spend more time in stores with the right background music"
+    source: "Retail music behavioral research"
+    accent: teal
+
+  - type: prose
+    body: |
+      The instinct to use music as a behavioral tool is correct. Research shows that the right background music causes 41% of shoppers to spend more time in a store. The variable that determines whether any individual store captures that effect isn't which playlist service they subscribe to. It's whether the music playing actually matches the shopper in front of the product, at that tempo, in that moment, without the cultural baggage of a song most of her customers have an opinion about.
+
+      Playlist curation gets you closer. It doesn't get you there. For more on why the gap between curation and strategy matters, see [the familiarity trap](../blog/the-familiarity-trap.html) and [what your music is saying about your brand](../blog/what-your-music-is-saying-about-your-brand.html).
+
+  - type: pullquote
+    text: "The instinct to use music as a behavioral tool is correct. The method of picking songs from existing culture is where it breaks down."
+    accent: teal
+
+  - type: cta
+    variant: pilot
+    headline: "Build from the outcome, not the playlist"
+    body: "Entuned generates purpose-built music for retail environments. No licensing. No compromise. Built around your ideal customer."
+    link: "/pilot"
+    link_text: "Join the pilot"
+
+  - type: related
+    posts:
+      - slug: "the-familiarity-trap"
+      - slug: "what-your-music-is-saying-about-your-brand"
+      - slug: "science-of-tempo-retail"

@@ -20,17 +20,17 @@
   <meta property="og:description" content="The first week is setup. The first month is noise. By day ninety, the data starts telling you how music matters in your specific store.">
   <meta property="og:url" content="https://entuned.co/blog/after-ninety-days.html">
   <meta property="og:type" content="article">
-  <meta property="og:image" content="https://entuned.co/img/blog/after-ninety-days.jpg">
+  <meta property="og:image" content="https://entuned.co/blog/after-ninety-days/og.png">
   <meta property="og:site_name" content="Entuned">
   <meta property="og:locale" content="en_US">
-  <meta property="article:published_time" content="2026-03-25">
+  <meta property="article:published_time" content="2026-03-15">
   <meta property="article:author" content="Daniel Fox">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="What Happens After Ninety Days">
   <meta name="twitter:description" content="The first week is setup. The first month is noise. By day ninety, the data starts telling you how music matters in your specific store.">
-  <meta name="twitter:image" content="https://entuned.co/img/blog/after-ninety-days.jpg">
+  <meta name="twitter:image" content="https://entuned.co/blog/after-ninety-days/og.png">
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -47,10 +47,10 @@
     "name": "Entuned",
     "url": "https://entuned.co"
   },
-  "datePublished": "2026-03-25",
-  "dateModified": "2026-03-25",
+  "datePublished": "2026-03-15",
+  "dateModified": "2026-04-15",
   "description": "The first week is setup. The first month is noise. By day ninety, the data starts telling you how music matters in your specific store.",
-  "image": "https://entuned.co/img/blog/after-ninety-days.jpg",
+  "image": "https://entuned.co/blog/after-ninety-days/og.png",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://entuned.co/blog/after-ninety-days.html"
@@ -101,6 +101,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
   <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../styles/blog.css">
   <style>
 /* Page styles — see global styles.css */
   </style>
@@ -122,62 +123,154 @@
 </nav>
 
   <main>
-  <div class="back-link fade-up">
-    <a href="../blog.html">&larr; Back to Blog</a>
+  
+<!-- Reading progress bar -->
+<div class="blog-progress" aria-hidden="true">
+  <div class="blog-progress__bar" id="reading-progress"></div>
+</div>
+
+<article class="blog-article">
+
+  <!-- Article header -->
+  <header class="blog-article__header">
+    <div class="blog-eyebrow">FIELD NOTES</div>
+    <h1 class="blog-headline">What Happens After Ninety Days</h1>
+    <p class="blog-dek">The first week is setup. The first month is noise. By day ninety, the data starts telling you how music matters in your specific store.</p>
+    <div class="blog-byline">
+      <span class="blog-byline__author">Daniel Fox</span>
+      <span class="blog-byline__role">Founder &amp; CEO</span>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <time class="blog-byline__date" datetime="2026-03-15">2026-03-15</time>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <span class="blog-byline__reading-time">4 min read</span>
+    </div>
+  </header>
+
+  <!-- Hero image -->
+  <figure class="blog-hero fade-up">
+    <img src="../img/blog/after-ninety-days.jpg" alt="Data analytics dashboard showing behavioral trends over time" class="blog-hero__img" loading="lazy">
+    <figcaption class="blog-hero__caption">Photo: Unsplash</figcaption>
+  </figure>
+
+  <!-- Key takeaways -->
+  <div class="blog-takeaways">
+  <div class="blog-takeaways__title">Key takeaways</div>
+  <ul>
+    <li>Ninety days is the threshold where tagged playback and store data produce actionable correlations</li>
+    <li>The first month is noise — weather, promotions, and staffing drown any signal</li>
+    <li>By day sixty, patterns begin separating from randomness; by day ninety, you can form testable hypotheses</li>
+    <li>Each adjustment generates new data, making every cycle sharper than the last</li>
+  </ul>
+</div>
+
+  <!-- Article body (all sections except key_takeaways, cta, related) -->
+  <div class="blog-article__body">
+    <h2 id="the-ninety-day-threshold" class="blog-subhead blog-subhead--h2">
+  The Ninety-Day Threshold
+  <a href="#the-ninety-day-threshold" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Ninety days of retail music deployment data is the threshold at which tagged playback and store transaction records produce correlations specific enough to act on — adjusting tempo ranges, production character, and other musical variables based on what the data shows, not what seems right by feel.</p>
+<p>The first week of a deployment is setup. The music is specified to the brand&rsquo;s customer profile, the tags are in place, the playback is running, and the data capture has started. Nothing interesting has happened yet. The sample size is too small to mean anything.</p>
+<p>The first month is noise. Foot traffic fluctuates for reasons that have nothing to do with music: weather, promotions, staffing, the Tuesday after a long weekend. Transaction volume moves for the same reasons. The signal, if there is one, is buried.</p>
+</div>
+
+<div class="blog-stat blog-stat--teal">
+  <div class="blog-stat__number">90 days</div>
+  <div class="blog-stat__label">Minimum deployment threshold for actionable music-to-sales correlations</div>
+  <div class="blog-stat__source">Entuned deployment model</div>
+</div>
+
+<div class="blog-prose">
+  <p>Somewhere around day sixty, the noise starts to thin. You have enough hours of tagged playback matched against enough hours of store activity that patterns begin to separate from randomness. You notice that Wednesday afternoons, when the playlist tends to sit in a specific tempo and harmonic range, consistently produce longer average visits than Thursday afternoons, when the mix skews differently. You notice that a particular production character (warmer, more analog) correlates with higher average transaction values during the morning shift.</p>
+<p>These are not conclusions. They are hypotheses. But they are hypotheses that nobody has been able to form before, because nobody has had tagged music matched to timestamped store data at this resolution.</p>
+</div>
+
+<h2 id="what-the-data-starts-saying" class="blog-subhead blog-subhead--h2">
+  What the Data Starts Saying
+  <a href="#what-the-data-starts-saying" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>By day ninety, you have enough data to start asking real questions. Which musical variables correlate with <a href="../blog/the-dwell-time-variable-nobodys-tracking.html">dwell time</a> in your specific store, for your specific customer? Is the relationship between tempo and browsing duration the same on weekends as weekdays? Does the production era effect (whether the music sounds like the customer&rsquo;s taste formation decade) show up in transaction data or only in dwell time?</p>
+<p>Some of these questions will have answers that match the academic research. Slower tempo, longer visits. That&rsquo;s been demonstrated repeatedly since Milliman. But some of the answers will be specific to your context in ways no academic study could have predicted, because no academic study was running in your store, with your customers, with your product mix.</p>
+</div>
+
+<figure class="blog-pullquote blog-pullquote--teal">
+  <blockquote>The general research tells you that music matters. Ninety days of correlated deployment data starts to tell you how it matters here.</blockquote>
+</figure>
+
+<h2 id="what-changes-after-ninety-days-of-data" class="blog-subhead blog-subhead--h2">
+  What Changes After Ninety Days of Data?
+  <a href="#what-changes-after-ninety-days-of-data" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Once you have correlations worth acting on, the music can be adjusted. Not by swapping the playlist for a different one, but by moving specific variables in specific directions. If warmer production correlates with higher spend, you can dial the production character warmer and see if the correlation holds or strengthens. If a specific tempo range correlates with longer visits, you can narrow the playlist&rsquo;s tempo window and <a href="../blog/measure-roi-retail-music.html">measure the effect</a>.</p>
+<p>Each adjustment generates new data. Each round of data sharpens the picture. The music in the store on day 180 is measurably different from the music on day one, and the difference is not a matter of taste. It is a matter of evidence.</p>
+<p>Most retail music stays the same until somebody gets tired of it and swaps the playlist. At Entuned, the music changes because the data says it should. And the more stores in the <a href="../blog/fleet-learning.html">fleet</a>, the faster the model learns what works. <a href="../how-it-works.html">See how the system works</a>.</p>
+</div>
+
+<div class="blog-stat blog-stat--teal">
+  <div class="blog-stat__number">Day 180</div>
+  <div class="blog-stat__label">By this point, the music is measurably different from day one — driven by evidence, not taste</div>
+  <div class="blog-stat__source">Entuned deployment model</div>
+</div>
   </div>
 
-  <div class="article-hero fade-up">
-    <h1>What Happens After Ninety Days</h1>
-    <img src="../img/blog/after-ninety-days.jpg" alt="Data analytics dashboard showing trends over time" class="hero-image">
+  <!-- CTA -->
+  <aside class="blog-cta blog-cta--pilot">
+  <div class="blog-cta__headline">Start the clock</div>
+  <div class="blog-cta__body">Entuned generates purpose-built music for retail environments. No licensing. No compromise. Built around your ideal customer.</div>
+  <a href="/pilot" class="blog-cta__link">Join the pilot &rarr;</a>
+</aside>
+
+  <!-- Related posts -->
+  <section class="blog-related" aria-label="Related posts">
+  <h2 class="blog-related__title">Keep reading</h2>
+  <div class="blog-related__grid">
+    <a href="../blog/fleet-learning.html" class="blog-related__card">
+      <img src="../img/blog/fleet-learning.jpg" alt="Every Store Teaches the Next One" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">PRODUCT</span>
+      <span class="blog-related__card-title">Every Store Teaches the Next One</span>
+      <span class="blog-related__dek">How Entuned&#39;s fleet learning model turns every retail deployment into a compounding data asset.</span>
+    </a>
+    <a href="../blog/the-metrics-your-audio-environment-should-be-producing.html" class="blog-related__card">
+      <img src="../img/blog/metrics-audio-environment.jpg" alt="The Metrics Your Audio Environment Should Be Producing" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FLOW FACTORS</span>
+      <span class="blog-related__card-title">The Metrics Your Audio Environment Should Be Producing</span>
+      <span class="blog-related__dek">If your audio environment is doing its job, you should be able to see it in four metrics. Most stores have never looked.</span>
+    </a>
+    <a href="../blog/retail-atmospherics-2026.html" class="blog-related__card">
+      <img src="../img/blog/retail-atmospherics-2026.jpg" alt="Retail Atmospherics in 2026: Audio Is the Last Unmeasured Variable" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">Retail Atmospherics in 2026: Audio Is the Last Unmeasured Variable</span>
+      <span class="blog-related__dek">Visual merchandising is data-driven. Audio is stuck in the 1990s. Here is what comes next.</span>
+    </a>
   </div>
+</section>
 
-  <div class="article-meta">Daniel Fox &middot; March 2026 &middot; 5 min read</div>
+</article>
 
-  <div class="article-body">
+<!-- Blog-specific JS (reading progress + anchor copy) -->
+<script>
+  // Reading progress bar
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    document.getElementById('reading-progress').style.width = pct + '%';
+  });
 
-    <div class="takeaway-box fade-up">
-      <p><strong>Key Takeaway:</strong> Ninety days of tagged playback matched against store data turns music from a gut-feel decision into an evidence-based one &mdash; and every adjustment after that makes the next cycle sharper.</p>
-    </div>
-
-    <p class="fade-up">Ninety days of retail music deployment data is the threshold at which tagged playback and store transaction records produce correlations specific enough to act on — adjusting tempo ranges, production character, and other musical variables based on what the data shows, not what seems right by feel.</p>
-
-    <p class="fade-up">The first week of a deployment is setup. The music is specified to the brand's customer profile, the tags are in place, the playback is running, and the data capture has started. Nothing interesting has happened yet. The sample size is too small to mean anything.</p>
-
-    <p class="fade-up">The first month is noise. Foot traffic fluctuates for reasons that have nothing to do with music: weather, promotions, staffing, the Tuesday after a long weekend. Transaction volume moves for the same reasons. The signal, if there is one, is buried.</p>
-
-    <p class="fade-up">Somewhere around day sixty, the noise starts to thin. You have enough hours of tagged playback matched against enough hours of store activity that patterns begin to separate from randomness. You notice that Wednesday afternoons, when the playlist tends to sit in a specific tempo and harmonic range, consistently produce longer average visits than Thursday afternoons, when the mix skews differently. You notice that a particular production character (warmer, more analog) correlates with higher average transaction values during the morning shift.</p>
-
-    <p class="fade-up">These are not conclusions. They are hypotheses. But they are hypotheses that nobody has been able to form before, because nobody has had tagged music matched to timestamped store data at this resolution.</p>
-
-    <h2 class="fade-up">What the Data Starts Saying</h2>
-
-    <p class="fade-up">By day ninety, you have enough data to start asking real questions. Which musical variables correlate with dwell time in your specific store, for your specific customer? Is the relationship between tempo and browsing duration the same on weekends as weekdays? Does the production era effect (whether the music sounds like the customer's taste formation decade) show up in transaction data or only in dwell time?</p>
-
-    <p class="fade-up">Some of these questions will have answers that match the academic research. Slower tempo, longer visits. That's been demonstrated repeatedly since Milliman. But some of the answers will be specific to your context in ways no academic study could have predicted, because no academic study was running in your store, with your customers, with your product mix.</p>
-
-    <p class="fade-up">That is the point. The general research tells you that music matters. Ninety days of correlated deployment data starts to tell you how it matters here.</p>
-
-    <h2 class="fade-up">What Changes After Ninety Days of Data?</h2>
-
-    <p class="fade-up">Once you have correlations worth acting on, the music can be adjusted. Not by swapping the playlist for a different one, but by moving specific variables in specific directions. If warmer production correlates with higher spend, you can dial the production character warmer and see if the correlation holds or strengthens. If a specific tempo range correlates with longer visits, you can narrow the playlist's tempo window and measure the effect.</p>
-
-    <p class="fade-up">Each adjustment generates new data. Each round of data sharpens the picture. The music in the store on day 180 is measurably different from the music on day one, and the difference is not a matter of taste. It is a matter of evidence.</p>
-
-    <p class="fade-up">Most retail music stays the same until somebody gets tired of it and swaps the playlist. At Entuned, the music changes because the data says it should.</p>
-
-    <p class="fade-up">Related reading: <a href="../blog/fleet-learning.html">Every Store Teaches the Next One</a>, <a href="../blog/the-metrics-your-audio-environment-should-be-producing.html">The Metrics Your Audio Environment Should Be Producing</a>, and <a href="../blog/retail-atmospherics-2026.html">The State of Retail Atmospherics in 2026</a>.</p>
-
-    <div class="author-bio fade-up">
-      <p><strong>Daniel Fox</strong> is the founder of Entuned, where he builds music systems engineered for retail customer psychology. Background in music theory, behavioral research, and data-driven product design. <a href="../about.html">More about Daniel</a></p>
-    </div>
-
-    <p class="fade-up">Related reading: <a href="../why-entuned.html">Why Entuned</a> and <a href="../enterprise.html">enterprise retail deployments</a>.</p>
-
-    <div class="article-cta fade-up">
-      <p>Entuned generates purpose-built music for retail environments. No licensing. No compromise. Built around your ideal customer.</p>
-      <a href="../pilot.html" class="btn btn-primary">Join the Pilot</a>
-    </div>
-  </div>
+  // Anchor link copy-to-clipboard
+  document.querySelectorAll('.anchor-link').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      navigator.clipboard.writeText(window.location.origin + window.location.pathname + a.getAttribute('href'));
+      a.textContent = '\u2713'; setTimeout(() => a.textContent = '#', 1500);
+    });
+  });
+</script>
   </main>
 
   <!-- FOOTER -->

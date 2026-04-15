@@ -1,47 +1,120 @@
-# blog-how-to-measure-if-your-store-music-is-working
+title: "How to Measure If Your Store Music Is Working"
+slug: "how-to-measure-if-your-store-music-is-working"
+eyebrow: "MARKET INTEL"
+dek: "Four metrics reveal whether your audio environment is producing measurable value. Your music provider tracks none of them."
+date: "2026-04-01"
+last_updated: "2026-04-15"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/how-to-measure-if-your-store-music-is-working.jpg"
+  alt: "Retail analytics dashboard with store performance metrics"
+  caption: "Photo: Unsplash"
+meta_description: "Most retailers cannot answer whether their music helps or hurts sales. Here are the four metrics that tell you, and why your current provider cannot track them."
+og_image: "/blog/how-to-measure-if-your-store-music-is-working/og.png"
+tags: [measurement, dwell-time, conversion, retail-analytics]
+sections:
+  - type: key_takeaways
+    items:
+      - "Four metrics reveal music's impact: dwell time, conversion rate, average transaction value, and return visit frequency"
+      - "Your music provider tracks schedule adherence, not behavioral outcomes"
+      - "Measurement requires parameterized music, concurrent business data, and a correlation engine"
+      - "Crude genre-level A/B tests fail because too many variables change between test periods"
 
-h1_1: "How to Measure If Your Store Music Is Working"
-meta_1: Daniel Fox &middot; April 2026 &middot; 9 min read
+  - type: prose
+    body: |
+      Ask any retailer what their conversion rate is and they will give you a number. Ask them what their average transaction value was last month and they have it. Ask whether the music in their store is increasing or decreasing those numbers and the conversation stops.
 
-p_takeaway: "<strong>TL;DR:</strong> Most retailers cannot answer whether their music helps or hurts sales because their music provider gives them no behavioral data. Four metrics reveal whether your audio environment is producing measurable value: dwell time, conversion rate, average transaction value, and return visit frequency. If you cannot correlate changes in your music to changes in these metrics, you are paying for audio with no feedback on whether it works."
+      The problem is not that the answer is complicated. The problem is that no data exists to answer the question. The music provider tracks what was scheduled to play. The POS system tracks what was sold. Nobody connects the two.
 
-p_1: "Ask any retailer what their conversion rate is and they will give you a number. Ask them what their average transaction value was last month and they have it. Ask whether the music in their store is increasing or decreasing those numbers and the conversation stops."
-p_2: "The problem is not that the answer is complicated. The problem is that no data exists to answer the question. The music provider tracks what was scheduled to play. The POS system tracks what was sold. Nobody connects the two."
+  - type: subhead
+    level: 2
+    text: "Why your music provider cannot tell you"
+    anchor: "provider-gap"
 
-h2_1: Why Your Music Provider Cannot Tell You
-p_3: "Commercial music services are built to deliver and schedule music. Their reporting tells you which songs played at which times. Schedule adherence. Play counts. Station selections. This is operational data. It confirms the service is running."
-p_4: "What it does not tell you: did dwell time change when the playlist changed? Did conversion move when the tempo shifted? Did average transaction value respond to the genre rotation? Did the Thursday evening jazz experiment produce different results than the Friday morning pop selection?"
-p_5: "This is not a feature gap. It is an architecture gap. Connecting audio variables to business outcomes requires logging the specific musical parameters of every track (not just the song name, but the tempo, key, instrumentation, energy, and genre blend), and then correlating those parameters against concurrent sales data, foot traffic, and dwell time."
-p_6: "No catalog-based music service does this because no catalog-based music service controls the musical parameters at that level. They select songs. The songs have whatever characteristics the original artist gave them. There is no parameterized input to correlate against."
+  - type: prose
+    body: |
+      Commercial music services are built to deliver and schedule music. Their reporting tells you which songs played at which times. Schedule adherence. Play counts. Station selections. This is operational data. It confirms the service is running.
 
-h2_2: The Four Metrics That Matter
-p_7: "If you want to know whether your music is working, these are the four metrics to watch. Each one has a documented relationship to audio environment variables in the research literature."
+      What it does not tell you: did dwell time change when the playlist changed? Did conversion move when the tempo shifted? Did average transaction value respond to the genre rotation? Did the Thursday evening jazz experiment produce different results than the Friday morning pop selection?
 
-h3_1: Dwell Time
-p_8: "How long customers stay in the store. The most consistently documented effect of music on retail behavior. Milliman's 1982 study showed slow tempo increased dwell time by 34%. Dozens of replications since then confirm the direction, though the magnitude varies by context."
-p_9: "Measurement requires foot traffic counting at entry and exit. If you have a RetailNext, Sensormatic, or similar system, you probably already have this data. The gap is that nobody is correlating it against what was playing when the dwell time moved."
+      This is not a feature gap. It is an architecture gap. Connecting audio variables to business outcomes requires logging the specific musical parameters of every track (not just the song name, but the tempo, key, instrumentation, energy, and genre blend), and then correlating those parameters against concurrent sales data, foot traffic, and dwell time. For more on this architecture problem, see [the metrics your audio environment should be producing](../blog/the-metrics-your-audio-environment-should-be-producing.html).
 
-h3_2: Conversion Rate
-p_10: "The percentage of visitors who make a purchase. More sensitive to overall store execution than to any single variable, but audio environment contributes. Research shows that congruent music (music that matches customer psychology) increases purchase confidence. Incongruent music disrupts it."
-p_11: "If your conversion rate moves when you change the music and returns when you change it back, the music is a factor. If it does not move, the music may be neutral or the effect may be masked by stronger variables."
+  - type: stat_callout
+    number: "34%"
+    label: "increase in dwell time from slow tempo — the most consistently documented audio effect"
+    source: "Milliman, 1982"
+    accent: teal
 
-h3_3: Average Transaction Value
-p_12: "What each customer spends per purchase. The metric most directly affected by quality inference and willingness-to-pay priming. Areni and Kim showed a 2.5x increase in average wine purchase price when classical music replaced pop. The mechanism is ambient priming of quality perception."
-p_13: "This is the metric where premium audio has the clearest measurable impact. If your music is priming quality perception, average transaction value should respond. If you switch from a generic mood channel to premium-positioned audio and ATV does not move, either the music is not different enough or the product mix is not responsive to priming."
+  - type: prose
+    body: |
+      No catalog-based music service does this because no catalog-based music service controls the musical parameters at that level. They select songs. The songs have whatever characteristics the original artist gave them. There is no parameterized input to correlate against.
 
-h3_4: Return Visit Frequency
-p_14: "How often customers come back. The hardest to attribute to any single variable but the most valuable over time. Mood Media's own research found that 90% of shoppers say they are more likely to revisit a store with enjoyable atmosphere. Audio is a major component of atmosphere."
-p_15: "Return visits compound. A 5% increase in return visit frequency over a year produces a meaningful change in lifetime customer value. The challenge is attribution. You need a loyalty system or customer identification method to track return visits, and you need enough time to see the pattern emerge."
+  - type: subhead
+    level: 2
+    text: "The four metrics that matter"
+    anchor: "four-metrics"
 
-h2_3: What a Measurement Architecture Looks Like
-p_16: "Measuring music's effect on retail requires three components. First, parameterized music. Every track needs to be logged with its specific musical characteristics, not just a song name and artist. Tempo, key, mode, instrumentation, energy level, genre classification."
-p_17: "Second, concurrent business data. Sales by hour, foot traffic, dwell time, conversion rate. Most retailers already have this from their POS and analytics systems."
-p_18: "Third, a correlation engine that connects the two. When the music shifted from 72 BPM acoustic guitar at 2pm to 95 BPM electronic at 3pm, what happened to dwell time and ATV in the same window? Over enough iterations, patterns emerge. Specific musical parameters produce specific behavioral responses in your specific store with your specific customers."
-p_19: "This is not possible with a catalog-based music service that rotates songs without logging or controlling their parameters. It requires music where every variable is deliberate, logged, and adjustable."
+  - type: prose
+    body: |
+      If you want to know whether your music is working, these are the four metrics to watch. Each one has a documented relationship to audio environment variables in the research literature.
 
-h2_4: Starting Without the Full Architecture
-p_20: "If you do not have a measurement system, you can still run crude tests. Pick a specific week. Note the music configuration (station, genre, approximate tempo). Record daily sales, traffic, and ATV from your POS. The next week, change one variable. Compare."
-p_21: "This is not statistically rigorous. A week of data in a single store is too noisy and too short to draw firm conclusions. But it builds the muscle of treating music as a variable rather than a fixed condition. And it surfaces the question: if I had better data, would I make different music decisions?"
-p_22: "Entuned generates original music from your customer's psychographic profile and correlates every musical parameter against your store's performance data. The founding pilot is free."
+      **Dwell time.** How long customers stay in the store. The most consistently documented effect of music on retail behavior. Milliman's 1982 study showed slow tempo increased dwell time by 34%. Dozens of replications since then confirm the direction, though the magnitude varies by context. Measurement requires foot traffic counting at entry and exit. If you have a RetailNext, Sensormatic, or similar system, you probably already have this data. The gap is that nobody is correlating it against what was playing when the dwell time moved.
 
-h3_related: Related reading
+      **Conversion rate.** The percentage of visitors who make a purchase. More sensitive to overall store execution than to any single variable, but audio environment contributes. Research shows that congruent music (music that matches customer psychology) increases purchase confidence. Incongruent music disrupts it.
+
+  - type: stat_callout
+    number: "2.5x"
+    label: "increase in average wine purchase price with quality-priming music"
+    source: "Areni & Kim, 1993"
+    accent: gold
+
+  - type: prose
+    body: |
+      **Average transaction value.** What each customer spends per purchase. The metric most directly affected by quality inference and willingness-to-pay priming. Areni and Kim showed a 2.5x increase in average wine purchase price when classical music replaced pop. The mechanism is ambient priming of quality perception.
+
+      **Return visit frequency.** How often customers come back. The hardest to attribute to any single variable but the most valuable over time. Research found that 90% of shoppers say they are more likely to revisit a store with enjoyable atmosphere. Audio is a major component of atmosphere. A 5% increase in return visit frequency over a year produces a meaningful change in lifetime customer value.
+
+  - type: pullquote
+    text: "If you cannot answer the question 'is the music in my store helping or hurting sales,' you are making a decision that affects every customer interaction without any feedback."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "What a measurement architecture looks like"
+    anchor: "measurement-architecture"
+
+  - type: prose
+    body: |
+      Measuring music's effect on retail requires three components. First, parameterized music. Every track needs to be logged with its specific musical characteristics, not just a song name and artist. Tempo, key, mode, instrumentation, energy level, genre classification.
+
+      Second, concurrent business data. Sales by hour, foot traffic, dwell time, conversion rate. Most retailers already have this from their POS and analytics systems.
+
+      Third, a correlation engine that connects the two. When the music shifted from 72 BPM acoustic guitar at 2pm to 95 BPM electronic at 3pm, what happened to dwell time and ATV in the same window? Over enough iterations, patterns emerge. Specific musical parameters produce specific behavioral responses in your specific store with your specific customers.
+
+      This is not possible with a catalog-based music service that rotates songs without logging or controlling their parameters. It requires music where every variable is deliberate, logged, and adjustable. For more on what this measurement gap costs you, read [how to measure the ROI of in-store music](../blog/measure-roi-retail-music.html).
+
+  - type: subhead
+    level: 2
+    text: "Starting without the full architecture"
+    anchor: "starting-simple"
+
+  - type: prose
+    body: |
+      If you do not have a measurement system, you can still run crude tests. Pick a specific week. Note the music configuration (station, genre, approximate tempo). Record daily sales, traffic, and ATV from your POS. The next week, change one variable. Compare.
+
+      This is not statistically rigorous. A week of data in a single store is too noisy and too short to draw firm conclusions. But it builds the muscle of treating music as a variable rather than a fixed condition. And it surfaces the question: if I had better data, would I make different music decisions?
+
+  - type: cta
+    variant: pilot
+    headline: "See what your audio is actually doing"
+    body: "Entuned generates original music from your customer's psychographic profile and correlates every musical parameter against your store's performance data. The founding pilot is free."
+    link: "/pilot"
+    link_text: "Learn about the free pilot program"
+
+  - type: related
+    posts:
+      - slug: "measure-roi-retail-music"
+      - slug: "closing-the-loop-on-retail-analytics"
+      - slug: "the-metrics-your-audio-environment-should-be-producing"

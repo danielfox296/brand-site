@@ -1,14 +1,90 @@
-# blog-measure-what-you-ignore — editable text content
+title: "Measure Something You Used to Ignore"
+slug: "measure-what-you-ignore"
+eyebrow: "FIELD NOTES"
+dek: "The difference between a variable you ignore and one you measure is compounding improvement versus permanent stasis."
+date: "2026-04-01"
+last_updated: "2026-04-15"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/measure-what-you-ignore.jpg"
+  alt: "Elegant dining table with warm ambient lighting in a restaurant setting"
+  caption: "Photo: Unsplash"
+meta_description: "The difference between a variable you ignore and one you measure is the difference between a fixed condition and something that gets better every day."
+og_image: "/blog/measure-what-you-ignore/og.png"
+tags: [field-notes, measurement, compounding, operations]
+sections:
+  - type: key_takeaways
+    items:
+      - "Measuring any previously-ignored variable produces compounding improvement over time"
+      - "A restaurant that tracks table turn times and adjusts gains 4% over a year — the diners never notice"
+      - "A chain that has run the measurement loop for a year across forty locations has a proprietary asset, not a playlist"
 
-h1_1: What Happens When You Measure Something You Used to Ignore
-meta_1: Daniel Fox &middot; April 2026 &middot; 4 min read
-btn_1: Ask About a Pilot Program
-p_1: You already know most stores don't think hard about their music. We've written about that. Skip ahead.
-p_2: The more interesting question is why it matters that they don't. And the answer has less to do with music than with what happens when you start paying attention to any variable you've been treating as fixed.
-p_3: Think about a restaurant that starts tracking table turn times. Not obsessively. Just noting them. Within a few weeks, the host seats differently. The kitchen adjusts plating on the slow dishes. None of these are big moves. Each one shaves a minute or two. But a restaurant that turns tables 4% faster across a year has fundamentally different economics, and the diners never noticed a thing.
-p_4: That's compounding. Not a single dramatic change, but repeated small adjustments that stack because someone decided to watch.
-p_5: "Music in a store is already affecting walking pace, browsing duration, and who feels like the space is for them. Tempo, harmony, genre, production era. These are real variables producing real effects on your floor right now, on top of whatever playlist someone queued up last Tuesday. The question isn't whether they matter. It's whether you're going to let them sit at whatever value they accidentally landed on, or start moving them on purpose."
-p_6: And here's where it gets interesting. A store that measures what its music does can do something a store running on instinct cannot. It can improve. The first adjustment you make based on real data might move your numbers by a fraction of a percent. The second builds on the first. The fifth builds on the fourth. You're not starting over each time. You're refining a picture that gets sharper with every iteration.
-p_7: A chain that has run this loop for a year across forty locations doesn't have a playlist. It has a proprietary asset.
-p_8: Every operation has a few variables hiding in plain sight. The ones that never made it into the Monday meeting because nobody had a number to attach to them. The difference between a variable you ignore and one you measure is the difference between a fixed condition and something that gets better every day.
-p_9: See what happens when you stop treating your store's music as a fixed condition.
+  - type: prose
+    body: |
+      You already know most stores don't think hard about their music. We've written about that. Skip ahead.
+
+      The more interesting question is why it matters that they don't. And the answer has less to do with music than with what happens when you start paying attention to any variable you've been treating as fixed.
+
+  - type: subhead
+    level: 2
+    text: "The compounding effect of measurement"
+    anchor: "compounding"
+
+  - type: prose
+    body: |
+      Think about a restaurant that starts tracking table turn times. Not obsessively. Just noting them. Within a few weeks, the host seats differently. The kitchen adjusts plating on the slow dishes. None of these are big moves. Each one shaves a minute or two. But a restaurant that turns tables 4% faster across a year has fundamentally different economics, and the diners never noticed a thing.
+
+      That's compounding. Not a single dramatic change, but repeated small adjustments that stack because someone decided to watch.
+
+  - type: stat_callout
+    number: "4%"
+    label: "table turn improvement from measurement alone produces fundamentally different economics"
+    source: "Restaurant operations analogy"
+    accent: gold
+
+  - type: subhead
+    level: 2
+    text: "Music is already a variable on your floor"
+    anchor: "variable-on-floor"
+
+  - type: prose
+    body: |
+      Music in a store is already affecting walking pace, browsing duration, and who feels like the space is for them. Tempo, harmony, genre, production era. These are real variables producing real effects on your floor right now, on top of whatever playlist someone queued up last Tuesday. The question isn't whether they matter. It's whether you're going to let them sit at whatever value they accidentally landed on, or start moving them on purpose.
+
+  - type: pullquote
+    text: "A chain that has run this loop for a year across forty locations doesn't have a playlist. It has a proprietary asset."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "Iteration turns data into an asset"
+    anchor: "iteration-asset"
+
+  - type: prose
+    body: |
+      And here's where it gets interesting. A store that measures what its music does can do something a store running on instinct cannot. It can improve. The first adjustment you make based on real data might move your numbers by a fraction of a percent. The second builds on the first. The fifth builds on the fourth. You're not starting over each time. You're refining a picture that gets sharper with every iteration.
+
+      A chain that has run this loop for a year across forty locations doesn't have a playlist. It has a proprietary asset.
+
+      Every operation has a few variables hiding in plain sight. The ones that never made it into the Monday meeting because nobody had a number to attach to them. The difference between a variable you ignore and one you measure is the difference between a fixed condition and something that gets better every day. For more on what those metrics should look like, see [the metrics your audio environment should be producing](../blog/the-metrics-your-audio-environment-should-be-producing.html) and [how to measure the ROI of in-store music](../blog/measure-roi-retail-music.html).
+
+  - type: stat_callout
+    number: "40 locations"
+    label: "running the measurement loop for a year builds a proprietary asset, not just a playlist"
+    source: "Entuned fleet learning framework"
+    accent: teal
+
+  - type: cta
+    variant: pilot
+    headline: "Start measuring"
+    body: "See what happens when you stop treating your store's music as a fixed condition."
+    link: "/pilot"
+    link_text: "Ask about a pilot program"
+
+  - type: related
+    posts:
+      - slug: "the-second-sale-you-already-made"
+      - slug: "the-metrics-your-audio-environment-should-be-producing"
+      - slug: "measure-roi-retail-music"

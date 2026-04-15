@@ -1,26 +1,105 @@
-# blog-music-was-never-made-for-your-store — editable text content
+title: "Music Was Never Made For Your Store"
+slug: "music-was-never-made-for-your-store"
+eyebrow: "FIELD NOTES"
+dek: "Every track in your licensing catalog was created for something other than your store. That mismatch has consequences."
+date: "2026-03-15"
+last_updated: "2026-04-15"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/music-was-never-made-for-your-store.jpg"
+  alt: "Abstract view of a retail interior with ambient lighting"
+  caption: "Photo: Unsplash"
+meta_description: "Every track in your licensing catalog was created for something other than your store. That mismatch has consequences most retailers never examine."
+og_image: "/blog/music-was-never-made-for-your-store/og.png"
+tags: [music-strategy, retail-experience, intentional-design]
+sections:
+  - type: key_takeaways
+    items:
+      - "Every serious use of music — film, worship, live performance — involves deliberate intention, yet retail settles for repurposed consumer music"
+      - "Licensed catalog music carries someone else's artistic intentions into your store"
+      - "Purpose-built music eliminates the mismatch between artist intent and retail behavioral goals"
 
-h1_1: Music Was Never Made For Your Store
-h2_1: Why Did Retail Get Left Out of Intentional Music Design?
-meta_1: Daniel Fox &middot; March 2026 &middot; 5 min read
-btn_1: See How It Works
-p_1: Every piece of commercial music playing in retail stores today was created for consumer listening, not for retail behavioral outcomes. The artists, the labels, and the licensing services that supply in-store audio were never asked what emotional state a customer should be in when they pick up a product — which means retailers have been inheriting someone else's intentions rather than deploying their own.
-p_2: Bob Dylan wrote "Like a Rolling Stone" because he was angry. Six pages of what he later called "a piece of vomit" that turned into a song. He wasn't thinking about foot traffic. He wasn't trying to move product.
-p_3: That's true of basically every piece of music you've ever heard in a retail environment. Billie Eilish wrote about dissociation. The Rolling Stones were chasing something closer to rebellion than retail conversion. Even the pleasant, inoffensive stuff, the kind that plays in grocery stores and hotel lobbies, was written by someone trying to express something, or at least trying to have a hit. The store came later. The artist's intentions were elsewhere.
-p_4: Nobody designed it for you. You inherited it.
-p_5: This wouldn't matter much if music were neutral, like ambient temperature. But it isn't. Music does things to people. It always has.
-p_6: Walk into a cathedral during a choir service and you feel it immediately. That's not accidental. The music is doing work, structured to open something in the listener, to create a specific kind of attention and receptivity. Same thing happens at a concert when 20,000 people are singing the same lyric at the same time. There's a reason people describe those moments the way they describe religious experiences, because the mechanism is similar. Music at scale, played with intention, moves groups of people into shared emotional states.
-p_7: That's old knowledge. Cultures figured it out thousands of years ago. Military marches, funeral dirges, harvest songs, lullabies. Every one of them engineered for a specific human response in a specific context.
-p_8: The question is why retail got left out.
-p_9: The answer is probably licensing. The music industry made it easy to pipe in existing songs, and that became the default. You pay your licensing fee, you pick a genre or a playlist, and you've solved the "background music" problem. The thinking stopped there.
-p_10: What you're left with is a kind of acoustic wallpaper. Songs chosen because they're recognizable, or inoffensive, or vaguely on-brand. Nobody asked what state of mind you want your customer in when they pick up a product. The whole category got treated as atmosphere rather than communication.
-p_11: That's what Entuned does.
-p_12: Entuned takes your ideal customer profile and generates music built to those specifications. No licensing. No negotiating with a catalog built around someone else's artistic intentions. No settling for "close enough."
-p_13: Entuned uses the full vocabulary of music without the constraints of what already exists. If your customer grew up on 90s hip-hop and that's woven into their identity, Entuned generates music that lives in that language, familiar and resonant, without the baggage of any specific artist's ego or rights situation. The style without the compromise.
-p_14: The mismatch in retail music has always been obvious once you see it. Every other serious use of music involves intention. The church thinks carefully about what the congregation should experience. The concert tour is engineered down to the set list. Film composers spend months matching music to emotional arcs that last two hours.
-p_15: Retail gets a playlist.
-p_16: That ends when someone decides to treat the music in their store the way every other serious context treats music: as a tool with a specific job to do.
-p_17: Related reading: <a href="../blog/the-silent-brand-signal.html">The Silent Brand Signal</a>, <a href="../blog/ai-vs-traditional-retail-music.html">AI vs. Traditional In-Store Music</a>, and <a href="../blog/what-is-entuned.html">What Is Entuned?</a>.
-p_18: <strong>Key Takeaway:</strong> Every serious use of music &mdash; film, worship, live performance &mdash; involves deliberate intention, yet retail has settled for repurposed consumer music with no behavioral design behind it.
-p_19: <strong>Daniel Fox</strong> is the founder of Entuned, where he builds music systems engineered for retail customer psychology. Background in music theory, behavioral research, and data-driven product design. <a href="../about.html">More about Daniel</a>
-p_20: Entuned generates purpose-built music for retail environments. No licensing. No compromise. Built around your ideal customer.
+  - type: prose
+    body: |
+      Every piece of commercial music playing in retail stores today was created for consumer listening, not for retail behavioral outcomes. The artists, the labels, and the licensing services that supply in-store audio were never asked what emotional state a customer should be in when they pick up a product — which means retailers have been inheriting someone else's intentions rather than deploying their own.
+
+  - type: subhead
+    level: 2
+    text: "Inherited intentions, not deployed ones"
+
+  - type: prose
+    body: |
+      That's true of basically every piece of music you've ever heard in a retail environment. The store came later. The artist's intentions were elsewhere.
+
+      Nobody designed it for you. You inherited it.
+
+      This wouldn't matter much if music were neutral, like ambient temperature. But it isn't. [Music does things to people](../blog/sound-check-music-selling-against-you.html). It always has.
+
+  - type: pullquote
+    text: "Walk into a cathedral during a choir service and you feel it immediately. That's not accidental. The music is doing work."
+    accent: teal
+
+  - type: prose
+    body: |
+      Walk into a cathedral during a choir service and you feel it immediately. That's not accidental. The music is doing work, structured to open something in the listener, to create a specific kind of attention and receptivity. Same thing happens at a concert when 20,000 people are singing the same words at the same time. Music at scale, played with intention, moves groups of people into shared emotional states.
+
+      That's old knowledge. Cultures figured it out thousands of years ago. Military marches, funeral dirges, harvest songs, lullabies. Every one of them engineered for a specific human response in a specific context.
+
+  - type: subhead
+    level: 2
+    text: "Why Did Retail Get Left Out of Intentional Music Design?"
+
+  - type: prose
+    body: |
+      The answer is probably licensing. The music industry made it easy to pipe in existing songs, and that became the default. You pay your [licensing fee](../blog/retail-music-licensing-2026.html), you pick a genre or a playlist, and you've solved the "background music" problem. The thinking stopped there.
+
+      What you're left with is a kind of acoustic wallpaper. Songs chosen because they're recognizable, or inoffensive, or vaguely on-brand. Nobody asked what state of mind you want your customer in when they pick up a product. The whole category got treated as atmosphere rather than communication.
+
+  - type: stat_callout
+    number: "1934"
+    label: "Year Muzak was founded — background music has been treated as wallpaper, not strategy, for nine decades"
+    source: "Muzak corporate history"
+    accent: gold
+
+  - type: subhead
+    level: 2
+    text: "What purpose-built music changes"
+
+  - type: prose
+    body: |
+      Entuned takes your ideal customer profile and generates music built to those specifications. No licensing. No negotiating with a catalog built around someone else's artistic intentions. No settling for "close enough."
+
+      Entuned uses the full vocabulary of music without the constraints of what already exists. If your customer grew up on 90s hip-hop and that's woven into their identity, Entuned generates music that lives in that language, familiar and resonant, without the baggage of any specific artist's ego or rights situation. The style without the compromise.
+
+  - type: stat_callout
+    number: "0"
+    label: "Licensed tracks needed — purpose-built music eliminates the entire catalog constraint"
+    source: "Entuned platform architecture"
+    accent: gold
+
+  - type: subhead
+    level: 2
+    text: "Every other context treats music as a tool"
+
+  - type: prose
+    body: |
+      The mismatch in retail music has always been obvious once you see it. Every other serious use of music involves intention. The church thinks carefully about what the congregation should experience. The concert tour is engineered down to the set list. [Film composers](../blog/what-church-concert-halls-and-film-composers-know-that-retail-doesnt.html) spend months matching music to emotional arcs that last two hours.
+
+      Retail gets a playlist.
+
+      That ends when someone decides to treat the music in their store the way every other serious context treats music: as a tool with a specific job to do. [See how it works](../how-it-works.html).
+
+  - type: cta
+    variant: pilot
+    headline: "Music built for your store"
+    body: "Entuned generates purpose-built music for retail environments. No licensing. No compromise. Built around your ideal customer."
+    link: "/pilot"
+    link_text: "Start a conversation"
+
+  - type: related
+    posts:
+      - slug: "the-silent-brand-signal"
+      - slug: "ai-vs-traditional-retail-music"
+      - slug: "what-is-entuned"

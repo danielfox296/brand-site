@@ -1,19 +1,93 @@
-# blog-major-key — editable text content
+title: "Major Key Does Not Mean Happy Customer."
+slug: "major-key"
+eyebrow: "FLOW FACTORS"
+dek: "Positive valence and commercial effectiveness are not the same thing. Mild negative valence converts better."
+date: "2026-03-15"
+last_updated: "2026-04-15"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/major-key.jpg"
+  alt: "Piano keys and musical notation in warm lighting"
+  caption: "Photo: Unsplash"
+meta_description: "Positive valence and commercial effectiveness are not the same thing. Mild negative valence is among the most commercially interesting states in retail."
+og_image: "/blog/major-key/og.png"
+tags: [flow-factors, mode, valence, premium-retail]
+sections:
+  - type: key_takeaways
+    items:
+      - "Major key reliably shifts valence positive — but positive valence does not reliably drive purchase behavior"
+      - "Mild negative valence (wistfulness, longing) is among the most commercially interesting states in premium retail"
+      - "Dorian mode produces 'noble sadness' that outperforms major mode for dwell time and engagement in premium contexts"
+      - "Mode sets the emotional direction; production, groove, and cultural alignment determine whether it converts"
 
-h1_1: Major Key Does Not Mean Happy Customer.
-h2_1: The Usefulness of Negative Valence
-h2_2: Why Isn't Mode Alone Enough to Drive Purchase Behavior?
-meta_1: Daniel Fox &middot; March 2026 &middot; 4 min read
-btn_1: Join the Pilot
-p_1: Mode is the musical variable most commonly associated with emotion. Major key sounds happy. Minor key sounds sad. This is the version you learned in school, and it is roughly correct as far as it goes. Research consistently shows that major mode shifts listeners toward positive valence and minor mode shifts them toward negative valence. The effect replicates. It is real.
-p_2: Where it gets interesting for retail is that positive valence and commercial effectiveness are not the same thing.
-p_3: The assumption behind most retail playlists is that customers should feel good. Upbeat, positive, bright. Major key, moderate-to-fast tempo, sunny production. This is the default because it seems obvious: happy customers buy more.
-p_4: The research says something more nuanced. Mild negative valence (the emotional territory of wistfulness, longing, bittersweet ache) is among the most commercially interesting states in premium retail. The listener in this state feels the contour of something missing. Advertising psychology has long recognized this mechanism: desire activated through the presence of lack. The product occupies the gap the emotion opened.
-p_5: Dorian mode, which sits between major and minor, produces what musicologists call noble sadness. It has forward motion without resolution. It longs without despairing. It is underused in retail because most playlist services operate on the major=good, minor=bad assumption. But in premium and luxury contexts, where the purchase is an act of self-definition rather than necessity, Dorian and natural minor outperform major mode for dwell time and engagement.
-p_6: Mode reliably shifts valence. But valence alone does not drive purchase behavior, for the same reason tempo alone does not drive spending. A minor-key track with warm production and a laid-back groove in a style the customer identifies with produces longing. The same minor key with cold production, fast tempo, and cultural signals that feel alien produces anxiety. Both are negative valence. One extends dwell and deepens engagement. The other empties the store.
-p_7: The mode tells you the emotional color. The production, the groove, the harmonic language, the cultural alignment tell you whether that color lands as desire or discomfort. You need the full palette, not just the key signature.
-p_8: Entuned specifies mode as one variable in a compound signal. The mode sets the emotional direction. Everything else determines whether the customer wants to stay in that feeling or walk away from it.
-p_9: Related reading: <a href="../blog/luxury-priming-is-real-and-you-dont-have-to-be-a-luxury-brand-to-use-it.html">Luxury Priming Is Real — And You Don't Have to Be a Luxury Brand to Use It</a>, <a href="../blog/psychographic-profiling-retail.html">Psychographic Profiling for Retail: Beyond Demographics</a>, and <a href="../blog/the-silent-brand-signal.html">The Silent Brand Signal</a>.
-p_10: <strong>Key Takeaway:</strong> Major key does not automatically drive sales &mdash; mode sets the emotional direction, but production, groove, and cultural alignment determine whether that emotion converts to purchase behavior.
-p_11: <strong>Daniel Fox</strong> is the founder of Entuned, where he builds music systems engineered for retail customer psychology. Background in music theory, behavioral research, and data-driven product design. <a href="../about.html">More about Daniel</a>
-p_12: Entuned generates purpose-built music for retail environments. No licensing. No compromise. Built around your ideal customer.
+  - type: prose
+    body: |
+      Mode is the musical variable most commonly associated with emotion. Major key sounds happy. Minor key sounds sad. This is the version you learned in school, and it is roughly correct as far as it goes. Research consistently shows that major mode shifts listeners toward positive valence and minor mode shifts them toward negative valence. The effect replicates. It is real.
+
+      Where it gets interesting for retail is that positive valence and commercial effectiveness are not the same thing.
+
+  - type: subhead
+    level: 2
+    text: "The usefulness of negative valence"
+    anchor: "negative-valence"
+
+  - type: prose
+    body: |
+      The assumption behind most retail playlists is that customers should feel good. Upbeat, positive, bright. Major key, moderate-to-fast tempo, sunny production. This is the default because it seems obvious: happy customers buy more.
+
+      The research says something more nuanced. Mild negative valence (the emotional territory of wistfulness, longing, bittersweet ache) is among the most commercially interesting states in premium retail. The listener in this state feels the contour of something missing. Advertising psychology has long recognized this mechanism: desire activated through the presence of lack. The product occupies the gap the emotion opened.
+
+  - type: stat_callout
+    number: "Dorian mode"
+    label: "outperforms major mode for dwell time and engagement in premium retail"
+    source: "Musicological research on mode and affect"
+    accent: teal
+
+  - type: prose
+    body: |
+      Dorian mode, which sits between major and minor, produces what musicologists call noble sadness. It has forward motion without resolution. It longs without despairing. It is underused in retail because most playlist services operate on the major=good, minor=bad assumption. But in premium and luxury contexts, where the purchase is an act of self-definition rather than necessity, Dorian and natural minor outperform major mode for dwell time and engagement.
+
+  - type: subhead
+    level: 2
+    text: "Why isn't mode alone enough to drive purchase behavior?"
+    anchor: "mode-not-enough"
+
+  - type: prose
+    body: |
+      Mode reliably shifts valence. But valence alone does not drive purchase behavior, for the same reason [tempo alone does not drive spending](../blog/longer-visits.html). A minor-key track with warm production and a laid-back groove in a style the customer identifies with produces longing. The same minor key with cold production, fast tempo, and cultural signals that feel alien produces anxiety. Both are negative valence. One extends dwell and deepens engagement. The other empties the store.
+
+      The mode tells you the emotional color. The production, the groove, the harmonic language, the cultural alignment tell you whether that color lands as desire or discomfort. You need the full palette, not just the key signature.
+
+  - type: pullquote
+    text: "Mode tells you the emotional color. Production, groove, and cultural alignment tell you whether that color lands as desire or discomfort."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "Mode as one variable in a compound signal"
+    anchor: "compound-signal"
+
+  - type: prose
+    body: |
+      Entuned specifies mode as one variable in a compound signal. The mode sets the emotional direction. Everything else determines whether the customer wants to stay in that feeling or walk away from it. For more on how these variables interact, see [luxury priming is real](../blog/luxury-priming-is-real-and-you-dont-have-to-be-a-luxury-brand-to-use-it.html) and [the silent brand signal](../blog/the-silent-brand-signal.html).
+
+  - type: stat_callout
+    number: "2 variables"
+    label: "mode sets direction; cultural alignment determines conversion"
+    source: "Entuned research framework"
+    accent: teal
+
+  - type: cta
+    variant: pilot
+    headline: "Get the full palette"
+    body: "Entuned generates purpose-built music for retail environments. No licensing. No compromise. Built around your ideal customer."
+    link: "/pilot"
+    link_text: "Join the pilot"
+
+  - type: related
+    posts:
+      - slug: "luxury-priming-is-real-and-you-dont-have-to-be-a-luxury-brand-to-use-it"
+      - slug: "the-silent-brand-signal"
+      - slug: "psychographic-profiling-retail"
