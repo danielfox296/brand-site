@@ -825,11 +825,12 @@ h3.blog-subhead,
 }
 
 .blog-related__card {
-  display: block;
+  display: flex;
+  flex-direction: column;
   background: var(--blog-bg-raised);
   border: 1px solid rgba(80, 146, 156, 0.08);
   border-radius: 4px;
-  padding: 1.5rem;
+  overflow: hidden;
   text-decoration: none;
   color: inherit;
   transition: transform 0.25s ease, border-color 0.25s ease;
@@ -841,7 +842,14 @@ h3.blog-subhead,
   opacity: 1;
 }
 
-.blog-related__card-eyebrow {
+.blog-related__img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.blog-related__eyebrow {
   display: block;
   font-family: var(--blog-font-body);
   font-size: 0.7rem;
@@ -849,7 +857,8 @@ h3.blog-subhead,
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--blog-gold);
-  margin-bottom: 0.5rem;
+  padding: 1.25rem 1.5rem 0;
+  margin-bottom: 0.4rem;
 }
 
 .blog-related__card-title {
@@ -858,18 +867,26 @@ h3.blog-subhead,
   font-weight: 600;
   line-height: 1.3;
   color: var(--blog-text);
+  padding: 0 1.5rem;
   margin-bottom: 0.5rem;
   transition: color 0.2s ease;
+}
+
+/* When no eyebrow, title needs top padding */
+.blog-related__img + .blog-related__card-title,
+.blog-related__card:not(:has(.blog-related__eyebrow)) .blog-related__card-title {
+  padding-top: 1.25rem;
 }
 
 .blog-related__card:hover .blog-related__card-title {
   color: var(--blog-teal);
 }
 
-.blog-related__card-dek {
+.blog-related__dek {
   font-size: 0.9rem;
   line-height: 1.5;
   color: var(--blog-text-muted);
+  padding: 0 1.5rem 1.5rem;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;

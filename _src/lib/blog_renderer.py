@@ -282,19 +282,27 @@ def render_block(block: dict, ctx: dict, env: jinja2.Environment) -> str:
         block = dict(block)
         all_posts = ctx.get('all_posts', [])
         posts_by_slug = {p.get('slug', ''): p for p in all_posts}
+        nav_prefix = ctx.get('nav_prefix', '../')
         resolved = []
         for item in block.get('posts', []):
             slug = item.get('slug', '') if isinstance(item, dict) else str(item)
-            if slug in posts_by_slug:
-                resolved.append(posts_by_slug[slug])
-            else:
-                # Fallback: show slug as title so the link still works
-                resolved.append({
-                    'slug': slug,
-                    'title': slug.replace('-', ' ').title(),
-                    'eyebrow': '',
-                    'dek': '',
-                })
+            post = dict(posts_by_slug.get(slug, {
+                'slug': slug,
+                'title': slug.replace('-', ' ').title(),
+                'eyebrow': '',
+                'dek': '',
+            }))
+            # Ensure slug is set
+            if 'slug' not in post:
+                post['slug'] = slug
+            # Resolve hero image path — new-format or standard img/blog/{slug}.jpg
+            if 'hero_img' not in post:
+                hero = post.get('hero', {})
+                if isinstance(hero, dict) and hero.get('src'):
+                    post['hero_img'] = hero['src']
+                else:
+                    post['hero_img'] = f'{nav_prefix}img/blog/{slug}.jpg'
+            resolved.append(post)
         block['posts'] = resolved
 
     template = env.get_template(f"blocks/{block_type}.html")
