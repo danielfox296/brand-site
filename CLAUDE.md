@@ -62,10 +62,20 @@ Template:
   </div>
 
   <div class="article-body">
-    <p class="fade-up">First paragraph...</p>
 
+    <!-- REQUIRED: TL;DR takeaway box — always first element in article-body -->
+    <div class="takeaway-box fade-up">
+      <p><strong>TL;DR:</strong> 2-3 sentence summary of the post's core argument.</p>
+    </div>
+
+    <p class="fade-up">Opening paragraph...</p>
+
+    <!-- REQUIRED: Use h2 headings to break up sections — never use <hr> dividers -->
     <h2 class="fade-up">Section Heading</h2>
     <p class="fade-up">Body text...</p>
+
+    <h2 class="fade-up">Next Section Heading</h2>
+    <p class="fade-up">More body text...</p>
 
     <!-- Optional components: -->
     <div class="stat-box fade-up">
@@ -76,18 +86,34 @@ Template:
       <p>Warning or contrarian point.</p>
     </div>
 
+    <!-- REQUIRED: Byline -->
     <div class="byline fade-up">
       <p>Daniel<br>Founder, Entuned</p>
     </div>
 
+    <!-- REQUIRED: Author bio -->
+    <div class="author-bio fade-up">
+      <p><strong>Daniel Fox</strong> is the founder of Entuned, where he builds music systems engineered for retail customer psychology. Background in music theory, behavioral research, and data-driven product design. <a href="../about.html">More about Daniel</a></p>
+    </div>
+
+    <!-- REQUIRED: Related reading — link to 2-3 other Entuned blog posts -->
     <p class="fade-up">Related reading: <a href="../blog/other-post.html">Other Post Title</a>, <a href="../blog/another.html">Another</a>, and <a href="../blog/third.html">Third</a>.</p>
 
+    <!-- REQUIRED: CTA box — always last element in article-body -->
     <div class="article-cta fade-up">
       <p>CTA text about what Entuned does, relevant to this post's topic.</p>
       <a href="../pilot.html" class="btn btn-primary">Ask About a Pilot Program</a>
     </div>
   </div>
 ```
+
+**Required elements (every blog post must have all of these):**
+1. **Takeaway box** — `<div class="takeaway-box">` as the first element in article-body. Starts with `<strong>TL;DR:</strong>` or `<strong>Key Takeaway:</strong>`. 2-3 sentences summarizing the core argument.
+2. **h2 section headings** — break the post into 2-4 named sections. Never use `<hr>` dividers.
+3. **Byline** — `<div class="byline">` with `Daniel<br>Founder, Entuned`.
+4. **Author bio** — `<div class="author-bio">` with Daniel's standard bio and link to about page.
+5. **Related reading** — link to 2-3 other Entuned blog posts for internal cross-linking.
+6. **CTA box** — `<div class="article-cta">` with contextual CTA text and button linking to `../pilot.html`.
 
 **Key patterns:**
 - All `<p>`, `<h2>`, `<div>` in article-body get `class="fade-up"`
