@@ -243,40 +243,24 @@
   flex-wrap: wrap;
 }
 
-/* ── Team cards ──────────────────────────────────────────── */
-.team-card {
-  display: flex;
-  gap: 2rem;
-  align-items: flex-start;
-  margin-top: 2rem;
-  padding: 2rem;
-  background: rgba(80, 146, 156, 0.08);
-  border-left: 4px solid var(--accent);
-  border-radius: 12px;
-}
-
-.team-card-photo {
-  flex-shrink: 0;
+/* ── Founder / team member photo ─────────────────────────── */
+.about-founder-photo {
   width: 140px;
   height: 140px;
   border-radius: 50%;
   object-fit: cover;
   filter: grayscale(100%);
-}
-
-.team-card-info {
-  flex: 1;
-  min-width: 0;
+  margin-top: 1rem;
 }
 
 /* ── Mobile ───────────────────────────────────────────────── */
 @media (max-width: 700px) {
   .about-hero { padding: 4rem 0 3rem; }
   .about-founder-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .about-founder-label-col { text-align: center; }
   .about-founder-label-col .about-section-label { margin-bottom: 0.5rem; }
+  .about-founder-photo { margin: 0.5rem auto 0; display: block; }
   .about-bet-grid { grid-template-columns: 1fr; }
   .about-convergence { flex-direction: column; }
   .about-convergence-plus, .about-convergence-equals { transform: rotate(90deg); }
-  .team-card { flex-direction: column; align-items: center; text-align: center; }
-  .team-card-photo { width: 120px; height: 120px; }
 }
