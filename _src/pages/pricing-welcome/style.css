@@ -1,0 +1,82 @@
+/* ==================== /pricing/welcome page ==================== */
+/* Reuses pricing-namespaced classes from the main pricing style.css */
+
+.pricing-welcome {
+  padding: 8rem 0 6rem;
+  min-height: 80vh;
+}
+
+.pricing-welcome h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.pricing-eyebrow {
+  color: var(--gold);
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.welcome-body {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  opacity: 0.88;
+  margin-bottom: 3rem;
+}
+
+.pricing-welcome-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: rgba(80, 146, 156, 0.06);
+  border: 1px solid rgba(80, 146, 156, 0.15);
+}
+
+.pricing-welcome-step {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.pricing-welcome-step .step-number {
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.pricing-welcome-step .step-title {
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  margin-bottom: 0.375rem;
+}
+
+.pricing-welcome-step .step-body {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text);
+  opacity: 0.82;
+  margin-bottom: 0;
+}
+
+.pricing-welcome-contact {
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.pricing-welcome-contact a {
+  color: var(--accent);
+  border-bottom: 1px solid rgba(80, 146, 156, 0.4);
+}

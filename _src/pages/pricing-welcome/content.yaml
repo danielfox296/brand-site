@@ -1,0 +1,16 @@
+# pricing/welcome — post-checkout page
+
+welcome:
+  eyebrow: "Welcome to Entuned"
+  headline: "You're in."
+  body: "Your Founding Retailer subscription is active. Here's what happens next."
+
+  step1_title: "Intake"
+  step1_body: "You'll get an email within a few hours with a short intake form — brand, customer profile, store context, audio system. Takes about 10 minutes."
+  step2_title: "Onboarding call"
+  step2_body: "We'll schedule a 30-minute call to walk through your profile and answer any questions about deployment."
+  step3_title: "Deploy"
+  step3_body: "Your custom audio stream goes live on your store's existing system. Typical timeline from checkout to in-store deployment is 5–7 days."
+
+  contact_line: "Questions? Email <a href=\"mailto:hello@entuned.co\">hello@entuned.co</a> and mention your Stripe receipt."
+  home_cta_label: "Back to Entuned"

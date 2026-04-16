@@ -1,7 +1,7 @@
 title: "How to Make Your Store Sound Premium"
 slug: "how-to-make-your-store-sound-premium"
-eyebrow: "FLOW FACTORS"
-dek: "Premium audio is a set of parameters, not a genre. Tempo under 85 BPM, acoustic instrumentation, and clean production."
+eyebrow: "FIELD NOTES"
+dek: "Luxury brands don't play better playlists. They treat audio like they treat lighting, fixtures, and scent: as a design decision with measurable consequences."
 date: "2026-04-01"
 last_updated: "2026-04-15"
 author:
@@ -11,62 +11,69 @@ hero:
   src: "../img/blog/how-to-make-your-store-sound-premium.jpg"
   alt: "Warm-lit boutique interior with curated merchandise displays"
   caption: "Photo: Unsplash"
-meta_description: "Refined music primes quality perception and raises willingness to pay 8-12%. You don't need a luxury brand to use luxury priming. Here's the applied version."
+meta_description: "What makes a store sound expensive? Not the genre. The right music lifts willingness to pay 8-12%. Here's what operators at every price point can learn from it."
 og_image: "/blog/how-to-make-your-store-sound-premium/og.png"
-tags: [flow-factors, premium-audio, luxury-priming, willingness-to-pay]
+tags: [premium-audio, luxury-priming, willingness-to-pay, store-experience, retail-music]
 sections:
   - type: key_takeaways
     items:
-      - "Premium audio is defined by specific parameters: tempo under 85 BPM, acoustic instrumentation, clean production, volume below 60 dB, unfamiliar tracks"
-      - "Areni and Kim documented a 2.5x increase in average wine purchase price when classical music replaced pop"
-      - "The 8-12% increase in willingness to pay works through associative memory, not genre labels"
-      - "You do not need a luxury brand to benefit from premium priming"
+      - "The genre label on your music does not predict whether customers perceive the store as premium"
+      - "Areni and Kim documented a 2.5x increase in average wine purchase price when the audio environment shifted"
+      - "Research shows an 8-12% increase in willingness to pay when music matches customer identity"
+      - "You do not need a luxury brand to benefit from premium audio. Any store positioned above commodity can use it."
 
   - type: prose
     body: |
-      There is a version of "premium" that most stores get wrong. They play jazz because jazz seems sophisticated. Or they play classical because classical seems expensive. The genre is a proxy for something more specific, and the proxy is unreliable.
+      Walk into a high-end boutique in SoHo and you notice the music within seconds. Not what song it is. Whether the store feels like the kind of place where you spend $400 on a jacket. Walk into a mid-market store in the same neighborhood and you hear a pop playlist that could be playing in any coffee shop in America. The merchandise might be comparable. The price tolerance is not.
 
-      Jazz at 65 BPM with a piano trio creates a premium atmosphere. Jazz at 160 BPM with a bebop quintet creates anxiety. Both are jazz. They produce opposite effects. Classical with a string quartet creates elegance. Classical with a full orchestra at forte creates intensity. The genre label does not predict the outcome. The specific musical characteristics do.
+      Most operators who think about store music think about genre. Jazz for upscale. Pop for young. Classical for luxury. That instinct is understandable, but the research says it misses the point. Genre is a rough proxy. Two tracks in the same genre can produce opposite customer reactions depending on how they sound, how loud they play, and whether the customer has heard them before.
 
   - type: subhead
     level: 2
-    text: "What premium sounds like at the parameter level"
-    anchor: "premium-parameters"
+    text: "The premium perception gap"
+    anchor: "premium-perception-gap"
 
   - type: prose
     body: |
-      Premium audio is a set of production and compositional characteristics, not a genre. Understanding them at the parameter level is more useful than relying on labels.
+      A VP of store experience at a 25-location chain once told me every visual element in her stores was spec'd to the inch. The fixtures, the lighting color temperature, the folding technique on the display table. Then I asked about the music. She shrugged. "Whoever opens picks the Sonos playlist."
 
-      **Tempo: 60 to 85 BPM.** Slower tempos create a sense of unhurried spaciousness. [Milliman's research](../blog/milliman-study.html) shows slower music increases dwell time. In a premium context, the unhurried pace also signals that the store values the customer's time and does not need to rush them through.
+      That gap shows up in the data. Areni and Kim ran a study in 1993 where they changed nothing in a wine store except the audio. When the audio environment shifted to classical selections, the average purchase price went up 2.5x. Customers did not suddenly develop better taste in wine. Their perception of what kind of store they were standing in changed. That perception moved their spending.
 
-      **Instrumentation: acoustic and organic.** Piano, guitar, strings, woodwinds, brushed drums, upright bass. These timbres carry associative weight from decades of presence in premium contexts. Concert halls, fine restaurants, luxury advertising, boutique hotels. The customer does not analyze the instrumentation consciously. The associations transfer automatically.
-
-      **Production: clean and dynamic.** Minimal compression. Wide dynamic range. Natural room sound. Heavily compressed music (where all frequencies are pushed to maximum volume) signals radio, mass-market retail, and high-energy commercial environments. Clean production signals care, space, and quality.
+      The takeaway for operators is not "play classical music." Classical is not a magic word. The takeaway is that audio carries quality signals the same way lighting and materials do. Customers read those signals whether you set them intentionally or not.
 
   - type: stat_callout
-    number: "< 60 dB"
-    label: "target volume for premium retail environments"
-    source: "Retail atmospherics research consensus"
-    accent: teal
-
-  - type: prose
-    body: |
-      **Volume: below 60 dB.** Premium environments are quiet. The music fills the space without competing with conversation. A customer evaluating a $400 purchase needs cognitive space for that decision. Loud music competes for that space.
-
-      **Familiarity: low.** Unfamiliar music extends perceived dwell time (Yalch and Spangenberg, 2000). In a premium environment where longer browsing converts to higher transaction values, unfamiliar tracks are a structural advantage.
-
-      **Vocals: minimal or absent.** Lyrics demand cognitive attention. In a store where the goal is product evaluation and purchase confidence, instrumental music or music with atmospheric, non-narrative vocals keeps the customer's attention on the merchandise.
+    number: "2.5x"
+    label: "increase in average purchase price when audio matched the store's quality positioning"
+    source: "Areni & Kim, 1993"
+    accent: gold
 
   - type: subhead
     level: 2
-    text: "The priming mechanism"
-    anchor: "priming-mechanism"
+    text: "What most stores get wrong"
+    anchor: "what-stores-get-wrong"
 
   - type: prose
     body: |
-      Luxury priming works through associative memory. The customer has decades of experience associating certain sounds with quality contexts. When they hear those sounds in your store, their brain activates the quality association automatically. Price expectations shift upward. Product evaluations shift toward favorable. The store "feels" right.
+      Three patterns show up in almost every store audit I do.
 
-      Areni and Kim documented this in 1993 when classical music in a wine store increased average purchase price 2.5x. The customers were not wine experts responding to the music analytically. They were ordinary shoppers whose ambient quality perception was being shifted by the audio environment.
+      First, the genre-as-strategy mistake. A store picks jazz because jazz feels sophisticated. But a fast, busy jazz track sends a completely different signal than a quiet one. The label on the playlist tells you nothing about what the customer actually hears.
+
+      Second, volume set by whoever opens. An empty store at 9 AM sounds quiet. That same volume at 2 PM with 30 customers on the floor is a different experience entirely. A customer evaluating a $300 purchase needs mental space for that decision. When the audio competes for attention, that space shrinks.
+
+      Third, familiarity. Stores default to recognizable songs because staff like them. But research from Yalch and Spangenberg (2000) shows unfamiliar music extends perceived time in store. In a retail environment where longer browsing converts to higher tickets, playing the hits works against you.
+
+  - type: subhead
+    level: 2
+    text: "You don't need a luxury brand to use this"
+    anchor: "not-just-luxury"
+
+  - type: prose
+    body: |
+      The 8 to 12 percent increase in willingness to pay that researchers document when music matches customer identity applies across price points. A $200 dress. A $45 candle. A $75 skincare set. These are all purchases where quality perception directly affects what the customer is willing to spend.
+
+      Luxury brands figured this out early because they design every sensory detail. But mid-market and premium-casual brands leave the most on the table, because they invest in visual merchandising and ignore the one sense that hits the customer before they even see the product.
+
+      The question is not whether your store is fancy enough to care about audio. The question is whether your store sells anything where the customer's perception of quality matters to the transaction. If the answer is yes, your audio is either reinforcing that perception or undermining it. There is no neutral setting.
 
   - type: stat_callout
     number: "8-12%"
@@ -74,51 +81,26 @@ sections:
     source: "Aggregate retail music research"
     accent: gold
 
-  - type: prose
-    body: |
-      The 8 to 12 percent increase in willingness to pay that research documents when music matches customer identity is largely this mechanism at work. The music confirms the customer's self-concept as someone who shops in premium environments. That confirmation lowers price resistance. For more on how this works across price points, see [luxury priming is real and you don't have to be a luxury brand to use it](../blog/luxury-priming-is-real-and-you-dont-have-to-be-a-luxury-brand-to-use-it.html).
-
   - type: subhead
     level: 2
-    text: "What undermines premium audio"
-    anchor: "undermines-premium"
+    text: "What to do this week"
+    anchor: "what-to-do"
 
   - type: prose
     body: |
-      Playing familiar pop hits on a "chill" channel. Recognizable songs trigger time-perception distortion and activate mass-market associations, even if the tempo is slow.
+      Walk three of your stores at different times of day. Do not tell the staff you are coming. Stand near the entrance for 60 seconds and ask yourself: does this sound like the kind of store where someone spends what we are asking them to spend?
 
-      Volume set by employees during morning setup. An empty store sounds quieter than a full one. Music set at a comfortable volume at 9am is too loud at 2pm when the store has customers.
-
-      Compressed, radio-style production. Even acoustic genres can be produced with heavy compression for radio play. A compressed acoustic guitar track signals "coffee shop playlist," not premium retail.
-
-      Lyrics that compete with the purchase decision. A customer trying on a $300 jacket does not need her attention split between the fit in the mirror and the narrative playing through the speakers.
-
-      Inconsistency across dayparts. Premium at 10am and energetic pop at 4pm creates an identity crisis. The customer who walks in during both windows encounters a different brand each time.
-
-  - type: pullquote
-    text: "A compressed acoustic guitar track signals 'coffee shop playlist,' not premium retail."
-    accent: teal
-
-  - type: subhead
-    level: 2
-    text: "Applied premium audio for non-luxury brands"
-    anchor: "non-luxury-brands"
-
-  - type: prose
-    body: |
-      You do not need to sell $5,000 handbags to benefit from premium priming. Any brand that positions itself above commodity benefits from audio that reinforces that positioning. A $200 dress. A $45 candle. A $75 skincare set. These are all purchases where quality perception affects willingness to pay.
-
-      The parameters are the same regardless of price point. Slower tempo. Acoustic instrumentation. Clean production. Lower volume. Unfamiliar tracks. Minimal vocals. The degree of refinement can scale with the brand's positioning, but the direction is consistent. For a deeper look at the variables, see [how to choose music for your retail store](../blog/how-to-choose-music-for-your-retail-store.html) and the [science behind retail atmospherics](../science.html).
+      Then check two things. Who chose the music playing right now, and when was that choice last reviewed by someone responsible for customer experience? If the answer to the first question is "the opener" and the answer to the second is "never," you have found your gap.
 
   - type: cta
     variant: pilot
-    headline: "Run a pilot in your store"
-    body: "Entuned generates original music from your customer's psychographic profile with every premium parameter controlled and logged. The founding pilot is free."
+    headline: "Make your store sound like your brand"
+    body: "Entuned builds original music matched to your customer and your positioning. We are currently working with a small number of multi-location lifestyle retailers on pilot deployments. If your audio is a gap you want to close, we would be glad to have the conversation."
     link: "/pilot"
     link_text: "Start a conversation"
 
   - type: related
     posts:
-      - slug: "science-of-tempo-retail"
       - slug: "luxury-priming-is-real-and-you-dont-have-to-be-a-luxury-brand-to-use-it"
-      - slug: "music-for-boutique-clothing-stores"
+      - slug: "how-to-choose-music-for-your-retail-store"
+      - slug: "what-music-to-play-in-a-high-end-store"

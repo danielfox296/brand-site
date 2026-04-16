@@ -91,6 +91,7 @@
       <li><a href="demo.html">What Is Entuned</a></li>
       <li><a href="how-it-works.html">How It Works</a></li>
       <li><a href="pilot.html">Pilot</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -149,7 +150,16 @@ textarea:valid:not(:placeholder-shown) {
   <!-- CONTACT FORM -->
   <section class="section cymatics-over">
     <div class="container" style="max-width: 640px;">
+
+      <!-- Topic banner — only shown when ?topic= is in URL -->
+      <div id="contact-topic-banner" class="fade-up" style="display:none; background: rgba(80, 146, 156, 0.08); border: 1px solid rgba(80, 146, 156, 0.25); padding: 1rem 1.25rem; margin-bottom: 2rem; font-size: 0.9375rem;">
+        <span id="contact-topic-banner-text"></span>
+      </div>
+
       <form class="fade-up" action="https://formspree.io/f/xgopwepl" method="POST" id="contact-form">
+
+        <!-- Topic (populated from ?topic= query param, e.g. ?topic=pilot from /pricing) -->
+        <input type="hidden" name="topic" id="contact-topic" value="">
 
         <div class="form-group">
           <label for="contact-role">I am a...</label>
@@ -203,6 +213,35 @@ textarea:valid:not(:placeholder-shown) {
       </div>
     </div>
   </section>
+
+  <script>
+  (function() {
+    // Read ?topic= from URL and prefill the hidden field, role, and banner.
+    // Used by /pricing Pilot CTA which links here as contact.html?topic=pilot.
+    var params = new URLSearchParams(window.location.search);
+    var topic = params.get('topic');
+    if (topic) {
+      var topicField = document.getElementById('contact-topic');
+      if (topicField) topicField.value = topic;
+
+      var banner = document.getElementById('contact-topic-banner');
+      var bannerText = document.getElementById('contact-topic-banner-text');
+
+      if (topic === 'pilot') {
+        if (banner && bannerText) {
+          bannerText.innerHTML = '<strong>Pilot Program inquiry</strong> &middot; Tell us about your locations below. We review multi-location pilots weekly.';
+          banner.style.display = 'block';
+        }
+        var roleSelect = document.getElementById('contact-role');
+        if (roleSelect && !roleSelect.value) roleSelect.value = 'Retail Leader';
+        var msg = document.getElementById('contact-message');
+        if (msg && !msg.value) {
+          msg.setAttribute('placeholder', 'Company, number of locations, current analytics stack (e.g. RetailNext), and anything else relevant to a pilot.');
+        }
+      }
+    }
+  })();
+  </script>
 
   <script>
   (function() {

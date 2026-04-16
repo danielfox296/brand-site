@@ -1,6 +1,6 @@
 title: "What Your Music Is Saying About Your Brand"
 slug: "what-your-music-is-saying-about-your-brand"
-eyebrow: "FLOW FACTORS"
+eyebrow: "FIELD NOTES"
 dek: "One incongruent track at the moment of peak purchase intention can undo everything your brand team built."
 date: "2026-03-01"
 last_updated: "2026-04-15"
@@ -11,80 +11,40 @@ hero:
   src: "../img/blog/what-your-music-is-saying-about-your-brand.jpg"
   alt: "Boutique clothing store interior with curated merchandise displays"
   caption: "Photo: Unsplash"
-meta_description: "Incongruent music disrupts purchase confidence at the moment of peak buying intention. The customer doesn't blame the music — they downgrade the brand."
+meta_description: "Walk your stores and listen. The music playing right now is shaping purchase decisions, and most brand standards never specify what it should sound like."
 og_image: "/blog/what-your-music-is-saying-about-your-brand/og.png"
-tags: [brand-congruence, purchase-confidence, music-identity, retail-audio]
-sections:
-  - type: key_takeaways
-    items:
-      - "Incongruent music disrupts purchase confidence at the exact moment of peak buying intention"
-      - "Customers don't blame the music — they downgrade the brand and walk out thinking 'maybe later'"
-      - "North, Hargreaves, and McKendrick showed customers' store assessments update continuously with no credit for a good start"
-      - "Brand standards specify fixture finish and signage font but leave the audio environment improvised"
+tags: [brand-congruence, purchase-confidence, retail-audio, store-experience]
 
-  - type: prose
-    body: |
-      Picture a woman in her early forties. She's shopping in a boutique that sells well-made clothing at prices that reflect that. She's not browsing casually. She's been thinking about a particular jacket for two weeks and she came in today to try it. She picks it up. She goes to the fitting room. She tries it on. It fits well. The price is justifiable. She's close.
+h1_1: "What Your Music Is Saying About Your Brand"
 
-      Then a song comes on that she associates with a bar she used to go to in her twenties.
+meta_1: "Daniel Fox &middot; March 2026 &middot; 5 min read"
 
-      She doesn't consciously register that the music is wrong for the space. She doesn't think "this playlist is inconsistent with the brand positioning." She just feels, slightly, like something is off. The jacket is still good. But the moment has shifted. She puts it back. She tells herself she'll think about it.
+p_11: "<strong>TL;DR:</strong> Your brand standards probably specify fixture finishes, signage fonts, and lighting temperature. They almost certainly say nothing about the audio playing in your stores. That gap costs you sales every week, because customers adjust their perception of your brand in real time based on what they hear."
 
-  - type: subhead
-    level: 2
-    text: "The mismatch mechanism"
+p_1: "A woman in her early forties walks into one of your stores. She has been thinking about a particular jacket for two weeks. She came in today to buy it. She picks it up, tries it on, checks the mirror. It fits. The price makes sense. She is close to buying."
 
-  - type: prose
-    body: |
-      This is the mismatch effect, and the research on it is consistent enough to describe a mechanism rather than a tendency. When music is incongruent with a customer's identity and values, it disrupts the perceptual environment that purchase confidence depends on. The customer doesn't leave because the music was bad. They leave because the space stopped feeling like it was built for them, and in that moment the purchase decision that was almost made becomes a maybe.
+p_2: "Then a track comes on that reminds her of a bar she went to in college."
 
-  - type: stat_callout
-    number: "8-12%"
-    label: "Increase in willingness to pay when music is congruent with store positioning"
-    source: "Areni and Kim, 1993"
-    accent: gold
+p_3: "She does not consciously register the music. She does not think about playlists or brand positioning. She just feels, for a second, like something is off. The jacket is still good. But the moment has shifted. She puts it back. She tells herself she will think about it."
 
-  - type: prose
-    body: |
-      The effect runs the other direction with equal force. Customers who feel musically recognized by a space report higher satisfaction with their experience, higher likelihood of returning, and higher willingness to recommend the store to people like them. The music is doing brand work at an emotional level that visual brand standards can't reach. You can get the logo right and the fixtures right and the lighting temperature right and still lose the customer in the fitting room because the playlist made the space feel generic at the moment of peak purchase intention.
+p_4: "That sequence plays out in retail stores every day. The research on music congruence, going back to Areni and Kim in 1993, consistently shows that when the audio in a store conflicts with the customer's expectations for the space, purchase confidence drops. Customers do not blame the music. They downgrade the brand. They walk out thinking \"maybe later,\" and most of them do not come back for that item."
 
-  - type: subhead
-    level: 2
-    text: "Assessments update continuously"
+p_5: "The effect runs both directions. Customers who walk into a space where the music matches what they expect from the brand spend more time there, report higher satisfaction, and show a measurably higher willingness to pay. Areni and Kim found that gap at 8 to 12 percent on willingness to pay alone. That number has held up across follow-up studies in different retail categories."
 
-  - type: prose
-    body: |
-      North, Hargreaves, and McKendrick's work on musical identity and retail behavior established this mechanism clearly. Customers construct assessments of stores rapidly and update them in response to sensory information throughout the visit. Music is continuous sensory input. It never stops influencing the assessment. A playlist that starts well and degrades into something off-brand doesn't get credit for the good start. The customer's perception adjusts to the worst moment.
+p_6: "North, Hargreaves, and McKendrick added an important detail: customers update their assessment of a store continuously throughout the visit. The audio is not a first impression that fades. A playlist that starts well and drifts into something off-brand does not get credit for the good start. The customer's perception adjusts to the worst moment."
 
-  - type: pullquote
-    text: "A playlist that starts well and degrades into something off-brand doesn't get credit for the good start. The customer's perception adjusts to the worst moment."
-    accent: teal
+h2_1: "The gap in your brand standards"
 
-  - type: subhead
-    level: 2
-    text: "The multi-location problem"
+p_7: "Walk through your own brand standards document. You will find specifications for fixture finish, signage font, lighting color temperature, even the scent in some cases. You will almost certainly find nothing about the audio playing in the store."
 
-  - type: stat_callout
-    number: "0"
-    label: "Brand standards guides that specify the audio environment as precisely as fixture finish or signage font"
-    source: "Entuned market research, 2026"
-    accent: teal
+p_8: "In a multi-location operation, that gap multiplies. Each store ends up with whatever the regional manager set up, whatever the streaming service surfaced that week, whatever the opening associate thought sounded good on a Tuesday morning. The brand team built a visual environment with precision. The audio is improvised."
 
-  - type: prose
-    body: |
-      What makes this particularly costly in [multi-location retail](../blog/multi-location-music-management.html) is that the playlist inconsistency varies by location based on whatever the regional manager set up, whatever the streaming service's algorithm surfaced that week, whatever the store's assistant manager thought sounded good. The brand standards guide specifies the fixture finish and the font on the signage. The audio environment is improvised.
+p_9: "This matters because music is continuous sensory input. It runs from the moment a customer walks in until the moment they leave. Every other brand signal, the fixtures, the signage, the lighting, stays constant. The audio changes track every three minutes. Each new track is either reinforcing the brand or undercutting it, and nobody in the organization is watching which one."
 
-      Every track playing in your stores right now is saying something about your brand. The question is whether anyone decided what it should say.
+p_10: "There is a concrete step you can take this week. Walk three of your stores during peak hours. Stand near the fitting rooms or the register for fifteen minutes and listen. Ask yourself whether each track that plays sounds like it belongs in the space your brand team designed. If you notice even one that feels wrong, your customers noticed it too. They just did not tell you. They adjusted their opinion of the store instead."
 
-  - type: cta
-    variant: pilot
-    headline: "Run a pilot"
-    body: "Entuned generates purpose-built music for retail environments. No licensing. No compromise. Built around your ideal customer."
-    link: "/pilot"
-    link_text: "Start a conversation"
+p_12: "<strong>Daniel Fox</strong> is the founder of Entuned, where he builds music for retail environments engineered around customer psychology. Background in music theory, behavioral research, and data-driven product design. <a href=\"../about.html\">More about Daniel</a>"
 
-  - type: related
-    posts:
-      - slug: "the-silent-brand-signal"
-      - slug: "music-was-never-made-for-your-store"
-      - slug: "psychographic-profiling-retail"
+p_13: "Entuned builds original music for retail environments, matched to your customer and your brand. No licensing fees, no generic playlists. We are currently working with a small number of multi-location retailers on pilot deployments. If the gap between your brand standards and your audio is a problem you want to close, <a href=\"../pilot.html\">we would be glad to talk</a>."
+
+btn_1: "Ask About a Pilot"

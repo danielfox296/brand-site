@@ -1,0 +1,63 @@
+<!-- PLANS -->
+<section id="plans" class="section pricing-plans">
+  <div class="container">
+    <div class="plan-grid fade-up">
+
+      <!-- FOUNDING CARD -->
+      <article class="plan-card plan-card--founding">
+        <p class="plan-eyebrow">{{content.plans.founding.eyebrow}}</p>
+        <h3 class="plan-title">{{content.plans.founding.title}}</h3>
+        <div class="plan-price">
+          <span class="price-amount">{{content.plans.founding.price_display}}</span>
+          <span class="price-suffix">{{content.plans.founding.price_suffix}}</span>
+        </div>
+        <p class="plan-price-footnote">{{content.plans.founding.price_footnote}}</p>
+
+        <ul class="plan-includes">
+          <li>{{content.plans.founding.inc1}}</li>
+          <li>{{content.plans.founding.inc2}}</li>
+          <li>{{content.plans.founding.inc3}}</li>
+          <li>{{content.plans.founding.inc4}}</li>
+          <li>{{content.plans.founding.inc5}}</li>
+        </ul>
+
+        <a href="{{content.stripe_payment_link}}" class="btn btn-primary btn-block">
+          {{content.plans.founding.cta_label}}
+        </a>
+        <p class="plan-cta-footnote">{{content.plans.founding.cta_footnote}}</p>
+      </article>
+
+      <!-- PILOT CARD -->
+      <article class="plan-card plan-card--pilot">
+        <p class="plan-eyebrow">{{content.plans.pilot.eyebrow}}</p>
+        <h3 class="plan-title">{{content.plans.pilot.title}}</h3>
+        <div class="plan-price">
+          <span class="price-amount">{{content.plans.pilot.price_display}}</span>
+          <span class="price-suffix">{{content.plans.pilot.price_suffix}}</span>
+        </div>
+        <p class="plan-price-footnote">&nbsp;</p>
+
+        <p class="plan-section-header">{{content.plans.pilot.who_header}}</p>
+        <ul class="plan-list">
+          <li>{{content.plans.pilot.who1}}</li>
+          <li>{{content.plans.pilot.who2}}</li>
+          <li>{{content.plans.pilot.who3}}</li>
+        </ul>
+
+        <p class="plan-section-header">{{content.plans.pilot.includes_header}}</p>
+        <ul class="plan-includes">
+          <li>{{content.plans.pilot.inc1}}</li>
+          <li>{{content.plans.pilot.inc2}}</li>
+          <li>{{content.plans.pilot.inc3}}</li>
+          <li>{{content.plans.pilot.inc4}}</li>
+          <li>{{content.plans.pilot.inc5}}</li>
+        </ul>
+
+        <a href="{{content.pilot_contact_url}}" class="btn btn-secondary btn-block">
+          {{content.plans.pilot.cta_label}}
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>

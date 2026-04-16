@@ -1,7 +1,7 @@
 title: "Luxury Priming Is Real"
 slug: "luxury-priming-is-real-and-you-dont-have-to-be-a-luxury-brand-to-use-it"
-eyebrow: "FLOW FACTORS"
-dek: "Refined music primes quality perception in any retail environment. You do not need a luxury brand to use it."
+eyebrow: "FIELD NOTES"
+dek: "Customers in a wine store spent more on expensive bottles when the background music changed. The products were identical. The prices were identical. Only the audio was different."
 date: "2026-03-15"
 last_updated: "2026-04-15"
 author:
@@ -11,33 +11,32 @@ hero:
   src: "../img/blog/luxury-priming.jpg"
   alt: "Refined boutique interior with premium product displays and warm lighting"
   caption: "Photo: Unsplash"
-meta_description: "Refined music primes quality perception and raises willingness to pay in any retail environment. Luxury priming does not require a luxury brand."
+meta_description: "A 1993 wine store study proved that background music shifts how much customers spend. Luxury priming works in mid-market retail too. Here is what operators should know."
 og_image: "/blog/luxury-priming-is-real-and-you-dont-have-to-be-a-luxury-brand-to-use-it/og.png"
-tags: [flow-factors, luxury-priming, willingness-to-pay, quality-inference]
+tags: [luxury-priming, willingness-to-pay, quality-perception, retail-music]
 sections:
   - type: key_takeaways
     items:
-      - "Refined instrumental music primes quality perception and raises willingness to pay — even in non-luxury environments"
-      - "Areni and Kim showed customers bought significantly more expensive wine bottles when classical music played"
-      - "Chebat and Michon confirmed the effect operates in standard retail environments, not just luxury settings"
-      - "The priming mechanism runs through identity first — the music has to feel right for who the customer is"
+      - "In a controlled wine store study, classical music drove customers to buy significantly more expensive bottles, with no other variables changed"
+      - "The effect works outside luxury environments. Mid-market retailers with aspirational customers see the same shift"
+      - "Most multi-location operators have never audited whether their audio is helping or hurting perceived quality"
 
   - type: prose
     body: |
-      Refined music primes quality perception across retail contexts, not just luxury ones. Research by [Areni and Kim (1993)](https://scholar.google.com/scholar?q=areni+kim+1993+wine+store+music) and extended by Chebat and Michon shows that refined compositional character elevates customers' quality assessments of products — and that this effect operates in standard retail environments, not only in settings where the customer already expects luxury.
+      Walk into two stores selling the same merchandise at the same prices. One plays top-forty pop through ceiling speakers. The other plays classical music. In the second store, customers reach for the more expensive option more often. Not because anyone told them to. Not because the products changed. Because they walked into a room that sounded like a place where the premium choice made sense.
+
+      That is not a hypothetical. It is the central finding of a 1993 study by Areni and Kim, conducted in an actual wine store with real customers spending real money.
 
   - type: subhead
     level: 2
-    text: "The wine store experiment"
-    anchor: "wine-store-experiment"
+    text: "The wine store study"
+    anchor: "wine-store-study"
 
   - type: prose
     body: |
-      In 1993, researchers set up an experiment in a wine store. They alternated between playing classical music and top-forty pop music on different days and tracked what customers bought. The wines on the shelves were identical. The prices were identical. The staff was the same. The only variable was what was playing through the speakers.
+      The setup was simple. Researchers alternated between classical music and top-forty pop on different days in a wine store. The wines on the shelves stayed the same. The prices stayed the same. The staff was the same. The only variable was what came through the speakers.
 
-      On the days with classical music, customers selected significantly more expensive bottles.
-
-      They weren't wine experts being guided by musical sophistication. Most of them probably couldn't have named what was playing. But the audio environment had primed a perception of quality and refinement that extended to the products they were evaluating. The classical music was doing positioning work. It was telling customers, at a level below conscious reasoning, that this was a place where the premium choice was appropriate.
+      On classical music days, customers selected significantly more expensive bottles. They were not wine experts responding to some sophisticated cue. Most of them probably could not have named the piece playing. But they heard something that changed their sense of what kind of store they were in, and that changed what they were willing to spend.
 
   - type: stat_callout
     number: "2.5x"
@@ -47,51 +46,47 @@ sections:
 
   - type: prose
     body: |
-      Areni and Kim published this finding, and it's been cited and extended enough times since that the mechanism is well-established. Refined instrumental music primes luxury perception. It calibrates the customer's sense of what's appropriate to spend and what quality standard they're evaluating against.
+      The finding has been cited and replicated enough times that the basic effect is well-established in consumer behavior research. Customers in stores with refined background music perceive higher quality in the products around them. They evaluate against a higher standard and spend accordingly.
 
   - type: subhead
     level: 2
-    text: "The mid-market application"
-    anchor: "mid-market"
+    text: "This works outside luxury"
+    anchor: "beyond-luxury"
 
   - type: prose
     body: |
-      The interesting finding, and the one most relevant for mid-market retailers, is that this effect doesn't require a luxury environment to produce luxury-adjacent perception. Chebat and Michon's research on ambient environment showed that refined audio signals elevated product quality assessments in standard retail environments, not just in settings where the customer already expected luxury. The music doesn't need to match the price point of the product. It needs to match the aspirational positioning the customer brings to the category.
+      The operators who should pay the most attention to this research are not running luxury brands. They are running mid-market stores where customers arrive with aspiration.
 
-      A customer shopping for home goods in a mid-market store is often buying for how the product will make their home feel, not just for its functional specification. A customer buying a piece of jewelry at a non-luxury price point is still making an identity purchase. A customer in a [boutique clothing store](../blog/music-for-boutique-clothing-stores.html) may be spending at a price point that stretches their usual budget. In all three cases, the customer arrives with aspiration. Refined music meets that aspiration and reinforces the decision to spend at the higher end of their own range.
+      A customer shopping for home goods at a mid-range price point is buying for how the product will look in their house, not just for what it does. A customer picking out a piece of jewelry below the luxury threshold is still making a purchase that says something about who they are. A customer in a boutique clothing store spending at the upper edge of their usual budget is looking for permission to go ahead.
+
+      In all three cases, those customers are either hearing audio that reinforces their aspiration or audio that undercuts it. Most operators have never checked which one their stores are playing.
 
   - type: pullquote
-    text: "The ceiling on perceived quality in your store is probably higher than your current playlist is reaching."
-    accent: teal
+    text: "The ceiling on perceived quality in your store is probably higher than your current audio is reaching."
+    accent: gold
 
   - type: subhead
     level: 2
-    text: "How can non-luxury retailers use luxury priming?"
-    anchor: "how-to-use"
+    text: "What to check this week"
+    anchor: "what-to-check"
 
   - type: prose
     body: |
-      The practical application isn't to play classical music in every store regardless of customer identity. A specialty outdoor retailer whose customer values grit and craft will respond differently to orchestral complexity than a boutique that serves customers who grew up on that aesthetic. The priming mechanism runs through identity first. The music has to feel right for who the customer is before it can prime anything else.
+      Stand in your highest-performing store on a busy afternoon. Close your eyes for thirty seconds and listen. Does the music match what a customer sees when they look at your merchandise and your price tags? Or does it sound like a waiting room, a gym, or someone's commute playlist?
 
-      What the research establishes is that refined instrumental character works across a much wider range of customer profiles than most retail operators assume. The ceiling on perceived quality in your store is probably higher than your current playlist is reaching.
+      Now do the same thing in your lowest-performing location. If the audio feels different, that is worth investigating. If it feels the same, that is also worth investigating, because the two stores probably have different customers walking through the door.
 
-      For more on the specific parameters that create premium audio, see [how to make your store sound premium](../blog/how-to-make-your-store-sound-premium.html). And for the broader framework on identity-based music targeting, read [psychographic profiling for retail](../blog/psychographic-profiling-retail.html).
-
-  - type: stat_callout
-    number: "8-12%"
-    label: "increase in willingness to pay when music matches customer identity"
-    source: "Aggregate retail music research"
-    accent: gold
+      The wine store study did not prove that classical music sells more wine everywhere. It proved that customers evaluate products differently depending on what they hear while they shop. For a multi-location operator, the practical question is whether anyone has ever measured that effect in your stores.
 
   - type: cta
     variant: pilot
-    headline: "Run a pilot in your store"
-    body: "Entuned generates purpose-built music for retail environments. No licensing. No compromise. Built around your ideal customer."
+    headline: "Find out what your audio is doing"
+    body: "We work with a small number of multi-location lifestyle retailers on pilot deployments. If you have never measured how your in-store audio affects customer spending, we would be glad to have that conversation."
     link: "/pilot"
-    link_text: "See how it works"
+    link_text: "Ask about a pilot"
 
   - type: related
     posts:
-      - slug: "how-to-make-your-store-sound-premium"
+      - slug: "everything-designed-except-music"
       - slug: "how-specialty-wine-retailers-use-music-to-sell-more-expensive-bottles"
-      - slug: "major-key"
+      - slug: "milliman-study"

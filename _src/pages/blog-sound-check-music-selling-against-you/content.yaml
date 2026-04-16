@@ -1,7 +1,7 @@
-title: "Sound Check: Your Music Is Actively Selling Against You"
+title: "Your Music Is Selling Against You"
 slug: "sound-check-music-selling-against-you"
-eyebrow: "FLOW FACTORS"
-dek: "Incongruent music does not just fail to help — it actively reduces willingness to pay."
+eyebrow: "FIELD NOTES"
+dek: "Incongruent music does not just fail to help. It actively reduces willingness to pay."
 date: "2026-04-01"
 last_updated: "2026-04-15"
 author:
@@ -11,102 +11,90 @@ hero:
   src: "../img/blog/sound-check-priming.jpg"
   alt: "Retail store interior with speakers visible among merchandise displays"
   caption: "Photo: Unsplash"
-meta_description: "Bad retail music isn't neutral. The wrong song at the wrong moment primes customers away from purchasing. Incongruent music reduces willingness to pay."
+meta_description: "The wrong music in your store reduces willingness to pay and shortens visits. Here is how to tell if your current audio is working against your brand."
 og_image: "/blog/sound-check-music-selling-against-you/og.png"
-tags: [sound-check-series, semantic-priming, congruence, willingness-to-pay]
+tags: [retail-music, willingness-to-pay, music-mismatch, brand-congruence]
 sections:
   - type: key_takeaways
     items:
-      - "Incongruent music does not just fail to help — it actively reduces willingness to pay"
-      - "Semantic priming works below conscious awareness and hits hardest under cognitive load and time pressure"
-      - "Most retailers have never audited the semantic claims their playlist is making about their brand"
+      - "Mismatched music actively reduces willingness to pay, not just fails to help"
+      - "Customers process what they hear below the threshold of awareness, especially under time pressure and decision fatigue"
+      - "Most retailers have never audited the specific claims their playlist makes about their brand"
 
   - type: prose
     body: |
-      *This is Part 1 of the Sound Check series, exploring the science and structure behind retail music.*
+      I was standing in a store last month. The kind of place that sells $200 candles and wants you to feel good about it. A song was playing through the ceiling speakers, loud enough to hear every word. The chorus kept repeating the word "mistake." Belted, impossible to tune out.
 
-      I was standing in a retail store last month, the kind of place that sells $200 candles and wants you to feel good about it. The playlist was running through a CloudCover channel. And the song playing, loud enough to hear every word, was a track whose chorus repeats the word "mistake" — belted, impossible to ignore. Customers were browsing shelves, picking things up, putting them back. Deciding. And the room was telling them, over and over, that something here was a mistake.
+      Customers were browsing shelves, picking things up, putting them back. Deciding. And the room was telling them, over and over, that something here was a mistake.
 
-      Nobody in that store chose the song. Nobody approved it. It was just on. Which is the problem.
+  - type: prose
+    body: |
+      Nobody in that store chose that song. Nobody approved the lyrics. Nobody screened it for what it was actually saying to the people holding merchandise and thinking about price. The song was just in rotation. And for three and a half minutes, it was the loudest claim the brand was making about itself.
 
   - type: subhead
     level: 2
-    text: "What the Research Actually Says"
+    text: "The Wrong Song Costs Real Money"
 
   - type: prose
     body: |
-      There's a well-documented phenomenon in consumer psychology called semantic priming. The short version: when you hear a word or concept, related ideas become temporarily more accessible in your memory. You don't have to notice it happening. You almost certainly won't. But it shifts what you think about next, and how you evaluate what's in front of you.
+      Retail operators spend months on visual merchandising. They test lighting. They debate fixture placement. They obsess over the window display. Then they hand the audio to a subscription service and never think about it again.
 
-      Adrian North and his colleagues published a study in the [*Journal of Retailing*](https://scholar.google.com/scholar?q=North+Sheridan+Areni+Music+Congruity+Effects+Product+Memory+Perception+Choice+2016) in 2016 that laid this out clearly. Background music primes related concepts in memory, and those concepts influence how people perceive products and make choices. The priming wasn't subtle in its effect. It was subtle in its delivery. People didn't know it was happening, but it shaped what they reached for.
-
-  - type: stat_callout
-    number: "5 sec"
-    label: "Participants given only five seconds to evaluate price after priming were willing to pay significantly more — less time to think means more influence from the prime"
-    source: "North et al., Journal of Retailing, 2016"
-    accent: teal
-
-  - type: prose
-    body: |
-      North's team also found that the effect gets stronger under cognitive load and time pressure. In one experiment, participants who were given only five seconds to evaluate price after being primed with classical music and luxury imagery were willing to pay significantly more than those given a full minute. Retail floors are full of distraction and decision fatigue. That's the exact condition where priming hits hardest.
-
-  - type: subhead
-    level: 2
-    text: "The Cost of the Wrong Song"
-
-  - type: prose
-    body: |
-      North's 2016 paper states it directly: music that is incongruent with the product image can lead to a reduction in the maximum price consumers are willing to pay. Not a neutral effect. A negative one. The wrong music doesn't just fail to help. It actively pushes the customer's willingness to pay downward.
-
-  - type: pullquote
-    text: "Incongruent music doesn't just fail to help. It actively reduces willingness to pay."
-    accent: gold
-
-  - type: prose
-    body: |
-      [Andersson and colleagues confirmed this in a 2012 study](https://scholar.google.com/scholar?q=Andersson+Kristensson+Let+the+Music+Play+background+music+consumer+behavior+2012) published in the *Journal of Retailing and Consumer Services*. They ran the experiment in real stores, with real customers, tracking real sales data across 601 observed transactions. Congruent background music increased average sale value. It improved brand perception. It raised customer satisfaction scores. Incongruent music produced the opposite pattern across every measure.
+      The research on what happens next is not ambiguous. A 2012 field study by Andersson and colleagues tracked 601 real transactions in real stores. When the background music matched the brand and the customer, average sale values went up. Brand perception improved. Customer satisfaction scores rose. When the music did not match, every one of those measures moved in the opposite direction.
 
   - type: stat_callout
     number: "601"
-    label: "Real transactions observed in Andersson's field study — congruent music lifted sales, incongruent music decreased them"
+    label: "Real transactions tracked in a field study measuring the effect of music-brand congruence on sales, perception, and satisfaction"
     source: "Andersson et al., Journal of Retailing and Consumer Services, 2012"
     accent: teal
 
   - type: prose
     body: |
-      [Demoulin's work from 2011](https://scholar.google.com/scholar?q=Demoulin+music+congruency+service+setting+mediating+role+2011) added another layer. When music and environment are congruent, customers experience lower arousal, which leads to more positive responses. When the fit breaks, arousal increases in the wrong direction. The customer becomes more critical, less comfortable, less willing to spend.
+      The customers in that study did not report noticing the music. They were not asked to evaluate it. The effect showed up in their receipts and their survey responses, not in their conscious awareness. People process background audio below the threshold of attention, especially when they are distracted, rushed, or comparing options. A retail floor is all three of those conditions at once.
 
   - type: subhead
     level: 2
-    text: "Lyrics Are Doing More Than You Think"
+    text: "What the Music Is Actually Saying"
 
   - type: prose
     body: |
-      Lyrics carry semantic content. They prime specific concepts, just like any other language the customer hears. [Yeoh and North found in 2011](https://scholar.google.com/scholar?q=Yeoh+North+effect+musical+fit+consumers+memory+2011) that lyrics with strong musical fit deliver more powerful and direct messages to the listener. The words land harder when the music sells them well.
+      Every song playing in your store is making claims about your brand. The genre signals a cultural identity. The tempo sets a pace. The lyrics name specific ideas, associations, emotions. Those claims land whether or not anyone is paying attention to them. In a retail environment, where customers are already under cognitive load and making rapid judgments, the audio has an outsized role in shaping perception.
 
-      Every dimension of fit matters simultaneously. A menswear store targeting professional men around 40, playing a late-90s R&B track about two women fighting over a man — the genre didn't match the brand, the cultural reference point didn't match the customer, and the lyrical content had nothing to do with anything that store was trying to communicate. Every dimension of fit was broken simultaneously.
+      Think about the menswear store targeting professional men around 40, playing a late-90s R&B track about two women fighting over a man. The genre did not match the brand. The cultural reference point did not match the customer. The lyrical content had nothing to do with anything the store was trying to communicate. Every dimension of fit was broken at the same time.
 
-      Nobody chose that song for that room. It was just in rotation. And for the three and a half minutes it played, it was the loudest claim the brand was making about itself.
+  - type: prose
+    body: |
+      Nobody chose that song for that room. The playlist provider loaded a "men's retail" channel and moved on. And for the length of that track, the store was broadcasting a message that contradicted everything the visual merchandising was trying to say.
+
+  - type: pullquote
+    text: "The song playing in your store right now is making a claim about your brand. You should probably find out what it is."
+    accent: gold
 
   - type: subhead
     level: 2
-    text: "The Mechanism You're Ignoring"
+    text: "How to Tell If Your Music Is Working Against You"
 
   - type: prose
     body: |
-      Every song playing in your store is making claims. About your brand, about your products, about the kind of person who shops there, about whether the price on the tag is reasonable. Those claims are being made in words, in genre associations, in tempo, in cultural signals. They are being processed by your customers below the threshold of awareness, in exactly the conditions where priming is most effective: divided attention, time pressure, decision fatigue.
+      Most operators have never done this. Walk into one of your stores this week at a time when you normally would not be there. Stand near the entrance for two minutes and listen. Write down the first three things the music makes you think about. Then ask yourself whether any of those things have anything to do with the brand you are trying to build or the customer you are trying to reach.
 
-      You probably haven't audited what those claims are.
+      Pull up the lyrics of whatever is playing. Read them. Ask whether you would approve those words as ad copy for your store. If the answer is no, consider that your customers are hearing those words right now, in the same room as your merchandise and your price tags.
 
-      The playlist running in your store right now was probably assembled by someone selecting genres or moods from a dropdown menu. The individual tracks were almost certainly never screened for lyrical content, semantic associations, or cultural fit with your specific customer. The research says it does far more than set a vague mood. It primes concepts. It shifts price perception. It tells your customer a story about your brand that you never approved.
+  - type: prose
+    body: |
+      Then ask your music provider for a report on what has been playing. Most will not be able to give you one that includes lyrical content or brand-fit analysis. That gap tells you something worth knowing about how seriously they treat the audio in your stores.
 
-      When the fit is wrong, the effect isn't zero. The customer doesn't just ignore the music. Their willingness to pay drops. Their perception of the brand shifts. Their satisfaction decreases. Andersson's team measured this with receipts, not surveys.
+  - type: subhead
+    level: 2
+    text: "The Audit You Can Run This Week"
 
-      The song playing in your store right now is saying something about your brand. You should probably find out what. Start with [reading the lyrics](../blog/read-the-lyrics-on-your-speakers-right-now.html). Then ask whether the [music matches your customer](../blog/what-your-music-is-saying-about-your-brand.html). [See how Entuned works](../how-it-works.html).
+  - type: prose
+    body: |
+      Pick your highest-performing store and your lowest-performing store. Visit both during peak hours. Spend ten minutes in each one just listening. Write down what you hear. Compare the lyrics, the tempo, the genre, the overall feel against what your visual merchandising team spent weeks building. If the two are telling different stories, you have found a variable that most of your competitors have never even thought to measure.
 
   - type: cta
     variant: pilot
-    headline: "Make the message match the merchandise"
-    body: "Every song in your store is priming your customer's perception of your brand and your prices. Entuned builds music engineered for your specific customer, so the message matches the merchandise."
+    headline: "Find out what your stores are saying"
+    body: "We work with a small number of multi-location lifestyle retailers on pilot programs that measure and address the gap between brand intent and in-store audio. If this is a problem you are trying to solve, we would be glad to have a conversation."
     link: "/pilot"
     link_text: "Ask About a Pilot Program"
 

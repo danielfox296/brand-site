@@ -1,6 +1,6 @@
 title: "The Science of Tempo in Retail"
 slug: "science-of-tempo-retail"
-eyebrow: "FLOW FACTORS"
+eyebrow: "FIELD NOTES"
 dek: "Tempo is the most studied variable in retail music research. It is also the most misunderstood."
 date: "2026-03-15"
 last_updated: "2026-04-15"
@@ -11,23 +11,23 @@ hero:
   src: "../img/blog/science-of-tempo-retail.jpg"
   alt: "Abstract visualization of tempo and rhythm patterns"
   caption: "Photo: Unsplash"
-meta_description: "BPM directly controls how fast customers move, browse, and decide. Tempo is the most underused variable in retail, and most stores run it wrong."
+meta_description: "Decades of research confirm that tempo changes how fast customers move through a store. But slowing people down and getting them to buy are two different problems."
 og_image: "/blog/science-of-tempo-retail/og.png"
-tags: [tempo, flow-factors, dwell-time, research]
+tags: [tempo, dwell-time, research, retail-music]
 sections:
   - type: key_takeaways
     items:
-      - "Slower tempos increase dwell time — the effect is consistent across studies and replicable"
-      - "The sales effect of tempo alone is mixed; dwell time and spending are different variables"
-      - "Tempo interacts with every other musical property — treating it as the whole answer misses the real design work"
+      - "Slower tempos increase dwell time. The effect is consistent across studies and replicable."
+      - "The sales effect of tempo alone is mixed. Dwell time and spending are different variables."
+      - "Tempo is the easiest musical variable to change. That does not make it the only one worth changing."
 
   - type: prose
     body: |
-      Tempo is the most studied variable in retail music research. It is also the most misunderstood.
+      You have probably heard the advice: play slow music, customers stay longer, sales go up.
 
-      The core finding is simple and well-replicated: slower music makes people move more slowly through a space. Faster music speeds them up. This effect operates through a mechanism called neural entrainment, where the body's internal rhythms synchronize to external auditory pulses. It's involuntary. It works on people who aren't aware music is playing. It has been documented in grocery stores, restaurants, wine shops, and department stores across multiple decades.
+      That claim is half right. Slower music does make people move more slowly through a store. The research on this is decades old and has been replicated enough times to call it settled. But the second half, the part about sales going up, tells a simpler story than the data actually supports.
 
-      Where the misunderstanding starts is what people do with that finding.
+      If you run stores, the distinction matters. Because the difference between "customers stayed longer" and "customers spent more" is the difference between a vanity metric and a P&L line.
 
   - type: subhead
     level: 2
@@ -35,11 +35,11 @@ sections:
 
   - type: prose
     body: |
-      [Milliman's 1982 grocery store study](https://scholar.google.com/scholar?q=milliman+1982+background+music+tempo+restaurant) is the most cited work in the field. Slow-tempo music increased the time customers spent in the store compared to fast-tempo music. The dwell time effect was significant and the study has been replicated across retail formats.
+      Ronald Milliman published the foundational study in 1982. He tested slow-tempo and fast-tempo background music in a grocery store and measured how long customers spent shopping. Slow music increased dwell time. Customers moved through the aisles more slowly, lingered longer at displays, and spent more time in the store overall.
 
-      Caldwell and Hibbert (2002) found the same pattern in restaurants. Slower music extended meal duration. Customers stayed longer, ordered more courses, spent more on drinks.
+      Caldwell and Hibbert found the same pattern in restaurants in 2002. Slower music extended meal duration. Diners stayed longer, ordered more courses, and spent more on drinks.
 
-      The motor behavior effect is real. Slow the music down and people slow down with it. Speed it up and they move faster. This is one of the few findings in retail atmospherics that replicates consistently across contexts.
+      The motor behavior effect is real. Slow the music down and people slow down with it. Speed it up and they move faster. Neuroscientists call the mechanism entrainment: internal rhythms synchronize to external auditory pulses. It works on customers who are not aware that music is playing. It has been documented in grocery stores, restaurants, wine shops, and department stores across multiple decades.
 
   - type: stat_callout
     number: "38%"
@@ -49,31 +49,31 @@ sections:
 
   - type: subhead
     level: 2
-    text: "What tempo doesn't reliably do"
+    text: "Where the story gets more complicated"
 
   - type: prose
     body: |
-      The sales effect is a different story.
+      Milliman's original study reported a 38% increase in gross sales alongside the dwell time effect. That number has been cited in thousands of articles, textbooks, and vendor marketing materials. But the sales finding has not replicated as cleanly as the dwell time finding. Some subsequent studies found a positive relationship between slower tempo and spending. Others found no significant effect. Others found the relationship depended on variables the original study did not control for.
 
-      Milliman's original study reported a 38% increase in gross sales with slow-tempo music. That number has been cited in thousands of articles, textbooks, and vendor marketing materials. But the sales finding has not replicated as cleanly as the dwell time finding. Subsequent studies show mixed results. Some find a positive relationship between slower tempo and spending. Others find no significant effect. Some find the relationship is moderated by other variables that the original study didn't control for.
+      The reason is straightforward. Dwell time and spending are not the same variable. A customer who stays longer has more opportunity to buy. But opportunity and action are different things. What converts a longer visit into a larger purchase involves the rest of the store environment, including other properties of the music itself, that tempo alone does not capture.
 
-      The reason is straightforward: dwell time and spending are not the same variable. A customer who stays longer has more opportunity to buy, but opportunity and action are different things. What converts a longer visit into a larger purchase involves other properties of the environment, including other properties of the music, that tempo alone doesn't capture.
+      Any operator who has watched foot traffic reports knows this intuitively. You have had slow afternoons where customers browsed for twenty minutes and left without buying. You have had Saturday rushes where someone walked in, grabbed two things, and was out in four minutes with a $300 receipt. Time in store is a condition. It is not a guarantee.
 
   - type: pullquote
-    text: "Tempo creates conditions. Those conditions are necessary but not sufficient. What you do within those conditions determines whether the extra dwell time turns into revenue."
+    text: "Tempo creates conditions. Those conditions are necessary but not sufficient. What happens within those conditions determines whether the extra dwell time turns into revenue."
     accent: teal
 
   - type: subhead
     level: 2
-    text: "Why tempo is necessary but not enough"
+    text: "Why tempo alone is not a music strategy"
 
   - type: prose
     body: |
-      This is the point where most retail music advice stops being useful. "Play slow music to increase sales" is a compression of the research that loses the most important part. Tempo creates conditions. Those conditions are necessary but not sufficient. What you do within those conditions determines whether the extra [dwell time](../blog/retail-dwell-time.html) turns into revenue.
+      Most retail music advice stops here. "Play slow music to increase sales" compresses the research into a directive that loses the most important part. Tempo is the easiest musical variable to change. Pick a different playlist, adjust the BPM range. It costs nothing. And the dwell time effect is real and valuable.
 
-      Tempo is the easiest variable to change. Turn a dial, pick a different playlist, adjust the BPM range. It costs nothing. And the dwell time effect is real and valuable.
+      But treating tempo as the whole answer to retail music is like treating brightness as the whole answer to visual merchandising. Brightness matters. It affects behavior. But the color temperature, the beam angle, the placement, and the contrast ratios all matter too. The interaction between those variables is where the real design work happens.
 
-      But treating tempo as the whole answer to retail music strategy is like treating lighting brightness as the whole answer to visual merchandising. Brightness matters. It's measurable. It affects behavior. But the color temperature, the beam angle, the placement, and the contrast ratios all matter too, and the interaction between those variables is where the real design work happens.
+      The same is true for music. Tempo interacts with genre, energy, familiarity, and a dozen other properties of the composition. The magnitude of the dwell time effect changes depending on what else is happening in the music. The conversion from dwell time to spending depends on variables that tempo does not address on its own.
 
   - type: stat_callout
     number: "120+ BPM"
@@ -81,21 +81,27 @@ sections:
     source: "Milliman, 1982; Caldwell & Hibbert, 2002"
     accent: teal
 
+  - type: subhead
+    level: 2
+    text: "What you can do this week"
+
   - type: prose
     body: |
-      The same is true for music. Tempo interacts with every other property of the composition. The magnitude of the dwell time effect changes depending on other variables in the music. The conversion from dwell time to spending depends on variables that [tempo doesn't control](../blog/what-are-flow-factors.html).
+      Walk into your highest-performing store and your lowest-performing store on the same day. Stand near the entrance for ten minutes in each one and listen. Note the tempo. Note what else you hear: the genre, the energy, whether the music fits the customers in the store at that hour or feels like it belongs somewhere else.
 
-      Retailers who adjust tempo and stop there will probably see a small improvement in visit duration. Retailers who want to see that improvement translate into revenue need to work at a higher resolution. [See how Entuned works at that resolution](../how-it-works.html).
+      You will probably notice more than just BPM. Most operators do, once they start paying attention. The question is what to do with what you notice.
+
+      Tempo is the starting point, not the finish line. Retailers who want to see dwell time gains translate into revenue need to think about music at a higher resolution than a BPM slider.
 
   - type: cta
     variant: pilot
-    headline: "Go beyond tempo"
-    body: "Entuned works at the resolution the research actually operates at. See what that means for your store."
+    headline: "Ready to go beyond BPM?"
+    body: "We work with a small number of multi-location retailers on pilot deployments where music is built for the store, not pulled from a catalog. If tempo is the first question you have been asking, we can help you ask the rest."
     link: "/pilot"
     link_text: "Ask About a Pilot Program"
 
   - type: related
     posts:
       - slug: "retail-dwell-time"
-      - slug: "what-are-flow-factors"
       - slug: "milliman-study"
+      - slug: "how-to-measure-if-your-store-music-is-working"

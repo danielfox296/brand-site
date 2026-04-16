@@ -1,7 +1,7 @@
 title: "Major Key Does Not Mean Happy Customer."
 slug: "major-key"
-eyebrow: "FLOW FACTORS"
-dek: "Positive valence and commercial effectiveness are not the same thing. Mild negative valence converts better."
+eyebrow: "FIELD NOTES"
+dek: "The assumption behind most retail playlists is that cheerful music drives sales. Stores that test this find a more complicated answer."
 date: "2026-03-15"
 last_updated: "2026-04-15"
 author:
@@ -11,83 +11,91 @@ hero:
   src: "../img/blog/major-key.jpg"
   alt: "Piano keys and musical notation in warm lighting"
   caption: "Photo: Unsplash"
-meta_description: "Positive valence and commercial effectiveness are not the same thing. Mild negative valence is among the most commercially interesting states in retail."
+meta_description: "Happy music doesn't always drive sales. What operators get wrong about in-store audio, and what the research says about matching music to your customer."
 og_image: "/blog/major-key/og.png"
-tags: [flow-factors, mode, valence, premium-retail]
+tags: [in-store-music, customer-experience, retail-operations, music-strategy]
 sections:
   - type: key_takeaways
     items:
-      - "Major key reliably shifts valence positive — but positive valence does not reliably drive purchase behavior"
-      - "Mild negative valence (wistfulness, longing) is among the most commercially interesting states in premium retail"
-      - "Dorian mode produces 'noble sadness' that outperforms major mode for dwell time and engagement in premium contexts"
-      - "Mode sets the emotional direction; production, groove, and cultural alignment determine whether it converts"
+      - "Cheerful playlists are the default in most retail stores, but research shows the relationship between musical mood and purchase behavior is more complex than 'happy music, happy customer'"
+      - "Music that evokes wistfulness or longing can outperform upbeat playlists in premium and lifestyle retail"
+      - "The right music for your store depends on your customer, your merchandise, and what you want that customer to feel while shopping"
 
   - type: prose
     body: |
-      Mode is the musical variable most commonly associated with emotion. Major key sounds happy. Minor key sounds sad. This is the version you learned in school, and it is roughly correct as far as it goes. Research consistently shows that major mode shifts listeners toward positive valence and minor mode shifts them toward negative valence. The effect replicates. It is real.
+      Walk into most retail stores on a Tuesday afternoon and you will hear roughly the same thing: upbeat, major-key, vaguely positive music. Something that sounds like a coffee commercial. The playlist was chosen by someone who assumed that cheerful music creates cheerful customers, and cheerful customers buy more.
 
-      Where it gets interesting for retail is that positive valence and commercial effectiveness are not the same thing.
+      That assumption is so widespread it rarely gets questioned. And it is only half right.
 
   - type: subhead
     level: 2
-    text: "The usefulness of negative valence"
-    anchor: "negative-valence"
+    text: "The research says something operators should hear"
+    anchor: "research-says"
 
   - type: prose
     body: |
-      The assumption behind most retail playlists is that customers should feel good. Upbeat, positive, bright. Major key, moderate-to-fast tempo, sunny production. This is the default because it seems obvious: happy customers buy more.
+      Ronald Milliman's landmark studies in the 1980s and 1990s showed that music measurably affects how long customers stay and how much they spend. That finding has been replicated across dozens of studies and hundreds of stores. Music matters. That part is settled.
 
-      The research says something more nuanced. Mild negative valence (the emotional territory of wistfulness, longing, bittersweet ache) is among the most commercially interesting states in premium retail. The listener in this state feels the contour of something missing. Advertising psychology has long recognized this mechanism: desire activated through the presence of lack. The product occupies the gap the emotion opened.
+      What is less settled, and more useful for operators, is which music matters in which context. The default industry assumption runs like this: bright, positive, upbeat equals good. But researchers including Adrian North and David Hargreaves have shown that customers respond to music differently depending on the retail environment, the merchandise, and their own mindset. A playlist that works in a surf shop can empty a boutique.
+
+  - type: subhead
+    level: 2
+    text: "Why wistful beats cheerful in some stores"
+    anchor: "wistful-beats-cheerful"
+
+  - type: prose
+    body: |
+      Premium and lifestyle retailers sell something beyond the product. They sell a feeling. The customer in a high-end home goods store or a curated clothing boutique is not looking for convenience. They are looking for something that fits who they are or who they want to become.
+
+      When the music carries a note of longing or bittersweet warmth, shoppers respond differently than they do to pure cheerfulness. They feel the shape of something they want. Advertising has understood this for decades: a perfume ad scored with melancholy outsells one scored with pop. The same dynamic plays out on your sales floor.
+
+      Store operators who have tested this report that customers linger longer and engage more deeply with merchandise when the music carries emotional texture rather than generic brightness. The difference is not subtle. You can watch it happen on the floor.
 
   - type: stat_callout
-    number: "Dorian mode"
-    label: "outperforms major mode for dwell time and engagement in premium retail"
-    source: "Musicological research on mode and affect"
+    number: "1982"
+    label: "Year of Milliman's landmark study proving music measurably affects shopper behavior"
+    source: "Journal of Marketing"
     accent: teal
-
-  - type: prose
-    body: |
-      Dorian mode, which sits between major and minor, produces what musicologists call noble sadness. It has forward motion without resolution. It longs without despairing. It is underused in retail because most playlist services operate on the major=good, minor=bad assumption. But in premium and luxury contexts, where the purchase is an act of self-definition rather than necessity, Dorian and natural minor outperform major mode for dwell time and engagement.
 
   - type: subhead
     level: 2
-    text: "Why isn't mode alone enough to drive purchase behavior?"
-    anchor: "mode-not-enough"
+    text: "The playlist problem most operators do not know they have"
+    anchor: "playlist-problem"
 
   - type: prose
     body: |
-      Mode reliably shifts valence. But valence alone does not drive purchase behavior, for the same reason [tempo alone does not drive spending](../blog/longer-visits.html). A minor-key track with warm production and a laid-back groove in a style the customer identifies with produces longing. The same minor key with cold production, fast tempo, and cultural signals that feel alien produces anxiety. Both are negative valence. One extends dwell and deepens engagement. The other empties the store.
+      Most music providers default to safe and cheerful because it is easy to defend. Nobody gets fired for playing upbeat pop. But "safe" and "effective" are different standards. The safe playlist avoids complaints. The effective playlist moves numbers.
 
-      The mode tells you the emotional color. The production, the groove, the harmonic language, the cultural alignment tell you whether that color lands as desire or discomfort. You need the full palette, not just the key signature.
+      Operators running ten or twenty locations rarely have time to audit what is playing in each store. The music gets set once and forgotten. Meanwhile, the merchandise changes seasonally, the customer mix shifts by daypart, and the playlist stays the same twelve months running.
+
+      The question worth asking is not "do my customers like this music?" Customers almost never complain about background music. The question is: "does this music match the emotional register of the purchase my customer is about to make?" A customer buying a $400 jacket needs a different emotional environment than a customer buying a $12 candle. Most playlists do not make that distinction.
 
   - type: pullquote
-    text: "Mode tells you the emotional color. Production, groove, and cultural alignment tell you whether that color lands as desire or discomfort."
+    text: "Nobody gets fired for playing upbeat pop. But 'safe' and 'effective' are different standards."
     accent: teal
 
   - type: subhead
     level: 2
-    text: "Mode as one variable in a compound signal"
-    anchor: "compound-signal"
+    text: "What to do this week"
+    anchor: "what-to-do"
 
   - type: prose
     body: |
-      Entuned specifies mode as one variable in a compound signal. The mode sets the emotional direction. Everything else determines whether the customer wants to stay in that feeling or walk away from it. For more on how these variables interact, see [luxury priming is real](../blog/luxury-priming-is-real-and-you-dont-have-to-be-a-luxury-brand-to-use-it.html) and [the silent brand signal](../blog/the-silent-brand-signal.html).
+      Pick your best-performing store and your worst-performing store. Walk both on a Tuesday afternoon. Stand near the entrance for two minutes and listen. Write down what the music makes you feel. Then watch three customers move through the space. Note how long they stay, what they touch, and whether they seem settled or restless.
 
-  - type: stat_callout
-    number: "2 variables"
-    label: "mode sets direction; cultural alignment determines conversion"
-    source: "Entuned research framework"
-    accent: teal
+      Now do the same comparison on a Saturday. You will start to hear the gap between what your music is doing and what your store needs it to do.
+
+      If you are running multiple locations and your music has not been deliberately chosen to match your customer and your merchandise, you have an uncontrolled variable sitting in the middle of every store. Most operators have never tested whether changing it moves the numbers.
 
   - type: cta
     variant: pilot
-    headline: "Get the full palette"
-    body: "Entuned generates purpose-built music for retail environments. No licensing. No compromise. Built around your ideal customer."
+    headline: "Your music is a variable worth testing"
+    body: "We work with a small number of multi-location retailers on pilot programs that measure the relationship between in-store audio and store performance. If you have been wondering whether your music is working for you or against you, we would be glad to talk."
     link: "/pilot"
-    link_text: "Join the pilot"
+    link_text: "Ask about a pilot"
 
   - type: related
     posts:
-      - slug: "luxury-priming-is-real-and-you-dont-have-to-be-a-luxury-brand-to-use-it"
-      - slug: "the-silent-brand-signal"
-      - slug: "psychographic-profiling-retail"
+      - slug: "how-to-choose-music-for-your-retail-store"
+      - slug: "why-background-music-costs-you-sales"
+      - slug: "how-to-measure-if-your-store-music-is-working"

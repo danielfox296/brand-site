@@ -1,7 +1,7 @@
 title: "Sensory Marketing for Retail: Where Sound Fits in the Strategy"
 slug: "sensory-marketing-for-retail"
-eyebrow: "FLOW FACTORS"
-dek: "Scent and lighting get dedicated budgets. Sound gets a playlist. The research says that gap is costing you."
+eyebrow: "FIELD NOTES"
+dek: "Scent and lighting get dedicated budgets. Sound gets a playlist."
 date: "2026-04-01"
 last_updated: "2026-04-15"
 author:
@@ -11,111 +11,103 @@ hero:
   src: "../img/blog/sensory-marketing-for-retail.jpg"
   alt: "Abstract representation of multi-sensory retail environment design"
   caption: "Photo: Unsplash"
-meta_description: "90% of shoppers say atmosphere affects revisit intent. Scent and lighting get budgets. Sound gets a playlist. Here's where audio fits in sensory marketing."
+meta_description: "Your store sends signals the second a customer walks in. Scent and lighting get real budgets. Sound gets a playlist. That gap is measurable."
 og_image: "/blog/sensory-marketing-for-retail/og.png"
-tags: [sensory-marketing, cross-modal, scent, lighting, audio-strategy]
+tags: [sensory-marketing, store-experience, scent, lighting, audio-strategy]
 sections:
   - type: key_takeaways
     items:
-      - "Sensory marketing is not additive — congruent combinations of music and scent produce better outcomes than either alone"
-      - "Sound is the most underinvested sensory channel despite evidence it is among the most influential"
-      - "Music changes every three minutes while scent stays constant — controlling audio variability requires parameter-level specification"
+      - "Customers form quality judgments about your store within 10 seconds of walking in, and audio is part of that first impression"
+      - "Scent and lighting have dedicated vendors, budgets, and measurement. Sound is still treated as a utility subscription"
+      - "When sensory channels send conflicting signals, the effect is worse than doing nothing at all"
 
   - type: prose
     body: |
-      Sensory marketing entered the mainstream retail vocabulary about a decade ago. The idea that stores should design for all five senses, not just sight, is no longer novel. But the way most retailers practice sensory marketing is lopsided. Visual is the dominant channel. Scent has emerged as the second most developed channel, with companies like ScentAir and Prolitec serving thousands of locations. Touch is addressed through materials, textures, and interactive displays.
+      Walk into any well-run lifestyle retail store and count the things that were chosen on purpose. The lighting temperature. The fixture materials. The scent in the air. The width of the aisles. The height of the tables. Someone made a decision about every one of those details, and someone else approved a budget for it.
 
-      Sound is the gap. Not because retailers have decided it does not matter, but because the tools available to design with sound are blunt compared to what is available for every other sense.
+  - type: prose
+    body: |
+      Now listen. What you hear is almost certainly a playlist that nobody in leadership selected, nobody measured, and nobody has revisited since the store opened. That gap between the intentionality of the visual environment and the randomness of the audio environment is the single most common sensory mismatch in retail today.
 
   - type: subhead
     level: 2
-    text: "The Five Channels and Their Investment Levels"
+    text: "Ten Seconds of Signal"
 
   - type: prose
     body: |
-      **Sight:** Visual merchandising is a profession with dedicated budgets, roles, and measurement. Investment: $50,000 to $200,000+ per store in fixtures and displays alone.
+      A customer walking through your door picks up more information in the first ten seconds than most operators realize. The lighting tells them whether the space is relaxed or energized. The scent tells them whether the brand is clean and modern or warm and established. The music tells them whether anyone thought about this part of the experience at all.
 
-      **Scent:** Scent marketing has matured into a real category. ScentAir serves 80,000+ locations. Annual cost: $2,000 to $6,000 per location.
+  - type: prose
+    body: |
+      Retailers who have invested in scent marketing already understand this. ScentAir serves tens of thousands of locations. Those operators made a conscious choice about what their store smells like, selected a vendor, approved a budget, and rolled it out across locations. The scent is consistent. The scent is intentional. The scent reinforces the brand.
 
-      **Touch:** Materials, fabrics, interactive displays, try-before-you-buy stations. Investment varies widely but is embedded in fixture budgets.
+  - type: prose
+    body: |
+      The audio, in most of those same stores, is a $50-per-month subscription to a service that lets someone pick "chill" or "upbeat" from a dropdown menu. Visual merchandising budgets run six figures per location. The music budget wouldn't cover a single fixture.
 
-      **Taste:** Limited to food and beverage retail, hospitality, and occasional sampling programs.
+  - type: subhead
+    level: 2
+    text: "When the Signals Disagree"
 
-      **Sound:** A commercial music subscription. $200 to $960 per year. Genre selection. No targeting to customer psychology. No measurement of behavioral effect.
+  - type: prose
+    body: |
+      Mattila and Wirtz published research in 2001 showing that when the energy level of a store's music matched the energy level of its scent, customers reported significantly higher satisfaction. When the two channels were mismatched, the effect was worse than having no sensory program at all.
+
+  - type: prose
+    body: |
+      That finding matters more than most operators think. A store running a calming lavender diffuser alongside an uptempo pop playlist is not getting a partial benefit from each. The conflict between the two channels actively undermines both. Customers feel something is off. They may not identify the cause. They just leave sooner.
 
   - type: stat_callout
-    number: "$200-$960"
-    label: "Annual audio investment per location — versus $50,000-$200,000+ for visual merchandising"
-    source: "Entuned market analysis, 2026"
+    number: "10 sec"
+    label: "Customers form their first impression of a store environment before they touch a single product"
+    source: "Retail experience research"
     accent: gold
 
   - type: prose
     body: |
-      The gap between sound and the other channels is not proportional to their relative influence on customer behavior.
-
-  - type: stat_callout
-    number: "80,000+"
-    label: "Locations served by ScentAir alone — scent marketing has been professionalized while audio remains a utility"
-    source: "ScentAir, 2025"
-    accent: gold
+      Most retailers running scent programs have never coordinated them with their audio. The scent vendor and the music vendor have never spoken to each other. Nobody is tracking which combinations produce better sales days. The two programs exist in parallel, each managed by a different person, each measured by different criteria, if either is measured at all.
 
   - type: subhead
     level: 2
-    text: "What the Research Says About Cross-Modal Effects"
+    text: "Why Sound Is Still Treated Like a Utility"
 
   - type: prose
     body: |
-      Mattila and Wirtz published a study in 2001 that tested the interaction between music and scent in a retail environment. Their finding: when the arousal levels of music and scent were congruent (both relaxing or both stimulating), customers reported significantly higher satisfaction and more positive evaluations of the store. When the sensory channels were mismatched, the effect worsened.
+      Lighting designers specify color temperature in Kelvin and brightness in lumens. Scent designers specify fragrance families and diffusion rates. Both channels have professional vocabularies, dedicated roles, and measurable standards. Sound has genre tags. "Jazz." "Pop." "Chill vibes." The specification tools for audio are decades behind every other sensory channel.
 
-      The implication is that sensory marketing is not additive. Installing a scent system and a music service independently does not produce the sum of their individual effects. The two need to be congruent. A relaxing lavender scent paired with high-energy dance music creates a sensory conflict that produces worse outcomes than either element alone.
-
-      Most retailers with scent programs do not coordinate them with their audio. The scent vendor and the music vendor have never spoken to each other. The result is random congruence — nobody is tracking which condition produces better sales days.
+  - type: prose
+    body: |
+      A 10-hour operating day includes 150 to 200 individual tracks. Each one carries different energy, different mood, different associations. The variation within a single day of music is orders of magnitude higher than the variation in lighting or scent. Controlling that variation at the genre level is like controlling lighting by choosing "bright" or "dim" and hoping the Kelvin temperature works out.
 
   - type: pullquote
-    text: "A relaxing lavender scent paired with high-energy dance music creates a sensory conflict that produces worse outcomes than either element alone."
-    accent: teal
-
-  - type: subhead
-    level: 2
-    text: "Why Sound Is the Hardest Channel to Get Right"
-
-  - type: prose
-    body: |
-      Scent is easier to specify than sound. A retailer can say "we want a citrus-forward scent with woody base notes" and the vendor can deliver exactly that. The scent does not change every three minutes.
-
-      Music changes constantly. A 10-hour operating day might include 150 to 200 individual tracks, each with different tempo, energy, instrumentation, key, and mood. The variability within a single day of music is orders of magnitude higher than the variability in the scent or lighting program. Controlling that variability requires controlling the musical parameters at the track level, not just the genre level.
-
-  - type: stat_callout
-    number: "150-200"
-    label: "Individual tracks per operating day — each with different tempo, energy, key, and mood to control"
-    source: "Entuned operational analysis"
+    text: "Nobody hires a lighting designer and tells them to pick 'bright.' But that is how most stores specify their music."
     accent: teal
 
   - type: prose
     body: |
-      Lighting designers specify in Kelvin and lumens. Scent designers specify in fragrance families and diffusion rates. Music gets "indie chill." The specification tools are not equivalent. Until they are, sound will remain the channel that retailers invest the least thought in, despite evidence that it is among the most influential.
+      This is why sound remains the most underinvested sensory channel despite decades of research showing it is among the most influential. The tools to design with sound precisely enough to match what lighting and scent teams already do have not existed for most of the industry's history. That is starting to change.
 
   - type: subhead
     level: 2
-    text: "Designing Sound Into the Sensory Stack"
+    text: "What to Do This Week"
 
   - type: prose
     body: |
-      If you already have a scent program, align your audio to the same arousal level. Relaxing scent pairs with lower-[tempo](../blog/science-of-tempo-retail.html), acoustic music. Energizing scent pairs with moderate-tempo, rhythmic music. The congruence multiplies the effect of both.
+      Walk your highest-performing store and your lowest-performing store in the same day. In each one, stand inside the door for ten seconds before you do anything else. Notice what you hear. Ask yourself whether the music matches the scent, the lighting, the merchandise on the tables. Ask yourself whether it sounds like someone chose it on purpose. Then walk the other store and compare.
 
-      If you are designing a store from scratch, specify the audio alongside the lighting and scent from the beginning. Define the target customer's [psychological profile](../blog/psychographic-profiling-retail.html) first, then derive the sensory parameters from that profile.
-
-      The stores that do this well tend to be the ones whose brand experience is most cohesive. The customer cannot articulate why the store feels right. It feels right because every sensory channel is sending the same signal. [See how Entuned fits into the stack](../how-it-works.html).
+  - type: prose
+    body: |
+      If the two stores sound different and nobody decided they should, that is the gap. And that gap is showing up in your numbers, whether anyone is looking for it or not.
 
   - type: cta
     variant: pilot
-    headline: "Complete the sensory stack"
-    body: "Entuned generates original music from your customer's psychographic profile, designed to align with your broader sensory strategy. The founding pilot is free."
+    headline: "Close the gap"
+    body: "We work with a small number of multi-location lifestyle retailers on pilot deployments. If your audio environment is the last sensory channel that nobody owns, we should talk."
     link: "/pilot"
-    link_text: "Ask About a Pilot Program"
+    link_text: "Start a Conversation"
 
   - type: related
     posts:
       - slug: "retail-atmospherics-2026"
-      - slug: "psychographic-profiling-retail"
+      - slug: "the-silent-brand-signal"
       - slug: "sound-check-music-is-a-variable"

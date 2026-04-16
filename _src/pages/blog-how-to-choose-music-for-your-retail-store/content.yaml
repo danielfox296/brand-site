@@ -1,9 +1,8 @@
 title: "How to Choose Music for Your Retail Store"
 slug: "how-to-choose-music-for-your-retail-store"
-eyebrow: "FLOW FACTORS"
-dek: "Retail music is not a genre decision. It is a set of variables with documented effects on dwell time and spending."
-date: "2026-04-01"
-last_updated: "2026-04-15"
+eyebrow: "FIELD NOTES"
+date: "2025-04-01"
+last_updated: "2025-04-15"
 author:
   name: "Daniel Fox"
   role: "Founder & CEO"
@@ -11,153 +10,85 @@ hero:
   src: "../img/blog/how-to-choose-music-for-your-retail-store.jpg"
   alt: "Retail store interior with warm lighting and modern shelving"
   caption: "Photo: Unsplash"
-meta_description: "A research-backed guide to choosing retail music. Covers tempo, genre, volume, licensing, and the variables that actually move customer behavior and sales."
+meta_description: "Most retail music is chosen by gut feeling. Here is what to actually consider if you want the music in your stores to affect how long customers stay and how much they spend."
 og_image: "/blog/how-to-choose-music-for-your-retail-store/og.png"
-tags: [flow-factors, tempo, volume, genre-congruence, retail-music]
-sections:
-  - type: key_takeaways
-    items:
-      - "Tempo is the most important variable — slow music (under 72 BPM) increased spending 38% in Milliman's study"
-      - "Genre congruence with customer identity matters more than genre preference"
-      - "Familiar music makes customers feel like they have been in the store longer — they leave sooner"
-      - "Volume above 64 dB accelerates customer exit"
+tags: [field-notes, retail-music, dwell-time, in-store-experience, music-strategy]
 
-  - type: prose
-    body: |
-      Every retail store plays music. The question is whether anybody chose it on purpose.
+h1_1: "How to Choose Music for Your Retail Store"
+meta_1: "Daniel Fox &middot; Q2 2025 &middot; 5 min read"
 
-      In most stores, the answer is some version of: the manager picked a Spotify playlist, somebody subscribed to a commercial service and selected a mood channel, or the music has been the same since the store opened and nobody has thought about it since. All three approaches share a common feature. None of them start with the customer.
+p_takeaway: "<strong>TL;DR:</strong> Most retail operators inherit their store music by accident. The manager picks a playlist, corporate approves a vendor, and nobody revisits the decision. But music is one of the few environmental variables with decades of published research linking it to customer behavior. Choosing well starts with knowing your customer, not knowing your genres."
 
-      This guide walks through the variables that actually matter when choosing retail music, what the research says about each one, and how to think about the decision if you want the music to do something measurable rather than just fill silence.
+p_1: "Walk into ten stores on the same block and you will hear ten different music strategies. One has a Spotify playlist running through a Bluetooth speaker behind the register. Another has the same satellite radio channel it signed up for in 2019. A third plays nothing at all because the last manager turned the speakers off and nobody noticed."
 
-  - type: subhead
-    level: 2
-    text: "Start with your customer, not your genre preferences"
-    anchor: "start-with-customer"
+p_2: "All three have something in common. Nobody chose the music based on the customer."
 
-  - type: prose
-    body: |
-      The first instinct is to ask "what genre should I play?" That is the wrong first question. Genre is an output of several upstream decisions about your customer. Start there.
+p_3: "That is the gap. Most guides to retail music start with genre recommendations. Play jazz for upscale, play pop for teens, play acoustic for organic grocery. Those recommendations are not wrong, exactly, but they skip the question that matters: who is your customer, and what do you want them to do while they are in your store?"
 
-      Who is your ideal customer? Not their age and zip code. Their identity. What do they value? How do they see themselves? Are they aspirational or practical? Do they shop for discovery or for replacement? Are they spending 8 minutes or 45 minutes in your store?
+h2_1: "Your customer profile comes first"
 
-      A 34-year-old woman shopping for premium skincare in a curated boutique and a 34-year-old woman shopping for running shoes in a sporting goods store have the same demographics. They have completely different psychological profiles in the context of those purchases. The music that serves one will not serve the other.
+p_4: "Two stores can sell similar products to people with identical demographics and need completely different music. A 34-year-old woman shopping for premium skincare in a curated boutique and a 34-year-old woman buying running shoes in a sporting goods store look the same on a census form. Their mindsets at the moment of purchase have almost nothing in common."
 
-      Once you know who your customer is at the psychological level, the musical parameters start to specify themselves. Premium, aspirational customers respond to refined instrumentation and slower tempos. Practical, efficiency-oriented customers respond to moderate energy and familiar structures. Discovery-oriented customers respond to novelty and unfamiliar material. For a deeper framework, see [psychographic profiling for retail](../blog/psychographic-profiling-retail.html).
+p_5: "The skincare shopper is browsing. She wants to linger, discover, feel like the space was designed for someone like her. The running shoe shopper knows what she needs. She wants to find it, try it, and get out. Music that encourages one will frustrate the other."
 
-  - type: subhead
-    level: 2
-    text: "Tempo is the most important variable"
-    anchor: "tempo"
+p_6: "Before picking a genre or a playlist, operators need to answer a few questions about each location. Are your customers here to browse or to buy? Do you want them to slow down or move efficiently? Does your brand position as aspirational, practical, or somewhere between? The music should match those answers, not the store manager's commute playlist."
 
-  - type: prose
-    body: |
-      Ronald Milliman's 1982 study remains the most cited finding in retail music research. Slow background music (below 72 BPM) caused shoppers to move more slowly, spend more time in the store, and spend 38% more than shoppers exposed to fast music (above 94 BPM). The dwell time component of this finding has been replicated consistently.
+p_7: "This is the part most commercial music services skip entirely. They hand you a catalog of mood channels and let you pick by genre label. That is like choosing your visual merchandising by asking the cashier what colors they like."
 
-      Tempo directly controls movement pace. This is a physiological response, not an emotional one. The body entrains to the rhythmic pulse of the environment. Fast music produces faster walking. Slow music produces slower walking. Slower walking means more time in the store, which means more products seen, more items tried, and more purchases made.
+h2_2: "What the research actually says"
 
-  - type: stat_callout
-    number: "38%"
-    label: "more spending with slow tempo vs. fast tempo background music"
-    source: "Milliman, 1982"
-    accent: gold
+p_8: "Ronald Milliman published a study in 1982 showing that slower background music caused shoppers to move more slowly through a store, spend more time inside, and spend significantly more money. The finding has been replicated across decades and retail categories. Tempo affects how people move through a physical space. That part is not controversial."
 
-  - type: prose
-    body: |
-      For most specialty retail, the productive range is 60 to 95 BPM. Fast-fashion environments that depend on high customer turnover can push into 100 to 120 BPM. Luxury environments should stay below 80 BPM. Mid-range apparel, home goods, and lifestyle stores do well in the 75 to 95 range.
+p_9: "A wine shop study by North, Hargreaves, and McKendrick in 1999 found that French music caused French wine to outsell German wine five to one. German music reversed the ratio. Customers denied being influenced. The music was shaping purchasing decisions below conscious awareness."
 
-      One caveat. Tempo controls dwell time. Dwell time is correlated with spending but the correlation is not automatic. Customers who stay longer because the music slowed them down still need a reason to buy. Tempo creates the conditions. It does not close the sale. For more on that gap, read [why longer visits don't automatically mean bigger receipts](../blog/longer-visits.html).
+p_10: "Volume matters, too. Research going back to Smith and Curnow in 1966 has consistently found that loud music causes shoppers to leave faster. The threshold is lower than most managers assume. If two customers standing six feet apart have to raise their voices to hear each other, the music is working against you."
 
-  - type: subhead
-    level: 2
-    text: "Volume matters more than you think"
-    anchor: "volume"
+p_11: "None of this is proprietary. It is published, peer-reviewed, and available to anyone who looks for it. The question for operators is simpler: are you using any of it, or are you guessing?"
 
-  - type: prose
-    body: |
-      Loud music causes shoppers to exit the store faster. This has been documented since Smith and Curnow's 1966 study and confirmed in every decade since. The threshold is lower than most store managers assume.
+h2_3: "The familiarity trap"
 
-      Background music in retail should stay below 64 decibels. Above that level, customers perceive the music as intrusive. Conversation becomes difficult. The space feels like it is performing at the customer rather than creating an environment around them.
+p_12: "Store managers default to familiar music because it feels safe. Employees prefer it because they recognize it. Customers seem to respond to it. But the research tells a different story."
 
-  - type: stat_callout
-    number: "64 dB"
-    label: "threshold above which customers perceive music as intrusive"
-    source: "Smith & Curnow, 1966; replicated across decades"
-    accent: teal
+p_13: "Yalch and Spangenberg found in 2000 that customers exposed to familiar music perceived their shopping trip as longer than it actually was. Customers exposed to unfamiliar music underestimated how long they had been shopping. The first group left sooner. The second group stayed longer."
 
-  - type: prose
-    body: |
-      A practical test: if two customers standing six feet apart have to raise their voices to be heard, the music is too loud. The volume should fill the space without competing with human interaction.
+p_14: "For operators, this creates a tension worth paying attention to. The music that makes the store feel comfortable to the staff may be the music that is quietly pushing customers toward the door. Music that is stylistically appropriate but not individually recognizable tends to keep shoppers in the store longer, because their internal clock does not register each song as a time marker."
 
-      Some brands use loud music deliberately. Abercrombie built a strategy around it. That works for a specific demographic in a specific context. If you are reading this guide, that is probably not your context.
+p_15: "This is one reason original music has an advantage over licensed catalogs in specialty retail. Every track is new to the listener."
 
-  - type: subhead
-    level: 2
-    text: "Genre congruence beats genre preference"
-    anchor: "genre-congruence"
+h2_4: "Licensing is not optional"
 
-  - type: prose
-    body: |
-      The research on genre and purchasing is consistent on one point: what matters is whether the music matches the store's positioning, not whether it matches a genre label.
+p_16: "If your stores run Spotify, Apple Music, or any consumer streaming service through the speakers, you are violating copyright law. Consumer subscriptions are licensed for personal use. Playing them in a commercial space requires separate performance licenses from ASCAP, BMI, and SESAC."
 
-      North, Hargreaves, and McKendrick's 1999 wine study showed that French music caused French wine to outsell German wine five to one. German music reversed the ratio. The customers denied being influenced. The genre activated an associative network that primed purchasing behavior below conscious awareness.
+p_17: "Penalties start at $750 per song and can reach $150,000 for willful infringement. ASCAP and BMI employ field investigators who visit retail locations. This is not a theoretical risk."
 
-      Areni and Kim demonstrated that classical music in a wine store shifted customers toward more expensive bottles. The mechanism was quality inference. The music primed a quality context that made premium options feel more appropriate.
+p_18: "Commercial music services, typically between $17 and $80 per month per location, include the necessary licenses. That is the minimum compliant option. Some retailers use royalty-free libraries. Others commission original music. The point is not which path you pick. The point is that 'the manager's Spotify account' is not a path at all."
 
-      For your store, the question is: what associative context does the music create? Does it match the identity your brand is trying to project? A streetwear store playing classical piano creates cognitive dissonance. A premium jewelry store playing top-40 pop does the same thing. The genre needs to match the brand, not the manager's commute playlist.
+p_19: 'For a deeper breakdown of the legal landscape, see <a href="../blog/can-you-play-spotify-in-your-store.html">Can You Play Spotify in Your Store?</a> and <a href="../blog/the-hidden-cost-of-your-licensing-fee.html">The Hidden Cost of Your Licensing Fee</a>.'
 
-  - type: pullquote
-    text: "Every recognizable song is, in a small way, pushing the customer toward the exit."
-    accent: teal
+h2_5: "What to do this week"
 
-  - type: subhead
-    level: 2
-    text: "The familiarity question"
-    anchor: "familiarity"
+p_20: "Walk your stores. Not as a manager checking fixtures. As a customer. Stand at the entrance and listen. Ask yourself: does the music match the person you want shopping here? Is it too loud? Too quiet? Does it sound like someone chose it, or does it sound like it has been running on autopilot?"
 
-  - type: prose
-    body: |
-      Common assumption: customers prefer familiar music. Research finding: familiar music makes customers feel like they have been in the store longer than they actually have (Yalch and Spangenberg, 2000). They leave sooner.
+p_21: "Ask your team three questions. Who chose the current music? When was the last time anyone changed it? Has anyone ever looked at whether the music correlates with sales performance at different locations?"
 
-      Unfamiliar music has the opposite effect. Customers underestimate how long they have been shopping. They stay longer because it does not feel like they have been there long.
+p_22: "Most operators discover that nobody can answer the third question. That gap between 'we play music' and 'we know what the music does' is where the real opportunity sits."
 
-      This creates a tension. Store managers default to familiar music because it feels safe and comfortable. Employees prefer it because they recognize it. But the commercial effect works against you. Every recognizable song is, in a small way, pushing the customer toward the exit.
+p_23: "You do not need new technology to start paying attention. You need to treat music like you treat every other variable in the store: something worth measuring."
 
-      The practical balance: music that is stylistically familiar (the customer recognizes the genre and energy as appropriate) but not specifically familiar (they do not know the individual songs). This is one reason original or AI-generated music has an advantage over licensed catalogs for specialty retail. Every track is new to the listener.
+h2_6: "Why measurement changes the conversation"
 
-  - type: subhead
-    level: 2
-    text: "Licensing is not optional"
-    anchor: "licensing"
+p_24: "Operators would never run a visual merchandising program without looking at the sales data afterward. Window displays get tested, endcaps get rotated, floor layouts get adjusted based on what moves. Music gets left alone."
 
-  - type: prose
-    body: |
-      If you are using a personal Spotify, Apple Music, or Amazon Music account in your store, you are violating copyright law. Consumer streaming services are licensed for personal use only. Public performance in a commercial space requires separate licensing from ASCAP, BMI, and SESAC.
+p_25: "The vendors who dominate the retail music space today sell playlists. They do not sell measurement. Ask your current provider for a report showing how their music selection correlates with your store performance data. Most cannot produce one."
 
-      The penalties are real. Statutory damages start at $750 per song and can reach $150,000 for willful infringement. ASCAP and BMI employ field investigators and have increased enforcement efforts. Commercial music services ($17 to $80 per month per location) include the necessary licenses. That is the minimum viable approach.
+p_26: "That absence is worth noticing. If nobody is measuring whether the music is helping or hurting, then the decision about what to play is not really a decision at all. It is a habit."
 
-      For a deeper breakdown, see [can you play Spotify in your store](../blog/can-you-play-spotify-in-your-store.html) and [how much does retail music actually cost](../blog/how-much-does-retail-music-cost.html).
+h2_7: "The bottom line"
 
-  - type: subhead
-    level: 2
-    text: "What most guides leave out"
-    anchor: "measurement"
+p_27: "Choosing music for a retail store is not a creative exercise. It is an operational one. The inputs are your customer's psychology, your brand positioning, and the behavior you want to encourage. The question is whether anyone at your company treats it that way."
 
-  - type: prose
-    body: |
-      Every guide to choosing retail music covers genre, tempo, and volume. Almost none of them mention measurement. And that is the variable that separates stores using music as decoration from stores using music as a tool.
+p_28: "We are working with a small number of multi-location lifestyle retailers on pilot deployments. If music is a line item you have never examined closely, we would be open to a conversation."
 
-      If you cannot answer the question "is the music in my store helping or hurting sales," you are making a decision that affects every customer interaction without any feedback on whether it works. You would not run a visual merchandising program without looking at the sales data. The music deserves the same scrutiny. For a framework on [how to measure if your store music is working](../blog/how-to-measure-if-your-store-music-is-working.html), start with four metrics: dwell time, conversion rate, average transaction value, and return visit frequency.
+p_29: 'See also: <a href="../blog/mood-media-alternatives.html">Mood Media Alternatives in 2026</a> and <a href="../blog/measure-roi-retail-music.html">How to Measure the ROI of In-Store Music</a>.'
 
-  - type: cta
-    variant: pilot
-    headline: "Run a pilot in your store"
-    body: "Entuned generates original music from your customer's psychographic profile and measures its effect on your store's performance data. The founding pilot is free."
-    link: "/pilot"
-    link_text: "Learn about the free pilot program"
-
-  - type: related
-    posts:
-      - slug: "science-of-tempo-retail"
-      - slug: "measure-roi-retail-music"
-      - slug: "mood-media-alternatives"
+h3_related: "Related Reading"

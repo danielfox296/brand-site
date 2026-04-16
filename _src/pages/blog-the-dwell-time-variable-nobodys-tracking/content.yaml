@@ -1,6 +1,6 @@
 title: "The Dwell Time Variable Nobody's Tracking"
 slug: "the-dwell-time-variable-nobodys-tracking"
-eyebrow: "FLOW FACTORS"
+eyebrow: "FIELD NOTES"
 dek: "Your audio environment is invisible to your analytics because it never changes. Start treating it as a variable."
 date: "2026-03-01"
 last_updated: "2026-04-15"
@@ -11,79 +11,93 @@ hero:
   src: "../img/blog/the-dwell-time-variable.jpg"
   alt: "Retail analytics dashboard showing dwell time metrics"
   caption: "Photo: Unsplash"
-meta_description: "Audio is missing from most dwell time analysis because it never changes. Constants don't show up in variance analysis. Start treating music as a lever."
+meta_description: "Audio never changes in most stores, so it never shows up in your dwell time analysis. That blind spot is costing you more than you think."
 og_image: "/blog/the-dwell-time-variable-nobodys-tracking/og.png"
-tags: [dwell-time, analytics, operations, flow-factors]
+tags: [field-notes, dwell-time, analytics, operations]
 sections:
   - type: key_takeaways
     items:
-      - "Audio is invisible to dwell time analysis because it never changes -- constants don't show up in variance analysis"
-      - "Slower tempo, genre congruence, and volume reduction each produce measurable dwell time effects"
-      - "The audio environment is probably the last high-impact variable that hasn't been treated as a variable at all"
+      - "Audio is invisible to dwell time analysis because it never changes, and constants don't appear in variance reports"
+      - "Sixty years of peer-reviewed research confirm that music affects how long customers stay and how much they spend"
+      - "The last high-impact variable most operations teams haven't touched is the one playing on the ceiling speakers"
 
   - type: prose
     body: |
-      Retail operations teams have gotten sophisticated about dwell time. Heat mapping, people counters, POS correlation, zone analytics. The tools have gotten good. The list of variables that operations leaders consider when dwell time shifts -- layout changes, staffing density, seasonal traffic patterns, promotional placement, window treatment -- has gotten long.
+      You have heat maps. You have people counters. You have POS correlation and zone-level analytics that tell you where customers walk, where they stop, and where they leave. Your Monday meeting covers layout changes, staffing density, seasonal patterns, promotional placement, and window displays. Every quarter, someone presents a new dashboard with a new way to slice dwell time data.
 
-      Audio environment is almost never on that list.
+      Nobody brings up the music. The Monday meeting skips it. The QBR skips it. The store visit debrief skips it.
 
   - type: subhead
     level: 2
-    text: "Why Audio Is Missing from Your Analysis"
+    text: "Why audio never makes the Monday meeting"
+    anchor: "why-audio-invisible"
 
   - type: prose
     body: |
-      This isn't because the effect isn't real. The research connecting music to dwell time is among the most consistently replicated findings in retail psychology, going back to Smith and Curnow's 1966 work and running through dozens of studies since. The effect is real, measurable, and large enough to be operationally significant. The reason it's missing from most dwell time analysis is simpler: the music in most stores never changes in a way that would let you isolate it as a variable.
+      The research connecting music to dwell time is among the most consistently replicated findings in retail psychology. Smith and Curnow published the first volume study in 1966. Ronald Milliman demonstrated in 1982 that slower-tempo music correlated with customers spending more time in grocery stores and buying more per visit. Dozens of studies since have confirmed and extended those findings across store categories, countries, and decades.
+
+      The effect is real. It is large enough to move your numbers. And it is almost certainly missing from your analytics.
+
+      The reason is straightforward. The music in most stores never changes in a way that would let anyone isolate it as a variable. The same licensed playlist runs at the same volume with the same tempo range, day after day, Tuesday through Saturday, January through December. When the music is a constant, it disappears from every variance report your analytics team produces. Nobody can see what never moves. Your analytics platform is doing exactly what you asked it to do. It is looking for things that change. The audio never did.
 
   - type: pullquote
-    text: "If the same licensing playlist runs at the same volume at the same tempo profile day after day, you can't see its effect in your data because it's a constant."
+    text: "When the music is a constant, it disappears from every variance report your analytics team produces."
     accent: teal
-
-  - type: prose
-    body: |
-      Constants don't show up in variance analysis. The audio environment becomes invisible to the measurement apparatus precisely because nobody's treating it as a lever.
 
   - type: subhead
     level: 2
-    text: "What Happens When You Treat Audio as a Variable"
-
-  - type: stat_callout
-    number: "1966"
-    label: "Year the first study linking volume to dwell time was published"
-    source: "Smith & Curnow, 1966"
-    accent: teal
+    text: "What operators find when they run the test"
+    anchor: "what-changes"
 
   - type: prose
     body: |
-      The stores that have tested music as an independent variable have found effects worth measuring. Slower tempo correlates with longer dwell times across store categories. [Genre congruence](../blog/the-8-12-youre-leaving-on-the-table.html) with customer identity correlates with longer dwell and higher basket size. Volume reduction in considered-purchase environments correlates with increased browsing depth. These aren't small effects buried in statistical noise. They're large enough that operations leaders who've run the pilots come away asking why they waited.
+      The stores that have tested music as an independent variable find effects worth paying attention to. Milliman's 1982 grocery study showed a 38% increase in gross sales receipts when tempo was slowed. More recent work across apparel and specialty retail has confirmed that music congruent with a store's target customer correlates with longer visits and higher basket size.
 
-      The practical problem is that isolating the audio variable is harder than isolating a layout change. You can't A/B test music in a single store on a single day. What you can do is run different audio profiles across comparable locations over comparable periods, control for traffic and weather and promotional variables, and look at the dwell and basket data in aggregate.
+      These are not marginal signals buried in noise. They are large enough that operations leaders who run controlled comparisons across locations come away wondering why they waited.
+
+      But most operations teams never get to that question, because the variable was never on the board. Conversion rate is on the board. Average ticket is on the board. Traffic count, staffing ratio, shrink rate, return rate, store-level NPS. All measured. All reviewed. All adjusted when the numbers move.
+
+      Audio sits in the same category as HVAC temperature: something someone set once and forgot. Except HVAC has a thermostat and a maintenance schedule. Your music provider sends you a playlist and a monthly invoice, and nobody checks whether the two are connected to anything happening on the floor.
 
   - type: stat_callout
-    number: "60+"
-    label: "Years of replicated research connecting music variables to retail behavior"
-    source: "Smith & Curnow, 1966 through present"
+    number: "1982"
+    label: "Milliman demonstrated slower-tempo music correlated with higher grocery sales"
+    source: "Milliman, Journal of Marketing, 1982"
     accent: gold
 
   - type: subhead
     level: 2
-    text: "What Should Retailers Do About Their Audio Environment?"
+    text: "The variable hiding in your ceiling speakers"
+    anchor: "hiding-in-speakers"
 
   - type: prose
     body: |
-      Most operations leaders have exhausted the obvious dwell time levers. Layout optimization has limits. Staffing ratios have limits. Merchandising has limits. The audio environment is probably the last high-impact variable that hasn't been treated as a variable at all.
+      Most operations leaders have squeezed the obvious dwell time levers. Layout has limits. Staffing ratios have limits. Merchandising has been refined for years. The audio environment is probably the last high-impact variable that no one on your team has treated as a variable at all.
 
-      That's more experimental rigor than most operations teams are set up for. But the baseline question doesn't require a controlled study. If your stores have never had music that was designed to extend dwell time, the question of whether it would work is worth asking. The research says it would. The only remaining question is by how much, for which customer, in which format. [Start measuring](../blog/the-metrics-your-audio-environment-should-be-producing.html).
+      And that creates an asymmetry worth noticing. Every other variable your analytics team tracks has been measured, adjusted, and improved over time. Layout gets tested. Signage gets tested. Staffing models get refined. Audio has been sitting at whatever value it accidentally landed on when someone picked a playlist and forgot about it.
+
+      Think about what that means across ten or twenty locations. Every store is running the same static audio, regardless of customer mix, daypart, traffic pattern, or season. A Tuesday morning shopper and a Saturday afternoon browser hear the same thing. Your highest-performing store and your most struggling location hear the same thing. That is the gap you close when you start measuring.
+
+  - type: subhead
+    level: 2
+    text: "One thing you can do this week"
+    anchor: "this-week"
+
+  - type: prose
+    body: |
+      Walk three of your stores on the same day. Note what is playing, how loud it is, and whether it matches the customers in the store at that hour. Ask the store manager when the music was last changed. In most cases, nobody will remember. That is your answer. You have a variable that has been held constant for months or years, and no one has ever asked whether moving it would move your numbers.
+
+      Sixty years of published studies say it would. The only question left is by how much, for your stores, with your customers.
 
   - type: cta
     variant: pilot
-    headline: "Run a pilot"
-    body: "Entuned generates purpose-built music for retail environments. No licensing. No compromise. Built around your ideal customer."
+    headline: "Start measuring"
+    body: "We're working with a small number of multi-location lifestyle retailers on pilot deployments. If your audio has been on autopilot, we'd be open to a conversation."
     link: "/pilot"
-    link_text: "Start a conversation"
+    link_text: "Ask about a pilot program"
 
   - type: related
     posts:
-      - slug: "tempo-controls"
+      - slug: "measure-what-you-ignore"
       - slug: "measure-roi-retail-music"
       - slug: "the-metrics-your-audio-environment-should-be-producing"

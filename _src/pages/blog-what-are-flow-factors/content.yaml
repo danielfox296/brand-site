@@ -1,7 +1,7 @@
-title: "What Are Flow Factors?"
+title: "Does Your Store's Music Actually Matter?"
 slug: "what-are-flow-factors"
-eyebrow: "FLOW FACTORS"
-dek: "Entuned's 31-parameter framework turns behavioral research into controllable, measurable composition specifications."
+eyebrow: "FIELD NOTES"
+dek: "Most operators assume music is background noise. Four decades of peer-reviewed studies confirm it's a variable that nobody is tracking."
 date: "2026-03-01"
 last_updated: "2026-04-15"
 author:
@@ -9,94 +9,83 @@ author:
   role: "Founder & CEO"
 hero:
   src: "../img/blog/what-are-flow-factors.jpg"
-  alt: "Abstract visualization of musical parameters mapped to behavioral outcomes"
+  alt: "Retail store interior with subtle speaker placement among merchandise displays"
   caption: "Photo: Unsplash"
-meta_description: "Flow Factors are 31 measurable musical properties that map to documented retail behavioral effects. They bridge research and operational music strategy."
+meta_description: "Does in-store music actually affect sales and dwell time? Peer-reviewed research says yes. Here's what retail operators should know and what to do about it."
 og_image: "/blog/what-are-flow-factors/og.png"
-tags: [flow-factors, framework, behavioral-research, music-parameters]
+tags: [retail-music, dwell-time, store-performance, measurement]
 sections:
   - type: key_takeaways
     items:
-      - "Flow Factors are 31 measurable musical properties, each mapped to documented behavioral effects in retail"
-      - "The framework bridges four decades of peer-reviewed research and operational music deployment"
-      - "Fewer than 31 would collapse meaningfully distinct variables; more would introduce redundancy"
-      - "Parameterization turns music from a black box into a measurable, testable commercial lever"
+      - "Peer-reviewed research going back to 1982 shows that specific musical properties change how long customers stay and how much they spend"
+      - "Most retailers treat music as a set-it-and-forget-it line item, which means nobody knows whether it's helping or hurting"
+      - "The operators who get ahead are the ones who start measuring what the music actually does to their numbers"
 
   - type: prose
     body: |
-      Walk into a store playing the wrong music and you know it immediately. Something feels off. You might not be able to name what, but you shorten your visit, touch fewer products, and leave without buying. The music told you this place wasn't built for you.
+      You walk into one of your stores on a Tuesday afternoon. Traffic is normal. Staff is fine. Inventory looks right. But conversion is down three points from the location across town that has the same floor plan and the same merchandise.
 
-      Walk into a store playing the right music and you don't notice it at all. You stay longer. You browse more. You buy more. The music disappears into the experience, which is exactly what it's supposed to do.
+      You check everything you normally check. Staffing ratio. Signage. Window display. You walk the floor twice. Nothing jumps out.
 
-      The difference between those two outcomes is measurable. And the variables that determine which one you get are specific, discrete, and controllable.
-
-  - type: stat_callout
-    number: "31"
-    label: "Measurable musical properties in Entuned's Flow Factors framework, each independently controllable in AI generation"
-    source: "Entuned, 2026"
-    accent: teal
-
-  - type: prose
-    body: |
-      Flow Factors are Entuned's proprietary framework for specifying those variables. Each one describes a measurable property of a musical composition, and each one maps to documented behavioral effects in retail environments. The framework is what allows us to translate a [customer profile](../blog/psychographic-profiling-retail.html) into a musical specification that an AI generation system can act on.
+      You probably do not check the music. Almost nobody does.
 
   - type: subhead
     level: 2
-    text: "Why a framework exists at all"
+    text: "Forty years of research that retail mostly ignored"
 
   - type: prose
     body: |
-      Four decades of peer-reviewed research have established that specific properties of music drive specific retail behaviors. Tempo affects how fast people move through a space. Certain harmonic characteristics influence how much people are willing to pay. The perceived energy of the music shapes arousal and engagement.
+      In 1982, a researcher named Ronald Milliman published a study in the Journal of Marketing that showed something straightforward: the tempo of background music in a supermarket changed how fast customers moved through the store and how much they spent. Slower tempo, longer visits, bigger receipts.
 
-      These findings are well-documented. The problem is that nobody built a system for using them. A retail leader who reads that [tempo affects dwell time](../blog/science-of-tempo-retail.html) cannot call a music provider and request a specific behavioral outcome. Traditional providers think in genres and moods. The research thinks in acoustic variables. The translation between the two has been handled by intuition, or not handled at all.
+      That study has been cited hundreds of times. Dozens of follow-up studies confirmed and extended the findings across different retail formats, different countries, different decades. The relationship between specific musical properties and customer behavior is one of the more well-documented findings in consumer research.
 
-      Flow Factors replace that gap with a specification language. They give the science a way to talk to a generation engine, and they give the generation engine's output a way to be evaluated against the science.
+      And almost nobody in retail operations has done anything with it.
 
   - type: subhead
     level: 2
-    text: "Why 31"
-
-  - type: stat_callout
-    number: "40+"
-    label: "Years of peer-reviewed research connecting musical properties to listener behavior"
-    source: "Academic literature, Milliman 1982 through present"
-    accent: gold
+    text: "Why operators never picked this up"
 
   - type: prose
     body: |
-      The number reflects the resolution at which musical properties have been shown to independently affect human perception and behavior. Fewer factors would collapse variables that are meaningfully distinct. A five-variable model — the level most background music providers implicitly operate at — cannot distinguish between "warm and inviting" and "warm and sophisticated." For a retailer whose brand positioning depends on exactly that distinction, it's the difference between music that works and music that undermines everything else in the store.
+      The reason is practical. A VP of Store Operations who reads that study cannot call their music provider and say "give me something that increases dwell time by 12%." Traditional providers do not think in those terms. They think in genres and moods and playlists. The provider picks a vibe. The store plays it. Nobody measures what happens next.
 
-      More than 31 would introduce variables that are either redundant, unmeasurable in practical retail settings, or unsupported by behavioral evidence. Every factor in the framework meets two criteria: it can be independently controlled in AI music generation, and it has at least one documented pathway to a retail outcome that matters.
+      So the findings stayed in journals. And operators kept managing every other variable in the store while leaving one of the biggest sensory inputs on autopilot.
+
+      Meanwhile, the music vendor contract renews every year. The playlist repeats. The staff turns it down or changes it. Customers walk in, hear something that does not match the brand or the moment, and walk out faster than they should. Nobody connects those dots because nobody is looking at them.
 
   - type: subhead
     level: 2
-    text: "What the framework makes possible"
+    text: "What changes when somebody starts measuring"
 
   - type: prose
     body: |
-      Without parameterization, music is a black box. A playlist goes in, ambiance comes out, and nobody can explain the relationship between the two or change it with any precision.
+      The retailers who have started treating music as a measurable variable report the same thing: they had no idea how much influence it carried. Dwell time shifts. Basket size shifts. The afternoon lull changes shape. The differences are not subtle when the comparison is controlled.
 
-      With parameterization, every musical decision has a rationale. Every deployment has measurable characteristics. Every outcome can be traced to a specific set of inputs. When something works, you know what worked. When something doesn't, you know what to adjust.
+      Researchers published these findings four decades ago. The vendor market never built tools to act on them. Meanwhile, retailers already pay for sensor data and analytics platforms that could close the gap, but nobody has connected the two until recently.
 
-      That's what allows audio to be managed the same way retailers already manage lighting, layout, and visual merchandising: with data, with testing, and with accountability to business outcomes.
+      That connection is now possible. Generative AI can produce original music to a specific behavioral brief, not just pick from a catalog. And the analytics infrastructure that tracks foot traffic and conversion can track what happens when the music changes.
 
-      The 31 Flow Factors are proprietary to [Entuned](../blog/what-is-entuned.html). We don't publish the full parameter set because it represents years of work translating behavioral research into an operational specification. What we do publish is what the framework produces: music that is engineered for a specific customer psychology, deployed in a specific store, and [measured against specific commercial outcomes](../blog/measure-roi-retail-music.html).
+  - type: subhead
+    level: 2
+    text: "What you can do this week"
 
-      If you want to see what it sounds like in your space, that's what the pilot is for.
+  - type: prose
+    body: |
+      Walk three of your stores at different times of day. Stand at the entrance for ten seconds and listen. Ask yourself whether what you hear matches the customer you are trying to attract at that hour. Ask your staff what they think of the music. Ask your store managers whether they have ever changed it.
 
-  - type: pullquote
-    text: "Without parameterization, music is a black box. With it, every musical decision has a rationale and every outcome can be traced to a specific set of inputs."
-    accent: teal
+      Then pull up your traffic and conversion data for those locations. Look at the hourly patterns. Look at the days where conversion dropped without a clear cause. You will not be able to prove that the music was the variable. But you will start noticing how many of those unexplained swings happened in stores where nobody was paying attention to the one sensory input that runs all day, every day, with zero accountability.
+
+      Researchers settled decades ago that the music matters. The only open question is whether anyone at your company is measuring it.
 
   - type: cta
     variant: pilot
-    headline: "Run a pilot"
-    body: "See how Entuned's proprietary framework translates your customer's psychology into music that moves retail metrics."
+    headline: "Find out what your music is doing"
+    body: "We're working with a small number of multi-location lifestyle retailers to measure the relationship between in-store audio and commercial outcomes. If this is a gap in your ops stack, we'd welcome a conversation."
     link: "/pilot"
     link_text: "Start a conversation"
 
   - type: related
     posts:
       - slug: "science-of-tempo-retail"
-      - slug: "what-is-entuned"
       - slug: "measure-roi-retail-music"
+      - slug: "retail-dwell-time"

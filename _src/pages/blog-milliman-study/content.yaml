@@ -1,7 +1,7 @@
 title: "The Milliman Study Is Wrong. Sort Of."
 slug: "milliman-study"
-eyebrow: "FLOW FACTORS"
-dek: "The 38% sales lift is the most cited retail music finding. The dwell time effect replicates. The sales effect does not."
+eyebrow: "FIELD NOTES"
+dek: "The most cited finding in retail music is 42 years old, from one grocery store. The dwell time effect holds up. The sales number does not."
 date: "2026-03-15"
 last_updated: "2026-04-15"
 author:
@@ -11,33 +11,33 @@ hero:
   src: "../img/blog/milliman-study.jpg"
   alt: "Academic research papers and data charts on a desk"
   caption: "Photo: Unsplash"
-meta_description: "Milliman's 38% sales lift is the most cited retail music finding. The dwell time effect replicates. The sales effect does not — and the reason matters."
+meta_description: "Milliman's 1982 study found 38% more sales from slow music. The dwell time effect replicates. The sales link does not. Here's what that means for your stores."
 og_image: "/blog/milliman-study/og.png"
-tags: [flow-factors, tempo, dwell-time, research, milliman]
+tags: [tempo, dwell-time, research, milliman]
 sections:
   - type: key_takeaways
     items:
       - "Milliman's 1982 study showed slow music produced 38% more sales in one grocery store"
-      - "The dwell time effect replicates reliably — slow tempo consistently keeps people longer"
-      - "The direct tempo-to-sales link does not replicate — a 2025 study of 140 stores found no sales lift from tempo alone"
-      - "Tempo is one variable in a compound signal; the field has spent 40 years citing it in isolation"
+      - "The dwell time effect replicates reliably across decades of research"
+      - "The direct tempo-to-sales link does not replicate at scale"
+      - "Tempo alone is not a strategy. The music has to be right for the customer, not just slow"
 
   - type: prose
     body: |
-      If you have ever read anything about music and retail, you have encountered the Milliman study. [Ronald Milliman, 1982](https://scholar.google.com/scholar?q=milliman+1982+background+music+tempo+restaurant). Grocery store. Slow music produced 38% more sales than fast music. It is the most cited finding in the field. It launched an entire category of research. It is on every pitch deck for every retail music company that has ever existed.
+      You have probably heard the stat. Slow music, 38% more sales. It shows up on every pitch deck from every in-store music vendor you have ever talked to. It comes from a 1982 study by Ronald Milliman. One grocery store. Slow tempo versus fast tempo. The slow condition won.
 
-      It is also more complicated than the headline suggests, and the complications matter.
+      If you run retail locations, this number has probably crossed your desk at some point. Maybe your current music provider cited it. Maybe you found it in a trade article. The question worth asking is whether it holds up, because 42 years is a long time to run on one data point.
 
   - type: subhead
     level: 2
-    text: "What Milliman actually found"
+    text: "What Milliman actually tested"
     anchor: "what-milliman-found"
 
   - type: prose
     body: |
-      Milliman ran the study in a single grocery store. Slow tempo versus fast tempo. The slow condition produced longer visits and higher total sales. The 38% number is real. The study was well-designed for its era.
+      The study was straightforward. Milliman played slow-tempo and fast-tempo music in a single grocery store and tracked how long customers stayed and how much they spent. Slow tempo produced longer visits and higher total sales. The 38% number is real. For its era, the study was well-designed.
 
-      But it was one store, in one market, with one customer base, in 1982. The question that matters for anyone trying to act on it forty years later is whether it replicates.
+      But it was one store, in one market, with one customer base. The shoppers who walked in during 1982 in that town were responding to a specific set of conditions that the study could not fully isolate. The question that matters for anyone running stores today is simple: does it replicate?
 
   - type: stat_callout
     number: "38%"
@@ -47,12 +47,16 @@ sections:
 
   - type: subhead
     level: 2
-    text: "What replicates — and what does not"
+    text: "What replicates and what does not"
     anchor: "replication"
 
   - type: prose
     body: |
-      The answer is: partially. The dwell time effect replicates reliably. Slow the tempo, people stay longer. That finding has held up across grocery, restaurant, and general retail contexts for decades. The sales effect is murkier. When researchers have scaled up (more stores, more controlled conditions, more rigorous measurement), the direct tempo-to-sales link weakens considerably. A 2025 study across 140 stores found no overall sales effect from tempo alone. A 2024 restaurant study found tempo controlled dwell perfectly with zero effect on spending.
+      The answer is: partially. Slow the tempo, people stay longer. That finding has held up across grocery, restaurant, and general retail contexts for decades. Researchers keep testing it and keep getting the same result. The dwell time effect is solid.
+
+      The sales number is a different story. When later researchers scaled up to more stores and tighter controls, the direct tempo-to-sales link got weaker. A 2025 study across 140 stores found no overall sales effect from tempo manipulation alone. A 2024 restaurant study found that tempo controlled dwell time perfectly while producing zero change in spending.
+
+      The 38% was probably real in that store, for those customers, at that time. But something else about the slow music in that particular store aligned with that customer base in ways the study did not measure and could not isolate.
 
   - type: stat_callout
     number: "140 stores"
@@ -60,40 +64,51 @@ sections:
     source: "Retail field study, 2025"
     accent: teal
 
+  - type: subhead
+    level: 2
+    text: "What this means if you run stores"
+    anchor: "what-it-means"
+
   - type: prose
     body: |
-      The 38% number was probably real in that store, for that customer, at that time. But it was probably not caused by tempo alone. Something else about the slow music in that store, in 1982, aligned with that customer base in ways that the study did not measure and could not isolate.
+      If the Milliman finding were the whole picture, every retailer would just slow the music down and collect the revenue lift. Some have tried. The revenue lift does not reliably appear.
+
+      Tempo is one piece of what a customer hears when they walk into your store. Slowing the beat changes the pace of the room. But it does not change whether the music sounds like something your customer would choose to listen to. It does not change whether the production era, the vocal style, or the genre belong in your space. If all of that is wrong for the person walking through the door, a slower tempo just produces a [longer exposure to the wrong music](../blog/longer-visits.html).
+
+      That is the part the industry skipped over. For four decades, vendors have cited the tempo finding without asking what else was right about the music in that grocery store in 1982. The slow songs Milliman played were not just slow. They carried a set of qualities that happened to fit the people who shopped there. Nobody measured those qualities because nobody had a reason to think they mattered more than tempo.
 
   - type: subhead
     level: 2
-    text: "Why does the Milliman study still matter for retailers today?"
-    anchor: "why-it-matters"
+    text: "The question worth asking"
+    anchor: "the-question"
 
   - type: prose
     body: |
-      If the Milliman finding were the whole story, every retailer would just slow their music down and collect the revenue lift. Some have tried. The revenue lift does not reliably appear.
+      Walk into your best-performing store on a Saturday afternoon. Listen. Does the music sound like it belongs to the people shopping there? Not to your staff. Not to your brand guidelines document. To the actual customers spending money in the room right now.
 
-      The reason it does not appear is that tempo is one variable in a compound signal. Slowing the tempo changes the arousal level. But it does not change the mode, the harmonic language, the production era, the groove feel, the vocal character, or the cultural associations of the music. If all of those are wrong for the customer, a slower tempo just produces a [longer exposure to the wrong music](../blog/longer-visits.html).
+      Then walk into your worst-performing location and do the same thing. Most operators notice something off within thirty seconds, even if they cannot name exactly what it is.
+
+      The Milliman study proved that music changes how long people stay. That finding is real and durable. The part it got wrong, or at least incomplete, is the assumption that tempo is the variable to control. Tempo is one input. The music has to be right for the customer in ways that go well beyond beats per minute.
+
+      Measuring whether your music is working is possible. So is building music that fits a specific customer in a specific space. The question is whether anyone in your current setup is doing either of those things.
 
   - type: pullquote
-    text: "The field has spent forty years citing the tempo finding without asking what else was right. That question is the one worth answering."
+    text: "Tempo is one input. The music has to be right for the customer in ways that go well beyond beats per minute."
     accent: teal
 
   - type: prose
     body: |
-      The original Milliman study captured a moment where the slow music happened to be right for the customer in more ways than just tempo. The field has spent forty years citing the tempo finding without asking what else was right. That question — what else was right — is the one worth answering. It is the question Entuned is built to investigate.
-
-      For more on how tempo interacts with other variables, see [the science of tempo in retail](../blog/science-of-tempo-retail.html) and [what are flow factors](../blog/what-are-flow-factors.html).
+      For more on how tempo interacts with other variables, see [the science of tempo in retail](../blog/science-of-tempo-retail.html) and [Does Your Store's Music Actually Matter?](../blog/what-are-flow-factors.html).
 
   - type: cta
     variant: pilot
     headline: "Go beyond tempo"
-    body: "Entuned generates purpose-built music for retail environments. No licensing. No compromise. Built around your ideal customer."
+    body: "We're working with a small number of multi-location retailers on pilot deployments. If your stores play music and nobody is measuring what it does, we should talk."
     link: "/pilot"
-    link_text: "Join the pilot"
+    link_text: "Ask about a pilot"
 
   - type: related
     posts:
       - slug: "science-of-tempo-retail"
       - slug: "longer-visits"
-      - slug: "what-are-flow-factors"
+      - slug: "how-to-measure-if-your-store-music-is-working"

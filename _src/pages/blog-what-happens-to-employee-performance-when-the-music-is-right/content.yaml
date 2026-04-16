@@ -1,7 +1,7 @@
 title: "What Happens to Employee Performance When the Music Is Right"
 slug: "what-happens-to-employee-performance-when-the-music-is-right"
-eyebrow: "FLOW FACTORS"
-dek: "Your staff spend eight hours in the audio environment your customers spend thirty minutes in. The cumulative effect is an order of magnitude larger."
+eyebrow: "FIELD NOTES"
+dek: "Your staff spend eight hours a day inside the audio environment your customers pass through in thirty minutes. When that environment is wrong, your team notices before anyone else."
 date: "2026-03-01"
 last_updated: "2026-04-15"
 author:
@@ -11,75 +11,80 @@ hero:
   src: "../img/blog/employee-performance.jpg"
   alt: "Retail store interior during business hours"
   caption: "Photo: Unsplash"
-meta_description: "Staff spend 8 hours in the audio environment customers spend 30 minutes in. The effect on judgment, energy, and service quality compounds all shift."
+meta_description: "Your staff spend 8 hours in the same audio your customers hear for 30 minutes. When it works, they sell better. When it doesn't, they turn it off."
 og_image: "/blog/what-happens-to-employee-performance-when-the-music-is-right/og.png"
-tags: [employee-performance, mood-mediation, retail-audio, dwell-time]
+tags: [employee-performance, retail-audio, staff-retention, store-operations]
 sections:
   - type: key_takeaways
     items:
-      - "Staff are exposed to the audio environment for 8 hours per shift versus 30 minutes for customers"
-      - "The mechanism is mood mediation: appropriate music elevates mood, and mood correlates with better social-engagement performance"
-      - "Employees report feeling more connected to the brand when music reflects the store's actual positioning"
-      - "Audio environment quality is a small but continuous factor in whether retail staff stay or leave"
+      - "Staff spend 8 hours a day inside the same audio your customers hear for 30 minutes, and the effect on their energy and judgment compounds across the shift"
+      - "When the music feels wrong for the brand, employees override it, mute it, or tune it out, and their customer interactions suffer along with it"
+      - "Operations leaders who treat the audio environment as a staffing variable, not just a customer experience variable, see better engagement on the floor"
 
   - type: prose
     body: |
-      The research on music and retail behavior is almost entirely written from the customer's perspective. Dwell time, basket size, willingness to pay, brand perception. These are customer outcomes. The effect of the audio environment on the people working in the store every day gets considerably less attention.
+      You walk into one of your stores at 3 PM on a Wednesday. The music is off. Not broken. Off. Someone behind the counter decided they'd had enough and hit mute around lunch.
 
-      That's probably a mistake, because the mechanism runs in both directions.
+      You've seen this before. Maybe you've even written it into a store standards doc: "Music must remain on during operating hours." And still, two weeks later, someone turns it off again.
+
+  - type: prose
+    body: |
+      The instinct is to treat this as a compliance problem. Put it in the opening checklist. Add it to the mystery shop scorecard. But the staff member who muted the speakers at noon didn't do it because they forgot the policy. They did it because eight hours of music that doesn't fit the store, the customer, or the moment wore them down.
 
   - type: stat_callout
     number: "8 hrs"
-    label: "Daily staff exposure to the store's audio environment, versus 30 minutes for customers"
+    label: "Daily staff exposure to the store's audio environment, versus roughly 30 minutes for customers"
     source: "Standard retail shift patterns"
     accent: teal
 
   - type: prose
     body: |
-      Staff spend eight hours in the audio environment that customers spend thirty minutes in. The cumulative effect of music on employee mood, energy, and cognitive state is larger by an order of magnitude. And employee state has a direct effect on customer outcomes — through service quality, through the energy of the interaction, through whether the staff member who approaches a browsing customer in the right moment does so with warmth and confidence or with distracted disengagement.
+      Customers walk through your audio environment. Staff live in it. A song that mildly annoys a shopper during a fifteen-minute browse becomes genuinely draining over a full shift. Multiply that across a week. Across a season. The employee who turns the music off isn't being difficult. They're telling you something about the environment you've built.
 
   - type: subhead
     level: 2
-    text: "The mood mediation mechanism"
+    text: "What happens on the floor when the audio is wrong"
 
   - type: prose
     body: |
-      The research on music and work performance is well-established outside of retail. Lesiuk's work on music and cognitive performance showed that people doing focused tasks produce higher quality work and report better mood when music is present and appropriate to their preferences. Fox and Embrey's research on background music and repetitive task performance found consistent productivity improvements when music matched worker preferences. The mechanism is mood mediation: music that feels right elevates mood, and elevated mood correlates with better performance on tasks that involve social engagement and judgment.
+      Retail work runs on judgment calls. When to approach a customer. How to read whether someone wants help. Whether to suggest a second item or let the shopper browse. These calls depend on the staff member's state, their energy, their willingness to engage.
+
+      Teresa Lesiuk's research on music and cognitive performance found that workers in appropriate audio environments reported better mood and produced higher quality work on tasks requiring judgment. The effect was strongest in people doing work that involved social engagement, exactly the kind of work your floor staff do all day.
+
+  - type: prose
+    body: |
+      When the audio environment works against your team, you can see it in the store before you see it in the data. Staff cluster near the back. They're slower to greet. They answer questions but don't extend conversations. The energy drops, and customers feel it even if they can't name what changed.
+
+      When the audio environment fits the brand and the moment, the opposite happens. Staff move through the floor more naturally. They engage earlier. Several operators I've talked to describe their teams using the same word: the store feels "more professional." That observation keeps coming up, unprompted, from managers who changed their audio and noticed the shift in their team before they noticed it in their sales reports.
 
   - type: subhead
     level: 2
-    text: "Retail work is social engagement and judgment"
+    text: "The retention angle nobody talks about"
 
   - type: prose
     body: |
-      A staff member deciding when to approach a customer, how to read the customer's openness to assistance, how to respond to an objection about price, whether to suggest an add-on — these are all judgment calls that are influenced by the staff member's present state. A team that has spent four hours in an audio environment that feels incongruent with the brand and draining to work in will make different calls than a team in an environment that feels considered and energizing.
+      Retail has a staff turnover problem that costs operators thousands per hire. The reasons people leave are well-documented: pay, scheduling, management quality. But the daily experience of the physical environment is a factor too, and audio is part of that environment for every minute the store is open.
 
-      The qualitative evidence from retail operators who have changed their audio environments consistently includes staff feedback alongside customer data. [Employees report](../blog/employees-hear-it.html) feeling more connected to the brand when the music reflects what the store is actually about. They describe the environment as more professional. Some report that customers seem easier to engage.
-
-  - type: stat_callout
-    number: "18-25%"
-    label: "Higher average transaction values in stores with music strategy aligned to customer profile"
-    source: "Retail psychology research"
-    accent: gold
-
-  - type: subhead
-    level: 2
-    text: "The retention angle"
-
-  - type: prose
-    body: |
-      There's also a retention angle that doesn't get discussed in audio environment conversations. Retail has significant staff turnover, and the quality of the physical work environment is a factor in whether people stay. An audio environment that signals carelessness about the brand — that plays whatever the licensing platform surfaced, that makes the workday feel generic — is a small but continuous friction. It's not why someone quits. But it's part of whether the job feels worth staying in.
-
-      Most operations leaders think about the audio environment as a customer experience problem. The staff are inside it every hour the store is open.
+      A store that plays whatever the default licensing service surfaces tells its staff something: nobody thought about this. Nobody cared enough to make the workday feel considered. That's a small signal, but it compounds. It's not the reason someone quits. But it's part of whether the job feels worth staying in on a tough Tuesday.
 
   - type: pullquote
-    text: "Most operations leaders think about the audio environment as a customer experience problem. The staff are inside it every hour the store is open."
+    text: "The employee who turns the music off isn't being difficult. They're telling you something about the environment you've built."
     accent: teal
+
+  - type: subhead
+    level: 2
+    text: "What you can do this week"
+
+  - type: prose
+    body: |
+      Walk three of your stores during a mid-shift lull. Not the Saturday rush. A Tuesday at 2 PM. Ask two staff members the same question: "How does the music feel by the end of your shift?" Don't prompt them with options. Just listen.
+
+      If the answers involve the words "annoying," "repetitive," or "I don't even hear it anymore," you have an audio environment that's working against your team. If someone tells you they turn it down after lunch, believe them, and ask what would need to change for them to leave it on.
 
   - type: cta
     variant: pilot
     headline: "Run a pilot"
-    body: "Entuned generates purpose-built music for retail environments. No licensing. No compromise. Built around your ideal customer."
+    body: "We're working with a small number of multi-location retailers on pilot deployments where the music is built around the customer and the staff experience. If your team keeps turning off the speakers, we should talk."
     link: "/pilot"
     link_text: "Start a conversation"
 
@@ -87,4 +92,4 @@ sections:
     posts:
       - slug: "employees-hear-it"
       - slug: "store-manager-problem"
-      - slug: "the-metrics-your-audio-environment-should-be-producing"
+      - slug: "volume-knob"

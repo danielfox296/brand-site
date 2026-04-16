@@ -1,7 +1,7 @@
 title: "Music for Home Goods Stores"
 slug: "music-for-home-goods-stores"
-eyebrow: "FLOW FACTORS"
-dek: "Home goods shoppers imagine products in their own spaces. The music needs to support that mental simulation."
+eyebrow: "FIELD NOTES"
+dek: "Your home goods customers are doing something different from apparel shoppers. Most stores ignore that completely."
 date: "2026-04-01"
 last_updated: "2026-04-15"
 author:
@@ -11,124 +11,85 @@ hero:
   src: "../img/blog/music-for-home-goods-stores.jpg"
   alt: "Warmly styled home goods store interior with curated product displays"
   caption: "Photo: Unsplash"
-meta_description: "Home goods shoppers browse longer and spend more with the right audio. Tempo, instrumentation, and congruence research applied to lifestyle retail environments."
+meta_description: "Home goods shoppers browse differently than apparel shoppers. What your store plays during that browsing window matters more than most operators think."
 og_image: "/blog/music-for-home-goods-stores/og.png"
-tags: [flow-factors, home-goods, lifestyle-retail, congruence]
+tags: [field-notes, home-goods, lifestyle-retail, in-store-audio]
 sections:
   - type: key_takeaways
     items:
-      - "Home goods shoppers run a mental simulation — projecting products into their own spaces — that requires cognitive bandwidth"
-      - "Warm instrumentation, 65-85 BPM, volume below 60 dB, and minimal vocals create optimal browsing conditions"
-      - "Mattila and Wirtz showed cross-modal congruence (scent + music alignment) amplifies both elements"
-      - "Generic 'ambient' or 'spa' channels signal wellness retail, not home design — the association is wrong"
+      - "Home goods shoppers are mentally projecting products into their own spaces, which takes concentration"
+      - "The wrong audio competes with that concentration and shortens visits"
+      - "Most home goods stores default to spa or ambient channels that signal the wrong category entirely"
+      - "Operators who walk their own stores with fresh ears usually hear the problem immediately"
 
   - type: prose
     body: |
-      A customer shopping for a throw pillow or a candle is not making the same kind of decision as a customer buying a jacket. The jacket goes on the body. The home goods go into a mental image of a room. The customer is running a simulation: does this belong in my space? Does it match my taste? Does it feel like me?
+      Walk into most home goods stores on a Tuesday afternoon and listen. Really listen. You will probably hear one of two things: a generic ambient playlist that sounds like a yoga studio lobby, or whatever the assistant manager queued up on their phone that morning. Neither one was chosen with any thought about what the customer is actually doing in the store.
 
-      That simulation requires cognitive bandwidth. The customer is holding a mental picture of their living room or kitchen while evaluating a physical product in a store. Any sensory input that competes with that internal image reduces the quality of the simulation and makes the purchase feel less certain.
+      That matters, because home goods shoppers are doing something specific. A customer holding a ceramic vase or standing in front of a wall of throw pillows is running a mental exercise. They are picturing their living room. They are trying to see whether this object belongs in their space, with their furniture, under their lighting. That takes concentration.
 
   - type: subhead
     level: 2
-    text: "Why home goods audio is different"
+    text: "What makes home goods browsing different"
     anchor: "why-different"
 
   - type: prose
     body: |
-      Apparel shopping involves trying things on. The feedback is immediate and physical: does this fit, does this look right, do I want to wear this in public? The body provides the answer.
+      Apparel shoppers get an immediate answer from their own body. They try something on, look in a mirror, and know within seconds. Home goods shoppers do not get that shortcut. They have to build the picture in their head, and that picture is fragile. A competing sensory input can knock it loose.
 
-      Home goods shopping involves projecting. The customer cannot try a lamp in their living room. They have to imagine it there. This projection is a more fragile mental process. It benefits from an environment that supports focus and imagination, and it suffers from one that introduces competing inputs.
+      Milliman's research on tempo and shopping behavior, published back in 1982, showed that slower music correlates with customers spending more time in retail environments. That finding has held up across dozens of follow-up studies. For home goods, the implication is straightforward: customers who stay longer encounter more products, consider more combinations, and build larger baskets. Anything that rushes them works against the category.
 
-      Music with lyrics introduces a competing narrative. The customer's internal process of imagining their space is interrupted by someone else's story. Instrumental or near-instrumental music keeps the cognitive channel clear.
-
-      High-energy music introduces urgency. Home goods purchases benefit from contemplation, not pace. A customer deciding between two sets of ceramic bowls is not in a hurry. If the music implies they should be, the purchase confidence drops.
+      Vocals are the other common problem. A customer mentally arranging a bookshelf in their apartment does not need someone else's lyrics competing for their attention. Stores that run vocal-heavy playlists in home goods environments are introducing noise into a process that depends on quiet internal focus.
 
   - type: subhead
     level: 2
-    text: "The parameters for home and lifestyle retail"
-    anchor: "parameters"
+    text: "The spa channel problem"
+    anchor: "spa-channel"
 
   - type: prose
     body: |
-      **Tempo: 65 to 85 BPM.** Slow enough to encourage browsing. Fast enough to feel alive rather than funereal. The sweet spot for most home goods environments is around 72 to 78 BPM, which creates a natural walking pace that feels unhurried but not stagnant.
+      Most music providers offer a channel labeled something like "ambient" or "relaxation" or "spa." Home goods store operators gravitate toward these because they sound calm, and calm feels right for the category.
 
-      **Instrumentation: warm and organic.** Acoustic guitar, piano, soft percussion (brushed drums, light hand percussion), upright bass, warm synthesizer pads. The timbral signature should feel domestic. Concert-hall strings feel formal. Warm acoustic textures feel like the space the customer is shopping for.
+      The problem is association. Customers hear spa music and think wellness retail. They picture a massage lobby, a meditation class. A store selling handmade ceramics and linen bedding needs to sound like a well-designed home. Those are different feelings, and customers register the mismatch even if they cannot name it.
 
-      **Production: intimate and natural.** Room sound rather than studio polish. Slight warmth in the mix. The production should feel like music playing in a well-designed living room, not like music engineered for a radio station.
-
-  - type: stat_callout
-    number: "72-78 BPM"
-    label: "sweet spot for home goods — unhurried but not stagnant"
-    source: "Tempo research applied to lifestyle retail"
-    accent: teal
-
-  - type: prose
-    body: |
-      **Vocals: minimal or atmospheric.** If vocals are present, they should be textural rather than narrative. Humming, vowel sounds, or soft singing that does not demand the listener follow a story. The cognitive space belongs to the customer's imagination.
-
-      **Volume: below 60 dB.** Home goods stores should be among the quieter retail environments. The customer needs to think. Loud music competes with that thinking.
-
-      **Familiarity: low to moderate.** Stylistically familiar (the customer recognizes the genre as appropriate) but not specifically familiar (they do not recognize individual tracks). This extends perceived dwell time and keeps the audio environment from becoming a distraction.
-
-  - type: subhead
-    level: 2
-    text: "What the research supports"
-    anchor: "research"
-
-  - type: prose
-    body: |
-      [Milliman's tempo research](../blog/milliman-study.html) applies directly. Slow music increases dwell time in retail environments, and home goods stores benefit from extended browsing more than most categories. A customer who stays 10 minutes instead of 6 encounters more products, considers more combinations, and builds a larger basket.
-
-      The congruence effect (North, Hargreaves, and McKendrick) applies through the domestic association. Music that sounds like home primes the customer to imagine products at home. Music that sounds like a nightclub or a gym primes a different context entirely. The mental simulation becomes harder when the ambient audio contradicts the product category.
-
-  - type: stat_callout
-    number: "< 60 dB"
-    label: "target volume for home goods — the customer needs cognitive space to imagine products in their home"
-    source: "Retail atmospherics research"
-    accent: teal
-
-  - type: prose
-    body: |
-      Mattila and Wirtz's work on cross-modal congruence is particularly relevant for home goods. Many home goods stores also use scent. A warm, woody scent paired with warm, acoustic music creates a congruent sensory environment that amplifies both elements. The same scent paired with cold electronic music creates a mismatch that weakens both.
-
-  - type: subhead
-    level: 2
-    text: "Common mistakes"
-    anchor: "common-mistakes"
-
-  - type: prose
-    body: |
-      Playing the store owner's personal playlist. Home goods store owners tend to have strong aesthetic taste, which is why they opened a home goods store. But their personal music taste and the commercially effective music for their customers are not necessarily the same thing.
-
-      Defaulting to "ambient" or "spa" channels. Ambient music can work, but generic spa music signals wellness retail, not home design. The association is wrong for the category.
-
-      Ignoring the seasonal shift. Home goods shopping behavior changes significantly by season. Holiday shopping is higher energy and higher urgency. Spring and summer browsing is more exploratory. The audio should acknowledge these shifts without abandoning the core parameters.
-
-      Running the same music year-round without any evaluation. Home goods customers are often repeat visitors. They notice when the music never changes. They also notice when it changes dramatically. The sweet spot is variety within a consistent timbral and tempo range.
+      The same issue shows up with the store owner's personal playlist. Home goods founders tend to have strong aesthetic instincts. That is usually why they opened the store. But personal taste and commercially effective audio are separate questions. What you love to cook dinner to and what helps a stranger spend twenty minutes browsing your candle wall are probably not the same thing.
 
   - type: pullquote
-    text: "The customer does not notice the music. They notice that the store feels good, that they want to stay, and that the products seem to belong together."
+    text: "Customers do not notice the music. They notice that the store feels right, that they want to stay, that the products seem to belong together."
     accent: teal
 
   - type: subhead
     level: 2
-    text: "What this looks like in practice"
-    anchor: "in-practice"
+    text: "What operators can listen for"
+    anchor: "listen-for"
 
   - type: prose
     body: |
-      A well-run home goods store audio environment plays warm acoustic music at moderate-slow tempo, below conversational volume, with unfamiliar tracks that fit the brand's aesthetic. The customer does not notice the music. They notice that the store feels good, that they want to stay, and that the products seem to belong together.
+      Next time you walk one of your stores, try this. Stand near the entrance for sixty seconds and pay attention to what the audio tells you about the space. Does it sound like someone's home? Does it sound like a retail chain? Does it sound like a waiting room? That first impression is what every customer gets, and most operators have not listened to their own stores in months.
 
-      That "feels good" response is not subjective. It is the aggregate effect of congruent sensory design. The lighting, the scent if present, the product arrangement, and the audio are all saying the same thing. When the audio contradicts the rest, the customer cannot articulate the problem. They just leave sooner.
+      Then watch what happens around your higher-consideration products. Furniture sections, bedding displays, anything where the customer needs time. Are they lingering, or are they passing through? If they are passing through, ask yourself whether the environment is giving them permission to slow down.
 
-      For more on how [boutique clothing stores](../blog/music-for-boutique-clothing-stores.html) face similar challenges with different parameters, and how to [measure whether your audio is working](../blog/how-to-measure-if-your-store-music-is-working.html), those posts extend the framework.
+      Seasonal shifts matter here too. Holiday shopping in a home goods store is higher-energy. Customers are buying gifts, moving faster, working from lists. Spring and summer browsing is more exploratory. Operators who adjust their audio for those rhythms give customers a store that matches their energy. Running the same playlist in December and June tells customers you are not paying attention to what they are doing in your store.
+
+  - type: subhead
+    level: 2
+    text: "When the audio is right"
+    anchor: "audio-right"
+
+  - type: prose
+    body: |
+      A home goods store where the audio is working feels cohesive. The lighting, the product arrangement, the scent if there is one, and the music all point in the same direction. Customers stay longer. They pick things up. They bring a friend back the following weekend. None of that registers as "the music was good." It registers as "I like that store."
+
+      Mattila and Wirtz published research showing that when scent and music align in a retail environment, shoppers evaluate the store more favorably than when either element is strong on its own. For home goods stores that already invest in visual merchandising and sometimes scent, the audio is often the one element nobody has thought about deliberately.
+
+      That gap is worth closing. And most operators already have the instinct for what their store should sound like. They just have not had the tools or the data to act on it.
 
   - type: cta
     variant: pilot
-    headline: "Audio designed for browsing"
-    body: "Entuned generates original music from your customer's psychographic profile, designed for the specific browsing behavior of home goods shoppers. The founding pilot is free."
+    headline: "Audio built for how your customers actually shop"
+    body: "We work with a small number of multi-location lifestyle retailers on pilot deployments. If you have been wondering whether your stores sound the way they should, we would be glad to have the conversation."
     link: "/pilot"
-    link_text: "Learn about the free pilot program"
+    link_text: "Learn about the pilot program"
 
   - type: related
     posts:

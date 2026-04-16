@@ -1,7 +1,7 @@
 title: "Tempo Controls Bodies, Not Wallets"
 slug: "tempo-controls"
-eyebrow: "FLOW FACTORS"
-dek: "Slower tempo gets customers to stay longer. Cultural alignment is what converts that dwell time into purchases."
+eyebrow: "FIELD NOTES"
+dek: "Slower tempo gets customers to stay longer. That alone does not make them spend more. Here's what operators need to know."
 date: "2026-03-01"
 last_updated: "2026-04-15"
 author:
@@ -11,19 +11,33 @@ hero:
   src: "../img/blog/tempo-controls.jpg"
   alt: "Musical tempo and retail behavior"
   caption: "Photo: Unsplash"
-meta_description: "Tempo controls motor behavior with a strong effect size of r=.40. But slowing people down does not automatically make them spend more. Here's why."
+meta_description: "Slower music keeps customers in your store longer. But dwell time and spending are different variables. Here's what the research says and what operators can do about it."
 og_image: "/blog/tempo-controls/og.png"
-tags: [flow-factors, tempo, dwell-time, research]
+tags: [tempo, dwell-time, research, store-performance]
 sections:
   - type: key_takeaways
     items:
       - "Tempo entrains the nervous system with a strong meta-analytic effect size of r=.40 across eight studies"
       - "A 2025 experiment across 140 stores found no overall sales effect from tempo manipulation alone"
-      - "Cultural alignment of the music is what converts dwell time into purchase behavior"
+      - "Slowing customers down is free. Converting that dwell time into revenue requires the music to match the customer, not just the mood"
 
   - type: prose
     body: |
-      The single most replicated finding in the entire field of retail music research is this: tempo controls motor behavior. How fast the music is playing determines how fast people move through a space, how quickly they eat, how rapidly they drink. The meta-analytic effect size across eight studies is r=.40. In behavioral science, that is a strong effect. It is not ambiguous. It is not marginal. Tempo literally entrains the nervous system to its pulse.
+      Your afternoon traffic looks normal. Staff levels are fine. The floor is set. But your Tuesday conversion at one location keeps running three points below the store across town with the same layout and the same merchandise.
+
+      You walk the floor. You check signage, staffing, displays. Nothing stands out. You probably do not check the tempo of the music playing overhead. Almost nobody does.
+
+  - type: subhead
+    level: 2
+    text: "The most replicated finding in retail music research"
+
+  - type: prose
+    body: |
+      In 1982, Ronald Milliman published a study in the Journal of Marketing showing that the tempo of background music in a supermarket changed how fast customers moved through the store and how much they spent. Slower tempo, longer visits, bigger receipts. The meta-analytic effect size across eight follow-up studies is r=.40. In behavioral science, that qualifies as strong. Tempo literally entrains the nervous system to its pulse.
+
+      The mechanism is well documented. The body's internal rhythms, including gait and respiration, synchronize to a dominant external beat. A 65 BPM ambient track produces slower walking than a 120 BPM pop track. The customer is not deciding to walk slower. Their legs are following the beat.
+
+      Any retailer with a speaker and a playlist can slow their customers down. Drop the tempo below 75 BPM and people will browse longer. This is a real, measurable, free intervention. No technology required. No subscription. Just slower music.
 
   - type: stat_callout
     number: "r = .40"
@@ -31,19 +45,13 @@ sections:
     source: "Meta-analysis of retail music tempo studies"
     accent: teal
 
-  - type: prose
-    body: |
-      The mechanism is neural entrainment. The body's internal rhythms (gait, respiration, even heart rate to a degree) synchronize to a dominant external pulse. This is why a 65 BPM ambient track produces slower walking than a 120 BPM pop track. The customer is not making a decision to walk slower. Their legs are following the beat.
-
-      This means any retailer with a speaker and a playlist can slow their customers down. Drop the tempo below 75 BPM and people will browse longer. This is a real, measurable, free intervention. No technology required. No subscription. Just [slower music](../blog/science-of-tempo-retail.html).
-
   - type: subhead
     level: 2
-    text: "Why Doesn't Slower Music Automatically Mean Higher Sales?"
+    text: "Why slower music does not automatically mean higher sales"
 
   - type: prose
     body: |
-      Here is where the story gets complicated. Slowing people down does not automatically make them spend more. A 2024 field study in restaurants found that tempo controlled dwell time with precision, exactly as the literature would predict. Customers stayed longer when the music was slower. But the effect on bill amount was zero. They sat there longer and spent the same.
+      Here is where the research gets more interesting for operators. Slowing people down does not automatically make them spend more. A 2024 field study in restaurants found that tempo controlled dwell time with precision, exactly as the literature predicted. Customers stayed longer when the music was slower. But the effect on bill amount was zero. They sat there longer and spent the same.
 
   - type: stat_callout
     number: "140"
@@ -53,32 +61,38 @@ sections:
 
   - type: prose
     body: |
-      This is not a failure of the tempo research. The tempo research is solid. It is a failure of the assumption that dwell time and spending are the same variable. They are not. Tempo gives you the first one for free. The second one requires something else entirely.
+      A 2025 field experiment across 140 retail stores confirmed the same pattern at scale. Tempo moved dwell time reliably. Sales did not follow.
+
+      The tempo research is solid. What breaks down is the assumption that dwell time and spending are the same variable. They are not. Tempo gives you the first one for free. The second one requires something else.
 
   - type: subhead
     level: 2
-    text: "What the Second Thing Is"
-
-  - type: subhead
-    level: 2
-    text: "Identity, Not Just Atmosphere"
-
-  - type: pullquote
-    text: "The customer who stays longer but does not spend more is a customer whose body has been slowed but whose identity has not been addressed."
-    accent: teal
+    text: "What gets the customer from staying to spending"
 
   - type: prose
     body: |
-      The music has the right tempo. It might have the wrong everything else: wrong production era for their age, wrong harmonic language for their taste, wrong cultural signals for their sense of who they are and what brands belong in their life.
+      The customer who stays longer but does not spend more is a customer whose pace has been slowed while the rest of the music misses them entirely. The tempo might be right. But the production era might be wrong for their age. The genre might carry cultural signals that do not match their sense of who they are and what brands belong in their life.
 
-      Tempo gets them to stay. The cultural fit of the music is what gets them to buy. Both are measurable. Both are specifiable. But only one of them is free, and it is the one that does not move the revenue line on its own. This is why [flow factors](../blog/what-are-flow-factors.html) matter -- the full stack of musical variables, not just tempo.
+      Tempo gets customers to stay. Whether the music also fits the customer is what gets them to buy. Both of those things are measurable. But only one of them is free, and the free one does not move the revenue line on its own.
 
-      Entuned builds both layers. The tempo and arousal controls that the research validates. And the cultural alignment that converts dwell time into purchase behavior. The first layer is necessary. The second is what makes it work.
+      Operators who have started paying attention to both variables report the same thing: they had no idea how much influence the music carried once it was working on more than just pace.
+
+  - type: subhead
+    level: 2
+    text: "What you can do this week"
+
+  - type: prose
+    body: |
+      Walk three of your stores at different times of day. Stand at the entrance for ten seconds and listen. Ask yourself whether the tempo matches the energy you want in the store at that hour. Then ask a harder question: does the music match the customer you are trying to attract, or just the mood you are trying to set?
+
+      Pull up your traffic and conversion data for those locations. Look at the hourly patterns. Look at the days where conversion dropped without a clear cause. You will not be able to prove the music was the variable. But you will start noticing how many of those unexplained swings happened in stores where nobody was paying attention to the one sensory input that runs all day, every day, with zero accountability.
+
+      The research settled the tempo question decades ago. The open question for your stores is whether anyone is measuring what happens after the customer slows down.
 
   - type: cta
     variant: pilot
-    headline: "Run a pilot"
-    body: "Entuned generates purpose-built music for retail environments. No licensing. No compromise. Built around your ideal customer."
+    headline: "Find out what your music is doing"
+    body: "We're working with a small number of multi-location lifestyle retailers to measure the relationship between in-store audio and store performance. If this is a gap in your ops stack, we'd welcome a conversation."
     link: "/pilot"
     link_text: "Start a conversation"
 
@@ -86,4 +100,4 @@ sections:
     posts:
       - slug: "science-of-tempo-retail"
       - slug: "longer-visits"
-      - slug: "what-are-flow-factors"
+      - slug: "milliman-study"

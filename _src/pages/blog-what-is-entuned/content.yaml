@@ -1,7 +1,7 @@
 title: "What Is Entuned?"
 slug: "what-is-entuned"
 eyebrow: "PRODUCT"
-dek: "Entuned replaces catalog playlists with original music generated from your customer's psychographic profile, then measures what it does to your numbers."
+dek: "Original music for retail stores. Measured like every other line item."
 date: "2026-03-01"
 last_updated: "2026-04-15"
 author:
@@ -9,112 +9,80 @@ author:
   role: "Founder & CEO"
 hero:
   src: "../img/blog/what-is-entuned.jpg"
-  alt: "Abstract data visualization representing AI-generated retail music"
+  alt: "Abstract data visualization representing retail music performance"
   caption: "Photo: Unsplash"
-meta_description: "Entuned generates original music from your customer's psychographic profile, deploys it in-store, and measures what happens to commercial performance."
+meta_description: "Entuned makes original music for retail stores and measures what it does to store performance. Currently piloting with multi-location lifestyle retailers."
 og_image: "/blog/what-is-entuned/og.png"
-tags: [entuned, product, ai-music, retail-music]
+tags: [entuned, product, retail-music]
 sections:
   - type: key_takeaways
     items:
-      - "Entuned generates original music using AI, deploys it in physical stores, and measures commercial performance"
-      - "The music is psychographically targeted — built from who the customer actually is, not a genre tag"
-      - "No licensing fees, no ASCAP or BMI obligations, no catalog restrictions"
-      - "The pilot is free — at the end, the retailer has data showing what the audio environment contributed"
+      - "Entuned makes original music for retail stores and measures what it does to the numbers"
+      - "Built for multi-location lifestyle retailers running 5 to 50 stores"
+      - "No licensing fees, no ASCAP or BMI obligations, no catalog repetition"
+      - "Currently running pilot deployments with select retail partners"
 
   - type: prose
     body: |
-      Entuned is a retail music company. We generate original music using AI, deploy it in physical stores, and measure what happens to the store's commercial performance while it plays.
+      Your stores play music every hour they are open. Somebody picked it, or nobody did, and either way you have no idea whether it is helping or hurting the business. You pay a vendor. The vendor sends a playlist. The playlist plays. That is the entire relationship.
 
-      The music is not selected from a catalog. Every track is composed from scratch, built to match the psychology of the retailer's target customer. There are no licensing fees, no ASCAP or BMI obligations, and no restrictions on how the music is used. The retailer gets a continuously generated, non-repeating soundtrack that is unique to their brand and their customer.
-
-      Founded in 2026 by Daniel Fox. Headquartered in the United States. Currently in the pilot deployment phase.
+      Entuned is a retail music company that does two things differently. We make original music for your stores. And we measure what that music does to your store performance.
 
   - type: subhead
     level: 2
-    text: "What retailers get"
+    text: "What we do"
 
   - type: prose
     body: |
-      A store's music stops being a background utility and starts being a measurable part of the commercial operation.
+      We compose original music for retail environments. Every track is built from scratch. There are no licensing fees, no ASCAP or BMI obligations, and no restrictions on how the music gets used in your stores.
 
-      During the pilot, Entuned replaces whatever music is currently playing with a generated soundtrack built around the store's customer profile. We capture data on what's playing and correlate it against the store's own performance metrics: [dwell time](../blog/retail-dwell-time.html), transaction value, foot traffic patterns. At the end of the pilot, the retailer has data showing what the audio environment is doing to their numbers.
+      Because the music is original and continuously composed, it never repeats. Your employees, the people who spend eight hours a day inside the store, never hear the same track twice. Your frequent customers hear something fresh every visit. The character of the music stays consistent with your brand, but the compositions are always new.
 
-      The music is calibrated to your customer, not your genre. Traditional providers ask you to pick a mood tag and hope it maps to your shoppers. Entuned starts from who the customer actually is — their values, their aesthetic, their purchase psychology — and the musical parameters fall out of that [psychographic profile](../blog/psychographic-profiling-retail.html) rather than being imposed on top of it.
-
-  - type: stat_callout
-    number: "0"
-    label: "Repeating tracks — AI-generated music means employees and customers never hear the same composition twice"
-    source: "Entuned, 2026"
-    accent: teal
-
-  - type: prose
-    body: |
-      Because the music is AI-generated, it never repeats. Employees who spend eight hours a day in the store hear fresh compositions throughout every shift. Frequent customers never hear the same track twice. The musical character stays consistent (because the customer psychology hasn't changed), but the compositions themselves are always new.
+      We also measure what the music does. During a pilot, we track store performance metrics alongside what is playing. At the end, you have data showing whether the audio environment moved the numbers. Your data, from your stores, about your customers.
 
   - type: subhead
     level: 2
-    text: "What the research says"
-
-  - type: stat_callout
-    number: "8-12%"
-    label: "Increase in willingness to pay when music is congruent with store positioning"
-    source: "Areni and Kim, 1993"
-    accent: gold
+    text: "Who this is for"
 
   - type: prose
     body: |
-      The academic foundation for this work spans four decades. Milliman (1982) established that background music tempo directly controls how fast customers move through a retail space. Areni and Kim (1993) showed that music congruent with a store's positioning increases willingness to pay by 8 to 12 percent. Chebat and Michon (2003) demonstrated that ambient audio shapes quality perception independently of what a store looks like.
+      Multi-location lifestyle retailers running somewhere between 5 and 50 stores. Apparel, home goods, specialty retail, beauty, lifestyle brands with a clear customer identity and a real concern about in-store experience.
 
-      These findings have been replicated across product categories, geographies, and store formats. The research is not in question. What's been missing is a commercial system for acting on it. Traditional providers don't think in the terms the research uses. They think in genres and playlists. The translation from academic finding to operational deployment didn't exist until we built it.
+      The operator we work with has already thought carefully about lighting, layout, visual merchandising, and scent. They have not thought carefully about audio because nobody has given them a reason to. Their current music vendor does not send a report. Their current music vendor does not connect audio to any metric the operator already tracks.
+
+      If you run stores and you have never seen a number attached to what is playing on the speakers, that gap is the reason we exist.
 
   - type: subhead
     level: 2
-    text: "How Entuned differs from existing providers"
+    text: "How this compares to what you have now"
 
   - type: prose
     body: |
-      The in-store music market has three types of providers: legacy background music companies (Mood Media, Muzak before its acquisition), streaming-based business music services (Soundtrack Your Brand, Rockbot), and satellite-delivered commercial radio (SiriusXM for Business).
+      Most in-store music comes from one of three places. Legacy background music companies like Mood Media. Streaming-based business music services like Soundtrack Your Brand or Rockbot. Or a retail Spotify account that somebody set up three years ago and nobody has touched since.
 
-      All three rely on catalogs of pre-existing recordings. The music was composed for consumer listening, not for retail environments. It is organized by genre or mood and delivered as playlists.
+      All three rely on pre-existing recordings. The music was made for consumer listening, not for retail environments. Playlists rotate through a fixed catalog. Employees hear the same songs dozens of times a month. And none of these providers tell you whether the music did anything for the business.
 
-      Entuned differs in three ways. The music is generative, not curated. The targeting is psychographic, not demographic. And the platform produces [measurement data](../blog/measure-roi-retail-music.html) that connects what's playing to what's selling.
+      Entuned is different in two ways that matter to an operator. The music is original, composed for your stores, so there is no catalog fatigue and no licensing exposure. And the music is measured, so you can treat audio the same way you treat every other store-level variable: as a line item with a number next to it.
 
   - type: subhead
     level: 2
-    text: "Who founded Entuned and why"
+    text: "What you can do this week"
 
   - type: prose
     body: |
-      Daniel Fox started Entuned because in-store audio is the [last major environmental variable](../blog/everything-designed-except-music.html) in retail that nobody is measuring. Lighting has been professionalized. Layout is data-driven. Visual merchandising has its own discipline. Scent has dedicated vendors.
+      Walk one of your stores at 2 PM on a Tuesday. Stand near the entrance for five minutes. Listen to what is playing. Ask yourself two questions. First: does this sound like it was chosen for the customer walking in right now? Second: do you have any data on whether this music is helping or hurting your numbers?
 
-      Audio is still a Spotify subscription managed by whoever opens the store that morning.
-
-      The thesis is simple: advances in AI music generation make it possible to produce music to exact behavioral specifications at scale. That removes the creative bottleneck and the licensing overhead that prevented previous attempts at treating audio as a performance variable. The retailer gets music built for their customer. We get data on what works.
-
-  - type: subhead
-    level: 2
-    text: "Current stage"
-
-  - type: prose
-    body: |
-      Entuned is running pilot deployments with select retail partners. The pilot is free. The music streams for the full duration at no cost. At the end, the retailer has their own data showing what the audio environment contributed.
-
-      If the numbers move, we talk about what comes next. If they don't, the retailer walks away having lost nothing but a background playlist they weren't measuring anyway.
-
-  - type: pullquote
-    text: "If the numbers don't move, the retailer walks away having lost nothing but a background playlist they weren't measuring anyway."
-    accent: gold
+      If the answer to both is no, you are not alone. That is the norm across the industry. But it does not have to be.
 
   - type: cta
     variant: pilot
-    headline: "Run a pilot"
-    body: "See what AI-generated, psychographically targeted music sounds like in your store."
+    headline: "Talk to us about a pilot"
+    body: "We are working with a small number of multi-location lifestyle retailers on pilot deployments. If your stores play music and nobody has ever measured what it does, we would be glad to have a conversation."
     link: "/pilot"
     link_text: "Start a conversation"
 
   - type: related
     posts:
-      - slug: "what-are-flow-factors"
       - slug: "measure-roi-retail-music"
       - slug: "commercial-music-services-compared"
+      - slug: "everything-designed-except-music"

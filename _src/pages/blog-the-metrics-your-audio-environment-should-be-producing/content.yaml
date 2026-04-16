@@ -1,6 +1,6 @@
 title: "The Metrics Your Audio Environment Should Be Producing"
 slug: "the-metrics-your-audio-environment-should-be-producing"
-eyebrow: "FLOW FACTORS"
+eyebrow: "FIELD NOTES"
 dek: "If your audio environment is doing its job, you should be able to see it in four metrics. Most stores have never looked."
 date: "2026-03-01"
 last_updated: "2026-04-15"
@@ -9,86 +9,79 @@ author:
   role: "Founder & CEO"
 hero:
   src: "../img/blog/metrics-audio-environment.jpg"
-  alt: "Analytics dashboard showing audio environment metrics"
+  alt: "Retail analytics dashboard on a monitor in a store back office"
   caption: "Photo: Unsplash"
-meta_description: "Start measuring dwell time against your audio profile. It responds fastest to audio changes and leads basket size, conversion, and repeat visits."
+meta_description: "Most retailers never measure their audio environment. Four store-level KPIs respond to audio changes. Here is what operators should be watching."
 og_image: "/blog/the-metrics-your-audio-environment-should-be-producing/og.png"
-tags: [metrics, analytics, dwell-time, roi]
+tags: [metrics, analytics, dwell-time, roi, retail-operations]
+question_bank: "Q3"
 sections:
   - type: key_takeaways
     items:
-      - "Audio environment effects cluster around four metrics: dwell time, basket size, conversion rate, and return visits"
-      - "Dwell time is the most accessible metric and responds most directly to audio changes"
-      - "A 30-day baseline on your current audio is all you need to start seeing the signal"
+      - "Your audio environment is already affecting store performance. The question is whether anyone is tracking it."
+      - "Dwell time is the easiest place to start. It responds fastest to environmental changes and leads the other numbers."
+      - "Operators who treat audio as a fixed line item will never see the signal. The ones who treat it as a variable will."
 
   - type: prose
     body: |
-      If your audio environment is doing its job, you should be able to see it in your data.
+      Walk into one of your stores on a Tuesday afternoon. Stand near the fitting rooms for five minutes. Listen.
 
-      Most retail operations leaders have never been able to say that. The audio environment has been a fixed constant in their stores -- same licensing service, same genre profile, same volume settings -- which means it's invisible to any analysis built on variance. You can't see the effect of something that never changes.
+      Whatever is playing right now has been playing in some version for months, maybe years. Same provider, same genre bucket, same volume knob setting. Nobody chose it for this store, this neighborhood, this customer. Nobody is tracking whether it does anything.
 
-      That's starting to shift as more operators treat audio as an active variable rather than a background condition. And when they do, the metrics that track the effect cluster around four areas.
+  - type: prose
+    body: |
+      That is the norm across multi-location retail. The audio environment is treated as a fixed cost, a box that got checked during buildout. The monthly invoice goes to accounts payable. Nobody in operations ever asks what the spend produces.
+
+      Meanwhile, every other variable in the store gets scrutinized. Visual merchandising gets refreshed seasonally. Lighting gets audited. Staffing ratios get modeled against traffic patterns. The music just sits there, unchanged, unmeasured.
 
   - type: subhead
     level: 2
-    text: "Dwell Time by Zone and Period"
+    text: "Four Numbers That Move"
 
   - type: prose
     body: |
-      Average dwell time is the most direct metric. Customers in a well-tuned audio environment stay longer, which means more time for browsing, more chances for staff interaction, more likelihood of a purchase decision. The useful analysis here is dwell time segmented by store zone and time period, correlated against the audio profile running in each. If you run a lower-tempo, lower-volume profile in the afternoon and see dwell time increase relative to morning sessions at higher energy, you're seeing the mechanism at work.
+      Operators who have started treating audio as an active variable, rather than a background constant, report movement in four areas of store performance.
+
+      The first is dwell time. Customers stay longer or leave sooner depending on how the space feels. Audio is a major component of that feeling. Dwell time is also the most accessible number for most retailers because traffic-counting infrastructure already captures it. If you change your audio and nothing else, dwell time is where you will see it first.
+
+  - type: prose
+    body: |
+      The second is average transaction value. Published research going back to the early 1990s, including work by Areni and Kim, has demonstrated that the right music in a retail environment correlates with higher spending per visit. The effect is real and has been replicated across categories. Most operators have never isolated their audio variable to see whether their own stores show the same pattern.
+
+  - type: prose
+    body: |
+      The third is conversion rate. When the store environment feels right to a customer, when the sensory experience matches what the brand promises, that customer is more likely to buy. Conversion depends on many factors. But sustained directional change in conversion during a period when audio was the primary operational variable is a signal worth paying attention to.
+
+  - type: prose
+    body: |
+      The fourth is repeat visits. This is the longest-horizon number and the hardest to attribute to any single variable. But customers who felt comfortable in a space come back. Retailers with customer-tracking infrastructure in place can watch this number over 60 to 90 days after an audio change. The signal is slow, but the operators who have seen it say it is the most meaningful of the four.
 
   - type: subhead
     level: 2
-    text: "Basket Size and Transaction Value"
-
-  - type: stat_callout
-    number: "8-12%"
-    label: "Expected basket size lift when audio matches customer identity"
-    source: "Areni & Kim, 1993; replicated by North, Hargreaves & McKendrick, 1999"
-    accent: gold
+    text: "Why Most Operators Have Never Seen the Signal"
 
   - type: prose
     body: |
-      This is the [8 to 12 percent question](../blog/the-8-12-youre-leaving-on-the-table.html) from the genre congruence research. Basket size should trend up when the audio environment is matched to customer identity and calibrated for the purchase psychology of the category. The challenge is isolating this from promotional effects, staffing variations, and seasonal patterns. The cleanest signal comes from comparing comparable periods before and after an audio environment change, controlling for the obvious confounds. A meaningful lift in average transaction value in the absence of other changes points at the audio variable.
+      The reason is simple. You cannot see the effect of something that never changes.
+
+      If every store in your fleet runs the same audio provider, the same genre category, the same volume, month after month, there is no variance for your analytics to detect. The audio contribution to your numbers is real, but it is baked into every baseline you have ever set. You would need to change the audio in some stores and not others, or change it in all stores at the same time and compare the new period to the old one, to see the signal at all.
+
+  - type: prose
+    body: |
+      Most music providers have no incentive to help you do that. Their business depends on the contract renewing, not on proving the audio does anything. If you have never asked your provider for performance data tied to your audio environment, try it. The response will tell you everything you need to know about whether they think of your audio as a measurable variable or a background utility.
 
   - type: subhead
     level: 2
-    text: "Conversion Rate by Session"
+    text: "What You Can Do This Week"
 
   - type: prose
     body: |
-      Foot traffic to purchase is the metric most directly connected to the purchase confidence research. An audio environment that creates congruence and primes appropriate quality perception should produce customers who are more likely to complete a purchase once they're in the store. This is harder to attribute than dwell time because conversion depends on many variables, but sustained directional improvement over a period where the audio environment is the primary operational change is evidence worth noting.
-
-  - type: subhead
-    level: 2
-    text: "Return Visit Rate"
-
-  - type: stat_callout
-    number: "60-90"
-    label: "Days before the repeat visit signal from audio environment changes becomes clear"
-    source: "Entuned pilot observations, 2026"
-    accent: teal
-
-  - type: prose
-    body: |
-      The longest-horizon metric and probably the most meaningful for brand-building. Customers who felt the space was right for them -- who experienced the brand halo effect produced by intentional audio -- return at higher rates. This is a 60 to 90 day signal, not a weekly one. It requires a customer tracking mechanism to measure cleanly. But in stores that have the data infrastructure, repeat visit rate is where the cumulative effect of a well-designed audio environment shows up most clearly over time.
-
-  - type: subhead
-    level: 2
-    text: "What Should Retailers Do If They Have No Audio Data Yet?"
-
-  - type: pullquote
-    text: "The audio environment in your stores has been producing metrics all along. Until now, nobody's been reading them."
-    accent: teal
-
-  - type: prose
-    body: |
-      Start with dwell time. It's the most accessible metric, it responds most directly to audio variables, and it's a leading indicator for the others. Set up a 30-day baseline on your current audio environment if you don't have one. Then change the audio environment and [measure again](../blog/measure-roi-retail-music.html). The comparison doesn't need a controlled study. It needs a directional signal.
+      Pull your dwell time data for the last 90 days. Look at it by store, by day of week, by time of day. You already have this if you run any kind of traffic counter. Now ask yourself: do you know what was playing in each store during the periods you are looking at? Can you correlate the two? If the answer is no, you have a measurement gap. The audio environment has been affecting these numbers all along. You just have not been reading them.
 
   - type: cta
     variant: pilot
-    headline: "Run a pilot"
-    body: "Entuned generates purpose-built music for retail environments. No licensing. No compromise. Built around your ideal customer."
+    headline: "See what your audio is actually doing"
+    body: "Entuned works with a small number of multi-location lifestyle retailers on pilot deployments. If you want to know whether your store audio is helping or hurting, we would be glad to have that conversation."
     link: "/pilot"
     link_text: "Start a conversation"
 

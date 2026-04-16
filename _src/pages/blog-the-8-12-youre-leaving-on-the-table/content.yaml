@@ -1,6 +1,6 @@
 title: "The 8-12% You're Leaving on the Table"
 slug: "the-8-12-youre-leaving-on-the-table"
-eyebrow: "FLOW FACTORS"
+eyebrow: "MARKET INTEL"
 dek: "Music congruence increases willingness to pay by 8 to 12 percent. No extra traffic required. No promotions. Just the right music."
 date: "2026-03-01"
 last_updated: "2026-04-15"
@@ -11,7 +11,7 @@ hero:
   src: "../img/blog/the-8-12-youre-leaving-on-the-table.jpg"
   alt: "Data visualization of willingness-to-pay research"
   caption: "Photo: Unsplash"
-meta_description: "Music congruent with customer identity increases willingness to pay by 8-12%, replicated since 1993. Most stores are giving that number back every day."
+meta_description: "When music matches customer identity, willingness to pay increases 8-12%. Same products, same prices. Most retail stores are giving that margin back every day."
 og_image: "/blog/the-8-12-youre-leaving-on-the-table/og.png"
 tags: [willingness-to-pay, research, roi, genre-congruence]
 sections:
@@ -19,13 +19,13 @@ sections:
     items:
       - "Music congruent with customer identity increases willingness to pay by 8-12%, replicated across product categories since 1993"
       - "The effect requires no additional foot traffic, no promotions, and no pricing changes"
-      - "Generic playlists from licensing services were not built to deliver this specificity"
+      - "Most in-store music vendors were built to fill silence, not to match your customer"
 
   - type: prose
     body: |
-      There's a number buried in the retail psychology literature that doesn't get talked about much outside of academic journals. It comes from a study conducted in a wine store in the 1990s, and it's been replicated enough times since that it's probably worth paying attention to.
+      You spent six figures on the buildout. You negotiated the lease. You hired visual merchandisers to make sure the product looks right from the door. And then someone plugged in a Mood Media box and hit play on a playlist that could belong to literally any store in America.
 
-      When researchers played music that matched the identity and values of the customers shopping in that store, willingness to pay increased by 8 to 12 percent. Same products. Same prices on the tags. Same staff. Different music. The customers just paid more.
+      There is a number buried in the retail psychology literature that most operators have never seen. It comes from a study in a wine shop in the early 1990s, and researchers have replicated it enough times since then that arguing with it feels like arguing with gravity.
 
   - type: stat_callout
     number: "8-12%"
@@ -35,35 +35,25 @@ sections:
 
   - type: prose
     body: |
-      The mechanism isn't mysterious once you understand it. Music that aligns with a customer's sense of who they are creates what psychologists call congruence. The space feels right. The brand feels like it was built for someone like them. That perception of fit extends to the products on the shelves, to the price points, to the entire transaction. Customers who feel seen by a space trust that space's judgment about value. They buy accordingly.
+      When the music in a retail space matches the identity and values of the customers shopping there, willingness to pay goes up 8 to 12 percent. Same products on the shelves. Same prices on the tags. Same staff on the floor. Customers just pay more.
 
-      The inverse is also documented. Music that mismatches customer identity produces the opposite effect. Customers leave faster. They spend less. They're less likely to return. The mechanism runs the same direction; it just runs the other way.
+      Areni and Kim published the foundational study in 1993, looking at wine retail specifically. North, Hargreaves, and McKendrick extended it in 1999 and showed the effect held across product categories and store types. At this point, "does music affect willingness to pay" is a settled question. The research question that remains is which music, for which customer, and by how much.
 
   - type: subhead
     level: 2
-    text: "The Research Lineage"
+    text: "Why Your Current Setup Probably Isn't Capturing This"
 
   - type: prose
     body: |
-      Areni and Kim published the foundational work on this in 1993, specifically in [wine retail](../blog/how-specialty-wine-retailers-use-music-to-sell-more-expensive-bottles.html). North, Hargreaves, and McKendrick extended it in 1999, showing that the effect held across product categories and store types. The finding has been replicated broadly enough that "does music affect willingness to pay" is no longer a research question. The research question now is which music, for which customer, and by how much.
+      Most retail music providers are catalog businesses. They organize licensed tracks into moods and genres and let operators pick from a menu. The assumption built into that model is that "upbeat" or "relaxed" or "contemporary" is a meaningful enough description of what a store needs.
 
-  - type: pullquote
-    text: "A playlist that could belong to any store belongs to none of them."
-    accent: teal
+      Your customer is not "upbeat." She is a 34-year-old woman who grew up on Lauryn Hill and shops at your store because it feels like it was made for someone like her. The music that makes her stay longer and spend more is specific to her, and it is different from the music that does the same for someone else in a different store three miles away.
 
-  - type: subhead
-    level: 2
-    text: "Why Licensing Services Can't Deliver This"
-
-  - type: prose
-    body: |
-      Most retail operations leaders have never been given a clean answer to that question. The licensing services that supply most in-store music weren't built to answer it. Mood Media and Soundtrack Your Brand are catalog businesses. They organize music into moods and genres and let operators pick. The assumption built into that model is that "upbeat" or "relaxed" or "contemporary" is a meaningful enough description of what a store needs. It isn't.
-
-      Your customer isn't upbeat or relaxed. They're a specific person with a specific set of values, a specific aesthetic, a specific relationship with music that was formed over decades. The music that makes them feel seen is not the same music that makes a different customer in a different store feel seen.
+      Catalog providers were built to fill silence. They do that well. They were not built to match music to a customer's identity at the level the research describes.
 
   - type: subhead
     level: 2
-    text: "How Does Music Congruence Increase Willingness to Pay?"
+    text: "What 8% Actually Looks Like on Your P&L"
 
   - type: stat_callout
     number: "$326,400"
@@ -73,14 +63,30 @@ sections:
 
   - type: prose
     body: |
-      Run the math on what 8 to 12 percent means for your operation. Take your average transaction value. Apply 8 percent. Multiply by the number of transactions in a month across your locations. That's the number. It doesn't require more foot traffic. It doesn't require a promotion. It doesn't require a new product line. It requires music that was built for the person already standing in your store.
+      Run the math on your own operation. Take your average transaction value. Apply 8 percent. Multiply by the number of transactions in a month across your locations. That is the number sitting in the research, waiting for someone to go collect it.
 
-      The research has been sitting in journals for thirty years. The stores playing generic playlists are giving that number back every day. [Measure what you're currently leaving behind](../blog/measure-roi-retail-music.html).
+      It does not require more foot traffic. It does not require a promotion. It does not require a new product line. It requires that the person already standing in your store hears something that tells them this place was built for someone like them.
+
+      The stores playing generic playlists are giving that number back every day. Not because the music is bad, necessarily. Because the music is anonymous.
+
+  - type: subhead
+    level: 2
+    text: "What You Can Do This Week"
+
+  - type: prose
+    body: |
+      Walk your highest-performing store and your lowest-performing store on the same day. Stand near the entrance for ten minutes in each one. Listen to what is playing. Ask yourself whether the music sounds like it belongs to your brand and your customer, or whether it sounds like it belongs to a dentist's office, a hotel lobby, or nowhere in particular.
+
+      Then call your music vendor and ask them one question: what data are you using to select the tracks in my stores? If the answer is "genre" and "mood," you are paying for silence-filling. The 8 to 12 percent is still on the table.
+
+  - type: pullquote
+    text: "A playlist that could belong to any store belongs to none of them."
+    accent: teal
 
   - type: cta
     variant: pilot
-    headline: "Run a pilot"
-    body: "Entuned generates purpose-built music for retail environments. No licensing. No compromise. Built around your ideal customer."
+    headline: "Find out what you're leaving behind"
+    body: "We work with a small number of multi-location lifestyle retailers on pilot deployments. If the gap between your current music and what the research says is possible sounds like a problem worth measuring, we should talk."
     link: "/pilot"
     link_text: "Start a conversation"
 

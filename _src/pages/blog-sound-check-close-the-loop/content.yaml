@@ -1,7 +1,7 @@
-title: "Sound Check: Close the Loop"
+title: "Sound Check: How Do You Know If Your Music Is Hurting Sales?"
 slug: "sound-check-close-the-loop"
-eyebrow: "FLOW FACTORS"
-dek: "Forty years of research confirms music is a behavioral variable. The next step is measuring which parameters produce which outcomes in your store."
+eyebrow: "FIELD NOTES"
+dek: "Most retailers track everything about their stores except the one variable playing on repeat for every open hour."
 date: "2026-04-01"
 last_updated: "2026-04-15"
 author:
@@ -9,133 +9,117 @@ author:
   role: "Founder & CEO"
 hero:
   src: "../img/blog/sound-check-loop.jpg"
-  alt: "Abstract data visualization of a closed feedback loop"
+  alt: "Retail store interior with subtle overhead speakers visible in the ceiling"
   caption: "Photo: Unsplash"
-meta_description: "Forty years of research confirms music is a behavioral variable. The next step is measuring which musical parameters produce which outcomes in your store."
+meta_description: "Retailers measure traffic, conversion, and dwell time but ignore the audio playing 70 hours a week. Here is how to tell if your music is costing you sales."
 og_image: "/blog/sound-check-close-the-loop/og.png"
-tags: [sound-check-series, measurement, closed-loop, data-asset]
+tags: [sound-check-series, retail-audio, store-performance, measurement]
 sections:
   - type: key_takeaways
     items:
-      - "Running music without measuring its commercial impact is running an uncontrolled variable every hour you are open"
-      - "A closed loop has four parts: specify, deploy, measure, adjust — retailers already do this for pricing, layout, and visual merchandising"
-      - "The compound dataset of music-to-outcome correlations is non-transferable and invisible to competitors"
+      - "Your audio runs every open hour, but most operators have never measured whether it helps or hurts"
+      - "Dwell time, conversion rate, and average ticket all shift when the audio environment changes, and the published research goes back four decades"
+      - "Operators who start paying attention to their audio now will see patterns competitors are still ignoring"
 
   - type: prose
     body: |
-      *This is Part 5 of the Sound Check series, exploring the science and structure behind retail music.*
+      *This is Part 5 of the Sound Check series, exploring the science and practice behind retail music.*
 
-      Forty years of research. Hundreds of studies across psychology, marketing, neuroscience, and consumer behavior. Different methodologies, different sample sizes, different retail categories, different countries. And they all land in the same place.
+      You know the exact conversion rate for each of your stores last Tuesday. You know average ticket by location, by day-part, by season. You have traffic counters at the door and dwell sensors on the floor. Your visual merchandising team can tell you which end-cap configuration moved more units in Q1.
 
-      Music changes how people behave in commercial environments.
-
-      That sentence should feel unremarkable by now. If you have been following this series, you have seen the evidence from multiple angles. Tempo affects pace. Mode affects mood. Volume affects duration. Familiarity affects attention. Genre affects perception. None of this is contested.
-
-      So the interesting question is not whether music matters. The interesting question is what anyone has done with that knowledge.
+      Now: what was playing on the speakers?
 
   - type: subhead
     level: 2
-    text: "The Gap Between Knowing and Controlling"
+    text: "The Variable Nobody Tracks"
 
   - type: prose
     body: |
-      Here is what the research actually established: music is a variable. [Milliman demonstrated in 1982](https://scholar.google.com/scholar?q=Milliman+Using+Background+Music+Affect+Behavior+Supermarket+Shoppers+1982) that slower background music correlated with longer time spent in supermarkets and higher sales totals. [He replicated the finding in restaurants in 1986](https://scholar.google.com/scholar?q=Milliman+Influence+Background+Music+Behavior+Restaurant+Patrons+1986). The mechanism was straightforward. Tempo influenced pace, pace influenced dwell time, dwell time influenced purchasing.
+      Walk into any of your locations on a random afternoon. Listen. Something is playing. It has been playing since the store opened. It will keep playing until close. Over a standard retail week, that audio runs for roughly 70 hours.
 
-      That was more than forty years ago.
+      Seventy hours of unexamined atmosphere.
 
-      The relationship between dwell time and purchasing has been confirmed so many times since then that it functions as a baseline assumption in retail analytics. Longer visits correlate with larger transactions. Every retailer with foot traffic data and POS records can see it in their own numbers.
+      Every other element of the store gets scrutinized. Lighting has a spec. Fixtures have a planogram. Signage gets a refresh cycle. The front table changes weekly. But the music? Somebody picked a playlist months ago, or a vendor locked in a feed when the contract started, and nobody has revisited it since.
+
+      That is not an exaggeration. I have walked stores where the manager could name every item on the feature wall but had no idea what genre was playing overhead. The audio had become invisible because nobody had asked them to pay attention to it.
+
+  - type: subhead
+    level: 2
+    text: "Four Decades of Evidence Saying the Same Thing"
+
+  - type: prose
+    body: |
+      Ronald Milliman ran the study that should have changed retail operations in 1982. Slower-tempo music in supermarkets correlated with longer visits and higher sales totals. He replicated the finding in restaurants four years later. Tempo influenced pace, pace influenced how long people stayed, and longer stays meant more purchasing.
+
+      That was 44 years ago.
 
   - type: stat_callout
-    number: "40+"
-    label: "Years since Milliman first demonstrated that music tempo directly influences retail dwell time and sales"
+    number: "44"
+    label: "Years since Milliman first demonstrated the link between music tempo, dwell time, and sales in retail environments"
     source: "Milliman, Journal of Marketing, 1982"
     accent: teal
 
+  - type: prose
+    body: |
+      Since then, the relationship between dwell time and purchasing has been confirmed so many times it functions as a baseline assumption in retail analytics. Researchers across psychology, marketing, and consumer behavior have studied music's effects on shopping pace, brand perception, willingness to pay, and product choice. The findings converge: music is a variable that moves the numbers operators already care about.
+
+      And yet most multi-location retailers treat their audio the same way they treated their lighting in 1995, before anyone standardized lux levels by department.
+
   - type: subhead
     level: 2
-    text: "Where the Research Stops"
+    text: "What Operators Already Know (But Haven't Connected)"
 
   - type: prose
     body: |
-      The logical follow-up to Milliman's work would have been: which specific musical parameters produce which specific dwell time effects in which specific retail contexts? Not "does slow music work" but "does 78 BPM in a minor key with acoustic instrumentation and low harmonic complexity produce a measurably different dwell pattern than 82 BPM in a major key with electronic instrumentation?"
+      Here is what makes this frustrating. Operators already have the instincts. Every experienced store manager has noticed the afternoon energy drop. Every district manager has walked a location and thought, "Something feels off in here." Every VP of retail ops has stared at a store that underperforms its traffic and wondered what the gap is between the numbers and the experience.
 
-      That question has never been answered. Not because it is unanswerable, but because the infrastructure to answer it has not existed.
+      Some of that gap is the audio.
 
-      [Andersson and colleagues noted in 2012](https://scholar.google.com/scholar?q=Andersson+Kristensson+Let+the+Music+Play+background+music+consumer+behavior+2012) that the majority of research on music and consumer behavior has been conducted in experimental settings, often with undergraduate students as participants. The findings describe what happens under laboratory conditions with convenience samples, not what happens on a Tuesday afternoon in your store with your actual customers.
-
-      [Turley and Milliman identified this gap back in 2000](https://scholar.google.com/scholar?q=Turley+Milliman+Atmospheric+Effects+Shopping+Behavior+Review+Experimental+Evidence+2000). The distance between laboratory findings and real-world application remains wide. No measurement infrastructure exists at the store level to connect specific atmospheric variables to specific commercial outcomes in real time.
+      You can hear it when the music is wrong. The store feels empty even with customers in it. Or it feels frantic when you want people to slow down and browse. Or the vibe says "college coffee shop" when the brand says "curated lifestyle." The mismatch is obvious once you start listening for it. The problem is that listening is not yet part of the store audit.
 
   - type: pullquote
-    text: "The studies get published. The findings get cited. And the playlist keeps running on shuffle."
+    text: "Every experienced store manager has noticed the afternoon energy drop. Almost none of them have connected it to what was on the speakers."
     accent: teal
 
   - type: subhead
     level: 2
-    text: "What Closing the Loop Looks Like"
+    text: "What Changes When You Start Paying Attention"
 
   - type: prose
     body: |
-      The phrase is deliberately mechanical. A closed loop has four parts: specify, deploy, measure, adjust. Each part depends on the one before it.
+      Retailers who begin treating their audio as a performance variable, rather than a set-and-forget subscription, notice three things quickly.
 
-      **Specify** means choosing musical parameters with intention. Not picking songs. Not selecting a genre. Defining the compositional characteristics that the research suggests will produce a particular behavioral response. Tempo, mode, instrumentation, harmonic complexity, rhythmic density, vocal presence, dynamic range. These are measurable, controllable attributes.
+      First, inconsistency across locations becomes obvious. The same brand, the same merchandise, the same fixtures, but the stores feel different because they sound different. That inconsistency is costing brand equity, and nobody has flagged it because audio was not in the audit checklist.
 
-      **Deploy** means putting that specification into a live retail environment. Actual store. Actual customers. Actual conditions.
+      Second, time-of-day mismatches surface. The soundtrack that works at 11 AM on a Saturday does not work at 3 PM on a Wednesday. Foot traffic patterns and customer demographics shift throughout the week. The audio stays static. Operators who track those patterns store by store start seeing where the mismatches cluster.
 
-      **Measure** means capturing commercial outcomes during deployment. Foot traffic patterns, [dwell time](../blog/retail-dwell-time.html) by zone, transaction data, basket composition, conversion rates. The same metrics retailers already track, correlated against the specific musical parameters that were playing when those metrics were generated.
-
-      **Adjust** means using the correlation data to refine the next specification. Each deployment generates information that makes the next deployment more precise.
-
-      This is not a complicated concept. Retailers run this kind of iterative measurement on pricing, on visual merchandising, on store layout, on digital advertising. The methodology is familiar. The only thing that changes is the variable being measured.
+      Third, staff behavior shifts. This one surprises people. When the audio is wrong, staff either tune it out or fight it. They turn it down, change the channel, or plug in their own phones. When the audio actually fits the store and the moment, staff leave it alone. That is a signal worth watching.
 
   - type: subhead
     level: 2
-    text: "The Dataset That Compounds"
+    text: "One Thing You Can Do This Week"
 
   - type: prose
     body: |
-      Every hour of specified music deployment, correlated with foot traffic and point-of-sale data, generates information. Not generic information. Specific information about how specific musical parameters affect specific commercial outcomes in a specific store with a specific customer base.
+      Pick your three highest-traffic stores. Walk each one at three different times: morning, mid-afternoon, and the last hour before close. Do not look at the merchandise. Just listen.
 
-      Run it for a week and you have preliminary data. Run it for a month and patterns start to stabilize. Run it for a quarter and you have something that did not exist before: an empirical model of how musical composition variables correlate with commercial performance in your particular retail context.
+      Ask yourself: does this sound like the brand? Does it match the energy of the customers in the store right now? Could you tell which store you were in by the audio alone, or do they all blur together?
 
-      Run it for a year and the dataset starts to compound. Seasonal patterns emerge. Day-of-week effects become visible. The model gets more granular with every deployment cycle.
-
-  - type: stat_callout
-    number: "1 year"
-    label: "Approximate timeline for a compound dataset with seasonal patterns, day-of-week effects, and granular parameter insights"
-    source: "Entuned projection"
-    accent: teal
+      Then ask your store managers the same questions. Their answers will tell you whether anyone is thinking about this variable at all. If nobody is, you have found a gap in your operations that every competitor shares.
 
   - type: prose
     body: |
-      And here is the part that matters for competitive positioning: the dataset is non-transferable.
-
-      Your competitor can read the same research you read. They can hire the same consultants. They can subscribe to the same music services. What they cannot do is acquire a year of correlational data between musical parameters and commercial outcomes that is specific to your store, your customer demographics, your product mix, your floor plan, your brand positioning. That data does not exist anywhere except inside your measurement apparatus. It cannot be purchased. It cannot be replicated without running the same process in the same environment for the same duration.
-
-  - type: subhead
-    level: 2
-    text: "The Only Question Left"
-
-  - type: prose
-    body: |
-      This series started with a simple observation: the research on music and commercial behavior is extensive, convergent, and largely ignored in practice. The studies confirm that [music is a variable](../blog/sound-check-music-is-a-variable.html). Retailers treat it as decoration.
-
-      The gap is not in the science. The science is settled enough to act on. The gap is in the measurement infrastructure. Nobody has connected the specification of musical parameters to the measurement of commercial outcomes in a continuous, real-time loop at the individual store level.
-
-      That gap is closable now. The technology to specify music at the parameter level exists. The technology to measure foot traffic, dwell time, and transaction data exists. The analytical methods to correlate atmospheric variables with commercial outcomes exist. What would be new is connecting them.
-
-      If you accept the research, and four decades of convergent findings make it difficult not to, then running music without measuring its commercial impact is running an uncontrolled variable in your retail environment every hour you are open. The retailers who start [measuring first](../blog/measure-roi-retail-music.html) will have a compound dataset that grows more valuable with every deployment cycle while remaining completely invisible to everyone who does not.
-
-      That is not a pitch. That is arithmetic. [See how Entuned closes the loop](../how-it-works.html).
+      Entuned works with a small number of multi-location lifestyle retailers who want to treat their audio as a measurable part of store performance. If the gap described here sounds familiar, we would welcome a conversation.
 
   - type: cta
     variant: pilot
-    headline: "Close the loop"
-    body: "The research is settled. The measurement infrastructure exists. Entuned closes the loop between musical parameters and commercial outcomes in your specific store."
+    headline: "Start with a listen"
+    body: "If nobody on your team can describe what your stores sound like right now, that is worth a conversation."
     link: "/pilot"
     link_text: "Ask About a Pilot Program"
 
   - type: related
     posts:
       - slug: "sound-check-music-is-a-variable"
-      - slug: "closing-the-loop-on-retail-analytics"
       - slug: "measure-roi-retail-music"
+      - slug: "retail-dwell-time"

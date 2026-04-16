@@ -1,27 +1,27 @@
 {
-  "title": "The State of Retail Atmospherics in 2026 — Entuned Blog",
-  "meta_description": "Visual merchandising is data-driven. Audio is stuck in the 1990s. The state of retail atmospherics in 2026 and what comes next.",
+  "title": "What Your Store Sounds Like in the First 10 Seconds | Entuned Blog",
+  "meta_description": "Customers judge your store in 10 seconds. A field guide to the signals retail operators miss, and the one sensory channel nobody measures.",
   "output": "blog/retail-atmospherics-2026.html",
   "faq": [
     {
-      "q": "Why did audio fall behind other retail sensory channels like visual merchandising?",
-      "a": "Three factors: music licensing made experimentation legally complex and expensive; background music providers were distribution systems, not optimization systems; and there was no measurement infrastructure to create a feedback loop between audio and outcomes."
+      "q": "What signals does a store send to customers in the first 10 seconds?",
+      "a": "Customers read the room before they evaluate merchandise. Lighting, temperature, smell, sound, and spatial layout all register within seconds of crossing the threshold. Research on retail environments shows these snap judgments influence how long a customer stays and how much they spend."
     },
     {
-      "q": "What is changing in retail audio in 2026?",
-      "a": "Three trends converge: AI-generated music has reached commercial quality, eliminating catalog constraints and licensing overhead; broader AI adoption in retail has created organizational readiness; and e-commerce pressure is forcing brick-and-mortar to differentiate through sensory experience."
+      "q": "Why are customers leaving stores faster than they used to?",
+      "a": "Average visit duration is down across most lifestyle retail categories. Beyond economic factors and merchandise, a common overlooked cause is the store environment itself. When sensory details like audio feel mismatched or generic, customers leave sooner without being able to articulate why."
     },
     {
-      "q": "What does the research say about audio's impact on retail outcomes?",
-      "a": "Four decades of peer-reviewed studies show meaningful effects: Milliman (1982) found tempo controls dwell time; Areni and Kim (1993) found 8–12% higher willingness to pay with genre congruence; North et al. (1999) showed music tripled matching product selection."
+      "q": "How do I make a flagship store feel different from a mall location?",
+      "a": "The difference between a flagship that feels intentional and a mall location that feels generic usually comes down to the details nobody owns. Extending the same discipline you apply to visual merchandising to audio and other sensory channels closes the gap without requiring a flagship budget."
     },
     {
-      "q": "Who is closing the gap between audio and other data-driven retail channels?",
-      "a": "Entuned is designed specifically to close this gap, using AI generation with 31 parameterized flow factors and integrated performance measurement — bringing audio to the same data and accountability standard as visual merchandising."
+      "q": "Does background music actually affect retail sales?",
+      "a": "Four decades of peer-reviewed research, starting with Milliman's 1982 field study, show that audio conditions measurably affect customer movement speed, dwell time, and purchasing behavior. The effects are consistent across store formats and product categories."
     },
     {
-      "q": "What should retail leaders do now about their audio environment?",
-      "a": "Start with a diagnostic audit: who chose this music, what data informed the choice, and how do you know it's working? Then begin correlating audio conditions with dwell time, conversion rate, and basket size to establish a performance baseline."
+      "q": "What should retail leaders do about their in-store audio?",
+      "a": "Start with a diagnostic audit. Walk three stores at different times of day and ask: who chose this music, what informed the choice, and how do we know it is working? If you cannot answer the third question, your audio environment is running without the measurement discipline you apply to every other part of the store."
     }
   ]
 }

@@ -1,7 +1,7 @@
 title: "Every Song Is Either Working Or It Isn't"
 slug: "every-song-working-or-not"
-eyebrow: "FLOW FACTORS"
-dek: "A scatter plot of every track your store played last week shows where the music falls between noise and signal."
+eyebrow: "FIELD NOTES"
+dek: "Your store plays hundreds of tracks a week. Some of them are helping. Some of them are costing you money. The difference matters more than most operators think."
 date: "2026-04-01"
 last_updated: "2026-04-15"
 author:
@@ -9,70 +9,67 @@ author:
   role: "Founder & CEO"
 hero:
   src: "../img/blog/every-song-working-or-not.jpg"
-  alt: "Data scatter plot visualization showing track performance distribution"
+  alt: "Retail store interior with speakers visible in the ceiling"
   caption: "Photo: Unsplash"
-meta_description: "A scatter plot of every track your store played last week shows where the music falls between noise and signal."
+meta_description: "Your store's music is either helping sales or hurting them. Here's how to tell the difference and what to do about it."
 og_image: "/blog/every-song-working-or-not/og.png"
-tags: [measurement, brand-alignment, behavioral-lift, scatter-plot, flow-factors]
+tags: [measurement, brand-alignment, behavioral-lift, retail-audio]
 sections:
   - type: key_takeaways
     items:
-      - "Every track playing in your store is either moving customers toward a purchase or away from one"
-      - "400 tracks from four audio sources plotted by brand alignment and behavioral lift reveal massive gaps"
-      - "The gap between 'we chose this music carefully' and 'we know this music is working' is where most audio investment disappears"
-      - "Entuned specifies tracks at the compositional level and correlates them against sensor data already in the store"
+      - "Every track playing in your store is either moving customers toward a purchase or pushing them away from one"
+      - "Most retailers have never asked whether their music is helping or hurting, because nobody has ever given them a way to answer the question"
+      - "The gap between choosing music carefully and knowing it works is where most audio budgets disappear"
 
   - type: prose
     body: |
-      Imagine pulling up a scatter plot of every track that played in your store last week.
+      Walk into one of your stores on a Tuesday afternoon. Stand near the register for ten minutes. Listen.
 
-      On one axis, how aligned the song was to your brand. On the other, whether the words and the mood were moving customers toward a purchase or away from one. Each track is a dot. A week of music is a cloud of dots.
+      You will hear music. Somebody chose it. Maybe a vendor, maybe a regional manager, maybe a playlist that has been running since the location opened. Somebody made a decision about what your customers would hear, and that decision is playing right now, on repeat, across every hour of every shift.
 
-      Most retailers have never seen this chart. 400 tracks, 100 from each of the four dominant sources of retail audio, plotted by how much brand alignment the track has and how much behavioral lift it produces in the store. The red band at the bottom is the zone where a track is actively working against the transaction — familiar research on semantic priming and mode-driven mood effects says this zone is real and measurable.
+      Here is the question almost nobody asks: is it working?
+
+  - type: subhead
+    level: 2
+    text: "The Music Is Always Doing Something"
+
+  - type: prose
+    body: |
+      Decades of published research in consumer psychology confirm what most store operators already suspect. Music affects how long customers stay, how much they spend, and how they feel about the experience afterward. Ronald Milliman demonstrated the dwell-time effect in 1982, and dozens of studies since then have replicated and extended the finding across retail categories.
+
+      The implication is simple but uncomfortable. If music affects behavior, then every track your store plays is pushing customers in some direction. Toward a purchase, away from one, or into a kind of neutral drift where the music fades into background noise and does nothing at all. There is no version of "the music doesn't matter." The only question is whether you know which direction each track is pushing.
+
+      Most operators do not know. They have traffic counters, conversion rates, average transaction values, dwell time sensors, and a dozen dashboards for things they can see. The audio is the one variable that runs continuously, touches every customer, and goes completely unmeasured.
 
   - type: pullquote
-    text: "The gap between 'we chose this music carefully' and 'we know this music is working' is where most retail audio investment disappears."
+    text: "The gap between choosing music carefully and knowing it works is where most retail audio budgets disappear."
     accent: gold
 
   - type: subhead
     level: 2
-    text: "Where the Dots Land Depends on Where the Music Comes From"
+    text: "Where the Problem Gets Expensive"
 
   - type: prose
     body: |
-      If the store is on a **licensed radio station**, a good portion of those dots land in the bottom left. Radio wasn't designed for retail. The format was built around interruption — music, then a commercial for a car dealership or a competing brand. Whoever sold the ad slot had a goal in that moment, and the goal wasn't yours. A customer in a fitting room is being pitched a mattress sale happening across town.
+      A retailer will A/B test an email subject line for three percent of their list before sending the rest. They will run a four-week pilot on a new fixture layout in two stores before rolling it to forty. They will review heatmaps of foot traffic through every department.
 
-      **Mood Media, CloudCover**, and services like them improve on that. A playlist means no competing ads, a more consistent sound. The dots shift toward the middle. But a curated playlist is still a static object. Someone built it, probably with taste, based on a sense of the brand's identity. It plays. Nothing about it adjusts for who's actually in the store, what they came in for, what a given track is doing to their behavior in that moment. The dots scatter across the middle of the chart with no particular logic. (If this is you, here are the [alternatives worth looking at](../blog/mood-media-alternatives.html).)
+      They will not question what the room sounds like during the transaction.
 
-      **Spotify for Business** moves the intentionality up. You're closer to the brand, closer to the vibe. The dots cluster in the right half. But the measurement problem persists. Something is being chosen. Nobody's watching what it does. [More on what Spotify misses](../blog/what-spotify-gets-wrong.html).
+      That is not because operators are careless. It is because the music vendor category has never offered measurement as part of the service. Licensed radio stations sell reach. Playlist services sell curation. Mood Media, CloudCover, and similar providers sell a consistent, ad-free soundtrack with brand-appropriate tone. All of those are improvements over silence or a staff member's phone plugged into the aux cable.
+
+      But none of them answer the question. A playlist can be tasteful, on-brand, and professionally assembled, and still be costing you money in the fitting room or at the register. Without measurement, there is no way to know. The music plays. Customers come and go. The two events sit in separate columns of the P&L and never meet.
 
   - type: subhead
     level: 2
-    text: "Chosen Carefully Is Not the Same as Working"
+    text: "What Changes When Someone Is Watching"
 
   - type: prose
     body: |
-      A track that's brand-aligned but lyrically inert is a missed opportunity. A track that's sonically pleasant but semantically pointing the customer somewhere else is a liability. Both get counted as "music was playing." Neither tells you anything about what happened in the store while it played.
+      The retail analytics category has matured enough that most multi-location operators already have sensor data in their stores. Traffic counters, zone analytics, transaction logs. That data exists. It just has never been pointed at the audio.
 
-      This is the measurement gap that [every major playlist service shares](../blog/commercial-music-services-compared.html). The track gets chosen, queued, delivered, paid for. What it did once it left the speaker is nobody's job.
+      When it is, the picture changes fast. Operators discover that some of their music is genuinely helping. Tracks that align with the brand, match the energy of the customer in the store, and contribute to the kind of experience that keeps people browsing instead of leaving. And they discover that some of their music is doing the opposite. Tracks that break the mood, pull attention in the wrong direction, or simply bore people into checking their phones.
 
-      Retail audio is one of the only customer experience variables that runs continuously, touches every visitor, and goes completely unmeasured. A retailer will A/B test a subject line in an email to three percent of their list. They won't question what the room sounds like during the transaction.
-
-  - type: stat_callout
-    number: "400"
-    label: "Tracks plotted across four retail audio sources — showing where brand alignment and behavioral lift actually land"
-    source: "Entuned analysis framework"
-    accent: teal
-
-  - type: subhead
-    level: 2
-    text: "What the Right Side of the Chart Looks Like"
-
-  - type: prose
-    body: |
-      The tracks Entuned deploys are specified at the compositional level. Tempo, key, arrangement density, lyrical content — all of it is set against a target behavioral state for the customer segment in the store. And because the music is [created rather than pulled from a catalog](../blog/ai-generated-music-retail.html), the lyrical layer can be pointed at something specific: a discovery mindset, a quality orientation, a willingness to spend. Those outcomes are correlated against [sensor data already in the store](../blog/closing-the-loop-on-retail-analytics.html). The chart updates.
-
-      That's what the cluster on the right side of the scatter looks like. Tracks built to move a specific metric, playing in a store where someone is watching whether they did.
+      The difference between those two categories is not a matter of taste. It is a measurable gap, and it shows up in the numbers that operators already track. Dwell time. Conversion. Average ticket. The data is there. The question is whether anyone has connected it to the speakers.
 
   - type: stat_callout
     number: "0%"
@@ -82,20 +79,18 @@ sections:
 
   - type: subhead
     level: 2
-    text: "Pull the Chart"
+    text: "What You Can Do This Week"
 
   - type: prose
     body: |
-      Most retailers have no idea what's happening in their speakers. Not because nobody thought to ask, but because until recently there wasn't a way to get an answer. The music played. Customers came and went. The two things were assumed to be unrelated.
+      Pull up your store analytics for the past 30 days. Look at conversion rate by hour. Look at dwell time by daypart. Now ask your music vendor what was playing during your best hours and your worst hours. If they cannot tell you, or if they can tell you what played but not what it did, you have found the gap.
 
-      That assumption has a cost. Every one of those 400 dots represents a moment a customer was being moved somewhere — toward a purchase, away from one, or nowhere at all. A week of retail audio is a week of those moments, and for most stores, nobody has ever looked.
-
-      Pull the scatter plot. [See where the dots land](../how-it-works.html).
+      That gap is not a small thing. Your audio runs more hours than any single employee works. It reaches every customer who walks through the door. And right now, for most retailers, nobody is watching whether it helps or hurts.
 
   - type: cta
     variant: pilot
-    headline: "See where your dots land"
-    body: "Entuned generates tracks specified against your customer profile and the outcome you care about — and correlates them against the sensor data already in your store. No licensing. No playlists."
+    headline: "Find out what your music is doing"
+    body: "We work with a small number of multi-location retailers to measure whether their in-store audio is helping or hurting performance. If that question matters to your stores, we'd welcome a conversation."
     link: "/pilot"
     link_text: "Ask about a pilot program"
 

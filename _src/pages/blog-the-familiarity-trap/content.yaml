@@ -1,7 +1,7 @@
 title: "The Familiarity Trap"
 slug: "the-familiarity-trap"
-eyebrow: "FLOW FACTORS"
-dek: "Familiar music makes shoppers feel like they've been in the store longer. So they leave sooner. The research has been sitting there for 25 years."
+eyebrow: "FIELD NOTES"
+dek: "Your customers recognize the playlist. And they leave sooner because of it."
 date: "2026-04-01"
 last_updated: "2026-04-15"
 author:
@@ -11,21 +11,21 @@ hero:
   src: "../img/blog/familiarity-trap.jpg"
   alt: "Abstract view of sound waves in a retail environment"
   caption: "Photo: Unsplash"
-meta_description: "Familiar music makes shoppers feel like they've stayed longer, so they leave sooner. Unfamiliar music extends dwell time. AI music is unfamiliar by definition."
+meta_description: "Familiar music makes shoppers feel like they've stayed longer, so they leave sooner. What retail operators can do about the research they've been ignoring for 25 years."
 og_image: "/blog/the-familiarity-trap/og.png"
-tags: [dwell-time, familiarity, research, ai-music]
+tags: [dwell-time, familiarity, research, in-store-music]
 sections:
   - type: key_takeaways
     items:
-      - "Shoppers exposed to familiar music left sooner despite feeling like they'd stayed longer"
-      - "Unfamiliar music removes cognitive anchors and extends actual dwell time"
-      - "AI-generated music is unfamiliar by definition -- no memory to surface, no anticipation of what comes next"
+      - "Shoppers exposed to familiar music left the store sooner, even though they felt like they'd stayed longer"
+      - "Unfamiliar music removed cognitive anchors and extended actual floor time"
+      - "Most operators have never acted on this research because sourcing unfamiliar music at scale was impractical until recently"
 
   - type: prose
     body: |
-      There's a piece of research from 2000 that most retail operators never acted on, and the cost shows up on the floor every day.
+      Walk into one of your stores on a Tuesday afternoon and listen. If you recognize the song within five seconds, so does your customer. And they're already losing track of how long they've been there, in the wrong direction.
 
-      Richard Yalch and Eric Spangenberg ran shoppers through a retail environment with either familiar or unfamiliar background music and tracked two things: how long people actually stayed, and how long they *thought* they stayed. The results split in a direction most people wouldn't predict.
+      There's a study from 2000 that landed in the Journal of Business Research and then mostly sat there. Richard Yalch and Eric Spangenberg ran shoppers through a retail environment with two conditions: familiar background music and unfamiliar background music. They tracked how long people actually stayed and how long those people believed they'd stayed. The results went in opposite directions.
 
   - type: stat_callout
     number: "25"
@@ -35,41 +35,23 @@ sections:
 
   - type: prose
     body: |
-      Shoppers exposed to familiar music reported feeling like they had been in the store longer than they had. Shoppers exposed to unfamiliar music reported feeling like they hadn't been in very long at all. But when the researchers checked the actual time logs, the familiar music group had already left. The unfamiliar music group stayed longer.
+      Shoppers who heard music they recognized reported feeling like they'd been in the store for a while. Long enough. Time to go. But their actual visit was shorter. The group hearing unfamiliar music reported the opposite: they felt like they hadn't been there very long. And the clock confirmed they'd stayed longer.
+
+      The mechanism is straightforward. When your customer hears a song they know, their brain picks it up. They're filling in the next lyric, anticipating the chorus, placing the song in some memory. All of that cognitive engagement registers as time passing. The store hasn't changed. The customer just convinced themselves they've given it enough time, and they head for the door.
+
+      Unfamiliar music doesn't trigger that chain. Nothing to anticipate, nothing to place. The music recedes into the environment the way background music is supposed to. Time feels shorter. The customer stays.
 
   - type: subhead
     level: 2
-    text: "The Mechanism"
+    text: "Why Operators Keep Programming Familiar Music"
 
   - type: prose
     body: |
-      The mechanism behind this is well documented. When you hear music you recognize, your brain engages with it cognitively. You're processing memory, anticipating chord resolutions, filling in lyrics. That processing registers as time passing. You feel like you've been somewhere longer than you have, and that feeling tends to generate an exit impulse. The room hasn't changed. You've just convinced yourself you've given it enough time.
+      If this research has been sitting in a journal for a quarter century, why does every second retail location still play music that half their customers can sing along to?
 
-      Unfamiliar music doesn't trigger the same chain. With no recognition to draw on, the music recedes. There's nothing to anticipate. Without that cognitive anchor, time doesn't feel as long. You stay.
+      The practical answer: sourcing unfamiliar music that still sounds right in a commercial environment was genuinely hard. Music that most people haven't heard tends not to have gone through normal commercial distribution. Plenty of excellent tracks exist outside the mainstream, but finding them, clearing them, and building a rotation that holds up across dayparts and demographics was a full-time curation job. Most operators had other things to do.
 
-  - type: subhead
-    level: 2
-    text: "Why This Matters on the Floor"
-
-  - type: prose
-    body: |
-      For a retail operator, this matters in a specific way. [Dwell time](../blog/retail-dwell-time.html) is one of the most reliable upstream variables for purchase. More time in the store doesn't guarantee a sale, but less time nearly guarantees the opposite.
-
-      So if familiar music accelerates departure, and the research has been sitting there for 25 years, why has most retail kept programming it?
-
-  - type: subhead
-    level: 2
-    text: "The Curation Problem"
-
-  - type: pullquote
-    text: "The infrastructure for finding unfamiliar music that also held up in a commercial environment didn't really exist. You could go looking, but there was no reliable path to it."
-    accent: teal
-
-  - type: prose
-    body: |
-      The answer has more to do with a practical constraint than awareness of the research. Unfamiliar music, by definition, is music that most of your customers haven't heard before. And music that most people haven't heard tends not to have passed through commercial distribution. There's a lot of genuinely excellent music that never found wide distribution through no fault of its own. The commercial system has always been an imperfect filter.
-
-      But for a retail operator trying to build a floor program, that nuance is difficult to translate into curation. The practical result was that most operators defaulted to familiar music, the research on what that does to dwell time got filed somewhere, and [the playlist problem](../blog/sound-check-playlist-problem.html) mostly stayed there.
+      So the default held. Familiar catalogs. Recognizable artists. Playlists that staff could tolerate and customers could hum along with. The Yalch and Spangenberg paper got cited in a few more academic articles, and customers kept leaving earlier than they needed to.
 
   - type: subhead
     level: 2
@@ -77,26 +59,36 @@ sections:
 
   - type: stat_callout
     number: "0"
-    label: "Times a customer has heard an AI-generated track before entering the store"
-    source: "By definition -- generated music has no prior distribution"
+    label: "Times a customer has heard a newly created track before walking into the store"
+    source: "Original music has no prior distribution"
     accent: gold
 
   - type: prose
     body: |
-      The thing that changed this isn't curation. It's generation.
+      The thing that kept operators stuck on familiar catalogs was supply. Unfamiliar music that also held up in a retail environment didn't exist at scale.
 
-      AI music tools have crossed a threshold in the last two years where the output, when prompted with enough specificity, is indistinguishable from commercially produced music to a casual listener. The harmonic structure holds. The production quality holds. The instrumental texture holds. And because the track has never been recorded before, never distributed, never charted, never played on any platform anywhere, it is, by every measure, unfamiliar.
+      That changed. Music generation tools have crossed a threshold in the last two years where newly created tracks are indistinguishable from commercially produced music to a casual listener. The production quality holds. The harmonic structure holds. And because the track has never existed before, never been distributed, never charted, never played on any platform anywhere, no customer walks in with a cognitive hook already attached.
 
-      A customer walking into a store playing AI-generated music has no cognitive hook to grab. No memory to surface. No anticipation of what comes next in the bridge. The music sits where background music is supposed to sit -- behind the experience rather than inside it.
+      No recognition. No lyric anticipation. No memory surfacing. The music sits behind the shopping experience instead of competing with it.
 
-      And if the research holds, that customer stays.
+  - type: subhead
+    level: 2
+    text: "What You Can Do This Week"
+
+  - type: prose
+    body: |
+      Before you change anything about your music program, walk three of your stores during a slow weekday window and just listen. Pay attention to whether you recognize the tracks playing. Ask one staff member if they've heard the current song before. Ask yourself how many of your customers have heard it too.
+
+      That's the starting point. One question: is the music in my stores familiar enough to trigger the exit impulse that Yalch and Spangenberg documented twenty-five years ago?
+
+      If the answer is probably yes, you're not alone. Most multi-location retailers are running the same familiar catalog and absorbing the same cost.
 
       *Yalch, R. F., & Spangenberg, E. R. (2000). The effects of music in a retail setting on real and perceived shopping times. Journal of Business Research, 49(2), 139-147.*
 
   - type: cta
     variant: pilot
     headline: "Run a pilot"
-    body: "Entuned creates original music matched to your customer's psychology -- music they've never heard before, engineered to keep them in the store longer."
+    body: "We're working with a small number of multi-location lifestyle retailers on pilot deployments of original, unfamiliar music matched to their customer base. If floor time is something you're trying to protect, we'd be open to a conversation."
     link: "/pilot"
     link_text: "Start a conversation"
 
