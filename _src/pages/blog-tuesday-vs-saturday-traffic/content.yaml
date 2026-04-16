@@ -1,0 +1,111 @@
+title: "Tuesday vs. Saturday Traffic: What Your Data Actually Says"
+slug: "tuesday-vs-saturday-traffic"
+eyebrow: "FIELD NOTES"
+dek: "The two days look like different stores. They often are. What the Tuesday-Saturday gap reveals about your customer mix and what to do about it."
+date: "2026-04-16"
+last_updated: "2026-04-16"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/retail-dwell-time.jpg"
+  alt: "Retail store interior with shoppers during weekday afternoon"
+  caption: "Photo: Unsplash"
+meta_description: "Tuesday traffic and Saturday traffic look like different stores. The gap reveals your real customer mix. Here is how operators should read the pattern."
+og_image: "/blog/tuesday-vs-saturday-traffic/og.png"
+tags: [field-notes, traffic-patterns, customer-behavior, store-operations]
+sections:
+  - type: key_takeaways
+    items:
+      - "Most retail chains treat the weekday-weekend gap as a volume problem. It is usually also a customer-mix problem"
+      - "Tuesday shoppers and Saturday shoppers are often different people with different reasons to be in the store"
+      - "The store that performs well on both days is usually a store running two different playbooks, even if nobody has named them"
+
+  - type: prose
+    body: |
+      Pull the traffic data for any of your stores on a typical Tuesday afternoon and a typical Saturday afternoon. Same store. Same merchandise. Same staff, probably. Two different volume curves, two different conversion rates, often two different average tickets.
+
+      Most operators look at that and conclude the weekend is just busier. That is true. But it hides the more interesting observation, which is that the two days are often running on different customers.
+
+  - type: subhead
+    level: 2
+    text: "The customer on a Tuesday is not the customer on a Saturday"
+
+  - type: prose
+    body: |
+      A Tuesday at 2 PM in most specialty retail brings a specific customer. Not in a rush. Either retired, self-employed, or off-shift from a service job. Often solo. Often there because they wanted to be somewhere quieter than a weekend crowd.
+
+      A Saturday at 2 PM brings somebody else. Couples shopping together. Parents with kids. Groups deciding between stores in a mall. People with a shorter window who made the trip specifically for your category. The average shopper on Saturday is more time-pressured, more transactional, and often part of a group whose decision includes more than one opinion.
+
+      These are different rooms. The merchandise is the same, but the people moving through the merchandise are not.
+
+  - type: subhead
+    level: 2
+    text: "What the data usually shows"
+
+  - type: prose
+    body: |
+      Three patterns are common when operators look at Tuesday against Saturday for the same store over ninety days.
+
+      Traffic is higher on Saturday, usually by a factor of two to four. That is the number everybody knows.
+
+      Dwell time is longer on Tuesday. The solo browsers do not have a group to negotiate with. They are willing to spend ten or fifteen more minutes in the store than the Saturday crowd. In high-consideration categories, that extra browse time often lifts their conversion rate even though their visit count is lower.
+
+      Average ticket behaves unpredictably. In some categories (home goods, specialty wine, premium apparel), Tuesday baskets are bigger because the buyer is making the decision alone and can commit to a larger purchase without checking with someone else. In other categories (kids, gifts, mall-format specialty), Saturday baskets are bigger because the group dynamic adds cross-purchases.
+
+      The operators who perform best on both days look at these three numbers together, not just traffic.
+
+  - type: pullquote
+    text: "Saturday is busier. Tuesday usually has longer visits and sometimes higher baskets. Operators who only watch traffic miss half the pattern."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "Three things your store should be doing differently"
+
+  - type: prose
+    body: |
+      The staff posture. Tuesday shoppers want less engagement. A strong sales associate on Saturday can work five customers in an hour. The same energy on Tuesday makes the solo browser feel watched and pushed out. Most store managers intuit this and run a quieter floor on weekdays.
+
+      The merchandise presentation. Saturday crowds respond to signage and endcap promotions because they are time-pressured. Tuesday shoppers read tags, feel fabrics, and wander. The store that keeps endcaps rotated weekly gets more out of Saturday than a store that does not.
+
+      The audio. This is the one most chains have not touched. The music playing at 2 PM on Tuesday is the same music playing at 2 PM on Saturday, and the same music that was playing there three weeks ago. It was not chosen for either crowd.
+
+  - type: subhead
+    level: 2
+    text: "Why the audio gap is visible on Tuesday"
+
+  - type: prose
+    body: |
+      The Tuesday shopper notices the music more than the Saturday shopper does. Fewer people in the store means less ambient noise. Slower movement means more time inside the audio environment. If the music is not working, Tuesday is the day your store loses a browser who would have stayed longer and bought something considered.
+
+      Research on retail audio has replicated this observation since the early 1980s. Slower foot traffic interacts with the audio environment more, not less. The weekday hour is where the audio either earns its keep or costs you a customer who had the time to be convinced.
+
+  - type: subhead
+    level: 2
+    text: "What you can do this week"
+
+  - type: prose
+    body: |
+      Pull three numbers for one of your stores over the last ninety days: traffic, dwell time, and average ticket, broken out by Tuesday and Saturday. If you have never looked at those three against each other, the patterns will show up on the first pass.
+
+      Then walk the store yourself on both days, two weeks apart, at the same hour. Stand in the same spot for twenty minutes each time. The room will feel different before you ever look at the data.
+
+      The operators who run the strongest multi-location chains tend to be the ones who have done this exercise on their own floor and stopped treating every day like it is Saturday with less traffic.
+
+  - type: prose
+    body: |
+      For the specific research on dwell time and spending, see <a href="../results.html">the results page</a>.
+
+  - type: cta
+    variant: pilot
+    headline: "Close the Tuesday-Saturday gap"
+    body: "We work with a small number of multi-location lifestyle retailers on pilot deployments that adjust the audio environment to the customer actually in the store. If the weekday-weekend gap is something you are trying to close, we would welcome a conversation."
+    link: "/pilot"
+    link_text: "Start a conversation"
+
+  - type: related
+    posts:
+      - slug: "retail-dwell-time"
+      - slug: "the-dwell-time-variable-nobodys-tracking"
+      - slug: "why-your-best-customers-leave-faster-than-they-should"

@@ -1,0 +1,97 @@
+title: "What to Ask Your Music Vendor at the Next QBR"
+slug: "qbr-questions-music-vendor"
+eyebrow: "FIELD NOTES"
+dek: "Ten questions a VP of Retail Ops should put to the music vendor at the next quarterly review. Half of them will not have answers. That is the information you need."
+date: "2026-04-16"
+last_updated: "2026-04-16"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/commercial-music-services-compared.jpg"
+  alt: "Retail operations meeting with vendor review materials"
+  caption: "Photo: Unsplash"
+meta_description: "Ten questions VP Retail Ops should ask their in-store music vendor at the next QBR. Licensing, measurement, staff bypass, cost transparency. Forwardable checklist."
+og_image: "/blog/qbr-questions-music-vendor/og.png"
+tags: [field-notes, vendor-management, qbr, store-operations]
+sections:
+  - type: key_takeaways
+    items:
+      - "The quarterly review with your music vendor is usually the same meeting every time: song counts, uptime percentages, a few mood playlist updates. It is not a QBR"
+      - "The questions below shift the conversation from service delivery to business outcomes"
+      - "If your vendor cannot answer half of them, that is a useful signal about what you are paying for"
+
+  - type: prose
+    body: |
+      Most retail chains have a vendor-side contact for their music subscription and meet with them once a quarter, sometimes once a year. The meeting tends to follow the same script. The account manager walks through uptime, a couple of new playlist options, a promotion on the next tier up. Nobody asks anything that would be hard to answer. Everybody leaves on time.
+
+      That is not a QBR. It is a service check-in. A real QBR asks whether what you are buying is actually moving any number that matters. If you have never put that question in front of your music vendor, the next meeting is a good place to start.
+
+  - type: subhead
+    level: 2
+    text: "Ten questions worth putting on the agenda"
+
+  - type: prose
+    body: |
+      **1. Can you show me data on how the music you delivered this quarter correlated with any store performance metric?** The answer separates vendors who think of themselves as measurement companies from vendors who think of themselves as catalog companies. Most are catalog companies. They will not have this data.
+
+      **2. What did you change about our music in the last ninety days, and why?** Most catalog providers rotate playlists on an internal schedule unrelated to your business. If the answer is "we added some songs" with no reason attached, that is your answer.
+
+      **3. How many of our stores are playing the playlist you assigned versus something staff have overridden locally?** A multi-location chain usually has a significant percentage of stores where the manager has bypassed the vendor. Your vendor should know that number. Most do not track it.
+
+      **4. Show me the licensing coverage for every track playing in our stores.** ASCAP, BMI, SESAC, GMR. A legitimate commercial music vendor can produce this. If the answer is vague or takes a week, that is a compliance issue worth following up on.
+
+      **5. What is our total annual cost, including PRO fees, hardware, support, and any overage charges?** The line item in your accounts payable ledger is usually only the software subscription. The full cost sits across three or four line items. Most vendors have never walked a customer through the whole number.
+
+      **6. What would I lose if I ended this contract at the end of the current term?** This question is useful whether you plan to leave or not. It tells you what the vendor believes they are delivering that you would miss. If the answer is "the music," that is a non-answer.
+
+      **7. What is the automatic renewal date and what notice do I need to give to prevent it?** You should already know this from the contract. Asking the vendor puts the date on both sides of the conversation. They will remember you asked.
+
+      **8. If we wanted to A/B test a music change across a set of stores, how would you support that?** Most catalog vendors have no capacity to run a controlled test. Hearing them describe the limits of their delivery model tells you what you can and cannot ask of them.
+
+      **9. What are three things you could do to improve the music's contribution to store performance, if we gave you the data to work with?** This question moves the vendor into a partner role for a minute. Good vendors will have real ideas. Vendors who are only selling a subscription will default to "upgrade to our premium tier."
+
+      **10. What would make this a better business relationship for both of us in the next year?** The question every QBR should end with. The answer tells you whether the vendor is oriented around retention or around outcomes.
+
+  - type: pullquote
+    text: "A QBR that avoids the measurement question is a service check-in with a better agenda. Half the questions on this list will not have answers. That is the information you came for."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "What to do with the answers"
+
+  - type: prose
+    body: |
+      Write down what the vendor answers and what they do not. Compare the answered questions against the questions you could answer about any other line item of similar size, such as lighting, signage, or a software subscription. If the music vendor's answers are thinner than the rest of your ops stack, that is a direct signal that this vendor category has not been held to the same standard as the others.
+
+      The point of the exercise is not to fire the vendor. The point is to find out whether your music is a measured variable or an assumed one. For most retail chains, it turns out to be assumed.
+
+      That is a discovery worth making on your side of the table before the renewal fires.
+
+  - type: subhead
+    level: 2
+    text: "What you can do this week"
+
+  - type: prose
+    body: |
+      Send these questions to whoever owns the vendor relationship. Ask them to raise two or three at the next standing meeting. You do not need to ask all ten in one sitting. Start with questions one, four, and five. Those three alone will tell you most of what you need to know.
+
+      Then put the renewal date on your operations calendar with a reminder ninety days in advance. The rest of the conversation runs off that date.
+
+  - type: prose
+    body: |
+      The financial framing that lets a CFO defend this as a line item is <a href="../for-cfos.html">laid out for finance teams here</a>.
+
+  - type: cta
+    variant: pilot
+    headline: "Run the measurement question on your stores"
+    body: "We work with a small number of multi-location lifestyle retailers on pilot deployments. If the measurement question is one you are about to put to your current vendor and want a parallel answer, we would welcome a conversation."
+    link: "/pilot"
+    link_text: "Start a conversation"
+
+  - type: related
+    posts:
+      - slug: "mood-media-alternatives"
+      - slug: "the-hidden-cost-of-your-licensing-fee"
+      - slug: "how-to-measure-if-your-store-music-is-working"
