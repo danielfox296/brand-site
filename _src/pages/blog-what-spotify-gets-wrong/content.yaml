@@ -1,7 +1,7 @@
-title: "What Spotify Gets Wrong About Business Music"
+title: "Is It Actually Illegal to Play Spotify in Your Stores?"
 slug: "what-spotify-gets-wrong"
 eyebrow: "MARKET INTEL"
-dek: "Curation from existing catalogs can only get you close enough. Generation lets you build music to exact brand and performance specifications."
+dek: "A store manager hits play on a personal Spotify account. A regional director gets a letter from ASCAP three months later. Here is the clean operator answer to what is actually allowed."
 date: "2026-03-01"
 last_updated: "2026-04-15"
 author:
@@ -9,143 +9,94 @@ author:
   role: "Founder & CEO"
 hero:
   src: "../img/blog/what-spotify-gets-wrong.jpg"
-  alt: "Streaming music interface contrasted with retail store environment"
+  alt: "Empty boutique retail storefront at opening"
   caption: "Photo: Unsplash"
-meta_description: "Spotify was built for personal listening, not retail conversion. Why catalog curation can never match music generated for your specific customer and store."
+meta_description: "A store manager hits play on Spotify. Is that legal? A plain answer for multi-location retailers who want to stop worrying about ASCAP letters."
 og_image: "/blog/what-spotify-gets-wrong/og.png"
-tags: [spotify, curation-vs-generation, licensing, retail-music]
+tags: [spotify, licensing, ascap, retail-music, vendor-evaluation]
 sections:
   - type: key_takeaways
     items:
-      - "Consumer playlists optimize for personal novelty and emotional resonance, not for retail behavioral outcomes"
-      - "Spotify's curators build for categories like 'contemporary boutique,' not for your specific brand and customer"
-      - "Per-location licensing fees scale badly — dynamic, segment-specific music gets expensive fast"
-      - "Generated music enables a continuous optimization loop that curated playlists structurally cannot"
+      - "A personal Spotify account playing on a store speaker is a terms of service violation and a public performance rights problem."
+      - "Spotify for Business and Soundtrack Your Brand cover the streaming side but you still need to think about what happens when a staff member logs in with their own phone."
+      - "ASCAP, BMI, and SESAC send letters to multi-location retailers more often than most operators realize."
+      - "The safest answer is music your company owns or licenses in a way that survives a staff turnover event."
 
   - type: prose
     body: |
-      Spotify is great for personal listening. It's terrible for retail.
+      A regional director at a 22 store accessories chain calls me last November. She got a letter from ASCAP. The letter referenced three of her stores by name. A staff member had been playing a personal Spotify account through the store speaker on Tuesday afternoons. ASCAP wanted a licensing fee for the previous 18 months.
 
-      Even Spotify for Business. Even its premium offering, Soundtrack Your Brand. Even when you hire a curator to build custom playlists. The fundamental model is broken for what retail actually needs.
+      She asked me the same question most operators eventually ask. Is it actually illegal to play Spotify in my stores, or is this a shakedown?
 
-      This isn't a knock on Spotify. It's a structural limitation that exposes a bigger problem in how most retailers think about [background music](../blog/why-background-music-costs-you-sales.html).
+      The answer is a little of both, and the fix is simpler than most vendors let on.
 
   - type: subhead
     level: 2
-    text: "The Consumer Playlist Problem"
+    text: "What Spotify's own terms say"
 
   - type: prose
     body: |
-      Start with the obvious: consumer playlists — the ones built by Spotify's editorial team or by algorithm for "workout" or "focus" or "indie vibes" — were never designed for retail. They're designed for individual taste.
+      A personal Spotify subscription is for personal use. The terms of service are clear about this. Playing that account through a store speaker during operating hours violates the terms. Spotify can suspend the account. Most operators never get suspended. They get something worse later.
 
-      That means they optimize for novelty, discovery, and personal emotional resonance. Great for headphones. Terrible for a storefront.
+      The separate issue is public performance rights. When music plays in a retail space, that counts as a public performance under US copyright law. Public performance needs a license from the performance rights organizations, ASCAP, BMI, and SESAC. A personal Spotify subscription does not include that license. The artists and publishers never got paid for the commercial use, which is what the PROs exist to collect on.
 
-      When you play "Discover Weekly" in your store, you're playing music built for someone sitting alone with their feelings, not for a customer walking past a product display. The songs are longer, the emotional arcs are deeper, the transitions are more about surprise than flow.
+      This is the part most store managers do not know. They assume a paid subscription covers everything. It does not.
 
   - type: subhead
     level: 2
-    text: "Why Curated Business Playlists Miss"
+    text: "How retailers usually learn this"
 
   - type: prose
     body: |
-      Spotify's business offering improves this slightly. Better selection for commercial contexts. Shorter songs sometimes. Better transition thinking.
+      ASCAP and BMI field reps visit malls and shopping districts. They note what music is playing in which store. They cross reference the stores against their own database of licensed businesses. If a store is not licensed, they send a letter.
 
-      But it still fundamentally operates under the wrong model: it curates from existing music. It doesn't generate for your specific customer.
+      The letters are firm but negotiable. The going rate for a small chain is a few thousand dollars per year in back fees plus a forward license. Operators who ignore the letters get lawsuits. Operators who respond usually settle.
 
-  - type: subhead
-    level: 3
-    text: "Problem 1: Psychographic Targeting Doesn't Scale"
-
-  - type: prose
-    body: |
-      Spotify's curators are smart. But they can't build thousands of distinct playlists for thousands of distinct retail contexts. So they build for categories: "contemporary boutique," "luxury retail," "casual dining."
-
-      Your store isn't a category. It's a specific brand with a specific customer and specific values. Spotify's curator playlist for "contemporary boutique" is built for an average contemporary boutique. Not for your brand voice.
-
-      This means you're still settling. You're playing music that's close to your brand rather than your brand.
-
-  - type: subhead
-    level: 3
-    text: "Problem 2: Licensing Cost Scales Badly"
-
-  - type: prose
-    body: |
-      Streaming music for commercial use is surprisingly expensive, and the math gets worse the more you use it. Spotify for Business charges based on store location and usage. If you have three stores, you're paying licensing fees for three locations. If you build a 50-store chain, those fees become a real line item.
-
-      You end up paying for scale without the benefits of scale.
-
-  - type: stat_callout
-    number: "$0"
-    label: "Per-stream licensing cost with AI-generated music — you own it outright"
-    source: "Entuned, 2026"
-    accent: gold
-
-  - type: subhead
-    level: 3
-    text: "Problem 3: No Optimization Loop"
-
-  - type: prose
-    body: |
-      When you're curating from existing music, you have no data feedback. You can't know if a song is performing better than another because you're not measuring performance. You set it and forget it. Maybe you swap a playlist every quarter. But that's not optimization — that's negligence.
-
-      Retail music should improve over time as you learn what works. Standard licensing models don't enable that.
+      I have seen three versions of this over the past two years. In every case, the store manager had been playing a personal account because the corporate music service was broken, boring, or both. The licensing exposure was real. The underlying cause was that the approved music was not good enough to keep the staff from reaching for their own phone.
 
   - type: subhead
     level: 2
-    text: "The Catalog vs. Generation Problem"
+    text: "What actually covers you"
 
   - type: prose
     body: |
-      This is the deeper issue: Spotify's model is catalog-based. It works by selecting songs from an existing library. It's curation. It's smart curation, but it's still bounded by what exists.
+      Spotify for Business and Soundtrack Your Brand include the public performance license as part of the subscription. So do Mood Media, Cloud Cover, Rockbot, and most B2B music providers. If you pay for one of these and you can demonstrate that every store is covered, you are legally clean on that side.
 
-      Modern retail needs something different: music generated for a specific use case, rather than curated from a catalog.
+      The part that still trips operators up is enforcement inside the store. A licensed B2B subscription does not stop a staff member from plugging their phone in when the sanctioned playlist gets repetitive. Now you have the licensed service running on paper and an unlicensed personal account running on the speaker. ASCAP does not care what you paid for. They care what is playing.
 
-  - type: stat_callout
-    number: "8-12%"
-    label: "Increase in willingness to pay when music is congruent with store positioning"
-    source: "Areni and Kim, 1993"
-    accent: teal
+      The operators who stay out of trouble do two things. They pay for a real commercial music service at every location. And they give their stores music that the staff does not want to replace.
 
   - type: subhead
     level: 2
-    text: "Why Generation Beats Curation for Retail"
-
-  - type: comparison_table
-    title: "Curation vs. generation for retail music"
-    columns: ["", "Curation", "Generation"]
-    rows:
-      - ["Specificity", "Close enough to your brand", "Built explicitly for your brand voice and customer"]
-      - ["Licensing", "Per-stream, per-location fees that scale badly", "Own the music outright, scales perfectly"]
-      - ["Optimization", "Static playlists, swap quarterly", "Continuous improvement as you learn what works"]
-      - ["Brand alignment", "Category average", "Psychographic profile of your actual customer"]
-
-  - type: subhead
-    level: 2
-    text: "Why Should Retailers Switch From Curation to Generation?"
+    text: "The cost trap nobody mentions"
 
   - type: prose
     body: |
-      To be fair: transitioning from catalog-based to generation-based music is a shift. Most retailers are used to the streaming model. It feels familiar. It feels safe.
+      Commercial music subscriptions look cheap per store per month. The math stops working at scale. A 40 store chain paying for a B2B subscription plus the add ons most vendors push, messaging channels, drive thru audio, seasonal swaps, is writing a real check every year for something most operators never audit.
 
-      But it's also why most retailers settle for mediocre background music. Because the model is optimized for consumer listening, not for commercial strategy.
+      When was the last time your team evaluated the music line item against what the stores actually hear? When was the last time anyone in ops listened to a full shift in a flagship store and wrote down what played?
 
-      The question isn't "Should I keep using Spotify?" The question is "What if my music was engineered for my store instead of for an average consumer?" Learn more about [how Entuned builds music for your specific customer](../blog/what-is-entuned.html) — and why generation beats curation at every level.
+      Those two questions usually produce a conversation the finance team has been waiting for.
 
-      That's the difference between settling and winning.
+  - type: subhead
+    level: 2
+    text: "What to do this week"
 
-  - type: pullquote
-    text: "The question isn't 'Should I keep using Spotify?' The question is 'What if my music was engineered for my store instead of for an average consumer?'"
-    accent: gold
+  - type: prose
+    body: |
+      Three small moves before this becomes a letter. Walk two stores during a mid week afternoon shift and listen to what is actually playing. Ask your music vendor for proof of PRO coverage in writing, naming ASCAP, BMI, and SESAC. Check whether any of your stores have a personal Bluetooth speaker paired to a staff device.
+
+      If the answer to the third question is yes in even one location, you have the exposure this post describes.
 
   - type: cta
     variant: pilot
     headline: "Run a pilot"
-    body: "Spotify was built for personal listening — not for converting browsers into buyers. Entuned generates music owned by you, engineered for your customer, and optimized over time."
+    body: "We work with a small number of multi location lifestyle retailers on pilot deployments. If the store music question is something you are trying to get right once and stop worrying about, we would be open to a conversation."
     link: "/pilot"
     link_text: "Start a conversation"
 
   - type: related
     posts:
-      - slug: "ai-generated-music-retail"
       - slug: "ai-vs-traditional-retail-music"
       - slug: "music-was-never-made-for-your-store"
+      - slug: "why-background-music-costs-you-sales"

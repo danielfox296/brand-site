@@ -38,7 +38,7 @@ sections:
   - type: stat_callout
     number: "100%"
     label: "Of the time the audio environment is running -- it never stops influencing perception"
-    source: "Entuned market research, 2026"
+    source: "Common-sense observation of retail operating hours"
     accent: teal
 
   - type: prose

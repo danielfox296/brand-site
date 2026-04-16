@@ -1,7 +1,7 @@
-title: "Multi-Location Music: The Brand Problem"
+title: "Multi-Location Music: Why Every Store Sounds Different"
 slug: "multi-location-music-management"
 eyebrow: "MARKET INTEL"
-dek: "Ten locations, ten managers, ten soundtracks. Your brand has a Pantone for every surface but no spec for audio."
+dek: "Ten locations, ten managers, ten soundtracks."
 date: "2026-04-01"
 last_updated: "2026-04-15"
 author:
@@ -11,22 +11,22 @@ hero:
   src: "../img/blog/multi-location-music-management.jpg"
   alt: "Row of storefronts in a modern retail district"
   caption: "Photo: Unsplash"
-meta_description: "10 locations, 10 store managers, 10 different soundtracks. How retail chains keep music consistent across locations and why most fail."
+meta_description: "Ten locations, ten managers, ten soundtracks. Why staff keep changing the music in your stores, and what to ask your vendor at the next QBR."
 og_image: "/blog/multi-location-music-management/og.png"
-tags: [market-intel, multi-location, brand-consistency, fleet-management]
+tags: [market-intel, multi-location, brand-consistency, staff-turnover]
 sections:
   - type: key_takeaways
     items:
-      - "Multi-location brands specify fonts, colors, and signage — but leave music to whoever is closest to the iPad"
-      - "Mattila and Wirtz (2001) showed congruent sensory environments produce significantly better customer experiences"
-      - "Genre-level centralized control ensures consistency but not effectiveness — consistent mediocrity is still mediocrity"
-      - "A real audio spec uses parameters (tempo, instrumentation, volume) the way a lighting spec uses Kelvin and lumens"
+      - "Your brand guide covers fonts, fixtures, and signage. The music is a login and a hope."
+      - "Staff change the channel because the default channel is boring, wrong, or grating after four hours."
+      - "A genre label is not a specification. Two stores on the same jazz channel can sound nothing alike."
+      - "You can audit this in an afternoon by walking three stores at the same time of day."
 
   - type: prose
     body: |
-      If you run more than one location, you have this problem even if you do not know it. Your brand guidelines specify fonts, colors, photography style, tone of voice, signage placement, and packaging materials. Your operations manual covers layout, stocking procedures, cleaning schedules, and customer greeting protocols.
+      You walk into your Denver store at 2 PM on a Tuesday and it sounds like a coffee shop in 2014. You walk into your Austin store an hour later and it sounds like a pregame. Same logo on the door. Same fixtures. Same merchandise. Different soundtrack, by a country mile.
 
-      The music is probably a subscription login and a note that says "play appropriate music." What appropriate means is left to the person standing closest to the iPad.
+      Nobody meant for it to end up this way. The brand team specified the fonts and the fixtures and the store window. Nobody wrote a spec for the music. So the music went wherever the nearest manager wanted it to go.
 
   - type: subhead
     level: 2
@@ -35,90 +35,76 @@ sections:
 
   - type: prose
     body: |
-      Store managers are humans with personal taste. A manager in one location gravitates toward ambient electronic. Another plays R&B. A third uses whatever station was selected when the service was set up two years ago and has not changed it since. A fourth turns the music off during slow periods because they find it annoying.
+      The manager in Denver likes ambient electronic. She set the station two years ago and nobody touched it. The manager in Austin hates the default channel, so he logs in with his personal account and plays a hip-hop playlist instead. The manager in Raleigh turns it off between 3 and 5 because the place is slow and the music annoys her while she does paperwork. The manager in a fourth store plays whatever a visiting regional VP mentioned liking six months ago.
 
-      None of this is malicious or even careless. It is the predictable result of deploying a creative element with no specification and no oversight. Every other brand element in the store has a spec. The music does not.
+      None of these people are doing a bad job. They are solving a local problem the way any operator solves a local problem. The brand team handed them no spec and no check-in. They filled the gap with taste.
 
-      Over time, the drift compounds. Each store develops its own audio identity. That identity is shaped by whoever was last promoted to assistant manager, not by the brand team that specified everything else the customer encounters.
+      The drift compounds over staff turnover. Each new assistant manager inherits the last one's login and the last one's preferences. By year three, a ten-store chain has ten audio identities, and the brand team has no idea.
 
   - type: subhead
     level: 2
-    text: "Why it matters"
-    anchor: "why-it-matters"
+    text: "Why your staff keep changing it"
+    anchor: "why-staff-change-it"
 
   - type: prose
     body: |
-      The audio environment contributes to brand perception. Mattila and Wirtz's 2001 research showed that congruent sensory environments produce significantly better customer experiences than mismatched ones. When the music in your Denver store feels premium and the music in your Austin store feels like a college dorm room, customers in those two stores are forming different impressions of the same brand.
+      Ask a store manager why they changed the channel and you get one of four answers. The music is boring after the third loop of the shift. The music is wrong for the hour (late-afternoon energy at 10 AM, morning calm at 7 PM). The music is the same songs the customer heard at the mall food court an hour ago. The music is too loud, or too quiet, and the controls are hidden three menus deep.
 
-      For single-location operators, the music reflects whatever the owner or manager prefers. That is a choice, and it can be a good one. For multi-location brands, inconsistency is not a choice. It is a failure of specification.
+      Every one of those answers is a vendor problem, not a staff problem. Your people are the last line of defense against a playlist that does not match the room. They change it because the default is worse than their taste.
+
+      A brand that specifies the soundtrack has to give staff something worth leaving alone. That is a higher bar than "corporate picked a station."
 
   - type: stat_callout
-    number: "10 stores"
-    label: "10 managers, 10 different soundtracks — the predictable result of no audio spec"
-    source: "Common multi-location retail pattern"
-    accent: teal
-
-  - type: prose
-    body: |
-      This problem is invisible to the executive team because nobody reports on it. The regional manager walking a store inspection is checking signage compliance, fixture condition, and stocking levels. They are probably not listening critically to the audio and comparing it against a documented standard, because no documented standard exists. For more on why [employees hear it too](../blog/employees-hear-it.html) and how it affects the operation from the inside, that post covers the staff side.
-
-  - type: subhead
-    level: 2
-    text: "What centralized control looks like"
-    anchor: "centralized-control"
-
-  - type: prose
-    body: |
-      Most commercial music services offer some form of centralized management. Soundtrack Your Brand, SiriusXM for Business, and Mood Media all provide dashboards where a corporate user can set playlists, schedules, and station selections across locations. The store manager sees the player. The brand team controls the programming.
-
-      This solves the consistency problem at the genre level. Every store plays the same station. Every location follows the same daypart schedule. The brand team picks the mood, the service delivers it uniformly.
-
-      What centralized playlist management does not solve: whether the music is right for the customer. It ensures every store plays the same thing. It does not ensure the thing being played is effective. Consistent mediocrity is still mediocrity.
-
-  - type: pullquote
-    text: "Consistent mediocrity is still mediocrity. Centralized control ensures every store plays the same thing — not that it works."
-    accent: teal
-
-  - type: subhead
-    level: 2
-    text: "The specification problem"
-    anchor: "specification"
-
-  - type: prose
-    body: |
-      A lighting designer specifies color temperature in Kelvin, brightness in lumens, beam angle in degrees. These are measurable parameters. Any electrician in any city can execute the spec and produce the same result.
-
-      Music has equivalent parameters. Tempo in BPM. Volume in decibels. Key. Mode. Instrumentation profile. Timbral warmth. Production style. The difference is that no commercial music service lets you specify at this level. You get genre labels and mood descriptors. You cannot say "every location plays 70 to 85 BPM, acoustic instrumentation, clean production, minor-to-mixed mode, below 60 dB." You can only say "play the jazz channel."
-
-  - type: stat_callout
-    number: "65-140 BPM"
-    label: "range within a single 'jazz' channel — the genre label is too coarse to be a specification"
+    number: "65 to 140 BPM"
+    label: "the tempo range inside a single commercial jazz channel. Your spec is coarser than your customers."
     source: "Typical commercial music service channel analysis"
     accent: teal
 
+  - type: subhead
+    level: 2
+    text: "Genre is not a specification"
+    anchor: "genre-is-not-a-spec"
+
   - type: prose
     body: |
-      The jazz channel in one daypart might be 65 BPM piano trio. In another it might be 140 BPM bebop. Both are jazz. They produce opposite effects on customer behavior. The genre label is too coarse to be a specification.
+      A lighting designer tells an electrician 3000 Kelvin, 800 lumens, 40-degree beam. Any electrician in any city executes that and produces the same room. Your brand architect tells your Denver manager "play the jazz channel." The jazz channel at 10 AM might be a 65 BPM piano trio. The jazz channel at 4 PM might be 140 BPM bebop. Both are jazz. They produce opposite rooms.
+
+      Most commercial music vendors solved the consistency problem at the genre level. Every store plays the same channel. Nobody solved the question of whether the channel is right for the room, the hour, or the customer who walked in. Consistent mediocrity is still mediocrity, and your staff will keep hitting the next button.
+
+  - type: pullquote
+    text: "Consistent mediocrity is still mediocrity. Your staff will keep hitting the next button."
+    accent: teal
 
   - type: subhead
     level: 2
-    text: "What would solve it"
-    anchor: "solution"
+    text: "An audit you can run this week"
+    anchor: "audit-this-week"
 
   - type: prose
     body: |
-      A real audio specification for a multi-location brand would look like a lighting spec. Target tempo range. Instrumentation parameters. Production characteristics. Volume calibration per location (accounting for room size and ambient noise). Familiarity constraints. And measurement at each location to confirm the spec is producing the intended effect.
+      Pick three stores and a Tuesday. At 11 AM, 2 PM, and 5 PM, have someone on your team stand in each store for five minutes and write down what they hear. Not the channel name. The actual song, the tempo, the volume, whether the ceiling speaker is buzzing, whether the music matches the energy of the customers in the room.
 
-      This requires music that is parameterized, not just categorized. If every track has logged values for tempo, key, instrumentation, energy, and production style, the brand team can define ranges for each parameter and ensure compliance across the fleet. Deviation becomes measurable. The equivalent of a store using the wrong font becomes a store playing music outside the specified parameters.
+      Read the three reports side by side. If the three stores sound like three different brands, you have the problem this post describes. Ask your current music vendor two questions at the next QBR. First, show me what every store was playing at those three times. Second, what is the parameter we agreed on, and how am I supposed to check that you hit it. The answers tell you whether you have a vendor or a subscription.
 
-      For more on how [Mood Media alternatives](../blog/mood-media-alternatives.html) compare on this dimension, and why [measuring what you ignore](../blog/measure-what-you-ignore.html) produces compounding returns, those posts extend the argument.
+  - type: subhead
+    level: 2
+    text: "What a real spec looks like"
+    anchor: "what-a-spec-looks-like"
+
+  - type: prose
+    body: |
+      A real audio spec for a multi-location brand reads like a lighting spec. Tempo range. Instrumentation character. Volume calibration per room. The shape of the arc from open to close. And enough familiarity with the customer that the music feels native to the store, not dropped in from a stock channel.
+
+      The reason genre labels won the market is that they were the coarsest thing a vendor could deliver at scale. Generative music changed what the coarsest unit can be. The brand team can define the room the customer walks into, and the manager in Austin has no reason to log in with his personal account, because the default is already right.
+
+      For the cost side of this problem, the [Mood Media alternatives](../blog/mood-media-alternatives.html) post covers what vendors charge and why. For the staff side, [why your employees hear it too](../blog/employees-hear-it.html) is the companion to this one.
 
   - type: cta
     variant: pilot
-    headline: "Specify your audio like everything else"
-    body: "Entuned generates original music from your customer's psychographic profile with every parameter controlled and logged. Fleet-wide consistency at the parameter level, not just the genre level."
+    headline: "Stop auditing the music and start specifying it"
+    body: "Entuned builds original store soundtracks from your brand and your customer profile, calibrated per location, consistent across the chain. We run a small number of multi-location pilots at a time. If ten managers playing ten soundtracks is the problem you are trying to fix, we should talk."
     link: "/pilot"
-    link_text: "Learn about the free pilot program"
+    link_text: "Ask about a pilot"
 
   - type: related
     posts:

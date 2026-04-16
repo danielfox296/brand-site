@@ -70,7 +70,7 @@ sections:
   - type: stat_callout
     number: "0"
     label: "Number of measurable audio parameters specified in most retail brand guidelines"
-    source: "Entuned market research, 2026"
+    source: "Observed across multi-location retail audits"
     accent: gold
 
   - type: prose

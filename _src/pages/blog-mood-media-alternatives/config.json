@@ -1,28 +1,28 @@
 {
-  "title": "Mood Media Alternatives in 2026: What Retail Leaders Are Switching To — Entuned Blog",
-  "meta_description": "Retailers evaluating Mood Media alternatives in 2026 have more options than ever. Here's how the major players compare — and what's changed with AI.",
+  "title": "Mood Media Alternatives in 2026: A Retail Operator's Guide | Entuned Blog",
+  "meta_description": "A retail operator's guide to Mood Media alternatives in 2026. Who the players are, what they cost, and the questions that filter them down to a shortlist.",
   "output": "blog/mood-media-alternatives.html",
   "date_published": "2026-03-26",
   "faq": [
     {
-      "q": "Why are retailers switching from Mood Media in 2026?",
-      "a": "Most retailers cite a combination of long-term contract structures, limited measurement capabilities, and the absence of any AI or behavioral data layer. Mood Media was built for a catalog-and-playlist model that predates performance-driven retail analytics. As retailers increasingly hold every channel to ROI standards, a service that cannot report on behavioral outcomes becomes difficult to justify."
+      "q": "What are the alternatives to Mood Media in 2026?",
+      "a": "The 2026 shortlist splits into three buckets. Cheaper catalog SaaS (Soundtrack Your Brand at roughly $35 to $50 per location per month, Cloud Cover Music at $10 to $25). Legacy broadcast (SiriusXM for Business at $30 to $80). A small number of generative vendors (QSIC in Australia and New Zealand, Entuned in the US for multi-location lifestyle retail). Each bucket has a different tradeoff on price, contract structure, targeting, and performance reporting."
     },
     {
-      "q": "What are the main Mood Media alternatives available in 2026?",
-      "a": "The primary alternatives are Soundtrack Your Brand (clean SaaS, licensed catalog), Cloud Cover Music (SMB-focused, low cost), SiriusXM for Business (large catalog, legacy infrastructure), QSIC (AI-adjacent, primarily AU/NZ), and Entuned (AI-generated music, behavioral data layer, performance pricing). Each operates on a meaningfully different architecture and serves different retailer needs."
+      "q": "Why are operators leaving Mood Media?",
+      "a": "Five reasons come up repeatedly. Long multi-year contracts with termination penalties. No performance reporting beyond play logs and schedule adherence. Targeting limited to genre and mood channels, with no connection to the retailer's specific customer. Catalog fatigue because staff and regulars hear every track in rotation dozens of times a month. Bundled pricing that hides the real per-location cost until finance goes looking for it."
     },
     {
-      "q": "How does AI-generated retail music differ from a catalog-based service?",
-      "a": "Catalog-based services license existing recordings and organize them into playlists. AI-generated systems like Entuned compose original music from scratch to a behavioral specification — no catalog, no licensing fees, and no repetition. Because every parameter of the music is controlled and logged, the system can correlate musical variables with retail outcomes and optimize over time. Catalog services cannot do this at any price point."
+      "q": "How do the alternatives actually compare on price?",
+      "a": "Cloud Cover Music is the cheapest, roughly $10 to $25 per location per month. Soundtrack Your Brand runs $35 to $50 with licensing included. SiriusXM for Business negotiates enterprise pricing in the $30 to $80 range. Mood Media and legacy providers are typically bundled with hardware and support, which makes direct comparison difficult. Entuned runs a free pilot first."
     },
     {
-      "q": "What does retail background music pricing look like in 2026?",
-      "a": "Pricing varies significantly by model. Cloud Cover Music starts around $9.99–$24.99 per location per month. Soundtrack Your Brand runs $34.99–$49.99. Mood Media and SiriusXM for Business are typically quoted as part of bundled AV contracts and are less transparent. Entuned offers a free pilot, with pricing discussed after the retailer has their own performance data."
+      "q": "What questions should I ask before signing with any vendor?",
+      "a": "Five questions separate the vendors who can deliver measurable value from the ones who cannot. What do you report on quarterly? What is your termination clause, in writing? Is the music licensed or original, and who owns the PRO liability? How does my customer data shape what plays? Can you show me a before-and-after from a comparable retailer with specific metrics on dwell, conversion, and basket?"
     },
     {
-      "q": "What questions should retailers ask any in-store music vendor before signing?",
-      "a": "Five essential questions: (1) What do you measure and what can I report on? (2) What are the contract terms and exit provisions? (3) Is the music generated or licensed — and who bears the licensing liability? (4) How is the music targeted to my specific customer profile, not a generic genre? (5) Can you show me documented ROI from a comparable retailer, not just a case study headline?"
+      "q": "What does switching cost a multi-location retailer?",
+      "a": "Two costs. First, the early termination penalty in the current contract, which can run into the tens of thousands depending on locations and remaining term. Second, the operational cost of running a parallel setup during transition. Both are knowable before you make the decision. Pull the contract and read the termination clause before you take the first sales call with an alternative."
     }
   ]
 }

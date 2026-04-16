@@ -1,7 +1,7 @@
 title: "What a Producer Hears That You Don't"
 slug: "what-a-producer-hears"
 eyebrow: "FIELD NOTES"
-dek: "A producer hears frequency, compression, tempo, mic placement, and lyrical mismatch. Your store manager stopped noticing weeks ago."
+dek: "Your store manager has heard the playlist so many times they've stopped noticing what's wrong. The customer walks in fresh."
 date: "2026-04-01"
 last_updated: "2026-04-15"
 author:
@@ -11,99 +11,101 @@ hero:
   src: "../img/blog/what-a-producer-hears.jpg"
   alt: "Close-up of a mixing console with faders and meters in a recording studio"
   caption: "Photo: Unsplash"
-meta_description: "A producer hears strata the store manager can't: frequency, compression, tempo, mic placement, lyrical mismatch. Taste is the wrong tool for retail audio."
+meta_description: "Your store manager stopped hearing the music months ago. Your customer walks in fresh. Here is how to tell if the audio in your stores is hurting sales."
 og_image: "/blog/what-a-producer-hears/og.png"
 tags: [production, audio-quality, store-manager, retail-audio]
 sections:
   - type: key_takeaways
     items:
-      - "A producer hears strata the store manager can't — frequency, compression, tempo, mic placement, production era"
-      - "Repetition legitimizes: the store manager has heard the playlist so many times they've stopped noticing what's wrong"
-      - "The customer walks in fresh and evaluates the music on a completely different basis"
-      - "Taste is the wrong tool — what the room needs is a producer working at the scale of a retail floor"
+      - "A trained ear catches things in a recording that a casual listener never consciously registers"
+      - "Repetition legitimizes. The store manager has heard the playlist enough times that the rough edges have smoothed out in their head"
+      - "The customer walks in fresh and judges the room on a completely different basis"
+      - "Taste is the wrong tool for the job. The room needs somebody working at the scale of a retail floor"
 
   - type: prose
     body: |
-      When I walk into a retail store and the music is wrong, I'm running a diagnosis.
+      I walk into a store and within about ten seconds I can tell whether the music is working. Not because I have magic ears. Because I have been trained to notice the things in a recording that most people feel but cannot name.
 
-      There are strata to what can go wrong. The actual frequencies might be irritating — something harsh in the upper midrange that nobody consciously clocks but that makes people want to leave. The compression might be too aggressive, making everything feel loud and relentless even at a moderate volume. The tempo might be a mismatch for the activity: frantic when the room calls for ease, or so slow it starts to feel like a waiting room. The lyrics might be describing something that has no business in this space — violence, heartbreak, explicit content — playing over a floor full of people trying to decide whether to spend money. The production era might be thirty years off from anything the customer would choose to listen to.
+      A customer walking past your storefront is doing the same thing, faster, and without knowing they are doing it. They get a wash of sound in the first few steps past the door, and they make a decision about the room before they reach the first fixture. They will not tell you what decided it. They will just browse a little or not, stay a little longer or not, come back next month or not.
 
-      Those are just some of the things. There are more.
+      The store manager is not part of this calculation. The store manager stopped hearing the music weeks ago.
 
   - type: stat_callout
     number: "100s"
-    label: "Distinct audio decisions a producer evaluates in any recording, almost none of which a listener consciously notices"
+    label: "Distinct audio decisions a trained ear can evaluate in any recording, almost none of which a listener consciously notices"
     source: "Industry production standards"
     accent: teal
 
+  - type: subhead
+    level: 2
+    text: "What a Trained Ear Catches"
+
   - type: prose
     body: |
-      But the gap between what I hear and what most people hear is probably widest when it comes to [tempo](../blog/science-of-tempo-retail.html). To someone trained to notice it, tempo exerts a physical pull. It asks your body to entrain to it, to find its cadence, to speed up or slow down. Most people can't name this. But they respond to it. A tempo that's too fast introduces a low-grade urgency that doesn't belong in a store where the goal is considered browsing. A tempo that's too slow makes the room feel like it's barely alive. The customer doesn't know why they feel rushed or why they want to leave. They just reach for the door.
+      A producer's job is to pull every lever in a recording on purpose. Somebody sat in a room and decided how close the singer should stand to the microphone, how much the drums should punch you in the chest, how much air there should be around the vocal, how the bass should sit against the kick. Every choice was made by a person with a stake in how the song lands.
+
+      Most listeners feel the outcome without ever noticing any of the choices. Billie Eilish records with a microphone almost touching her lips. The result is a voice that sounds like it is inside your head. Close. Unavoidable. Hard to ignore. A stadium-era rock vocal is the opposite. The singer is standing back from the mic because they are projecting to the back of an arena, and the recording carries that same outward push into your living room.
+
+      Both recordings are correct for what they were built to do. One of them is correct for the room a shopper is standing in right now. The other is wrong in ways the shopper cannot articulate and will not complain about. They will just leave a little sooner.
 
   - type: subhead
     level: 2
-    text: "The Subtler Stuff"
+    text: "Why the Store Manager Stopped Noticing"
 
   - type: prose
     body: |
-      The subtler stuff is where the real distance opens up between a producer's ear and everyone else's.
+      Here is what happens to the person running the floor. On day one the playlist is new, and they notice everything. Songs they like. Songs they do not. Songs that feel weirdly out of place at three in the afternoon on a slow Tuesday.
 
-      Take vocal mic placement. It sounds technical. It makes immediate sense once you feel it.
+      By week six the same playlist has become weather. The manager knows this song comes on around the time the UPS truck pulls up, that song is a dance break with the stockroom crew, another song is the one that plays while they cash out the morning. The music has stopped being music. It has become the soundtrack of their workday. A familiar, broken-in, emotionally loaded part of the job.
 
-      Billie Eilish records with a microphone a quarter inch from her lips, capturing a voice at almost no volume — a whisper with presence. The result is a vocal that feels like it's inside your skull. Intimate. Close. Unavoidable.
+      [Repetition legitimizes.](../blog/the-familiarity-trap.html) The brain files anything it hears often enough as normal. The rough edges smooth out. The mismatches stop registering. The song that was grating in week one is just part of the furniture by month three.
 
-      Sammy Hagar screams. When he's at full volume, the mic has to be nearly two feet away to avoid overloading the signal. The result is a voice that fills a room, that was built for a stadium, that projects outward rather than inward.
-
-      Both are correct for what they're doing. Put one vocal delivery into the other's setup and the result is either inaudible or distorted. In a retail environment, one of those relationships between voice and listener is right for the room. The other makes customers feel something they can't name — crowded, or weirdly distant, or vaguely unsettled. They don't trace it back to mic placement. They just feel it, and they act on the feeling.
-
-      This is one lever. There are hundreds.
-
-  - type: subhead
-    level: 2
-    text: "What the Store Manager Hears"
-
-  - type: prose
-    body: |
-      None of this is what the store manager is hearing when they listen to their own playlist.
-
-      What they hear is songs they have come to know. Songs associated with their workday, their routines, the rhythms of a Tuesday afternoon or a Saturday rush. Songs that have become, through sheer repetition, familiar.
-
-      [Repetition legitimizes.](../blog/the-familiarity-trap.html) This is absolutely true, and it's especially true in music. The more times you hear something, the more your brain files it as normal, as acceptable, as fine. The rough edges smooth out. The mismatches stop registering. The song that was grating in week one is just part of the ambient texture by month three.
-
-      The problem is that this process only works for the person doing the repeating.
+      This only works for the person doing the repeating.
 
   - type: stat_callout
     number: "2,000 hrs"
-    label: "Annual hours staff spend exposed to the store's audio environment"
-    source: "Entuned estimate, based on standard retail shift patterns"
+    label: "Annual hours a full-time staff member spends exposed to the store's audio environment"
+    source: "Standard retail shift calculation"
     accent: gold
-
-  - type: prose
-    body: |
-      The customer walks in fresh. They have no accumulated exposure to this playlist, no dopamine firing from lyrical recognition, no associations built between these songs and the comfortable rituals of their workday. They're evaluating the music on a completely different basis — one built from their own history with nostalgia, their own sense of what feels aspirational, their own body's response to tempo and frequency and vocal presence.
-
-      The [store manager](../blog/store-manager-problem.html) and the customer are never hearing the same thing. The store is only getting feedback from one of them.
 
   - type: subhead
     level: 2
-    text: "The Wrong Instrument for the Job"
+    text: "The Customer Walks in Fresh"
 
   - type: prose
     body: |
-      This is the problem that a playlist, however carefully assembled, cannot solve on its own. The person building it is the wrong instrument for the job. Not because they lack taste, but because taste is the wrong tool. What the room needs is someone who can hear all the levers at once — frequency, compression, tempo, era, lyric, mic placement, room relationship — and pull them deliberately, in the direction of a specific customer and a specific outcome.
+      The shopper has none of this. No accumulated memory of the playlist. No fondness for the song that plays during their afternoon coffee. No association between the staff they like and the track that was on when they met them.
 
-      That's not a music fan. That's a producer.
+      The shopper walks in at minute zero. They hear the room the way a stranger hears any room, through the body first and the brain second. They notice if it feels rushed or slow. They notice if it feels like them or like somebody twenty years older than them. They notice whether the music is pushing them toward the door or inviting them in.
 
-      And a producer, for the first time, can now work at the scale of a retail floor.
+      They leave. They come back. They stay an extra five minutes. They buy more or less.
+
+      The [store manager](../blog/store-manager-problem.html) and the shopper are hearing different rooms. The shopper is the one with the credit card.
+
+  - type: subhead
+    level: 2
+    text: "How to Tell if Your Store's Audio Is Hurting You"
+
+  - type: prose
+    body: |
+      You do not need a producer on staff. You need a couple of controlled moments where somebody who has never heard the playlist tells you what the room feels like.
+
+      Walk into three of your stores this week without warning. Stand just inside the entrance for two minutes with your phone down. Ask yourself what kind of person this music is for and whether that person is your customer. Ask a friend who has never been in the store to do the same and text you a sentence about how the room made them feel. Ask your most honest regular, the one who will tell you the truth, what the music did to the visit.
+
+      You will get more signal from those three walk-ins than from any conversation with your provider this quarter. If the answer keeps coming back as some version of "this does not feel like me," the playlist is doing active work against the reason the customer came in.
+
+      That is the problem a playlist cannot solve on its own. The person who assembled it is the wrong ear for the job. Not because they lack taste. Taste is the wrong tool. The room needs somebody who can pull every lever on purpose, in the direction of a specific customer and a specific hour of the day.
+
+      That is a producer. And for the first time, a producer can work at the scale of a retail floor.
 
   - type: pullquote
-    text: "Taste is the wrong tool. What the room needs is a producer. And a producer, for the first time, can now work at the scale of a retail floor."
+    text: "The store manager and the shopper are hearing different rooms. The shopper is the one with the credit card."
     accent: teal
 
   - type: cta
     variant: pilot
     headline: "Run a pilot"
-    body: "Entuned gives every store access to what a producer hears. Music engineered for the customer in front of the product, measured in real time."
+    body: "Entuned builds the audio in your stores around the customer walking in, not the staff who stopped hearing it. We are taking a small number of pilot partners this quarter."
     link: "/pilot"
     link_text: "Start a conversation"
 
