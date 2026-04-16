@@ -1,0 +1,94 @@
+title: "Your Store Deserves a Score, Not a Playlist"
+slug: "your-store-deserves-a-score"
+eyebrow: "FIELD NOTES"
+dek: "A commercial composer designs every second of a thirty-second score to hit a specific emotional target. Retail has always been handed a playlist instead. Generative audio finally closes that gap."
+date: "2026-04-16"
+last_updated: "2026-04-16"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/your-store-deserves-a-score.jpg"
+  alt: "Professional mixing console and studio monitors in a scoring room"
+  caption: "Photo: Unsplash"
+meta_description: "A commercial composer designs music to hit specific emotional targets. Retail has always been handed a playlist instead. That gap is what generative audio finally closes."
+og_image: "/img/blog/your-store-deserves-a-score.jpg"
+tags: [retail-audio, store-experience, intentional-audio, sound-design]
+sections:
+  - type: key_takeaways
+    items:
+      - "A thirty-second commercial score is engineered frame by frame to hit specific emotional targets. Every decision serves the outcome."
+      - "A retail store has the same design problem at longer duration. It was never solved because there was no way to compose at that scale."
+      - "Curated playlists are passive. They cannot be measured, iterated on, or aligned to the specific outcomes a store needs to produce."
+      - "Generative audio removes the capacity constraint, which is what finally lets retail audio be designed the way a score is designed."
+
+  - type: prose
+    body: |
+      A thirty-second commercial is one of the most deliberately crafted experiences you can buy. Every frame, every word, every sound has been chosen. A composer sits with the director. They watch the cut. They take notes on timing — this moment here needs to land hard, this transition needs to breathe, this emotional peak happens at second seventeen. Then they build the score to do exactly that. The music does not wander. It does not play it safe. It hits specific emotional targets at specific moments because it has to. Thirty seconds is all you get.
+
+      The composer knows the intent. They know who is watching, what you are trying to make them feel, what action you want them to take. The score serves that. Every frequency choice, every melodic decision, every rhythm works toward a single outcome. It is not background. It is architecture.
+
+      That kind of intentional design does not happen by accident. It happens because someone cared enough to measure the problem, then solve it with craft.
+
+  - type: subhead
+    level: 2
+    text: "Now Consider a Retail Store"
+
+  - type: prose
+    body: |
+      A customer walks in. They stay for forty minutes, or they stay for six. They pick up four items, or they pick up twelve. They come back next month, or they do not. They tell their friends the space felt good, or they do not mention it. Every one of those outcomes is shaped by dozens of variables — how the space looks, how it smells, how it sounds, how the staff moves, how the product is arranged. All of it works together.
+
+      The in-store music is part of that system. But unlike a commercial, it is not fighting for thirty seconds of attention. It is sustaining an experience over minutes. It is working in concert with everything else. It is shaping how long someone lingers, how they perceive the value of what is on the walls, whether they feel at home or rushed.
+
+  - type: pullquote
+    text: "A commercial is trying to create intent from scratch. A store is converting intent into action."
+    accent: gold
+
+  - type: prose
+    body: |
+      And here is the thing: a customer already decided to walk through your door. Their intent to buy is already there. That makes the audio design problem more important, not less. A commercial is trying to create intent from scratch. A store is converting intent into action. The margins retailers earn — the reason they are paid what they are paid — that is because they have learned to design that last-mile experience well.
+
+  - type: subhead
+    level: 2
+    text: "A Curated Playlist Is Not a Score"
+
+  - type: prose
+    body: |
+      For decades, that design problem went unsolved in audio. Music in retail was curated. Playlists. Sometimes good ones. But curation is passive. You pick songs you think fit the vibe, and you hope they work. You do not measure if they are actually doing anything. You do not iterate. You do not know which moments matter, which frequencies help, which choices move the needle on <a href="../blog/the-dwell-time-variable-nobodys-tracking.html">dwell time</a>, basket size, or return visits.
+
+  - type: subhead
+    level: 2
+    text: "The Constraint Was Capacity"
+
+  - type: prose
+    body: |
+      The constraint was not creativity. It was capacity. You could not generate hundreds of variations tailored to a specific brief. You could not measure the behavioral response. You could not close the loop between "here is what we are trying to accomplish" and "here is what is actually working."
+
+      Generative audio changes that. Because it finally lets you design the retail audio experience the way a commercial composer designs a score. You can be intentional. You can measure. You can iterate. You can align every element of the audio design — the timbre, the pace, the emotional architecture — to the specific outcomes your store needs.
+
+  - type: subhead
+    level: 2
+    text: "Endurance, Not Punch"
+
+  - type: prose
+    body: |
+      A commercial composer designs for punch. A retail audio designer designs for endurance, for coherence, for the sustained perception of value. Different problem. Same craft. Same rigor.
+
+      That is what has shifted. Retailers have always known audio matters. What has shifted is that it is now possible to treat in-store music the way you treat a commercial score: with intention, with measurement, with the kind of design discipline that earns the margins you are built to capture.
+
+  - type: prose
+    body: |
+      For the broader argument on why music is a design problem rather than a taste problem, see <a href="../blog/difference-between-art-and-design.html">the difference between art and design</a>.
+
+  - type: cta
+    variant: pilot
+    headline: "Score your store"
+    body: "Entuned composes original music for the design problem retail actually has. Engineered against your customer, measured against your sales data. We run pilots with a small number of multi-location lifestyle retailers at a time."
+    link: "/pilot"
+    link_text: "Ask about a pilot program"
+
+  - type: related
+    posts:
+      - slug: "difference-between-art-and-design"
+      - slug: "what-church-concert-halls-and-film-composers-know-that-retail-doesnt"
+      - slug: "sound-designer"
