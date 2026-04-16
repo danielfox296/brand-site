@@ -94,6 +94,10 @@ sections:
     text: "Retail is the one high-stakes commercial environment that has never asked music to do its actual job."
     accent: gold
 
+  - type: prose
+    body: |
+      For the retail leader view of why this matters, see <a href="../for-retail-leaders.html">the retail leaders page</a>.
+
   - type: cta
     variant: pilot
     headline: "Run a pilot"

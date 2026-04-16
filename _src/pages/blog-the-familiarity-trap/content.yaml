@@ -85,6 +85,10 @@ sections:
 
       *Yalch, R. F., & Spangenberg, E. R. (2000). The effects of music in a retail setting on real and perceived shopping times. Journal of Business Research, 49(2), 139-147.*
 
+  - type: prose
+    body: |
+      For the broader research record on this, see <a href="../science.html">The Science Behind the Soundtrack</a>.
+
   - type: cta
     variant: pilot
     headline: "Run a pilot"

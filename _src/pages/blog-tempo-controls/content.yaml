@@ -89,6 +89,10 @@ sections:
 
       The research settled the tempo question decades ago. The open question for your stores is whether anyone is measuring what happens after the customer slows down.
 
+  - type: prose
+    body: |
+      For the broader research record on this, see <a href="../science.html">The Science Behind the Soundtrack</a>.
+
   - type: cta
     variant: pilot
     headline: "Find out what your music is doing"

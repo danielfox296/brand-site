@@ -82,6 +82,10 @@ sections:
 
       If the answer to the third one is no, you already know you have a problem. You just have not had a reason to do anything about it yet.
 
+  - type: prose
+    body: |
+      For the retail leader view of why this matters, see <a href="../for-retail-leaders.html">the retail leaders page</a>.
+
   - type: cta
     variant: pilot
     headline: "Close the gap between how your store looks and how it sounds"

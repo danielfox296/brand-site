@@ -117,6 +117,10 @@ sections:
 
       These are different problems requiring different audio. A store choosing between them should be clear about which one it is solving.
 
+  - type: prose
+    body: |
+      For the broader comparison of what the category offers operators, see <a href="../why-entuned.html">why Entuned exists</a>.
+
   - type: cta
     variant: pilot
     headline: "Run a pilot in your store"

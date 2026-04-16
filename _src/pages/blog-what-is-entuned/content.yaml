@@ -74,6 +74,10 @@ sections:
 
       If the answer to both is no, you are not alone. That is the norm across the industry. But it does not have to be.
 
+  - type: prose
+    body: |
+      <a href="../how-it-works.html">The pilot structure</a> walks through what a deployment includes.
+
   - type: cta
     variant: pilot
     headline: "Talk to us about a pilot"

@@ -81,6 +81,10 @@ sections:
 
       Which means the ideal version of this is a store that can read its own density and adjust. Slow the music when the room is thin. Speed it up when the room gets crowded. Keep the storefront in the range where visible activity attracts rather than repels, and do it without anyone on staff having to think about it. That's a real-time problem. And your brand manager isn't solving it with the playlist they put together in January. [The store needs to become an instrument, not a set](../blog/the-store-is-not-a-set.html).
 
+  - type: prose
+    body: |
+      For the specific research on dwell time and spending, see <a href="../results.html">the results page</a>.
+
   - type: cta
     variant: pilot
     headline: "Run a pilot"

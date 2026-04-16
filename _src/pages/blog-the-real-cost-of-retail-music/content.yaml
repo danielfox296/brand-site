@@ -97,6 +97,10 @@ sections:
     body: |
       We work with multi-location lifestyle retail operators who have started to suspect the audio in their stores is a variable they have not been managing. We run pilots. We help finance teams put a number on something their current vendor does not measure.
 
+  - type: prose
+    body: |
+      The numbers side of this argument is <a href="../for-cfos.html">laid out for finance teams here</a>.
+
   - type: cta
     variant: pilot
     headline: "Run a pilot"

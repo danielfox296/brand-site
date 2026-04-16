@@ -83,6 +83,10 @@ sections:
 
       Then ask your music provider how they screen lyrical content. If the answer is a version of "we filter for explicit language," you have your answer. They are not reading the words either.
 
+  - type: prose
+    body: |
+      For the retail leader view of why this matters, see <a href="../for-retail-leaders.html">the retail leaders page</a>.
+
   - type: cta
     variant: pilot
     headline: "Stop running someone else's story in your store"

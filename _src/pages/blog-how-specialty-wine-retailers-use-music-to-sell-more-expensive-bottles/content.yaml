@@ -75,6 +75,10 @@ sections:
 
       Then look at your basket data over the last quarter. How often do customers upgrade to a pricier bottle when a staff member recommends it? How often do they default to the cheapest bottle in a category? Those numbers move with the room. The room includes the speakers.
 
+  - type: prose
+    body: |
+      The deeper academic record on music and shopper behavior is catalogued on <a href="../science.html">the science page</a>.
+
   - type: cta
     variant: pilot
     headline: "Find out what your music is doing for the bottle mix"

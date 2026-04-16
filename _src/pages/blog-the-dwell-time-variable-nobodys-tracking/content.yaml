@@ -89,6 +89,10 @@ sections:
 
       Sixty years of published studies say it would. The only question left is by how much, for your stores, with your customers.
 
+  - type: prose
+    body: |
+      For the broader picture of why retail analytics has a response-layer gap, see <a href="../why-entuned.html">why Entuned exists</a>.
+
   - type: cta
     variant: pilot
     headline: "Start measuring"

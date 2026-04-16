@@ -108,6 +108,10 @@ sections:
     body: |
       Pull your current contract. Find the termination clause and the renewal date. Ask your rep for the last four quarterly reports. Read them. Note what is in them and what is not. Walk two stores on a Saturday afternoon and listen to what is actually playing. That is your baseline. Any vendor you evaluate is measured against it.
 
+  - type: prose
+    body: |
+      The full picture of how Entuned differs from catalog providers is <a href="../why-entuned.html">on the why page</a>.
+
   - type: cta
     variant: pilot
     headline: "Run a pilot against your current vendor"

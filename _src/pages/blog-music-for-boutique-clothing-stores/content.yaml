@@ -96,6 +96,10 @@ sections:
 
       If the answer to any of those is no, your music is probably working against your merchandising, your brand, and your staff's effort to close sales. The fix is not a better playlist. Playlists are guesses. The fix is treating audio the way you already treat lighting and visual merchandising: as a deliberate part of the store environment that someone is accountable for.
 
+  - type: prose
+    body: |
+      For more on retail audio for apparel and boutiques, see <a href="../for-apparel.html">the apparel page</a>.
+
   - type: cta
     variant: pilot
     headline: "Rethink what your stores sound like"

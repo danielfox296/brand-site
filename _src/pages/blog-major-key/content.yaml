@@ -87,6 +87,10 @@ sections:
 
       If you are running multiple locations and your music has not been deliberately chosen to match your customer and your merchandise, you have an uncontrolled variable sitting in the middle of every store. Most operators have never tested whether changing it moves the numbers.
 
+  - type: prose
+    body: |
+      The deeper academic record on music and shopper behavior is catalogued on <a href="../science.html">the science page</a>.
+
   - type: cta
     variant: pilot
     headline: "Your music is a variable worth testing"

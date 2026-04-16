@@ -83,6 +83,10 @@ sections:
 
       The operators who are already measuring audio when that happens will have a head start on the vendor relationships, the internal org design, and the learning curve. The operators who are not will be playing catch-up in a category that suddenly has winners.
 
+  - type: prose
+    body: |
+      For the broader picture of why retail analytics has a response-layer gap, see <a href="../why-entuned.html">why Entuned exists</a>.
+
   - type: cta
     variant: pilot
     headline: "Get ahead of the category shift"

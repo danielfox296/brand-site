@@ -79,6 +79,10 @@ sections:
 
       That is a gap worth naming. Once it is named, it is a gap operators can actually close.
 
+  - type: prose
+    body: |
+      This gap sits at the center of <a href="../why-entuned.html">the category Entuned was built to address</a>.
+
   - type: cta
     variant: pilot
     headline: "Close the gap between what you can see and what you can change"

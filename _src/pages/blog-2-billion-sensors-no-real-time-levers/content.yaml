@@ -81,6 +81,10 @@ sections:
 
       That is a gap every multi-location retailer now has on their dashboard. Naming it is the first step toward closing it.
 
+  - type: prose
+    body: |
+      This gap sits at the center of <a href="../why-entuned.html">the category Entuned was built to address</a>.
+
   - type: cta
     variant: pilot
     headline: "Turn the missing lever into a measurable one"

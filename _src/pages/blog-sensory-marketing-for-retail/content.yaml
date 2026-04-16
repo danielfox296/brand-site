@@ -99,6 +99,10 @@ sections:
     body: |
       If the two stores sound different and nobody decided they should, that is the gap. And that gap is showing up in your numbers, whether anyone is looking for it or not.
 
+  - type: prose
+    body: |
+      For the retail leader view of why this matters, see <a href="../for-retail-leaders.html">the retail leaders page</a>.
+
   - type: cta
     variant: pilot
     headline: "Close the gap"

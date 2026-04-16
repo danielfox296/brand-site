@@ -93,6 +93,10 @@ sections:
 
       We work with a small number of multi-location lifestyle retailers on pilot deployments. If your stores have a transition problem and you want to hear what the fix sounds like, we would be glad to have that conversation.
 
+  - type: prose
+    body: |
+      <a href="../how-it-works.html">The pilot structure</a> walks through what a deployment includes.
+
   - type: cta
     variant: pilot
     headline: "Seamless from the first note"

@@ -96,6 +96,10 @@ sections:
 
       We work with a small number of multi-location lifestyle retailers on the full audio picture. If volume is the problem you can see, and you suspect the rest of the audio environment has similar blind spots, we would be glad to have that conversation.
 
+  - type: prose
+    body: |
+      The operational leadership case for treating audio as a brand element is <a href="../for-retail-leaders.html">laid out here</a>.
+
   - type: cta
     variant: pilot
     body: "Entuned builds purpose-made music for retail environments. No licensing. No playlist. Built around your customers."

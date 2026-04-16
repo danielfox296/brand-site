@@ -100,6 +100,10 @@ sections:
     text: "You are already shaping how every customer feels the moment they walk in. The only question is whether anyone chose the music with that in mind."
     accent: gold
 
+  - type: prose
+    body: |
+      The operational leadership case for treating audio as a brand element is <a href="../for-retail-leaders.html">laid out here</a>.
+
   - type: cta
     variant: pilot
     headline: "Run a pilot"

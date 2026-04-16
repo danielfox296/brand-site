@@ -83,6 +83,10 @@ sections:
     text: "A playlist that could belong to any store belongs to none of them."
     accent: teal
 
+  - type: prose
+    body: |
+      The numbers side of this argument is <a href="../for-cfos.html">laid out for finance teams here</a>.
+
   - type: cta
     variant: pilot
     headline: "Find out what you're leaving behind"

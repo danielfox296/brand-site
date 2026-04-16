@@ -105,6 +105,10 @@ sections:
 
       If the answer to all three is no, you are paying for a jukebox with a nicer interface. That was the best available option for a long time. It probably is not anymore.
 
+  - type: prose
+    body: |
+      For what a pilot actually looks like end to end, see <a href="../how-it-works.html">how the pilot works</a>.
+
   - type: cta
     variant: pilot
     headline: "Curious what this looks like in practice"

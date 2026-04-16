@@ -89,6 +89,10 @@ sections:
 
       The stores that figure this out stop thinking about music as a playlist problem and start thinking about it [the way they think about lighting](../blog/sound-designer.html): as a [controllable variable](../blog/sound-check-music-is-a-variable.html) with measurable effects, worth getting right.
 
+  - type: prose
+    body: |
+      For the retail leader view of why this matters, see <a href="../for-retail-leaders.html">the retail leaders page</a>.
+
   - type: cta
     variant: pilot
     headline: "Treat music like lighting"

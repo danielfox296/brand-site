@@ -93,6 +93,10 @@ sections:
 
       Tempo is the starting point, not the finish line. Retailers who want to see dwell time gains translate into revenue need to think about music at a higher resolution than a BPM slider.
 
+  - type: prose
+    body: |
+      The deeper academic record on music and shopper behavior is catalogued on <a href="../science.html">the science page</a>.
+
   - type: cta
     variant: pilot
     headline: "Ready to go beyond BPM?"

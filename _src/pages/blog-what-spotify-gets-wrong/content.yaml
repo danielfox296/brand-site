@@ -88,6 +88,10 @@ sections:
 
       If the answer to the third question is yes in even one location, you have the exposure this post describes.
 
+  - type: prose
+    body: |
+      The full picture of how Entuned differs from catalog providers is <a href="../why-entuned.html">on the why page</a>.
+
   - type: cta
     variant: pilot
     headline: "Run a pilot"

@@ -102,6 +102,10 @@ sections:
     text: "The store manager and the shopper are hearing different rooms. The shopper is the one with the credit card."
     accent: teal
 
+  - type: prose
+    body: |
+      The operational leadership case for treating audio as a brand element is <a href="../for-retail-leaders.html">laid out here</a>.
+
   - type: cta
     variant: pilot
     headline: "Run a pilot"

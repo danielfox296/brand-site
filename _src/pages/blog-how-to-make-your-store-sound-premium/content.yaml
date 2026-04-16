@@ -92,6 +92,10 @@ sections:
 
       Then check two things. Who chose the music playing right now, and when was that choice last reviewed by someone responsible for customer experience? If the answer to the first question is "the opener" and the answer to the second is "never," you have found your gap.
 
+  - type: prose
+    body: |
+      For the retail leader view of why this matters, see <a href="../for-retail-leaders.html">the retail leaders page</a>.
+
   - type: cta
     variant: pilot
     headline: "Make your store sound like your brand"

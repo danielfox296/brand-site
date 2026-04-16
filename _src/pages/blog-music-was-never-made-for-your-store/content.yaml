@@ -85,6 +85,10 @@ sections:
 
       We are working with a small number of multi-location lifestyle retailers on pilot deployments where the music in the store was built for the store. If that is a question you have started to ask about your own chain, we are open to a conversation.
 
+  - type: prose
+    body: |
+      The full picture of how Entuned differs from catalog providers is <a href="../why-entuned.html">on the why page</a>.
+
   - type: cta
     variant: pilot
     headline: "Music built for your store"

@@ -99,6 +99,10 @@ sections:
 
       For the cost side of this problem, the [Mood Media alternatives](../blog/mood-media-alternatives.html) post covers what vendors charge and why. For the staff side, [why your employees hear it too](../blog/employees-hear-it.html) is the companion to this one.
 
+  - type: prose
+    body: |
+      The operational leadership case for treating audio as a brand element is <a href="../for-retail-leaders.html">laid out here</a>.
+
   - type: cta
     variant: pilot
     headline: "Stop auditing the music and start specifying it"

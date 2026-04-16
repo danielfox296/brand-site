@@ -85,6 +85,10 @@ sections:
 
       Most vendors can answer the first question on the call. The second and the third usually take a week, and sometimes the answer is that the vendor cannot do it.
 
+  - type: prose
+    body: |
+      The numbers side of this argument is <a href="../for-cfos.html">laid out for finance teams here</a>.
+
   - type: cta
     variant: pilot
     headline: "Run a pilot"

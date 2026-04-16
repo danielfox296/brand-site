@@ -77,6 +77,10 @@ sections:
 
       Researchers settled decades ago that the music matters. The only open question is whether anyone at your company is measuring it.
 
+  - type: prose
+    body: |
+      The deeper academic record on music and shopper behavior is catalogued on <a href="../science.html">the science page</a>.
+
   - type: cta
     variant: pilot
     headline: "Find out what your music is doing"

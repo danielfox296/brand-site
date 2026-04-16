@@ -81,6 +81,10 @@ sections:
 
       You will not get a clean answer on the first pass. But the act of looking at those two data streams against each other for the first time usually produces at least one question worth asking. And that question is further than almost any of your competitors have gotten on the audio side.
 
+  - type: prose
+    body: |
+      This gap sits at the center of <a href="../why-entuned.html">the category Entuned was built to address</a>.
+
   - type: cta
     variant: pilot
     headline: "Run the exercise with help"

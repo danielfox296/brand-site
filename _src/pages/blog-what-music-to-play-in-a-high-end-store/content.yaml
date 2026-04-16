@@ -86,6 +86,10 @@ sections:
     body: |
       Entuned builds original music around the psychology of your specific customer. We are working with a small number of multi-location retailers on pilot programs. If your stores sound like an afterthought and you have been looking for a better answer, we would be glad to have the conversation.
 
+  - type: prose
+    body: |
+      For the retail leader view of why this matters, see <a href="../for-retail-leaders.html">the retail leaders page</a>.
+
   - type: cta
     variant: pilot
     headline: "Run a pilot"

@@ -21,6 +21,11 @@ sections:
       - "Customers process what they hear below the threshold of awareness, especially under time pressure and decision fatigue"
       - "Most retailers have never audited the specific claims their playlist makes about their brand"
 
+  - type: aside
+    title: "Sound Check Series"
+    body: |
+      Part 1: <a href="../blog/sound-check-music-is-a-variable.html">Music Is a Variable</a> &middot; Part 2: <a href="../blog/sound-check-playlist-problem.html">The Playlist Problem</a> &middot; <strong>Part 3: Your Music Is Selling Against You</strong> &middot; Part 4: <a href="../blog/sound-check-science-youre-ignoring.html">The Science You're Ignoring</a> &middot; Part 5: <a href="../blog/sound-check-close-the-loop.html">How Do You Know If Your Music Is Hurting Sales?</a>
+
   - type: prose
     body: |
       I was standing in a store last month. The kind of place that sells $200 candles and wants you to feel good about it. A song was playing through the ceiling speakers, loud enough to hear every word. The chorus kept repeating the word "mistake." Belted, impossible to tune out.
@@ -90,6 +95,10 @@ sections:
   - type: prose
     body: |
       Pick your highest-performing store and your lowest-performing store. Visit both during peak hours. Spend ten minutes in each one just listening. Write down what you hear. Compare the lyrics, the tempo, the genre, the overall feel against what your visual merchandising team spent weeks building. If the two are telling different stories, you have found a variable that most of your competitors have never even thought to measure.
+
+  - type: prose
+    body: |
+      Sound Check is a five-post series. Its framing connects to <a href="../why-entuned.html">why Entuned exists</a>.
 
   - type: cta
     variant: pilot

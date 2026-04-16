@@ -81,6 +81,10 @@ sections:
     body: |
       Your brand has a sound. Right now, it's probably someone else's. [What is your music saying about your brand?](../blog/what-your-music-is-saying-about-your-brand.html)
 
+  - type: prose
+    body: |
+      The operational leadership case for treating audio as a brand element is <a href="../for-retail-leaders.html">laid out here</a>.
+
   - type: cta
     variant: pilot
     headline: "Run a pilot"

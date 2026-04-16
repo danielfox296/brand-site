@@ -93,6 +93,10 @@ sections:
 
       If a retailer intends to treat audio as a performance variable and hold it to the same standard as visual merchandising or digital spend, the catalog business model was never set up to deliver that. The operators who take the measurement question seriously are the ones this comparison matters to.
 
+  - type: prose
+    body: |
+      For what a pilot actually looks like end to end, see <a href="../how-it-works.html">how the pilot works</a>.
+
   - type: cta
     variant: pilot
     headline: "See what the comparison actually looks like in your stores"

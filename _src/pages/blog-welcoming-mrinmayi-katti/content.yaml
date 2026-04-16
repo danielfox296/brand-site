@@ -44,6 +44,10 @@ sections:
 
       For retailers interested in pilot work with us, nothing changes. The pilots run the same way. Mrinmayi's work is on the inside of our operation, not on the customer-facing side.
 
+  - type: prose
+    body: |
+      For the story behind Entuned, see <a href="../about.html">the about page</a>.
+
   - type: cta
     variant: pilot
     headline: "Run a pilot"

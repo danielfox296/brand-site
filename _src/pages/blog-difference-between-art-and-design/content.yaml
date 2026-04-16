@@ -90,6 +90,10 @@ sections:
 
       If a customer could rank the effort behind every element of your store, the music should not come last.
 
+  - type: prose
+    body: |
+      The deeper academic record on music and shopper behavior is catalogued on <a href="../science.html">the science page</a>.
+
   - type: cta
     variant: pilot
     headline: "Music designed for your store"

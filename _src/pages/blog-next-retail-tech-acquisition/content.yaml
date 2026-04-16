@@ -77,6 +77,10 @@ sections:
 
       The operators who start now have a head start on the learning curve, on the vendor relationships, and on the internal org design that makes audio a measurable line item instead of a subscription nobody owns.
 
+  - type: prose
+    body: |
+      For the broader picture of why retail analytics has a response-layer gap, see <a href="../why-entuned.html">why Entuned exists</a>.
+
   - type: cta
     variant: pilot
     headline: "Join the pilot cohort"

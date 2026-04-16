@@ -81,6 +81,10 @@ sections:
 
       If the answers involve the words "annoying," "repetitive," or "I don't even hear it anymore," you have an audio environment that's working against your team. If someone tells you they turn it down after lunch, believe them, and ask what would need to change for them to leave it on.
 
+  - type: prose
+    body: |
+      For the retail leader view of why this matters, see <a href="../for-retail-leaders.html">the retail leaders page</a>.
+
   - type: cta
     variant: pilot
     headline: "Run a pilot"

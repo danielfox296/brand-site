@@ -21,6 +21,11 @@ sections:
       - "Employee-picked music serves staff comfort, not customer behavior. The mismatch is consistent across every store that tries it."
       - "Shoppers exposed to familiar, recognizable hits spent roughly 8% less time in-store than those hearing unfamiliar music"
 
+  - type: aside
+    title: "Sound Check Series"
+    body: |
+      Part 1: <a href="../blog/sound-check-music-is-a-variable.html">Music Is a Variable</a> &middot; <strong>Part 2: The Playlist Problem</strong> &middot; Part 3: <a href="../blog/sound-check-music-selling-against-you.html">Your Music Is Selling Against You</a> &middot; Part 4: <a href="../blog/sound-check-science-youre-ignoring.html">The Science You're Ignoring</a> &middot; Part 5: <a href="../blog/sound-check-close-the-loop.html">How Do You Know If Your Music Is Hurting Sales?</a>
+
   - type: prose
     body: |
       Walk into most multi-location retailers on any given Tuesday and you will hear one of three things: a personal Spotify account playing through the ceiling speakers, a playlist a manager built six months ago, or whatever the opener felt like putting on that morning. All three have the same thing in common. They are all, in different ways, broken.
@@ -114,6 +119,10 @@ sections:
       Pick three stores. Walk in during a weekday afternoon. Write down what you hear. Then ask yourself three questions: Who picked this? When did they pick it? And does anyone know whether it is helping or hurting?
 
       If nobody can answer the third question, that tells you something worth knowing.
+
+  - type: prose
+    body: |
+      This is part of the Sound Check series. The rest of the series sits on <a href="../why-entuned.html">the why page</a>.
 
   - type: cta
     variant: pilot

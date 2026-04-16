@@ -126,6 +126,10 @@ sections:
 
       Walk two stores in the same week, one strong and one weak, and listen for 20 minutes in each. Operators who do this usually hear the difference before any report lands on their desk.
 
+  - type: prose
+    body: |
+      For the broader comparison of what the category offers operators, see <a href="../why-entuned.html">why Entuned exists</a>.
+
   - type: cta
     variant: pilot
     headline: "If you are evaluating Mood alternatives, talk to us."

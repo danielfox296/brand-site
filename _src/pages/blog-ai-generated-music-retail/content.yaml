@@ -83,6 +83,10 @@ sections:
 
       If the answer to any of those is a version of "we pick a genre that matches your brand," that is curation with a generative label on it. The generation part is fine. The rest of the answer is what separates a retail audio product from a music player.
 
+  - type: prose
+    body: |
+      <a href="../how-it-works.html">The pilot structure</a> walks through what a deployment includes.
+
   - type: cta
     variant: pilot
     headline: "Hear what the category actually sounds like in your store"

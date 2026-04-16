@@ -116,6 +116,10 @@ sections:
 
       Retailers who have started treating audio as a measurable variable look at the spend the way they look at lighting or store layout. Those line items carry weight in the capital plan because somebody, at some point, ran the comparison. Nobody on your side has run that comparison on audio yet.
 
+  - type: prose
+    body: |
+      For the financial framing that lets a CFO defend this as a line item, see <a href="../for-cfos.html">The CFO's Case for Retail Audio</a>.
+
   - type: cta
     variant: pilot
     headline: "Run the numbers on your own stores"

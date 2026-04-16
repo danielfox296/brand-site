@@ -21,6 +21,11 @@ sections:
       - "Dwell time, conversion rate, and average ticket all shift when the audio environment changes, and the published research goes back four decades"
       - "Operators who start paying attention to their audio now will see patterns competitors are still ignoring"
 
+  - type: aside
+    title: "Sound Check Series"
+    body: |
+      Part 1: <a href="../blog/sound-check-music-is-a-variable.html">Music Is a Variable</a> &middot; Part 2: <a href="../blog/sound-check-playlist-problem.html">The Playlist Problem</a> &middot; Part 3: <a href="../blog/sound-check-music-selling-against-you.html">Your Music Is Selling Against You</a> &middot; Part 4: <a href="../blog/sound-check-science-youre-ignoring.html">The Science You're Ignoring</a> &middot; <strong>Part 5: How Do You Know If Your Music Is Hurting Sales?</strong>
+
   - type: prose
     body: |
       *This is Part 5 of the Sound Check series, exploring the science and practice behind retail music.*
@@ -110,6 +115,10 @@ sections:
   - type: prose
     body: |
       Entuned works with a small number of multi-location lifestyle retailers who want to treat their audio as a measurable part of store performance. If the gap described here sounds familiar, we would welcome a conversation.
+
+  - type: prose
+    body: |
+      This is part of the Sound Check series. The rest of the series sits on <a href="../why-entuned.html">the why page</a>.
 
   - type: cta
     variant: pilot

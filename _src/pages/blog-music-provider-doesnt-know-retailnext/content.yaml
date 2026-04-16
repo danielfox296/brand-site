@@ -83,6 +83,10 @@ sections:
 
       That is the first real conversation most retailers have ever had about their own audio data.
 
+  - type: prose
+    body: |
+      This gap sits at the center of <a href="../why-entuned.html">the category Entuned was built to address</a>.
+
   - type: cta
     variant: pilot
     headline: "Close the vendor gap"

@@ -83,6 +83,10 @@ sections:
     text: "The instinct to use music as a behavioral tool is correct. The method of picking songs from existing culture is where it breaks down."
     accent: teal
 
+  - type: prose
+    body: |
+      The deeper academic record on music and shopper behavior is catalogued on <a href="../science.html">the science page</a>.
+
   - type: cta
     variant: pilot
     headline: "Build from the outcome, not the playlist"

@@ -78,6 +78,10 @@ sections:
     body: |
       Pull your dwell time data for the last 90 days. Look at it by store, by day of week, by time of day. You already have this if you run any kind of traffic counter. Now ask yourself: do you know what was playing in each store during the periods you are looking at? Can you correlate the two? If the answer is no, you have a measurement gap. The audio environment has been affecting these numbers all along. You just have not been reading them.
 
+  - type: prose
+    body: |
+      For the financial framing that lets a CFO defend this as a line item, see <a href="../for-cfos.html">The CFO's Case for Retail Audio</a>.
+
   - type: cta
     variant: pilot
     headline: "See what your audio is actually doing"

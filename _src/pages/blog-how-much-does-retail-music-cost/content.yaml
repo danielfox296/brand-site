@@ -113,6 +113,10 @@ sections:
 
       Ask whoever owns the music relationship what metric moved last quarter because of the music. The answer will be interesting.
 
+  - type: prose
+    body: |
+      The numbers side of this argument is <a href="../for-cfos.html">laid out for finance teams here</a>.
+
   - type: cta
     variant: pilot
     headline: "Thinking about a new approach to store audio"

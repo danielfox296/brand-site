@@ -84,6 +84,10 @@ sections:
 
       That gap is worth closing. And most operators already have the instinct for what their store should sound like. They just have not had the tools or the data to act on it.
 
+  - type: prose
+    body: |
+      For more on retail audio for home goods stores, see <a href="../for-home-goods.html">the home goods page</a>.
+
   - type: cta
     variant: pilot
     headline: "Audio built for how your customers actually shop"

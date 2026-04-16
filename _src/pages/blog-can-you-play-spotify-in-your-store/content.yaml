@@ -112,6 +112,10 @@ sections:
     body: |
       Walk three stores. Ask the store manager what is playing and how it got there. If the answer involves a personal account, a staff member's phone, or "we've always used it," you have exposure. Pull the music subscription line items out of your P&L and confirm each location has a commercial license on file. If your current vendor cannot produce a certificate of license coverage in ten minutes, that is its own answer.
 
+  - type: prose
+    body: |
+      For the broader comparison of what the category offers operators, see <a href="../why-entuned.html">why Entuned exists</a>.
+
   - type: cta
     variant: pilot
     headline: "Run a free pilot"

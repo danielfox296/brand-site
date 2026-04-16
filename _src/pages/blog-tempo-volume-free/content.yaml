@@ -85,6 +85,10 @@ sections:
 
       Then ask yourself the harder question: does anyone in your organization know whether the music is working? Not whether the staff likes it. Whether it is producing a measurable commercial result. If nobody can answer that, the volume knob was never the real problem.
 
+  - type: prose
+    body: |
+      The numbers side of this argument is <a href="../for-cfos.html">laid out for finance teams here</a>.
+
   - type: cta
     variant: pilot
     headline: "Run a pilot"

@@ -98,6 +98,10 @@ sections:
     source: "Daniel Fox"
     accent: gold
 
+  - type: prose
+    body: |
+      For the story behind Entuned, see <a href="../about.html">the about page</a>.
+
   - type: cta
     variant: pilot
     headline: "Run a pilot"

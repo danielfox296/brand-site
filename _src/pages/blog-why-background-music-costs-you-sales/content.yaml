@@ -84,6 +84,10 @@ sections:
 
       Then pull up your current music contract and find three things. The renewal date. The monthly cost plus any support or install line items nobody remembers. The name of whoever handles your account. Email that person one question: can you send me a report on what is playing in my stores and any evidence it is helping. The answer, or the silence, will tell you everything you need to know.
 
+  - type: prose
+    body: |
+      For the financial framing that lets a CFO defend this as a line item, see <a href="../for-cfos.html">The CFO's Case for Retail Audio</a>.
+
   - type: cta
     variant: pilot
     headline: "Run a pilot"

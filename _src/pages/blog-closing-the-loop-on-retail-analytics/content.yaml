@@ -90,6 +90,10 @@ sections:
 
       The measurement infrastructure in multi-location retail is mature. Most operators already have the sensors they need. The ROI they are leaving behind sits in how they use the data those sensors already produce.
 
+  - type: prose
+    body: |
+      For the broader picture of why retail analytics has a response-layer gap, see <a href="../why-entuned.html">why Entuned exists</a>.
+
   - type: cta
     variant: pilot
     headline: "Make your sensor data work harder"

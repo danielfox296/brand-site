@@ -100,6 +100,10 @@ sections:
     body: |
       For more on how tempo interacts with other variables, see [the science of tempo in retail](../blog/science-of-tempo-retail.html) and [Does Your Store's Music Actually Matter?](../blog/what-are-flow-factors.html).
 
+  - type: prose
+    body: |
+      For the broader research record on this, see <a href="../science.html">The Science Behind the Soundtrack</a>.
+
   - type: cta
     variant: pilot
     headline: "Go beyond tempo"

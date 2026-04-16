@@ -87,6 +87,10 @@ sections:
 
       If music is the one you pick, there's public academic work on the effect size and there are vendors who can help you actually measure it rather than just play it. We work with a small number of multi-location lifestyle retailers on pilots that put a number next to the variable most of their peers are still ignoring. If that's a problem you're trying to solve, we're open to a conversation.
 
+  - type: prose
+    body: |
+      This gap sits at the center of <a href="../why-entuned.html">the category Entuned was built to address</a>.
+
   - type: cta
     variant: pilot
     headline: "Put a number on it"

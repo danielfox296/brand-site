@@ -87,6 +87,10 @@ sections:
 
       That gap is not a small thing. Your audio runs more hours than any single employee works. It reaches every customer who walks through the door. And right now, for most retailers, nobody is watching whether it helps or hurts.
 
+  - type: prose
+    body: |
+      <a href="../results.html">The results page</a> breaks down what the dwell-and-spending research actually shows.
+
   - type: cta
     variant: pilot
     headline: "Find out what your music is doing"

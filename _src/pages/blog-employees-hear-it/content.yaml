@@ -72,6 +72,10 @@ sections:
 
       If your current provider cannot tell you what is playing at each store in real time, cannot give you a report of how often the music was overridden last month, and cannot change the sound of a store without sending a catalog update that touches every location, you are working with a vendor that treats your audio as inventory. The staff are responding to that. The mute button is the message you have been asking for.
 
+  - type: prose
+    body: |
+      The operational leadership case for treating audio as a brand element is <a href="../for-retail-leaders.html">laid out here</a>.
+
   - type: cta
     variant: pilot
     headline: "Music your staff will leave on"

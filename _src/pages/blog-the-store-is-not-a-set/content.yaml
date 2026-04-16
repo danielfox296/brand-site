@@ -73,6 +73,10 @@ sections:
 
       Now ask which elements probably should not be the same. A morning browse crowd and a weekend purchase crowd are different rooms. The store has a few ways to register that. Most operators have never considered that the audio might be one of them.
 
+  - type: prose
+    body: |
+      For the retail leader view of why this matters, see <a href="../for-retail-leaders.html">the retail leaders page</a>.
+
   - type: cta
     variant: pilot
     headline: "Treat the variable parts of your store as variable"

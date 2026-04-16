@@ -87,6 +87,10 @@ sections:
     body: |
       The asymmetry between visual design investment and audio design investment in retail is not a minor oversight. It is one of the largest unoptimized surfaces in [retail atmospherics](../blog/retail-atmospherics-2026.html). Every dollar spent on lighting, fixtures, and visual merchandising is partially undermined when the audio environment contradicts the story those elements are telling.
 
+  - type: prose
+    body: |
+      For the retail leader view of why this matters, see <a href="../for-retail-leaders.html">the retail leaders page</a>.
+
   - type: cta
     variant: pilot
     headline: "Run a pilot"

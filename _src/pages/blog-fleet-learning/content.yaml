@@ -97,6 +97,10 @@ sections:
 
       Start with whatever variable is easiest to isolate. If you want to start with audio, ask your current music provider what data they can give you about what played and when. Most of them will not have a good answer. That gap is worth knowing about.
 
+  - type: prose
+    body: |
+      For the broader picture of why retail analytics has a response-layer gap, see <a href="../why-entuned.html">why Entuned exists</a>.
+
   - type: cta
     variant: pilot
     headline: "We help multi-location retailers run controlled audio tests"
