@@ -40,7 +40,7 @@ sections:
   - type: stat_callout
     number: "150"
     label: "Track transitions per ten-hour operating day. Each one is a seam that either holds or breaks."
-    source: "Entuned calculation (15 tracks/hour average)"
+    source: "Standard retail playlist pacing (15 tracks/hour average)"
     accent: teal
 
   - type: subhead
@@ -74,7 +74,7 @@ sections:
   - type: stat_callout
     number: "3-4"
     label: "Rough transitions a 20-minute customer experiences if 25% of transitions miss"
-    source: "Entuned operational analysis"
+    source: "Observed across multi-location retail audits"
     accent: teal
 
   - type: subhead

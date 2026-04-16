@@ -35,7 +35,7 @@ sections:
 
   - type: prose
     body: |
-      The first is that store-level sensor infrastructure is now deep enough to support correlated analysis. Foot traffic counters, zone sensors, dwell tracking, and POS integration are standard in mid-market and large retail. The hardware is in the ceiling. The data is flowing. Most retailers already pay for it.
+      The first is that store-level sensor infrastructure is now deep enough to support correlated analysis. Foot traffic counters, zone sensors, dwell tracking, and POS data are standard in mid-market and large retail. The hardware is in the ceiling. The data is flowing. Most retailers already pay for it.
 
       The second is that generative AI music crossed a commercial quality threshold in late 2025. Producing original music for retail environments is no longer a research demo. It is a deployable product. That shifts the economics and what the music itself can represent on the analytics side.
 
