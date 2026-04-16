@@ -12,7 +12,7 @@ hero:
   alt: "Abstract data visualization representing retail music performance"
   caption: "Photo: Unsplash"
 meta_description: "Entuned makes original music for retail stores and measures what it does to store performance. Currently piloting with multi-location lifestyle retailers."
-og_image: "/blog/what-is-entuned/og.png"
+og_image: "/img/blog/what-is-entuned.jpg"
 tags: [entuned, product, retail-music]
 sections:
   - type: key_takeaways
