@@ -1,7 +1,7 @@
 title: "The Audio Gap in Retail Customer Experience"
 slug: "the-audio-gap-in-retail-customer-experience"
 eyebrow: "MARKET INTEL"
-dek: "Retailers invest millions in visual merchandising and lighting. Audio gets a $35/month subscription and no measurement."
+dek: "You signed off on six figures of lighting. You signed off on a $35 a month music subscription. The customer hears both."
 date: "2026-04-01"
 last_updated: "2026-04-15"
 author:
@@ -11,21 +11,21 @@ hero:
   src: "../img/blog/the-audio-gap-in-retail-customer-experience.jpg"
   alt: "Retail store interior showing designed lighting and fixtures"
   caption: "Photo: Unsplash"
-meta_description: "Retailers spend $150-$300/sqft on buildout and $200-$960/year on audio. The investment gap is not proportional to the influence gap."
+meta_description: "Retailers spend six figures on buildout and $35 a month on audio. What your store sounds like in the first ten seconds is the cheapest signal you are sending."
 og_image: "/blog/the-audio-gap-in-retail-customer-experience/og.png"
 tags: [retail-design, investment, atmospherics, market-intel]
 sections:
   - type: key_takeaways
     items:
-      - "A mid-range specialty retailer spends $375K-$750K on buildout and $200-$960/year on audio"
-      - "Audio lacks the organizational infrastructure, visible accountability, and measurement that visual merchandising has"
-      - "Congruent music and scent combinations are multiplicative, not additive -- getting audio right amplifies every other investment"
+      - "A mid-range specialty retailer spends six figures on buildout and roughly $35 a month on audio"
+      - "Audio has no owner on the typical org chart, which is why nobody walks it, nobody tests it, and nobody notices when it drifts"
+      - "What a customer hears in the first ten seconds is a cheaper fix than anything else in the store"
 
   - type: prose
     body: |
-      Walk into any well-run specialty store and count the deliberate decisions. The floor material. The fixture finish. The lighting temperature. The ceiling height. The rack spacing. The mannequin positioning. The paint color on the accent wall. Somebody chose all of that. Somebody tested some of it. Somebody signed off on a budget for it.
+      Walk into a store you run and count the deliberate decisions. The floor material. The fixture finish. The lighting temperature. The ceiling height. The rack spacing. The mannequin positioning. The paint color on the accent wall. Somebody chose every one of those. Somebody signed a PO for every one of those. Somebody will get a call if any of them drift.
 
-      Now notice the music. In most stores, it is the only element in the room that was not designed for the people in the room.
+      Now listen to the music. In most stores, it is the only thing in the room nobody is responsible for.
 
   - type: subhead
     level: 2
@@ -39,9 +39,9 @@ sections:
 
   - type: prose
     body: |
-      A mid-range specialty retailer opening a new location typically spends $150 to $300 per square foot on buildout. For a 2,500-square-foot store, that is $375,000 to $750,000. Lighting alone can run $15,000 to $40,000 depending on the design. Visual merchandising fixtures and displays run $20,000 to $60,000. Scent systems, where installed, cost $2,000 to $5,000 per year.
+      A mid-range specialty retailer opening a new location spends $150 to $300 per square foot on buildout. For a 2,500-square-foot store, that comes to between $375,000 and $750,000. Lighting can run $15,000 to $40,000 on its own. Fixtures and displays run $20,000 to $60,000. Scent, where a brand takes it seriously, runs a few thousand a year.
 
-      The audio subscription: $200 to $960 per year. Less than the cost of a single mannequin. Less than the monthly electricity bill. Often less than the cleaning service.
+      The audio line item: $200 to $960 a year. Less than a single mannequin. Less than the monthly electric bill. In a lot of portfolios, less than the cleaning service.
 
   - type: stat_callout
     number: "90%"
@@ -51,7 +51,7 @@ sections:
 
   - type: prose
     body: |
-      The investment gap is not proportional to the influence gap. Atmosphere includes everything the customer senses. Audio is one of the most persistent of those inputs. The customer can look away from a display. They cannot turn off their ears.
+      That ratio would be fine if audio had one tenth the influence of the rest of the box. It does not. Customers can look away from a display. They cannot turn their ears off. The music plays for every customer, every visit, every minute they are inside, and it is the cheapest line item in the store.
 
   - type: subhead
     level: 2
@@ -59,44 +59,50 @@ sections:
 
   - type: prose
     body: |
-      Three structural reasons explain the gap.
+      Three things explain the gap. None of them are about the music.
 
-      First, visual merchandising has a mature industry around it. Dedicated roles (visual merchandising director, brand experience lead), dedicated budgets, dedicated measurement. Audio has none of this organizational infrastructure. Nobody in the typical retail org chart is accountable for what comes out of the speakers.
+      First, visual merchandising has an industry around it. Directors, budgets, training, trade shows, measurement. Audio has none of that in most orgs. Nobody on a retail org chart is accountable for what comes out of the speakers, so nobody walks it, nobody audits it, nobody catches it when the staff has quietly taken over the stream.
 
-      Second, visual changes are visible to the decision maker. A VP of retail can walk a store and see whether the displays are right. They cannot walk a store and hear whether the music is right because they do not know what "right" sounds like in measurable terms. They know what they personally like. That is not the same thing.
+      Second, a VP of retail can walk a store and see whether the displays are right. They cannot walk a store and hear whether the music is right, because nobody has ever told them what right sounds like in a way they could defend in a meeting. So they default to personal taste. Personal taste is not a merchandising standard.
 
-      Third, audio lacks measurement. Visual merchandising teams can A/B test displays and measure sell-through by fixture. They can track which endcap drives more units. Audio has no equivalent measurement infrastructure in most stores. Without measurement, there is no data to justify investment. Without investment, there is no measurement. The cycle perpetuates itself.
+      Third, the incumbents do not give you any reporting. You get an invoice. You do not get a read on whether the stream went off in half your stores last Tuesday afternoon. Without reporting, there is no case to bring to your CFO for a better line item. The gap sits there.
 
   - type: subhead
     level: 2
-    text: "What the Research Says About Relative Influence"
+    text: "What The Customer Hears In The First Ten Seconds"
 
   - type: prose
     body: |
-      The academic literature on [retail atmospherics](../blog/retail-atmospherics-2026.html) treats audio as a primary environmental variable, not a secondary one. Turley and Milliman's 2000 review of 60 atmospherics studies found that music was among the most consistently documented influences on consumer behavior. Effects on dwell time, pace of movement, product evaluation, spending, and mood were replicated across multiple decades and contexts.
+      A customer walking into your store forms a read on the place before they cross the second rack. Some of that read is visual. Some of it is the smell of the room. A meaningful portion of it is what the speakers are doing at that moment. Is the volume right for the hour of the day. Is the song the kind of thing this customer would expect here. Is it the same loop they heard in the mall twenty minutes ago. Is it actively wrong for the brand.
 
-      Mattila and Wirtz (2001) demonstrated that congruent combinations of music and scent produced a significantly more positive customer experience than either element alone. The sensory elements are multiplicative, not additive. Getting the audio right amplifies the return on every other atmospheric investment.
+      In those first ten seconds, the customer decides how long they are willing to stay, how expensive they believe the store is, and whether they will come back. A flagship that sounds like a food court is undoing the work of its own buildout. A boutique that plays whatever the closing manager had on Spotify last night is not a boutique that afternoon. Your customer does not file a complaint about it. They just leave faster.
 
   - type: pullquote
-    text: "A store that spends $40,000 on lighting to create the right visual mood and $200 per year on audio that contradicts that mood is undermining its own investment."
+    text: "A store that spends $40,000 on lighting to set a mood and $200 a year on audio that fights that mood is undermining its own buildout."
     accent: teal
 
   - type: subhead
     level: 2
-    text: "What Closing the Gap Looks Like"
+    text: "What To Do This Week"
 
   - type: prose
     body: |
-      Closing the audio gap does not require the same budget as visual merchandising. It requires treating audio as a designed element rather than a default condition. That means choosing music based on customer psychology rather than staff preference, controlling the specific variables (tempo, instrumentation, familiarity, volume) that research has documented, and [measuring the effect](../blog/measure-roi-retail-music.html).
+      You do not need a vendor to close part of the gap. Three moves, this week.
 
-      The measurement piece is where most stores stall. A $35 per month music subscription cannot tell you whether the music is helping. It can tell you what played. The gap between those two things is where the entire opportunity sits.
+      Walk three of your stores at the hours they actually run. Not 10 AM on a quiet Tuesday. The Saturday rush. The Thursday night close. Stand near the door for sixty seconds and listen. Most operators have not done this in a year.
 
-      Entuned generates original music from your customer's psychographic profile and measures its effect on your store's performance data. The founding pilot is free.
+      Ask your music provider for a report. Any report. Uptime by store, genre by daypart, who has changed the channel in the last thirty days. The answer you get tells you what you are paying for.
+
+      Pick one store and have the manager write down, in plain language, who that store is trying to sound like. A specific brand. A specific customer at a specific hour. If they cannot write it down, nobody in the chain can, and the music is being chosen by whichever employee got to the tablet first.
+
+  - type: prose
+    body: |
+      Entuned runs pilots with a small number of multi-location lifestyle retailers who are ready to treat audio like the rest of the store. If the last ten seconds of reading made you want to walk one of your own locations this afternoon, start there, then talk to us.
 
   - type: cta
     variant: pilot
     headline: "Run a pilot"
-    body: "Your audio subscription costs less than a mannequin. The audio gap costs a percentage of your revenue. Close it."
+    body: "Your audio line item costs less than a mannequin. What the customer hears costs a percentage of your revenue. Close the gap."
     link: "/pilot"
     link_text: "Start a conversation"
 

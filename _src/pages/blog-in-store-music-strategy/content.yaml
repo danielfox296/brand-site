@@ -17,7 +17,7 @@ tags: [field-notes, music-strategy, cultural-congruence, tempo]
 sections:
   - type: key_takeaways
     items:
-      - "Song selection inherits every cultural association a track has ever carried — mood, tempo, era, lyrical context"
+      - "Song selection inherits every cultural association a track has ever carried. Mood, tempo, era, and lyrical context all come with it."
       - "A song at 136 BPM moves shoppers toward the exit faster regardless of genre or mood"
       - "41% of shoppers spend more time in stores with the right background music"
       - "Music strategy starts with the behavioral outcome, not the playlist"
@@ -41,7 +41,7 @@ sections:
 
   - type: subhead
     level: 2
-    text: "Tempo is not a feeling — it is a pace"
+    text: "Tempo is a pace, not a feeling"
     anchor: "tempo-pace"
 
   - type: prose

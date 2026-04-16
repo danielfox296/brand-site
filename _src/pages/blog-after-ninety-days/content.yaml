@@ -1,7 +1,7 @@
 title: "What Happens After Ninety Days"
 slug: "after-ninety-days"
 eyebrow: "FIELD NOTES"
-dek: "The first week is setup. The first month is noise. By day ninety, the data starts telling you how music matters in your specific store."
+dek: "The first week is setup. The first month is noise. By day ninety, the numbers start telling you how music works in your store specifically."
 date: "2026-03-15"
 last_updated: "2026-04-15"
 author:
@@ -9,84 +9,87 @@ author:
   role: "Founder & CEO"
 hero:
   src: "../img/blog/after-ninety-days.jpg"
-  alt: "Data analytics dashboard showing behavioral trends over time"
+  alt: "Retail store interior with customers during active shopping hours"
   caption: "Photo: Unsplash"
-meta_description: "The first week is setup. The first month is noise. By day ninety, the data starts telling you how music matters in your specific store."
+meta_description: "Why three months is the minimum useful window for treating store audio as a measurable variable. The first weeks are noise. The back half is where the signal lives."
 og_image: "/blog/after-ninety-days/og.png"
-tags: [pilot-data, measurement, deployment, feedback-loop]
+tags: [field-notes, measurement, pilots, store-operations]
 sections:
   - type: key_takeaways
     items:
-      - "Ninety days is the threshold where tagged playback and store data produce actionable correlations"
-      - "The first month is noise — weather, promotions, and staffing drown any signal"
-      - "By day sixty, patterns begin separating from randomness; by day ninety, you can form testable hypotheses"
-      - "Each adjustment generates new data, making every cycle sharper than the last"
-
-  - type: subhead
-    level: 2
-    text: "The Ninety-Day Threshold"
+      - "The first month of any store-level measurement is mostly noise from weather, promotions, and staffing changes"
+      - "Somewhere around day sixty, patterns start separating from randomness"
+      - "By day ninety, a multi-location operator has enough data to start asking real questions about how audio moves their specific numbers"
 
   - type: prose
     body: |
-      Ninety days of retail music deployment data is the threshold at which tagged playback and store transaction records produce correlations specific enough to act on — adjusting tempo ranges, production character, and other musical variables based on what the data shows, not what seems right by feel.
+      You decide to treat the music in your stores as a variable worth measuring. You pick a store, you set a baseline, you start tracking. Then you wait.
 
-      The first week of a deployment is setup. The music is specified to the brand's customer profile, the tags are in place, the playback is running, and the data capture has started. Nothing interesting has happened yet. The sample size is too small to mean anything.
+      Week one is setup. You are confirming the data is flowing, the reports are rendering, the team is watching the right thing. Nothing interesting has happened yet.
 
-      The first month is noise. Foot traffic fluctuates for reasons that have nothing to do with music: weather, promotions, staffing, the Tuesday after a long weekend. Transaction volume moves for the same reasons. The signal, if there is one, is buried.
+      Week two through week four is where most pilots break down. A Tuesday with bad weather tanks traffic. A promotion the marketing team ran without telling ops spikes conversion. A new hire starts on a Thursday and everybody at the store spends half the day training instead of selling. None of it has anything to do with the music, but all of it shows up in the numbers.
+
+  - type: subhead
+    level: 2
+    text: "When the signal starts separating"
+
+  - type: prose
+    body: |
+      Somewhere around day sixty, the noise starts to thin. Not because the store stopped having off-days, but because you have enough hours of data that the random shifts start averaging out. Patterns that are actually in the music begin separating from patterns that are just weather and staffing.
+
+      You start noticing that Wednesday afternoons consistently run differently from Thursday afternoons in a way that does not correlate with traffic or staff count. You start noticing that a certain time-of-day mix produces longer visits, week after week. These are not conclusions yet. They are observations that would not have been visible at day thirty.
 
   - type: stat_callout
-    number: "90 days"
-    label: "Minimum deployment threshold for actionable music-to-sales correlations"
-    source: "Entuned deployment model"
+    number: "Day 60"
+    label: "Approximate point at which the noise from weather, promotions, and staffing starts averaging out against the signal you are actually watching for"
+    source: "Operator observation across retail pilots"
     accent: teal
-
-  - type: prose
-    body: |
-      Somewhere around day sixty, the noise starts to thin. You have enough hours of tagged playback matched against enough hours of store activity that patterns begin to separate from randomness. You notice that Wednesday afternoons, when the playlist tends to sit in a specific tempo and harmonic range, consistently produce longer average visits than Thursday afternoons, when the mix skews differently. You notice that a particular production character (warmer, more analog) correlates with higher average transaction values during the morning shift.
-
-      These are not conclusions. They are hypotheses. But they are hypotheses that nobody has been able to form before, because nobody has had tagged music matched to timestamped store data at this resolution.
 
   - type: subhead
     level: 2
-    text: "What the Data Starts Saying"
+    text: "What day ninety looks like"
 
   - type: prose
     body: |
-      By day ninety, you have enough data to start asking real questions. Which musical variables correlate with [dwell time](../blog/the-dwell-time-variable-nobodys-tracking.html) in your specific store, for your specific customer? Is the relationship between tempo and browsing duration the same on weekends as weekdays? Does the production era effect (whether the music sounds like the customer's taste formation decade) show up in transaction data or only in dwell time?
+      By day ninety, you have enough data to ask questions that were unanswerable before. Does the morning music correlate with morning basket size. Does a shift in the afternoon energy correlate with conversion. Are the weekend numbers actually different from the weekday numbers, and if so, is it the crowd or the audio that is different.
 
-      Some of these questions will have answers that match the academic research. Slower tempo, longer visits. That's been demonstrated repeatedly since Milliman. But some of the answers will be specific to your context in ways no academic study could have predicted, because no academic study was running in your store, with your customers, with your product mix.
+      Some of the answers match what the public research would predict. Slower tempo, longer visits. That has been replicated since Milliman in 1982. But some of the answers will be specific to your store, your customer, and your hour in a way no academic study could have predicted, because no academic study was running in your store with your customers.
+
+      That is the point where the music stops being a subscription and starts being an operational variable.
 
   - type: pullquote
-    text: "The general research tells you that music matters. Ninety days of correlated deployment data starts to tell you how it matters here."
+    text: "General research tells an operator that music matters. Ninety days of their own data starts telling them how it matters in their specific store."
     accent: teal
 
   - type: subhead
     level: 2
-    text: "What Changes After Ninety Days of Data?"
+    text: "Why most retailers never get to ninety"
 
   - type: prose
     body: |
-      Once you have correlations worth acting on, the music can be adjusted. Not by swapping the playlist for a different one, but by moving specific variables in specific directions. If warmer production correlates with higher spend, you can dial the production character warmer and see if the correlation holds or strengthens. If a specific tempo range correlates with longer visits, you can narrow the playlist's tempo window and [measure the effect](../blog/measure-roi-retail-music.html).
+      The honest reason is that almost nobody in retail has treated audio as a variable long enough to see the signal. The music vendor contract renews every year on the same terms. Nobody on the retailer side is assigned to monitor what the music is doing. The data the retailer already pays for (traffic, conversion, dwell) is never lined up against what was playing.
 
-      Each adjustment generates new data. Each round of data sharpens the picture. The music in the store on day 180 is measurably different from the music on day one, and the difference is not a matter of taste. It is a matter of evidence.
+      The operators who do the exercise even once, without changing vendors, often find patterns worth acting on. The exercise alone is cheaper than the cost of having ignored the variable for another year.
 
-      Most retail music stays the same until somebody gets tired of it and swaps the playlist. At Entuned, the music changes because the data says it should. And the more stores in the [fleet](../blog/fleet-learning.html), the faster the model learns what works. [See how the system works](../how-it-works.html).
+  - type: subhead
+    level: 2
+    text: "What you can do this week"
 
-  - type: stat_callout
-    number: "Day 180"
-    label: "By this point, the music is measurably different from day one — driven by evidence, not taste"
-    source: "Entuned deployment model"
-    accent: teal
+  - type: prose
+    body: |
+      Pick three stores and a ninety-day window. Ask your music provider for a playlist history for those stores in that window. Pull your traffic and POS for the same hours. Put them in a spreadsheet side by side.
+
+      You will not get a clean answer on the first pass. But the act of looking at those two data streams against each other for the first time usually produces at least one question worth asking. And that question is further than almost any of your competitors have gotten on the audio side.
 
   - type: cta
     variant: pilot
-    headline: "Start the clock"
-    body: "Entuned generates purpose-built music for retail environments. No licensing. No compromise. Built around your ideal customer."
+    headline: "Run the exercise with help"
+    body: "We work with a small number of multi-location lifestyle retailers on ninety-day pilots. If you want to see what the data says about audio in your specific stores, we would welcome a conversation."
     link: "/pilot"
-    link_text: "Join the pilot"
+    link_text: "Start a conversation"
 
   - type: related
     posts:
-      - slug: "fleet-learning"
+      - slug: "measure-what-you-ignore"
       - slug: "the-metrics-your-audio-environment-should-be-producing"
-      - slug: "retail-atmospherics-2026"
+      - slug: "milliman-study"

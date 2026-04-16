@@ -17,7 +17,7 @@ tags: [retail-design, music-strategy, field-notes, store-experience]
 sections:
   - type: key_takeaways
     items:
-      - "Retail environments are carefully composed — every surface, fixture, and light is deliberate — but music gets left to personal taste"
+      - "Retail environments are carefully composed. Every surface, fixture, and light is deliberate. Music is the one element left to personal taste."
       - "When the music is wrong, customers shift from feeling to evaluating, and that shift kills the sale"
       - "Forty years of research shows music is a controllable variable with measurable effects on buying behavior"
 
@@ -87,18 +87,12 @@ sections:
 
       Retail music is a game of designing for sales lift, and that game has a much more considered set of rules.
 
-      The stores that figure this out stop thinking about music as a playlist problem and start thinking about it [the way they think about lighting](../blog/sound-designer.html): as a [controllable variable](../blog/sound-check-music-is-a-variable.html) with measurable effects, worth getting right. [See how Entuned approaches it](../how-it-works.html).
-
-  - type: stat_callout
-    number: "8-12%"
-    label: "Increase in willingness to pay when music matches product positioning"
-    source: "Areni & Kim, 1993"
-    accent: gold
+      The stores that figure this out stop thinking about music as a playlist problem and start thinking about it [the way they think about lighting](../blog/sound-designer.html): as a [controllable variable](../blog/sound-check-music-is-a-variable.html) with measurable effects, worth getting right.
 
   - type: cta
     variant: pilot
     headline: "Treat music like lighting"
-    body: "Entuned treats music the way your store treats lighting: as a controllable variable with measurable effects. Built for your customer, measured against your data."
+    body: "We work with a small number of multi-location lifestyle retailers on pilot deployments. If the gap between your carefully designed store and its playlist is bothering you, we would welcome a conversation."
     link: "/pilot"
     link_text: "Ask About a Pilot Program"
 

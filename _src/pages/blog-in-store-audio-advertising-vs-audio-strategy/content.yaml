@@ -17,9 +17,9 @@ tags: [market-intel, retail-media, audio-strategy, QSIC]
 sections:
   - type: key_takeaways
     items:
-      - "Retail media audio (QSIC, Dollar General) monetizes speakers with CPG ads — the value goes to the advertiser"
+      - "Retail media audio (QSIC, Dollar General) monetizes speakers with CPG ads. The value accrues to the advertiser."
       - "Audio strategy uses musical parameters to drive the retailer's own metrics: dwell time, conversion, ATV"
-      - "Audio ads interrupt ambient priming — a 30-second ad for paper towels undoes quality-perception work"
+      - "Audio ads interrupt the mood the music was building. A thirty-second ad for paper towels undoes quality-perception work"
       - "Specialty retail benefits from audio strategy; high-traffic grocery benefits from retail media"
 
   - type: prose
@@ -120,7 +120,7 @@ sections:
   - type: cta
     variant: pilot
     headline: "Run a pilot in your store"
-    body: "Entuned generates original music from your customer's psychographic profile and measures its effect on your store's performance data. No ads. No interruptions. The founding pilot is free."
+    body: "We work with a small number of multi-location specialty retailers on pilot deployments. If your store sells a curated experience and audio ads would degrade that, we would welcome a conversation."
     link: "/pilot"
     link_text: "Learn about the free pilot program"
 

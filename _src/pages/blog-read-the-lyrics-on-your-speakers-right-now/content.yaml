@@ -1,7 +1,7 @@
 title: "Nobody Read the Lyrics"
 slug: "read-the-lyrics-on-your-speakers-right-now"
 eyebrow: "FIELD NOTES"
-dek: "Every catalog song carries someone else's intention — audit what your speakers are actually saying."
+dek: "Every song on your in-store playlist was written for a different reason than why it is playing. Sometimes that reason is one you would never put on a wall."
 date: "2026-03-15"
 last_updated: "2026-04-15"
 author:
@@ -11,94 +11,84 @@ hero:
   src: "../img/blog/wrong-songs.jpg"
   alt: "Close-up of a retail speaker mounted in a store ceiling"
   caption: "Photo: Unsplash"
-meta_description: "A customer buying shirts stood in a store playing 'this'll be the day that I die.' Nobody chose that lyric. This is happening in your store right now."
+meta_description: "A man stood in a store buying shirts after losing his wife, while the speakers repeated a chorus about dying. Nobody chose that. Here is why it keeps happening."
 og_image: "/blog/read-the-lyrics-on-your-speakers-right-now/og.png"
-tags: [lyrics, semantic-priming, brand-risk, music-strategy]
+tags: [field-notes, lyrics, brand-risk, retail-audio]
 sections:
   - type: key_takeaways
     items:
-      - "Every catalog song carries someone else's intention — lyrics prime your customers whether they are listening or not"
-      - "Songs that sound pleasant can carry violent, stalking, or incongruent semantic content"
-      - "Generated music with no catalog eliminates the entire category of lyrical brand risk"
+      - "Catalog songs are written for reasons that have nothing to do with a retail store"
+      - "Songs that sound pleasant often carry lyrics the operator would never approve on any other surface in the store"
+      - "Nobody on the music vendor side is reading the words"
 
   - type: prose
     body: |
       A man walked into a clothing store recently to buy shirts. He mentioned to the associate that his wife had just passed away. While they were talking, the speakers were playing a song whose chorus repeats six times across eight minutes about dying.
 
-      Nobody chose that song to play at that moment. It was on a playlist. It came up in rotation. The algorithm matched the genre and the era. The algorithm did not read the words. And for eight minutes, a man buying shirts after his wife's death stood in a room where the speakers were singing about dying.
+      Nobody chose that song to play at that moment. It was on a playlist. It came up in rotation. A curator or an algorithm matched the genre and the era. Neither of them read the words. And for eight minutes, a man buying shirts after his wife's death stood in a room where the speakers were singing about dying.
 
-      That is not a hypothetical. That happened. And it is happening in some version, in some store, right now. Because nobody is reading the lyrics.
+      That is not a hypothetical. It happened. And it is happening in some version, in some store, right now, because nobody is reading the lyrics.
 
   - type: subhead
     level: 2
-    text: "The Violence You Can't Hear"
+    text: "The violence you cannot hear"
 
   - type: prose
     body: |
-      Filtering for explicit language is the easy problem. Every playlist service does it. The harder problem is songs that sound pleasant and say something the store would never put on a wall. Songs where the production communicates ease and the lyrics communicate harm. The listener does not need to consciously process the words for them to register. Research on implicit semantic processing has established that lyrical content influences emotional state even in passive listeners who are not attending to the language. The words enter the processing stream whether the customer is paying attention or not.
+      Filtering for explicit language is the easy problem. Every playlist service does it. The harder problem is songs that sound pleasant and say something the store would never put on a wall. Production that communicates ease. Lyrics that communicate harm.
+
+      The customer does not need to sit and parse the words for them to register. Research on implicit semantic processing has established that the brain picks up lyrical content even when a listener is not attending to the language. The words enter regardless.
+
+      A song about a school shooting, delivered in a whistling indie pop arrangement, appeared in children's movie trailers before anyone publicly acknowledged what it was about. That song is on retail playlists in stores where parents shop with their kids. Songs about stalking, intimate partner violence, or assault pass as atmosphere because the production is cheerful enough that nobody checks.
 
   - type: stat_callout
     number: "1 in 3"
     label: "Women in the United States who have experienced stalking, intimate partner violence, or both"
-    source: "NCADV"
+    source: "National Coalition Against Domestic Violence"
     accent: teal
-
-  - type: prose
-    body: |
-      Songs with sunny production and violent lyrics have been passing as atmosphere for decades. The production is so cheerful that the violence passes unexamined. But the semantic content enters the processing stream regardless. A song about a school shooting delivered in a whistling indie pop arrangement appeared in children's movie trailers before anyone publicly acknowledged what it was about. It is on retail playlists in stores where parents shop with their kids.
 
   - type: subhead
     level: 2
-    text: "The Cognitive Confusion"
+    text: "The cognitive dissonance"
 
   - type: prose
     body: |
-      Violence is the sharpest example, but the broader problem is cognitive incongruence. The music is telling the customer's nervous system one thing and their linguistic processing system something else. The production says *relax, browse, stay*. The lyrics say *die, shoot, stalk, assault*. The customer does not consciously notice the contradiction, but their body is processing both signals simultaneously, and the result is a low-grade unease that they cannot attribute to a cause. They just feel like the store was slightly off. They leave a little sooner than they might have.
+      Violence is the sharpest example. The broader problem is incongruence. When the production sounds relaxed and the lyrics describe something grim, the customer ends up processing two signals at once that do not match. They cannot name what feels off. They just feel like the store was slightly off.
 
-      This extends beyond violence. Songs written for film soundtracks about explicit themes appear on "luxury" and "boutique" playlists because the orchestral production sounds premium. Songs that explicitly mock aspirational consumption play in premium retail because the production is cool and understated. Nobody read the words.
+      Most of the time they leave a little sooner. Some of the time they do not come back.
+
+      This extends past violence. Songs written for film soundtracks about explicit adult themes appear on "luxury" and "boutique" playlists because the orchestral production sounds premium. Songs that explicitly mock aspirational consumption play in premium retail because the production is cool and understated. Nobody read the words.
 
   - type: pullquote
-    text: "The production says relax, browse, stay. The lyrics say die, shoot, stalk, assault. The customer processes both signals simultaneously."
+    text: "The production says relax. The lyrics say otherwise. The customer does not have to hear them consciously for the mismatch to register."
     accent: teal
 
   - type: subhead
     level: 2
-    text: "Beyond Lyrics: When the Sound Itself Is Wrong"
-
-  - type: prose
-    body: |
-      The lyric problem is the one people can see once you point at it. There is a sonic problem underneath that does not need words at all.
-
-      High-tempo, rhythmically chaotic tracks produce elevated arousal and a sense of urgency that the listener cannot distinguish from anxiety. In a premium retail environment where the purchase requires consideration, this elevated state compresses decision-making and pushes the customer toward the door. The music is telling their nervous system to move faster and leave sooner, independently of what the lyrics say.
-
-      Heavily compressed mixes — the loudness war signature of most commercially released music from the mid-2000s forward — produce fatigue over exposures longer than thirty minutes. The dynamic range is crushed flat. Nothing breathes. The listener's body is held at a constant level of activation with no release, and the subconscious response is to leave. Not because the song is bad. Because the sonic texture of the mix is neurologically exhausting at the scale of a full shift.
-
-  - type: stat_callout
-    number: "30 min"
-    label: "Approximate exposure threshold before heavily compressed mixes produce measurable listener fatigue"
-    source: "Entuned research synthesis"
-    accent: teal
-
-  - type: subhead
-    level: 2
-    text: "Why This Keeps Happening"
+    text: "Why this keeps happening"
 
   - type: prose
     body: |
       Every one of these songs landed on a retail playlist because an algorithm or a curator matched the genre, the tempo, and the energy. Nobody read the lyrics. Nobody asked what images the words would put in a customer's head while they are holding a product they are deciding whether to buy. Nobody asked whether a woman in the store has a reason to flinch at a song about being watched.
 
-      This is what happens when you source music from a catalog of songs that were [written for reasons that have nothing to do with your store](../blog/music-was-never-made-for-your-store.html). These are legitimate artistic expressions. They have no business playing in your fitting rooms.
+      This is what happens when stores source music from catalogs of songs that were written for reasons that have nothing to do with retail. Those songs are legitimate artistic expressions. They have no business playing in your fitting rooms.
 
-      When music is generated for a specific environment, this entire category of problem disappears. There are no misread lyrics because the semantic content is composed for the context. The music says what you want it to say, at the tempo and energy you specify, because nobody else's story is attached to it.
+  - type: subhead
+    level: 2
+    text: "What you can do this week"
 
-      Every song in a catalog carries someone else's intention. Some of those intentions are playing through your speakers right now, and nobody has stopped to listen. [What is your music saying about your brand?](../blog/what-your-music-is-saying-about-your-brand.html) [See how Entuned works](../how-it-works.html).
+  - type: prose
+    body: |
+      Walk one of your stores and pay attention to the lyrics for ten minutes. Write down what the songs are actually about. If a human reading your store's song titles and lyrics for an hour would flag three of them as incongruent with the room, that is the real state of your audio right now.
+
+      Then ask your music provider how they screen lyrical content. If the answer is a version of "we filter for explicit language," you have your answer. They are not reading the words either.
 
   - type: cta
     variant: pilot
-    headline: "No catalog. No lyrics. No risk."
-    body: "Entuned generates original music with no catalog, no lyrics, and no someone-else's-story attached. Every composition is purpose-built for your store and your customer."
+    headline: "Stop running someone else's story in your store"
+    body: "We work with a small number of multi-location lifestyle retailers on pilot deployments. If the lyrics on your speakers are a risk you want to retire, we would welcome a conversation."
     link: "/pilot"
-    link_text: "Ask About a Pilot Program"
+    link_text: "Start a conversation"
 
   - type: related
     posts:
