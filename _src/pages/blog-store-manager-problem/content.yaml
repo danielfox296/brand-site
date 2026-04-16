@@ -23,7 +23,7 @@ sections:
 
   - type: prose
     body: |
-      Multi-location retailers with no central audio specification end up with a different soundtrack in every store -- determined by each manager's personal taste rather than the brand's customer profile. Ten locations means ten independent sonic decisions, none of them evaluated against purchase behavior, producing a brand that looks consistent visually and sounds like ten different stores.
+      Multi-location retailers with no central audio specification end up with a different soundtrack in every store, determined by each manager's personal taste rather than the brand's customer profile. Ten locations means ten independent sonic decisions, none of them evaluated against purchase behavior, producing a brand that looks consistent visually and sounds like ten different stores.
 
       Somewhere in your retail chain right now, a store manager is playing music they personally like. This is not a character flaw. It is a structural inevitability. You gave them a store to run, you gave them a Sonos, you gave them a login to a music service, and you gave them no specification for what the store should sound like. They filled the silence with what they know.
 
@@ -40,7 +40,7 @@ sections:
   - type: stat_callout
     number: "10"
     label: "Independent sonic decisions in a ten-location chain with no audio spec"
-    source: "Entuned market research, 2026"
+    source: "Observed across multi-location retail audits"
     accent: teal
 
   - type: prose
@@ -61,7 +61,7 @@ sections:
 
   - type: prose
     body: |
-      This is compounded by the fact that most people, including most store managers, do not have a framework for thinking about [what music does to a room](../blog/what-are-flow-factors.html). They can tell you if they like a song. They cannot tell you whether it is producing the right arousal level for considered purchasing, or whether its production era matches the customer demographic's taste formation window, or whether the groove feel communicates the brand's relationship with time. Those are not intuitive categories. They are technical ones.
+      Most store managers have no way to think about what a song is doing to a room. They can tell you if they like it. They cannot tell you whether the customer who just walked in is going to stay longer or leave faster because of what is playing. That question sits outside the training most retail managers ever get. It is not a criticism of them. It is a description of what the job prepared them to do.
 
   - type: subhead
     level: 2
@@ -77,7 +77,7 @@ sections:
     body: |
       The fix is to treat the sonic environment the way you treat every other element of brand execution: specify it centrally, deploy it consistently, and remove individual taste from the equation. The store manager should not be choosing the music for the same reason they should not be choosing the floor tiles. Both are brand decisions that affect the customer's experience of the space, and both should be made by someone who understands the effect they are trying to produce.
 
-      Entuned generates music to a central specification derived from the brand's customer profile. Every location gets the same sonic identity. The manager presses play. The brand sounds like itself. [Learn how multi-location management works](../blog/multi-location-music-management.html).
+      For a few operators, the answer is a central audio brief that every location runs, the same way every location runs the same color palette and the same fixture plan. The manager presses play. The brand sounds like itself in every store. [More on managing audio across locations](../blog/multi-location-music-management.html).
 
   - type: cta
     variant: pilot
@@ -90,4 +90,4 @@ sections:
     posts:
       - slug: "employees-hear-it"
       - slug: "what-happens-to-employee-performance-when-the-music-is-right"
-      - slug: "fleet-learning"
+      - slug: "multi-location-music-management"

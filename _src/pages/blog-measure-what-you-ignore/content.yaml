@@ -1,7 +1,7 @@
-title: "Measure Something You Used to Ignore"
+title: "The Store-Level KPI You're Not Tracking Yet"
 slug: "measure-what-you-ignore"
 eyebrow: "FIELD NOTES"
-dek: "The difference between a variable you ignore and one you measure is compounding improvement versus permanent stasis."
+dek: "Most operators track sales, traffic, and conversion. The stores that pull ahead of their peers track one more thing, and it's usually something everyone else treats as fixed."
 date: "2026-04-01"
 last_updated: "2026-04-15"
 author:
@@ -9,77 +9,88 @@ author:
   role: "Founder & CEO"
 hero:
   src: "../img/blog/measure-what-you-ignore.jpg"
-  alt: "Elegant dining table with warm ambient lighting in a restaurant setting"
+  alt: "Interior of a quiet boutique store late in the afternoon"
   caption: "Photo: Unsplash"
-meta_description: "The difference between a variable you ignore and one you measure is the difference between a fixed condition and something that gets better every day."
+meta_description: "What KPIs should you track beyond sales and traffic? The variables you've been treating as fixed are usually where store-level performance hides."
 og_image: "/blog/measure-what-you-ignore/og.png"
-tags: [field-notes, measurement, compounding, operations]
+tags: [field-notes, kpis, operations, multi-location]
 sections:
   - type: key_takeaways
     items:
-      - "Measuring any previously-ignored variable produces compounding improvement over time"
-      - "A restaurant that tracks table turn times and adjusts gains 4% over a year — the diners never notice"
-      - "A chain that has run the measurement loop for a year across forty locations has a proprietary asset, not a playlist"
+      - "Sales, traffic, and conversion get watched. Almost everything else on the floor does not."
+      - "A store that tracks table turn time adjusts seating and plating without anyone announcing a change, and the numbers move a few points over a year."
+      - "The KPI you're missing is probably a variable your team has been ignoring because nobody put a number on it."
 
   - type: prose
     body: |
-      You already know most stores don't think hard about their music. We've written about that. Skip ahead.
+      You walk into your third store of the day. The traffic counter above the door says the week is on pace. The POS dashboard on your phone says conversion is steady. You already know your top sellers for the quarter and you can recite last year's same-store number in your sleep.
 
-      The more interesting question is why it matters that they don't. And the answer has less to do with music than with what happens when you start paying attention to any variable you've been treating as fixed.
+      Now walk the floor for five minutes and try to name one thing about that store that nobody is putting a number to. The lighting level at the back wall. How long a customer stands at the fitting room queue before giving up. The music. The smell. The temperature at 3 PM on a Saturday.
+
+      Those are the variables that decide whether your merchant's product actually moves in your room. And almost none of them show up in Monday's numbers.
 
   - type: subhead
     level: 2
-    text: "The compounding effect of measurement"
-    anchor: "compounding"
+    text: "The variables hiding in plain sight"
+    anchor: "hiding-in-plain-sight"
 
   - type: prose
     body: |
-      Think about a restaurant that starts tracking table turn times. Not obsessively. Just noting them. Within a few weeks, the host seats differently. The kitchen adjusts plating on the slow dishes. None of these are big moves. Each one shaves a minute or two. But a restaurant that turns tables 4% faster across a year has fundamentally different economics, and the diners never noticed a thing.
+      Retail operators get good at watching the KPIs their ops stack already produces. Sales per square foot. Units per transaction. Basket size. Conversion by day-part. These are the numbers the CFO asks about and the numbers your district managers can pull in a meeting.
 
-      That's compounding. Not a single dramatic change, but repeated small adjustments that stack because someone decided to watch.
+      The problem is that everybody in the industry tracks the same five or six metrics. If your peer chain is doing 4% better this quarter, the reason is almost never hiding in a column on the dashboard you already have. It's sitting in a variable nobody on either team has named yet.
+
+      A restaurant group starts clocking table turn times. Nobody makes a big deal of it. Within a month the host stops seating parties of two at four-tops during the rush, the kitchen quietly reorders the prep list on the slowest-moving entrees, and a year later the same restaurants are turning tables 4% faster. The diners never notice. The P&L looks different.
+
+      That 4% did not come from a new metric on a slide. It came from one person deciding to watch something everyone else in the room had been treating as fixed.
 
   - type: stat_callout
     number: "4%"
-    label: "table turn improvement from measurement alone produces fundamentally different economics"
-    source: "Restaurant operations analogy"
+    label: "The kind of annual improvement a restaurant sees when it starts clocking a variable the industry has always treated as given"
+    source: "Operator observation, multi-unit casual dining"
     accent: gold
 
   - type: subhead
     level: 2
-    text: "Music is already a variable on your floor"
-    anchor: "variable-on-floor"
+    text: "Music is already moving your numbers, whether you're counting or not"
+    anchor: "music-already-moving"
 
   - type: prose
     body: |
-      Music in a store is already affecting walking pace, browsing duration, and who feels like the space is for them. Tempo, harmony, genre, production era. These are real variables producing real effects on your floor right now, on top of whatever playlist someone queued up last Tuesday. The question isn't whether they matter. It's whether you're going to let them sit at whatever value they accidentally landed on, or start moving them on purpose.
+      Every multi-location operator reading this has a store sound. Tempo, genre, era, volume, all sitting at whatever value someone landed on months or years ago. A district manager put on a playlist. A vendor sent over a channel. Staff turned the volume up in the morning and nobody turned it back down. The setting is now the default and the default is producing an effect on every shopper who walks in.
 
-  - type: pullquote
-    text: "A chain that has run this loop for a year across forty locations doesn't have a playlist. It has a proprietary asset."
-    accent: teal
+      Milliman's supermarket study in 1982 showed that slower tempo music produced 38% higher sales in the same stores with the same product mix. That research has been replicated across restaurants, wine shops, and department stores for forty years. The effect is real and the effect is big, and it is happening in your stores right now at whatever value your music happens to be sitting at.
+
+      Nobody is writing that number down. Nobody is comparing it across stores. Nobody is putting it next to conversion in a meeting.
 
   - type: subhead
     level: 2
-    text: "Iteration turns data into an asset"
-    anchor: "iteration-asset"
+    text: "What changes when a variable becomes a KPI"
+    anchor: "variable-becomes-kpi"
 
   - type: prose
     body: |
-      And here's where it gets interesting. A store that measures what its music does can do something a store running on instinct cannot. It can improve. The first adjustment you make based on real data might move your numbers by a fraction of a percent. The second builds on the first. The fifth builds on the fourth. You're not starting over each time. You're refining a picture that gets sharper with every iteration.
+      Operators who start paying attention to a previously-ignored variable tend to report the same pattern. The first month nothing much happens. The team argues about what to watch and how to watch it. The second month somebody on the floor starts noticing patterns. By month six the district has a shared language for a thing that used to be a shrug.
 
-      A chain that has run this loop for a year across forty locations doesn't have a playlist. It has a proprietary asset.
+      The numbers don't jump. They creep. A point of dwell here, half a point of conversion there. A flagship starts feeling different from a mall location even with the same merchandise plan. Staff stop complaining about the same thing three shifts in a row. None of this makes a press release. All of it shows up on the P&L a year later.
 
-      Every operation has a few variables hiding in plain sight. The ones that never made it into the Monday meeting because nobody had a number to attach to them. The difference between a variable you ignore and one you measure is the difference between a fixed condition and something that gets better every day. For more on what those metrics should look like, see [the metrics your audio environment should be producing](../blog/the-metrics-your-audio-environment-should-be-producing.html) and [how to measure the ROI of in-store music](../blog/measure-roi-retail-music.html).
+      The operators who run multi-location chains and consistently outperform their peers are almost never the ones tracking more KPIs than everyone else. They are the ones tracking one that their competitors haven't thought to name yet.
 
-  - type: stat_callout
-    number: "40 locations"
-    label: "running the measurement loop for a year builds a proprietary asset, not just a playlist"
-    source: "Entuned fleet learning framework"
-    accent: teal
+  - type: subhead
+    level: 2
+    text: "What you can do this week"
+    anchor: "this-week"
+
+  - type: prose
+    body: |
+      Walk three of your stores on three different days. Write down every variable on the floor that nobody in your company owns. The lighting program. The music. The fitting room flow. The smell at the front door. The temperature at peak. The line-of-sight from the entrance to the back wall. Pick one. Assign somebody to watch it for ninety days. See what they find out.
+
+      If music is the one you pick, there's public academic work on the effect size and there are vendors who can help you actually measure it rather than just play it. We work with a small number of multi-location lifestyle retailers on pilots that put a number next to the variable most of their peers are still ignoring. If that's a problem you're trying to solve, we're open to a conversation.
 
   - type: cta
     variant: pilot
-    headline: "Start measuring"
-    body: "See what happens when you stop treating your store's music as a fixed condition."
+    headline: "Put a number on it"
+    body: "If music is the variable you've been treating as fixed, we run pilots that turn it into a KPI."
     link: "/pilot"
     link_text: "Ask about a pilot program"
 

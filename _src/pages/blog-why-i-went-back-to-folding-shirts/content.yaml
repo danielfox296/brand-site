@@ -18,7 +18,7 @@ sections:
   - type: key_takeaways
     items:
       - "Daniel took a retail floor job at UNTUCKit after seeing a hiring sign at Park Meadows Mall"
-      - "The store's music was incongruent with everything the brand was trying to do — and it repeated on a loop every shift"
+      - "The store's music was incongruent with everything the brand was trying to do, and it repeated on a loop every shift"
       - "A conversation on the sales floor led to the question: what if the music was designed for the customer?"
       - "Entuned came out of that question"
 
@@ -55,7 +55,7 @@ sections:
   - type: stat_callout
     number: "2,000 hrs"
     label: "Annual hours staff spend exposed to the store's looping playlist"
-    source: "Entuned estimate, based on standard retail shift patterns"
+    source: "Standard retail shift calculation"
     accent: teal
 
   - type: prose

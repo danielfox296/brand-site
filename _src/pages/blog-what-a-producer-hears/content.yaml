@@ -32,8 +32,8 @@ sections:
 
   - type: stat_callout
     number: "100s"
-    label: "Distinct audio levers a producer evaluates — frequency, compression, tempo, era, lyric, mic placement, room relationship"
-    source: "Entuned production framework"
+    label: "Distinct audio decisions a producer evaluates in any recording, almost none of which a listener consciously notices"
+    source: "Industry production standards"
     accent: teal
 
   - type: prose

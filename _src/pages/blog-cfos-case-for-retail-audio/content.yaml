@@ -1,7 +1,7 @@
 title: "The CFO's Case for Retail Audio"
 slug: "cfos-case-for-retail-audio"
 eyebrow: "MARKET INTEL"
-dek: "The retail audio ROI case for CFOs: dwell time, basket size, willingness to pay, and a free pilot to prove it."
+dek: "How a finance team should think about a line item for in-store music, what the public research actually supports, and how to test it before committing."
 date: "2026-03-15"
 last_updated: "2026-04-15"
 author:
@@ -11,153 +11,115 @@ hero:
   src: "../img/blog/cfos-case-for-retail-audio.jpg"
   alt: "Financial analysis dashboard with retail performance metrics"
   caption: "Photo: Unsplash"
-meta_description: "The retail audio ROI case for CFOs: dwell time, basket size, willingness to pay. Concrete math and a free pilot to prove it."
+meta_description: "A finance-team view of the in-store music line item. What the public research supports, and how to test it in your own stores before committing."
 og_image: "/blog/cfos-case-for-retail-audio/og.png"
-tags: [roi, cfo, retail-audio, willingness-to-pay, dwell-time, investment]
+tags: [roi, cfo, retail-audio, dwell-time, investment]
 sections:
   - type: key_takeaways
     items:
-      - "Retail audio moves four things you already track: dwell time, basket size, willingness to pay, and return visits"
-      - "A 5% lift in willingness to pay across 10 locations at $250 ATV = $3 million per year in incremental revenue"
-      - "Even a 1% lift on a free pilot produces $50,000/month across a 10-store portfolio"
-      - "The pilot costs nothing — the ROI case writes itself from your own store data"
+      - "In-store music touches four numbers a CFO already tracks: dwell time, basket size, willingness to pay, and return visits"
+      - "The published research on willingness to pay has been replicated across three decades; the effect is real and has a plausible range"
+      - "Most finance teams have never separated the music line from facilities. Once you do, the question stops being philosophical"
+      - "The clean way to settle this is a controlled test in your own stores, against your own P&L"
 
   - type: prose
     body: |
-      Your VP of Store Experience came in asking for budget. They'd been reading about psychographic targeting, or they walked into a competitor's store and noticed something they couldn't quite name but could feel, or somebody pitched them a demo and now they want money for music.
+      Your VP of Store Experience came in asking for budget. They walked into a competitor's store, or they read something on the flight home, or one of their district managers keeps complaining that the audio in two stores makes the staff want to quit. Now there's a line item on the table that didn't exist last year.
 
-      And you're looking at a line item that didn't exist last year, wondering what the return looks like.
-
-      That's a reasonable question. The answer is surprisingly clean once you lay out the variables.
+      You're the one who has to decide whether it's real.
 
   - type: subhead
     level: 2
-    text: "The Four Numbers Retail Audio Moves"
+    text: "The four numbers retail audio touches"
 
   - type: prose
     body: |
-      Retail audio moves four things in your reporting. All of them are things you already track.
+      Your operations team already tracks four numbers that shift when the audio in a store changes. All four sit on a dashboard somebody reviews every week.
 
-      **Dwell time.** How long a customer stays in the store. This is the most sensitive variable and the easiest to measure. Slower tempo music in the 60 to 80 BPM range, matched to a customer's psychology, extends the average visit. The research puts the lift somewhere between 15 and 25 percent. A customer who stays twelve minutes instead of ten is a customer who touches more product, asks more questions, and gets further through the purchase decision.
+      **Dwell time.** A shopper who stays twelve minutes instead of nine touches more product, asks more questions, and gets further into the purchase decision before anyone has to intervene. Ron Milliman demonstrated the tempo effect in supermarkets in 1982. Forty years of replication have done nothing to weaken the finding. Slower music, longer visits.
 
-      **Basket size.** Dwell time and basket size run together closely enough that most retail analytics teams already track them as a pair. A customer who lingers in a section doesn't just look at one more thing. They reconsider what they came in for. They add. Customers who stay longer spend more, at roughly the same rate the [dwell time](../blog/retail-dwell-time.html) went up.
+      **Basket size.** Most retail analytics teams track dwell and basket as a pair, because shoppers who linger almost always put more in the bag. A shopper who lingers doesn't just look at one more thing. They reconsider what they came in for.
+
+      **Willingness to pay.** Areni and Kim published the original wine-shop study in 1993. A shopper surrounded by classical music selected more expensive bottles at a meaningful rate above the same shopper surrounded by top-forty. North and colleagues replicated the effect in 1999 with French and German music in a grocery wine aisle. Researchers have reproduced the effect across settings for three decades. When a shopper reads the audio as a match, they revise their sense of the product upward. The price on the tag never changes. The shopper's read on what it's worth does.
+
+      **Return visits.** The hardest of the four for an analytics team to isolate cleanly, and the one most operators have an instinct about anyway. Shoppers who feel the store was built for them come back more often than shoppers who don't.
 
   - type: stat_callout
-    number: "8-12%"
-    label: "Increase in willingness to pay when music matches customer identity and values"
-    source: "Areni and Kim, 1993; North, Hargreaves, and McKendrick, 1999"
+    number: "1982"
+    label: "The year Ronald Milliman published the first peer-reviewed retail study on music and shopper behavior"
+    source: "Milliman, Journal of Marketing, 1982"
     accent: gold
-
-  - type: prose
-    body: |
-      **Willingness to pay.** This is the one most CFOs haven't seen yet. When music matches a customer's identity and values, their read on the product changes. Areni and Kim published the foundational study in 1993. North, Hargreaves, and McKendrick replicated it in 1999. The finding holds across both. Customers in an environment with identity-congruent music pay [8 to 12 percent more](../blog/the-8-12-youre-leaving-on-the-table.html) for the same product. The price on the tag didn't change. The customer's read on what it was worth did.
-
-      **Return visits.** Harder to isolate, but the mechanism is direct. A store that feels like it was built for a specific person makes that person want to come back. The audio environment is part of that signal. When it's right, the store earns a kind of loyalty that has nothing to do with a rewards program.
 
   - type: subhead
     level: 2
-    text: "Running the Retail Audio ROI Math"
+    text: "Why this line item hasn't existed before"
 
   - type: prose
     body: |
-      Take your actual numbers. Not aspirational ones. Trailing twelve months from your P&L and your store analytics.
+      Retail audio has been a facilities line for thirty years. The controller pays a catalog provider something between fifteen and eighty dollars per location per month, the retail team complains twice a year about the selection, and nobody in finance ever looks at the spend next to store-level revenue.
 
-      Say you run 10 locations. Average transaction value is $250. Each store sees 2,000 transactions a month. That's $5 million in monthly revenue across the portfolio.
+      Two things have changed since then.
+
+      The first is that retail analytics teams finally have the instrumentation to measure store-level spend against store-level revenue in something close to real time. Operators who never thought of audio as a variable have started asking the obvious question and finding no answer in their current vendor's reporting. Mood Media, Soundtrack Your Brand, and their competitors sell licensed tracks organized by genre and mood. No salesperson at those companies has ever walked into a CFO's office and promised a number on dwell or basket, because their product was never built to produce one.
+
+      The second is that generative AI music reached commercial grade in 2024. Retailers can now commission their own audio instead of licensing somebody else's. That removes the per-location performance fees, removes the PRO compliance exposure, and removes the vendor's argument that the music is whatever it is because that's what the catalog has. The audio in a shop can be composed for the specific shopper the retailer already profiles on every other variable. That alone changes what a finance team is modeling.
+
+  - type: subhead
+    level: 2
+    text: "The ROI math, done honestly"
+
+  - type: prose
+    body: |
+      Here is the version of this calculation a finance team can actually run.
+
+      Pick a single store in your portfolio. Take the trailing twelve months of average transaction value, transactions per month, and dwell time if your sensor data supports it. Apply a conservative lift from the published literature to one of those numbers. Multiply. That's the incremental revenue per location per month, under one assumption about which number moves.
+
+      Then do the same exercise with a zero-lift assumption. The difference between those two numbers is what you'd be testing for in a pilot. It is almost always large enough to matter, and almost always larger than the cost of any legitimate alternative line item your VP of Store Experience could bring you instead.
+
+      No finance team should commit real money on a study from 1993 alone. The published research supports a hypothesis. It does not substitute for your data, in your stores, on your shoppers. That's what a pilot is for. The point of running one is that at the end, you know.
 
   - type: stat_callout
-    number: "$3M/year"
-    label: "Incremental revenue from a 5% willingness-to-pay lift across a 10-location, $250 ATV portfolio"
-    source: "Arithmetic applied to published research ranges"
+    number: "15-25%"
+    label: "The dwell-time lift range reported in the retail-music literature when in-store audio is matched to the intended shopper experience"
+    source: "Milliman 1982; subsequent replication studies"
     accent: gold
 
+  - type: subhead
+    level: 2
+    text: "What a clean test actually looks like"
+
   - type: prose
     body: |
-      A 5 percent lift in willingness to pay on the same traffic, same conversion, same product mix. $250,000 per month. Three million a year. And 5 percent is the conservative end of the range.
+      A pilot a CFO can defend has three parts.
 
-      Now look at what the audio currently costs. Generic licensing from a [catalog provider](../blog/commercial-music-services-compared.html) runs $15 to $50 per location per month. You pay that for music that could play in any store in your category. During the Entuned founding pilot, the cost is zero.
+      Matched stores. Pick treatment and control locations that look alike on the variables you already use to compare stores: traffic, demographics, format, seasonality, merchandising. You do not need a statistician in the room to do this well, though most operations teams already have one they lean on.
 
-      Even a 1 percent lift against that baseline is $50,000 per month across the portfolio. Against a free pilot, the ratio isn't meaningful to calculate.
+      A long enough window. Retail is noisy. A week of data is not data. A month is thin. A quarter gets you somewhere defensible. The exact length depends on your store volume and the variance in your P&L, and that conversation belongs with your analytics lead.
 
-      Most capital allocation decisions in retail don't produce those ratios. Visual merchandising, lighting retrofits, new POS hardware, loyalty program software. Each of them justified. Each of them useful. None of them are free to test.
+      A single-variable change. Nothing else should move in the treatment stores during the test. No merchandising reset. No staffing change. No promotional calendar weirdness. That's the hardest part of pilot design, and it's the one most vendors skip, which is why most vendors produce case studies a finance team cannot read.
+
+      At the end, you have your numbers. Dwell, basket, conversion, transaction value. Your data, from your stores, measured the way you measure everything else. If the lift is there, you have a real case. If it isn't, you walk away, and you've lost nothing except a quarter of background audio you were going to play anyway.
 
   - type: subhead
     level: 2
-    text: "Why This Line Item Hasn't Existed Before"
-
-  - type: prose
-    body: |
-      The reason your company hasn't spent real money on retail audio strategy is that until recently, there was nothing to buy that warranted it.
-
-      Mood Media and Soundtrack Your Brand are the incumbents. They sell access to a catalog of licensed music, organized by mood or genre. Someone on the retail team picks a playlist. The playlist runs until someone remembers to change it.
-
-      The first problem with that model is that it doesn't solve the actual problem. A playlist organized by mood is a different thing from a playlist organized by your customer's psychology. "Upbeat" is a mood. It's not a customer profile. "Indie rock" is a genre. It's not a psychographic strategy. The catalog treats audio as atmosphere. The [research treats it as a behavioral variable](../blog/science-of-tempo-retail.html).
-
-      The second problem is licensing at scale. Music fees are per-location, and they come with ASCAP, BMI, and SESAC compliance attached. For a 50-location chain, licensing alone can run $50,000 to $200,000 per year before the curation service fee. You pay all of that for music that had nothing to do with your customer in the first place.
-
-      [Entuned](../how-it-works.html) generates original music. Every track is built for a specific retailer's customer profile. No licensing fees. No per-stream costs. No PRO compliance. The retailer owns the music. That changes the cost structure, and it changes what you can do with audio in your stores.
-
-  - type: subhead
-    level: 2
-    text: "The Pilot as Proof Mechanism"
-
-  - type: prose
-    body: |
-      If you're the financial decision-maker being asked to approve this spend, the reasonable move is to test it before committing.
-
-      That's what the founding pilot is for. Matched treatment and control locations, running long enough to produce clean data.
-
-      At the end, you have actual numbers. Your data, from your stores, with your customers. Dwell time comparison. Transaction value comparison. Traffic patterns. Whatever you already measure, measured against a single variable change.
-
-      The pilot costs nothing. The music streams free for the full duration. If the numbers don't move, you walk away. If they do, you have the cleanest ROI case you've ever presented to your board, because you're not projecting from somebody else's study. You're reporting from your own stores.
-
-  - type: subhead
-    level: 2
-    text: "What the Audit Trail Looks Like"
-
-  - type: prose
-    body: |
-      For the finance team that needs to model this properly, here's what the retail audio ROI numbers look like in a standard investment analysis.
-
-      During the founding pilot, there is no cost. Zero. Entuned replaces your existing streaming spend and runs for the full pilot duration at no charge.
-
-      The return model is straightforward. If the pilot shows a 3 percent lift in average transaction value, calculate the incremental revenue per location per month and multiply across the portfolio. Post-pilot terms get discussed only after you've seen the data.
-
-  - type: stat_callout
-    number: "$15K/mo"
-    label: "Incremental revenue per location at a 3% ATV lift on $250 average transaction, 2,000 monthly transactions"
-    source: "Arithmetic applied to retailer P&L inputs"
-    accent: gold
-
-  - type: prose
-    body: |
-      At 3 percent lift on a $250 average transaction value with 2,000 monthly transactions per location, a single store generates $15,000 in incremental monthly revenue. During the pilot, that's pure upside at zero cost.
-
-      At 5 percent, it's $25,000 per location.
-
-      At 8 percent, it's $40,000.
-
-      These numbers come straight out of your own P&L. Arithmetic applied to research that's been replicated for thirty years. The pilot confirms which number is yours.
-
-  - type: subhead
-    level: 2
-    text: "Is Retail Audio Worth the Investment?"
+    text: "The question under the question"
 
   - type: pullquote
-    text: "Your current music has a cost. Nobody has measured it."
+    text: "Your current music has a cost. Nobody on your team has ever measured it."
     accent: gold
 
   - type: prose
     body: |
-      When a CFO pushes back on a new line item for audio, the question under the question is whether this is real. Whether somebody on the retail team got excited about a vendor demo and is now trying to justify an expense that will produce nothing measurable.
+      When a CFO pushes back on a new audio line item, the real question is usually whether this is the kind of spend that will produce something measurable or the kind that quietly disappears into facilities.
 
-      That's a fair concern. The answer is in the data. Run the pilot. Measure it the same way you [measure every other store-level initiative](../blog/measure-roi-retail-music.html). If the lift is there, the case writes itself. If it isn't, you've lost nothing but background music you were going to play anyway.
+      That is a fair question. The honest answer is that most existing audio spend is the second kind. It renews every year, nobody on the retail team loves it, and no one in finance can point to a number the spend moved. The fact that it costs fifty dollars a month per store is the reason nobody asks harder questions.
 
-      The stores that have already done this stopped treating audio as a utility bill. They started tracking it the way they track the lighting spec or the store layout. The difference between those two categories is the difference between a $50 monthly subscription and a quarter million dollars in annual incremental revenue.
+      Retailers who have started treating audio as a measurable variable look at the spend the way they look at lighting or store layout. Those line items carry weight in the capital plan because somebody, at some point, ran the comparison. Nobody on your side has run that comparison on audio yet.
 
   - type: cta
     variant: pilot
-    headline: "Run the numbers on your stores"
-    body: "Entuned builds music systems engineered for your customers' psychology. The founding pilot is free, and the ROI case writes itself from your own store data."
+    headline: "Run the numbers on your own stores"
+    body: "We're currently working with a small number of multi-location retailers on pilot deployments. If this is a question your finance team is trying to settle, we'd be open to a conversation."
     link: "/pilot"
     link_text: "Ask about a pilot program"
 

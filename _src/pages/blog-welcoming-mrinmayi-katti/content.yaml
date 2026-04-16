@@ -1,31 +1,30 @@
 title: "Welcoming Mrinmayi Katti to Entuned"
 slug: "welcoming-mrinmayi-katti"
 eyebrow: "PRODUCT"
-dek: "Mrinmayi joins as Data Scientist to build the experimentation methodology behind Entuned's measurement engine."
+dek: "Mrinmayi joins Entuned to lead data science work. The right person reached out at the right time."
 date: "2026-04-01"
 last_updated: "2026-04-15"
 author:
   name: "Daniel Fox"
   role: "Founder & CEO"
 hero:
-  src: "../img/katti-headshot.png"
-  alt: "Entuned team announcement"
+  src: "../img/blog/katti-announcement.jpg"
+  alt: "Abstract data visualization representing analytics work"
   caption: "Photo: Unsplash"
-meta_description: "Mrinmayi Katti joins Entuned as Data Scientist, bringing pipeline experience and A/B testing infrastructure to retail audio measurement."
+meta_description: "Mrinmayi Katti joins Entuned as Data Scientist. Short announcement post from the founder."
 og_image: "/blog/welcoming-mrinmayi-katti/og.png"
-tags: [team, data-science, experimentation, entuned]
+tags: [team, data-science, entuned, product]
 sections:
   - type: key_takeaways
     items:
       - "Mrinmayi Katti joins Entuned as Data Scientist"
-      - "Her focus: rigorous experimentation methodology for noisy physical retail environments"
-      - "She brings production-grade pipeline experience processing 200K+ records at 99%+ data integrity"
+      - "Her background sits at the intersection of production data pipelines and retail experimentation"
 
   - type: prose
     body: |
-      The hardest measurement problem in retail audio isn't capturing data. It's knowing which data to trust.
+      Retail audio is a hard measurement problem. A store is a noisy environment. Promotions run. Staff changes. Foot traffic spikes on Saturdays and dies on Tuesdays. Separating the effect of what plays on the speakers from everything else that shifts in a store takes rigor that most audio vendors have never tried to bring to the work.
 
-      A store is a noisy environment. Promotions run. Staff changes. Foot traffic spikes on Saturdays and dies on Tuesdays. If you want to understand what music actually does to customer behavior, you have to design experiments rigorous enough to separate the signal from all of that. That's a methodological problem before it's a technical one, and it's the problem Entuned was built to solve.
+      That is the problem Mrinmayi joined Entuned to work on.
 
   - type: subhead
     level: 2
@@ -33,38 +32,27 @@ sections:
 
   - type: prose
     body: |
-      [Mrinmayi Katti](../about.html) saw that problem clearly before she ever talked to us. When she reached out, she didn't pitch her resume. She named the challenge: rigorous experimentation in noisy, physical environments. That's a specific thing to identify, and it told us she'd already done the thinking.
+      She reached out first. When she did, she did not pitch her resume. She named the problem she wanted to work on: disciplined experimentation in noisy, physical environments. That is a specific thing to identify, and it told us she had already done the thinking.
 
   - type: subhead
     level: 2
-    text: "What She Brings"
+    text: "Background"
 
   - type: prose
     body: |
-      Mrinmayi joins as Data Scientist. She brings production-grade pipeline experience, having designed distributed workflows processing 200K+ records at 99%+ data integrity, and a track record in A/B testing infrastructure, including work at Reliance Jio where her experiments contributed to an 18% retention lift. She holds a B.S. in Data Science from NJIT, where she graduated with a 3.8 GPA, Dean's List, and a merit scholarship.
+      Mrinmayi has production pipeline experience, a track record in A/B testing infrastructure, and a B.S. in Data Science from NJIT. She has shipped retention and engagement work at scale in a prior role. She starts this quarter.
 
-  - type: pullquote
-    text: "Mrinmayi is going to be shaping the brain of our machine learning engine. The dataset we're building only matters if the methodology behind it is airtight. That's exactly what she's here to do."
-    attribution: "Daniel Fox, Founder"
-    accent: teal
-
-  - type: subhead
-    level: 2
-    text: "What's Next"
-
-  - type: prose
-    body: |
-      We're glad she reached out. The [measurement layer](../blog/how-to-measure-if-your-store-music-is-working.html) is what separates Entuned from every other audio provider. It's not enough to play the right music — you have to [prove it's working](../blog/measure-roi-retail-music.html).
+      For retailers interested in pilot work with us, nothing changes. The pilots run the same way. Mrinmayi's work is on the inside of our operation, not on the customer-facing side.
 
   - type: cta
     variant: pilot
     headline: "Run a pilot"
-    body: "Entuned brings data-driven optimization to the last unmeasured variable in your store. Start with a free pilot and see what your audio environment is capable of."
+    body: "We work with a small number of multi-location lifestyle retailers on pilot deployments. If you want to see what measurement discipline looks like applied to store audio, we would be open to a conversation."
     link: "/pilot"
-    link_text: "Ask about a pilot program"
+    link_text: "Start a conversation"
 
   - type: related
     posts:
       - slug: "what-is-entuned"
-      - slug: "how-to-measure-if-your-store-music-is-working"
-      - slug: "closing-the-loop-on-retail-analytics"
+      - slug: "measure-what-you-ignore"
+      - slug: "after-ninety-days"
