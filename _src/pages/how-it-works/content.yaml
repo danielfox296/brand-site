@@ -3,78 +3,78 @@
 
 hero:
   headline: "How It Works"
-  subline: "Four steps from customer psychology to measured sales lift."
+  subline: "What a pilot looks like, from first conversation to measurable store outcomes."
 
 step1:
   label: "Step 01"
-  title: "Your customer profile drives every decision."
-  text: "Not demographics. Psychology. What do they value? What aesthetic makes them feel like a space was built for them? During setup, a structured intake captures the psychographic dimensions that matter for in-store behavior. That profile becomes the blueprint for every musical decision the system makes."
+  title: "We talk about your stores."
+  text: "A short intake call covers the basics. Who shops your stores. What you already measure. What you would want to see move. The conversation gives us enough to build audio that fits the room and the customer, and gives you a clear picture of what the pilot will and will not do."
 
 step2:
   label: "Step 02"
-  title: "Psychology becomes musical specification."
-  text: "The customer profile maps to a precise set of compositional parameters. Tempo, mode, harmonic density, instrumentation. A proprietary translation layer converts psychological attributes into musical specifications. Every element is specified, not guessed. The difference matters. Areni and Kim (1993) and North et al. (1999) found that identity-congruent music lifts willingness to pay 8\u201312%. Incongruent music actively reduces it (Andersson et al. 2012, 601 real transactions)."
+  title: "Original music, made for your space."
+  text: "We produce original music for your stores. No catalog. No licensing fees. No track repeats across a full operating day. The music is made for the people who walk into your stores, not for whatever audience a licensing catalog was originally built around."
 
 step3:
   label: "Step 03"
-  title: "Original music, composed for the profile."
-  text: "Every track is an original composition, generated to the specification your customer profile produced. No catalog. No licensing fees. No track repeats. And because the music is unfamiliar by design, customers stay longer. Yalch and Spangenberg (2000) found that familiar music drives shoppers out 8% faster."
+  title: "Stream it from your existing hardware."
+  text: "Connect to whatever speaker setup you already have. Bluetooth, AirPlay, or a hardwired system. No new hardware. No installation. The pilot runs alongside your current vendor if you prefer, or replaces them outright."
 
 step4:
   label: "Step 04"
-  title: "Stream it. Measure it. Improve it."
-  text: "Connect to your speakers, press play. The platform correlates what's playing against your store's performance data: dwell time, foot traffic patterns, transaction outcomes. Every store-hour produces data no competitor can buy. By week four, the system knows which musical parameters move your numbers. By week twelve, your 10th store benefits from what the first four discovered."
+  title: "See what it does to your numbers."
+  text: "The pilot runs long enough to produce data you can act on. You get a report at the end that looks at how the pilot stores moved on dwell time, conversion, and basket size against the baseline. If the numbers moved, we talk about what comes next. If they did not, you go back to what you had."
 
 includes:
-  eyebrow: "What Every Deployment Includes"
+  eyebrow: "What Every Pilot Includes"
   headline: "Built into every pilot."
 
 card1:
-  title: "Psychographic Profiling"
-  text: "A structured model of your target customer's values, aesthetics, and purchase psychology. The foundation every musical decision builds on."
+  title: "Intake and audio brief"
+  text: "A short, structured conversation that captures what your stores need the audio to do. The output is a brief we work against, not a questionnaire that gets filed."
 
 card2:
-  title: "Original Compositions"
-  text: "Every track created fresh for your specific customer profile. Zero licensing fees. Zero catalog constraints. Infinite variety, zero repeats."
+  title: "Original music"
+  text: "Every track is original, made for your pilot stores. No licensed catalog. No performing-rights exposure. No repetition across a full operating day."
 
 card3:
-  title: "Performance Measurement"
-  text: "Dwell time, transaction value, traffic patterns. All correlated against what was playing and when. Your analytics platform and your music provider finally share data."
+  title: "Pilot report"
+  text: "At the end of the pilot, a report that looks at your dwell time, conversion, and basket size in the pilot stores against a baseline. You keep the data either way."
 
 card4:
-  title: "Fleet Learning"
-  text: "Every store-hour feeds the model. The relationship between specific musical variables and specific commercial outcomes gets more precise with every data point. Your 50th location benefits from what the first four discovered."
+  title: "No lock-in"
+  text: "You are not signing a two-year contract to see what the audio does. The pilot is a pilot. If it works, we talk about what comes next. If it does not, you keep the data."
 
 card5:
-  title: "Simple Setup"
-  text: "Works with any Bluetooth or AirPlay speaker system. No special hardware. Streaming starts in minutes."
+  title: "Simple setup"
+  text: "Works with any Bluetooth or AirPlay speaker system. No special hardware. Streaming starts the day you are ready."
 
 pilot:
-  headline: "Pilots are free."
-  description: "The founding pilot program runs at no cost. At the end, you have your own data showing what the audio environment contributed to dwell time, basket size, and return visits. If the numbers move, we talk about what comes next."
+  headline: "Pilots are structured to produce an answer."
+  description: "The pilot runs long enough that weather, staffing, and promotion noise average out. At the end, you have data specific to your stores showing whether the audio environment moved dwell time, basket size, or return visits. If the numbers move, we talk about what comes next. If they do not, you go back to what you had."
 
 pilot1:
-  title: "Custom psychographic profiling."
-  text: "A structured intake captures your ideal customer's values, aesthetic, and relationship with music. That profile becomes a soundtrack built specifically for them."
+  title: "Baseline your current numbers."
+  text: "Before anything changes, we look at the data you already have. Traffic, conversion, dwell, basket. That baseline is what the pilot numbers get compared against at the end."
 
 pilot2:
-  title: "Original music, created for your store."
-  text: "Every composition is built for your customer's psychology. No licensing fees. No catalog. No music that could belong to any other brand."
+  title: "Stream the pilot music."
+  text: "The pilot stores run on the music we produce for them. Any speaker setup already in the store. No new hardware."
 
 pilot3:
-  title: "Performance measurement."
-  text: "The platform tracks what happens when the music changes. Dwell time, traffic patterns, transaction data. You see what the music did for the business this quarter. Not what it sounded like."
+  title: "Measure the difference."
+  text: "The pilot runs on a timeline long enough to separate signal from noise. You see what the audio did for the stores that ran it compared to stores that did not."
 
 pilot4:
-  title: "Zero cost to participate."
-  text: "The pilot is free. If the results are there, we talk about what comes next. If they're not, you go back to what you had."
+  title: "Decide what comes next."
+  text: "If the pilot produced the kind of numbers that justify continuing, we talk about that. If it did not, nothing is locked in. The data is yours either way."
 
 cta:
-  headline: "See what it sounds like."
-  subline: "Tell us about your store and your customer. The pilot program shows you exactly what the system builds and what it measures."
+  headline: "See what the pilot looks like for your stores."
+  subline: "A short conversation tells us whether the pilot is a fit and tells you what to expect from the process."
   button_text: "Ask About a Pilot Program"
   button_link: "pilot.html"
 
 further_reading_eyebrow: "Go Deeper"
 further_reading_headline: "Related Reading"
-further_reading_links: <a href="blog/what-is-entuned.html">What Is Entuned?</a> &middot; <a href="blog/what-are-flow-factors.html">Does Your Store's Music Actually Matter?</a> &middot; <a href="blog/psychographic-profiling-retail.html">Psychographic Profiling for Retail</a> &middot; <a href="blog/ai-generated-music-retail.html">AI-Generated Music for Retail: What's Real and What's Hype</a>
+further_reading_links: <a href="blog/what-is-entuned.html">What Is Entuned?</a> &middot; <a href="blog/what-are-flow-factors.html">Does Your Store's Music Actually Matter?</a> &middot; <a href="blog/psychographic-profiling-retail.html">What Kind of Music Should a Store Like Mine Play?</a> &middot; <a href="blog/ai-generated-music-retail.html">AI-Generated Music for Retail: What's Real</a>

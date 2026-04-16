@@ -1,4 +1,4 @@
-# science — editable text content
+# science - editable text content
 
 h1_1: The Science Behind the Soundtrack
 h2_1: Your Store Has a Blind Spot
@@ -8,35 +8,35 @@ h2_4: Put the Research to Work
 eyebrow_1: Four Decades of Evidence
 btn_1: Start a Pilot
 btn_2: See the Results
-p_1: Four decades of peer-reviewed research prove music changes retail behavior. Tempo, genre congruence, and volume measurably affect dwell time and spending.
-p_2: "Your store tracks foot traffic, conversion, dwell time, and basket size. You optimize lighting, layout, signage, and staffing. But the audio environment\u2014the one variable that touches every customer from the moment they walk in\u2014runs on a playlist nobody measured."
-p_3: "That is not a music problem. It is a data problem. Thirty years of controlled experiments show that specific musical parameters produce specific behavioral outcomes in retail environments. The research exists. The application layer did not\u2014until now."
-p_4: "Entuned translates peer-reviewed behavioral science into original compositions built for your customer\u2019s psychology. Every track is specified by tempo, mode, harmonic density, and instrumentation\u2014parameters that published studies have directly linked to dwell time, willingness to pay, and purchase behavior."
-p_5: "Every decision Entuned makes maps to a published finding. These are not projections. They are controlled experiments with named researchers, sample sizes, and effect magnitudes."
-p_6: Every store is different. We are looking for retail brands ready to put thirty years of behavioral research to work and to own the data that proves it.
+p_1: Four decades of peer-reviewed research show that music changes what shoppers do in stores. The effect is measurable, reproducible, and large enough to move your P&L.
+p_2: "Your stores track foot traffic, conversion, dwell time, and basket size. You have opinions about lighting, layout, signage, and staffing. The audio is the one variable that reaches every customer within three seconds of the door, and almost nobody measures it."
+p_3: "Researchers have measured it for thirty years. Ron Milliman ran the original grocery-store experiment in 1982 and found shoppers moved more slowly and spent more when the tempo dropped. Charles Areni and David Kim followed with a wine cellar study in 1993. Adrian North and his collaborators kept going through the nineties and two thousands. The published record is deep, specific, and operator-relevant."
+p_4: "Published studies have linked specific musical choices to dwell time, willingness to pay, and purchase behavior. Entuned starts from that research. Every track we deliver is built for your customer and your store, not pulled from a catalog of somebody else's taste."
+p_5: "Every claim below traces back to a named researcher, a real sample size, and an effect magnitude you can look up. Read the papers. Argue with the methods. Then decide what to do with your store soundtrack."
+p_6: We are taking on a small number of multi-location lifestyle retailers for pilot deployments this year. If you want to put thirty years of behavioral research to work in your stores, we would welcome a conversation.
 
 card_title_1: Dwell Time Increase
-card_text_1: "Milliman (1982) found slow tempo increased grocery dwell time by 38%. Knoferle et al. (2011) showed the lift requires slow tempo in a minor mode. Major mode eliminates the effect. Most retail music providers have the thermostat. They don\u2019t have the engine."
+card_text_1: "Milliman (1982) found that slower music increased grocery dwell time by 38 percent. Knoferle and colleagues (2011) later showed the lift depends on more than tempo alone. The research is specific about what works and what does not, and most store music providers have never read any of it."
 card_title_2: Willingness to Pay
-card_text_2: "Areni and Kim (1993) found identity-congruent music nearly doubled average transaction value in a wine store. North et al. (1999) found French music tripled French wine sales. The mechanism is congruence: when the music matches the customer, spending rises."
+card_text_2: "Areni and Kim (1993) found that classical music in a wine cellar nearly doubled average transaction value. North, Hargreaves, and McKendrick (1999) found that French music tripled French wine sales. Customers spent more when the music matched the context."
 card_title_3: Familiarity Hurts
-card_text_3: "Yalch and Spangenberg (2000) found familiar music drove shoppers out 8% faster. Customers reported enjoying it more, but they left sooner. Original music is unfamiliar by definition. That is not a limitation. It is the point."
+card_text_3: "Yalch and Spangenberg (2000) found that familiar music drove shoppers out of a department store 8 percent faster. Customers reported enjoying the familiar music more, but they left sooner. Original music avoids that trap."
 card_title_4: Transaction Value Lift
-card_text_4: "Areni and Kim (1993) measured average transaction value jumping from $6.93 to $12.31 with classical music in a wine cellar. Customers selected more expensive items, not more items. The music changed perceived value."
+card_text_4: "Areni and Kim (1993) measured average transaction value rising from $6.93 to $12.31 when the wine cellar played classical music. Customers bought more expensive bottles, not more bottles. The audio shifted what people perceived the room was selling."
 
 cite_1: Milliman (1982)
-cite_desc_1: "Slow tempo music increased grocery store dwell time by 38% and daily gross receipts by 32%. The foundational study proving tempo directly affects shopping behavior."
+cite_desc_1: "Slower music increased grocery store dwell time by 38 percent and daily gross receipts by 32 percent. The foundational paper linking tempo to shopping behavior."
 cite_2: Areni & Kim (1993)
-cite_desc_2: "Classical music in a wine cellar nearly doubled average transaction value. Customers selected more expensive bottles, not more bottles. Music changed perceived value."
+cite_desc_2: "Classical music in a wine cellar nearly doubled average transaction value. Shoppers chose more expensive bottles, not more bottles."
 cite_3: North, Hargreaves & McKendrick (1999)
-cite_desc_3: "French music tripled French wine sales over two weeks. German music doubled German wine sales. Customers denied being influenced. Congruence operates below awareness."
+cite_desc_3: "French music tripled French wine sales over two weeks. German music doubled German wine sales. Shoppers denied that the music influenced them."
 cite_4: Yalch & Spangenberg (2000)
-cite_desc_4: "Familiar music drove shoppers out 8% faster in a department store. They reported enjoying it more but left sooner. Unfamiliar music extended dwell time."
+cite_desc_4: "Familiar music drove shoppers out of a department store 8 percent faster. They reported liking it more but left sooner."
 cite_5: Knoferle et al. (2011)
-cite_desc_5: "Demonstrated that tempo alone does not predict sales. Slow tempo in minor mode produced a sales lift. Slow tempo in major mode did not. The interaction matters."
+cite_desc_5: "Showed that tempo alone does not predict sales. The interaction between musical choices matters more than any single variable."
 cite_6: Andersson et al. (2012)
-cite_desc_6: "Ran 601 real transactions and found incongruent music actively reduced willingness to pay. Getting the music wrong costs you money. Silence would be better."
+cite_desc_6: "Ran 601 real transactions and found that music mismatched to the store reduced willingness to pay. Getting the music wrong costs money."
 
 further_reading_eyebrow: "Go Deeper"
 further_reading_headline: "Further Reading"
-further_reading_links: <a href="blog/science-of-tempo-retail.html">The Science of Tempo: How BPM Controls Retail Behavior</a> &middot; <a href="blog/milliman-study.html">The Milliman Study and What Retail Actually Learned From It</a> &middot; <a href="blog/what-are-flow-factors.html">Does Your Store's Music Actually Matter?</a> &middot; <a href="blog/luxury-priming-is-real-and-you-dont-have-to-be-a-luxury-brand-to-use-it.html">Luxury Priming Is Real</a> &middot; <a href="blog/the-familiarity-trap.html">The Familiarity Trap</a>
+further_reading_links: <a href="blog/science-of-tempo-retail.html">The Science of Tempo: How BPM Controls Retail Behavior</a> &middot; <a href="blog/milliman-study.html">The Milliman Study Is Wrong. Sort Of.</a> &middot; <a href="blog/what-are-flow-factors.html">Does Your Store's Music Actually Matter?</a> &middot; <a href="blog/luxury-priming-is-real-and-you-dont-have-to-be-a-luxury-brand-to-use-it.html">Luxury Priming Is Real</a> &middot; <a href="blog/the-familiarity-trap.html">The Familiarity Trap</a>
