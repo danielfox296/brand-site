@@ -113,7 +113,7 @@ stat_number_3: "14%"
 stat_label_3: Exit-approach sessions that converted to purchase
 stat_note_3: Visits where the reengagement track was playing when the customer reached the door.
 closing_quote_1: Mara stayed 18 minutes. She bought the bowl.
-disclaimer_1: "Story data &mdash; benchmarked from peer-reviewed retail behavioral research. Entuned pilot data in production."
+disclaimer_1: "Story data, benchmarked from peer-reviewed retail behavioral research. Entuned pilot data in production."
 
 # 08-cta
 eyebrow_8: "What&rsquo;s Next"
