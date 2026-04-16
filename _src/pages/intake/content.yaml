@@ -1,0 +1,10 @@
+# Founding Retailer intake form — post-checkout
+
+hero:
+  eyebrow: "Founding Retailer"
+  headline: "Tell us about your store."
+  subhead: "About 10 minutes. The more specific your answers, the better your profile — and the faster we deploy."
+
+success:
+  headline: "Got it. We'll be in touch."
+  body: "Your intake is in. We'll review, build your profile, and email you within two business days to schedule the onboarding call."

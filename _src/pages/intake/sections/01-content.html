@@ -1,0 +1,219 @@
+<style>
+  input:invalid:not(:placeholder-shown),
+  textarea:invalid:not(:placeholder-shown),
+  select:invalid:not(:placeholder-shown) { border-color: #e74c3c; }
+  input:valid:not(:placeholder-shown),
+  textarea:valid:not(:placeholder-shown) { border-color: #27ae60; }
+
+  .intake-group-header {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    margin: 3rem 0 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(80, 146, 156, 0.2);
+    color: var(--text);
+  }
+  .intake-group-header:first-child { margin-top: 0; }
+  .intake-help {
+    font-size: 0.8125rem;
+    color: var(--text);
+    opacity: 0.65;
+    margin: 0.35rem 0 0;
+    line-height: 1.5;
+  }
+</style>
+
+<!-- HERO -->
+<section class="hero hero-alt" style="min-height: 0; padding: 9rem 2rem 3rem; text-align: left;">
+  <div class="container">
+    <div class="fade-up" style="max-width: 720px; margin: 0;">
+      <p class="section-eyebrow" style="color: var(--gold);">{{content.hero.eyebrow}}</p>
+      <h1>{{content.hero.headline}}</h1>
+      <p class="subline">{{content.hero.subhead}}</p>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="section" style="padding-top: 2rem;">
+  <div class="container" style="max-width: 720px;">
+    <form class="fade-up" action="https://formspree.io/f/xgopwepl" method="POST" id="intake-form">
+      <input type="hidden" name="_subject" value="Founding Retailer Intake — Entuned">
+      <input type="hidden" name="form_type" value="founding_retailer_intake">
+
+      <!-- BRAND -->
+      <h2 class="intake-group-header">Brand</h2>
+
+      <div class="form-group">
+        <label for="intake-company">Company name</label>
+        <input type="text" id="intake-company" name="company" required placeholder="Acme Retail">
+      </div>
+
+      <div class="form-group">
+        <label for="intake-website">Website</label>
+        <input type="url" id="intake-website" name="website" required placeholder="https://www.acme.com">
+      </div>
+
+      <div class="form-group">
+        <label for="intake-voice">How would you describe your brand's voice?</label>
+        <textarea id="intake-voice" name="brand_voice" rows="3" required placeholder="Warm, a little irreverent, knowledgeable without being preachy..."></textarea>
+        <p class="intake-help">Three to five words or a couple of sentences. We translate this into musical parameters.</p>
+      </div>
+
+      <div class="form-group">
+        <label for="intake-adjacent">Adjacent brands your customers love</label>
+        <textarea id="intake-adjacent" name="adjacent_brands" rows="2" placeholder="Aesop, Our Place, MUJI..."></textarea>
+        <p class="intake-help">3–6 brands. Not necessarily competitors — anything your ideal customer also shops.</p>
+      </div>
+
+      <!-- CUSTOMER -->
+      <h2 class="intake-group-header">Customer</h2>
+
+      <div class="form-group">
+        <label for="intake-icp">Who is your ideal customer?</label>
+        <textarea id="intake-icp" name="icp" rows="4" required placeholder="A 34-year-old design-conscious renter who just moved to a mid-sized city. Cares about provenance. Reads the label. Prefers fewer, better things over more of them."></textarea>
+        <p class="intake-help">Psychographics matter more than demographics. What do they value? What signals quality to them?</p>
+      </div>
+
+      <div class="form-group">
+        <label for="intake-decision">What makes them pick you over a competitor?</label>
+        <textarea id="intake-decision" name="decision_driver" rows="3" required placeholder="Curation, knowledgeable staff, our approach to sourcing..."></textarea>
+      </div>
+
+      <!-- STORE -->
+      <h2 class="intake-group-header">Store</h2>
+
+      <div class="form-group">
+        <label for="intake-locations">Store name(s) and address(es)</label>
+        <textarea id="intake-locations" name="locations" rows="3" required placeholder="Acme Downtown – 123 Main St, Denver CO&#10;Acme Cherry Creek – 456 Oak Ave, Denver CO"></textarea>
+        <p class="intake-help">One per line. If multi-location, list all Founding-tier locations.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+        <div class="form-group">
+          <label for="intake-sqft">Approx. sq ft per location</label>
+          <input type="text" id="intake-sqft" name="square_footage" placeholder="1,800">
+        </div>
+        <div class="form-group">
+          <label for="intake-hours">Operating hours</label>
+          <input type="text" id="intake-hours" name="hours" placeholder="Tue–Sun, 10am–7pm">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="intake-traffic">Peak hours and slow hours</label>
+        <textarea id="intake-traffic" name="traffic" rows="2" placeholder="Peak: Sat 12–4pm. Slow: weekday mornings."></textarea>
+        <p class="intake-help">Helps us tune the stream to what's happening in the store at different times.</p>
+      </div>
+
+      <!-- AUDIO -->
+      <h2 class="intake-group-header">Audio system</h2>
+
+      <div class="form-group">
+        <label for="intake-audio-system">What do you use today for in-store audio?</label>
+        <textarea id="intake-audio-system" name="audio_system" rows="2" required placeholder="Sonos Amp into 4 ceiling speakers. Currently piping a Spotify playlist."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="intake-audio-connection">How does the audio source connect?</label>
+        <select id="intake-audio-connection" name="audio_connection" required>
+          <option value="" disabled selected>Select one</option>
+          <option value="Streaming URL / web">Streaming URL (we can give you a link)</option>
+          <option value="Sonos / AirPlay">Sonos / AirPlay</option>
+          <option value="Bluetooth">Bluetooth</option>
+          <option value="Line-in / aux">Line-in / aux</option>
+          <option value="Other / unsure">Other / unsure</option>
+        </select>
+      </div>
+
+      <!-- GOAL -->
+      <h2 class="intake-group-header">Goal</h2>
+
+      <div class="form-group">
+        <label for="intake-goal">Which outcome matters most over the next 90 days?</label>
+        <select id="intake-goal" name="primary_goal" required>
+          <option value="" disabled selected>Select one</option>
+          <option value="Dwell time">Longer dwell time</option>
+          <option value="Basket size">Higher transaction value</option>
+          <option value="Conversion">Higher conversion (browse → buy)</option>
+          <option value="Return visits">More return visits</option>
+          <option value="Brand consistency">Brand consistency across locations</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="intake-notes">Anything else we should know?</label>
+        <textarea id="intake-notes" name="notes" rows="3" placeholder="Optional — constraints, preferences, existing measurement, anything that'll help us get it right the first time."></textarea>
+      </div>
+
+      <!-- CONTACT -->
+      <h2 class="intake-group-header">Your info</h2>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+        <div class="form-group">
+          <label for="intake-first">First name</label>
+          <input type="text" id="intake-first" name="first_name" required placeholder="Jane">
+        </div>
+        <div class="form-group">
+          <label for="intake-last">Last name</label>
+          <input type="text" id="intake-last" name="last_name" required placeholder="Doe">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="intake-email">Work email (same one you used for checkout)</label>
+        <input type="email" id="intake-email" name="email" required placeholder="jane@acme.com">
+      </div>
+
+      <div class="form-group">
+        <label for="intake-stripe">Stripe receipt number (optional)</label>
+        <input type="text" id="intake-stripe" name="stripe_receipt" placeholder="e.g. 2345-6789">
+        <p class="intake-help">If handy — helps us match your intake to your subscription faster.</p>
+      </div>
+
+      <!-- Honeypot -->
+      <input type="text" name="_gotcha" style="display:none">
+
+      <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1.5rem;">Submit Intake</button>
+
+      <div id="intake-form-status" style="text-align: center; margin-top: 1.5rem; display: none;"></div>
+    </form>
+
+    <div class="form-success" id="form-success" style="display:none; background: rgba(39, 174, 96, 0.1); border: 1px solid rgba(39, 174, 96, 0.3); border-radius: 8px; padding: 2rem; text-align: center; margin-top: 2rem;">
+      <h3 style="color: #50929c; margin-bottom: 1rem;">{{content.success.headline}}</h3>
+      <p>{{content.success.body}}</p>
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  var form = document.getElementById('intake-form');
+  var status = document.getElementById('intake-form-status');
+  if (!form) return;
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var btn = form.querySelector('button[type="submit"]');
+    btn.textContent = 'Sending\u2026';
+    btn.disabled = true;
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(function(response) {
+      if (response.ok) {
+        form.style.display = 'none';
+        var successDiv = document.getElementById('form-success');
+        if (successDiv) successDiv.style.display = 'block';
+        window.scrollTo({top: 0, behavior: 'smooth'});
+      } else { throw new Error(); }
+    }).catch(function() {
+      status.style.display = 'block';
+      status.style.color = '#E24B4A';
+      status.textContent = 'Something went wrong. Email hello@entuned.co with your intake.';
+      btn.textContent = 'Submit Intake';
+      btn.disabled = false;
+    });
+  });
+})();
+</script>
