@@ -14,7 +14,6 @@ h2_10: "How to Get More Out of the Sensor Data You Already Pay For"
 h2_11: "Your Music Provider Doesn't Know What Your Analytics Platform Knows"
 h2_12: "The Battery Ventures Thesis, Extended"
 h2_13: "$2 Billion in Sensors. No Real-Time Levers."
-h2_14: "What Your Sensors Know and Your Store Can't Do About It"
 h2_15: "What Is Entuned?"
 h2_16: "Does Your Store's Music Actually Matter?"
 h2_17: "AI vs. Traditional In-Store Music"
@@ -23,7 +22,6 @@ h2_19: "How to Measure the ROI of In-Store Music"
 h2_20: "What Your Store Sounds Like in the First 10 Seconds (And Why It Matters)"
 h2_21: "Tempo Controls Bodies, Not Wallets"
 h2_22: "The Milliman Study Is Wrong. Sort Of."
-h2_23: "Your Volume Knob Is a Free Lever"
 h2_24: "Major Key Does Not Mean Happy Customer."
 h2_25: "Longer Visits Don't Mean Bigger Receipts"
 h2_26: "Tempo and Volume Are Free. The Revenue Isn't."
@@ -39,18 +37,15 @@ h2_35: "The Real Cost of Your Retail Music"
 h2_36: "Music Was Never Made For Your Store"
 h2_37: "Why Your Store's Background Music Is Costing You Sales"
 h2_38: "The Science of Tempo in Retail"
-h2_39: "Is It Actually Illegal to Play Spotify in Your Stores?"
 h2_40: "What Kind of Music Should a Store Like Mine Play?"
 h2_41: "AI-Generated Music for Retail: What's Real"
 h2_42: "The 8-12% You're Leaving on the Table"
 h2_43: "Why Your Best Customers Leave Faster Than They Should"
-h2_44: "The Silent Brand Signal"
 h2_45: "What Churches, Concert Halls, and Film Composers Know That Retail Doesn't"
 h2_46: "The Dwell Time Variable Nobody's Tracking"
 h2_47: "What Your Music Is Saying About Your Brand"
 h2_48: "Luxury Priming Is Real"
 h2_50: "What Happens to Employee Performance When the Music Is Right"
-h2_51: "The Hidden Cost of Your Licensing Fee"
 h2_52: "How Wine Retailers Use Music to Sell Premium Bottles"
 h2_53: "The Metrics Your Audio Environment Should Be Producing"
 date_1: March 2026 &middot; 7 min read
@@ -66,7 +61,6 @@ date_10: March 2026 &middot; 7 min read
 date_11: March 2026 &middot; 7 min read
 date_12: March 2026 &middot; 7 min read
 date_13: March 2026 &middot; 7 min read
-date_14: March 2026 &middot; 8 min read
 date_15: March 2026 &middot; 5 min read
 date_16: March 2026 &middot; 5 min read
 date_17: March 2026 &middot; 6 min read
@@ -75,7 +69,6 @@ date_19: March 2026 &middot; 5 min read
 date_20: March 2026 &middot; 7 min read
 date_21: March 2026 &middot; 4 min read
 date_22: March 2026 &middot; 5 min read
-date_23: March 2026 &middot; 5 min read
 date_24: March 2026 &middot; 4 min read
 date_25: March 2026 &middot; 5 min read
 date_26: March 2026 &middot; 5 min read
@@ -91,18 +84,15 @@ date_35: March 2026 &middot; 4 min read
 date_36: March 2026 &middot; 5 min read
 date_37: March 2026 &middot; 7 min read
 date_38: March 2026 &middot; 5 min read
-date_39: March 2026 &middot; 8 min read
 date_40: March 2026 &middot; 6 min read
 date_41: March 2026 &middot; 5 min read
 date_42: March 2026 &middot; 3 min read
 date_43: March 2026 &middot; 3 min read
-date_44: March 2026 &middot; 3 min read
 date_45: March 2026 &middot; 3 min read
 date_46: March 2026 &middot; 3 min read
 date_47: March 2026 &middot; 3 min read
 date_48: March 2026 &middot; 3 min read
 date_50: March 2026 &middot; 3 min read
-date_51: March 2026 &middot; 3 min read
 date_52: March 2026 &middot; 3 min read
 date_53: March 2026 &middot; 3 min read
 summary_1: "How a finance team should think about a line item for in-store music, what the public research actually supports, and how to test it before committing."
@@ -118,7 +108,6 @@ summary_10: "Most multi-location retailers pay for traffic counters, zone tracki
 summary_11: "Your analytics vendor and your music vendor share the same store and have never exchanged a single data point. That gap is where unexplained variance lives."
 summary_12: "Battery Ventures backed RetailNext to build the physical retail data layer. The next logical surface for that thesis is the one nobody has connected yet."
 summary_13: "The in-store analytics market is approaching 2 billion dollars. It still cannot tell a retailer what to change in real time."
-summary_14: "Retail analytics spent two decades learning to read the room. The tools to respond to what they see are still stuck in a quarterly planning cadence."
 summary_15: "Original music for retail stores. Measured like every other line item."
 summary_16: "Most operators assume music is background noise. Four decades of peer-reviewed studies confirm it's a variable that nobody is tracking."
 summary_17: "The in-store music industry has run on the same model since 1934. Generative music changes the options retailers actually have."
@@ -127,7 +116,6 @@ summary_19: "Your music is a line item with no return number next to it. Here is
 summary_20: "Customers decide whether to stay or leave before they reach the first rack. Most of that decision has nothing to do with merchandise."
 summary_21: "Slower tempo gets customers to stay longer. That alone does not make them spend more. Here's what operators need to know."
 summary_22: "The most cited finding in retail music is 42 years old, from one grocery store. The dwell time effect holds up. The sales number does not."
-summary_23: "Volume is the simplest variable in the music-and-retail equation. Getting it right costs nothing. Getting it wrong costs dwell time."
 summary_24: "The assumption behind most retail playlists is that cheerful music drives sales. Stores that test this find a more complicated answer."
 summary_25: "Your dwell time numbers look great. Your average ticket hasn't moved. That gap costs more than most operators realize."
 summary_26: "Every retailer already has a volume knob. The part that moves revenue costs money, and most stores never get there."
@@ -143,18 +131,15 @@ summary_35: "The invoice line for store music is the smallest number in this con
 summary_36: "The songs playing in your stores right now were written for something else. Here is how you tell whether that is costing you."
 summary_37: "Generic playlists built for retail in general create cognitive friction that shortens visits and suppresses transaction values."
 summary_38: "Tempo is the most studied variable in retail music research. It is also the most misunderstood."
-summary_39: "A store manager hits play on a personal Spotify account. A regional director gets a letter from ASCAP three months later. Here is the clean operator answer to what is actually allowed."
 summary_40: "The question every multi-location operator eventually asks. The answer has less to do with genre than most people think."
 summary_41: "Generative music crossed the commercial quality threshold in late 2025. Here is what changed for retail and what the hype is still ahead of."
 summary_42: "Music congruence increases willingness to pay by 8 to 12 percent. No extra traffic required. No promotions. Just the right music."
 summary_43: "Your highest-value shoppers spend less time in your store than your browsers do. Most operators never ask why."
-summary_44: "Customers use the intentionality of your audio environment as a proxy for overall brand quality. Generic music signals generic standards."
 summary_45: "Every serious application of music engineers it for a specific outcome. Retail is the one high-stakes context that never tried."
 summary_46: "Your audio environment is invisible to your analytics because it never changes. Start treating it as a variable."
 summary_47: "One incongruent track at the moment of peak purchase intention can undo everything your brand team built."
 summary_48: "Customers in a wine store spent more on expensive bottles when the background music changed. The products were identical. The prices were identical. Only the audio was different."
 summary_50: "Your staff spend eight hours a day inside the audio environment your customers pass through in thirty minutes. When that environment is wrong, your team notices before anyone else."
-summary_51: "Your music line item is small. The costs sitting behind it are not."
 summary_52: "A 1993 study found that classical music in a wine shop moved customers toward more expensive bottles. Same wine, same prices, different receipts."
 summary_53: "If your audio environment is doing its job, you should be able to see it in four metrics. Most stores have never looked."
 h2_55: "The Store-Level KPI You're Not Tracking Yet"
@@ -165,9 +150,6 @@ h2_58: "Song Selection Is Not Music Strategy"
 date_58: April 2026 &middot; 4 min read
 summary_58: "Every song carries its cultural baggage into your store. Music strategy starts with the outcome, not the playlist."
 
-h2_57: "How to Increase Dwell Time Without Adding Staff"
-date_57: April 2026 &middot; 5 min read
-summary_57: "Most operators watch dwell time climb and assume the number is doing work on its own. What happens inside those extra minutes is what turns them into revenue."
 
 h2_56: "Every Song Is Either Working Or It Isn't"
 date_56: April 2026 &middot; 5 min read
@@ -192,9 +174,6 @@ h2_62: "Why I Went Back to Folding Shirts"
 date_62: April 2026 &middot; 3 min read
 summary_62: "A hiring sign at Park Meadows Mall led to a retail floor job, a wrong playlist, and a question that became Entuned."
 
-h2_63: "What Your Store Says in the First 10 Seconds"
-date_63: April 2026 &middot; 3 min read
-summary_63: "Every visual choice in a well-run store is on purpose. The music is the only thing that got picked by whoever opened this morning."
 
 h2_64: "What a Producer Hears That You Don't"
 date_64: April 2026 &middot; 3 min read

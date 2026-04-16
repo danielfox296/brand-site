@@ -106,6 +106,5 @@ sections:
 
   - type: related
     posts:
-      - slug: "retail-dwell-time"
       - slug: "the-dwell-time-variable-nobodys-tracking"
       - slug: "why-your-best-customers-leave-faster-than-they-should"

@@ -99,5 +99,5 @@ sections:
   - type: related
     posts:
       - slug: "tempo-controls"
-      - slug: "volume-knob"
+      - slug: "tempo-volume-free"
       - slug: "measure-roi-retail-music"
