@@ -658,7 +658,7 @@ def build():
     rss_xml = '''<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title>Entuned Blog — Retail Music Strategy</title>
+  <title>Entuned Blog | Retail Music Strategy</title>
   <link>{site_url}/blog.html</link>
   <description>Research-backed insights on retail music strategy, in-store customer behavior, and AI-powered audio optimization.</description>
   <language>en-us</language>
