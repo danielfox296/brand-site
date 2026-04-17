@@ -8,11 +8,10 @@ author:
   name: "Daniel Fox"
   role: "Founder & CEO"
 hero:
-  src: "../img/blog/measure-what-you-ignore.jpg"
-  alt: "Abstract data visualization representing analytics work"
-  caption: "Photo: Unsplash"
+  src: "../img/katti-headshot.png"
+  alt: "Mrinmayi Katti, Data Scientist at Entuned"
 meta_description: "Mrinmayi Katti joins Entuned as Data Scientist. Short announcement post from the founder."
-og_image: "/img/blog/measure-what-you-ignore.jpg"
+og_image: "/img/katti-headshot.png"
 tags: [team, data-science, entuned, product]
 sections:
   - type: key_takeaways
