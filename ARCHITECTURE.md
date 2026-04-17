@@ -69,7 +69,7 @@ For blog posts, output goes into the `blog/` subdirectory:
 - Non-blog pages: `" | Entuned"` (pipe)
 - Blog posts: `" — Entuned Blog"` (em dash)
 
-The build script uses the output path depth to set `nav_prefix` — blog posts at `blog/slug.html` get `../` so relative links to styles, images, and other pages resolve correctly.
+The build script uses the output path depth to set `nav_prefix` — blog posts at `blog/slug.html` get `../` so relative links to styles, images, and other pages resolve correctly. **Exception: the logo `href` in `header.html` uses the absolute path `/` (not `{{nav_prefix}}index.html`) to avoid Google treating `/index.html` as a separate canonical URL from `/`. Do not change this back to a relative path.**
 
 ## Content files
 
