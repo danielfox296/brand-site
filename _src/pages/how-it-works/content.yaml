@@ -3,12 +3,12 @@
 
 hero:
   headline: "How It Works"
-  subline: "What a pilot looks like, from first conversation to measurable store outcomes."
+  subline: "Retail music that adapts to your stores, gets more precise every week it runs, and holds a control store so you can prove it to your CFO."
 
 step1:
   label: "Step 01"
   title: "We talk about your stores."
-  text: "A short intake call covers the basics. Who shops your stores. What you already measure. What you would want to see move. The conversation gives us enough to build audio that fits the room and the customer, and gives you a clear picture of what the pilot will and will not do."
+  text: "The intake produces a brand brief. We cover tempo range, mood vocabulary, lyrical guidelines, and what the brand should never sound like. That brief is the ceiling. The system operates inside it permanently. We also cover your existing data stack — what you already measure and what you would want to see move — so the pilot report is built around numbers that already matter to you."
 
 step2:
   label: "Step 02"
@@ -30,8 +30,8 @@ includes:
   headline: "Built into every pilot."
 
 card1:
-  title: "Intake and audio brief"
-  text: "A short, structured conversation that captures what your stores need the audio to do. The output is a brief we work against, not a questionnaire that gets filed."
+  title: "Intake and brand brief"
+  text: "A structured conversation that produces a brand brief. Tempo range, mood vocabulary, lyrical guidelines, what the brand should never sound like. That brief is the ceiling. The system operates inside it permanently."
 
 card2:
   title: "Original music"
@@ -51,7 +51,7 @@ card5:
 
 pilot:
   headline: "Pilots are structured to produce an answer."
-  description: "The pilot runs long enough that weather, staffing, and promotion noise average out. At the end, you have data specific to your stores showing whether the audio environment moved dwell time, basket size, or return visits. If the numbers move, we talk about what comes next. If they do not, you go back to what you had."
+  description: "The pilot runs twelve weeks — long enough that weather, staffing, and promotion noise average out. One store runs unchanged as the control, matched on traffic volume and revenue baseline. At twelve weeks, you see what the audio did for the pilot stores against the control. If the numbers moved, we talk about what comes next. If they did not, you keep the data either way."
 
 pilot1:
   title: "Baseline your current numbers."
@@ -62,8 +62,8 @@ pilot2:
   text: "The pilot stores run on the music we produce for them. Any speaker setup already in the store. No new hardware."
 
 pilot3:
-  title: "Measure the difference."
-  text: "The pilot runs on a timeline long enough to separate signal from noise. You see what the audio did for the stores that ran it compared to stores that did not."
+  title: "We hold a control store."
+  text: "At least one store runs unchanged as the control, matched to the pilot stores on location profile, historical traffic volume, and revenue baseline. At twelve weeks, the delta between pilot stores and the control store is the answer to the question every CFO asks: how do you know the music did that. No other vendor in this category holds a control store. We do on every pilot."
 
 pilot4:
   title: "Decide what comes next."
@@ -77,4 +77,4 @@ cta:
 
 further_reading_eyebrow: "Go Deeper"
 further_reading_headline: "Related Reading"
-further_reading_links: <a href="blog/what-is-entuned.html">What Is Entuned?</a> &middot; <a href="blog/what-are-flow-factors.html">Does Your Store's Music Actually Matter?</a> &middot; <a href="blog/psychographic-profiling-retail.html">What Kind of Music Should a Store Like Mine Play?</a> &middot; <a href="blog/ai-generated-music-retail.html">AI-Generated Music for Retail: What's Real</a>
+further_reading_links: <a href="blog/what-is-entuned.html">What Is Entuned?</a> &middot; <a href="blog/what-are-flow-factors.html">Does Your Store's Music Actually Matter?</a> &middot; <a href="blog/psychographic-profiling-retail.html">What Kind of Music Should a Store Like Mine Play?</a> &middot; <a href="blog/ai-generated-music-retail.html">Does original retail music outperform licensed playlists?</a>

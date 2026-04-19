@@ -93,6 +93,16 @@ textarea:valid:not(:placeholder-shown) {
           <input type="text" id="contact-company" name="company" placeholder="Acme Retail">
         </div>
 
+        <div class="form-group" id="routing-locations" style="display:none;">
+          <label for="contact-locations">Number of locations <span style="opacity: 0.4; font-weight: 400;">(optional)</span></label>
+          <input type="number" id="contact-locations" name="num_locations" placeholder="5" min="1">
+        </div>
+
+        <div class="form-group" id="routing-vendor" style="display:none;">
+          <label for="contact-vendor">Current music vendor <span style="opacity: 0.4; font-weight: 400;">(optional)</span></label>
+          <input type="text" id="contact-vendor" name="current_vendor" placeholder="Soundtrack Your Brand, Mood Media, other...">
+        </div>
+
         <div class="form-group">
           <label for="contact-message">Message</label>
           <textarea id="contact-message" name="message" rows="5" required placeholder="Tell us what you're looking for..."></textarea>
@@ -138,6 +148,20 @@ textarea:valid:not(:placeholder-shown) {
           msg.setAttribute('placeholder', 'Company, number of locations, current analytics stack (e.g. RetailNext), and anything else relevant to a pilot.');
         }
       }
+    }
+
+    // Show pilot routing fields when Retail Leader is selected
+    var routeRoleEl = document.getElementById('contact-role');
+    function toggleRoutingFields() {
+      var isRetail = routeRoleEl && routeRoleEl.value === 'Retail Leader';
+      var locEl = document.getElementById('routing-locations');
+      var vendorEl = document.getElementById('routing-vendor');
+      if (locEl) locEl.style.display = isRetail ? 'block' : 'none';
+      if (vendorEl) vendorEl.style.display = isRetail ? 'block' : 'none';
+    }
+    if (routeRoleEl) {
+      routeRoleEl.addEventListener('change', toggleRoutingFields);
+      toggleRoutingFields();
     }
   })();
   </script>
