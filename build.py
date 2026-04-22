@@ -38,6 +38,7 @@ import json
 import glob
 import re
 import html as html_mod
+import hashlib
 
 REPO     = os.path.dirname(os.path.abspath(__file__))
 SRC      = os.path.join(REPO, '_src')
@@ -217,6 +218,12 @@ def build():
     base   = read(os.path.join(LAYOUTS,  'base.html'))
     header = read(os.path.join(PARTIALS, 'header.html'))
     footer = read(os.path.join(PARTIALS, 'footer.html'))
+
+    # Cache-bust styles.css with a content fingerprint so Cloudflare CDN
+    # serves the new file immediately after each deploy without a manual purge.
+    with open(os.path.join(REPO, 'styles.css'), 'rb') as _f:
+        _styles_ver = hashlib.md5(_f.read()).hexdigest()[:8]
+    base = base.replace('styles.css"', f'styles.css?v={_styles_ver}"')
 
     pages_built = []
 
