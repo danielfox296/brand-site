@@ -225,6 +225,7 @@ nav .container {
   display: flex;
   gap: 2rem;
   list-style: none;
+  align-items: center;
 }
 
 .nav-links a {
@@ -255,6 +256,16 @@ nav .container {
   background: #50929c;
 }
 
+/* Fix: .nav-links a selector wins on specificity; override color for the CTA button */
+.nav-links .btn-primary {
+  color: #20201c;
+  opacity: 1;
+}
+.nav-links .btn-primary:hover {
+  color: #20201c;
+  opacity: 1;
+}
+
 .mobile-menu-toggle {
   display: none;
   background: none;
@@ -262,7 +273,7 @@ nav .container {
   font-size: 1.5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .nav-links {
     display: none;
     flex-direction: column;
