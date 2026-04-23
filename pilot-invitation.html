@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/pilot-invitation.html">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Pilot Invitation | Entuned</title>
+  <meta name="description" content="You&#x27;ve been invited to a free 90-day pilot with Entuned. Custom music designed for your store, measured against your sales data.">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="rss.xml">
+  <meta property="og:title" content="Pilot Invitation | Entuned">
+  <meta property="og:description" content="You&#x27;ve been invited to a free 90-day pilot with Entuned. Custom music designed for your store, measured against your sales data.">
+  <meta property="og:url" content="https://entuned.co/pilot-invitation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://entuned.co/img/og-default.png">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pilot Invitation | Entuned">
+  <meta name="twitter:description" content="You&#x27;ve been invited to a free 90-day pilot with Entuned. Custom music designed for your store, measured against your sales data.">
+  <meta name="twitter:image" content="https://entuned.co/img/og-default.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Entuned",
+  "url": "https://entuned.co",
+  "description": "Entuned maps musical flow factors to verified retail behavioral outcomes using AI-generated music, turning in-store sound into a measurable performance channel.",
+  "foundingDate": "2026",
+  "founder": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "knowsAbout": [
+    "retail atmospherics",
+    "music psychology",
+    "generative AI music",
+    "in-store customer behavior",
+    "retail analytics",
+    "AI-powered retail music optimization"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/entuned"
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Pilot Invitation | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css?v=a888f221">
+  <style>
+/* ===== PILOT INVITATION PAGE ===== */
+
+.pi-hero {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 2rem 6rem;
+  text-align: center;
+}
+
+.pi-hero h1 {
+  font-size: clamp(2.2rem, 7vw, 4.2rem);
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+}
+
+.pi-hero .subline {
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.pi-section {
+  padding: 6rem 2rem;
+}
+
+.pi-section + .pi-section {
+  border-top: 1px solid rgba(80, 146, 156, 0.12);
+}
+
+.pi-narrow {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.pi-wide {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.pi-body {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  line-height: 1.9;
+}
+
+/* Steps */
+.pi-steps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.pi-step {
+  padding: 2rem;
+  background: rgba(80, 146, 156, 0.05);
+  border: 1px solid rgba(80, 146, 156, 0.1);
+  border-radius: 4px;
+}
+
+.pi-step-num {
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.pi-step h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.pi-step p {
+  font-size: 0.95rem;
+  opacity: 0.75;
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+/* Outcomes */
+.pi-outcomes {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.pi-outcome {
+  flex: 1;
+  min-width: 180px;
+  padding: 1.5rem;
+  background: rgba(80, 146, 156, 0.05);
+  border: 1px solid rgba(80, 146, 156, 0.1);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.pi-outcome-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+}
+
+.pi-outcome-desc {
+  font-size: 0.85rem;
+  opacity: 0.6;
+  margin: 0;
+}
+
+/* What we need */
+.pi-needs {
+  margin-top: 2rem;
+}
+
+.pi-need {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid rgba(80, 146, 156, 0.08);
+}
+
+.pi-need:last-child {
+  border-bottom: none;
+}
+
+.pi-need strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.pi-need p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+/* Pull quote */
+.pi-pull {
+  font-family: var(--font-heading);
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--text);
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.pi-pull span {
+  color: var(--accent);
+}
+
+/* Form */
+.pi-form-section {
+  padding: 6rem 2rem;
+  background: rgba(80, 146, 156, 0.04);
+  border-top: 1px solid rgba(80, 146, 156, 0.12);
+}
+
+.pi-form-wrap {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pi-form-wrap h2 {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  margin-bottom: 0.75rem;
+}
+
+.pi-form-wrap > p {
+  opacity: 0.65;
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+}
+
+.pi-form {
+  text-align: left;
+}
+
+.pi-field {
+  margin-bottom: 1.25rem;
+}
+
+.pi-field label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+}
+
+.pi-field input,
+.pi-field textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(80, 146, 156, 0.2);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  border-radius: 0;
+  transition: border-color 0.3s ease;
+}
+
+.pi-field input:focus,
+.pi-field textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.pi-field input::placeholder,
+.pi-field textarea::placeholder {
+  color: rgba(212, 225, 229, 0.25);
+}
+
+.pi-form .btn {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.pi-form-note {
+  font-size: 0.8rem;
+  opacity: 0.4;
+  margin-top: 1.25rem;
+  text-align: center;
+}
+
+/* Thank you state */
+.pi-thank-you {
+  display: none;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.pi-thank-you h3 {
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.pi-thank-you p {
+  opacity: 0.7;
+}
+
+.pi-thank-you .pi-signature {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* About strip */
+.pi-about {
+  padding: 4rem 2rem;
+  border-top: 1px solid rgba(80, 146, 156, 0.12);
+}
+
+.pi-about-inner {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pi-about-inner p {
+  font-size: 0.95rem;
+  opacity: 0.6;
+  line-height: 1.8;
+}
+
+.pi-about-inner a {
+  color: var(--accent);
+}
+
+.pi-about-inner p + p {
+  margin-top: 1rem;
+}
+
+.pi-centered {
+  text-align: center;
+}
+
+.pi-centered p {
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pi-hero {
+    padding: 6rem 2rem 4rem;
+    min-height: auto;
+  }
+  .pi-steps {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .pi-outcomes {
+    flex-direction: column;
+  }
+  .pi-section {
+    padding: 4rem 2rem;
+  }
+}
+  </style>
+</head>
+<body>
+  
+
+  <main>
+  <!-- HERO -->
+<section class="pi-hero">
+  <div class="fade-up">
+    <span class="eyebrow">Pilot Invitation</span>
+    <h1>Your music should be selling for you.</h1>
+    <p class="subline">You've been invited to a free 90-day pilot with Entuned. We design a custom soundtrack for your store using 40 years of music and retail research, then measure whether it moved your numbers.</p>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="pi-section">
+  <div class="pi-wide">
+    <div class="fade-up">
+      <span class="eyebrow">How It Works</span>
+      <h2>Four steps. Ninety days. Real numbers.</h2>
+    </div>
+    <div class="pi-steps">
+      <div class="pi-step fade-up">
+        <span class="pi-step-num">Step 01</span>
+        <h3>We learn your brand.</h3>
+        <p>Your store, your customers, your aesthetic. We study what makes your space yours and use that as the foundation for everything we compose.</p>
+      </div>
+      <div class="pi-step fade-up">
+        <span class="pi-step-num">Step 02</span>
+        <h3>We design your soundtrack.</h3>
+        <p>Every track is built using research-backed methods. Tempo, energy, mood, and lyrical content calibrated to influence how long people stay and how much they spend.</p>
+      </div>
+      <div class="pi-step fade-up">
+        <span class="pi-step-num">Step 03</span>
+        <h3>You play it.</h3>
+        <p>Stream from any device you already have. AirPlay, Bluetooth, aux cable. Press play in the morning. The music handles itself from there.</p>
+      </div>
+      <div class="pi-step fade-up">
+        <span class="pi-step-num">Step 04</span>
+        <h3>We measure what happens.</h3>
+        <p>You share weekly sales data however works best for you. We run it against your historical comps and show you exactly what changed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT THE RESEARCH SAYS -->
+<section class="pi-section">
+  <div class="pi-narrow">
+    <div class="fade-up">
+      <span class="eyebrow">The Research</span>
+      <h2>This isn't a guess.</h2>
+      <p class="pi-body">Forty years of peer-reviewed research shows that when the audio environment fits the room, shoppers stay longer, browse more, and spend more per visit. Tempo, mode, harmonic texture, and even lyrical content all affect purchase behavior in ways that have been measured and replicated across dozens of studies.</p>
+      <p class="pi-body">The problem has always been measurement. Nobody has connected what's playing to what's selling at the transaction level. That's what we're building. Every track in your pilot catalogue is designed using these methods, specified at the variable level, so we can identify exactly what moved your numbers and why.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PULL QUOTE -->
+<div class="pi-pull fade-up">
+  We're not competing with your taste. We're <span>incorporating it</span> into a soundtrack designed to lift your sales.
+</div>
+
+<!-- OUTCOME MODE -->
+<section class="pi-section">
+  <div class="pi-narrow">
+    <div class="fade-up">
+      <span class="eyebrow">Optional</span>
+      <h2>Outcome Mode.</h2>
+      <p class="pi-body">The default soundtrack runs on its own. But if you want more control, you can shift the energy in your store toward a specific goal with a single tap.</p>
+    </div>
+    <div class="pi-outcomes fade-up">
+      <div class="pi-outcome">
+        <div class="pi-outcome-name">Linger</div>
+        <p class="pi-outcome-desc">Slow the pace. Extend browsing time.</p>
+      </div>
+      <div class="pi-outcome">
+        <div class="pi-outcome-name">Energize</div>
+        <p class="pi-outcome-desc">Lift the room. Match high-traffic energy.</p>
+      </div>
+      <div class="pi-outcome">
+        <div class="pi-outcome-name">Move</div>
+        <p class="pi-outcome-desc">Drive toward decision and purchase.</p>
+      </div>
+      <div class="pi-outcome">
+        <div class="pi-outcome-name">Brand&nbsp;Reinforce</div>
+        <p class="pi-outcome-desc">Deepen the connection to your identity.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE NEED FROM YOU -->
+<section class="pi-section">
+  <div class="pi-narrow">
+    <div class="fade-up">
+      <span class="eyebrow">What We Need</span>
+      <h2>Almost nothing.</h2>
+      <div class="pi-needs">
+        <div class="pi-need">
+          <p><strong>A device to stream from.</strong> An iPad, a phone, a laptop. Anything that connects to your speakers via AirPlay, Bluetooth, or aux.</p>
+        </div>
+        <div class="pi-need">
+          <p><strong>Weekly sales data.</strong> However is easiest. A POS export, a screenshot, a forwarded email. We'll work with whatever format you have.</p>
+        </div>
+        <div class="pi-need">
+          <p><strong>Historical comps.</strong> Year-over-year, month-over-month, or week-over-week. We use your past numbers as the baseline so we can measure what changes.</p>
+        </div>
+        <div class="pi-need">
+          <p><strong>One conversation.</strong> Fifteen to twenty minutes so we can understand your brand, your customer, and what a good outcome looks like for you.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE TERMS -->
+<section class="pi-section">
+  <div class="pi-narrow pi-centered">
+    <div class="fade-up">
+      <span class="eyebrow">The Pilot</span>
+      <h2>90 days. No cost. No contract.</h2>
+      <p class="pi-body">At the end of the pilot you get a report showing exactly what happened. If the numbers are worth continuing, we'll talk about it. If they're not, you keep the data and the music. No obligation either way.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DATA PRIVACY -->
+<section class="pi-section">
+  <div class="pi-narrow">
+    <div class="fade-up">
+      <span class="eyebrow">Your Data</span>
+      <h2>What we see. What we don't.</h2>
+      <p class="pi-body">We run the music and your sales numbers side by side, anonymized, to look for correlation between what was playing and what sold. We need totals: revenue by day, transaction count, average ticket. That's it.</p>
+      <p class="pi-body">We don't need customer names, individual transaction details, or any personally identifying information. Our ingestion is separate from anything that could identify your customers. We're measuring the music, not the people.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="pi-form-section" id="confirm">
+  <div class="pi-form-wrap">
+    <div class="fade-up">
+      <h2>Confirm your interest.</h2>
+      <p>Drop your info below and I'll reach out to schedule a conversation.</p>
+
+      <form class="pi-form" id="pilotForm" action="https://formspree.io/f/xwpkgjvq" method="POST">
+        <input type="hidden" name="_subject" value="Pilot Invitation — New Interest">
+        <input type="hidden" name="_next" value="https://entuned.co/pilot-invitation.html#confirmed">
+        <div class="pi-field">
+          <label for="pi-name">Your Name</label>
+          <input type="text" id="pi-name" name="name" required placeholder="First and last">
+        </div>
+        <div class="pi-field">
+          <label for="pi-store">Store Name</label>
+          <input type="text" id="pi-store" name="store" required placeholder="Your store's name">
+        </div>
+        <div class="pi-field">
+          <label for="pi-email">Email</label>
+          <input type="email" id="pi-email" name="email" required placeholder="you@yourstore.com">
+        </div>
+        <button type="submit" class="btn btn-primary">I'm Interested</button>
+        <p class="pi-form-note">No commitment. Just a conversation.</p>
+      </form>
+
+      <div class="pi-thank-you" id="thankYou">
+        <h3>Got it.</h3>
+        <p>I'll reach out within a day or two to find a time to talk. Looking forward to it.</p>
+        <p class="pi-signature">&mdash; Daniel, Founder</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT STRIP -->
+<section class="pi-about">
+  <div class="pi-about-inner fade-up">
+    <p><strong class="accent">Entuned</strong> is a Denver-based startup building retail soundtracks backed by 40 years of peer-reviewed research. We measure them against real sales data. Provisional patent filed.</p>
+    <p><a href="mailto:daniel@entuned.co">daniel@entuned.co</a></p>
+  </div>
+</section>
+
+<script>
+  // Form submission — show thank you state, hide form
+  if (window.location.hash === '#confirmed') {
+    document.getElementById('pilotForm').style.display = 'none';
+    document.querySelector('.pi-form-wrap > p').style.display = 'none';
+    document.getElementById('thankYou').style.display = 'block';
+  }
+
+  const form = document.getElementById('pilotForm');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        form.style.display = 'none';
+        document.querySelector('.pi-form-wrap > p').style.display = 'none';
+        document.getElementById('thankYou').style.display = 'block';
+      }
+    }).catch(() => {
+      form.submit();
+    });
+  });
+</script>
+  </main>
+
+  
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG');
+  </script>
+  <script defer src="js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>

@@ -335,6 +335,9 @@ def build():
         # Apply nav_prefix to header and footer
         page_header = header.strip().replace('{{nav_prefix}}', nav_prefix)
         page_footer = footer.strip().replace('{{nav_prefix}}', nav_prefix)
+        if config.get('no_chrome'):
+            page_header = ''
+            page_footer = ''
 
         # Compute canonical URL
         if output == 'index.html':
