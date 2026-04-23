@@ -114,6 +114,9 @@ Four decades of peer-reviewed research on music and consumer behavior sit behind
 - [Turning On the Radio](https://entuned.co/blog/turning-on-the-radio.html): When shop owners turned off Muzak and flipped on the radio, they traded one problem for another — free music with someone else's ads, opinions, and a DJ who'd never walked their floor.
 - [The Pianist in the Store](https://entuned.co/blog/the-pianist-in-the-store.html): Nordstrom's live pianists were the only retail music system that adapted to the room in real time. By 2020, the last one was gone — and with him, that capability entirely.
 - [The Supermarket Study](https://entuned.co/blog/the-supermarket-study.html): Ronald Milliman proved in 1982 that slow-tempo music increases retail spending by 38%. Over 600 citations. Almost no implementation. Entuned controls 31 variables where Milliman measured one.
+- [The Wine Aisle](https://entuned.co/blog/the-wine-aisle.html): A 1999 study proved French music sold French wine and German music sold German wine — and the shoppers had no idea the music was influencing them. This is associative priming, Layer 3 in Entuned's model.
+- [The Nightclub on the Sales Floor](https://entuned.co/blog/the-nightclub-on-the-sales-floor.html): Abercrombie & Fitch ran stores at 90 decibels as a deliberate demographic filter. Every store's music selects for an audience — most retailers just aren't doing it on purpose.
+- [The Sound of Nothing](https://entuned.co/blog/the-sound-of-nothing.html): Costco doesn't play music and it's a deliberate brand choice. Most retail silence is just neglect. Every store has a soundscape whether it programmed one or not.
 
 ## Contact
 
