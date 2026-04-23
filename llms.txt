@@ -117,6 +117,9 @@ Four decades of peer-reviewed research on music and consumer behavior sit behind
 - [The Wine Aisle](https://entuned.co/blog/the-wine-aisle.html): A 1999 study proved French music sold French wine and German music sold German wine — and the shoppers had no idea the music was influencing them. This is associative priming, Layer 3 in Entuned's model.
 - [The Nightclub on the Sales Floor](https://entuned.co/blog/the-nightclub-on-the-sales-floor.html): Abercrombie & Fitch ran stores at 90 decibels as a deliberate demographic filter. Every store's music selects for an audience — most retailers just aren't doing it on purpose.
 - [The Sound of Nothing](https://entuned.co/blog/the-sound-of-nothing.html): Costco doesn't play music and it's a deliberate brand choice. Most retail silence is just neglect. Every store has a soundscape whether it programmed one or not.
+- ['Tis the Season (For the Same 40 Songs)](https://entuned.co/blog/tis-the-season.html): Holiday music creates a saturation problem for retail staff that nobody accounts for — each song plays 136 times per season per employee. The customer hears it once. The employee lives inside it for 40 hours a week.
+- [The Playlist Era and the Open Loop](https://entuned.co/blog/the-playlist-era-and-the-open-loop.html): The playlist era solved curation and licensing but never solved measurement. From Muzak's retirement in 2013 to the manager's personal Spotify account, the loop between music and outcome has been open for a century.
+- [Closing the Loop](https://entuned.co/blog/closing-the-loop.html): Every era of retail music discovered that sound changes behavior and operated without connecting the music to the outcome. Entuned closes that loop with 31 Flow Factors, in-store behavioral measurement, and a compounding Specification-Outcome Map.
 
 ## Contact
 
