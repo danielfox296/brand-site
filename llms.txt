@@ -111,6 +111,9 @@ Four decades of peer-reviewed research on music and consumer behavior sit behind
 - [The Composer Who Wanted You to Ignore Him](https://entuned.co/blog/the-composer-who-wanted-you-to-ignore-him.html): Erik Satie invented furniture music in 1917 and discovered the central problem of background music on his first public performance: people don't respond to music the way you design them to.
 - [The Organ in the Department Store](https://entuned.co/blog/the-organ-in-the-department-store.html): John Wanamaker built the world's largest pipe organ into his Philadelphia department store in 1911 and played it twice a day for over a century. He understood that sound shapes a retail space. He just had no way to measure it.
 - [The General and the Wire](https://entuned.co/blog/the-general-and-the-wire.html): Muzak was the first company to treat background music as a controlled variable with a measurable outcome. The instinct was right. The connection between music and outcome never actually closed.
+- [Turning On the Radio](https://entuned.co/blog/turning-on-the-radio.html): When shop owners turned off Muzak and flipped on the radio, they traded one problem for another — free music with someone else's ads, opinions, and a DJ who'd never walked their floor.
+- [The Pianist in the Store](https://entuned.co/blog/the-pianist-in-the-store.html): Nordstrom's live pianists were the only retail music system that adapted to the room in real time. By 2020, the last one was gone — and with him, that capability entirely.
+- [The Supermarket Study](https://entuned.co/blog/the-supermarket-study.html): Ronald Milliman proved in 1982 that slow-tempo music increases retail spending by 38%. Over 600 citations. Almost no implementation. Entuned controls 31 variables where Milliman measured one.
 
 ## Contact
 
