@@ -1,34 +1,67 @@
 # for-home-goods — editable text content
+# Broader category framing per migration plan. Operator-buyer voice.
+# Covers furniture / mattress / home goods (the v1 anchor S-tier vertical).
 
-h1_1: Your Home Goods Store Deserves Its Own Soundtrack.
-h2_1: What We Measure
-h2_2: How Entuned Works for Home Goods Retail
-h2_3: Implementation Overview
-h2_4: Schedule a Consultation
-h2_5: Related Reading
-card_title_1: Dwell Time by Department
-card_title_2: Cross-Department Traffic
-card_title_3: Average Transaction Value
-card_title_4: Browsing Depth
-btn_1: Ask About a Pilot Program
-p_1: A customer walks into your living room section on a Saturday afternoon. They pick up a throw pillow, put it down, drift toward the lamps, circle back. Somewhere in that five minutes they decide whether to buy. The music playing behind that decision was picked two years ago by someone who does not work for you anymore.
-p_2: Home goods is a slow-decision category. Customers compare options, imagine rooms, walk away and come back. The music is the one element of your store environment nobody on your team is measuring, and Knoferle et al. (2011) showed that the right choice and the wrong choice produce different sales numbers in the same store, same product, same week. Entuned measures what happens to customer behavior when the music actually fits the customer in front of it.
-p_3: How long customers spend in each department. In home goods, the customer who lingers in the living room section buys from it. Milliman (1982) established that slower music increases shopping duration, and Smith and Curnow (1966) showed that tempo directly affects time spent in store. The public research points toward meaningful dwell time gains in considered-purchase areas.
-p_4: Whether customers who came for one category discover another. North, Hargreaves, and McKendrick (1999) showed that French music tripled French wine sales and German music doubled German wine sales on the same shelf. In home goods, that principle maps to lifestyle congruence. Music that matches the modern Scandinavian furniture primes the customer to look at the Scandinavian-influenced textiles two aisles over.
-p_5: Whether customers trade up. Areni and Kim (1993) found that classical music shifted customers toward higher-priced wine by changing quality perception, not by changing the wine. Your $400 option and your $200 option sit in the same environmental signal. Audio is one of the loudest pieces of that signal, whether anyone on your team is thinking about it or not.
-p_6: How many product interactions happen before the register. Deeper browsing means bigger baskets. Your staff work long shifts in large stores, and a short catalog loop means they hear the same songs dozens of times a month. That fatigue shapes how they show up on the floor, and customers pick up on it.
-p_7: The research on music and consumer behavior in considered-purchase retail is decades old and consistent. Generic catalog music treats every shopper the same. Original music built for your specific customer does not.
-p_8: Every track is original and license-free. No ASCAP exposure, no risk of a song's lyrics cutting against your brand, no playlist curator somewhere else deciding what your customers hear.
-p_9: We work with retail analytics platforms like RetailNext where you already have them. When music changes and dwell time changes in the same store the same week, you have a measurement connected to a decision, not a guess.
-p_10: We learn your customer and your store. Who the store is for, what the brand stands for, what the floor is trying to do. You share any existing analytics access and a floor plan if you have one.
-p_11: First soundtrack built and shared for your team to review. You give notes. We refine before anything goes live in a store.
-p_12: Go live. Streaming via Bluetooth or AirPlay to your existing speaker hardware. Measurement through POS and analytics begins the day the music starts.
-p_13: Fresh music on a monthly cadence informed by what the numbers did the month before. Seasonal adjustments as traffic and product mix shift. Reporting on your schedule.
-p_14: What we need from you
-p_15: POS access for measurement. A floor plan if you have one. RetailNext or equivalent analytics access if available. Any brand guidelines or audio direction you want us to work inside.
-p_16: Walk the floor of your best store this week and write down every song that plays for twenty minutes. Read the lyrics. Ask whether this is the soundtrack you would choose for the customer you are trying to reach. If the answer is no, we should talk.
-p_17: 'See also: <a href="how-it-works.html" style="color: #50929c;">How It Works</a> &middot; <a href="science.html" style="color: #50929c;">The Science</a> &middot; <a href="results.html" style="color: #50929c;">The Research Behind the Results</a> &middot; <a href="pilot.html" style="color: #50929c;">Pilot Program</a>'
-p_18: 'Other verticals: <a href="for-apparel.html" style="color: #50929c;">Apparel</a> &middot; <a href="for-cosmetics.html" style="color: #50929c;">Cosmetics</a>'
-p_19: <a href="blog/why-your-best-customers-leave-faster-than-they-should.html" style="color: #50929c;">Why Your Best Customers Leave Faster Than They Should</a>
-p_20: <a href="blog/music-provider-doesnt-know-retailnext.html" style="color: #50929c;">Your Music Provider Doesn't Know What RetailNext Knows</a>
-p_21: <a href="blog/the-dwell-time-variable-nobodys-tracking.html" style="color: #50929c;">The Dwell Time Variable Nobody's Tracking</a>
+hero:
+  eyebrow: "For Home Goods, Furniture &amp; Mattress Retail"
+  h1: "Long dwell. Large ticket. The audio is moving the decision."
+  subline: "Customers walk in on a Saturday afternoon and stay 18 minutes deciding whether the couch belongs in their living room. The variable shaping that 18 minutes is the one nobody on the floor team measures."
+
+# The gap
+gap:
+  eyebrow: "The Gap"
+  h2: "Big-ticket dwell is exactly where engineered audio earns out."
+  p1: "Mattress, furniture, and home goods retail share an operating shape: long dwell, large ticket, multi-decision visits, and a customer who often brings a partner. Dwell is the load-bearing variable for basket. The customer who lingers in the living room section buys from it. The customer who feels rushed walks."
+  p2: "The audio environment shaping that dwell is being delivered by a vendor who has never been in the store, with selection logic built around genre tags and licensing compliance. Your visual merchandising and floor staffing have a model. The audio doesn't."
+
+# What changes per tier
+tiers:
+  eyebrow: "What Changes Per Tier"
+  h2: "Three deployment shapes for home goods operators."
+
+  card1_title: "Essentials"
+  card1_text: "Free, indefinite. Pick Increase Dwell from the floor of one store and the catalogue starts streaming through the speakers you already have. Use it as the first look — useful before you commit to a Core ICP build."
+
+  card2_title: "Core ($99/store/mo)"
+  card2_text: "Music tailored to your single Ideal Customer Profile. For most home goods operators, that is the customer your visual merchandising is already designed for — same person, same aesthetic register, just specified to the music engine on purpose. About 420 tracks in the first month, refreshed against what holds the floor."
+
+  card3_title: "Professional ($399/store/mo)"
+  card3_text: "POS integration. Day-parted music against your traffic profile. Multiple ICPs for stores that draw distinct customer types (the Saturday-afternoon furniture browser is a different person from the Tuesday-evening throw-pillow customer). Self-improving refinement against your basket and dwell data."
+
+  card4_title: "Enterprise"
+  card4_text: "Multi-fleet rollouts across regions. Custom ICP design and brand voice consultation. Performance guarantees where lift can be cleanly measured against your existing reporting. Standard entry shape is a 12-week pilot in matched test and control stores."
+
+# What the research says
+research:
+  eyebrow: "What the Research Says"
+  h2: "Forty years of evidence, focused on the levers that matter for big-ticket retail."
+
+  card1_title: "Tempo affects pace through the store."
+  card1_text: "Milliman (1982) measured slower music increasing grocery dwell by ~38%. The mechanism (tempo affects walking pace) maps cleanly to home goods, where slower pace means more product interactions per visit."
+
+  card2_title: "Music customers read as theirs moves willingness to pay."
+  card2_text: "Areni and Kim (1993) measured average transaction value rising from $6.93 to $12.31 in a wine cellar when the music matched the customer. North et al. (1999) replicated the effect across categories. Same product on the shelf, different customer read."
+
+  card3_title: "Familiar songs cut perceived dwell."
+  card3_text: "Yalch and Spangenberg (2000) found that familiar music made shoppers leave 8% sooner. Original music is unfamiliar by definition — that is part of why it works. Catalogue vendors play the songs that minimize complaints. That is exactly the wrong objective for big-ticket dwell."
+
+  card4_title: "Mismatched music actively reduces basket."
+  card4_text: "Andersson et al. (2012) ran 601 real transactions and found that music that clashes with the store cuts willingness to pay. Neutral is not the baseline — the audio environment is doing work in the room whether you chose its effect or not."
+
+# CTA
+cta:
+  eyebrow: "Get Started"
+  h2: "Engineered audio in your home goods store."
+  subline: "Start free at Essentials in a single store. Move to Core or Professional once you want music tailored to a specific customer. Talk to Enterprise about multi-store rollouts."
+  cta_primary: "Start Free"
+  cta_secondary: "See Pricing"
+  cta_tertiary: "Talk to Enterprise"
+
+related:
+  eyebrow: "Related"
+  links: '<a href="how-it-works.html" style="color: #50929c;">How It Works</a> &middot; <a href="science.html" style="color: #50929c;">The Science</a> &middot; <a href="for-retail-leaders.html" style="color: #50929c;">For Retail Operators</a> &middot; <a href="for-cfos.html" style="color: #50929c;">The financial case</a>'
+  others: 'Other verticals: <a href="for-apparel.html" style="color: #50929c;">Apparel</a>'
+
+further_reading_eyebrow: "From the Blog"
+further_reading_headline: "Related Reading"
+further_reading_links: <a href="blog/why-your-best-customers-leave-faster-than-they-should.html" style="color: #50929c;">Why Your Best Customers Leave Faster Than They Should</a> &middot; <a href="blog/music-provider-doesnt-know-retailnext.html" style="color: #50929c;">Your Music Provider Doesn't Know What RetailNext Knows</a> &middot; <a href="blog/the-dwell-time-variable-nobodys-tracking.html" style="color: #50929c;">The Dwell Time Variable Nobody's Tracking</a>

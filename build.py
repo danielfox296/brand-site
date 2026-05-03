@@ -534,26 +534,47 @@ def build():
             schema_json += f'\n  <script type="application/ld+json">\n{json.dumps(breadcrumb_schema, indent=2)}\n  </script>'
 
         # Service schema for key product pages
-        if output in ('how-it-works.html', 'pilot.html'):
+        if output in ('how-it-works.html', 'pricing.html', 'enterprise.html'):
             service_schema = {
                 "@context": "https://schema.org",
                 "@type": "Service",
-                "name": "Entuned Retail Music Optimization",
+                "name": "Entuned Engineered Retail Audio",
                 "provider": {
                     "@type": "Organization",
                     "name": "Entuned",
                     "url": SITE_URL
                 },
-                "description": "AI-generated music engineered for retail customer psychology. Original compositions mapped to behavioral outcomes using proprietary Flow Factors framework.",
+                "description": "Music engineered to your customer and your outcome. Original compositions specified at the parameter level (tempo, key, lyrical density, energy arc) and PRO-indemnified at every tier.",
                 "serviceType": "Retail Audio Optimization",
                 "areaServed": "US",
-                "offers": {
-                    "@type": "Offer",
-                    "name": "90-Day Pilot Program",
-                    "price": "0",
-                    "priceCurrency": "USD",
-                    "description": "Free 90-day pilot with behavioral measurement and ROI analysis"
-                }
+                "offers": [
+                    {
+                        "@type": "Offer",
+                        "name": "Essentials",
+                        "price": "0",
+                        "priceCurrency": "USD",
+                        "description": "Free, indefinite. Outcome-tuned music for your floor. PRO-indemnified."
+                    },
+                    {
+                        "@type": "Offer",
+                        "name": "Core",
+                        "price": "99",
+                        "priceCurrency": "USD",
+                        "description": "Music tailored to your single Ideal Customer Profile. $99/store/month."
+                    },
+                    {
+                        "@type": "Offer",
+                        "name": "Professional",
+                        "price": "399",
+                        "priceCurrency": "USD",
+                        "description": "POS integration, day-parting, multiple ICPs, self-improving refinement. $399/store/month."
+                    },
+                    {
+                        "@type": "Offer",
+                        "name": "Enterprise",
+                        "description": "Multi-fleet rollouts, custom ICP design, performance guarantees where lift can be cleanly measured. Contact for pricing."
+                    }
+                ]
             }
             schema_json += f'\n  <script type="application/ld+json">\n{json.dumps(service_schema, indent=2)}\n  </script>'
 

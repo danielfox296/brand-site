@@ -1,34 +1,31 @@
 # for-cosmetics — editable text content
+# Page kept live for SEO continuity. Removed from primary nav and footer
+# in Phase 2. The cosmetics vertical sits on the edge of the anti-ICP
+# (Sephora is C-tier, Ulta B-tier per the May 2026 prospect tier list)
+# so the dedicated landing page is being repositioned — not retired.
 
-h1_1: The Soundtrack Is Shaping the Decision.
-h2_1: What We Measure
-h2_2: How Entuned Works for Cosmetics Retail
-h2_3: Implementation Overview
-h2_4: Schedule a Consultation
-h2_5: Related Reading
-card_title_1: Dwell Time by Department
-card_title_2: Product Interaction Rate
-card_title_3: Average Transaction Value
-card_title_4: Perceived Quality Alignment
-btn_1: Ask About a Pilot Program
-p_1: A customer stops at the tester wall, picks up a lipstick, turns it over, looks up. They decide in the next thirty seconds whether to open it or walk away. Something on the speakers is shaping that decision, and nobody on your team is tracking what.
-p_2: Beauty retail lives and dies on testing behavior, dwell, and the customer's sense of whether this brand is worth the premium. All three respond to audio, and the public research is direct about it. Gueguen and Jacob (2013) measured a 28.6 percent increase in customer spending in a retail setting when the music fit the mood of the store, from EUR 25.31 to EUR 32.55 per transaction. That was a flower shop. Beauty, where every decision is a sensory one, is at least as responsive. Entuned measures what actually happens on your floor when the music matches the customer.
-p_3: How long customers spend at the tester wall, the fragrance counter, and the treatment stations. The customer who stays longer tests more, and the customer who tests more buys more. Music shapes the sense of time, and a shopper who feels unhurried stays for the second product.
-p_4: Whether customers move from looking to testing. Yalch and Spangenberg (2000) found that familiar music made shoppers leave 8 percent faster. The recognizable hit tells the customer time is passing. That is exactly the opposite of what a beauty counter needs from its audio.
-p_5: Whether customers add a second or third item. Areni and Kim (1993) showed that classical music shifted customers toward higher-priced wine by raising the perceived quality of the room, not the product. The same mechanism runs in beauty. The customer who feels they are in a premium environment reaches for the premium item.
-p_6: Beauty is an identity purchase, and the customer reads the whole room. Andersson et al. (2012) measured 601 real transactions and found that music that clashed with the store actively reduced willingness to pay. A disconnect between what the store looks like and what the store sounds like undoes the work your merchandising team spent months on.
-p_7: We start with your customer, not with "beauty shoppers" as a demographic. Who the store is for, what that person responds to, how they want a beauty purchase to feel. That becomes the foundation for every musical choice we make.
-p_8: Every track is original and license-free. The music is built to encourage testing, reinforce the quality positioning your brand has earned, and keep a customer on the floor long enough to discover the second thing.
-p_9: We work with retail analytics platforms where you already have them. When we change the audio and dwell time shifts in the same store the same week, you have a measurement connected to a decision, not a vendor story.
-p_10: We learn your customer, your brand, and your competitive context. You share any existing analytics access and a floor plan if you have one.
-p_11: First soundtrack built and shared for your team to review. You give notes on fit and energy. We refine before it goes live.
-p_12: Go live. Streaming connects to your existing speakers via Bluetooth or AirPlay. Measurement through your POS and analytics begins the day the music starts.
-p_13: Fresh music on a monthly cadence, informed by what the numbers did the month before. Dwell, conversion, and ticket tracked against the audio that produced them.
-p_14: What we need from you
-p_15: POS access for measurement. A floor plan if you have one. RetailNext or equivalent analytics access if available. Any brand guidelines or audio direction you want us to work inside.
-p_16: Walk your highest-traffic store tomorrow between 1pm and 3pm and stand at the tester wall for twenty minutes. Count how many customers pick something up, and count how many open it. If the ratio embarrasses you, the audio layer is part of that story. That is the moment to call.
-p_17: 'See also: <a href="how-it-works.html" style="color: #50929c;">How It Works</a> &middot; <a href="science.html" style="color: #50929c;">The Science</a> &middot; <a href="results.html" style="color: #50929c;">The Research Behind the Results</a> &middot; <a href="pilot.html" style="color: #50929c;">Pilot Program</a>'
-p_18: 'Other verticals: <a href="for-apparel.html" style="color: #50929c;">Apparel</a> &middot; <a href="for-home-goods.html" style="color: #50929c;">Home Goods</a>'
-p_19: <a href="blog/luxury-priming-is-real-and-you-dont-have-to-be-a-luxury-brand-to-use-it.html" style="color: #50929c;">Luxury Priming Is Real</a>
-p_20: <a href="blog/the-dwell-time-variable-nobodys-tracking.html" style="color: #50929c;">The Dwell Time Variable Nobody's Tracking</a>
-p_21: <a href="blog/music-provider-doesnt-know-retailnext.html" style="color: #50929c;">Your Music Provider Doesn't Know What RetailNext Knows</a>
+banner_text: "This vertical page is being repositioned. The current ICP framework focuses on transactional mid-market multi-store retail; cosmetics retail spans both ends of that filter and the dedicated framing is being rewritten. For specific cosmetics deployments, contact us directly."
+
+hero:
+  eyebrow: "For Cosmetics Retail"
+  h1: "The audio at the tester wall is shaping the decision."
+  subline: "Beauty retail lives on testing behavior, dwell, and the customer's sense of whether the brand is worth the premium. All three respond to the audio environment. The dedicated cosmetics framing here is being rewritten — talk to us in the meantime if you operate beauty retail at multi-store scale."
+
+# What still applies
+applies:
+  eyebrow: "What Still Applies"
+  h2: "The product works for cosmetics. The framing on this page does not."
+  body: "Engineered audio applies cleanly to beauty retail at the unit-economic level — Gueguen and Jacob (2013) measured 28.6% spending lift in a sensory retail setting and the mechanism transfers. What we are reworking on this page is the ICP framing. The May 2026 prospect tier list places different cosmetics operators at different levels of fit, and the prior dedicated cosmetics framing did not capture that. Until the rewrite ships, the general framing on the homepage and the For Retail Operators page is the right entry point. Multi-store cosmetics operators on Professional or Enterprise: contact us directly."
+
+# CTA
+cta:
+  eyebrow: "Get in Touch"
+  h2: "Multi-store cosmetics operator?"
+  subline: "Contact us directly while the dedicated cosmetics framing is being reworked."
+  cta_primary: "Contact"
+  cta_secondary: "See Pricing"
+
+related:
+  eyebrow: "Related"
+  links: '<a href="how-it-works.html" style="color: #50929c;">How It Works</a> &middot; <a href="science.html" style="color: #50929c;">The Science</a> &middot; <a href="for-retail-leaders.html" style="color: #50929c;">For Retail Operators</a>'
+  others: 'Other verticals: <a href="for-apparel.html" style="color: #50929c;">Apparel</a> &middot; <a href="for-home-goods.html" style="color: #50929c;">Home Goods</a>'

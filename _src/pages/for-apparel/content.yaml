@@ -1,34 +1,67 @@
 # for-apparel — editable text content
+# Operator-buyer reframing per migration plan.
+# Covers off-price apparel and footwear (Cato, K&G, TJX, Famous Footwear, Shoe Palace).
 
-h1_1: Every surface in your store is curated. The soundtrack shouldn't be the exception.
-h2_1: What We Measure
-h2_2: How Entuned Works for Apparel Retail
-h2_3: Implementation Overview
-h2_4: Schedule a Consultation
-h2_5: Related Reading
-card_title_1: Dwell Time by Department
-card_title_2: Average Transaction Value
-card_title_3: Brand-Music Congruence
-card_title_4: Repeat Visit Rate
-btn_1: Ask About a Pilot Program
-p_1: The fixtures are specified. The lighting temperature is specified. The mannequins were re-styled last week. A song comes on that does not belong in this store, and nobody on the floor knows who to ask about it because the playlist lives on somebody else's laptop.
-p_2: Apparel shoppers decide whether a store is for them inside the first ten seconds, and they are deciding on sensory evidence. Yalch and Spangenberg (2000) found that familiar music actually made shoppers leave 8 percent faster. Andersson et al. (2012) watched 601 real transactions and found that music that clashes with the store cuts what customers spend. Your team measures conversion, average ticket, and dwell every week. The audio layer shaping those numbers is the one thing in the store nobody has a report on.
-p_3: How long shoppers spend in each department. Browsers linger. Browsers buy. Familiar hits pull customers out of the quiet attentive state where they pick up a second item, so the background music for a considered apparel purchase has to do a different job than the music on a friend's party playlist.
-p_4: Whether the shopper adds the second item. Andersson et al. (2012) measured willingness to pay against music that did not fit the store. Customers spent less, and they spent less without being able to say why.
-p_5: Whether shoppers hear your brand or hear a contradiction. When a song with violent or sexually explicit lyrics plays in a store positioning itself as refined, the customer feels the disconnect before they can name it. Original music built for your brand removes that risk entirely because nothing on the speakers came from a catalog you did not curate.
-p_6: Whether shoppers come back. Customers who feel comfortable in a space return to it. Your staff hear the same playlist for roughly 2,000 hours a year, and a short loop means the same songs dozens of times a month. That wear shapes the energy on the floor, and customers read it.
-p_7: We start with your customer. Not their age bracket or their zip code, but who they actually are, what they actually care about, what makes them feel like this store is for them. From there we build original music that fits that person and fits this store.
-p_8: Every track is original, and there is no licensing exposure. No ASCAP bill, no PRO audit, no risk that a lyric in the background is undercutting the brand message on the wall.
-p_9: We work with retail analytics platforms where you already have them deployed. When we put a new piece of music on the floor and dwell time moves in the same store the same week, you are looking at a measurement connected to a decision, not a vendor anecdote.
-p_10: We learn your customer, your brand, and what the store is trying to do. You share a floor plan and any existing audio direction.
-p_11: We build your first soundtrack and share it for review. You give notes. We refine before any customer hears a note of it.
-p_12: Go live. The stream connects to your existing speakers via Bluetooth or AirPlay. POS measurement starts the day the music starts.
-p_13: Fresh music on a monthly cadence, informed by what the numbers did the month before. Reporting on your schedule.
-p_14: What we need from you
-p_15: POS access for measurement. A floor plan if you have one. Any brand guidelines or audio direction you want us to work inside.
-p_16: Walk into your best store this week at 2pm on a Tuesday and listen for twenty minutes without touching anything else. If you can name three songs in that window that you would not have chosen for the customer you are trying to reach, the audio layer is doing work against your merchandising. That is the moment to call us.
-p_17: 'See also: <a href="how-it-works.html" style="color: #50929c;">How It Works</a> &middot; <a href="science.html" style="color: #50929c;">The Science</a> &middot; <a href="results.html" style="color: #50929c;">The Research Behind the Results</a> &middot; <a href="pilot.html" style="color: #50929c;">Pilot Program</a>'
-p_18: 'Other verticals: <a href="for-cosmetics.html" style="color: #50929c;">Cosmetics</a> &middot; <a href="for-home-goods.html" style="color: #50929c;">Home Goods</a>'
-p_19: <a href="blog/retail-designed-everything.html" style="color: #50929c;">The Silent Brand Signal</a>
-p_20: <a href="blog/why-your-best-customers-leave-faster-than-they-should.html" style="color: #50929c;">Why Your Best Customers Leave Faster Than They Should</a>
-p_21: <a href="blog/what-your-music-is-saying-about-your-brand.html" style="color: #50929c;">What Your Music Is Saying About Your Brand</a>
+hero:
+  eyebrow: "For Apparel &amp; Footwear Retail"
+  h1: "High traffic, conversion-obsessed, multi-decision visits."
+  subline: "Apparel and footwear customers move fast, try a lot, and decide on sensory evidence in the first ten seconds. The audio shaping that decision is the one variable nobody on the floor team measures."
+
+# The gap
+gap:
+  eyebrow: "The Gap"
+  h2: "Audio is doing work in the room. Almost nobody chose what."
+  p1: "Off-price apparel and multi-decision footwear share an operating shape: high foot traffic, conversion as the load-bearing metric, fitting-room dwell that varies by category and weather, and a shopper who is comparing options against price-relative-to-what-else-is-on-the-rack. The store environment shaping those decisions is being delivered by an audio vendor who has never been in your store."
+  p2: "Your visual merchandising team is well-staffed. Your real estate team has a model. Store ops owns staffing rotation. The audio environment those teams operate inside is whatever the music vendor sent over."
+
+# What changes per tier
+tiers:
+  eyebrow: "What Changes Per Tier"
+  h2: "Three deployment shapes for apparel and footwear operators."
+
+  card1_title: "Essentials"
+  card1_text: "Free, indefinite. Pick Increase Dwell or Infuse Energy from the floor of one store. The catalogue starts streaming through the speakers you already have. Useful as the first look in a single location before a multi-store ICP build."
+
+  card2_title: "Core ($99/store/mo)"
+  card2_text: "Music tailored to your single Ideal Customer Profile. For most apparel operators, that is the customer your buyers are already merchandising for — same person, just specified to the music engine on purpose. About 420 tracks in the first month, refreshed against what holds the floor and culled against what doesn't."
+
+  card3_title: "Professional ($399/store/mo)"
+  card3_text: "POS integration. Day-parted music against your traffic profile (lunchtime browsers, evening conversion, weekend volume). Multiple ICPs for stores that draw distinct customer types across the day. Self-improving refinement against your basket and conversion data."
+
+  card4_title: "Enterprise"
+  card4_text: "Multi-fleet rollouts across regions and formats. Custom ICP design and brand voice consultation. Performance guarantees where lift can be cleanly measured against your existing reporting. Standard entry shape is a 12-week pilot in matched test and control stores."
+
+# What the research says
+research:
+  eyebrow: "What the Research Says"
+  h2: "Forty years of evidence on the levers that matter for high-traffic apparel."
+
+  card1_title: "Tempo affects pace and basket."
+  card1_text: "Milliman (1982) measured slower music increasing dwell. Knoferle et al. (2011) showed the effect depends on tempo paired with the right tonal choice — most catalogue vendors have the thermostat without the room."
+
+  card2_title: "Music customers read as theirs moves what they spend."
+  card2_text: "Areni and Kim (1993) measured average transaction value rising 8–12% when music matched the customer profile. North et al. (1999) replicated across categories. Same items on the rack, different customer read."
+
+  card3_title: "Familiar songs cut perceived dwell."
+  card3_text: "Yalch and Spangenberg (2000) found that familiar music made shoppers leave 8% sooner. They reported enjoying it more. They left faster. Catalogue vendors play familiar songs because complaints are minimized — that is the wrong objective for conversion."
+
+  card4_title: "Mismatched music actively reduces basket."
+  card4_text: "Andersson et al. (2012) ran 601 real transactions and found that music that clashes with the store cuts willingness to pay. Neutral is not the baseline. The audio environment is doing work in the room whether you chose its effect or not."
+
+# CTA
+cta:
+  eyebrow: "Get Started"
+  h2: "Engineered audio in your apparel or footwear stores."
+  subline: "Start free at Essentials in a single store. Move to Core or Professional once you want music tailored to a specific customer. Talk to Enterprise about multi-store rollouts."
+  cta_primary: "Start Free"
+  cta_secondary: "See Pricing"
+  cta_tertiary: "Talk to Enterprise"
+
+related:
+  eyebrow: "Related"
+  links: '<a href="how-it-works.html" style="color: #50929c;">How It Works</a> &middot; <a href="science.html" style="color: #50929c;">The Science</a> &middot; <a href="for-retail-leaders.html" style="color: #50929c;">For Retail Operators</a> &middot; <a href="for-cfos.html" style="color: #50929c;">The financial case</a>'
+  others: 'Other verticals: <a href="for-home-goods.html" style="color: #50929c;">Home Goods</a>'
+
+further_reading_eyebrow: "From the Blog"
+further_reading_headline: "Related Reading"
+further_reading_links: <a href="blog/retail-designed-everything.html" style="color: #50929c;">The Silent Brand Signal</a> &middot; <a href="blog/why-your-best-customers-leave-faster-than-they-should.html" style="color: #50929c;">Why Your Best Customers Leave Faster Than They Should</a> &middot; <a href="blog/what-your-music-is-saying-about-your-brand.html" style="color: #50929c;">What Your Music Is Saying About Your Brand</a>
