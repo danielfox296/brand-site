@@ -1,17 +1,42 @@
 # pricing/welcome — post-checkout page
+#
+# This page is shared by Core and Professional purchasers. The tier is detected
+# at runtime from the URL query string (?tier=core or ?tier=professional) and
+# the body class is set accordingly. CSS hides the wrong-tier blocks.
+#
+# Stripe Payment Links must redirect here with the correct ?tier= parameter:
+#   - Core link redirects to:         /pricing/welcome.html?tier=core
+#   - Professional link redirects to: /pricing/welcome.html?tier=professional
+#
+# Default behavior (no ?tier= param or invalid value): treat as Core.
 
 welcome:
   eyebrow: "Welcome to Entuned"
   headline: "You're in."
-  body: "Your Core subscription is active. Here is what happens next."
 
-  step1_title: "Intake"
-  step1_body: "You will get an email from Daniel within one business day with a short ICP intake. Brand, customer, store context, audio setup. About 10 minutes."
-  step2_title: "Profile build"
-  step2_body: "We turn your intake into musical parameters and build your starting catalogue. Two to three days. We email you when the stream is ready and walk through anything that needs your sign-off."
-  step3_title: "Deploy"
-  step3_body: "Your stream goes live on the speakers you already have. Typical timeline from checkout to in-store is 5 to 7 days. After that, regular refreshes and culling against what is holding the floor."
+  # Body — tier-aware
+  body_core: "Your Core subscription is active. Here is what happens next."
+  body_professional: "Your Professional subscription is active. Here is what happens next."
 
+  # Step 1 — tier-aware
+  step1_title_core: "Intake"
+  step1_title_professional: "Intake + POS setup"
+  step1_body_core: "You will get an email from Daniel within one business day with a short ICP intake. Brand, customer, store context, audio setup. About 10 minutes."
+  step1_body_professional: "You will get an email from Daniel within one business day with the ICP intake plus the POS connection setup. Single ICP at onboarding; additional customer types defined collaboratively over the first month. About 20 minutes."
+
+  # Step 2 — tier-aware
+  step2_title_core: "Profile build"
+  step2_title_professional: "Profile build + integration"
+  step2_body_core: "We turn your intake into musical parameters and build your starting catalogue. Two to three days. We email you when the stream is ready and walk through anything that needs your sign-off."
+  step2_body_professional: "We turn your intake into musical parameters and build your starting catalogue while wiring the POS integration. Three to five days. We email you when the stream is ready and the data pipeline is live."
+
+  # Step 3 — tier-aware
+  step3_title_core: "Deploy"
+  step3_title_professional: "Deploy + self-improving"
+  step3_body_core: "Your stream goes live on the speakers you already have. Typical timeline from checkout to in-store is 5 to 7 days. After that, regular refreshes and culling against what is holding the floor."
+  step3_body_professional: "Your stream goes live on the speakers you already have. Day-parting active from day one. Self-improving refinement against your store data starts compounding over the first weeks. Monthly founder consults begin in week 2."
+
+  # Shared (same for both tiers)
   contact_line: "Questions? Email <a href=\"mailto:hello@entuned.co\">hello@entuned.co</a> and mention your Stripe receipt."
   terms_line: "Your subscription is governed by the <a href=\"terms.html\">Subscription Terms</a>."
   home_cta_label: "Back to Entuned"

@@ -1,6 +1,23 @@
 /* ==================== /pricing/welcome page ==================== */
 /* Reuses pricing-namespaced classes from the main pricing style.css */
 
+/*
+ * Tier-aware copy toggle.
+ * The page renders both Core and Professional copy in [data-tier] elements.
+ * Inline JS at the bottom of 01-content.html sets body.tier-core or
+ * body.tier-professional based on ?tier= URL param. CSS hides the wrong tier.
+ *
+ * !important on the hide rules guards against any inline style overrides.
+ */
+body.tier-core [data-tier="professional"] { display: none !important; }
+body.tier-professional [data-tier="core"] { display: none !important; }
+/* Pre-JS state: hide professional by default so Core shows during the
+   brief moment before the inline script runs. Avoids a flash of both. */
+body:not(.tier-core):not(.tier-professional) [data-tier="professional"] {
+  display: none !important;
+}
+
+
 .pricing-welcome {
   padding: 8rem 0 6rem;
   min-height: 80vh;

@@ -84,6 +84,23 @@
 /* ==================== /pricing/welcome page ==================== */
 /* Reuses pricing-namespaced classes from the main pricing style.css */
 
+/*
+ * Tier-aware copy toggle.
+ * The page renders both Core and Professional copy in [data-tier] elements.
+ * Inline JS at the bottom of 01-content.html sets body.tier-core or
+ * body.tier-professional based on ?tier= URL param. CSS hides the wrong tier.
+ *
+ * !important on the hide rules guards against any inline style overrides.
+ */
+body.tier-core [data-tier="professional"] { display: none !important; }
+body.tier-professional [data-tier="core"] { display: none !important; }
+/* Pre-JS state: hide professional by default so Core shows during the
+   brief moment before the inline script runs. Avoids a flash of both. */
+body:not(.tier-core):not(.tier-professional) [data-tier="professional"] {
+  display: none !important;
+}
+
+
 .pricing-welcome {
   padding: 8rem 0 6rem;
   min-height: 80vh;
@@ -183,14 +200,20 @@
 </nav>
 
   <main>
-  <!-- WELCOME -->
+  <!--
+  WELCOME — tier-aware
+  Reads ?tier=core|professional from URL and toggles body class. CSS hides the
+  wrong-tier blocks. Default (no param or invalid value): Core.
+-->
 <section class="pricing-welcome">
   <div class="container" style="max-width: 760px;">
     <div class="fade-up">
       <p class="pricing-eyebrow">Welcome to Entuned</p>
       <h1>You're in.</h1>
+
       <div class="welcome-body">
-        <p>Your Core subscription is active. Here is what happens next.</p>
+        <p data-tier="core">Your Core subscription is active. Here is what happens next.</p>
+        <p data-tier="professional">Your Professional subscription is active. Here is what happens next.</p>
       </div>
 
       <div class="pricing-welcome-steps">
@@ -198,24 +221,30 @@
         <div class="pricing-welcome-step">
           <div class="step-number">1</div>
           <div>
-            <h3 class="step-title">Intake</h3>
-            <p class="step-body">You will get an email from Daniel within one business day with a short ICP intake. Brand, customer, store context, audio setup. About 10 minutes.</p>
+            <h3 class="step-title" data-tier="core">Intake</h3>
+            <h3 class="step-title" data-tier="professional">Intake + POS setup</h3>
+            <p class="step-body" data-tier="core">You will get an email from Daniel within one business day with a short ICP intake. Brand, customer, store context, audio setup. About 10 minutes.</p>
+            <p class="step-body" data-tier="professional">You will get an email from Daniel within one business day with the ICP intake plus the POS connection setup. Single ICP at onboarding; additional customer types defined collaboratively over the first month. About 20 minutes.</p>
           </div>
         </div>
 
         <div class="pricing-welcome-step">
           <div class="step-number">2</div>
           <div>
-            <h3 class="step-title">Profile build</h3>
-            <p class="step-body">We turn your intake into musical parameters and build your starting catalogue. Two to three days. We email you when the stream is ready and walk through anything that needs your sign-off.</p>
+            <h3 class="step-title" data-tier="core">Profile build</h3>
+            <h3 class="step-title" data-tier="professional">Profile build + integration</h3>
+            <p class="step-body" data-tier="core">We turn your intake into musical parameters and build your starting catalogue. Two to three days. We email you when the stream is ready and walk through anything that needs your sign-off.</p>
+            <p class="step-body" data-tier="professional">We turn your intake into musical parameters and build your starting catalogue while wiring the POS integration. Three to five days. We email you when the stream is ready and the data pipeline is live.</p>
           </div>
         </div>
 
         <div class="pricing-welcome-step">
           <div class="step-number">3</div>
           <div>
-            <h3 class="step-title">Deploy</h3>
-            <p class="step-body">Your stream goes live on the speakers you already have. Typical timeline from checkout to in-store is 5 to 7 days. After that, regular refreshes and culling against what is holding the floor.</p>
+            <h3 class="step-title" data-tier="core">Deploy</h3>
+            <h3 class="step-title" data-tier="professional">Deploy + self-improving</h3>
+            <p class="step-body" data-tier="core">Your stream goes live on the speakers you already have. Typical timeline from checkout to in-store is 5 to 7 days. After that, regular refreshes and culling against what is holding the floor.</p>
+            <p class="step-body" data-tier="professional">Your stream goes live on the speakers you already have. Day-parting active from day one. Self-improving refinement against your store data starts compounding over the first weeks. Monthly founder consults begin in week 2.</p>
           </div>
         </div>
 
@@ -228,6 +257,21 @@
     </div>
   </div>
 </section>
+
+<script>
+  // Tier-aware welcome page. Reads ?tier= from the URL and tags the body
+  // so CSS can show the right tier's copy and hide the other.
+  // Default: core (no param or unknown value).
+  (function() {
+    var params = new URLSearchParams(window.location.search);
+    var tier = (params.get('tier') || '').toLowerCase();
+    if (tier === 'professional') {
+      document.body.classList.add('tier-professional');
+    } else {
+      document.body.classList.add('tier-core');
+    }
+  })();
+</script>
   </main>
 
   <!-- FOOTER -->

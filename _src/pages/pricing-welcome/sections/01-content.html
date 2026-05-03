@@ -1,11 +1,17 @@
-<!-- WELCOME -->
+<!--
+  WELCOME — tier-aware
+  Reads ?tier=core|professional from URL and toggles body class. CSS hides the
+  wrong-tier blocks. Default (no param or invalid value): Core.
+-->
 <section class="pricing-welcome">
   <div class="container" style="max-width: 760px;">
     <div class="fade-up">
       <p class="pricing-eyebrow">{{content.welcome.eyebrow}}</p>
       <h1>{{content.welcome.headline}}</h1>
+
       <div class="welcome-body">
-        <p>{{content.welcome.body}}</p>
+        <p data-tier="core">{{content.welcome.body_core}}</p>
+        <p data-tier="professional">{{content.welcome.body_professional}}</p>
       </div>
 
       <div class="pricing-welcome-steps">
@@ -13,24 +19,30 @@
         <div class="pricing-welcome-step">
           <div class="step-number">1</div>
           <div>
-            <h3 class="step-title">{{content.welcome.step1_title}}</h3>
-            <p class="step-body">{{content.welcome.step1_body}}</p>
+            <h3 class="step-title" data-tier="core">{{content.welcome.step1_title_core}}</h3>
+            <h3 class="step-title" data-tier="professional">{{content.welcome.step1_title_professional}}</h3>
+            <p class="step-body" data-tier="core">{{content.welcome.step1_body_core}}</p>
+            <p class="step-body" data-tier="professional">{{content.welcome.step1_body_professional}}</p>
           </div>
         </div>
 
         <div class="pricing-welcome-step">
           <div class="step-number">2</div>
           <div>
-            <h3 class="step-title">{{content.welcome.step2_title}}</h3>
-            <p class="step-body">{{content.welcome.step2_body}}</p>
+            <h3 class="step-title" data-tier="core">{{content.welcome.step2_title_core}}</h3>
+            <h3 class="step-title" data-tier="professional">{{content.welcome.step2_title_professional}}</h3>
+            <p class="step-body" data-tier="core">{{content.welcome.step2_body_core}}</p>
+            <p class="step-body" data-tier="professional">{{content.welcome.step2_body_professional}}</p>
           </div>
         </div>
 
         <div class="pricing-welcome-step">
           <div class="step-number">3</div>
           <div>
-            <h3 class="step-title">{{content.welcome.step3_title}}</h3>
-            <p class="step-body">{{content.welcome.step3_body}}</p>
+            <h3 class="step-title" data-tier="core">{{content.welcome.step3_title_core}}</h3>
+            <h3 class="step-title" data-tier="professional">{{content.welcome.step3_title_professional}}</h3>
+            <p class="step-body" data-tier="core">{{content.welcome.step3_body_core}}</p>
+            <p class="step-body" data-tier="professional">{{content.welcome.step3_body_professional}}</p>
           </div>
         </div>
 
@@ -43,3 +55,18 @@
     </div>
   </div>
 </section>
+
+<script>
+  // Tier-aware welcome page. Reads ?tier= from the URL and tags the body
+  // so CSS can show the right tier's copy and hide the other.
+  // Default: core (no param or unknown value).
+  (function() {
+    var params = new URLSearchParams(window.location.search);
+    var tier = (params.get('tier') || '').toLowerCase();
+    if (tier === 'professional') {
+      document.body.classList.add('tier-professional');
+    } else {
+      document.body.classList.add('tier-core');
+    }
+  })();
+</script>
