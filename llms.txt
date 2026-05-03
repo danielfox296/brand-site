@@ -121,6 +121,7 @@ Four decades of peer-reviewed research on music and consumer behavior sit behind
 - [The Playlist Era and the Open Loop](https://entuned.co/blog/the-playlist-era-and-the-open-loop.html): The playlist era solved curation and licensing but never solved measurement. From Muzak's retirement in 2013 to the manager's personal Spotify account, the loop between music and outcome has been open for a century.
 - [Closing the Loop](https://entuned.co/blog/closing-the-loop.html): Every era of retail music discovered that sound changes behavior and operated without connecting the music to the outcome. Entuned closes that loop with 31 Flow Factors, in-store behavioral measurement, and a compounding Specification-Outcome Map.
 - [What Jazz Musicians Hear That Spotify Can't Tag](https://entuned.co/blog/what-jazz-musicians-hear.html): The gap between what a trained musician hears and what streaming metadata captures is the same gap that makes most in-store music ineffective. Harmonic density, voice leading, and rhythmic feel are the variables that move behavior — and none of them live in a tag.
+- [How Your Playlist Is Tanking Retail Dwell Time](https://entuned.co/blog/bye-bye-bye-dwell-time.html): A song looped the word "leave" thirty times in a thrift store and shoppers drifted toward the exit. The mechanism doesn't care about price point. Filtering for negative lyrics won't catch most of it — tempo, harmonic density, and arrangement push people out below the level any content review would flag.
 
 ## Contact
 
