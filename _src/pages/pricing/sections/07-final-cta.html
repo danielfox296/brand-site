@@ -1,13 +1,17 @@
-<!-- FINAL CTA -->
+<!-- FINAL CTA — single primary action with two text links underneath. -->
 <section class="section pricing-final-cta">
   <div class="container">
     <div class="fade-up" style="text-align: center;">
       <h2>{{content.final.header}}</h2>
+      <p style="font-size: 1.0625rem; opacity: 0.85; margin-bottom: 2rem;">{{content.final.subhead}}</p>
       <div class="pricing-cta-row" style="justify-content: center;">
-        <a href="{{content.waitlist_url}}" class="btn btn-secondary">{{content.final.cta_essentials}}</a>
-        <a href="{{content.stripe_payment_link}}" class="btn btn-primary">{{content.final.cta_core}}</a>
-        <a href="{{content.contact_enterprise_url}}" class="btn btn-secondary">{{content.final.cta_enterprise}}</a>
+        <a href="{{content.stripe_payment_link}}" class="btn btn-primary">{{content.final.cta_primary_label}}</a>
       </div>
+      <p style="margin-top: 1.5rem; font-size: 0.95rem; opacity: 0.8;">
+        {{content.final.text_links_lead}} <a href="{{content.waitlist_url}}" style="color: var(--accent);">{{content.final.text_links_essentials_label}}</a>
+        &nbsp;{{content.final.text_links_separator}}&nbsp;
+        {{content.final.text_links_enterprise_lead}} <a href="{{content.contact_enterprise_url}}" style="color: var(--accent);">{{content.final.text_links_enterprise_label}}</a>
+      </p>
     </div>
   </div>
 </section>

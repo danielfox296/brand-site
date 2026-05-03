@@ -23,6 +23,7 @@
         </ul>
 
         <a href="{{content.waitlist_url}}" class="btn btn-secondary btn-block">{{content.tiers.essentials.cta_label}}</a>
+        <p class="plan-cta-footnote" style="font-size: 0.85rem; opacity: 0.75;">{{content.tiers.essentials.wait_note}}</p>
       </article>
 
       <!-- CORE (highlighted) -->
@@ -68,7 +69,8 @@
           <li>{{content.tiers.professional.inc7}}</li>
         </ul>
 
-        <a href="{{content.contact_pro_url}}" class="btn btn-secondary btn-block">{{content.tiers.professional.cta_label}}</a>
+        <a href="{{content.stripe_pro_payment_link}}" class="btn btn-primary btn-block">{{content.tiers.professional.cta_label}}</a>
+        <p class="plan-cta-footnote">{{content.tiers.professional.cta_footnote}}</p>
       </article>
 
       <!-- ENTERPRISE -->

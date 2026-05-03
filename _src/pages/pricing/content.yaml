@@ -1,10 +1,20 @@
 # pricing — editable text content
-# Stripe Payment Link is wired into the Core tier ($99/mo). Same SKU that previously
-# served the Founding Retailer tier — price is unchanged, framing is now durable.
-# Update the URL below if Stripe ever issues a new link.
+#
+# STRIPE PAYMENT LINKS
+# Both paid tiers route through Stripe Payment Links (no-code, hosted by Stripe).
+# Create or update them in: Stripe Dashboard → Payment Links → New
+# Both links should redirect to: https://entuned.co/pricing/welcome.html?tier=core
+#                              or https://entuned.co/pricing/welcome.html?tier=professional
+#
+# Core ($99/mo): existing link below — same SKU that previously served the
+# Founding Retailer tier. Price unchanged, framing now durable.
+#
+# Professional ($399/mo): create the new Payment Link in Stripe, then replace
+# the placeholder URL below. The placeholder will 404 if pushed accidentally,
+# which is intentional — do not ship the placeholder live.
 
 stripe_payment_link: "https://buy.stripe.com/9B6bJ2aeS8Uhdsw1Rnebu00"
-contact_pro_url: "contact.html?topic=professional"
+stripe_pro_payment_link: "https://buy.stripe.com/eVq28sbiW5I54W0brXebu02"
 contact_enterprise_url: "contact.html?topic=enterprise"
 waitlist_url: "waitlist.html"
 
@@ -28,6 +38,9 @@ tiers:
     inc5: "Plays through any speaker you already have"
     inc_neg: "No customer-profile customization"
     cta_label: "Start Free"
+    # Wait note shown on the Essentials card — explains why free is gated while paid is not.
+    # Remove this line once the Essentials self-onboard flow ships.
+    wait_note: "Self-onboard is launching soon. Drop your email and we'll send the link the day it ships. Core and above onboard immediately."
 
   core:
     name: "Core"
@@ -54,10 +67,11 @@ tiers:
     inc2: "POS integration"
     inc3: "Day-parting (automated, time-based outcome rotation)"
     inc4: "Interstitial messaging — you write and approve store messages that play in rotation"
-    inc5: "Multiple ICPs — distinct customer types catered to specifically, not homogenized into a single average profile"
+    inc5: "Multiple ICPs — Professional tailors music to each distinct customer type your store serves, instead of averaging them into a single profile"
     inc6: "Self-improving refinement as your store's correlation dataset grows"
     inc7: "Monthly customer success consults with the founder (initially)"
-    cta_label: "Talk to the Founder"
+    cta_label: "Start Now"
+    cta_footnote: "ICP intake after checkout. Founder consult scheduled within the first week. By starting you agree to the <a href=\"pricing/terms.html\">Subscription Terms</a>."
 
   enterprise:
     name: "Enterprise"
@@ -102,9 +116,14 @@ faq:
   q6: "I already pay Soundtrack Your Brand or Mood Media. How does this compare?"
   a6: "Those vendors license catalogue music from PROs and pass the cost through your subscription. The catalogue was written for an artist's self-expression, not for your store's customer. Entuned generates original music engineered to specific parameters — tempo, key, lyrical density, energy arc — against the customer your store is built to serve. Different product, different lever."
 
-# Final CTA
+# Final CTA — single primary action with two text links underneath.
+# Per the post-launch fixes: avoid three-button decision paralysis at the bottom of the page.
 final:
   header: "Pick the tier that fits your floor."
-  cta_essentials: "Start Free"
-  cta_core: "Start Core at $99/mo"
-  cta_enterprise: "Talk to Enterprise"
+  subhead: "Most operators start with Core."
+  cta_primary_label: "Start Core — $99/mo"
+  text_links_lead: "Or"
+  text_links_essentials_label: "start free with Essentials"
+  text_links_separator: "·"
+  text_links_enterprise_lead: "Multi-fleet rollout?"
+  text_links_enterprise_label: "Talk to Enterprise"
