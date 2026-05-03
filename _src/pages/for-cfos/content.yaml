@@ -1,28 +1,30 @@
 # for-cfos — editable text content
+# Enterprise tier financial collateral. Linked from enterprise.html.
+# Removed from primary footer (Phase 2).
 
-h1_1: What Your Current Audio Is Costing You
-h2_1: The Numbers Behind Retail Audio
-h2_2: Show the Math
-h2_3: The Pilot Is Free
-h2_4: The Pilot as Controlled Experiment
-h2_5: What the Pilot Looks Like Financially
-h2_6: One Question Worth Asking
-h3_1: The Vendor-Eliminating Question
-card_title_1: Lift at Meaningful Scale
-card_title_2: Lift at Strong Scale
-card_title_3: Lift at Outsized Scale
-card_title_4: Founding Pilot
-card_title_5: What You Get
-card_title_6: The Validation Structure
-btn_1: See the Numbers for Your Stores
-p_1: Your stores play music every hour they are open. Ask your current provider one question. What did the music contribute to revenue this quarter. If they cannot answer, you are paying for an uncontrolled variable on your P&L.
-p_2: The public research is direct on this. Areni and Kim (1993) and North, Hargreaves, and McKendrick (1999) measured willingness-to-pay lift when music fit the customer and the category. Andersson et al. (2012) watched 601 real transactions and found the opposite condition, music that clashed with the store, actively reduced what customers spent. Your current audio is probably not neutral. Neutral is not the baseline. Neutral is the outcome you would get if nobody was playing anything at all, and that is not what is happening in your stores.
-p_3: Run the math against your own portfolio. Your average ticket, your transactions per store per month, the number of active locations you operate. Apply a conservative lift assumption from the public research. Then apply a more aggressive one. The spread between the two is what the audio layer is worth on your P&L today, whether anyone in the building is measuring it or not.
-p_4: Mood Media and similar catalog providers charge multi-year contracts, with termination penalties, no measurement, and no targeting beyond genre tags. Entuned builds original music for your specific customer and measures the result against your existing POS and analytics. One question eliminates most incumbents. What did the music contribute to revenue this quarter.
-p_5: The founding pilot starts small and validates against your own store data. Same product mix, same promotional calendar, same time window, measured through the POS and analytics infrastructure you already pay for.
-p_6: If the numbers do not move, you walk away with the data. No financial risk. No contractual obligation.
-p_7: We will walk through the ROI arithmetic against your own store portfolio, your transaction volume, and your average ticket. No deck. Just numbers.
+h1_1: "What your current audio is doing to the line item it doesn't appear on."
+h2_1: "The numbers behind retail audio."
+h2_2: "Show the math."
+h2_3: "The Enterprise pilot."
+h2_4: "The pilot as controlled experiment."
+h2_5: "What the pilot looks like financially."
+h2_6: "One question worth asking."
+h3_1: "The vendor-eliminating question."
+card_title_1: "Lift at Meaningful Scale"
+card_title_2: "Lift at Strong Scale"
+card_title_3: "Lift at Outsized Scale"
+card_title_4: "Pilot structure"
+card_title_5: "What you get"
+card_title_6: "The validation structure"
+btn_1: "Talk to Enterprise"
+p_1: "Your stores play music every hour they are open. Ask your current vendor one question. What did the music contribute to store performance this quarter. If they cannot answer, you are paying for an unmeasured environmental variable that is affecting the line items you are measured on."
+p_2: "The public research is direct on this. Areni and Kim (1993) and North, Hargreaves, and McKendrick (1999) measured willingness-to-pay lift when music fit the customer and the category. Andersson et al. (2012) watched 601 real transactions and found the opposite condition — music that clashed with the store — actively reduced what customers spent. Your current audio is probably not neutral. Neutral is not the baseline. Neutral is the outcome you would get if nobody was playing anything at all, and that is not what is happening in your stores."
+p_3: "Run the math against your own portfolio. Your average ticket, your transactions per store per month, the number of active locations you operate. Apply a conservative lift assumption from the public research. Then apply a more aggressive one. The spread between the two is what the audio layer is worth on your P&L today, whether anyone in the building is measuring it or not."
+p_4: "Mood Media and similar catalogue providers charge multi-year contracts, with termination penalties, no measurement, and no targeting beyond genre tags. Entuned engineers original music for your specific customer and measures the result against your existing reporting infrastructure. One question eliminates most incumbents. What did the music contribute to store performance this quarter."
+p_5: "The Enterprise tier deploys against a structured pilot — typically 12 weeks across matched test and control stores. Same product mix, same promotional calendar, same time window, measured through the reporting infrastructure your operators already use."
+p_6: "The pilot has its own commercial structure separate from the fleet-wide rollout terms. If the numbers do not move against the metrics you set, you walk away with the data and the relationship ends cleanly. Fleet-wide pricing is negotiated as part of the agreement, structured around the deployment shape — number of stores, number of ICPs, integration depth, performance terms."
+p_7: "We will walk through the ROI arithmetic against your own store portfolio, your transaction volume, and your average ticket. No deck. Just numbers."
 
 further_reading_eyebrow: "Go Deeper"
 further_reading_headline: "From the Blog"
-further_reading_links: <a href="blog/the-8-12-youre-leaving-on-the-table.html">The 8&#8211;12% You're Leaving on the Table</a> &middot; <a href="blog/measure-roi-retail-music.html">How to Measure the ROI of In-Store Music</a> &middot; <a href="blog/cfos-case-for-retail-audio.html">The CFO's Case for Retail Audio</a> &middot; <a href="blog/the-real-cost-of-retail-music.html">The Real Cost of Your Retail Music</a> &middot; <a href="blog/the-real-cost-of-retail-music.html">The Hidden Cost of Your Licensing Fee</a> &middot; <a href="enterprise.html">Enterprise</a>
+further_reading_links: <a href="blog/the-8-12-youre-leaving-on-the-table.html">The 8&#8211;12% You're Leaving on the Table</a> &middot; <a href="blog/measure-roi-retail-music.html">How to Measure the ROI of In-Store Music</a> &middot; <a href="blog/cfos-case-for-retail-audio.html">The CFO's Case for Retail Audio</a> &middot; <a href="blog/the-real-cost-of-retail-music.html">The Real Cost of Your Retail Music</a> &middot; <a href="enterprise.html">Enterprise</a>

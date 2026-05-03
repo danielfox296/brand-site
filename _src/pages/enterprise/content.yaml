@@ -1,20 +1,100 @@
 # enterprise — editable text content
 
-h1_1: Enterprise
-h2_1: Cross-Store Learning at Scale
-h2_2: Start With a Pilot
-card_title_1: Cross-Store Learning
-card_title_2: Cross-Store Intelligence
-card_title_3: RetailNext Integration
-btn_1: Learn About the Pilot
-p_1: Retail operators spend $1.9 billion a year on sensors and measurement. Entuned is what you do with what you see.
-p_2: RetailNext, Pathr.ai, and other analytics vendors can tell you what happened. Foot traffic fell. Dwell dropped. Customers left the premium section early. None of them can change anything about it while the store is open. Audio is the only intervention that costs nothing to deploy and changes the environment in a minute.
-p_3: At enterprise scale, every store teaches the next one. What your fifth location learns holds up in your tenth. By the fiftieth, you know your customer in ways a single location would take years to surface. Regional patterns, seasonal swings, format-specific effects, all of it becomes visible across the network.
-p_4: Your stores employ thousands of people who hear the soundtrack 2,000 hours a year, ten times longer than any customer. A three or four hour playlist loop means staff hear the same songs fifty times a month. Retail music strategy at scale fixes the staff experience alongside the customer one.
-p_5: Every store is a sensor. Your VP of Store Operations gets cross-location performance comparisons and aggregate behavioral data that improves as the network grows.
-p_6: "Generic playlists were built for a generic store that does not exist. Your customer is specific. Original music can be composed against that customer with a precision a catalog was never built to support. What one region refines can roll out to hundreds of stores overnight."
-p_7: Entuned plugs directly into RetailNext foot-traffic, dwell, and conversion data via API. Your existing analytics infrastructure becomes the measurement layer. We are the action layer. Analytics platforms always want the thing that changes the store.
-p_8: Every enterprise relationship starts with a measured pilot. Clear methodology, clear results.
-p_9: See also: <a href="for-cfos.html" style="color: #50929c;">The ROI Case</a> &middot; <a href="partners.html" style="color: #50929c;">Technology Partners</a>
-further_reading_label: "Related Reading"
-p_10: <a href="blog/fleet-learning.html" style="color: #50929c;">Running Controlled Tests Across Multiple Stores</a> &middot; <a href="blog/closing-the-loop-on-retail-analytics.html" style="color: #50929c;">How to Get More Out of the Sensor Data You Already Pay For</a> &middot; <a href="blog/after-ninety-days.html" style="color: #50929c;">What Happens After Ninety Days</a>
+hero:
+  eyebrow: "Enterprise"
+  h1: "Engineered audio across the fleet."
+  subline: "Multi-store rollouts of music engineered to your customer and your outcome. Custom ICP design, performance guarantees where lift can be cleanly measured, dedicated success contact, white-glove deployment."
+  cta_primary: "Talk to Enterprise"
+  cta_secondary: "See Pricing"
+
+# What Enterprise is for
+what:
+  eyebrow: "What this tier is for"
+  h2: "Multi-store operators who need the lift to show up in the report."
+  p1: "If you run a region or a fleet, your bonus is tied to store performance, and your existing measurement stack already tracks dwell, conversion, and basket — Enterprise turns the audio environment into a measurable lever inside that stack. Same engine as Core and Professional, deployed against a multi-fleet operating reality and paired with a structured measurement protocol."
+  p2: "Common entry shape: a structured pilot in a paired set of test and control stores, 12 weeks of measurement against your existing reporting, a written readout, then a fleet-wide rollout if the numbers clear the bar you set."
+
+# The Enterprise pilot — absorbs prior pilot.html content
+pilot:
+  eyebrow: "The Enterprise Pilot"
+  h2: "A measured pilot before the fleet rollout."
+  description: "Twelve weeks. Matched test and control stores. Your existing analytics stack as the measurement layer. The pilot answers the question every operator's CFO asks: did the audio lever move what we said it would move?"
+
+  step1_label: "Week 1"
+  step1_title: "Discovery and ICP design."
+  step1_text: "Sixty to ninety minutes with you and your team. We learn your stores, your customers, your current audio setup, and the specific outcome metrics your reporting already tracks. You leave with a brief that names the ICP (or ICPs) we will build the music against and the measurement protocol for the pilot window."
+
+  step2_label: "Weeks 2–3"
+  step2_title: "Music build and review."
+  step2_text: "We build the original catalogue against the ICPs and outcomes from the brief. You listen, you give notes, we adjust. Nothing goes live in your stores until you have signed off on what your customers will hear and your staff will hear for 2,000 hours a year."
+
+  step3_label: "Week 4"
+  step3_title: "Go live in test stores."
+  step3_text: "The stream goes live on the audio system you already have. iPad, Sonos, AirPlay, hardwired — whatever is running today. Your control stores stay on whatever they are running today. No new hardware, no installer."
+
+  step4_label: "Weeks 4–12"
+  step4_title: "Measurement window."
+  step4_text: "Pilot music runs in the test stores. Control stores stay unchanged. We watch your existing reporting weekly against the agreed window. Where Professional-tier self-improving refinement is part of the deployment, the music is also refining against your store data through this window."
+
+  step5_label: "Week 13"
+  step5_title: "Readout and rollout decision."
+  step5_text: "Written readout against the metrics you set: dwell, conversion, basket, traffic, return visits — whatever your reporting tracks. If the numbers cleared the bar, we talk fleet-wide rollout terms. If they did not, you keep the data and the relationship ends cleanly."
+
+# What's included at Enterprise
+includes:
+  eyebrow: "What Enterprise Includes"
+  h2: "Beyond the Professional tier."
+
+  card1_title: "Custom ICP design"
+  card1_text: "Your ICPs are designed against your specific customer base in collaboration with our team, not picked from a template. Multiple ICPs catered to specifically — distinct customer types, not homogenized into a single average profile."
+
+  card2_title: "Brand voice consultation"
+  card2_text: "Tempo range, lyrical density, instrumentation, energy arc, cultural reference set — every parameter of the audio environment specified on purpose to fit the customer your stores are built to serve and the brand you have built."
+
+  card3_title: "Performance guarantees"
+  card3_text: "Where lift can be cleanly measured against your existing reporting infrastructure, we will negotiate a performance guarantee tied to a specific outcome metric over a specific window. Negotiated per-engagement; not a public commitment."
+
+  card4_title: "Dedicated success contact"
+  card4_text: "A single point of contact at Entuned for the duration of the engagement. Founder consults during the initial deployment. Quarterly business reviews against your reporting once the fleet is live."
+
+  card5_title: "White-glove rollout"
+  card5_text: "We handle deployment store-by-store across the fleet. Coordination with your store ops team, audio system audits where needed, training material for store managers on the manual controls available to them on the floor."
+
+  card6_title: "Self-improving refinement"
+  card6_text: "POS integration is standard at Enterprise. The system reads sales and traffic data tied to environmental conditions in your stores and refines the music against your store's outcomes as the dataset grows. Compounds over weeks of data, not days."
+
+# What you bring
+bring:
+  eyebrow: "What You Bring"
+  h2: "What the engagement needs from your side."
+
+  req1_title: "Existing audio system"
+  req1_text: "Most commercial setups work without modification — Sonos, AirPlay, Bluetooth, line-in, hardwired. Where the system is unusual, we audit on the discovery call."
+
+  req2_title: "Test and control stores"
+  req2_text: "At least one paired set of test and control stores for the pilot. We help select pairs matched on traffic profile, format, and revenue baseline so the comparison is clean."
+
+  req3_title: "POS and analytics access"
+  req3_text: "API or export access to the reporting your operators already use — RetailNext, Aptos, Lightspeed, Shopify POS, custom dashboards. We integrate against what you already pay for."
+
+  req4_title: "ICP workshop time"
+  req4_text: "60–90 minutes with someone who knows your customer and your stores. The brief produced from that session governs every parameter the music engine generates against."
+
+# Pricing framing
+pricing:
+  eyebrow: "Pricing"
+  h2: "Negotiated per-store, structured around the engagement."
+  body: "Enterprise pricing is per-store, negotiated as part of the agreement, and structured around the specific deployment shape — number of stores, number of ICPs, integration depth, and any negotiated performance terms. The pilot has its own commercial structure separate from fleet-wide rollout terms."
+  cta_primary: "Talk to Enterprise"
+
+# CTA / contact form
+cta:
+  eyebrow: "Get Started"
+  h2: "Talk to Enterprise."
+  subline: "Tell us about your fleet. We follow up within one business day to set the discovery call."
+  success_h3: "Thanks. We will be in touch."
+  success_body: "Within one business day to set the discovery call."
+
+related:
+  eyebrow: "Related"
+  links: <a href="for-cfos.html" style="color: #50929c;">The financial case for retail audio</a> &middot; <a href="for-retail-leaders.html" style="color: #50929c;">For Retail Leaders</a> &middot; <a href="licensing.html" style="color: #50929c;">PRO indemnification at Enterprise scale</a> &middot; <a href="science.html" style="color: #50929c;">The behavioral research behind the engine</a>

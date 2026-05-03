@@ -1,37 +1,34 @@
+<style>
+input:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown),
+select:invalid:not(:placeholder-shown) { border-color: #e74c3c; }
+input:valid:not(:placeholder-shown),
+textarea:valid:not(:placeholder-shown) { border-color: #27ae60; }
+</style>
+
 <!-- HERO -->
 <section class="hero hero-alt">
   <div class="container">
-    <h1>{{content.h1_1}}</h1>
-    <p class="subline">{{content.p_1}}</p>
+    <div class="fade-up" style="max-width: 820px; margin: 0 auto;">
+      <p class="section-eyebrow" style="color: var(--gold);">{{content.hero.eyebrow}}</p>
+      <h1>{{content.hero.h1}}</h1>
+      <p class="subline">{{content.hero.subline}}</p>
+      <div class="btn-group" style="justify-content: center;">
+        <a href="contact.html?topic=enterprise" class="btn btn-primary">{{content.hero.cta_primary}}</a>
+        <a href="pricing.html" class="btn btn-secondary">{{content.hero.cta_secondary}}</a>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- COMING SOON -->
+<!-- WHAT ENTERPRISE IS FOR -->
 <section class="section">
-  <div class="container">
-    <h2 class="fade-up">{{content.h2_1}}</h2>
-
-    <p class="fade-up">{{content.p_2}}</p>
-
-    <p class="fade-up">{{content.p_3}}</p>
-
-    <p class="fade-up">{{content.p_4}}</p>
-
-    <div class="card-grid" style="margin-top: 3rem;">
-      <div class="card fade-up">
-        <div class="card-title">{{content.card_title_1}}</div>
-        <p class="card-text">{{content.p_5}}</p>
-      </div>
-
-      <div class="card fade-up">
-        <div class="card-title">{{content.card_title_2}}</div>
-        <p class="card-text">{{content.p_6}}</p>
-      </div>
-
-      <div class="card fade-up">
-        <div class="card-title">{{content.card_title_3}}</div>
-        <p class="card-text">{{content.p_7}}</p>
-      </div>
+  <div class="container" style="max-width: 820px;">
+    <div class="fade-up">
+      <p class="section-eyebrow">{{content.what.eyebrow}}</p>
+      <h2>{{content.what.h2}}</h2>
+      <p style="font-size: 1.1rem; opacity: 0.85; line-height: 1.85; margin-bottom: 1.5rem;">{{content.what.p1}}</p>
+      <p style="font-size: 1.1rem; opacity: 0.85; line-height: 1.85;">{{content.what.p2}}</p>
     </div>
   </div>
 </section>
@@ -39,13 +36,255 @@
 <!-- PARALLAX IMAGE -->
 <div class="parallax-image-section" style="background-image: url('img/parallax-fleet.jpg');"></div>
 
-<!-- CTA -->
-<section class="section" style="background: rgba(80, 146, 156, 0.08);">
-  <div class="container" style="text-align: center;">
-    <h2 style="margin-bottom: 1rem;">{{content.h2_2}}</h2>
-    <p class="fade-up" style="font-size: 1.05rem; opacity: 0.85; margin-bottom: 2.5rem;">{{content.p_8}}</p>
-    <a href="pilot.html" class="btn btn-primary">{{content.btn_1}}</a>
-    <p class="fade-up" style="margin-top: 2rem; font-size: 0.875rem; opacity: 0.7;">{{content.p_9}}</p>
-    <p class="fade-up" style="margin-top: 1.5rem; font-size: 0.9rem; opacity: 0.8;"><strong>{{content.further_reading_label}}:</strong> {{content.p_10}}</p>
+<!-- THE ENTERPRISE PILOT -->
+<section class="section" style="background: rgba(80, 146, 156, 0.06); border-top: 1px solid rgba(80, 146, 156, 0.12); border-bottom: 1px solid rgba(80, 146, 156, 0.12);">
+  <div class="container">
+    <div class="fade-up" style="text-align: center; margin-bottom: 4rem;">
+      <p class="section-eyebrow">{{content.pilot.eyebrow}}</p>
+      <h2>{{content.pilot.h2}}</h2>
+      <p class="subline" style="max-width: 720px; margin: 1rem auto 0;">{{content.pilot.description}}</p>
+    </div>
+
+    <div class="container" style="max-width: 820px; padding: 0;">
+      <div class="hiw-step fade-up">
+        <div class="hiw-step-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#50929c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <div class="hiw-step-body">
+          <div class="hiw-step-label">{{content.pilot.step1_label}}</div>
+          <h3>{{content.pilot.step1_title}}</h3>
+          <p>{{content.pilot.step1_text}}</p>
+        </div>
+      </div>
+
+      <div class="hiw-step fade-up">
+        <div class="hiw-step-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#50929c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <div class="hiw-step-body">
+          <div class="hiw-step-label">{{content.pilot.step2_label}}</div>
+          <h3>{{content.pilot.step2_title}}</h3>
+          <p>{{content.pilot.step2_text}}</p>
+        </div>
+      </div>
+
+      <div class="hiw-step fade-up">
+        <div class="hiw-step-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#50929c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        </div>
+        <div class="hiw-step-body">
+          <div class="hiw-step-label">{{content.pilot.step3_label}}</div>
+          <h3>{{content.pilot.step3_title}}</h3>
+          <p>{{content.pilot.step3_text}}</p>
+        </div>
+      </div>
+
+      <div class="hiw-step fade-up">
+        <div class="hiw-step-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#50929c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div class="hiw-step-body">
+          <div class="hiw-step-label">{{content.pilot.step4_label}}</div>
+          <h3>{{content.pilot.step4_title}}</h3>
+          <p>{{content.pilot.step4_text}}</p>
+        </div>
+      </div>
+
+      <div class="hiw-step fade-up">
+        <div class="hiw-step-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#50929c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div class="hiw-step-body">
+          <div class="hiw-step-label">{{content.pilot.step5_label}}</div>
+          <h3>{{content.pilot.step5_title}}</h3>
+          <p>{{content.pilot.step5_text}}</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
+
+<!-- WHAT'S INCLUDED -->
+<section class="section">
+  <div class="container">
+    <div class="fade-up" style="text-align: center; margin-bottom: 4rem;">
+      <p class="section-eyebrow">{{content.includes.eyebrow}}</p>
+      <h2>{{content.includes.h2}}</h2>
+    </div>
+    <div class="card-grid">
+      <div class="card fade-up">
+        <div class="card-title">{{content.includes.card1_title}}</div>
+        <p class="card-text">{{content.includes.card1_text}}</p>
+      </div>
+      <div class="card fade-up">
+        <div class="card-title">{{content.includes.card2_title}}</div>
+        <p class="card-text">{{content.includes.card2_text}}</p>
+      </div>
+      <div class="card fade-up">
+        <div class="card-title">{{content.includes.card3_title}}</div>
+        <p class="card-text">{{content.includes.card3_text}}</p>
+      </div>
+      <div class="card fade-up">
+        <div class="card-title">{{content.includes.card4_title}}</div>
+        <p class="card-text">{{content.includes.card4_text}}</p>
+      </div>
+      <div class="card fade-up">
+        <div class="card-title">{{content.includes.card5_title}}</div>
+        <p class="card-text">{{content.includes.card5_text}}</p>
+      </div>
+      <div class="card fade-up">
+        <div class="card-title">{{content.includes.card6_title}}</div>
+        <p class="card-text">{{content.includes.card6_text}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU BRING -->
+<section class="section" style="background: rgba(80, 146, 156, 0.06); border-top: 1px solid rgba(80, 146, 156, 0.12); border-bottom: 1px solid rgba(80, 146, 156, 0.12);">
+  <div class="container">
+    <div class="fade-up" style="text-align: center; margin-bottom: 4rem;">
+      <p class="section-eyebrow">{{content.bring.eyebrow}}</p>
+      <h2>{{content.bring.h2}}</h2>
+    </div>
+    <div class="card-grid">
+      <div class="card fade-up">
+        <div class="card-title">{{content.bring.req1_title}}</div>
+        <p class="card-text">{{content.bring.req1_text}}</p>
+      </div>
+      <div class="card fade-up">
+        <div class="card-title">{{content.bring.req2_title}}</div>
+        <p class="card-text">{{content.bring.req2_text}}</p>
+      </div>
+      <div class="card fade-up">
+        <div class="card-title">{{content.bring.req3_title}}</div>
+        <p class="card-text">{{content.bring.req3_text}}</p>
+      </div>
+      <div class="card fade-up">
+        <div class="card-title">{{content.bring.req4_title}}</div>
+        <p class="card-text">{{content.bring.req4_text}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING FRAMING -->
+<section class="section">
+  <div class="container" style="max-width: 820px;">
+    <div class="fade-up">
+      <p class="section-eyebrow">{{content.pricing.eyebrow}}</p>
+      <h2>{{content.pricing.h2}}</h2>
+      <p style="font-size: 1.0625rem; line-height: 1.75; opacity: 0.88; margin-bottom: 2rem;">{{content.pricing.body}}</p>
+      <a href="contact.html?topic=enterprise" class="btn btn-primary">{{content.pricing.cta_primary}}</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="section" style="background: rgba(80, 146, 156, 0.06); border-top: 1px solid rgba(80, 146, 156, 0.12);">
+  <div class="container" style="max-width: 640px;">
+    <div class="fade-up" style="text-align: center; margin-bottom: 3rem;">
+      <p class="section-eyebrow">{{content.cta.eyebrow}}</p>
+      <h2>{{content.cta.h2}}</h2>
+      <p class="subline">{{content.cta.subline}}</p>
+    </div>
+    <form class="fade-up" action="https://formspree.io/f/xgopwepl" method="POST" id="enterprise-form">
+      <input type="hidden" name="_subject" value="Enterprise Inquiry — Entuned">
+      <input type="hidden" name="topic" value="enterprise">
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+        <div class="form-group">
+          <label for="ent-first">First name</label>
+          <input type="text" id="ent-first" name="first_name" required placeholder="Jane">
+        </div>
+        <div class="form-group">
+          <label for="ent-last">Last name</label>
+          <input type="text" id="ent-last" name="last_name" required placeholder="Doe">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="ent-title">Title</label>
+        <input type="text" id="ent-title" name="title" required placeholder="VP of Retail Operations">
+      </div>
+
+      <div class="form-group">
+        <label for="ent-company">Company</label>
+        <input type="text" id="ent-company" name="company" required placeholder="Acme Retail">
+      </div>
+
+      <div class="form-group">
+        <label for="ent-locations">Number of locations</label>
+        <select id="ent-locations" name="locations" required>
+          <option value="" disabled selected>Select one</option>
+          <option value="3-9">3–9</option>
+          <option value="10-24">10–24</option>
+          <option value="25-49">25–49</option>
+          <option value="50-99">50–99</option>
+          <option value="100+">100+</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="ent-email">Work email</label>
+        <input type="email" id="ent-email" name="email" required placeholder="jane@company.com">
+      </div>
+
+      <div class="form-group">
+        <label for="ent-notes">What outcome are you trying to move? <span style="opacity: 0.4; font-weight: 400;">(optional)</span></label>
+        <textarea id="ent-notes" name="notes" rows="3" placeholder="e.g. basket lift in our women's footwear stores; dwell in the lounge area; conversion in our outlet locations..."></textarea>
+      </div>
+
+      <!-- Honeypot -->
+      <input type="text" name="_gotcha" style="display:none">
+
+      <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">Talk to Enterprise</button>
+
+      <div id="enterprise-form-status" style="text-align: center; margin-top: 1.5rem; display: none;"></div>
+    </form>
+
+    <div class="form-success" id="form-success" style="display:none; background: rgba(39, 174, 96, 0.1); border: 1px solid rgba(39, 174, 96, 0.3); border-radius: 8px; padding: 2rem; text-align: center; margin-top: 2rem;">
+      <h3 style="color: #50929c; margin-bottom: 1rem;">{{content.cta.success_h3}}</h3>
+      <p>{{content.cta.success_body}}</p>
+    </div>
+  </div>
+</section>
+
+<!-- RELATED -->
+<section class="section">
+  <div class="container">
+    <p class="section-eyebrow">{{content.related.eyebrow}}</p>
+    <p class="fade-up">{{content.related.links}}</p>
+  </div>
+</section>
+
+<script>
+(function() {
+  var form = document.getElementById('enterprise-form');
+  var status = document.getElementById('enterprise-form-status');
+  if (!form) return;
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var btn = form.querySelector('button[type="submit"]');
+    btn.textContent = 'Sending…';
+    btn.disabled = true;
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(function(response) {
+      if (response.ok) {
+        form.style.display = 'none';
+        var successDiv = document.getElementById('form-success');
+        if (successDiv) successDiv.style.display = 'block';
+      } else { throw new Error(); }
+    }).catch(function() {
+      status.style.display = 'block';
+      status.style.color = '#E24B4A';
+      status.textContent = 'Something went wrong. Email hello@entuned.co with your inquiry.';
+      btn.textContent = 'Talk to Enterprise';
+      btn.disabled = false;
+    });
+  });
+})();
+</script>

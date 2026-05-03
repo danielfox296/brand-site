@@ -1,162 +1,101 @@
 <!-- HERO -->
 <section class="hero hero-alt">
   <div class="container">
-    <h1>{{content.h1_1}}</h1>
-    <p class="subline">{{content.p_1}}</p>
+    <div class="fade-up" style="max-width: 820px; margin: 0 auto;">
+      <p class="section-eyebrow" style="color: var(--gold);">{{content.hero.eyebrow}}</p>
+      <h1>{{content.hero.h1}}</h1>
+      <p class="subline">{{content.hero.subline}}</p>
+    </div>
   </div>
 </section>
 
-<!-- THE PROBLEM YOU ALREADY KNOW -->
+<!-- THE GAP -->
+<section class="section">
+  <div class="container" style="max-width: 820px;">
+    <div class="fade-up">
+      <p class="section-eyebrow">{{content.gap.eyebrow}}</p>
+      <h2>{{content.gap.h2}}</h2>
+      <p style="font-size: 1.0625rem; line-height: 1.85; opacity: 0.88; margin-bottom: 1.75rem;">{{content.gap.p1}}</p>
+      <p style="font-size: 1.0625rem; line-height: 1.85; opacity: 0.88;">{{content.gap.p2}}</p>
+    </div>
+  </div>
+</section>
+
+<!-- TWO QUESTIONS -->
+<section class="section" style="background: rgba(80, 146, 156, 0.06); border-top: 1px solid rgba(80, 146, 156, 0.12); border-bottom: 1px solid rgba(80, 146, 156, 0.12);">
+  <div class="container" style="max-width: 820px;">
+    <div class="fade-up" style="margin-bottom: 3rem;">
+      <p class="section-eyebrow">{{content.questions.eyebrow}}</p>
+      <h2>{{content.questions.h2}}</h2>
+    </div>
+
+    <div class="fade-up" style="background: rgba(255,255,255,0.02); border-left: 3px solid var(--accent); padding: 2rem 2rem 1.5rem; margin-bottom: 2rem;">
+      <h3 style="font-size: 1.125rem; margin-bottom: 1rem; color: var(--text);">{{content.questions.q1}}</h3>
+      <p style="font-size: 1rem; line-height: 1.75; opacity: 0.85;">{{content.questions.a1}}</p>
+    </div>
+
+    <div class="fade-up" style="background: rgba(255,255,255,0.02); border-left: 3px solid var(--accent); padding: 2rem 2rem 1.5rem;">
+      <h3 style="font-size: 1.125rem; margin-bottom: 1rem; color: var(--text);">{{content.questions.q2}}</h3>
+      <p style="font-size: 1rem; line-height: 1.75; opacity: 0.85;">{{content.questions.a2}}</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT CHANGES -->
 <section class="section">
   <div class="container">
-    <h2>{{content.h2_1}}</h2>
-    <p>{{content.p_2}}</p>
-    
-    <div class="card-grid" style="margin-top: 3rem;">
-      <div class="card fade-up">
-        <div class="card-title">{{content.card_title_1}}</div>
-        <p class="card-text">{{content.p_3}}</p>
-      </div>
-      
-      <div class="card fade-up">
-        <div class="card-title">{{content.card_title_2}}</div>
-        <p class="card-text">{{content.p_4}}</p>
-      </div>
+    <div class="fade-up" style="text-align: center; margin-bottom: 4rem;">
+      <p class="section-eyebrow">{{content.changes.eyebrow}}</p>
+      <h2>{{content.changes.h2}}</h2>
     </div>
-
-    <div style="margin-top: 3rem; padding: 2rem; background: rgba(80, 146, 156, 0.08); border-left: 4px solid #50929c;">
-      <h3 style="font-size: 1.125rem; margin-bottom: 1rem; color: #d4e1e5;">{{content.h3_1}}</h3>
-      <p style="color: rgba(232, 228, 222, 0.85);">{{content.p_5}}</p>
-    </div>
-  </div>
-</section>
-<!-- PARALLAX: the unintentional store -->
-<div class="parallax-image-section" style="background-image: url('img/parallax-pillows.jpg');"></div>
-
-<!-- WHAT CHANGES WITH ENTUNED -->
-<section class="section" style="background: rgba(80, 146, 156, 0.08);">
-  <div class="container">
-    <h2>{{content.h2_2}}</h2>
-    
-    <div class="card-grid" style="margin-top: 2.5rem;">
+    <div class="card-grid">
       <div class="card fade-up">
-        <div class="card-title">{{content.card_title_3}}</div>
-        <p class="card-text">{{content.p_6}}</p>
+        <div class="card-title">{{content.changes.card1_title}}</div>
+        <p class="card-text">{{content.changes.card1_text}}</p>
       </div>
-      
       <div class="card fade-up">
-        <div class="card-title">{{content.card_title_4}}</div>
-        <p class="card-text">{{content.p_7}}</p>
+        <div class="card-title">{{content.changes.card2_title}}</div>
+        <p class="card-text">{{content.changes.card2_text}}</p>
       </div>
-      
       <div class="card fade-up">
-        <div class="card-title">{{content.card_title_5}}</div>
-        <p class="card-text">{{content.p_8}}</p>
+        <div class="card-title">{{content.changes.card3_title}}</div>
+        <p class="card-text">{{content.changes.card3_text}}</p>
       </div>
-      
       <div class="card fade-up">
-        <div class="card-title">{{content.card_title_6}}</div>
-        <p class="card-text">{{content.p_9}}</p>
+        <div class="card-title">{{content.changes.card4_title}}</div>
+        <p class="card-text">{{content.changes.card4_text}}</p>
       </div>
     </div>
   </div>
 </section>
-<!-- THE RESULTS -->
-<section class="stats-section">
-  <div class="container">
-    <h2>{{content.h2_3}}</h2>
-    <div class="stats-grid">
-      <div class="stat-item">
-        <div class="stat-number">15–25%</div>
-        <div class="stat-label">Longer Dwell Time<br><span class="small-text">Customers stay in your store longer</span></div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">8–12%</div>
-        <div class="stat-label">Higher Willingness to Pay<br><span class="small-text">Peer-reviewed studies</span></div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">∞</div>
-        <div class="stat-label">Zero Licensing Fees<br><span class="small-text">You own the music</span></div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-number">✓</div>
-        <div class="stat-label">Stronger Brand Perception<br><span class="small-text">Customers remember the experience</span></div>
-      </div>
+
+<!-- PARALLAX -->
+<div class="parallax-image-section" style="background-image: url('img/parallax-usa-night.jpg');"></div>
+
+<!-- BUY-IN -->
+<section class="section" style="background: rgba(80, 146, 156, 0.06); border-top: 1px solid rgba(80, 146, 156, 0.12); border-bottom: 1px solid rgba(80, 146, 156, 0.12);">
+  <div class="container" style="max-width: 820px;">
+    <div class="fade-up">
+      <p class="section-eyebrow">{{content.buy_in.eyebrow}}</p>
+      <h2>{{content.buy_in.h2}}</h2>
+      <p style="font-size: 1.0625rem; line-height: 1.85; opacity: 0.88;">{{content.buy_in.body}}</p>
     </div>
   </div>
 </section>
-<!-- PARALLAX: aspirational outcome -->
-<div class="parallax-image-section" style="background-image: url('img/parallax-luxury-store.jpg');"></div>
 
-<!-- HOW TO GET BUY-IN FROM FINANCE -->
+<!-- ANCHOR PILOT -->
 <section class="section">
-  <div class="container">
-    <h2>{{content.h2_4}}</h2>
-    <p>{{content.p_10}}</p>
-    
-    <div class="card" style="margin-top: 2rem; background: rgba(80, 146, 156, 0.08); border-left: 4px solid #50929c;">
-      <div class="card-title">{{content.card_title_7}}</div>
-      <div style="margin-top: 1.5rem;">
-        <div style="margin-bottom: 1.5rem;">
-          <div style="font-weight: 600; color: #50929c; margin-bottom: 0.5rem;">Active Stores</div>
-          <div class="card-text">40 locations running Entuned, psychographically-optimized soundtrack.</div>
-        </div>
-        <div style="margin-bottom: 1.5rem;">
-          <div style="font-weight: 600; color: #50929c; margin-bottom: 0.5rem;">Control Stores</div>
-          <div class="card-text">40 locations with current audio setup maintained, identical merchandising schedule.</div>
-        </div>
-        <div style="margin-bottom: 1.5rem;">
-          <div style="font-weight: 600; color: #50929c; margin-bottom: 0.5rem;">Measurement</div>
-          <div class="card-text">Your existing POS analytics. Revenue, transaction count, average ticket, dwell time—whatever you already track.</div>
-        </div>
-        <div>
-          <div style="font-weight: 600; color: #50929c; margin-bottom: 0.5rem;">Duration</div>
-          <div class="card-text">10 months. Zero payment required. If the numbers don't move, you walk away.</div>
-        </div>
-      </div>
-    </div>
-
-    <div style="margin-top: 3rem; padding: 2rem; background: rgba(80, 146, 156, 0.05);">
-      <p style="margin-bottom: 1rem;">{{content.p_11}}</p>
-      <a href="for-cfos.html" style="display: inline-block; color: #50929c; text-decoration: none; border-bottom: 1px solid #50929c; padding-bottom: 0.25rem;">→ For CFOs: The ROI Case for Retail Audio</a>
-      <p style="margin-top: 1rem; font-size: 0.875rem; color: rgba(232, 228, 222, 0.7);">{{content.p_12}}</p>
+  <div class="container" style="max-width: 820px;">
+    <div class="fade-up">
+      <p class="section-eyebrow">{{content.anchor.eyebrow}}</p>
+      <h2>{{content.anchor.h2}}</h2>
+      <p style="font-size: 1.0625rem; line-height: 1.85; opacity: 0.88;">{{content.anchor.body}}</p>
     </div>
   </div>
 </section>
-<!-- ONBOARDING -->
-<section class="section" style="background: rgba(80, 146, 156, 0.08);">
-  <div class="container">
-    <h2>{{content.h2_5}}</h2>
-    <p>{{content.p_13}}</p>
 
-    <div class="card-grid" style="margin-top: 2.5rem;">
-      <div class="card fade-up">
-        <div class="card-title">{{content.card_title_8}}</div>
-        <p class="card-text">{{content.p_14}}</p>
-      </div>
-
-      <div class="card fade-up">
-        <div class="card-title">{{content.card_title_9}}</div>
-        <p class="card-text">{{content.p_15}}</p>
-      </div>
-
-      <div class="card fade-up">
-        <div class="card-title">{{content.card_title_10}}</div>
-        <p class="card-text">{{content.p_16}}</p>
-      </div>
-
-      <div class="card fade-up">
-        <div class="card-title">{{content.card_title_11}}</div>
-        <p class="card-text">{{content.p_17}}</p>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- PARALLAX: ambient atmosphere -->
-<div class="parallax-image-section" style="background-image: url('img/parallax-green-lamp.jpg');"></div>
-
-<!-- FURTHER READING -->
-<section class="section" style="background: rgba(80, 146, 156, 0.08);">
+<!-- RELATED READING -->
+<section class="section" style="background: rgba(80, 146, 156, 0.06);">
   <div class="container">
     <p class="section-eyebrow">{{content.further_reading_eyebrow}}</p>
     <h2>{{content.further_reading_headline}}</h2>
@@ -164,11 +103,16 @@
   </div>
 </section>
 
-<!-- BOTTOM CTA -->
-<section class="section">
-  <div class="container" style="text-align: center;">
-    <h2 style="margin-bottom: 1rem;">{{content.h2_6}}</h2>
-    <p style="font-size: 1.05rem; opacity: 0.85; margin-bottom: 2.5rem;">{{content.p_18}}</p>
-    <a href="contact.html" class="btn btn-primary">{{content.btn_1}}</a>
+<!-- CTA -->
+<section class="section" style="text-align: center;">
+  <div class="container">
+    <p class="section-eyebrow">{{content.cta.eyebrow}}</p>
+    <h2 style="margin-bottom: 1rem;">{{content.cta.h2}}</h2>
+    <p class="subline" style="max-width: 640px; margin: 0 auto 2rem;">{{content.cta.subline}}</p>
+    <div class="btn-group" style="justify-content: center;">
+      <a href="waitlist.html" class="btn btn-primary">{{content.cta.cta_primary}}</a>
+      <a href="pricing.html" class="btn btn-secondary">{{content.cta.cta_secondary}}</a>
+      <a href="contact.html?topic=enterprise" class="btn btn-secondary">{{content.cta.cta_tertiary}}</a>
+    </div>
   </div>
 </section>

@@ -1,44 +1,66 @@
 # for-retail-leaders — editable text content
+# Persona: Regional VP of Retail Ops / Director of Retail Operations
+# at a mid-market multi-store transactional retailer, sales-performance bonused.
 
-h1_1: You hired a lighting designer. Why not a sound designer?
-h2_1: Your Store Has a Blind Spot
-h2_2: What Changes With Entuned
-h2_3: The Results Are Research-Backed
-h2_4: How to Get Buy-In From Finance
-h2_5: What Working Together Looks Like
-h2_6: Let's Design Your Store's Soundtrack
-h3_1: "Upbeat" is not a customer. "Indie rock" is not a strategy.
-card_title_1: Visual Design is Intentional
-card_title_2: Audio is an Afterthought
-card_title_3: We Learn Your Customer
-card_title_4: We Create Original Music
-card_title_5: Your Audio Becomes as Intentional as Your Visuals
-card_title_6: Original Music, Built for Your Store
-card_title_7: The Pilot Program
-card_title_8: Customer Workshop
-card_title_9: Creation & Refinement
-card_title_10: Go Live
-card_title_11: Measurement & Iteration
-btn_1: Start the Conversation
-p_1: Your team spent months on lighting, fixtures, and merchandising. Your soundtrack is a two-year-old Spotify playlist nobody remembers choosing.
-p_2: You have walked into your own store and heard a song that did not belong. Lyrics that cut against the brand. Energy that did not match the customer in front of you. You noticed. Your customers noticed too.
-p_3: Every piece of visual merchandising reflects the brand. The lighting is calculated for ambiance. The color palette sends a message. The store is a carefully composed environment.
-p_4: The soundtrack is a Spotify playlist someone picked two years ago, or generic content from Mood Media or Soundtrack Your Brand, organized by mood-tags that have nothing to do with the customer walking through the door. Nobody screened the lyrics. Your brand has no control over what words come out of the speakers.
-p_5: Generic playlists carry real risk. Unscreened lyrics can cut against your brand values. A playlist built for "chill vibes" does not distinguish between a 22-year-old browsing clearance and a 45-year-old buying a sofa. Your employees hear it for roughly 2,000 hours a year, 10x more than any customer. A short loop means they hear the same songs dozens of times a month.
-p_6: We start with your customer. Not their age bracket, not their zip code. Who they actually are, what they actually care about, what makes them feel like this store is their store.
-p_7: Every track is built specifically for that person and that store. Nothing is pulled from a catalog. Every lyric is intentional. Every word aligns with your brand.
-p_8: The same rigor you apply to merchandising, lighting, and design now runs on the speakers. Every element aligned. One coherent experience.
-p_9: Generic playlists were built for a generic store that does not exist. Your customer is specific. Their aesthetic is specific. What makes them feel like they are in the right place is specific. Original music built for your store is the only way to answer that specificity, because a catalog was never built around a single customer to begin with.
-p_10: The research gives your CFO the numbers. Areni and Kim (1993) found that congruent music increased willingness to pay. North, Hargreaves, and McKendrick (1999) measured meaningful increases in dwell time and category conversion when music matched the customer. Milliman (1982) tied music tempo directly to time spent in store. Peer-reviewed. Multiple retail categories. Decades of consistent direction.
-p_11: <strong>Send your CFO this:</strong>
-p_12: The brief walks through cost structure, return scenarios, and how Entuned compares against other audio providers. The short version is that music is a smaller line item than a single part-time employee, and the research points to willingness-to-pay lift you can measure.
-p_13: Practical. Straightforward. Built for retail operations.
-p_14: We talk through your customer, what the store is for, what the brand stands for, how the floor is supposed to feel. That conversation becomes the brief your soundtrack is built against.
-p_15: We build your first soundtrack and share it before a customer hears it. Your team gives notes. We refine.
-p_16: iPad connects to your speakers via Bluetooth or AirPlay. Press play. The soundtrack is live across every active location.
-p_17: Your POS and analytics track dwell, conversion, and traffic against the music that was running. We create new music every month informed by what the numbers actually did, not by a mood-tag guess.
-p_18: Walk your flagship next week at the busiest hour and listen for twenty minutes. Read the lyrics of every song that plays. If the soundtrack is not the one you would have chosen for the customer you are trying to reach, we are currently taking a small number of pilot partners. We would be open to a conversation.
+hero:
+  eyebrow: "For Retail Operators"
+  h1: "If you carry the P&L, the audio in your stores is on it."
+  subline: "You already track dwell, basket, conversion, traffic. The one variable affecting all four — and changing every minute the store is open — is the one nobody is measuring."
 
-further_reading_eyebrow: "From the Blog"
-further_reading_headline: "Related Reading"
-further_reading_links: <a href="blog/retail-designed-everything.html" style="color: #50929c;">The Silent Brand Signal</a> &middot; <a href="blog/employees-hear-it.html" style="color: #50929c;">Your Employees Hear It First</a> &middot; <a href="blog/what-your-music-is-saying-about-your-brand.html" style="color: #50929c;">What Your Music Is Saying About Your Brand</a> &middot; <a href="blog/sound-check-music-is-a-variable.html" style="color: #50929c;">Sound Check: Music Is a Variable</a> &middot; <a href="blog/read-the-lyrics-on-your-speakers-right-now.html" style="color: #50929c;">Read the Lyrics on Your Speakers Right Now</a>
+# The gap
+gap:
+  eyebrow: "The Gap"
+  h2: "Music has been a vendor line item, not an operating variable."
+  p1: "Your visual merchandising team is well-staffed, well-funded, and well-strategized. Your real estate team has a model for every storefront. Your store ops team owns staffing rotation, day-parting, and the operating hours your floor is open for business. The audio environment those teams operate inside is whatever the music vendor sent over."
+  p2: "Forty years of peer-reviewed research says that audio environment is doing measurable work on the variables you are bonused on. Tempo affects the pace customers move through the store. Music a customer reads as belonging to them moves their willingness to pay. Familiar songs cut perceived dwell. Mismatched music actively reduces basket size. The variable is doing work in the room. The question is whether you chose what."
+
+# Two questions
+questions:
+  eyebrow: "Two Questions"
+  h2: "Ask your current vendor these."
+  q1: "What did the music in our stores contribute to store performance last quarter?"
+  a1: "Catalogue vendors cannot answer this. Their selection logic is genre alignment and licensing compliance. They do not connect to your reporting and they do not measure outcomes. If the answer is 'we do not know,' you are paying for an unmeasured environmental variable that is affecting your performance numbers whether your team chose its effect or not."
+  q2: "How is the music in our stores tailored to the customer our stores are built to serve?"
+  a2: "Catalogue vendors pick from a library written for an artist's self-expression. The customer profile of the listener was the artist's audience, not your store's customer. There is no parameter-level fit between the music and the customer your reporting tracks. Engineered audio starts from your customer and produces music against that profile on purpose."
+
+# What changes
+changes:
+  eyebrow: "What Changes"
+  h2: "Same engine. Three deployment shapes."
+
+  card1_title: "Test in one store"
+  card1_text: "Spin up Essentials in a single store this week — free, indefinite, no card required. Pick Increase Dwell or Infuse Energy and watch what your existing reporting shows for that store against its own trailing baseline. Useful as the first look before a multi-store ICP build."
+
+  card2_title: "Deploy across the format"
+  card2_text: "Move to Core ($99/store/month) once you want music tailored to a specific customer profile rather than a general catalogue. Most regional operators run Core in stores that share a customer profile and deploy multiple ICPs through Professional in stores that don't."
+
+  card3_title: "Measure across the fleet"
+  card3_text: "Professional ($399/store/month) integrates with your POS, day-parts the audio against your traffic profile, and refines the music against your store's outcomes as the dataset grows. The lift shows up in the report your operators already run."
+
+  card4_title: "Roll out the network"
+  card4_text: "Enterprise is for fleet-wide deployments. Custom ICP design, performance guarantees where lift can be cleanly measured, dedicated success contact, white-glove rollout. Standard entry shape is a 12-week pilot in a paired set of test and control stores."
+
+# How to bring this in
+buy_in:
+  eyebrow: "Getting Buy-In"
+  h2: "What your CFO will want to see."
+  body: "Most retail finance teams approve a single-store Essentials trial without a procurement conversation — there is no spend. Core and Professional move on standard SaaS approval ($99 or $399 per store per month, monthly, no long-term contract). Enterprise gets a structured pilot with a written readout against your existing reporting before any fleet-wide commitment. The financial case sits on the <a href=\"for-cfos.html\" style=\"color: #50929c;\">CFO page</a>."
+
+# Pilot anchor (un-named)
+anchor:
+  eyebrow: "What's Already Running"
+  h2: "Currently in pilot with an 80+ store retailer."
+  body: "Entuned is currently running a deployment with a major mid-market men's fashion retailer with 80+ stores. Multi-store deployment, ICP-tailored audio against the operator's existing reporting stack. Pilot data accumulating; brand name not yet authorized for public reference."
+
+# CTA
+cta:
+  eyebrow: "Get Started"
+  h2: "Three minutes to put music in your store."
+  subline: "Free at Essentials. Public pricing at Core and Professional. Talk to us about Enterprise rollouts."
+  cta_primary: "Start Free"
+  cta_secondary: "See Pricing"
+  cta_tertiary: "Talk to Enterprise"
+
+further_reading_eyebrow: "Related Reading"
+further_reading_headline: "Go Deeper"
+further_reading_links: <a href="for-cfos.html" style="color: #50929c;">The financial case for retail audio</a> &middot; <a href="how-it-works.html" style="color: #50929c;">How it works per tier</a> &middot; <a href="enterprise.html" style="color: #50929c;">Enterprise rollouts</a> &middot; <a href="science.html" style="color: #50929c;">The behavioral research</a> &middot; <a href="licensing.html" style="color: #50929c;">PRO indemnification</a>

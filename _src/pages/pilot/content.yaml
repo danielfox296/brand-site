@@ -1,50 +1,8 @@
-# pilot page editable text content
+# pilot — meta-refresh redirect to enterprise.html
+# The 12-week structured pilot with control-store methodology is now the
+# Enterprise sales motion. Page kept live as a redirect to preserve inbound
+# links from blog posts and external sources.
 
-h1_1: Run a measured pilot in your stores.
-h2_1: How a pilot runs
-h2_2: What gets measured
-h2_3: What you need to bring
-h2_4: What it costs
-h2_5: Common Questions
-h2_6: Request a Pilot Briefing
-h3_1: Discovery Call
-h3_2: Music Build and Review
-h3_3: Go Live
-h3_4: Measurement Window
-h3_5: Results and Next Steps
-h3_6: Pilot Request Received
-p_1: A pilot is a structured measurement period. Usually 90 days. Sometimes six months. You get original music in your stores, we get a clean read on what moved.
-p_2: The Process
-p_3: Sixty minutes with you and your team. We learn your stores, your customer, your current audio setup, and what you are trying to move on the P&L. No tech demo.
-p_4: We compose original music for your stores. You listen, you give notes, we adjust. Nothing goes live until you have signed off on what your customers will hear.
-p_5: An iPad connects to your existing speakers. You press play. That is the install.
-p_6: The new music runs in your test stores. Your other stores stay on whatever you are playing today. We watch the numbers for the agreed window.
-p_7: We sit down together and walk through what moved and what did not. If the numbers justify it, we talk about a rollout. If they do not, you keep the data and we shake hands.
-p_8: What we watch
-p_9: Your test stores against matched control stores. If you run a single location, we compare the measurement window against your own trailing baseline.
-p_10: How long customers stay in the store.
-p_11: Average ticket and units per transaction.
-p_12: Conversion rate against traffic.
-p_13: Traffic patterns by hour and by day. Dwell and conversion broken out against your peak periods.
-p_14: Return visits inside the window, pulled from loyalty data where you have it.
-p_15: What you bring
-p_16: A tablet per location, or we ship one. The app we provide runs on any recent iPad.
-p_17: Your existing speakers. Most commercial setups work without modification. If yours is unusual, we will tell you on the discovery call.
-p_18: At least one test store and one control store with similar traffic, demographics, and mix. Single-location operators run a before-and-after instead.
-p_19: Access to your point-of-sale exports and traffic counts for the measurement window. If you already have RetailNext or a similar platform, that is what we pull from.
-p_20: One 60-minute working session with someone who knows your customer and your stores. That is the only meeting we ask for upfront.
-p_21: Investment
-p_22: Pilots are paid at the end, against results. You do not write a check to start.
-p_23: We compose the music and run the measurement during the pilot at our cost.
-p_24: At the readout, if the numbers clear the bar we agreed to, we talk about continuing. If they do not, you keep the data and walk.
-p_25: FAQ
-p_26: We can. Single-location operators run a before-and-after window. We measure your trailing baseline, then measure the pilot window, and compare them directly.
-p_27: Most Bluetooth and AirPlay setups work. Most wired commercial speakers work. If yours is proprietary, tell us on the discovery call and we will work out the connection.
-p_28: The app runs on its own once you press play. Your staff does nothing. We handle music changes from our side.
-p_29: Yes. There are pause and skip controls in the app if a staff member needs them. In practice nobody touches it.
-p_30: You keep the data and the music that ran during the pilot stays with you through the end of the window. No ongoing obligation.
-p_31: A weekly email with what we are seeing so far. A written readout at the end of the measurement window covering dwell, conversion, basket, traffic, and return visits against your control.
-p_32: Get Started
-p_33: Tell us about your stores. We will follow up to set a discovery call.
-p_34: Thanks. We will be in touch within one business day to set the discovery call.
-p_further: 'Further reading: <a href="how-it-works.html" style="color: #50929c;">How It Works</a> · <a href="for-cfos.html" style="color: #50929c;">The CFO''s Case</a> · <a href="science.html" style="color: #50929c;">The Science</a> · <a href="blog/after-ninety-days.html" style="color: #50929c;">What Happens After Ninety Days</a> · <a href="blog/how-to-measure-if-your-store-music-is-working.html" style="color: #50929c;">How to Measure If Your Music Is Working</a>'
+h1_1: "The pilot is now part of Enterprise."
+p_1: "The structured pilot — 12 weeks, matched test and control stores, measurement against your existing reporting — is now the entry shape for the Enterprise tier. Redirecting you there."
+btn_1: "Go to Enterprise"
