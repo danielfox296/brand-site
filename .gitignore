@@ -8,6 +8,10 @@ Thumbs.db
 *.swp
 *.code-workspace
 
+# Python
+__pycache__/
+*.pyc
+
 # Dev/test files
 mockup-*.html
 
