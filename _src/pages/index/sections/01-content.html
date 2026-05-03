@@ -32,7 +32,7 @@
   <!-- PILLAR 2 — ENGINEERING -->
   <section class="section cymatics-over" style="background: rgba(52, 50, 50, 0.8);">
     <div class="container">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+      <div class="home-pillar-grid">
         <div class="fade-up">
           <span class="eyebrow">{{content.pillar2.eyebrow}}</span>
           <h2>{{content.pillar2.h2}}</h2>
@@ -55,6 +55,40 @@
         <p style="font-size: 1.1rem; opacity: 0.85; line-height: 1.85; margin-bottom: 1.75rem;">{{content.pillar3.p1}}</p>
         <p style="font-size: 1.1rem; opacity: 0.85; line-height: 1.85;">{{content.pillar3.p2}}</p>
       </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <section class="section cymatics-over" style="background: rgba(80, 146, 156, 0.06); border-top: 1px solid rgba(80, 146, 156, 0.12); border-bottom: 1px solid rgba(80, 146, 156, 0.12);">
+    <div class="container">
+      <p class="section-eyebrow" style="text-align: center; margin-bottom: 2.5rem;">{{content.social_eyebrow}}</p>
+
+      <div class="testimonial-feature fade-up">
+        <div class="testimonial-stat">
+          <div class="testimonial-stat-big">{{content.social_stat_big}}</div>
+          <div class="testimonial-stat-label">{{content.social_stat_label}}</div>
+          <div class="testimonial-stat-detail">{{content.social_stat_detail}}</div>
+        </div>
+        <blockquote class="testimonial-quote">
+          <p>"{{content.social_quote_1}}"</p>
+          <cite>— {{content.social_quote_1_attr}} · {{content.social_quote_1_context}}</cite>
+        </blockquote>
+      </div>
+
+      <blockquote class="testimonial-secondary fade-up">
+        <p>"{{content.social_quote_2}}"</p>
+        <cite>— {{content.social_quote_2_attr}} · {{content.social_quote_2_context}}</cite>
+      </blockquote>
+
+      <p class="testimonial-disclaimer fade-up">{{content.social_disclaimer}}</p>
+    </div>
+  </section>
+
+  <!-- BUILT FOR -->
+  <section class="section cymatics-over" style="padding-top: 4rem; padding-bottom: 4rem;">
+    <div class="container" style="max-width: 820px; text-align: center;">
+      <p class="section-eyebrow fade-up">{{content.built_for_eyebrow}}</p>
+      <p class="fade-up" style="font-size: 1.0625rem; line-height: 1.75; opacity: 0.85;">{{content.built_for_text}}</p>
     </div>
   </section>
 
@@ -93,6 +127,37 @@
     </div>
   </section>
 
+  <!-- FAQ -->
+  <section class="section cymatics-over">
+    <div class="container" style="max-width: 760px;">
+      <div class="fade-up" style="margin-bottom: 2.5rem;">
+        <h2>{{content.home_faq_h2}}</h2>
+      </div>
+      <div class="faq-list fade-up">
+        <details class="pricing-faq-item">
+          <summary class="pricing-faq-q">{{content.home_faq_q1}}</summary>
+          <div class="pricing-faq-a">{{content.home_faq_a1}}</div>
+        </details>
+        <details class="pricing-faq-item">
+          <summary class="pricing-faq-q">{{content.home_faq_q2}}</summary>
+          <div class="pricing-faq-a">{{content.home_faq_a2}}</div>
+        </details>
+        <details class="pricing-faq-item">
+          <summary class="pricing-faq-q">{{content.home_faq_q3}}</summary>
+          <div class="pricing-faq-a">{{content.home_faq_a3}}</div>
+        </details>
+        <details class="pricing-faq-item">
+          <summary class="pricing-faq-q">{{content.home_faq_q4}}</summary>
+          <div class="pricing-faq-a">{{content.home_faq_a4}}</div>
+        </details>
+        <details class="pricing-faq-item">
+          <summary class="pricing-faq-q">{{content.home_faq_q5}}</summary>
+          <div class="pricing-faq-a">{{content.home_faq_a5}}</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <!-- FINAL CTA -->
   <section class="section cymatics-over" style="text-align: center;">
     <div class="container">
@@ -109,6 +174,7 @@
   (function() {
     const canvas = document.getElementById('cymaticsCanvas');
     if (!canvas) return;
+    const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const ctx = canvas.getContext('2d');
     const freqEl = document.getElementById('cymaticsFreq');
 
@@ -209,12 +275,18 @@
     var time = 0;
 
     function draw() {
-      time += 0.016;
+      if (!reduceMotion) {
+        time += 0.016;
+      }
 
       // Scroll progress across full page
       var scrollMax = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
       var rawScroll = window.scrollY / scrollMax;
-      smoothScroll += (rawScroll - smoothScroll) * 0.08;
+      if (reduceMotion) {
+        smoothScroll = 0.3;
+      } else {
+        smoothScroll += (rawScroll - smoothScroll) * 0.08;
+      }
 
       mouseSmX += (mouseX - mouseSmX) * 0.03;
       mouseSmY += (mouseY - mouseSmY) * 0.03;
@@ -285,7 +357,9 @@
       var segs4 = marchingSquares(field, GRID, GRID, -0.3);
       drawSegs(segs4, CREAM, 0.03, 0.2, offX, offY, cellW, cellH);
 
-      requestAnimationFrame(draw);
+      if (!reduceMotion) {
+        requestAnimationFrame(draw);
+      }
     }
 
     function drawSegs(segs, colorStr, alpha, lineWidth, offX, offY, cellW, cellH) {

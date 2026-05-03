@@ -1,7 +1,18 @@
-# Core intake form — post-checkout
+# intake — post-checkout customer profile intake form.
+#
+# This single intake form serves both Core and Professional purchasers. Multi-ICP
+# does not happen at onboarding — we collect one ICP here and (for Professional)
+# define additional customer types collaboratively over the first month.
+#
+# The page reads ?tier=core|professional from the URL to tag the submission.
+# Stripe Payment Links should redirect to:
+#   /pricing/welcome.html?tier=core   (Core)
+#   /pricing/welcome.html?tier=professional   (Professional)
+# The follow-up email Daniel sends should link to /pricing/intake.html?tier=core
+# or /pricing/intake.html?tier=professional so the form submission is tagged.
 
 hero:
-  eyebrow: "Core Onboarding"
+  eyebrow: "Customer Profile Intake"
   headline: "Tell us about your customer."
   subhead: "About 10 minutes. The more specific your answers, the sharper the ICP, and the faster your store goes live."
 

@@ -38,8 +38,11 @@
 <section class="section" style="padding-top: 2rem;">
   <div class="container" style="max-width: 720px;">
     <form class="fade-up" action="https://formspree.io/f/xgopwepl" method="POST" id="intake-form">
-      <input type="hidden" name="_subject" value="Core Intake — Entuned">
-      <input type="hidden" name="form_type" value="core_intake">
+      <!-- Hidden tier fields — populated at runtime by the inline script at the bottom
+           of this section based on ?tier= URL param. Defaults to "core" if missing. -->
+      <input type="hidden" name="_subject" id="intake-subject" value="Core Intake — Entuned">
+      <input type="hidden" name="form_type" id="intake-form-type" value="core_intake">
+      <input type="hidden" name="tier" id="intake-tier" value="core">
 
       <!-- BRAND -->
       <h2 class="intake-group-header">Brand</h2>
@@ -57,7 +60,6 @@
       <div class="form-group">
         <label for="intake-locations-count">Number of locations</label>
         <input type="number" id="intake-locations-count" name="num_locations" required placeholder="1" min="1">
-        <p class="intake-help">If you have five or more, talk to us about Professional or Enterprise instead — POS-driven self-improving refinement is a much better fit.</p>
       </div>
 
       <div class="form-group">
@@ -86,7 +88,7 @@
       <div class="form-group">
         <label for="intake-locations">Store name(s) and address(es)</label>
         <textarea id="intake-locations" name="locations" rows="3" required placeholder="Acme Downtown – 123 Main St, Denver CO&#10;Acme Cherry Creek – 456 Oak Ave, Denver CO"></textarea>
-        <p class="intake-help">One per line. List every Core location.</p>
+        <p class="intake-help">One per line. List every location on this subscription.</p>
       </div>
 
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
@@ -187,6 +189,20 @@
 </section>
 
 <script>
+// Tier-aware tagging. Reads ?tier= from the URL and updates the hidden form fields
+// so Daniel sees in his Formspree inbox which tier this intake came from.
+// Defaults to core if the param is missing or unknown.
+(function() {
+  var params = new URLSearchParams(window.location.search);
+  var tier = (params.get('tier') || '').toLowerCase();
+  if (tier === 'professional') {
+    document.getElementById('intake-subject').value = 'Professional Intake — Entuned';
+    document.getElementById('intake-form-type').value = 'professional_intake';
+    document.getElementById('intake-tier').value = 'professional';
+  }
+  // else leave defaults: Core
+})();
+
 (function() {
   var form = document.getElementById('intake-form');
   var status = document.getElementById('intake-form-status');

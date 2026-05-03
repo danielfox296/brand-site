@@ -1,0 +1,110 @@
+/* ===== HOME PILLAR GRID ===== */
+.home-pillar-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .home-pillar-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+/* ===== SOCIAL PROOF ===== */
+.testimonial-feature {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto 4rem;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(80, 146, 156, 0.18);
+}
+
+@media (max-width: 768px) {
+  .testimonial-feature {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem 1.5rem;
+  }
+}
+
+.testimonial-stat-big {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-stat-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text);
+  opacity: 0.6;
+  margin-bottom: 1rem;
+}
+
+.testimonial-stat-detail {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+.testimonial-quote {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.testimonial-quote p {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 1.25rem;
+  opacity: 0.92;
+}
+
+.testimonial-quote cite {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  font-style: normal;
+}
+
+.testimonial-secondary {
+  max-width: 720px;
+  margin: 0 auto 3rem;
+  padding: 1.75rem 2rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-left: 3px solid var(--accent);
+  text-align: left;
+}
+
+.testimonial-secondary p {
+  font-size: 1.0625rem;
+  font-style: italic;
+  margin-bottom: 0.75rem;
+  opacity: 0.92;
+}
+
+.testimonial-secondary cite {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  font-style: normal;
+}
+
+.testimonial-disclaimer {
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.55;
+  max-width: 720px;
+  margin: 0 auto;
+  font-style: italic;
+}

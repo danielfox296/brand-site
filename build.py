@@ -438,7 +438,7 @@ def build():
                 "about": [
                     {"@type": "Thing", "name": "retail music strategy"},
                     {"@type": "Thing", "name": "in-store customer behavior"},
-                    {"@type": "Thing", "name": "AI-powered retail music optimization"}
+                    {"@type": "Thing", "name": "engineered retail audio"}
                 ]
             }
         else:
@@ -447,7 +447,7 @@ def build():
                 "@type": "Organization",
                 "name": "Entuned",
                 "url": SITE_URL,
-                "description": "Entuned maps musical flow factors to verified retail behavioral outcomes using AI-generated music, turning in-store sound into a measurable performance channel.",
+                "description": "Entuned engineers original music for retail floors at the parameter level — tempo, key, lyrical density, energy arc — tailored to a store's customer profile and tied to its sales outcomes. PRO-indemnified at every tier.",
                 "foundingDate": "2026",
                 "founder": {
                     "@type": "Person",
@@ -456,10 +456,10 @@ def build():
                 "knowsAbout": [
                     "retail atmospherics",
                     "music psychology",
-                    "generative AI music",
                     "in-store customer behavior",
                     "retail analytics",
-                    "AI-powered retail music optimization"
+                    "engineered retail audio",
+                    "behavioral retail variables"
                 ],
                 "sameAs": [
                     "https://www.linkedin.com/company/entuned"
@@ -475,7 +475,7 @@ def build():
                 "@type": "WebSite",
                 "name": "Entuned",
                 "url": SITE_URL,
-                "description": "AI-powered retail music optimization backed by music psychology research.",
+                "description": "Music engineered to your customer and your outcome. Original compositions specified at the parameter level and PRO-indemnified at every tier.",
                 "publisher": {
                     "@type": "Organization",
                     "name": "Entuned"

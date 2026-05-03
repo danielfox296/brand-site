@@ -3,7 +3,7 @@
 hero:
   eyebrow: "Enterprise"
   h1: "Engineered audio across the fleet."
-  subline: "Multi-store rollouts of music engineered to your customer and your outcome. Custom ICP design, performance guarantees where lift can be cleanly measured, dedicated success contact, white-glove deployment."
+  subline: "Multi-store rollouts of music engineered to your customer and your outcome. Custom Ideal Customer Profile (ICP) design, performance guarantees where lift can be cleanly measured, dedicated success contact, white-glove deployment."
   cta_primary: "Talk to Enterprise"
   cta_secondary: "See Pricing"
 
@@ -46,7 +46,7 @@ includes:
   h2: "Beyond the Professional tier."
 
   card1_title: "Custom ICP design"
-  card1_text: "Your ICPs are designed against your specific customer base in collaboration with our team, not picked from a template. Multiple ICPs catered to specifically — distinct customer types, not homogenized into a single average profile."
+  card1_text: "Your ICPs are designed against your specific customer base in collaboration with our team, not picked from a template. Multiple ICPs — Professional tailors music to each distinct customer type your store serves, instead of averaging them into a single profile."
 
   card2_title: "Brand voice consultation"
   card2_text: "Tempo range, lyrical density, instrumentation, energy arc, cultural reference set — every parameter of the audio environment specified on purpose to fit the customer your stores are built to serve and the brand you have built."

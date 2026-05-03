@@ -342,56 +342,13 @@
   margin-bottom: 0;
 }
 
-/* FAQ */
+/* FAQ container — shared FAQ-item styles live in global styles.css */
 .pricing-faq {
   padding: 5rem 0;
 }
 
 .pricing-faq h2 {
   font-size: clamp(1.75rem, 3.5vw, 2.5rem);
-}
-
-.pricing-faq-item {
-  border-bottom: 1px solid rgba(212, 225, 229, 0.1);
-  padding: 1.25rem 0;
-}
-
-.pricing-faq-q {
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 1.0625rem;
-  padding-right: 2.5rem;
-  position: relative;
-  list-style: none;
-  color: var(--text);
-}
-
-.pricing-faq-q::-webkit-details-marker {
-  display: none;
-}
-
-.pricing-faq-q::after {
-  content: "+";
-  position: absolute;
-  right: 0;
-  top: -4px;
-  color: var(--accent);
-  font-size: 1.75rem;
-  font-weight: 300;
-  transition: transform 0.2s ease;
-  line-height: 1;
-}
-
-.pricing-faq-item[open] .pricing-faq-q::after {
-  transform: rotate(45deg);
-}
-
-.pricing-faq-a {
-  padding-top: 1rem;
-  color: var(--text);
-  opacity: 0.82;
-  font-size: 0.9375rem;
-  line-height: 1.65;
 }
 
 /* Final CTA */
