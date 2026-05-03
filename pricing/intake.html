@@ -10,14 +10,14 @@
   <link rel="manifest" href="../site.webmanifest">
   <link rel="canonical" href="https://entuned.co/pricing/intake.html">
   <meta name="robots" content="noindex, nofollow">
-  <title>Founding Retailer Intake | Entuned</title>
-  <meta name="description" content="Short intake form for Founding Retailer subscribers. Tell us about your brand, customer, and store so we can build your custom audio profile.">
+  <title>Core Intake | Entuned</title>
+  <meta name="description" content="Short intake for Core subscribers. Tell us about your customer, your store, and your audio setup so we can build your ICP-tailored music profile.">
   <meta name="theme-color" content="#20201c">
 
   <!-- Open Graph -->
   <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="../rss.xml">
-  <meta property="og:title" content="Founding Retailer Intake | Entuned">
-  <meta property="og:description" content="Short intake form for Founding Retailer subscribers. Tell us about your brand, customer, and store so we can build your custom audio profile.">
+  <meta property="og:title" content="Core Intake | Entuned">
+  <meta property="og:description" content="Short intake for Core subscribers. Tell us about your customer, your store, and your audio setup so we can build your ICP-tailored music profile.">
   <meta property="og:url" content="https://entuned.co/pricing/intake.html">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://entuned.co/img/og-default.png">
@@ -26,8 +26,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Founding Retailer Intake | Entuned">
-  <meta name="twitter:description" content="Short intake form for Founding Retailer subscribers. Tell us about your brand, customer, and store so we can build your custom audio profile.">
+  <meta name="twitter:title" content="Core Intake | Entuned">
+  <meta name="twitter:description" content="Short intake for Core subscribers. Tell us about your customer, your store, and your audio setup so we can build your ICP-tailored music profile.">
   <meta name="twitter:image" content="https://entuned.co/img/og-default.png">
 
   <!-- Structured Data -->
@@ -70,7 +70,7 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Founding Retailer Intake | Entuned"
+      "name": "Core Intake | Entuned"
     }
   ]
 }
@@ -88,12 +88,12 @@
   <div class="container">
     <a href="/" class="logo"><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
     <ul class="nav-links">
-      <li><a href="../demo.html">What Is Entuned</a></li>
       <li><a href="../how-it-works.html">How It Works</a></li>
       <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="../enterprise.html">Enterprise</a></li>
       <li><a href="../blog.html">Blog</a></li>
       <li><a href="../contact.html">Contact</a></li>
-      <li class="nav-cta-item"><a href="../pilot.html" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Book a Pilot</a></li>
+      <li class="nav-cta-item"><a href="../waitlist.html" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Start Free</a></li>
     </ul>
     <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
   </div>
@@ -129,9 +129,9 @@
 <section class="hero hero-alt" style="min-height: 0; padding: 9rem 2rem 3rem; text-align: left;">
   <div class="container">
     <div class="fade-up" style="max-width: 720px; margin: 0;">
-      <p class="section-eyebrow" style="color: var(--gold);">Founding Retailer</p>
-      <h1>Tell us about your store.</h1>
-      <p class="subline">About 10 minutes. The more specific your answers, the better your profile, and the faster we deploy.</p>
+      <p class="section-eyebrow" style="color: var(--gold);">Core Onboarding</p>
+      <h1>Tell us about your customer.</h1>
+      <p class="subline">About 10 minutes. The more specific your answers, the sharper the ICP, and the faster your store goes live.</p>
     </div>
   </div>
 </section>
@@ -140,8 +140,8 @@
 <section class="section" style="padding-top: 2rem;">
   <div class="container" style="max-width: 720px;">
     <form class="fade-up" action="https://formspree.io/f/xgopwepl" method="POST" id="intake-form">
-      <input type="hidden" name="_subject" value="Founding Retailer Intake — Entuned">
-      <input type="hidden" name="form_type" value="founding_retailer_intake">
+      <input type="hidden" name="_subject" value="Core Intake — Entuned">
+      <input type="hidden" name="form_type" value="core_intake">
 
       <!-- BRAND -->
       <h2 class="intake-group-header">Brand</h2>
@@ -157,29 +157,29 @@
       </div>
 
       <div class="form-group">
+        <label for="intake-locations-count">Number of locations</label>
+        <input type="number" id="intake-locations-count" name="num_locations" required placeholder="1" min="1">
+        <p class="intake-help">If you have five or more, talk to us about Professional or Enterprise instead — POS-driven self-improving refinement is a much better fit.</p>
+      </div>
+
+      <div class="form-group">
         <label for="intake-voice">How would you describe your brand's voice?</label>
-        <textarea id="intake-voice" name="brand_voice" rows="3" required placeholder="Warm, a little irreverent, knowledgeable without being preachy..."></textarea>
+        <textarea id="intake-voice" name="brand_voice" rows="3" required placeholder="Direct, no-nonsense, value-forward without being cheap..."></textarea>
         <p class="intake-help">Three to five words or a couple of sentences. We translate this into musical parameters.</p>
       </div>
 
-      <div class="form-group">
-        <label for="intake-adjacent">Adjacent brands your customers love</label>
-        <textarea id="intake-adjacent" name="adjacent_brands" rows="2" placeholder="Aesop, Our Place, MUJI..."></textarea>
-        <p class="intake-help">3–6 brands. Not necessarily competitors — anything your ideal customer also shops.</p>
-      </div>
-
-      <!-- CUSTOMER -->
-      <h2 class="intake-group-header">Customer</h2>
+      <!-- ICP -->
+      <h2 class="intake-group-header">Ideal Customer Profile</h2>
 
       <div class="form-group">
         <label for="intake-icp">Who is your ideal customer?</label>
-        <textarea id="intake-icp" name="icp" rows="4" required placeholder="A 34-year-old design-conscious renter who just moved to a mid-sized city. Cares about provenance. Reads the label. Prefers fewer, better things over more of them."></textarea>
-        <p class="intake-help">Psychographics matter more than demographics. What do they value? What signals quality to them?</p>
+        <textarea id="intake-icp" name="icp" rows="4" required placeholder="A 38-year-old parent making a household furniture decision under a budget. Cares about durability and warranty, not aesthetic statement. Researches before they walk in. Brings a partner."></textarea>
+        <p class="intake-help">What they value, what they look for, what signals quality to them, what they ignore. Operational language beats demographic language.</p>
       </div>
 
       <div class="form-group">
         <label for="intake-decision">What makes them pick you over a competitor?</label>
-        <textarea id="intake-decision" name="decision_driver" rows="3" required placeholder="Curation, knowledgeable staff, our approach to sourcing..."></textarea>
+        <textarea id="intake-decision" name="decision_driver" rows="3" required placeholder="Selection, price relative to comparable stores, sales floor knowledge..."></textarea>
       </div>
 
       <!-- STORE -->
@@ -188,7 +188,7 @@
       <div class="form-group">
         <label for="intake-locations">Store name(s) and address(es)</label>
         <textarea id="intake-locations" name="locations" rows="3" required placeholder="Acme Downtown – 123 Main St, Denver CO&#10;Acme Cherry Creek – 456 Oak Ave, Denver CO"></textarea>
-        <p class="intake-help">One per line. If multi-location, list all Founding-tier locations.</p>
+        <p class="intake-help">One per line. List every Core location.</p>
       </div>
 
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
@@ -205,7 +205,7 @@
       <div class="form-group">
         <label for="intake-traffic">Peak hours and slow hours</label>
         <textarea id="intake-traffic" name="traffic" rows="2" placeholder="Peak: Sat 12–4pm. Slow: weekday mornings."></textarea>
-        <p class="intake-help">Helps us tune the stream to what's happening in the store at different times.</p>
+        <p class="intake-help">Helps us tune the stream to what is happening in the store at different times.</p>
       </div>
 
       <!-- AUDIO -->
@@ -228,8 +228,8 @@
         </select>
       </div>
 
-      <!-- GOAL -->
-      <h2 class="intake-group-header">Goal</h2>
+      <!-- OUTCOME -->
+      <h2 class="intake-group-header">Outcome</h2>
 
       <div class="form-group">
         <label for="intake-goal">Which outcome matters most over the next 90 days?</label>
@@ -239,13 +239,13 @@
           <option value="Basket size">Higher transaction value</option>
           <option value="Conversion">Higher conversion (browse → buy)</option>
           <option value="Return visits">More return visits</option>
-          <option value="Brand consistency">Brand consistency across locations</option>
+          <option value="Energy">Infuse energy on the floor</option>
         </select>
       </div>
 
       <div class="form-group">
         <label for="intake-notes">Anything else we should know?</label>
-        <textarea id="intake-notes" name="notes" rows="3" placeholder="Optional — constraints, preferences, existing measurement, anything that'll help us get it right the first time."></textarea>
+        <textarea id="intake-notes" name="notes" rows="3" placeholder="Optional — constraints, preferences, existing measurement, anything that will help us get it right the first time."></textarea>
       </div>
 
       <!-- CONTACT -->
@@ -283,7 +283,7 @@
 
     <div class="form-success" id="form-success" style="display:none; background: rgba(39, 174, 96, 0.1); border: 1px solid rgba(39, 174, 96, 0.3); border-radius: 8px; padding: 2rem; text-align: center; margin-top: 2rem;">
       <h3 style="color: #50929c; margin-bottom: 1rem;">Got it. We'll be in touch.</h3>
-      <p>Your intake is in. We'll review, build your profile, and email you within two business days to schedule the onboarding call.</p>
+      <p>Your intake is in. We'll review, build your ICP profile, and email you within two business days to schedule the onboarding call.</p>
     </div>
   </div>
 </section>
@@ -296,7 +296,7 @@
   form.addEventListener('submit', function(e) {
     e.preventDefault();
     var btn = form.querySelector('button[type="submit"]');
-    btn.textContent = 'Sending\u2026';
+    btn.textContent = 'Sending…';
     btn.disabled = true;
     fetch(form.action, {
       method: 'POST',
@@ -326,30 +326,27 @@
   <div class="container">
     <div class="footer-section">
       <h4><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
-      <p style="opacity: 0.7; font-size: 0.95rem;">Adaptive retail music that learns your stores.</p>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Music engineered as a sales lever.</p>
       <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
     </div>
     <div class="footer-section">
       <h4>Product</h4>
       <ul>
         <li><a href="../how-it-works.html">How It Works</a></li>
-        <li><a href="../pilot.html">Pilot Program</a></li>
         <li><a href="../pricing.html">Pricing</a></li>
-        <li><a href="../why-entuned.html">Why Entuned</a></li>
         <li><a href="../enterprise.html">Enterprise</a></li>
+        <li><a href="../why-entuned.html">Why Entuned</a></li>
       </ul>
     </div>
     <div class="footer-section">
       <h4>For Your Industry</h4>
       <ul>
         <li><a href="../for-apparel.html">Apparel</a></li>
-        <li><a href="../for-cosmetics.html">Cosmetics</a></li>
         <li><a href="../for-home-goods.html">Home Goods</a></li>
       </ul>
       <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
       <ul>
         <li><a href="../for-retail-leaders.html">Retail Leaders</a></li>
-        <li><a href="../for-cfos.html">CFOs</a></li>
         <li><a href="../impact.html">Impact Calculator</a></li>
       </ul>
     </div>
@@ -375,15 +372,16 @@
     <div class="footer-section">
       <h4>Legal</h4>
       <ul>
+        <li><a href="../licensing.html">Licensing &amp; PRO Coverage</a></li>
         <li><a href="../data.html">Data Practices</a></li>
         <li><a href="../privacy-policy.html">Privacy Policy</a></li>
-        <li><a href="../pricing/terms.html">Founding Retailer Terms</a></li>
+        <li><a href="../pricing/terms.html">Subscription Terms</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-cta-strip" style="border-top: 1px solid rgba(80, 146, 156, 0.15); padding: 3rem 0; text-align: center;">
-    <p style="font-size: 1.05rem; opacity: 0.75; margin-bottom: 1.25rem;">Ready to see what the pilot looks like for your stores?</p>
-    <a href="../pilot.html" class="btn btn-primary">Book a Pilot Conversation</a>
+    <p style="font-size: 1.05rem; opacity: 0.75; margin-bottom: 1.25rem;">Three minutes to music in your store. Free to start.</p>
+    <a href="../waitlist.html" class="btn btn-primary">Start Free</a>
   </div>
   <div class="footer-bottom">
     <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>

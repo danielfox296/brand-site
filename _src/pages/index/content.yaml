@@ -1,29 +1,53 @@
 # index — editable text content
 
-h1_1: Adaptive retail music that learns your stores.
-h2_1: Most retailers treat music as a utility bill.
-h2_2: Your brand brief is the ceiling. The adaptation happens inside it.
-h2_3: What the retail music research says.
-h2_4: We're selecting founding pilot partners.
-h2_5: Every other music vendor plays music. Entuned runs a continuous experiment inside your brand parameters and adapts based on what it learns.
-h3_1: Longer visits.
-h3_2: Bigger baskets.
-h3_3: A sound that belongs to you.
-btn_1: See How It Works
-btn_hero_cta: Book a Pilot Conversation
-btn_impact: Calculate your lift →
-btn_2: Book a Pilot
-btn_3: Read the Research
-p_1: Entuned adapts to your stores and your customers, and gets more precise at producing revenue outcomes the longer it runs. Peer-reviewed research shows dwell time up fifteen to twenty-five percent and willingness to pay up eight to twelve percent when the audio fits the room.
-p_2: A Spotify license, a Mood Media subscription, a playlist somebody picked three years ago. The team that chose the lighting had a plan. The team that chose the paint had a plan. The music is whatever was on sale when the store opened. And the research is pretty clear about what happens next. In <a href="blog/the-familiarity-trap.html">Yalch and Spangenberg's 1990 study</a>, familiar music cut shopper dwell time by around eight percent. The songs your customers already know are working against you.
-p_3: Entuned starts with an intake that produces a brand brief. Tempo range, mood vocabulary, lyrical guidelines, what the brand should never sound like. That brief is the ceiling. The system operates inside it permanently. The music it makes is original, built for the customer you built the store for, inside the brand you built.
-p_4: In-store analytics is a 1.9 billion dollar industry. It counts footsteps, heat maps, dwell zones, conversion paths. None of it touches a variable you can change while the customer is still in the store. Retail audio is the one lever that can change on the same day the data flags a problem. We are filling the gap the measurement industry never filled.
-p_5: Music that fits your customer slows them down. In the research, dwell time increases in the range of fifteen to twenty-five percent. Every extra minute is another chance for a customer to touch a product, ask a question, and finish the decision they came in to make.
-p_6: Areni and Kim in 1993, then North, Hargreaves, and McKendrick in 1999, found the same thing. When music matches a customer's identity, willingness to pay goes up eight to twelve percent. The price on the tag did not change. The customer's read on the product did.
-p_7: Licensed playlists come with someone else's brand attached. Someone else's lyrics, someone else's associations, someone else's fans. Those songs were written for an artist's self-expression. You picked the paint color. You specced the lighting. The music should meet the same standard, because it is doing the same work.
-p_8: The founding pilot runs on your stores, your traffic, your measurement stack. You get the data. If the lift shows up, the ROI case writes itself from your own numbers. If it does not, you go back to what you had. You keep the data either way. For the full financial picture, read <a href="blog/cfos-case-for-retail-audio.html">the CFO's case for retail audio</a>.
-p_9: Mood Media, Soundtrack Your Brand, and the others work off catalogs. Millions of tracks, none of them made for your store. They do brand-fit by searching, which is the best anyone can do when the source material was written for an artist's self-expression.
-p_10: Every track in those catalogs carries baggage nobody at the playlist service ever checked. Lyrics that might clash with your positioning. A pace that rushes customers out. A sonic texture that makes the product on the shelf feel cheaper. The playlist service does not know what is in the tracks it is selecting. It cannot. The songs were never designed with your store in mind.
-p_11: Entuned makes original music for your specific stores, adapts it based on what your customers actually respond to, and gets more precise at producing the outcomes you care about the longer it runs. Every compositional variable is specified. When we want to isolate what moves your numbers, we can.
-p_12: Every other vendor plays music in your store.
-p_13: Entuned learns your store and adapts to what it finds.
+hero:
+  h1: "The unmeasured variable in your store's P&L."
+  subline: "Every store plays music. Almost no operator knows what it's doing to dwell, basket, or conversion. Entuned is music engineered to your customer and your outcome — deployed in minutes, measurable by your existing reports."
+  cta_primary: "Start Free"
+  cta_secondary: "See Pricing"
+
+# Pillar 1 — Music is a behavioral variable
+pillar1:
+  eyebrow: "The Gap"
+  h2: "The music in your store is doing something. Almost nobody chose what."
+  p1: "A Soundtrack Your Brand contract auto-renews every month. A Mood Media legacy line runs in the background. Someone's Spotify Premium is plugged into the receiver. The team that picked the lighting had a plan. The team that picked the paint had a plan. The audio is whatever the vendor sent over."
+  p2: "Forty years of peer-reviewed research says that's a measurable miss. Tempo affects the pace customers walk through your store (Milliman 1982). Music a customer reads as belonging to them moves their willingness to pay (Areni &amp; Kim 1993). Familiar songs cut perceived dwell (Yalch &amp; Spangenberg 2000). The variable is doing work in the room. The question is whether you chose what."
+
+# Pillar 2 — We engineer it
+pillar2:
+  eyebrow: "The Lever"
+  h2: "Music engineered for your customer and your outcome."
+  p1: "The behavioral variable is parameterizable. Tempo, key, instrumentation, lyrical density, energy arc, and cultural reference set are all things that can be specified on purpose to fit a specific customer profile and a specific desired outcome — dwell, basket, conversion, brand reinforcement."
+  p2: "Entuned starts from the customer your store is built for and produces music against those parameters. Not picked from a catalogue. Not curated from a playlist library. Engineered. The tracks are original, commercial-use cleared, and PRO-indemnified the moment they play."
+
+# Pillar 3 — Self-improving
+pillar3:
+  eyebrow: "The Compound"
+  h2: "Self-improving as the data accumulates."
+  p1: "The Professional tier reads sales and traffic data tied to specific environmental conditions in your stores and refines the music against your store's outcomes as the dataset grows. Self-improving refinement compounds over weeks of data, not days."
+  p2: "Every store running self-improving refinement adds to the proprietary behavioral dataset that improves the system for that store. The Essentials and Core tiers prove the concept on the floor. Professional proves the lift in the report."
+
+# Tier preview
+tiers:
+  eyebrow: "Pricing"
+  h2: "Four tiers. Public pricing. Start free."
+  essentials_name: "Essentials"
+  essentials_price: "Free"
+  essentials_body: "Outcome-tuned music for your floor. Pick Increase Dwell or Infuse Energy. No card required."
+  core_name: "Core"
+  core_price: "$99/mo"
+  core_body: "Music tailored to your single Ideal Customer Profile. All research-backed outcomes unlocked."
+  professional_name: "Professional"
+  professional_price: "$399/mo"
+  professional_body: "Multiple ICPs, POS integration, day-parting, self-improving refinement, monthly founder consults."
+  enterprise_name: "Enterprise"
+  enterprise_price: "Contact"
+  enterprise_body: "Multi-fleet rollouts, custom ICP design, performance guarantees where lift can be cleanly measured."
+  cta_primary: "See Full Pricing"
+
+# Final CTA
+final:
+  h2: "Three minutes from sign-up to music in your store."
+  subline: "Free to start. Public pricing once you outgrow it. No demo gate."
+  cta_primary: "Start Free"
+  cta_secondary: "How It Works"

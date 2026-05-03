@@ -1,80 +1,90 @@
 # How It Works — editable text content
-# Edit this file to change copy on the page without touching HTML.
 
 hero:
   headline: "How It Works"
-  subline: "Retail music that adapts to your stores, gets more precise every week it runs, and holds a control store so you can prove it to your CFO."
+  subline: "Three minutes from sign-up to music in your store. Each tier adds a layer of specificity — outcome, then customer, then data — without changing the engine underneath."
 
 step1:
-  label: "Step 01"
-  title: "We talk about your stores."
-  text: "The intake produces a brand brief. We cover tempo range, mood vocabulary, lyrical guidelines, and what the brand should never sound like. That brief is the ceiling. The system operates inside it permanently. We also cover your existing data stack — what you already measure and what you would want to see move — so the pilot report is built around numbers that already matter to you."
+  label: "Step 01 — Essentials"
+  title: "Pick a starting outcome."
+  text: "Two outcome modes — Increase Dwell or Infuse Energy — built from the research on tempo, key, and density. Pick one, the music starts. No card required, no time limit. The Essentials catalogue covers the floor while you decide what comes next."
 
 step2:
-  label: "Step 02"
-  title: "Original music, made for your space."
-  text: "We produce original music for your stores. No catalog. No licensing fees. No track repeats across a full operating day. The music is made for the people who walk into your stores, not for whatever audience a licensing catalog was originally built around."
+  label: "Step 02 — Any tier"
+  title: "Stream from the speakers you already have."
+  text: "Sonos, AirPlay, Bluetooth, line-in, hardwired — whatever audio system is already running in the store. No new hardware, no installer. The stream plays from a URL we hand you. Every track is original, commercial-use cleared, and PRO-indemnified the moment it plays."
 
 step3:
-  label: "Step 03"
-  title: "Stream it from your existing hardware."
-  text: "Connect to whatever speaker setup you already have. Bluetooth, AirPlay, or a hardwired system. No new hardware. No installation. The pilot runs alongside your current vendor if you prefer, or replaces them outright."
+  label: "Step 03 — Core"
+  title: "Add your customer profile."
+  text: "When you upgrade to Core, the music shifts from a general catalogue to original tracks built around your single Ideal Customer Profile. Tempo range, lyrical density, instrumentation, energy arc, cultural reference set — specified on purpose to fit the customer your store is built to serve. About 420 tracks in the first month, refreshed and culled regularly against what holds the floor."
 
 step4:
-  label: "Step 04"
-  title: "See what it does to your numbers."
-  text: "The pilot runs long enough to produce data you can act on. You get a report at the end that looks at how the pilot stores moved on dwell time, conversion, and basket size against the baseline. If the numbers moved, we talk about what comes next. If they did not, you go back to what you had."
+  label: "Step 04 — Professional"
+  title: "Connect your store data."
+  text: "Professional integrates with your POS, reads sales and traffic data tied to specific environmental conditions, and refines the music against your store's outcomes as the dataset grows. Day-parting rotates outcomes by hour. Multiple ICPs cater to distinct customer types instead of homogenizing them. Self-improving refinement compounds over weeks of data, not days. The lift shows up in the report your CFO already runs."
 
-includes:
-  eyebrow: "What Every Pilot Includes"
-  headline: "Built into every pilot."
+# What changes per tier
+tiers:
+  eyebrow: "What Changes Per Tier"
+  headline: "Same engine, deeper specificity."
 
 card1:
-  title: "Intake and brand brief"
-  text: "A structured conversation that produces a brand brief. Tempo range, mood vocabulary, lyrical guidelines, what the brand should never sound like. That brief is the ceiling. The system operates inside it permanently."
+  title: "Essentials"
+  text: "General catalogue, two outcome modes, manual selection. Indefinite free access. The floor has music engineered for an outcome instead of whatever the vendor sent over."
 
 card2:
-  title: "Original music"
-  text: "Every track is original, made for your pilot stores. No licensed catalog. No performing-rights exposure. No repetition across a full operating day."
+  title: "Core"
+  text: "One ICP. Music built around your specific customer. All research-backed outcomes unlocked. Manual control. Sales-associate-friendly web interface. ICP edit as the business evolves."
 
 card3:
-  title: "Pilot report"
-  text: "At the end of the pilot, a report that looks at your dwell time, conversion, and basket size in the pilot stores against a baseline. You keep the data either way."
+  title: "Professional"
+  text: "Multiple ICPs, distinct customer types catered to specifically. POS integration. Day-parting. Interstitial messaging — you write and approve store messages that play in rotation. Self-improving refinement against your store's data."
 
 card4:
-  title: "No lock-in"
-  text: "You are not signing a two-year contract to see what the audio does. The pilot is a pilot. If it works, we talk about what comes next. If it does not, you keep the data."
+  title: "Enterprise"
+  text: "Custom ICP design and brand voice consultation. Negotiated per-store pricing. Performance guarantees where lift can be cleanly measured. Dedicated success contact and white-glove rollout across the fleet."
 
-card5:
-  title: "Simple setup"
-  text: "Works with any Bluetooth or AirPlay speaker system. No special hardware. Streaming starts the day you are ready."
+# Science underneath
+science:
+  headline: "The behavioral variable underneath."
+  description: "Forty years of peer-reviewed work say in-store audio measurably affects customer behavior. Entuned engineers around that work — every parameter the research identifies as load-bearing is something we specify on purpose."
 
-pilot:
-  headline: "Pilots are structured to produce an answer."
-  description: "The pilot runs twelve weeks — long enough that weather, staffing, and promotion noise average out. One store runs unchanged as the control, matched on traffic volume and revenue baseline. At twelve weeks, you see what the audio did for the pilot stores against the control. If the numbers moved, we talk about what comes next. If they did not, you keep the data either way."
+science1:
+  stat: "+15–25%"
+  label: "DWELL TIME"
+  title: "Tempo affects pace through the store."
+  desc: "Slower tempo holds shoppers in the room longer. Milliman's 1982 supermarket study found shoppers walked more slowly to slower music; sales rose with extended dwell."
+  cite: "Milliman, R. E. (1982). Journal of Marketing."
 
-pilot1:
-  title: "Baseline your current numbers."
-  text: "Before anything changes, we look at the data you already have. Traffic, conversion, dwell, basket. That baseline is what the pilot numbers get compared against at the end."
+science2:
+  stat: "+8–12%"
+  label: "WILLINGNESS TO PAY"
+  title: "Music customers read as theirs moves how they value the product."
+  desc: "Areni and Kim found classical music in a wine store raised the price tier customers selected. North, Hargreaves, and McKendrick replicated the effect across categories. The tag didn't change. The customer's read on the product did."
+  cite: "Areni &amp; Kim (1993); North, Hargreaves &amp; McKendrick (1999)."
 
-pilot2:
-  title: "Stream the pilot music."
-  text: "The pilot stores run on the music we produce for them. Any speaker setup already in the store. No new hardware."
+science3:
+  stat: "−8%"
+  label: "PERCEIVED DWELL"
+  title: "Familiar songs make time feel shorter — and the visit shorter."
+  desc: "Yalch and Spangenberg measured shoppers' perception of dwell against actual dwell. Familiar music compressed the perceived stay. The songs your customers already know are working against you."
+  cite: "Yalch &amp; Spangenberg (2000). Journal of Business Research."
 
-pilot3:
-  title: "We hold a control store."
-  text: "At least one store runs unchanged as the control, matched to the pilot stores on location profile, historical traffic volume, and revenue baseline. At twelve weeks, the delta between pilot stores and the control store is the answer to the question every CFO asks: how do you know the music did that. No other vendor in this category holds a control store. We do on every pilot."
+science4:
+  stat: "1.9B"
+  label: "WHAT THE INDUSTRY MEASURES"
+  title: "Footsteps, heatmaps, dwell zones — but no one measures the audio."
+  desc: "In-store analytics is a $1.9B industry that counts everything except the one variable a manager can change while a customer is still in the store. We are filling the gap the measurement industry never filled."
+  cite: "Industry analyst data, 2024."
 
-pilot4:
-  title: "Decide what comes next."
-  text: "If the pilot produced the kind of numbers that justify continuing, we talk about that. If it did not, nothing is locked in. The data is yours either way."
-
+# CTA
 cta:
-  headline: "See what the pilot looks like for your stores."
-  subline: "A short conversation tells us whether the pilot is a fit and tells you what to expect from the process."
-  button_text: "Ask About a Pilot Program"
-  button_link: "pilot.html"
+  headline: "Three minutes to music in your store."
+  subline: "Free to start. Public pricing once you outgrow it."
+  cta_primary: "Start Free"
+  cta_secondary: "See Pricing"
 
 further_reading_eyebrow: "Go Deeper"
 further_reading_headline: "Related Reading"
-further_reading_links: <a href="blog/what-is-entuned.html">What Is Entuned?</a> &middot; <a href="blog/what-are-flow-factors.html">Does Your Store's Music Actually Matter?</a> &middot; <a href="blog/psychographic-profiling-retail.html">What Kind of Music Should a Store Like Mine Play?</a> &middot; <a href="blog/ai-generated-music-retail.html">Does original retail music outperform licensed playlists?</a>
+further_reading_links: <a href="blog/what-is-entuned.html">What Is Entuned?</a> &middot; <a href="blog/what-are-flow-factors.html">Does Your Store's Music Actually Matter?</a> &middot; <a href="blog/psychographic-profiling-retail.html">What Kind of Music Should a Store Like Mine Play?</a> &middot; <a href="licensing.html">PRO indemnification details</a>

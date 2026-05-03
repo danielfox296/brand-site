@@ -38,8 +38,8 @@
 <section class="section" style="padding-top: 2rem;">
   <div class="container" style="max-width: 720px;">
     <form class="fade-up" action="https://formspree.io/f/xgopwepl" method="POST" id="intake-form">
-      <input type="hidden" name="_subject" value="Founding Retailer Intake — Entuned">
-      <input type="hidden" name="form_type" value="founding_retailer_intake">
+      <input type="hidden" name="_subject" value="Core Intake — Entuned">
+      <input type="hidden" name="form_type" value="core_intake">
 
       <!-- BRAND -->
       <h2 class="intake-group-header">Brand</h2>
@@ -55,29 +55,29 @@
       </div>
 
       <div class="form-group">
+        <label for="intake-locations-count">Number of locations</label>
+        <input type="number" id="intake-locations-count" name="num_locations" required placeholder="1" min="1">
+        <p class="intake-help">If you have five or more, talk to us about Professional or Enterprise instead — POS-driven self-improving refinement is a much better fit.</p>
+      </div>
+
+      <div class="form-group">
         <label for="intake-voice">How would you describe your brand's voice?</label>
-        <textarea id="intake-voice" name="brand_voice" rows="3" required placeholder="Warm, a little irreverent, knowledgeable without being preachy..."></textarea>
+        <textarea id="intake-voice" name="brand_voice" rows="3" required placeholder="Direct, no-nonsense, value-forward without being cheap..."></textarea>
         <p class="intake-help">Three to five words or a couple of sentences. We translate this into musical parameters.</p>
       </div>
 
-      <div class="form-group">
-        <label for="intake-adjacent">Adjacent brands your customers love</label>
-        <textarea id="intake-adjacent" name="adjacent_brands" rows="2" placeholder="Aesop, Our Place, MUJI..."></textarea>
-        <p class="intake-help">3–6 brands. Not necessarily competitors — anything your ideal customer also shops.</p>
-      </div>
-
-      <!-- CUSTOMER -->
-      <h2 class="intake-group-header">Customer</h2>
+      <!-- ICP -->
+      <h2 class="intake-group-header">Ideal Customer Profile</h2>
 
       <div class="form-group">
         <label for="intake-icp">Who is your ideal customer?</label>
-        <textarea id="intake-icp" name="icp" rows="4" required placeholder="A 34-year-old design-conscious renter who just moved to a mid-sized city. Cares about provenance. Reads the label. Prefers fewer, better things over more of them."></textarea>
-        <p class="intake-help">Psychographics matter more than demographics. What do they value? What signals quality to them?</p>
+        <textarea id="intake-icp" name="icp" rows="4" required placeholder="A 38-year-old parent making a household furniture decision under a budget. Cares about durability and warranty, not aesthetic statement. Researches before they walk in. Brings a partner."></textarea>
+        <p class="intake-help">What they value, what they look for, what signals quality to them, what they ignore. Operational language beats demographic language.</p>
       </div>
 
       <div class="form-group">
         <label for="intake-decision">What makes them pick you over a competitor?</label>
-        <textarea id="intake-decision" name="decision_driver" rows="3" required placeholder="Curation, knowledgeable staff, our approach to sourcing..."></textarea>
+        <textarea id="intake-decision" name="decision_driver" rows="3" required placeholder="Selection, price relative to comparable stores, sales floor knowledge..."></textarea>
       </div>
 
       <!-- STORE -->
@@ -86,7 +86,7 @@
       <div class="form-group">
         <label for="intake-locations">Store name(s) and address(es)</label>
         <textarea id="intake-locations" name="locations" rows="3" required placeholder="Acme Downtown – 123 Main St, Denver CO&#10;Acme Cherry Creek – 456 Oak Ave, Denver CO"></textarea>
-        <p class="intake-help">One per line. If multi-location, list all Founding-tier locations.</p>
+        <p class="intake-help">One per line. List every Core location.</p>
       </div>
 
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
@@ -103,7 +103,7 @@
       <div class="form-group">
         <label for="intake-traffic">Peak hours and slow hours</label>
         <textarea id="intake-traffic" name="traffic" rows="2" placeholder="Peak: Sat 12–4pm. Slow: weekday mornings."></textarea>
-        <p class="intake-help">Helps us tune the stream to what's happening in the store at different times.</p>
+        <p class="intake-help">Helps us tune the stream to what is happening in the store at different times.</p>
       </div>
 
       <!-- AUDIO -->
@@ -126,8 +126,8 @@
         </select>
       </div>
 
-      <!-- GOAL -->
-      <h2 class="intake-group-header">Goal</h2>
+      <!-- OUTCOME -->
+      <h2 class="intake-group-header">Outcome</h2>
 
       <div class="form-group">
         <label for="intake-goal">Which outcome matters most over the next 90 days?</label>
@@ -137,13 +137,13 @@
           <option value="Basket size">Higher transaction value</option>
           <option value="Conversion">Higher conversion (browse → buy)</option>
           <option value="Return visits">More return visits</option>
-          <option value="Brand consistency">Brand consistency across locations</option>
+          <option value="Energy">Infuse energy on the floor</option>
         </select>
       </div>
 
       <div class="form-group">
         <label for="intake-notes">Anything else we should know?</label>
-        <textarea id="intake-notes" name="notes" rows="3" placeholder="Optional — constraints, preferences, existing measurement, anything that'll help us get it right the first time."></textarea>
+        <textarea id="intake-notes" name="notes" rows="3" placeholder="Optional — constraints, preferences, existing measurement, anything that will help us get it right the first time."></textarea>
       </div>
 
       <!-- CONTACT -->
@@ -194,7 +194,7 @@
   form.addEventListener('submit', function(e) {
     e.preventDefault();
     var btn = form.querySelector('button[type="submit"]');
-    btn.textContent = 'Sending\u2026';
+    btn.textContent = 'Sending…';
     btn.disabled = true;
     fetch(form.action, {
       method: 'POST',

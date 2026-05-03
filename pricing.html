@@ -11,13 +11,13 @@
   <link rel="canonical" href="https://entuned.co/pricing.html">
   <meta name="robots" content="index, follow">
   <title>Pricing | Entuned</title>
-  <meta name="description" content="Entuned generates in-store audio at the variable level and tunes it against your store&#x27;s behavioral data. Start as a Founding Retailer for $99/mo (first 20 stores) or apply for a multi-location pilot.">
+  <meta name="description" content="Music engineered as a sales lever. Essentials free, Core $99/mo, Professional $399/mo, Enterprise custom. Public pricing. PRO-indemnified at every tier.">
   <meta name="theme-color" content="#20201c">
 
   <!-- Open Graph -->
   <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="rss.xml">
   <meta property="og:title" content="Pricing | Entuned">
-  <meta property="og:description" content="Entuned generates in-store audio at the variable level and tunes it against your store&#x27;s behavioral data. Start as a Founding Retailer for $99/mo (first 20 stores) or apply for a multi-location pilot.">
+  <meta property="og:description" content="Music engineered as a sales lever. Essentials free, Core $99/mo, Professional $399/mo, Enterprise custom. Public pricing. PRO-indemnified at every tier.">
   <meta property="og:url" content="https://entuned.co/pricing.html">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://entuned.co/img/og-default.png">
@@ -27,7 +27,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Pricing | Entuned">
-  <meta name="twitter:description" content="Entuned generates in-store audio at the variable level and tunes it against your store&#x27;s behavioral data. Start as a Founding Retailer for $99/mo (first 20 stores) or apply for a multi-location pilot.">
+  <meta name="twitter:description" content="Music engineered as a sales lever. Essentials free, Core $99/mo, Professional $399/mo, Enterprise custom. Public pricing. PRO-indemnified at every tier.">
   <meta name="twitter:image" content="https://entuned.co/img/og-default.png">
 
   <!-- Structured Data -->
@@ -189,13 +189,21 @@
 
 .plan-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  max-width: 1080px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1100px) {
+  .plan-grid {
+    grid-template-columns: 1fr 1fr;
+    max-width: 780px;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
   .plan-grid {
     grid-template-columns: 1fr;
     max-width: 520px;
@@ -205,7 +213,7 @@
 .plan-card {
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(212, 225, 229, 0.12);
-  padding: 2.5rem 2rem;
+  padding: 2rem 1.5rem;
   display: flex;
   flex-direction: column;
   transition: border-color 0.3s ease;
@@ -215,7 +223,7 @@
   border-color: rgba(80, 146, 156, 0.35);
 }
 
-.plan-card--founding {
+.plan-card--featured {
   border-color: var(--accent);
   box-shadow: inset 0 0 0 1px var(--accent);
 }
@@ -297,6 +305,15 @@
   position: absolute;
   left: 0;
   color: var(--accent);
+}
+
+.plan-includes li.plan-includes-neg {
+  opacity: 0.55;
+}
+
+.plan-includes li.plan-includes-neg::before {
+  content: "—";
+  color: var(--text-muted);
 }
 
 .btn-block {
@@ -478,12 +495,12 @@
   <div class="container">
     <a href="/" class="logo"><img src="img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
     <ul class="nav-links">
-      <li><a href="demo.html">What Is Entuned</a></li>
       <li><a href="how-it-works.html">How It Works</a></li>
       <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="enterprise.html">Enterprise</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li class="nav-cta-item"><a href="pilot.html" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Book a Pilot</a></li>
+      <li class="nav-cta-item"><a href="waitlist.html" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Start Free</a></li>
     </ul>
     <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
   </div>
@@ -494,137 +511,130 @@
 <section class="hero pricing-hero">
   <div class="container">
     <div class="fade-up pricing-hero-inner">
-      <p class="pricing-eyebrow">Founding Retailer Program, Now Open</p>
-      <h1>In-store music, tuned to your customer.</h1>
-      <p class="subline">Deploy in days. Pick a plan below.</p>
-
-      <div class="pricing-cta-row">
-        <a href="https://buy.stripe.com/9B6bJ2aeS8Uhdsw1Rnebu00" class="btn btn-primary">Start as a Founding Retailer at $99/mo</a>
-        <a href="#plans" class="btn btn-secondary">Apply for a Pilot for Multi-Location</a>
-      </div>
-
-      <p class="pricing-cta-footnote">Founding Retailer is capped at 20 locations. <strong>20 spots remaining.</strong> After that, standard pricing takes effect.</p>
+      <p class="pricing-eyebrow">Pricing</p>
+      <h1>Music engineered as a sales lever.</h1>
+      <p class="subline">Four tiers. Public pricing. Start free. Every tier is PRO-indemnified the moment you start playing.</p>
     </div>
   </div>
 </section>
 
-<!-- PLANS -->
+<!-- TIERS -->
 <section id="plans" class="section pricing-plans">
   <div class="container">
     <div class="plan-grid fade-up">
 
-      <!-- FOUNDING CARD -->
-      <article class="plan-card plan-card--founding">
-        <p class="plan-eyebrow">For single-location and small multi-location retailers ready to deploy now.</p>
-        <h3 class="plan-title">Founding Retailer</h3>
+      <!-- ESSENTIALS -->
+      <article class="plan-card">
+        <p class="plan-eyebrow">Free, indefinite</p>
+        <h3 class="plan-title">Essentials</h3>
+        <div class="plan-price">
+          <span class="price-amount">$0</span>
+          <span class="price-suffix">/ month</span>
+        </div>
+        <p class="plan-price-footnote">Outcome-tuned music for your floor. Pick Increase Dwell or Infuse Energy. No card required, no time limit.</p>
+
+        <ul class="plan-includes">
+          <li>100+ song general catalogue</li>
+          <li>Two outcome modes — Increase Dwell, Infuse Energy</li>
+          <li>One mode active at a time, manually selected</li>
+          <li>PRO-indemnified from day one</li>
+          <li>Plays through any speaker you already have</li>
+          <li class="plan-includes-neg">No customer-profile customization</li>
+        </ul>
+
+        <a href="waitlist.html" class="btn btn-secondary btn-block">Start Free</a>
+      </article>
+
+      <!-- CORE (highlighted) -->
+      <article class="plan-card plan-card--featured">
+        <p class="plan-eyebrow">Most operators start here</p>
+        <h3 class="plan-title">Core</h3>
         <div class="plan-price">
           <span class="price-amount">$99</span>
           <span class="price-suffix">/ location / month</span>
         </div>
-        <p class="plan-price-footnote">Limited to the first 20 locations. Standard pricing applies after that.</p>
+        <p class="plan-price-footnote">Music tailored to your single Ideal Customer Profile. All research-backed outcomes unlocked.</p>
 
         <ul class="plan-includes">
-          <li>Original music stream, made for your store and your customer</li>
-          <li>Onboarding call that captures what you want the audio to do</li>
-          <li>Monthly music refresh</li>
-          <li>Direct line to the Entuned team during the Founding cohort</li>
-          <li>Lock in Founding pricing for 12 months</li>
+          <li>One ICP — music tailored to your single Ideal Customer's taste preferences</li>
+          <li>All research-backed outcomes unlocked</li>
+          <li>300-song library at launch, ~120 added in the first month (~420 total)</li>
+          <li>Regular refresh of top performers, regular culling of underperformers</li>
+          <li>Manual outcome control + ICP edit as the business evolves</li>
+          <li>Sales-associate-friendly web interface</li>
         </ul>
 
-        <a href="https://buy.stripe.com/9B6bJ2aeS8Uhdsw1Rnebu00" class="btn btn-primary btn-block">
-          Start Now
-        </a>
-        <p class="plan-cta-footnote">You will complete a short intake after checkout so we can build the audio to your store. By starting you agree to the <a href="pricing/terms.html">Founding Retailer Terms</a>.</p>
+        <a href="https://buy.stripe.com/9B6bJ2aeS8Uhdsw1Rnebu00" class="btn btn-primary btn-block">Start Now</a>
+        <p class="plan-cta-footnote">Short ICP intake after checkout. By starting you agree to the <a href="pricing/terms.html">Subscription Terms</a>.</p>
       </article>
 
-      <!-- PILOT CARD -->
-      <article class="plan-card plan-card--pilot">
-        <p class="plan-eyebrow">For multi-location retailers that already run in-store analytics.</p>
-        <h3 class="plan-title">Pilot Program</h3>
+      <!-- PROFESSIONAL -->
+      <article class="plan-card">
+        <p class="plan-eyebrow">When the lift needs to show up in the report</p>
+        <h3 class="plan-title">Professional</h3>
         <div class="plan-price">
-          <span class="price-amount">Custom</span>
-          <span class="price-suffix">Structured six-month pilot</span>
+          <span class="price-amount">$399</span>
+          <span class="price-suffix">/ location / month</span>
         </div>
-        <p class="plan-price-footnote">&nbsp;</p>
+        <p class="plan-price-footnote">Self-improving music tied to your store's data. Day-parted. Refined as the dataset grows.</p>
 
-        <p class="plan-section-header">Who this is for:</p>
-        <ul class="plan-list">
-          <li>5 or more locations</li>
-          <li>Existing sensor infrastructure (RetailNext or equivalent) or willingness to deploy</li>
-          <li>Category: lifestyle, specialty, apparel, home, beauty</li>
-        </ul>
-
-        <p class="plan-section-header">What's included:</p>
         <ul class="plan-includes">
-          <li>Six-month structured pilot with defined lift metrics</li>
-          <li>A/B testing across locations</li>
-          <li>Audio that is built for your stores and adjusted against your sensor data</li>
-          <li>Co-authored case study on measured outcomes</li>
-          <li>Priority access to new capabilities as they ship</li>
+          <li>Everything in Core</li>
+          <li>POS integration</li>
+          <li>Day-parting (automated, time-based outcome rotation)</li>
+          <li>Interstitial messaging — you write and approve store messages that play in rotation</li>
+          <li>Multiple ICPs — distinct customer types catered to specifically, not homogenized into a single average profile</li>
+          <li>Self-improving refinement as your store's correlation dataset grows</li>
+          <li>Monthly customer success consults with the founder (initially)</li>
         </ul>
 
-        <a href="contact.html?topic=pilot" class="btn btn-secondary btn-block">
-          Apply for Pilot
-        </a>
+        <a href="contact.html?topic=professional" class="btn btn-secondary btn-block">Talk to the Founder</a>
+      </article>
+
+      <!-- ENTERPRISE -->
+      <article class="plan-card">
+        <p class="plan-eyebrow">Multi-fleet rollouts</p>
+        <h3 class="plan-title">Enterprise</h3>
+        <div class="plan-price">
+          <span class="price-amount">Contact</span>
+          <span class="price-suffix">for pricing</span>
+        </div>
+        <p class="plan-price-footnote">Negotiated per-store pricing, custom ICP design and brand voice consultation, performance guarantees where lift can be cleanly measured, dedicated success contact, white-glove rollout.</p>
+
+        <ul class="plan-includes">
+          <li>Negotiated pricing per store</li>
+          <li>Custom ICP design and brand voice consultation</li>
+          <li>Performance guarantees (where lift can be cleanly measured)</li>
+          <li>Dedicated success contact</li>
+          <li>White-glove rollout</li>
+        </ul>
+
+        <a href="contact.html?topic=enterprise" class="btn btn-secondary btn-block">Contact Enterprise</a>
       </article>
 
     </div>
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
+<!-- HOW THE TIERS STACK -->
 <section class="section pricing-how">
-  <div class="container">
-    <div class="fade-up" style="text-align: center; margin-bottom: 3rem;">
-      <h2>How it works</h2>
-    </div>
-    <div class="steps-grid fade-up">
-
-      <div class="step">
-        <div class="step-number">1</div>
-        <h3 class="step-title">Intake</h3>
-        <p class="step-body">A short call captures what your store is, who shops it, and what you want the audio to do. One conversation.</p>
-      </div>
-
-      <div class="step">
-        <div class="step-number">2</div>
-        <h3 class="step-title">Deploy</h3>
-        <p class="step-body">Your music goes live on your location's existing audio system. No new hardware.</p>
-      </div>
-
-      <div class="step">
-        <div class="step-number">3</div>
-        <h3 class="step-title">Tune</h3>
-        <p class="step-body">The music refreshes monthly. We adjust based on what the data and the floor tell us.</p>
-      </div>
-
+  <div class="container" style="max-width: 820px;">
+    <div class="fade-up">
+      <h2>How the tiers stack.</h2>
+      <p style="font-size: 1.0625rem; line-height: 1.75; opacity: 0.88; margin-bottom: 1.25rem;">Essentials proves the system works on your floor. Core proves it works for your customer. Professional proves the lift in the report your CFO already runs. Each tier is a step deeper into the same engine — never a different product.</p>
+      <p style="font-size: 1.0625rem; line-height: 1.75; opacity: 0.88;">Most operators start on Essentials, move to Core within their first paid quarter, and graduate to Professional once they want the music tied to data they can audit.</p>
     </div>
   </div>
 </section>
 
-<!-- PROOF -->
+<!-- PRO INDEMNIFICATION CALLOUT -->
 <section class="section pricing-proof">
-  <div class="container">
-    <div class="fade-up" style="text-align: center; margin-bottom: 3rem;">
-      <h2>What we can tell you today</h2>
-    </div>
-    <div class="proof-grid fade-up">
-
-      <div class="proof-item">
-        <h3 class="proof-item-title">Patent-pending.</h3>
-        <p class="proof-item-body">Our method is covered by a provisional patent filed April 2026.</p>
-      </div>
-
-      <div class="proof-item">
-        <h3 class="proof-item-title">Research-led.</h3>
-        <p class="proof-item-body">Built on decades of peer-reviewed work on music and consumer behavior.</p>
-      </div>
-
-      <div class="proof-item">
-        <h3 class="proof-item-title">Made for your customer.</h3>
-        <p class="proof-item-body">Designed to match the customer your store is built to serve.</p>
-      </div>
-
+  <div class="container" style="max-width: 820px;">
+    <div class="fade-up">
+      <p class="section-eyebrow">Licensing</p>
+      <h2>PRO-free, fully indemnified — at every tier.</h2>
+      <p style="font-size: 1.0625rem; line-height: 1.75; opacity: 0.88; margin-bottom: 1.5rem;">Every Entuned subscription includes a written indemnification certificate. No ASCAP, BMI, SESAC, or SoundExchange royalties. No public performance license required. If a performing rights organization questions what is playing in your store, you have documentation in hand.</p>
+      <p><a href="licensing.html" class="pricing-link">Read the licensing details →</a></p>
     </div>
   </div>
 </section>
@@ -638,28 +648,33 @@
     <div class="faq-list fade-up">
 
       <details class="pricing-faq-item">
-        <summary class="pricing-faq-q">Why is Founding pricing so much lower than standard?</summary>
-        <div class="pricing-faq-a">The first 20 locations help us refine the product across real retail environments. In exchange for deploying early, you lock in $99 per location per month for 12 months. After 20 locations, standard pricing takes effect.</div>
+        <summary class="pricing-faq-q">Why is Essentials actually free?</summary>
+        <div class="pricing-faq-a">Because the most expensive moment in the buyer relationship is the gate. The Essentials catalogue is real and indefinite. The structural difference at Core is not artificial scarcity — it is that Core music is built around your specific customer rather than a general catalogue. Most operators move to Core when their floor is ready for that level of specificity.</div>
       </details>
 
       <details class="pricing-faq-item">
         <summary class="pricing-faq-q">Do I need special hardware?</summary>
-        <div class="pricing-faq-a">No. Entuned streams through your existing in-store audio system.</div>
+        <div class="pricing-faq-a">No. Entuned streams through whatever audio system you already have — Sonos, AirPlay, Bluetooth, line-in, or a hardwired speaker rig.</div>
       </details>
 
       <details class="pricing-faq-item">
-        <summary class="pricing-faq-q">What about music licensing?</summary>
-        <div class="pricing-faq-a">All music is generated by Entuned. You are fully cleared for commercial in-store use. No PRO fees, no catalog licensing, no legal exposure.</div>
+        <summary class="pricing-faq-q">What about music licensing and PRO fees?</summary>
+        <div class="pricing-faq-a">All audio Entuned delivers is original and commercial-use cleared. No PRO fees, no catalogue licensing, no public-performance exposure. Every subscription includes a written indemnification certificate. <a href="licensing.html">Full details on the licensing page</a>.</div>
       </details>
 
       <details class="pricing-faq-item">
         <summary class="pricing-faq-q">Can I cancel?</summary>
-        <div class="pricing-faq-a">Yes, monthly. No long-term contract on the Founding plan.</div>
+        <div class="pricing-faq-a">Yes, monthly. No long-term contract on Core or Professional. Enterprise pricing is negotiated as part of the agreement.</div>
       </details>
 
       <details class="pricing-faq-item">
-        <summary class="pricing-faq-q">I have 5 or more locations. Should I do Founding or Pilot?</summary>
-        <div class="pricing-faq-a">Pilot. It is structured around measuring lift across locations, which is where the real value of Entuned shows up. Founding is for retailers who want in now without the pilot overhead.</div>
+        <summary class="pricing-faq-q">What's the difference between Core and Professional?</summary>
+        <div class="pricing-faq-a">Core builds music around one Ideal Customer Profile and gives you manual outcome control. Professional adds POS integration, multiple ICPs (distinct customer types catered to specifically, not homogenized), day-parting, interstitial messaging, and self-improving refinement that compounds against your store's data over weeks. Most single-store operators start on Core. Multi-store operators with a real measurement stack start on Professional.</div>
+      </details>
+
+      <details class="pricing-faq-item">
+        <summary class="pricing-faq-q">I already pay Soundtrack Your Brand or Mood Media. How does this compare?</summary>
+        <div class="pricing-faq-a">Those vendors license catalogue music from PROs and pass the cost through your subscription. The catalogue was written for an artist's self-expression, not for your store's customer. Entuned generates original music engineered to specific parameters — tempo, key, lyrical density, energy arc — against the customer your store is built to serve. Different product, different lever.</div>
       </details>
 
     </div>
@@ -670,12 +685,12 @@
 <section class="section pricing-final-cta">
   <div class="container">
     <div class="fade-up" style="text-align: center;">
-      <h2>Two paths. Both start today.</h2>
+      <h2>Pick the tier that fits your floor.</h2>
       <div class="pricing-cta-row" style="justify-content: center;">
-        <a href="https://buy.stripe.com/9B6bJ2aeS8Uhdsw1Rnebu00" class="btn btn-primary">Start as a Founding Retailer at $99/mo</a>
-        <a href="contact.html?topic=pilot" class="btn btn-secondary">Apply for a Pilot for Multi-Location</a>
+        <a href="waitlist.html" class="btn btn-secondary">Start Free</a>
+        <a href="https://buy.stripe.com/9B6bJ2aeS8Uhdsw1Rnebu00" class="btn btn-primary">Start Core at $99/mo</a>
+        <a href="contact.html?topic=enterprise" class="btn btn-secondary">Talk to Enterprise</a>
       </div>
-      <p class="pricing-cta-footnote" style="margin-left: auto; margin-right: auto;"><strong>20 of 20 Founding spots remaining.</strong></p>
     </div>
   </div>
 </section>
@@ -686,30 +701,27 @@
   <div class="container">
     <div class="footer-section">
       <h4><img src="img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
-      <p style="opacity: 0.7; font-size: 0.95rem;">Adaptive retail music that learns your stores.</p>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Music engineered as a sales lever.</p>
       <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
     </div>
     <div class="footer-section">
       <h4>Product</h4>
       <ul>
         <li><a href="how-it-works.html">How It Works</a></li>
-        <li><a href="pilot.html">Pilot Program</a></li>
         <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="why-entuned.html">Why Entuned</a></li>
         <li><a href="enterprise.html">Enterprise</a></li>
+        <li><a href="why-entuned.html">Why Entuned</a></li>
       </ul>
     </div>
     <div class="footer-section">
       <h4>For Your Industry</h4>
       <ul>
         <li><a href="for-apparel.html">Apparel</a></li>
-        <li><a href="for-cosmetics.html">Cosmetics</a></li>
         <li><a href="for-home-goods.html">Home Goods</a></li>
       </ul>
       <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
       <ul>
         <li><a href="for-retail-leaders.html">Retail Leaders</a></li>
-        <li><a href="for-cfos.html">CFOs</a></li>
         <li><a href="impact.html">Impact Calculator</a></li>
       </ul>
     </div>
@@ -735,15 +747,16 @@
     <div class="footer-section">
       <h4>Legal</h4>
       <ul>
+        <li><a href="licensing.html">Licensing &amp; PRO Coverage</a></li>
         <li><a href="data.html">Data Practices</a></li>
         <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        <li><a href="pricing/terms.html">Founding Retailer Terms</a></li>
+        <li><a href="pricing/terms.html">Subscription Terms</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-cta-strip" style="border-top: 1px solid rgba(80, 146, 156, 0.15); padding: 3rem 0; text-align: center;">
-    <p style="font-size: 1.05rem; opacity: 0.75; margin-bottom: 1.25rem;">Ready to see what the pilot looks like for your stores?</p>
-    <a href="pilot.html" class="btn btn-primary">Book a Pilot Conversation</a>
+    <p style="font-size: 1.05rem; opacity: 0.75; margin-bottom: 1.25rem;">Three minutes to music in your store. Free to start.</p>
+    <a href="waitlist.html" class="btn btn-primary">Start Free</a>
   </div>
   <div class="footer-bottom">
     <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>

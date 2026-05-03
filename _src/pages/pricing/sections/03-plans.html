@@ -1,61 +1,95 @@
-<!-- PLANS -->
+<!-- TIERS -->
 <section id="plans" class="section pricing-plans">
   <div class="container">
     <div class="plan-grid fade-up">
 
-      <!-- FOUNDING CARD -->
-      <article class="plan-card plan-card--founding">
-        <p class="plan-eyebrow">{{content.plans.founding.eyebrow}}</p>
-        <h3 class="plan-title">{{content.plans.founding.title}}</h3>
+      <!-- ESSENTIALS -->
+      <article class="plan-card">
+        <p class="plan-eyebrow">{{content.tiers.essentials.eyebrow}}</p>
+        <h3 class="plan-title">{{content.tiers.essentials.name}}</h3>
         <div class="plan-price">
-          <span class="price-amount">{{content.plans.founding.price_display}}</span>
-          <span class="price-suffix">{{content.plans.founding.price_suffix}}</span>
+          <span class="price-amount">{{content.tiers.essentials.price}}</span>
+          <span class="price-suffix">{{content.tiers.essentials.price_suffix}}</span>
         </div>
-        <p class="plan-price-footnote">{{content.plans.founding.price_footnote}}</p>
+        <p class="plan-price-footnote">{{content.tiers.essentials.summary}}</p>
 
         <ul class="plan-includes">
-          <li>{{content.plans.founding.inc1}}</li>
-          <li>{{content.plans.founding.inc2}}</li>
-          <li>{{content.plans.founding.inc3}}</li>
-          <li>{{content.plans.founding.inc4}}</li>
-          <li>{{content.plans.founding.inc5}}</li>
+          <li>{{content.tiers.essentials.inc1}}</li>
+          <li>{{content.tiers.essentials.inc2}}</li>
+          <li>{{content.tiers.essentials.inc3}}</li>
+          <li>{{content.tiers.essentials.inc4}}</li>
+          <li>{{content.tiers.essentials.inc5}}</li>
+          <li class="plan-includes-neg">{{content.tiers.essentials.inc_neg}}</li>
         </ul>
 
-        <a href="{{content.stripe_payment_link}}" class="btn btn-primary btn-block">
-          {{content.plans.founding.cta_label}}
-        </a>
-        <p class="plan-cta-footnote">{{content.plans.founding.cta_footnote}}</p>
+        <a href="{{content.waitlist_url}}" class="btn btn-secondary btn-block">{{content.tiers.essentials.cta_label}}</a>
       </article>
 
-      <!-- PILOT CARD -->
-      <article class="plan-card plan-card--pilot">
-        <p class="plan-eyebrow">{{content.plans.pilot.eyebrow}}</p>
-        <h3 class="plan-title">{{content.plans.pilot.title}}</h3>
+      <!-- CORE (highlighted) -->
+      <article class="plan-card plan-card--featured">
+        <p class="plan-eyebrow">{{content.tiers.core.eyebrow}}</p>
+        <h3 class="plan-title">{{content.tiers.core.name}}</h3>
         <div class="plan-price">
-          <span class="price-amount">{{content.plans.pilot.price_display}}</span>
-          <span class="price-suffix">{{content.plans.pilot.price_suffix}}</span>
+          <span class="price-amount">{{content.tiers.core.price}}</span>
+          <span class="price-suffix">{{content.tiers.core.price_suffix}}</span>
         </div>
-        <p class="plan-price-footnote">&nbsp;</p>
+        <p class="plan-price-footnote">{{content.tiers.core.summary}}</p>
 
-        <p class="plan-section-header">{{content.plans.pilot.who_header}}</p>
-        <ul class="plan-list">
-          <li>{{content.plans.pilot.who1}}</li>
-          <li>{{content.plans.pilot.who2}}</li>
-          <li>{{content.plans.pilot.who3}}</li>
-        </ul>
-
-        <p class="plan-section-header">{{content.plans.pilot.includes_header}}</p>
         <ul class="plan-includes">
-          <li>{{content.plans.pilot.inc1}}</li>
-          <li>{{content.plans.pilot.inc2}}</li>
-          <li>{{content.plans.pilot.inc3}}</li>
-          <li>{{content.plans.pilot.inc4}}</li>
-          <li>{{content.plans.pilot.inc5}}</li>
+          <li>{{content.tiers.core.inc1}}</li>
+          <li>{{content.tiers.core.inc2}}</li>
+          <li>{{content.tiers.core.inc3}}</li>
+          <li>{{content.tiers.core.inc4}}</li>
+          <li>{{content.tiers.core.inc5}}</li>
+          <li>{{content.tiers.core.inc6}}</li>
         </ul>
 
-        <a href="{{content.pilot_contact_url}}" class="btn btn-secondary btn-block">
-          {{content.plans.pilot.cta_label}}
-        </a>
+        <a href="{{content.stripe_payment_link}}" class="btn btn-primary btn-block">{{content.tiers.core.cta_label}}</a>
+        <p class="plan-cta-footnote">{{content.tiers.core.cta_footnote}}</p>
+      </article>
+
+      <!-- PROFESSIONAL -->
+      <article class="plan-card">
+        <p class="plan-eyebrow">{{content.tiers.professional.eyebrow}}</p>
+        <h3 class="plan-title">{{content.tiers.professional.name}}</h3>
+        <div class="plan-price">
+          <span class="price-amount">{{content.tiers.professional.price}}</span>
+          <span class="price-suffix">{{content.tiers.professional.price_suffix}}</span>
+        </div>
+        <p class="plan-price-footnote">{{content.tiers.professional.summary}}</p>
+
+        <ul class="plan-includes">
+          <li>{{content.tiers.professional.inc1}}</li>
+          <li>{{content.tiers.professional.inc2}}</li>
+          <li>{{content.tiers.professional.inc3}}</li>
+          <li>{{content.tiers.professional.inc4}}</li>
+          <li>{{content.tiers.professional.inc5}}</li>
+          <li>{{content.tiers.professional.inc6}}</li>
+          <li>{{content.tiers.professional.inc7}}</li>
+        </ul>
+
+        <a href="{{content.contact_pro_url}}" class="btn btn-secondary btn-block">{{content.tiers.professional.cta_label}}</a>
+      </article>
+
+      <!-- ENTERPRISE -->
+      <article class="plan-card">
+        <p class="plan-eyebrow">{{content.tiers.enterprise.eyebrow}}</p>
+        <h3 class="plan-title">{{content.tiers.enterprise.name}}</h3>
+        <div class="plan-price">
+          <span class="price-amount">{{content.tiers.enterprise.price}}</span>
+          <span class="price-suffix">{{content.tiers.enterprise.price_suffix}}</span>
+        </div>
+        <p class="plan-price-footnote">{{content.tiers.enterprise.summary}}</p>
+
+        <ul class="plan-includes">
+          <li>{{content.tiers.enterprise.inc1}}</li>
+          <li>{{content.tiers.enterprise.inc2}}</li>
+          <li>{{content.tiers.enterprise.inc3}}</li>
+          <li>{{content.tiers.enterprise.inc4}}</li>
+          <li>{{content.tiers.enterprise.inc5}}</li>
+        </ul>
+
+        <a href="{{content.contact_enterprise_url}}" class="btn btn-secondary btn-block">{{content.tiers.enterprise.cta_label}}</a>
       </article>
 
     </div>

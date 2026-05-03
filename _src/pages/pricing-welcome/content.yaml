@@ -3,15 +3,15 @@
 welcome:
   eyebrow: "Welcome to Entuned"
   headline: "You're in."
-  body: "Your Founding Retailer subscription is active. Here's what happens next."
+  body: "Your Core subscription is active. Here is what happens next."
 
   step1_title: "Intake"
-  step1_body: "You'll get an email from Daniel within one business day with a short intake. Brand, customer, store context, audio setup. About 10 minutes."
-  step2_title: "Onboarding call"
-  step2_body: "We'll book a 30-minute call to walk through your profile and answer any questions about deployment."
+  step1_body: "You will get an email from Daniel within one business day with a short ICP intake. Brand, customer, store context, audio setup. About 10 minutes."
+  step2_title: "Profile build"
+  step2_body: "We turn your intake into musical parameters and build your starting catalogue. Two to three days. We email you when the stream is ready and walk through anything that needs your sign-off."
   step3_title: "Deploy"
-  step3_body: "Your custom audio stream goes live on the speakers you already have. Typical timeline from checkout to in-store is 5 to 7 days."
+  step3_body: "Your stream goes live on the speakers you already have. Typical timeline from checkout to in-store is 5 to 7 days. After that, regular refreshes and culling against what is holding the floor."
 
   contact_line: "Questions? Email <a href=\"mailto:hello@entuned.co\">hello@entuned.co</a> and mention your Stripe receipt."
-  terms_line: "Your subscription is governed by the <a href=\"terms.html\">Founding Retailer Terms</a>."
+  terms_line: "Your subscription is governed by the <a href=\"terms.html\">Subscription Terms</a>."
   home_cta_label: "Back to Entuned"
