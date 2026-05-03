@@ -89,11 +89,11 @@ sections:
       For the financial framing that lets a CFO defend this as a line item, see <a href="../for-cfos.html">The CFO's Case for Retail Audio</a>.
 
   - type: cta
-    variant: pilot
-    headline: "Run a pilot"
-    body: "We are taking on a small number of multi-location lifestyle retailers for pilot deployments this year. If your audio is a line item you have never reviewed and your numbers suggest you should, we would be open to a conversation."
-    link: "/pilot"
-    link_text: "Start a conversation"
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Essentials is free, indefinite, no card. PRO-indemnified the moment it plays."
+    link: "/waitlist.html"
+    link_text: "Start Free"
 
   - type: related
     posts:

@@ -106,11 +106,11 @@ sections:
       For what a pilot actually looks like end to end, see <a href="../how-it-works.html">how the pilot works</a>.
 
   - type: cta
-    variant: pilot
-    headline: "Find out what your stores should sound like"
-    body: "Entuned builds store audio around your customer. Measurable from week one."
-    link: "/pilot"
-    link_text: "Ask About a Pilot Program"
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Essentials is free, indefinite, no card. PRO-indemnified the moment it plays."
+    link: "/waitlist.html"
+    link_text: "Start Free"
 
   - type: related
     posts:

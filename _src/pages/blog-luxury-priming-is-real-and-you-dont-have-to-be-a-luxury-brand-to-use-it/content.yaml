@@ -83,11 +83,11 @@ sections:
       The deeper academic record on music and shopper behavior is catalogued on <a href="../science.html">the science page</a>.
 
   - type: cta
-    variant: pilot
-    headline: "Find out what your audio is doing"
-    body: "We work with a small number of multi-location lifestyle retailers on pilot deployments. If you have never measured how your in-store audio affects customer spending, we would be glad to have that conversation."
-    link: "/pilot"
-    link_text: "Ask about a pilot"
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Essentials is free, indefinite, no card. PRO-indemnified the moment it plays."
+    link: "/waitlist.html"
+    link_text: "Start Free"
 
   - type: related
     posts:

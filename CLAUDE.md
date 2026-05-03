@@ -99,10 +99,10 @@ Template:
     <!-- REQUIRED: Related reading — link to 2-3 other Entuned blog posts -->
     <p class="fade-up">Related reading: <a href="../blog/other-post.html">Other Post Title</a>, <a href="../blog/another.html">Another</a>, and <a href="../blog/third.html">Third</a>.</p>
 
-    <!-- REQUIRED: CTA box — always last element in article-body -->
+    <!-- REQUIRED: CTA box — always last element in article-body. Use the canonical Start Free copy verbatim. -->
     <div class="article-cta fade-up">
-      <p>CTA text about what Entuned does, relevant to this post's topic.</p>
-      <a href="../pilot.html" class="btn btn-primary">Ask About a Pilot Program</a>
+      <p>Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Essentials is free, indefinite, no card. PRO-indemnified the moment it plays.</p>
+      <a href="../waitlist.html" class="btn btn-primary">Start Free</a>
     </div>
   </div>
 ```
@@ -113,7 +113,22 @@ Template:
 3. **Byline** — `<div class="byline">` with `Daniel<br>Founder, Entuned`.
 4. **Author bio** — `<div class="author-bio">` with Daniel's standard bio and link to about page.
 5. **Related reading** — link to 2-3 other Entuned blog posts for internal cross-linking.
-6. **CTA box** — `<div class="article-cta">` with contextual CTA text and button linking to `../pilot.html`.
+6. **CTA box** — `<div class="article-cta">` using the canonical Start Free copy and button linking to `../waitlist.html`. Do NOT write a custom CTA blurb per post — every post uses the same canonical copy. (When self-onboard ships, the link target swaps to the activation flow — one-line change.)
+
+**Canonical Start Free CTA copy** (use verbatim on every post — HTML and YAML schema posts both):
+
+> Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Essentials is free, indefinite, no card. PRO-indemnified the moment it plays.
+
+For posts using the **structured YAML blog renderer** (`type: cta` block), the canonical CTA is:
+
+```yaml
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Essentials is free, indefinite, no card. PRO-indemnified the moment it plays."
+    link: "/waitlist.html"
+    link_text: "Start Free"
+```
 
 **Key patterns:**
 - All `<p>`, `<h2>`, `<div>` in article-body get `class="fade-up"`
@@ -121,7 +136,8 @@ Template:
 - External links get `target="_blank" rel="noopener"`
 - Use `&mdash;` for em dashes, `&middot;` for mid-dots
 - Link to other Entuned blog posts where relevant (cross-linking helps SEO)
-- CTA always points to `../pilot.html`
+- CTA always points to `../waitlist.html` (the email-capture page; swaps to the activation flow when self-onboard ships)
+- Do NOT use the old "Ask About a Pilot Program" / "Learn About the Free Pilot Program" / "Start a conversation" CTAs anywhere
 
 ### 3. Add hero image
 

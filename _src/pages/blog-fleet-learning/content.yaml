@@ -102,11 +102,11 @@ sections:
       For the broader picture of why retail analytics has a response-layer gap, see <a href="../why-entuned.html">why Entuned exists</a>.
 
   - type: cta
-    variant: pilot
-    headline: "We help multi-location retailers run controlled audio tests"
-    body: "Entuned works with a small number of retail chains on pilot deployments where audio is the test variable and store performance is the scorecard. If you are building a testing culture across your locations, we should talk."
-    link: "/pilot"
-    link_text: "Ask about a pilot"
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Essentials is free, indefinite, no card. PRO-indemnified the moment it plays."
+    link: "/waitlist.html"
+    link_text: "Start Free"
 
   - type: related
     posts:

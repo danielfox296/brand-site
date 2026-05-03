@@ -102,11 +102,11 @@ sections:
       For the broader research record on this, see <a href="../science.html">The Science Behind the Soundtrack</a>.
 
   - type: cta
-    variant: pilot
-    headline: "Ready to stop guessing?"
-    body: "Entuned works with a small number of multi-location lifestyle retailers on pilot deployments. If you are rethinking your in-store audio, we would be open to a conversation."
-    link: "/pilot"
-    link_text: "Ask about a pilot"
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Essentials is free, indefinite, no card. PRO-indemnified the moment it plays."
+    link: "/waitlist.html"
+    link_text: "Start Free"
 
   - type: related
     posts:

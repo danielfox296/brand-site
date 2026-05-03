@@ -91,8 +91,8 @@ Use this exact structure for `sections/01-content.html`:
     </div>
 
     <div class="article-cta fade-up">
-      <p>CTA text relevant to the post topic.</p>
-      <a href="../pilot.html" class="btn btn-primary">Ask About a Pilot Program</a>
+      <p>Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Essentials is free, indefinite, no card. PRO-indemnified the moment it plays.</p>
+      <a href="../waitlist.html" class="btn btn-primary">Start Free</a>
     </div>
   </div>
 ```
@@ -103,7 +103,7 @@ Use this exact structure for `sections/01-content.html`:
 - External links: `target="_blank" rel="noopener"`
 - Use `&mdash;` for em dashes, `&middot;` for mid-dots
 - Cross-link to other Entuned blog posts where relevant
-- CTA always points to `../pilot.html`
+- CTA: use the canonical Start Free copy verbatim (above) and link to `../waitlist.html`. Do NOT write per-post CTA blurbs or use the retired "Ask About a Pilot Program" / "Learn About the Free Pilot Program" / "Start a conversation" labels.
 - Pick 2-3 related posts for the "Related reading" section
 - List existing posts: `ls _src/pages/ | grep blog-`
 

@@ -89,11 +89,11 @@ sections:
       For more on retail audio for home goods stores, see <a href="../for-home-goods.html">the home goods page</a>.
 
   - type: cta
-    variant: pilot
-    headline: "Audio built for how your customers actually shop"
-    body: "We work with a small number of multi-location lifestyle retailers on pilot deployments. If you have been wondering whether your stores sound the way they should, we would be glad to have the conversation."
-    link: "/pilot"
-    link_text: "Learn about the pilot program"
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Essentials is free, indefinite, no card. PRO-indemnified the moment it plays."
+    link: "/waitlist.html"
+    link_text: "Start Free"
 
   - type: related
     posts:

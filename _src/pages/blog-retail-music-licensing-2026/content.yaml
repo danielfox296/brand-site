@@ -94,11 +94,11 @@ sections:
       The full picture of how Entuned differs from catalog providers is <a href="../why-entuned.html">on the why page</a>.
 
   - type: cta
-    variant: pilot
-    headline: "Music that does not need a license"
-    body: "Entuned builds original in-store music for multi-location lifestyle retailers. No ASCAP, no BMI, no SESAC. We are taking a small number of pilot partners this year."
-    link: "/pilot"
-    link_text: "Ask About a Pilot Program"
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Essentials is free, indefinite, no card. PRO-indemnified the moment it plays."
+    link: "/waitlist.html"
+    link_text: "Start Free"
 
   - type: related
     posts:

@@ -92,11 +92,11 @@ sections:
       <a href="../results.html">The results page</a> breaks down what the dwell-and-spending research actually shows.
 
   - type: cta
-    variant: pilot
-    headline: "Find out what your music is doing"
-    body: "We work with a small number of multi-location retailers to measure whether their in-store audio is helping or hurting performance. If that question matters to your stores, we'd welcome a conversation."
-    link: "/pilot"
-    link_text: "Ask about a pilot program"
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Essentials is free, indefinite, no card. PRO-indemnified the moment it plays."
+    link: "/waitlist.html"
+    link_text: "Start Free"
 
   - type: related
     posts:

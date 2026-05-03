@@ -88,11 +88,11 @@ sections:
       For the retail leader view of why this matters, see <a href="../for-retail-leaders.html">the retail leaders page</a>.
 
   - type: cta
-    variant: pilot
-    headline: "Stop running someone else's story in your store"
-    body: "We work with a small number of multi-location lifestyle retailers on pilot deployments. If the lyrics on your speakers are a risk you want to retire, we would welcome a conversation."
-    link: "/pilot"
-    link_text: "Start a conversation"
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Essentials is free, indefinite, no card. PRO-indemnified the moment it plays."
+    link: "/waitlist.html"
+    link_text: "Start Free"
 
   - type: related
     posts:
