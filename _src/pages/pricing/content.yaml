@@ -18,6 +18,8 @@ stripe_payment_link: "https://api.entuned.co/billing/checkout?tier=core"
 stripe_pro_payment_link: "https://api.entuned.co/billing/checkout?tier=pro"
 contact_enterprise_url: "contact.html?topic=enterprise"
 waitlist_url: "waitlist.html"
+# Free-tier self-onboard. Magic-link / Google sign-in. No card required.
+essentials_signup_url: "https://app.entuned.co/start"
 
 hero:
   eyebrow: "Pricing"
@@ -39,9 +41,7 @@ tiers:
     inc5: "Plays through any speaker you already have"
     inc_neg: "No customer-profile customization"
     cta_label: "Start Free"
-    # Wait note shown on the Essentials card — explains why free is gated while paid is not.
-    # Remove this line once the Essentials self-onboard flow ships.
-    wait_note: "Self-onboard is launching soon. Drop your email and we'll send the link the day it ships. Core and above onboard immediately."
+    cta_footnote: "Sign in with email or Google. No card required."
 
   core:
     name: "Core"
