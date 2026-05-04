@@ -1,20 +1,21 @@
 # pricing — editable text content
 #
-# STRIPE PAYMENT LINKS
-# Both paid tiers route through Stripe Payment Links (no-code, hosted by Stripe).
-# Create or update them in: Stripe Dashboard → Payment Links → New
-# Both links should redirect to: https://entuned.co/pricing/welcome.html?tier=core
-#                              or https://entuned.co/pricing/welcome.html?tier=professional
+# CHECKOUT URLS
+# Both paid tiers now route through the Entuned server's `/billing/checkout`
+# endpoint, which creates a Stripe Checkout Session on the fly and 303s the
+# browser to it. This replaces the previous no-code Stripe Payment Links so
+# the post-checkout flow can create an Account + Location + Subscription
+# server-side via the `checkout.session.completed` webhook.
 #
-# Core ($99/mo): existing link below — same SKU that previously served the
-# Founding Retailer tier. Price unchanged, framing now durable.
+# Server: api.entuned.co (Railway). The success_url comes back to
+# {APP_URL}/welcome?session={CHECKOUT_SESSION_ID} (i.e. the customer
+# dashboard at app.entuned.co), and the cancel_url returns here.
 #
-# Professional ($399/mo): create the new Payment Link in Stripe, then replace
-# the placeholder URL below. The placeholder will 404 if pushed accidentally,
-# which is intentional — do not ship the placeholder live.
+# To roll back to no-code Payment Links, swap these strings back to the
+# `https://buy.stripe.com/...` URLs that previously lived here.
 
-stripe_payment_link: "https://buy.stripe.com/9B6bJ2aeS8Uhdsw1Rnebu00"
-stripe_pro_payment_link: "https://buy.stripe.com/eVq28sbiW5I54W0brXebu02"
+stripe_payment_link: "https://api.entuned.co/billing/checkout?tier=core"
+stripe_pro_payment_link: "https://api.entuned.co/billing/checkout?tier=pro"
 contact_enterprise_url: "contact.html?topic=enterprise"
 waitlist_url: "waitlist.html"
 
