@@ -17,7 +17,6 @@
 stripe_payment_link: "https://api.entuned.co/billing/checkout?tier=core"
 stripe_pro_payment_link: "https://api.entuned.co/billing/checkout?tier=pro"
 contact_enterprise_url: "contact.html?topic=enterprise"
-waitlist_url: "waitlist.html"
 # Free-tier self-onboard. Magic-link / Google sign-in. No card required.
 essentials_signup_url: "https://app.entuned.co/start"
 

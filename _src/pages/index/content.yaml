@@ -80,8 +80,8 @@ home_faq_a3: 'Yes. Every track Entuned plays is original, commercial-use cleared
 home_faq_q4: "What if I run multiple stores?"
 home_faq_a4: 'Professional handles multi-store deployments with POS integration, day-parting, and self-improving refinement. For fleets requiring custom ICP design, performance guarantees, or white-glove rollout, talk to <a href="enterprise.html">Enterprise</a>.'
 
-home_faq_q5: "When does Essentials open?"
-home_faq_a5: 'Self-onboard is launching soon. <a href="waitlist.html">Drop your email</a> and we''ll send the link the day it ships. Core and above onboard immediately.'
+home_faq_q5: "How do I get started on Essentials?"
+home_faq_a5: 'Sign in with your email or Google at <a href="https://app.entuned.co/start">app.entuned.co/start</a>. No card. You get a player URL the moment you finish.'
 
 # Final CTA
 final:
