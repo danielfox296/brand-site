@@ -102,7 +102,7 @@ Template:
     <!-- REQUIRED: CTA box — always last element in article-body. Use the canonical Start Free copy verbatim. -->
     <div class="article-cta fade-up">
       <p>Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Essentials is free, indefinite, no card. PRO-indemnified the moment it plays.</p>
-      <a href="../waitlist.html" class="btn btn-primary">Start Free</a>
+      <a href="https://app.entuned.co/start" class="btn btn-primary">Start Free</a>
     </div>
   </div>
 ```
@@ -113,7 +113,7 @@ Template:
 3. **Byline** — `<div class="byline">` with `Daniel<br>Founder, Entuned`.
 4. **Author bio** — `<div class="author-bio">` with Daniel's standard bio and link to about page.
 5. **Related reading** — link to 2-3 other Entuned blog posts for internal cross-linking.
-6. **CTA box** — `<div class="article-cta">` using the canonical Start Free copy and button linking to `../waitlist.html`. Do NOT write a custom CTA blurb per post — every post uses the same canonical copy. (When self-onboard ships, the link target swaps to the activation flow — one-line change.)
+6. **CTA box** — `<div class="article-cta">` using the canonical Start Free copy and button linking to `https://app.entuned.co/start` (the live self-onboard activation flow). Do NOT write a custom CTA blurb per post — every post uses the same canonical copy.
 
 **Canonical Start Free CTA copy** (use verbatim on every post — HTML and YAML schema posts both):
 
@@ -126,7 +126,7 @@ For posts using the **structured YAML blog renderer** (`type: cta` block), the c
     variant: start-free
     headline: "Hear it on your floor."
     body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Essentials is free, indefinite, no card. PRO-indemnified the moment it plays."
-    link: "/waitlist.html"
+    link: "https://app.entuned.co/start"
     link_text: "Start Free"
 ```
 
@@ -136,7 +136,7 @@ For posts using the **structured YAML blog renderer** (`type: cta` block), the c
 - External links get `target="_blank" rel="noopener"`
 - Use `&mdash;` for em dashes, `&middot;` for mid-dots
 - Link to other Entuned blog posts where relevant (cross-linking helps SEO)
-- CTA always points to `../waitlist.html` (the email-capture page; swaps to the activation flow when self-onboard ships)
+- CTA always points to `https://app.entuned.co/start` (the live self-onboard activation flow). The legacy `waitlist.html` email-capture page still exists as a fallback for inbound links, but new CTAs should go straight to the activation flow.
 - Do NOT use the old "Ask About a Pilot Program" / "Learn About the Free Pilot Program" / "Start a conversation" CTAs anywhere
 
 ### 3. Add hero image
