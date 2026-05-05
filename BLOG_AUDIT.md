@@ -13,7 +13,7 @@
 | C1: Title under 60 chars | 92/92 | 0/92 | 100% |
 | C2: Meta description present and ≤155 chars | 92/92 | 0/92 | 100% |
 | C3: Clear/direct opening (not narrative) | 92/92 | 0/92 | 100% |
-| C4: At least one H2 phrased as a question | 82/92 | 10/92 | 89% |
+| C4: At least one H2 phrased as a question | 92/92 | 0/92 | 100% |
 | C5: At least 2 internal blog cross-links | 92/92 | 0/92 | 100% |
 | C6: At least 1 core page link | 92/92 | 0/92 | 100% |
 | C7: Contains data point / statistic | 92/92 | 0/92 | 100% |
@@ -29,9 +29,8 @@
 
 ### Critical Site-Wide Gaps (still open)
 
-1. **Question-phrased H2s: 12/92.** 80 posts still need at least one question-phrased subhead for featured-snippet eligibility. Recommend continuing in batches of ~10 per session, prioritized by traffic.
-2. **35 long URL slugs (>5 words).** Fixing requires 301 redirects. Defer until GSC data identifies the underperforming ones.
-3. **7 orphaned built files** with no source dir. They predate the YAML schema migration, are missing OG tags, Article schema, and won't survive a clean rebuild. Decision pending: recreate or 301-redirect.
+1. **35 long URL slugs (>5 words).** Fixing requires 301 redirects. Defer until GSC data identifies the underperforming ones.
+2. **7 orphaned built files** with no source dir. They predate the YAML schema migration, are missing OG tags, Article schema, and won't survive a clean rebuild. Decision pending: recreate or 301-redirect.
 
 ---
 
@@ -221,7 +220,21 @@ All titles rewritten in this audit pass to fit ≤60 chars while preserving keyw
 | `the-sound-of-nothing` | When does silence in a store actually work? |
 | `what-jazz-musicians-hear` | What do jazz musicians hear that streaming tags miss? |
 
-**10 posts still need a question subhead.** Final batch coming.
+### Batch 9 — final (thesis / team / personal essays / period-piece narratives)
+| Slug | Question H2 added |
+|:-----|:------------------|
+| `battery-ventures-thesis-extended` | How does the Battery Ventures retail-tech thesis extend to audio? |
+| `welcoming-mrinmayi-katti` | Why is Mrinmayi the right person to lead retail GTM? |
+| `why-i-went-back-to-folding-shirts` | Why does a founder go back to working a retail floor? |
+| `the-composer-who-wanted-you-to-ignore-him` | What did Erik Satie understand about retail music? |
+| `the-general-and-the-wire` | What did General Owen know about music and labor? |
+| `the-organ-in-the-department-store` | Why did Wanamaker put a pipe organ in his store? |
+| `the-pianist-in-the-store` | What did the in-store pianist know that algorithms forgot? |
+| `the-wine-aisle` | How does music shape what bottle ends up in the cart? |
+| `tis-the-season` | Why does holiday music wreck retail morale? |
+| `turning-on-the-radio` | What does it actually cost to turn on the radio in your store? |
+
+**C4 complete: 92/92.** Every post in the corpus now has at least one question-phrased subhead — featured-snippet eligible site-wide.
 
 ---
 
