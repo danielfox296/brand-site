@@ -13,7 +13,7 @@
 | C1: Title under 60 chars | 92/92 | 0/92 | 100% |
 | C2: Meta description present and ≤155 chars | 92/92 | 0/92 | 100% |
 | C3: Clear/direct opening (not narrative) | 92/92 | 0/92 | 100% |
-| C4: At least one H2 phrased as a question | 52/92 | 40/92 | 57% |
+| C4: At least one H2 phrased as a question | 62/92 | 30/92 | 67% |
 | C5: At least 2 internal blog cross-links | 92/92 | 0/92 | 100% |
 | C6: At least 1 core page link | 92/92 | 0/92 | 100% |
 | C7: Contains data point / statistic | 92/92 | 0/92 | 100% |
@@ -179,7 +179,21 @@ All titles rewritten in this audit pass to fit ≤60 chars while preserving keyw
 | `bye-bye-bye-dwell-time` | Where is your store losing dwell time? |
 | `music-already-talking-to-customers` | What is your store's music already telling customers? |
 
-**40 posts still need a question subhead.** Continue in batches of ~10.
+### Batch 6 (vendor management / brand signal / store-as-room / playlist era)
+| Slug | Question H2 added |
+|:-----|:------------------|
+| `qbr-questions-music-vendor` | What should you ask your music vendor at QBR? |
+| `music-provider-doesnt-know-retailnext` | Why doesn't your music provider know what your analytics know? |
+| `retail-designed-everything` | Why is store music the one thing retail leaves to chance? |
+| `what-happens-to-employee-performance-when-the-music-is-right` | How does music affect employee performance? |
+| `why-your-best-customers-leave-faster-than-they-should` | Why are your best customers leaving sooner than they should? |
+| `what-your-music-is-saying-about-your-brand` | What is your music really saying about your brand? |
+| `the-store-is-not-a-set` | Is your store a stage set or a real room? |
+| `what-church-concert-halls-and-film-composers-know-that-retail-doesnt` | What do film composers know that retail doesn't? |
+| `the-playlist-era-and-the-open-loop` | Why is the playlist era a feedback loop nobody closed? |
+| `seamless-playback` | Why do most retail playlists break the room? |
+
+**30 posts still need a question subhead.** Continue in batches of ~10.
 
 ---
 
