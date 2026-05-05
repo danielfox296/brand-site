@@ -244,6 +244,68 @@ Fixing slugs requires 301 redirects (Bowie config update) and risks losing exist
 
 ---
 
+## GSC Cross-Reference (2026-05-05)
+
+GSC property `sc-domain:entuned.co` covers a 6-week window (only data the property has). Site-wide totals: **8 clicks · 1,008 impressions · 0.8% CTR · avg pos 20**. Of 92 source posts + 7 orphans, **63 URLs registered ≥1 impression**; the rest are dark.
+
+### Orphan rankings — already redirect stubs; no action needed
+
+The handoff classified the 7 orphan files as broken (missing OG tags, Article schema, will be wiped on rebuild). On inspection that was wrong:
+
+- All 7 are already meta-refresh stubs with `<meta name="robots" content="noindex">` and a `<link rel="canonical">` pointing to a live post. They're correctly redirecting traffic to topical replacements.
+- `build.py` never deletes anything (no `rmtree`, `unlink`, or `os.remove` calls), so they survive every build.
+- The reason they "fail" the OG/Article-schema audit is that they're noindex stubs and don't need that metadata. The 93% audit pass rate isn't a real gap.
+
+GSC confirms: max 3 impressions on any of them, positions deep on page 4+. Nothing to salvage; nothing to break.
+
+| Orphan slug | Clicks | Impr | Avg Pos | Status |
+|:---|---:|---:|---:|:---|
+| volume-knob | 0 | 3 | 71.0 | Already → tempo-volume-free |
+| the-hidden-cost-of-your-licensing-fee | 0 | 2 | 38.5 | Already → the-real-cost-of-retail-music |
+| the-silent-brand-signal | 0 | 1 | 10.0 | Already → retail-designed-everything |
+| everything-designed-except-music | 0 | 0 | — | Already → retail-atmospherics-2026 |
+| retail-dwell-time | 0 | 0 | — | Already → the-dwell-time-variable-nobodys-tracking |
+| three-ways-to-think-about-what-your-store-cant-do-yet | 0 | 0 | — | Already → 2-billion-sensors-no-real-time-levers |
+| what-spotify-gets-wrong | 0 | 0 | — | Already → can-you-play-spotify-in-your-store |
+
+**A 9th URL surfaced in GSC** with no file/source: `the-multi-zone-problem-why-one-playlist-cant-serve-a-whole-store.html` (0 clicks, 2 impressions, 404'ing). Since multi-zone music isn't a product offering, a redirect stub was created at that path pointing to `tempo-controls` — closest topical match in the existing corpus.
+
+### Long-slug rankings — verdict: rename only the LUXURY-PRIMING outlier; leave the rest
+
+| Long slug (word count) | Clicks | Impr | Avg Pos | Verdict |
+|:---|---:|---:|---:|:---|
+| what-happens-to-employee-performance-when-the-music-is-right (10) | **1** | 7 | **4.3** | **DO NOT RENAME** — already ranking page 1 |
+| the-dwell-time-variable-nobodys-tracking (6) | 0 | **85** | 76.2 | DO NOT RENAME — high-impression keyword target ("dwell time"); deep position is a content-strength issue, not a slug issue |
+| how-specialty-wine-retailers-use-music-to-sell-more-expensive-bottles (11) | 0 | 9 | 7.6 | Leave — pos 7.6 is page-1 territory |
+| closing-the-loop-on-retail-analytics (6) | 0 | 7 | 27.3 | Leave — borderline signal |
+| 2-billion-sensors-no-real-time-levers (7) | 0 | 6 | 42.2 | Leave — borderline signal |
+| the-real-cost-of-retail-music (6) | 0 | 4 | 6.5 | Leave — pos 6.5 is page 1 |
+| **luxury-priming-is-real-and-you-dont-have-to-be-a-luxury-brand-to-use-it (16)** | 0 | 2 | 6.0 | **RENAME** → `luxury-priming-for-non-luxury-brands` (5 words). Longest slug in the corpus, near-zero signal |
+| music-was-never-made-for-your-store (7) | 0 | 2 | 6.5 | Leave — pos 6.5 is page 1 |
+| your-store-already-has-a-mood (6) | 0 | 2 | 8.0 | Leave |
+| the-metrics-your-audio-environment-should-be-producing (8) | 0 | 2 | 8.5 | Leave |
+| read-the-lyrics-on-your-speakers-right-now (8) | 0 | 1 | 4.0 | Leave — pos 4 |
+| why-background-music-costs-you-sales (6) | 0 | 1 | 5.0 | Leave |
+| sound-check-music-selling-against-you (6) | 0 | 1 | 6.0 | Leave |
+| why-your-best-customers-leave-faster-than-they-should (9) | 0 | 1 | 7.0 | Leave |
+| what-your-music-is-saying-about-your-brand (8) | 0 | 1 | 8.0 | Leave |
+| sound-check-music-is-a-variable (6) | 0 | 1 | 10.0 | Leave |
+
+The remaining 19 long-slug posts have **0 impressions** in the 6-week window. They could be renamed risk-free, but the upside is small (slug length is a weak ranking signal compared to title/H1/content), and each rename costs a redirect stub. Recommendation: leave them alone unless we revisit content quality.
+
+**Net: 1 slug rename worth doing.** `luxury-priming-...-use-it` (16 words) → `luxury-priming-for-non-luxury-brands` (5 words). All others stay.
+
+### Actions executed (2026-05-05)
+
+- Renamed source dir `_src/pages/blog-luxury-priming-...-use-it/` → `_src/pages/blog-luxury-priming-for-non-luxury-brands/`.
+- Updated `slug:` and `output:` in the post's `content.yaml` / `config.json`.
+- Updated 6 internal cross-link references (4 blog posts, science page, blog listing, sitemap.xml, llms.txt).
+- Created meta-refresh + canonical stub at the old path so existing links + the GSC-indexed URL keep working.
+- Created meta-refresh stub for the 9th 404'd URL `the-multi-zone-problem-...-whole-store.html` → `tempo-controls.html` (multi-zone is not a product offering, per Daniel).
+- The 7 pre-existing orphan stubs left as-is (already correct).
+
+---
+
 ## Cross-Linking Note
 
 C5 (internal blog cross-links) is now passing 92/92. **Caveat:** the audit detection counts any `href="../blog/...html"` reference, including those auto-generated by the `related` block in the YAML schema. The structured renderer adds 3 related posts to every page automatically. This is good for crawl depth but not as strong a signal as in-body editorial cross-links. Editorial in-body cross-links inside `prose` blocks would strengthen topical authority further.
