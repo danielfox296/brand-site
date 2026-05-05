@@ -30,7 +30,7 @@ sections:
 
   - type: subhead
     level: 2
-    text: "The Expensive Report Nobody Acts On"
+    text: "Why doesn't anyone act on the sensor data?"
 
   - type: prose
     body: |

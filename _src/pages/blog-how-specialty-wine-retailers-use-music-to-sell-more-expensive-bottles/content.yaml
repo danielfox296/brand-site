@@ -27,7 +27,7 @@ sections:
 
   - type: subhead
     level: 2
-    text: "The wine study that ought to be famous"
+    text: "Can music actually shift which bottles customers buy?"
 
   - type: prose
     body: |

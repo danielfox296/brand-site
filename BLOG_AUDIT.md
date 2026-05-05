@@ -13,7 +13,7 @@
 | C1: Title under 60 chars | 92/92 | 0/92 | 100% |
 | C2: Meta description present and ≤155 chars | 92/92 | 0/92 | 100% |
 | C3: Clear/direct opening (not narrative) | 92/92 | 0/92 | 100% |
-| C4: At least one H2 phrased as a question | 32/92 | 60/92 | 35% |
+| C4: At least one H2 phrased as a question | 42/92 | 50/92 | 46% |
 | C5: At least 2 internal blog cross-links | 92/92 | 0/92 | 100% |
 | C6: At least 1 core page link | 92/92 | 0/92 | 100% |
 | C7: Contains data point / statistic | 92/92 | 0/92 | 100% |
@@ -151,7 +151,21 @@ All titles rewritten in this audit pass to fit ≤60 chars while preserving keyw
 | `cfos-case-for-retail-audio` | Which P&L lines does retail audio actually move? |
 | `next-retail-tech-acquisition` | Why will the next big retail tech acquisition be in audio? |
 
-**60 posts still need a question subhead.** Continue in batches of ~10.
+### Batch 4 (employees / premium / measurement / strategy / verticals / testing)
+| Slug | Question H2 added |
+|:-----|:------------------|
+| `employees-hear-it` | Why does your staff keep turning off the music? |
+| `how-to-make-your-store-sound-premium` | What makes a store actually sound premium? |
+| `how-to-measure-if-your-store-music-is-working` | How do you know if your store music is working? |
+| `in-store-music-strategy` | What's the difference between song selection and music strategy? |
+| `in-store-audio-advertising-vs-audio-strategy` | What's the difference between audio advertising and audio strategy? |
+| `luxury-priming-is-real-and-you-dont-have-to-be-a-luxury-brand-to-use-it` | Does luxury-style music really make shoppers spend more? |
+| `major-key` | Does happy music actually make customers spend more? |
+| `how-specialty-wine-retailers-use-music-to-sell-more-expensive-bottles` | Can music actually shift which bottles customers buy? |
+| `fleet-learning` | How do you run controlled tests across multiple stores? |
+| `closing-the-loop-on-retail-analytics` | Why doesn't anyone act on the sensor data? |
+
+**50 posts still need a question subhead.** Continue in batches of ~10.
 
 ---
 
