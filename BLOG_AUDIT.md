@@ -1,319 +1,142 @@
 # Entuned Blog SEO Audit Report
 
-**Date:** March 2026  
-**Total posts audited:** 39  
-**All 39 posts have content (no stubs).**
+**Date:** May 2026 (re-run; supersedes the March 2026 audit)
+**Total posts audited:** 92 source posts (`_src/pages/blog-*`)
+**Note:** 7 orphan built files exist with no source dir — see "Orphaned built files" below.
 
 ---
 
-## Executive Summary
+## Executive Summary (post-fix)
 
 | Checklist Item | Pass | Fail | Rate |
 |:---|:---:|:---:|:---:|
-| C1: Title under 60 chars | 22/39 | 17/39 | 56% |
-| C2: Meta description present and <= 155 chars | 16/39 | 23/39 | 41% |
-| C3: Clear/direct opening (not narrative) | 20/39 | 19/39 | 51% |
-| C4: At least one H2 phrased as a question | 5/39 | 34/39 | 12% |
-| C5: At least 2 internal blog cross-links | 5/39 | 34/39 | 12% |
-| C6: At least 1 core page link | 34/39 | 5/39 | 87% |
-| C7: Contains data point / statistic | 33/39 | 6/39 | 84% |
-| C8: CTA at end of post | 34/39 | 5/39 | 87% |
-| C9: URL slug clean, <= 5 words | 24/39 | 15/39 | 61% |
+| C1: Title under 60 chars | 63/92 | 29/92 | 68% |
+| C2: Meta description present and ≤155 chars | 92/92 | 0/92 | 100% |
+| C3: Clear/direct opening (not narrative) | 92/92 | 0/92 | 100% |
+| C4: At least one H2 phrased as a question | 0/92 | 92/92 | 0% |
+| C5: At least 2 internal blog cross-links | 92/92 | 0/92 | 100% |
+| C6: At least 1 core page link | 92/92 | 0/92 | 100% |
+| C7: Contains data point / statistic | 92/92 | 0/92 | 100% |
+| C8: CTA at end of post | 92/92 | 0/92 | 100% |
+| C9: URL slug clean, ≤5 words | 57/92 | 35/92 | 61% |
 
-### Critical Site-Wide Gaps
+### Just-applied (this audit pass)
 
-1. **Internal blog cross-linking:** Only 5 of 39 posts link to other blog posts (the 5 newer SEO-optimized posts). The other 34 posts are completely isolated -- zero blog-to-blog links.
-2. **Question-phrased H2s:** Only 5 of 39 posts have any H2 phrased as a question. The other 34 miss featured-snippet eligibility entirely.
-3. **Missing meta descriptions:** 16 posts have no meta description at all.
-4. **Long URL slugs:** 15 posts have slugs exceeding 5 words (some as long as 16 words).
-5. **Narrative openings:** 19 posts open with anecdotes, stories, or scene-setting rather than a clear topical statement.
+- **Standardized 89 title suffixes** to ` | Entuned` (per VOICE.md), retiring ` — Entuned Blog` and ` | Entuned Blog`. Saved 6 chars per title; 9 titles dropped under 60 chars as a result.
+- **Trimmed 31 over-length meta descriptions** to ≤155 chars at sentence boundaries. C2 now 100%.
 
----
+### Critical Site-Wide Gaps (still open)
 
-## Full Audit Table
-
-P = Pass, F = Fail
-
-| # | Slug | Title Len | Meta Len | C1 | C2 | C3 | C4 | C5 | C6 | C7 | C8 | C9 | Fails |
-|--:|:-----|----------:|---------:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|------:|
-| 1 | after-ninety-days | 45 | 135 | P | P | F | F | F | P | P | P | P | 3 |
-| 2 | ai-generated-music-retail | 68 | -- | F | F | P | F | F | F | P | F | P | 6 |
-| 3 | ai-vs-traditional-retail-music | 48 | 138 | P | P | P | P | P | P | P | P | P | 0 |
-| 4 | cfos-case-for-retail-audio | 41 | -- | P | F | P | F | F | P | P | P | P | 3 |
-| 5 | employees-hear-it | 56 | 135 | P | P | F | F | F | P | F | P | P | 4 |
-| 6 | fleet-learning | 47 | 152 | P | P | F | F | F | P | P | P | P | 3 |
-| 7 | how-specialty-wine-retailers-use-music-to-... | 84 | -- | F | F | F | F | F | P | P | P | F | 6 |
-| 8 | longer-visits | 73 | 150 | F | P | F | F | F | P | P | P | P | 4 |
-| 9 | luxury-priming-is-real-and-you-dont-have-t... | 89 | -- | F | F | F | F | F | P | P | P | F | 6 |
-| 10 | major-key | 54 | 159 | P | F | P | F | F | P | P | P | P | 3 |
-| 11 | measure-roi-retail-music | 55 | 134 | P | P | P | P | P | P | P | P | P | 0 |
-| 12 | milliman-study | 71 | 170 | F | F | P | F | F | P | P | P | P | 4 |
-| 13 | music-was-never-made-for-your-store | 50 | -- | P | F | F | F | F | P | F | P | F | 6 |
-| 14 | next-retail-tech-acquisition | 72 | 98 | F | P | P | F | F | P | P | P | P | 3 |
-| 15 | psychographic-profiling-retail | 65 | -- | F | F | P | F | F | F | P | F | P | 6 |
-| 16 | retail-atmospherics-2026 | 55 | 127 | P | P | P | P | P | P | P | P | P | 0 |
-| 17 | science-of-tempo-retail | 64 | -- | F | F | P | F | F | F | P | F | P | 6 |
-| 18 | seamless-playback | 44 | 139 | P | P | F | F | F | P | F | P | P | 4 |
-| 19 | sound-designer | 83 | 143 | F | P | F | F | F | P | F | P | P | 5 |
-| 20 | store-manager-problem | 40 | 157 | P | F | F | F | F | P | F | P | P | 5 |
-| 21 | tempo-controls | 88 | 140 | F | P | P | F | F | P | P | P | P | 3 |
-| 22 | tempo-volume-free | 60 | 149 | P | P | P | F | F | P | P | P | P | 2 |
-| 23 | the-8-12-youre-leaving-on-the-table | 52 | -- | P | F | F | F | F | P | P | P | F | 5 |
-| 24 | the-dwell-time-variable-nobodys-tracking | 56 | -- | P | F | P | F | F | P | P | P | F | 4 |
-| 25 | the-hidden-cost-of-your-licensing-fee | 52 | -- | P | F | P | F | F | P | P | P | F | 4 |
-| 26 | the-metrics-your-audio-environment-should-... | 69 | -- | F | F | P | F | F | P | P | P | F | 5 |
-| 28 | the-real-cost-of-retail-music | 44 | -- | P | F | P | F | F | P | P | P | F | 4 |
-| 29 | the-silent-brand-signal | 38 | -- | P | F | F | F | F | P | P | P | P | 4 |
-| 30 | volume-knob | 90 | 126 | F | P | P | F | F | P | F | P | P | 4 |
-| 31 | what-are-flow-factors | 45 | 148 | P | P | P | P | P | P | P | P | P | 0 |
-| 32 | what-church-concert-halls-and-film-compose... | 86 | -- | F | F | F | F | F | P | P | P | F | 6 |
-| 33 | what-happens-to-employee-performance-when-... | 75 | -- | F | F | F | F | F | P | P | P | F | 6 |
-| 34 | what-is-entuned | 51 | 140 | P | P | P | P | P | P | P | P | P | 0 |
-| 35 | what-spotify-gets-wrong | 54 | -- | P | F | P | F | F | F | P | F | P | 5 |
-| 36 | what-your-music-is-saying-about-your-brand | 57 | -- | P | F | F | F | F | P | P | P | F | 5 |
-| 37 | why-background-music-costs-you-sales | 64 | -- | F | F | F | F | F | F | P | F | F | 8 |
-| 38 | why-your-best-customers-leave-faster-than-... | 68 | -- | F | F | F | F | F | P | P | P | F | 6 |
-| 39 | your-store-already-has-a-mood | 44 | 153 | P | P | F | F | F | P | P | P | F | 4 |
+1. **Question-phrased H2s: 0/92.** The YAML schema renderer correctly emits H2s from `subhead` blocks, but every post uses declarative subheads. Adding one question-phrased H2 per post (e.g., "How does this affect sales?", "What should retailers do?") unlocks featured-snippet eligibility across the entire corpus.
+2. **29 titles still over 60 chars.** Suffix standardization alone wasn't enough for the longest ones — they need actual rewrites. List below.
+3. **35 long URL slugs (>5 words).** Fixing requires 301 redirects and is lower priority than the above.
+4. **7 orphaned built files** with no source dir. They predate the YAML schema migration, are missing OG tags, Article schema, and won't survive a clean rebuild.
 
 ---
 
-## C1: Title Length Detail
+## Phase 0 Technical SEO — Status
 
-**17 of 39 titles exceed 60 characters:**
+| Check | Pass rate | Notes |
+|:---|---:|:---|
+| `<link rel="canonical">` | 112/112 (100%) | Clean |
+| `og:title` / `og:description` / `og:image` / `og:url` | 105/112 (93%) | Missing only on 7 orphan files |
+| Twitter Card tags | 105/112 (93%) | Same as above |
+| `Article` schema (blog posts) | 92/99 (93%) | Same as above |
+| `Organization` schema | 105/112 (93%) | Same as above |
+| `robots.txt` AI-crawler-friendly | ✓ | GPTBot, ClaudeBot, PerplexityBot, Google-Extended explicitly allowed |
+| `sitemap.xml` | 119 URLs | Indexed at `https://entuned.co/sitemap.xml` |
 
-| Slug | Full Title Tag | Chars |
-|:-----|:---------------|------:|
-| volume-knob | Your Volume Knob Is a Free Lever. You're Probably Pulling It the Wrong Way. — Entuned Blog | **90** |
-| luxury-priming-is-real-and-you-dont-have-to-be-a-luxury-brand-to-use-it | Luxury Priming Is Real — And You Don't Have to Be a Luxury Brand to Use It — Entuned Blog | **89** |
-| tempo-controls | Tempo Controls Your Customers' Bodies. It Does Not Control Their Wallets. — Entuned Blog | **88** |
-| what-church-concert-halls-and-film-composers-know-that-retail-doesnt | What Church, Concert Halls, and Film Composers Know That Retail Doesn't — Entuned Blog | **86** |
-| how-specialty-wine-retailers-use-music-to-sell-more-expensive-bottles | How Specialty Wine Retailers Use Music to Sell More Expensive Bottles — Entuned Blog | **84** |
-| sound-designer | You Hired a Lighting Designer. Why Didn't You Hire a Sound Designer? — Entuned Blog | **83** |
-| what-happens-to-employee-performance-when-the-music-is-right | What Happens to Employee Performance When the Music Is Right — Entuned Blog | **75** |
-| longer-visits | Why Longer Visits Don't Automatically Mean Bigger Receipts — Entuned Blog | **73** |
-| next-retail-tech-acquisition | Why the Next Big Retail Tech Acquisition Will Be in Audio — Entuned Blog | **72** |
-| milliman-study | The Most Famous Study in Retail Music Is Wrong. Sort Of. — Entuned Blog | **71** |
-| the-metrics-your-audio-environment-should-be-producing | The Metrics Your Audio Environment Should Be Producing — Entuned Blog | **69** |
-| ai-generated-music-retail | AI-Generated Music for Retail: What's Real and What's Hype | Entuned | **68** |
-| why-your-best-customers-leave-faster-than-they-should | Why Your Best Customers Leave Faster Than They Should — Entuned Blog | **68** |
-| psychographic-profiling-retail | Psychographic Profiling for Retail: Beyond Demographics | Entuned | **65** |
-| science-of-tempo-retail | The Science of Tempo: How BPM Controls Retail Behavior | Entuned | **64** |
-| why-background-music-costs-you-sales | Why Your Store's Background Music Is Costing You Sales | Entuned | **64** |
+**Tech SEO is in good shape.** The only concrete gap is the 7 orphaned built files.
 
 ---
 
-## C2: Meta Description Detail
+## Orphaned Built Files (no source dir)
 
-**20 posts missing meta descriptions entirely.**  
-**3 posts exceed 155 characters.**
+These 7 files exist in `/blog/` on disk but have no corresponding `_src/pages/blog-*` directory. They predate the structured-YAML migration, lack OG tags + Article schema, and will be deleted on a clean build.
 
-### Missing Meta Descriptions
+- `everything-designed-except-music.html`
+- `retail-dwell-time.html`
+- `the-hidden-cost-of-your-licensing-fee.html`
+- `the-silent-brand-signal.html`
+- `three-ways-to-think-about-what-your-store-cant-do-yet.html`
+- `volume-knob.html`
+- `what-spotify-gets-wrong.html`
 
-- `ai-generated-music-retail`
-- `cfos-case-for-retail-audio`
-- `how-specialty-wine-retailers-use-music-to-sell-more-expensive-bottles`
-- `luxury-priming-is-real-and-you-dont-have-to-be-a-luxury-brand-to-use-it`
-- `music-was-never-made-for-your-store`
-- `psychographic-profiling-retail`
-- `science-of-tempo-retail`
-- `the-8-12-youre-leaving-on-the-table`
-- `the-dwell-time-variable-nobodys-tracking`
-- `the-hidden-cost-of-your-licensing-fee`
-- `the-metrics-your-audio-environment-should-be-producing`
-- `the-real-cost-of-retail-music`
-- `the-silent-brand-signal`
-- `what-church-concert-halls-and-film-composers-know-that-retail-doesnt`
-- `what-happens-to-employee-performance-when-the-music-is-right`
-- `what-spotify-gets-wrong`
-- `what-your-music-is-saying-about-your-brand`
-- `why-background-music-costs-you-sales`
-- `why-your-best-customers-leave-faster-than-they-should`
-
-### Over-Length Meta Descriptions
-
-- `major-key` (159 chars): "Positive valence and commercial effectiveness are not the same thing. Mild negat..."
-- `milliman-study` (170 chars): "Milliman's 38% sales lift from slow music is the most cited finding in retail mu..."
-- `store-manager-problem` (157 chars): "Ten locations, ten managers, ten different soundtracks. The brand has a Pantone ..."
+**Recommended action:** for each, either (a) recreate the source dir using the YAML schema, or (b) delete and 301-redirect to the closest topical replacement. Decision needed from Daniel.
 
 ---
 
-## C3: Opening Paragraph Analysis
+## C1: Titles Still Over 60 Characters (29 remaining)
 
-- **Clear/direct opening:** 20 posts
-- **Narrative/anecdotal opening:** 19 posts
+Sorted by length descending. These need genuine rewrites — suffix normalization alone wasn't enough.
 
-### Posts with Narrative Openings
-
-- `after-ninety-days`
-- `employees-hear-it`
-- `fleet-learning`
-- `how-specialty-wine-retailers-use-music-to-sell-more-expensive-bottles`
-- `longer-visits`
-- `luxury-priming-is-real-and-you-dont-have-to-be-a-luxury-brand-to-use-it`
-- `music-was-never-made-for-your-store`
-- `seamless-playback`
-- `sound-designer`
-- `store-manager-problem`
-- `the-8-12-youre-leaving-on-the-table`
-- `the-silent-brand-signal`
-- `what-church-concert-halls-and-film-composers-know-that-retail-doesnt`
-- `what-happens-to-employee-performance-when-the-music-is-right`
-- `what-your-music-is-saying-about-your-brand`
-- `why-background-music-costs-you-sales`
-- `why-your-best-customers-leave-faster-than-they-should`
-- `your-store-already-has-a-mood`
-
-These posts should add a 1-2 sentence definition or direct statement as the very first paragraph, before the narrative. Search engines use the opening for featured snippets and passage ranking.
-
----
-
-## C4: H2 Subheading Questions
-
-**5 of 39 posts have question-phrased H2s:**
-
-- `ai-vs-traditional-retail-music`: ['How Do Licensing Economics Compare?', 'What Should Retailers Evaluate?']
-- `measure-roi-retail-music`: ["How Does Entuned's Approach Differ?", 'What If You Are Not Ready for a Full Measurement Program?']
-- `retail-atmospherics-2026`: ['What Is Changing in 2026?', "What Does the Research Say About Audio's Impact?", 'Who Is Closing the Gap?', 'What Should Retail Leaders Do Now?']
-- `what-are-flow-factors`: ['Why Do Flow Factors Exist?', 'Why 31 Factors? Not 5, Not 100?', 'What Are Examples of Flow Factors?', 'How Do Flow Factors Map to Behavioral Outcomes?', 'Why Does This Framework Matter for Retail?']
-- `what-is-entuned`: ['What Does Entuned Do?', 'How Does the Technology Work?', 'What Research Is Entuned Built On?', 'Who Founded Entuned and Why?', 'How Is Entuned Different From Existing Retail Music Providers?', 'What Stage Is the Company At?']
-
-**13 posts have zero H2 subheadings at all** (single-block essays with no structure):
-
-- `how-specialty-wine-retailers-use-music-to-sell-more-expensive-bottles`
-- `luxury-priming-is-real-and-you-dont-have-to-be-a-luxury-brand-to-use-it`
-- `music-was-never-made-for-your-store`
-- `the-8-12-youre-leaving-on-the-table`
-- `the-dwell-time-variable-nobodys-tracking`
-- `the-hidden-cost-of-your-licensing-fee`
-- `the-metrics-your-audio-environment-should-be-producing`
-- `the-silent-brand-signal`
-- `what-church-concert-halls-and-film-composers-know-that-retail-doesnt`
-- `what-happens-to-employee-performance-when-the-music-is-right`
-- `what-your-music-is-saying-about-your-brand`
-- `why-your-best-customers-leave-faster-than-they-should`
+| Slug | Current Title | Len |
+|:-----|:--------------|---:|
+| `music-already-talking-to-customers` | Your Music Is Already Talking to Your Customers. The Question Is What It's Saying. \| Entuned | 92 |
+| `retail-music-licensing-2026` | Retail Music Licensing in 2026: ASCAP, BMI, SESAC for Multi-Location Retailers \| Entuned | 88 |
+| `the-familiarity-trap` | The Familiarity Trap: Why Recognizable Music Sends Your Customers Home Early \| Entuned | 86 |
+| `ai-music-for-business-2026` | AI Music for Business in 2026: What Works, What Doesn't, and What to Watch \| Entuned | 84 |
+| `what-church-concert-halls-and-film-composers-know-that-retail-doesnt` | What Churches, Concert Halls, and Film Composers Know That Retail Doesn't \| Entuned | 83 |
+| `luxury-priming-is-real-and-you-dont-have-to-be-a-luxury-brand-to-use-it` | Luxury Priming Is Real: How Background Music Shifts What Customers Spend \| Entuned | 82 |
+| `commercial-music-services-compared` | Alternatives to Mood Media in 2026: Commercial Music Services Compared \| Entuned | 80 |
+| `sound-designer` | You Hired a Lighting Designer. Why Didn't You Hire a Sound Designer? \| Entuned | 78 |
+| `music-for-boutique-clothing-stores` | Music for Boutiques: What Should Your Store Actually Sound Like? \| Entuned | 74 |
+| `sensory-marketing-for-retail` | Sensory Marketing for Retail: Where Sound Fits in the Strategy \| Entuned | 72 |
+| `sound-check-close-the-loop` | Sound Check: How Do You Know If Your Music Is Hurting Sales? \| Entuned | 70 |
+| `what-happens-to-employee-performance-when-the-music-is-right` | What Happens to Employee Performance When the Music Is Right \| Entuned | 70 |
+| `how-to-choose-music-for-your-retail-store` | How to Choose Music for Your Retail Store: A Complete Guide \| Entuned | 69 |
+| `ai-generated-music-retail` | AI-Generated Music for Retail: What's Real and What's Hype \| Entuned | 68 |
+| `closing-the-loop-on-retail-analytics` | How to Get More Out of the Sensor Data You Already Pay For \| Entuned | 68 |
+| `mood-media-alternatives` | Mood Media Alternatives in 2026: A Retail Operator's Guide \| Entuned | 68 |
+| `science-of-tempo-retail` | The Science of Tempo in Retail: What BPM Actually Controls \| Entuned | 68 |
+| `tuesday-vs-saturday-traffic` | Tuesday vs. Saturday Traffic: What Your Data Actually Says \| Entuned | 68 |
+| `mall-vs-street-location` | Mall vs. Street: Making the Same Brand Feel Right in Both \| Entuned | 67 |
+| `next-retail-tech-acquisition` | Why the Next Big Retail Tech Acquisition Will Be in Audio \| Entuned | 67 |
+| `retail-designed-everything` | Retail Designed Everything Except the Most Powerful Thing \| Entuned | 67 |
+| `multi-location-music-management` | Multi-Location Music: Why Every Store Sounds Different \| Entuned | 64 |
+| `music-provider-doesnt-know-retailnext` | Your Music Provider Doesn't Know What RetailNext Knows \| Entuned | 64 |
+| `the-metrics-your-audio-environment-should-be-producing` | The Metrics Your Audio Environment Should Be Producing \| Entuned | 64 |
+| `why-background-music-costs-you-sales` | Why Your Store's Background Music Is Costing You Sales \| Entuned | 64 |
+| `why-your-best-customers-leave-faster-than-they-should` | Why Your Best Customers Leave Faster Than They Should \| Entuned | 63 |
+| `employees-hear-it` | How Do I Get My Staff to Stop Turning Off the Music? \| Entuned | 62 |
+| `how-specialty-wine-retailers-use-music-to-sell-more-expensive-bottles` | How Wine Retailers Use Music to Sell Premium Bottles \| Entuned | 62 |
+| `retail-atmospherics-2026` | What Your Store Sounds Like in the First 10 Seconds \| Entuned | 61 |
 
 ---
 
-## C5 & C6: Internal Linking
+## C4: Question-Phrased H2s — Site-Wide Gap
 
-**Blog cross-links (C5):** 5 of 39 posts have 2+ internal blog links:
+**0 of 92 posts** have an H2 phrased as a question. The YAML schema's `subhead` blocks render correctly as H2 elements; the issue is purely editorial — every post uses declarative subheads.
 
-- `ai-vs-traditional-retail-music`: 7 links to ['../blog/what-is-entuned.html', '../blog/what-are-flow-factors.html', '../blog/employees-hear-it.html', '../blog/measure-roi-retail-music.html', '../blog/the-metrics-your-audio-environment-should-be-producing.html', '../blog/the-hidden-cost-of-your-licensing-fee.html', '../blog/after-ninety-days.html']
-- `measure-roi-retail-music`: 3 links to ['../blog/the-dwell-time-variable-nobodys-tracking.html', '../blog/what-are-flow-factors.html', '../blog/tempo-controls.html']
-- `retail-atmospherics-2026`: 4 links to ['../blog/tempo-controls.html', '../blog/what-is-entuned.html', '../blog/what-are-flow-factors.html', '../blog/measure-roi-retail-music.html']
-- `what-are-flow-factors`: 3 links to ['../blog/tempo-controls.html', '../blog/science-of-tempo-retail.html', '../blog/cfos-case-for-retail-audio.html']
-- `what-is-entuned`: 5 links to ['../blog/what-are-flow-factors.html', '../blog/the-dwell-time-variable-nobodys-tracking.html', '../blog/ai-vs-traditional-retail-music.html']
+**Recommended approach:** add one question-phrased subhead per post. Examples:
+- "Does music actually affect sales?"
+- "How do you measure if your music is working?"
+- "What should retailers do this week?"
+- "Why does this matter for multi-store operators?"
 
-**The other 34 posts have zero blog-to-blog cross-links.** This is the single biggest structural SEO problem.
-
-**Core page links (C6):** 5 posts missing links to core pages:
-
-- `ai-generated-music-retail`
-- `psychographic-profiling-retail`
-- `science-of-tempo-retail`
-- `what-spotify-gets-wrong`
-- `why-background-music-costs-you-sales`
-
-### Recommended Cross-Linking Clusters
-
-- **Tempo/dwell:** `tempo-controls`, `science-of-tempo-retail`, `longer-visits`, `milliman-study`, `the-dwell-time-variable-nobodys-tracking`
-- **Brand/identity:** `the-silent-brand-signal`, `what-your-music-is-saying-about-your-brand`, `music-was-never-made-for-your-store`, `your-store-already-has-a-mood`
-- **ROI/business:** `cfos-case-for-retail-audio`, `the-real-cost-of-retail-music`, `the-hidden-cost-of-your-licensing-fee`, `the-8-12-youre-leaving-on-the-table`, `measure-roi-retail-music`
-- **Employees:** `employees-hear-it`, `what-happens-to-employee-performance-when-the-music-is-right`, `store-manager-problem`
-- **Technology:** `ai-generated-music-retail`, `what-spotify-gets-wrong`, `fleet-learning`, `seamless-playback`, `ai-vs-traditional-retail-music`
-- **Luxury/psych:** `luxury-priming-is-real...`, `major-key`, `psychographic-profiling-retail`, `how-specialty-wine-retailers...`
+This is a manual content edit per post, not a mechanical fix. Given the 92-post corpus, recommend doing 8-10 posts per session. Prioritize the model posts (`what-is-entuned`, `retail-atmospherics-2026`, `measure-roi-retail-music`, `what-are-flow-factors`) and the highest-traffic SEO targets (`can-you-play-spotify-in-your-store`, `mood-media-alternatives`, `how-to-choose-music-for-your-retail-store`, `retail-music-licensing-2026`).
 
 ---
 
-## C7: Data Points / Statistics
+## C9: Long URL Slugs (35)
 
-**6 posts lack specific data, statistics, or research citations:**
-
-- `employees-hear-it`
-- `music-was-never-made-for-your-store`
-- `seamless-playback`
-- `sound-designer`
-- `store-manager-problem`
-- `volume-knob`
+Fixing slugs requires 301 redirects (Bowie config update) and risks losing existing rankings on already-indexed posts. **Defer until search-console data shows which posts are getting impressions** — fix only the underperformers.
 
 ---
 
-## C8: CTA at End of Post
+## Cross-Linking Note
 
-**5 posts missing a CTA:**
-
-- `ai-generated-music-retail`
-- `psychographic-profiling-retail`
-- `science-of-tempo-retail`
-- `what-spotify-gets-wrong`
-- `why-background-music-costs-you-sales`
+C5 (internal blog cross-links) is now passing 92/92. **Caveat:** the audit detection counts any `href="../blog/...html"` reference, including those auto-generated by the `related` block in the YAML schema. The structured renderer adds 3 related posts to every page automatically. This is good for crawl depth but not as strong a signal as in-body editorial cross-links. Editorial in-body cross-links inside `prose` blocks would strengthen topical authority further.
 
 ---
 
-## C9: URL Slug Length
+## Priority Order for Next Session
 
-**15 slugs exceed 5 words:**
-
-| Current Slug | Words | Suggested Revision |
-|:-------------|:-----:|:-------------------|
-| `luxury-priming-is-real-and-you-dont-have-to-be-a-luxury-brand-to-use-it` | 16 | `luxury-priming-retail` |
-| `how-specialty-wine-retailers-use-music-to-sell-more-expensive-bottles` | 11 | `wine-music-premium-sales` |
-| `what-church-concert-halls-and-film-composers-know-that-retail-doesnt` | 11 | `sound-design-retail` |
-| `what-happens-to-employee-performance-when-the-music-is-right` | 10 | `employee-music-performance` |
-| `why-your-best-customers-leave-faster-than-they-should` | 9 | `customers-leave-too-fast` |
-| `the-8-12-youre-leaving-on-the-table` | 8 | `revenue-left-on-table` |
-| `the-metrics-your-audio-environment-should-be-producing` | 8 | `retail-audio-metrics` |
-| `what-your-music-is-saying-about-your-brand` | 8 | `music-brand-signal` |
-| `music-was-never-made-for-your-store` | 7 | `music-not-for-retail` |
-| `the-hidden-cost-of-your-licensing-fee` | 7 | `hidden-licensing-cost` |
-| `the-dwell-time-variable-nobodys-tracking` | 6 | `dwell-time-variable` |
-| `the-real-cost-of-retail-music` | 6 | `real-cost-retail-music` |
-| `why-background-music-costs-you-sales` | 6 | `background-music-cost` |
-| `your-store-already-has-a-mood` | 6 | `store-mood-music` |
-
-Note: Changing slugs requires 301 redirects from the old URLs.
+1. **Question-H2 conversion** — pick 10 highest-traffic posts, add one question subhead to each.
+2. **Title rewrites** — the 29 still-long titles. Many can be tightened by removing throat-clearing ("Why Your Store's Background Music Is Costing You Sales" → "How Background Music Costs You Sales").
+3. **Resolve the 7 orphaned files** — recreate or 301-redirect.
+4. **Slug cleanup** — only after GSC data tells us which posts are actually ranking.
 
 ---
 
-## Priority Recommendations
-
-### Tier 1: Site-Wide Fixes (do once, improves all posts)
-
-1. **Add 2-3 internal blog cross-links to every post.** 34 of 39 posts have zero. Use the topic clusters above. This is the highest-impact single fix for topical authority and crawl depth.
-2. **Add one question-phrased H2 to every post.** 34 of 39 posts have none. Convert an existing H2 or add one. Examples: "How Does Tempo Affect Sales?", "What Does This Mean for Retailers?", "Why Does This Matter?"
-3. **Write meta descriptions for the 16 posts missing them.** Under 155 chars, include primary keyword, write for click-through.
-
-### Tier 2: Worst-Performing Posts (6+ failures)
-
-- **`why-background-music-costs-you-sales`** (8 failures): title 64ch; no meta; narrative opening; no H2?; no blog links; no core link; no CTA; slug 6w
-- **`ai-generated-music-retail`** (6 failures): title 68ch; no meta; no H2?; no blog links; no core link; no CTA
-- **`how-specialty-wine-retailers-use-music-to-sell-more-expensive-bottles`** (6 failures): title 84ch; no meta; narrative opening; no H2?; no blog links; slug 11w
-- **`luxury-priming-is-real-and-you-dont-have-to-be-a-luxury-brand-to-use-it`** (6 failures): title 89ch; no meta; narrative opening; no H2?; no blog links; slug 16w
-- **`music-was-never-made-for-your-store`** (6 failures): no meta; narrative opening; no H2?; no blog links; no stats; slug 7w
-- **`psychographic-profiling-retail`** (6 failures): title 65ch; no meta; no H2?; no blog links; no core link; no CTA
-- **`science-of-tempo-retail`** (6 failures): title 64ch; no meta; no H2?; no blog links; no core link; no CTA
-- **`what-church-concert-halls-and-film-composers-know-that-retail-doesnt`** (6 failures): title 86ch; no meta; narrative opening; no H2?; no blog links; slug 11w
-- **`what-happens-to-employee-performance-when-the-music-is-right`** (6 failures): title 75ch; no meta; narrative opening; no H2?; no blog links; slug 10w
-- **`why-your-best-customers-leave-faster-than-they-should`** (6 failures): title 68ch; no meta; narrative opening; no H2?; no blog links; slug 9w
-
-### Tier 3: Quick Wins (2-3 failures)
-
-- **`tempo-volume-free`** (2): no H2?; no blog links
-- **`after-ninety-days`** (3): narrative opening; no H2?; no blog links
-- **`cfos-case-for-retail-audio`** (3): no meta; no H2?; no blog links
-- **`fleet-learning`** (3): narrative opening; no H2?; no blog links
-- **`major-key`** (3): meta 159ch; no H2?; no blog links
-- **`next-retail-tech-acquisition`** (3): title 72ch; no H2?; no blog links
-- **`tempo-controls`** (3): title 88ch; no H2?; no blog links
-
-### Model Posts (0 failures -- use as templates)
-
-- **`ai-vs-traditional-retail-music`**: Has question H2s, internal cross-links (7 blog links), meta description, CTA, data points, clean slug.
-- **`measure-roi-retail-music`**: Has question H2s, internal cross-links (3 blog links), meta description, CTA, data points, clean slug.
-- **`retail-atmospherics-2026`**: Has question H2s, internal cross-links (4 blog links), meta description, CTA, data points, clean slug.
-- **`what-are-flow-factors`**: Has question H2s, internal cross-links (3 blog links), meta description, CTA, data points, clean slug.
-- **`what-is-entuned`**: Has question H2s, internal cross-links (5 blog links), meta description, CTA, data points, clean slug.
-
----
-
-*Automated SEO audit. Manual review recommended for keyword-targeting depth, image alt text, and content quality beyond structural checks.*
+*Audit run: 2026-05-05. Script: `/tmp/blog_audit.py`. Mechanical fixes applied: `/tmp/seo_mechanical_fixes.py`.*
