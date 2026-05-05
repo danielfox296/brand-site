@@ -29,7 +29,7 @@ sections:
 
   - type: subhead
     level: 2
-    text: "The Investment Gap"
+    text: "Where is the audio gap in your customer experience?"
 
   - type: stat_callout
     number: "$150-$300"

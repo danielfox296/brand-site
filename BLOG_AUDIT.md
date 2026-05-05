@@ -13,7 +13,7 @@
 | C1: Title under 60 chars | 92/92 | 0/92 | 100% |
 | C2: Meta description present and ≤155 chars | 92/92 | 0/92 | 100% |
 | C3: Clear/direct opening (not narrative) | 92/92 | 0/92 | 100% |
-| C4: At least one H2 phrased as a question | 42/92 | 50/92 | 46% |
+| C4: At least one H2 phrased as a question | 52/92 | 40/92 | 57% |
 | C5: At least 2 internal blog cross-links | 92/92 | 0/92 | 100% |
 | C6: At least 1 core page link | 92/92 | 0/92 | 100% |
 | C7: Contains data point / statistic | 92/92 | 0/92 | 100% |
@@ -165,7 +165,21 @@ All titles rewritten in this audit pass to fit ≤60 chars while preserving keyw
 | `fleet-learning` | How do you run controlled tests across multiple stores? |
 | `closing-the-loop-on-retail-analytics` | Why doesn't anyone act on the sensor data? |
 
-**50 posts still need a question subhead.** Continue in batches of ~10.
+### Batch 5 (atmospherics / flow / ROI / CX / verticals / multi-location / classic posts)
+| Slug | Question H2 added |
+|:-----|:------------------|
+| `retail-atmospherics-2026` | What does your store sound like in the first 10 seconds? |
+| `what-are-flow-factors` | Does your store's music actually matter? |
+| `the-8-12-youre-leaving-on-the-table` | How much revenue is bad music actually leaving on the table? |
+| `the-supermarket-study` | What did the supermarket music study actually prove? |
+| `the-audio-gap-in-retail-customer-experience` | Where is the audio gap in your customer experience? |
+| `music-was-never-made-for-your-store` | Who was your store's music actually made for? |
+| `what-music-to-play-in-a-high-end-store` | What music should a high-end store actually play? |
+| `mall-vs-street-location` | Should mall and street stores sound the same? |
+| `bye-bye-bye-dwell-time` | Where is your store losing dwell time? |
+| `music-already-talking-to-customers` | What is your store's music already telling customers? |
+
+**40 posts still need a question subhead.** Continue in batches of ~10.
 
 ---
 
