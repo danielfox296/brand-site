@@ -13,7 +13,7 @@
 | C1: Title under 60 chars | 92/92 | 0/92 | 100% |
 | C2: Meta description present and ≤155 chars | 92/92 | 0/92 | 100% |
 | C3: Clear/direct opening (not narrative) | 92/92 | 0/92 | 100% |
-| C4: At least one H2 phrased as a question | 72/92 | 20/92 | 78% |
+| C4: At least one H2 phrased as a question | 82/92 | 10/92 | 89% |
 | C5: At least 2 internal blog cross-links | 92/92 | 0/92 | 100% |
 | C6: At least 1 core page link | 92/92 | 0/92 | 100% |
 | C7: Contains data point / statistic | 92/92 | 0/92 | 100% |
@@ -207,7 +207,21 @@ All titles rewritten in this audit pass to fit ≤60 chars while preserving keyw
 | `sound-check-playlist-problem` | What's actually wrong with your store's playlist? |
 | `sound-check-science-youre-ignoring` | What does retail music science actually say? |
 
-**20 posts still need a question subhead.** Continue in batches of ~10.
+### Batch 8 (90-day arc / lyrics / second-sale / traffic / mood / score / producer / venues)
+| Slug | Question H2 added |
+|:-----|:------------------|
+| `after-ninety-days` | What changes after ninety days of measured audio? |
+| `read-the-lyrics-on-your-speakers-right-now` | Have you actually read the lyrics on your store speakers? |
+| `the-second-sale-you-already-made` | Are you missing the second sale you already made? |
+| `tuesday-vs-saturday-traffic` | Should Tuesday and Saturday traffic sound the same? |
+| `your-store-already-has-a-mood` | What mood is your store already broadcasting? |
+| `your-store-deserves-a-score` | Why does your store deserve a score, not a playlist? |
+| `what-a-producer-hears` | What does a music producer hear in your store that you don't? |
+| `the-nightclub-on-the-sales-floor` | Is your store running a nightclub on the sales floor? |
+| `the-sound-of-nothing` | When does silence in a store actually work? |
+| `what-jazz-musicians-hear` | What do jazz musicians hear that streaming tags miss? |
+
+**10 posts still need a question subhead.** Final batch coming.
 
 ---
 

@@ -29,7 +29,7 @@ sections:
 
   - type: subhead
     level: 2
-    text: "The customer on a Tuesday is not the customer on a Saturday"
+    text: "Should Tuesday and Saturday traffic sound the same?"
 
   - type: prose
     body: |
