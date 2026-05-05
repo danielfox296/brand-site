@@ -13,7 +13,7 @@
 | C1: Title under 60 chars | 92/92 | 0/92 | 100% |
 | C2: Meta description present and ≤155 chars | 92/92 | 0/92 | 100% |
 | C3: Clear/direct opening (not narrative) | 92/92 | 0/92 | 100% |
-| C4: At least one H2 phrased as a question | 62/92 | 30/92 | 67% |
+| C4: At least one H2 phrased as a question | 72/92 | 20/92 | 78% |
 | C5: At least 2 internal blog cross-links | 92/92 | 0/92 | 100% |
 | C6: At least 1 core page link | 92/92 | 0/92 | 100% |
 | C7: Contains data point / statistic | 92/92 | 0/92 | 100% |
@@ -193,7 +193,21 @@ All titles rewritten in this audit pass to fit ≤60 chars while preserving keyw
 | `the-playlist-era-and-the-open-loop` | Why is the playlist era a feedback loop nobody closed? |
 | `seamless-playback` | Why do most retail playlists break the room? |
 
-**30 posts still need a question subhead.** Continue in batches of ~10.
+### Batch 7 (sensor gap / art-vs-design / measurement / sound-check series)
+| Slug | Question H2 added |
+|:-----|:------------------|
+| `2-billion-sensors-no-real-time-levers` | Why don't retail sensors translate into real-time levers? |
+| `closing-the-loop` | Why is store audio the one environment nobody measures? |
+| `difference-between-art-and-design` | What's the difference between art and design? |
+| `every-song-working-or-not` | Is every song in your store either working or hurting? |
+| `measure-what-you-ignore` | Which store-level KPIs are you not tracking yet? |
+| `sound-check-close-the-loop` | How do you know if your music is hurting sales? |
+| `sound-check-music-is-a-variable` | Is your music a managed variable or just background? |
+| `sound-check-music-selling-against-you` | Is your store music actually selling against you? |
+| `sound-check-playlist-problem` | What's actually wrong with your store's playlist? |
+| `sound-check-science-youre-ignoring` | What does retail music science actually say? |
+
+**20 posts still need a question subhead.** Continue in batches of ~10.
 
 ---
 

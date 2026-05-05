@@ -31,7 +31,7 @@ sections:
 
   - type: subhead
     level: 2
-    text: "The variables hiding in plain sight"
+    text: "Which store-level KPIs are you not tracking yet?"
     anchor: "hiding-in-plain-sight"
 
   - type: prose
