@@ -30,7 +30,7 @@ sections:
 
   - type: subhead
     level: 2
-    text: "How the drift happens"
+    text: "Why does every store sound different?"
     anchor: "drift"
 
   - type: prose

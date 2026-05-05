@@ -13,7 +13,7 @@
 | C1: Title under 60 chars | 92/92 | 0/92 | 100% |
 | C2: Meta description present and ≤155 chars | 92/92 | 0/92 | 100% |
 | C3: Clear/direct opening (not narrative) | 92/92 | 0/92 | 100% |
-| C4: At least one H2 phrased as a question | 12/92 | 80/92 | 13% |
+| C4: At least one H2 phrased as a question | 22/92 | 70/92 | 24% |
 | C5: At least 2 internal blog cross-links | 92/92 | 0/92 | 100% |
 | C6: At least 1 core page link | 92/92 | 0/92 | 100% |
 | C7: Contains data point / statistic | 92/92 | 0/92 | 100% |
@@ -105,10 +105,11 @@ All titles rewritten in this audit pass to fit ≤60 chars while preserving keyw
 
 ---
 
-## C4: Question-Phrased H2s — Conversions This Pass
+## C4: Question-Phrased H2s — Conversions Log
 
-**12 of 92 posts** now have at least one H2 phrased as a question (up from 0). Posts converted in this audit pass:
+**22 of 92 posts** now have at least one H2 phrased as a question (up from 0). Posts converted across two batches:
 
+### Batch 1 (Cluster A/B/E winners)
 | Slug | Question H2 added |
 |:-----|:------------------|
 | `can-you-play-spotify-in-your-store` | Why doesn't my Spotify subscription cover my store? |
@@ -122,7 +123,21 @@ All titles rewritten in this audit pass to fit ≤60 chars while preserving keyw
 | `get-out-of-mood-media-contract` | How do you actually exit a Mood Media contract? |
 | `psychographic-profiling-retail` | What kind of music should my store play? |
 
-**80 posts still need a question subhead.** Recommend continuing in batches of ~10 per session, prioritizing remaining cluster winners (`how-much-does-retail-music-cost`, `multi-location-music-management`, `music-for-boutique-clothing-stores`, `the-familiarity-trap`, `the-real-cost-of-retail-music`, `why-background-music-costs-you-sales`, etc.) and highest-traffic posts identified by GSC.
+### Batch 2 (cost / multi-location / vertical / AI category)
+| Slug | Question H2 added |
+|:-----|:------------------|
+| `how-much-does-retail-music-cost` | How much does retail music actually cost in 2026? |
+| `multi-location-music-management` | Why does every store sound different? |
+| `music-for-boutique-clothing-stores` | What should a boutique actually sound like? |
+| `the-familiarity-trap` | How does familiar music affect dwell time? |
+| `why-background-music-costs-you-sales` | Is your background music costing you sales? |
+| `the-real-cost-of-retail-music` | What does bad retail music actually cost you? |
+| `music-for-home-goods-stores` | What music works in a home goods store? |
+| `ai-music-for-business-2026` | What should you ask your music provider this quarter? |
+| `ai-vs-traditional-retail-music` | How should you evaluate AI vs. traditional retail music? |
+| `sensory-marketing-for-retail` | Why does retail still treat sound like a utility? |
+
+**70 posts still need a question subhead.** Continue in batches of ~10. Next priority candidates: `the-dwell-time-variable-nobodys-tracking`, `what-is-entuned`, `measure-roi-retail-music`, `the-metrics-your-audio-environment-should-be-producing`, `tempo-controls`, `tempo-volume-free`, `longer-visits`, `milliman-study`, `cfos-case-for-retail-audio`, `next-retail-tech-acquisition`.
 
 ---
 
