@@ -10,27 +10,28 @@
 
 | Checklist Item | Pass | Fail | Rate |
 |:---|:---:|:---:|:---:|
-| C1: Title under 60 chars | 63/92 | 29/92 | 68% |
+| C1: Title under 60 chars | 92/92 | 0/92 | 100% |
 | C2: Meta description present and ≤155 chars | 92/92 | 0/92 | 100% |
 | C3: Clear/direct opening (not narrative) | 92/92 | 0/92 | 100% |
-| C4: At least one H2 phrased as a question | 0/92 | 92/92 | 0% |
+| C4: At least one H2 phrased as a question | 12/92 | 80/92 | 13% |
 | C5: At least 2 internal blog cross-links | 92/92 | 0/92 | 100% |
 | C6: At least 1 core page link | 92/92 | 0/92 | 100% |
 | C7: Contains data point / statistic | 92/92 | 0/92 | 100% |
 | C8: CTA at end of post | 92/92 | 0/92 | 100% |
 | C9: URL slug clean, ≤5 words | 57/92 | 35/92 | 61% |
 
-### Just-applied (this audit pass)
+### Applied across the May 2026 audit pass
 
-- **Standardized 89 title suffixes** to ` | Entuned` (per VOICE.md), retiring ` — Entuned Blog` and ` | Entuned Blog`. Saved 6 chars per title; 9 titles dropped under 60 chars as a result.
-- **Trimmed 31 over-length meta descriptions** to ≤155 chars at sentence boundaries. C2 now 100%.
+- **Title suffix normalization:** all 89 ` — Entuned Blog` / ` | Entuned Blog` suffixes changed to ` | Entuned` (per VOICE.md).
+- **29 over-length titles rewritten** to fit ≤60 chars while preserving keyword targets. C1 now 100%.
+- **31 over-length meta descriptions trimmed** to ≤155 chars at sentence boundaries. C2 now 100%.
+- **10 priority posts** got a question-phrased subhead (Cluster A/B/C/E winners): Spotify-licensing, Mood Media alts, Mood Media exit, retail music licensing 2026, AI-generated music, commercial services compared, best background music 2026, science of tempo, how to choose music, psychographic profiling.
 
 ### Critical Site-Wide Gaps (still open)
 
-1. **Question-phrased H2s: 0/92.** The YAML schema renderer correctly emits H2s from `subhead` blocks, but every post uses declarative subheads. Adding one question-phrased H2 per post (e.g., "How does this affect sales?", "What should retailers do?") unlocks featured-snippet eligibility across the entire corpus.
-2. **29 titles still over 60 chars.** Suffix standardization alone wasn't enough for the longest ones — they need actual rewrites. List below.
-3. **35 long URL slugs (>5 words).** Fixing requires 301 redirects and is lower priority than the above.
-4. **7 orphaned built files** with no source dir. They predate the YAML schema migration, are missing OG tags, Article schema, and won't survive a clean rebuild.
+1. **Question-phrased H2s: 12/92.** 80 posts still need at least one question-phrased subhead for featured-snippet eligibility. Recommend continuing in batches of ~10 per session, prioritized by traffic.
+2. **35 long URL slugs (>5 words).** Fixing requires 301 redirects. Defer until GSC data identifies the underperforming ones.
+3. **7 orphaned built files** with no source dir. They predate the YAML schema migration, are missing OG tags, Article schema, and won't survive a clean rebuild. Decision pending: recreate or 301-redirect.
 
 ---
 
@@ -66,55 +67,62 @@ These 7 files exist in `/blog/` on disk but have no corresponding `_src/pages/bl
 
 ---
 
-## C1: Titles Still Over 60 Characters (29 remaining)
+## C1: Titles Rewrites Applied (29 of 29)
 
-Sorted by length descending. These need genuine rewrites — suffix normalization alone wasn't enough.
+All titles rewritten in this audit pass to fit ≤60 chars while preserving keyword targets. Below is the before/after record. Sorted by original length descending.
 
-| Slug | Current Title | Len |
-|:-----|:--------------|---:|
-| `music-already-talking-to-customers` | Your Music Is Already Talking to Your Customers. The Question Is What It's Saying. \| Entuned | 92 |
-| `retail-music-licensing-2026` | Retail Music Licensing in 2026: ASCAP, BMI, SESAC for Multi-Location Retailers \| Entuned | 88 |
-| `the-familiarity-trap` | The Familiarity Trap: Why Recognizable Music Sends Your Customers Home Early \| Entuned | 86 |
-| `ai-music-for-business-2026` | AI Music for Business in 2026: What Works, What Doesn't, and What to Watch \| Entuned | 84 |
-| `what-church-concert-halls-and-film-composers-know-that-retail-doesnt` | What Churches, Concert Halls, and Film Composers Know That Retail Doesn't \| Entuned | 83 |
-| `luxury-priming-is-real-and-you-dont-have-to-be-a-luxury-brand-to-use-it` | Luxury Priming Is Real: How Background Music Shifts What Customers Spend \| Entuned | 82 |
-| `commercial-music-services-compared` | Alternatives to Mood Media in 2026: Commercial Music Services Compared \| Entuned | 80 |
-| `sound-designer` | You Hired a Lighting Designer. Why Didn't You Hire a Sound Designer? \| Entuned | 78 |
-| `music-for-boutique-clothing-stores` | Music for Boutiques: What Should Your Store Actually Sound Like? \| Entuned | 74 |
-| `sensory-marketing-for-retail` | Sensory Marketing for Retail: Where Sound Fits in the Strategy \| Entuned | 72 |
-| `sound-check-close-the-loop` | Sound Check: How Do You Know If Your Music Is Hurting Sales? \| Entuned | 70 |
-| `what-happens-to-employee-performance-when-the-music-is-right` | What Happens to Employee Performance When the Music Is Right \| Entuned | 70 |
-| `how-to-choose-music-for-your-retail-store` | How to Choose Music for Your Retail Store: A Complete Guide \| Entuned | 69 |
-| `ai-generated-music-retail` | AI-Generated Music for Retail: What's Real and What's Hype \| Entuned | 68 |
-| `closing-the-loop-on-retail-analytics` | How to Get More Out of the Sensor Data You Already Pay For \| Entuned | 68 |
-| `mood-media-alternatives` | Mood Media Alternatives in 2026: A Retail Operator's Guide \| Entuned | 68 |
-| `science-of-tempo-retail` | The Science of Tempo in Retail: What BPM Actually Controls \| Entuned | 68 |
-| `tuesday-vs-saturday-traffic` | Tuesday vs. Saturday Traffic: What Your Data Actually Says \| Entuned | 68 |
-| `mall-vs-street-location` | Mall vs. Street: Making the Same Brand Feel Right in Both \| Entuned | 67 |
-| `next-retail-tech-acquisition` | Why the Next Big Retail Tech Acquisition Will Be in Audio \| Entuned | 67 |
-| `retail-designed-everything` | Retail Designed Everything Except the Most Powerful Thing \| Entuned | 67 |
-| `multi-location-music-management` | Multi-Location Music: Why Every Store Sounds Different \| Entuned | 64 |
-| `music-provider-doesnt-know-retailnext` | Your Music Provider Doesn't Know What RetailNext Knows \| Entuned | 64 |
-| `the-metrics-your-audio-environment-should-be-producing` | The Metrics Your Audio Environment Should Be Producing \| Entuned | 64 |
-| `why-background-music-costs-you-sales` | Why Your Store's Background Music Is Costing You Sales \| Entuned | 64 |
-| `why-your-best-customers-leave-faster-than-they-should` | Why Your Best Customers Leave Faster Than They Should \| Entuned | 63 |
-| `employees-hear-it` | How Do I Get My Staff to Stop Turning Off the Music? \| Entuned | 62 |
-| `how-specialty-wine-retailers-use-music-to-sell-more-expensive-bottles` | How Wine Retailers Use Music to Sell Premium Bottles \| Entuned | 62 |
-| `retail-atmospherics-2026` | What Your Store Sounds Like in the First 10 Seconds \| Entuned | 61 |
+| Slug | Was → Now | Len |
+|:-----|:---------|---:|
+| `music-already-talking-to-customers` | Your Music Is Already Talking. What's It Saying? \| Entuned | 58 |
+| `retail-music-licensing-2026` | Retail Music Licensing in 2026: ASCAP, BMI, SESAC \| Entuned | 59 |
+| `the-familiarity-trap` | The Familiarity Trap: Why Hits Send Customers Home \| Entuned | 60 |
+| `ai-music-for-business-2026` | AI Music for Business in 2026: What Actually Works \| Entuned | 60 |
+| `what-church-concert-halls-and-film-composers-know-that-retail-doesnt` | What Concert Halls Know That Retail Doesn't \| Entuned | 53 |
+| `luxury-priming-is-real-and-you-dont-have-to-be-a-luxury-brand-to-use-it` | Luxury Priming: How Music Lifts Shopper Spend \| Entuned | 55 |
+| `commercial-music-services-compared` | Commercial Music Services Compared (2026) \| Entuned | 51 |
+| `sound-designer` | You Hired a Lighting Designer. Hire a Sound One. \| Entuned | 58 |
+| `music-for-boutique-clothing-stores` | Music for Boutiques: What Should You Sound Like? \| Entuned | 58 |
+| `sensory-marketing-for-retail` | Sensory Marketing: Where Sound Fits the Strategy \| Entuned | 58 |
+| `sound-check-close-the-loop` | How Do You Know If Your Music Is Hurting Sales? \| Entuned | 57 |
+| `what-happens-to-employee-performance-when-the-music-is-right` | When the Music's Right, Employees Perform Better \| Entuned | 58 |
+| `how-to-choose-music-for-your-retail-store` | How to Choose Music for Your Retail Store \| Entuned | 51 |
+| `ai-generated-music-retail` | AI-Generated Music for Retail: Real or Hype? \| Entuned | 54 |
+| `closing-the-loop-on-retail-analytics` | Get More From the Sensor Data You Already Pay For \| Entuned | 59 |
+| `mood-media-alternatives` | Mood Media Alternatives: A 2026 Operator's Guide \| Entuned | 58 |
+| `science-of-tempo-retail` | The Science of Tempo: What BPM Controls in Retail \| Entuned | 59 |
+| `tuesday-vs-saturday-traffic` | Tuesday vs. Saturday Traffic: What the Data Says \| Entuned | 58 |
+| `mall-vs-street-location` | Mall vs. Street: Same Brand, Two Soundscapes \| Entuned | 54 |
+| `next-retail-tech-acquisition` | The Next Big Retail Tech Acquisition Is Audio \| Entuned | 55 |
+| `retail-designed-everything` | Retail Designed Everything Except the Soundtrack \| Entuned | 58 |
+| `multi-location-music-management` | Multi-Location Music: Why Every Store Sounds Off \| Entuned | 58 |
+| `music-provider-doesnt-know-retailnext` | Your Music Provider Doesn't Know RetailNext \| Entuned | 53 |
+| `the-metrics-your-audio-environment-should-be-producing` | Metrics Your Store Audio Should Be Producing \| Entuned | 54 |
+| `why-background-music-costs-you-sales` | Why Your Background Music Is Costing You Sales \| Entuned | 56 |
+| `why-your-best-customers-leave-faster-than-they-should` | Why Your Best Customers Leave Faster Than They Should | 53 |
+| `employees-hear-it` | How Do I Stop Staff From Turning Off the Music? \| Entuned | 57 |
+| `how-specialty-wine-retailers-use-music-to-sell-more-expensive-bottles` | How Wine Stores Use Music to Sell Premium Bottles \| Entuned | 59 |
+| `retail-atmospherics-2026` | What Your Store Sounds Like in 10 Seconds \| Entuned | 51 |
 
 ---
 
-## C4: Question-Phrased H2s — Site-Wide Gap
+## C4: Question-Phrased H2s — Conversions This Pass
 
-**0 of 92 posts** have an H2 phrased as a question. The YAML schema's `subhead` blocks render correctly as H2 elements; the issue is purely editorial — every post uses declarative subheads.
+**12 of 92 posts** now have at least one H2 phrased as a question (up from 0). Posts converted in this audit pass:
 
-**Recommended approach:** add one question-phrased subhead per post. Examples:
-- "Does music actually affect sales?"
-- "How do you measure if your music is working?"
-- "What should retailers do this week?"
-- "Why does this matter for multi-store operators?"
+| Slug | Question H2 added |
+|:-----|:------------------|
+| `can-you-play-spotify-in-your-store` | Why doesn't my Spotify subscription cover my store? |
+| `mood-media-alternatives` | Why are operators leaving Mood Media? |
+| `how-to-choose-music-for-your-retail-store` | What does the research actually say? |
+| `retail-music-licensing-2026` | What does an ASCAP or BMI letter actually mean? |
+| `ai-generated-music-retail` | What can AI-generated music not do yet? |
+| `commercial-music-services-compared` | Should you switch music vendors right now? |
+| `best-background-music-for-retail-stores-2026` | Is it legal to play your background music? |
+| `science-of-tempo-retail` | What does tempo actually do in retail? |
+| `get-out-of-mood-media-contract` | How do you actually exit a Mood Media contract? |
+| `psychographic-profiling-retail` | What kind of music should my store play? |
 
-This is a manual content edit per post, not a mechanical fix. Given the 92-post corpus, recommend doing 8-10 posts per session. Prioritize the model posts (`what-is-entuned`, `retail-atmospherics-2026`, `measure-roi-retail-music`, `what-are-flow-factors`) and the highest-traffic SEO targets (`can-you-play-spotify-in-your-store`, `mood-media-alternatives`, `how-to-choose-music-for-your-retail-store`, `retail-music-licensing-2026`).
+**80 posts still need a question subhead.** Recommend continuing in batches of ~10 per session, prioritizing remaining cluster winners (`how-much-does-retail-music-cost`, `multi-location-music-management`, `music-for-boutique-clothing-stores`, `the-familiarity-trap`, `the-real-cost-of-retail-music`, `why-background-music-costs-you-sales`, etc.) and highest-traffic posts identified by GSC.
 
 ---
 

@@ -31,7 +31,7 @@ sections:
 
   - type: subhead
     level: 2
-    text: "Genre is the wrong question"
+    text: "What kind of music should my store play?"
 
   - type: prose
     body: |
