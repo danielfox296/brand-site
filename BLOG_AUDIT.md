@@ -13,7 +13,7 @@
 | C1: Title under 60 chars | 92/92 | 0/92 | 100% |
 | C2: Meta description present and ≤155 chars | 92/92 | 0/92 | 100% |
 | C3: Clear/direct opening (not narrative) | 92/92 | 0/92 | 100% |
-| C4: At least one H2 phrased as a question | 22/92 | 70/92 | 24% |
+| C4: At least one H2 phrased as a question | 32/92 | 60/92 | 35% |
 | C5: At least 2 internal blog cross-links | 92/92 | 0/92 | 100% |
 | C6: At least 1 core page link | 92/92 | 0/92 | 100% |
 | C7: Contains data point / statistic | 92/92 | 0/92 | 100% |
@@ -137,7 +137,21 @@ All titles rewritten in this audit pass to fit ≤60 chars while preserving keyw
 | `ai-vs-traditional-retail-music` | How should you evaluate AI vs. traditional retail music? |
 | `sensory-marketing-for-retail` | Why does retail still treat sound like a utility? |
 
-**70 posts still need a question subhead.** Continue in batches of ~10. Next priority candidates: `the-dwell-time-variable-nobodys-tracking`, `what-is-entuned`, `measure-roi-retail-music`, `the-metrics-your-audio-environment-should-be-producing`, `tempo-controls`, `tempo-volume-free`, `longer-visits`, `milliman-study`, `cfos-case-for-retail-audio`, `next-retail-tech-acquisition`.
+### Batch 3 (measurement / dwell / ROI / research / acquisition thesis)
+| Slug | Question H2 added |
+|:-----|:------------------|
+| `the-dwell-time-variable-nobodys-tracking` | Why isn't anyone tracking audio's effect on dwell time? |
+| `what-is-entuned` | What does Entuned actually do? |
+| `measure-roi-retail-music` | How do you measure the ROI of in-store music? |
+| `the-metrics-your-audio-environment-should-be-producing` | What metrics should your store audio actually produce? |
+| `tempo-controls` | What does tempo actually control in a retail store? |
+| `tempo-volume-free` | What can tempo and volume alone actually do? |
+| `longer-visits` | Do longer visits actually mean bigger receipts? |
+| `milliman-study` | What did the Milliman study actually find? |
+| `cfos-case-for-retail-audio` | Which P&L lines does retail audio actually move? |
+| `next-retail-tech-acquisition` | Why will the next big retail tech acquisition be in audio? |
+
+**60 posts still need a question subhead.** Continue in batches of ~10.
 
 ---
 

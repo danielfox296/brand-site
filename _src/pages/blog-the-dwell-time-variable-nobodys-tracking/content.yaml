@@ -29,7 +29,7 @@ sections:
 
   - type: subhead
     level: 2
-    text: "Why audio never makes the Monday meeting"
+    text: "Why isn't anyone tracking audio's effect on dwell time?"
     anchor: "why-audio-invisible"
 
   - type: prose
