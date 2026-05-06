@@ -267,8 +267,12 @@ def build():
 
             # Pull metadata from the YAML frontmatter
             title = post_data.get('title', config.get('title', 'Entuned'))
-            if not title.endswith('— Entuned Blog'):
-                title = f"{title} — Entuned Blog"
+            # Strip any existing suffix (legacy or canonical) before re-appending
+            for legacy in (' | Entuned Blog', ' — Entuned Blog', ' | Entuned', ' — Entuned'):
+                if title.endswith(legacy):
+                    title = title[:-len(legacy)]
+                    break
+            title = f"{title} | Entuned"
             description = post_data.get('meta_description',
                                         config.get('meta_description', ''))
             output      = output_check
