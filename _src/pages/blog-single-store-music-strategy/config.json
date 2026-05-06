@@ -1,0 +1,28 @@
+{
+  "title": "Music Strategy for the One-Store Brand | Entuned",
+  "meta_description": "Most retail music writing is built for chains. Here is what actually changes when you run one store, why the smaller footprint cuts both ways, and where to start.",
+  "output": "blog/single-store-music-strategy.html",
+  "date_published": "2026-05-05",
+  "faq": [
+    {
+      "q": "Does retail music research apply if I only have one store?",
+      "a": "Yes. The Milliman 1982 tempo study, the Areni and Kim 1993 wine store study, and the Yalch and Spangenberg 2000 dwell-time study were all run on single locations. The behavioral effects are individual-level, not chain-level. A solo operator gets the same lift per customer that a 50-store chain gets per customer."
+    },
+    {
+      "q": "Why do most retail music articles assume I have multiple stores?",
+      "a": "Because the commercial music industry was built around enterprise contracts. Mood Media, Soundtrack Your Brand, and similar vendors structured their pricing and reporting around fleets, so the writing followed the customer. Single-store operators inherited those defaults without ever being the intended audience."
+    },
+    {
+      "q": "Can I afford retail music if I only have one location?",
+      "a": "Cost has dropped sharply in 2026. Cloud Cover Music starts at roughly $10 to $25 per location per month. Soundtrack Your Brand runs $35 to $50. Entuned Essentials is free, indefinite, no card required. The floor is a lot lower than the mid-2010s, when commercial music meant a multi-year Mood Media contract."
+    },
+    {
+      "q": "Without POS integration, how would I know if music is working?",
+      "a": "You can run the same A or B comparison a chain runs across two stores by running it across two weeks in the same store. Pick a control week and a test week with similar weather, foot traffic, and staffing. Track conversion, average basket, and dwell. If you see a directional shift, you have signal worth acting on."
+    },
+    {
+      "q": "What is the cheapest way to start measuring whether music affects my store?",
+      "a": "Start free. Run Entuned Essentials for two weeks. Compare conversion and basket against the prior two weeks of similar conditions. The pilot is free for as long as you want it, no card required, and the comparison data is already in your existing POS or e-commerce reports."
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+title: "Music Strategy for the One-Store Brand"
+slug: "single-store-music-strategy"
+eyebrow: "FIELD NOTES"
+dek: "Most retail music writing assumes a fleet. Here is what actually changes when you run one store — and where the smaller footprint helps."
+date: "2026-05-05"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/music-for-boutique-clothing-stores.jpg"
+  alt: "Interior of a small independent retail store with curated displays"
+  caption: "Photo: Unsplash"
+meta_description: "Most retail music writing is built for chains. Here is what actually changes when you run one store, why the smaller footprint cuts both ways, and where to start."
+og_image: "/img/blog/music-for-boutique-clothing-stores.jpg"
+tags: [field-notes, single-store, small-business, retail-music, music-strategy]
+sections:
+  - type: key_takeaways
+    items:
+      - "The peer-reviewed research on retail music was run on single stores, not fleets — the behavioral lift applies to a solo operator the same way it applies to a 50-store chain"
+      - "Single-store operators inherited the chain-built defaults of commercial music vendors. Pricing and reporting were structured around fleets, not corner shops"
+      - "You can run a real A/B test across two weeks in the same store. You don't need POS integration or a control location to get directional signal"
+      - "Entuned Essentials is free, indefinite, no card. The cheapest place to start measuring is to start"
+
+  - type: prose
+    body: |
+      Search "retail music strategy" and most of what you'll read assumes you have a chain. The vendor comparisons price by location count. The case studies cite multi-store rollouts. The advice on day-parting and zone control presumes you have zones to control.
+
+      None of that is wrong, exactly. It just isn't written for the operator with one shop, one floor, one speaker setup, and a P&L that fits on one page.
+
+      That operator inherited a problem nobody ever sat down to solve for them.
+
+  - type: subhead
+    level: 2
+    text: "Why does the writing skew toward chains?"
+    anchor: "why-chains"
+
+  - type: prose
+    body: |
+      Commercial music as a category grew up around enterprise contracts. Muzak, the original brand, sold to office buildings and grocery chains in the 1950s. The whole industry inherited that customer shape: large, multi-site, a procurement department that signed three-year deals.
+
+      The pricing followed. Per-location subscriptions made sense when "a location" meant the 47th unit of a regional chain. Reporting followed too. A monthly compliance report telling a corporate AVP what played where solves a chain's problem. It is not built for the owner who is on the floor every Saturday.
+
+      The vendors are not malicious about this. Their economics are real. A solo retailer is a smaller deal that costs the same to onboard. So the marketing, the comparison guides, and the trade press all aim upward — at the buyer who can sign for a fleet.
+
+      The single-store operator reads the same articles, then has to translate.
+
+  - type: subhead
+    level: 2
+    text: "The research was always about you"
+    anchor: "research"
+
+  - type: prose
+    body: |
+      Here is the thing the chain-shaped writing buries: the foundational retail music studies were run on single stores.
+
+      Ronald Milliman's 1982 paper, the one everyone cites for tempo, was a single supermarket. Slow music slowed shoppers down. They moved through the store more slowly. They bought more. One store. One register tape.
+
+      Areni and Kim's 1993 wine shop study — the one where classical music shifted customers to higher-priced bottles — was also one store. Yalch and Spangenberg's 2000 dwell-time study, the one that found familiar music made trips feel longer than unfamiliar music, was again one store.
+
+      Forty years of evidence about how music affects retail behavior was built up at single-location scale, then borrowed by chains because chains had the budget to act on it. The behavioral lift is per-customer, not per-fleet. A single operator with one room of customers gets the same effect everyone else gets.
+
+      The question isn't whether music works at small scale. The question is whether anyone bothered to design a music product that fits that scale.
+
+  - type: stat_callout
+    number: "1 store"
+    label: "size of the original Milliman 1982 tempo study, the most-cited paper in retail music research"
+    source: "Milliman, R. E. (1982). Using Background Music to Affect the Behavior of Supermarket Shoppers. Journal of Marketing"
+    accent: gold
+
+  - type: subhead
+    level: 2
+    text: "What actually changes when you only have one"
+    anchor: "what-changes"
+
+  - type: prose
+    body: |
+      Some things get easier. Some get harder. Both are worth naming.
+
+      **Easier.** You hear your own store every day. You know which songs your regulars notice and which ones they don't. You can change something on Tuesday and have a read by Saturday. A chain operator running a music test waits a quarter for results to roll in. You wait a weekend.
+
+      **Easier.** You are accountable to one P&L. There is no procurement cycle, no district manager review, no rollout plan. You decide on Monday and your store sounds different by Tuesday afternoon.
+
+      **Easier.** You don't have a legacy contract problem. Most single-store operators are running Spotify off the manager's phone or have a $20 streaming subscription with no termination clause. The switching cost is zero.
+
+      **Harder.** You don't have a comparison location. A chain can run a control store against a test store. You can't.
+
+      **Harder.** You probably don't have POS data structured for analysis. Your reports show you yesterday's sales, not yesterday's sales correlated with which playlist was running.
+
+      **Harder.** Your time is the constraint. A chain can pay someone to think about music. You think about music between unloading shipments and covering a shift.
+
+      The harder list is real, but it isn't the dealbreaker the industry has implicitly treated it as. You can work around all three.
+
+  - type: subhead
+    level: 2
+    text: "How to A/B test in one store"
+    anchor: "ab-test"
+
+  - type: prose
+    body: |
+      You do not need a control store to run a real test. You need two comparable weeks.
+
+      Pick a "before" week. Note the weather, the foot traffic if you have a counter, the staffing pattern, any promotions running. Pull the conversion rate, the average basket, and an estimate of dwell if you can get it from a door counter or a security camera review. That is your baseline.
+
+      Change the music for the next week. Same hours, similar weather forecast, same staff if possible, no new promotions. At the end of week two, pull the same numbers.
+
+      You won't get a peer-reviewed result. You will get directional signal. If conversion moves three points and basket moves five percent, you have a finding worth running for another month. If nothing moves, you've learned something useful too — your music either wasn't the bottleneck or the change wasn't large enough to matter.
+
+      The chain operator running this test waits a quarter. You ran it in two weeks. That speed advantage is yours.
+
+  - type: pullquote
+    text: "A chain operator running a music test waits a quarter for results to roll in. You wait a weekend."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "Where to start this week"
+    anchor: "this-week"
+
+  - type: prose
+    body: |
+      Three things, in order.
+
+      **Audit what's playing.** Walk in cold on a Saturday afternoon. Stand at the door and listen for two minutes. Ask yourself: does this match the customer I want? Is it loud enough that two people standing six feet apart would have to raise their voices? Did anyone choose this, or has it just been on?
+
+      **Pull two weeks of conversion and basket.** From your POS or your e-commerce dashboard. You will need this for any test you run later. Get familiar with the baseline before you change anything.
+
+      **Run a free pilot.** Entuned Essentials gives you outcome-tuned music — pick Increase Dwell or Infuse Energy — for free, indefinite, no card. Run it for two weeks against the baseline you just pulled. See what moves.
+
+      The whole point of the small-footprint advantage is speed. You can have an answer in 14 days that a chain takes a year to get.
+
+  - type: prose
+    body: |
+      For more on what actually moves the needle once you start measuring, see <a href="../blog/measure-roi-retail-music.html">how to measure the ROI of in-store music</a>. For the legal floor under all of this, <a href="../blog/can-you-play-spotify-in-your-store.html">it is illegal to use Spotify in a store</a> — that includes a one-store store. The full <a href="../pricing.html">pricing page</a> walks through what each tier includes if you outgrow Essentials.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Essentials is free, indefinite, no card. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "can-you-play-spotify-in-your-store"
+      - slug: "measure-roi-retail-music"
+      - slug: "the-real-cost-of-retail-music"
