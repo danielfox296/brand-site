@@ -213,6 +213,50 @@ def lint():
     return True
 
 
+def _strip_inline_markup(text):
+    text = re.sub(r'\*\*([^*]+)\*\*', r'\1', text)
+    text = re.sub(r'(?<!\*)\*([^*\n]+)\*(?!\*)', r'\1', text)
+    text = re.sub(r'<a\s+[^>]*>([^<]*)</a>', r'\1', text)
+    text = re.sub(r'<[^>]+>', '', text)
+    text = re.sub(r'\s+', ' ', text)
+    return text.strip()
+
+
+def auto_extract_faqs(post_data, max_answer_chars=600, min_answer_chars=40):
+    """Extract FAQ pairs from a YAML post: question subheads + following prose.
+
+    A subhead whose text ends in '?' becomes a question. The answer is the
+    concatenation of every prose block until the next subhead, with markdown
+    and inline HTML stripped, capped at max_answer_chars.
+    """
+    sections = post_data.get('sections', [])
+    faqs = []
+    for i, block in enumerate(sections):
+        if block.get('type') != 'subhead':
+            continue
+        text = (block.get('text') or '').strip()
+        if not text.endswith('?'):
+            continue
+        answer_parts = []
+        for nxt in sections[i + 1:]:
+            t = nxt.get('type')
+            if t == 'subhead':
+                break
+            if t == 'prose':
+                body = (nxt.get('body') or '').strip()
+                if body:
+                    answer_parts.append(body)
+        if not answer_parts:
+            continue
+        clean = _strip_inline_markup('\n\n'.join(answer_parts))
+        if len(clean) < min_answer_chars:
+            continue
+        if len(clean) > max_answer_chars:
+            clean = clean[:max_answer_chars].rsplit(' ', 1)[0] + '…'
+        faqs.append({"q": text, "a": clean})
+    return faqs
+
+
 def build():
     # Load shared pieces
     base   = read(os.path.join(LAYOUTS,  'base.html'))
@@ -487,8 +531,11 @@ def build():
             }
             schema_json += f'\n  <script type="application/ld+json">\n{json.dumps(website_schema, indent=2)}\n  </script>'
 
-        # FAQPage schema — if config has a 'faq' key with [{q, a}, ...] entries
+        # FAQPage schema — manual `faq` in config.json wins; otherwise
+        # auto-extract Q-A pairs from question H2s in YAML-format blog posts.
         faq_items = config.get('faq', [])
+        if not faq_items and is_blog and use_new_renderer:
+            faq_items = auto_extract_faqs(post_data)
         if faq_items:
             faq_schema = {
                 "@context": "https://schema.org",
