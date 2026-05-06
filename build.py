@@ -222,6 +222,64 @@ def _strip_inline_markup(text):
     return text.strip()
 
 
+_HOWTO_SUBHEAD_RE = re.compile(
+    r'\b(this week|walk[- ]?through|where to start|how to test|how do you|what to do)\b',
+    re.IGNORECASE,
+)
+
+
+def auto_extract_howto(post_data, min_steps=2, max_step_chars=400):
+    """Extract HowTo steps from a how-to post.
+
+    Conservative detector: only returns a HowTo when the post is a how-to-*
+    slug AND a prose block immediately follows a procedural-sounding subhead
+    AND that prose block has ≥min_steps paragraphs each prefixed with
+    `**Step name.**` markdown.
+
+    Walks in reverse so a benchmarks section earlier in the post (which can
+    also use bold-prefix paragraphs as category labels) doesn't get mistaken
+    for steps. The procedural section is conventionally the last cluster of
+    bold-prefix paragraphs before the CTA.
+    """
+    slug = post_data.get('slug', '')
+    if not slug.startswith('how-to-'):
+        return None
+    sections = post_data.get('sections', [])
+    for i in range(len(sections) - 1, -1, -1):
+        block = sections[i]
+        if block.get('type') != 'prose':
+            continue
+        prev_subhead = None
+        for j in range(i - 1, -1, -1):
+            if sections[j].get('type') == 'subhead':
+                prev_subhead = sections[j].get('text', '') or ''
+                break
+        if not prev_subhead or not _HOWTO_SUBHEAD_RE.search(prev_subhead):
+            continue
+        body = (block.get('body') or '').strip()
+        paragraphs = [p.strip() for p in body.split('\n\n') if p.strip()]
+        steps = []
+        for para in paragraphs:
+            m = re.match(r'^\*\*([^*]+?)\*\*\.?\s*(.*)$', para, re.DOTALL)
+            if not m:
+                continue
+            name = m.group(1).strip().rstrip('.').strip()
+            text = m.group(2).strip()
+            if not name or not text:
+                continue
+            text = _strip_inline_markup(text)
+            if len(text) > max_step_chars:
+                text = text[:max_step_chars].rsplit(' ', 1)[0] + '…'
+            steps.append({"name": name, "text": text})
+        if len(steps) >= min_steps:
+            return {
+                "name": post_data.get('title', '').strip(),
+                "description": post_data.get('meta_description', '').strip(),
+                "steps": steps,
+            }
+    return None
+
+
 def auto_extract_faqs(post_data, max_answer_chars=600, min_answer_chars=40):
     """Extract FAQ pairs from a YAML post: question subheads + following prose.
 
@@ -553,6 +611,29 @@ def build():
                 ]
             }
             schema_json += f'\n  <script type="application/ld+json">\n{json.dumps(faq_schema, indent=2)}\n  </script>'
+
+        # HowTo schema — auto-extract from YAML-format how-to-* blog posts
+        # with a `**Step name.**`-prefixed paragraph cluster. Conservative
+        # detector: returns None unless the post is clearly procedural.
+        if is_blog and use_new_renderer:
+            howto = auto_extract_howto(post_data)
+            if howto:
+                howto_schema = {
+                    "@context": "https://schema.org",
+                    "@type": "HowTo",
+                    "name": howto["name"],
+                    "description": howto["description"],
+                    "step": [
+                        {
+                            "@type": "HowToStep",
+                            "position": i + 1,
+                            "name": s["name"],
+                            "text": s["text"],
+                        }
+                        for i, s in enumerate(howto["steps"])
+                    ],
+                }
+                schema_json += f'\n  <script type="application/ld+json">\n{json.dumps(howto_schema, indent=2)}\n  </script>'
 
         # BreadcrumbList schema — all pages except homepage
         if output != 'index.html':
