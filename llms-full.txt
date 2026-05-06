@@ -128,19 +128,24 @@ Entuned is the only platform that combines deep psychographic profiling, proprie
 
 ## Pricing
 
-**Entuned Free: $299/location/month**
-1-2 locations. Single zone. Standard ICP profiling. Analytics dashboard. Email support. ROI: 10x-17x.
+Public pricing, four tiers. Self-serve through Core; Enterprise is contract.
 
-**Professional: $599/location/month** (Most Popular)
-5+ locations. Up to 3 zones. Custom ICP workshop. Dedicated account manager. Quarterly optimization reviews. ROI: 25x-40x.
+**Entuned Free**
+$0. Indefinite. No card required. Self-serve signup at app.entuned.co/start.
+- 1 location. Two outcome modes (Increase Dwell, Infuse Energy). 100+ song general catalogue. PRO-indemnified from day one. No customer-profile customization.
 
-**Enterprise: Custom pricing**
-25+ locations. Unlimited zones. White-label option. API access. Quarterly business reviews. ROI: 50x+.
+**Core: $99 / location / month**
+Self-serve Stripe checkout. Cancel any time, no contract.
+- One ICP — music tailored to your single Ideal Customer's taste preferences. All research-backed outcomes unlocked. ~420-song library after the first month with regular refresh and culling. Sales-associate-friendly web interface.
 
-**Onboarding: $2,500-$10,000 one-time**
-Psychographic research, brand-to-music translation, initial soundtrack generation, staff training.
+**Professional: $399 / location / month**
+Self-serve Stripe checkout. Cancel any time, no contract.
+- Everything in Core plus POS integration, day-parting (automated time-based outcome rotation), interstitial messaging, multiple ICPs per location, self-improving refinement as the dataset grows, monthly customer-success consults with the founder.
 
-All plans start with a free 90-day pilot. Monthly billing. No long-term contract. Cancel with 30 days notice.
+**Enterprise: Negotiated**
+Contact for multi-fleet rollouts. Negotiated per-store pricing, custom ICP design, performance guarantees where lift can be cleanly measured, dedicated success contact, white-glove rollout.
+
+No onboarding fees. No long-term contracts at any tier. Monthly billing on Core and Professional.
 
 ---
 
@@ -149,10 +154,10 @@ All plans start with a free 90-day pilot. Monthly billing. No long-term contract
 Conservative scenario at 3% sales lift (research supports 8-12%):
 - 10 locations, $250 average transaction, 2,000 transactions/month/store = $5M monthly baseline
 - 3% lift = $15,000/month incremental revenue per location
-- After $599/month subscription = $14,401/month net per location
-- ROI: 40:1
+- After $399/month Professional subscription = $14,601/month net per location
+- ROI: ~37:1
 
-The pilot program is designed to prove this: test store vs. control store, 90 days, zero payment during the pilot, measured against existing POS analytics.
+The Entuned Free tier is designed to let an operator validate the system on their floor before paying anything. Run it for two weeks, compare against the prior baseline week using the operator's existing POS reports, and only move to Core when the lift is visible and the operator wants ICP-tailored music for their specific customer.
 
 ---
 
@@ -190,20 +195,7 @@ Music science. Retail operations. Generative AI. Entuned sits at their intersect
 
 ## Current Stage
 
-Pre-seed. Running initial pilots. Pilot results expected Q3 2026.
-
-**Fundraise:** $500K-$750K pre-seed
-- 40% product development
-- 25% pilots and customer success
-- 20% go-to-market
-- 15% operations
-
-**12-month milestones:**
-- Working MVP with full pipeline (profile, translate, generate, stream, measure)
-- 5 paying customers with 50+ total locations
-- Measurable 20%+ engagement lift across pilot deployments
-- $50K+ MRR
-- Series A readiness
+Bootstrapped. Self-serve PLG funnel live at app.entuned.co/start. Public pricing on Core and Professional with self-serve Stripe checkout. Enterprise is inbound only. Not currently raising capital and not pursuing institutional fundraising — focus is product-led growth, customer acquisition, and revenue.
 
 ---
 
