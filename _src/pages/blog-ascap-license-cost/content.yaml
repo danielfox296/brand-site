@@ -1,0 +1,88 @@
+title: "ASCAP License Cost: What Small Businesses Actually Pay (and How to Avoid It)"
+slug: "ascap-license-cost"
+eyebrow: "MARKET INTEL"
+dek: "ASCAP licenses for small businesses run $250 to $600 per year. But ASCAP is only one of four PROs — and the total bill is usually two to eight times that."
+date: "2026-05-05"
+last_updated: "2026-05-05"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/retail-music-licensing-2026.jpg"
+  alt: "Abstract visualization of music licensing costs and compliance requirements"
+  caption: "Photo: Unsplash"
+meta_description: "ASCAP licenses for small businesses run $250 to $600 per year — but that's just one of four PROs. Total licensing costs for a typical small retailer hit $500 to $2,000+ annually."
+og_image: "/img/blog/retail-music-licensing-2026.jpg"
+tags: [ascap, music-licensing, compliance, retail-music, bmi, sesac]
+sections:
+  - type: key_takeaways
+    items:
+      - "ASCAP licenses for small businesses typically run $250 to $600 per year, depending on business type, square footage, and speaker count."
+      - "ASCAP is only one of four PROs. BMI, SESAC, and GMR each represent different songwriters — full compliance requires licenses from all of them."
+      - "Total PRO costs for a typical small retailer run $500 to $2,000+ per year, before the cost of the music itself."
+      - "There is a third option beyond paying up or ignoring the letter: switch to music that doesn't require a license in the first place."
+
+  - type: prose
+    body: |
+      ASCAP licenses for small businesses typically run $250 to $600 per year. The exact fee depends on your business type, square footage, number of speakers, and how the music is used. Restaurants and bars tend to pay more than retail stores. Live music venues pay the most.
+
+      But here's what catches most people: ASCAP is only one of four performing rights organizations you'd need to deal with. BMI, SESAC, and GMR each represent different songwriters and publishers, and you need blanket licenses from all of them to be fully compliant. Total PRO costs for a typical small retailer run $500 to $2,000+ per year.
+
+      That's before you've paid for the music itself.
+
+  - type: subhead
+    level: 2
+    text: "How ASCAP pricing works"
+
+  - type: prose
+    body: |
+      ASCAP doesn't publish a simple price list. Fees are determined by rate schedules that vary by business category. A retail store has a different rate than a restaurant, which has a different rate than a gym. Within each category, fees scale based on factors like the size of the space and the potential audience.
+
+      For a small retail store, you're generally looking at the lower end of the range. A couple hundred dollars per year. But add BMI at a similar rate, plus SESAC and GMR, and the total starts to feel disproportionate to the activity of playing background music in a 1,500 square foot shop.
+
+      ASCAP also requires annual renewal. Miss it and you're technically operating without a license, which means you're exposed to statutory fines of $750 to $30,000 per song.
+
+  - type: subhead
+    level: 2
+    text: "Why this system exists"
+
+  - type: prose
+    body: |
+      ASCAP's job is to ensure that songwriters and publishers get compensated when their work is performed publicly. That includes live performances, radio broadcasts, and music played in commercial spaces. The blanket license system lets businesses access a large catalog of music without negotiating individual song rights.
+
+      The system is legitimate. Songwriters deserve to be paid for their work. But the practical effect on small business owners is a layer of cost and complexity that feels wildly disproportionate to the simple act of having some music playing in the background.
+
+  - type: subhead
+    level: 2
+    text: "The way to opt out entirely"
+
+  - type: prose
+    body: |
+      The PRO licensing obligation only applies to copyrighted music where a third-party rights holder exists. If you play music that isn't registered with ASCAP, BMI, SESAC, or GMR, the licensing requirement doesn't apply.
+
+      This is exactly how Entuned works. We generate original music for retail environments and own every track. No third-party songwriters. No publishers. No PRO registration. When you stream our music in your store, there's no public performance license required.
+
+      Our free tier gives you unlimited in-store streaming at zero cost. The music is designed for retail, with two outcome modes: increasing energy and extending dwell time. No subscription. No licensing fees. No annual ASCAP renewal.
+
+      If you've received a letter from ASCAP and you're trying to figure out whether to pay, there's a third option beyond paying up or ignoring it: switch to music that doesn't require a license in the first place.
+
+  - type: subhead
+    level: 2
+    text: "Getting started"
+
+  - type: prose
+    body: |
+      Sign up at entuned.co. Start streaming in about five minutes. The ASCAP question goes away when the music isn't in their catalog.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Essentials is free, indefinite, no card. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "retail-music-licensing-2026"
+      - slug: "can-you-play-spotify-in-your-store"
+      - slug: "the-real-cost-of-retail-music"

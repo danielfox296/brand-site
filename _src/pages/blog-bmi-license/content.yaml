@@ -1,0 +1,117 @@
+title: "BMI License: What It Costs, Why You're Getting That Letter, and How to Avoid Needing One"
+slug: "bmi-license"
+eyebrow: "MARKET INTEL"
+dek: "Most small business owners discover public performance licensing the same way: a letter in the mail. Here's what's actually going on."
+date: "2026-05-05"
+last_updated: "2026-05-05"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/retail-music-licensing-2026.jpg"
+  alt: "Retail storefront with abstract licensing and compliance overlay"
+  caption: "Photo: Unsplash"
+meta_description: "You got a letter from BMI. Here's what it means, what the license costs when you add ASCAP and SESAC, and how to eliminate the PRO licensing question entirely."
+og_image: "/img/blog/retail-music-licensing-2026.jpg"
+tags: [licensing, bmi, ascap, sesac, pro-fees, compliance, retail-music]
+sections:
+  - type: key_takeaways
+    items:
+      - "Playing music in a commercial space is a regulated activity. The BMI letter is not a scam."
+      - "A BMI blanket license runs $250 to $415 per year as a starting point for a small store. That's one of four PROs — ASCAP, SESAC, and GMR are separate bills."
+      - "Total PRO licensing across all four organizations runs $500 to $2,000+ per year, before the cost of the music itself."
+      - "Music that isn't registered with any PRO eliminates the licensing obligation entirely. No copyright, no fee."
+
+  - type: prose
+    body: |
+      If you're reading this, there's a decent chance you just received a letter from BMI. Or maybe ASCAP. It probably says something about public performance licensing, and it probably quotes a fee that feels unreasonable for the privilege of playing background music in your store.
+
+      You're not alone. This is how most small business owners discover that playing music in a commercial space is a regulated activity. The letter is the wake-up call.
+
+  - type: prose
+    body: |
+      Here's what's actually going on, what it costs, and how to sidestep the entire licensing structure if you want to.
+
+  - type: subhead
+    level: 2
+    text: "What BMI is and why they're contacting you"
+    anchor: "what-bmi-is"
+
+  - type: prose
+    body: |
+      BMI is a performing rights organization. They represent over 1.4 million songwriters, composers, and publishers, managing the rights to more than 22 million songs. When one of those songs gets played in a public setting — including your store — BMI's job is to collect a licensing fee on behalf of the rights holders.
+
+      Playing music in a business is legally classified as a public performance. That's true whether you're streaming from Spotify, playing CDs, or using a digital music library. The only narrow exemption is for stores under 2,000 square feet playing broadcast AM/FM radio through six or fewer speakers.
+
+  - type: aside
+    title: "The four PROs in the U.S."
+    body: |
+      BMI is one of four major performing rights organizations in the United States. The others are ASCAP, SESAC, and GMR. Each represents different songwriters and publishers. A single song can have writers spread across multiple PROs. To be fully compliant playing commercial music, you technically need blanket licenses from all of them.
+
+  - type: subhead
+    level: 2
+    text: "What it actually costs"
+    anchor: "what-it-costs"
+
+  - type: stat_callout
+    number: "$500–$2,000+"
+    label: "Estimated total annual PRO licensing cost across ASCAP, BMI, SESAC, and GMR for a small retail store"
+    source: "Published PRO rate schedules, 2026"
+    accent: gold
+
+  - type: prose
+    body: |
+      A BMI blanket license for a small retail store typically runs $250 to $415 per year as a starting point. Fees scale based on your store's square footage, speaker setup, and how the music is used. Larger venues with higher occupancy can pay $2,000 or more annually.
+
+      But BMI is only one of four PROs. Add ASCAP (similar pricing structure), SESAC, and GMR, and you're looking at $500 to $2,000+ per year in total PRO licensing — before you've paid for the music itself.
+
+  - type: pullquote
+    text: "If you're also using a commercial streaming service like CloudCover ($16.95/mo) or Soundtrack Your Brand ($29/mo), your total annual cost for background music can easily exceed $700 to $900 for a single location."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "There's a way to avoid all of this"
+    anchor: "how-to-avoid"
+
+  - type: prose
+    body: |
+      The entire PRO licensing structure exists because the music is copyrighted by someone else. Songwriters and publishers own the rights. PROs collect on their behalf. You pay for the privilege of playing their work in public.
+
+      Remove copyrighted music from the equation and the licensing obligation disappears.
+
+  - type: prose
+    body: |
+      This is how we built Entuned. We generate original music and own every track outright. Our music isn't registered with ASCAP, BMI, SESAC, or GMR because there's no third-party rights holder to represent. When you stream Entuned in your store, there's no public performance fee. No blanket license. No annual renewal. No letters.
+
+      The free tier gives you unlimited in-store streaming with two outcome modes: increasing energy and extending dwell time. The music is designed for retail environments, not pulled from a catalog. Full commercial rights are included. No subscription, no trial period, no credit card.
+
+  - type: subhead
+    level: 2
+    text: "What to do about the letter"
+    anchor: "what-to-do"
+
+  - type: prose
+    body: |
+      If you've already received a BMI letter, you have a few options.
+
+      You can negotiate a blanket license directly with BMI, then repeat the process with ASCAP, SESAC, and GMR. You'll pay $500 to $2,000+ per year total and still need a source of music to play.
+
+      You can sign up for a commercial streaming service that bundles PRO licensing into the subscription. CloudCover and SoundMachine both do this. You'll pay $17 to $34 per month but avoid dealing with PROs directly.
+
+  - type: prose
+    body: |
+      Or you can switch to music that doesn't require PRO licensing at all. That's what Entuned provides. If you stop playing copyrighted music and switch to our catalog, the PRO licensing question goes away entirely. You can respond to the letter by explaining that you no longer play music that falls under their jurisdiction.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Essentials is free, indefinite, no card. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "can-you-play-spotify-in-your-store"
+      - slug: "retail-music-licensing-2026"
+      - slug: "how-much-does-retail-music-cost"

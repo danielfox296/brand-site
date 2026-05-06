@@ -1,0 +1,156 @@
+title: "The Complete Guide to Store Music in 2026"
+slug: "complete-guide-store-music"
+eyebrow: "MARKET INTEL"
+dek: "Licensing rules, what the current providers offer, and why outcome-designed music is a different category."
+date: "2026-05-05"
+last_updated: "2026-05-05"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/in-store-music-strategy.jpg"
+  alt: "Interior of a retail store with speakers mounted overhead, warm lighting"
+  caption: "Photo: Unsplash"
+meta_description: "Licensing rules, what the current providers offer, and why outcome-designed music is a different category. Everything a retail store owner needs to know."
+og_image: "/img/blog/in-store-music-strategy.jpg"
+tags: [licensing, commercial-music, compliance, retail-music, store-music]
+sections:
+  - type: key_takeaways
+    items:
+      - "Playing personal Spotify or Apple Music in a store is illegal. Copyright fines run $750 to $30,000 per song."
+      - "Four performing rights organizations — ASCAP, BMI, SESAC, GMR — control public performance rights for virtually all commercially released music."
+      - "Commercial music services bundle PRO licenses into their subscription; that is the main reason they exist."
+      - "Entuned generates original tracks it owns outright, which is why a free tier is structurally possible when it is not for any catalog provider."
+
+  - type: prose
+    body: |
+      If you run a retail store, you need music playing. Silence makes a space feel empty and uncomfortable. The wrong music pushes people out. The right music keeps them browsing. This has been studied extensively and the findings are consistent: music is one of the most effective and least expensive tools you have for influencing customer behavior.
+
+      The problem is that playing music in a commercial space is more complicated than it should be. There are legal requirements most store owners do not know about, a confusing licensing landscape, and a range of providers charging anywhere from $17 to $34 per month for what amounts to a playlist.
+
+      We built Entuned because we think the whole model is broken. Here is the full picture.
+
+  - type: subhead
+    level: 2
+    text: "The legal situation"
+    anchor: "legal"
+
+  - type: prose
+    body: |
+      You cannot play music from a personal streaming account in your store. Spotify, Apple Music, Pandora, YouTube Music. All of them explicitly prohibit commercial use in their terms of service. Playing a personal account in a business setting constitutes a public performance of copyrighted material, and copyright law allows fines between $750 and $30,000 per song.
+
+  - type: stat_callout
+    number: "$750&ndash;$30,000"
+    label: "Statutory fine per song for unlicensed public performance (U.S. Copyright Act 17 U.S.C. &sect;504(c))"
+    source: "U.S. Copyright Act"
+    accent: gold
+
+  - type: prose
+    body: |
+      This gets enforced. ASCAP, BMI, and SESAC all employ representatives who visit businesses and check. The risk might feel abstract, but the letters are real and the fines are real.
+
+      There is a narrow exemption for stores under 2,000 square feet playing broadcast AM/FM radio through six or fewer speakers. Outside of that, you need either a commercial music service or direct licenses from the performing rights organizations.
+
+  - type: subhead
+    level: 2
+    text: "The licensing stack"
+    anchor: "licensing"
+
+  - type: prose
+    body: |
+      Four organizations control the public performance rights for nearly all commercially released music in the United States: ASCAP, BMI, SESAC, and GMR. Each one represents a different pool of songwriters and publishers. A single song can have writers represented by multiple PROs.
+
+      To be fully compliant playing copyrighted music, a business technically needs blanket licenses from all four. That runs $500 to $2,000+ per year depending on your store&rsquo;s size and setup. Most commercial music services bundle these fees into their subscription, which is the main reason those services exist.
+
+  - type: subhead
+    level: 2
+    text: "What the current providers offer"
+    anchor: "providers"
+
+  - type: prose
+    body: |
+      The commercial in-store music market has a handful of established players. They all work the same way: license a catalog of existing music, bundle public performance rights, and charge a monthly subscription.
+
+  - type: comparison_table
+    title: "Commercial in-store music services (2026)"
+    columns: ["Service", "Monthly cost per location", "Notes"]
+    rows:
+      - ["Pandora CloudCover", "$16.95&ndash;$26.95", "Lowest entry price in the catalog category"]
+      - ["SiriusXM for Business", "$26.95+", "Requires $99 hardware purchase"]
+      - ["SoundMachine", "$26.95&ndash;$33.95", "Browser and app-based"]
+      - ["Soundtrack Your Brand", "~$29", "Spotify-backed; clean interface"]
+      - ["Epidemic Sound", "Varies", "In-store plans available"]
+
+  - type: prose
+    body: |
+      These services are legitimate. The music sounds good. The legal coverage is real. But they share two limitations.
+
+      First, they all charge monthly because they have to. Licensing economics make a free tier structurally impossible for any catalog-based provider.
+
+      Second, the music is not designed to do anything for your business. You pick a genre or a mood and it plays. The selection is aesthetic, not strategic. Nobody is calibrating the tempo to influence how long your customers browse or matching the sonic profile to your target demographic.
+
+  - type: subhead
+    level: 2
+    text: "What Entuned does differently"
+    anchor: "entuned"
+
+  - type: prose
+    body: |
+      Entuned does not license anyone else&rsquo;s music. We generate original tracks and own them outright. No PRO fees. No licensing middlemen. No per-performance royalties. This is why we can offer a genuinely free tier when nobody else can.
+
+      But the ownership model is only half of it. The other half is what the music is designed to do.
+
+  - type: pullquote
+    text: "Every track we generate targets a specific retail outcome. The free tier covers the two most robustly validated effects in the retail atmospherics literature: increasing energy and extending dwell time."
+    accent: teal
+
+  - type: prose
+    body: |
+      You sign up, pick an outcome, press play. Music streams continuously through your existing speakers. No special hardware.
+
+      Paid tiers unlock eight to ten additional outcome modes and music generated for your specific customer demographic. The free tier covers what most single-location retailers need. The paid tiers exist for businesses that want precision.
+
+      For more on the research behind the outcome modes, see <a href="../blog/what-are-flow-factors.html">what flow factors are and why they matter</a> and <a href="../blog/retail-atmospherics-2026.html">the state of retail atmospherics research in 2026</a>.
+
+  - type: subhead
+    level: 2
+    text: "How to think about choosing"
+    anchor: "choosing"
+
+  - type: prose
+    body: |
+      Three questions worth asking.
+
+      Do you need recognizable songs? If your brand identity depends on playing familiar artists, a catalog service like Soundtrack Your Brand or CloudCover is the right fit. You are paying for the catalog and the licensing. That is the value.
+
+      Do you want to eliminate the monthly cost? If background music is a line item you would rather not have, Entuned&rsquo;s free tier gives you legal, quality music at zero cost. The music is original rather than familiar, but it is designed to be good and to work for your store.
+
+      Do you care about what the music does for your business? If you want music that is actively working to keep customers in your store longer or match the energy to your peak hours, outcome-driven music is a different category from catalog services. This is where Entuned&rsquo;s model starts to matter most.
+
+      For a side-by-side of the full provider landscape, see <a href="../blog/commercial-music-services-compared.html">commercial music services compared</a>.
+
+  - type: subhead
+    level: 2
+    text: "Getting started"
+    anchor: "getting-started"
+
+  - type: prose
+    body: |
+      If you are currently playing personal Spotify or running silence, the fastest path is signing up for Entuned&rsquo;s free tier. You will be streaming legal, outcome-designed music in about five minutes.
+
+      If you want a catalog service, Soundtrack Your Brand and CloudCover are both solid options at different price points.
+
+      The one thing to avoid is the status quo of playing a personal streaming account through your store speakers. The legal exposure is not worth it. For a complete breakdown of what licenses cost and how enforcement works, see <a href="../blog/retail-music-licensing-2026.html">retail music licensing in 2026</a>.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Essentials is free, indefinite, no card. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "retail-music-licensing-2026"
+      - slug: "commercial-music-services-compared"
+      - slug: "can-you-play-spotify-in-your-store"
