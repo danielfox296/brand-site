@@ -25,7 +25,7 @@ pillar3:
   eyebrow: "The Compound"
   h2: "Self-improving as the data accumulates."
   p1: "The Professional tier reads sales and traffic data tied to specific environmental conditions in your stores and refines the music against your store's outcomes as the dataset grows. Self-improving refinement compounds over weeks of data, not days."
-  p2: "Every store running self-improving refinement adds to the proprietary behavioral dataset that improves the system for that store. The Essentials and Core tiers prove the concept on the floor. Professional proves the lift in the report."
+  p2: "Every store running self-improving refinement adds to the proprietary behavioral dataset that improves the system for that store. The Entuned Free and Core tiers prove the concept on the floor. Professional proves the lift in the report."
 
 # Social proof
 social_eyebrow: "Early signal from the pilot floor"
@@ -51,7 +51,7 @@ built_for_text: "Mid-market multi-store retail — footwear, off-price apparel, 
 tiers:
   eyebrow: "Pricing"
   h2: "Four tiers. Public pricing. Start free."
-  essentials_name: "Essentials"
+  essentials_name: "Entuned Free"
   essentials_price: "Free"
   essentials_body: "Outcome-tuned music for your floor. Pick Increase Dwell or Infuse Energy. No card required."
   core_name: "Core"
@@ -69,7 +69,7 @@ tiers:
 home_faq_h2: "Common questions, before you start."
 
 home_faq_q1: "How much does it cost?"
-home_faq_a1: 'Essentials is free, indefinite, no card. Core is $99 per location per month. Professional is $399 per location per month. Enterprise is negotiated per-store for multi-fleet rollouts. <a href="pricing.html">See full pricing →</a>'
+home_faq_a1: 'Entuned Free &mdash; indefinite, no card. Core is $99 per location per month. Professional is $399 per location per month. Enterprise is negotiated per-store for multi-fleet rollouts. <a href="pricing.html">See full pricing →</a>'
 
 home_faq_q2: "Do I need new hardware?"
 home_faq_a2: "No. Entuned streams through whatever audio system you already have — Sonos, AirPlay, Bluetooth, line-in, hardwired. The stream plays from a URL we hand you."
@@ -80,7 +80,7 @@ home_faq_a3: 'Yes. Every track Entuned plays is original, commercial-use cleared
 home_faq_q4: "What if I run multiple stores?"
 home_faq_a4: 'Professional handles multi-store deployments with POS integration, day-parting, and self-improving refinement. For fleets requiring custom ICP design, performance guarantees, or white-glove rollout, talk to <a href="enterprise.html">Enterprise</a>.'
 
-home_faq_q5: "How do I get started on Essentials?"
+home_faq_q5: "How do I get started on Entuned Free?"
 home_faq_a5: 'Sign in with your email or Google at <a href="https://app.entuned.co/start">app.entuned.co/start</a>. No card. You get a player URL the moment you finish.'
 
 # Final CTA

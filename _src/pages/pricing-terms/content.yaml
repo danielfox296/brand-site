@@ -1,12 +1,12 @@
 # Subscription Terms — editable text
 #
 # DRAFT NOTE (for Daniel, not for customers):
-# These terms were updated for the 4-tier PLS structure (Essentials / Core /
+# These terms were updated for the 4-tier PLS structure (Entuned Free / Core /
 # Professional / Enterprise). This is a material change to the commercial
 # offer relative to the prior Founding Retailer Terms. Have counsel review
 # before relying on this as a binding agreement. Particular flags:
 #   - Multi-tier pricing structure now stated publicly
-#   - Free tier (Essentials) introduces a new license relationship
+#   - Free tier (Entuned Free) introduces a new license relationship
 #   - PRO indemnification claim is more prominent — confirm coverage
 #     language matches the indemnification certificate template
 #   - Existing Founding Retailer customers should be honored at $99/mo for
@@ -17,48 +17,48 @@
 
 h1_1: "Subscription Terms"
 p_1: "Last updated: May 2, 2026"
-p_intro: "These terms apply when you subscribe to or activate any tier of Entuned (Essentials, Core, Professional, or Enterprise) on entuned.co. They form a binding agreement between you and Entuned LLC (\"Entuned,\" \"we,\" \"us\"), a Colorado limited liability company. If you do not agree to these terms, do not subscribe or activate the service."
+p_intro: "These terms apply when you subscribe to or activate any tier of Entuned (Entuned Free, Core, Professional, or Enterprise) on entuned.co. They form a binding agreement between you and Entuned LLC (\"Entuned,\" \"we,\" \"us\"), a Colorado limited liability company. If you do not agree to these terms, do not subscribe or activate the service."
 
 h2_1: "1. The service"
 p_2: "Entuned delivers an original audio stream engineered for your store. The stream plays over your existing in-store audio system via a streaming URL we provide. The level of customization, the size and refresh of the catalogue, the available outcomes, and the integration depth depend on the tier you are subscribed to. You control playback."
 
 h2_2: "2. Tiers and pricing"
 p_3: "Entuned offers four service tiers with the following commercial terms:"
-li_1: "<strong>Essentials.</strong> Free, indefinite access. General catalogue, two outcome modes (Increase Dwell, Infuse Energy), one mode active at a time. No customer-profile customization. Subject to fair use limits for the audio stream."
+li_1: "<strong>Entuned Free.</strong> Free, indefinite access. General catalogue, two outcome modes (Increase Dwell, Infuse Energy), one mode active at a time. No customer-profile customization. Subject to fair use limits for the audio stream."
 li_2: "<strong>Core.</strong> $99 per location per month, billed monthly in advance through Stripe. Includes ICP-tailored music for one Ideal Customer Profile, all research-backed outcomes, regular catalogue refresh and culling."
 li_3: "<strong>Professional.</strong> $399 per location per month, billed monthly in advance through Stripe. Includes everything in Core plus POS integration, day-parting, interstitial messaging, multiple ICPs, and self-improving refinement."
 li_4: "<strong>Enterprise.</strong> Negotiated per-store pricing under a separate written agreement. Custom ICP design, performance terms, and rollout details are specified in that agreement and supersede these public terms where they differ."
 li_5: "<strong>Per-location.</strong> One paid subscription covers one physical retail location. Multiple locations require multiple subscriptions; quantity is set at checkout."
 li_6: "<strong>Taxes.</strong> Sales and use taxes are added where applicable and collected at checkout."
-li_7: "<strong>Automatic renewal.</strong> Paid subscriptions renew every month until cancelled. Essentials does not renew because no charge occurs."
-li_8: "<strong>Payment failures.</strong> If a payment fails we will retry and notify you. Access to the paid stream may be suspended if a payment remains unresolved for 14 days. The Essentials catalogue remains available."
+li_7: "<strong>Automatic renewal.</strong> Paid subscriptions renew every month until cancelled. Entuned Free does not renew because no charge occurs."
+li_8: "<strong>Payment failures.</strong> If a payment fails we will retry and notify you. Access to the paid stream may be suspended if a payment remains unresolved for 14 days. The Entuned Free catalogue remains available."
 
 h2_3: "3. Tier changes"
 p_4: "You may upgrade or downgrade your tier at any time from your customer portal or by emailing hello@entuned.co. Upgrades take effect immediately and are pro-rated against the current billing period. Downgrades take effect at the end of the current billing period; no pro-rated refund is issued. Downgrading may reduce the level of customization, integration, or service available — for example, downgrading from Professional to Core ends POS integration, day-parting, and self-improving refinement against your store's data."
 
 h2_4: "4. Cancellation and refunds"
-p_5: "You may cancel any paid subscription at any time from your customer portal or by emailing hello@entuned.co. Cancellation takes effect at the end of the current billing period, and you retain access through that date. We do not pro-rate or refund unused portions of a billing period. If you believe you were charged in error, email hello@entuned.co within 14 days and we will review. Essentials access may be discontinued at our discretion if the account is inactive for an extended period or if fair use limits are exceeded."
+p_5: "You may cancel any paid subscription at any time from your customer portal or by emailing hello@entuned.co. Cancellation takes effect at the end of the current billing period, and you retain access through that date. We do not pro-rate or refund unused portions of a billing period. If you believe you were charged in error, email hello@entuned.co within 14 days and we will review. Entuned Free access may be discontinued at our discretion if the account is inactive for an extended period or if fair use limits are exceeded."
 
 h2_5: "5. License to the music"
-p_6: "During an active subscription (including the free Essentials tier), Entuned grants you a non-exclusive, non-transferable, revocable license to play the audio we deliver in the physical retail location or locations covered by your subscription. You may play it for customers, staff, and anyone present in the store. You may not re-stream or rebroadcast the audio outside your store, record or distribute it, resell it, or use it in advertising, video content, or other media without our written permission. When your subscription ends or your account is terminated, the license ends and you must stop playing the audio."
+p_6: "During an active subscription (including the free Entuned Free tier), Entuned grants you a non-exclusive, non-transferable, revocable license to play the audio we deliver in the physical retail location or locations covered by your subscription. You may play it for customers, staff, and anyone present in the store. You may not re-stream or rebroadcast the audio outside your store, record or distribute it, resell it, or use it in advertising, video content, or other media without our written permission. When your subscription ends or your account is terminated, the license ends and you must stop playing the audio."
 
 h2_6: "6. Ownership"
 p_7: "Entuned retains all right, title, and interest in the audio, the underlying compositions, the production process, and any analytics or methods Entuned uses internally. You retain all right, title, and interest in your brand, store data, and customer data. Feedback you provide — including suggestions, requests, and notes during intake — may be used by Entuned to improve the service without further obligation to you."
 
 h2_7: "7. PRO indemnification and music licensing"
-p_8: "All audio Entuned delivers is generated by Entuned and is cleared for commercial in-store use. You do not owe separate performing rights organization fees (ASCAP, BMI, SESAC, GMR) for the music Entuned provides. Every Entuned subscription, including Essentials, includes a written indemnification certificate that identifies the music source as original Entuned compositions and lists Entuned as the indemnifying party. If a performing rights organization or other third party asserts that music played through Entuned in your store requires a license, Entuned defends the claim and covers any associated costs. Multi-location operators on the Professional or Enterprise tier receive a bulk certificate covering the full fleet. Indemnification applies to music played through the Entuned system during your operating hours and does not extend to other audio sources you choose to play alongside or instead of Entuned."
+p_8: "All audio Entuned delivers is generated by Entuned and is cleared for commercial in-store use. You do not owe separate performing rights organization fees (ASCAP, BMI, SESAC, GMR) for the music Entuned provides. Every Entuned subscription, including Entuned Free, includes a written indemnification certificate that identifies the music source as original Entuned compositions and lists Entuned as the indemnifying party. If a performing rights organization or other third party asserts that music played through Entuned in your store requires a license, Entuned defends the claim and covers any associated costs. Multi-location operators on the Professional or Enterprise tier receive a bulk certificate covering the full fleet. Indemnification applies to music played through the Entuned system during your operating hours and does not extend to other audio sources you choose to play alongside or instead of Entuned."
 
 h2_8: "8. Data"
 p_9: "If you connect POS data, transaction data, traffic data, or sensor data to your Professional or Enterprise subscription so that Entuned can perform self-improving refinement, you grant Entuned permission to use that data to refine the music for your store and to operate the service. We use aggregated, anonymized signal across customers to improve the underlying engine. We do not sell your data. We collect basic stream usage data such as start time, duration, and location to operate the service across all tiers. Our general data practices are described in our <a href=\"../privacy-policy.html\">privacy policy</a>."
 
 h2_9: "9. No guaranteed outcomes"
-p_10: "The peer-reviewed research underpinning Entuned supports meaningful improvement in in-store customer behavior, and our approach is engineered against that research. We do not guarantee any specific outcome, sales lift, or revenue result for your store on the Essentials, Core, or Professional tier. Enterprise agreements may include negotiated performance terms specific to that engagement; those terms supersede this section for that customer."
+p_10: "The peer-reviewed research underpinning Entuned supports meaningful improvement in in-store customer behavior, and our approach is engineered against that research. We do not guarantee any specific outcome, sales lift, or revenue result for your store on the Entuned Free, Core, or Professional tier. Enterprise agreements may include negotiated performance terms specific to that engagement; those terms supersede this section for that customer."
 
 h2_10: "10. Warranty disclaimer"
 p_11: "The service is provided \"as is\" and \"as available.\" To the maximum extent permitted by law, Entuned disclaims all warranties, express or implied, including merchantability, fitness for a particular purpose, and non-infringement."
 
 h2_11: "11. Limitation of liability"
-p_12: "To the maximum extent permitted by law, Entuned's total liability arising out of or related to your subscription will not exceed the greater of (a) the amount you paid to Entuned in the 12 months preceding the event giving rise to the claim, or (b) one hundred US dollars ($100) for free-tier Essentials users. Entuned is not liable for indirect, incidental, consequential, special, or punitive damages."
+p_12: "To the maximum extent permitted by law, Entuned's total liability arising out of or related to your subscription will not exceed the greater of (a) the amount you paid to Entuned in the 12 months preceding the event giving rise to the claim, or (b) one hundred US dollars ($100) for free-tier Entuned Free users. Entuned is not liable for indirect, incidental, consequential, special, or punitive damages."
 
 h2_12: "12. Changes to these terms"
 p_13: "We may update these terms from time to time. If a change materially affects your rights, we will email you at least 30 days in advance. Continued use of the service after the effective date constitutes acceptance."

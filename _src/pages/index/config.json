@@ -5,7 +5,7 @@
   "faq": [
     {
       "q": "How much does Entuned cost?",
-      "a": "Essentials is free, indefinite, no card required. Core is $99 per location per month. Professional is $399 per location per month. Enterprise is negotiated per-store for multi-fleet rollouts."
+      "a": "Entuned Free &mdash; indefinite, no card required. Core is $99 per location per month. Professional is $399 per location per month. Enterprise is negotiated per-store for multi-fleet rollouts."
     },
     {
       "q": "Do I need new hardware to use Entuned?",
@@ -20,7 +20,7 @@
       "a": "The Professional tier handles multi-store deployments with POS integration, day-parting, and self-improving refinement. For fleets requiring custom ICP design, performance guarantees, or white-glove rollout, the Enterprise tier is negotiated per-store."
     },
     {
-      "q": "How do I get started on Essentials?",
+      "q": "How do I get started on Entuned Free?",
       "a": "Sign in with your email or Google at app.entuned.co/start. No card. You get a player URL the moment you finish — typically under three minutes from sign-up to music in your store."
     }
   ]

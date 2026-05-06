@@ -681,7 +681,7 @@ def build():
                 "offers": [
                     {
                         "@type": "Offer",
-                        "name": "Essentials",
+                        "name": "Entuned Free",
                         "price": "0",
                         "priceCurrency": "USD",
                         "description": "Free, indefinite. Outcome-tuned music for your floor. PRO-indemnified."

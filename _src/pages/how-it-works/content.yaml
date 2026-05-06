@@ -5,9 +5,9 @@ hero:
   subline: "Three minutes from sign-up to music in your store. Each tier adds a layer of specificity — outcome, then customer, then data — without changing the engine underneath."
 
 step1:
-  label: "Step 01 — Essentials"
+  label: "Step 01 — Entuned Free"
   title: "Pick a starting outcome."
-  text: "Two outcome modes — Increase Dwell or Infuse Energy — built from the research on tempo, key, and density. Pick one, the music starts. No card required, no time limit. The Essentials catalogue covers the floor while you decide what comes next."
+  text: "Two outcome modes — Increase Dwell or Infuse Energy — built from the research on tempo, key, and density. Pick one, the music starts. No card required, no time limit. The Entuned Free catalogue covers the floor while you decide what comes next."
 
 step2:
   label: "Step 02 — Any tier"
@@ -30,7 +30,7 @@ tiers:
   headline: "Same engine, deeper specificity."
 
 card1:
-  title: "Essentials"
+  title: "Entuned Free"
   text: "General catalogue, two outcome modes, manual selection. Indefinite free access. The floor has music engineered for an outcome instead of whatever the vendor sent over."
 
 card2:

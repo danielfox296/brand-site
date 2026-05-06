@@ -25,10 +25,10 @@ hero:
   headline: "Music engineered as a sales lever."
   subhead: "Four tiers. Public pricing. Start free. Every tier is PRO-indemnified the moment you start playing."
 
-# Tiers (Essentials → Core → Professional → Enterprise)
+# Tiers (Entuned Free → Core → Professional → Enterprise)
 tiers:
   essentials:
-    name: "Essentials"
+    name: "Entuned Free"
     eyebrow: "Free, indefinite"
     price: "$0"
     price_suffix: "/ month"
@@ -89,8 +89,8 @@ tiers:
 # How it ramps
 ramps:
   header: "How the tiers stack."
-  body1: "Essentials proves the system works on your floor. Core proves it works for your customer. Professional proves the lift in the report your CFO already runs. Each tier is a step deeper into the same engine — never a different product."
-  body2: "Most operators start on Essentials, move to Core within their first paid quarter, and graduate to Professional once they want the music tied to data they can audit."
+  body1: "Entuned Free proves the system works on your floor. Core proves it works for your customer. Professional proves the lift in the report your CFO already runs. Each tier is a step deeper into the same engine — never a different product."
+  body2: "Most operators start on Entuned Free, move to Core within their first paid quarter, and graduate to Professional once they want the music tied to data they can audit."
 
 # Indemnification callout
 indemnification:
@@ -103,8 +103,8 @@ indemnification:
 # FAQ
 faq:
   header: "Questions"
-  q1: "Why is Essentials actually free?"
-  a1: "Because the most expensive moment in the buyer relationship is the gate. The Essentials catalogue is real and indefinite. The structural difference at Core is not artificial scarcity — it is that Core music is built around your specific customer rather than a general catalogue. Most operators move to Core when their floor is ready for that level of specificity."
+  q1: "Why is Entuned Free actually free?"
+  a1: "Because the most expensive moment in the buyer relationship is the gate. The Entuned Free catalogue is real and indefinite. The structural difference at Core is not artificial scarcity — it is that Core music is built around your specific customer rather than a general catalogue. Most operators move to Core when their floor is ready for that level of specificity."
   q2: "Do I need special hardware?"
   a2: "No. Entuned streams through whatever audio system you already have — Sonos, AirPlay, Bluetooth, line-in, or a hardwired speaker rig."
   q3: "What about music licensing and PRO fees?"
@@ -123,7 +123,7 @@ final:
   subhead: "Most operators start with Core."
   cta_primary_label: "Start Core — $99/mo"
   text_links_lead: "Or"
-  text_links_essentials_label: "start free with Essentials"
+  text_links_essentials_label: "start free with Entuned Free"
   text_links_separator: "·"
   text_links_enterprise_lead: "Multi-fleet rollout?"
   text_links_enterprise_label: "Talk to Enterprise"

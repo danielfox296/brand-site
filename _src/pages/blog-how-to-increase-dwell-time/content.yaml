@@ -148,16 +148,16 @@ sections:
 
       **Walk your stores and listen.** Stand at the door for two minutes on a Saturday afternoon. Ask: does the music match the customer I want? Is it loud enough that two people would have to raise their voices six feet apart? Did anyone choose this?
 
-      **Run a free audio pilot.** Entuned Essentials gives you outcome-tuned music for free, indefinite, no card. Pick the Increase Dwell preset, run it for two weeks against the baseline you just pulled. If the number moves, you have evidence to expand. If it does not, you have learned where the binding constraint is not, which is also worth knowing.
+      **Run a free audio pilot.** Entuned Free gives you outcome-tuned music for free, indefinite, no card. Pick the Increase Dwell preset, run it for two weeks against the baseline you just pulled. If the number moves, you have evidence to expand. If it does not, you have learned where the binding constraint is not, which is also worth knowing.
 
   - type: prose
     body: |
-      For a deeper read on why dwell is structurally under-tracked in retail, see <a href="../blog/the-dwell-time-variable-nobodys-tracking.html">the dwell time variable nobody's tracking</a>. For the math on why longer visits do not always mean bigger receipts, see <a href="../blog/longer-visits.html">longer visits don't mean bigger receipts</a>. The full <a href="../pricing.html">pricing page</a> walks through what each tier includes if you outgrow Essentials.
+      For a deeper read on why dwell is structurally under-tracked in retail, see <a href="../blog/the-dwell-time-variable-nobodys-tracking.html">the dwell time variable nobody's tracking</a>. For the math on why longer visits do not always mean bigger receipts, see <a href="../blog/longer-visits.html">longer visits don't mean bigger receipts</a>. The full <a href="../pricing.html">pricing page</a> walks through what each tier includes if you outgrow Entuned Free.
 
   - type: cta
     variant: start-free
     headline: "Hear it on your floor."
-    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Essentials is free, indefinite, no card. PRO-indemnified the moment it plays."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; indefinite, no card. PRO-indemnified the moment it plays."
     link: "https://app.entuned.co/start"
     link_text: "Start Free"
 
