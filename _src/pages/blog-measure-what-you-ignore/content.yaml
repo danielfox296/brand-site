@@ -14,6 +14,7 @@ hero:
 meta_description: "What KPIs should you track beyond sales and traffic? The variables you've been treating as fixed are usually where store-level performance hides."
 og_image: "/img/blog/measure-what-you-ignore.jpg"
 tags: [field-notes, kpis, operations, multi-location]
+robots: noindex
 sections:
   - type: key_takeaways
     items:
@@ -85,7 +86,7 @@ sections:
     body: |
       Walk three of your stores on three different days. Write down every variable on the floor that nobody in your company owns. The lighting program. The music. The fitting room flow. The smell at the front door. The temperature at peak. The line-of-sight from the entrance to the back wall. Pick one. Assign somebody to watch it for ninety days. See what they find out.
 
-      If music is the one you pick, there's public academic work on the effect size and there are vendors who can help you actually measure it rather than just play it. We work with a small number of multi-location lifestyle retailers on pilots that put a number next to the variable most of their peers are still ignoring. If that's a problem you're trying to solve, we're open to a conversation.
+      If music is the one you pick, there's public academic work on the effect size and there are vendors who can help you actually measure it rather than just play it. Entuned Essentials is free to start — no card, no commitment — and built to put a number next to the variable most stores are still ignoring.
 
   - type: prose
     body: |

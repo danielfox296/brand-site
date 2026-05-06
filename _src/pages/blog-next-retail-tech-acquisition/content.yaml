@@ -14,6 +14,7 @@ hero:
 meta_description: "Retail tech platforms already own traffic, POS, and clienteling data. Audio is the environmental surface still missing from the stack."
 og_image: "/img/blog/next-retail-tech-acquisition.jpg"
 tags: [market-intel, retail-tech, acquisition, inv]
+robots: noindex
 sections:
   - type: key_takeaways
     items:

@@ -14,6 +14,7 @@ hero:
 meta_description: "Dwell time produces a second effect most retailers never measure: a busier-looking storefront that compounds foot traffic from the sidewalk."
 og_image: "/img/blog/the-second-sale-you-already-made.jpg"
 tags: [dwell-time, foot-traffic, social-proof, operations]
+robots: noindex
 sections:
   - type: key_takeaways
     items:

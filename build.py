@@ -363,14 +363,15 @@ def build():
                 print(f'  ✗ {output_check} — {exc}')
                 raise SystemExit(1)
 
-            # Pull metadata from the YAML frontmatter
-            title = post_data.get('title', config.get('title', 'Entuned'))
+            # Pull metadata from the YAML frontmatter.
+            # seo_title (if set) drives the <title> tag; title drives the H1.
+            _raw_title = post_data.get('seo_title') or post_data.get('title', config.get('title', 'Entuned'))
             # Strip any existing suffix (legacy or canonical) before re-appending
             for legacy in (' | Entuned Blog', ' — Entuned Blog', ' | Entuned', ' — Entuned'):
-                if title.endswith(legacy):
-                    title = title[:-len(legacy)]
+                if _raw_title.endswith(legacy):
+                    _raw_title = _raw_title[:-len(legacy)]
                     break
-            title = f"{title} | Entuned"
+            title = f"{_raw_title} | Entuned"
             description = post_data.get('meta_description',
                                         config.get('meta_description', ''))
             output      = output_check
@@ -385,7 +386,8 @@ def build():
 
         else:
             # --- Original pipeline (unchanged) ---
-            title       = config.get('title', 'Entuned')
+            # seo_title (if set) drives the <title> tag; title drives the H1.
+            title       = config.get('seo_title') or config.get('title', 'Entuned')
             description = config.get('description', '') or config.get('meta_description', '')
             output      = config.get('output', f'{page_name}.html')
 
@@ -412,8 +414,9 @@ def build():
         # SHARED LAYOUT ASSEMBLY (both old and new pipelines converge)
         # ---------------------------------------------------------------
 
-        # Robots meta tag
-        robots_value = config.get('robots', 'index, follow')
+        # Robots meta tag — new-format YAML can override via `robots:` field
+        robots_value = (post_data.get('robots') if use_new_renderer else None) \
+                       or config.get('robots', 'index, follow')
 
         # Meta description tag
         meta_desc = ''

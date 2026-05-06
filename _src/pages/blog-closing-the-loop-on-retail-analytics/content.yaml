@@ -14,6 +14,7 @@ hero:
 meta_description: "Most retailers pay for in-store sensor data but only use it for reporting. How to turn traffic, dwell, and conversion into store-level action."
 og_image: "/img/blog/closing-the-loop.jpg"
 tags: [retail-analytics, retailnext, sensor-data, store-operations, measurement]
+robots: noindex
 sections:
   - type: key_takeaways
     items:

@@ -15,6 +15,7 @@ meta_description: "Most retailers never measure their audio environment. Four st
 og_image: "/img/blog/metrics-audio-environment.jpg"
 tags: [metrics, analytics, dwell-time, roi, retail-operations]
 question_bank: "Q3"
+robots: noindex
 sections:
   - type: key_takeaways
     items:

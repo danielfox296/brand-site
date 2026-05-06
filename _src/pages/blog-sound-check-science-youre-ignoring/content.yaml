@@ -14,6 +14,7 @@ hero:
 meta_description: "Peer-reviewed field research links in-store music to measurable changes in spending and dwell time. Most retail operators have never seen the studies."
 og_image: "/img/blog/sound-check-science.jpg"
 tags: [research, retail-music, dwell-time, spending, field-notes]
+robots: noindex
 sections:
   - type: key_takeaways
     items:
