@@ -87,7 +87,6 @@ textarea:valid:not(:placeholder-shown) {
           <button type="button" class="topic-chip" data-topic="professional">Professional inquiry</button>
           <button type="button" class="topic-chip" data-topic="partnership">Partnership</button>
           <button type="button" class="topic-chip" data-topic="press">Press</button>
-          <button type="button" class="topic-chip" data-topic="investor">Investor</button>
           <button type="button" class="topic-chip" data-topic="general">General</button>
         </div>
       </div>
@@ -107,7 +106,6 @@ textarea:valid:not(:placeholder-shown) {
           <select id="contact-role" name="role" required>
             <option value="" disabled selected>Select one</option>
             <option value="Retail Operator">Retail Operator</option>
-            <option value="Investor">Investor</option>
             <option value="Technology Partner">Technology Partner</option>
             <option value="Media / Press">Media / Press</option>
             <option value="Other">Other</option>
@@ -173,7 +171,6 @@ textarea:valid:not(:placeholder-shown) {
       professional: '<strong>Professional inquiry.</strong> POS integration, day-parting, multiple ICPs, self-improving refinement. Most operators on this tier are running 1–4 stores with a real measurement stack.',
       partnership: '<strong>Partnership inquiry.</strong> Integration partners, audio system vendors, retail analytics platforms. Tell us what you are building and where Entuned fits.',
       press: '<strong>Press inquiry.</strong> Media, podcast, analyst coverage. Daniel responds personally within one business day.',
-      investor: '<strong>Investor inquiry.</strong> Investor materials live separately from the PLS site — message below and we will follow up with the relevant collateral.',
       general: '<strong>General inquiry.</strong> Anything not listed above. We will route appropriately.'
     };
 
@@ -182,8 +179,7 @@ textarea:valid:not(:placeholder-shown) {
       essentials: 'Retail Operator',
       professional: 'Retail Operator',
       partnership: 'Technology Partner',
-      press: 'Media / Press',
-      investor: 'Investor'
+      press: 'Media / Press'
     };
 
     var topicField = document.getElementById('contact-topic');
