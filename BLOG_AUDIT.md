@@ -297,12 +297,17 @@ The remaining 19 long-slug posts have **0 impressions** in the 6-week window. Th
 
 ### Actions executed (2026-05-05)
 
+**Slugs + redirects:**
 - Renamed source dir `_src/pages/blog-luxury-priming-...-use-it/` → `_src/pages/blog-luxury-priming-for-non-luxury-brands/`.
 - Updated `slug:` and `output:` in the post's `content.yaml` / `config.json`.
 - Updated 6 internal cross-link references (4 blog posts, science page, blog listing, sitemap.xml, llms.txt).
 - Created meta-refresh + canonical stub at the old path so existing links + the GSC-indexed URL keep working.
 - Created meta-refresh stub for the 9th 404'd URL `the-multi-zone-problem-...-whole-store.html` → `tempo-controls.html` (multi-zone is not a product offering, per Daniel).
 - The 7 pre-existing orphan stubs left as-is (already correct).
+
+**GEO lift (handoff item 4):**
+- Added `faq` array to `_src/pages/index/config.json` mirroring the 5 Q&A pairs already rendered visually on the homepage. `build.py` auto-generates a `FAQPage` JSON-LD `<script>` from this — no template changes needed.
+- Audited `key_takeaways` coverage across all 78 YAML-schema blog posts: **76/78 already have one.** The 2 missing (`how-to-choose-music-for-your-retail-store`, `what-your-music-is-saying-about-your-brand`) use the legacy flat-key format and don't support the `key_takeaways` block by schema. Migrating them is out of scope for a GEO bolt-on. Within the structured-YAML corpus, coverage is effectively 100%.
 
 ---
 

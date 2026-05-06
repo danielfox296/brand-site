@@ -1,5 +1,27 @@
 {
   "title": "Entuned | The Unmeasured Variable in Your Store's P&L",
   "meta_description": "Music engineered to your customer and your outcome. Tempo, key, lyrical density specified on purpose. Free to start. Public pricing. Built for mid-market multi-store retail.",
-  "output": "index.html"
+  "output": "index.html",
+  "faq": [
+    {
+      "q": "How much does Entuned cost?",
+      "a": "Essentials is free, indefinite, no card required. Core is $99 per location per month. Professional is $399 per location per month. Enterprise is negotiated per-store for multi-fleet rollouts."
+    },
+    {
+      "q": "Do I need new hardware to use Entuned?",
+      "a": "No. Entuned streams through whatever audio system you already have — Sonos, AirPlay, Bluetooth, line-in, or hardwired. The stream plays from a URL we hand you."
+    },
+    {
+      "q": "What about music licensing — am I covered?",
+      "a": "Yes. Every track Entuned plays is original, commercial-use cleared, and PRO-indemnified the moment it starts. No ASCAP, BMI, SESAC, or SoundExchange royalties. Every subscription includes a written indemnification certificate."
+    },
+    {
+      "q": "What if I run multiple stores?",
+      "a": "The Professional tier handles multi-store deployments with POS integration, day-parting, and self-improving refinement. For fleets requiring custom ICP design, performance guarantees, or white-glove rollout, the Enterprise tier is negotiated per-store."
+    },
+    {
+      "q": "How do I get started on Essentials?",
+      "a": "Sign in with your email or Google at app.entuned.co/start. No card. You get a player URL the moment you finish — typically under three minutes from sign-up to music in your store."
+    }
+  ]
 }
