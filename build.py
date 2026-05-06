@@ -229,21 +229,17 @@ _HOWTO_SUBHEAD_RE = re.compile(
 
 
 def auto_extract_howto(post_data, min_steps=2, max_step_chars=400):
-    """Extract HowTo steps from a how-to post.
+    """Extract HowTo steps from a procedural blog post.
 
-    Conservative detector: only returns a HowTo when the post is a how-to-*
-    slug AND a prose block immediately follows a procedural-sounding subhead
-    AND that prose block has ≥min_steps paragraphs each prefixed with
-    `**Step name.**` markdown.
+    Conservative detector: returns a HowTo only when a prose block immediately
+    follows a procedural-sounding subhead AND that prose block has ≥min_steps
+    paragraphs each prefixed with `**Step name.**` markdown.
 
     Walks in reverse so a benchmarks section earlier in the post (which can
     also use bold-prefix paragraphs as category labels) doesn't get mistaken
     for steps. The procedural section is conventionally the last cluster of
     bold-prefix paragraphs before the CTA.
     """
-    slug = post_data.get('slug', '')
-    if not slug.startswith('how-to-'):
-        return None
     sections = post_data.get('sections', [])
     for i in range(len(sections) - 1, -1, -1):
         block = sections[i]
