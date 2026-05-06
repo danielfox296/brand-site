@@ -1,0 +1,167 @@
+title: "How to Increase Dwell Time in Retail Stores"
+slug: "how-to-increase-dwell-time"
+eyebrow: "FIELD NOTES"
+dek: "Five levers that actually move dwell, why most operators undershoot the easiest one, and a two-week test to run on your own floor."
+date: "2026-05-05"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/longer-visits.jpg"
+  alt: "Customer browsing in a retail store, paused at a display"
+  caption: "Photo: Unsplash"
+meta_description: "Five levers that move retail dwell time. Why operators undershoot the easiest one. A two-week test you can run on your own floor against your POS data."
+og_image: "/img/blog/longer-visits.jpg"
+tags: [field-notes, dwell-time, retail-operations, conversion, customer-behavior]
+sections:
+  - type: key_takeaways
+    items:
+      - "Five levers move dwell time: layout and pathing, visual merchandising, staff engagement timing, the audio environment, and friction at decision points"
+      - "The audio environment is the cheapest of the five to change — and the one most operators have never deliberately chosen"
+      - "Longer dwell only matters if it co-moves with conversion or basket. Track all three or you'll mistake browsing for buying"
+      - "You can test the cheapest lever in two weeks against your existing POS data, no new sensors required"
+
+  - type: prose
+    body: |
+      Dwell time is the variable everyone wants to move and almost nobody knows how to measure cleanly. It shows up in every retail consultant's deck, every store-of-the-future presentation, every conference talk about experiential retail. What it usually does not show up in is the operator's actual weekly P&L review.
+
+      The reason is that dwell is hard to track without infrastructure most stores do not have, and even when you have the number, the levers that move it are not equally well-understood. Some get all the attention and most of the budget. Some get almost none and would compound faster.
+
+      This is a field guide to the five levers that actually move retail dwell time, ranked roughly by how much most operators are underweighting them.
+
+  - type: subhead
+    level: 2
+    text: "What is a good dwell time for a retail store?"
+    anchor: "benchmarks"
+
+  - type: prose
+    body: |
+      Benchmarks are category-specific and easier to misuse than to use well.
+
+      **Fast-fashion and value retail.** 4 to 8 minutes per visit is typical. The format is built for speed. A 30 percent dwell increase here is dramatic.
+
+      **Specialty apparel, footwear, beauty, home goods.** 12 to 25 minutes is the common range. The format invites browsing. A 10 to 15 percent dwell increase is meaningful and observable in basket size.
+
+      **Furniture, mattress, jewelry, premium home goods.** 30 to 60-plus minutes. Customers come in with intent and the format is built for consultation. Dwell movements here read more clearly in close rate than in basket.
+
+      The wrong question is "what is a good number." The right question is "is my dwell moving over time, and are the customers who stay longer also spending more?" Both are knowable from data you already have.
+
+  - type: subhead
+    level: 2
+    text: "Lever 1: Layout and pathing"
+    anchor: "layout"
+
+  - type: prose
+    body: |
+      Customers who walk further into a store dwell longer. That is mechanical, not psychological. The store layout decides whether they walk in or whether they reach what they came for and turn around.
+
+      The single biggest layout error in mid-market retail is putting the highest-margin or most browse-worthy product near the entrance. The customer reaches it on entry, makes a decision in 90 seconds, and exits. Pulling that product 40 feet deeper into the floor changes the math.
+
+      Layout is also the most expensive of the five levers to change. A floor plan revision is a project. A planogram audit is a quarter of work. Worth doing, slow to ship.
+
+  - type: subhead
+    level: 2
+    text: "Lever 2: Visual merchandising"
+    anchor: "merch"
+
+  - type: prose
+    body: |
+      Eye-level breaks in the visual rhythm interrupt the scan-and-leave reflex. A wall of identical merchandise reads as "more of the same" and customers move on. A wall of identical merchandise broken by a featured display every 12 feet reads as "let me see what that is" and customers slow down.
+
+      This is well-trodden ground for visual merchandising teams in larger retailers. It is much less rigorously applied in single-location and small-fleet operators where the same end-cap has been the same end-cap for two seasons.
+
+  - type: subhead
+    level: 2
+    text: "Lever 3: Staff engagement timing"
+    anchor: "staff"
+
+  - type: prose
+    body: |
+      Approached too early, customers retreat. Approached too late, indecision turns into exit. The window between is short and category-specific. Most staff training over-indexes on greeting at entry. The higher-leverage moment is the second engagement, when a customer has paused at a display for more than 20 seconds without moving toward checkout.
+
+      The friction here is not training. It is staffing density. A store with one associate covering the floor cannot run second-engagement timing. A store with three can. The dwell math depends on whether you have the labor budget to act on the timing in the first place.
+
+  - type: subhead
+    level: 2
+    text: "Lever 4: The audio environment"
+    anchor: "audio"
+
+  - type: prose
+    body: |
+      The cheapest dwell lever in the building is the one most operators have never deliberately chosen.
+
+      Music is doing something in your store right now. The tempo affects how fast customers move. The volume affects how quickly they leave. The familiarity affects how long the trip feels to them — Yalch and Spangenberg's 2000 study found that customers exposed to unfamiliar music underestimated their shopping time, while customers exposed to familiar music overestimated it. The first group stayed longer. The second group left sooner.
+
+      None of this requires capital. The audio environment is changed in software, not concrete. The reason it gets undershot is not that it does not work. It is that the commercial music industry has spent 30 years selling operators a catalog and a genre picker, then reporting on play counts. Operators were never given a tool that lets them pick the dwell outcome and have the audio configured to support it.
+
+  - type: stat_callout
+    number: "Slower tempo, more time, more sales"
+    label: "Milliman's 1982 supermarket study found slow background music increased shopper dwell and gross sales by 38 percent compared to fast music"
+    source: "Milliman, R. E. (1982). Using Background Music to Affect the Behavior of Supermarket Shoppers. Journal of Marketing"
+    accent: gold
+
+  - type: subhead
+    level: 2
+    text: "Lever 5: Friction at decision points"
+    anchor: "friction"
+
+  - type: prose
+    body: |
+      Fitting room availability. Checkout queue length. Sample station readiness. Product information accessibility on the floor. These are the small frictions that convert browsing into exit.
+
+      Friction reduction is the lever that consultants love because it has clean before-and-after metrics. It is also the lever where operators most often confuse "dwell increased" with "experience improved." A customer waiting 14 minutes for a fitting room is dwelling. They are not browsing. The number moves but the basket does not.
+
+      This is the central caveat for the entire dwell conversation: longer dwell only matters if it co-moves with conversion or basket. Track all three or you will mistake browsing for buying.
+
+  - type: pullquote
+    text: "A customer waiting 14 minutes for a fitting room is dwelling. They are not browsing. The number moves but the basket does not."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "How to test this in two weeks"
+    anchor: "test"
+
+  - type: prose
+    body: |
+      You do not need to commit to all five levers at once. You can test the cheapest one against your existing data in two weeks.
+
+      Pick a baseline week. Note weather, foot traffic, staffing, any promotions. Pull conversion rate, average basket, and an estimate of dwell from a door counter or a security camera review. That is your control.
+
+      Change one variable. The audio environment is the easiest because it has no operational lift — no fixture moves, no schedule changes, no training. Run it for two weeks under similar conditions. Pull the same numbers.
+
+      If conversion or basket moves directionally, the test is worth extending. If nothing moves, you have learned that for your customer profile the audio was not the binding constraint, and you can re-allocate to one of the other four levers without spending capital first.
+
+      The discipline is to test one lever at a time. Most operators try three at once, see a result, and have no idea which lever produced it.
+
+  - type: subhead
+    level: 2
+    text: "Where to start this week"
+    anchor: "this-week"
+
+  - type: prose
+    body: |
+      Three actions, in order.
+
+      **Pull two weeks of conversion and basket** from your POS. You will need this baseline to test against. Get familiar with the daypart pattern.
+
+      **Walk your stores and listen.** Stand at the door for two minutes on a Saturday afternoon. Ask: does the music match the customer I want? Is it loud enough that two people would have to raise their voices six feet apart? Did anyone choose this?
+
+      **Run a free audio pilot.** Entuned Essentials gives you outcome-tuned music for free, indefinite, no card. Pick the Increase Dwell preset, run it for two weeks against the baseline you just pulled. If the number moves, you have evidence to expand. If it does not, you have learned where the binding constraint is not, which is also worth knowing.
+
+  - type: prose
+    body: |
+      For a deeper read on why dwell is structurally under-tracked in retail, see <a href="../blog/the-dwell-time-variable-nobodys-tracking.html">the dwell time variable nobody's tracking</a>. For the math on why longer visits do not always mean bigger receipts, see <a href="../blog/longer-visits.html">longer visits don't mean bigger receipts</a>. The full <a href="../pricing.html">pricing page</a> walks through what each tier includes if you outgrow Essentials.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Essentials is free, indefinite, no card. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "the-dwell-time-variable-nobodys-tracking"
+      - slug: "longer-visits"
+      - slug: "measure-roi-retail-music"

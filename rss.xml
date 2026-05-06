@@ -7,6 +7,13 @@
   <language>en-us</language>
   <atom:link href="https://entuned.co/rss.xml" rel="self" type="application/rss+xml"/>
   <item>
+    <title>How to Increase Dwell Time in Retail Stores</title>
+    <link>https://entuned.co/blog/how-to-increase-dwell-time.html</link>
+    <description>Five levers that move retail dwell time. Why operators undershoot the easiest one. A two-week test you can run on your own floor against your POS data.</description>
+    <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+    <guid>https://entuned.co/blog/how-to-increase-dwell-time.html</guid>
+  </item>
+  <item>
     <title>Music Strategy for the One-Store Brand</title>
     <link>https://entuned.co/blog/single-store-music-strategy.html</link>
     <description>Most retail music writing is built for chains. Here is what actually changes when you run one store, why the smaller footprint cuts both ways, and where to start.</description>
@@ -138,13 +145,6 @@
     <description>What KPIs should you track beyond sales and traffic? The variables you've been treating as fixed are usually where store-level performance hides.</description>
     <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
     <guid>https://entuned.co/blog/measure-what-you-ignore.html</guid>
-  </item>
-  <item>
-    <title>Multi-Location Music: Why Every Store Sounds Different</title>
-    <link>https://entuned.co/blog/multi-location-music-management.html</link>
-    <description>Ten locations, ten managers, ten soundtracks. Why staff keep changing the music in your stores, and what to ask your vendor at the next QBR.</description>
-    <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
-    <guid>https://entuned.co/blog/multi-location-music-management.html</guid>
   </item>
 </channel>
 </rss>
