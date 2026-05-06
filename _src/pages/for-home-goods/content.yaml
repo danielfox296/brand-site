@@ -60,7 +60,7 @@ cta:
 related:
   eyebrow: "Related"
   links: '<a href="how-it-works.html" style="color: #50929c;">How It Works</a> &middot; <a href="science.html" style="color: #50929c;">The Science</a> &middot; <a href="for-retail-leaders.html" style="color: #50929c;">For Retail Operators</a> &middot; <a href="for-cfos.html" style="color: #50929c;">The financial case</a>'
-  others: 'Other verticals: <a href="for-apparel.html" style="color: #50929c;">Apparel</a>'
+  others: 'Other verticals: <a href="for-apparel.html" style="color: #50929c;">Apparel</a> &middot; <a href="for-jewelry.html" style="color: #50929c;">Jewelry</a>'
 
 further_reading_eyebrow: "From the Blog"
 further_reading_headline: "Related Reading"

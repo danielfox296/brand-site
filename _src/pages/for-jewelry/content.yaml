@@ -1,0 +1,67 @@
+# for-jewelry — editable text content
+# PLG-aimed vertical page for independent specialty jewelry retailers.
+# Voice: small-shop / single-store owner-operator, not enterprise multi-fleet.
+
+hero:
+  eyebrow: "For Specialty Jewelry Retail"
+  h1: "Customers come in to consider, not to buy fast."
+  subline: "Jewelry shoppers browse patiently, decide on sensory trust, and walk in already half-expecting your store to feel a certain way. The audio shaping that read is the one variable most independent jewelers have never deliberately set."
+
+# The gap
+gap:
+  eyebrow: "The Gap"
+  h2: "Your store has a sonic posture. The customer reads it before you talk to them."
+  p1: "Independent jewelry retail has a different operating shape than apparel or home goods. The visit is longer. The browsing is quieter. The customer is making a single high-consideration purchase and the trust layer matters more than the price-relative-to-rack math. The first thing the customer reads when they walk in is not the product. It is the room — light, sound, scent, the quietness of the air, whether the store feels like a real jeweler or a counter inside a mall."
+  p2: "Most independent jewelers think hard about the case lighting and the door chime and leave the audio environment to whatever the satellite music vendor sent over. The audio is doing the same trust work the lighting is. It is just running on the wrong default."
+
+# What changes per tier
+tiers:
+  eyebrow: "What Changes Per Tier"
+  h2: "Three deployment shapes for independent jewelers."
+
+  card1_title: "Essentials"
+  card1_text: "Free, indefinite. Pick Increase Dwell from the floor of your store. The catalogue starts streaming through the speakers you already have. Useful as the first look before you decide whether to specify the audio more deliberately for your customer."
+
+  card2_title: "Core ($99/store/mo)"
+  card2_text: "Music tailored to your single Ideal Customer Profile. For most independent jewelers, that is the customer your buyers are already merchandising for — the considered shopper who is in your store because they want a real jeweler, not because Yelp ranked you third. About 420 tracks in the first month, refreshed against what holds the floor and culled against what does not."
+
+  card3_title: "Professional ($399/store/mo)"
+  card3_text: "POS integration. Day-parted music against your traffic profile (slower weekday consideration, busier Saturday browsing, evening repair-pickup rhythm). Self-improving refinement against your basket and conversion data. Founder consult in your first month."
+
+  card4_title: "Enterprise"
+  card4_text: "Multi-store rollouts where you operate more than a single location. Custom ICP design and brand voice consultation. Performance terms where lift can be cleanly measured against your existing reporting."
+
+# What the research says
+research:
+  eyebrow: "What the Research Says"
+  h2: "Forty years of evidence on the audio levers that matter for considered-purchase retail."
+
+  card1_title: "Music customers read as upmarket lifts spending."
+  card1_text: "Areni and Kim (1993) ran the foundational study in a wine shop. Customers shopping with classical music in the background spent significantly more per bottle than customers with Top 40. Same products, same prices, same store. The audio cued an upmarket context and customers anchored their willingness-to-pay to it. The mechanism replicates in any considered-purchase category — including jewelry."
+
+  card2_title: "The atmosphere shapes the customer-brand relationship."
+  card2_text: "Bitner's 1992 servicescape framework — one of the most-cited papers in service marketing — established that the physical environment of a service business is part of what creates the customer's relationship with the brand. Audio is part of the servicescape. For a jeweler, the audio environment is part of whether the customer trusts the store enough to consider buying from it."
+
+  card3_title: "Music fit moves the actual selection."
+  card3_text: "North, Hargreaves, and McKendrick (1999) showed that customers exposed to category-congruent music made systematically different purchase choices than customers exposed to incongruent music. Not just spent more — chose differently. For a jeweler, the customer's selection between a $400 piece and a $1,400 piece is partly being made by the audio in the room."
+
+  card4_title: "Mismatched music actively reduces basket."
+  card4_text: "Andersson and colleagues (2012) ran 601 real transactions in a Swedish retail chain and found that music that clashes with the store's customer category cuts willingness-to-pay below the no-music baseline. Neutral is not the default. The audio in your store is doing work whether you chose its effect or not."
+
+# CTA
+cta:
+  eyebrow: "Get Started"
+  h2: "Audio engineered for considered jewelry shopping."
+  subline: "Start free at Essentials in your store. Move to Core once you want music tailored to your specific customer. Talk to Enterprise about multi-store rollouts."
+  cta_primary: "Start Free"
+  cta_secondary: "See Pricing"
+  cta_tertiary: "Talk to Enterprise"
+
+related:
+  eyebrow: "Related"
+  links: '<a href="how-it-works.html" style="color: #50929c;">How It Works</a> &middot; <a href="science.html" style="color: #50929c;">The Science</a> &middot; <a href="pricing.html" style="color: #50929c;">Pricing</a>'
+  others: 'Other verticals: <a href="for-apparel.html" style="color: #50929c;">Apparel &amp; Footwear</a> &middot; <a href="for-home-goods.html" style="color: #50929c;">Home Goods</a>'
+
+further_reading_eyebrow: "From the Blog"
+further_reading_headline: "Related Reading"
+further_reading_links: <a href="blog/luxury-priming-for-non-luxury-brands.html" style="color: #50929c;">Luxury Priming Without Being a Luxury Brand</a> &middot; <a href="blog/how-specialty-wine-retailers-use-music-to-sell-more-expensive-bottles.html" style="color: #50929c;">How Wine Stores Use Music to Sell Premium Bottles</a> &middot; <a href="blog/how-to-make-your-store-sound-premium.html" style="color: #50929c;">How to Make Your Store Sound Premium</a>
