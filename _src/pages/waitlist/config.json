@@ -1,5 +1,6 @@
 {
   "title": "Get Notified When Essentials Launches | Entuned",
   "meta_description": "Self-onboard is launching soon. Drop your email and we'll send the link the day Essentials opens to self-serve. Free, no card, no waitlist queue.",
-  "output": "waitlist.html"
+  "output": "waitlist.html",
+  "robots": "noindex, follow"
 }
