@@ -7,6 +7,13 @@
   <language>en-us</language>
   <atom:link href="https://entuned.co/rss.xml" rel="self" type="application/rss+xml"/>
   <item>
+    <title>How to Increase Average Order Value in Retail</title>
+    <link>https://entuned.co/blog/how-to-increase-aov-retail.html</link>
+    <description>Five levers actually move retail AOV. Why the audio environment is the cheapest one to test, and what 33 years of wine-shop research says about price acceptance.</description>
+    <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+    <guid>https://entuned.co/blog/how-to-increase-aov-retail.html</guid>
+  </item>
+  <item>
     <title>How to Increase Dwell Time in Retail Stores</title>
     <link>https://entuned.co/blog/how-to-increase-dwell-time.html</link>
     <description>Five levers that move retail dwell time. Why operators undershoot the easiest one. A two-week test you can run on your own floor against your POS data.</description>
@@ -138,13 +145,6 @@
     <description>Retailers have known for decades that music changes buying behavior. Most are still picking songs the wrong way. Here is what song selection misses.</description>
     <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
     <guid>https://entuned.co/blog/in-store-music-strategy.html</guid>
-  </item>
-  <item>
-    <title>The Store-Level KPI You're Not Tracking Yet</title>
-    <link>https://entuned.co/blog/measure-what-you-ignore.html</link>
-    <description>What KPIs should you track beyond sales and traffic? The variables you've been treating as fixed are usually where store-level performance hides.</description>
-    <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
-    <guid>https://entuned.co/blog/measure-what-you-ignore.html</guid>
   </item>
 </channel>
 </rss>

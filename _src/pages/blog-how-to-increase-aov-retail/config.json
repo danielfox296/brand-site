@@ -1,0 +1,28 @@
+{
+  "title": "How to Increase Average Order Value in Retail | Entuned",
+  "meta_description": "Five levers move retail AOV. Why the audio environment is the cheapest one to test, and what 33 years of wine-shop research says about price acceptance.",
+  "output": "blog/how-to-increase-aov-retail.html",
+  "date_published": "2026-05-05",
+  "faq": [
+    {
+      "q": "What is a typical average order value in retail?",
+      "a": "AOV varies widely by category. Fast-fashion and value retail commonly run $25 to $60. Specialty apparel and beauty $60 to $150. Home goods, sporting goods, and premium specialty $120 to $400 plus. Furniture and big-ticket retail $800 to $4,000. The relevant comparison is not against industry averages but against your own AOV trend over the last six quarters and against your direct competitors in the same trade area."
+    },
+    {
+      "q": "What actually moves average order value in a retail store?",
+      "a": "Five levers, in roughly the order operators undershoot them. Product mix and assortment depth, which is the longest cycle to change. Visual merchandising and adjacency planning, which moves attach rates. Staff training on suggestive selling, which is unevenly applied. The audio environment, which moves price acceptance through priming and reduces the rate of the low-end basket. And finally, friction reduction at upsell moments — stations, displays, and queue exposure to higher-margin items."
+    },
+    {
+      "q": "Can music actually change how much customers spend?",
+      "a": "Yes, and the effect is documented. Areni and Kim's 1993 wine-shop study found that customers shopping with classical music in the background spent significantly more per bottle than customers shopping with Top 40 — same products, same prices, same store, same time of day. The mechanism is luxury priming: the audio cued an upmarket context, and customers anchored their spending to it. The effect has been replicated across multiple retail categories."
+    },
+    {
+      "q": "How do I measure whether something moved AOV?",
+      "a": "AOV is one of the easiest retail metrics to measure cleanly because every POS system reports it natively. Pull it by daypart, by day of week, and by store if you have multiple locations. The number to compare is week-over-week or comparable-period rather than month-over-month, because seasonality and promotional cycles will mask the actual lever effect inside a 30-day window."
+    },
+    {
+      "q": "What is the cheapest test I can run this month?",
+      "a": "Two weeks. Pull a baseline week of AOV under normal conditions. Change one variable for the next week. The audio environment is the easiest of the five levers to change because it has no operational cost and no inventory risk. Run Entuned Essentials free, indefinite, no card. Pick the upmarket-priming preset for two weeks. Compare AOV against the baseline. If the number moves, you have signal worth running for a quarter."
+    }
+  ]
+}
