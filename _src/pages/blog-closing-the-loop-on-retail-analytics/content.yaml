@@ -11,7 +11,7 @@ hero:
   src: "../img/blog/closing-the-loop.jpg"
   alt: "Retail analytics dashboard showing zone-level behavioral data"
   caption: "Photo: Unsplash"
-meta_description: "Most retailers pay for in-store sensor data but only use it for reporting. Here's how to turn traffic, dwell, and conversion numbers into store-level action."
+meta_description: "Most retailers pay for in-store sensor data but only use it for reporting. How to turn traffic, dwell, and conversion into store-level action."
 og_image: "/img/blog/closing-the-loop.jpg"
 tags: [retail-analytics, retailnext, sensor-data, store-operations, measurement]
 sections:

@@ -11,7 +11,7 @@ hero:
   src: "../img/blog/science-of-tempo-retail.jpg"
   alt: "Abstract visualization of tempo and rhythm patterns"
   caption: "Photo: Unsplash"
-meta_description: "Decades of research confirm that tempo changes how fast customers move through a store. But slowing people down and getting them to buy are two different problems."
+meta_description: "Decades of research confirm tempo changes how fast customers move through a store. But slowing people down and getting them to buy are different problems."
 og_image: "/img/blog/science-of-tempo-retail.jpg"
 tags: [tempo, dwell-time, research, retail-music]
 sections:
