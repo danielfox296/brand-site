@@ -3,14 +3,15 @@
   <canvas id="cymaticsCanvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 0; pointer-events: none;"></canvas>
 
   <!-- HERO -->
-  <section class="hero hero-home" id="heroSection" style="position: relative; overflow: hidden; background: transparent;">
+  <section class="hero hero-home" id="heroSection">
+    <div class="hero-home-bg" aria-hidden="true"></div>
     <div class="container" style="position: relative; z-index: 1;">
       <div class="fade-up">
+        <span class="eyebrow">{{content.hero.eyebrow}}</span>
         <h1>{{content.hero.h1}}</h1>
         <p class="subline">{{content.hero.subline}}</p>
         <div class="btn-group">
           <a href="https://app.entuned.co/start" class="btn btn-primary">{{content.hero.cta_primary}}</a>
-          <a href="pricing.html" class="btn btn-secondary">{{content.hero.cta_secondary}}</a>
         </div>
       </div>
     </div>

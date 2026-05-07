@@ -1,10 +1,10 @@
 # index — editable text content
 
 hero:
-  h1: "Streaming music for retail to keep your customers longer so they spend more &mdash; now completely free."
-  subline: "Free forever, no card. Original music tuned to the people who actually walk into your store — indemnified the moment it plays, on whatever speakers you already have."
+  eyebrow: "NOW COMPLETELY FREE"
+  h1: "Music Streaming to Sell Retail."
+  subline: "Keep customers in store longer and spending more. No credit card, no invoice, no time limit &mdash; all original. Plays through your current speakers."
   cta_primary: "Start Free"
-  cta_secondary: "See Pricing"
 
 # Pillar 1 — Music is a behavioral variable
 pillar1:

@@ -596,7 +596,21 @@ section:first-of-type .fade-up:first-child {
 .hero-home {
   position: relative;
   z-index: 1;
-  background: transparent;
+  overflow: hidden;
+}
+
+.hero-home-bg {
+  position: absolute;
+  inset: 0;
+  background: url('img/hero-retail-monitor.jpg') center / cover no-repeat;
+  z-index: 0;
+}
+
+.hero-home-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 20, 18, 0.72);
 }
 
 .hero-alt {
