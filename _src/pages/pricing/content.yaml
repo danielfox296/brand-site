@@ -22,8 +22,8 @@ essentials_signup_url: "https://app.entuned.co/start"
 
 hero:
   eyebrow: "Pricing"
-  headline: "Music engineered as a sales lever."
-  subhead: "Four tiers. Public pricing. Start free. Every tier is PRO-indemnified the moment you start playing."
+  headline: "Entuned Music: Your new retail sales lever."
+  subhead: "Four Options. Start free. Free, cleared commercial licensing the moment you start playing."
 
 # Tiers (Entuned Free → Core → Professional → Enterprise)
 tiers:
@@ -32,71 +32,71 @@ tiers:
     eyebrow: "Free forever"
     price: "$0"
     price_suffix: "/ month"
-    summary: "Outcome-tuned music for your floor. Pick Linger or Lift Energy. No card required, no time limit."
-    inc1: "100+ song general catalogue"
+    summary: "Outcome-tuned music for your floor. Pick Linger or Lift Energy. No credit card required, no time limit."
+    inc1: "100+ song and growing outcome-engineered catalogue"
     inc2: "Two outcome modes — Linger, Lift Energy"
     inc3: "One mode active at a time, manually selected"
     inc4: "PRO-indemnified from day one"
-    inc5: "Plays through any speaker you already have"
+    inc5: "Plays through any speaker / system you already have"
     inc_neg: "No customer-profile customization"
     cta_label: "Start Free"
-    cta_footnote: "Sign in with email or Google. No card required."
+    cta_footnote: "Sign in with email or Google. No credit card required."
 
   core:
     name: "Core"
-    eyebrow: "Most operators start here"
+    eyebrow: "Music specifically for your customer, ready in hours"
     price: "$99"
     price_suffix: "/ location / month"
     summary: "Music tailored to your single Ideal Customer Profile. All research-backed outcomes unlocked."
     inc1: "One ICP — music tailored to your single Ideal Customer's taste preferences"
     inc2: "All research-backed outcomes unlocked"
     inc3: "300-song library at launch, ~120 added in the first month (~420 total)"
-    inc4: "Regular refresh of top performers, regular culling of underperformers"
+    inc4: "Regular refresh of top performing songs, regular culling of underperformers"
     inc5: "Manual outcome control + ICP edit as the business evolves"
     inc6: "Sales-associate-friendly web interface"
     cta_label: "Start Now"
-    cta_footnote: "Short ICP intake after checkout. By starting you agree to the <a href=\"pricing/terms.html\">Subscription Terms</a>."
+    cta_footnote: "Short ICP setup after checkout. By starting you agree to the <a href=\"pricing/terms.html\">Subscription Terms</a>."
 
   professional:
     name: "Professional"
     eyebrow: "When the lift needs to show up in the report"
     price: "$399"
     price_suffix: "/ location / month"
-    summary: "Self-improving music tied to your store's data. Day-parted. Refined as the dataset grows."
+    summary: "Self-improving music tied to your store's data. Outcome Scheduled (advanced Day-parting). Refined as the dataset grows."
     inc1: "Everything in Core"
     inc2: "POS integration"
-    inc3: "Day-parting (automated, time-based outcome rotation)"
-    inc4: "Interstitial messaging — you write and approve store messages that play in rotation"
-    inc5: "Multiple ICPs — Professional tailors music to each distinct customer type your store serves, instead of averaging them into a single profile"
+    inc3: "Advanced Day-parting (automated, time-based outcome rotation)"
+    inc4: "In-Store Promotional messaging — you write and approve store messages that play in rotation"
+    inc5: "Multiple ICPs — Tailor music to each distinct customer type your store serves, instead of a single profile"
     inc6: "Self-improving refinement as your store's correlation dataset grows"
     inc7: "Monthly customer success consults with the founder (initially)"
     cta_label: "Start Now"
-    cta_footnote: "ICP intake after checkout. Founder consult scheduled within the first week. By starting you agree to the <a href=\"pricing/terms.html\">Subscription Terms</a>."
+    cta_footnote: "ICP Setup after checkout. Founder consult scheduled within the first week. By starting you agree to the <a href=\"pricing/terms.html\">Subscription Terms</a>."
 
   enterprise:
     name: "Enterprise"
     eyebrow: "Multi-fleet rollouts"
     price: "Contact"
     price_suffix: "for pricing"
-    summary: "Negotiated per-store pricing, custom ICP design and brand voice consultation, performance guarantees where lift can be cleanly measured, dedicated success contact, white-glove rollout."
+    summary: "Negotiated per-store pricing, custom ICP design and brand voice consultation, white-glove rollout."
     inc1: "Negotiated pricing per store"
     inc2: "Custom ICP design and brand voice consultation"
     inc3: "Performance guarantees (where lift can be cleanly measured)"
     inc4: "Dedicated success contact"
     inc5: "White-glove rollout"
-    cta_label: "Contact Enterprise"
+    cta_label: "Contact Us"
 
 # How it ramps
 ramps:
-  header: "How the tiers stack."
-  body1: "Entuned Free proves the system works on your floor. Core proves it works for your customer. Professional proves the lift in the report your CFO already runs. Each tier is a step deeper into the same engine — never a different product."
+  header: "How Entuned tiers stack up."
+  body1: "Entuned Free gives your sales floor two research based outcomes that were never available before, FOR FREE. Our Core offering gets you the full suite of research-backed outcomes engineered for your location's specific ICP. Professional hooks in to your POS to get more effective over time. Each tier is a step deeper, not a different product."
   body2: "Most operators start on Entuned Free, move to Core within their first paid quarter, and graduate to Professional once they want the music tied to data they can audit."
 
 # Indemnification callout
 indemnification:
   eyebrow: "Licensing"
   header: "PRO-free, fully indemnified — at every tier."
-  body: "Every Entuned subscription includes a written indemnification certificate. No ASCAP, BMI, SESAC, or SoundExchange royalties. No public performance license required. If a performing rights organization questions what is playing in your store, you have documentation in hand."
+  body: "Every Entuned subscription includes an indemnification certificate. No ASCAP, BMI, SESAC, or SoundExchange royalties. No public performance license required. If a performing rights organization questions what is playing in your store, documentation is availabe in the associate's."
   cta_label: "Read the licensing details →"
   cta_url: "licensing.html"
 
@@ -104,7 +104,7 @@ indemnification:
 faq:
   header: "Questions"
   q1: "Why is Entuned Free actually free?"
-  a1: "Because the most expensive moment in the buyer relationship is the gate. The Entuned Free catalogue is real and yours forever — no trial clock, no card, no expiration. The structural difference at Core is not artificial scarcity — it is that Core music is built around your specific customer rather than a general catalogue. Most operators move to Core when their floor is ready for that level of specificity."
+  a1: "The Entuned Free catalogue is real and yours forever — no trial clock, no credit card, no expiration. The structural difference at Core is not artificial scarcity — it is that Core music is built around your specific customer rather than a general catalogue. Most operators move to Core when their floor is ready for that level of specificity."
   q2: "Do I need special hardware?"
   a2: "No. Entuned streams through whatever audio system you already have — Sonos, AirPlay, Bluetooth, line-in, or a hardwired speaker rig."
   q3: "What about music licensing and PRO fees?"
@@ -112,14 +112,14 @@ faq:
   q4: "Can I cancel?"
   a4: "Yes, monthly. No long-term contract on Core or Professional. Enterprise pricing is negotiated as part of the agreement."
   q5: "What's the difference between Core and Professional?"
-  a5: "Core builds music around one Ideal Customer Profile and gives you manual outcome control. Professional adds POS integration, multiple ICPs (Professional tailors music to each distinct customer type your store serves, instead of averaging them into a single profile), day-parting, interstitial messaging, and self-improving refinement that compounds against your store's data over weeks. Most single-store operators start on Core. Multi-store operators with a real measurement stack start on Professional."
+  a5: "Our Core offering builds music around one Ideal Customer Profile and gives you all manual outcome control. Professional adds POS integration, multiple ICPs (Professional tailors music to each distinct customer type your store serves, instead of a single profile), day-parting, scheduled interstitial promotional messaging, and self-improving refinement that compounds using your store's POS data. Most single-store operators start on Core. Multi-store operators with a real measurement stack start on Professional."
   q6: "I already pay Soundtrack Your Brand or Mood Media. How does this compare?"
-  a6: "Those vendors license catalogue music from PROs and pass the cost through your subscription. The catalogue was written for an artist's self-expression, not for your store's customer. Entuned generates original music engineered to specific parameters — tempo, key, lyrical density, energy arc — against the customer your store is built to serve. Different product, different lever."
+  a6: "Those vendors license catalogue music and pass the cost through your subscription. The catalogue was written for an artist's self-expression, not for your store's customer. Entuned generates original music engineered to specific parameters — tempo, key, lyricals, all for the customer your store is built to serve. Entuned is a different product, a sales lever."
 
 # Final CTA — single primary action with two text links underneath.
 # Per the post-launch fixes: avoid three-button decision paralysis at the bottom of the page.
 final:
-  header: "Pick the tier that fits your floor."
+  header: "Pick the tier that fits your business."
   subhead: "Most operators start with Core."
   cta_primary_label: "Start Core — $99/mo"
   text_links_lead: "Or"

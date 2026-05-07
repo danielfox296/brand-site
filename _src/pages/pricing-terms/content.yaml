@@ -1,23 +1,9 @@
 # Subscription Terms — editable text
 #
-# DRAFT NOTE (for Daniel, not for customers):
-# These terms were updated for the 4-tier PLS structure (Entuned Free / Core /
-# Professional / Enterprise). This is a material change to the commercial
-# offer relative to the prior Founding Retailer Terms. Have counsel review
-# before relying on this as a binding agreement. Particular flags:
-#   - Multi-tier pricing structure now stated publicly
-#   - Free tier (Entuned Free) introduces a new license relationship
-#   - PRO indemnification claim is more prominent — confirm coverage
-#     language matches the indemnification certificate template
-#   - Existing Founding Retailer customers should be honored at $99/mo for
-#     the 12-month period they were promised; the price-lock language has
-#     been removed from the public terms but is preserved as a per-customer
-#     commitment in the existing subscription record
-# Placeholders to fill in: [business address] (if needed for any contract use).
 
 h1_1: "Subscription Terms"
-p_1: "Last updated: May 2, 2026"
-p_intro: "These terms apply when you subscribe to or activate any tier of Entuned (Entuned Free, Core, Professional, or Enterprise) on entuned.co. They form a binding agreement between you and Entuned LLC (\"Entuned,\" \"we,\" \"us\"), a Colorado limited liability company. If you do not agree to these terms, do not subscribe or activate the service."
+p_1: "Last updated: May 7, 2026"
+p_intro: "These terms apply when you subscribe to or activate any tier of Entuned (Entuned Free, Core, Professional, or Enterprise) on entuned.co. They form a binding agreement between you and Entuned LLC (\"Entuned,\" \"we,\" \"us\"), a Wyoming limited liability company. If you do not agree to these terms, do not subscribe or activate the service."
 
 h2_1: "1. The service"
 p_2: "Entuned delivers an original audio stream engineered for your store. The stream plays over your existing in-store audio system via a streaming URL we provide. The level of customization, the size and refresh of the catalogue, the available outcomes, and the integration depth depend on the tier you are subscribed to. You control playback."

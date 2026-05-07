@@ -12,10 +12,10 @@
 # or /pricing/intake.html?tier=professional so the form submission is tagged.
 
 hero:
-  eyebrow: "Customer Profile Intake"
+  eyebrow: "Customer Profile Setup"
   headline: "Tell us about your customer."
-  subhead: "About 10 minutes. The more specific your answers, the sharper the ICP, and the faster your store goes live."
+  subhead: "Takes less than 10 minutes. The more specific your answers, the sharper the ICP, and the faster your store goes live."
 
 success:
   headline: "Got it. We'll be in touch."
-  body: "Your intake is in. We'll review, build your ICP profile, and email you within two business days to schedule the onboarding call."
+  body: "Your ICP is set up. We'll start building your store's music program, and email you when it's ready."
