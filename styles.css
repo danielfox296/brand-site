@@ -457,6 +457,16 @@ footer .footer-section:first-child p {
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
+/* Hero / first-screen content paints visible immediately — IntersectionObserver
+ * registration runs after DOMContentLoaded, which leaves above-the-fold content
+ * blank for ~1–2s on cold loads. The animation is for content the user scrolls
+ * toward, not for content they're already looking at. */
+.hero .fade-up,
+section:first-of-type .fade-up:first-child {
+  opacity: 1;
+  transform: none;
+}
+
 .fade-in {
   opacity: 0;
 }
@@ -464,6 +474,13 @@ footer .footer-section:first-child p {
 .fade-in.visible {
   opacity: 1;
   transition: opacity 0.8s ease;
+}
+
+/* No-JS fallback: visitors with JS disabled still see content. */
+.no-js .fade-up,
+.no-js .fade-in {
+  opacity: 1;
+  transform: none;
 }
 
 .fade-up-delay {

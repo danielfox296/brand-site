@@ -101,7 +101,7 @@ Template:
 
     <!-- REQUIRED: CTA box — always last element in article-body. Use the canonical Start Free copy verbatim. -->
     <div class="article-cta fade-up">
-      <p>Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; indefinite, no card. PRO-indemnified the moment it plays.</p>
+      <p>Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays.</p>
       <a href="https://app.entuned.co/start" class="btn btn-primary">Start Free</a>
     </div>
   </div>
@@ -117,7 +117,7 @@ Template:
 
 **Canonical Start Free CTA copy** (use verbatim on every post — HTML and YAML schema posts both):
 
-> Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; indefinite, no card. PRO-indemnified the moment it plays.
+> Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays.
 
 For posts using the **structured YAML blog renderer** (`type: cta` block), the canonical CTA is:
 
@@ -125,7 +125,7 @@ For posts using the **structured YAML blog renderer** (`type: cta` block), the c
   - type: cta
     variant: start-free
     headline: "Hear it on your floor."
-    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; indefinite, no card. PRO-indemnified the moment it plays."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
     link: "https://app.entuned.co/start"
     link_text: "Start Free"
 ```

@@ -29,12 +29,12 @@ hero:
 tiers:
   essentials:
     name: "Entuned Free"
-    eyebrow: "Free, indefinite"
+    eyebrow: "Free forever"
     price: "$0"
     price_suffix: "/ month"
-    summary: "Outcome-tuned music for your floor. Pick Increase Dwell or Infuse Energy. No card required, no time limit."
+    summary: "Outcome-tuned music for your floor. Pick Increase Dwell or Lift Energy. No card required, no time limit."
     inc1: "100+ song general catalogue"
-    inc2: "Two outcome modes — Increase Dwell, Infuse Energy"
+    inc2: "Two outcome modes — Increase Dwell, Lift Energy"
     inc3: "One mode active at a time, manually selected"
     inc4: "PRO-indemnified from day one"
     inc5: "Plays through any speaker you already have"
@@ -104,7 +104,7 @@ indemnification:
 faq:
   header: "Questions"
   q1: "Why is Entuned Free actually free?"
-  a1: "Because the most expensive moment in the buyer relationship is the gate. The Entuned Free catalogue is real and indefinite. The structural difference at Core is not artificial scarcity — it is that Core music is built around your specific customer rather than a general catalogue. Most operators move to Core when their floor is ready for that level of specificity."
+  a1: "Because the most expensive moment in the buyer relationship is the gate. The Entuned Free catalogue is real and yours forever — no trial clock, no card, no expiration. The structural difference at Core is not artificial scarcity — it is that Core music is built around your specific customer rather than a general catalogue. Most operators move to Core when their floor is ready for that level of specificity."
   q2: "Do I need special hardware?"
   a2: "No. Entuned streams through whatever audio system you already have — Sonos, AirPlay, Bluetooth, line-in, or a hardwired speaker rig."
   q3: "What about music licensing and PRO fees?"
