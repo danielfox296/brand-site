@@ -92,6 +92,8 @@ Non-blog pages start directly with `<section>` tags.
 
 ## Design system
 
+These values are the canonical Entuned palette, unified across the brand site and all three apps (Dash, App, Music) as of 2026-05-06. See `../VOICE.md` for the full quick-reference.
+
 ### CSS custom properties
 
 All core values are defined as CSS variables in `:root` in `styles.css`. Use these instead of hardcoding colors:
