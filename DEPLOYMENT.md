@@ -46,5 +46,5 @@ Use the HTTP server, not `file://` — the audio player needs HTTP to load MP3 f
 ## Important notes
 
 - **Never edit root `.html` files directly.** They get overwritten by `build.py`. Edit source in `_src/`.
-- **The player app is a separate repo** (`wonder-player` → github.com/danielfox296/wonder-player) deployed independently to `play.entuned.co` via its own GitHub Pages. It is not part of this deploy pipeline.
+- **The player app** lives in `entuned-0.3/apps/player` (deployed to `music.entuned.co` via the `entuned-0.3-player` publish repo). It is not part of this deploy pipeline.
 - **See `ARCHITECTURE.md`** for the full source file structure and build process.
