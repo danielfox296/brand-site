@@ -1,8 +1,8 @@
 # index — editable text content
 
 hero:
-  h1: "The unmeasured variable in your store's P&L."
-  subline: "Every store plays music. Almost no operator knows what it's doing to dwell, basket, or conversion. Entuned is music engineered to your customer and your outcome — deployed in minutes, measurable by your existing reports."
+  h1: "Music engineered for your customer, not the radio."
+  subline: "Free forever, no card. Original music tuned to the people who actually walk into your store — indemnified the moment it plays, on whatever speakers you already have."
   cta_primary: "Start Free"
   cta_secondary: "See Pricing"
 
@@ -53,7 +53,7 @@ tiers:
   h2: "Four tiers. Public pricing. Start free."
   essentials_name: "Entuned Free"
   essentials_price: "Free"
-  essentials_body: "Outcome-tuned music for your floor. Pick Increase Dwell or Lift Energy. No card required."
+  essentials_body: "Outcome-tuned music for your floor. Pick Linger or Lift Energy. No card required."
   core_name: "Core"
   core_price: "$99/mo"
   core_body: "Music tailored to your single Ideal Customer Profile (ICP). All research-backed outcomes unlocked."

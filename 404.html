@@ -148,7 +148,6 @@
   <main>
   <!-- CYMATICS CANVAS — fixed behind all content, scroll-driven -->
   <canvas id="cymaticsCanvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 0; pointer-events: none;"></canvas>
-  <div id="cymaticsFreq" style="position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%); font-family: 'SF Mono', 'Fira Code', monospace; font-size: 10px; letter-spacing: 0.12em; color: rgba(212,225,229,0.12); pointer-events: none; z-index: 2;"></div>
 
 <div class="not-found-main cymatics-over">
   <div class="container">
@@ -166,7 +165,7 @@
     const canvas = document.getElementById('cymaticsCanvas');
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
-    const freqEl = document.getElementById('cymaticsFreq');
+    const freqEl = null;
 
     let W, H, cx, cy;
     let mouseX = 0.5, mouseY = 0.5, mouseSmX = 0.5, mouseSmY = 0.5;

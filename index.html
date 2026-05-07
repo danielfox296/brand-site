@@ -10,14 +10,14 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="canonical" href="https://entuned.co/">
   <meta name="robots" content="index, follow">
-  <title>Entuned | The Unmeasured Variable in Your Store's P&L</title>
-  <meta name="description" content="Music engineered to your customer and your outcome. Tempo, key, lyrical density specified on purpose. Free to start. Built for multi-store retail.">
+  <title>Entuned | Music engineered for your customer, not the radio</title>
+  <meta name="description" content="Original music tuned to the people who actually walk into your store. PRO-indemnified, plays through any speakers you already have. Free forever, no card.">
   <meta name="theme-color" content="#20201c">
 
   <!-- Open Graph -->
   <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="rss.xml">
-  <meta property="og:title" content="Entuned | The Unmeasured Variable in Your Store&#x27;s P&amp;L">
-  <meta property="og:description" content="Music engineered to your customer and your outcome. Tempo, key, lyrical density specified on purpose. Free to start. Built for multi-store retail.">
+  <meta property="og:title" content="Entuned | Music engineered for your customer, not the radio">
+  <meta property="og:description" content="Original music tuned to the people who actually walk into your store. PRO-indemnified, plays through any speakers you already have. Free forever, no card.">
   <meta property="og:url" content="https://entuned.co/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://entuned.co/img/og-default.png">
@@ -26,8 +26,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Entuned | The Unmeasured Variable in Your Store&#x27;s P&amp;L">
-  <meta name="twitter:description" content="Music engineered to your customer and your outcome. Tempo, key, lyrical density specified on purpose. Free to start. Built for multi-store retail.">
+  <meta name="twitter:title" content="Entuned | Music engineered for your customer, not the radio">
+  <meta name="twitter:description" content="Original music tuned to the people who actually walk into your store. PRO-indemnified, plays through any speakers you already have. Free forever, no card.">
   <meta name="twitter:image" content="https://entuned.co/img/og-default.png">
 
   <!-- Structured Data -->
@@ -79,7 +79,7 @@
       "name": "How much does Entuned cost?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Entuned Free &mdash; no card, no time limit required. Core is $99 per location per month. Professional is $399 per location per month. Enterprise is negotiated per-store for multi-fleet rollouts."
+        "text": "Entuned Free is free forever, no card. Core is $99 per location per month. Professional is $399 per location per month. Enterprise is negotiated per-store for multi-fleet rollouts."
       }
     },
     {
@@ -255,14 +255,13 @@
   <main>
   <!-- CYMATICS CANVAS — fixed behind all content, scroll-driven -->
   <canvas id="cymaticsCanvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 0; pointer-events: none;"></canvas>
-  <div id="cymaticsFreq" style="position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%); font-family: 'SF Mono', 'Fira Code', monospace; font-size: 10px; letter-spacing: 0.12em; color: rgba(212,225,229,0.12); pointer-events: none; z-index: 2;"></div>
 
   <!-- HERO -->
   <section class="hero hero-home" id="heroSection" style="position: relative; overflow: hidden; background: transparent;">
     <div class="container" style="position: relative; z-index: 1;">
       <div class="fade-up">
-        <h1>The unmeasured variable in your store's P&L.</h1>
-        <p class="subline">Every store plays music. Almost no operator knows what it's doing to dwell, basket, or conversion. Entuned is music engineered to your customer and your outcome — deployed in minutes, measurable by your existing reports.</p>
+        <h1>Music engineered for your customer, not the radio.</h1>
+        <p class="subline">Free forever, no card. Original music tuned to the people who actually walk into your store — indemnified the moment it plays, on whatever speakers you already have.</p>
         <div class="btn-group">
           <a href="https://app.entuned.co/start" class="btn btn-primary">Start Free</a>
           <a href="pricing.html" class="btn btn-secondary">See Pricing</a>
@@ -357,7 +356,7 @@
         <div class="fade-up" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(212,225,229,0.12); padding: 2rem 1.5rem;">
           <div style="font-family: var(--font-heading); font-size: 1.375rem; margin-bottom: 0.5rem;">Entuned Free</div>
           <div style="font-family: var(--font-heading); font-size: 1.875rem; font-weight: 700; color: var(--text); margin-bottom: 1rem;">Free</div>
-          <p style="font-size: 0.9375rem; line-height: 1.6; opacity: 0.82;">Outcome-tuned music for your floor. Pick Increase Dwell or Lift Energy. No card required.</p>
+          <p style="font-size: 0.9375rem; line-height: 1.6; opacity: 0.82;">Outcome-tuned music for your floor. Pick Linger or Lift Energy. No card required.</p>
         </div>
         <div class="fade-up" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(212,225,229,0.12); padding: 2rem 1.5rem;">
           <div style="font-family: var(--font-heading); font-size: 1.375rem; margin-bottom: 0.5rem;">Core</div>
@@ -430,7 +429,7 @@
     if (!canvas) return;
     const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const ctx = canvas.getContext('2d');
-    const freqEl = document.getElementById('cymaticsFreq');
+    const freqEl = null;
 
     let W, H, cx, cy;
     let mouseX = 0.5, mouseY = 0.5, mouseSmX = 0.5, mouseSmY = 0.5;
