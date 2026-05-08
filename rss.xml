@@ -7,6 +7,13 @@
   <language>en-us</language>
   <atom:link href="https://entuned.co/rss.xml" rel="self" type="application/rss+xml"/>
   <item>
+    <title>Retail Music Has a Quality Problem</title>
+    <link>https://entuned.co/blog/retail-music-quality-problem.html</link>
+    <description>Carefully designed retail spaces are piping low-fidelity, cheaply licensed music through their speakers. The reason is structural, not aesthetic.</description>
+    <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+    <guid>https://entuned.co/blog/retail-music-quality-problem.html</guid>
+  </item>
+  <item>
     <title>What Is AI Music for Retail Stores?</title>
     <link>https://entuned.co/blog/ai-music-for-retail-stores.html</link>
     <description>A definitive read on AI music for retail stores in 2026. What it is, what it actually does, what it costs, and how it differs from licensed catalog music.</description>
@@ -138,13 +145,6 @@
     <description>A commercial composer designs music to hit specific emotional targets. Retail has always been handed a playlist instead. Generative audio closes the gap.</description>
     <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
     <guid>https://entuned.co/blog/your-store-deserves-a-score.html</guid>
-  </item>
-  <item>
-    <title>AI Music for Business in 2026: What Works</title>
-    <link>https://entuned.co/blog/ai-music-for-business-2026.html</link>
-    <description>AI music generation crossed the quality threshold for commercial use. What changed for retail operators paying licensing fees and guessing at playlists.</description>
-    <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
-    <guid>https://entuned.co/blog/ai-music-for-business-2026.html</guid>
   </item>
 </channel>
 </rss>

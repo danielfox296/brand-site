@@ -1,0 +1,109 @@
+title: "Retail Music Has a Quality Problem"
+slug: "retail-music-quality-problem"
+eyebrow: "FIELD NOTES"
+dek: "Walk through enough retail stores and you start noticing something. The music is getting worse — and the reason is structural, not aesthetic."
+date: "2026-05-08"
+last_updated: "2026-05-08"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/the-hidden-cost-of-licensing.jpg"
+  alt: "Fine print on a licensing document, a stand-in for the economics that quietly shape what plays in retail stores"
+  caption: "Photo: Unsplash"
+meta_description: "Carefully designed retail spaces are piping low-fidelity, cheaply licensed music through their speakers. The reason is structural, not aesthetic."
+og_image: "/img/blog/the-hidden-cost-of-licensing.jpg"
+tags: [retail-music, music-licensing, field-notes, store-experience]
+sections:
+  - type: key_takeaways
+    items:
+      - "The music in upmarket retail stores is getting noticeably worse — thinner production, cheaper recordings, songs that sound like demos"
+      - "It is not a taste failure. It is a structural one. Licensing costs keep rising, so providers default to cheaper catalog"
+      - "Retailers design lighting, fixtures, scent, and packaging deliberately. The soundtrack is still on a playlist someone else wrote"
+
+  - type: prose
+    body: |
+      Walk through enough retail stores and you start noticing something.
+
+      The music is getting worse.
+
+      Not louder. Not more annoying. Just cheaper. Thin production. Weak vocals. Sloppy mixes. Songs that sound like unfinished demos or forgotten catalog filler.
+
+      I recently heard "Teardrops" by Womack and Womack playing in an upmarket apparel retailer. The recording sounded like a rough demo pulled from the back of a bargain-bin catalog.
+
+      So why do carefully designed retail environments pipe low-fidelity music through their speakers?
+
+      The answer is structural. Most retail music companies have one real path to growth left. Cutting costs.
+
+  - type: subhead
+    level: 2
+    text: "The Licensing Trap"
+
+  - type: prose
+    body: |
+      Traditional retail music companies depend on licensing existing songs.
+
+      Licensing popular music keeps getting more expensive. Publishers want more. Streaming changed the math. Margins compress.
+
+      So providers respond the only way they can. They license cheaper tracks.
+
+      Cheaper means obscure catalog. Low-demand recordings. Soundalikes. Filler. Music chosen for one reason. It was the cheapest available.
+
+      These companies face the same margin pressure as every other business. When popular music gets more expensive, providers default to cheaper catalog. Customers hear it.
+
+  - type: pullquote
+    text: "When popular music gets more expensive, providers default to cheaper catalog. Customers hear it."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "Retailers Spend Millions Designing Everything Else"
+
+  - type: prose
+    body: |
+      Retail brands obsess over lighting, scent, fixtures, packaging, flooring, and architecture because they know environment affects behavior.
+
+      Music affects behavior too. It changes pace, mood, how long someone lingers, and how premium a space feels before anyone has touched a price tag.
+
+      Every other part of the store gets designed deliberately. Music gets outsourced to playlist companies working under licensing economics that pull in the opposite direction. The lighting designer answers to the brand. The music provider answers to publisher rates.
+
+      Customers respond to music before they've consciously processed it. When the soundtrack feels generic, cheap, or off-brand, they register it before they've finished walking past the entrance. They probably don't say it out loud. They feel it and they leave sooner.
+
+  - type: subhead
+    level: 2
+    text: "The Bigger Problem With Licensed Music"
+
+  - type: prose
+    body: |
+      Licensed music brings someone else's identity into the store. Someone else's lyrics. Someone else's memories. Someone else's associations.
+
+      A retailer spends years building a brand, then borrows the emotional atmosphere from catalog tracks selected mostly because they were cheap to license. The brand work and the audio work end up pointing at different things.
+
+  - type: subhead
+    level: 2
+    text: "What Comes After Better Playlists"
+
+  - type: prose
+    body: |
+      The next stage of retail audio is music written for the room.
+
+      That means music built around the customer the brand actually serves, the behavior the store wants to produce, and the emotional register the brand has already established visually.
+
+      Entuned creates original music for a specific retailer's ideal customer profile and the in-store behavior they're trying to produce. Tempo, key, harmonic density, energy, and lyrical priming all become variables a retailer can specify, the same way they specify lighting temperature or fixture finish.
+
+      Music written for the room it plays in. The brief comes from the retailer.
+
+      The lighting got designed. The fixtures got designed. The packaging got designed. The music is still on a playlist someone else wrote.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "the-real-cost-of-retail-music"
+      - slug: "music-was-never-made-for-your-store"
+      - slug: "retail-music-licensing-2026"
