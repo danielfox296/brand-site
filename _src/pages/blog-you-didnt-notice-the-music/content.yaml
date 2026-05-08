@@ -1,0 +1,77 @@
+title: "You Didn't Notice the Music. That's the Point."
+slug: "you-didnt-notice-the-music"
+eyebrow: "FIELD NOTES"
+dek: "If you ran a shift on Entuned and didn't really notice the music, that's the system working. Judge it by what moved on the floor, not whether anyone hummed along."
+date: "2026-05-08"
+last_updated: "2026-05-08"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/the-composer-who-wanted-you-to-ignore-him.jpg"
+  alt: "Quiet retail interior where the music sits underneath the experience instead of on top of it"
+  caption: "Photo: Unsplash"
+meta_description: "If you ran a shift on Entuned and didn't really notice the music, that's the system working. Retail music is environmental design — judged by what moves, not what gets noticed."
+og_image: "/img/blog/the-composer-who-wanted-you-to-ignore-him.jpg"
+tags: [retail-music, store-experience, field-notes, music-strategy]
+sections:
+  - type: key_takeaways
+    items:
+      - "If you ran Entuned for a shift and didn't really notice the music, that's exactly how it's supposed to work"
+      - "Retail music is environmental design — it works on dwell time, engagement, and spend whether or not anyone consciously hears it"
+      - "Judge the system by what moved on the floor: dwell, conversion, basket. Not by whether the staff liked the songs"
+
+  - type: prose
+    body: |
+      If you ran Entuned for a shift and didn't really notice the music playing, that's exactly how it's supposed to work.
+
+      The moment music grabs your attention, it stops doing its job. You're listening instead of running your store. Your customers are noticing the song instead of noticing your products.
+
+  - type: subhead
+    level: 2
+    text: "Retail Music Is Environmental Design, Not Entertainment"
+
+  - type: prose
+    body: |
+      Retail music isn't entertainment. It's environmental design. It works on the part of your customer's brain that handles how long they want to stay, how engaged they feel, and what they're willing to spend. None of that requires them to like the song.
+
+      A study from the eighties showed that slower music in a grocery store led to more sales. Customers had no idea why. They weren't even consciously aware of the music. That's the point. The effect happens whether people notice it or not.
+
+  - type: pullquote
+    text: "The effect happens whether people notice it or not."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "So Did Your Numbers Move?"
+
+  - type: prose
+    body: |
+      That's the question.
+
+      If dwell time went up, the music worked. If conversion improved, the music worked. If a customer lingered through something they might have otherwise skipped, the music was part of that environment.
+
+      You not noticing it is the system working exactly right.
+
+  - type: subhead
+    level: 2
+    text: "What the Product Actually Is"
+
+  - type: prose
+    body: |
+      The stores optimizing for music people like are optimizing for the wrong thing. Entuned is built for the stores optimizing for what actually happens on the floor.
+
+      Your customers won't credit the music for anything. They'll just stay a bit longer and decide a bit easier. That's the entire product.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "the-composer-who-wanted-you-to-ignore-him"
+      - slug: "the-supermarket-study"
+      - slug: "sound-check-music-is-a-variable"
