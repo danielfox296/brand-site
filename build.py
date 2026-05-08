@@ -341,6 +341,46 @@ def build():
             continue
 
         # ---------------------------------------------------------------
+        # REDIRECT STUB
+        # If config has `redirect_to`, emit a minimal meta-refresh page
+        # and skip the full layout pipeline. Used to preserve SEO equity
+        # for old slugs after a post is renamed/consolidated.
+        # ---------------------------------------------------------------
+        if config.get('redirect_to'):
+            redirect_target = config['redirect_to']
+            redirect_output = config.get('output', f'{page_name}.html')
+            safe_target = html_mod.escape(redirect_target, quote=True)
+            redirect_title = html_mod.escape(
+                config.get('title', 'Redirecting… | Entuned'), quote=True
+            )
+            stub = (
+                '<!DOCTYPE html>\n'
+                '<html lang="en">\n'
+                '<head>\n'
+                '<meta charset="utf-8">\n'
+                f'<title>{redirect_title}</title>\n'
+                f'<link rel="canonical" href="{safe_target}">\n'
+                f'<meta http-equiv="refresh" content="0; url={safe_target}">\n'
+                '<meta name="robots" content="noindex">\n'
+                '</head>\n'
+                '<body>\n'
+                f'<p>This page has moved. Redirecting to <a href="{safe_target}">{safe_target}</a>.</p>\n'
+                f'<script>window.location.replace("{safe_target}");</script>\n'
+                '</body>\n'
+                '</html>\n'
+            )
+            out_path = os.path.join(REPO, redirect_output)
+            if not os.path.abspath(out_path).startswith(os.path.abspath(REPO)):
+                print(f'  ✗ SKIPPED {redirect_output} — path escapes repo root')
+                continue
+            os.makedirs(os.path.dirname(out_path), exist_ok=True)
+            with open(out_path, 'w', encoding='utf-8') as f:
+                f.write(stub)
+            pages_built.append(redirect_output)
+            print(f'  ↪ {redirect_output} → {redirect_target}')
+            continue
+
+        # ---------------------------------------------------------------
         # NEW-FORMAT BLOG POST DETECTION
         # If this page has a new-format content.yaml (with sections array),
         # render it through the Jinja2 blog pipeline instead of the old
@@ -776,7 +816,7 @@ def build():
     for page_path in sorted(page_dirs):
         config_path = os.path.join(page_path, 'config.json')
         config = json.loads(read(config_path))
-        if config.get('skip'):
+        if config.get('skip') or config.get('redirect_to'):
             continue
         output = config.get('output', '')
         if not output.startswith('blog/'):

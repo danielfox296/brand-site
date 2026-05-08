@@ -35,6 +35,8 @@ audio/                      ← Static audio files (NOT generated — edit direc
 
 ## Key rules
 
+- **Never create raw HTML files anywhere in the repo.** Every output file — root pages, blog posts, redirect stubs, password-gated pages, noindex helpers — must come from a `_src/pages/<name>/` source folder with a `config.json`. If you find yourself writing `<!DOCTYPE html>` outside `_src/layouts/base.html`, stop. The SSG owns every output.
+- **Redirects use the `redirect_to` config field.** To redirect an old slug to a new one, create `_src/pages/blog-redirect-<old-slug>/config.json` with `output`, `redirect_to`, and `robots: "noindex"`. No `sections/` directory needed. The build emits a meta-refresh stub. See existing `blog-redirect-*` folders for the pattern.
 - **Never edit root-level .html files** — they get overwritten by `build.py`
 - **To change nav or footer**: edit `_src/partials/header.html` or `footer.html`, then rebuild
 - **To add a page**: create a new directory in `_src/pages/` with `config.json` and `sections/`
@@ -68,6 +70,19 @@ For blog posts, output goes into the `blog/` subdirectory:
 **Title separator conventions:**
 - Non-blog pages: `" | Entuned"` (pipe)
 - Blog posts: `" — Entuned Blog"` (em dash)
+
+**Redirect stubs** (for old slugs that have been renamed/consolidated):
+
+```json
+{
+  "title": "Redirecting… | Entuned",
+  "output": "blog/<old-slug>.html",
+  "redirect_to": "https://entuned.co/blog/<canonical-slug>.html",
+  "robots": "noindex"
+}
+```
+
+When `redirect_to` is set, the build emits a minimal meta-refresh page and skips the full layout pipeline. Folder convention: `_src/pages/blog-redirect-<old-slug>/`. No `sections/` or `style.css` needed.
 
 The build script uses the output path depth to set `nav_prefix` — blog posts at `blog/slug.html` get `../` so relative links to styles, images, and other pages resolve correctly. **Exception: the logo `href` in `header.html` uses the absolute path `/` (not `{{nav_prefix}}index.html`) to avoid Google treating `/index.html` as a separate canonical URL from `/`. Do not change this back to a relative path.**
 
@@ -201,6 +216,7 @@ To deploy: `git add -A && git commit -m "message" && git push origin main`
 7. **Follow brand voice.** Read `../VOICE.md` before writing any copy. Lead with outcomes, not technology. Never put "AI" in a page title or hero. Use "retail music strategy" as the category term, not "AI music."
 8. **Every page needs SEO.** Every config.json must have a `title` and `meta_description`. Titles lead with the outcome. Descriptions include a stat and the pilot CTA. See `../VOICE.md` for patterns. Use `" | Entuned"` separator for pages and `" — Entuned Blog"` for blog posts.
 9. **Read `../brain.md` for context.** It has product details, pricing, competitive landscape, research citations, and key decisions. Reference it before making content decisions.
+10. **No raw HTML, ever.** Every page must come from `_src/pages/<name>/`. New pages = new source folder + `config.json` + `sections/`. Redirects = source folder with `config.json` only and a `redirect_to` field. Never bypass `build.py` by writing `.html` directly into the repo root or `blog/`.
 
 ## Testing locally
 

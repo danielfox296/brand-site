@@ -10,6 +10,10 @@ Read `ARCHITECTURE.md` for the full site structure, design system, and build pro
 - **Remote:** `danielfox296/brand-site`
 - **Domain:** entuned.co
 
+## ⚠️ Hard rule: no raw HTML
+
+Never create `.html` files directly in the repo root or `blog/`. Every output file must come from `_src/pages/<name>/`. This includes redirects — use a `blog-redirect-<slug>/config.json` with a `redirect_to` field. See `ARCHITECTURE.md` for the redirect stub schema. If you write `<!DOCTYPE html>` outside `_src/layouts/base.html`, you're doing it wrong.
+
 ## Content Editing (YAML Layer)
 
 Every page has a `content.yaml` file alongside its HTML sections. **When editing text content, edit the YAML file — not the HTML.**
