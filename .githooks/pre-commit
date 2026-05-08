@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Auto-rebuild the SSG before commit if any source file is staged.
+# Source = anything under _src/ or build.py itself.
+# Restages any root .html / blog/*.html that build.py regenerated, so YAML
+# edits and their built HTML always commit together.
+
+set -e
+
+if git diff --cached --name-only | grep -qE '^(_src/|build\.py)'; then
+  REPO_ROOT=$(git rev-parse --show-toplevel)
+  cd "$REPO_ROOT"
+  echo "pre-commit: source change detected, running python3 build.py..."
+  python3 build.py >/dev/null
+  # Restage anything build.py regenerated that's an output file
+  git add -u '*.html' 'blog/*.html' 2>/dev/null || true
+fi
