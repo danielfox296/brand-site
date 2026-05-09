@@ -1,0 +1,85 @@
+title: "The Playlist Era and the Open Loop"
+slug: "the-playlist-era-and-the-open-loop"
+eyebrow: "FIELD NOTES"
+dek: "The playlist era solved curation and licensing. It didn't solve measurement. A century after Muzak, music still goes into retail stores and nothing comes back."
+date: "2026-04-01"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/playlist-era.jpg"
+  alt: "Close-up of a vintage audio cassette tape internals against a black background"
+meta_description: "The playlist era solved curation and licensing. It didn't solve measurement. A century after Muzak, music still goes into retail stores and nothing comes."
+og_image: "/img/blog/playlist-era.jpg"
+tags: [playlists, music-history, sound-on-the-floor, measurement, muzak]
+sections:
+  - type: key_takeaways
+    items:
+      - "The playlist era solved curation, licensing, and convenience — but not measurement"
+      - "From licensed services to a manager's personal Spotify account, the question of whether the music is helping or hurting still goes unanswered"
+      - "Music goes into the store. Something happens. Nobody connects the two"
+
+  - type: prose
+    body: |
+      A store manager opens Spotify on their phone, pairs to the Bluetooth speaker behind the register, and hits play on a playlist called "Chill Vibes for Retail." The store has music now.
+
+      Problem solved. Except for the licensing violation, the brand inconsistency across shifts, the lack of measurement, and the part where nobody will ever know if the music helped or hurt. Other than that, solved.
+
+  - type: pullquote
+    text: "Muzak: 1934–2013."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "The Brands That Replaced Muzak"
+
+  - type: prose
+    body: |
+      In 2011, Mood Media acquired Muzak for $345 million. By 2013, the Muzak brand was retired. The name that had become synonymous with background music — so thoroughly that it entered the dictionary as a generic term — disappeared from the market. What replaced it was a constellation of playlist services: Mood Media itself, Cloud Cover Music, Soundtrack Your Brand, SiriusXM for Business. Licensed music, genre channels, dayparting, royalty compliance baked in. The music got better. The curation got smarter. The measurement stayed at zero.
+
+      On the other end of the spectrum: the manager's personal Spotify account, which isn't licensed for commercial use. Most consumer streaming services explicitly prohibit public performance in their terms of service. A store playing Spotify for customers is exposed to potential fines from performing rights organizations. Most stores do it anyway. Most stores don't get caught. The risk builds in the background.
+
+      Between the licensed services and the unlicensed Spotify account, there's a third option that tells the story better than either: the store where nobody's in charge of the music at all. The morning shift plays one thing, the afternoon shift plays another, the closing crew plays whatever they want. The customer who visits twice in one week hears two completely different stores.
+
+  - type: subhead
+    level: 2
+    text: "Forty-Two Hours of Kmart"
+
+  - type: pullquote
+    text: "42 hours of Kmart background audio, preserved by one employee. Streamed for nostalgia by people who miss a store that doesn't exist anymore."
+    accent: teal
+
+  - type: prose
+    body: |
+      In Naperville, Illinois, a Kmart employee named Mark Davis worked the service desk from 1989 to 1999. Corporate sent cassette tapes every month with the in-store music and advertising. The tapes rotated monthly, then weekly, until satellite programming made them obsolete in 1993. When the tapes were headed for the dumpster, Davis kept them.
+
+      In 2015, he digitized the collection and uploaded it to the Internet Archive. Forty-two hours of Kmart background audio. The older tapes are instrumental covers, pure Muzak-era material. By 1991, the music has shifted to mainstream pop hits. Advertisements for Blue Light Specials and layaway plans are scattered throughout.
+
+      People listen to them. Not ironically. For comfort. The comment sections are full of people identifying specific songs, sharing memories of childhood shopping trips, trying to place which Kmart they remember hearing these tapes in. A former employee's salvage operation became an accidental archive of American retail.
+
+      The Kmart tapes are artifacts from an era when background music was a physical object shipped to your store in a box. The music arrived. You played it. You didn't choose it, measure it, or question it.
+
+  - type: subhead
+    level: 2
+    text: "Why is the playlist era a feedback loop nobody closed?"
+
+  - type: prose
+    body: |
+      Now the music comes over the internet. The selection is infinite. The tools for measurement exist. And the fundamental question remains unanswered: is this music doing anything? Is it helping? Is it hurting? Nobody checks. Music goes in. Something happens. Nobody connects the two.
+
+      At Entuned, we exist because this loop has been open for a century. The playlist era solved curation. It solved licensing. It solved convenience. It didn't solve measurement. We close the loop. Music goes in. Behavioral data comes back. The next composition reflects what worked. That's the piece nobody built until now.
+
+      Next in the series: [Closing the Loop →](../blog/closing-the-loop.html)
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "the-general-and-the-wire"
+      - slug: "can-you-play-spotify-in-your-store"
+      - slug: "the-familiarity-trap"

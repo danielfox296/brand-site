@@ -1,0 +1,77 @@
+title: "Turning On the Radio"
+slug: "turning-on-the-radio"
+eyebrow: "FIELD NOTES"
+dek: "In the 1950s, most shop owners solved the background music problem by turning on the radio. It was free, it was varied, and it was entirely someone else's."
+date: "2026-04-01"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/turning-on-the-radio.jpg"
+  alt: "Vintage Universum portable radio on a wooden surface surrounded by other old radios"
+meta_description: "In the 1950s, most shop owners solved the background music problem by turning on the radio. It was free, it was varied, and it was entirely someone else's."
+og_image: "/img/blog/turning-on-the-radio.jpg"
+tags: [music-history, radio, sound-on-the-floor, brand-control]
+sections:
+  - type: key_takeaways
+    items:
+      - "When shop owners turned off Muzak and turned on the radio, they got free music — and free ads, free opinions, and a DJ who'd never set foot in their store"
+      - "Control over the sonic environment is a brand decision whether or not you treat it like one"
+      - "The radio era ended. The habit of letting somebody else choose the soundtrack didn't"
+
+  - type: prose
+    body: |
+      Sometime in the 1950s, a shop owner gets tired of Muzak. The instrumental covers of popular songs, smoothed out and stripped of vocals, are starting to grate. The monthly subscription isn't cheap. So the owner does what millions of small business owners will do for the next several decades.
+
+      Turns on the radio.
+
+      Customers hear the Everly Brothers. Then a Chevrolet ad. Then the weather. Then Elvis. Then a furniture store spot. Then the DJ, who has opinions about the mayor.
+
+      The music is good. Everything around the music is someone else's.
+
+  - type: pullquote
+    text: "Playing the radio means letting a stranger talk to your customers."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "What does it actually cost to turn on the radio in your store?"
+
+  - type: prose
+    body: |
+      For most of the mid-20th century, this is the default. Stores that can't afford Muzak or don't want it just tune in to the local AM or FM station. The music is free, or close to it. The variety is better than anything a subscription service offers. And the tradeoff is invisible until you notice it: your store is now broadcasting content you didn't choose, to an audience you're trying to sell to, interrupted by ads for businesses that might be across the street.
+
+      A fine restaurant gets a used car spot during the lunch rush. A boutique gets a political rant at 3pm. A jewelry store gets a traffic report nobody in the store cares about. The radio DJ is, for all practical purposes, an uninvited employee with a microphone and no knowledge of your brand.
+
+      Meanwhile, in bars and diners across the country, the jukebox offers a different model. The customer puts in a quarter and picks the song. The music belongs to whoever's in the room. The Seeburg 1000, introduced in 1959, could play up to 1,000 songs continuously. Some of these machines end up in commercial spaces as a kind of automated background music player.
+
+      But mainstream retail never adopts the jukebox model. The customer gets to choose the song at the diner. Never at the department store. The store owner makes the call, and most of the time, the call is to hand it off to whoever's on the radio that day.
+
+  - type: pullquote
+    text: "What you wanted: music. What you got: music + someone else's ads + someone else's opinions."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "Sound You Didn't Choose"
+
+  - type: prose
+    body: |
+      The radio era reveals something that still applies. Control over the sonic environment is a brand decision, whether or not you treat it like one. Every store that turned on the radio was outsourcing its atmosphere to a station that had never walked the floor, met the customers, or looked at the merchandise. The music might have been fine. The interruptions belonged to somebody else.
+
+      At Entuned, we think the sound on your floor should belong to you. Every second of it. The content, the tempo, the mood, the transitions between tracks. When you hand that off to a third party — whether it's a radio station in 1957 or a generic playlist service in 2026 — you're letting someone else decide what your store feels like. Most retailers have opinions about their lighting, their fixtures, their window displays. The sound deserves the same attention.
+
+      The radio era ended gradually, as CDs and then digital services replaced broadcast as the default. But the underlying habit — letting somebody else choose the soundtrack — didn't go away. It just changed form.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "the-general-and-the-wire"
+      - slug: "the-composer-who-wanted-you-to-ignore-him"
+      - slug: "the-pianist-in-the-store"

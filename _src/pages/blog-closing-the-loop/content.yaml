@@ -1,0 +1,97 @@
+title: "Closing the Loop"
+slug: "closing-the-loop"
+eyebrow: "FIELD NOTES"
+dek: "Every era of retail music — Muzak, the radio, Nordstrom's pianists, the playlist services — discovered that sound changes behavior. None of them connected the music to the outcome."
+date: "2026-04-01"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/closing-the-loop-retail.jpg"
+  alt: "Abstract flowing blue data streams with glowing nodes representing connected information flow"
+meta_description: "Every era of retail music discovered that sound changes behavior. Every era operated without connecting the music to the outcome. Entuned closes that loop."
+og_image: "/img/blog/closing-the-loop-retail.jpg"
+tags: [retail-music-history, measurement, specification-outcome-map, sound-on-the-floor]
+sections:
+  - type: key_takeaways
+    items:
+      - "Every era of retail music — Muzak, the radio, Nordstrom's pianists, the playlist services — discovered that sound changes behavior"
+      - "Every era operated without connecting the music to the outcome"
+      - "Entuned closes that loop by composing to specification and measuring against actual behavioral data"
+
+  - type: prose
+    body: |
+      Here's the century in compressed form.
+
+      Satie wanted music that would disappear into the room. His audience refused to ignore it. Squier wanted music that would make factory workers productive, and Muzak built the first crude connection between sound and output. Wanamaker spent twenty years and a factory in the attic building a 287-ton pipe organ because he thought a store should sound like a cathedral.
+
+      Shop owners turned on the radio and handed their sonic environment to a stranger. Nordstrom hired pianists who could read a room in real time, and then let the last one go. Milliman proved tempo changes spending. North proved music changes what people reach for, and shoppers can't tell you why. Abercrombie used volume as a bouncer. Costco chose silence.
+
+      And right now, in most stores in America, somebody's phone is paired to a Bluetooth speaker playing a playlist nobody chose with any particular intention.
+
+      Every one of these eras discovered the same thing: music changes behavior.
+
+      Every one of them operated without connecting the music to the outcome.
+
+  - type: pullquote
+    text: "Every era got one piece right. Nobody connected the music to the measurement."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "Why is store audio the one environment nobody measures?"
+
+  - type: prose
+    body: |
+      The tools to measure in-store behavior exist now and have for years. Foot traffic counters. Dwell time sensors. Conversion analytics. Basket size data. Heat maps. Retailers use these tools to evaluate store layout, staffing decisions, promotional placement, display positioning. They measure everything that happens on the floor.
+
+      Except the sound.
+
+      Walk through the environmental controls in a modern retail store. Lighting has color temperature specifications, fixture plans, zoning by department, brightness levels set to the hour. HVAC has thermostats and occupancy sensors, maintaining a target temperature that someone chose because the research says it keeps people comfortable enough to browse. Visual merchandising has planograms, A/B testing, seasonal rotation schedules, corporate guidelines that reach down to which shelf the candles go on.
+
+      Music has a playlist somebody picked on Monday and forgot about by Wednesday.
+
+  - type: pullquote
+    text: "Lighting: controlled. Temperature: controlled. Visual merchandising: controlled. Music: whatever somebody felt like."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "Why I Went Looking for This Problem"
+
+  - type: prose
+    body: |
+      The reason for this gap isn't that retailers don't care about music. They do. Ask any store manager whether the sound in their store matters and they'll tell you it does. The reason is that nobody built the thing that connects the music to the measurement.
+
+      I found this problem the way most founders find problems: by standing inside it. I took a job at a high-end men's clothing store in Denver and heard the playlist on the floor. It was bad. Not offensively bad, just thoughtless. Somebody's Spotify, cycling through the same tracks, no connection to the customer, no connection to the brand, no connection to anything happening in the store. I'm a jazz musician and a producer. I've spent my whole life thinking about what music does to a room. Standing on that floor, hearing that playlist, I knew this was a solvable problem that nobody had solved.
+
+      That's what we built Entuned to do.
+
+  - type: subhead
+    level: 2
+    text: "The Specification–Outcome Map"
+
+  - type: prose
+    body: |
+      We compose music to specification. Thirty-one parameters we call Flow Factors, each one grounded in the published research: tempo, mode, harmonic density, rhythmic texture, timbral brightness, culturally specific genre markers, and twenty-five more. The music is generated, not picked from a catalog. It's deployed in-store and measured against actual behavioral data: dwell time, conversion rate, basket size, traffic pace. Each day's data informs the next day's composition.
+
+      The dataset that accumulates from this — what we call the Specification–Outcome Map — is the compounding asset. Every store that runs Entuned makes the model smarter, for that store and across the whole network. The map records what musical specifications produce what behavioral outcomes in what retail contexts. Over time, the music gets better at its job because someone is finally checking whether it's doing its job.
+
+      Satie wanted music to behave like furniture. A century later, the furniture is smart. The lights adjust themselves. The temperature reads the room.
+
+      The sound on the floor is next.
+
+      *This is Part 12, the final installment of "The Sound on the Floor." [Read the full series →](../blog.html)*
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "the-supermarket-study"
+      - slug: "measure-what-you-ignore"
+      - slug: "closing-the-loop-on-retail-analytics"

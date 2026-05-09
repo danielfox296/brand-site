@@ -1,0 +1,91 @@
+title: "How Your Playlist Is Tanking Retail Dwell Time"
+slug: "bye-bye-bye-dwell-time"
+eyebrow: "FIELD NOTES"
+dek: "A song looped the word \"leave\" thirty times in a thrift store and shoppers drifted toward the exit. Filtering lyrics won't catch most of it."
+date: "2026-05-01"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/retail-dwell-time.jpg"
+  alt: "Empty retail aisle with shoppers drifting toward the exit at the far end"
+meta_description: "A song looped the word 'leave' 30 times and shoppers drifted to the exit. Filtering lyrics won't fix it. Most dwell loss is below the lyrics."
+og_image: "/img/blog/retail-dwell-time.jpg"
+tags: [dwell-time, lyrics, retail-music, playlists]
+sections:
+  - type: key_takeaways
+    items:
+      - "A song looped the word \"leave\" thirty times in a thrift store and shoppers drifted toward the exit"
+      - "The mechanism doesn't care about price point and filtering for negative lyrics won't catch most of it"
+      - "Tempo, harmonic density, and arrangement push people out at a physiological level — below the threshold any content review would flag"
+
+  - type: prose
+    body: |
+      I was at Arc Thrift in Littleton, Colorado, four days before my daughter's high school graduation. Spirit week. She needed outfits for five different themes and we were doing what you do at a thrift store — pulling things off racks, holding them up, putting them back, working through the store slowly. Good dwell time. The kind every retailer wants.
+
+      Then "Bye Bye Bye" came on.
+
+  - type: subhead
+    level: 2
+    text: "Nobody heard a command"
+
+  - type: prose
+    body: |
+      Nobody left because Justin Timberlake told them to. That's not how it works. Nobody in that store consciously registered a command and responded to it. But the words went in. They always go in. That's the thing about language in a sonic environment — you don't have to be listening for it to land.
+
+      For most people in that store, those words were looping somewhere between conscious and subconscious. Not quite heard, not quite ignored. And loops turn into action. The song runs three and a half minutes. "Bye bye bye" repeats somewhere around thirty times depending on the version. By the time it ends, every person in that building has been seeded with the same idea.
+
+      I looked up and people were leaving.
+
+      Not in a rush. Not all at once. Just a drift toward the exit that wasn't there before the song started. A store with maybe 85 people in it, all carrying the same word in their head, and the word was *leave*.
+
+      Nobody on staff noticed. Nobody connected it. The playlist kept running.
+
+  - type: subhead
+    level: 2
+    text: "The mechanism doesn't care about price point"
+
+  - type: prose
+    body: |
+      Arc Thrift is not a high-end retailer worried about optimizing conversion on a $400 sport coat. But the mechanism doesn't care about price point. It works the same way in a thrift store in Littleton as it does anywhere else people are moving through a space with music playing and decisions to make.
+
+      Retailers spend real money on layout, visual merchandising, staff training, anything that might extend how long a customer stays and what they do while they're there. Dwell time is one of the cleaner signals in brick-and-mortar: more time in the store correlates with more purchasing, more browsing, more attachment to the space.
+
+      The audio environment those same shoppers are moving through gets chosen with roughly the same rigor as a waiting room radio. Pre-built playlists, licensing requirements, explicit content filters. That's usually where intentionality ends.
+
+      What doesn't get asked is what the music is actually doing to the 85 people inside the store. Arousal state, time perception, how settled versus restless a person feels in a given moment — all of these respond to music in ways that are documented and replicable. And semantic content, the actual words playing in the room, seeds ideas that surface as behavior without the person knowing where the impulse came from.
+
+  - type: subhead
+    level: 2
+    text: "Where is your store losing dwell time?"
+
+  - type: prose
+    body: |
+      The easy answer is to filter for negative associations. Flag "Bye Bye Bye." Flag "Hit the Road Jack." Screen lyrics before they go into rotation.
+
+      That's not where most dwell time is actually being lost.
+
+      A playlist with no semantic landmines, no demographic mismatch, nothing that would raise a flag on any content review, can still push people toward the exit at a physiological level. Tempo slightly too high for a browsing state. Harmonic density that raises arousal past the point where a person settles into a space. Arrangement choices that make a room feel like a crowd.
+
+  - type: pullquote
+    text: "None of those tracks would get caught. All of them are shortening visits."
+    accent: teal
+
+  - type: prose
+    body: |
+      My daughter found her outfits. We stayed long enough because we had a mission and a deadline and four days until graduation. Most shoppers don't have that kind of anchor. Most shoppers just feel a vague pull toward the door and follow it.
+
+      The playlist was already on the next song by the time we checked out.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "read-the-lyrics-on-your-speakers-right-now"
+      - slug: "the-dwell-time-variable-nobodys-tracking"
+      - slug: "why-your-best-customers-leave-faster-than-they-should"

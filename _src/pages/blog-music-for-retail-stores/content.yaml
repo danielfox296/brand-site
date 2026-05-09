@@ -1,0 +1,87 @@
+title: "Music for Retail Stores: How to Get It Right Without Overpaying"
+slug: "music-for-retail-stores"
+eyebrow: "MARKET INTEL"
+dek: "Most retail music is an afterthought. Here is how to get it right — legally, strategically, and without a subscription — in about five minutes."
+date: "2026-05-01"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/retail-designed-everything.jpg"
+  alt: "Interior of a carefully lit retail store with curated displays and warm overhead lighting"
+meta_description: "Most retail music is an afterthought. Here is how to get it right — legally, strategically, and without a subscription — in about five minutes."
+og_image: "/img/blog/retail-designed-everything.jpg"
+tags: [retail-music, getting-started, alternatives, free-tier]
+sections:
+  - type: key_takeaways
+    items:
+      - "Most retailers either play music illegally or overpay for a catalog service that wasn't designed for their store"
+      - "Catalog services solve the legal problem but not the strategy problem — you're choosing vibes, not outcomes"
+      - "Entuned generates original music built for retail outcomes — dwell time, impulse purchase rate, brand alignment — with a free tier that runs indefinitely"
+
+  - type: prose
+    body: |
+      Most retail stores treat music as an afterthought. Someone connects their phone to the speaker, picks a playlist, and that's it. The music plays, nobody thinks about it, and the store pays nothing until a licensing letter shows up in the mail.
+
+      The stores that do pay for a commercial service are spending $200 to $400 per year for what amounts to a background soundtrack nobody chose with much intention. It works well enough. But "well enough" is a low bar for something that directly affects how long your customers stay and how much they spend.
+
+      We built Entuned because we think retail music should do more than fill silence, and it shouldn't require a monthly subscription to get right.
+
+  - type: subhead
+    level: 2
+    text: "Why music matters more than most retailers think"
+
+  - type: prose
+    body: |
+      The research on this is extensive and consistent. Music tempo affects walking speed. Slower tempos encourage browsing. The right energy level increases arousal, which correlates with impulse purchases. Genre alignment with your target customer creates a sense of belonging that extends dwell time. Mismatched music creates discomfort that people can't always articulate but definitely act on.
+
+      A store playing top-40 pop for a customer base that skews older and more affluent is working against itself. A boutique playing generic lo-fi for a customer who responds to energy and edge is leaving money on the floor. Most store owners have never thought about this because no music service has ever asked them to.
+
+  - type: subhead
+    level: 2
+    text: "The problem with the current options"
+
+  - type: prose
+    body: |
+      Every established provider in this space — Soundtrack Your Brand, CloudCover, SoundMachine, SiriusXM — works the same way. They give you a catalog of licensed music and let you pick. You choose a genre or a mood. Maybe you set up dayparting. The music plays.
+
+      This solves the legal problem. It does not solve the strategy problem. The music wasn't made for your store, your customers, or your goals. It was made by artists for listeners, and a licensing company packaged it for commercial playback. You're choosing vibes, not outcomes.
+
+      And you're paying $17 to $34/mo for the privilege.
+
+  - type: subhead
+    level: 2
+    text: "What we do instead"
+
+  - type: prose
+    body: |
+      Entuned generates original music designed for retail environments. We own every track. No licensing fees, no PRO involvement, no subscription required for the free tier.
+
+      The difference isn't just the price. It's the intent behind the music.
+
+      On the free tier, every track is built around one of two outcomes: increasing energy or extending dwell time. These are real, measurable effects grounded in decades of retail atmospherics research. The music isn't randomly generated and sorted by genre. Tempo, energy curve, sonic texture, and arrangement are all calibrated to produce a specific response in a retail setting.
+
+      Paid tiers unlock additional outcomes and music generated for your specific target customer. But the free tier is designed to run your store indefinitely. No trial. No expiration. No feature gating that makes it unusable.
+
+  - type: subhead
+    level: 2
+    text: "Getting started"
+
+  - type: prose
+    body: |
+      Sign up at entuned.co, pick an outcome, press play. You'll be streaming through your existing speakers in about five minutes. No hardware purchase. No contracts. No credit card for the free tier.
+
+      Your store's music should be doing something for your business. At minimum, it should be legal. We handle both.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "how-much-does-retail-music-cost"
+      - slug: "can-you-play-spotify-in-your-store"
+      - slug: "commercial-music-services-compared"

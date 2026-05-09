@@ -1,0 +1,127 @@
+title: "What Jazz Musicians Hear That Spotify Can't Tag"
+slug: "what-jazz-musicians-hear"
+eyebrow: "FLOW FACTORS"
+dek: "Genre and tempo are the surface. A jazz musician hears harmonic density, voice leading, and rhythmic feel — the variables that actually change customer behavior."
+date: "2026-04-01"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/jazz-musicians-hear.jpg"
+  alt: "Close-up of a jazz pianist's hands on the keys of a grand piano, black and white"
+meta_description: "Genre and tempo are the surface. A jazz musician hears harmonic density, voice leading, and rhythmic feel — the variables that actually change customer."
+og_image: "/img/blog/jazz-musicians-hear.jpg"
+tags: [jazz, harmonic-density, voice-leading, flow-factors, parameter-level]
+sections:
+  - type: key_takeaways
+    items:
+      - "The gap between what a trained musician hears and what a streaming platform sees is the same gap that makes most in-store music ineffective"
+      - "Genre and tempo are the surface. Harmonic density, voice leading, and rhythmic feel are the variables that actually change behavior"
+      - "Two songs with identical metadata can produce completely different psychological states"
+
+  - type: prose
+    body: |
+      Today is International Jazz Day, and I want to talk about a perceptual gap. The distance between what a trained jazz musician hears when a song plays and what a streaming platform sees when it looks at the same song.
+
+      That gap is why in-store music mostly doesn't work.
+
+  - type: subhead
+    level: 2
+    text: "Two people walk into a bar"
+
+  - type: prose
+    body: |
+      A jazz musician and a Spotify engineer sit down at the same club. A quartet is playing — piano, bass, drums, saxophone. Same room, same sound hitting both sets of ears.
+
+      The engineer sees metadata. Genre: jazz. Subgenre: post-bop. Tempo: 132 BPM. Mood: sophisticated.
+
+      The musician hears something different.
+
+      She hears the piano player voice a Cmaj7 with the third on top instead of the root, which changes how stable the harmony feels. She hears the bass player walk through a chromatic passing tone between the IV and the V — a half-second of tension before resolving. She hears the drummer shift from straight eighths to a dotted pattern on the ride cymbal, which pulls the whole band's feel from driving to floating.
+
+      None of that lives in a tag.
+
+  - type: subhead
+    level: 2
+    text: "What do jazz musicians hear that streaming tags miss?"
+
+  - type: prose
+    body: |
+      Play a C and a G together. Two notes. Open, stable, resolved. You could fall asleep to it. Add an E — still stable, but fuller. You've made a major triad. Most people would call it "happy" or "bright."
+
+      Now add a Bb. The sound has tension. Your ear wants it to go somewhere. Add an F# and a D. Six notes. Dense, ambiguous, restless. A jazz musician calls it a C13♯11. Most listeners just say it sounds "complex" or "moody."
+
+      That density is measurable. You can count the intervals, map the dissonance, predict the psychological response. Decades of psychoacoustic research confirm that harmonic density directly affects how alert, relaxed, or emotionally engaged a listener feels.
+
+  - type: pullquote
+    text: "Spotify tags it \"jazz.\" Maybe \"chill jazz\" if the tempo is slow."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "The note between the notes"
+
+  - type: prose
+    body: |
+      Jazz musicians spend years learning to hear voice leading — the way individual notes move from one chord to the next.
+
+      Take a simple change: C major to F major. A keyboard player could jump from one chord shape to the other. Both chords land fine. But a jazz musician moves each note the shortest possible distance. The E in the C chord drops a half step to the F. The G stays put. The C drops to A. Every note travels the shortest path to the next chord.
+
+      That half-step movement — E down to F — creates a specific feeling of resolution. The listener doesn't know it happened. They just feel the music flow. Change that voice leading, move those notes differently, and the same two chords feel choppy, disconnected, or static.
+
+      This is happening constantly in any well-written piece of music. No metadata tag captures it.
+
+  - type: subhead
+    level: 2
+    text: "Why this matters outside of music school"
+
+  - type: prose
+    body: |
+      The vast majority of in-store music operates at the Spotify-engineer level. Genre, tempo, vibe. Someone picks a playlist that feels right for the brand. The tags say "upbeat indie" or "relaxed acoustic."
+
+      But the listener's nervous system is responding to musician-level information. Harmonic density. Rhythmic feel. How notes move from one chord to the next. Whether the melody resolves or leaves tension hanging. Whether the bass line is static or pulling the ear forward.
+
+      Those variables don't show up in any playlist metadata. They live below the surface of genre and mood. And they're the variables that actually move behavior.
+
+      A jazz musician has always known this. Every player who ever chose a tritone substitution over a straight dominant chord was making a decision about tension and attention — whether they framed it that way or not.
+
+  - type: subhead
+    level: 2
+    text: "The tag problem"
+
+  - type: prose
+    body: |
+      Take two songs tagged "mellow jazz, 90 BPM, saxophone." One is a ballad in D major with simple triads and a predictable melody that resolves every four bars. The other is a modal piece in D Dorian with extended harmonies and a melody that floats over the bar line without resolving for sixteen measures.
+
+      Identical metadata. Completely different psychological states.
+
+      The first relaxes. The second holds attention. A retailer who wanted customers to slow down and browse would get meaningfully different results from each — and the playlist tags would never tell them which to pick.
+
+  - type: subhead
+    level: 2
+    text: "What this has to do with us"
+
+  - type: prose
+    body: |
+      At Entuned, we specify music at the parameter level. Not genre. Not mood. The actual compositional variables: mode, harmonic density, tempo, rhythmic feel, melodic contour, lyrical content.
+
+      We do this because those are the variables that change how people behave in a space. And we generate the music ourselves because that's the only way to isolate one variable from another.
+
+      If you pick a track from a catalog, you get all of its variables bundled together. You can't separate the tempo from the harmonic content from the lyrical theme from the rhythmic pattern. You're testing the whole song against the room — and if something changes, you don't know which variable caused it.
+
+      Jazz musicians figured out long ago that the details below the surface are where the real work happens. The specific voicing. The chromatic approach note. The dotted rhythm on the ride cymbal. Those choices shape how a room feels, even when nobody in the room can name what they're hearing.
+
+      We're just the first company that decided to measure it.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "what-a-producer-hears"
+      - slug: "difference-between-art-and-design"
+      - slug: "in-store-music-strategy"

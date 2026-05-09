@@ -1,0 +1,79 @@
+title: "The General and the Wire"
+slug: "the-general-and-the-wire"
+eyebrow: "FIELD NOTES"
+dek: "Muzak was the first company to treat background music as a controlled variable with a measurable outcome. The instinct was right. The instruments weren't."
+date: "2026-04-01"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/the-general-and-the-wire.jpg"
+  alt: "Industrial corridor lined with aged pipes, cables, and overhead industrial lighting"
+meta_description: "Muzak was the first company to treat background music as a controlled variable with a measurable outcome. The instinct was right. The instruments weren't."
+og_image: "/img/blog/the-general-and-the-wire.jpg"
+tags: [muzak, music-history, sound-on-the-floor, stimulus-progression]
+sections:
+  - type: key_takeaways
+    items:
+      - "Muzak was the first company to treat background music as a controlled variable with a measurable outcome"
+      - "Stimulus Progression: 15 minutes of gradual acceleration, then silence, then again — designed to reduce listener fatigue and increase productivity"
+      - "The instinct was right. The execution was fixed and unadaptive. The connection between music and outcome never closed"
+
+  - type: prose
+    body: |
+      Major General George Owen Squier spent World War I as the U.S. Army's Chief Signal Officer. His wartime work led him to a peacetime invention: a method for transmitting music across electrical wires. No radio needed. Wired directly into homes and businesses.
+
+      He launched a company in the early 1920s to sell the idea. He was too late. Wireless radio had already won the home market. Squier needed a pivot. He found one.
+
+      His new plan: deliver background music to commercial spaces. Restaurants, offices, elevators, retail stores. Places where nobody had asked for music but might benefit from it. He named the company after Kodak, because he liked how that word sounded.
+
+      Muzak.
+
+  - type: pullquote
+    text: "Founded 1934. Named after a camera company. Built for places nobody was listening."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "What did General Owen know about music and labor?"
+
+  - type: prose
+    body: |
+      The early years were mostly instrumental covers. Muzak brought in orchestras and top session players to record standards, building an archive that eventually included some of the only surviving recordings of jazz harpist Casper Reardon. The music was pleasant, unobtrusive, and designed for rooms where people were doing something else.
+
+      Then came the war, and with it, a discovery. American factories running at wartime capacity needed every edge they could find. Muzak funded studies showing that background music reduced absenteeism and worker turnover by a significant margin. The Stevens Institute of Technology confirmed the findings. Musicologists started paying attention.
+
+      Muzak patented a concept called Stimulus Progression. Fifteen-minute blocks of instrumental music, carefully arranged to increase gradually in tempo and energy, giving workers a subconscious sense of forward movement. Each block was followed by a period of silence. The company's own research showed that alternating music and silence reduced listener fatigue and made the stimulus more effective when it returned.
+
+  - type: pullquote
+    text: "Stimulus Progression: 15 minutes of gradual acceleration. Then silence. Then again."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "The Right Instinct, the Wrong Instrument"
+
+  - type: prose
+    body: |
+      By the mid-1940s, Muzak was in over 300,000 locations. The company had done something nobody else in the music industry was doing: treating music as a controlled variable with a measurable outcome. The outcome was productivity. The variable was the music. The connection between the two was studied, documented, and patented.
+
+      This is where Entuned's lineage starts. Muzak was the first company to build a connection between what plays in a space and what happens in that space. The connection was crude. The music was fixed. The same Stimulus Progression blocks played in a steel plant and a shoe store. There was no adaptation, no per-location tuning, no way to know if this week's programming worked better than last week's. But the instinct was right: music should be connected to what it produces.
+
+      We built Entuned on that same instinct. The difference is that our connection actually closes. We measure what happens after the music plays, and the next composition reflects what we learned.
+
+      Muzak spent the next fifty years becoming a punchline. The word turned into shorthand for bland, forgettable background noise. The company that started as a genuine attempt to understand how music affects human behavior became a synonym for music that nobody wants to hear.
+
+      The idea, though — the original idea that music in a commercial space is a variable worth controlling — was right. It just needed better instruments.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "the-composer-who-wanted-you-to-ignore-him"
+      - slug: "the-organ-in-the-department-store"
+      - slug: "sound-check-music-is-a-variable"

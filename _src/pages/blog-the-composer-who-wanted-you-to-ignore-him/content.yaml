@@ -1,0 +1,80 @@
+title: "The Composer Who Wanted You to Ignore Him"
+slug: "the-composer-who-wanted-you-to-ignore-him"
+eyebrow: "FIELD NOTES"
+dek: "Erik Satie invented furniture music in 1917 to disappear. His first performance failed because the audience kept listening. The problem he identified on the first try is still here."
+date: "2026-04-01"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/the-composer-who-wanted-you-to-ignore-him.jpg"
+  alt: "Empty concert hall interior with rows of wooden seats and a lit stage"
+meta_description: "Erik Satie invented furniture music in 1917 to disappear. His first performance failed because the audience kept listening. The problem is still here."
+og_image: "/img/blog/the-composer-who-wanted-you-to-ignore-him.jpg"
+tags: [music-history, satie, sound-on-the-floor, furniture-music]
+sections:
+  - type: key_takeaways
+    items:
+      - "Erik Satie invented background music in 1917 and immediately discovered its central problem: people don't respond to music the way you intend them to"
+      - "His one public performance failed — the audience kept listening despite being told to ignore the music"
+      - "A century later, that problem — music designed for a specific behavioral outcome landing differently in a real room — is still unsolved"
+
+  - type: prose
+    body: |
+      Paris, sometime around 1917. The composer Erik Satie is sitting in a restaurant with his friend, the painter Fernand Léger. The music is loud and bad. This isn't unusual for restaurants in 1917, or for restaurants now. But Satie has an idea that nobody else in the room is having.
+
+      He tells Léger he wants a different kind of music. Something that would be part of the surrounding noise. Something melodic that would soften the clatter of knives and forks without dominating them. Without imposing itself.
+
+  - type: pullquote
+    text: "I imagine it being melodic in nature: it would soften the noise of knives and forks without dominating them, without imposing itself."
+    attribution: "Erik Satie"
+    accent: teal
+
+  - type: prose
+    body: |
+      He calls it *musique d'ameublement*. Furniture music. Music that furnishes a room the way a chair does. You sit in the chair. You don't stare at it.
+
+  - type: subhead
+    level: 2
+    text: "What did Erik Satie understand about retail music?"
+
+  - type: prose
+    body: |
+      Between 1917 and 1923, Satie writes five short compositions and gives them titles that sound like interior design specifications: "Tapestry in Forged Iron (for the arrival of guests)." "Acoustic Tiling (to be played at a lunch or a wedding contract)." "Curtain for a Prefectural Office." Each one is scored for a small ensemble, built from short melodic fragments that repeat indefinitely, and designed for a specific room and a specific social situation. Each one is meant to disappear into the space it furnishes.
+
+      He gets exactly one public performance during his lifetime. Paris, 1920. The musicians are scattered around the room instead of grouped on a stage. The audience is told, explicitly, to keep talking. Ignore the music. Treat it like furniture.
+
+      The audience stops talking and listens.
+
+      Satie is furious. He walks around the room telling people to talk, to stop paying attention, to carry on with their conversations. They keep listening anyway.
+
+  - type: pullquote
+    text: "5 compositions. 1 public performance. 0 audiences who followed instructions."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "The Problem Nobody Has Solved"
+
+  - type: prose
+    body: |
+      The first person to design music for a commercial space discovered the problem immediately. People don't respond to music the way you intend them to. You can compose for a specific behavior, and the room will do something else. Satie spent years thinking about how music could serve a space instead of commanding it, and the moment he put it in front of people, they did the opposite of what he asked.
+
+      He died in 1925. The furniture music sat unpublished and unperformed for decades until John Cage revived it in the 1950s. Brian Eno picked up the thread in the 1970s with Music for Airports, written after sitting in an airport terminal listening to terrible canned music and thinking there had to be a better way.
+
+      At Entuned, we think about Satie's problem every day. The room still has its own ideas about what to do with your music. The difference is that now we can listen back.
+
+      But the lineage runs from a frustrated Frenchman in 1917 through Cage and Eno and eventually into every lo-fi beats playlist running on a café speaker right now. Every generation found something useful in Satie's idea. The problem he identified on the first try — that people don't behave the way you design them to when music is playing — never got solved. Not by Cage. Not by Eno. Not yet.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "the-organ-in-the-department-store"
+      - slug: "the-general-and-the-wire"
+      - slug: "difference-between-art-and-design"

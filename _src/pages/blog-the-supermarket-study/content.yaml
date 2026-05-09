@@ -1,0 +1,81 @@
+title: "The Supermarket Study"
+slug: "the-supermarket-study"
+eyebrow: "FIELD NOTES"
+dek: "In 1982, Ronald Milliman proved slow-tempo music increases retail spending by 38%. The study has over 600 citations. It's been implemented almost nowhere."
+date: "2026-04-01"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/the-supermarket-study.jpg"
+  alt: "Brightly lit supermarket aisle with shelves full of colorful packaged products"
+meta_description: "In 1982, Ronald Milliman proved slow-tempo music increases retail spending by 38%. The study has over 600 citations. It's been implemented almost nowhere."
+og_image: "/img/blog/the-supermarket-study.jpg"
+tags: [milliman, music-history, sound-on-the-floor, tempo, research]
+sections:
+  - type: key_takeaways
+    items:
+      - "In 1982, Ronald Milliman proved slow-tempo music could increase retail spending by 38%"
+      - "The study has over 600 citations and has been implemented almost nowhere"
+      - "Milliman measured one variable. Entuned controls 31"
+
+  - type: prose
+    body: |
+      A supermarket, early 1980s. Ronald Milliman, a marketing professor at Loyola University in New Orleans, is standing in the aisles with a stopwatch. He's measuring how fast shoppers walk.
+
+      The study design is clean. Three conditions: no music, fast-tempo background music, slow-tempo background music. Same store. Same time periods. Measure the pace of in-store traffic. Measure the daily sales.
+
+      The findings land in the Journal of Marketing in 1982 and stay in the literature permanently.
+
+  - type: stat_callout
+    number: "+38%"
+    label: "Slow music. Slow shoppers. More spending."
+    source: "Milliman, Journal of Marketing, 1982"
+    accent: gold
+
+  - type: subhead
+    level: 2
+    text: "What did the supermarket music study actually prove?"
+
+  - type: prose
+    body: |
+      Shoppers in the slow-tempo condition moved significantly slower than shoppers hearing fast-tempo music. Slower shoppers spent more. The average dollar amount per customer jumped from roughly $12 in the fast-tempo condition to roughly $17 in the slow-tempo condition. A single musical variable — tempo — moved the sales needle by more than a third.
+
+      Milliman followed it up in 1986 with a restaurant study that confirmed the pattern. Slow background music led diners to stay longer and spend more at the bar. The findings replicated, the citations piled up (over 600 at last count), and the environmental psychology community treated Milliman's work as foundational.
+
+      The retail industry's response: almost nothing.
+
+  - type: pullquote
+    text: "Published 1982. Over 600 citations. Still mostly unimplemented."
+    accent: teal
+
+  - type: prose
+    body: |
+      Stores didn't start testing tempo conditions on their floors. They didn't install measurement tools to correlate music tempo with sales velocity. They didn't start shifting tempo throughout the day based on traffic patterns. They read the study, maybe nodded, and kept playing whatever the music service sent them that month.
+
+      If you work a retail floor, you already know Milliman is right, even if you've never heard his name. When the music is slow and warm, customers browse. They pick things up, put them down, come back to the rack. They talk. When something uptempo and bright goes on, the energy shifts. People move through faster. They make quicker decisions or no decision at all. You can feel it in the room before you see it in the register. Milliman just put a number on something every experienced retail employee already knows.
+
+  - type: subhead
+    level: 2
+    text: "Thirty-One Levers, Not One"
+
+  - type: prose
+    body: |
+      Later researchers added nuance. A 2011 study found that the tempo effect interacts with musical mode: slow tempo in a minor key boosts sales significantly, while the same slow tempo in a major key shows no special advantage. The levers are more tangled than "play it slow." Tempo and mode interact. So do volume and genre. So do harmonic density and time of day. One variable at a time gets you one finding. The floor has dozens of variables running simultaneously.
+
+      At Entuned, Milliman's study is a starting point. He proved that one musical variable — tempo — moves the needle. One. We control thirty-one. We call them Flow Factors: the full set of musical parameters the research says matter, from tempo and mode to harmonic density, rhythmic texture, timbral brightness, and culturally specific genre markers. Each one is specified, generated, deployed, and measured against actual in-store behavioral data. The next composition reflects what we learned from the last one.
+
+      Milliman proved the mechanism forty years ago. The question was never whether music affects behavior. The question was whether anyone would do something with the answer.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "the-pianist-in-the-store"
+      - slug: "turning-on-the-radio"
+      - slug: "milliman-study"

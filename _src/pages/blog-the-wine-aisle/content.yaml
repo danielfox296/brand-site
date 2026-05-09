@@ -1,0 +1,87 @@
+title: "The Wine Aisle"
+slug: "the-wine-aisle"
+eyebrow: "FIELD NOTES"
+dek: "A 1999 study proved French music sold French wine and German music sold German wine. Shoppers had no idea. Associative priming is the layer nobody uses."
+date: "2026-04-01"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/the-wine-aisle.jpg"
+  alt: "Rows of wine bottles arranged on retail store shelves, showing French and European wines in a well-lit shop interior"
+meta_description: "A 1999 study proved French music sold French wine and German music sold German wine. Shoppers had no idea. Associative priming is the layer nobody uses."
+og_image: "/img/blog/the-wine-aisle.jpg"
+tags: [research, north-hargreaves, sound-on-the-floor, associative-priming, wine]
+sections:
+  - type: key_takeaways
+    items:
+      - "In 1999, researchers proved French music made shoppers buy French wine, and German music made them buy German wine"
+      - "When asked, most shoppers said the music had nothing to do with their choice"
+      - "This is associative priming — Layer 3 in Entuned's generation model — the layer that explains why generic playlists are a blunt instrument"
+
+  - type: prose
+    body: |
+      A supermarket in the United Kingdom, late 1990s. A display rack holds French and German wines. On alternating days, the in-store speakers play one of two things: stereotypically French music (accordion, café style) or stereotypically German music (Bierkeller brass, oompah).
+
+      The researchers watch what people reach for.
+
+  - type: pullquote
+    text: "French music → French wine outsells German. German music → the reverse."
+    accent: teal
+
+  - type: prose
+    body: |
+      Adrian North, David Hargreaves, and Jennifer McKendrick published the results in 1997 in *Nature* and again in 1999 in the *Journal of Applied Psychology*. The effect was large and consistent. French music days, French wine moved. German music days, German wine moved. The music changed what people picked up off the shelf.
+
+      Then came the second finding, the one that makes this study genuinely strange.
+
+  - type: subhead
+    level: 2
+    text: "How does music shape what bottle ends up in the cart?"
+
+  - type: prose
+    body: |
+      After shoppers made their purchase, the researchers asked them: did the music influence your wine choice?
+
+      Most said no.
+
+      They weren't being cagey. They genuinely didn't know. The music had primed a set of cultural associations, those associations had shaped a purchase decision, and the entire process had happened below the level of conscious awareness. The shoppers walked out with a bottle of French wine on a French music day, certain they chose it because they felt like Bordeaux tonight. The music was already gone from their memory.
+
+  - type: pullquote
+    text: "\"Did the music influence your choice?\" Most shoppers said no. The data said yes."
+    accent: teal
+
+  - type: prose
+    body: |
+      Milliman's 1982 study ([Part 6 in this series](../blog/the-supermarket-study.html)) proved music changes how fast people move through a store. This study proved something deeper: music changes what people choose. And the person choosing can't tell you why.
+
+      The mechanism is called associative priming. The music activates a cultural frame. The frame shapes perception. Perception shapes the decision. The decision feels like free will. It happens fast, it happens below conscious awareness, and it happens whether or not anyone intended it.
+
+  - type: subhead
+    level: 2
+    text: "Layer 3: Associative Priming"
+
+  - type: prose
+    body: |
+      This is a different category of influence than tempo. Tempo affects physiology: walking pace, breathing rate, arousal level. Associative priming affects cognition: what feels right, what comes to mind, what matches the moment. One works on the body. The other works on identity and memory.
+
+      Think about what this means on a clothing floor. A high-end men's store playing music that carries the right timbral and harmonic markers — warm jazz-inflected tones, a certain kind of guitar voicing, understated rhythmic sophistication — is telling a specific customer that this store understands who they are before anyone says a word. That customer probably can't name what the music is doing. They just feel like they're in the right place. A different customer, hearing the same music, might feel like the store isn't for them. Both reactions are useful. Both are happening below conscious awareness. Neither one shows up in any current retail analytics platform.
+
+      At Entuned, we call this Layer 3: associative priming. It sits above the physiological layers (tempo, rhythm, volume) and below the semantic layer (lyrics, explicit cultural messaging). It's the layer where music activates a customer's cultural identity without them knowing it's happening.
+
+      This is also the layer that explains why generic playlists are a blunt instrument. A playlist can match a genre to a demographic. But matching the right cultural associations to a specific brand's ideal customer — at the right moment, with the right harmonic and timbral markers — requires specificity that playlist curation can't deliver. It requires music composed for the purpose. That's what we do.
+
+      The wine study gets cited constantly in marketing textbooks. The retail music industry has done almost nothing with it. Stores in 2026 are no closer to acting on North's findings than they were in 1999.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "the-supermarket-study"
+      - slug: "the-pianist-in-the-store"
+      - slug: "psychographic-profiling-retail"

@@ -1,0 +1,80 @@
+title: "The Pianist in the Store"
+slug: "the-pianist-in-the-store"
+eyebrow: "FIELD NOTES"
+dek: "Nordstrom employed live pianists in 75% of its stores by 1985. By 2020, they were gone. The only retail music that ever adapted to the room in real time."
+date: "2026-04-01"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/the-pianist-in-the-store.jpg"
+  alt: "Grand piano silhouette in a large open building with floor-to-ceiling windows at sunset"
+meta_description: "Nordstrom employed live pianists in 75% of its stores by 1985. By 2020, they were gone. The only retail music that ever adapted to the room in real time."
+og_image: "/img/blog/the-pianist-in-the-store.jpg"
+tags: [music-history, nordstrom, sound-on-the-floor, adaptive-music]
+sections:
+  - type: key_takeaways
+    items:
+      - "Nordstrom's live pianists were the only retail music solution that adapted to the room in real time"
+      - "They read traffic, took requests, remembered regulars — capability that left with the last pianist in 2020"
+      - "The principle behind the pianist — music that responds to what's happening in the store — is what we're building back"
+
+  - type: prose
+    body: |
+      Bellevue Square, Washington state, 1985. Nordstrom hires two pianists to play jazz standards and Broadway tunes in the newly remodeled store. The sound of a live Steinway drifting through the shoe department turns out to be exactly the kind of thing Nordstrom customers appreciate. Within a few years, three-quarters of Nordstrom's stores have live pianists on staff.
+
+      Joel Baker was one of them. He played at the Southcenter Nordstrom from 1988 to 2003, earning $15 an hour with a 401(k) and health insurance. One of the few daytime gigs for a working pianist that came with benefits.
+
+  - type: pullquote
+    text: "1985: 75% of Nordstrom stores had live pianists. 2020: zero."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "What did the in-store pianist know that algorithms forgot?"
+
+  - type: prose
+    body: |
+      A good pianist in a retail space does something no recorded music can do. Baker read the room. Played softer when traffic thinned out, picked up the energy when the floor filled. Took requests. Remembered regulars.
+
+      One older couple asked him to play "Always" by Irving Berlin every time they visited. It became their ritual, part of their shopping trip. Then the husband died. One day, the widow came back alone. Baker wasn't sure if he should play the song. He didn't want to make her sad.
+
+      She came over and asked for it. He played it. He kept playing it for her whenever she came in after that.
+
+      A playlist doesn't remember your song.
+
+  - type: pullquote
+    text: "I don't think the shoppers were going in just to hear the music, but I do think the piano was one of the things that made Nordstrom unique."
+    attribution: "Joel Baker"
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "What Left with the Pianist"
+
+  - type: prose
+    body: |
+      Nordstrom cut the pianists slowly. By 2007, stores in the Seattle area were replacing them with recorded overhead music. A spokesperson said customers responded well to popular tunes by Bob Dylan, Alicia Keys, Frank Sinatra. By 2011, more cuts. By 2013, only 30 of 110-plus stores still had pianists, and those were part-time, two days a week. A spokesperson called recorded music "more modern."
+
+      Sometime in 2019 or 2020, the last remaining Nordstrom pianist, Joe Rojo at the downtown Seattle flagship, played his final notes and closed the lid on the Steinway.
+
+      The idea behind the Nordstrom pianist was always about responsiveness. The pianist was the only music solution in the history of retail that adapted to the room in real time. The same musician played differently on a slow Tuesday morning than a packed Saturday afternoon. The music matched the energy because a human being was reading the space and making decisions about what to play next, how loud, how fast, what key.
+
+      When the pianist left, that capability left with them. The recorded music that replaced it might sound more current. It also can't tell the difference between an empty floor and a full one.
+
+      At Entuned, we think about the Nordstrom pianist a lot. We're not trying to replace a human musician at a Steinway. We're trying to restore the thing that made the pianist valuable: music that responds to what's actually happening in the store. The music we generate adjusts based on real behavioral data from the floor. Tempo, density, harmonic character, cultural alignment — all shifting in response to what the measurement says is working. The pianist read the room by instinct. We read it with data. The principle is the same.
+
+      Baker still plays piano professionally, in Palm Springs now. He hopes the music made some kind of a difference in people's lives in some small way. It did.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "turning-on-the-radio"
+      - slug: "the-organ-in-the-department-store"
+      - slug: "the-supermarket-study"

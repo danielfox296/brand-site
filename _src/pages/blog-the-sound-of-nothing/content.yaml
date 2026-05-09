@@ -1,0 +1,83 @@
+title: "The Sound of Nothing"
+slug: "the-sound-of-nothing"
+eyebrow: "FIELD NOTES"
+dek: "Costco's silence is a deliberate brand choice. Most retail silence is just neglect. Every store broadcasts a soundscape — programmed or not."
+date: "2026-04-01"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/the-sound-of-nothing.jpg"
+  alt: "Empty modern warehouse with polished concrete floor stretching into the distance under industrial lighting"
+meta_description: "Costco's silence is a deliberate brand choice. Most retail silence is just neglect. Every store broadcasts a soundscape — programmed or not."
+og_image: "/img/blog/the-sound-of-nothing.jpg"
+tags: [silence, costco, sound-on-the-floor, soundscape]
+sections:
+  - type: key_takeaways
+    items:
+      - "Costco's silence is consistent with every other choice it makes about the environment — concrete floors, no signage, no frills"
+      - "Most retail silence isn't a decision; it's neglect — speakers that have been off for months because nobody noticed"
+      - "Every store has a soundscape whether you programmed one or not. The question is whether you're the one doing the talking"
+
+  - type: prose
+    body: |
+      *The Sound on the Floor, Part 9*
+
+      A Costco warehouse. Fluorescent lights, concrete floors, pallets stacked to the ceiling. Forklifts beeping. Carts rattling. The hum of industrial refrigeration.
+
+      No music.
+
+      Not quiet music. No music at all.
+
+  - type: subhead
+    level: 2
+    text: "When does silence in a store actually work?"
+
+  - type: pullquote
+    text: "Costco's soundtrack: carts, forklifts, and the hum of refrigeration."
+    accent: teal
+
+  - type: prose
+    body: |
+      Costco doesn't play music in its stores. Neither does Aldi. The stated reason, at least according to various Costco employees who've surfaced the topic online, is licensing. Playing music in a space that size counts as a public performance under copyright law. That means paying ASCAP, BMI, or SESAC for the privilege, and for a company with hundreds of locations, the costs add up. A corporate memo that made the rounds reportedly stated: "Music played where members can hear the music is considered a public performance and is protected by copyright laws. Costco does not have a license for such use."
+
+      But there's probably more to it than the line item.
+
+      Costco's entire brand is the absence of anything extraneous. No external advertising. Minimal signage. Concrete floors. No frills. The warehouse aesthetic communicates price integrity: we didn't spend money making this feel nice, and that's why your rotisserie chicken costs $4.99 and has for over a decade. Music would be a frill.
+
+      Silence in a Costco isn't an oversight. It's consistent with every other decision the company makes about the environment. No one at Costco headquarters woke up one morning and said "we should have background music." The absence is a choice, even if it started as a cost-saving one.
+
+  - type: subhead
+    level: 2
+    text: "Deliberate vs. Accidental"
+
+  - type: pullquote
+    text: "Deliberate silence vs. accidental silence. One is Costco. The other is a store with a broken speaker nobody fixed."
+    accent: teal
+
+  - type: prose
+    body: |
+      The thing about silence is that it's never actually silent. Every retail space has a soundscape whether it chose one or not. At Costco, that soundscape is industrial: machinery, movement, conversation. It sounds like a warehouse because it is a warehouse. The sonic environment and the physical environment tell the same story.
+
+      The problem with silence isn't Costco. Costco knows what it's doing. The problem is the stores that end up in silence by default. The speakers that have been off for three months because nobody noticed. The playlist that stopped playing because the subscription lapsed. The morning shift where nobody bothered to turn on the music because they were busy with opening tasks.
+
+      I've seen this firsthand. I started working at a men's clothing store in Denver and one of the first things I noticed was the music situation. Some shifts had it, some didn't. When it was on, it was whatever somebody felt like playing. When it was off, the store felt like a waiting room. You could hear every conversation between the sales associates. You could hear the HVAC. You could hear the guy trying on shoes clearing his throat. The absence of music made every other sound louder, and none of those sounds were selling anything.
+
+      That's the gap between Costco and everyone else. Costco's silence is on brand. Most retail silence is just neglect.
+
+      At Entuned, we think every store deserves a deliberate answer to the question: what does this place sound like? For Costco, the answer is concrete and cold air, and that's the right answer for their brand. For most retailers, the space is speaking whether you program it or not. The question is whether you're the one doing the talking.
+
+      *Next in the series: 'Tis the Season*
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "the-nightclub-on-the-sales-floor"
+      - slug: "every-song-working-or-not"
+      - slug: "your-store-already-has-a-mood"

@@ -1,0 +1,77 @@
+title: "'Tis the Season (For the Same 40 Songs)"
+slug: "tis-the-season"
+eyebrow: "FIELD NOTES"
+dek: "Holiday music creates a saturation problem no one accounts for. Each song plays roughly 136 times per season — and customers feel every repetition."
+date: "2026-04-01"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/tis-the-season.jpg"
+  alt: "Colorful Christmas lights in close-up with starburst effects against a dark background"
+meta_description: "Holiday music creates a saturation problem no one accounts for. Each song plays roughly 136 times per season — and customers feel every repetition."
+og_image: "/img/blog/tis-the-season.jpg"
+tags: [holiday-music, sound-on-the-floor, employee-experience, saturation]
+sections:
+  - type: key_takeaways
+    items:
+      - "Holiday music is the one time retailers actively think about what's playing — and the one time they most reliably create a saturation problem"
+      - "The customer hears the same song once. The employee hears it 136 times across the season"
+      - "Generating music instead of curating playlists keeps seasonal warmth without the repeat"
+
+  - type: prose
+    body: |
+      November 1st. A retail employee clocks in. The holiday playlist starts. It will run for approximately 1,400 hours before New Year's.
+
+      If the playlist has 40 songs and averages 3.5 minutes per track, each song plays roughly once every two hours and twenty minutes. An employee working five eight-hour shifts per week will hear each song about 17 times a week. Over eight weeks, that's 136 exposures per song.
+
+  - type: pullquote
+    text: "~1,400 hours of holiday music per season. ~136 exposures per song, per employee."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "Why does holiday music wreck retail morale?"
+
+  - type: prose
+    body: |
+      Christmas music is the one time of year when most retailers actively think about what's playing on the speakers. Customers expect it. A store without holiday music in December feels off, like a house without lights on the block. There's social pressure to participate.
+
+      The research on seasonal music is mixed but instructive. Familiar holiday music can increase dwell time and improve customer mood, up to a point. Past a saturation threshold, the effect inverts. Customers who've heard "Jingle Bell Rock" in every store they've visited that day start to tune it out, or worse, find it aversive. The threshold varies by individual, but it exists.
+
+      For staff, the threshold arrives much sooner.
+
+      The customer hears "All I Want for Christmas Is You" once during a 30-minute shopping trip and feels festive. The employee who opened at 7am has heard it four times by lunch. By week three of the season, they can tell you the runtime to the second. By week six, the song is doing the opposite of what it was chosen to do.
+
+  - type: pullquote
+    text: "The saturation threshold is different for the shopper and the staff. Almost nobody accounts for both."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "The Employee Side of the Equation"
+
+  - type: prose
+    body: |
+      This is the clearest illustration of a year-round problem. Music in retail serves two audiences simultaneously: the person shopping and the person working. The customer rotates through. The employee stays. Any music decision that accounts for one audience without considering the other is solving half the problem and creating a new one.
+
+      Employee experience affects customer service. Customer service affects sales. The connection is direct. An employee who's heard the same 40 songs for six weeks straight is not delivering the same quality of interaction as someone who isn't being slowly driven out of their mind by Bing Crosby.
+
+      At Entuned, we think about the employee side as much as the customer side. Because we generate music rather than curate playlists, the music never repeats. We can build seasonal warmth, holiday harmonic language, the feel of December, without running the same 40 tracks on a loop for eight weeks. The music stays seasonally appropriate. It stays fresh for the people who have to live inside it for 40 hours a week.
+
+      Christmas music is a micro-version of the whole retail music problem. The intention is good. The execution ignores half the room. The measurement is nonexistent. Nobody checks whether the holiday playlist actually increases holiday spending. Everybody assumes it does, so it keeps playing.
+
+      Next in the series: [The Playlist Era and the Open Loop →](../blog/the-playlist-era-and-the-open-loop.html)
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "employees-hear-it"
+      - slug: "the-general-and-the-wire"
+      - slug: "the-pianist-in-the-store"

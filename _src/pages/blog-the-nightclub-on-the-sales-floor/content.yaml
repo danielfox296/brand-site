@@ -1,0 +1,79 @@
+title: "The Nightclub on the Sales Floor"
+slug: "the-nightclub-on-the-sales-floor"
+eyebrow: "FIELD NOTES"
+dek: "Abercrombie & Fitch ran their stores at 90 decibels on purpose. Every store's music selects for an audience whether the owner knows it or not."
+date: "2026-04-01"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/the-nightclub-on-the-sales-floor.jpg"
+  alt: "Dimly lit bar interior with glowing counter and moody atmospheric lighting, empty of patrons"
+meta_description: "Abercrombie & Fitch ran their stores at 90 decibels on purpose. Every store's music selects for an audience."
+og_image: "/img/blog/the-nightclub-on-the-sales-floor.jpg"
+tags: [audience-selection, abercrombie, retail-music, sound-on-the-floor, volume]
+sections:
+  - type: key_takeaways
+    items:
+      - "Abercrombie & Fitch ran their stores at 90 decibels on purpose — loud enough to repel anyone over 30 and attract anyone under 20"
+      - "Every store's music selects for an audience whether the owner knows it or not"
+      - "A&F did it with a sledgehammer. Most stores do it by accident. Either way, the music is selecting"
+
+  - type: prose
+    body: |
+      You can hear the Abercrombie & Fitch store from the mall corridor. Before you see the dim lighting or smell the cologne, you hear it. Someone holds up a sound meter at the entrance: 90 decibels. Near the speakers: 98.
+
+      The legal threshold for sustained hearing damage starts at 85 dB.
+
+  - type: pullquote
+    text: "90 dB at the door. 98 near the speakers. Hearing damage threshold: 85."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "Is your store running a nightclub on the sales floor?"
+
+  - type: prose
+    body: |
+      Abercrombie & Fitch in the 2000s ran their stores like nightclubs. EDM, hip-hop, and pop at volumes that made conversation difficult and extended browsing physically uncomfortable for anyone who wasn't there for the experience. The dim lighting, the heavy fragrance, the shirtless greeters at the door — these were all part of it. But the music did the heaviest lifting.
+
+      A researcher named Thornton studied an A&F store in downtown Portland, Oregon, and watched customers walk out, or refuse to enter, because of the volume. Mothers waited in the car while their teenagers shopped. Grandparents wouldn't cross the threshold.
+
+      That was the point.
+
+      A&F used volume as a demographic filter. The music was loud enough to repel anyone over 30 and attract anyone under 20 who wanted a club atmosphere at 2pm on a Saturday. Your willingness to tolerate the volume was the qualifying test for brand membership. If the music drove you out, you weren't the customer.
+
+      This is the exact opposite of Muzak. Where Muzak designed music to disappear, A&F made music the dominant sensory experience in the store. Where Muzak wanted you to forget the music was playing, A&F wanted you to feel it in your chest. Where Muzak served the shopping, A&F made the shopping serve the music.
+
+  - type: pullquote
+    text: "Music as bouncer."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "Audience Selection by Accident"
+
+  - type: prose
+    body: |
+      The strategy worked, for a while. A&F's peak years coincided with the peak volume. But the approach raises a question nobody in retail had asked so directly before: is the music in your store selecting for the right audience? And if it is, do you know it's doing that, or is it happening by accident?
+
+      Most stores aren't running their speakers at 90 dB on purpose. But every store's music is doing some version of audience selection whether the owner realizes it or not. Tempo, genre, volume, era, vocal style — every parameter says something about who belongs in the room and who doesn't. A&F just did it with a sledgehammer.
+
+      I work in a men's clothing store in Denver. We sell to guys in their 30s through 60s, professionals with taste and money. If we played what A&F played, we'd empty the floor in ten minutes. If we played what our oldest customers grew up with, we'd lose the younger end. The music has to thread a needle that's different every hour of the day, and right now, in most stores like ours, whoever opens just puts on whatever they feel like. That's audience selection by accident. The customers who stay are the ones who happen to tolerate the opener's taste.
+
+      At Entuned, we think about audience selection with precision. You can match the cultural and physiological profile of your best customer with harmonic character, timbral choices, rhythmic density, genre markers that feel like home to the people you want in the store. You don't need to blow out anyone's eardrums to get there.
+
+      A&F eventually turned the volume down. The brand repositioned. The nightclub era ended. But the principle underneath it — that music selects for an audience — is still true. Most stores just aren't doing it on purpose.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "the-wine-aisle"
+      - slug: "your-store-already-has-a-mood"
+      - slug: "psychographic-profiling-retail"

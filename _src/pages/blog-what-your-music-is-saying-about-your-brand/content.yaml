@@ -14,37 +14,50 @@ hero:
 meta_description: "Walk your stores and listen. The music playing right now is shaping purchase decisions, and most brand standards never specify what it should sound like."
 og_image: "/img/blog/what-your-music-is-saying-about-your-brand.jpg"
 tags: [brand-congruence, purchase-confidence, retail-audio, store-experience]
+sections:
+  - type: key_takeaways
+    items:
+      - "Your brand standards probably specify fixture finishes, signage fonts, and lighting temperature. They almost certainly say nothing about the audio playing in your stores"
+      - "Customers don't blame the music — they downgrade the brand. Areni and Kim found incongruent music dropped willingness to pay by 8–12%"
+      - "Music is continuous sensory input. Every other brand signal stays constant; the audio changes track every three minutes"
 
-h1_1: "What Your Music Is Saying About Your Brand"
+  - type: prose
+    body: |
+      A woman in her early forties walks into one of your stores. She has been thinking about a particular jacket for two weeks. She came in today to buy it. She picks it up, tries it on, checks the mirror. It fits. The price makes sense. She is close to buying.
 
-meta_1: "Daniel Fox &middot; March 2026 &middot; 5 min read"
+      Then a track comes on that reminds her of a bar she went to in college.
 
-p_11: "<strong>TL;DR:</strong> Your brand standards probably specify fixture finishes, signage fonts, and lighting temperature. They almost certainly say nothing about the audio playing in your stores. That gap costs you sales every week, because customers adjust their perception of your brand in real time based on what they hear."
+      She does not consciously register the music. She does not think about playlists or brand positioning. She just feels, for a second, like something is off. The jacket is still good. But the moment has shifted. She puts it back. She tells herself she will think about it.
 
-p_1: "A woman in her early forties walks into one of your stores. She has been thinking about a particular jacket for two weeks. She came in today to buy it. She picks it up, tries it on, checks the mirror. It fits. The price makes sense. She is close to buying."
+      That sequence plays out in retail stores every day. The research on music congruence, going back to Areni and Kim in 1993, consistently shows that when the audio in a store conflicts with the customer's expectations for the space, purchase confidence drops. Customers do not blame the music. They downgrade the brand. They walk out thinking "maybe later," and most of them do not come back for that item.
 
-p_2: "Then a track comes on that reminds her of a bar she went to in college."
+      The effect runs both directions. Customers who walk into a space where the music matches what they expect from the brand spend more time there, report higher satisfaction, and show a measurably higher willingness to pay. Areni and Kim found that gap at 8 to 12 percent on willingness to pay alone. That number has held up across follow-up studies in different retail categories.
 
-p_3: "She does not consciously register the music. She does not think about playlists or brand positioning. She just feels, for a second, like something is off. The jacket is still good. But the moment has shifted. She puts it back. She tells herself she will think about it."
+      North, Hargreaves, and McKendrick added an important detail: customers update their assessment of a store continuously throughout the visit. The audio is not a first impression that fades. A playlist that starts well and drifts into something off-brand does not get credit for the good start. The customer's perception adjusts to the worst moment.
 
-p_4: "That sequence plays out in retail stores every day. The research on music congruence, going back to Areni and Kim in 1993, consistently shows that when the audio in a store conflicts with the customer's expectations for the space, purchase confidence drops. Customers do not blame the music. They downgrade the brand. They walk out thinking \"maybe later,\" and most of them do not come back for that item."
+  - type: subhead
+    level: 2
+    text: "What is your music really saying about your brand?"
 
-p_5: "The effect runs both directions. Customers who walk into a space where the music matches what they expect from the brand spend more time there, report higher satisfaction, and show a measurably higher willingness to pay. Areni and Kim found that gap at 8 to 12 percent on willingness to pay alone. That number has held up across follow-up studies in different retail categories."
+  - type: prose
+    body: |
+      Walk through your own brand standards document. You will find specifications for fixture finish, signage font, lighting color temperature, even the scent in some cases. You will almost certainly find nothing about the audio playing in the store.
 
-p_6: "North, Hargreaves, and McKendrick added an important detail: customers update their assessment of a store continuously throughout the visit. The audio is not a first impression that fades. A playlist that starts well and drifts into something off-brand does not get credit for the good start. The customer's perception adjusts to the worst moment."
+      In a multi-location operation, that gap multiplies. Each store ends up with whatever the regional manager set up, whatever the streaming service surfaced that week, whatever the opening associate thought sounded good on a Tuesday morning. The brand team built a visual environment with precision. The audio is improvised.
 
-h2_1: "What is your music really saying about your brand?"
+      This matters because music is continuous sensory input. It runs from the moment a customer walks in until the moment they leave. Every other brand signal, the fixtures, the signage, the lighting, stays constant. The audio changes track every three minutes. Each new track is either reinforcing the brand or undercutting it, and nobody in the organization is watching which one.
 
-p_7: "Walk through your own brand standards document. You will find specifications for fixture finish, signage font, lighting color temperature, even the scent in some cases. You will almost certainly find nothing about the audio playing in the store."
+      There is a concrete step you can take this week. Walk three of your stores during peak hours. Stand near the fitting rooms or the register for fifteen minutes and listen. Ask yourself whether each track that plays sounds like it belongs in the space your brand team designed. If you notice even one that feels wrong, your customers noticed it too. They just did not tell you. They adjusted their opinion of the store instead.
 
-p_8: "In a multi-location operation, that gap multiplies. Each store ends up with whatever the regional manager set up, whatever the streaming service surfaced that week, whatever the opening associate thought sounded good on a Tuesday morning. The brand team built a visual environment with precision. The audio is improvised."
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
 
-p_9: "This matters because music is continuous sensory input. It runs from the moment a customer walks in until the moment they leave. Every other brand signal, the fixtures, the signage, the lighting, stays constant. The audio changes track every three minutes. Each new track is either reinforcing the brand or undercutting it, and nobody in the organization is watching which one."
-
-p_10: "There is a concrete step you can take this week. Walk three of your stores during peak hours. Stand near the fitting rooms or the register for fifteen minutes and listen. Ask yourself whether each track that plays sounds like it belongs in the space your brand team designed. If you notice even one that feels wrong, your customers noticed it too. They just did not tell you. They adjusted their opinion of the store instead."
-
-p_12: "<strong>Daniel Fox</strong> is the founder of Entuned, where he builds music for retail environments engineered around customer psychology. Background in music theory, behavioral research, and data-driven product design. <a href=\"../about.html\">More about Daniel</a>"
-
-p_13: "Entuned builds original music for retail environments, matched to your customer and your brand. No licensing fees, no generic playlists. Entuned Free is open to start — <a href=\"https://app.entuned.co/start\">try it on your floor</a>. The operational leadership case for treating audio as a brand element is <a href=\"../for-retail-leaders.html\">laid out here</a>."
-
-btn_1: "Start Free"
+  - type: related
+    posts:
+      - slug: "retail-designed-everything"
+      - slug: "retail-atmospherics-2026"
+      - slug: "how-to-measure-if-your-store-music-is-working"

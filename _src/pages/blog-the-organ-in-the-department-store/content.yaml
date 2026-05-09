@@ -1,0 +1,77 @@
+title: "The Organ in the Department Store"
+slug: "the-organ-in-the-department-store"
+eyebrow: "FIELD NOTES"
+dek: "John Wanamaker installed the world's largest pipe organ in his Philadelphia store. He played it twice daily for a century and couldn't measure it."
+date: "2026-04-01"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/the-organ-in-the-department-store.jpg"
+  alt: "Ornate pipe organ in a grand cathedral with gilded architecture and vaulted ceiling"
+meta_description: "John Wanamaker installed the world's largest pipe organ in his Philadelphia store. He played it twice daily for a century and couldn't measure it."
+og_image: "/img/blog/the-organ-in-the-department-store.jpg"
+tags: [music-history, wanamaker, sound-on-the-floor, sonic-identity]
+sections:
+  - type: key_takeaways
+    items:
+      - "John Wanamaker built the world's largest pipe organ into his Philadelphia department store and played it twice a day for over a century"
+      - "He understood that sound shapes the entire experience of a store before a customer looks at a single price tag"
+      - "He just couldn't measure it. That gap — sonic identity without measurement — is still open"
+
+  - type: prose
+    body: |
+      St. Louis, 1904. The Louisiana Purchase Exposition is the biggest thing the city has ever hosted. Inside Festival Hall, a pipe organ with 10,000 pipes and five keyboards fills a room the size of a cathedral. The *Los Angeles Times* reports that heavy chords sent little thrills up and down the spines of listeners. The organ wins the Grand Prize and five other medals.
+
+      Then the fair ends. A deal to move the organ to Kansas City falls through. The instrument sits in a warehouse for five years.
+
+      In 1909, a Philadelphia department store owner named John Wanamaker sends a technician to check it out. Wanamaker is building a new store with a seven-story marble atrium at its center, and he wants something spectacular to fill it. He buys the organ for almost nothing.
+
+  - type: pullquote
+    text: "13 freight cars. 2 years to install. First played June 22, 1911, timed to the exact moment of King George V's coronation."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "Why did Wanamaker put a pipe organ in his store?"
+
+  - type: prose
+    body: |
+      There's a problem, though. The organ that roared in St. Louis can barely fill the Grand Court. The marble atrium swallows the sound whole. So Wanamaker does something that probably wouldn't survive a modern board meeting: he opens a pipe organ factory in the store's attic. Forty artisans, building new pipes and chests on-site. His son Rodman, who believes music should be part of people's daily lives and that shoppers with a song in their hearts spend more freely, tells the designers to use everything they've ever dreamed about.
+
+      They take him at his word. Over twenty years, the organ grows from 10,000 pipes to 28,750. It gains 465 ranks, six keyboards, and 729 stop tablets. The finished instrument weighs 287 tons. The Wanamaker Organ is the largest fully functioning pipe organ in the world. It played twice a day, every business day, for over a century. President Taft dedicated the store. The Philadelphia Orchestra performed with the organ on special evenings, drawing audiences of over 10,000.
+
+      By 1922, the store had engineered the first successful radio broadcast of an organ concert.
+
+  - type: pullquote
+    text: "28,750 pipes. 287 tons. Played twice daily for over a century."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "What Wanamaker Got Right"
+
+  - type: prose
+    body: |
+      Wanamaker understood something most retailers still miss. The sound of a space tells the customer what kind of place they've walked into before they look at a single price tag. The Grand Court organ said: this is serious. This matters. You are somewhere worth being.
+
+      Nobody measured the organ's effect on sales. Rodman Wanamaker probably would have found the question insulting. The organ was there because a store should have one. A former store manager put it plainly: people hear the organ and feel good, and people are in a mind to shop when they're feeling good.
+
+      At Entuned, we'd call this the sonic identity of a retail space. Wanamaker built his by instinct and with enormous resources. He couldn't measure what the organ produced. He could only feel it. The thing he got right — that sound shapes the entire experience of a store — is now measurable in ways he couldn't have imagined. The thing he got wrong is the same thing everyone after him got wrong: no data, no iteration, no way to know if tomorrow's music should sound different from today's.
+
+      The organ still exists. The Macy's that housed it closed. The Friends of the Wanamaker Organ are restoring the instrument for whatever comes next. Whatever opens in that building, the organ will probably still be playing twice a day.
+
+      The store is gone. The sound stayed.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "the-composer-who-wanted-you-to-ignore-him"
+      - slug: "the-general-and-the-wire"
+      - slug: "what-your-music-is-saying-about-your-brand"

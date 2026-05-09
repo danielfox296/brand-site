@@ -1,0 +1,81 @@
+title: "Cloud Cover Music: What It Costs and Why We Think There's a Better Way"
+slug: "cloud-cover-music"
+eyebrow: "MARKET INTEL"
+dek: "Cloud Cover starts at $16.95/month per location — $203/year minimum. Entuned generates original music it owns outright, which is why the free tier is unlimited and indefinite."
+date: "2026-05-01"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/how-much-does-retail-music-cost.jpg"
+  alt: "Retail store interior with ambient lighting and a music speaker mounted on the wall"
+meta_description: "Cloud Cover starts at $16.95/month per location — $203/year minimum. Entuned generates original music it owns outright, which is why the free tier is unlimited and indefinite."
+og_image: "/img/blog/how-much-does-retail-music-cost.jpg"
+tags: [pricing, cloud-cover, retail-music, alternatives, licensing]
+sections:
+  - type: key_takeaways
+    items:
+      - "Cloud Cover is Pandora's commercial music product, one of the cheaper catalog-based options at $16.95–$26.95/month per location"
+      - "Catalog-based providers can't offer a free tier — PRO licensing economics won't allow it"
+      - "Entuned generates every track and owns them outright, so the free tier is unlimited with full commercial rights included"
+
+  - type: prose
+    body: |
+      Cloud Cover is Pandora's commercial music product. If you've been looking for a legal way to play background music in your store, it's probably come up. It's one of the more affordable options in the space, starting at $16.95 per month per location and going up to $26.95/mo depending on the plan.
+
+      For that, you get access to Pandora's music catalog, curated stations, scheduling tools, and bundled public performance licensing. The music is ad-free and filtered for explicit content. It works. Thousands of businesses use it.
+
+      But it's still built on the same model as every other provider in this category.
+
+  - type: subhead
+    level: 2
+    text: "The model that keeps everyone charging"
+
+  - type: prose
+    body: |
+      Cloud Cover licenses music from artists and publishers. They pay ASCAP, BMI, SESAC, and GMR for the right to play those songs in your store. Those costs are baked into your subscription. Even at $16.95/mo, the cheapest plan in the market, you're still paying $203/year for background music.
+
+      Scale that across locations and the math adds up. Five stores is over $1,000/year. Twenty stores is over $4,000/year. And the music isn't doing anything strategic for your business. It's just playing.
+
+      No catalog-based provider can offer a free tier. The licensing economics won't allow it. Every song that streams generates a cost that has to be covered by your subscription.
+
+  - type: subhead
+    level: 2
+    text: "We eliminated that cost structure entirely"
+
+  - type: prose
+    body: |
+      We're Entuned. We generate every track ourselves and own them outright. No catalog licensing. No PRO fees. No per-performance royalties. The cost layer that forces Cloud Cover and every other provider to charge a monthly fee doesn't exist in our model.
+
+      That's why we offer free in-store music streaming. Unlimited. No trial period. No credit card. Full commercial rights included.
+
+      The free tier gives you two outcome modes: increasing energy and extending dwell time. The music is designed around these specific retail effects, not just selected from a catalog and sorted by genre. Tempo, sonic texture, and energy arc are all calibrated to influence how customers move through your space and how long they stay.
+
+  - type: subhead
+    level: 2
+    text: "Where Cloud Cover still makes sense"
+
+  - type: prose
+    body: |
+      If you want familiar songs from recognizable artists playing in your store, and you want the cheapest catalog-based option, Cloud Cover is hard to beat at $16.95/mo. The Pandora ecosystem is solid and the setup is simple.
+
+  - type: subhead
+    level: 2
+    text: "Where we make more sense"
+
+  - type: prose
+    body: |
+      If you'd rather eliminate the monthly cost entirely, or if you care more about what the music is doing for your business than whether customers recognize the songs, Entuned is built for that. Free tier runs indefinitely. Paid tiers unlock more outcome modes and music generated for your specific customer profile.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "the-real-cost-of-retail-music"
+      - slug: "how-much-does-retail-music-cost"
+      - slug: "mood-media-alternatives"
