@@ -75,7 +75,7 @@ tiers:
 
   enterprise:
     name: "Enterprise"
-    eyebrow: "Multi-fleet rollouts"
+    eyebrow: "Multi-location rollouts"
     price: "Contact"
     price_suffix: "for pricing"
     summary: "Negotiated per-location pricing, custom ICP design and brand voice consultation, white-glove rollout."
@@ -90,13 +90,13 @@ tiers:
 ramps:
   header: "How Entuned tiers stack up."
   body1: "Entuned Free gives your sales floor two research based outcomes that were never available before, FOR FREE. Our Core offering gets you the full suite of research-backed outcomes engineered for your location's specific ICP. Professional hooks in to your POS to get more effective over time. Each tier is a step deeper, not a different product."
-  body2: "Most operators start on Entuned Free, move to Core within their first paid quarter, and graduate to Professional once they want the music tied to data they can audit."
+  body2: "Most shop owners start on Entuned Free, move to Core within their first paid quarter, and graduate to Professional once they want the music tied to data they can audit."
 
 # Indemnification callout
 indemnification:
   eyebrow: "Licensing"
   header: "PRO-free, fully indemnified — at every tier."
-  body: "Every Entuned subscription includes an indemnification certificate. No ASCAP, BMI, SESAC, or SoundExchange royalties. No public performance license required. If a performing rights organization questions what is playing in your store, documentation is availabe in the associate's."
+  body: "Every Entuned subscription includes an indemnification certificate. No ASCAP, BMI, SESAC, or SoundExchange royalties. No public performance license required. If a performing rights organization questions what is playing in your store, documentation is available immediately."
   cta_label: "Read the licensing details →"
   cta_url: "licensing.html"
 
@@ -112,15 +112,15 @@ faq:
   q4: "Can I cancel?"
   a4: "Yes, monthly. No long-term contract on Core or Professional. Enterprise pricing is negotiated as part of the agreement."
   q5: "What's the difference between Core and Professional?"
-  a5: "Our Core offering builds music around one Ideal Customer Profile and gives you all manual outcome control. Professional adds POS integration, multiple ICPs (Professional tailors music to each distinct customer type your store serves, instead of a single profile), day-parting, scheduled interstitial promotional messaging, and self-improving refinement that compounds using your store's POS data. Most single-store operators start on Core. Multi-store operators with a real measurement stack start on Professional."
+  a5: "Our Core offering builds music around one Ideal Customer Profile and gives you all manual outcome control. Professional adds POS integration, multiple ICPs (Professional tailors music to each distinct customer type your store serves, instead of a single profile), day-parting, scheduled interstitial promotional messaging, and self-improving refinement that compounds using your store's POS data. Most single-store shop owners start on Core. Multi-location retailers with a real measurement stack start on Professional."
   q6: "I already pay Soundtrack Your Brand or Mood Media. How does this compare?"
-  a6: "Those vendors license catalogue music and pass the cost through your subscription. The catalogue was written for an artist's self-expression, not for your store's customer. Entuned generates original music engineered to specific parameters — tempo, key, lyricals, all for the customer your store is built to serve. Entuned is a different product, a sales lever."
+  a6: "Those vendors license catalogue music and pass the cost through your subscription. The catalogue was written for an artist's self-expression, not for your store's customer. Entuned generates original music engineered to specific parameters — tempo, key, lyrics, all for the customer your store is built to serve. Entuned is a different product, a sales lever."
 
 # Final CTA — single primary action with two text links underneath.
 # Per the post-launch fixes: avoid three-button decision paralysis at the bottom of the page.
 final:
   header: "Pick the tier that fits your business."
-  subhead: "Most operators start with Core."
+  subhead: "Most shop owners start with Core."
   cta_primary_label: "Start Core — $99/mo"
   text_links_lead: "Or"
   text_links_essentials_label: "start free with Entuned Free"
