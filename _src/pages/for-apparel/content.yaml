@@ -16,8 +16,8 @@ gap:
 
 # What changes per tier
 tiers:
-  eyebrow: "What Changes Per Tier"
-  h2: "Three deployment shapes for apparel and footwear retailers."
+  eyebrow: "Three places to start"
+  h2: "Three places to start, sized to where you are."
 
   card1_title: "Entuned Free"
   card1_text: "Free, indefinite. Pick Linger or Lift Energy from the floor of one store. The catalogue starts streaming through the speakers you already have. Useful as the first look in a single location before a multi-store Ideal Customer Profile (ICP) build."
@@ -33,7 +33,7 @@ tiers:
 
 # What the research says
 research:
-  eyebrow: "What the Research Says"
+  eyebrow: "Forty years of evidence"
   h2: "Forty years of evidence on the levers that matter for high-traffic apparel."
 
   card1_title: "Tempo affects pace and basket."

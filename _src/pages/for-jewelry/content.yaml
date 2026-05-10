@@ -16,8 +16,8 @@ gap:
 
 # What changes per tier
 tiers:
-  eyebrow: "What Changes Per Tier"
-  h2: "Three deployment shapes for independent jewelers."
+  eyebrow: "Three places to start"
+  h2: "Three places to start, sized to where you are."
 
   card1_title: "Entuned Free"
   card1_text: "Free, indefinite. Pick Linger from the floor of your store. The catalogue starts streaming through the speakers you already have. Useful as the first look before you decide whether to specify the audio more deliberately for your customer."
@@ -33,7 +33,7 @@ tiers:
 
 # What the research says
 research:
-  eyebrow: "What the Research Says"
+  eyebrow: "Forty years of evidence"
   h2: "Forty years of evidence on the audio levers that matter for considered-purchase retail."
 
   card1_title: "Music customers read as upmarket lifts spending."
