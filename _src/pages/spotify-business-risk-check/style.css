@@ -1,0 +1,345 @@
+/* Spotify Business Risk Check — page-scoped styles (risk- prefix) */
+
+.risk-hero {
+  padding: 6rem 0 3rem;
+  border-bottom: 1px solid rgba(80, 146, 156, 0.12);
+}
+
+.risk-hero h1 {
+  font-size: clamp(2.25rem, 6vw, 4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  max-width: 22ch;
+}
+
+.risk-hero .risk-subline {
+  font-size: 1.25rem;
+  color: rgba(212, 225, 229, 0.78);
+  font-weight: 400;
+  margin-top: 1rem;
+  max-width: 56ch;
+}
+
+.risk-hero p {
+  max-width: 62ch;
+  color: rgba(212, 225, 229, 0.85);
+}
+
+/* Form */
+.risk-form {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.risk-question {
+  background: var(--bg-card);
+  border: 1px solid rgba(80, 146, 156, 0.15);
+  border-radius: 10px;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.risk-question:hover,
+.risk-question:focus-within {
+  border-color: rgba(80, 146, 156, 0.4);
+  background: rgba(80, 146, 156, 0.1);
+}
+
+.risk-question.risk-unanswered {
+  border-color: rgba(215, 175, 116, 0.55);
+  background: rgba(215, 175, 116, 0.06);
+}
+
+.risk-q-number {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.risk-q-text {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.risk-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.risk-options.risk-options-row {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.risk-option {
+  position: relative;
+  flex: 1 1 0;
+  min-width: 110px;
+}
+
+.risk-option input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.risk-option label {
+  display: block;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(80, 146, 156, 0.25);
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgba(32, 32, 28, 0.4);
+}
+
+.risk-options-row .risk-option label {
+  text-align: center;
+}
+
+.risk-option label:hover {
+  border-color: rgba(80, 146, 156, 0.55);
+  background: rgba(80, 146, 156, 0.1);
+}
+
+.risk-option input[type="radio"]:checked + label {
+  background: var(--accent);
+  color: #20201c;
+  border-color: var(--accent);
+  font-weight: 600;
+}
+
+.risk-option input[type="radio"]:focus-visible + label {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Submit row */
+.risk-submit-row {
+  text-align: center;
+  margin: 2.5rem 0 1rem;
+}
+
+.risk-submit-row .btn {
+  min-width: 240px;
+}
+
+.risk-error {
+  color: var(--gold);
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  min-height: 1.4em;
+}
+
+/* Results panel */
+.risk-results {
+  display: none;
+  max-width: 820px;
+  margin: 3rem auto 0;
+  padding: 2.5rem;
+  background: rgba(80, 146, 156, 0.07);
+  border: 1px solid rgba(80, 146, 156, 0.3);
+  border-radius: 12px;
+}
+
+.risk-results.is-visible {
+  display: block;
+}
+
+.risk-score-row {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.risk-score-num {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.risk-score-out {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+}
+
+.risk-band-tag {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  padding: 0.35rem 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.risk-band-tag.risk-band-low {
+  background: rgba(80, 146, 156, 0.18);
+  color: var(--accent);
+  border: 1px solid rgba(80, 146, 156, 0.45);
+}
+
+.risk-band-tag.risk-band-moderate {
+  background: rgba(215, 175, 116, 0.12);
+  color: var(--gold);
+  border: 1px solid rgba(215, 175, 116, 0.45);
+}
+
+.risk-band-tag.risk-band-high {
+  background: rgba(215, 175, 116, 0.18);
+  color: var(--gold);
+  border: 1px solid rgba(215, 175, 116, 0.6);
+}
+
+.risk-band-tag.risk-band-very-high {
+  background: rgba(215, 90, 90, 0.18);
+  color: #e88f8f;
+  border: 1px solid rgba(215, 90, 90, 0.55);
+}
+
+.risk-band-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.risk-diagnosis {
+  font-size: 1.05rem;
+  color: rgba(212, 225, 229, 0.9);
+  margin-bottom: 1.5rem;
+}
+
+.risk-diagnosis p {
+  margin-bottom: 1rem;
+}
+
+.risk-citation {
+  font-size: 0.92rem;
+  color: rgba(212, 225, 229, 0.7);
+  border-left: 2px solid var(--accent);
+  padding: 0.25rem 0 0.25rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.risk-citation strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.risk-disclaimer {
+  font-size: 0.85rem;
+  color: rgba(212, 225, 229, 0.6);
+  font-style: italic;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(80, 146, 156, 0.15);
+}
+
+.risk-results-cta {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(80, 146, 156, 0.2);
+  text-align: center;
+}
+
+.risk-results-cta p {
+  font-size: 1.05rem;
+  margin-bottom: 1.25rem;
+  color: rgba(212, 225, 229, 0.9);
+}
+
+/* Sources block */
+.risk-sources {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.risk-sources h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.risk-sources ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.risk-sources li {
+  font-size: 0.95rem;
+  color: rgba(212, 225, 229, 0.82);
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(80, 146, 156, 0.1);
+}
+
+.risk-sources li strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Related tools */
+.risk-related {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.risk-related p {
+  font-size: 1.05rem;
+  color: rgba(212, 225, 229, 0.85);
+}
+
+/* Final CTA */
+.risk-final-cta {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.risk-final-cta h2 {
+  margin-bottom: 1rem;
+}
+
+.risk-final-cta p {
+  font-size: 1.15rem;
+  color: rgba(212, 225, 229, 0.85);
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 640px) {
+  .risk-options-row {
+    flex-direction: column;
+  }
+  .risk-option {
+    min-width: 0;
+  }
+  .risk-results {
+    padding: 1.75rem 1.25rem;
+  }
+  .risk-score-num {
+    font-size: 3rem;
+  }
+}

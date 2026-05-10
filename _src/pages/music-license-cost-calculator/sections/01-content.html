@@ -1,0 +1,478 @@
+<!-- JSON-LD: WebApplication -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Music License Cost Calculator",
+  "url": "https://entuned.co/music-license-cost-calculator.html",
+  "description": "Estimate annual ASCAP, BMI, SESAC, and GMR fees for your retail store, restaurant, salon, gym, office, or hotel. Sourced from published 2026 rate cards.",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "All",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  }
+}
+</script>
+
+<!-- HERO -->
+<section class="calc-hero">
+  <div class="container">
+    <div class="fade-up" style="max-width: 820px;">
+      <p class="section-eyebrow">License Calculator</p>
+      <h1>How much will your store pay the four US music PROs this year?</h1>
+      <p class="calc-subline">A free estimator across ASCAP, BMI, SESAC, and GMR &mdash; sourced from published 2026 rate cards. No email, no signup.</p>
+      <p>Every business that plays recorded music in a customer-facing space owes blanket licensing fees to four separate performance rights organizations. ASCAP and BMI publish their rate cards. SESAC and GMR don't &mdash; they negotiate individually, which is why most operators don't discover them until a notice arrives. The four bills together usually run more than business owners expect.</p>
+      <p>Enforcement has stepped up across all four PROs in the past three years, with infringement suits filed against single-location operators in retail, hospitality, and fitness. This calculator gives you a defensible band for budgeting &mdash; not a quote &mdash; using the published rate-card structure for ASCAP and BMI and observed SMB ranges for SESAC and GMR. As of 2026-05-09.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CALCULATOR FORM -->
+<section class="section" style="padding-top: 4rem;">
+  <div class="container">
+    <form class="calc-form" id="calc-form" novalidate>
+
+      <!-- Q1 Business type -->
+      <div class="calc-field fade-up" data-field="businessType">
+        <label class="calc-field-label" id="ft-business">1. What kind of business is this?</label>
+        <div class="calc-options" role="radiogroup" aria-labelledby="ft-business">
+          <div class="calc-option"><input type="radio" id="bt-retail" name="businessType" value="retail"><label for="bt-retail">Retail store</label></div>
+          <div class="calc-option"><input type="radio" id="bt-restaurant" name="businessType" value="restaurant"><label for="bt-restaurant">Restaurant / bar / caf&eacute;</label></div>
+          <div class="calc-option"><input type="radio" id="bt-salon" name="businessType" value="salon"><label for="bt-salon">Salon / spa / barbershop</label></div>
+          <div class="calc-option"><input type="radio" id="bt-gym" name="businessType" value="gym"><label for="bt-gym">Gym / fitness studio</label></div>
+          <div class="calc-option"><input type="radio" id="bt-office" name="businessType" value="office"><label for="bt-office">Office / professional services</label></div>
+          <div class="calc-option"><input type="radio" id="bt-hotel" name="businessType" value="hotel"><label for="bt-hotel">Hotel / lodging</label></div>
+        </div>
+      </div>
+
+      <!-- Q2 Square footage -->
+      <div class="calc-field fade-up" data-field="sqft">
+        <label class="calc-field-label" for="sqft">2. Approximate gross square footage of the space?</label>
+        <p class="calc-field-help">Customer-facing area. Exclude parking and exterior.</p>
+        <input class="calc-number" type="number" id="sqft" name="sqft" min="1" max="500000" inputmode="numeric" placeholder="e.g. 1800">
+      </div>
+
+      <!-- Q3 Daily occupancy -->
+      <div class="calc-field fade-up" data-field="occupancy">
+        <label class="calc-field-label" for="occupancy">3. Approximate daily occupancy at peak?</label>
+        <p class="calc-field-help">Number of customers in the space during your busiest hour.</p>
+        <input class="calc-number" type="number" id="occupancy" name="occupancy" min="1" max="10000" inputmode="numeric" placeholder="e.g. 35">
+      </div>
+
+      <!-- Q4 Live music -->
+      <div class="calc-field fade-up" data-field="liveMusic">
+        <label class="calc-field-label" id="ft-live">4. Do you host live music?</label>
+        <div class="calc-options" role="radiogroup" aria-labelledby="ft-live">
+          <div class="calc-option"><input type="radio" id="lm-no" name="liveMusic" value="no"><label for="lm-no">No</label></div>
+          <div class="calc-option"><input type="radio" id="lm-occ" name="liveMusic" value="occasional"><label for="lm-occ">Occasional (&le;1&times;/month)</label></div>
+          <div class="calc-option"><input type="radio" id="lm-reg" name="liveMusic" value="regular"><label for="lm-reg">Regular (weekly+)</label></div>
+        </div>
+      </div>
+
+      <!-- Q5 Music sources (multi-select) -->
+      <div class="calc-field fade-up" data-field="sources">
+        <label class="calc-field-label">5. Which sources do you currently use to play music? (select all that apply)</label>
+        <div class="calc-options">
+          <div class="calc-option"><input type="checkbox" id="src-personal" name="sources" value="personal"><label for="src-personal">Personal Spotify / Apple / YouTube</label></div>
+          <div class="calc-option"><input type="checkbox" id="src-owned" name="sources" value="owned"><label for="src-owned">Owned files / CDs</label></div>
+          <div class="calc-option"><input type="checkbox" id="src-broadcast" name="sources" value="broadcast"><label for="src-broadcast">Broadcast AM / FM radio</label></div>
+          <div class="calc-option"><input type="checkbox" id="src-b2b" name="sources" value="b2b"><label for="src-b2b">A licensed B2B service</label></div>
+          <div class="calc-option"><input type="checkbox" id="src-live" name="sources" value="live"><label for="src-live">Live performers</label></div>
+          <div class="calc-option"><input type="checkbox" id="src-karaoke" name="sources" value="karaoke"><label for="src-karaoke">Karaoke</label></div>
+        </div>
+      </div>
+
+      <!-- Q6 Locations -->
+      <div class="calc-field fade-up" data-field="locations">
+        <label class="calc-field-label" for="locations">6. How many locations do you operate?</label>
+        <input class="calc-number" type="number" id="locations" name="locations" min="1" max="500" inputmode="numeric" value="1">
+      </div>
+
+      <div class="calc-submit-row fade-up">
+        <button type="submit" class="btn btn-primary" id="calc-submit">Estimate my annual cost</button>
+        <p class="calc-error" id="calc-error" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+
+    <!-- RESULTS PANEL -->
+    <div class="calc-results" id="calc-results" aria-live="polite">
+      <p class="section-eyebrow">Your estimate</p>
+
+      <div id="calc-source-alert"></div>
+
+      <p class="calc-result-asof">As of 2026-05-09 &middot; per location</p>
+      <p class="calc-result-headline">Estimated annual cost to license all four US PROs directly</p>
+      <div class="calc-result-range" id="calc-range">$0 &ndash; $0</div>
+      <p class="calc-result-sub" id="calc-result-sub"></p>
+
+      <div id="calc-live-warning"></div>
+
+      <span class="calc-section-title">Per-PRO breakdown</span>
+      <table class="calc-pro-table" aria-label="Annual cost by PRO">
+        <thead>
+          <tr>
+            <th>PRO</th>
+            <th>Annual range</th>
+            <th>Source</th>
+          </tr>
+        </thead>
+        <tbody id="calc-pro-tbody"></tbody>
+      </table>
+
+      <span class="calc-section-title">What this doesn&rsquo;t cover</span>
+      <div class="calc-block">
+        <h3>Recording-side rights are separate.</h3>
+        <p>The four PROs license <strong>composition</strong> rights &mdash; the rights of songwriters and publishers. Playing recorded music in a public space also touches <strong>sound recording</strong> rights, which belong to the labels and performers. For most small businesses these are bundled into a licensed B2B service, but if you stream personal accounts or play owned files you are not covered for either layer.</p>
+        <p>Mechanical rights (used when you reproduce a recording) typically don&rsquo;t apply to in-store playback, but they do apply if you put music in a video, app, or hold-on-the-line system.</p>
+      </div>
+
+      <span class="calc-section-title">The bundled-service alternative</span>
+      <div class="calc-block">
+        <h3 id="calc-bundled-title">Bundled commercial services: <span id="calc-bundled-range"></span></h3>
+        <p>Services like Mood Media, Soundtrack Your Brand, SiriusXM for Business, and Cloud Cover negotiate blanket deals with all four PROs and the recording-side rights holders, then resell access at a flat per-location rate. Typical SMB pricing is $25&ndash;$60 per location per month. This compresses the four-PRO bill into a single subscription &mdash; but the catalog is shared with millions of other businesses, the music isn&rsquo;t tuned to your customer, and you&rsquo;re still paying every month indefinitely.</p>
+        <p style="font-size: 0.92rem; margin-top: 0.75rem;">Compare: <a href="mood-media-alternative.html">Mood Media alternative</a> &middot; <a href="soundtrack-your-brand-alternative.html">Soundtrack Your Brand alternative</a> &middot; <a href="pandora-for-business-alternative.html">Pandora for Business alternative</a></p>
+      </div>
+
+      <span class="calc-section-title">The Entuned alternative</span>
+      <div class="calc-block calc-entuned-block">
+        <h3>$0 indefinitely on Entuned Free &mdash; PRO-indemnified.</h3>
+        <p>Entuned commissions and owns its catalog outright, so every track is cleared for commercial use the moment it plays &mdash; no PRO blanket licenses, no negotiations, no enforcement risk. Free indefinitely on the entry tier; per-location pricing on Core and Pro.</p>
+        <div style="margin-top: 1rem;">
+          <div class="calc-tier-row">
+            <span class="calc-tier-name">Entuned Free</span>
+            <span class="calc-tier-price" id="calc-tier-free">$0 / yr</span>
+          </div>
+          <div class="calc-tier-row">
+            <span class="calc-tier-name">Core ($99 / loc / mo)</span>
+            <span class="calc-tier-price" id="calc-tier-core">$0 / yr</span>
+          </div>
+          <div class="calc-tier-row">
+            <span class="calc-tier-name">Pro ($399 / loc / mo)</span>
+            <span class="calc-tier-price" id="calc-tier-pro">$0 / yr</span>
+          </div>
+        </div>
+        <p style="margin-top: 1.25rem;">Entuned engineers original music for your store at the parameter level &mdash; tempo, key, lyrical density, energy arc &mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays.</p>
+        <p style="margin-top: 1rem;"><a href="https://app.entuned.co/start" class="btn btn-primary">Start Free</a> &nbsp; <a href="pricing.html" style="color: var(--accent);">See all four tiers &rarr;</a></p>
+      </div>
+
+      <p class="calc-disclaimer">Informational only &mdash; actual rates vary by negotiation, business specifics, and PRO discretion. Verify with each PRO directly before budgeting. Not legal advice.</p>
+    </div>
+  </div>
+</section>
+
+<!-- METHODOLOGY -->
+<section class="section" style="background: rgba(80, 146, 156, 0.05); border-top: 1px solid rgba(80, 146, 156, 0.12); border-bottom: 1px solid rgba(80, 146, 156, 0.12);">
+  <div class="container">
+    <div class="calc-method fade-up">
+      <p class="section-eyebrow">Methodology</p>
+      <h2>How this calculator works</h2>
+      <p>The calculator returns a low-mid-high band, not a quote. ASCAP and BMI publish rate cards that scale by industry, square footage, occupancy, and live-music status. SESAC and GMR don&rsquo;t publish rates &mdash; they negotiate per business, so we use observed SMB ranges from public reporting, attorney commentary, and our own conversations with small-business owners who&rsquo;ve received notices. Every band on this page is dated <strong>as of 2026-05-09</strong>.</p>
+
+      <h3>ASCAP</h3>
+      <p>General-business retail starts at roughly $1/day &mdash; $365&ndash;$402/yr for the smallest stores &mdash; and scales by square footage, occupancy, live music yes/no, and admission-fee yes/no. Restaurants and bars start around $730/yr for the smallest establishments. Fitness has a dedicated rate card because music is &ldquo;central to the service.&rdquo;</p>
+      <ul>
+        <li>Source: <a href="https://www.ascap.com/help/ascap-licensing" target="_blank" rel="noopener">ASCAP licensing overview</a></li>
+        <li>Source: <a href="https://www.ascap.com/~/media/files/pdf/licensing/classes/2022-onwards-rates-reports-forms/retail-stores-rate.pdf" target="_blank" rel="noopener">ASCAP retail stores rate sheet (PDF)</a></li>
+        <li>Source: <a href="https://www.ascap.com/music-users/types/fitness-landing-page" target="_blank" rel="noopener">ASCAP fitness landing page</a></li>
+      </ul>
+
+      <h3>BMI</h3>
+      <p>Single-location retail under 2,000 sq ft has a published minimum around $294/yr. Multi-location retail scales up to roughly $2,500/yr. Bars and restaurants run $378&ndash;$11,286/yr depending on size, music type, and frequency.</p>
+      <ul>
+        <li>Source: <a href="https://www.bmi.com/licensing" target="_blank" rel="noopener">BMI licensing overview</a></li>
+        <li>Source: <a href="https://www.bmi.com/licensing/entry/bars_and_restaurants" target="_blank" rel="noopener">BMI bars &amp; restaurants rates</a></li>
+      </ul>
+
+      <h3>SESAC</h3>
+      <p>SESAC does not publish rates. They negotiate directly. Most retail SMBs we&rsquo;ve seen land in the $200&ndash;$800/yr range &mdash; smaller catalog than ASCAP/BMI, but a handful of high-value artists make a license meaningful.</p>
+      <ul>
+        <li>Source: <a href="https://www.sesac.com/about-music-licensing/" target="_blank" rel="noopener">SESAC about music licensing</a></li>
+      </ul>
+
+      <h3>GMR (Global Music Rights)</h3>
+      <p>GMR also does not publish rates. Smaller catalog than the other three, but it includes very high-value artists (Drake, The Eagles, Bruno Mars, John Lennon&rsquo;s catalog). Most retail SMBs land $200&ndash;$800/yr.</p>
+      <ul>
+        <li>Source: <a href="https://globalmusicrights.com/" target="_blank" rel="noopener">Global Music Rights</a></li>
+      </ul>
+
+      <h3>The bands the calculator returns</h3>
+      <p>For a small retail store (under 2,000 sq ft, fewer than 50 occupants, no live music), the four-PRO total typically lands $1,059&ndash;$1,496/yr. A mid-size retail store (2,000&ndash;10,000 sq ft) jumps to $1,402&ndash;$3,600. A small restaurant under 50 occupancy: $1,708&ndash;$3,900. A larger restaurant with regular live music can clear $8,000+ once you stack ASCAP + BMI live-music surcharges. Salon, gym, office, and hotel bands are derived from the same rate-card structure with category-specific multipliers.</p>
+      <p>The calculator gives you a band, not a quote. Actual numbers vary significantly within each band based on negotiation, exact square footage, music duration, and PRO discretion.</p>
+
+      <div class="calc-internal-links">
+        <strong>Related tools and reading:</strong>
+        <ul style="margin-top: 0.5rem;">
+          <li><a href="retail-music-faq.html">Retail music licensing FAQ</a> &mdash; the full rules in plain English</li>
+          <li><a href="music-license-exemption-checker.html">Music license exemption checker</a> &mdash; do you qualify for the small-business exemption?</li>
+          <li><a href="spotify-business-risk-check.html">Spotify Business risk check</a> &mdash; what your personal Spotify account doesn&rsquo;t cover</li>
+          <li><a href="pricing.html">Entuned pricing</a> &mdash; including the always-free tier</li>
+          <li><a href="https://app.entuned.co/start">Start Free</a> &mdash; PRO-indemnified the moment it plays</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section">
+  <div class="container">
+    <div class="calc-final-cta fade-up">
+      <p class="section-eyebrow">Skip the four bills</p>
+      <h2>Hear it on your floor.</h2>
+      <p>Entuned engineers original music for your store at the parameter level &mdash; tempo, key, lyrical density, energy arc &mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays.</p>
+      <a href="https://app.entuned.co/start" class="btn btn-primary">Start Free</a>
+    </div>
+  </div>
+</section>
+
+<script>
+(function () {
+  var form = document.getElementById('calc-form');
+  if (!form) return;
+
+  var SOURCES = {
+    ascap: {
+      retail:     'https://www.ascap.com/~/media/files/pdf/licensing/classes/2022-onwards-rates-reports-forms/retail-stores-rate.pdf',
+      restaurant: 'https://www.ascap.com/help/ascap-licensing',
+      salon:      'https://www.ascap.com/help/ascap-licensing',
+      gym:        'https://www.ascap.com/music-users/types/fitness-landing-page',
+      office:     'https://www.ascap.com/help/ascap-licensing',
+      hotel:      'https://www.ascap.com/help/ascap-licensing'
+    },
+    bmi: {
+      retail:     'https://www.bmi.com/licensing',
+      restaurant: 'https://www.bmi.com/licensing/entry/bars_and_restaurants',
+      salon:      'https://www.bmi.com/licensing',
+      gym:        'https://www.bmi.com/licensing',
+      office:     'https://www.bmi.com/licensing',
+      hotel:      'https://www.bmi.com/licensing'
+    },
+    sesac: 'https://www.sesac.com/about-music-licensing/',
+    gmr:   'https://globalmusicrights.com/'
+  };
+
+  // Per-PRO bands by business type, with size/occupancy modifiers.
+  // Returns { ascap: [low, high], bmi: [low, high], sesac: [low, high], gmr: [low, high] }
+  function bandsFor(input) {
+    var bt = input.businessType;
+    var sqft = input.sqft;
+    var occ = input.occupancy;
+    var live = input.liveMusic;
+    var ascap, bmi, sesac, gmr;
+
+    if (bt === 'retail') {
+      if (sqft < 2000 && occ < 50) {
+        ascap = [365, 402]; bmi = [294, 350];
+      } else if (sqft < 10000) {
+        ascap = [402, 900]; bmi = [400, 1500];
+      } else {
+        ascap = [800, 1800]; bmi = [1200, 2500];
+      }
+      sesac = [200, sqft < 2000 ? 400 : 600];
+      gmr   = [200, sqft < 2000 ? 400 : 600];
+    } else if (bt === 'restaurant') {
+      if (occ < 50) {
+        ascap = [730, 1200]; bmi = [378, 1500];
+        sesac = [300, 600]; gmr = [300, 600];
+      } else if (occ < 200) {
+        ascap = [1200, 3000]; bmi = [1500, 4500];
+        sesac = [400, 900]; gmr = [400, 900];
+      } else {
+        ascap = [2500, 5500]; bmi = [3000, 8000];
+        sesac = [600, 1500]; gmr = [600, 1500];
+      }
+    } else if (bt === 'salon') {
+      // Smaller industry rate card; rough alignment with retail-small.
+      if (sqft < 2000) { ascap = [350, 500]; bmi = [294, 450]; }
+      else { ascap = [500, 900]; bmi = [450, 1100]; }
+      sesac = [200, 500]; gmr = [200, 500];
+    } else if (bt === 'gym') {
+      // Music is "central" — scales with class load and occupancy.
+      if (occ < 30) { ascap = [600, 1100]; bmi = [500, 1100]; }
+      else if (occ < 100) { ascap = [1100, 2400]; bmi = [1100, 2500]; }
+      else { ascap = [2400, 5000]; bmi = [2500, 5500]; }
+      sesac = [350, 900]; gmr = [350, 900];
+    } else if (bt === 'office') {
+      // On-hold/lobby music; lowest bracket.
+      ascap = [300, 600]; bmi = [250, 550];
+      sesac = [150, 400]; gmr = [150, 400];
+    } else if (bt === 'hotel') {
+      if (occ < 50) { ascap = [600, 1500]; bmi = [500, 1500]; }
+      else if (occ < 200) { ascap = [1500, 4000]; bmi = [1500, 4500]; }
+      else { ascap = [4000, 9000]; bmi = [4500, 10000]; }
+      sesac = [400, 1200]; gmr = [400, 1200];
+    } else {
+      ascap = [400, 800]; bmi = [350, 800]; sesac = [200, 500]; gmr = [200, 500];
+    }
+
+    // Live-music surcharges (ASCAP and BMI both have them on their rate cards).
+    if (live === 'occasional') {
+      ascap = [ascap[0] + 100, ascap[1] + 350];
+      bmi   = [bmi[0]   + 100, bmi[1]   + 350];
+    } else if (live === 'regular') {
+      ascap = [ascap[0] + 400, ascap[1] + 1500];
+      bmi   = [bmi[0]   + 400, bmi[1]   + 1800];
+      // SESAC/GMR also bump on regular live music.
+      sesac = [sesac[0] + 100, sesac[1] + 400];
+      gmr   = [gmr[0]   + 100, gmr[1]   + 400];
+    }
+
+    return { ascap: ascap, bmi: bmi, sesac: sesac, gmr: gmr };
+  }
+
+  function fmt(n) {
+    n = Math.round(n);
+    return '$' + n.toLocaleString('en-US');
+  }
+
+  function rangeStr(band) {
+    return fmt(band[0]) + ' – ' + fmt(band[1]);
+  }
+
+  function readForm() {
+    var fd = new FormData(form);
+    var sources = [];
+    form.querySelectorAll('input[name="sources"]:checked').forEach(function (el) { sources.push(el.value); });
+    return {
+      businessType: fd.get('businessType'),
+      sqft: parseInt(fd.get('sqft'), 10),
+      occupancy: parseInt(fd.get('occupancy'), 10),
+      liveMusic: fd.get('liveMusic'),
+      sources: sources,
+      locations: Math.max(1, parseInt(fd.get('locations'), 10) || 1)
+    };
+  }
+
+  function validate(input) {
+    var errors = [];
+    var invalidFields = [];
+    if (!input.businessType) { errors.push('business type'); invalidFields.push('businessType'); }
+    if (!input.sqft || input.sqft < 1) { errors.push('square footage'); invalidFields.push('sqft'); }
+    if (!input.occupancy || input.occupancy < 1) { errors.push('daily occupancy'); invalidFields.push('occupancy'); }
+    if (!input.liveMusic) { errors.push('live music'); invalidFields.push('liveMusic'); }
+    return { errors: errors, invalidFields: invalidFields };
+  }
+
+  function highlightInvalid(invalidFields) {
+    form.querySelectorAll('.calc-field').forEach(function (f) {
+      var key = f.getAttribute('data-field');
+      if (invalidFields.indexOf(key) !== -1) f.classList.add('calc-invalid');
+      else f.classList.remove('calc-invalid');
+    });
+  }
+
+  function bizLabel(bt) {
+    return ({
+      retail: 'retail store', restaurant: 'restaurant / bar / café',
+      salon: 'salon / spa', gym: 'fitness studio', office: 'office',
+      hotel: 'hotel / lodging'
+    })[bt] || 'business';
+  }
+
+  function ascapSourceFor(bt) { return SOURCES.ascap[bt] || SOURCES.ascap.retail; }
+  function bmiSourceFor(bt)   { return SOURCES.bmi[bt]   || SOURCES.bmi.retail; }
+
+  function render(input, bands) {
+    var loc = input.locations;
+    var totalLow = (bands.ascap[0] + bands.bmi[0] + bands.sesac[0] + bands.gmr[0]);
+    var totalHigh = (bands.ascap[1] + bands.bmi[1] + bands.sesac[1] + bands.gmr[1]);
+
+    document.getElementById('calc-range').textContent =
+      fmt(totalLow * loc) + ' – ' + fmt(totalHigh * loc) + ' / yr';
+
+    document.getElementById('calc-result-sub').innerHTML =
+      'For ' + (loc > 1 ? '<strong>' + loc + ' locations</strong> of a ' : 'a ') + bizLabel(input.businessType) +
+      (input.sqft ? ' (' + input.sqft.toLocaleString() + ' sq ft, ~' + input.occupancy + ' peak occupancy)' : '') +
+      '. Across ASCAP, BMI, SESAC, and GMR combined.';
+
+    // PRO breakdown table
+    var tbody = document.getElementById('calc-pro-tbody');
+    var rows = [
+      { name: 'ASCAP', band: bands.ascap, source: ascapSourceFor(input.businessType), label: 'Rate sheet' },
+      { name: 'BMI',   band: bands.bmi,   source: bmiSourceFor(input.businessType),   label: 'Rate page' },
+      { name: 'SESAC', band: bands.sesac, source: SOURCES.sesac, label: 'Licensing page (rates not published)' },
+      { name: 'GMR',   band: bands.gmr,   source: SOURCES.gmr,   label: 'GMR (rates not published)' }
+    ];
+    tbody.innerHTML = rows.map(function (r) {
+      return '<tr>' +
+        '<td class="calc-pro-name">' + r.name + '</td>' +
+        '<td class="calc-pro-range">' + fmt(r.band[0] * loc) + ' – ' + fmt(r.band[1] * loc) + '<span class="calc-pro-asof">as of 2026-05-09</span></td>' +
+        '<td class="calc-pro-source"><a href="' + r.source + '" target="_blank" rel="noopener">' + r.label + '</a></td>' +
+      '</tr>';
+    }).join('');
+
+    // Bundled service range
+    var bundledLow = 25 * 12 * loc;
+    var bundledHigh = 60 * 12 * loc;
+    document.getElementById('calc-bundled-range').textContent =
+      fmt(bundledLow) + ' – ' + fmt(bundledHigh) + ' / yr';
+
+    // Entuned tiers
+    document.getElementById('calc-tier-free').textContent = '$0 / yr';
+    document.getElementById('calc-tier-core').textContent = fmt(99  * 12 * loc) + ' / yr';
+    document.getElementById('calc-tier-pro').textContent  = fmt(399 * 12 * loc) + ' / yr';
+
+    // Live music warning row
+    var lwHost = document.getElementById('calc-live-warning');
+    if (input.liveMusic === 'regular') {
+      lwHost.innerHTML =
+        '<div class="calc-alert"><strong>Live music surcharge applied.</strong> Both ASCAP and BMI charge separate per-event or annual fees on top of the blanket license when you host regular live performances. Bands above include a surcharge estimate; venues with cover charges or capacity over 200 will run higher.</div>';
+    } else {
+      lwHost.innerHTML = '';
+    }
+
+    // Personal-Spotify warning
+    var alertHost = document.getElementById('calc-source-alert');
+    if (input.sources.indexOf('personal') !== -1) {
+      alertHost.innerHTML =
+        '<div class="calc-alert"><strong>Heads up:</strong> Personal Spotify, Apple Music, and YouTube accounts prohibit commercial use in their terms of service. Switching to a licensed source is required regardless of your PRO licensing &mdash; the PROs cover composition rights, but the streaming services themselves can suspend your account or pursue you separately. <a href="spotify-business-risk-check.html">Run the Spotify Business risk check &rarr;</a></div>';
+    } else {
+      alertHost.innerHTML = '';
+    }
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var errEl = document.getElementById('calc-error');
+    var input = readForm();
+    var v = validate(input);
+
+    if (v.errors.length) {
+      highlightInvalid(v.invalidFields);
+      errEl.textContent = 'Fill in: ' + v.errors.join(', ') + '.';
+      var firstBad = form.querySelector('.calc-invalid');
+      if (firstBad) firstBad.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      return;
+    }
+
+    errEl.textContent = '';
+    highlightInvalid([]);
+
+    var bands = bandsFor(input);
+    render(input, bands);
+
+    var panel = document.getElementById('calc-results');
+    panel.classList.add('is-visible');
+    setTimeout(function () {
+      panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 60);
+  });
+
+  form.addEventListener('change', function (e) {
+    if (e.target && (e.target.matches('input') || e.target.matches('select'))) {
+      var f = e.target.closest('.calc-field');
+      if (f) f.classList.remove('calc-invalid');
+      var errEl = document.getElementById('calc-error');
+      if (errEl) errEl.textContent = '';
+    }
+  });
+})();
+</script>
