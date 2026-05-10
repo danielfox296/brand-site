@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/music-license-exemption-checker.html">
+  <meta name="robots" content="index, follow">
+  <title>Music License Exemption Checker — Does Your Small Business Qualify? | Entuned</title>
+  <meta name="description" content="Federal copyright law has a small-business music exemption (17 USC § 110(5)(B)). Take 60 seconds to check whether your store, bar, or restaurant qualifies. Free, no email.">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="rss.xml">
+  <meta property="og:title" content="Music License Exemption Checker — Does Your Small Business Qualify? | Entuned">
+  <meta property="og:description" content="Federal copyright law has a small-business music exemption (17 USC § 110(5)(B)). Take 60 seconds to check whether your store, bar, or restaurant qualifies. Free, no email.">
+  <meta property="og:url" content="https://entuned.co/music-license-exemption-checker.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://entuned.co/img/og-default.png">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Music License Exemption Checker — Does Your Small Business Qualify? | Entuned">
+  <meta name="twitter:description" content="Federal copyright law has a small-business music exemption (17 USC § 110(5)(B)). Take 60 seconds to check whether your store, bar, or restaurant qualifies. Free, no email.">
+  <meta name="twitter:image" content="https://entuned.co/img/og-default.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Entuned",
+  "url": "https://entuned.co",
+  "description": "Entuned engineers original music for retail floors at the parameter level \u2014 tempo, key, lyrical density, energy arc \u2014 tailored to a store's customer profile and tied to its sales outcomes. PRO-indemnified at every tier.",
+  "foundingDate": "2026",
+  "founder": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "knowsAbout": [
+    "retail atmospherics",
+    "music psychology",
+    "in-store customer behavior",
+    "retail analytics",
+    "engineered retail audio",
+    "behavioral retail variables"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/entuned"
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Music License Exemption Checker \u2014 Does Your Small Business Qualify? | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css?v=ad29c3f2">
+  <style>
+/* Music License Exemption Checker — page-scoped styles (exempt- prefix) */
+
+.exempt-hero {
+  padding: 6rem 0 3rem;
+  border-bottom: 1px solid rgba(80, 146, 156, 0.12);
+}
+
+.exempt-hero h1 {
+  font-size: clamp(2.25rem, 6vw, 4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  max-width: 24ch;
+}
+
+.exempt-hero .exempt-subline {
+  font-size: 1.25rem;
+  color: rgba(212, 225, 229, 0.78);
+  font-weight: 400;
+  margin-top: 1rem;
+  max-width: 60ch;
+}
+
+.exempt-hero p {
+  max-width: 64ch;
+  color: rgba(212, 225, 229, 0.85);
+}
+
+/* Form */
+.exempt-form {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.exempt-question {
+  background: var(--bg-card);
+  border: 1px solid rgba(80, 146, 156, 0.15);
+  border-radius: 10px;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.exempt-question:hover,
+.exempt-question:focus-within {
+  border-color: rgba(80, 146, 156, 0.4);
+  background: rgba(80, 146, 156, 0.1);
+}
+
+.exempt-question.exempt-unanswered {
+  border-color: rgba(215, 175, 116, 0.55);
+  background: rgba(215, 175, 116, 0.06);
+}
+
+.exempt-question.exempt-hidden {
+  display: none;
+}
+
+.exempt-q-number {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.exempt-q-text {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.exempt-q-help {
+  font-size: 0.92rem;
+  color: rgba(212, 225, 229, 0.65);
+  margin-bottom: 1rem;
+}
+
+.exempt-options {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.exempt-option {
+  position: relative;
+  flex: 1 1 240px;
+  min-width: 160px;
+}
+
+.exempt-option input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.exempt-option label {
+  display: block;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(80, 146, 156, 0.25);
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgba(32, 32, 28, 0.4);
+}
+
+.exempt-option label:hover {
+  border-color: rgba(80, 146, 156, 0.55);
+  background: rgba(80, 146, 156, 0.1);
+}
+
+.exempt-option input[type="radio"]:checked + label {
+  background: var(--accent);
+  color: #20201c;
+  border-color: var(--accent);
+  font-weight: 600;
+}
+
+.exempt-option input[type="radio"]:focus-visible + label {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Number input */
+.exempt-number-wrap {
+  max-width: 280px;
+}
+
+.exempt-number {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(80, 146, 156, 0.25);
+  border-radius: 6px;
+  background: rgba(32, 32, 28, 0.4);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
+
+.exempt-number:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-color: var(--accent);
+}
+
+/* Submit row */
+.exempt-submit-row {
+  text-align: center;
+  margin: 2.5rem 0 1rem;
+}
+
+.exempt-submit-row .btn {
+  min-width: 240px;
+}
+
+.exempt-error {
+  color: var(--gold);
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  min-height: 1.4em;
+}
+
+/* Results panel */
+.exempt-results {
+  display: none;
+  max-width: 820px;
+  margin: 3rem auto 0;
+  padding: 2.5rem;
+  background: rgba(80, 146, 156, 0.07);
+  border: 1px solid rgba(80, 146, 156, 0.3);
+  border-radius: 12px;
+}
+
+.exempt-results.is-visible {
+  display: block;
+}
+
+.exempt-band {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.exempt-band.exempt-band-yes {
+  color: var(--accent);
+}
+
+.exempt-band.exempt-band-no {
+  color: var(--gold);
+}
+
+.exempt-band.exempt-band-qualified {
+  color: var(--accent);
+}
+
+.exempt-explanation {
+  font-size: 1.05rem;
+  color: rgba(212, 225, 229, 0.9);
+  margin-bottom: 1.5rem;
+}
+
+.exempt-citation {
+  font-size: 0.92rem;
+  color: rgba(212, 225, 229, 0.7);
+  padding: 1rem 1.25rem;
+  background: rgba(32, 32, 28, 0.45);
+  border-left: 2px solid var(--accent);
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.exempt-citation a {
+  color: var(--accent);
+}
+
+.exempt-disclaimer {
+  font-size: 0.88rem;
+  color: rgba(212, 225, 229, 0.6);
+  font-style: italic;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(80, 146, 156, 0.18);
+}
+
+.exempt-results-cta {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(80, 146, 156, 0.2);
+  text-align: center;
+}
+
+.exempt-results-cta p {
+  font-size: 1.05rem;
+  margin-bottom: 1.25rem;
+  color: rgba(212, 225, 229, 0.9);
+}
+
+/* Why this matters */
+.exempt-why {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.exempt-why p {
+  font-size: 1.05rem;
+  color: rgba(212, 225, 229, 0.85);
+}
+
+/* Final CTA */
+.exempt-final-cta {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.exempt-final-cta h2 {
+  margin-bottom: 1rem;
+}
+
+.exempt-final-cta p {
+  font-size: 1.15rem;
+  color: rgba(212, 225, 229, 0.85);
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 640px) {
+  .exempt-options {
+    flex-direction: column;
+  }
+  .exempt-option {
+    min-width: 0;
+  }
+  .exempt-results {
+    padding: 1.75rem 1.25rem;
+  }
+}
+  </style>
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav aria-label="Main navigation">
+  <div class="container">
+    <a href="/" class="logo"><img src="img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="how-it-works.html">How It Works</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-cta-item"><a href="https://app.entuned.co/start" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Start Free</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+  </div>
+</nav>
+
+  <main>
+  <!-- JSON-LD: WebApplication schema for the tool -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Music License Exemption Checker",
+  "description": "Interactive checker for the federal homestyle music exemption (17 USC § 110(5)(B)). Five questions; the tool determines whether a small business qualifies for the small-establishment exemption to public-performance licensing.",
+  "url": "https://entuned.co/music-license-exemption-checker.html",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any (web)",
+  "browserRequirements": "Requires JavaScript",
+  "isAccessibleForFree": true,
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  }
+}
+</script>
+
+<!-- HERO -->
+<section class="exempt-hero">
+  <div class="container">
+    <div class="fade-up" style="max-width: 820px;">
+      <p class="section-eyebrow">Exemption Checker</p>
+      <h1>Does your store, bar, or restaurant qualify for the federal music license exemption?</h1>
+      <p class="exempt-subline">Five questions, sixty seconds. The tool walks the homestyle exemption (17 USC &sect; 110(5)(B)) against your real numbers and tells you where your licensing exposure actually sits.</p>
+      <p>Federal copyright law carves out a narrow small-business exemption for public performance of music. It saves qualifying operators from PRO licensing fees &mdash; but the rules are precise about square footage, equipment, and what kind of music source counts. ASCAP filed thirteen infringement suits against small operators in March 2024 and another twenty-four in February 2025; most of the defendants believed they were covered when they weren't.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CHECKER FORM -->
+<section class="section" style="padding-top: 4rem;">
+  <div class="container">
+    <form class="exempt-form" id="exempt-form" novalidate>
+
+      <!-- Q1: Business type -->
+      <div class="exempt-question fade-up" data-q="1">
+        <span class="exempt-q-number">Question 1 of 5</span>
+        <p class="exempt-q-text" id="q1-label">What kind of establishment is this?</p>
+        <p class="exempt-q-help">The square-footage threshold is different for food service vs. retail/services.</p>
+        <div class="exempt-options" role="radiogroup" aria-labelledby="q1-label">
+          <div class="exempt-option"><input type="radio" id="q1-food" name="q1" value="food"><label for="q1-food">Food &amp; drink (restaurant, bar, caf&eacute;)</label></div>
+          <div class="exempt-option"><input type="radio" id="q1-retail" name="q1" value="retail"><label for="q1-retail">Retail or services (store, salon, gym, office)</label></div>
+        </div>
+      </div>
+
+      <!-- Q2: Square footage -->
+      <div class="exempt-question fade-up" data-q="2">
+        <span class="exempt-q-number">Question 2 of 5</span>
+        <p class="exempt-q-text" id="q2-label">What is the gross square footage of the establishment?</p>
+        <p class="exempt-q-help">Exclude parking. The statute uses gross interior square footage of the establishment itself.</p>
+        <div class="exempt-number-wrap">
+          <input type="number" id="q2-sqft" name="q2" min="0" step="1" inputmode="numeric" class="exempt-number" aria-labelledby="q2-label" placeholder="e.g. 1800">
+        </div>
+      </div>
+
+      <!-- Q3: Music source -->
+      <div class="exempt-question fade-up" data-q="3">
+        <span class="exempt-q-number">Question 3 of 5</span>
+        <p class="exempt-q-text" id="q3-label">Where is the music coming from?</p>
+        <p class="exempt-q-help">This is the question that disqualifies most operators. The exemption only covers retransmission of broadcast radio or TV.</p>
+        <div class="exempt-options" role="radiogroup" aria-labelledby="q3-label">
+          <div class="exempt-option"><input type="radio" id="q3-radio" name="q3" value="broadcast-radio"><label for="q3-radio">Broadcast AM/FM radio</label></div>
+          <div class="exempt-option"><input type="radio" id="q3-tv" name="q3" value="broadcast-tv"><label for="q3-tv">Broadcast TV</label></div>
+          <div class="exempt-option"><input type="radio" id="q3-streaming" name="q3" value="streaming"><label for="q3-streaming">Streaming service (Spotify, Apple Music, Pandora, YouTube)</label></div>
+          <div class="exempt-option"><input type="radio" id="q3-owned" name="q3" value="owned"><label for="q3-owned">CDs, owned files, or your phone</label></div>
+          <div class="exempt-option"><input type="radio" id="q3-b2b" name="q3" value="b2b"><label for="q3-b2b">A licensed B2B service (Mood, Soundtrack, etc.)</label></div>
+        </div>
+      </div>
+
+      <!-- Q4: Total speakers (conditional) -->
+      <div class="exempt-question fade-up exempt-hidden" data-q="4">
+        <span class="exempt-q-number">Question 4 of 5</span>
+        <p class="exempt-q-text" id="q4-label">How many audio loudspeakers, total, across the establishment?</p>
+        <p class="exempt-q-help">You're over the auto-exempt square-footage threshold, so the equipment limits start to matter. The cap is six total speakers.</p>
+        <div class="exempt-number-wrap">
+          <input type="number" id="q4-speakers" name="q4" min="0" step="1" inputmode="numeric" class="exempt-number" aria-labelledby="q4-label" placeholder="e.g. 4">
+        </div>
+      </div>
+
+      <!-- Q5: Speakers in any one room (conditional) -->
+      <div class="exempt-question fade-up exempt-hidden" data-q="5">
+        <span class="exempt-q-number">Question 5 of 5</span>
+        <p class="exempt-q-text" id="q5-label">In any single room or adjoining outdoor space, how many speakers are there?</p>
+        <p class="exempt-q-help">You're over six speakers total, so the per-room cap applies. The statute limits any one room to four.</p>
+        <div class="exempt-number-wrap">
+          <input type="number" id="q5-perroom" name="q5" min="0" step="1" inputmode="numeric" class="exempt-number" aria-labelledby="q5-label" placeholder="e.g. 3">
+        </div>
+      </div>
+
+      <div class="exempt-submit-row fade-up">
+        <button type="submit" class="btn btn-primary" id="exempt-submit">Check my exemption</button>
+        <p class="exempt-error" id="exempt-error" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+
+    <!-- RESULTS PANEL -->
+    <div class="exempt-results" id="exempt-results" role="region" aria-live="polite" aria-label="Exemption result">
+      <p class="section-eyebrow">Your result</p>
+      <h2 class="exempt-band" id="exempt-band"></h2>
+      <p class="exempt-explanation" id="exempt-explanation"></p>
+
+      <div class="exempt-citation">
+        <strong>Statute:</strong> 17 U.S.C. &sect; 110(5)(B) &mdash; the small-business "homestyle" exemption to public performance rights. Read the statute at <a href="https://www.law.cornell.edu/uscode/text/17/110" target="_blank" rel="noopener">Cornell Legal Information Institute</a>.
+      </div>
+
+      <p class="exempt-disclaimer">Informational only. Not legal advice. The homestyle exemption is fact-specific &mdash; verify your situation with a qualified IP attorney before relying on it.</p>
+
+      <div class="exempt-results-cta">
+        <p>Even if you're exempt, the exemption only covers broadcast radio. Entuned Free gives you outcome-tuned music with no PRO obligation, indefinitely &mdash; original compositions engineered for your customer, not licensed catalog tracks.</p>
+        <a href="https://app.entuned.co/start" class="btn btn-primary">Start Free</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY THIS MATTERS -->
+<section class="section" style="background: rgba(80, 146, 156, 0.05); border-top: 1px solid rgba(80, 146, 156, 0.12); border-bottom: 1px solid rgba(80, 146, 156, 0.12);">
+  <div class="container">
+    <div class="exempt-why fade-up">
+      <p class="section-eyebrow">What the exemption actually is</p>
+      <h2>The narrowest carve-out in copyright law &mdash; and the one most operators misread.</h2>
+      <p>Section 110(5)(B) of the Copyright Act exempts small food-service or drinking establishments under 3,750 gross square feet, and other small establishments under 2,000 gross square feet, from paying public-performance royalties on retransmissions of broadcast radio and television. Above those thresholds, the exemption still applies if the equipment stays within strict limits: six audio speakers maximum, four per room, and audiovisual displays under fifty-five inches diagonal.</p>
+      <p>The trap is the word "broadcast." If you stream Spotify or Pandora over the speakers, plug in your phone, or play CDs, the homestyle exemption does not cover you &mdash; regardless of your square footage. You owe ASCAP, BMI, SESAC, and GMR public-performance fees, or you need a licensed B2B service that handles the licensing for you, or you need original music that doesn't carry PRO obligations at all. Most of the small-business infringement suits filed each year are against operators who didn't know their music source disqualified them.</p>
+      <p>Background reading on what your exposure actually looks like: <a href="music-licensing-for-business.html">music licensing for business</a> walks through the licensing landscape end-to-end, and the <a href="retail-music-faq.html">retail music FAQ</a> covers the most common questions operators bring us. If you'd rather skip the licensing question entirely, see <a href="pricing.html">our pricing tiers, including Entuned Free</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section">
+  <div class="container">
+    <div class="exempt-final-cta fade-up">
+      <p class="section-eyebrow">Next step</p>
+      <h2>Skip the licensing question entirely.</h2>
+      <p>Entuned engineers original music for your store at the parameter level &mdash; tempo, key, lyrical density, energy arc &mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays.</p>
+      <a href="https://app.entuned.co/start" class="btn btn-primary">Start Free</a>
+    </div>
+  </div>
+</section>
+
+<script>
+(function () {
+  var form = document.getElementById('exempt-form');
+  if (!form) return;
+
+  var FOOD_THRESHOLD = 3750;
+  var RETAIL_THRESHOLD = 2000;
+  var TOTAL_SPEAKER_CAP = 6;
+  var PER_ROOM_CAP = 4;
+
+  var STATUTE_URL = 'https://www.law.cornell.edu/uscode/text/17/110';
+
+  function getBusinessType() {
+    var checked = form.querySelector('input[name="q1"]:checked');
+    return checked ? checked.value : null;
+  }
+  function getSqft() {
+    var v = document.getElementById('q2-sqft').value;
+    if (v === '' || v === null) return null;
+    var n = parseInt(v, 10);
+    return isNaN(n) ? null : n;
+  }
+  function getSource() {
+    var checked = form.querySelector('input[name="q3"]:checked');
+    return checked ? checked.value : null;
+  }
+  function getTotalSpeakers() {
+    var v = document.getElementById('q4-speakers').value;
+    if (v === '' || v === null) return null;
+    var n = parseInt(v, 10);
+    return isNaN(n) ? null : n;
+  }
+  function getPerRoom() {
+    var v = document.getElementById('q5-perroom').value;
+    if (v === '' || v === null) return null;
+    var n = parseInt(v, 10);
+    return isNaN(n) ? null : n;
+  }
+
+  function thresholdFor(type) {
+    return type === 'food' ? FOOD_THRESHOLD : RETAIL_THRESHOLD;
+  }
+
+  // Show/hide Q4 and Q5 based on running answers
+  function updateConditionalVisibility() {
+    var type = getBusinessType();
+    var sqft = getSqft();
+    var totalSpeakers = getTotalSpeakers();
+    var q4 = form.querySelector('[data-q="4"]');
+    var q5 = form.querySelector('[data-q="5"]');
+
+    var showQ4 = false;
+    var showQ5 = false;
+
+    if (type && sqft !== null && sqft >= thresholdFor(type)) {
+      showQ4 = true;
+      if (totalSpeakers !== null && totalSpeakers > TOTAL_SPEAKER_CAP) {
+        showQ5 = true;
+      }
+    }
+
+    if (showQ4) q4.classList.remove('exempt-hidden'); else q4.classList.add('exempt-hidden');
+    if (showQ5) q5.classList.remove('exempt-hidden'); else q5.classList.add('exempt-hidden');
+  }
+
+  function highlightUnanswered(missingIds) {
+    var allQs = form.querySelectorAll('.exempt-question');
+    allQs.forEach(function (q) { q.classList.remove('exempt-unanswered'); });
+    missingIds.forEach(function (qNum) {
+      var q = form.querySelector('[data-q="' + qNum + '"]');
+      if (q) q.classList.add('exempt-unanswered');
+    });
+  }
+
+  function determineResult() {
+    var type = getBusinessType();
+    var sqft = getSqft();
+    var source = getSource();
+
+    // Source rule short-circuits: anything that isn't broadcast disqualifies regardless.
+    if (source === 'streaming' || source === 'owned') {
+      return {
+        verdict: 'no',
+        title: 'Not exempt &mdash; the homestyle exemption only covers broadcast radio and TV.',
+        explanation: 'Section 110(5)(B) exempts retransmission of broadcast AM/FM radio or broadcast television only. Streaming services (Spotify, Apple Music, Pandora, YouTube) and owned music (CDs, files, your phone) are not "transmissions" within the meaning of the statute &mdash; the exemption does not apply, regardless of your square footage or speaker count. Playing those sources publicly without a license is direct copyright infringement under 17 U.S.C. &sect; 106(4). Your options are: a licensed consumer or B2B streaming product, individual ASCAP/BMI/SESAC/GMR licenses, or original music that carries no PRO obligation in the first place.'
+      };
+    }
+    if (source === 'b2b') {
+      return {
+        verdict: 'no',
+        title: 'You don\'t need the exemption &mdash; your B2B service is already handling licensing.',
+        explanation: 'Licensed B2B background-music services (Mood Media, Soundtrack Your Brand, Cloud Cover, etc.) include the public-performance licenses you need as part of their commercial agreement. The homestyle exemption is not what\'s covering you &mdash; the service is. If you stop paying the service, you stop being covered. The exemption would only become relevant if you switched to broadcast radio or TV as your sole source.'
+      };
+    }
+    if (source !== 'broadcast-radio' && source !== 'broadcast-tv') {
+      // Defensive fallback; shouldn't be reachable.
+      return {
+        verdict: 'no',
+        title: 'Not exempt.',
+        explanation: 'The homestyle exemption only covers broadcast radio and TV.'
+      };
+    }
+
+    // Source is broadcast radio or TV. Now apply size + equipment rules.
+    var threshold = thresholdFor(type);
+
+    if (sqft < threshold) {
+      return {
+        verdict: 'yes',
+        title: 'Exempt &mdash; you qualify automatically on size.',
+        explanation: 'Your establishment is under the ' + threshold.toLocaleString() + ' gross-square-foot threshold for ' + (type === 'food' ? 'food-service or drinking establishments' : 'retail or service establishments') + ', and you\'re using a qualifying source (broadcast ' + (source === 'broadcast-radio' ? 'AM/FM radio' : 'television') + '). Under 17 U.S.C. &sect; 110(5)(B), small establishments below the size threshold are exempt regardless of speaker count or screen size. The exemption assumes no admission fee and no further retransmission of the music outside the establishment &mdash; if you charge a cover or pipe the audio to another venue, the exemption is lost.'
+      };
+    }
+
+    // Over threshold — equipment caps apply.
+    var totalSpeakers = getTotalSpeakers();
+    if (totalSpeakers === null) {
+      return null; // shouldn't happen because submit guards on this
+    }
+    if (totalSpeakers <= TOTAL_SPEAKER_CAP) {
+      // Per-room cap only matters if total > 6, but to be conservative we still surface it.
+      return {
+        verdict: 'qualified',
+        title: 'Exempt (qualified) &mdash; on broadcast radio or TV only, within equipment limits.',
+        explanation: 'Your establishment is over the ' + threshold.toLocaleString() + ' sq ft threshold, so you only qualify because your equipment fits inside the statute\'s caps: at most six audio loudspeakers total, no more than four in any one room or adjoining outdoor space, and any audiovisual displays must be at most four screens, no more than one per room, and no larger than fifty-five inches diagonal. Your exemption also assumes no admission fee, no further retransmission outside the establishment, and that the source remains broadcast radio or TV. Switch to streaming or owned files and the exemption disappears.'
+      };
+    }
+
+    // > 6 speakers total — must check per-room.
+    var perRoom = getPerRoom();
+    if (perRoom === null) return null;
+    if (perRoom <= PER_ROOM_CAP) {
+      // Total > 6 already fails the cap regardless of per-room — the statute requires both.
+      return {
+        verdict: 'no',
+        title: 'Not exempt &mdash; over the total speaker cap.',
+        explanation: 'You\'re over the ' + threshold.toLocaleString() + ' sq ft size threshold, which means the equipment caps apply. Section 110(5)(B) limits qualifying establishments to six audio loudspeakers total. You reported more than six total speakers, so the exemption does not apply &mdash; even though your per-room count is within the four-per-room cap. To rely on the exemption you would need to remove speakers, drop to a smaller footprint, or change your source to a licensed product that handles the public-performance fees for you.'
+      };
+    }
+    return {
+      verdict: 'no',
+      title: 'Not exempt &mdash; over both speaker caps.',
+      explanation: 'You\'re over the ' + threshold.toLocaleString() + ' sq ft size threshold, and your equipment exceeds both statutory limits: more than six total speakers and more than four in a single room or adjoining outdoor space. The exemption does not apply. Your options are: reduce equipment to fit the caps, license your music through ASCAP/BMI/SESAC/GMR or a B2B service that bundles those licenses, or move to original music that has no PRO obligation.'
+    };
+  }
+
+  function bandClass(verdict) {
+    if (verdict === 'yes') return 'exempt-band exempt-band-yes';
+    if (verdict === 'qualified') return 'exempt-band exempt-band-qualified';
+    return 'exempt-band exempt-band-no';
+  }
+
+  function renderResult(result) {
+    var bandEl = document.getElementById('exempt-band');
+    bandEl.className = bandClass(result.verdict);
+    bandEl.innerHTML = result.title;
+    document.getElementById('exempt-explanation').innerHTML = result.explanation;
+  }
+
+  // Live update of conditional questions as user fills the form
+  form.addEventListener('change', function (e) {
+    updateConditionalVisibility();
+    if (e.target && (e.target.matches('input[type="radio"]') || e.target.matches('input[type="number"]'))) {
+      var q = e.target.closest('.exempt-question');
+      if (q) q.classList.remove('exempt-unanswered');
+      var errEl = document.getElementById('exempt-error');
+      if (errEl) errEl.textContent = '';
+    }
+  });
+  form.addEventListener('input', function (e) {
+    if (e.target && e.target.matches('input[type="number"]')) {
+      updateConditionalVisibility();
+    }
+  });
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    updateConditionalVisibility();
+
+    var errEl = document.getElementById('exempt-error');
+    var missing = [];
+
+    var type = getBusinessType();
+    var sqft = getSqft();
+    var source = getSource();
+
+    if (!type) missing.push(1);
+    if (sqft === null || sqft < 0) missing.push(2);
+    if (!source) missing.push(3);
+
+    // Conditional fields
+    if (type && sqft !== null && sqft >= thresholdFor(type) &&
+        (source === 'broadcast-radio' || source === 'broadcast-tv')) {
+      var totalSpeakers = getTotalSpeakers();
+      if (totalSpeakers === null || totalSpeakers < 0) missing.push(4);
+      if (totalSpeakers !== null && totalSpeakers > TOTAL_SPEAKER_CAP) {
+        var perRoom = getPerRoom();
+        if (perRoom === null || perRoom < 0) missing.push(5);
+      }
+    }
+
+    if (missing.length > 0) {
+      highlightUnanswered(missing);
+      errEl.textContent = 'Answer the highlighted question' + (missing.length > 1 ? 's' : '') + ' to see your result.';
+      var firstMissing = form.querySelector('.exempt-unanswered');
+      if (firstMissing) firstMissing.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      return;
+    }
+
+    errEl.textContent = '';
+    highlightUnanswered([]);
+
+    var result = determineResult();
+    if (!result) return;
+
+    renderResult(result);
+
+    var panel = document.getElementById('exempt-results');
+    panel.classList.add('is-visible');
+    setTimeout(function () {
+      panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 60);
+  });
+})();
+</script>
+  </main>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4><img src="img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Engineered retail audio. PRO-indemnified.</p>
+      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="enterprise.html">Enterprise</a></li>
+        <li><a href="why-entuned.html">Why Entuned</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For Your Industry</h4>
+      <ul>
+        <li><a href="for-apparel.html">Apparel</a></li>
+        <li><a href="for-home-goods.html">Home Goods</a></li>
+        <li><a href="for-jewelry.html">Jewelry</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
+      <ul>
+        <li><a href="for-retail-leaders.html">Retail Leaders</a></li>
+        <li><a href="impact.html">Impact Calculator</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Research</h4>
+      <ul>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="science.html">The Science</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="press.html">Press</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="licensing.html">Licensing &amp; PRO Coverage</a></li>
+        <li><a href="data.html">Data Practices</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="pricing/terms.html">Subscription Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG');
+  </script>
+  <script defer src="js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>
