@@ -6,26 +6,26 @@ hero:
   subline: "Forty years of peer-reviewed research says yes. Tempo controls dwell time. Identity-fit music lifts what customers spend. Familiar music drives them out faster. Entuned produces original music designed for your customer and your store. Free forever, no credit card."
   cta_primary: "Start Free"
 
-# Pillar 1 — Music is a behavioral variable
+# Pillar 1 — Yes (research)
 pillar1:
-  eyebrow: "The Gap"
-  h2: "Music does something. But in retail, no one has chosen what that is."
-  p1: "Stores either pay a background music provider on autopilot, run someone's personal Spotify, or playing whatever's on the radio. The store desginer had a lighting plan. Interior design picked the paint. But audio is... whatever?"
-  p2: "We have forty years of peer-reviewed research, and not using music as a behavioral lever is a missed oppportunity. Tempo affects the pace customers walk through your store (Milliman 1982). When customers feel like they belong with the music, it increases their willingness to pay (Areni &amp; Kim 1993). Even familiar songs have an effect of reducing perceived dwell time (Yalch &amp; Spangenberg 2000). Music is actually working the room. But is it doing what you want?"
+  eyebrow: "The short answer"
+  h2: "Yes. The research is older and more specific than most shop owners realize."
+  p1: "Music isn't ambient — it's a behavioral variable, peer-reviewed since 1982. Tempo controls how customers move through your store. Identity-fit music lifts what they're willing to pay. Familiar songs drive them out faster, even when they say they like it. The receipts are below."
+  p2: "Most stores still play music chosen by a vendor who has never set foot inside. Visual merchandising got an intentional plan. Interior design picked the paint. The audio environment running over every customer all day is whatever the music vendor sent over. Forty years of evidence says that audio is doing measurable work in the room — the only question is whether you chose its effect."
 
-# Pillar 2 — We engineer it
+# Pillar 2 — The mechanism (design spec)
 pillar2:
-  eyebrow: "Our Lever"
-  h2: "Music engineered for your customer and your outcome."
-  p1: "We don't just make cool sounds, we design music, tweaking each parameter to move people. Tempo, key, instrumentation, lyricals, and cultural reference set are specified on purpose to fit your customers and a specific desired outcome — Increase dwell time, Larger basket sizes, higher conversion rate, or just reinforcing the value of your brand."
-  p2: "With our Core plan, Entuned starts with your customer in mind - the person your store is built for. Then we produce music that speaks to them, and motivates a great shopping experience. It's not picked from a stale catalogue. It's not even a curated a playlist or song library. We engineer it for your store ourcomes and your customer. The songs are original, cleared for commercial-use, and PRO-indemnified the moment they play."
+  eyebrow: "The mechanism"
+  h2: "Background music has been a creative endeavor for decades. We turned it into a design spec."
+  p1: "Background music vendors lease songs artists wrote for other reasons — and the lyrics, tempo, energy, and cultural reference were never chosen with your retail floor in mind. Entuned produces original music to specification: your customer, your category, your outcome. Tempo tuned to your floor pace. Identity calibrated to your customer. Lyrics screened to avoid actively negative-priming the people you're trying to convert."
+  p2: "The Core tier starts with the customer your store is built for. We produce music that speaks to them, motivates a shopping experience that fits, and gets out of the way. Original, commercial-use cleared, no PRO obligation passed to you. Not a playlist. Not a curated library. A design specification, executed."
 
-# Pillar 3 — Self-improving
+# Pillar 3 — The proof (pilot + improvement)
 pillar3:
-  eyebrow: "It Get's Even Better"
-  h2: "Music that performs better the longer it runs."
-  p1: "Our Pro tier pulls sales and traffic data from your stores and refines the music, optimizing for your store's outcomes the longer it runs. Depending on your scale this self-improving refinement compounds over a few weeks or months of corelation."
-  p2: "The Entuned Free and Core Plans prove the concept. Professional just keeps going to optmize for to lift sales the longer you run it."
+  eyebrow: "The proof"
+  h2: "Music that gets sharper the longer it runs."
+  p1: "Free and Core deliver the concept. Pro pulls sales and traffic data from your locations and refines the music against the outcome you set — the longer it runs, the more precisely it produces what you measure. Self-improving refinement compounds over weeks and months of correlation."
+  p2: "The first pilot store ran the system for one day. Conversion went from 18% to 28%. One Tuesday, one location — anecdotal until it isn't, but the kind of single-store evidence we have. The full pilot data lands in your reporting stack, your terms, structured as a 12-week test against matched control stores."
 
 # Social proof
 social_eyebrow: "Early signal from the pilot"
@@ -44,8 +44,8 @@ social_quote_2_context: "Pilot store, Spring 2026"
 social_disclaimer: "Anecdotal observations from pilot in progress."
 
 # Built for
-built_for_eyebrow: "Entuned Streaming: Built for"
-built_for_text: "All kinds of retail — footwear, apparel, cosmetics, furniture and mattress, home goods, sporting goods, jewelry, beauty supply. Delivering real customer dwell, real conversion, real performance."
+built_for_eyebrow: "Built for"
+built_for_text: "Apparel, footwear, jewelry, home goods, cosmetics, furniture, mattress, sporting goods, beauty supply. Real customer dwell, real conversion, real return visits."
 
 # Tier preview
 tiers:
@@ -53,16 +53,16 @@ tiers:
   h2: "Four Options. Start free."
   essentials_name: "Entuned Free"
   essentials_price: "Free"
-  essentials_body: "Outcome-tuned music for your floor. 2 Research-based outcomes unlocked: choose from Linger or Lift Energy. No credit card required."
+  essentials_body: "Music tuned to one of two research-backed outcomes: Linger or Lift Energy. Free indefinitely, no credit card."
   core_name: "Core"
   core_price: "$99/mo"
-  core_body: "Music enineered to make your single Ideal Customer Profile (ICP) feel at home. All research-backed outcomes unlocked."
+  core_body: "Music designed for your single Ideal Customer Profile (ICP). All research-backed outcomes unlocked. Per location."
   professional_name: "Professional"
   professional_price: "$399/mo"
-  professional_body: "We Engineer music for your location's Multiple ICPs, POS integration, outcome scheduling (advanced day-parting), self-improving outcome refinement, monthly founder consults."
+  professional_body: "Music designed for your location's multiple ICPs. POS integration, outcome scheduling (advanced day-parting), self-improving refinement, monthly founder consults."
   enterprise_name: "Enterprise"
   enterprise_price: "Contact"
-  enterprise_body: "Multi-fleet rollouts, custom ICP design."
+  enterprise_body: "Multi-location rollouts, custom ICP design, performance terms."
   cta_primary: "See Full Pricing"
 
 # FAQ
@@ -86,5 +86,5 @@ home_faq_a5: 'Sign in with your email or Google at <a href="https://app.entuned.
 # Final CTA
 final:
   h2: "Three minutes from sign-up to music in your store."
-  subline: "Free to stream. More power available if outgrow it."
-  cta_primary: "Start Free" 
+  subline: "Free to stream. More power when you outgrow it."
+  cta_primary: "Start Free"
