@@ -115,7 +115,7 @@ sections:
 
   - type: prose
     body: |
-      The numbers side of this argument is <a href="../for-cfos.html">laid out for finance teams here</a>.
+      The numbers side of this argument is <a href="../for-cfos.html">laid out for finance teams here</a>. For a side-by-side of <a href="../pricing.html">what Entuned charges</a>, see the pricing page.
 
   - type: cta
     variant: start-free

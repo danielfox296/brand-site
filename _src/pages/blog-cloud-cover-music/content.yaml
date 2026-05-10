@@ -65,7 +65,7 @@ sections:
 
   - type: prose
     body: |
-      If you'd rather eliminate the monthly cost entirely, or if you care more about what the music is doing for your business than whether customers recognize the songs, Entuned is built for that. Free tier runs indefinitely. Paid tiers unlock more outcome modes and music generated for your specific customer profile.
+      If you'd rather eliminate the monthly cost entirely, or if you care more about what the music is doing for your business than whether customers recognize the songs, Entuned is built for that. Free tier runs indefinitely. <a href="../pricing.html">Entuned's pricing tiers</a> unlock more outcome modes and music generated for your specific customer profile.
 
   - type: cta
     variant: start-free

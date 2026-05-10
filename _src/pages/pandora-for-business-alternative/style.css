@@ -1,0 +1,134 @@
+/* ==================== /pandora-for-business-alternative ==================== */
+
+.alt-section {
+  padding: 5rem 0;
+  border-top: 1px solid rgba(212, 225, 229, 0.08);
+}
+
+.alt-section:first-of-type {
+  border-top: none;
+}
+
+.alt-section h2 {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  margin-bottom: 1.5rem;
+}
+
+.alt-section p {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+  opacity: 0.88;
+}
+
+.alt-section ul {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  opacity: 0.9;
+  padding-left: 1.25rem;
+}
+
+.alt-section ul li {
+  margin-bottom: 0.65rem;
+}
+
+.alt-prose {
+  max-width: 760px;
+}
+
+.alt-source {
+  font-size: 0.875rem;
+  opacity: 0.7;
+  margin-top: 0.5rem;
+}
+
+.alt-source a,
+.alt-section a {
+  color: var(--accent);
+  border-bottom: 1px solid rgba(80, 146, 156, 0.4);
+}
+
+.alt-source a:hover,
+.alt-section a:hover {
+  color: var(--text);
+  border-bottom-color: var(--text);
+}
+
+.alt-comparison-wrap {
+  overflow-x: auto;
+  border: 1px solid rgba(80, 146, 156, 0.18);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.pandora-comparison {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.pandora-comparison th,
+.pandora-comparison td {
+  padding: 1rem 1.25rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(212, 225, 229, 0.08);
+  vertical-align: top;
+}
+
+.pandora-comparison th {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text);
+  background: rgba(80, 146, 156, 0.08);
+  border-bottom: 1px solid rgba(80, 146, 156, 0.25);
+}
+
+.pandora-comparison th:first-child,
+.pandora-comparison td:first-child {
+  font-weight: 500;
+  color: var(--text);
+  opacity: 0.9;
+  width: 22%;
+}
+
+.pandora-comparison .col-entuned {
+  color: var(--accent);
+}
+
+.pandora-comparison tr:last-child td {
+  border-bottom: none;
+}
+
+.pandora-comparison td {
+  opacity: 0.85;
+}
+
+.alt-final {
+  padding: 6rem 0;
+  text-align: center;
+  border-top: 1px solid rgba(212, 225, 229, 0.08);
+}
+
+.alt-final h2 {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  margin-bottom: 1.5rem;
+}
+
+.alt-final p {
+  font-size: 1.0625rem;
+  opacity: 0.85;
+  max-width: 640px;
+  margin: 0 auto 2rem;
+}
+
+.alt-internal-links {
+  margin-top: 2.5rem;
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+.alt-internal-links a {
+  color: var(--accent);
+}

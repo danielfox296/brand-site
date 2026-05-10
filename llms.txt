@@ -26,6 +26,11 @@ Four decades of peer-reviewed research on music and consumer behavior sit behind
 - [Why Entuned](https://entuned.co/why-entuned.html): How Entuned differs from the catalog business.
 - [Press](https://entuned.co/press.html): Media resources.
 - [Contact](https://entuned.co/contact.html): How to reach us.
+- [Sound Audit](https://entuned.co/sound-audit.html): A free 60-second self-assessment of a store's audio environment. 10 questions, scored, with a diagnosis and the two levers most operators are underusing.
+- [Retail Music Licensing FAQ](https://entuned.co/retail-music-faq.html): 20 sourced answers about retail music licensing — ASCAP, BMI, SESAC, GMR, Spotify TOS, the homestyle exemption, and how to legally play music in a store without dealing with PROs at all.
+- [Mood Media Alternative](https://entuned.co/mood-media-alternative.html): Honest comparison of Mood Media's pricing, contract terms, and per-zone billing model against Entuned's free tier and per-location pricing. All claims primary-sourced.
+- [Soundtrack Your Brand Alternative](https://entuned.co/soundtrack-your-brand-alternative.html): How Soundtrack's per-zone licensed-catalog model compares to Entuned's per-location, brand-owned, PRO-free original music.
+- [Pandora for Business Alternative](https://entuned.co/pandora-for-business-alternative.html): Why algorithmic Pandora stations drift between locations, what it costs through Mood Media or CloudCover, and how Entuned plays the same brand-owned music in every location.
 
 ## Blog Posts
 

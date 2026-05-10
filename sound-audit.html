@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/sound-audit.html">
+  <meta name="robots" content="index, follow">
+  <title>Sound Audit — Free 60-Second Retail Music Self-Assessment | Entuned</title>
+  <meta name="description" content="60-second self-audit. 10 questions, an honest score for your store&#x27;s audio environment, and the two levers you&#x27;re underusing. Free — no email required.">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="rss.xml">
+  <meta property="og:title" content="Sound Audit — Free 60-Second Retail Music Self-Assessment | Entuned">
+  <meta property="og:description" content="60-second self-audit. 10 questions, an honest score for your store&#x27;s audio environment, and the two levers you&#x27;re underusing. Free — no email required.">
+  <meta property="og:url" content="https://entuned.co/sound-audit.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://entuned.co/img/og-default.png">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sound Audit — Free 60-Second Retail Music Self-Assessment | Entuned">
+  <meta name="twitter:description" content="60-second self-audit. 10 questions, an honest score for your store&#x27;s audio environment, and the two levers you&#x27;re underusing. Free — no email required.">
+  <meta name="twitter:image" content="https://entuned.co/img/og-default.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Entuned",
+  "url": "https://entuned.co",
+  "description": "Entuned engineers original music for retail floors at the parameter level \u2014 tempo, key, lyrical density, energy arc \u2014 tailored to a store's customer profile and tied to its sales outcomes. PRO-indemnified at every tier.",
+  "foundingDate": "2026",
+  "founder": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "knowsAbout": [
+    "retail atmospherics",
+    "music psychology",
+    "in-store customer behavior",
+    "retail analytics",
+    "engineered retail audio",
+    "behavioral retail variables"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/entuned"
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Sound Audit \u2014 Free 60-Second Retail Music Self-Assessment | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css?v=d6516d7a">
+  <style>
+/* Sound Audit — page-scoped styles (audit- prefix) */
+
+.audit-hero {
+  padding: 6rem 0 3rem;
+  border-bottom: 1px solid rgba(80, 146, 156, 0.12);
+}
+
+.audit-hero h1 {
+  font-size: clamp(2.25rem, 6vw, 4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  max-width: 22ch;
+}
+
+.audit-hero .audit-subline {
+  font-size: 1.25rem;
+  color: rgba(212, 225, 229, 0.78);
+  font-weight: 400;
+  margin-top: 1rem;
+  max-width: 56ch;
+}
+
+.audit-hero p {
+  max-width: 62ch;
+  color: rgba(212, 225, 229, 0.85);
+}
+
+/* Form */
+.audit-form {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.audit-question {
+  background: var(--bg-card);
+  border: 1px solid rgba(80, 146, 156, 0.15);
+  border-radius: 10px;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.audit-question:hover,
+.audit-question:focus-within {
+  border-color: rgba(80, 146, 156, 0.4);
+  background: rgba(80, 146, 156, 0.1);
+}
+
+.audit-question.audit-unanswered {
+  border-color: rgba(215, 175, 116, 0.55);
+  background: rgba(215, 175, 116, 0.06);
+}
+
+.audit-q-number {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.audit-q-text {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.audit-options {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.audit-option {
+  position: relative;
+  flex: 1 1 0;
+  min-width: 110px;
+}
+
+.audit-option input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.audit-option label {
+  display: block;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(80, 146, 156, 0.25);
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgba(32, 32, 28, 0.4);
+}
+
+.audit-option label:hover {
+  border-color: rgba(80, 146, 156, 0.55);
+  background: rgba(80, 146, 156, 0.1);
+}
+
+.audit-option input[type="radio"]:checked + label {
+  background: var(--accent);
+  color: #20201c;
+  border-color: var(--accent);
+  font-weight: 600;
+}
+
+.audit-option input[type="radio"]:focus-visible + label {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Submit row */
+.audit-submit-row {
+  text-align: center;
+  margin: 2.5rem 0 1rem;
+}
+
+.audit-submit-row .btn {
+  min-width: 240px;
+}
+
+.audit-error {
+  color: var(--gold);
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  min-height: 1.4em;
+}
+
+/* Results panel */
+.audit-results {
+  display: none;
+  max-width: 820px;
+  margin: 3rem auto 0;
+  padding: 2.5rem;
+  background: rgba(80, 146, 156, 0.07);
+  border: 1px solid rgba(80, 146, 156, 0.3);
+  border-radius: 12px;
+}
+
+.audit-results.is-visible {
+  display: block;
+}
+
+.audit-score-row {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.audit-score-num {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.audit-score-out {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+}
+
+.audit-score-band {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.audit-diagnosis {
+  font-size: 1.05rem;
+  color: rgba(212, 225, 229, 0.9);
+  margin-bottom: 2rem;
+}
+
+.audit-levers-title {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.audit-lever {
+  border-left: 2px solid var(--accent);
+  padding: 0.25rem 0 0.25rem 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.audit-lever-name {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.35rem;
+}
+
+.audit-lever-text {
+  font-size: 0.98rem;
+  color: rgba(212, 225, 229, 0.82);
+}
+
+.audit-results-cta {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(80, 146, 156, 0.2);
+  text-align: center;
+}
+
+.audit-results-cta p {
+  font-size: 1.05rem;
+  margin-bottom: 1.25rem;
+  color: rgba(212, 225, 229, 0.9);
+}
+
+/* Why we built this */
+.audit-why {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.audit-why p {
+  font-size: 1.05rem;
+  color: rgba(212, 225, 229, 0.85);
+}
+
+/* Final CTA */
+.audit-final-cta {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.audit-final-cta h2 {
+  margin-bottom: 1rem;
+}
+
+.audit-final-cta p {
+  font-size: 1.15rem;
+  color: rgba(212, 225, 229, 0.85);
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 640px) {
+  .audit-options {
+    flex-direction: column;
+  }
+  .audit-option {
+    min-width: 0;
+  }
+  .audit-results {
+    padding: 1.75rem 1.25rem;
+  }
+  .audit-score-num {
+    font-size: 3rem;
+  }
+}
+  </style>
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav aria-label="Main navigation">
+  <div class="container">
+    <a href="/" class="logo"><img src="img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="how-it-works.html">How It Works</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-cta-item"><a href="https://app.entuned.co/start" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Start Free</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+  </div>
+</nav>
+
+  <main>
+  <!-- HERO -->
+<section class="audit-hero">
+  <div class="container">
+    <div class="fade-up" style="max-width: 820px;">
+      <p class="section-eyebrow">Sound Audit</p>
+      <h1>Your music is selling against you. Find out by how much.</h1>
+      <p class="audit-subline">A 60-second self-assessment for retail owners and operators. Ten questions, an honest score, and the two behavioral levers you're underusing.</p>
+      <p>Most stores treat the music like wallpaper. The research has been clear for forty years that it isn't &mdash; tempo changes how long customers stay (Milliman 1982), genre changes what they're willing to pay (Areni &amp; Kim 1993), familiarity changes perceived time in store (Yalch &amp; Spangenberg 2000). This audit doesn't grade your taste. It grades whether your store soundtrack is doing measurable work, or just running.</p>
+    </div>
+  </div>
+</section>
+
+<!-- AUDIT FORM -->
+<section class="section" style="padding-top: 4rem;">
+  <div class="container">
+    <form class="audit-form" id="audit-form" novalidate>
+
+      <div class="audit-question fade-up" data-q="1" data-lever="staff">
+        <span class="audit-q-number">Question 1 of 10</span>
+        <p class="audit-q-text" id="q1-label">Do your store managers personally choose the music each shift?</p>
+        <div class="audit-options" role="radiogroup" aria-labelledby="q1-label">
+          <div class="audit-option"><input type="radio" id="q1-yes" name="q1" value="concerning"><label for="q1-yes">Yes</label></div>
+          <div class="audit-option"><input type="radio" id="q1-some" name="q1" value="neutral"><label for="q1-some">Sometimes</label></div>
+          <div class="audit-option"><input type="radio" id="q1-no" name="q1" value="good"><label for="q1-no">No</label></div>
+        </div>
+      </div>
+
+      <div class="audit-question fade-up" data-q="2" data-lever="audio">
+        <span class="audit-q-number">Question 2 of 10</span>
+        <p class="audit-q-text" id="q2-label">Is the same playlist running across every one of your locations?</p>
+        <div class="audit-options" role="radiogroup" aria-labelledby="q2-label">
+          <div class="audit-option"><input type="radio" id="q2-yes" name="q2" value="concerning"><label for="q2-yes">Yes</label></div>
+          <div class="audit-option"><input type="radio" id="q2-some" name="q2" value="neutral"><label for="q2-some">Sometimes</label></div>
+          <div class="audit-option"><input type="radio" id="q2-no" name="q2" value="good"><label for="q2-no">No</label></div>
+        </div>
+      </div>
+
+      <div class="audit-question fade-up" data-q="3" data-lever="audio">
+        <span class="audit-q-number">Question 3 of 10</span>
+        <p class="audit-q-text" id="q3-label">Do you know what your music actually sounds like at peak hours, without being there?</p>
+        <div class="audit-options" role="radiogroup" aria-labelledby="q3-label">
+          <div class="audit-option"><input type="radio" id="q3-yes" name="q3" value="good"><label for="q3-yes">Yes</label></div>
+          <div class="audit-option"><input type="radio" id="q3-some" name="q3" value="neutral"><label for="q3-some">Sometimes</label></div>
+          <div class="audit-option"><input type="radio" id="q3-no" name="q3" value="concerning"><label for="q3-no">No</label></div>
+        </div>
+      </div>
+
+      <div class="audit-question fade-up" data-q="4" data-lever="audio">
+        <span class="audit-q-number">Question 4 of 10</span>
+        <p class="audit-q-text" id="q4-label">Has your store's music been substantially the same for the last 6+ months?</p>
+        <div class="audit-options" role="radiogroup" aria-labelledby="q4-label">
+          <div class="audit-option"><input type="radio" id="q4-yes" name="q4" value="concerning"><label for="q4-yes">Yes</label></div>
+          <div class="audit-option"><input type="radio" id="q4-some" name="q4" value="neutral"><label for="q4-some">Sometimes</label></div>
+          <div class="audit-option"><input type="radio" id="q4-no" name="q4" value="good"><label for="q4-no">No</label></div>
+        </div>
+      </div>
+
+      <div class="audit-question fade-up" data-q="5" data-lever="staff">
+        <span class="audit-q-number">Question 5 of 10</span>
+        <p class="audit-q-text" id="q5-label">Have your employees ever asked to turn the music off &mdash; or quietly done it themselves?</p>
+        <div class="audit-options" role="radiogroup" aria-labelledby="q5-label">
+          <div class="audit-option"><input type="radio" id="q5-yes" name="q5" value="concerning"><label for="q5-yes">Yes</label></div>
+          <div class="audit-option"><input type="radio" id="q5-some" name="q5" value="neutral"><label for="q5-some">Sometimes</label></div>
+          <div class="audit-option"><input type="radio" id="q5-no" name="q5" value="good"><label for="q5-no">No</label></div>
+        </div>
+      </div>
+
+      <div class="audit-question fade-up" data-q="6" data-lever="friction">
+        <span class="audit-q-number">Question 6 of 10</span>
+        <p class="audit-q-text" id="q6-label">Are your highest-spending customers leaving the floor faster than your browsers?</p>
+        <div class="audit-options" role="radiogroup" aria-labelledby="q6-label">
+          <div class="audit-option"><input type="radio" id="q6-yes" name="q6" value="concerning"><label for="q6-yes">Yes</label></div>
+          <div class="audit-option"><input type="radio" id="q6-some" name="q6" value="neutral"><label for="q6-some">Not sure</label></div>
+          <div class="audit-option"><input type="radio" id="q6-no" name="q6" value="good"><label for="q6-no">No</label></div>
+        </div>
+      </div>
+
+      <div class="audit-question fade-up" data-q="7" data-lever="visual">
+        <span class="audit-q-number">Question 7 of 10</span>
+        <p class="audit-q-text" id="q7-label">If a customer said "this music doesn't fit your brand," would you have a defensible answer for why it does?</p>
+        <div class="audit-options" role="radiogroup" aria-labelledby="q7-label">
+          <div class="audit-option"><input type="radio" id="q7-yes" name="q7" value="good"><label for="q7-yes">Yes</label></div>
+          <div class="audit-option"><input type="radio" id="q7-some" name="q7" value="neutral"><label for="q7-some">Sort of</label></div>
+          <div class="audit-option"><input type="radio" id="q7-no" name="q7" value="concerning"><label for="q7-no">No</label></div>
+        </div>
+      </div>
+
+      <div class="audit-question fade-up" data-q="8" data-lever="staff">
+        <span class="audit-q-number">Question 8 of 10</span>
+        <p class="audit-q-text" id="q8-label">Does anyone in your business carry a measurable target tied to your music?</p>
+        <div class="audit-options" role="radiogroup" aria-labelledby="q8-label">
+          <div class="audit-option"><input type="radio" id="q8-yes" name="q8" value="good"><label for="q8-yes">Yes</label></div>
+          <div class="audit-option"><input type="radio" id="q8-some" name="q8" value="neutral"><label for="q8-some">Loosely</label></div>
+          <div class="audit-option"><input type="radio" id="q8-no" name="q8" value="concerning"><label for="q8-no">No</label></div>
+        </div>
+      </div>
+
+      <div class="audit-question fade-up" data-q="9" data-lever="audio">
+        <span class="audit-q-number">Question 9 of 10</span>
+        <p class="audit-q-text" id="q9-label">Do you actually know whether your music is helping or hurting your dwell time?</p>
+        <div class="audit-options" role="radiogroup" aria-labelledby="q9-label">
+          <div class="audit-option"><input type="radio" id="q9-yes" name="q9" value="good"><label for="q9-yes">Yes</label></div>
+          <div class="audit-option"><input type="radio" id="q9-some" name="q9" value="neutral"><label for="q9-some">Roughly</label></div>
+          <div class="audit-option"><input type="radio" id="q9-no" name="q9" value="concerning"><label for="q9-no">No</label></div>
+        </div>
+      </div>
+
+      <div class="audit-question fade-up" data-q="10" data-lever="friction">
+        <span class="audit-q-number">Question 10 of 10</span>
+        <p class="audit-q-text" id="q10-label">Could you A/B test a music change against your POS data this week?</p>
+        <div class="audit-options" role="radiogroup" aria-labelledby="q10-label">
+          <div class="audit-option"><input type="radio" id="q10-yes" name="q10" value="good"><label for="q10-yes">Yes</label></div>
+          <div class="audit-option"><input type="radio" id="q10-some" name="q10" value="neutral"><label for="q10-some">Maybe</label></div>
+          <div class="audit-option"><input type="radio" id="q10-no" name="q10" value="concerning"><label for="q10-no">No</label></div>
+        </div>
+      </div>
+
+      <div class="audit-submit-row fade-up">
+        <button type="submit" class="btn btn-primary" id="audit-submit">Get my score</button>
+        <p class="audit-error" id="audit-error" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+
+    <!-- RESULTS PANEL -->
+    <div class="audit-results" id="audit-results" aria-live="polite">
+      <p class="section-eyebrow">Your sound audit</p>
+      <div class="audit-score-row">
+        <div class="audit-score-num" id="audit-score">0</div>
+        <div class="audit-score-out">/ 100</div>
+      </div>
+      <h2 class="audit-score-band" id="audit-band"></h2>
+      <p class="audit-diagnosis" id="audit-diagnosis"></p>
+
+      <span class="audit-levers-title">Top 2 levers you're underusing</span>
+      <div id="audit-levers"></div>
+
+      <div class="audit-results-cta">
+        <p>Entuned engineers original music for your store at the parameter level &mdash; tempo, key, lyrical density, energy arc &mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays.</p>
+        <a href="https://app.entuned.co/start" class="btn btn-primary">Start Free &mdash; see what intentional audio sounds like in your store</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY WE BUILT THIS -->
+<section class="section" style="background: rgba(80, 146, 156, 0.05); border-top: 1px solid rgba(80, 146, 156, 0.12); border-bottom: 1px solid rgba(80, 146, 156, 0.12);">
+  <div class="container">
+    <div class="audit-why fade-up">
+      <p class="section-eyebrow">Why we built this</p>
+      <h2>Five levers move retail revenue. Most operators are pulling four.</h2>
+      <p>Layout, visual merchandising, staff training and timing, audio environment, and friction at decision points &mdash; that's the full set of behavioral levers a physical store has. Layout and visuals get whiteboards. Staff gets training budgets. Audio is the one almost nobody treats as a real variable, even though the research on it is older and cleaner than most retail metrics anyone's running today.</p>
+      <p>This audit translates that gap into a number for your store. The questions are pulled from the same frameworks we use with operators &mdash; the <a href="blog/retail-conversion-rate-levers.html">five behavioral levers behind conversion</a>, the <a href="blog/why-customers-leave-without-buying.html">six exit patterns that cost retailers the most</a>, and what we've learned about <a href="blog/how-to-increase-dwell-time.html">how store soundtrack changes dwell time</a>. Score yourself honestly. The cheapest fix in your store is almost always the one nobody's looked at.</p>
+      <p>Ready when you are: <a href="how-it-works.html">how Entuned works</a>, or <a href="pricing.html">the four pricing tiers, including Entuned Free</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section">
+  <div class="container">
+    <div class="audit-final-cta fade-up">
+      <p class="section-eyebrow">Next step</p>
+      <h2>Hear it on your floor.</h2>
+      <p>Score the audit, then spend ten minutes generating a soundtrack engineered for your customer. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays.</p>
+      <a href="https://app.entuned.co/start" class="btn btn-primary">Start Free</a>
+    </div>
+  </div>
+</section>
+
+<script>
+(function () {
+  var form = document.getElementById('audit-form');
+  if (!form) return;
+
+  var QUESTIONS = 10;
+  var LEVERS = {
+    audio:    { name: 'Audio environment',         post: 'blog/how-to-increase-dwell-time.html',           postLabel: 'How store soundtrack changes dwell time',
+                text: 'Tempo, key, and familiarity move dwell time and willingness to pay. A static playlist running across every location is the single biggest underused lever in most retail businesses.' },
+    staff:    { name: 'Staff training &amp; timing', post: 'blog/store-manager-problem.html',                postLabel: 'The store-manager problem',
+                text: 'When managers pick the music by personal taste &mdash; or staff quietly turn it off &mdash; nobody owns the outcome. Audio without a target is decoration, not strategy.' },
+    visual:   { name: 'Visual merchandising fit',   post: 'blog/employees-hear-it.html',                    postLabel: 'Your employees hear it before customers do',
+                text: 'Brand-fit is not a vibe check. If your music doesn\'t survive a customer asking "why this?" your audio is contradicting your visuals.' },
+    friction: { name: 'Friction at decision points',post: 'blog/the-8-12-youre-leaving-on-the-table.html',  postLabel: 'The 8-12% you\'re leaving on the table',
+                text: 'High-intent customers leave faster than browsers when audio adds friction. The fix is rarely volume &mdash; it\'s tempo and lyrical density at the decision point.' },
+    layout:   { name: 'Layout &amp; merchandising', post: 'blog/why-customers-leave-without-buying.html',   postLabel: 'Why customers leave without buying',
+                text: 'Audio interacts with traffic flow. Wrong tempo in the wrong zone collapses dwell exactly where you need it most.' }
+  };
+
+  function getAnswers() {
+    var answers = [];
+    for (var i = 1; i <= QUESTIONS; i++) {
+      var checked = form.querySelector('input[name="q' + i + '"]:checked');
+      answers.push(checked ? checked.value : null);
+    }
+    return answers;
+  }
+
+  function highlightUnanswered(answers) {
+    for (var i = 1; i <= QUESTIONS; i++) {
+      var q = form.querySelector('[data-q="' + i + '"]');
+      if (!q) continue;
+      if (answers[i - 1] === null) {
+        q.classList.add('audit-unanswered');
+      } else {
+        q.classList.remove('audit-unanswered');
+      }
+    }
+  }
+
+  function scoreAnswers(answers) {
+    // Each question: good = 10, neutral = 5, concerning = 0. Total /100.
+    var total = 0;
+    for (var i = 0; i < answers.length; i++) {
+      if (answers[i] === 'good') total += 10;
+      else if (answers[i] === 'neutral') total += 5;
+    }
+    return total;
+  }
+
+  function bandFor(score) {
+    if (score >= 80) {
+      return {
+        title: 'Your store sounds intentional. Most don\'t.',
+        diagnosis: 'You\'re in the top decile of operators on audio discipline. Music is owned, measured, and treated as a behavioral lever &mdash; not wallpaper. The remaining gains are at the parameter level: tempo curves through the day, lyrical density at decision points, and tying changes to POS data so the next 5&ndash;10 percent of lift is auditable.'
+      };
+    }
+    if (score >= 50) {
+      return {
+        title: 'Your audio is half-designed. The other half is leaving money on the table.',
+        diagnosis: 'You\'ve got instincts, not a system. Some shifts sound right; others contradict the brand. The research says a coherent store soundtrack moves dwell time 15&ndash;25 percent and willingness to pay 8&ndash;12 percent (Areni &amp; Kim 1993, Milliman 1982, Yalch &amp; Spangenberg 2000). Right now you\'re capturing maybe a third of that. The fix isn\'t a better playlist &mdash; it\'s ownership and measurement.'
+      };
+    }
+    return {
+      title: 'Your music is currently a liability &mdash; and the cheapest fix in your store.',
+      diagnosis: 'On the levers a physical store actually has &mdash; layout, visuals, staff, audio, friction &mdash; you\'re running on four. Audio isn\'t neutral; an unmanaged store soundtrack actively shortens dwell, contradicts your visuals, and trains your highest-spending customers to leave faster. The good news: this is the lever with the lowest cost-to-fix and the most peer-reviewed evidence behind it.'
+    };
+  }
+
+  function leversToShow(answers) {
+    // Tally "concerning" answers per lever; pick top 2 (most underused).
+    var tally = { audio: 0, staff: 0, visual: 0, friction: 0, layout: 0 };
+    var qs = form.querySelectorAll('.audit-question');
+    qs.forEach(function (q) {
+      var idx = parseInt(q.getAttribute('data-q'), 10) - 1;
+      var lever = q.getAttribute('data-lever');
+      if (answers[idx] === 'concerning') tally[lever] = (tally[lever] || 0) + 2;
+      else if (answers[idx] === 'neutral') tally[lever] = (tally[lever] || 0) + 1;
+    });
+    var ranked = Object.keys(tally).sort(function (a, b) { return tally[b] - tally[a]; });
+    // Always surface audio first when tied; then highest-tally remaining lever.
+    var top = [];
+    if (tally.audio > 0) top.push('audio');
+    for (var i = 0; i < ranked.length && top.length < 2; i++) {
+      if (top.indexOf(ranked[i]) === -1 && tally[ranked[i]] > 0) top.push(ranked[i]);
+    }
+    if (top.length === 0) top = ['audio', 'staff'];
+    if (top.length === 1) {
+      var fallback = ranked.find(function (k) { return k !== top[0]; });
+      top.push(fallback || 'staff');
+    }
+    return top.slice(0, 2);
+  }
+
+  function renderResults(score, band, leverKeys) {
+    document.getElementById('audit-score').textContent = String(score);
+    document.getElementById('audit-band').textContent = band.title;
+    document.getElementById('audit-diagnosis').innerHTML = band.diagnosis;
+    var leversHost = document.getElementById('audit-levers');
+    leversHost.innerHTML = '';
+    leverKeys.forEach(function (key) {
+      var lever = LEVERS[key];
+      if (!lever) return;
+      var wrap = document.createElement('div');
+      wrap.className = 'audit-lever';
+      wrap.innerHTML =
+        '<div class="audit-lever-name">' + lever.name + '</div>' +
+        '<div class="audit-lever-text">' + lever.text + ' <a href="' + lever.post + '">' + lever.postLabel + ' &rarr;</a></div>';
+      leversHost.appendChild(wrap);
+    });
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var errEl = document.getElementById('audit-error');
+    var answers = getAnswers();
+    var missing = answers.filter(function (a) { return a === null; }).length;
+
+    if (missing > 0) {
+      highlightUnanswered(answers);
+      errEl.textContent = 'Answer all 10 questions to see your score (' + missing + ' left).';
+      var firstMissing = form.querySelector('.audit-unanswered');
+      if (firstMissing) firstMissing.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      return;
+    }
+
+    errEl.textContent = '';
+    highlightUnanswered(answers);
+
+    var score = scoreAnswers(answers);
+    var band = bandFor(score);
+    var levers = leversToShow(answers);
+
+    renderResults(score, band, levers);
+
+    var panel = document.getElementById('audit-results');
+    panel.classList.add('is-visible');
+    setTimeout(function () {
+      panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 60);
+  });
+
+  // Clear the unanswered-highlight as soon as the user picks an option.
+  form.addEventListener('change', function (e) {
+    if (e.target && e.target.matches('input[type="radio"]')) {
+      var q = e.target.closest('.audit-question');
+      if (q) q.classList.remove('audit-unanswered');
+      var errEl = document.getElementById('audit-error');
+      if (errEl) errEl.textContent = '';
+    }
+  });
+})();
+</script>
+  </main>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4><img src="img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Engineered retail audio. PRO-indemnified.</p>
+      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="enterprise.html">Enterprise</a></li>
+        <li><a href="why-entuned.html">Why Entuned</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For Your Industry</h4>
+      <ul>
+        <li><a href="for-apparel.html">Apparel</a></li>
+        <li><a href="for-home-goods.html">Home Goods</a></li>
+        <li><a href="for-jewelry.html">Jewelry</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
+      <ul>
+        <li><a href="for-retail-leaders.html">Retail Leaders</a></li>
+        <li><a href="impact.html">Impact Calculator</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Research</h4>
+      <ul>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="science.html">The Science</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="press.html">Press</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="licensing.html">Licensing &amp; PRO Coverage</a></li>
+        <li><a href="data.html">Data Practices</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="pricing/terms.html">Subscription Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG');
+  </script>
+  <script defer src="js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>
