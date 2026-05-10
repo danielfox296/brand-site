@@ -1,0 +1,66 @@
+# for-specialty-retail — editable text content
+# Vertical landing for specialty independent retail (bookstores, wine, gift, gourmet,
+# craft, vinyl, garden, kitchen, paper goods — the long tail).
+# Voice: PLG-primary, single-store and small-chain owner-operator.
+
+hero:
+  eyebrow: "For specialty retail"
+  h1: "Music for stores where the customer comes in for the room."
+  subline: "Bookshops, wine shops, vinyl, kitchen, gift, garden, paper, gourmet &mdash; specialty retail wins on the experience of being in the room. Entuned produces original music tuned to your customer and your shelf, so the audio earns the room instead of contradicting it. Free, no credit card."
+
+# The gap
+gap:
+  eyebrow: "The Gap"
+  h2: "The room is the differentiator. The audio is part of the room."
+  p1: "Specialty retail is in a different competitive position than category retail. The customer is not in your store because you are the cheapest place to get the thing &mdash; she is in your store because the room is part of why she came. The lighting, the smell, the layout, the staff, the music. Strip those away and you are competing with Amazon on price, which is not a competition you wanted to enter."
+  p2: "Most specialty owners think hard about every layer of the room except the one that fills it. The audio gets handed off to a satellite catalogue selected by a person who has never been in your store. It plays the songs that minimize complaints, which is exactly the wrong objective for a customer who came in for an experience. The room is your edge. The default audio is sanding it down."
+
+# What changes per tier
+tiers:
+  eyebrow: "Three places to start"
+  h2: "Three places to start, sized to where you are."
+
+  card1_title: "Entuned Free"
+  card1_text: "Free, indefinite. Pick Linger from the floor of your store and the catalogue starts streaming through the speakers you already have. Useful as the first look before you decide to specify the audio more deliberately for your customer."
+
+  card2_title: "Core ($99/location/mo)"
+  card2_text: "Music tailored to your single Ideal Customer Profile. For most specialty retailers, that is the customer your buyer is already merchandising for &mdash; the considered shopper who is in your store because she wants your store, not the chain version. About 420 tracks in the first month, refreshed against what holds the floor."
+
+  card3_title: "Professional ($399/location/mo)"
+  card3_text: "POS integration. Outcome Scheduling against your traffic profile (Saturday-afternoon browse is a different mood than Tuesday-evening regulars). Multiple ICPs for stores that draw distinct customer types. Self-improving refinement against your basket and dwell data."
+
+  card4_title: "Enterprise"
+  card4_text: "Multi-store rollouts where you operate more than a handful of locations. Custom ICP design and brand voice consultation. Performance terms where lift can be cleanly measured against your existing reporting."
+
+# What the research says
+research:
+  eyebrow: "Forty years of evidence"
+  h2: "Forty years of evidence on the audio levers that matter for room-driven retail."
+
+  card1_title: "Music customers read as upmarket lifts spending."
+  card1_text: "Areni and Kim (1993) ran the foundational study in a wine shop. Customers shopping with classical music in the background spent significantly more per bottle than customers with Top 40. Same products, same prices, same store. The audio cued an upmarket context and the customer anchored to it &mdash; a mechanism that replicates in any room-driven specialty category."
+
+  card2_title: "The atmosphere shapes the customer-brand relationship."
+  card2_text: "Bitner&rsquo;s 1992 servicescape framework &mdash; one of the most-cited papers in service marketing &mdash; established that the physical environment of a service business is part of what creates the customer&rsquo;s relationship with the brand. The audio is part of the servicescape. For a specialty retailer, it is part of whether the customer treats your store as a destination or a transaction."
+
+  card3_title: "Familiar songs cut perceived dwell."
+  card3_text: "Yalch and Spangenberg (2000) found that familiar music made shoppers leave 8% sooner. Original music is unfamiliar by definition &mdash; that is part of why it works. Catalogue vendors play the songs that minimize complaints. That is exactly the wrong objective for a category that monetizes browsing."
+
+  card4_title: "Mismatched music actively reduces basket."
+  card4_text: "Andersson et al. (2012) ran 601 real transactions in a Swedish retail chain and found that music that clashes with the store&rsquo;s customer category cuts willingness to pay below the no-music baseline. Neutral is not the default. The audio in your store is doing work whether you chose its effect or not."
+
+# CTA
+cta:
+  eyebrow: "Get Started"
+  h2: "Hear it on your floor."
+  subline: "Start free at Entuned Free in your store. Move to Core once you want music tailored to your specific customer."
+  cta_primary: "Start Free"
+
+related:
+  eyebrow: "Related"
+  links: '<a href="how-it-works.html" style="color: #50929c;">How It Works</a> &middot; <a href="science.html" style="color: #50929c;">The Science</a> &middot; <a href="pricing.html" style="color: #50929c;">Pricing</a>'
+  others: 'Other verticals: <a href="for-jewelry.html" style="color: #50929c;">Jewelry</a> &middot; <a href="for-home-goods.html" style="color: #50929c;">Home goods</a> &middot; <a href="for-apparel.html" style="color: #50929c;">Apparel</a>'
+
+further_reading_eyebrow: "From the Blog"
+further_reading_headline: "Related Reading"
+further_reading_links: <a href="blog/how-specialty-wine-retailers-use-music-to-sell-more-expensive-bottles.html" style="color: #50929c;">How Wine Stores Use Music to Sell Premium Bottles</a> &middot; <a href="blog/how-to-make-your-store-sound-premium.html" style="color: #50929c;">How to Make Your Store Sound Premium</a> &middot; <a href="blog/luxury-priming-for-non-luxury-brands.html" style="color: #50929c;">Luxury Priming Without Being a Luxury Brand</a>

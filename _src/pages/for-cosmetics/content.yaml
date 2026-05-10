@@ -1,31 +1,65 @@
 # for-cosmetics — editable text content
-# Page kept live for SEO continuity. Removed from primary nav and footer
-# in Phase 2. The cosmetics vertical sits on the edge of the anti-ICP
-# (Sephora is C-tier, Ulta B-tier per the May 2026 prospect tier list)
-# so the dedicated landing page is being repositioned — not retired.
-
-banner_text: "This vertical page is being repositioned. The current ICP framework focuses on transactional mid-market multi-store retail; cosmetics retail spans both ends of that filter and the dedicated framing is being rewritten. For specific cosmetics deployments, contact us directly."
+# Vertical landing for cosmetics & beauty retail.
+# Voice: PLG-primary, single-store and small-chain owner-operator.
 
 hero:
-  eyebrow: "For Cosmetics Retail"
-  h1: "The audio at the tester wall is shaping the decision."
-  subline: "Beauty retail lives on testing behavior, dwell, and the customer's sense of whether the brand is worth the premium. All three respond to the audio environment. The dedicated cosmetics framing here is being rewritten — talk to us in the meantime if you operate beauty retail at multi-store scale."
+  eyebrow: "For cosmetics &amp; beauty retail"
+  h1: "Music to lift the tester-wall moment."
+  subline: "Beauty retail lives at the tester wall. The customer&rsquo;s decision to swatch, to ask, to buy is shaped by whether the room feels like the brand. Entuned produces original music tuned to your customer and your shelf &mdash; the audio that quietly moves the trial-to-purchase conversion. Free, no credit card."
 
-# What still applies
-applies:
-  eyebrow: "What Still Applies"
-  h2: "The product works for cosmetics. The framing on this page does not."
-  body: "Engineered audio applies cleanly to beauty retail at the unit-economic level — Gueguen and Jacob (2013) measured 28.6% spending lift in a sensory retail setting and the mechanism transfers. What we are reworking on this page is the ICP framing. The May 2026 prospect tier list places different cosmetics retailers at different levels of fit, and the prior dedicated cosmetics framing did not capture that. Until the rewrite ships, the general framing on the homepage and the For Retail Operators page is the right entry point. Multi-store cosmetics retailers on Professional or Enterprise: contact us directly."
+# The gap
+gap:
+  eyebrow: "The Gap"
+  h2: "Beauty retail is sensory. The audio is the part you forgot to specify."
+  p1: "The cosmetics floor is one of the most consciously designed retail rooms in the business. Every surface, swatch card, mirror, and overhead light has been chosen by someone. The lighting alone has a model. Then the speakers play whatever the satellite vendor sent over &mdash; selected by a person who has never been in your store, against a logic built around licensing compliance and complaint avoidance."
+  p2: "Your customer is making a high-consideration sensory decision: is this brand worth the premium, is this finish worth the trial, is the staff worth asking. The audio environment is part of the answer she gets before you say a word. Right now it is running on a default that has nothing to do with you."
+
+# What changes per tier
+tiers:
+  eyebrow: "Three places to start"
+  h2: "Three places to start, sized to where you are."
+
+  card1_title: "Entuned Free"
+  card1_text: "Free, indefinite. Pick Linger from the floor of your store and the catalogue starts streaming through the speakers you already have. Useful as the first look before you decide to specify the audio more deliberately for your beauty customer."
+
+  card2_title: "Core ($99/location/mo)"
+  card2_text: "Music tailored to your single Ideal Customer Profile. For most beauty retailers, that is the customer your buyer is already merchandising for &mdash; the considered shopper who is in your store because she wants the assortment, the staff, the room. About 420 tracks in the first month, refreshed against what holds the floor."
+
+  card3_title: "Professional ($399/location/mo)"
+  card3_text: "POS integration. Outcome Scheduling against your traffic profile (the Saturday-afternoon browse is a different mood than the Tuesday-evening replenishment run). Multiple ICPs for stores that draw distinct customer types. Self-improving refinement against your basket and dwell data."
+
+  card4_title: "Enterprise"
+  card4_text: "Multi-store rollouts where you operate more than a handful of locations. Custom ICP design and brand voice consultation. Performance terms where lift can be cleanly measured against your existing reporting."
+
+# What the research says
+research:
+  eyebrow: "Forty years of evidence"
+  h2: "Forty years of evidence on the audio levers that matter for sensory retail."
+
+  card1_title: "Sensory cues lift spending in beauty contexts."
+  card1_text: "Gu&eacute;guen and Jacob (2013) measured 28.6% spending lift in a sensory retail setting when the ambient cues matched the brand register. Beauty retail is the cleanest case of the mechanism &mdash; customers are already in a sensory frame the moment they walk in."
+
+  card2_title: "Music customers read as upmarket lifts willingness to pay."
+  card2_text: "Areni and Kim (1993) showed average transaction value rising from $6.93 to $12.31 in a wine cellar when the music matched the customer&rsquo;s upmarket frame. The mechanism replicates in any considered-purchase category, including the choice between a $24 and a $58 product on the same shelf."
+
+  card3_title: "Atmosphere is part of the brand relationship."
+  card3_text: "Bitner&rsquo;s 1992 servicescape framework &mdash; one of the most-cited papers in service marketing &mdash; established that the physical environment of a service business is part of what creates the customer&rsquo;s relationship with the brand. The audio is part of the servicescape. For a beauty store, it is part of whether the customer trusts the brand enough to commit to the trial."
+
+  card4_title: "Mismatched music actively reduces basket."
+  card4_text: "Andersson et al. (2012) ran 601 real transactions in a Swedish retail chain and found that music that clashes with the store&rsquo;s customer category cuts willingness to pay below the no-music baseline. Neutral is not the default. Whatever is in your speakers is doing work in the room &mdash; the only question is whether it is the work you want."
 
 # CTA
 cta:
-  eyebrow: "Get in Touch"
-  h2: "Multi-store cosmetics retailer?"
-  subline: "Contact us directly while the dedicated cosmetics framing is being reworked."
-  cta_primary: "Contact"
-  cta_secondary: "See Pricing"
+  eyebrow: "Get Started"
+  h2: "Hear it on your floor."
+  subline: "Start free at Entuned Free in your store. Move to Core once you want music tailored to your specific customer."
+  cta_primary: "Start Free"
 
 related:
   eyebrow: "Related"
-  links: '<a href="how-it-works.html" style="color: #50929c;">How It Works</a> &middot; <a href="science.html" style="color: #50929c;">The Science</a> &middot; <a href="for-retail-leaders.html" style="color: #50929c;">For Retail Operators</a>'
-  others: 'Other verticals: <a href="for-apparel.html" style="color: #50929c;">Apparel</a> &middot; <a href="for-home-goods.html" style="color: #50929c;">Home Goods</a>'
+  links: '<a href="how-it-works.html" style="color: #50929c;">How It Works</a> &middot; <a href="science.html" style="color: #50929c;">The Science</a> &middot; <a href="pricing.html" style="color: #50929c;">Pricing</a>'
+  others: 'Other verticals: <a href="for-apparel.html" style="color: #50929c;">Apparel</a> &middot; <a href="for-jewelry.html" style="color: #50929c;">Jewelry</a> &middot; <a href="for-beauty-supply.html" style="color: #50929c;">Beauty supply</a>'
+
+further_reading_eyebrow: "From the Blog"
+further_reading_headline: "Related Reading"
+further_reading_links: <a href="blog/how-to-make-your-store-sound-premium.html" style="color: #50929c;">How to Make Your Store Sound Premium</a> &middot; <a href="blog/luxury-priming-for-non-luxury-brands.html" style="color: #50929c;">Luxury Priming Without Being a Luxury Brand</a> &middot; <a href="blog/how-to-choose-music-for-your-retail-store.html" style="color: #50929c;">How to Choose Music for Your Retail Store</a>

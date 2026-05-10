@@ -20,9 +20,14 @@ Four decades of peer-reviewed research on music and consumer behavior sit behind
 - [Blog](https://entuned.co/blog.html): Operator-facing posts on retail audio.
 - [For Retail Leaders](https://entuned.co/for-retail-leaders.html): The VP of Retail operations view.
 - [For CFOs](https://entuned.co/for-cfos.html): The finance view on retail audio.
-- [For Apparel](https://entuned.co/for-apparel.html): Apparel retail specifics.
-- [For Cosmetics](https://entuned.co/for-cosmetics.html): Beauty retail specifics.
-- [For Home Goods](https://entuned.co/for-home-goods.html): Home and lifestyle retail specifics.
+- [For Apparel](https://entuned.co/for-apparel.html): Apparel and footwear retail specifics.
+- [For Jewelry](https://entuned.co/for-jewelry.html): Independent specialty jewelry retail.
+- [For Cosmetics](https://entuned.co/for-cosmetics.html): Cosmetics and prestige beauty retail.
+- [For Beauty Supply](https://entuned.co/for-beauty-supply.html): Beauty supply retail (multicultural haircare, professional supply, salon-adjacent).
+- [For Home Goods](https://entuned.co/for-home-goods.html): Home goods retail (bedding, decor, kitchen, accents).
+- [For Furniture & Mattress](https://entuned.co/for-furniture-mattress.html): Furniture and mattress retail (long dwell, big ticket).
+- [For Sporting Goods](https://entuned.co/for-sporting-goods.html): Sporting goods, athletic, and outdoor retail.
+- [For Specialty Retail](https://entuned.co/for-specialty-retail.html): Independent specialty retail (bookstore, wine, gift, gourmet, vinyl, craft).
 - [Why Entuned](https://entuned.co/why-entuned.html): How Entuned differs from the catalog business.
 - [Press](https://entuned.co/press.html): Media resources.
 - [Contact](https://entuned.co/contact.html): How to reach us.

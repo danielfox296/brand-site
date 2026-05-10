@@ -1,18 +1,19 @@
 # for-home-goods — editable text content
-# Broader category framing per migration plan. Operator-buyer voice.
-# Covers furniture / mattress / home goods (the v1 anchor S-tier vertical).
+# Vertical landing for home goods retail (bedding, decor, kitchen, bath,
+# tabletop, accents, candles). Furniture & mattress lives on its own page.
+# Voice: PLG-primary, single-store and small-chain owner-operator.
 
 hero:
-  eyebrow: "For home goods, furniture &amp; mattress retail"
+  eyebrow: "For home goods retail"
   h1: "Music to soothe the savage browser."
-  subline: "Customers spend long minutes on your floor with high-ticket decisions. Entuned produces original music tuned to extend the comfortable browse, ease the considered purchase, and make the lifestyle fit feel right. Free, no credit card."
+  subline: "Home goods customers come in to wander &mdash; decor, bedding, kitchen, accents, the items that finish a room. Entuned produces original music tuned to extend the comfortable browse, ease the considered purchase, and make the lifestyle fit feel right. Free, no credit card."
 
 # The gap
 gap:
   eyebrow: "The Gap"
-  h2: "Big-ticket dwell is exactly where engineered audio earns out."
-  p1: "Mattress, furniture, and home goods retail share an operating shape: long dwell, large ticket, multi-decision visits, and a customer who often brings a partner. Dwell is the load-bearing variable for basket. The customer who lingers in the living room section buys from it. The customer who feels rushed walks."
-  p2: "The audio environment shaping that dwell is being delivered by a vendor who has never been in the store, with selection logic built around genre tags and licensing compliance. Your visual merchandising and floor staffing have a model. The audio doesn't."
+  h2: "Browse-driven dwell is exactly where engineered audio earns out."
+  p1: "Home goods retail runs on browse. The customer rarely walks in for one specific item &mdash; she walks in to wander, to discover, to add the candle and the throw and the soap dish to the basket she only thought was for the tea towels. Dwell is the load-bearing variable for basket. The customer who lingers in the bedroom section buys from it. The customer who feels rushed walks."
+  p2: "The audio environment shaping that dwell is being delivered by a vendor who has never been in the store, with selection logic built around licensing compliance. Your visual merchandising and floor staffing have a model. The audio doesn&rsquo;t."
 
 # What changes per tier
 tiers:
@@ -23,10 +24,10 @@ tiers:
   card1_text: "Free, indefinite. Pick Linger from the floor of one store and the catalogue starts streaming through the speakers you already have. Use it as the first look — useful before you commit to a Core Ideal Customer Profile (ICP) build."
 
   card2_title: "Core ($99/location/mo)"
-  card2_text: "Music tailored to your single Ideal Customer Profile. For most home goods retailers, that is the customer your visual merchandising is already designed for — same person, same aesthetic register, just specified to the music engine on purpose. About 420 tracks in the first month, refreshed against what holds the floor."
+  card2_text: "Music tailored to your single Ideal Customer Profile. For most home goods retailers, that is the customer your visual merchandising is already designed for &mdash; same person, same aesthetic register, just specified to the music engine on purpose. About 420 tracks in the first month, refreshed against what holds the floor."
 
   card3_title: "Professional ($399/location/mo)"
-  card3_text: "POS integration. Day-parted music against your traffic profile. Multiple ICPs for stores that draw distinct customer types (the Saturday-afternoon furniture browser is a different person from the Tuesday-evening throw-pillow customer). Self-improving refinement against your basket and dwell data."
+  card3_text: "POS integration. Outcome Scheduling against your traffic profile. Multiple ICPs for stores that draw distinct customer types (the Saturday-afternoon decor browser is a different person from the Tuesday-evening replenishment shopper). Self-improving refinement against your basket and dwell data."
 
   card4_title: "Enterprise"
   card4_text: "Multi-fleet rollouts across regions. Custom ICP design and brand voice consultation. Performance guarantees where lift can be cleanly measured against your existing reporting. Standard entry shape is a 12-week pilot in matched test and control stores."
@@ -37,13 +38,13 @@ research:
   h2: "Forty years of evidence, focused on the levers that matter for big-ticket retail."
 
   card1_title: "Tempo affects pace through the store."
-  card1_text: "Milliman (1982) measured slower music increasing grocery dwell by ~38%. The mechanism (tempo affects walking pace) maps cleanly to home goods, where slower pace means more product interactions per visit."
+  card1_text: "Milliman (1982) measured slower music increasing grocery dwell by ~38%. The mechanism &mdash; tempo affects walking pace &mdash; maps cleanly to home goods, where slower pace means more product interactions per visit and more items added to the basket."
 
   card2_title: "Music customers read as theirs moves willingness to pay."
   card2_text: "Areni and Kim (1993) measured average transaction value rising from $6.93 to $12.31 in a wine cellar when the music matched the customer. North et al. (1999) replicated the effect across categories. Same product on the shelf, different customer read."
 
   card3_title: "Familiar songs cut perceived dwell."
-  card3_text: "Yalch and Spangenberg (2000) found that familiar music made shoppers leave 8% sooner. Original music is unfamiliar by definition — that is part of why it works. Catalogue vendors play the songs that minimize complaints. That is exactly the wrong objective for big-ticket dwell."
+  card3_text: "Yalch and Spangenberg (2000) found that familiar music made shoppers leave 8% sooner. Original music is unfamiliar by definition &mdash; that is part of why it works. Catalogue vendors play the songs that minimize complaints. That is exactly the wrong objective for a category that monetizes browsing."
 
   card4_title: "Mismatched music actively reduces basket."
   card4_text: "Andersson et al. (2012) ran 601 real transactions and found that music that clashes with the store cuts willingness to pay. Neutral is not the baseline — the audio environment is doing work in the room whether you chose its effect or not."
@@ -58,7 +59,7 @@ cta:
 related:
   eyebrow: "Related"
   links: '<a href="how-it-works.html" style="color: #50929c;">How It Works</a> &middot; <a href="science.html" style="color: #50929c;">The Science</a> &middot; <a href="for-retail-leaders.html" style="color: #50929c;">For retail directors</a> &middot; <a href="for-cfos.html" style="color: #50929c;">The financial case</a>'
-  others: 'Other verticals: <a href="for-apparel.html" style="color: #50929c;">Apparel</a> &middot; <a href="for-jewelry.html" style="color: #50929c;">Jewelry</a>'
+  others: 'Other verticals: <a href="for-furniture-mattress.html" style="color: #50929c;">Furniture &amp; mattress</a> &middot; <a href="for-apparel.html" style="color: #50929c;">Apparel</a> &middot; <a href="for-jewelry.html" style="color: #50929c;">Jewelry</a>'
 
 further_reading_eyebrow: "From the Blog"
 further_reading_headline: "Related Reading"

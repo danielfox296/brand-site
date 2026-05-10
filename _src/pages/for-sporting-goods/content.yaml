@@ -1,0 +1,65 @@
+# for-sporting-goods — editable text content
+# Vertical landing for sporting goods, athletic, and outdoor retail.
+# Voice: PLG-primary, single-store and small-chain owner-operator.
+
+hero:
+  eyebrow: "For sporting goods &amp; outdoor retail"
+  h1: "Music to match the energy your customer walked in with."
+  subline: "Sporting goods customers come in with intent &mdash; the run they want to do, the trip they want to take, the team kid they need to outfit. The audio in the room either matches that energy or drains it. Entuned produces original music tuned to your customer and your floor. Free, no credit card."
+
+# The gap
+gap:
+  eyebrow: "The Gap"
+  h2: "Mismatched energy is the silent killer in sporting goods retail."
+  p1: "Sporting goods retail has a different operating shape than considered-purchase categories. The customer walks in already in motion &mdash; mentally, often physically. She is solving a problem (a 10K in three weeks, a kid that grew out of cleats, a backpack for a trip on Friday). The store either feels like a place that gets that, or it feels like a chain that happens to sell the gear."
+  p2: "The audio environment is one of the loudest signals about which kind of store this is. Most sporting goods retailers leave it to the satellite vendor &mdash; selected by a person who has never been in your store, against a logic built around licensing compliance. Your wall display has been thought about. Your endcap has been thought about. The audio is on a default that has nothing to do with your customer."
+
+# What changes per tier
+tiers:
+  eyebrow: "Three places to start"
+  h2: "Three places to start, sized to where you are."
+
+  card1_title: "Entuned Free"
+  card1_text: "Free, indefinite. Pick Linger from the floor of your store and the catalogue starts streaming through the speakers you already have. Useful as the first look before you decide to specify the audio more deliberately for the customer your store is built around."
+
+  card2_title: "Core ($99/location/mo)"
+  card2_text: "Music tailored to your single Ideal Customer Profile. For most sporting goods retailers, that is the customer your assortment is already built for &mdash; the runner, the climber, the team parent, the weekend rider. About 420 tracks in the first month, refreshed against what holds the floor."
+
+  card3_title: "Professional ($399/location/mo)"
+  card3_text: "POS integration. Outcome Scheduling against your traffic profile (Saturday-morning team-parent rush is a different mood than Tuesday-evening commuter run-club pickup). Multiple ICPs for stores that draw distinct customer types. Self-improving refinement against your basket and dwell data."
+
+  card4_title: "Enterprise"
+  card4_text: "Multi-store rollouts where you operate more than a handful of locations. Custom ICP design and brand voice consultation. Performance terms where lift can be cleanly measured against your existing reporting."
+
+# What the research says
+research:
+  eyebrow: "Forty years of evidence"
+  h2: "Forty years of evidence on the audio levers that matter for active retail."
+
+  card1_title: "Tempo affects pace through the store."
+  card1_text: "Milliman (1986) extended his earlier grocery work to a restaurant context and confirmed the mechanism: tempo affects how quickly people move through a space. In sporting goods, the right tempo keeps a high-energy customer engaged at the wall instead of moving past it."
+
+  card2_title: "Music customers read as theirs moves willingness to pay."
+  card2_text: "Areni and Kim (1993) measured average transaction value rising from $6.93 to $12.31 in a wine cellar when the music matched the customer&rsquo;s frame. North et al. (1999) replicated the effect across categories. The customer&rsquo;s willingness to step up to the better shoe is partly being shaped by the audio in the room."
+
+  card3_title: "Atmosphere is part of the brand relationship."
+  card3_text: "Bitner&rsquo;s 1992 servicescape framework established that the physical environment of a service business is part of what creates the customer&rsquo;s relationship with the brand. The audio is part of the servicescape. For a sporting goods store, it is part of whether the customer trusts you as a real specialist or treats you as a commodity shelf."
+
+  card4_title: "Mismatched music actively reduces basket."
+  card4_text: "Andersson et al. (2012) ran 601 real transactions and found that music that clashes with the store&rsquo;s customer category cuts willingness to pay below the no-music baseline. Neutral is not the default. The audio in your store is doing work whether you chose its effect or not."
+
+# CTA
+cta:
+  eyebrow: "Get Started"
+  h2: "Hear it on your floor."
+  subline: "Start free at Entuned Free in your store. Move to Core once you want music tailored to your specific customer."
+  cta_primary: "Start Free"
+
+related:
+  eyebrow: "Related"
+  links: '<a href="how-it-works.html" style="color: #50929c;">How It Works</a> &middot; <a href="science.html" style="color: #50929c;">The Science</a> &middot; <a href="pricing.html" style="color: #50929c;">Pricing</a>'
+  others: 'Other verticals: <a href="for-apparel.html" style="color: #50929c;">Apparel &amp; footwear</a> &middot; <a href="for-specialty-retail.html" style="color: #50929c;">Specialty retail</a>'
+
+further_reading_eyebrow: "From the Blog"
+further_reading_headline: "Related Reading"
+further_reading_links: <a href="blog/how-to-choose-music-for-your-retail-store.html" style="color: #50929c;">How to Choose Music for Your Retail Store</a> &middot; <a href="blog/in-store-music-strategy.html" style="color: #50929c;">In-Store Music Strategy</a> &middot; <a href="blog/best-background-music-for-retail-stores-2026.html" style="color: #50929c;">Best Background Music for Retail Stores 2026</a>
