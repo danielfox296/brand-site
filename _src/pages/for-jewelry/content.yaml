@@ -22,10 +22,10 @@ tiers:
   card1_title: "Entuned Free"
   card1_text: "Free, indefinite. Pick Linger from the floor of your store. The catalogue starts streaming through the speakers you already have. Useful as the first look before you decide whether to specify the audio more deliberately for your customer."
 
-  card2_title: "Core ($99/store/mo)"
+  card2_title: "Core ($99/location/mo)"
   card2_text: "Music tailored to your single Ideal Customer Profile. For most independent jewelers, that is the customer your buyers are already merchandising for — the considered shopper who is in your store because they want a real jeweler, not because Yelp ranked you third. About 420 tracks in the first month, refreshed against what holds the floor and culled against what does not."
 
-  card3_title: "Professional ($399/store/mo)"
+  card3_title: "Professional ($399/location/mo)"
   card3_text: "POS integration. Day-parted music against your traffic profile (slower weekday consideration, busier Saturday browsing, evening repair-pickup rhythm). Self-improving refinement against your basket and conversion data. Founder consult in your first month."
 
   card4_title: "Enterprise"
