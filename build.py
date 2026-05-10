@@ -395,7 +395,13 @@ def build():
         if use_new_renderer:
             # --- New blog renderer path ---
             br, env = _ensure_blog_renderer()
-            all_posts = br.collect_all_post_frontmatter(PAGES)
+            # Compute the all-posts frontmatter list once per build and reuse.
+            # Without this cache the call is O(n²): every new-format post
+            # re-scans + YAML-parses every other post (~12k parses for 110
+            # posts, ~5 min builds vs ~10s).
+            if not hasattr(build, '_all_posts_cache'):
+                build._all_posts_cache = br.collect_all_post_frontmatter(PAGES)
+            all_posts = build._all_posts_cache
 
             try:
                 content_html, post_data = br.render_post(page_path, env, all_posts)
