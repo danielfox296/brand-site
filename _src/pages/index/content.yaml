@@ -59,7 +59,7 @@ tiers:
   core_body: "Music designed for your single Ideal Customer Profile (ICP). All research-backed outcomes unlocked. Per location."
   professional_name: "Professional"
   professional_price: "$399/mo"
-  professional_body: "Music designed for your location's multiple ICPs. POS integration, outcome scheduling (advanced day-parting), self-improving refinement, monthly founder consults."
+  professional_body: "Music designed for your location's multiple ICPs. POS integration, Outcome Scheduling (like day-parting, but better), self-improving refinement, monthly founder consults."
   enterprise_name: "Enterprise"
   enterprise_price: "Contact"
   enterprise_body: "Multi-location rollouts, custom ICP design, performance terms."
@@ -78,7 +78,7 @@ home_faq_q3: "What about music licensing — am I covered?"
 home_faq_a3: 'Yes. Every song Entuned plays is original, commercial-use cleared, and PRO-indemnified the moment it starts. No ASCAP, BMI, SESAC, or SoundExchange royalties. Every subscription includes an indemnification certificate. <a href="licensing.html">Full details on the licensing page →</a>'
 
 home_faq_q4: "What if I run multiple stores?"
-home_faq_a4: 'Entuned Professional handles multi-store deployments with POS integration, Outcome Scheduling (advanced day-parting), and self-improving features. For fleets requiring custom ICP design, performance guarantees, or white-glove rollout, talk to <a href="enterprise.html">Enterprise</a>.'
+home_faq_a4: 'Entuned Professional handles multi-store deployments with POS integration, Outcome Scheduling (like day-parting, but better), and self-improving features. For fleets requiring custom ICP design, performance guarantees, or white-glove rollout, talk to <a href="enterprise.html">Enterprise</a>.'
 
 home_faq_q5: "How do I get started on Entuned Free?"
 home_faq_a5: 'Sign in with your email or Google at <a href="https://app.entuned.co/start">app.entuned.co/start</a>. No credit card. No Invoices You get a unique player URL the moment you finish that you can play from any tablet, mobile device or computer.'

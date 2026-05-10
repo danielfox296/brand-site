@@ -34,7 +34,7 @@ welcome:
   step3_title_core: "Deploy"
   step3_title_professional: "Deploy + self-improving"
   step3_body_core: "Your stream goes live on the speakers you already have. Typical timeline from checkout to in-store is 5 to 7 days. After that, regular refreshes and culling against what is holding the floor."
-  step3_body_professional: "Your stream goes live on the speakers you already have. Day-parting active from day one. Self-improving refinement against your store data starts compounding over the first weeks. Monthly founder consults begin in week 2."
+  step3_body_professional: "Your stream goes live on the speakers you already have. Outcome Scheduling active from day one. Self-improving refinement against your store data starts compounding over the first weeks. Monthly founder consults begin in week 2."
 
   # Shared (same for both tiers)
   contact_line: "Questions? Email <a href=\"mailto:hello@entuned.co\">hello@entuned.co</a> and mention your Stripe receipt."

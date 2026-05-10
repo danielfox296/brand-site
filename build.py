@@ -744,7 +744,7 @@ def build():
                         "name": "Professional",
                         "price": "399",
                         "priceCurrency": "USD",
-                        "description": "POS integration, day-parting, multiple ICPs, self-improving refinement. $399/store/month."
+                        "description": "POS integration, Outcome Scheduling, multiple ICPs, self-improving refinement. $399/store/month."
                     },
                     {
                         "@type": "Offer",

@@ -22,7 +22,7 @@ step3:
 step4:
   label: "Step 04 — Professional"
   title: "Connect your store data."
-  text: "Professional integrates with your POS, reads sales and traffic data tied to specific environmental conditions, and refines the music against your store's outcomes as the dataset grows. Day-parting rotates outcomes by hour. Multiple ICPs cater to distinct customer types instead of homogenizing them. Self-improving refinement compounds over weeks of data, not days. The lift shows up in the report your CFO already runs."
+  text: "Professional integrates with your POS, reads sales and traffic data tied to specific environmental conditions, and refines the music against your store's outcomes as the dataset grows. Outcome Scheduling rotates outcomes by hour. Multiple ICPs cater to distinct customer types instead of homogenizing them. Self-improving refinement compounds over weeks of data, not days. The lift shows up in the report your CFO already runs."
 
 # What changes per tier
 tiers:
@@ -39,7 +39,7 @@ card2:
 
 card3:
   title: "Professional"
-  text: "Multiple ICPs, distinct customer types catered to specifically. POS integration. Day-parting. Interstitial messaging — you write and approve store messages that play in rotation. Self-improving refinement against your store's data."
+  text: "Multiple ICPs, distinct customer types catered to specifically. POS integration. Outcome Scheduling. Interstitial messaging — you write and approve store messages that play in rotation. Self-improving refinement against your store's data."
 
 card4:
   title: "Enterprise"
