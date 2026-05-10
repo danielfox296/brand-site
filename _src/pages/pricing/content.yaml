@@ -22,8 +22,8 @@ essentials_signup_url: "https://app.entuned.co/start"
 
 hero:
   eyebrow: "Pricing"
-  headline: "Entuned Music: Your new retail sales lever."
-  subhead: "Four Options. Start free. Free, cleared commercial licensing the moment you start playing."
+  headline: "Four tiers. Free forever, then $99 per location, per month."
+  subhead: "Free indefinitely on Entuned Free. $99 per location on Core. $399 per location on Pro. Enterprise negotiated for chains. No credit card to start."
 
 # Tiers (Entuned Free → Core → Professional → Enterprise)
 tiers:
@@ -78,8 +78,8 @@ tiers:
     eyebrow: "Multi-fleet rollouts"
     price: "Contact"
     price_suffix: "for pricing"
-    summary: "Negotiated per-store pricing, custom ICP design and brand voice consultation, white-glove rollout."
-    inc1: "Negotiated pricing per store"
+    summary: "Negotiated per-location pricing, custom ICP design and brand voice consultation, white-glove rollout."
+    inc1: "Negotiated pricing per location"
     inc2: "Custom ICP design and brand voice consultation"
     inc3: "Performance guarantees (where lift can be cleanly measured)"
     inc4: "Dedicated success contact"

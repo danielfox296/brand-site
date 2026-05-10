@@ -34,17 +34,17 @@ changes:
   card2_title: "Deploy across the format"
   card2_text: "Move to Core ($99/store/month) once you want music tailored to a specific customer profile rather than a general catalogue. Most regional operators run Core in stores that share a customer profile and deploy multiple ICPs through Professional in stores that don't."
 
-  card3_title: "Measure across the fleet"
+  card3_title: "Measure across your locations"
   card3_text: "Professional ($399/store/month) integrates with your POS, day-parts the audio against your traffic profile, and refines the music against your store's outcomes as the dataset grows. The lift shows up in the report your operators already run."
 
   card4_title: "Roll out the network"
-  card4_text: "Enterprise is for fleet-wide deployments. Custom ICP design, performance guarantees where lift can be cleanly measured, dedicated success contact, white-glove rollout. Standard entry shape is a 12-week pilot in a paired set of test and control stores."
+  card4_text: "Enterprise is for across all locations deployments. Custom ICP design, performance guarantees where lift can be cleanly measured, dedicated success contact, white-glove rollout. Standard entry shape is a 12-week pilot in a paired set of test and control stores."
 
 # How to bring this in
 buy_in:
   eyebrow: "Getting Buy-In"
   h2: "What your CFO will want to see."
-  body: "Most retail finance teams approve a single-store Entuned Free trial without a procurement conversation — there is no spend. Core and Professional move on standard SaaS approval ($99 or $399 per store per month, monthly, no long-term contract). Enterprise gets a structured pilot with a written readout against your existing reporting before any fleet-wide commitment. The financial case sits on the <a href=\"for-cfos.html\" style=\"color: #50929c;\">CFO page</a>."
+  body: "Most retail finance teams approve a single-store Entuned Free trial without a procurement conversation — there is no spend. Core and Professional move on standard SaaS approval ($99 or $399 per location per month, monthly, no long-term contract). Enterprise gets a structured pilot with a written readout against your existing reporting before any across all locations commitment. The financial case sits on the <a href=\"for-cfos.html\" style=\"color: #50929c;\">CFO page</a>."
 
 # Pilot anchor (un-named)
 anchor:

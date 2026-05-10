@@ -1,8 +1,8 @@
 # How It Works — editable text content
 
 hero:
-  headline: "How It Works"
-  subline: "Three minutes from sign-up to music in your store. Each tier adds a layer of specificity — outcome, then customer, then data — without changing the engine underneath."
+  headline: "Three minutes from sign-up to music in your store."
+  subline: "Pick an outcome. Stream from the speakers you already have. Add your customer profile when you're ready. Each tier adds specificity without changing the engine underneath."
 
 step1:
   label: "Step 01 — Entuned Free"
@@ -43,7 +43,7 @@ card3:
 
 card4:
   title: "Enterprise"
-  text: "Custom ICP design and brand voice consultation. Negotiated per-store pricing. Performance guarantees where lift can be cleanly measured. Dedicated success contact and white-glove rollout across the fleet."
+  text: "Custom ICP design and brand voice consultation. Negotiated per-location pricing. Performance guarantees where lift can be cleanly measured. Dedicated success contact and white-glove rollout across your locations."
 
 # Science underneath
 science:

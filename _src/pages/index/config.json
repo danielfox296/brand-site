@@ -5,7 +5,7 @@
   "faq": [
     {
       "q": "How much does Entuned cost?",
-      "a": "Entuned Free is free forever, no credit card. Core is $99 per location per month. Professional is $399 per location per month. Enterprise is negotiated per-store for multi-fleet rollouts."
+      "a": "Entuned Free is free forever, no credit card. Core is $99 per location per month. Professional is $399 per location per month. Enterprise is negotiated per-location for multi-location rollouts."
     },
     {
       "q": "Do I need new hardware to use Entuned?",
@@ -17,7 +17,7 @@
     },
     {
       "q": "What if I run multiple stores?",
-      "a": "The Professional tier handles multi-store deployments with POS integration, day-parting, and self-improving refinement. For fleets requiring custom ICP design, performance guarantees, or white-glove rollout, the Enterprise tier is negotiated per-store."
+      "a": "The Professional tier handles multi-store deployments with POS integration, day-parting, and self-improving refinement. For fleets requiring custom ICP design, performance guarantees, or white-glove rollout, the Enterprise tier is negotiated per-location."
     },
     {
       "q": "How do I get started on Entuned Free?",
