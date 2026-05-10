@@ -100,7 +100,7 @@
 
   <main>
   <!-- Hero Section -->
-<section class="hero">
+<section class="hero-image-bg" style="--hero-bg: url('img/parallax-dashboard.jpg');">
   <div class="container">
     <div class="fade-up">
       <h1>Forty years of research, plus the first multi-store deployment.</h1>
@@ -114,31 +114,28 @@
   <div class="container">
     <h2 style="text-align: center; margin-bottom: 3rem; font-family: 'Manrope', sans-serif;">What the research found.</h2>
     <p style="text-align: center; max-width: 700px; margin-left: auto; margin-right: auto; margin-bottom: 3rem; opacity: 0.9; font-size: 1.05rem;">Forty years of controlled experiments in real retail settings. These are not projections. They are published findings with named researchers, sample sizes, and effect magnitudes. Entuned engineers against them — every parameter the research identifies as load-bearing is something the engine specifies on purpose.</p>
-    <div class="card-grid">
-      <!-- Card 1: Dwell Time -->
+    <div class="card-grid card-grid--2x2">
       <div class="card fade-up">
-        <div style="font-size: 2.2rem; font-weight: 700; color: #50929c; margin-bottom: 0.5rem;">15–25%</div>
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <div style="font-family: var(--font-heading); font-size: 2rem; font-weight: 700; color: var(--accent); line-height: 1; letter-spacing: -0.01em; margin-bottom: 0.5rem;">15&ndash;25%</div>
         <div class="card-title">Increase in Dwell Time</div>
         <p class="card-text">Milliman (1982) found slow-tempo music increased grocery dwell by 38%. Knoferle et al. (2011) refined the finding. Tempo on its own did not move sales. The lift came when tempo and other musical choices fit together. Most retail music vendors have the thermostat. They do not have the room.</p>
       </div>
-
-      <!-- Card 2: Willingness to Pay -->
       <div class="card fade-up">
-        <div style="font-size: 2.2rem; font-weight: 700; color: #50929c; margin-bottom: 0.5rem;">8–12%</div>
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg></div>
+        <div style="font-family: var(--font-heading); font-size: 2rem; font-weight: 700; color: var(--accent); line-height: 1; letter-spacing: -0.01em; margin-bottom: 0.5rem;">8&ndash;12%</div>
         <div class="card-title">Increase in Willingness to Pay</div>
         <p class="card-text">Areni and Kim (1993) found classical music in a wine store lifted average transaction value from $6.93 to $12.31. North et al. (1999) found French music tripled French wine sales. When music matches how the customer reads herself, willingness to pay rises 8 to 12 percent.</p>
       </div>
-
-      <!-- Card 3: Return Visits -->
       <div class="card fade-up">
-        <div style="font-size: 2.2rem; font-weight: 700; color: #50929c; margin-bottom: 0.5rem;">↑</div>
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.5 0 4.8 1 6.5 2.5L21 3"/><path d="M21 3v6h-6"/></svg></div>
+        <div style="font-family: var(--font-heading); font-size: 2rem; font-weight: 700; color: var(--accent); line-height: 1; letter-spacing: -0.01em; margin-bottom: 0.5rem;">&uarr;</div>
         <div class="card-title">Familiarity Drives Customers Out</div>
         <p class="card-text">Yalch and Spangenberg (2000) tested familiar and unfamiliar music in a department store. Shoppers exposed to familiar music left 8 percent sooner. They enjoyed it more. They left faster. Original music is unfamiliar by definition. That is why it works.</p>
       </div>
-
-      <!-- Card 4: Brand Perception -->
       <div class="card fade-up">
-        <div style="font-size: 2.2rem; font-weight: 700; color: #50929c; margin-bottom: 0.5rem;">Premium Signal</div>
+        <div class="card-icon is-gold"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg></div>
+        <div style="font-family: var(--font-heading); font-size: 1.4rem; font-weight: 700; color: var(--gold); line-height: 1.1; letter-spacing: -0.01em; margin-bottom: 0.5rem;">Premium Signal</div>
         <div class="card-title">Congruence Lifts Spending</div>
         <p class="card-text">Gueguen and Jacob (2013) played romantic music in a flower shop and measured a 28.6 percent increase in spending. Andersson et al. (2012) ran 601 real transactions and found the inverse. Music that did not fit the shopper actively reduced willingness to pay. Getting it wrong costs you money.</p>
       </div>
@@ -147,7 +144,7 @@
 </section>
 
 <!-- Anchor Pilot In Progress -->
-<section class="section" style="background-color: rgba(80, 146, 156, 0.08); padding: 4rem 0; margin: 3rem 0;">
+<section class="section section--tinted">
   <div class="container">
     <div style="max-width: 800px; margin: 0 auto; text-align: center; padding: 3rem 2rem; border: 1px solid #50929c; border-radius: 8px; background-color: rgba(80, 146, 156, 0.03);">
       <h3 style="font-family: 'Manrope', sans-serif; font-size: 1.5rem; margin-bottom: 1.5rem;">Currently in pilot.</h3>
@@ -172,29 +169,37 @@
 </section>
 
 <!-- Research Foundation Section -->
-<section class="section" style="border-top: 1px solid rgba(80, 146, 156, 0.2); padding: 4rem 0;">
+<section class="section section--tinted">
   <div class="container">
-    <h3 style="text-align: center; font-family: 'Manrope', sans-serif; margin-bottom: 3rem;">Named research underneath every Entuned claim.</h3>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-      <div style="padding: 2rem; border-left: 3px solid #50929c;">
-        <p style="font-weight: 600; color: #50929c; margin-bottom: 0.5rem;">Milliman (1982)</p>
-        <p style="opacity: 0.8; font-size: 0.95rem;">Slow-tempo music increased grocery dwell by 38 percent and daily gross receipts by 32 percent. Tempo alone did not predict the lift. Knoferle et al. (2011) later showed the effect depends on tempo being paired with the right tonal choice.</p>
+    <div class="fade-up" style="max-width: 720px; margin: 0 auto 3rem; text-align: center;">
+      <span class="section-eyebrow">Source studies</span>
+      <h3 style="font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 0;">Named research underneath every Entuned claim.</h3>
+    </div>
+    <div class="card-grid card-grid--3 fade-up">
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <div class="card-title" style="font-size: 1rem; letter-spacing: 0.04em; text-transform: uppercase;">Milliman (1982)</div>
+        <p class="card-text">Slow-tempo music increased grocery dwell by 38 percent and daily gross receipts by 32 percent. Tempo alone did not predict the lift. Knoferle et al. (2011) later showed the effect depends on tempo being paired with the right tonal choice.</p>
       </div>
-      <div style="padding: 2rem; border-left: 3px solid #50929c;">
-        <p style="font-weight: 600; color: #50929c; margin-bottom: 0.5rem;">Smith &amp; Curnow (1966)</p>
-        <p style="opacity: 0.8; font-size: 0.95rem;">One of the earliest controlled studies of music volume in retail. Loud music reduced shopping time without increasing sales. Volume is a blunt tool.</p>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg></div>
+        <div class="card-title" style="font-size: 1rem; letter-spacing: 0.04em; text-transform: uppercase;">Smith &amp; Curnow (1966)</div>
+        <p class="card-text">One of the earliest controlled studies of music volume in retail. Loud music reduced shopping time without increasing sales. Volume is a blunt tool.</p>
       </div>
-      <div style="padding: 2rem; border-left: 3px solid #50929c;">
-        <p style="font-weight: 600; color: #50929c; margin-bottom: 0.5rem;">Areni &amp; Kim (1993)</p>
-        <p style="opacity: 0.8; font-size: 0.95rem;">Classical music in a wine cellar nearly doubled average transaction value, from $6.93 to $12.31. Customers chose more expensive bottles, not more bottles. The music changed perceived value, not purchase intent.</p>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
+        <div class="card-title" style="font-size: 1rem; letter-spacing: 0.04em; text-transform: uppercase;">Areni &amp; Kim (1993)</div>
+        <p class="card-text">Classical music in a wine cellar nearly doubled average transaction value, from $6.93 to $12.31. Customers chose more expensive bottles, not more bottles. The music changed perceived value, not purchase intent.</p>
       </div>
-      <div style="padding: 2rem; border-left: 3px solid #50929c;">
-        <p style="font-weight: 600; color: #50929c; margin-bottom: 0.5rem;">North et al. (1999)</p>
-        <p style="opacity: 0.8; font-size: 0.95rem;">French music tripled French wine sales over a two-week period. German music had the same effect on German wine. Customers denied being influenced. The effect happened below conscious awareness.</p>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.5 0 4.8 1 6.5 2.5L21 3"/><path d="M21 3v6h-6"/></svg></div>
+        <div class="card-title" style="font-size: 1rem; letter-spacing: 0.04em; text-transform: uppercase;">North et al. (1999)</div>
+        <p class="card-text">French music tripled French wine sales over a two-week period. German music had the same effect on German wine. Customers denied being influenced. The effect happened below conscious awareness.</p>
       </div>
-      <div style="padding: 2rem; border-left: 3px solid #50929c;">
-        <p style="font-weight: 600; color: #50929c; margin-bottom: 0.5rem;">Chebat &amp; Michon (2003)</p>
-        <p style="opacity: 0.8; font-size: 0.95rem;">Tested how music shapes perceived product quality through affect. Music shifted shoppers' emotional state, which shifted how they evaluated what they were looking at. The audio environment changed what the product felt like it was worth.</p>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg></div>
+        <div class="card-title" style="font-size: 1rem; letter-spacing: 0.04em; text-transform: uppercase;">Chebat &amp; Michon (2003)</div>
+        <p class="card-text">Tested how music shapes perceived product quality through affect. Music shifted shoppers' emotional state, which shifted how they evaluated what they were looking at. The audio environment changed what the product felt like it was worth.</p>
       </div>
     </div>
   </div>
@@ -210,14 +215,12 @@
 </section>
 
 <!-- CTA Section -->
-<section class="section" style="text-align: center; padding: 5rem 0;">
+<section class="section section--accent" style="text-align: center;">
   <div class="container">
     <h2 style="margin-bottom: 1rem;">Engineered audio in your stores.</h2>
     <p style="font-size: 1.1rem; opacity: 0.85; margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">Engineered audio in your stores. Free to start with Entuned Free. Talk to Enterprise about a structured pilot in your fleet.</p>
-    <div class="btn-group" style="justify-content: center;">
-      <a href="https://app.entuned.co/start" class="btn btn-primary" style="font-size: 1.05rem; padding: 1rem 2.5rem;">Start Free</a>
-      <a href="contact.html?topic=enterprise" class="btn btn-secondary" style="font-size: 1.05rem; padding: 1rem 2.5rem;">Talk to Enterprise</a>
-    </div>
+    <a href="https://app.entuned.co/start" class="btn btn-primary">Start Free</a>
+    <p style="margin-top: 1.5rem; font-size: 0.95rem; opacity: 0.7;">Free forever &middot; no card &middot; no time limit. <a href="contact.html?topic=enterprise" style="color: var(--accent);">Talk about a multi-store pilot &rarr;</a></p>
   </div>
 </section>
   </main>

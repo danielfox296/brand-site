@@ -1,5 +1,5 @@
 <!-- Hero Section -->
-<section class="hero">
+<section class="hero-image-bg" style="--hero-bg: url('img/parallax-dashboard.jpg');">
   <div class="container">
     <div class="fade-up">
       <h1>{{content.h1_1}}</h1>
@@ -13,31 +13,28 @@
   <div class="container">
     <h2 style="text-align: center; margin-bottom: 3rem; font-family: 'Manrope', sans-serif;">{{content.h2_1}}</h2>
     <p style="text-align: center; max-width: 700px; margin-left: auto; margin-right: auto; margin-bottom: 3rem; opacity: 0.9; font-size: 1.05rem;">{{content.p_2}}</p>
-    <div class="card-grid">
-      <!-- Card 1: Dwell Time -->
+    <div class="card-grid card-grid--2x2">
       <div class="card fade-up">
-        <div style="font-size: 2.2rem; font-weight: 700; color: #50929c; margin-bottom: 0.5rem;">15–25%</div>
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <div style="font-family: var(--font-heading); font-size: 2rem; font-weight: 700; color: var(--accent); line-height: 1; letter-spacing: -0.01em; margin-bottom: 0.5rem;">15&ndash;25%</div>
         <div class="card-title">{{content.card_title_1}}</div>
         <p class="card-text">{{content.p_3}}</p>
       </div>
-
-      <!-- Card 2: Willingness to Pay -->
       <div class="card fade-up">
-        <div style="font-size: 2.2rem; font-weight: 700; color: #50929c; margin-bottom: 0.5rem;">8–12%</div>
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg></div>
+        <div style="font-family: var(--font-heading); font-size: 2rem; font-weight: 700; color: var(--accent); line-height: 1; letter-spacing: -0.01em; margin-bottom: 0.5rem;">8&ndash;12%</div>
         <div class="card-title">{{content.card_title_2}}</div>
         <p class="card-text">{{content.p_4}}</p>
       </div>
-
-      <!-- Card 3: Return Visits -->
       <div class="card fade-up">
-        <div style="font-size: 2.2rem; font-weight: 700; color: #50929c; margin-bottom: 0.5rem;">↑</div>
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.5 0 4.8 1 6.5 2.5L21 3"/><path d="M21 3v6h-6"/></svg></div>
+        <div style="font-family: var(--font-heading); font-size: 2rem; font-weight: 700; color: var(--accent); line-height: 1; letter-spacing: -0.01em; margin-bottom: 0.5rem;">&uarr;</div>
         <div class="card-title">{{content.card_title_3}}</div>
         <p class="card-text">{{content.p_5}}</p>
       </div>
-
-      <!-- Card 4: Brand Perception -->
       <div class="card fade-up">
-        <div style="font-size: 2.2rem; font-weight: 700; color: #50929c; margin-bottom: 0.5rem;">Premium Signal</div>
+        <div class="card-icon is-gold"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg></div>
+        <div style="font-family: var(--font-heading); font-size: 1.4rem; font-weight: 700; color: var(--gold); line-height: 1.1; letter-spacing: -0.01em; margin-bottom: 0.5rem;">Premium Signal</div>
         <div class="card-title">{{content.card_title_4}}</div>
         <p class="card-text">{{content.p_6}}</p>
       </div>
@@ -46,7 +43,7 @@
 </section>
 
 <!-- Anchor Pilot In Progress -->
-<section class="section" style="background-color: rgba(80, 146, 156, 0.08); padding: 4rem 0; margin: 3rem 0;">
+<section class="section section--tinted">
   <div class="container">
     <div style="max-width: 800px; margin: 0 auto; text-align: center; padding: 3rem 2rem; border: 1px solid #50929c; border-radius: 8px; background-color: rgba(80, 146, 156, 0.03);">
       <h3 style="font-family: 'Manrope', sans-serif; font-size: 1.5rem; margin-bottom: 1.5rem;">{{content.h3_1}}</h3>
@@ -71,29 +68,37 @@
 </section>
 
 <!-- Research Foundation Section -->
-<section class="section" style="border-top: 1px solid rgba(80, 146, 156, 0.2); padding: 4rem 0;">
+<section class="section section--tinted">
   <div class="container">
-    <h3 style="text-align: center; font-family: 'Manrope', sans-serif; margin-bottom: 3rem;">{{content.h3_2}}</h3>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-      <div style="padding: 2rem; border-left: 3px solid #50929c;">
-        <p style="font-weight: 600; color: #50929c; margin-bottom: 0.5rem;">{{content.p_10}}</p>
-        <p style="opacity: 0.8; font-size: 0.95rem;">{{content.p_11}}</p>
+    <div class="fade-up" style="max-width: 720px; margin: 0 auto 3rem; text-align: center;">
+      <span class="section-eyebrow">Source studies</span>
+      <h3 style="font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 0;">{{content.h3_2}}</h3>
+    </div>
+    <div class="card-grid card-grid--3 fade-up">
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <div class="card-title" style="font-size: 1rem; letter-spacing: 0.04em; text-transform: uppercase;">{{content.p_10}}</div>
+        <p class="card-text">{{content.p_11}}</p>
       </div>
-      <div style="padding: 2rem; border-left: 3px solid #50929c;">
-        <p style="font-weight: 600; color: #50929c; margin-bottom: 0.5rem;">{{content.p_12}}</p>
-        <p style="opacity: 0.8; font-size: 0.95rem;">{{content.p_13}}</p>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg></div>
+        <div class="card-title" style="font-size: 1rem; letter-spacing: 0.04em; text-transform: uppercase;">{{content.p_12}}</div>
+        <p class="card-text">{{content.p_13}}</p>
       </div>
-      <div style="padding: 2rem; border-left: 3px solid #50929c;">
-        <p style="font-weight: 600; color: #50929c; margin-bottom: 0.5rem;">{{content.p_14}}</p>
-        <p style="opacity: 0.8; font-size: 0.95rem;">{{content.p_15}}</p>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
+        <div class="card-title" style="font-size: 1rem; letter-spacing: 0.04em; text-transform: uppercase;">{{content.p_14}}</div>
+        <p class="card-text">{{content.p_15}}</p>
       </div>
-      <div style="padding: 2rem; border-left: 3px solid #50929c;">
-        <p style="font-weight: 600; color: #50929c; margin-bottom: 0.5rem;">{{content.p_16}}</p>
-        <p style="opacity: 0.8; font-size: 0.95rem;">{{content.p_17}}</p>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.5 0 4.8 1 6.5 2.5L21 3"/><path d="M21 3v6h-6"/></svg></div>
+        <div class="card-title" style="font-size: 1rem; letter-spacing: 0.04em; text-transform: uppercase;">{{content.p_16}}</div>
+        <p class="card-text">{{content.p_17}}</p>
       </div>
-      <div style="padding: 2rem; border-left: 3px solid #50929c;">
-        <p style="font-weight: 600; color: #50929c; margin-bottom: 0.5rem;">{{content.p_18}}</p>
-        <p style="opacity: 0.8; font-size: 0.95rem;">{{content.p_19}}</p>
+      <div class="card">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg></div>
+        <div class="card-title" style="font-size: 1rem; letter-spacing: 0.04em; text-transform: uppercase;">{{content.p_18}}</div>
+        <p class="card-text">{{content.p_19}}</p>
       </div>
     </div>
   </div>
@@ -109,13 +114,11 @@
 </section>
 
 <!-- CTA Section -->
-<section class="section" style="text-align: center; padding: 5rem 0;">
+<section class="section section--accent" style="text-align: center;">
   <div class="container">
     <h2 style="margin-bottom: 1rem;">Engineered audio in your stores.</h2>
     <p style="font-size: 1.1rem; opacity: 0.85; margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">{{content.p_20}}</p>
-    <div class="btn-group" style="justify-content: center;">
-      <a href="https://app.entuned.co/start" class="btn btn-primary" style="font-size: 1.05rem; padding: 1rem 2.5rem;">{{content.btn_2}}</a>
-      <a href="contact.html?topic=enterprise" class="btn btn-secondary" style="font-size: 1.05rem; padding: 1rem 2.5rem;">{{content.btn_1}}</a>
-    </div>
+    <a href="https://app.entuned.co/start" class="btn btn-primary">Start Free</a>
+    <p style="margin-top: 1.5rem; font-size: 0.95rem; opacity: 0.7;">Free forever &middot; no card &middot; no time limit. <a href="contact.html?topic=enterprise" style="color: var(--accent);">Talk about a multi-store pilot &rarr;</a></p>
   </div>
 </section>
