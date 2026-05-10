@@ -86,7 +86,7 @@ sections:
     body: |
       Walk three of your stores on three different days. Write down every variable on the floor that nobody in your company owns. The lighting program. The music. The fitting room flow. The smell at the front door. The temperature at peak. The line-of-sight from the entrance to the back wall. Pick one. Assign somebody to watch it for ninety days. See what they find out.
 
-      If music is the one you pick, there's public academic work on the effect size and there are vendors who can help you actually measure it rather than just play it. Entuned Free is open to start — no card, no commitment — and built to put a number next to the variable most stores are still ignoring.
+      If music is the one you pick, there's public academic work on the effect size and there are vendors who can help you actually measure it rather than just play it. Entuned Free is open to start — no credit card, no commitment — and built to put a number next to the variable most stores are still ignoring.
 
   - type: prose
     body: |
@@ -95,7 +95,7 @@ sections:
   - type: cta
     variant: start-free
     headline: "Hear it on your floor."
-    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no credit card, no time limit. PRO-indemnified the moment it plays."
     link: "https://app.entuned.co/start"
     link_text: "Start Free"
 
