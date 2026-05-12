@@ -1,37 +1,115 @@
 <!-- HERO -->
 <section class="hero-image-bg" style="--hero-bg: url('img/parallax-retail-tech.jpg'); min-height: 60vh;">
   <div class="container">
+    <p class="section-eyebrow" style="color: var(--gold);">{{content.eyebrow_1}}</p>
     <h1>{{content.h1_1}}</h1>
-    <p class="subline">{{content.p_1}}</p>
+    <p class="subline">{{content.subline_1}}</p>
   </div>
 </section>
 
-<!-- COMING SOON -->
+<!-- THE GAP -->
+<section class="section">
+  <div class="container" style="max-width: 800px;">
+    <p class="section-eyebrow fade-up">{{content.eyebrow_2}}</p>
+    <h2 class="fade-up">{{content.h2_1}}</h2>
+    <p class="fade-up">{{content.p_1}}</p>
+    <p class="fade-up">{{content.p_2}}</p>
+    <p class="fade-up">{{content.p_3}}</p>
+    <p class="fade-up">{{content.p_4}}</p>
+  </div>
+</section>
+
+<!-- WHAT ENTUNED DOES -->
+<section class="section section--tinted">
+  <div class="container" style="max-width: 800px;">
+    <p class="section-eyebrow fade-up">{{content.eyebrow_3}}</p>
+    <h2 class="fade-up">{{content.h2_2}}</h2>
+    <p class="fade-up">{{content.p_5}}</p>
+    <p class="fade-up">{{content.p_6}}</p>
+    <p class="fade-up">{{content.p_7}}</p>
+
+    <div class="partners-steps fade-up">
+      <div class="partners-step"><span class="partners-step-num">1</span> {{content.step_1}}</div>
+      <div class="partners-step"><span class="partners-step-num">2</span> {{content.step_2}}</div>
+      <div class="partners-step"><span class="partners-step-num">3</span> {{content.step_3}}</div>
+      <div class="partners-step"><span class="partners-step-num">4</span> {{content.step_4}}</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY PARTNERS LIKE IT -->
 <section class="section">
   <div class="container">
-    <h2 class="fade-up">{{content.h2_1}}</h2>
-
-    <p class="fade-up">{{content.p_2}}</p>
-
-    <p class="fade-up">{{content.p_3}}</p>
-
-    <div class="card-grid card-grid--3" style="margin-top: 3rem;">
+    <div style="text-align: center; margin-bottom: 3rem;">
+      <p class="section-eyebrow fade-up">{{content.eyebrow_4}}</p>
+      <h2 class="fade-up">{{content.h2_3}}</h2>
+    </div>
+    <div class="card-grid card-grid--2">
       <div class="card fade-up">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg></div>
-        <div class="card-title">{{content.card_title_1}}</div>
-        <p class="card-text">{{content.p_4}}</p>
+        <div class="card-title">{{content.benefit_1_title}}</div>
+        <p class="card-text">{{content.benefit_1_text}}</p>
       </div>
-
       <div class="card fade-up">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
-        <div class="card-title">{{content.card_title_2}}</div>
-        <p class="card-text">{{content.p_5}}</p>
+        <div class="card-title">{{content.benefit_2_title}}</div>
+        <p class="card-text">{{content.benefit_2_text}}</p>
       </div>
-
       <div class="card fade-up">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg></div>
-        <div class="card-title">{{content.card_title_3}}</div>
-        <p class="card-text">{{content.p_6}}</p>
+        <div class="card-title">{{content.benefit_3_title}}</div>
+        <p class="card-text">{{content.benefit_3_text}}</p>
+      </div>
+      <div class="card fade-up">
+        <div class="card-title">{{content.benefit_4_title}}</div>
+        <p class="card-text">{{content.benefit_4_text}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IDEAL PARTNERS -->
+<section class="section section--tinted">
+  <div class="container" style="max-width: 800px;">
+    <p class="section-eyebrow fade-up">{{content.eyebrow_5}}</p>
+    <h2 class="fade-up">{{content.h2_4}}</h2>
+    <ul class="partners-list fade-up">
+      <li>{{content.partner_type_1}}</li>
+      <li>{{content.partner_type_2}}</li>
+      <li>{{content.partner_type_3}}</li>
+      <li>{{content.partner_type_4}}</li>
+      <li>{{content.partner_type_5}}</li>
+      <li>{{content.partner_type_6}}</li>
+    </ul>
+    <p class="fade-up">{{content.p_8}}</p>
+  </div>
+</section>
+
+<!-- BENEFITS GRID -->
+<section class="section">
+  <div class="container" style="max-width: 800px;">
+    <p class="section-eyebrow fade-up">{{content.eyebrow_6}}</p>
+    <div class="partners-benefits-grid fade-up">
+      <div class="partners-benefit">
+        <div class="partners-benefit-label">{{content.grid_1_label}}</div>
+        <div class="partners-benefit-value">{{content.grid_1_value}}</div>
+      </div>
+      <div class="partners-benefit">
+        <div class="partners-benefit-label">{{content.grid_2_label}}</div>
+        <div class="partners-benefit-value">{{content.grid_2_value}}</div>
+      </div>
+      <div class="partners-benefit">
+        <div class="partners-benefit-label">{{content.grid_3_label}}</div>
+        <div class="partners-benefit-value">{{content.grid_3_value}}</div>
+      </div>
+      <div class="partners-benefit">
+        <div class="partners-benefit-label">{{content.grid_4_label}}</div>
+        <div class="partners-benefit-value">{{content.grid_4_value}}</div>
+      </div>
+      <div class="partners-benefit">
+        <div class="partners-benefit-label">{{content.grid_5_label}}</div>
+        <div class="partners-benefit-value">{{content.grid_5_value}}</div>
+      </div>
+      <div class="partners-benefit">
+        <div class="partners-benefit-label">{{content.grid_6_label}}</div>
+        <div class="partners-benefit-value">{{content.grid_6_value}}</div>
       </div>
     </div>
   </div>
@@ -39,9 +117,46 @@
 
 <!-- CTA -->
 <section class="section section--accent">
-  <div class="container" style="text-align: center;">
-    <h2 style="margin-bottom: 1rem;">{{content.h2_2}}</h2>
-    <p class="fade-up" style="font-size: 1.05rem; opacity: 0.85; margin-bottom: 2.5rem;">{{content.p_7}}</p>
+  <div class="container" style="max-width: 640px; text-align: center;">
+    <h2 style="margin-bottom: 1.5rem;">{{content.h2_5}}</h2>
+    <p class="fade-up" style="margin-bottom: 2rem; opacity: 0.85;">{{content.form_note}}</p>
     <a href="contact.html" class="btn btn-primary">{{content.btn_1}}</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container" style="max-width: 800px;">
+    <h2 class="fade-up" style="margin-bottom: 2rem;">Frequently Asked Questions</h2>
+
+    <details class="partners-faq fade-up">
+      <summary><span>{{content.faq_1_q}}</span></summary>
+      <div class="partners-faq-body"><p>{{content.faq_1_a}}</p></div>
+    </details>
+
+    <details class="partners-faq fade-up">
+      <summary><span>{{content.faq_2_q}}</span></summary>
+      <div class="partners-faq-body"><p>{{content.faq_2_a}}</p></div>
+    </details>
+
+    <details class="partners-faq fade-up">
+      <summary><span>{{content.faq_3_q}}</span></summary>
+      <div class="partners-faq-body"><p>{{content.faq_3_a}}</p></div>
+    </details>
+
+    <details class="partners-faq fade-up">
+      <summary><span>{{content.faq_4_q}}</span></summary>
+      <div class="partners-faq-body"><p>{{content.faq_4_a}}</p></div>
+    </details>
+
+    <details class="partners-faq fade-up">
+      <summary><span>{{content.faq_5_q}}</span></summary>
+      <div class="partners-faq-body"><p>{{content.faq_5_a}}</p></div>
+    </details>
+
+    <details class="partners-faq fade-up">
+      <summary><span>{{content.faq_6_q}}</span></summary>
+      <div class="partners-faq-body"><p>{{content.faq_6_a}}</p></div>
+    </details>
   </div>
 </section>

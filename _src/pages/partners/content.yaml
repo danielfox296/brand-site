@@ -1,16 +1,81 @@
 # partners — editable text content
 
-h1_1: "An audio variable for the retail stack."
-h2_1: Partnership Program Coming Soon
-h2_2: Interested in Partnering?
-card_title_1: POS and Analytics
-card_title_2: In-Store Hardware
-card_title_3: Retail Technology
-btn_1: Get in Touch
-p_1: "Partnership program coming soon. We&rsquo;re building integrations with POS, analytics, and retail-tech systems that wire audio into the data layer."
-p_2: Entuned is built to sit alongside the rest of the retail stack. Point-of-sale, foot-traffic analytics, customer data platforms, and in-store hardware all connect in.
-p_3: We are currently in conversations with technology providers across these categories. Partner details and integration docs will appear here as those conversations close.
-p_4: Transaction data and traffic measurement that connect to the store-level behavioral picture.
-p_5: Speaker systems, streaming devices, and audio hardware compatible with Entuned deployments.
-p_6: Customer data platforms, store operations tools, and analytics dashboards that sit next to the audio layer.
-p_7: If your platform serves retail and you see an integration worth building, we want to hear from you.
+eyebrow_1: "PARTNER PROGRAM"
+h1_1: "Your clients control every variable in the store. Except what&rsquo;s playing."
+subline_1: "Entuned composes original music around a store&rsquo;s customer psychology. Refer your retail clients, earn 20% recurring commission on every subscription."
+
+# Section 1 — The Gap
+eyebrow_2: "THE PROBLEM"
+h2_1: "The audio is always the afterthought."
+p_1: "Lighting gets a plan. Fixtures get a budget. Product placement follows a merchandising strategy. Visual elements are deliberate down to the paint color."
+p_2: "The music is a Spotify playlist someone made three months ago."
+p_3: "Research going back to Milliman (1982) has consistently shown that in-store music changes customer behavior. Tempo affects how long people stay. Genre congruence with brand identity affects what they spend. Environmental fit shifts how customers perceive the store itself."
+p_4: "Almost nobody in independent retail treats audio as a controllable variable. Your clients are leaving a behavioral lever on the floor."
+
+# Section 2 — What Entuned Does
+eyebrow_3: "THE PLATFORM"
+h2_2: "Original music, composed around customer psychology."
+p_5: "Entuned profiles a store&rsquo;s ideal customer psychographically, then composes original music targeting that profile. Tempo, mode, instrumentation, genre congruence, lyrical density. Every parameter maps to a specific behavioral outcome."
+p_6: "No playlist. No catalog. No licensed tracks carrying someone else&rsquo;s brand associations."
+p_7: "Original music, built from customer psychology, with no licensing liability. Plays in-browser. No hardware. No app install. $99/month per location."
+step_1: "Profile the store&rsquo;s ideal customer (psychographic, not demographic)"
+step_2: "Translate that psychology into musical parameters (tempo, mode, instrumentation, genre congruence)"
+step_3: "Compose original music targeting those parameters"
+step_4: "Stream continuously in-store via web player"
+
+# Section 3 — Why Partners Like It
+eyebrow_4: "FOR PARTNERS"
+h2_3: "A layer your competitors aren&rsquo;t offering."
+benefit_1_title: "Recurring revenue."
+benefit_1_text: "20% of every client&rsquo;s monthly subscription, every month they stay on. At $99/mo, that&rsquo;s $237.60/year per client. Ten clients is $2,376/year. It compounds."
+benefit_2_title: "3 months Core free for your clients."
+benefit_2_text: "Every referral gets 3 months of Core ($99/mo value) at no cost. Core includes full psychographic profiling and music composed to match. Enough time to hear the difference on their floor."
+benefit_3_title: "No heavy lift."
+benefit_3_text: "You make the introduction. We handle onboarding, setup, and support. Your clients sign up through your referral link and attribution happens automatically."
+benefit_4_title: "Research-backed positioning."
+benefit_4_text: "You&rsquo;re recommending a measurable environmental variable backed by decades of peer-reviewed research. That changes the conversation with your clients."
+
+# Section 4 — Ideal Partners
+eyebrow_5: "WHO THIS IS FOR"
+h2_4: "If your clients have a store, a speaker, and a customer worth understanding."
+partner_type_1: "Retail consultants and coaches"
+partner_type_2: "Visual merchandising firms"
+partner_type_3: "Store design and experiential agencies"
+partner_type_4: "Retail branding firms"
+partner_type_5: "Inventory and merchandising advisors"
+partner_type_6: "Vertical specialists (jewelry, footwear, apparel, home goods, sporting goods)"
+p_8: "If you advise retailers on how to sell more or create stronger in-store experiences, Entuned extends your toolkit into a dimension most consultants haven&rsquo;t touched."
+
+# Section 5 — Benefits Grid
+eyebrow_6: "WHAT YOU GET"
+grid_1_label: "Commission"
+grid_1_value: "20% recurring monthly"
+grid_2_label: "Client offer"
+grid_2_value: "3 months Core free ($297 value)"
+grid_3_label: "Attribution"
+grid_3_value: "Unique referral link"
+grid_4_label: "Onboarding"
+grid_4_value: "We handle client setup and support"
+grid_5_label: "Materials"
+grid_5_value: "Partner one-pager and positioning guide"
+grid_6_label: "Reporting"
+grid_6_value: "Monthly commission statements"
+
+# Section 6 — CTA
+h2_5: "Become an Entuned Partner"
+form_note: "We review applications within 48 hours. Once approved, you receive your referral link and partner materials."
+btn_1: "Apply to Partner Program"
+
+# Section 7 — FAQ
+faq_1_q: "How does commission work?"
+faq_1_a: "You earn 20% of the monthly subscription for every client who signs up through your referral link and converts to paid after the free period. Commission is recurring for as long as the client stays subscribed."
+faq_2_q: "When do I get paid?"
+faq_2_a: "Monthly, after the client&rsquo;s payment processes. Minimum payout threshold: $50. Paid via Stripe Connect or PayPal."
+faq_3_q: "What if my client cancels?"
+faq_3_a: "Commission stops when the subscription stops. If they resubscribe, commission resumes."
+faq_4_q: "Do I need to be technical?"
+faq_4_a: "No. You make the introduction. Entuned handles everything from onboarding to support. The player runs in-browser with no hardware required."
+faq_5_q: "What does Core include that Free doesn&rsquo;t?"
+faq_5_a: "Core includes psychographic profiling of the store&rsquo;s ideal customer and music composed to match that profile. The Free tier uses broad behavioral modes without ICP customization."
+faq_6_q: "Can I white-label Entuned?"
+faq_6_a: "Not currently. We&rsquo;re open to discussing that with high-volume partners."

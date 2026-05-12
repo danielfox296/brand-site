@@ -9,15 +9,15 @@
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
   <link rel="canonical" href="https://entuned.co/partners.html">
-  <meta name="robots" content="noindex, follow">
-  <title>Partners | Entuned</title>
-  <meta name="description" content="Technology and integration partners connecting retail audio optimization with existing store analytics and infrastructure.">
+  <meta name="robots" content="index, follow">
+  <title>Partner Program — Retail Music Referrals | Entuned</title>
+  <meta name="description" content="Refer retail clients to Entuned. 20% recurring commission, 3 months Core free for every referral. Apply to the partner program.">
   <meta name="theme-color" content="#20201c">
 
   <!-- Open Graph -->
   <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="rss.xml">
-  <meta property="og:title" content="Partners | Entuned">
-  <meta property="og:description" content="Technology and integration partners connecting retail audio optimization with existing store analytics and infrastructure.">
+  <meta property="og:title" content="Partner Program — Retail Music Referrals | Entuned">
+  <meta property="og:description" content="Refer retail clients to Entuned. 20% recurring commission, 3 months Core free for every referral. Apply to the partner program.">
   <meta property="og:url" content="https://entuned.co/partners.html">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://entuned.co/img/og-default.png">
@@ -26,8 +26,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Partners | Entuned">
-  <meta name="twitter:description" content="Technology and integration partners connecting retail audio optimization with existing store analytics and infrastructure.">
+  <meta name="twitter:title" content="Partner Program — Retail Music Referrals | Entuned">
+  <meta name="twitter:description" content="Refer retail clients to Entuned. 20% recurring commission, 3 months Core free for every referral. Apply to the partner program.">
   <meta name="twitter:image" content="https://entuned.co/img/og-default.png">
 
   <!-- Structured Data -->
@@ -70,7 +70,7 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Partners | Entuned"
+      "name": "Partner Program \u2014 Retail Music Referrals | Entuned"
     }
   ]
 }
@@ -81,7 +81,158 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
   <link rel="stylesheet" href="styles.css?v=d71261e4">
   <style>
-/* Page styles — see global styles.css */
+/* Partners page — scoped styles */
+
+/* How-it-works steps (numbered list) */
+.partners-steps {
+  margin-top: 2rem;
+}
+
+.partners-step {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(80, 146, 156, 0.10);
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.partners-step:first-child {
+  border-top: 1px solid rgba(80, 146, 156, 0.10);
+}
+
+.partners-step-num {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  width: 1.5rem;
+  text-align: center;
+}
+
+/* Ideal partner type list */
+.partners-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 2rem;
+}
+
+.partners-list li {
+  padding: 0.6rem 0;
+  padding-left: 1.25rem;
+  position: relative;
+  color: var(--text);
+  border-bottom: 1px solid rgba(80, 146, 156, 0.08);
+}
+
+.partners-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+/* Benefits summary grid */
+.partners-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: rgba(80, 146, 156, 0.12);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 1.5rem;
+}
+
+.partners-benefit {
+  background: var(--bg);
+  padding: 1.25rem 1.5rem;
+}
+
+.partners-benefit-label {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  margin-bottom: 0.35rem;
+}
+
+.partners-benefit-value {
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* FAQ accordion (details/summary pattern from impact page) */
+.partners-faq {
+  border-bottom: 1px solid rgba(80, 146, 156, 0.12);
+}
+
+.partners-faq:first-of-type {
+  border-top: 1px solid rgba(80, 146, 156, 0.12);
+}
+
+.partners-faq summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  cursor: pointer;
+  list-style: none;
+  color: var(--text);
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.15s;
+  user-select: none;
+}
+
+.partners-faq summary::-webkit-details-marker { display: none; }
+
+.partners-faq summary span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.partners-faq summary::after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  border-right: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  transform: rotate(45deg) translateY(-2px);
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+
+.partners-faq[open] summary::after {
+  transform: rotate(-135deg) translateY(-2px);
+}
+
+.partners-faq summary:hover {
+  color: var(--accent);
+}
+
+.partners-faq-body {
+  padding: 0.25rem 0 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .partners-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}
   </style>
 </head>
 <body>
@@ -104,37 +255,115 @@
   <!-- HERO -->
 <section class="hero-image-bg" style="--hero-bg: url('img/parallax-retail-tech.jpg'); min-height: 60vh;">
   <div class="container">
-    <h1>An audio variable for the retail stack.</h1>
-    <p class="subline">Partnership program coming soon. We&rsquo;re building integrations with POS, analytics, and retail-tech systems that wire audio into the data layer.</p>
+    <p class="section-eyebrow" style="color: var(--gold);">PARTNER PROGRAM</p>
+    <h1>Your clients control every variable in the store. Except what&rsquo;s playing.</h1>
+    <p class="subline">Entuned composes original music around a store&rsquo;s customer psychology. Refer your retail clients, earn 20% recurring commission on every subscription.</p>
   </div>
 </section>
 
-<!-- COMING SOON -->
+<!-- THE GAP -->
+<section class="section">
+  <div class="container" style="max-width: 800px;">
+    <p class="section-eyebrow fade-up">THE PROBLEM</p>
+    <h2 class="fade-up">The audio is always the afterthought.</h2>
+    <p class="fade-up">Lighting gets a plan. Fixtures get a budget. Product placement follows a merchandising strategy. Visual elements are deliberate down to the paint color.</p>
+    <p class="fade-up">The music is a Spotify playlist someone made three months ago.</p>
+    <p class="fade-up">Research going back to Milliman (1982) has consistently shown that in-store music changes customer behavior. Tempo affects how long people stay. Genre congruence with brand identity affects what they spend. Environmental fit shifts how customers perceive the store itself.</p>
+    <p class="fade-up">Almost nobody in independent retail treats audio as a controllable variable. Your clients are leaving a behavioral lever on the floor.</p>
+  </div>
+</section>
+
+<!-- WHAT ENTUNED DOES -->
+<section class="section section--tinted">
+  <div class="container" style="max-width: 800px;">
+    <p class="section-eyebrow fade-up">THE PLATFORM</p>
+    <h2 class="fade-up">Original music, composed around customer psychology.</h2>
+    <p class="fade-up">Entuned profiles a store&rsquo;s ideal customer psychographically, then composes original music targeting that profile. Tempo, mode, instrumentation, genre congruence, lyrical density. Every parameter maps to a specific behavioral outcome.</p>
+    <p class="fade-up">No playlist. No catalog. No licensed tracks carrying someone else&rsquo;s brand associations.</p>
+    <p class="fade-up">Original music, built from customer psychology, with no licensing liability. Plays in-browser. No hardware. No app install. $99/month per location.</p>
+
+    <div class="partners-steps fade-up">
+      <div class="partners-step"><span class="partners-step-num">1</span> Profile the store&rsquo;s ideal customer (psychographic, not demographic)</div>
+      <div class="partners-step"><span class="partners-step-num">2</span> Translate that psychology into musical parameters (tempo, mode, instrumentation, genre congruence)</div>
+      <div class="partners-step"><span class="partners-step-num">3</span> Compose original music targeting those parameters</div>
+      <div class="partners-step"><span class="partners-step-num">4</span> Stream continuously in-store via web player</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY PARTNERS LIKE IT -->
 <section class="section">
   <div class="container">
-    <h2 class="fade-up">Partnership Program Coming Soon</h2>
-
-    <p class="fade-up">Entuned is built to sit alongside the rest of the retail stack. Point-of-sale, foot-traffic analytics, customer data platforms, and in-store hardware all connect in.</p>
-
-    <p class="fade-up">We are currently in conversations with technology providers across these categories. Partner details and integration docs will appear here as those conversations close.</p>
-
-    <div class="card-grid card-grid--3" style="margin-top: 3rem;">
+    <div style="text-align: center; margin-bottom: 3rem;">
+      <p class="section-eyebrow fade-up">FOR PARTNERS</p>
+      <h2 class="fade-up">A layer your competitors aren&rsquo;t offering.</h2>
+    </div>
+    <div class="card-grid card-grid--2">
       <div class="card fade-up">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg></div>
-        <div class="card-title">POS and Analytics</div>
-        <p class="card-text">Transaction data and traffic measurement that connect to the store-level behavioral picture.</p>
+        <div class="card-title">Recurring revenue.</div>
+        <p class="card-text">20% of every client&rsquo;s monthly subscription, every month they stay on. At $99/mo, that&rsquo;s $237.60/year per client. Ten clients is $2,376/year. It compounds.</p>
       </div>
-
       <div class="card fade-up">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
-        <div class="card-title">In-Store Hardware</div>
-        <p class="card-text">Speaker systems, streaming devices, and audio hardware compatible with Entuned deployments.</p>
+        <div class="card-title">3 months Core free for your clients.</div>
+        <p class="card-text">Every referral gets 3 months of Core ($99/mo value) at no cost. Core includes full psychographic profiling and music composed to match. Enough time to hear the difference on their floor.</p>
       </div>
-
       <div class="card fade-up">
-        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg></div>
-        <div class="card-title">Retail Technology</div>
-        <p class="card-text">Customer data platforms, store operations tools, and analytics dashboards that sit next to the audio layer.</p>
+        <div class="card-title">No heavy lift.</div>
+        <p class="card-text">You make the introduction. We handle onboarding, setup, and support. Your clients sign up through your referral link and attribution happens automatically.</p>
+      </div>
+      <div class="card fade-up">
+        <div class="card-title">Research-backed positioning.</div>
+        <p class="card-text">You&rsquo;re recommending a measurable environmental variable backed by decades of peer-reviewed research. That changes the conversation with your clients.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IDEAL PARTNERS -->
+<section class="section section--tinted">
+  <div class="container" style="max-width: 800px;">
+    <p class="section-eyebrow fade-up">WHO THIS IS FOR</p>
+    <h2 class="fade-up">If your clients have a store, a speaker, and a customer worth understanding.</h2>
+    <ul class="partners-list fade-up">
+      <li>Retail consultants and coaches</li>
+      <li>Visual merchandising firms</li>
+      <li>Store design and experiential agencies</li>
+      <li>Retail branding firms</li>
+      <li>Inventory and merchandising advisors</li>
+      <li>Vertical specialists (jewelry, footwear, apparel, home goods, sporting goods)</li>
+    </ul>
+    <p class="fade-up">If you advise retailers on how to sell more or create stronger in-store experiences, Entuned extends your toolkit into a dimension most consultants haven&rsquo;t touched.</p>
+  </div>
+</section>
+
+<!-- BENEFITS GRID -->
+<section class="section">
+  <div class="container" style="max-width: 800px;">
+    <p class="section-eyebrow fade-up">WHAT YOU GET</p>
+    <div class="partners-benefits-grid fade-up">
+      <div class="partners-benefit">
+        <div class="partners-benefit-label">Commission</div>
+        <div class="partners-benefit-value">20% recurring monthly</div>
+      </div>
+      <div class="partners-benefit">
+        <div class="partners-benefit-label">Client offer</div>
+        <div class="partners-benefit-value">3 months Core free ($297 value)</div>
+      </div>
+      <div class="partners-benefit">
+        <div class="partners-benefit-label">Attribution</div>
+        <div class="partners-benefit-value">Unique referral link</div>
+      </div>
+      <div class="partners-benefit">
+        <div class="partners-benefit-label">Onboarding</div>
+        <div class="partners-benefit-value">We handle client setup and support</div>
+      </div>
+      <div class="partners-benefit">
+        <div class="partners-benefit-label">Materials</div>
+        <div class="partners-benefit-value">Partner one-pager and positioning guide</div>
+      </div>
+      <div class="partners-benefit">
+        <div class="partners-benefit-label">Reporting</div>
+        <div class="partners-benefit-value">Monthly commission statements</div>
       </div>
     </div>
   </div>
@@ -142,10 +371,47 @@
 
 <!-- CTA -->
 <section class="section section--accent">
-  <div class="container" style="text-align: center;">
-    <h2 style="margin-bottom: 1rem;">Interested in Partnering?</h2>
-    <p class="fade-up" style="font-size: 1.05rem; opacity: 0.85; margin-bottom: 2.5rem;">If your platform serves retail and you see an integration worth building, we want to hear from you.</p>
-    <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+  <div class="container" style="max-width: 640px; text-align: center;">
+    <h2 style="margin-bottom: 1.5rem;">Become an Entuned Partner</h2>
+    <p class="fade-up" style="margin-bottom: 2rem; opacity: 0.85;">We review applications within 48 hours. Once approved, you receive your referral link and partner materials.</p>
+    <a href="contact.html" class="btn btn-primary">Apply to Partner Program</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container" style="max-width: 800px;">
+    <h2 class="fade-up" style="margin-bottom: 2rem;">Frequently Asked Questions</h2>
+
+    <details class="partners-faq fade-up">
+      <summary><span>How does commission work?</span></summary>
+      <div class="partners-faq-body"><p>You earn 20% of the monthly subscription for every client who signs up through your referral link and converts to paid after the free period. Commission is recurring for as long as the client stays subscribed.</p></div>
+    </details>
+
+    <details class="partners-faq fade-up">
+      <summary><span>When do I get paid?</span></summary>
+      <div class="partners-faq-body"><p>Monthly, after the client&rsquo;s payment processes. Minimum payout threshold: $50. Paid via Stripe Connect or PayPal.</p></div>
+    </details>
+
+    <details class="partners-faq fade-up">
+      <summary><span>What if my client cancels?</span></summary>
+      <div class="partners-faq-body"><p>Commission stops when the subscription stops. If they resubscribe, commission resumes.</p></div>
+    </details>
+
+    <details class="partners-faq fade-up">
+      <summary><span>Do I need to be technical?</span></summary>
+      <div class="partners-faq-body"><p>No. You make the introduction. Entuned handles everything from onboarding to support. The player runs in-browser with no hardware required.</p></div>
+    </details>
+
+    <details class="partners-faq fade-up">
+      <summary><span>What does Core include that Free doesn&rsquo;t?</span></summary>
+      <div class="partners-faq-body"><p>Core includes psychographic profiling of the store&rsquo;s ideal customer and music composed to match that profile. The Free tier uses broad behavioral modes without ICP customization.</p></div>
+    </details>
+
+    <details class="partners-faq fade-up">
+      <summary><span>Can I white-label Entuned?</span></summary>
+      <div class="partners-faq-body"><p>Not currently. We&rsquo;re open to discussing that with high-volume partners.</p></div>
+    </details>
   </div>
 </section>
   </main>
@@ -195,6 +461,7 @@
         <li><a href="about.html">About</a></li>
         <li><a href="careers.html">Careers</a></li>
         <li><a href="press.html">Press</a></li>
+        <li><a href="partners.html">Partners</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>

@@ -1,1 +1,152 @@
-/* Page styles — see global styles.css */
+/* Partners page — scoped styles */
+
+/* How-it-works steps (numbered list) */
+.partners-steps {
+  margin-top: 2rem;
+}
+
+.partners-step {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(80, 146, 156, 0.10);
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.partners-step:first-child {
+  border-top: 1px solid rgba(80, 146, 156, 0.10);
+}
+
+.partners-step-num {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  width: 1.5rem;
+  text-align: center;
+}
+
+/* Ideal partner type list */
+.partners-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 2rem;
+}
+
+.partners-list li {
+  padding: 0.6rem 0;
+  padding-left: 1.25rem;
+  position: relative;
+  color: var(--text);
+  border-bottom: 1px solid rgba(80, 146, 156, 0.08);
+}
+
+.partners-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+/* Benefits summary grid */
+.partners-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: rgba(80, 146, 156, 0.12);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 1.5rem;
+}
+
+.partners-benefit {
+  background: var(--bg);
+  padding: 1.25rem 1.5rem;
+}
+
+.partners-benefit-label {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  margin-bottom: 0.35rem;
+}
+
+.partners-benefit-value {
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* FAQ accordion (details/summary pattern from impact page) */
+.partners-faq {
+  border-bottom: 1px solid rgba(80, 146, 156, 0.12);
+}
+
+.partners-faq:first-of-type {
+  border-top: 1px solid rgba(80, 146, 156, 0.12);
+}
+
+.partners-faq summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+  cursor: pointer;
+  list-style: none;
+  color: var(--text);
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.15s;
+  user-select: none;
+}
+
+.partners-faq summary::-webkit-details-marker { display: none; }
+
+.partners-faq summary span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.partners-faq summary::after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  border-right: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  transform: rotate(45deg) translateY(-2px);
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+
+.partners-faq[open] summary::after {
+  transform: rotate(-135deg) translateY(-2px);
+}
+
+.partners-faq summary:hover {
+  color: var(--accent);
+}
+
+.partners-faq-body {
+  padding: 0.25rem 0 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .partners-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}
