@@ -86,7 +86,7 @@ sections:
 
   - type: prose
     body: |
-      For more on retail audio for home goods stores, see <a href="../for-home-goods.html">the home goods page</a>.
+      For more on retail audio for home goods stores, see <a href="../for-home-goods.html">the home goods page</a>. For specific levers to extend browsing and basket size in home goods retail, see <a href="../how-to-increase-dwell-time-home-goods.html">how to increase dwell time in home goods stores</a>.
 
   - type: cta
     variant: start-free

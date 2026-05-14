@@ -96,7 +96,7 @@ sections:
 
   - type: prose
     body: |
-      The deeper academic record on music and shopper behavior is catalogued on <a href="../science.html">the science page</a>.
+      The deeper academic record on music and shopper behavior is catalogued on <a href="../science.html">the science page</a>. For the full picture of what music does to customer behavior across all variables, see <a href="../how-music-affects-retail.html">how music affects customer behavior in retail</a>. For practical levers to translate dwell time gains into revenue, see <a href="../how-to-increase-dwell-time-retail.html">how to increase dwell time in retail stores</a>.
 
   - type: cta
     variant: start-free

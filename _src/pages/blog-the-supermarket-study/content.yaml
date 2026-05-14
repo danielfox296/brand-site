@@ -67,6 +67,10 @@ sections:
 
       Milliman proved the mechanism forty years ago. The question was never whether music affects behavior. The question was whether anyone would do something with the answer.
 
+  - type: prose
+    body: |
+      For the full research picture behind how music affects customer behavior in retail, see <a href="../how-music-affects-retail.html">how music affects customer behavior in retail</a>.
+
   - type: cta
     variant: start-free
     headline: "Hear it on your floor."

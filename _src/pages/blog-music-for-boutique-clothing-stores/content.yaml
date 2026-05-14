@@ -98,7 +98,7 @@ sections:
 
   - type: prose
     body: |
-      For more on retail audio for apparel and boutiques, see <a href="../for-apparel.html">the apparel page</a>.
+      For more on retail audio for apparel and boutiques, see <a href="../for-apparel.html">the apparel page</a>. For specific levers to increase average transaction value in clothing stores, see <a href="../how-to-increase-aov-apparel.html">how to increase average transaction value in clothing stores</a>.
 
   - type: cta
     variant: start-free

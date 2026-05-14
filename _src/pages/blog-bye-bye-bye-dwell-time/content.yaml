@@ -77,6 +77,10 @@ sections:
 
       The playlist was already on the next song by the time we checked out.
 
+  - type: prose
+    body: |
+      For the full picture of what retail audio research says about dwell time and what operators can do about it, see <a href="../how-to-increase-dwell-time-retail.html">how to increase dwell time in retail stores</a>.
+
   - type: cta
     variant: start-free
     headline: "Hear it on your floor."

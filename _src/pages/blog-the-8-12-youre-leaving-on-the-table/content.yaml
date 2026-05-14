@@ -85,7 +85,7 @@ sections:
 
   - type: prose
     body: |
-      The numbers side of this argument is <a href="../for-cfos.html">laid out for finance teams here</a>.
+      The numbers side of this argument is <a href="../for-cfos.html">laid out for finance teams here</a>. For a broader guide to the levers that move average order value across retail formats, see <a href="../how-to-increase-aov-retail.html">how to increase average order value in retail</a>.
 
   - type: cta
     variant: start-free

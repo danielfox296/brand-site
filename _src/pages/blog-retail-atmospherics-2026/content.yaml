@@ -113,7 +113,7 @@ sections:
 
   - type: prose
     body: |
-      For the retail leader view of why this matters, see <a href="../for-retail-leaders.html">the retail leaders page</a>.
+      For the retail leader view of why this matters, see <a href="../for-retail-leaders.html">the retail leaders page</a>. For the full research picture behind how audio affects customers, see <a href="../how-music-affects-retail.html">how music affects customer behavior in retail</a>.
 
   - type: cta
     variant: start-free
