@@ -1,0 +1,131 @@
+title: "Music Licensing for Retail Stores: Fines, Lawsuits, and What Every Store Owner Should Know"
+slug: "music-licensing-for-retail-stores"
+eyebrow: "MARKET INTEL"
+dek: "Part 1 of 3. A personal Spotify account is not a business license. Here is what the law actually says, what the fines look like, and what compliance actually costs."
+date: "2026-05-14"
+last_updated: "2026-05-14"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/retail-music-licensing-2026.jpg"
+  alt: "Close-up of fine print on a music licensing agreement, representing the legal stakes for retail stores playing unlicensed music"
+  caption: "Photo: Unsplash"
+meta_description: "Most retail stores play music without the right license. Here's what the law actually says, what the fines look like, and why your personal Spotify account doesn't cover commercial use."
+og_image: "/img/blog/retail-music-licensing-2026.jpg"
+tags: [music-licensing, ascap, bmi, compliance, copyright, retail-music]
+sections:
+  - type: key_takeaways
+    items:
+      - "Playing Spotify, Apple Music, or any consumer streaming service in your retail store is copyright infringement. Personal licenses cover private use only."
+      - "Statutory damages run $750 to $150,000 per song. Each song on a playlist is a separate violation."
+      - "ASCAP, BMI, SESAC, and GMR actively enforce against small retailers using field investigators, social media monitoring, and AI detection tools."
+      - "Total annual cost to do it right runs $500 to $1,500 for a small store. The cost of doing it wrong starts at several thousand dollars per enforcement action."
+
+  - type: prose
+    body: |
+      A bar in St. Louis called JP's Corner Bar got a letter from BMI in 2019. The letter said they owed licensing fees for the music they had been playing. The fines were steep enough that the business permanently closed shortly after the lawsuit.
+
+      JP's didn't host concerts. They weren't running a nightclub. They were playing recorded music in a commercial space, the same way tens of thousands of small retail businesses do every single day.
+
+      That same year, ASCAP sued a bar in Denver called Meadowlark for $27,000. Meadowlark had actually held a music license years earlier, paid for it starting in 2010, then let it lapse in 2015. ASCAP remembered. A restaurant in Connecticut called Vazzy's Cucina paid $18,000 for playing nine songs without a license. That's $2,000 per song for background music that was probably barely audible over dinner conversation.
+
+      These stories usually get told about bars and restaurants, because that's where performing rights organizations focus most of their enforcement energy. But the law behind them applies to every commercial space where copyrighted music plays. That includes retail stores.
+
+  - type: subhead
+    level: 2
+    text: "Do You Need a Music License for Your Retail Store?"
+    anchor: "do-you-need-a-license"
+
+  - type: prose
+    body: |
+      Under U.S. copyright law, songwriters own the exclusive right to the public performance of their songs. "Public performance" sounds like it means a concert, but the legal definition covers a lot more ground. Any time a copyrighted song plays in a place where people outside your immediate circle of family and friends can hear it, that counts as a public performance. A clothing store with a Bluetooth speaker qualifies.
+
+      The organizations that manage and enforce music licensing for businesses are called performing rights organizations, or PROs. The major ones in the U.S. are ASCAP, BMI, SESAC, and a newer one called GMR. Each PRO represents a different catalog of songwriters and publishers. Taylor Swift is with BMI. Beyoncé is with ASCAP. A single song can involve writers from different PROs if it was co-written, which means legally playing most popular music in a retail store requires licenses from multiple organizations.
+
+      So yes, in most cases, you do need a music license for your retail store. The cost of staying compliant with a blanket license from each PRO starts in the low hundreds per year for small venues, scaling up based on square footage, occupancy, and how you use the music. For a small retail store, total annual cost across PROs might run $500 to $1,500.
+
+  - type: subhead
+    level: 2
+    text: "What Happens If You Play Unlicensed Music in Your Business?"
+    anchor: "fines-and-enforcement"
+
+  - type: stat_callout
+    number: "$750–$150,000"
+    label: "Statutory damages per song infringed under the U.S. Copyright Act"
+    source: "17 U.S.C. § 504(c)"
+    accent: gold
+
+  - type: prose
+    body: |
+      Statutory damages under the Copyright Act range from $750 to $30,000 per song. If a court finds the infringement was willful, that ceiling goes up to $150,000 per song. Each song played without a license counts as a separate violation.
+
+      BMI sued more than 160 businesses in 2015 alone. ASCAP filed 13 copyright infringement actions against bars and restaurants in a single month in 2019. The Green Knoll Grill in New Jersey paid more than $20,000 to BMI. These are real enforcement actions against real small businesses, and PROs are finding noncompliant businesses faster than ever. They're using technology, social media monitoring, and AI-based detection tools at a scale that wasn't possible ten years ago.
+
+      A small retail operator getting a $10,000 demand from a PRO faces a decision with no good options. Pay the fine and buy the license going forward. Hire a lawyer and fight it, which costs more than the fine. Or ignore it and hope it goes away, which is how JP's Corner Bar in St. Louis ended up closing.
+
+  - type: subhead
+    level: 2
+    text: "Can You Play Spotify or Apple Music in Your Retail Store?"
+    anchor: "spotify-apple-music-retail"
+
+  - type: aside
+    title: "What the terms of service actually say"
+    body: |
+      Spotify's terms of service restrict use to "personal, non-commercial" purposes. Apple Music's terms are equivalent. Every major consumer streaming platform has the same language.
+
+      When business owners have asked Spotify directly whether they can use the service in their stores, the answer has been a flat no, with a redirect to Soundtrack Your Brand, a separate commercial service starting at $29 per month.
+
+      Copyright infringement doesn't require intent. Playing your personal Spotify playlist through a retail store speaker is infringement whether you realized it or not, and "I didn't know" has never been a successful defense in a music licensing lawsuit.
+
+  - type: subhead
+    level: 2
+    text: "Music Licensing Exemptions for Small Retail Stores"
+    anchor: "section-110-exemption"
+
+  - type: prose
+    body: |
+      There are narrow exemptions under Section 110(5)(B) of the Copyright Act that apply to some retail environments.
+
+      Retail stores under 2,000 square feet are generally exempt from music licensing requirements if they're playing commercial broadcast radio (AM/FM, not streaming, not satellite radio) through no more than six speakers total, with no more than four speakers in any single room. The store can't charge customers an admission fee, and the radio signal can't be retransmitted beyond the premises.
+
+      The critical point: none of these exemptions apply to streaming services. If your store is playing Spotify, Apple Music, Pandora, YouTube, or any other streaming platform, the square footage of your store is irrelevant. You need a license or you need a commercially licensed music service.
+
+  - type: subhead
+    level: 2
+    text: "How ASCAP and BMI Find Unlicensed Retail Businesses"
+    anchor: "how-pros-find-businesses"
+
+  - type: prose
+    body: |
+      PROs employ field representatives who walk into businesses, listen to what's playing, and check whether the business holds a license. In some cases they'll visit multiple times and send letters before escalating. ASCAP has said publicly that they reach out to businesses repeatedly before filing suit.
+
+      But the letters arrive from a legal department, they reference specific statutory damages, and they come with a price attached. For a store owner who's never thought about music licensing, the first letter from ASCAP or BMI feels like a scam. Except this one has federal copyright law behind it.
+
+      The PROs will negotiate, and they'd prefer you just buy a blanket license. But if a business ignores the letters, they file. And they win, because the law on this is straightforward.
+
+  - type: subhead
+    level: 2
+    text: "Why This Matters Beyond Your Store"
+    anchor: "beyond-your-store"
+
+  - type: prose
+    body: |
+      Most of the content written about music licensing for retail stores comes from companies that sell licensed music subscriptions. Their framing is predictable: the law says you need a license, and they sell licenses. But it means nobody looks past the store owner. Comply or face fines.
+
+      But someone else has a stake in whether a retail tenant is music-compliant. If a PRO puts enough financial pressure on a small retailer to threaten the business, the fallout reaches past the storefront. There's a lease attached to that space. There's a landlord or property manager on the other end of it. And there's a vacancy that follows if the business goes under.
+
+      That's a different conversation. We cover it in <a href="../blog/music-licensing-compliance-commercial-landlords-property-managers.html">part two of this series</a>, and the specific options available to retail stores — including free ones — in <a href="../blog/free-legal-music-options-retail-stores.html">part three</a>.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "music-licensing-compliance-commercial-landlords-property-managers"
+      - slug: "free-legal-music-options-retail-stores"
+      - slug: "can-you-play-spotify-in-your-store"

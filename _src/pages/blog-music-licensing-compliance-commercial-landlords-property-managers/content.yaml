@@ -1,0 +1,117 @@
+title: "Music Licensing Compliance: A Hidden Liability Risk for Commercial Landlords and Property Managers"
+slug: "music-licensing-compliance-commercial-landlords-property-managers"
+eyebrow: "MARKET INTEL"
+dek: "Part 2 of 3. Your retail tenants are almost certainly playing unlicensed music right now. Here's why that creates a vacancy risk, a legal exposure question, and an easy fix that costs you nothing."
+date: "2026-05-14"
+last_updated: "2026-05-14"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/store-manager-problem.jpg"
+  alt: "Property manager reviewing a commercial lease in a retail corridor, representing the downstream liability risk of tenant music noncompliance"
+  caption: "Photo: Unsplash"
+meta_description: "Your retail tenants are probably playing unlicensed music right now. Here's why that's a problem for your lease, your vacancy rate, and possibly your own legal exposure."
+og_image: "/img/blog/store-manager-problem.jpg"
+tags: [music-licensing, commercial-real-estate, landlord-liability, compliance, retail-music]
+sections:
+  - type: key_takeaways
+    items:
+      - "Nearly every small retail tenant is playing unlicensed music right now. Most don't know it's illegal."
+      - "A PRO enforcement action can cost a single-store retailer $10,000 to $30,000 — enough to force the business to close and leave you with a vacant space."
+      - "Commercial landlords face limited but real secondary liability exposure once they become aware of a tenant's infringement."
+      - "A one-page tenant communication about music licensing costs nothing and removes a risk you're currently carrying silently."
+
+  - type: prose
+    body: |
+      In <a href="../blog/music-licensing-for-retail-stores.html">part one of this series</a>, we covered how music licensing works for retail stores, what the fines look like, and why a personal Spotify account doesn't satisfy commercial licensing requirements. The short version: statutory damages start at $750 per song and can reach $150,000 per song for willful infringement. PROs like ASCAP and BMI actively enforce against small businesses. At least one — JP's Corner Bar in St. Louis — was forced to permanently close after a BMI enforcement action in 2019.
+
+      Those stories get framed as a problem for the store owner. And they are. But if you're a commercial landlord or property manager with retail tenants, the downstream consequences land on you in ways that almost nobody in commercial real estate is talking about.
+
+  - type: subhead
+    level: 2
+    text: "How Music Licensing Fines Threaten Your Retail Tenants and Your Lease"
+    anchor: "licensing-fines-and-vacancies"
+
+  - type: prose
+    body: |
+      Walk into most small retail stores in America and you'll hear music playing. In the vast majority of those stores, the music is coming from a personal Spotify or Apple Music account connected to a Bluetooth speaker. The store owner or a shift manager picked a playlist that felt right. Nobody thought twice about it.
+
+      Every one of those stores is technically in violation of federal copyright law.
+
+      That matters to a property manager because of what happens when a PRO decides to enforce. ASCAP and BMI employ field representatives who walk into businesses, listen to what's playing, and check whether the business holds a public performance license. If it doesn't, the letters start. And the letters reference statutory damages that can reach tens of thousands of dollars for a single evening of background music.
+
+      A retailer who gets hit with a $15,000 demand from ASCAP is dealing with an expense they didn't budget for, didn't see coming, and might not survive. If they're a single-store operator with tight margins, that demand could be the thing that tips them into closing. Vazzy's Cucina in Connecticut paid $18,000 for nine songs. The Meadowlark Bar in Denver paid $27,000. These aren't national chains with legal departments. These are small operators running on thin cash.
+
+      When that tenant closes, you have a vacant space. You have the carrying costs of that vacancy. You have the leasing commission and buildout costs to fill it again. None of that shows up in the PRO's enforcement math, but it shows up in yours.
+
+  - type: subhead
+    level: 2
+    text: "Can a Commercial Landlord Be Held Liable for a Tenant's Music Copyright Infringement?"
+    anchor: "landlord-liability"
+
+  - type: prose
+    body: |
+      This is the question that gets complicated, and the honest answer is: it depends on the specifics, and the law isn't fully settled.
+
+      U.S. courts have historically used two models when analyzing whether a property owner can be held vicariously liable for a tenant's copyright infringement. On one end of the spectrum are the "landlord-tenant" cases, where courts have consistently found that a landlord who collects flat rent, has no knowledge of the infringement, and doesn't supervise the tenant's operations is not liable. The key case is <em>Childress v. Taylor</em>, where a theater owner who leased his space to a production company was not held responsible when the company performed an infringing play. He collected rent. He didn't pick the show.
+
+      On the other end are the "dance hall" cases, going back to <em>Dreamland Ball Room v. Shapiro, Bernstein &amp; Co.</em> in 1929. In those cases, courts found that a venue operator who had the right and ability to control the infringing activity, and who derived a direct financial benefit from it, could be held vicariously liable. The two-prong test: did you have the power to supervise the infringing conduct, and did you benefit financially from it?
+
+      Most commercial landlords fall on the protected end of that spectrum. But "probably not liable" is doing real work in that sentence. And there's a related body of law around contributory trademark infringement where landlords have been held liable in ways that create an uncomfortable precedent. In <em>Luxottica v. Airport Mini Mall</em>, a jury awarded $1.9 million against a shopping mall owner whose tenants were selling counterfeit sunglasses. The landlord knew about the infringement, had received notices and copies of search warrants, and did nothing. The Eleventh Circuit upheld the verdict.
+
+  - type: subhead
+    level: 2
+    text: "The Risk You're Actually Carrying"
+    anchor: "three-layers-of-risk"
+
+  - type: prose
+    body: |
+      Even if direct legal liability for a tenant's unlicensed Spotify playlist is a stretch under current case law, the practical risk to commercial landlords and property managers is real. It has three layers.
+
+      The first layer is tenant financial distress. A PRO enforcement action against a retail tenant can create sudden, unbudgeted expenses in the $10,000 to $30,000 range. For a single-store operator, that's often existential. You lose the tenant, you absorb the vacancy.
+
+      The second layer is the notice problem. Once you become aware that a tenant is playing unlicensed music, your legal position gets less comfortable. The <em>Childress</em> protection rests partly on the landlord's lack of knowledge. Under contributory infringement doctrine, a party who knows about infringement and has the ability to stop it but doesn't can face exposure. Whether that doctrine applies to a commercial landlord who knows their tenant is playing Spotify through store speakers is an open question. It hasn't been litigated in that specific context. But the question exists.
+
+      The third layer is portfolio-level exposure. If you manage multiple retail properties, the odds that none of your tenants are playing unlicensed music approach zero. This isn't a single-tenant problem. It's a pattern across virtually every small retail operation in the country, which means it's a pattern across your portfolio.
+
+  - type: subhead
+    level: 2
+    text: "What Property Managers Can Do About Retail Tenant Music Compliance"
+    anchor: "what-to-do"
+
+  - type: prose
+    body: |
+      The options here aren't complicated, but they do require acknowledging that the problem exists, which puts you ahead of almost every property manager in the country right now.
+
+      The simplest move is to make music licensing compliance part of your tenant communication. Not as an enforcement mechanism or a lease requirement, but as a resource. Most retail tenants playing their personal Spotify don't know they're doing anything wrong. Telling them, and giving them a path to compliance, costs you nothing and removes a risk you're currently carrying silently.
+
+      A one-page reference document in your tenant welcome packet or lease signing package can cover the basics: what the law requires, what the fines look like, and what their options are for playing music legally. We cover those options in detail in <a href="../blog/free-legal-music-options-retail-stores.html">part three of this series</a>.
+
+      Some property managers will want to go further and add a music licensing compliance clause to their commercial lease template. Language requiring tenants to maintain proper public performance licenses for any music played in the premises, and to indemnify the landlord for any claims arising from unlicensed use, creates a paper trail. It doesn't guarantee you won't be named in an action. But it does establish that you took affirmative steps and that the tenant was informed.
+
+      The attorneys who specialize in this area recommend three baseline steps: include a clause in the lease requiring compliance with all applicable copyright laws, include an indemnity provision making the tenant responsible for any intellectual property claims arising from their use of the space, and document your communication about the issue.
+
+  - type: subhead
+    level: 2
+    text: "The Opportunity in Being Early"
+    anchor: "opportunity"
+
+  - type: prose
+    body: |
+      Almost nobody in commercial property management is thinking about this yet. Music licensing compliance doesn't show up in property management conferences, industry publications, or standard lease templates. That's an unusual position to be in as a property manager. Usually when a compliance risk affects your portfolio, you're learning about it after it becomes a problem. Here, you're looking at a well-established area of federal law, active and increasing enforcement by PROs, and near-universal noncompliance among small retail tenants. And you can address it with a tenant communication that costs you nothing.
+
+      In <a href="../blog/free-legal-music-options-retail-stores.html">part three</a>, we cover the specific options available to retail tenants who want to play music legally, including free alternatives that eliminate the licensing question entirely.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "music-licensing-for-retail-stores"
+      - slug: "free-legal-music-options-retail-stores"
+      - slug: "retail-music-licensing-2026"
