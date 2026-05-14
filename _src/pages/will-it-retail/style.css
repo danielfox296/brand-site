@@ -1,0 +1,180 @@
+/* Will It Retail — page-specific styles */
+
+/* ── Tier rows ── */
+.wir-tier-row {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 3px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.wir-tier-label {
+  width: 64px;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 1.625rem;
+  font-weight: 700;
+  color: #20201c;
+  flex-shrink: 0;
+}
+
+.wir-tier-label--s { background: var(--gold); }
+.wir-tier-label--a { background: #5cb85c; }
+.wir-tier-label--b { background: var(--accent); }
+.wir-tier-label--c { background: #e8c844; }
+.wir-tier-label--d { background: #e07840; }
+.wir-tier-label--f { background: #d94444; }
+
+.wir-tier-items {
+  flex: 1;
+  background: var(--bg-card);
+  border: 1px solid rgba(80, 146, 156, 0.10);
+  border-left: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  flex-wrap: wrap;
+}
+
+.wir-tier-row--s .wir-tier-items {
+  background: rgba(215, 175, 116, 0.06);
+  border-color: rgba(215, 175, 116, 0.15);
+}
+
+/* ── Song cards ── */
+.wir-song {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(80, 146, 156, 0.05);
+  border: 1px solid rgba(80, 146, 156, 0.12);
+  border-radius: 8px;
+  padding: 6px 14px 6px 6px;
+  transition: transform 0.15s ease;
+}
+
+.wir-tier-row--s .wir-song {
+  background: rgba(215, 175, 116, 0.08);
+  border-color: rgba(215, 175, 116, 0.18);
+}
+
+.wir-song:hover {
+  transform: scale(1.03);
+}
+
+.wir-song-art {
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.wir-entuned-mark {
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  background: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.wir-song-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.wir-song-title {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  font-family: var(--font-heading);
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.wir-song-artist {
+  font-size: 0.6875rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+/* ── Tier badges (breakdown cards) ── */
+.wir-tier-badge {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 4px;
+  color: #20201c;
+  margin-bottom: 0.875rem;
+}
+
+.wir-tier-badge--s { background: var(--gold); }
+.wir-tier-badge--a { background: #5cb85c; }
+.wir-tier-badge--b { background: var(--accent); }
+.wir-tier-badge--c { background: #e8c844; }
+.wir-tier-badge--d { background: #e07840; }
+.wir-tier-badge--f { background: #d94444; }
+
+/* ── S-tier callout box ── */
+.wir-callout {
+  background: linear-gradient(135deg, rgba(215, 175, 116, 0.06), rgba(80, 146, 156, 0.04));
+  border: 1px solid rgba(215, 175, 116, 0.18);
+  border-radius: 14px;
+  padding: 56px 48px;
+  text-align: center;
+}
+
+.wir-callout-s-badge {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 6px 20px;
+  border-radius: 6px;
+  color: #20201c;
+  background: var(--gold);
+  margin-bottom: 1.5rem;
+}
+
+/* ── Feature pills ── */
+.wir-features {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 1.5rem 0 2rem;
+}
+
+.wir-feature-pill {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--gold);
+  background: rgba(215, 175, 116, 0.08);
+  border: 1px solid rgba(215, 175, 116, 0.16);
+  padding: 6px 16px;
+  border-radius: 100px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .wir-callout { padding: 36px 20px; }
+  .wir-tier-label { width: 48px; font-size: 1.125rem; }
+  .wir-tier-items { padding: 8px 10px; gap: 8px; }
+  .wir-song-art,
+  .wir-entuned-mark { width: 36px; height: 36px; }
+  .wir-song-title { font-size: 0.75rem; }
+  .wir-song-artist { font-size: 0.625rem; }
+}

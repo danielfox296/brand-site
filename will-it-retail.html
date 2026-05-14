@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/will-it-retail.html">
+  <meta name="robots" content="index, follow">
+  <title>Will It Retail? The Music Tier List | Entuned</title>
+  <meta name="description" content="Not every song belongs in your store. We ranked real music S through F by how well it works in a retail environment. Most of it doesn&#x27;t make the cut.">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="rss.xml">
+  <meta property="og:title" content="Will It Retail? The Music Tier List | Entuned">
+  <meta property="og:description" content="Not every song belongs in your store. We ranked real music S through F by how well it works in a retail environment. Most of it doesn&#x27;t make the cut.">
+  <meta property="og:url" content="https://entuned.co/will-it-retail.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://entuned.co/img/og-default.png">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Will It Retail? The Music Tier List | Entuned">
+  <meta name="twitter:description" content="Not every song belongs in your store. We ranked real music S through F by how well it works in a retail environment. Most of it doesn&#x27;t make the cut.">
+  <meta name="twitter:image" content="https://entuned.co/img/og-default.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Entuned",
+  "url": "https://entuned.co",
+  "description": "Entuned engineers original music for retail floors at the parameter level \u2014 tempo, key, lyrical density, energy arc \u2014 tailored to a store's customer profile and tied to its sales outcomes. PRO-indemnified at every tier.",
+  "foundingDate": "2026",
+  "founder": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "knowsAbout": [
+    "retail atmospherics",
+    "music psychology",
+    "in-store customer behavior",
+    "retail analytics",
+    "engineered retail audio",
+    "behavioral retail variables"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/entuned"
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Will It Retail? The Music Tier List | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css?v=50e4ef94">
+  <style>
+/* Will It Retail — page-specific styles */
+
+/* ── Tier rows ── */
+.wir-tier-row {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 3px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.wir-tier-label {
+  width: 64px;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 1.625rem;
+  font-weight: 700;
+  color: #20201c;
+  flex-shrink: 0;
+}
+
+.wir-tier-label--s { background: var(--gold); }
+.wir-tier-label--a { background: #5cb85c; }
+.wir-tier-label--b { background: var(--accent); }
+.wir-tier-label--c { background: #e8c844; }
+.wir-tier-label--d { background: #e07840; }
+.wir-tier-label--f { background: #d94444; }
+
+.wir-tier-items {
+  flex: 1;
+  background: var(--bg-card);
+  border: 1px solid rgba(80, 146, 156, 0.10);
+  border-left: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  flex-wrap: wrap;
+}
+
+.wir-tier-row--s .wir-tier-items {
+  background: rgba(215, 175, 116, 0.06);
+  border-color: rgba(215, 175, 116, 0.15);
+}
+
+/* ── Song cards ── */
+.wir-song {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(80, 146, 156, 0.05);
+  border: 1px solid rgba(80, 146, 156, 0.12);
+  border-radius: 8px;
+  padding: 6px 14px 6px 6px;
+  transition: transform 0.15s ease;
+}
+
+.wir-tier-row--s .wir-song {
+  background: rgba(215, 175, 116, 0.08);
+  border-color: rgba(215, 175, 116, 0.18);
+}
+
+.wir-song:hover {
+  transform: scale(1.03);
+}
+
+.wir-song-art {
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.wir-entuned-mark {
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  background: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.wir-song-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.wir-song-title {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  font-family: var(--font-heading);
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.wir-song-artist {
+  font-size: 0.6875rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+/* ── Tier badges (breakdown cards) ── */
+.wir-tier-badge {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 4px;
+  color: #20201c;
+  margin-bottom: 0.875rem;
+}
+
+.wir-tier-badge--s { background: var(--gold); }
+.wir-tier-badge--a { background: #5cb85c; }
+.wir-tier-badge--b { background: var(--accent); }
+.wir-tier-badge--c { background: #e8c844; }
+.wir-tier-badge--d { background: #e07840; }
+.wir-tier-badge--f { background: #d94444; }
+
+/* ── S-tier callout box ── */
+.wir-callout {
+  background: linear-gradient(135deg, rgba(215, 175, 116, 0.06), rgba(80, 146, 156, 0.04));
+  border: 1px solid rgba(215, 175, 116, 0.18);
+  border-radius: 14px;
+  padding: 56px 48px;
+  text-align: center;
+}
+
+.wir-callout-s-badge {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 6px 20px;
+  border-radius: 6px;
+  color: #20201c;
+  background: var(--gold);
+  margin-bottom: 1.5rem;
+}
+
+/* ── Feature pills ── */
+.wir-features {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 1.5rem 0 2rem;
+}
+
+.wir-feature-pill {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--gold);
+  background: rgba(215, 175, 116, 0.08);
+  border: 1px solid rgba(215, 175, 116, 0.16);
+  padding: 6px 16px;
+  border-radius: 100px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .wir-callout { padding: 36px 20px; }
+  .wir-tier-label { width: 48px; font-size: 1.125rem; }
+  .wir-tier-items { padding: 8px 10px; gap: 8px; }
+  .wir-song-art,
+  .wir-entuned-mark { width: 36px; height: 36px; }
+  .wir-song-title { font-size: 0.75rem; }
+  .wir-song-artist { font-size: 0.625rem; }
+}
+  </style>
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav aria-label="Main navigation">
+  <div class="container">
+    <a href="/" class="logo"><img src="img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="how-it-works.html">How It Works</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-cta-item"><a href="https://app.entuned.co/start" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Start Free</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+  </div>
+</nav>
+
+  <main>
+  <!-- HERO -->
+<section class="section" style="text-align: center; padding-bottom: 2rem;">
+  <div class="container" style="max-width: 680px;">
+    <div class="fade-up">
+      <p class="section-eyebrow is-gold" style="margin-bottom: 1.5rem;">From the Entuned ranking series</p>
+      <h1>Will It Retail?</h1>
+      <p class="subline">Not every song belongs in your store. We ranked real music by how well it works in a retail environment. Most of it doesn't.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TIER LIST -->
+<section class="section" style="padding-top: 0; padding-bottom: 5rem;">
+  <div class="container" style="max-width: 820px;">
+    <p class="section-eyebrow fade-up" style="text-align: center; margin-bottom: 2rem;">The retail tier list</p>
+
+    <!-- S Tier -->
+    <div class="wir-tier-row wir-tier-row--s fade-up">
+      <div class="wir-tier-label wir-tier-label--s">S</div>
+      <div class="wir-tier-items">
+        <div class="wir-song">
+          <div class="wir-entuned-mark">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M9 19V6l12-3v13" stroke="#20201c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="6" cy="19" r="3" stroke="#20201c" stroke-width="2"/>
+              <circle cx="18" cy="16" r="3" stroke="#20201c" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="wir-song-info">
+            <span class="wir-song-title">Built for your store</span>
+            <span class="wir-song-artist">Entuned</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- A Tier -->
+    <div class="wir-tier-row fade-up">
+      <div class="wir-tier-label wir-tier-label--a">A</div>
+      <div class="wir-tier-items">
+        <div class="wir-song">
+          <div class="wir-song-art" style="background: #5a7a5a; color: #d4e1e5;" aria-hidden="true">&#9835;</div>
+          <div class="wir-song-info">
+            <span class="wir-song-title">Put Your Records On</span>
+            <span class="wir-song-artist">Corinne Bailey Rae</span>
+          </div>
+        </div>
+        <div class="wir-song">
+          <div class="wir-song-art" style="background: #4a6a80; color: #d4e1e5;" aria-hidden="true">&#9835;</div>
+          <div class="wir-song-info">
+            <span class="wir-song-title">Electric Feel</span>
+            <span class="wir-song-artist">MGMT</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- B Tier -->
+    <div class="wir-tier-row fade-up">
+      <div class="wir-tier-label wir-tier-label--b">B</div>
+      <div class="wir-tier-items">
+        <div class="wir-song">
+          <div class="wir-song-art" style="background: #3a5a62; color: #d4e1e5;" aria-hidden="true">&#9835;</div>
+          <div class="wir-song-info">
+            <span class="wir-song-title">Blinding Lights</span>
+            <span class="wir-song-artist">The Weeknd</span>
+          </div>
+        </div>
+        <div class="wir-song">
+          <div class="wir-song-art" style="background: #4a6a4a; color: #d4e1e5;" aria-hidden="true">&#9835;</div>
+          <div class="wir-song-info">
+            <span class="wir-song-title">Happy</span>
+            <span class="wir-song-artist">Pharrell Williams</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- C Tier -->
+    <div class="wir-tier-row fade-up">
+      <div class="wir-tier-label wir-tier-label--c">C</div>
+      <div class="wir-tier-items">
+        <div class="wir-song">
+          <div class="wir-song-art" style="background: #6a5a2a; color: #d4e1e5;" aria-hidden="true">&#9835;</div>
+          <div class="wir-song-info">
+            <span class="wir-song-title">Bohemian Rhapsody</span>
+            <span class="wir-song-artist">Queen</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- D Tier -->
+    <div class="wir-tier-row fade-up">
+      <div class="wir-tier-label wir-tier-label--d">D</div>
+      <div class="wir-tier-items">
+        <div class="wir-song">
+          <div class="wir-song-art" style="background: #5a3020; color: #d4e1e5;" aria-hidden="true">&#9835;</div>
+          <div class="wir-song-info">
+            <span class="wir-song-title">Lose Yourself</span>
+            <span class="wir-song-artist">Eminem</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- F Tier -->
+    <div class="wir-tier-row fade-up">
+      <div class="wir-tier-label wir-tier-label--f">F</div>
+      <div class="wir-tier-items">
+        <div class="wir-song">
+          <div class="wir-song-art" style="background: #3a1818; color: #d4e1e5;" aria-hidden="true">&#128128;</div>
+          <div class="wir-song-info">
+            <span class="wir-song-title">Bodies</span>
+            <span class="wir-song-artist">Drowning Pool</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- THE ARGUMENT -->
+<section class="section section--tinted">
+  <div class="container" style="max-width: 660px; text-align: center;">
+    <div class="fade-up">
+      <h2>Even A-tier songs weren't made for <span class="accent">your floor</span></h2>
+      <p>Every song was written for the artist, not for your customer. The tempo might be right, but the energy is wrong. The vibe fits, but the lyrics pull attention toward themselves. The best song on Monday morning is the wrong song on Saturday afternoon.</p>
+      <p><strong>Playlists are a guess. Every single time.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- TIER BREAKDOWN -->
+<section class="section">
+  <div class="container">
+    <div class="fade-up" style="text-align: center; margin-bottom: 3rem;">
+      <p class="section-eyebrow">What each tier actually means</p>
+      <h2 style="font-size: clamp(1.75rem, 4vw, 2.75rem);">The case against every tier except one</h2>
+    </div>
+    <div class="card-grid card-grid--2 fade-up" style="max-width: 900px; margin: 0 auto;">
+      <div class="card">
+        <div class="wir-tier-badge wir-tier-badge--a">A</div>
+        <div class="card-title">Close, but made for someone else</div>
+        <p class="card-text">Great songs that happen to work in a store. But &ldquo;happens to work&rdquo; means you&rsquo;re getting lucky &mdash; not getting strategic.</p>
+      </div>
+      <div class="card">
+        <div class="wir-tier-badge wir-tier-badge--b">B</div>
+        <div class="card-title">Safe and forgettable</div>
+        <p class="card-text">Nothing offensive, nothing memorable. Background noise that checks a box but never moves a needle.</p>
+      </div>
+      <div class="card">
+        <div class="wir-tier-badge wir-tier-badge--c">C</div>
+        <div class="card-title">Too much personality</div>
+        <p class="card-text">The song becomes the main character. Customers notice the music instead of the merchandise. That&rsquo;s a problem.</p>
+      </div>
+      <div class="card">
+        <div class="wir-tier-badge wir-tier-badge--d">D</div>
+        <div class="card-title">Creates the wrong state entirely</div>
+        <p class="card-text">The energy is real &mdash; but it&rsquo;s working against you. These songs put customers into motion: faster pace, shorter visits, earlier exits. Great music for a gym. Wrong music for a store.</p>
+      </div>
+      <div class="card">
+        <div class="wir-tier-badge wir-tier-badge--f">F</div>
+        <div class="card-title">Actively driving people out</div>
+        <p class="card-text">Wrong tempo, wrong energy, wrong everything. Your playlist just cost you a sale &mdash; and you&rsquo;ll never know it.</p>
+      </div>
+      <div class="card" style="border-color: rgba(215, 175, 116, 0.3); background: rgba(215, 175, 116, 0.04);">
+        <div class="wir-tier-badge wir-tier-badge--s">S</div>
+        <div class="card-title">Made for the room</div>
+        <p class="card-text">Built at the parameter level &mdash; tempo, energy, harmonic density, rhythmic feel &mdash; to do specific work in your specific environment. The only tier that actually belongs in a store.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S-TIER CALLOUT / CTA -->
+<section class="section">
+  <div class="container" style="max-width: 680px;">
+    <div class="wir-callout fade-up">
+      <div class="wir-callout-s-badge">S</div>
+      <h2 style="font-size: clamp(1.625rem, 3.5vw, 2.25rem); margin-bottom: 1rem;">S-tier music is made for the room</h2>
+      <p style="max-width: 520px; margin: 0 auto 0.5rem; opacity: 0.88;">Entuned builds original music at the parameter level &mdash; tempo, key, energy arc, lyrical density &mdash; tuned to influence how your customers feel, move, and buy.</p>
+      <p style="max-width: 520px; margin: 0 auto 1.5rem; opacity: 0.88;">No playlists. No licensing. No guessing.</p>
+      <div class="wir-features">
+        <span class="wir-feature-pill">Chill &middot; Steady &middot; Upbeat</span>
+        <span class="wir-feature-pill">Outcome-driven</span>
+        <span class="wir-feature-pill">Patent-pending</span>
+      </div>
+      <a href="https://app.entuned.co/start" class="btn btn-primary">Start Free</a>
+      <p style="margin-top: 1.25rem; font-size: 0.875rem; opacity: 0.5;">No credit card &middot; no time limit &middot; PRO-indemnified the moment it plays.</p>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4><img src="img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Engineered retail audio. PRO-indemnified.</p>
+      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="enterprise.html">Enterprise</a></li>
+        <li><a href="why-entuned.html">Why Entuned</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For Your Industry</h4>
+      <ul>
+        <li><a href="for-apparel.html">Apparel</a></li>
+        <li><a href="for-home-goods.html">Home Goods</a></li>
+        <li><a href="for-jewelry.html">Jewelry</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
+      <ul>
+        <li><a href="for-retail-leaders.html">Retail Leaders</a></li>
+        <li><a href="impact.html">Impact Calculator</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Research</h4>
+      <ul>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="case-studies.html">Case Studies</a></li>
+        <li><a href="science.html">The Science</a></li>
+        <li><a href="will-it-retail.html">Will It Retail?</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="how-music-affects-retail.html">How Music Affects Retail</a></li>
+        <li><a href="how-to-increase-aov-retail.html">Increase Average Order Value</a></li>
+        <li><a href="how-to-increase-dwell-time-retail.html">Increase Dwell Time</a></li>
+        <li><a href="how-to-increase-impulse-purchases-retail.html">Drive Impulse Purchases</a></li>
+        <li><a href="how-to-improve-retail-conversion-rate.html">Improve Conversion Rate</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="press.html">Press</a></li>
+        <li><a href="partners.html">Partners</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="licensing.html">Licensing &amp; PRO Coverage</a></li>
+        <li><a href="data.html">Data Practices</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="pricing/terms.html">Subscription Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG', {
+      linker: {
+        domains: ['entuned.co', 'music.entuned.co', 'app.entuned.co']
+      }
+    });
+  </script>
+  <script defer src="js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>
