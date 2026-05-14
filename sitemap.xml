@@ -841,4 +841,52 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+  <url>
+    <loc>https://entuned.co/how-music-affects-retail.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://entuned.co/how-to-increase-aov-retail.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://entuned.co/how-to-increase-dwell-time-retail.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://entuned.co/how-to-increase-impulse-purchases-retail.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://entuned.co/how-to-improve-retail-conversion-rate.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://entuned.co/how-to-increase-aov-apparel.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://entuned.co/how-to-increase-dwell-time-home-goods.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://entuned.co/how-to-increase-impulse-purchases-beauty.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

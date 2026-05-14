@@ -42,6 +42,17 @@ Four decades of peer-reviewed research on music and consumer behavior sit behind
 - [Retail Music Decibel Guide](https://entuned.co/retail-music-decibel-guide.html): Sortable reference table of typical sound levels for retail stores, restaurants, salons, gyms, and offices, with CDC NIOSH and OSHA threshold context. Sourced from peer-reviewed acoustics research and SoundPrint.
 - [PRO Enforcement Map](https://entuned.co/pro-enforcement-map.html): Interactive US map of 46 verified ASCAP music-licensing lawsuits filed in 2024-2025 against bars, restaurants, and venues. Sortable by state, year, and business type. Public-record dataset.
 
+## SEO Landing Pages
+
+- [How Music Affects Customer Behavior in Retail Stores](https://entuned.co/how-music-affects-retail.html): Research-backed pillar guide covering tempo, mode, genre congruence, lyrical priming, and the measurement gap that makes most music strategy useless in practice.
+- [How to Increase Average Order Value in Retail Stores](https://entuned.co/how-to-increase-aov-retail.html): Physical retail AOV mechanics, including how sonic environment primes premium purchasing and what the Elevate outcome mode targets.
+- [How to Increase Dwell Time in Retail Stores](https://entuned.co/how-to-increase-dwell-time-retail.html): How music tempo acts as an unconscious pacemaker, and how the Linger outcome mode extends browsing duration without layout changes.
+- [How to Drive Impulse Purchases In-Store](https://entuned.co/how-to-increase-impulse-purchases-retail.html): How arousal state drives impulse decisions and how the Energize outcome mode targets the emotional conditions that produce spontaneous buying.
+- [How to Improve Your Retail Store Conversion Rate](https://entuned.co/how-to-improve-retail-conversion-rate.html): The fifth conversion lever most retailers ignore: atmospheric congruence between music and brand positioning.
+- [How to Increase Average Transaction Value in Clothing Stores](https://entuned.co/how-to-increase-aov-apparel.html): Apparel-specific AOV dynamics, outfit completion psychology, and how lyrical content reinforces the self-image that drives multi-piece purchases.
+- [How to Increase Dwell Time in Furniture and Home Goods Stores](https://entuned.co/how-to-increase-dwell-time-home-goods.html): Why high-ticket browsing requires contemplation-mode sound design, and how slow tempos and spacious arrangements support couple decision-making.
+- [How to Drive Impulse Purchases in Beauty and Cosmetics Retail](https://entuned.co/how-to-increase-impulse-purchases-beauty.html): The self-reward loop in beauty retail and how lyrical content aligned to self-care themes reinforces the motivation that drives add-on purchases.
+
 ## Blog Posts
 
 - [What Is Entuned?](https://entuned.co/blog/what-is-entuned.html): Original music for retail stores. Measured like every other line item.

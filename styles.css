@@ -1668,6 +1668,17 @@ a.vertical-tile:hover .vertical-tile-cta {
   }
 }
 
+/* --- SEO editorial landing pages -------------------------------- */
+.seo-hero {
+  min-height: auto;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .seo-hero {
+    text-align: left;
+  }
+}
+
 /* --- Section variants (codify the inline style= patterns) ---- */
 .section--tinted {
   background: rgba(80, 146, 156, 0.06);
