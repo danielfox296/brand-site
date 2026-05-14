@@ -15,7 +15,7 @@ welcome:
   headline: "You're in."
 
   # Body — tier-aware
-  body_core: "Your Core subscription is active. Here is what happens next."
+  body_core: "Your Boost subscription is active. Here is what happens next."
   body_professional: "Your Professional subscription is active. Here is what happens next."
 
   # Step 1 — tier-aware

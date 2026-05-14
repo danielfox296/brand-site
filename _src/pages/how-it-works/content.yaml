@@ -15,9 +15,9 @@ step2:
   text: "Sonos, AirPlay, Bluetooth, line-in, hardwired — whatever audio system is already running in the store. No new hardware, no installer. The stream plays from a URL we hand you. Every track is original, commercial-use cleared, and PRO-indemnified the moment it plays."
 
 step3:
-  label: "Step 03 — Core"
+  label: "Step 03 — Boost"
   title: "Add your customer profile."
-  text: "When you upgrade to Core, the music shifts from a general catalogue to original tracks built around your single Ideal Customer Profile. Tempo range, lyrical density, instrumentation, energy arc, cultural reference set — specified on purpose to fit the customer your store is built to serve. About 420 tracks in the first month, refreshed and culled regularly against what holds the floor."
+  text: "When you upgrade to Boost, the music shifts from a general catalogue to original tracks built around your single Ideal Customer Profile. Tempo range, lyrical density, instrumentation, energy arc, cultural reference set — specified on purpose to fit the customer your store is built to serve. About 420 tracks in the first month, refreshed and culled regularly against what holds the floor."
 
 step4:
   label: "Step 04 — Professional"
@@ -34,7 +34,7 @@ card1:
   text: "General catalogue, two outcome modes, manual selection. Indefinite free access. The floor has music engineered for an outcome instead of whatever the vendor sent over."
 
 card2:
-  title: "Core"
+  title: "Boost"
   text: "One ICP. Music built around your specific customer. All research-backed outcomes unlocked. Manual control. Sales-associate-friendly web interface. ICP edit as the business evolves."
 
 card3:

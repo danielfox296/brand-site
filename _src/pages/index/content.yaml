@@ -18,13 +18,13 @@ pillar2:
   eyebrow: "The mechanism"
   h2: "Background music has been a creative endeavor for decades. We turned it into a design spec."
   p1: "Background music vendors lease songs artists wrote for other reasons — and the lyrics, tempo, energy, and cultural reference were never chosen with your retail floor in mind. Entuned produces original music to specification: your customer, your category, your outcome. Tempo tuned to your floor pace. Identity calibrated to your customer. Lyrics screened to avoid actively negative-priming the people you're trying to convert."
-  p2: "The Core tier starts with the customer your store is built for. We produce music that speaks to them, motivates a shopping experience that fits, and gets out of the way. Original, commercial-use cleared, no PRO obligation passed to you. Not a playlist. Not a curated library. A design specification, executed."
+  p2: "The Boost tier starts with the customer your store is built for. We produce music that speaks to them, motivates a shopping experience that fits, and gets out of the way. Original, commercial-use cleared, no PRO obligation passed to you. Not a playlist. Not a curated library. A design specification, executed."
 
 # Pillar 3 — The proof (pilot + improvement)
 pillar3:
   eyebrow: "The proof"
   h2: "Music that gets sharper the longer it runs."
-  p1: "Free and Core deliver the concept. Pro pulls sales and traffic data from your locations and refines the music against the outcome you set — the longer it runs, the more precisely it produces what you measure. Self-improving refinement compounds over weeks and months of correlation."
+  p1: "Free and Boost deliver the concept. Pro pulls sales and traffic data from your locations and refines the music against the outcome you set — the longer it runs, the more precisely it produces what you measure. Self-improving refinement compounds over weeks and months of correlation."
   p2: "The first pilot store ran the system for one day. Conversion went from 18% to 28%. One Tuesday, one location — anecdotal until it isn't, but the kind of single-store evidence we have. The full pilot data lands in your reporting stack, your terms, structured as a 12-week test against matched control stores."
 
 # Social proof
@@ -54,7 +54,7 @@ tiers:
   essentials_name: "Entuned Free"
   essentials_price: "Free"
   essentials_body: "Music tuned to one of two research-backed outcomes: Linger or Lift Energy. Free indefinitely, no credit card."
-  core_name: "Core"
+  core_name: "Boost"
   core_price: "$99/mo"
   core_body: "Music designed for your single Ideal Customer Profile (ICP). All research-backed outcomes unlocked. Per location."
   professional_name: "Professional"
@@ -69,7 +69,7 @@ tiers:
 home_faq_h2: "Common questions."
 
 home_faq_q1: "How much does it cost?"
-home_faq_a1: 'Entuned Free &mdash; no credit card, no invoice, no time limit. Entuned Core is $99 per location per month. Professional is $399 per location per month. Contact us for Enterprise pricing. <a href="pricing.html">See full pricing →</a>'
+home_faq_a1: 'Entuned Free &mdash; no credit card, no invoice, no time limit. Entuned Boost is $99 per location per month. Professional is $399 per location per month. Contact us for Enterprise pricing. <a href="pricing.html">See full pricing →</a>'
 
 home_faq_q2: "Do I need new speakers or hardware?"
 home_faq_a2: "No. Entuned streams through whatever audio system you already have — Sonos, AirPlay, Bluetooth, line-in, hardwired. The stream plays in a web browser. Internet, connected device, and speaker system required (obvi.)"

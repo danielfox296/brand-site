@@ -22,7 +22,7 @@ tiers:
   card1_title: "Entuned Free"
   card1_text: "Free, indefinite. Pick Linger or Lift Energy from the floor of one store. The catalogue starts streaming through the speakers you already have. Useful as the first look in a single location before a multi-store Ideal Customer Profile (ICP) build."
 
-  card2_title: "Core ($99/location/mo)"
+  card2_title: "Boost ($99/location/mo)"
   card2_text: "Music tailored to your single Ideal Customer Profile. For most apparel retailers, that is the customer your buyers are already merchandising for — same person, just specified to the music engine on purpose. About 420 tracks in the first month, refreshed against what holds the floor and culled against what doesn't."
 
   card3_title: "Professional ($399/location/mo)"
@@ -52,7 +52,7 @@ research:
 cta:
   eyebrow: "Get Started"
   h2: "Hear it on your floor."
-  subline: "Start free in a single store. Upgrade to Core or Professional when you want music tailored to a specific customer profile. No card, no time limit, no auto-renew trap."
+  subline: "Start free in a single store. Upgrade to Boost or Professional when you want music tailored to a specific customer profile. No card, no time limit, no auto-renew trap."
   cta_primary: "Start Free"
 
 related:

@@ -23,7 +23,7 @@ essentials_signup_url: "https://app.entuned.co/start"
 hero:
   eyebrow: "Pricing"
   headline: "Four tiers. Free forever, then $99 per location, per month."
-  subhead: "Free indefinitely on Entuned Free. $99 per location on Core. $399 per location on Pro. Enterprise negotiated for chains. No credit card to start."
+  subhead: "Free indefinitely on Entuned Free. $99 per location on Boost. $399 per location on Pro. Enterprise negotiated for chains. No credit card to start."
 
 # Tiers (Entuned Free → Core → Professional → Enterprise)
 tiers:
@@ -43,7 +43,7 @@ tiers:
     cta_footnote: "Sign in with email or Google. No credit card required."
 
   core:
-    name: "Core"
+    name: "Boost"
     eyebrow: "Music specifically for your customer, ready in hours"
     price: "$99"
     price_suffix: "/ location / month"
@@ -63,7 +63,7 @@ tiers:
     price: "$399"
     price_suffix: "/ location / month"
     summary: "Self-improving music tied to your store's data. Outcome Scheduling (like day-parting, but better). Refined as the dataset grows."
-    inc1: "Everything in Core"
+    inc1: "Everything in Boost"
     inc2: "POS integration"
     inc3: "Outcome Scheduling (automated, time-based outcome rotation)"
     inc4: "In-Store Promotional messaging — you write and approve store messages that play in rotation"
@@ -89,8 +89,8 @@ tiers:
 # How it ramps
 ramps:
   header: "How Entuned tiers stack up."
-  body1: "Entuned Free gives your sales floor two research based outcomes that were never available before, FOR FREE. Our Core offering gets you the full suite of research-backed outcomes engineered for your location's specific ICP. Professional hooks in to your POS to get more effective over time. Each tier is a step deeper, not a different product."
-  body2: "Most shop owners start on Entuned Free, move to Core within their first paid quarter, and graduate to Professional once they want the music tied to data they can audit."
+  body1: "Entuned Free gives your sales floor two research based outcomes that were never available before, FOR FREE. Our Boost offering gets you the full suite of research-backed outcomes engineered for your location's specific ICP. Professional hooks in to your POS to get more effective over time. Each tier is a step deeper, not a different product."
+  body2: "Most shop owners start on Entuned Free, move to Boost within their first paid quarter, and graduate to Professional once they want the music tied to data they can audit."
 
 # Indemnification callout
 indemnification:
@@ -104,15 +104,15 @@ indemnification:
 faq:
   header: "Questions"
   q1: "Why is Entuned Free actually free?"
-  a1: "The Entuned Free catalogue is real and yours forever — no trial clock, no credit card, no expiration. The structural difference at Core is not artificial scarcity — it is that Core music is built around your specific customer rather than a general catalogue. Most operators move to Core when their floor is ready for that level of specificity."
+  a1: "The Entuned Free catalogue is real and yours forever — no trial clock, no credit card, no expiration. The structural difference at Boost is not artificial scarcity — it is that Boost music is built around your specific customer rather than a general catalogue. Most operators move to Boost when their floor is ready for that level of specificity."
   q2: "Do I need special hardware?"
   a2: "No. Entuned streams through whatever audio system you already have — Sonos, AirPlay, Bluetooth, line-in, or a hardwired speaker rig."
   q3: "What about music licensing and PRO fees?"
   a3: "All audio Entuned delivers is original and commercial-use cleared. No PRO fees, no catalogue licensing, no public-performance exposure. Every subscription includes a written indemnification certificate. <a href=\"licensing.html\">Full details on the licensing page</a>."
   q4: "Can I cancel?"
-  a4: "Yes, monthly. No long-term contract on Core or Professional. Enterprise pricing is negotiated as part of the agreement."
-  q5: "What's the difference between Core and Professional?"
-  a5: "Our Core offering builds music around one Ideal Customer Profile and gives you all manual outcome control. Professional adds POS integration, multiple ICPs (Professional tailors music to each distinct customer type your store serves, instead of a single profile), Outcome Scheduling, scheduled interstitial promotional messaging, and self-improving refinement that compounds using your store's POS data. Most single-store shop owners start on Core. Multi-location retailers with a real measurement stack start on Professional."
+  a4: "Yes, monthly. No long-term contract on Boost or Professional. Enterprise pricing is negotiated as part of the agreement."
+  q5: "What's the difference between Boost and Professional?"
+  a5: "Our Boost offering builds music around one Ideal Customer Profile and gives you all manual outcome control. Professional adds POS integration, multiple ICPs (Professional tailors music to each distinct customer type your store serves, instead of a single profile), Outcome Scheduling, scheduled interstitial promotional messaging, and self-improving refinement that compounds using your store's POS data. Most single-store shop owners start on Boost. Multi-location retailers with a real measurement stack start on Professional."
   q6: "I already pay Soundtrack Your Brand or Mood Media. How does this compare?"
   a6: "Those vendors license catalogue music and pass the cost through your subscription. The catalogue was written for an artist's self-expression, not for your store's customer. Entuned generates original music engineered to specific parameters — tempo, key, lyrics, all for the customer your store is built to serve. Entuned is a different product, a sales lever."
 
@@ -120,8 +120,8 @@ faq:
 # Per the post-launch fixes: avoid three-button decision paralysis at the bottom of the page.
 final:
   header: "Pick the tier that fits your business."
-  subhead: "Most shop owners start with Core."
-  cta_primary_label: "Start Core — $99/mo"
+  subhead: "Most shop owners start with Boost."
+  cta_primary_label: "Start Boost — $99/mo"
   text_links_lead: "Or"
   text_links_essentials_label: "start free with Entuned Free"
   text_links_separator: "·"

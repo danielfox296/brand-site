@@ -23,7 +23,7 @@ tiers:
   card1_title: "Entuned Free"
   card1_text: "Free, indefinite. Pick Linger from the floor of your store and the catalogue starts streaming through the speakers you already have. Useful as the first look before you decide to specify the audio more deliberately for your customer."
 
-  card2_title: "Core ($99/location/mo)"
+  card2_title: "Boost ($99/location/mo)"
   card2_text: "Music tailored to your single Ideal Customer Profile. For most beauty supply retailers, that is the customer your buyer is already merchandising for &mdash; the regular, the texture-specific shopper, the salon professional restocking for clients. About 420 tracks in the first month, refreshed against what holds the floor."
 
   card3_title: "Professional ($399/location/mo)"
@@ -53,7 +53,7 @@ research:
 cta:
   eyebrow: "Get Started"
   h2: "Hear it on your floor."
-  subline: "Start free at Entuned Free in your store. Move to Core once you want music tailored to your specific customer."
+  subline: "Start free at Entuned Free in your store. Move to Boost once you want music tailored to your specific customer."
   cta_primary: "Start Free"
 
 related:
