@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/will-it-retail-game.html">
+  <meta name="robots" content="noindex">
+  <title>Will It Retail? — Ep 1: Dwell Time | Entuned</title>
+  <meta name="description" content="Sort 5 songs into retail tiers before time runs out.">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="rss.xml">
+  <meta property="og:title" content="Will It Retail? — Ep 1: Dwell Time | Entuned">
+  <meta property="og:description" content="Sort 5 songs into retail tiers before time runs out.">
+  <meta property="og:url" content="https://entuned.co/will-it-retail-game.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://entuned.co/img/og-default.png">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Will It Retail? — Ep 1: Dwell Time | Entuned">
+  <meta name="twitter:description" content="Sort 5 songs into retail tiers before time runs out.">
+  <meta name="twitter:image" content="https://entuned.co/img/og-default.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Entuned",
+  "url": "https://entuned.co",
+  "description": "Entuned engineers original music for retail floors at the parameter level \u2014 tempo, key, lyrical density, energy arc \u2014 tailored to a store's customer profile and tied to its sales outcomes. PRO-indemnified at every tier.",
+  "foundingDate": "2026",
+  "founder": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "knowsAbout": [
+    "retail atmospherics",
+    "music psychology",
+    "in-store customer behavior",
+    "retail analytics",
+    "engineered retail audio",
+    "behavioral retail variables"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/entuned"
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Will It Retail? \u2014 Ep 1: Dwell Time | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css?v=50e4ef94">
+  <style>
+/* =============================================
+   Full-screen game viewport overrides for SSG main wrapper
+   ============================================= */
+body { padding: 0 !important; margin: 0 !important; overflow: hidden !important; background:#000 !important; }
+main, .main { padding: 0 !important; margin: 0 !important; max-width: none !important; width:100% !important; height:100vh !important; display:flex !important; align-items:center !important; justify-content:center !important; }
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body {
+  width:100%; height:100%; overflow:hidden;
+  background:#000;
+  font-family:'Inter','Helvetica Neue',Arial,sans-serif;
+  user-select:none; -webkit-user-select:none; touch-action:none;
+}
+
+/* =============================================
+   9:16 VIEWPORT — everything lives inside this
+   ============================================= */
+#viewport{
+  position:relative;
+  aspect-ratio:9/16;
+  height:100vh;
+  max-height:100vh;
+  max-width:calc(100vh * 9 / 16);
+  background:#0a0a0a;
+  overflow:hidden;
+}
+
+/* =============================================
+   PROGRESS BAR — full width, top of viewport
+   ============================================= */
+#progress-bar{
+  position:absolute;
+  top:0;left:0;right:0;
+  height:6px;
+  background:rgba(255,255,255,0.06);
+  z-index:50;
+}
+#progress-fill{
+  position:absolute;
+  top:0;right:0;
+  height:100%;width:100%;
+  background:#22c55e;
+  transition:width 0.4s linear,background-color 0.8s;
+}
+
+/* =============================================
+   INTRO SCREEN
+   ============================================= */
+#intro{
+  position:absolute;inset:0;z-index:100;
+  background:#0a0a0a;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+}
+#intro-bg{
+  position:absolute;inset:0;
+  background:url("img/wir/album-grid-bg.jpg") center/cover no-repeat;
+  opacity:0.3;
+}
+#intro-vignette{
+  position:absolute;inset:0;
+  background:radial-gradient(ellipse at center,transparent 10%,#0a0a0a 65%);
+  z-index:1;
+}
+#intro-content{
+  position:relative;z-index:2;
+  text-align:center;width:80%;
+}
+.intro-word{
+  font-size:10vh;
+  font-weight:900;color:white;
+  opacity:0;transform:scale(0);
+  line-height:1.1;
+  position:absolute;width:100%;
+  top:50%;left:0;margin-top:-0.55em;
+  white-space:nowrap;
+}
+@keyframes wordPop{
+  0%{opacity:1;transform:scale(0);}
+  60%{transform:scale(1.08);}
+  100%{opacity:1;transform:scale(1);}
+}
+@keyframes wordFade{
+  0%{opacity:1;transform:scale(1);}
+  100%{opacity:0;transform:scale(1.6);}
+}
+#play-btn{
+  position:absolute;bottom:28%;left:50%;transform:translateX(-50%);
+  padding:2vh 6vh;
+  font-size:2.2vh;font-weight:900;letter-spacing:3px;
+  color:white;
+  background:linear-gradient(135deg,#FF2D55,#FF9500);
+  border:none;border-radius:60px;cursor:pointer;
+  opacity:0;z-index:3;
+  transition:transform 0.2s;
+}
+#play-btn:hover{transform:translateX(-50%) scale(1.06);}
+@keyframes fadeIn{to{opacity:1;}}
+
+/* =============================================
+   GAME SCREEN
+   ============================================= */
+#game{display:none;position:absolute;inset:0;}
+
+/* --- Timer + Header: top right of safe area --- */
+#timer-wrap{
+  position:absolute;
+  top:14%;right:13%;
+  text-align:right;z-index:51;
+}
+#timer{
+  font-size:5vh;font-weight:900;
+  color:#22c55e;font-variant-numeric:tabular-nums;
+}
+#game-header{
+  margin-top:0.3vh;
+  text-align:right;
+}
+#game-title{
+  font-size:1.6vh;font-weight:900;
+  color:rgba(255,255,255,0.4);letter-spacing:3px;
+}
+#ep-info{
+  font-size:1.2vh;font-weight:700;
+  color:rgba(255,255,255,0.25);margin-top:0.2vh;
+}
+
+/* --- PIP zone --- */
+#pip-zone{
+  position:absolute;
+  top:15.5%;left:4%;
+  width:15vh;height:12vh;
+  border:2px dashed rgba(255,255,255,0.1);
+  border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+}
+#pip-label{
+  font-size:1.1vh;font-weight:700;
+  color:rgba(255,255,255,0.12);
+  text-transform:uppercase;letter-spacing:2px;
+}
+
+/* =============================================
+   TIERS
+   ============================================= */
+#tiers{
+  position:absolute;
+  top:29%;left:4%;right:18%;
+  height:42%;
+  display:flex;flex-direction:column;
+  justify-content:space-between;
+}
+.tier-row{
+  display:flex;align-items:stretch;
+  height:18.5%;
+  border-radius:4px;overflow:hidden;
+}
+.tier-label{
+  width:7vh;min-width:7vh;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  font-weight:900;font-size:3.2vh;color:white;
+}
+.tier-sublabel{display:none;}
+.tier-drop{
+  flex:1;
+  background:rgba(255,255,255,0.025);
+  display:flex;flex-wrap:wrap;align-items:center;
+  padding:0.4vh 0.6vh;gap:0.4vh;
+  transition:background 0.15s;
+}
+.tier-drop.drag-over{background:rgba(255,255,255,0.07);}
+
+/* =============================================
+   STAGING
+   ============================================= */
+#staging{
+  position:absolute;
+  top:73%;left:4%;right:13%;
+}
+#staging-label{
+  font-size:1.1vh;font-weight:700;
+  color:rgba(255,255,255,0.18);
+  text-align:center;
+  margin-bottom:1vh;letter-spacing:2px;
+}
+#staging-row{
+  display:flex;justify-content:center;
+  gap:1.2vh;flex-wrap:nowrap;
+}
+
+/* =============================================
+   SONG CARDS
+   ============================================= */
+.song-card{
+  width:8vh;height:8vh;
+  border-radius:4px;overflow:hidden;
+  position:relative;cursor:grab;
+  transition:transform 0.12s,box-shadow 0.12s;
+  flex-shrink:0;
+}
+.song-card img{width:100%;height:100%;object-fit:cover;pointer-events:none;}
+.song-card:hover{transform:scale(1.06);box-shadow:0 0 15px rgba(255,255,255,0.15);}
+.card-label{
+  position:absolute;bottom:0;left:0;right:0;
+  background:linear-gradient(transparent,rgba(0,0,0,0.85));
+  padding:0.3vh 0.4vh 0.2vh;pointer-events:none;
+}
+.card-title{
+  font-size:0.75vh;font-weight:700;color:white;
+  display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.card-artist{
+  font-size:0.6vh;font-weight:400;color:rgba(255,255,255,0.55);
+  display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+
+/* Cards shrink when placed in a tier */
+.tier-drop .song-card{width:5vh;height:5vh;}
+.tier-drop .card-label{display:none;}
+
+/* =============================================
+   GHOST (drag preview)
+   ============================================= */
+#ghost{
+  position:fixed;
+  width:10vh;height:10vh;
+  border-radius:8px;overflow:hidden;
+  pointer-events:none;z-index:999;
+  display:none;
+  box-shadow:0 0 30px rgba(255,45,85,0.5);
+  transition:box-shadow 0.15s;
+}
+#ghost img{width:100%;height:100%;object-fit:cover;}
+#ghost-label{
+  position:absolute;bottom:-2vh;left:50%;
+  transform:translateX(-50%);
+  white-space:nowrap;
+  font-size:1.2vh;font-weight:700;color:white;
+  text-shadow:0 1px 6px rgba(0,0,0,0.9);
+}
+
+/* =============================================
+   EFFECTS
+   ============================================= */
+@keyframes shake{
+  0%,100%{transform:translateX(0);}
+  25%{transform:translateX(-4px);}
+  75%{transform:translateX(4px);}
+}
+#flash-overlay{
+  position:absolute;inset:0;
+  background:white;opacity:0;
+  pointer-events:none;z-index:90;
+}
+@keyframes flash{0%{opacity:0.3;}100%{opacity:0;}}
+
+.emoji-particle{
+  position:fixed;pointer-events:none;z-index:997;
+  font-size:3vh;
+  animation:emojiPop 1.3s ease-out forwards;
+}
+@keyframes emojiPop{
+  0%{opacity:1;transform:scale(0) translateY(0);}
+  30%{opacity:1;transform:scale(1.4) translateY(-3vh);}
+  100%{opacity:0;transform:scale(0.6) translateY(-12vh);}
+}
+#combo-text{
+  position:absolute;top:28%;left:50%;
+  transform:translate(-50%,-50%);
+  font-size:6vh;font-weight:900;
+  color:#FF9500;opacity:0;pointer-events:none;z-index:96;
+  text-shadow:0 0 30px rgba(255,149,0,0.5);
+}
+@keyframes comboFlash{
+  0%{opacity:1;transform:translate(-50%,-50%) scale(0.5);}
+  50%{transform:translate(-50%,-50%) scale(1.2);}
+  100%{opacity:0;transform:translate(-50%,-50%) scale(1);}
+}
+
+/* =============================================
+   END SCREEN
+   ============================================= */
+#end-screen{
+  display:none;position:absolute;inset:0;z-index:101;
+  background:rgba(10,10,10,0.95);
+  flex-direction:column;align-items:center;justify-content:center;
+}
+#end-screen h2{font-size:6vh;font-weight:900;color:white;margin-bottom:1vh;}
+#end-screen p{font-size:2vh;color:rgba(255,255,255,0.5);margin-bottom:3vh;}
+#replay-btn{
+  padding:1.6vh 5vh;font-size:2vh;font-weight:900;
+  color:white;background:linear-gradient(135deg,#FF2D55,#FF9500);
+  border:none;border-radius:50px;cursor:pointer;
+  transition:transform 0.2s;
+}
+#replay-btn:hover{transform:scale(1.06);}
+  </style>
+</head>
+<body>
+  
+
+  <main>
+  <div id="viewport">
+  <div id="progress-bar"><div id="progress-fill"></div></div>
+
+  <!-- INTRO -->
+  <div id="intro">
+    <div id="intro-bg"></div>
+    <div id="intro-vignette"></div>
+    <div id="intro-content">
+      <div id="intro-words"></div>
+    </div>
+    <button id="play-btn" onclick="startGame()">PLAY</button>
+  </div>
+
+  <!-- GAME -->
+  <div id="game">
+    <div id="timer-wrap">
+      <div id="timer">0:45</div>
+      <div id="game-header">
+        <div id="game-title">WILL IT RETAIL?</div>
+        <div id="ep-info">EP 1 — DWELL TIME</div>
+      </div>
+    </div>
+    <div id="pip-zone"><span id="pip-label">PIP</span></div>
+    <div id="tiers"></div>
+    <div id="staging">
+      <div id="staging-label">UNSORTED</div>
+      <div id="staging-row"></div>
+    </div>
+  </div>
+
+  <div id="flash-overlay"></div>
+  <div id="combo-text"></div>
+
+  <div id="end-screen">
+    <h2 id="end-title"></h2>
+    <p id="end-sub"></p>
+    <button id="replay-btn" onclick="location.reload()">PLAY AGAIN</button>
+  </div>
+</div>
+
+<div id="ghost"><img id="ghost-img" src="" alt=""><span id="ghost-label"></span></div>
+
+<script>
+const SONGS = [
+  {title:"Blinding Lights",artist:"The Weeknd",art:"img/wir/ep001/blinding-lights_the-weeknd.jpg",preview:"https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/b4/8f/17b48f9a-0b93-6bb8-fe1d-3a16623c2cfb/mzaf_9560252727299052414.plus.aac.p.m4a"},
+  {title:"Dreams",artist:"Fleetwood Mac",art:"img/wir/ep001/dreams_fleetwood-mac.jpg",preview:"https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cb/87/29/cb872937-bebb-f309-821e-5459a873f1b6/mzaf_13232595752463797281.plus.aac.p.m4a"},
+  {title:"Levitating",artist:"Dua Lipa",art:"img/wir/ep001/levitating_dua-lipa.jpg",preview:"https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/59/dc/4d/59dc4dda-93ff-8f1c-c536-f005f6ea6af5/mzaf_3066686759813252385.plus.aac.p.m4a"},
+  {title:"Sultans of Swing",artist:"Dire Straits",art:"img/wir/ep001/sultans-of-swing_dire-straits.jpg",preview:"https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/34/32/bd/3432bdb8-1f76-d95f-401b-e93e32cd76c8/mzaf_4481796812840018496.plus.aac.p.m4a"},
+  {title:"As It Was",artist:"Harry Styles",art:"img/wir/ep001/as-it-was_harry-styles.jpg",preview:"https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/10/16/67101606-3869-ca44-6c03-e13d6322cb51/mzaf_1135399237022217274.plus.aac.p.m4a"}
+];
+
+const TIERS = [
+  {id:'S',label:'S',sub:'OPTIMAL',color:'#FF2D55'},
+  {id:'A',label:'A',sub:'STRONG',color:'#FF9500'},
+  {id:'B',label:'B',sub:'ADEQUATE',color:'#8B7500'},
+  {id:'C',label:'C',sub:'RISKY',color:'#30B0C7'},
+  {id:'D',label:'D',sub:'HARMFUL',color:'#9B956B'},
+];
+
+const EMOJIS={
+  S:['🎉','✨','🌟','⭐','🎊','💎','🔥'],
+  A:['😊','😄','🙂','😁','🤩'],
+  B:['👍','💪','✅','👌'],
+  C:['😐','😑','🫤','😶','😒'],
+  D:['💀','👎','😬','🚫','💩','☠️'],
+};
+
+const TOTAL_TIME=45;
+let audioCtx,currentPreview,previewTimeout;
+let dragging=null,ghostEl,ghostImg,ghostLabel;
+let timerVal=TOTAL_TIME,timerInterval,tickInterval;
+let lastDropTime=0,comboCount=0;
+let gameStarted=false;
+let dragStartX=0,dragStartY=0,didDrag=false;
+
+// ========== AUDIO ==========
+function getAudioCtx(){
+  if(!audioCtx)audioCtx=new(window.AudioContext||window.webkitAudioContext)();
+  if(audioCtx.state==='suspended')audioCtx.resume();
+  return audioCtx;
+}
+
+function playThump(){
+  const ctx=getAudioCtx();
+  const osc=ctx.createOscillator();
+  const gain=ctx.createGain();
+  osc.type='sine';
+  osc.frequency.setValueAtTime(55,ctx.currentTime);
+  osc.frequency.exponentialRampToValueAtTime(28,ctx.currentTime+0.15);
+  gain.gain.setValueAtTime(0.5,ctx.currentTime);
+  gain.gain.exponentialRampToValueAtTime(0.001,ctx.currentTime+0.2);
+  osc.connect(gain);gain.connect(ctx.destination);
+  osc.start();osc.stop(ctx.currentTime+0.25);
+  const bufSize=Math.floor(ctx.sampleRate*0.025);
+  const buf=ctx.createBuffer(1,bufSize,ctx.sampleRate);
+  const d=buf.getChannelData(0);
+  for(let i=0;i<bufSize;i++)d[i]=(Math.random()*2-1)*(1-i/bufSize)*0.35;
+  const ns=ctx.createBufferSource();ns.buffer=buf;
+  const lp=ctx.createBiquadFilter();lp.type='lowpass';lp.frequency.value=180;
+  ns.connect(lp);lp.connect(ctx.destination);ns.start();
+}
+
+function playTick(){
+  const ctx=getAudioCtx();
+  const bufSize=Math.floor(ctx.sampleRate*0.006);
+  const buf=ctx.createBuffer(1,bufSize,ctx.sampleRate);
+  const d=buf.getChannelData(0);
+  for(let i=0;i<bufSize;i++){d[i]=(Math.random()*2-1)*Math.pow(1-i/bufSize,4)*0.1;}
+  const ns=ctx.createBufferSource();ns.buffer=buf;
+  const bp=ctx.createBiquadFilter();bp.type='bandpass';bp.frequency.value=4500;bp.Q.value=6;
+  const g=ctx.createGain();g.gain.value=0.5;
+  ns.connect(bp);bp.connect(g);g.connect(ctx.destination);ns.start();
+  const osc=ctx.createOscillator();const g2=ctx.createGain();
+  osc.type='sine';osc.frequency.value=2800;
+  g2.gain.setValueAtTime(0.05,ctx.currentTime);
+  g2.gain.exponentialRampToValueAtTime(0.001,ctx.currentTime+0.015);
+  osc.connect(g2);g2.connect(ctx.destination);
+  osc.start();osc.stop(ctx.currentTime+0.02);
+}
+
+function playDrop(tier){
+  const ctx=getAudioCtx();const osc=ctx.createOscillator();const gain=ctx.createGain();
+  const freqs={S:880,A:660,B:440,C:330,D:220};
+  osc.type='sine';osc.frequency.setValueAtTime(freqs[tier]||440,ctx.currentTime);
+  osc.frequency.exponentialRampToValueAtTime((freqs[tier]||440)*1.5,ctx.currentTime+0.08);
+  gain.gain.setValueAtTime(0.2,ctx.currentTime);
+  gain.gain.exponentialRampToValueAtTime(0.001,ctx.currentTime+0.25);
+  osc.connect(gain);gain.connect(ctx.destination);osc.start();osc.stop(ctx.currentTime+0.3);
+}
+
+function playGrab(){
+  const ctx=getAudioCtx();const osc=ctx.createOscillator();const gain=ctx.createGain();
+  osc.type='sine';osc.frequency.value=600;
+  gain.gain.setValueAtTime(0.05,ctx.currentTime);
+  gain.gain.exponentialRampToValueAtTime(0.001,ctx.currentTime+0.07);
+  osc.connect(gain);gain.connect(ctx.destination);osc.start();osc.stop(ctx.currentTime+0.08);
+}
+
+function playCombo(){
+  const ctx=getAudioCtx();
+  [0,0.08,0.16].forEach((t,i)=>{
+    const osc=ctx.createOscillator();const gain=ctx.createGain();
+    osc.type='triangle';osc.frequency.value=880*(i+1)/2;
+    gain.gain.setValueAtTime(0.1,ctx.currentTime+t);
+    gain.gain.exponentialRampToValueAtTime(0.001,ctx.currentTime+t+0.15);
+    osc.connect(gain);gain.connect(ctx.destination);
+    osc.start(ctx.currentTime+t);osc.stop(ctx.currentTime+t+0.2);
+  });
+}
+
+function playClear(){
+  const ctx=getAudioCtx();
+  [0,0.1,0.2,0.3,0.4].forEach((t,i)=>{
+    const osc=ctx.createOscillator();const gain=ctx.createGain();
+    osc.type='sine';osc.frequency.value=440*Math.pow(2,i/3);
+    gain.gain.setValueAtTime(0.12,ctx.currentTime+t);
+    gain.gain.exponentialRampToValueAtTime(0.001,ctx.currentTime+t+0.3);
+    osc.connect(gain);gain.connect(ctx.destination);
+    osc.start(ctx.currentTime+t);osc.stop(ctx.currentTime+t+0.35);
+  });
+}
+
+function playBuzzer(){
+  const ctx=getAudioCtx();const osc=ctx.createOscillator();const gain=ctx.createGain();
+  osc.type='sawtooth';osc.frequency.value=110;
+  gain.gain.setValueAtTime(0.4,ctx.currentTime);
+  gain.gain.setValueAtTime(0.4,ctx.currentTime+0.6);
+  gain.gain.exponentialRampToValueAtTime(0.001,ctx.currentTime+0.9);
+  osc.connect(gain);gain.connect(ctx.destination);osc.start();osc.stop(ctx.currentTime+1);
+}
+
+function previewSong(url){
+  if(currentPreview){currentPreview.pause();currentPreview=null;clearTimeout(previewTimeout);}
+  if(!url)return;
+  currentPreview=new Audio(url);currentPreview.volume=0.2;
+  currentPreview.play().catch(()=>{});
+  previewTimeout=setTimeout(()=>{if(currentPreview){currentPreview.pause();currentPreview=null;}},5000);
+}
+
+// ========== INTRO ==========
+function runIntro(){
+  const words=['WILL','IT','RETAIL?'];
+  const container=document.getElementById('intro-words');
+  let delay=400;
+  words.forEach((w,i)=>{
+    setTimeout(()=>{
+      const prev=container.querySelector('.intro-word');
+      if(prev)prev.style.animation='wordFade 0.2s ease-in forwards';
+      setTimeout(()=>{
+        container.innerHTML='';
+        const el=document.createElement('div');
+        el.className='intro-word';
+        el.textContent=w;
+        el.style.animation='wordPop 0.3s cubic-bezier(0.34,1.56,0.64,1) forwards';
+        container.appendChild(el);
+        playThump();
+      },i===0?0:250);
+    },delay+i*750);
+  });
+  setTimeout(()=>{
+    document.getElementById('play-btn').style.animation='fadeIn 0.6s ease-out forwards';
+  },delay+words.length*750+500);
+}
+
+function startGame(){
+  getAudioCtx();
+  document.getElementById('intro').style.display='none';
+  document.getElementById('game').style.display='block';
+  gameStarted=true;
+  buildTiers();
+  buildStaging();
+  startTimer();
+}
+
+// ========== BUILD ==========
+function buildTiers(){
+  const container=document.getElementById('tiers');
+  TIERS.forEach(t=>{
+    const row=document.createElement('div');row.className='tier-row';
+    const label=document.createElement('div');label.className='tier-label';
+    label.style.background=t.color;
+    label.innerHTML=t.label+'<span class="tier-sublabel">'+t.sub+'</span>';
+    const drop=document.createElement('div');drop.className='tier-drop';drop.dataset.tier=t.id;
+    row.appendChild(label);row.appendChild(drop);container.appendChild(row);
+  });
+}
+
+function buildStaging(){
+  const row=document.getElementById('staging-row');
+  SONGS.forEach((s,i)=>{
+    const card=document.createElement('div');card.className='song-card';card.dataset.idx=i;
+    card.innerHTML='<img src="'+s.art+'" alt="'+s.title+' by '+s.artist+'"><div class="card-label"><span class="card-title">'+s.title+'</span><span class="card-artist">'+s.artist+'</span></div>';
+    row.appendChild(card);
+  });
+}
+
+// ========== TIMER ==========
+function startTimer(){
+  updateTimerDisplay();
+  timerInterval=setInterval(()=>{
+    timerVal--;updateTimerDisplay();
+    if(timerVal<=0){clearInterval(timerInterval);clearInterval(tickInterval);endGame(false);}
+  },1000);
+  startTicking();
+}
+
+function startTicking(){
+  if(tickInterval)clearInterval(tickInterval);
+  const getInterval=()=>{
+    if(timerVal<=5)return 130;if(timerVal<=10)return 250;
+    if(timerVal<=20)return 500;return 1000;
+  };
+  const doTick=()=>{
+    if(!gameStarted)return;playTick();
+    clearInterval(tickInterval);tickInterval=setInterval(doTick,getInterval());
+  };
+  tickInterval=setInterval(doTick,getInterval());
+}
+
+function updateTimerDisplay(){
+  const el=document.getElementById('timer');
+  const m=Math.floor(timerVal/60);const s=timerVal%60;
+  el.textContent=m+':'+s.toString().padStart(2,'0');
+  const pct=timerVal/TOTAL_TIME;
+  if(pct<=0.22){el.style.color='#ef4444';}
+  else if(pct<=0.44){el.style.color='#FF9500';}
+  else if(pct<=0.67){el.style.color='#eab308';}
+  else{el.style.color='#22c55e';}
+  const fill=document.getElementById('progress-fill');
+  fill.style.width=(pct*100)+'%';
+  if(pct<=0.22)fill.style.background='#ef4444';
+  else if(pct<=0.44)fill.style.background='#FF9500';
+  else if(pct<=0.67)fill.style.background='#eab308';
+  else fill.style.background='#22c55e';
+}
+
+// ========== DRAG ==========
+ghostEl=document.getElementById('ghost');
+ghostImg=document.getElementById('ghost-img');
+ghostLabel=document.getElementById('ghost-label');
+
+document.addEventListener('pointerdown',(e)=>{
+  const card=e.target.closest('.song-card');
+  if(!card||!gameStarted)return;
+  dragging=card;dragStartX=e.clientX;dragStartY=e.clientY;didDrag=false;
+});
+
+document.addEventListener('pointermove',(e)=>{
+  if(!dragging)return;
+  e.preventDefault();
+  const dx=Math.abs(e.clientX-dragStartX);
+  const dy=Math.abs(e.clientY-dragStartY);
+  if(!didDrag&&(dx>8||dy>8)){
+    didDrag=true;
+    const idx=parseInt(dragging.dataset.idx);
+    ghostImg.src=SONGS[idx].art;
+    ghostLabel.textContent=SONGS[idx].title;
+    ghostEl.style.display='block';
+    dragging.style.opacity='0.3';
+    playGrab();
+    document.querySelectorAll('.tier-drop').forEach(d=>d.classList.add('drag-over'));
+  }
+  if(didDrag){
+    const gs=ghostEl.offsetWidth/2;
+    ghostEl.style.left=(e.clientX-gs)+'px';
+    ghostEl.style.top=(e.clientY-gs)+'px';
+    const tierDrop=getTierUnderPoint(e.clientX,e.clientY);
+    if(tierDrop){
+      const tc=TIERS.find(t=>t.id===tierDrop.dataset.tier);
+      ghostEl.style.boxShadow='0 0 40px '+(tc?tc.color:'#FF2D55');
+    }else{ghostEl.style.boxShadow='0 0 30px rgba(255,45,85,0.5)';}
+  }
+});
+
+document.addEventListener('pointerup',(e)=>{
+  if(!dragging)return;
+  const card=dragging;dragging=null;
+  if(didDrag){
+    ghostEl.style.display='none';card.style.opacity='1';
+    document.querySelectorAll('.tier-drop').forEach(d=>d.classList.remove('drag-over'));
+    const tierDrop=getTierUnderPoint(e.clientX,e.clientY);
+    if(tierDrop){
+      tierDrop.appendChild(card);
+      const tier=tierDrop.dataset.tier;
+      playDrop(tier);flashScreen();spawnEmojis(e.clientX,e.clientY,tier);
+      if(tier==='D'){
+        document.getElementById('game').style.animation='shake 0.3s ease-in-out';
+        setTimeout(()=>document.getElementById('game').style.animation='',350);
+      }
+      const now=Date.now();
+      if(now-lastDropTime<2500){comboCount++;if(comboCount>=2)showCombo(comboCount);}
+      else{comboCount=1;}
+      lastDropTime=now;
+      checkClear();
+    }
+  }else{
+    const idx=parseInt(card.dataset.idx);
+    previewSong(SONGS[idx].preview);
+  }
+});
+
+function getTierUnderPoint(x,y){
+  const drops=document.querySelectorAll('.tier-drop');
+  for(const d of drops){
+    const r=d.getBoundingClientRect();
+    if(x>=r.left&&x<=r.right&&y>=r.top&&y<=r.bottom)return d;
+  }return null;
+}
+
+// ========== EFFECTS ==========
+function flashScreen(){
+  const el=document.getElementById('flash-overlay');
+  el.style.opacity='0.3';el.style.animation='flash 0.2s ease-out forwards';
+  setTimeout(()=>{el.style.animation='';el.style.opacity='0';},250);
+}
+
+function spawnEmojis(x,y,tier){
+  const set=EMOJIS[tier]||EMOJIS.B;
+  const count=tier==='S'?8:tier==='D'?6:4;
+  for(let i=0;i<count;i++){
+    const el=document.createElement('div');el.className='emoji-particle';
+    el.textContent=set[Math.floor(Math.random()*set.length)];
+    el.style.left=(x+Math.random()*80-40)+'px';
+    el.style.top=(y+Math.random()*50-25)+'px';
+    document.body.appendChild(el);setTimeout(()=>el.remove(),1400);
+  }
+}
+
+function showCombo(n){
+  playCombo();const el=document.getElementById('combo-text');
+  el.textContent=n+'x COMBO';
+  el.style.animation='comboFlash 0.8s ease-out forwards';
+  setTimeout(()=>{el.style.animation='';},900);
+}
+
+function checkClear(){
+  if(document.getElementById('staging-row').children.length===0){
+    clearInterval(timerInterval);clearInterval(tickInterval);endGame(true);
+  }
+}
+
+function endGame(cleared){
+  gameStarted=false;
+  if(currentPreview){currentPreview.pause();currentPreview=null;}
+  const timeLeft=Math.floor(timerVal/60)+':'+(timerVal%60).toString().padStart(2,'0');
+  if(cleared){
+    playClear();
+    document.getElementById('end-title').textContent='CLEAR!';
+    document.getElementById('end-sub').textContent=timeLeft+' remaining';
+  }else{
+    playBuzzer();
+    document.getElementById('game').style.animation='shake 0.5s ease-in-out';
+    setTimeout(()=>document.getElementById('game').style.animation='',550);
+    document.getElementById('end-title').textContent="TIME'S UP";
+    document.getElementById('end-sub').textContent='0:00 remaining';
+  }
+  setTimeout(()=>{document.getElementById('end-screen').style.display='flex';},cleared?500:1200);
+}
+
+setTimeout(runIntro,250);
+</script>
+  </main>
+
+  
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG', {
+      linker: {
+        domains: ['entuned.co', 'music.entuned.co', 'app.entuned.co']
+      }
+    });
+  </script>
+  <script defer src="js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>
