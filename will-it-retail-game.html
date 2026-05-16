@@ -219,7 +219,7 @@ html, body {
   top:var(--wir-safe-top);right:var(--wir-safe-right);
   text-align:right;z-index:51;
 }
-#timer{
+#timer, #song-counter{
   font-size:5vh;font-weight:900;
   color:#22c55e;font-variant-numeric:tabular-nums;
 }
@@ -257,16 +257,20 @@ html, body {
    ============================================= */
 #tiers{
   position:absolute;
-  /* Inside canonical safe zone — right:18% > canonical 16.67% already */
-  top:29%;left:var(--wir-safe-left);right:18%;
-  height:42%;
+  /* Taller tier list: 26%-72% (46% tall, 9.2% per row) — leaves a catch
+     zone of 72-82% for the falling album to rest in. */
+  top:26%;left:var(--wir-safe-left);right:18%;
+  height:46%;
   display:flex;flex-direction:column;
   justify-content:space-between;
 }
 .tier-row{
   display:flex;align-items:stretch;
+  /* Each tier: 18.5% of #tiers (46% viewport) = 8.5% viewport — and with
+     gap accounted by space-between, visual row height ~ 9.2% viewport. */
   height:18.5%;
   border-radius:4px;overflow:hidden;
+  transition:transform 0.18s, box-shadow 0.18s;
 }
 .tier-label{
   width:7vh;min-width:7vh;
@@ -280,31 +284,87 @@ html, body {
   background:rgba(255,255,255,0.025);
   display:flex;flex-wrap:wrap;align-items:center;
   padding:0.4vh 0.6vh;gap:0.4vh;
-  transition:background 0.15s;
+  transition:background 0.18s, box-shadow 0.18s, transform 0.18s;
 }
+/* While the player is holding an album, all tiers light up as valid targets */
+.tier-drop.active-target{
+  background:rgba(255,255,255,0.08);
+  box-shadow:inset 0 0 0 2px rgba(255,255,255,0.18);
+}
+/* The tier currently under the cursor */
+.tier-drop.hover-target{
+  background:rgba(255,255,255,0.15);
+  box-shadow:inset 0 0 0 2px rgba(255,255,255,0.45);
+  transform:scale(1.012);
+}
+/* Old drag-over class is unused now but kept harmless for safety */
 .tier-drop.drag-over{background:rgba(255,255,255,0.07);}
 
 /* =============================================
-   STAGING
+   STAGING (removed — drop physics replaces the staged-row metaphor)
+   The element still exists in the HTML for backwards-compat but is hidden.
    ============================================= */
-#staging{
+#staging{display:none !important;}
+
+/* =============================================
+   DROP STAGE — holds the currently falling / held album
+   Sits at the viewport scope so absolutely-positioned children use
+   viewport-relative coords from physicsStep().
+   ============================================= */
+#drop-stage{
+  position:absolute;inset:0;
+  pointer-events:none; /* only the album itself is interactive */
+  z-index:60;
+}
+.drop-album{
   position:absolute;
-  /* Inside canonical safe zone (left 5.56%, right 16.67%).
-     Available width drops from 83% to 77.7% of viewport, so card row gap
-     is trimmed below to keep 5 cards on one nowrap row. */
-  top:73%;left:var(--wir-safe-left);right:var(--wir-safe-right);
+  border-radius:6px;
+  overflow:visible;
+  cursor:grab;
+  pointer-events:auto;
+  box-shadow:0 6px 24px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.06);
+  transition:transform 0.12s ease-out;
+  will-change:transform, left, top;
+  user-select:none;-webkit-user-select:none;
 }
-#staging-label{
-  font-size:1.1vh;font-weight:700;
-  color:rgba(255,255,255,0.18);
-  text-align:center;
-  margin-bottom:1vh;letter-spacing:2px;
+.drop-album img{
+  display:block;width:100%;height:100%;object-fit:cover;border-radius:6px;
+  pointer-events:none;
 }
-#staging-row{
-  display:flex;justify-content:center;
-  /* Gap trimmed from 1.2vh to 0.7vh so 5x 8vh cards fit the narrower safe
-     staging area (5*8 + 4*0.7 = 42.8vh < ~43.7vh available width). */
-  gap:0.7vh;flex-wrap:nowrap;
+.drop-label{
+  position:absolute;bottom:-2.2vh;left:50%;transform:translateX(-50%);
+  white-space:nowrap;text-align:center;pointer-events:none;
+  text-shadow:0 1px 6px rgba(0,0,0,0.9);
+}
+.dl-title{display:block;font-size:1.1vh;font-weight:700;color:white;}
+.dl-artist{display:block;font-size:0.85vh;font-weight:400;color:rgba(255,255,255,0.6);}
+.drop-album.settled{
+  animation:settledPulse 1.6s ease-in-out infinite;
+}
+@keyframes settledPulse{
+  0%,100%{box-shadow:0 6px 24px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.18), 0 0 14px rgba(255,255,255,0.10);}
+  50%   {box-shadow:0 6px 24px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.32), 0 0 24px rgba(255,255,255,0.22);}
+}
+/* The "picked up" state — 3x scale + strong pulsing rose glow */
+.drop-album.picked-up{
+  cursor:grabbing;
+  transform:scale(3);
+  transform-origin:center center;
+  z-index:200;
+  animation:pickedGlow 0.9s ease-in-out infinite;
+}
+@keyframes pickedGlow{
+  0%,100%{box-shadow:0 0 24px rgba(255,45,85,0.65), 0 0 60px rgba(255,45,85,0.35), 0 0 0 2px rgba(255,255,255,0.7);}
+  50%   {box-shadow:0 0 36px rgba(255,45,85,0.95), 0 0 100px rgba(255,45,85,0.55), 0 0 0 3px rgba(255,255,255,0.95);}
+}
+.drop-album.picked-up .drop-label{display:none;}
+.drop-album.skipped{
+  animation:skipFade 0.6s ease-in forwards;
+  pointer-events:none;
+}
+@keyframes skipFade{
+  0%  {opacity:1;}
+  100%{opacity:0;transform:scale(0.7);}
 }
 
 /* =============================================
@@ -333,9 +393,12 @@ html, body {
   display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
 }
 
-/* Cards shrink when placed in a tier */
-.tier-drop .song-card{width:5vh;height:5vh;}
+/* Cards in tiers — slightly bigger than before since rows are taller */
+.tier-drop .song-card{width:6.5vh;height:6.5vh;}
 .tier-drop .card-label{display:none;}
+/* Settled-in-tier card has a brief land animation */
+.tier-drop .song-card.placed{animation:placedLand 0.3s cubic-bezier(0.34,1.56,0.64,1);}
+@keyframes placedLand{0%{transform:scale(0.4);opacity:0.6;}100%{transform:scale(1);opacity:1;}}
 
 /* =============================================
    GHOST (drag preview)
@@ -469,7 +532,7 @@ body.show-safezone .safezone-overlay{display:block;}
   <!-- GAME -->
   <div id="game">
     <div id="timer-wrap">
-      <div id="timer">0:45</div>
+      <div id="song-counter">0/5</div>
       <div id="game-header">
         <div id="game-title">WILL IT RETAIL?</div>
         <div id="ep-info">EP 1 — DWELL TIME</div>
@@ -477,10 +540,8 @@ body.show-safezone .safezone-overlay{display:block;}
     </div>
     <div id="pip-zone"><span id="pip-label">PIP</span></div>
     <div id="tiers"></div>
-    <div id="staging">
-      <div id="staging-label">UNSORTED</div>
-      <div id="staging-row"></div>
-    </div>
+    <!-- Drop stage holds the currently falling/held album -->
+    <div id="drop-stage"></div>
   </div>
 
   <div id="flash-overlay"></div>
@@ -501,7 +562,6 @@ body.show-safezone .safezone-overlay{display:block;}
   </div>
 </div>
 
-<div id="ghost"><img id="ghost-img" src="" alt=""><span id="ghost-label"></span></div>
 
 <script>
 // SONGS is loaded from /data/wir/episodes.json based on the ?ep= URL param.
@@ -527,13 +587,24 @@ const EMOJIS={
   D:['💀','👎','😬','🚫','💩','☠️'],
 };
 
-const TOTAL_TIME=45;
-let audioCtx,currentPreview,previewTimeout;
-let dragging=null,ghostEl,ghostImg,ghostLabel;
-let timerVal=TOTAL_TIME,timerInterval,tickInterval;
-let lastDropTime=0,comboCount=0;
+// ========== STATE ==========
+// New mechanic: songs DROP one at a time with physics. Preview audio plays
+// for the full clip duration; missing the clip = buzzer + skip. Pick up by
+// clicking the settled album (3x scale + glow), drag to a tier to place.
+let audioCtx;
 let gameStarted=false;
-let dragStartX=0,dragStartY=0,didDrag=false;
+let queueIndex=0;
+const placements=[]; // {song, tier} per song (tier=null = skipped on timeout)
+let currentAudio=null;     // <Audio> playing the current drop
+let timeoutTimer=null;     // fallback for songs without preview URL
+let DROP=null;             // current drop: {song, el, x, y, vx, vy, settled, picked, placed}
+let physicsInterval=null;  // setInterval id (not rAF — survives tab-hidden / iframe)
+let lastPlaceTime=0,comboCount=0;
+const GRAVITY=0.55;        // px per frame squared (scaled by vh below)
+const BOUNCE=0.55;         // energy retained per bounce
+const SETTLE_THRESHOLD=0.6;
+const ALBUM_VH=12;         // falling album size, vh
+const FLOOR_VH_FROM_TOP=82.29; // safe-bottom boundary
 
 // ========== AUDIO ==========
 function getAudioCtx(){
@@ -631,13 +702,7 @@ function playBuzzer(){
   osc.connect(gain);gain.connect(ctx.destination);osc.start();osc.stop(ctx.currentTime+1);
 }
 
-function previewSong(url){
-  if(currentPreview){currentPreview.pause();currentPreview=null;clearTimeout(previewTimeout);}
-  if(!url)return;
-  currentPreview=new Audio(url);currentPreview.volume=0.2;
-  currentPreview.play().catch(()=>{});
-  previewTimeout=setTimeout(()=>{if(currentPreview){currentPreview.pause();currentPreview=null;}},5000);
-}
+// (previewSong removed — audio is now lifecycle-managed by the drop sequence)
 
 // ========== INTRO ==========
 function runIntro(){
@@ -669,14 +734,18 @@ function startGame(){
   document.getElementById('intro').style.display='none';
   document.getElementById('game').style.display='block';
   gameStarted=true;
+  queueIndex=0;
+  placements.length=0;
   buildTiers();
-  buildStaging();
-  startTimer();
+  updateCounter();
+  // Brief beat then first drop
+  setTimeout(dropNext, 400);
 }
 
 // ========== BUILD ==========
 function buildTiers(){
   const container=document.getElementById('tiers');
+  container.innerHTML='';
   TIERS.forEach(t=>{
     const row=document.createElement('div');row.className='tier-row';
     const label=document.createElement('div');label.className='tier-label';
@@ -687,119 +756,254 @@ function buildTiers(){
   });
 }
 
-function buildStaging(){
-  const row=document.getElementById('staging-row');
-  SONGS.forEach((s,i)=>{
-    const card=document.createElement('div');card.className='song-card';card.dataset.idx=i;
-    card.innerHTML='<img src="'+s.art+'" alt="'+s.title+' by '+s.artist+'"><div class="card-label"><span class="card-title">'+s.title+'</span><span class="card-artist">'+s.artist+'</span></div>';
-    row.appendChild(card);
-  });
+function updateCounter(){
+  document.getElementById('song-counter').textContent=
+    Math.min(queueIndex+1,SONGS.length)+'/'+SONGS.length;
 }
 
-// ========== TIMER ==========
-function startTimer(){
-  updateTimerDisplay();
-  timerInterval=setInterval(()=>{
-    timerVal--;updateTimerDisplay();
-    if(timerVal<=0){clearInterval(timerInterval);clearInterval(tickInterval);endGame(false);}
-  },1000);
-  startTicking();
+// ========== DROP SEQUENCE ==========
+// One song at a time: spawn album above viewport, gravity + bounce, settle.
+// Audio starts at spawn; if it ends before you place it -> buzzer + skip.
+function dropNext(){
+  if(queueIndex>=SONGS.length){endGame();return;}
+  const song=SONGS[queueIndex];
+  updateCounter();
+  spawnDrop(song);
+  startCurrentAudio(song);
 }
 
-function startTicking(){
-  if(tickInterval)clearInterval(tickInterval);
-  const getInterval=()=>{
-    if(timerVal<=5)return 130;if(timerVal<=10)return 250;
-    if(timerVal<=20)return 500;return 1000;
+function spawnDrop(song){
+  // Clear any leftover element
+  const stage=document.getElementById('drop-stage');
+  stage.innerHTML='';
+  const vp=document.getElementById('viewport').getBoundingClientRect();
+  const albumPx=vp.height*ALBUM_VH/100;
+  // Spawn x: center ± 12% jitter, kept inside safe-x
+  const safeLeftPx=vp.width*0.0556;
+  const safeRightPx=vp.width*0.8333;
+  const usableW=safeRightPx-safeLeftPx-albumPx;
+  const jitter=(Math.random()*0.24-0.12)*usableW;
+  const x=safeLeftPx + usableW*0.5 + jitter;
+  const el=document.createElement('div');
+  el.className='drop-album';
+  el.innerHTML='<img src="'+song.art+'" alt="'+song.title+' by '+song.artist+'"><div class="drop-label"><span class="dl-title">'+song.title+'</span><span class="dl-artist">'+song.artist+'</span></div>';
+  el.style.width=albumPx+'px';
+  el.style.height=albumPx+'px';
+  el.style.left=x+'px';
+  el.style.top=(-albumPx*1.2)+'px';
+  stage.appendChild(el);
+  DROP={song,el,
+    x:x, y:-albumPx*1.2,
+    vx:(Math.random()*2-1)*1.5,
+    vy:0,
+    w:albumPx, h:albumPx,
+    settled:false, picked:false, placed:false,
+    vpW:vp.width, vpH:vp.height,
   };
-  const doTick=()=>{
-    if(!gameStarted)return;playTick();
-    clearInterval(tickInterval);tickInterval=setInterval(doTick,getInterval());
-  };
-  tickInterval=setInterval(doTick,getInterval());
+  el.addEventListener('pointerdown',onAlbumPointerDown);
+  startPhysics();
 }
 
-function updateTimerDisplay(){
-  const el=document.getElementById('timer');
-  const m=Math.floor(timerVal/60);const s=timerVal%60;
-  el.textContent=m+':'+s.toString().padStart(2,'0');
-  const pct=timerVal/TOTAL_TIME;
-  if(pct<=0.22){el.style.color='#ef4444';}
-  else if(pct<=0.44){el.style.color='#FF9500';}
-  else if(pct<=0.67){el.style.color='#eab308';}
-  else{el.style.color='#22c55e';}
+function startPhysics(){
+  stopPhysics();
+  // ~60fps via setInterval (rAF stalls when iframe/tab is hidden, which we
+  // observed in preview and which would also bite a backgrounded recording).
+  physicsInterval = setInterval(physicsStep, 16);
+}
+function stopPhysics(){
+  if(physicsInterval){clearInterval(physicsInterval);physicsInterval=null;}
+}
+
+function physicsStep(){
+  if(!DROP||DROP.placed){stopPhysics();return;}
+  if(DROP.picked){return;}  // no physics while held — pointermove moves it
+  // Apply gravity
+  DROP.vy += GRAVITY * (DROP.vpH/800); // scale by viewport so motion is uniform
+  DROP.x += DROP.vx;
+  DROP.y += DROP.vy;
+  // Floor (catch zone top = bottom of safe area)
+  const floorY = DROP.vpH * (FLOOR_VH_FROM_TOP/100) - DROP.h;
+  if(DROP.y >= floorY){
+    DROP.y = floorY;
+    if(Math.abs(DROP.vy) < SETTLE_THRESHOLD){
+      DROP.vy = 0;
+      if(Math.abs(DROP.vx) < SETTLE_THRESHOLD){
+        DROP.vx = 0;
+        if(!DROP.settled){
+          DROP.settled = true;
+          DROP.el.classList.add('settled');
+        }
+        stopPhysics();
+      }
+    } else {
+      DROP.vy *= -BOUNCE;
+      DROP.vx *= 0.85;
+      playThud();
+    }
+  }
+  // Side walls = canonical safe-x bounds
+  const leftWall = DROP.vpW * 0.0556;
+  const rightWall = DROP.vpW * 0.8333 - DROP.w;
+  if(DROP.x < leftWall){DROP.x = leftWall; DROP.vx *= -BOUNCE;}
+  if(DROP.x > rightWall){DROP.x = rightWall; DROP.vx *= -BOUNCE;}
+  DROP.el.style.left = DROP.x + 'px';
+  DROP.el.style.top = DROP.y + 'px';
+}
+
+function playThud(){
+  const ctx=getAudioCtx();
+  const osc=ctx.createOscillator();const gain=ctx.createGain();
+  osc.type='sine';osc.frequency.setValueAtTime(120,ctx.currentTime);
+  osc.frequency.exponentialRampToValueAtTime(50,ctx.currentTime+0.1);
+  gain.gain.setValueAtTime(0.18,ctx.currentTime);
+  gain.gain.exponentialRampToValueAtTime(0.001,ctx.currentTime+0.18);
+  osc.connect(gain);gain.connect(ctx.destination);
+  osc.start();osc.stop(ctx.currentTime+0.2);
+}
+
+// ========== AUDIO LIFECYCLE (per drop) ==========
+function startCurrentAudio(song){
+  stopCurrentAudio();
   const fill=document.getElementById('progress-fill');
-  fill.style.width=(pct*100)+'%';
+  fill.style.transition='width 0.1s linear, background-color 0.6s';
+  fill.style.width='100%';
+  fill.style.background='#22c55e';
+  if(!song.preview){
+    // No preview available — give the player 15s default
+    timeoutTimer=setTimeout(onClipEnded, 15000);
+    // Drain the bar over 15s for visual urgency
+    requestAnimationFrame(()=>{fill.style.transition='width 15s linear, background-color 0.6s';fill.style.width='0%';});
+    return;
+  }
+  const a=new Audio(song.preview);
+  a.volume=0.45;
+  a.preload='auto';
+  currentAudio=a;
+  a.addEventListener('ended', onClipEnded);
+  a.addEventListener('timeupdate', updateClipProgress);
+  a.play().catch(()=>{});
+}
+
+function stopCurrentAudio(){
+  if(currentAudio){
+    try{currentAudio.pause();}catch(e){}
+    currentAudio.removeEventListener('ended', onClipEnded);
+    currentAudio.removeEventListener('timeupdate', updateClipProgress);
+    currentAudio=null;
+  }
+  if(timeoutTimer){clearTimeout(timeoutTimer);timeoutTimer=null;}
+}
+
+function updateClipProgress(){
+  if(!currentAudio||!currentAudio.duration)return;
+  const pct=1 - (currentAudio.currentTime/currentAudio.duration);
+  const fill=document.getElementById('progress-fill');
+  fill.style.width = (pct*100) + '%';
   if(pct<=0.22)fill.style.background='#ef4444';
   else if(pct<=0.44)fill.style.background='#FF9500';
   else if(pct<=0.67)fill.style.background='#eab308';
   else fill.style.background='#22c55e';
 }
 
-// ========== DRAG ==========
-ghostEl=document.getElementById('ghost');
-ghostImg=document.getElementById('ghost-img');
-ghostLabel=document.getElementById('ghost-label');
+function onClipEnded(){
+  // Clip ran out before placement -> buzzer + skip
+  if(!DROP||DROP.placed)return;
+  playBuzzer();
+  document.getElementById('game').style.animation='shake 0.4s ease-in-out';
+  setTimeout(()=>document.getElementById('game').style.animation='',450);
+  // Fade out the album visually then remove
+  DROP.placed=true; // prevent re-place
+  DROP.el.classList.add('skipped');
+  placements.push({song:DROP.song,tier:null});
+  stopCurrentAudio();
+  setTimeout(()=>{
+    if(DROP&&DROP.el)DROP.el.remove();
+    DROP=null;
+    queueIndex++;
+    dropNext();
+  }, 700);
+}
 
-document.addEventListener('pointerdown',(e)=>{
-  const card=e.target.closest('.song-card');
-  if(!card||!gameStarted)return;
-  dragging=card;dragStartX=e.clientX;dragStartY=e.clientY;didDrag=false;
-});
-
-document.addEventListener('pointermove',(e)=>{
-  if(!dragging)return;
+// ========== PICKUP / DRAG / PLACE ==========
+function onAlbumPointerDown(e){
+  if(!DROP||DROP.placed)return;
+  // Allow pickup even mid-fall (you can grab it before it lands)
   e.preventDefault();
-  const dx=Math.abs(e.clientX-dragStartX);
-  const dy=Math.abs(e.clientY-dragStartY);
-  if(!didDrag&&(dx>8||dy>8)){
-    didDrag=true;
-    const idx=parseInt(dragging.dataset.idx);
-    ghostImg.src=SONGS[idx].art;
-    ghostLabel.textContent=SONGS[idx].title;
-    ghostEl.style.display='block';
-    dragging.style.opacity='0.3';
-    playGrab();
-    document.querySelectorAll('.tier-drop').forEach(d=>d.classList.add('drag-over'));
-  }
-  if(didDrag){
-    const gs=ghostEl.offsetWidth/2;
-    ghostEl.style.left=(e.clientX-gs)+'px';
-    ghostEl.style.top=(e.clientY-gs)+'px';
-    const tierDrop=getTierUnderPoint(e.clientX,e.clientY);
-    if(tierDrop){
-      const tc=TIERS.find(t=>t.id===tierDrop.dataset.tier);
-      ghostEl.style.boxShadow='0 0 40px '+(tc?tc.color:'#FF2D55');
-    }else{ghostEl.style.boxShadow='0 0 30px rgba(255,45,85,0.5)';}
+  DROP.picked=true;
+  DROP.vx=0;DROP.vy=0;
+  DROP.el.classList.add('picked-up');
+  document.querySelectorAll('.tier-drop').forEach(d=>d.classList.add('active-target'));
+  playGrab();
+  // Position so cursor is centered on the (now 3x) album
+  movePickedToPointer(e.clientX, e.clientY);
+}
+
+function movePickedToPointer(x,y){
+  if(!DROP||!DROP.picked)return;
+  const w = DROP.w*3, h = DROP.h*3;
+  DROP.x = x - w/2;
+  DROP.y = y - h/2;
+  DROP.el.style.left = DROP.x + 'px';
+  DROP.el.style.top  = DROP.y + 'px';
+  // Update target tier highlight
+  const hover = getTierUnderPoint(x, y);
+  document.querySelectorAll('.tier-drop').forEach(d=>{
+    d.classList.toggle('hover-target', d===hover);
+  });
+}
+
+document.addEventListener('pointermove', (e)=>{
+  if(!DROP||!DROP.picked)return;
+  e.preventDefault();
+  movePickedToPointer(e.clientX, e.clientY);
+});
+
+document.addEventListener('pointerup', (e)=>{
+  if(!DROP||!DROP.picked)return;
+  const tierDrop = getTierUnderPoint(e.clientX, e.clientY);
+  if(tierDrop){
+    placeInTier(tierDrop, e.clientX, e.clientY);
+  } else {
+    // Released over no tier -> let it fall again
+    DROP.picked=false;
+    DROP.el.classList.remove('picked-up');
+    document.querySelectorAll('.tier-drop').forEach(d=>d.classList.remove('active-target','hover-target'));
+    DROP.settled=false;
+    DROP.el.classList.remove('settled');
+    DROP.vy = 0;
+    startPhysics();
   }
 });
 
-document.addEventListener('pointerup',(e)=>{
-  if(!dragging)return;
-  const card=dragging;dragging=null;
-  if(didDrag){
-    ghostEl.style.display='none';card.style.opacity='1';
-    document.querySelectorAll('.tier-drop').forEach(d=>d.classList.remove('drag-over'));
-    const tierDrop=getTierUnderPoint(e.clientX,e.clientY);
-    if(tierDrop){
-      tierDrop.appendChild(card);
-      const tier=tierDrop.dataset.tier;
-      playDrop(tier);flashScreen();spawnEmojis(e.clientX,e.clientY,tier);
-      if(tier==='D'){
-        document.getElementById('game').style.animation='shake 0.3s ease-in-out';
-        setTimeout(()=>document.getElementById('game').style.animation='',350);
-      }
-      const now=Date.now();
-      if(now-lastDropTime<2500){comboCount++;if(comboCount>=2)showCombo(comboCount);}
-      else{comboCount=1;}
-      lastDropTime=now;
-      checkClear();
-    }
-  }else{
-    const idx=parseInt(card.dataset.idx);
-    previewSong(SONGS[idx].preview);
+function placeInTier(tierDrop, x, y){
+  if(!DROP||DROP.placed)return;
+  DROP.placed = true;
+  stopCurrentAudio();
+  document.querySelectorAll('.tier-drop').forEach(d=>d.classList.remove('active-target','hover-target'));
+  const tier = tierDrop.dataset.tier;
+  // Create permanent placed card
+  const card = document.createElement('div');
+  card.className = 'song-card placed';
+  card.innerHTML = '<img src="'+DROP.song.art+'" alt="'+DROP.song.title+'">';
+  tierDrop.appendChild(card);
+  // Remove the falling album element
+  DROP.el.remove();
+  placements.push({song: DROP.song, tier});
+  // FX
+  playDrop(tier); flashScreen(); spawnEmojis(x, y, tier);
+  if(tier==='D'){
+    document.getElementById('game').style.animation='shake 0.3s ease-in-out';
+    setTimeout(()=>document.getElementById('game').style.animation='',350);
   }
-});
+  const now=Date.now();
+  if(now-lastPlaceTime<2500){comboCount++;if(comboCount>=2)showCombo(comboCount);}
+  else{comboCount=1;}
+  lastPlaceTime=now;
+  DROP=null;
+  queueIndex++;
+  // Beat then next drop
+  setTimeout(dropNext, 700);
+}
 
 function getTierUnderPoint(x,y){
   const drops=document.querySelectorAll('.tier-drop');
@@ -808,6 +1012,8 @@ function getTierUnderPoint(x,y){
     if(x>=r.left&&x<=r.right&&y>=r.top&&y<=r.bottom)return d;
   }return null;
 }
+
+// (Old DRAG / staging-tap listeners removed — pickup is now album-element-scoped)
 
 // ========== EFFECTS ==========
 function flashScreen(){
@@ -835,28 +1041,17 @@ function showCombo(n){
   setTimeout(()=>{el.style.animation='';},900);
 }
 
-function checkClear(){
-  if(document.getElementById('staging-row').children.length===0){
-    clearInterval(timerInterval);clearInterval(tickInterval);endGame(true);
-  }
-}
-
-function endGame(cleared){
+function endGame(){
   gameStarted=false;
-  if(currentPreview){currentPreview.pause();currentPreview=null;}
-  const timeLeft=Math.floor(timerVal/60)+':'+(timerVal%60).toString().padStart(2,'0');
-  if(cleared){
-    playClear();
-    document.getElementById('end-title').textContent='CLEAR!';
-    document.getElementById('end-sub').textContent=timeLeft+' remaining';
-  }else{
-    playBuzzer();
-    document.getElementById('game').style.animation='shake 0.5s ease-in-out';
-    setTimeout(()=>document.getElementById('game').style.animation='',550);
-    document.getElementById('end-title').textContent="TIME'S UP";
-    document.getElementById('end-sub').textContent='0:00 remaining';
-  }
-  setTimeout(()=>{document.getElementById('end-screen').style.display='flex';},cleared?500:1200);
+  stopCurrentAudio();
+  stopPhysics();
+  const placed=placements.filter(p=>p.tier).length;
+  const skipped=placements.length - placed;
+  const title = placed===SONGS.length ? 'CLEAR!' : (placed===0 ? 'TIME’S UP' : 'DONE');
+  document.getElementById('end-title').textContent=title;
+  document.getElementById('end-sub').textContent=placed+' placed · '+skipped+' missed';
+  if(placed===SONGS.length){playClear();}
+  setTimeout(()=>{document.getElementById('end-screen').style.display='flex';},600);
 }
 
 // ========== EPISODE LOADER ==========

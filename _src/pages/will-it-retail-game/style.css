@@ -136,7 +136,7 @@ html, body {
   top:var(--wir-safe-top);right:var(--wir-safe-right);
   text-align:right;z-index:51;
 }
-#timer{
+#timer, #song-counter{
   font-size:5vh;font-weight:900;
   color:#22c55e;font-variant-numeric:tabular-nums;
 }
@@ -174,16 +174,20 @@ html, body {
    ============================================= */
 #tiers{
   position:absolute;
-  /* Inside canonical safe zone — right:18% > canonical 16.67% already */
-  top:29%;left:var(--wir-safe-left);right:18%;
-  height:42%;
+  /* Taller tier list: 26%-72% (46% tall, 9.2% per row) — leaves a catch
+     zone of 72-82% for the falling album to rest in. */
+  top:26%;left:var(--wir-safe-left);right:18%;
+  height:46%;
   display:flex;flex-direction:column;
   justify-content:space-between;
 }
 .tier-row{
   display:flex;align-items:stretch;
+  /* Each tier: 18.5% of #tiers (46% viewport) = 8.5% viewport — and with
+     gap accounted by space-between, visual row height ~ 9.2% viewport. */
   height:18.5%;
   border-radius:4px;overflow:hidden;
+  transition:transform 0.18s, box-shadow 0.18s;
 }
 .tier-label{
   width:7vh;min-width:7vh;
@@ -197,31 +201,87 @@ html, body {
   background:rgba(255,255,255,0.025);
   display:flex;flex-wrap:wrap;align-items:center;
   padding:0.4vh 0.6vh;gap:0.4vh;
-  transition:background 0.15s;
+  transition:background 0.18s, box-shadow 0.18s, transform 0.18s;
 }
+/* While the player is holding an album, all tiers light up as valid targets */
+.tier-drop.active-target{
+  background:rgba(255,255,255,0.08);
+  box-shadow:inset 0 0 0 2px rgba(255,255,255,0.18);
+}
+/* The tier currently under the cursor */
+.tier-drop.hover-target{
+  background:rgba(255,255,255,0.15);
+  box-shadow:inset 0 0 0 2px rgba(255,255,255,0.45);
+  transform:scale(1.012);
+}
+/* Old drag-over class is unused now but kept harmless for safety */
 .tier-drop.drag-over{background:rgba(255,255,255,0.07);}
 
 /* =============================================
-   STAGING
+   STAGING (removed — drop physics replaces the staged-row metaphor)
+   The element still exists in the HTML for backwards-compat but is hidden.
    ============================================= */
-#staging{
+#staging{display:none !important;}
+
+/* =============================================
+   DROP STAGE — holds the currently falling / held album
+   Sits at the viewport scope so absolutely-positioned children use
+   viewport-relative coords from physicsStep().
+   ============================================= */
+#drop-stage{
+  position:absolute;inset:0;
+  pointer-events:none; /* only the album itself is interactive */
+  z-index:60;
+}
+.drop-album{
   position:absolute;
-  /* Inside canonical safe zone (left 5.56%, right 16.67%).
-     Available width drops from 83% to 77.7% of viewport, so card row gap
-     is trimmed below to keep 5 cards on one nowrap row. */
-  top:73%;left:var(--wir-safe-left);right:var(--wir-safe-right);
+  border-radius:6px;
+  overflow:visible;
+  cursor:grab;
+  pointer-events:auto;
+  box-shadow:0 6px 24px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.06);
+  transition:transform 0.12s ease-out;
+  will-change:transform, left, top;
+  user-select:none;-webkit-user-select:none;
 }
-#staging-label{
-  font-size:1.1vh;font-weight:700;
-  color:rgba(255,255,255,0.18);
-  text-align:center;
-  margin-bottom:1vh;letter-spacing:2px;
+.drop-album img{
+  display:block;width:100%;height:100%;object-fit:cover;border-radius:6px;
+  pointer-events:none;
 }
-#staging-row{
-  display:flex;justify-content:center;
-  /* Gap trimmed from 1.2vh to 0.7vh so 5x 8vh cards fit the narrower safe
-     staging area (5*8 + 4*0.7 = 42.8vh < ~43.7vh available width). */
-  gap:0.7vh;flex-wrap:nowrap;
+.drop-label{
+  position:absolute;bottom:-2.2vh;left:50%;transform:translateX(-50%);
+  white-space:nowrap;text-align:center;pointer-events:none;
+  text-shadow:0 1px 6px rgba(0,0,0,0.9);
+}
+.dl-title{display:block;font-size:1.1vh;font-weight:700;color:white;}
+.dl-artist{display:block;font-size:0.85vh;font-weight:400;color:rgba(255,255,255,0.6);}
+.drop-album.settled{
+  animation:settledPulse 1.6s ease-in-out infinite;
+}
+@keyframes settledPulse{
+  0%,100%{box-shadow:0 6px 24px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.18), 0 0 14px rgba(255,255,255,0.10);}
+  50%   {box-shadow:0 6px 24px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.32), 0 0 24px rgba(255,255,255,0.22);}
+}
+/* The "picked up" state — 3x scale + strong pulsing rose glow */
+.drop-album.picked-up{
+  cursor:grabbing;
+  transform:scale(3);
+  transform-origin:center center;
+  z-index:200;
+  animation:pickedGlow 0.9s ease-in-out infinite;
+}
+@keyframes pickedGlow{
+  0%,100%{box-shadow:0 0 24px rgba(255,45,85,0.65), 0 0 60px rgba(255,45,85,0.35), 0 0 0 2px rgba(255,255,255,0.7);}
+  50%   {box-shadow:0 0 36px rgba(255,45,85,0.95), 0 0 100px rgba(255,45,85,0.55), 0 0 0 3px rgba(255,255,255,0.95);}
+}
+.drop-album.picked-up .drop-label{display:none;}
+.drop-album.skipped{
+  animation:skipFade 0.6s ease-in forwards;
+  pointer-events:none;
+}
+@keyframes skipFade{
+  0%  {opacity:1;}
+  100%{opacity:0;transform:scale(0.7);}
 }
 
 /* =============================================
@@ -250,9 +310,12 @@ html, body {
   display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
 }
 
-/* Cards shrink when placed in a tier */
-.tier-drop .song-card{width:5vh;height:5vh;}
+/* Cards in tiers — slightly bigger than before since rows are taller */
+.tier-drop .song-card{width:6.5vh;height:6.5vh;}
 .tier-drop .card-label{display:none;}
+/* Settled-in-tier card has a brief land animation */
+.tier-drop .song-card.placed{animation:placedLand 0.3s cubic-bezier(0.34,1.56,0.64,1);}
+@keyframes placedLand{0%{transform:scale(0.4);opacity:0.6;}100%{transform:scale(1);opacity:1;}}
 
 /* =============================================
    GHOST (drag preview)
