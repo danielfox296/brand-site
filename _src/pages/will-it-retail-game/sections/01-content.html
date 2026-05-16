@@ -21,6 +21,9 @@
       </div>
     </div>
     <div id="pip-zone"><span id="pip-label">PIP</span></div>
+    <!-- Queue carousel: 5 pixelated boxes showing what's coming. Slides in
+         on game start, each consumed when its song drops. -->
+    <div id="queue-carousel"></div>
     <div id="tiers"></div>
     <!-- Drop stage holds the currently falling/held album -->
     <div id="drop-stage"></div>
@@ -220,9 +223,65 @@ function startGame(){
   queueIndex=0;
   placements.length=0;
   buildTiers();
+  buildQueue();
   updateCounter();
-  // Brief beat then first drop
-  setTimeout(dropNext, 400);
+  // Brief beat for queue to slide in, then first drop
+  setTimeout(dropNext, 5 * 120 + 500);
+}
+
+// ========== QUEUE CAROUSEL ==========
+// 5 pixelated boxes representing the upcoming songs. Slides in left-to-right
+// from offscreen-right on game start (staggered fade + slide for anticipation).
+// Each box is "consumed" when its song begins to drop.
+//
+// Pixelation is done via a canvas: load the full-res album art, draw it onto
+// a 14x14 canvas with imageSmoothingEnabled=false (= nearest-neighbor
+// downsample), then display the canvas data URL at 100% of the box with
+// image-rendering:pixelated (= nearest-neighbor upsample by the browser).
+// CSS transform-scale + image-rendering does NOT pixelate — the browser
+// smooth-downsamples first, then smooth-upscales. Canvas is the only reliable
+// path for true pixelation of arbitrary album art.
+function pixelateImage(src, sourceSize){
+  return new Promise((resolve)=>{
+    const img=new Image();
+    img.onload=()=>{
+      const c=document.createElement('canvas');
+      c.width=sourceSize;c.height=sourceSize;
+      const ctx=c.getContext('2d');
+      ctx.imageSmoothingEnabled=false;
+      ctx.drawImage(img,0,0,sourceSize,sourceSize);
+      resolve(c.toDataURL('image/png'));
+    };
+    img.onerror=()=>resolve(src); // fallback to original on any error
+    img.src=src;
+  });
+}
+
+async function buildQueue(){
+  const car=document.getElementById('queue-carousel');
+  car.innerHTML='';
+  // Pre-create boxes immediately so the slide-in stagger looks crisp even
+  // before pixelation completes — img source swaps in when ready.
+  const elements=SONGS.map((s,i)=>{
+    const box=document.createElement('div');
+    box.className='queue-box';
+    box.dataset.idx=i;
+    box.innerHTML='<img alt="" class="pixelated-art">';
+    car.appendChild(box);
+    setTimeout(()=>box.classList.add('loaded'), 250 + i*120);
+    return box;
+  });
+  // Pixelate in parallel
+  await Promise.all(SONGS.map(async (s,i)=>{
+    const dataUrl=await pixelateImage(s.art, 14);
+    const img=elements[i].querySelector('img');
+    if(img) img.src=dataUrl;
+  }));
+}
+
+function consumeQueueBox(idx){
+  const box=document.querySelector('.queue-box[data-idx="'+idx+'"]');
+  if(box) box.classList.add('consumed');
 }
 
 // ========== BUILD ==========
@@ -251,6 +310,7 @@ function dropNext(){
   if(queueIndex>=SONGS.length){endGame();return;}
   const song=SONGS[queueIndex];
   updateCounter();
+  consumeQueueBox(queueIndex);
   spawnDrop(song);
   startCurrentAudio(song);
 }

@@ -136,10 +136,12 @@ html, body {
   top:var(--wir-safe-top);right:var(--wir-safe-right);
   text-align:right;z-index:51;
 }
-#timer, #song-counter{
+#timer{
   font-size:5vh;font-weight:900;
   color:#22c55e;font-variant-numeric:tabular-nums;
 }
+/* Counter is redundant with the visible queue carousel — hide it */
+#song-counter{display:none;}
 #game-header{
   margin-top:0.3vh;
   text-align:right;
@@ -153,20 +155,59 @@ html, body {
   color:rgba(255,255,255,0.25);margin-top:0.2vh;
 }
 
-/* --- PIP zone --- */
-#pip-zone{
+/* --- PIP zone (legacy placeholder — hidden now that the queue carousel
+       replaces it functionally. Keep the HTML for safe-zone compatibility) --- */
+#pip-zone{display:none !important;}
+#pip-label{display:none;}
+
+/* =============================================
+   QUEUE CAROUSEL — 5 pixelated upcoming-song boxes
+   Lives on its own row between the header and the tier list so it doesn't
+   collide horizontally with the timer/title block.
+   ============================================= */
+#queue-carousel{
   position:absolute;
-  /* Inside canonical safe zone (left 5.56%) */
-  top:15.5%;left:var(--wir-safe-left);
-  width:15vh;height:12vh;
-  border:2px dashed rgba(255,255,255,0.1);
-  border-radius:10px;
-  display:flex;align-items:center;justify-content:center;
+  /* Below the (now compact) header — just title + ep-info, ends ~18% */
+  top:19%;
+  left:var(--wir-safe-left);right:var(--wir-safe-right);
+  height:6.5vh;
+  display:flex;justify-content:center;gap:0.7vh;
+  z-index:55;
+  /* Mask edge so boxes appear to slide out of a gradient on entry */
+  -webkit-mask-image:linear-gradient(to right, transparent 0, black 6%, black 100%);
+  mask-image:linear-gradient(to right, transparent 0, black 6%, black 100%);
 }
-#pip-label{
-  font-size:1.1vh;font-weight:700;
-  color:rgba(255,255,255,0.12);
-  text-transform:uppercase;letter-spacing:2px;
+.queue-box{
+  width:6.5vh;height:6.5vh;
+  border-radius:4px;
+  background:rgba(255,255,255,0.04);
+  box-shadow:0 0 0 1px rgba(255,255,255,0.06), inset 0 0 0 1px rgba(0,0,0,0.4);
+  overflow:hidden;
+  opacity:0;
+  transform:translateX(60px);
+  transition:opacity 0.45s ease, transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1);
+  position:relative;
+}
+.queue-box.loaded{opacity:1;transform:translateX(0);}
+.queue-box.consumed{
+  animation:queueConsume 0.45s ease-in forwards;
+}
+@keyframes queueConsume{
+  0%  {opacity:1;transform:scale(1) translateY(0);}
+  60% {opacity:0.6;transform:scale(1.25) translateY(-2vh);}
+  100%{opacity:0;transform:scale(0.4) translateY(-6vh);}
+}
+/* Pixelated album art — source is a 14x14 PNG data URL produced via canvas
+   (see pixelateImage in JS). image-rendering:pixelated tells the browser to
+   nearest-neighbor when upscaling from 14px source to the 8vh display box. */
+.queue-box .pixelated-art{
+  width:100%;height:100%;
+  display:block;
+  image-rendering:pixelated;
+  image-rendering:-moz-crisp-edges;
+  image-rendering:crisp-edges;
+  filter:saturate(1.25) brightness(0.9);
+  pointer-events:none;
 }
 
 /* =============================================
@@ -174,10 +215,11 @@ html, body {
    ============================================= */
 #tiers{
   position:absolute;
-  /* Taller tier list: 26%-72% (46% tall, 9.2% per row) — leaves a catch
-     zone of 72-82% for the falling album to rest in. */
-  top:26%;left:var(--wir-safe-left);right:18%;
-  height:46%;
+  /* Tier list: 27%-72% (45% tall, 9% per row). Compact header (no counter)
+     + carousel at 19-26% leaves room for nearly the full pre-carousel tier
+     height. Significantly taller than original (7.77%/row). */
+  top:27%;left:var(--wir-safe-left);right:18%;
+  height:45%;
   display:flex;flex-direction:column;
   justify-content:space-between;
 }
@@ -249,12 +291,15 @@ html, body {
   pointer-events:none;
 }
 .drop-label{
-  position:absolute;bottom:-2.2vh;left:50%;transform:translateX(-50%);
+  position:absolute;bottom:-2.5vh;left:50%;transform:translateX(-50%);
   white-space:nowrap;text-align:center;pointer-events:none;
-  text-shadow:0 1px 6px rgba(0,0,0,0.9);
+  text-shadow:0 1px 6px rgba(0,0,0,0.95);
+  opacity:0;transition:opacity 0.18s ease;
 }
 .dl-title{display:block;font-size:1.1vh;font-weight:700;color:white;}
 .dl-artist{display:block;font-size:0.85vh;font-weight:400;color:rgba(255,255,255,0.6);}
+/* Label is hidden while falling/settled — reveals only on pickup */
+.drop-album.picked-up .drop-label{opacity:1;}
 .drop-album.settled{
   animation:settledPulse 1.6s ease-in-out infinite;
 }
@@ -270,11 +315,12 @@ html, body {
   z-index:200;
   animation:pickedGlow 0.9s ease-in-out infinite;
 }
+/* Pulsing pink glow only — no solid outline. The inner shadow gives depth
+   without the hard border, outer shadow is the dominant pulsing element. */
 @keyframes pickedGlow{
-  0%,100%{box-shadow:0 0 24px rgba(255,45,85,0.65), 0 0 60px rgba(255,45,85,0.35), 0 0 0 2px rgba(255,255,255,0.7);}
-  50%   {box-shadow:0 0 36px rgba(255,45,85,0.95), 0 0 100px rgba(255,45,85,0.55), 0 0 0 3px rgba(255,255,255,0.95);}
+  0%,100%{box-shadow:0 0 18px 4px rgba(255,45,85,0.55), 0 0 60px 12px rgba(255,45,85,0.30);}
+  50%   {box-shadow:0 0 32px 10px rgba(255,45,85,0.95), 0 0 130px 32px rgba(255,45,85,0.55);}
 }
-.drop-album.picked-up .drop-label{display:none;}
 .drop-album.skipped{
   animation:skipFade 0.6s ease-in forwards;
   pointer-events:none;
