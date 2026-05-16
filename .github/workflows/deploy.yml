@@ -36,6 +36,7 @@ jobs:
           cp -r img _site/img 2>/dev/null || true
           cp -r styles _site/styles 2>/dev/null || true
           cp -r audio _site/audio 2>/dev/null || true
+          cp -r data _site/data 2>/dev/null || true
           cp -r blog _site/blog 2>/dev/null || true
           cp -r raise _site/raise 2>/dev/null || true
           cp -r pricing _site/pricing 2>/dev/null || true
