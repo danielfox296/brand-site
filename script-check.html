@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/script-check.html">
+  <meta name="robots" content="noindex">
+  <title>Script Check — Will It Retail?</title>
+  <meta name="description" content="Paste a Will It Retail script. Get feedback on hooks, hedging, structure, and word count.">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="rss.xml">
+  <meta property="og:title" content="Script Check — Will It Retail?">
+  <meta property="og:description" content="Paste a Will It Retail script. Get feedback on hooks, hedging, structure, and word count.">
+  <meta property="og:url" content="https://entuned.co/script-check.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://entuned.co/img/og-default.png">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Script Check — Will It Retail?">
+  <meta name="twitter:description" content="Paste a Will It Retail script. Get feedback on hooks, hedging, structure, and word count.">
+  <meta name="twitter:image" content="https://entuned.co/img/og-default.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Entuned",
+  "url": "https://entuned.co",
+  "description": "Entuned engineers original music for retail floors at the parameter level \u2014 tempo, key, lyrical density, energy arc \u2014 tailored to a store's customer profile and tied to its sales outcomes. PRO-indemnified at every tier.",
+  "foundingDate": "2026",
+  "founder": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "knowsAbout": [
+    "retail atmospherics",
+    "music psychology",
+    "in-store customer behavior",
+    "retail analytics",
+    "engineered retail audio",
+    "behavioral retail variables"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/entuned"
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Script Check \u2014 Will It Retail?"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css?v=50e4ef94">
+  <style>
+/* Override site chrome — full-page tool */
+body { margin:0 !important; padding:0 !important; background:#16161a !important; color:#e7e9ec; font-family:'Inter', sans-serif; }
+main { padding:0 !important; margin:0 !important; max-width:none !important; }
+
+.sc-wrap{
+  max-width:880px; margin:0 auto; padding:3vh 4vw 6vh;
+}
+.sc-title{
+  font-family:'Manrope', sans-serif; font-weight:900;
+  font-size:2.4rem; letter-spacing:0.02em; margin:0 0 0.4rem 0;
+}
+.sc-sub{
+  font-size:1rem; color:#9ba3ad; margin:0 0 2.2rem 0; line-height:1.45;
+}
+.sc-sub a{ color:#d7af74; text-decoration:none; border-bottom:1px dashed rgba(215,175,116,0.5); }
+.sc-sub a:hover{ border-bottom-color:#d7af74; }
+
+textarea#script-input{
+  width:100%; box-sizing:border-box;
+  min-height:340px;
+  background:#1f2026; color:#e7e9ec;
+  border:1px solid #2e3038; border-radius:8px;
+  padding:1.1rem 1.2rem;
+  font-family:'JetBrains Mono', 'SF Mono', Menlo, monospace;
+  font-size:0.92rem; line-height:1.6;
+  resize:vertical;
+}
+textarea#script-input:focus{ outline:none; border-color:#50929c; box-shadow:0 0 0 3px rgba(80,146,156,0.15); }
+
+.sc-bar{
+  display:flex; gap:0.6rem; align-items:center;
+  margin-top:1rem;
+}
+button.sc-btn{
+  background:#d7af74; color:#16161a;
+  border:0; border-radius:6px;
+  padding:0.85rem 1.6rem;
+  font-family:'Manrope', sans-serif; font-weight:800;
+  font-size:0.95rem; letter-spacing:0.04em;
+  cursor:pointer;
+}
+button.sc-btn:hover{ background:#e3bc83; }
+button.sc-btn.secondary{ background:transparent; color:#9ba3ad; border:1px solid #2e3038; }
+button.sc-btn.secondary:hover{ color:#e7e9ec; border-color:#3a3c45; }
+
+#results{ margin-top:2rem; }
+.sc-empty{
+  color:#6f7680; font-size:0.9rem; padding:2rem; text-align:center;
+  border:1px dashed #2e3038; border-radius:8px;
+}
+.sc-summary{
+  display:flex; gap:0.6rem; margin-bottom:1.4rem; flex-wrap:wrap;
+}
+.sc-chip{
+  font-size:0.78rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase;
+  padding:0.4rem 0.7rem; border-radius:4px;
+  border:1px solid;
+}
+.sc-chip.ok    { color:#22c55e; border-color:rgba(34,197,94,0.4);  background:rgba(34,197,94,0.06); }
+.sc-chip.error { color:#ef4444; border-color:rgba(239,68,68,0.4);  background:rgba(239,68,68,0.06); }
+.sc-chip.warn  { color:#eab308; border-color:rgba(234,179,8,0.4);  background:rgba(234,179,8,0.06); }
+.sc-chip.info  { color:#9ba3ad; border-color:#2e3038;              background:rgba(255,255,255,0.02); }
+
+.sc-section{
+  margin-bottom:1.8rem;
+}
+.sc-section h3{
+  font-family:'Manrope', sans-serif; font-weight:800;
+  font-size:1.05rem; letter-spacing:0.02em;
+  margin:0 0 0.6rem 0;
+  display:flex; align-items:center; gap:0.5rem;
+}
+.sc-section h3 .count{ color:#6f7680; font-weight:500; font-size:0.85rem; }
+.sc-section.errors h3 { color:#ef4444; }
+.sc-section.warnings h3 { color:#eab308; }
+.sc-section.good h3 { color:#22c55e; }
+
+.sc-issue{
+  background:#1f2026; border-left:3px solid #2e3038;
+  padding:0.7rem 0.95rem;
+  margin:0.45rem 0;
+  border-radius:0 4px 4px 0;
+  font-size:0.92rem; line-height:1.5;
+}
+.sc-issue.error    { border-left-color:#ef4444; }
+.sc-issue.warning  { border-left-color:#eab308; }
+.sc-issue .tag{
+  display:inline-block; font-size:0.7rem; font-weight:700;
+  letter-spacing:0.06em; text-transform:uppercase;
+  padding:0.18rem 0.45rem; border-radius:3px;
+  margin-right:0.5rem; background:rgba(255,255,255,0.06); color:#9ba3ad;
+}
+.sc-issue .where{ color:#9ba3ad; font-weight:600; }
+.sc-issue .where::after{ content:" · "; color:#4a4e57; }
+.sc-issue .snippet{ color:#d7af74; font-weight:600; }
+
+.sc-rules{
+  margin-top:3rem; padding-top:2rem; border-top:1px solid #2e3038;
+  font-size:0.85rem; color:#9ba3ad; line-height:1.7;
+}
+.sc-rules h3{ color:#e7e9ec; font-family:'Manrope', sans-serif; font-size:1rem; margin:0 0 0.6rem 0; }
+.sc-rules p{ margin:0 0 0.5rem 0; }
+.sc-rules details{ margin-top:0.6rem; }
+.sc-rules summary{ cursor:pointer; color:#d7af74; font-weight:600; }
+.sc-rules summary:hover{ color:#e3bc83; }
+.sc-rules ul{ margin:0.4rem 0 0.8rem 1.2rem; padding:0; }
+  </style>
+</head>
+<body>
+  
+
+  <main>
+  <div class="sc-wrap">
+  <h1 class="sc-title">Script Check</h1>
+  <p class="sc-sub">
+    Paste a Will It Retail script below and click Check. You'll get feedback on hook strength,
+    weak language, missing structure, word counts, and music vocabulary that should be translated
+    into behavior. The rules come from the
+    <a href="https://github.com/danielfox296/brand-site" target="_blank" rel="noopener">Script Playbook</a>.
+  </p>
+
+  <textarea id="script-input" spellcheck="true" placeholder="Paste your script here. Use bold-and-colon section headers like:
+
+**Hook:** This song is costing retailers thousands.
+**Context:** Five retail staples evaluated for browsing speed.
+**Behavioral Effect:** Familiar pop accelerates pace and triggers attention theft.
+**Retail Implication:** Faster pace means shorter dwell, smaller baskets.
+**Verdict:** C and D tier for most stores.
+**CTA:** Entuned engineers music for shopper behavior."></textarea>
+
+  <div class="sc-bar">
+    <button class="sc-btn" id="check-btn">Check</button>
+    <button class="sc-btn secondary" id="clear-btn">Clear</button>
+    <button class="sc-btn secondary" id="sample-btn">Load example</button>
+  </div>
+
+  <div id="results">
+    <div class="sc-empty">Paste a script and click Check.</div>
+  </div>
+
+  <div class="sc-rules">
+    <h3>What this checks</h3>
+    <p>
+      <strong>Errors</strong> must be fixed before recording. <strong>Warnings</strong> are advisory —
+      they surface patterns that often weaken short-form delivery, but you can decide.
+    </p>
+    <details>
+      <summary>Click for the full rule set</summary>
+      <ul>
+        <li><strong>Structure:</strong> requires Hook, Behavioral Effect, and Verdict sections at minimum.</li>
+        <li><strong>Word budgets:</strong> Hook ≤ 12, Context ≤ 12, Behavioral Effect ≤ 30, Retail Implication ≤ 18, Verdict ≤ 10, CTA ≤ 14. Total target ≤ 90 words.</li>
+        <li><strong>Hedge words:</strong> "I think", "kinda", "sort of", "maybe", "might", "to me", "actually", "honestly", "probably" — must be cut.</li>
+        <li><strong>Audiophile vocabulary:</strong> "mix", "groove", "riff", "timbre", "production", "mastering" — flagged as not landing with retail operators.</li>
+        <li><strong>Music → behavior translation:</strong> words like "fast", "slow", "catchy", "familiar" should pair with the behavioral consequence ("accelerates pace", "extends dwell", "attention theft", etc).</li>
+        <li><strong>Named concepts:</strong> at least one from the Entuned vocabulary should appear per episode (Attention Theft, Behavioral Tempo, Identity Congruence, Familiarity Saturation, Dwell Engineering, etc).</li>
+        <li><strong>Hook mechanism:</strong> the Hook should hit at least one of: money, contradiction, instant fact, authority, provocation, direct behavioral claim.</li>
+      </ul>
+    </details>
+  </div>
+</div>
+
+<script>
+(function(){
+  // ===== RULES (kept in sync with will-it-retail/lint-script.py) =====
+
+  const HEDGE_PATTERNS = [
+    /\bI think\b/gi, /\bI feel\b/gi, /\bI believe\b/gi, /\bI'?d say\b/gi, /\bI guess\b/gi,
+    /\bkinda\b/gi, /\bsort of\b/gi, /\bmaybe\b/gi, /\bmight\b/gi, /\bto me\b/gi,
+    /\ba little bit\b/gi, /\bprobably\b/gi, /\byou know\b/gi, /\bpretty much\b/gi,
+    /\bin a way\b/gi, /\bperhaps\b/gi, /\bactually\b/gi, /\bhonestly\b/gi, /\bsomewhat\b/gi,
+  ];
+
+  const AUDIOPHILE_TERMS = ['mix','mastering','production','timbre','groove','riff','breakdown','harmonies'];
+
+  const TRANSLATION_HINTS = [
+    [/\b(fast|quick|upbeat|high-energy|energetic)\b/gi,
+     'try: "accelerates shopper pace" or "drives decisions toward exit"'],
+    [/\b(slow(?!\sdown)|chill|relaxed|mellow|calm)\b/gi,
+     'try: "extends dwell time" or "removes audio friction"'],
+    [/\b(catchy|memorable|popular)\b/gi,
+     'try: "competes with product attention" or "triggers cognitive interruption"'],
+    [/\b(familiar|well[- ]known|classic)\b/gi,
+     'try: "familiarity saturation" or "attention theft" or "time compression"'],
+    [/\b(loud|aggressive|hard|harsh)\b/gi,
+     'try: "cognitive load" or "drives customers out"'],
+    [/\b(quiet|subtle|gentle)\b/gi,
+     'try: "removes audio friction" or "supports purchase-state decisions"'],
+    [/\b(nostalgic|throwback)\b/gi,
+     'try: "triggers exit-the-store mental drift"'],
+    [/\b(it'?s a vibe|good vibe|bad vibe)\b/gi,
+     'cut. "Vibe" is empty to an operator.'],
+    [/\b(banger|bop|jam|fire|slaps)\b/gi,
+     'cut. Music-fan vocabulary, not operator vocabulary.'],
+  ];
+
+  const NAMED_CONCEPTS = [
+    'attention theft','behavioral tempo','identity congruence',
+    'perceived time compression','purchase-state music','audio friction',
+    'familiarity saturation','outcome scheduling','dwell engineering',
+    'formation period','emotional friction',
+  ];
+
+  const WORD_LIMITS = {
+    'hook': 12, 'context': 12, 'premise': 12,
+    'behavioral effect': 30, 'retail implication': 18,
+    'verdict': 10, 'closer': 14, 'cta': 14,
+  };
+
+  const REQUIRED_SECTIONS = ['hook','behavioral effect','verdict'];
+  const TOTAL_WORD_TARGET = 90;
+
+  // Hook mechanism heuristics (any one is enough for the hook to "have" a mechanism)
+  const HOOK_MECHANISMS = {
+    'money/loss':    [/\b(cost|costing|losing|lose|bleeding|thousands|dollars|sales|money|revenue)\b/i],
+    'contradiction': [/\bgreat\b.*\bbad\b|\bgood\b.*\bwrong\b|\bbest\b.*\bworst\b|\bhit\b.*\bbomb\b|\bloved\b.*\bhated\b/i],
+    'instant fact':  [/\b(changes|controls|predicts|determines|drives|compresses|accelerates|extends)\b/i],
+    'authority':     [/\b(luxury|never|always|most|behavioral|engineered)\b/i],
+    'provocation':   [/\b(should|theft|forgettable|wrong|losing)\b/i],
+    'direct effect': [/\b(makes|causes|triggers|forces)\b/i],
+  };
+
+  // ===== SECTION PARSING =====
+
+  function parseSections(text){
+    const found = {};
+    // **Hook (0-3s):** body  OR  **Hook:** body
+    const boldRe = /^\s*\*\*\s*([A-Za-z][A-Za-z ]+?)(?:\s*\([^)]*\))?\s*:\s*\*\*\s*(.+?)(?=^\s*\*\*|\Z)/gms;
+    let m;
+    while((m = boldRe.exec(text)) !== null){
+      const name = m[1].trim().toLowerCase();
+      const body = m[2].split(/\n\s*\n/)[0].trim();
+      if(!(name in found)) found[name] = body;
+    }
+    // ## Hook  /  ### A. Hook
+    const headRe = /^##+\s+(?:[A-Z]\.\s+)?([A-Za-z][A-Za-z ]+?)\s*$\n([\s\S]+?)(?=^##|\Z)/gm;
+    while((m = headRe.exec(text)) !== null){
+      const name = m[1].trim().toLowerCase();
+      const body = m[2].split(/\n\s*\n/)[0].trim();
+      if(!(name in found)) found[name] = body;
+    }
+    return found;
+  }
+
+  function wordCount(text){
+    const cleaned = text.replace(/[*_`#>\-]/g, ' ').trim();
+    if(!cleaned) return 0;
+    return cleaned.split(/\s+/).filter(Boolean).length;
+  }
+
+  // ===== LINT PASSES =====
+
+  function lint(text){
+    const errors = [];
+    const warnings = [];
+    const meta = { sections: {}, concepts: [] };
+
+    const sections = parseSections(text);
+    meta.sections = Object.fromEntries(Object.entries(sections).map(([k,v]) => [k, wordCount(v)]));
+
+    // Hedges
+    for(const [sec, body] of Object.entries(sections)){
+      for(const pat of HEDGE_PATTERNS){
+        pat.lastIndex = 0;
+        let mm;
+        while((mm = pat.exec(body)) !== null){
+          errors.push({tag:'hedge', where:sec, snippet:mm[0], note:'cut or rewrite as declarative'});
+        }
+      }
+    }
+
+    // Required sections
+    const secKeys = Object.keys(sections);
+    for(const req of REQUIRED_SECTIONS){
+      if(!secKeys.some(s => s.includes(req))){
+        errors.push({tag:'structure', where:'(missing)', snippet:req.replace(/^./, c=>c.toUpperCase()), note:'add this section'});
+      }
+    }
+
+    // Word counts (only on known script beats)
+    let scriptTotal = 0;
+    for(const [sec, body] of Object.entries(sections)){
+      const wc = wordCount(body);
+      let limit = null;
+      for(const [key, val] of Object.entries(WORD_LIMITS)){
+        if(sec.includes(key)) { limit = val; break; }
+      }
+      if(limit === null) continue;
+      scriptTotal += wc;
+      if(wc > limit){
+        errors.push({tag:'words', where:sec, snippet:wc + ' words', note:'limit ' + limit + ' — cut ' + (wc - limit)});
+      } else if(wc > limit * 0.85){
+        warnings.push({tag:'words', where:sec, snippet:wc + ' words', note:'at ' + Math.round(100*wc/limit) + '% of limit (' + limit + ') — consider compressing'});
+      }
+    }
+    if(scriptTotal > TOTAL_WORD_TARGET){
+      errors.push({tag:'total', where:'(all beats)', snippet:scriptTotal + ' words', note:'target ≤ ' + TOTAL_WORD_TARGET + ' for a 45-second video — cut ' + (scriptTotal - TOTAL_WORD_TARGET)});
+    } else if(scriptTotal > 0 && scriptTotal < TOTAL_WORD_TARGET * 0.5){
+      warnings.push({tag:'total', where:'(all beats)', snippet:scriptTotal + ' words', note:'well under ' + TOTAL_WORD_TARGET + ' — may be too thin'});
+    }
+
+    // Audiophile vocab
+    for(const [sec, body] of Object.entries(sections)){
+      for(const term of AUDIOPHILE_TERMS){
+        const re = new RegExp('\\b' + term + '\\b', 'gi');
+        if(re.test(body)){
+          warnings.push({tag:'audiophile', where:sec, snippet:term, note:'music-fan vocab; only keep if a behavioral consequence is in the same beat'});
+        }
+      }
+    }
+
+    // Music → behavior hints
+    for(const [sec, body] of Object.entries(sections)){
+      for(const [pat, hint] of TRANSLATION_HINTS){
+        pat.lastIndex = 0;
+        const seen = new Set();
+        let mm;
+        while((mm = pat.exec(body)) !== null){
+          if(seen.has(mm[0].toLowerCase())) continue;
+          seen.add(mm[0].toLowerCase());
+          warnings.push({tag:'translate', where:sec, snippet:mm[0], note:hint});
+        }
+      }
+    }
+
+    // Named concepts
+    const lower = text.toLowerCase();
+    meta.concepts = NAMED_CONCEPTS.filter(c => lower.includes(c));
+    if(meta.concepts.length === 0){
+      warnings.push({tag:'concept', where:'(whole script)', snippet:'none', note:'add at least one named concept (Attention Theft, Behavioral Tempo, Familiarity Saturation, etc.) — compounds your authority across episodes'});
+    }
+
+    // Hook strength
+    const hookKey = Object.keys(sections).find(k => k.includes('hook'));
+    if(hookKey){
+      const hook = sections[hookKey];
+      const matched = [];
+      for(const [label, pats] of Object.entries(HOOK_MECHANISMS)){
+        for(const pat of pats){
+          if(pat.test(hook)) { matched.push(label); break; }
+        }
+      }
+      if(matched.length === 0){
+        warnings.push({tag:'hook', where:'hook', snippet:'no clear mechanism', note:'hook should hit at least one of: money, contradiction, instant fact, authority, provocation, direct effect'});
+      } else {
+        meta.hookMechanisms = matched;
+      }
+    }
+
+    return { errors, warnings, meta };
+  }
+
+  // ===== RENDER =====
+
+  function render(text){
+    const out = document.getElementById('results');
+    if(!text.trim()){
+      out.innerHTML = '<div class="sc-empty">Paste a script and click Check.</div>';
+      return;
+    }
+    const { errors, warnings, meta } = lint(text);
+
+    let html = '<div class="sc-summary">';
+    html += '<span class="sc-chip ' + (errors.length ? 'error' : 'ok') + '">'
+         + (errors.length ? errors.length + ' must fix' : 'No blocking errors') + '</span>';
+    if(warnings.length){
+      html += '<span class="sc-chip warn">' + warnings.length + ' to consider</span>';
+    }
+    const secNames = Object.entries(meta.sections);
+    if(secNames.length){
+      const summary = secNames.map(([k,v]) => k + ' (' + v + 'w)').join(', ');
+      html += '<span class="sc-chip info">Beats: ' + summary + '</span>';
+    }
+    if(meta.concepts && meta.concepts.length){
+      html += '<span class="sc-chip ok">Named: ' + meta.concepts.join(', ') + '</span>';
+    }
+    if(meta.hookMechanisms && meta.hookMechanisms.length){
+      html += '<span class="sc-chip ok">Hook: ' + meta.hookMechanisms.join(' / ') + '</span>';
+    }
+    html += '</div>';
+
+    if(errors.length){
+      html += '<div class="sc-section errors"><h3>Must fix <span class="count">— ' + errors.length + '</span></h3>';
+      errors.forEach(e => {
+        html += '<div class="sc-issue error">'
+             + '<span class="tag">' + e.tag + '</span>'
+             + '<span class="where">' + e.where + '</span>'
+             + '<span class="snippet">"' + e.snippet + '"</span> — ' + e.note
+             + '</div>';
+      });
+      html += '</div>';
+    }
+
+    if(warnings.length){
+      html += '<div class="sc-section warnings"><h3>Consider <span class="count">— ' + warnings.length + '</span></h3>';
+      warnings.forEach(w => {
+        html += '<div class="sc-issue warning">'
+             + '<span class="tag">' + w.tag + '</span>'
+             + '<span class="where">' + w.where + '</span>'
+             + '<span class="snippet">"' + w.snippet + '"</span> — ' + w.note
+             + '</div>';
+      });
+      html += '</div>';
+    }
+
+    if(!errors.length && !warnings.length){
+      html += '<div class="sc-section good"><h3>✓ Clean</h3>'
+           + '<div class="sc-issue">Looks ready to record. Run it once aloud to check the cadence; you can always re-check.</div>'
+           + '</div>';
+    } else if(!errors.length){
+      html += '<div class="sc-section good"><h3>✓ No blocking errors</h3>'
+           + '<div class="sc-issue">Review the suggestions above. None block recording.</div>'
+           + '</div>';
+    }
+
+    out.innerHTML = html;
+  }
+
+  const EXAMPLE = '**Hook (0–3s):** This song is costing retailers thousands in lost dwell time.\n\n'
+                + '**Context (3–6s):** Five retail staples. One question. Do they keep customers browsing?\n\n'
+                + '**Behavioral Effect (6–15s):** Familiar pop accelerates shopper pace and triggers familiarity saturation. Customers move faster and exit sooner without knowing why.\n\n'
+                + '**Retail Implication (15–25s):** Faster pace means smaller baskets and shorter dwell. Bad math for any retailer paying rent on square footage.\n\n'
+                + '**Verdict (25–30s):** Most pop-radio playlists land in C and D tier.\n\n'
+                + '**CTA (final 5s):** Entuned engineers music for shopper behavior, not taste.';
+
+  const input = document.getElementById('script-input');
+  document.getElementById('check-btn').addEventListener('click', () => render(input.value));
+  document.getElementById('clear-btn').addEventListener('click', () => {
+    input.value = '';
+    render('');
+  });
+  document.getElementById('sample-btn').addEventListener('click', () => {
+    input.value = EXAMPLE;
+    render(EXAMPLE);
+  });
+
+  // Cmd+Enter to check
+  input.addEventListener('keydown', (e) => {
+    if((e.metaKey || e.ctrlKey) && e.key === 'Enter'){
+      render(input.value);
+    }
+  });
+})();
+</script>
+  </main>
+
+  
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG', {
+      linker: {
+        domains: ['entuned.co', 'music.entuned.co', 'app.entuned.co']
+      }
+    });
+  </script>
+  <script defer src="js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>
