@@ -152,23 +152,11 @@ html, body {
   letter-spacing:2px;
 }
 
-/* --- PIP zone: front-facing camera area, top-left.
-       Daniel records himself playing the game here. --- */
-#pip-zone{
-  position:absolute;
-  top:9%;left:var(--wir-safe-left);
-  width:11vh;height:11vh;
-  border:2px dashed rgba(255,255,255,0.28);
-  border-radius:10px;
-  display:flex;align-items:center;justify-content:center;
-  background:rgba(255,255,255,0.02);
-  z-index:50;
-}
-#pip-label{
-  font-size:1.1vh;font-weight:700;
-  color:rgba(255,255,255,0.4);
-  text-transform:uppercase;letter-spacing:3px;
-}
+/* --- PIP zone removed from the in-game layout. Daniel uses Loom for the
+       webcam overlay during recording, so the game no longer needs a slot
+       for it. The HTML element is kept hidden for backwards-compat. --- */
+#pip-zone{display:none !important;}
+#pip-label{display:none;}
 
 /* =============================================
    QUEUE CAROUSEL — 5 pixelated upcoming-song boxes
@@ -177,13 +165,14 @@ html, body {
    ============================================= */
 #queue-carousel{
   position:absolute;
-  /* Top-right, beside the PIP zone — moved up with PIP to free middle real estate */
+  /* Full safe-area width, centered horizontally. PIP is gone; Loom overlays
+     the webcam top-left (Loom's own UI), so the carousel can take the full
+     width and the Loom PIP won't conflict. */
   top:11%;
+  left:var(--wir-safe-left);
   right:var(--wir-safe-right);
-  /* left bound so it doesn't overlap PIP at left:5.6% + width:11vh */
-  left:calc(var(--wir-safe-left) + 13vh);
   height:6vh;
-  display:flex;justify-content:flex-end;align-items:center;gap:0.6vh;
+  display:flex;justify-content:center;align-items:center;gap:0.7vh;
   z-index:55;
   /* Soft gradient mask on the LEFT edge so boxes appear to slide in from
      the right-into-the-frame rather than just pop in */
