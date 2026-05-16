@@ -427,13 +427,12 @@ html, body {
 <div id="ghost"><img id="ghost-img" src="" alt=""><span id="ghost-label"></span></div>
 
 <script>
-const SONGS = [
-  {title:"Blinding Lights",artist:"The Weeknd",art:"img/wir/ep001/blinding-lights_the-weeknd.jpg",preview:"https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/b4/8f/17b48f9a-0b93-6bb8-fe1d-3a16623c2cfb/mzaf_9560252727299052414.plus.aac.p.m4a"},
-  {title:"Dreams",artist:"Fleetwood Mac",art:"img/wir/ep001/dreams_fleetwood-mac.jpg",preview:"https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cb/87/29/cb872937-bebb-f309-821e-5459a873f1b6/mzaf_13232595752463797281.plus.aac.p.m4a"},
-  {title:"Levitating",artist:"Dua Lipa",art:"img/wir/ep001/levitating_dua-lipa.jpg",preview:"https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/59/dc/4d/59dc4dda-93ff-8f1c-c536-f005f6ea6af5/mzaf_3066686759813252385.plus.aac.p.m4a"},
-  {title:"Sultans of Swing",artist:"Dire Straits",art:"img/wir/ep001/sultans-of-swing_dire-straits.jpg",preview:"https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/34/32/bd/3432bdb8-1f76-d95f-401b-e93e32cd76c8/mzaf_4481796812840018496.plus.aac.p.m4a"},
-  {title:"As It Was",artist:"Harry Styles",art:"img/wir/ep001/as-it-was_harry-styles.jpg",preview:"https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/10/16/67101606-3869-ca44-6c03-e13d6322cb51/mzaf_1135399237022217274.plus.aac.p.m4a"}
-];
+// SONGS is loaded from /data/wir/episodes.json based on the ?ep= URL param.
+// See will-it-retail/build-episodes.py for the data pipeline. The game UI
+// must not assume any particular episode — only the data shape:
+//   { episodes: [{ id, number, title, format, songs: [{title,artist,art,preview}] }] }
+let SONGS = [];
+let CURRENT_EP = null;
 
 const TIERS = [
   {id:'S',label:'S',sub:'OPTIMAL',color:'#FF2D55'},
@@ -783,7 +782,55 @@ function endGame(cleared){
   setTimeout(()=>{document.getElementById('end-screen').style.display='flex';},cleared?500:1200);
 }
 
-setTimeout(runIntro,250);
+// ========== EPISODE LOADER ==========
+// Reads ?ep=N from URL (default 1), fetches episodes.json, populates SONGS,
+// updates the game header, then kicks off the intro. Single code path —
+// ep-1 uses the same loader as every other episode.
+function getEpParam(){
+  const params=new URLSearchParams(window.location.search);
+  const raw=params.get('ep');
+  if(!raw)return 1;
+  const n=parseInt(raw,10);
+  return isNaN(n)?1:n;
+}
+
+async function loadEpisode(){
+  const epNum=getEpParam();
+  let data;
+  try{
+    const resp=await fetch('data/wir/episodes.json',{cache:'no-store'});
+    if(!resp.ok)throw new Error('HTTP '+resp.status);
+    data=await resp.json();
+  }catch(e){
+    showLoadError('Could not load episode data: '+e.message);
+    return;
+  }
+  const ep=(data.episodes||[]).find(x=>x.number===epNum);
+  if(!ep){
+    showLoadError('Episode '+epNum+' not found. Available: '+
+      (data.episodes||[]).map(x=>x.number).join(', '));
+    return;
+  }
+  CURRENT_EP=ep;
+  SONGS=ep.songs||[];
+  // Update header text dynamically (game-title + ep-info)
+  const titleEl=document.getElementById('game-title');
+  const epInfoEl=document.getElementById('ep-info');
+  if(titleEl)titleEl.textContent='WILL IT RETAIL?';
+  if(epInfoEl)epInfoEl.textContent='EP '+ep.number+' — '+ep.title.toUpperCase();
+  // Preload art for snappier card render
+  SONGS.forEach(s=>{const i=new Image();i.src=s.art;});
+  // Kick off intro now that data is ready
+  runIntro();
+}
+
+function showLoadError(msg){
+  const intro=document.getElementById('intro');
+  if(!intro)return;
+  intro.innerHTML='<div style="color:#fff;text-align:center;padding:4vh;font-size:2vh;line-height:1.5;font-family:Inter,sans-serif;">'+msg+'</div>';
+}
+
+setTimeout(loadEpisode,100);
 </script>
   </main>
 

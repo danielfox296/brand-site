@@ -1,0 +1,1681 @@
+{
+  "episodes": [
+    {
+      "id": "001",
+      "number": 1,
+      "slug": "ep-001-dwell-time",
+      "title": "Dwell Time",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Blinding Lights",
+          "artist": "The Weeknd",
+          "art": "img/wir/ep001/blinding-lights_the-weeknd.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/b4/8f/17b48f9a-0b93-6bb8-fe1d-3a16623c2cfb/mzaf_9560252727299052414.plus.aac.p.m4a"
+        },
+        {
+          "title": "Dreams",
+          "artist": "Fleetwood Mac",
+          "art": "img/wir/ep001/dreams_fleetwood-mac.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cb/87/29/cb872937-bebb-f309-821e-5459a873f1b6/mzaf_13232595752463797281.plus.aac.p.m4a"
+        },
+        {
+          "title": "Levitating",
+          "artist": "Dua Lipa",
+          "art": "img/wir/ep001/levitating_dua-lipa.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/59/dc/4d/59dc4dda-93ff-8f1c-c536-f005f6ea6af5/mzaf_3066686759813252385.plus.aac.p.m4a"
+        },
+        {
+          "title": "Sultans of Swing",
+          "artist": "Dire Straits",
+          "art": "img/wir/ep001/sultans-of-swing_dire-straits.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/34/32/bd/3432bdb8-1f76-d95f-401b-e93e32cd76c8/mzaf_4481796812840018496.plus.aac.p.m4a"
+        },
+        {
+          "title": "As It Was",
+          "artist": "Harry Styles",
+          "art": "img/wir/ep001/as-it-was_harry-styles.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/10/16/67101606-3869-ca44-6c03-e13d6322cb51/mzaf_1135399237022217274.plus.aac.p.m4a"
+        }
+      ]
+    },
+    {
+      "id": "003",
+      "number": 3,
+      "slug": "ep-003-luxury-retail",
+      "title": "Luxury Retail",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Earned It",
+          "artist": "The Weeknd",
+          "art": "img/wir/ep003/earned-it_the-weeknd.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/13/7a/04137aba-99fa-6331-81d5-d69097ab97be/mzaf_3869073502048666760.plus.aac.p.m4a"
+        },
+        {
+          "title": "Pink + White",
+          "artist": "Frank Ocean",
+          "art": "img/wir/ep003/pink-white_frank-ocean.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/45/a8/a2/45a8a2e0-9516-86b2-66ea-e8b2bf71de68/mzaf_10773372944954067241.plus.aac.p.m4a"
+        },
+        {
+          "title": "Kiss of Life",
+          "artist": "Sade",
+          "art": "img/wir/ep003/kiss-of-life_sade.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/43/56/d6/4356d6a7-a063-6ed5-bb65-f9255f2f411e/mzaf_10810152660783246095.plus.aac.p.m4a"
+        },
+        {
+          "title": "West Coast",
+          "artist": "Lana Del Rey",
+          "art": "img/wir/ep003/west-coast_lana-del-rey.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ed/52/09/ed520999-13e7-5731-c9b2-f3f0fb6553ac/mzaf_16001392133890342236.plus.aac.p.m4a"
+        },
+        {
+          "title": "Intro",
+          "artist": "The xx",
+          "art": "img/wir/ep003/intro_the-xx.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4a/1d/e9/4a1de930-f0f2-484c-eea9-7d46bcd89de8/mzaf_11582686532983847296.plus.aac.p.m4a"
+        }
+      ]
+    },
+    {
+      "id": "004",
+      "number": 4,
+      "slug": "ep-004-coffee-shop",
+      "title": "Coffee Shop",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Skinny Love",
+          "artist": "Bon Iver",
+          "art": "img/wir/ep004/skinny-love_bon-iver.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d2/2f/a4/d22fa4db-97d9-4d99-7272-5ae5ed58de21/mzaf_2631945908793863176.plus.aac.p.m4a"
+        },
+        {
+          "title": "Put Your Records On",
+          "artist": "Corinne Bailey Rae",
+          "art": "img/wir/ep004/put-your-records-on_corinne-bailey-rae.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/93/a3/49/93a3498e-680f-31fe-02e4-1927c4960031/mzaf_18007051220253292659.plus.aac.p.m4a"
+        },
+        {
+          "title": "Sea of Love",
+          "artist": "Cat Power",
+          "art": "img/wir/ep004/sea-of-love_cat-power.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2b/6d/d0/2b6dd015-e970-46a7-0873-59208ddfe1a6/mzaf_17426022878316684938.plus.aac.p.m4a"
+        },
+        {
+          "title": "First Day of My Life",
+          "artist": "Bright Eyes",
+          "art": "img/wir/ep004/first-day-of-my-life_bright-eyes.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/42/07/f8/4207f8f1-6c11-4b08-aff8-ce6a26a9c436/mzaf_10134483815704243837.plus.aac.p.m4a"
+        },
+        {
+          "title": "Lost in the Light",
+          "artist": "Bahamas",
+          "art": "img/wir/ep004/lost-in-the-light_bahamas.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d2/cf/c6/d2cfc6a5-1539-cb49-167e-b1580e836ab3/mzaf_13269456472061343055.plus.aac.p.m4a"
+        }
+      ]
+    },
+    {
+      "id": "006",
+      "number": 6,
+      "slug": "ep-006-grocery-store",
+      "title": "Grocery Store",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Don't Stop Believin'",
+          "artist": "Journey",
+          "art": "img/wir/ep006/don-t-stop-believin_journey.jpg",
+          "preview": null
+        },
+        {
+          "title": "Mr. Brightside",
+          "artist": "The Killers",
+          "art": "img/wir/ep006/mr-brightside_the-killers.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/95/6e/b3956e14-35f0-937e-afb0-72774d3f613f/mzaf_8359343604382181711.plus.aac.p.m4a"
+        },
+        {
+          "title": "September",
+          "artist": "Earth, Wind & Fire",
+          "art": "img/wir/ep006/september_earth-wind-fire.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2c/7d/a7/2c7da7da-71d7-c609-eaef-cf302e6a7b77/mzaf_5790598685195861729.plus.aac.p.m4a"
+        },
+        {
+          "title": "Walking on Sunshine",
+          "artist": "Katrina and the Waves",
+          "art": "img/wir/ep006/walking-on-sunshine_katrina-and-the-waves.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fe/af/a9/feafa950-3d4d-6eb4-5c5c-a4170d27a605/mzaf_14050415466863438352.plus.aac.p.m4a"
+        },
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift",
+          "art": "img/wir/ep006/shake-it-off_taylor-swift.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/11/d5/6d/11d56d4a-ce23-e793-8681-70dc4d35d931/mzaf_5886436202259848624.plus.aac.p.m4a"
+        }
+      ]
+    },
+    {
+      "id": "008",
+      "number": 8,
+      "slug": "ep-008-gen-z-boutique",
+      "title": "Gen Z Boutique",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Kyoto",
+          "artist": "Phoebe Bridgers",
+          "art": "img/wir/ep008/kyoto_phoebe-bridgers.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/49/86/d0/4986d0e4-c8d3-9dce-2d74-541b1367f388/mzaf_10104850253181162188.plus.aac.p.m4a"
+        },
+        {
+          "title": "Good Days",
+          "artist": "SZA",
+          "art": "img/wir/ep008/good-days_sza.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9b/32/fe/9b32fec3-fbfb-db0f-3dcf-bb089d412f23/mzaf_15200324731067771849.plus.aac.p.m4a"
+        },
+        {
+          "title": "Bags",
+          "artist": "Clairo",
+          "art": "img/wir/ep008/bags_clairo.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/b9/3d/67b93d4e-07cb-cd11-7d64-88762c42a230/mzaf_15744728589488284514.plus.aac.p.m4a"
+        },
+        {
+          "title": "Sunflower",
+          "artist": "Rex Orange County",
+          "art": "img/wir/ep008/sunflower_rex-orange-county.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/01/3c/78/013c7880-1054-9f3c-60f3-5360ba6c1878/mzaf_16968715549952035791.plus.aac.p.m4a"
+        },
+        {
+          "title": "Dark Red",
+          "artist": "Steve Lacy",
+          "art": "img/wir/ep008/dark-red_steve-lacy.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/de/4b/3e/de4b3e7a-be7e-ec7e-18d6-ff5c2faa2f8c/mzaf_9365869387474732299.plus.aac.p.m4a"
+        }
+      ]
+    },
+    {
+      "id": "010",
+      "number": 10,
+      "slug": "ep-010-activewear-store",
+      "title": "Activewear Store",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Stronger",
+          "artist": "Kanye West",
+          "art": "img/wir/ep010/stronger_kanye-west.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/96/f2/25/96f225f2-cd07-3639-4133-0910aa9725c0/mzaf_13857358519708863745.plus.aac.p.m4a"
+        },
+        {
+          "title": "Physical",
+          "artist": "Dua Lipa",
+          "art": "img/wir/ep010/physical_dua-lipa.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/87/45/78/874578c1-d683-d1e6-00e4-08848279fa3a/mzaf_17519393520049027931.plus.aac.p.m4a"
+        },
+        {
+          "title": "Till I Collapse",
+          "artist": "Eminem",
+          "art": "img/wir/ep010/till-i-collapse_eminem.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/be/cb/2c/becb2c99-4327-fe05-32fd-df1603acedb6/mzaf_14690352521945190369.plus.aac.p.m4a"
+        },
+        {
+          "title": "Run the World (Girls)",
+          "artist": "Beyonce",
+          "art": "img/wir/ep010/run-the-world-girls_beyonce.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f4/6d/38/f46d3898-94fc-be47-f009-b4457bf4316d/mzaf_576721483367387509.plus.aac.p.m4a"
+        },
+        {
+          "title": "Pump It",
+          "artist": "The Black Eyed Peas",
+          "art": "img/wir/ep010/pump-it_the-black-eyed-peas.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/fb/69/83fb6917-19a5-78a1-1120-15d910a54891/mzaf_1569911826648558644.plus.aac.p.m4a"
+        }
+      ]
+    },
+    {
+      "id": "011",
+      "number": 11,
+      "slug": "ep-011-songs-that-feel-expensive",
+      "title": "Songs That Feel Expensive",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Nightcall",
+          "artist": "Kavinsky",
+          "art": "img/wir/ep011/nightcall_kavinsky.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0a/de/fd/0adefd5b-145a-1cc9-f3b5-be89fd0232b9/mzaf_4322553693875273982.plus.aac.p.m4a"
+        },
+        {
+          "title": "Glory Box",
+          "artist": "Portishead",
+          "art": "img/wir/ep011/glory-box_portishead.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e9/12/99/e91299a5-115b-85d5-c6a5-7d7ffca699cf/mzaf_16022543165233599469.plus.aac.p.m4a"
+        },
+        {
+          "title": "Get Lucky",
+          "artist": "Daft Punk",
+          "art": "img/wir/ep011/get-lucky_daft-punk.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/d4/d3/1e/d4d31eb4-7405-b806-8346-3c52ad5b4cf4/mzaf_8095545455942962509.plus.aac.p.m4a"
+        },
+        {
+          "title": "Bizarre Love Triangle",
+          "artist": "New Order",
+          "art": "img/wir/ep011/bizarre-love-triangle_new-order.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/dc/e7/a6/dce7a612-2672-34e1-e735-a44218403ed2/mzaf_11026710952020512417.plus.aac.p.m4a"
+        },
+        {
+          "title": "Bitter Sweet Symphony",
+          "artist": "The Verve",
+          "art": "img/wir/ep011/bitter-sweet-symphony_the-verve.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/0e/3b/4a/0e3b4a89-3f5f-b2f4-f99b-0d51e1568ade/mzaf_17530686600831005668.plus.aac.p.m4a"
+        }
+      ]
+    },
+    {
+      "id": "014",
+      "number": 14,
+      "slug": "ep-014-bookstore",
+      "title": "Bookstore",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Holocene",
+          "artist": "Bon Iver",
+          "art": "img/wir/ep014/holocene_bon-iver.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/38/c4/e8/38c4e865-d0a3-6190-b2bc-1120e3b6e6bb/mzaf_13903171739000291194.plus.aac.p.m4a"
+        },
+        {
+          "title": "The Night We Met",
+          "artist": "Lord Huron",
+          "art": "img/wir/ep014/the-night-we-met_lord-huron.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4b/36/b7/4b36b739-1de7-e0ae-45da-9a66463127ac/mzaf_1821541347983595183.plus.aac.p.m4a"
+        },
+        {
+          "title": "Bloom",
+          "artist": "The Paper Kites",
+          "art": "img/wir/ep014/bloom_the-paper-kites.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2d/de/7c/2dde7c6b-56b9-0079-54cc-9b377e6c583c/mzaf_4103191401324966350.plus.aac.p.m4a"
+        },
+        {
+          "title": "Pink Moon",
+          "artist": "Nick Drake",
+          "art": "img/wir/ep014/pink-moon_nick-drake.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/21/47/d6/2147d68f-efc9-df0d-a1e9-4e9451877534/mzaf_2167308747012001247.plus.aac.p.m4a"
+        },
+        {
+          "title": "Such Great Heights",
+          "artist": "The Postal Service",
+          "art": "img/wir/ep014/such-great-heights_the-postal-service.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "015",
+      "number": 15,
+      "slug": "ep-015-hotel-lobby",
+      "title": "Hotel Lobby",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Thinking Out Loud",
+          "artist": "Ed Sheeran",
+          "art": "img/wir/ep015/thinking-out-loud_ed-sheeran.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/78/a5/f2/78a5f25e-ad1b-718d-82ad-b82e676c1855/mzaf_6133970271589343093.plus.aac.p.m4a"
+        },
+        {
+          "title": "Clocks",
+          "artist": "Coldplay",
+          "art": "img/wir/ep015/clocks_coldplay.jpg",
+          "preview": null
+        },
+        {
+          "title": "Budapest",
+          "artist": "George Ezra",
+          "art": "img/wir/ep015/budapest_george-ezra.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/30/b5/95/30b595d4-f469-ce5e-8ea2-4e87101d106b/mzaf_9683876537324989197.plus.aac.p.m4a"
+        },
+        {
+          "title": "Stay With Me",
+          "artist": "Sam Smith",
+          "art": "img/wir/ep015/stay-with-me_sam-smith.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d8/90/ef/d890ef3d-95b8-2224-5ff2-4ed56a359449/mzaf_8285804271834164275.plus.aac.p.m4a"
+        },
+        {
+          "title": "Someone Like You",
+          "artist": "Adele",
+          "art": "img/wir/ep015/someone-like-you_adele.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "017",
+      "number": 17,
+      "slug": "ep-017-vintage-thrift-store",
+      "title": "Vintage / Thrift Store",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Just Like Heaven",
+          "artist": "The Cure",
+          "art": "img/wir/ep017/just-like-heaven_the-cure.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/cb/31/2d/cb312df8-ccdc-cd89-88c4-832b4d454963/mzaf_10323324397338669644.plus.aac.p.m4a"
+        },
+        {
+          "title": "Everybody Wants to Rule the World",
+          "artist": "Tears for Fears",
+          "art": "img/wir/ep017/everybody-wants-to-rule-the-world_tears-for-fears.jpg",
+          "preview": null
+        },
+        {
+          "title": "This Must Be the Place",
+          "artist": "Talking Heads",
+          "art": "img/wir/ep017/this-must-be-the-place_talking-heads.jpg",
+          "preview": null
+        },
+        {
+          "title": "There Is a Light That Never Goes Out",
+          "artist": "The Smiths",
+          "art": "img/wir/ep017/there-is-a-light-that-never-goes-out_the-smiths.jpg",
+          "preview": null
+        },
+        {
+          "title": "Crimson and Clover",
+          "artist": "Tommy James & the Shondells",
+          "art": "img/wir/ep017/crimson-and-clover_tommy-james-the-shondells.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/95/5c/fd/955cfd2b-5c7d-bb87-0054-bf6d3c7b12a3/mzaf_3457085289390154406.plus.aac.p.m4a"
+        }
+      ]
+    },
+    {
+      "id": "019",
+      "number": 19,
+      "slug": "ep-019-wine-bar",
+      "title": "Wine Bar",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Sway",
+          "artist": "Dean Martin",
+          "art": "img/wir/ep019/sway_dean-martin.jpg",
+          "preview": null
+        },
+        {
+          "title": "La Vie en Rose",
+          "artist": "Edith Piaf",
+          "art": "img/wir/ep019/la-vie-en-rose_edith-piaf.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/88/82/8f/88828f6c-678e-c4f0-1ff3-0a7f5558588c/mzaf_391378267587842220.plus.aac.p.m4a"
+        },
+        {
+          "title": "Smooth Operator",
+          "artist": "Sade",
+          "art": "img/wir/ep019/smooth-operator_sade.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/30/b2/49/30b24991-e873-53d6-e823-ba1907b4116b/mzaf_14257358453064729220.plus.aac.p.m4a"
+        },
+        {
+          "title": "Feeling Good",
+          "artist": "Nina Simone",
+          "art": "img/wir/ep019/feeling-good_nina-simone.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d4/c0/0d/d4c00d15-ef31-ad3d-3001-35c09f0d778d/mzaf_6914791605613796270.plus.aac.p.m4a"
+        },
+        {
+          "title": "The Girl from Ipanema",
+          "artist": "Stan Getz & Astrud Gilberto",
+          "art": "img/wir/ep019/the-girl-from-ipanema_stan-getz-astrud-gilberto.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/03/e4/9d/03e49ddf-a1f8-0fc2-3ffd-b66875f315b6/mzaf_14664684074021255598.plus.aac.p.m4a"
+        }
+      ]
+    },
+    {
+      "id": "020",
+      "number": 20,
+      "slug": "ep-020-dwell-time-killers",
+      "title": "Dwell Time Killers",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Uptown Girl",
+          "artist": "Billy Joel",
+          "art": "img/wir/ep020/uptown-girl_billy-joel.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/47/ed/6a/47ed6a89-63aa-12c0-7b13-8c2c086f3f47/mzaf_13314293207054965636.plus.aac.p.m4a"
+        },
+        {
+          "title": "Wannabe",
+          "artist": "Spice Girls",
+          "art": "img/wir/ep020/wannabe_spice-girls.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/db/cb/c6/dbcbc688-8277-b365-8deb-1da3c30da079/mzaf_7842872759474974048.plus.aac.p.m4a"
+        },
+        {
+          "title": "Eye of the Tiger",
+          "artist": "Survivor",
+          "art": "img/wir/ep020/eye-of-the-tiger_survivor.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fe/fa/9e/fefa9edd-c023-4d1c-1012-08bfb0ec69e6/mzaf_4651653238471209843.plus.aac.p.m4a"
+        },
+        {
+          "title": "Livin' on a Prayer",
+          "artist": "Bon Jovi",
+          "art": "img/wir/ep020/livin-on-a-prayer_bon-jovi.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fc/64/6c/fc646cf8-6322-09d6-c6b7-0cd148f6a47f/mzaf_14973517811432335325.plus.aac.p.m4a"
+        },
+        {
+          "title": "We Will Rock You",
+          "artist": "Queen",
+          "art": "img/wir/ep020/we-will-rock-you_queen.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e9/37/42/e9374231-9cef-ad56-365c-a7ba09e4fa55/mzaf_10566507321838390251.plus.aac.p.m4a"
+        }
+      ]
+    },
+    {
+      "id": "023",
+      "number": 23,
+      "slug": "ep-023-sneaker-store",
+      "title": "Sneaker Store",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "HUMBLE.",
+          "artist": "Kendrick Lamar",
+          "art": "img/wir/ep023/humble_kendrick-lamar.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/30/3f/27/303f27c8-1997-8c57-66b3-b67e7c720779/mzaf_5598476068977070849.plus.aac.p.m4a"
+        },
+        {
+          "title": "Sicko Mode",
+          "artist": "Travis Scott",
+          "art": "img/wir/ep023/sicko-mode_travis-scott.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/85/49/e2/8549e207-7ecf-21a9-7b2f-b414175c6a74/mzaf_10189975321658500285.plus.aac.p.m4a"
+        },
+        {
+          "title": "All of the Lights",
+          "artist": "Kanye West",
+          "art": "img/wir/ep023/all-of-the-lights_kanye-west.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/5c/6e/05/5c6e05cf-7dfb-8ade-073a-ce283c7b6819/mzaf_12823917616239521881.plus.aac.p.m4a"
+        },
+        {
+          "title": "Started From the Bottom",
+          "artist": "Drake",
+          "art": "img/wir/ep023/started-from-the-bottom_drake.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1d/33/6b/1d336b76-b073-451f-b584-9732528102ae/mzaf_14253144271969091111.plus.aac.p.m4a"
+        },
+        {
+          "title": "m.A.A.d city",
+          "artist": "Kendrick Lamar",
+          "art": "img/wir/ep023/m-a-a-d-city_kendrick-lamar.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/68/95/37/6895378f-c6eb-ec74-8058-929773dc64e6/mzaf_12314151407932258313.plus.aac.p.m4a"
+        }
+      ]
+    },
+    {
+      "id": "024",
+      "number": 24,
+      "slug": "ep-024-hair-salon-barbershop",
+      "title": "Hair Salon / Barbershop",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Crazy in Love",
+          "artist": "Beyonce",
+          "art": "img/wir/ep024/crazy-in-love_beyonce.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/b5/2a/4f/b52a4fcd-0628-cb38-c8ab-a697c11a9175/mzaf_1541321636664021445.plus.aac.p.m4a"
+        },
+        {
+          "title": "No Scrubs",
+          "artist": "TLC",
+          "art": "img/wir/ep024/no-scrubs_tlc.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/59/d7/cb/59d7cbad-8695-6bef-5784-05d678ad22ad/mzaf_10240892877744551995.plus.aac.p.m4a"
+        },
+        {
+          "title": "Kiss Me More",
+          "artist": "Doja Cat",
+          "art": "img/wir/ep024/kiss-me-more_doja-cat.jpg",
+          "preview": null
+        },
+        {
+          "title": "Golden",
+          "artist": "Harry Styles",
+          "art": "img/wir/ep024/golden_harry-styles.jpg",
+          "preview": null
+        },
+        {
+          "title": "Juice",
+          "artist": "Lizzo",
+          "art": "img/wir/ep024/juice_lizzo.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/00/c7/dc/00c7dc24-af46-ae78-8179-6e8e526aa53f/mzaf_3405803970903559866.plus.aac.p.m4a"
+        }
+      ]
+    },
+    {
+      "id": "026",
+      "number": 26,
+      "slug": "ep-026-fast-fashion",
+      "title": "Fast Fashion",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "New Rules",
+          "artist": "Dua Lipa",
+          "art": "img/wir/ep026/new-rules_dua-lipa.jpg",
+          "preview": null
+        },
+        {
+          "title": "bad guy",
+          "artist": "Billie Eilish",
+          "art": "img/wir/ep026/bad-guy_billie-eilish.jpg",
+          "preview": null
+        },
+        {
+          "title": "Señorita",
+          "artist": "Shawn Mendes & Camila Cabello",
+          "art": "img/wir/ep026/se-orita_shawn-mendes-camila-cabello.jpg",
+          "preview": null
+        },
+        {
+          "title": "Savage Love",
+          "artist": "Jawsh 685 & Jason Derulo",
+          "art": "img/wir/ep026/savage-love_jawsh-685-jason-derulo.jpg",
+          "preview": null
+        },
+        {
+          "title": "Rain on Me",
+          "artist": "Lady Gaga & Ariana Grande",
+          "art": "img/wir/ep026/rain-on-me_lady-gaga-ariana-grande.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "028",
+      "number": 28,
+      "slug": "ep-028-home-goods-furniture",
+      "title": "Home Goods / Furniture",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Budapest",
+          "artist": "George Ezra",
+          "art": "img/wir/ep028/budapest_george-ezra.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/30/b5/95/30b595d4-f469-ce5e-8ea2-4e87101d106b/mzaf_9683876537324989197.plus.aac.p.m4a"
+        },
+        {
+          "title": "Home",
+          "artist": "Edward Sharpe & The Magnetic Zeros",
+          "art": "img/wir/ep028/home_edward-sharpe-the-magnetic-zeros.jpg",
+          "preview": null
+        },
+        {
+          "title": "Ho Hey",
+          "artist": "The Lumineers",
+          "art": "img/wir/ep028/ho-hey_the-lumineers.jpg",
+          "preview": null
+        },
+        {
+          "title": "Riptide",
+          "artist": "Vance Joy",
+          "art": "img/wir/ep028/riptide_vance-joy.jpg",
+          "preview": null
+        },
+        {
+          "title": "Flaws",
+          "artist": "Bastille",
+          "art": "img/wir/ep028/flaws_bastille.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "029",
+      "number": 29,
+      "slug": "ep-029-songs-that-speed-up-shopping",
+      "title": "Songs That Speed Up Shopping",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Uptown Funk",
+          "artist": "Bruno Mars",
+          "art": "img/wir/ep029/uptown-funk_bruno-mars.jpg",
+          "preview": null
+        },
+        {
+          "title": "I Gotta Feeling",
+          "artist": "The Black Eyed Peas",
+          "art": "img/wir/ep029/i-gotta-feeling_the-black-eyed-peas.jpg",
+          "preview": null
+        },
+        {
+          "title": "Titanium",
+          "artist": "David Guetta ft. Sia",
+          "art": "img/wir/ep029/titanium_david-guetta-ft-sia.jpg",
+          "preview": null
+        },
+        {
+          "title": "Moves Like Jagger",
+          "artist": "Maroon 5",
+          "art": "img/wir/ep029/moves-like-jagger_maroon-5.jpg",
+          "preview": null
+        },
+        {
+          "title": "Don't Stop Me Now",
+          "artist": "Queen",
+          "art": "img/wir/ep029/don-t-stop-me-now_queen.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "032",
+      "number": 32,
+      "slug": "ep-032-spa-wellness",
+      "title": "Spa / Wellness",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Weightless",
+          "artist": "Marconi Union",
+          "art": "img/wir/ep032/weightless_marconi-union.jpg",
+          "preview": null
+        },
+        {
+          "title": "Gymnopédie No.1",
+          "artist": "Erik Satie",
+          "art": "img/wir/ep032/gymnop-die-no-1_erik-satie.jpg",
+          "preview": null
+        },
+        {
+          "title": "Porcelain",
+          "artist": "Moby",
+          "art": "img/wir/ep032/porcelain_moby.jpg",
+          "preview": null
+        },
+        {
+          "title": "Teardrop",
+          "artist": "Massive Attack",
+          "art": "img/wir/ep032/teardrop_massive-attack.jpg",
+          "preview": null
+        },
+        {
+          "title": "Only Time",
+          "artist": "Enya",
+          "art": "img/wir/ep032/only-time_enya.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "033",
+      "number": 33,
+      "slug": "ep-033-department-store",
+      "title": "Department Store",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Dancing Queen",
+          "artist": "ABBA",
+          "art": "img/wir/ep033/dancing-queen_abba.jpg",
+          "preview": null
+        },
+        {
+          "title": "Signed, Sealed, Delivered",
+          "artist": "Stevie Wonder",
+          "art": "img/wir/ep033/signed-sealed-delivered_stevie-wonder.jpg",
+          "preview": null
+        },
+        {
+          "title": "Valerie",
+          "artist": "Mark Ronson ft. Amy Winehouse",
+          "art": "img/wir/ep033/valerie_mark-ronson-ft-amy-winehouse.jpg",
+          "preview": null
+        },
+        {
+          "title": "Walking on the Moon",
+          "artist": "The Police",
+          "art": "img/wir/ep033/walking-on-the-moon_the-police.jpg",
+          "preview": null
+        },
+        {
+          "title": "Ain't No Mountain High Enough",
+          "artist": "Marvin Gaye & Tammi Terrell",
+          "art": "img/wir/ep033/ain-t-no-mountain-high-enough_marvin-gaye-tammi-terrell.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "035",
+      "number": 35,
+      "slug": "ep-035-brunch-restaurant",
+      "title": "Brunch Restaurant",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Sunday Morning",
+          "artist": "Maroon 5",
+          "art": "img/wir/ep035/sunday-morning_maroon-5.jpg",
+          "preview": null
+        },
+        {
+          "title": "Here Comes the Sun",
+          "artist": "The Beatles",
+          "art": "img/wir/ep035/here-comes-the-sun_the-beatles.jpg",
+          "preview": null
+        },
+        {
+          "title": "Three Little Birds",
+          "artist": "Bob Marley",
+          "art": "img/wir/ep035/three-little-birds_bob-marley.jpg",
+          "preview": null
+        },
+        {
+          "title": "Lovely Day",
+          "artist": "Bill Withers",
+          "art": "img/wir/ep035/lovely-day_bill-withers.jpg",
+          "preview": null
+        },
+        {
+          "title": "Better Together",
+          "artist": "Jack Johnson",
+          "art": "img/wir/ep035/better-together_jack-johnson.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "037",
+      "number": 37,
+      "slug": "ep-037-maximum-familiarity",
+      "title": "Maximum Familiarity",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Bohemian Rhapsody",
+          "artist": "Queen",
+          "art": "img/wir/ep037/bohemian-rhapsody_queen.jpg",
+          "preview": null
+        },
+        {
+          "title": "Billie Jean",
+          "artist": "Michael Jackson",
+          "art": "img/wir/ep037/billie-jean_michael-jackson.jpg",
+          "preview": null
+        },
+        {
+          "title": "Sweet Caroline",
+          "artist": "Neil Diamond",
+          "art": "img/wir/ep037/sweet-caroline_neil-diamond.jpg",
+          "preview": null
+        },
+        {
+          "title": "Don't Stop Believin'",
+          "artist": "Journey",
+          "art": "img/wir/ep037/don-t-stop-believin_journey.jpg",
+          "preview": null
+        },
+        {
+          "title": "Hotel California",
+          "artist": "Eagles",
+          "art": "img/wir/ep037/hotel-california_eagles.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "038",
+      "number": 38,
+      "slug": "ep-038-jewelry-store",
+      "title": "Jewelry Store",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Clair de Lune",
+          "artist": "Debussy",
+          "art": "img/wir/ep038/clair-de-lune_debussy.jpg",
+          "preview": null
+        },
+        {
+          "title": "Diamonds",
+          "artist": "Rihanna",
+          "art": "img/wir/ep038/diamonds_rihanna.jpg",
+          "preview": null
+        },
+        {
+          "title": "Fly Me to the Moon",
+          "artist": "Frank Sinatra",
+          "art": "img/wir/ep038/fly-me-to-the-moon_frank-sinatra.jpg",
+          "preview": null
+        },
+        {
+          "title": "The Very Thought of You",
+          "artist": "Nat King Cole",
+          "art": "img/wir/ep038/the-very-thought-of-you_nat-king-cole.jpg",
+          "preview": null
+        },
+        {
+          "title": "Fallingwater",
+          "artist": "Maggie Rogers",
+          "art": "img/wir/ep038/fallingwater_maggie-rogers.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "041",
+      "number": 41,
+      "slug": "ep-041-record-store",
+      "title": "Record Store",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Where Is My Mind?",
+          "artist": "Pixies",
+          "art": "img/wir/ep041/where-is-my-mind_pixies.jpg",
+          "preview": null
+        },
+        {
+          "title": "Transmission",
+          "artist": "Joy Division",
+          "art": "img/wir/ep041/transmission_joy-division.jpg",
+          "preview": null
+        },
+        {
+          "title": "Deceptacon",
+          "artist": "Le Tigre",
+          "art": "img/wir/ep041/deceptacon_le-tigre.jpg",
+          "preview": null
+        },
+        {
+          "title": "Two Headed Boy",
+          "artist": "Neutral Milk Hotel",
+          "art": "img/wir/ep041/two-headed-boy_neutral-milk-hotel.jpg",
+          "preview": null
+        },
+        {
+          "title": "Today",
+          "artist": "The Smashing Pumpkins",
+          "art": "img/wir/ep041/today_the-smashing-pumpkins.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "042",
+      "number": 42,
+      "slug": "ep-042-morning-retail",
+      "title": "Morning Retail",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Here Comes the Sun",
+          "artist": "The Beatles",
+          "art": "img/wir/ep042/here-comes-the-sun_the-beatles.jpg",
+          "preview": null
+        },
+        {
+          "title": "Good Morning",
+          "artist": "Kanye West",
+          "art": "img/wir/ep042/good-morning_kanye-west.jpg",
+          "preview": null
+        },
+        {
+          "title": "Sunrise",
+          "artist": "Norah Jones",
+          "art": "img/wir/ep042/sunrise_norah-jones.jpg",
+          "preview": null
+        },
+        {
+          "title": "Morning",
+          "artist": "Beck",
+          "art": "img/wir/ep042/morning_beck.jpg",
+          "preview": null
+        },
+        {
+          "title": "Golden Hour",
+          "artist": "Kacey Musgraves",
+          "art": "img/wir/ep042/golden-hour_kacey-musgraves.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "044",
+      "number": 44,
+      "slug": "ep-044-candle-fragrance-store",
+      "title": "Candle / Fragrance Store",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Breathe Me",
+          "artist": "Sia",
+          "art": "img/wir/ep044/breathe-me_sia.jpg",
+          "preview": null
+        },
+        {
+          "title": "Skinny Love",
+          "artist": "Bon Iver",
+          "art": "img/wir/ep044/skinny-love_bon-iver.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d2/2f/a4/d22fa4db-97d9-4d99-7272-5ae5ed58de21/mzaf_2631945908793863176.plus.aac.p.m4a"
+        },
+        {
+          "title": "Cherry Wine",
+          "artist": "Hozier",
+          "art": "img/wir/ep044/cherry-wine_hozier.jpg",
+          "preview": null
+        },
+        {
+          "title": "Warm Foothills",
+          "artist": "Alt-J",
+          "art": "img/wir/ep044/warm-foothills_alt-j.jpg",
+          "preview": null
+        },
+        {
+          "title": "Mykonos",
+          "artist": "Fleet Foxes",
+          "art": "img/wir/ep044/mykonos_fleet-foxes.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "046",
+      "number": 46,
+      "slug": "ep-046-bakery",
+      "title": "Bakery",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "La Vie en Rose",
+          "artist": "Louis Armstrong",
+          "art": "img/wir/ep046/la-vie-en-rose_louis-armstrong.jpg",
+          "preview": null
+        },
+        {
+          "title": "Harvest Moon",
+          "artist": "Neil Young",
+          "art": "img/wir/ep046/harvest-moon_neil-young.jpg",
+          "preview": null
+        },
+        {
+          "title": "Come Away With Me",
+          "artist": "Norah Jones",
+          "art": "img/wir/ep046/come-away-with-me_norah-jones.jpg",
+          "preview": null
+        },
+        {
+          "title": "Better Days",
+          "artist": "OneRepublic",
+          "art": "img/wir/ep046/better-days_onerepublic.jpg",
+          "preview": null
+        },
+        {
+          "title": "Lucky",
+          "artist": "Jason Mraz & Colbie Caillat",
+          "art": "img/wir/ep046/lucky_jason-mraz-colbie-caillat.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "047",
+      "number": 47,
+      "slug": "ep-047-songs-nobody-fully-knows",
+      "title": "Songs Nobody Fully Knows",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Midnight City",
+          "artist": "M83",
+          "art": "img/wir/ep047/midnight-city_m83.jpg",
+          "preview": null
+        },
+        {
+          "title": "Tongue Tied",
+          "artist": "Grouplove",
+          "art": "img/wir/ep047/tongue-tied_grouplove.jpg",
+          "preview": null
+        },
+        {
+          "title": "Young Folks",
+          "artist": "Peter Bjorn and John",
+          "art": "img/wir/ep047/young-folks_peter-bjorn-and-john.jpg",
+          "preview": null
+        },
+        {
+          "title": "1901",
+          "artist": "Phoenix",
+          "art": "img/wir/ep047/1901_phoenix.jpg",
+          "preview": null
+        },
+        {
+          "title": "Two Weeks",
+          "artist": "Grizzly Bear",
+          "art": "img/wir/ep047/two-weeks_grizzly-bear.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "050",
+      "number": 50,
+      "slug": "ep-050-outdoor-camping-store",
+      "title": "Outdoor / Camping Store",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Home",
+          "artist": "Edward Sharpe & The Magnetic Zeros",
+          "art": "img/wir/ep050/home_edward-sharpe-the-magnetic-zeros.jpg",
+          "preview": null
+        },
+        {
+          "title": "I Will Wait",
+          "artist": "Mumford & Sons",
+          "art": "img/wir/ep050/i-will-wait_mumford-sons.jpg",
+          "preview": null
+        },
+        {
+          "title": "Big Yellow Taxi",
+          "artist": "Joni Mitchell",
+          "art": "img/wir/ep050/big-yellow-taxi_joni-mitchell.jpg",
+          "preview": null
+        },
+        {
+          "title": "Into the Mystic",
+          "artist": "Van Morrison",
+          "art": "img/wir/ep050/into-the-mystic_van-morrison.jpg",
+          "preview": null
+        },
+        {
+          "title": "Free Fallin'",
+          "artist": "Tom Petty",
+          "art": "img/wir/ep050/free-fallin_tom-petty.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "051",
+      "number": 51,
+      "slug": "ep-051-art-gallery",
+      "title": "Art Gallery",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Nude",
+          "artist": "Radiohead",
+          "art": "img/wir/ep051/nude_radiohead.jpg",
+          "preview": null
+        },
+        {
+          "title": "An Ending (Ascent)",
+          "artist": "Brian Eno",
+          "art": "img/wir/ep051/an-ending-ascent_brian-eno.jpg",
+          "preview": null
+        },
+        {
+          "title": "Avril 14th",
+          "artist": "Aphex Twin",
+          "art": "img/wir/ep051/avril-14th_aphex-twin.jpg",
+          "preview": null
+        },
+        {
+          "title": "Music for 18 Musicians (excerpt)",
+          "artist": "Steve Reich",
+          "art": "img/wir/ep051/music-for-18-musicians-excerpt_steve-reich.jpg",
+          "preview": null
+        },
+        {
+          "title": "Ambient 1: Music for Airports (excerpt)",
+          "artist": "Brian Eno",
+          "art": "img/wir/ep051/ambient-1-music-for-airports-excerpt_brian-eno.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "053",
+      "number": 53,
+      "slug": "ep-053-pet-store",
+      "title": "Pet Store",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "I'm Yours",
+          "artist": "Jason Mraz",
+          "art": "img/wir/ep053/i-m-yours_jason-mraz.jpg",
+          "preview": null
+        },
+        {
+          "title": "What a Wonderful World",
+          "artist": "Louis Armstrong",
+          "art": "img/wir/ep053/what-a-wonderful-world_louis-armstrong.jpg",
+          "preview": null
+        },
+        {
+          "title": "Somewhere Over the Rainbow",
+          "artist": "Israel Kamakawiwo'ole",
+          "art": "img/wir/ep053/somewhere-over-the-rainbow_israel-kamakawiwo-ole.jpg",
+          "preview": null
+        },
+        {
+          "title": "Beautiful Day",
+          "artist": "U2",
+          "art": "img/wir/ep053/beautiful-day_u2.jpg",
+          "preview": null
+        },
+        {
+          "title": "You've Got a Friend",
+          "artist": "Carole King",
+          "art": "img/wir/ep053/you-ve-got-a-friend_carole-king.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "055",
+      "number": 55,
+      "slug": "ep-055-florist-plant-shop",
+      "title": "Florist / Plant Shop",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Here Comes the Sun",
+          "artist": "The Beatles",
+          "art": "img/wir/ep055/here-comes-the-sun_the-beatles.jpg",
+          "preview": null
+        },
+        {
+          "title": "Bloom",
+          "artist": "The Paper Kites",
+          "art": "img/wir/ep055/bloom_the-paper-kites.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2d/de/7c/2dde7c6b-56b9-0079-54cc-9b377e6c583c/mzaf_4103191401324966350.plus.aac.p.m4a"
+        },
+        {
+          "title": "Yellow",
+          "artist": "Coldplay",
+          "art": "img/wir/ep055/yellow_coldplay.jpg",
+          "preview": null
+        },
+        {
+          "title": "Fields of Gold",
+          "artist": "Sting",
+          "art": "img/wir/ep055/fields-of-gold_sting.jpg",
+          "preview": null
+        },
+        {
+          "title": "Landslide",
+          "artist": "Fleetwood Mac",
+          "art": "img/wir/ep055/landslide_fleetwood-mac.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "056",
+      "number": 56,
+      "slug": "ep-056-songs-that-signal-youth",
+      "title": "Songs That Signal Youth",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "TPWK",
+          "artist": "Harry Styles",
+          "art": "img/wir/ep056/tpwk_harry-styles.jpg",
+          "preview": null
+        },
+        {
+          "title": "Break My Soul",
+          "artist": "Beyonce",
+          "art": "img/wir/ep056/break-my-soul_beyonce.jpg",
+          "preview": null
+        },
+        {
+          "title": "About Damn Time",
+          "artist": "Lizzo",
+          "art": "img/wir/ep056/about-damn-time_lizzo.jpg",
+          "preview": null
+        },
+        {
+          "title": "As It Was",
+          "artist": "Harry Styles",
+          "art": "img/wir/ep056/as-it-was_harry-styles.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/10/16/67101606-3869-ca44-6c03-e13d6322cb51/mzaf_1135399237022217274.plus.aac.p.m4a"
+        },
+        {
+          "title": "Espresso",
+          "artist": "Sabrina Carpenter",
+          "art": "img/wir/ep056/espresso_sabrina-carpenter.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "059",
+      "number": 59,
+      "slug": "ep-059-surf-shop-beach-store",
+      "title": "Surf Shop / Beach Store",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Kokomo",
+          "artist": "The Beach Boys",
+          "art": "img/wir/ep059/kokomo_the-beach-boys.jpg",
+          "preview": null
+        },
+        {
+          "title": "Island in the Sun",
+          "artist": "Weezer",
+          "art": "img/wir/ep059/island-in-the-sun_weezer.jpg",
+          "preview": null
+        },
+        {
+          "title": "Santeria",
+          "artist": "Sublime",
+          "art": "img/wir/ep059/santeria_sublime.jpg",
+          "preview": null
+        },
+        {
+          "title": "No Woman, No Cry",
+          "artist": "Bob Marley",
+          "art": "img/wir/ep059/no-woman-no-cry_bob-marley.jpg",
+          "preview": null
+        },
+        {
+          "title": "Banana Pancakes",
+          "artist": "Jack Johnson",
+          "art": "img/wir/ep059/banana-pancakes_jack-johnson.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "060",
+      "number": 60,
+      "slug": "ep-060-electronics-store",
+      "title": "Electronics Store",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Around the World",
+          "artist": "Daft Punk",
+          "art": "img/wir/ep060/around-the-world_daft-punk.jpg",
+          "preview": null
+        },
+        {
+          "title": "Everything in Its Right Place",
+          "artist": "Radiohead",
+          "art": "img/wir/ep060/everything-in-its-right-place_radiohead.jpg",
+          "preview": null
+        },
+        {
+          "title": "Midnight City",
+          "artist": "M83",
+          "art": "img/wir/ep060/midnight-city_m83.jpg",
+          "preview": null
+        },
+        {
+          "title": "Harder, Better, Faster, Stronger",
+          "artist": "Daft Punk",
+          "art": "img/wir/ep060/harder-better-faster-stronger_daft-punk.jpg",
+          "preview": null
+        },
+        {
+          "title": "Crystallize",
+          "artist": "Lindsey Stirling",
+          "art": "img/wir/ep060/crystallize_lindsey-stirling.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "062",
+      "number": 62,
+      "slug": "ep-062-car-dealership",
+      "title": "Car Dealership",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Fast Car",
+          "artist": "Tracy Chapman",
+          "art": "img/wir/ep062/fast-car_tracy-chapman.jpg",
+          "preview": null
+        },
+        {
+          "title": "Ride",
+          "artist": "Twenty One Pilots",
+          "art": "img/wir/ep062/ride_twenty-one-pilots.jpg",
+          "preview": null
+        },
+        {
+          "title": "Shut Up and Drive",
+          "artist": "Rihanna",
+          "art": "img/wir/ep062/shut-up-and-drive_rihanna.jpg",
+          "preview": null
+        },
+        {
+          "title": "Life Is a Highway",
+          "artist": "Tom Cochrane",
+          "art": "img/wir/ep062/life-is-a-highway_tom-cochrane.jpg",
+          "preview": null
+        },
+        {
+          "title": "Drive",
+          "artist": "Incubus",
+          "art": "img/wir/ep062/drive_incubus.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "064",
+      "number": 64,
+      "slug": "ep-064-lingerie-store",
+      "title": "Lingerie Store",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Partition",
+          "artist": "Beyonce",
+          "art": "img/wir/ep064/partition_beyonce.jpg",
+          "preview": null
+        },
+        {
+          "title": "Earned It",
+          "artist": "The Weeknd",
+          "art": "img/wir/ep064/earned-it_the-weeknd.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/13/7a/04137aba-99fa-6331-81d5-d69097ab97be/mzaf_3869073502048666760.plus.aac.p.m4a"
+        },
+        {
+          "title": "Wicked Games",
+          "artist": "The Weeknd",
+          "art": "img/wir/ep064/wicked-games_the-weeknd.jpg",
+          "preview": null
+        },
+        {
+          "title": "Call Out My Name",
+          "artist": "The Weeknd",
+          "art": "img/wir/ep064/call-out-my-name_the-weeknd.jpg",
+          "preview": null
+        },
+        {
+          "title": "Body Party",
+          "artist": "Ciara",
+          "art": "img/wir/ep064/body-party_ciara.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "065",
+      "number": 65,
+      "slug": "ep-065-songs-that-slow-down-browsing",
+      "title": "Songs That Slow Down Browsing",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Space Oddity",
+          "artist": "David Bowie",
+          "art": "img/wir/ep065/space-oddity_david-bowie.jpg",
+          "preview": null
+        },
+        {
+          "title": "Iris",
+          "artist": "Goo Goo Dolls",
+          "art": "img/wir/ep065/iris_goo-goo-dolls.jpg",
+          "preview": null
+        },
+        {
+          "title": "The Sound of Silence",
+          "artist": "Simon & Garfunkel",
+          "art": "img/wir/ep065/the-sound-of-silence_simon-garfunkel.jpg",
+          "preview": null
+        },
+        {
+          "title": "Mad World",
+          "artist": "Gary Jules",
+          "art": "img/wir/ep065/mad-world_gary-jules.jpg",
+          "preview": null
+        },
+        {
+          "title": "Wish You Were Here",
+          "artist": "Pink Floyd",
+          "art": "img/wir/ep065/wish-you-were-here_pink-floyd.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "068",
+      "number": 68,
+      "slug": "ep-068-kids-store",
+      "title": "Kids' Store",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Happy",
+          "artist": "Pharrell Williams",
+          "art": "img/wir/ep068/happy_pharrell-williams.jpg",
+          "preview": null
+        },
+        {
+          "title": "Can't Stop the Feeling",
+          "artist": "Justin Timberlake",
+          "art": "img/wir/ep068/can-t-stop-the-feeling_justin-timberlake.jpg",
+          "preview": null
+        },
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift",
+          "art": "img/wir/ep068/shake-it-off_taylor-swift.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/11/d5/6d/11d56d4a-ce23-e793-8681-70dc4d35d931/mzaf_5886436202259848624.plus.aac.p.m4a"
+        },
+        {
+          "title": "Best Day of My Life",
+          "artist": "American Authors",
+          "art": "img/wir/ep068/best-day-of-my-life_american-authors.jpg",
+          "preview": null
+        },
+        {
+          "title": "On Top of the World",
+          "artist": "Imagine Dragons",
+          "art": "img/wir/ep068/on-top-of-the-world_imagine-dragons.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "069",
+      "number": 69,
+      "slug": "ep-069-pharmacy-drugstore",
+      "title": "Pharmacy / Drugstore",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "What a Wonderful World",
+          "artist": "Louis Armstrong",
+          "art": "img/wir/ep069/what-a-wonderful-world_louis-armstrong.jpg",
+          "preview": null
+        },
+        {
+          "title": "Three Little Birds",
+          "artist": "Bob Marley",
+          "art": "img/wir/ep069/three-little-birds_bob-marley.jpg",
+          "preview": null
+        },
+        {
+          "title": "Here Comes the Sun",
+          "artist": "The Beatles",
+          "art": "img/wir/ep069/here-comes-the-sun_the-beatles.jpg",
+          "preview": null
+        },
+        {
+          "title": "Lean on Me",
+          "artist": "Bill Withers",
+          "art": "img/wir/ep069/lean-on-me_bill-withers.jpg",
+          "preview": null
+        },
+        {
+          "title": "Stand by Me",
+          "artist": "Ben E. King",
+          "art": "img/wir/ep069/stand-by-me_ben-e-king.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "071",
+      "number": 71,
+      "slug": "ep-071-third-place-energy",
+      "title": "Third Place Energy",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Fast Car",
+          "artist": "Tracy Chapman",
+          "art": "img/wir/ep071/fast-car_tracy-chapman.jpg",
+          "preview": null
+        },
+        {
+          "title": "Redemption Song",
+          "artist": "Bob Marley",
+          "art": "img/wir/ep071/redemption-song_bob-marley.jpg",
+          "preview": null
+        },
+        {
+          "title": "What's Going On",
+          "artist": "Marvin Gaye",
+          "art": "img/wir/ep071/what-s-going-on_marvin-gaye.jpg",
+          "preview": null
+        },
+        {
+          "title": "A Change Is Gonna Come",
+          "artist": "Sam Cooke",
+          "art": "img/wir/ep071/a-change-is-gonna-come_sam-cooke.jpg",
+          "preview": null
+        },
+        {
+          "title": "Lean on Me",
+          "artist": "Bill Withers",
+          "art": "img/wir/ep071/lean-on-me_bill-withers.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "073",
+      "number": 73,
+      "slug": "ep-073-summer-retail",
+      "title": "Summer Retail",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Cruel Summer",
+          "artist": "Taylor Swift",
+          "art": "img/wir/ep073/cruel-summer_taylor-swift.jpg",
+          "preview": null
+        },
+        {
+          "title": "Hot Girl Summer",
+          "artist": "Megan Thee Stallion",
+          "art": "img/wir/ep073/hot-girl-summer_megan-thee-stallion.jpg",
+          "preview": null
+        },
+        {
+          "title": "Summertime Magic",
+          "artist": "Childish Gambino",
+          "art": "img/wir/ep073/summertime-magic_childish-gambino.jpg",
+          "preview": null
+        },
+        {
+          "title": "Summer of '69",
+          "artist": "Bryan Adams",
+          "art": "img/wir/ep073/summer-of-69_bryan-adams.jpg",
+          "preview": null
+        },
+        {
+          "title": "California Gurls",
+          "artist": "Katy Perry",
+          "art": "img/wir/ep073/california-gurls_katy-perry.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "074",
+      "number": 74,
+      "slug": "ep-074-late-night-retail",
+      "title": "Late Night Retail",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "After Hours",
+          "artist": "The Weeknd",
+          "art": "img/wir/ep074/after-hours_the-weeknd.jpg",
+          "preview": null
+        },
+        {
+          "title": "The Less I Know the Better",
+          "artist": "Tame Impala",
+          "art": "img/wir/ep074/the-less-i-know-the-better_tame-impala.jpg",
+          "preview": null
+        },
+        {
+          "title": "Nights",
+          "artist": "Frank Ocean",
+          "art": "img/wir/ep074/nights_frank-ocean.jpg",
+          "preview": null
+        },
+        {
+          "title": "Midnight City",
+          "artist": "M83",
+          "art": "img/wir/ep074/midnight-city_m83.jpg",
+          "preview": null
+        },
+        {
+          "title": "Moth to a Flame",
+          "artist": "Swedish House Mafia & The Weeknd",
+          "art": "img/wir/ep074/moth-to-a-flame_swedish-house-mafia-the-weeknd.jpg",
+          "preview": null
+        }
+      ]
+    },
+    {
+      "id": "077",
+      "number": 77,
+      "slug": "ep-077-songs-that-signal-maturity",
+      "title": "Songs That Signal Maturity",
+      "format": "Song Ranking",
+      "songs": [
+        {
+          "title": "Nessun Dorma",
+          "artist": "Luciano Pavarotti",
+          "art": "img/wir/ep077/nessun-dorma_luciano-pavarotti.jpg",
+          "preview": null
+        },
+        {
+          "title": "At Last",
+          "artist": "Etta James",
+          "art": "img/wir/ep077/at-last_etta-james.jpg",
+          "preview": null
+        },
+        {
+          "title": "Fly Me to the Moon",
+          "artist": "Frank Sinatra",
+          "art": "img/wir/ep077/fly-me-to-the-moon_frank-sinatra.jpg",
+          "preview": null
+        },
+        {
+          "title": "Come Away with Me",
+          "artist": "Norah Jones",
+          "art": "img/wir/ep077/come-away-with-me_norah-jones.jpg",
+          "preview": null
+        },
+        {
+          "title": "Feeling Good",
+          "artist": "Nina Simone",
+          "art": "img/wir/ep077/feeling-good_nina-simone.jpg",
+          "preview": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d4/c0/0d/d4c00d15-ef31-ad3d-3001-35c09f0d778d/mzaf_6914791605613796270.plus.aac.p.m4a"
+        }
+      ]
+    }
+  ]
+}
