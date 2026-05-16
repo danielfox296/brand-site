@@ -83,9 +83,10 @@ let DROP=null;             // current drop: {song, el, x, y, vx, vy, settled, pi
 let physicsInterval=null;  // setInterval id (not rAF — survives tab-hidden / iframe)
 let lastPlaceTime=0,comboCount=0;
 const GRAVITY=0.55;        // px per frame squared (scaled by vh below)
-const BOUNCE=0.55;         // energy retained per bounce
-const SETTLE_THRESHOLD=0.6;
+const BOUNCE=0.20;         // energy retained per bounce — aggressive damping for ~2 bounces max
+const SETTLE_THRESHOLD=1.5;
 const ALBUM_VH=12;         // falling album size, vh
+const PICKED_SCALE=0.8;    // picked-up size relative to base (smaller = more controllable)
 const FLOOR_VH_FROM_TOP=82.29; // safe-bottom boundary
 
 // ========== AUDIO ==========
@@ -422,12 +423,18 @@ function onAlbumPointerDown(e){
 
 function movePickedToPointer(x,y){
   if(!DROP||!DROP.picked)return;
-  const w = DROP.w*3, h = DROP.h*3;
-  DROP.x = x - w/2;
-  DROP.y = y - h/2;
+  // Pointer coords are window-relative but the album's left/top is relative
+  // to #viewport (the centered 9:16 container). Convert to local space.
+  const vp = document.getElementById('viewport').getBoundingClientRect();
+  const localX = x - vp.left;
+  const localY = y - vp.top;
+  // transform-origin is center center, so the visual center stays at
+  // (left + w/2, top + h/2) regardless of scale. Subtract base half-size.
+  DROP.x = localX - DROP.w/2;
+  DROP.y = localY - DROP.h/2;
   DROP.el.style.left = DROP.x + 'px';
   DROP.el.style.top  = DROP.y + 'px';
-  // Update target tier highlight
+  // Update target tier highlight (tier rects are window-coord, pointer is too)
   const hover = getTierUnderPoint(x, y);
   document.querySelectorAll('.tier-drop').forEach(d=>{
     d.classList.toggle('hover-target', d===hover);

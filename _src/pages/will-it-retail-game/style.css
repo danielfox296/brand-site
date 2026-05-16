@@ -262,10 +262,10 @@ html, body {
   0%,100%{box-shadow:0 6px 24px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.18), 0 0 14px rgba(255,255,255,0.10);}
   50%   {box-shadow:0 6px 24px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.32), 0 0 24px rgba(255,255,255,0.22);}
 }
-/* The "picked up" state — 3x scale + strong pulsing rose glow */
+/* The "picked up" state — 0.8x scale (smaller, controllable) + strong pulsing rose glow */
 .drop-album.picked-up{
   cursor:grabbing;
-  transform:scale(3);
+  transform:scale(0.8);
   transform-origin:center center;
   z-index:200;
   animation:pickedGlow 0.9s ease-in-out infinite;
