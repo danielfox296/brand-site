@@ -129,36 +129,44 @@ html, body {
    ============================================= */
 #game{display:none;position:absolute;inset:0;}
 
-/* --- Timer + Header: top right of safe area --- */
-#timer-wrap{
+/* --- TITLE BAR: full-width band under progress bar --- */
+#title-bar{
   position:absolute;
-  /* Inside canonical safe zone (top 13.02%, right 16.67%) */
-  top:var(--wir-safe-top);right:var(--wir-safe-right);
-  text-align:right;z-index:51;
-}
-#timer{
-  font-size:5vh;font-weight:900;
-  color:#22c55e;font-variant-numeric:tabular-nums;
-}
-/* Counter is redundant with the visible queue carousel — hide it */
-#song-counter{display:none;}
-#game-header{
-  margin-top:0.3vh;
-  text-align:right;
+  top:var(--wir-safe-top);
+  left:var(--wir-safe-left);right:var(--wir-safe-right);
+  text-align:center;
+  z-index:51;
+  padding-top:0.6vh;
 }
 #game-title{
-  font-size:1.6vh;font-weight:900;
-  color:rgba(255,255,255,0.4);letter-spacing:3px;
+  font-size:3vh;font-weight:900;
+  color:#ffffff;letter-spacing:4px;
+  text-shadow:0 1px 8px rgba(0,0,0,0.6);
 }
 #ep-info{
-  font-size:1.2vh;font-weight:700;
-  color:rgba(255,255,255,0.25);margin-top:0.2vh;
+  font-size:1.8vh;font-weight:700;
+  color:rgba(255,255,255,0.85);
+  margin-top:0.2vh;
+  letter-spacing:2px;
 }
 
-/* --- PIP zone (legacy placeholder — hidden now that the queue carousel
-       replaces it functionally. Keep the HTML for safe-zone compatibility) --- */
-#pip-zone{display:none !important;}
-#pip-label{display:none;}
+/* --- PIP zone: front-facing camera area, top-left.
+       Daniel records himself playing the game here. --- */
+#pip-zone{
+  position:absolute;
+  top:21%;left:var(--wir-safe-left);
+  width:11vh;height:11vh;
+  border:2px dashed rgba(255,255,255,0.28);
+  border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+  background:rgba(255,255,255,0.02);
+  z-index:50;
+}
+#pip-label{
+  font-size:1.1vh;font-weight:700;
+  color:rgba(255,255,255,0.4);
+  text-transform:uppercase;letter-spacing:3px;
+}
 
 /* =============================================
    QUEUE CAROUSEL — 5 pixelated upcoming-song boxes
@@ -167,18 +175,21 @@ html, body {
    ============================================= */
 #queue-carousel{
   position:absolute;
-  /* Below the (now compact) header — just title + ep-info, ends ~18% */
-  top:19%;
-  left:var(--wir-safe-left);right:var(--wir-safe-right);
-  height:6.5vh;
-  display:flex;justify-content:center;gap:0.7vh;
+  /* Top-right, beside the PIP zone */
+  top:21%;
+  right:var(--wir-safe-right);
+  /* left bound so it doesn't overlap PIP at left:5.6% + width:11vh */
+  left:calc(var(--wir-safe-left) + 13vh);
+  height:6vh;
+  display:flex;justify-content:flex-end;align-items:center;gap:0.6vh;
   z-index:55;
-  /* Mask edge so boxes appear to slide out of a gradient on entry */
-  -webkit-mask-image:linear-gradient(to right, transparent 0, black 6%, black 100%);
-  mask-image:linear-gradient(to right, transparent 0, black 6%, black 100%);
+  /* Soft gradient mask on the LEFT edge so boxes appear to slide in from
+     the right-into-the-frame rather than just pop in */
+  -webkit-mask-image:linear-gradient(to right, transparent 0, black 8%, black 100%);
+  mask-image:linear-gradient(to right, transparent 0, black 8%, black 100%);
 }
 .queue-box{
-  width:6.5vh;height:6.5vh;
+  width:6vh;height:6vh;
   border-radius:4px;
   background:rgba(255,255,255,0.04);
   box-shadow:0 0 0 1px rgba(255,255,255,0.06), inset 0 0 0 1px rgba(0,0,0,0.4);
@@ -215,11 +226,11 @@ html, body {
    ============================================= */
 #tiers{
   position:absolute;
-  /* Tier list: 27%-72% (45% tall, 9% per row). Compact header (no counter)
-     + carousel at 19-26% leaves room for nearly the full pre-carousel tier
-     height. Significantly taller than original (7.77%/row). */
-  top:27%;left:var(--wir-safe-left);right:18%;
-  height:45%;
+  /* Tier list: 33%-72%. Narrow drop column (~50% of previous width) per
+     Daniel's spec — the second column (the drop area) is half-width to
+     leave room on the right for PIP + carousel + falling album space. */
+  top:33%;left:var(--wir-safe-left);right:50%;
+  height:39%;
   display:flex;flex-direction:column;
   justify-content:space-between;
 }
@@ -243,21 +254,40 @@ html, body {
   background:rgba(255,255,255,0.025);
   display:flex;flex-wrap:wrap;align-items:center;
   padding:0.4vh 0.6vh;gap:0.4vh;
-  transition:background 0.18s, box-shadow 0.18s, transform 0.18s;
+  /* Bright dashed outline so the drop target reads as "drop here" even
+     when no album is held. Stronger than the previous near-invisible state. */
+  outline:2px dashed rgba(255,255,255,0.45);
+  outline-offset:-2px;
+  border-radius:4px;
+  transition:background 0.18s, box-shadow 0.18s, outline-color 0.18s, transform 0.18s;
 }
 /* While the player is holding an album, all tiers light up as valid targets */
 .tier-drop.active-target{
-  background:rgba(255,255,255,0.08);
-  box-shadow:inset 0 0 0 2px rgba(255,255,255,0.18);
+  background:rgba(255,255,255,0.06);
+  outline-color:rgba(255,255,255,0.75);
 }
-/* The tier currently under the cursor */
-.tier-drop.hover-target{
-  background:rgba(255,255,255,0.15);
-  box-shadow:inset 0 0 0 2px rgba(255,255,255,0.45);
-  transform:scale(1.012);
-}
+/* Color-coded hover state — the tier currently under the cursor flashes
+   in ITS OWN tier color so it's unmistakable which tier you're about to
+   place into. */
+.tier-drop[data-tier="S"].hover-target{background:rgba(255,45,85,0.40);   outline:3px solid #FF2D55;  box-shadow:inset 0 0 24px rgba(255,45,85,0.55);}
+.tier-drop[data-tier="A"].hover-target{background:rgba(255,149,0,0.40);   outline:3px solid #FF9500;  box-shadow:inset 0 0 24px rgba(255,149,0,0.55);}
+.tier-drop[data-tier="B"].hover-target{background:rgba(218,180,30,0.40);  outline:3px solid #DAB41E;  box-shadow:inset 0 0 24px rgba(218,180,30,0.55);}
+.tier-drop[data-tier="C"].hover-target{background:rgba(48,176,199,0.40);  outline:3px solid #30B0C7;  box-shadow:inset 0 0 24px rgba(48,176,199,0.55);}
+.tier-drop[data-tier="D"].hover-target{background:rgba(155,149,107,0.40); outline:3px solid #9B956B;  box-shadow:inset 0 0 24px rgba(155,149,107,0.55);}
+.tier-drop.hover-target{transform:scale(1.03);}
 /* Old drag-over class is unused now but kept harmless for safety */
 .tier-drop.drag-over{background:rgba(255,255,255,0.07);}
+
+/* End-of-game reveal: pan-and-zoom highlight on each tier */
+.tier-row.reveal-focus{
+  filter:brightness(1.3);
+  outline:3px solid rgba(255,255,255,0.7);
+  outline-offset:3px;
+  transition:filter 0.4s, outline 0.4s;
+}
+#game.reveal-mode{
+  transition:transform 0.7s cubic-bezier(0.65, 0, 0.35, 1);
+}
 
 /* =============================================
    STAGING (removed — drop physics replaces the staged-row metaphor)
@@ -399,6 +429,7 @@ html, body {
 }
 @keyframes flash{0%{opacity:0.3;}100%{opacity:0;}}
 
+/* Original simple emoji particle (kept for backwards compatibility) */
 .emoji-particle{
   position:fixed;pointer-events:none;z-index:997;
   font-size:3vh;
@@ -408,6 +439,23 @@ html, body {
   0%{opacity:1;transform:scale(0) translateY(0);}
   30%{opacity:1;transform:scale(1.4) translateY(-3vh);}
   100%{opacity:0;transform:scale(0.6) translateY(-12vh);}
+}
+
+/* Dramatic explosion particle — emits in all directions with varied
+   size + trajectory + rotation. Driven by CSS custom properties set by
+   spawnExplosion(). */
+.explosion-particle{
+  position:fixed;pointer-events:none;z-index:998;
+  font-size:3vh;
+  --dx:0px; --dy:0px; --rot:0deg; --scale:1;
+  animation:explosionFly var(--dur,1500ms) cubic-bezier(0.16, 0.84, 0.44, 1) forwards;
+  will-change:transform, opacity;
+  text-shadow:0 0 8px rgba(0,0,0,0.6);
+}
+@keyframes explosionFly{
+  0%   {opacity:1; transform:scale(0) rotate(0);}
+  15%  {opacity:1; transform:scale(calc(var(--scale) * 1.3));}
+  100% {opacity:0; transform:translate(var(--dx), var(--dy)) scale(calc(var(--scale) * 0.5)) rotate(var(--rot));}
 }
 #combo-text{
   position:absolute;top:28%;left:50%;

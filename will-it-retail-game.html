@@ -212,36 +212,44 @@ html, body {
    ============================================= */
 #game{display:none;position:absolute;inset:0;}
 
-/* --- Timer + Header: top right of safe area --- */
-#timer-wrap{
+/* --- TITLE BAR: full-width band under progress bar --- */
+#title-bar{
   position:absolute;
-  /* Inside canonical safe zone (top 13.02%, right 16.67%) */
-  top:var(--wir-safe-top);right:var(--wir-safe-right);
-  text-align:right;z-index:51;
-}
-#timer{
-  font-size:5vh;font-weight:900;
-  color:#22c55e;font-variant-numeric:tabular-nums;
-}
-/* Counter is redundant with the visible queue carousel — hide it */
-#song-counter{display:none;}
-#game-header{
-  margin-top:0.3vh;
-  text-align:right;
+  top:var(--wir-safe-top);
+  left:var(--wir-safe-left);right:var(--wir-safe-right);
+  text-align:center;
+  z-index:51;
+  padding-top:0.6vh;
 }
 #game-title{
-  font-size:1.6vh;font-weight:900;
-  color:rgba(255,255,255,0.4);letter-spacing:3px;
+  font-size:3vh;font-weight:900;
+  color:#ffffff;letter-spacing:4px;
+  text-shadow:0 1px 8px rgba(0,0,0,0.6);
 }
 #ep-info{
-  font-size:1.2vh;font-weight:700;
-  color:rgba(255,255,255,0.25);margin-top:0.2vh;
+  font-size:1.8vh;font-weight:700;
+  color:rgba(255,255,255,0.85);
+  margin-top:0.2vh;
+  letter-spacing:2px;
 }
 
-/* --- PIP zone (legacy placeholder — hidden now that the queue carousel
-       replaces it functionally. Keep the HTML for safe-zone compatibility) --- */
-#pip-zone{display:none !important;}
-#pip-label{display:none;}
+/* --- PIP zone: front-facing camera area, top-left.
+       Daniel records himself playing the game here. --- */
+#pip-zone{
+  position:absolute;
+  top:21%;left:var(--wir-safe-left);
+  width:11vh;height:11vh;
+  border:2px dashed rgba(255,255,255,0.28);
+  border-radius:10px;
+  display:flex;align-items:center;justify-content:center;
+  background:rgba(255,255,255,0.02);
+  z-index:50;
+}
+#pip-label{
+  font-size:1.1vh;font-weight:700;
+  color:rgba(255,255,255,0.4);
+  text-transform:uppercase;letter-spacing:3px;
+}
 
 /* =============================================
    QUEUE CAROUSEL — 5 pixelated upcoming-song boxes
@@ -250,18 +258,21 @@ html, body {
    ============================================= */
 #queue-carousel{
   position:absolute;
-  /* Below the (now compact) header — just title + ep-info, ends ~18% */
-  top:19%;
-  left:var(--wir-safe-left);right:var(--wir-safe-right);
-  height:6.5vh;
-  display:flex;justify-content:center;gap:0.7vh;
+  /* Top-right, beside the PIP zone */
+  top:21%;
+  right:var(--wir-safe-right);
+  /* left bound so it doesn't overlap PIP at left:5.6% + width:11vh */
+  left:calc(var(--wir-safe-left) + 13vh);
+  height:6vh;
+  display:flex;justify-content:flex-end;align-items:center;gap:0.6vh;
   z-index:55;
-  /* Mask edge so boxes appear to slide out of a gradient on entry */
-  -webkit-mask-image:linear-gradient(to right, transparent 0, black 6%, black 100%);
-  mask-image:linear-gradient(to right, transparent 0, black 6%, black 100%);
+  /* Soft gradient mask on the LEFT edge so boxes appear to slide in from
+     the right-into-the-frame rather than just pop in */
+  -webkit-mask-image:linear-gradient(to right, transparent 0, black 8%, black 100%);
+  mask-image:linear-gradient(to right, transparent 0, black 8%, black 100%);
 }
 .queue-box{
-  width:6.5vh;height:6.5vh;
+  width:6vh;height:6vh;
   border-radius:4px;
   background:rgba(255,255,255,0.04);
   box-shadow:0 0 0 1px rgba(255,255,255,0.06), inset 0 0 0 1px rgba(0,0,0,0.4);
@@ -298,11 +309,11 @@ html, body {
    ============================================= */
 #tiers{
   position:absolute;
-  /* Tier list: 27%-72% (45% tall, 9% per row). Compact header (no counter)
-     + carousel at 19-26% leaves room for nearly the full pre-carousel tier
-     height. Significantly taller than original (7.77%/row). */
-  top:27%;left:var(--wir-safe-left);right:18%;
-  height:45%;
+  /* Tier list: 33%-72%. Narrow drop column (~50% of previous width) per
+     Daniel's spec — the second column (the drop area) is half-width to
+     leave room on the right for PIP + carousel + falling album space. */
+  top:33%;left:var(--wir-safe-left);right:50%;
+  height:39%;
   display:flex;flex-direction:column;
   justify-content:space-between;
 }
@@ -326,21 +337,40 @@ html, body {
   background:rgba(255,255,255,0.025);
   display:flex;flex-wrap:wrap;align-items:center;
   padding:0.4vh 0.6vh;gap:0.4vh;
-  transition:background 0.18s, box-shadow 0.18s, transform 0.18s;
+  /* Bright dashed outline so the drop target reads as "drop here" even
+     when no album is held. Stronger than the previous near-invisible state. */
+  outline:2px dashed rgba(255,255,255,0.45);
+  outline-offset:-2px;
+  border-radius:4px;
+  transition:background 0.18s, box-shadow 0.18s, outline-color 0.18s, transform 0.18s;
 }
 /* While the player is holding an album, all tiers light up as valid targets */
 .tier-drop.active-target{
-  background:rgba(255,255,255,0.08);
-  box-shadow:inset 0 0 0 2px rgba(255,255,255,0.18);
+  background:rgba(255,255,255,0.06);
+  outline-color:rgba(255,255,255,0.75);
 }
-/* The tier currently under the cursor */
-.tier-drop.hover-target{
-  background:rgba(255,255,255,0.15);
-  box-shadow:inset 0 0 0 2px rgba(255,255,255,0.45);
-  transform:scale(1.012);
-}
+/* Color-coded hover state — the tier currently under the cursor flashes
+   in ITS OWN tier color so it's unmistakable which tier you're about to
+   place into. */
+.tier-drop[data-tier="S"].hover-target{background:rgba(255,45,85,0.40);   outline:3px solid #FF2D55;  box-shadow:inset 0 0 24px rgba(255,45,85,0.55);}
+.tier-drop[data-tier="A"].hover-target{background:rgba(255,149,0,0.40);   outline:3px solid #FF9500;  box-shadow:inset 0 0 24px rgba(255,149,0,0.55);}
+.tier-drop[data-tier="B"].hover-target{background:rgba(218,180,30,0.40);  outline:3px solid #DAB41E;  box-shadow:inset 0 0 24px rgba(218,180,30,0.55);}
+.tier-drop[data-tier="C"].hover-target{background:rgba(48,176,199,0.40);  outline:3px solid #30B0C7;  box-shadow:inset 0 0 24px rgba(48,176,199,0.55);}
+.tier-drop[data-tier="D"].hover-target{background:rgba(155,149,107,0.40); outline:3px solid #9B956B;  box-shadow:inset 0 0 24px rgba(155,149,107,0.55);}
+.tier-drop.hover-target{transform:scale(1.03);}
 /* Old drag-over class is unused now but kept harmless for safety */
 .tier-drop.drag-over{background:rgba(255,255,255,0.07);}
+
+/* End-of-game reveal: pan-and-zoom highlight on each tier */
+.tier-row.reveal-focus{
+  filter:brightness(1.3);
+  outline:3px solid rgba(255,255,255,0.7);
+  outline-offset:3px;
+  transition:filter 0.4s, outline 0.4s;
+}
+#game.reveal-mode{
+  transition:transform 0.7s cubic-bezier(0.65, 0, 0.35, 1);
+}
 
 /* =============================================
    STAGING (removed — drop physics replaces the staged-row metaphor)
@@ -482,6 +512,7 @@ html, body {
 }
 @keyframes flash{0%{opacity:0.3;}100%{opacity:0;}}
 
+/* Original simple emoji particle (kept for backwards compatibility) */
 .emoji-particle{
   position:fixed;pointer-events:none;z-index:997;
   font-size:3vh;
@@ -491,6 +522,23 @@ html, body {
   0%{opacity:1;transform:scale(0) translateY(0);}
   30%{opacity:1;transform:scale(1.4) translateY(-3vh);}
   100%{opacity:0;transform:scale(0.6) translateY(-12vh);}
+}
+
+/* Dramatic explosion particle — emits in all directions with varied
+   size + trajectory + rotation. Driven by CSS custom properties set by
+   spawnExplosion(). */
+.explosion-particle{
+  position:fixed;pointer-events:none;z-index:998;
+  font-size:3vh;
+  --dx:0px; --dy:0px; --rot:0deg; --scale:1;
+  animation:explosionFly var(--dur,1500ms) cubic-bezier(0.16, 0.84, 0.44, 1) forwards;
+  will-change:transform, opacity;
+  text-shadow:0 0 8px rgba(0,0,0,0.6);
+}
+@keyframes explosionFly{
+  0%   {opacity:1; transform:scale(0) rotate(0);}
+  15%  {opacity:1; transform:scale(calc(var(--scale) * 1.3));}
+  100% {opacity:0; transform:translate(var(--dx), var(--dy)) scale(calc(var(--scale) * 0.5)) rotate(var(--rot));}
 }
 #combo-text{
   position:absolute;top:28%;left:50%;
@@ -577,20 +625,21 @@ body.show-safezone .safezone-overlay{display:block;}
 
   <!-- GAME -->
   <div id="game">
-    <div id="timer-wrap">
-      <div id="song-counter">0/5</div>
-      <div id="game-header">
-        <div id="game-title">WILL IT RETAIL?</div>
-        <div id="ep-info">EP 1 — DWELL TIME</div>
-      </div>
+    <!-- Title bar: full-width band under progress bar -->
+    <div id="title-bar">
+      <div id="game-title">WILL IT RETAIL?</div>
+      <div id="ep-info">EP 1 — DWELL TIME</div>
     </div>
-    <div id="pip-zone"><span id="pip-label">PIP</span></div>
-    <!-- Queue carousel: 5 pixelated boxes showing what's coming. Slides in
-         on game start, each consumed when its song drops. -->
+    <!-- PIP: front-facing camera placeholder, top-left -->
+    <div id="pip-zone"><span id="pip-label">CAM</span></div>
+    <!-- Queue carousel: 5 pixelated boxes, top-right. Active box ejects
+         leftward toward center on drop. -->
     <div id="queue-carousel"></div>
     <div id="tiers"></div>
     <!-- Drop stage holds the currently falling/held album -->
     <div id="drop-stage"></div>
+    <!-- Legacy timer-wrap kept hidden for old-handler references -->
+    <div id="timer-wrap" style="display:none"><div id="song-counter">0/5</div></div>
   </div>
 
   <div id="flash-overlay"></div>
@@ -755,28 +804,30 @@ function playBuzzer(){
 // (previewSong removed — audio is now lifecycle-managed by the drop sequence)
 
 // ========== INTRO ==========
+// Sped up 3x: word interval 750ms -> 250ms, fade 0.2s -> 0.07s, pop 0.3s -> 0.1s,
+// fadeIn 0.6s -> 0.2s, initial delay 400ms -> 133ms. Whole intro now ~1.4s.
 function runIntro(){
   const words=['WILL','IT','RETAIL?'];
   const container=document.getElementById('intro-words');
-  let delay=400;
+  let delay=133;
   words.forEach((w,i)=>{
     setTimeout(()=>{
       const prev=container.querySelector('.intro-word');
-      if(prev)prev.style.animation='wordFade 0.2s ease-in forwards';
+      if(prev)prev.style.animation='wordFade 0.07s ease-in forwards';
       setTimeout(()=>{
         container.innerHTML='';
         const el=document.createElement('div');
         el.className='intro-word';
         el.textContent=w;
-        el.style.animation='wordPop 0.3s cubic-bezier(0.34,1.56,0.64,1) forwards';
+        el.style.animation='wordPop 0.1s cubic-bezier(0.34,1.56,0.64,1) forwards';
         container.appendChild(el);
         playThump();
-      },i===0?0:250);
-    },delay+i*750);
+      },i===0?0:83);
+    },delay+i*250);
   });
   setTimeout(()=>{
-    document.getElementById('play-btn').style.animation='fadeIn 0.6s ease-out forwards';
-  },delay+words.length*750+500);
+    document.getElementById('play-btn').style.animation='fadeIn 0.2s ease-out forwards';
+  },delay+words.length*250+167);
 }
 
 function startGame(){
@@ -835,9 +886,9 @@ async function buildQueue(){
     setTimeout(()=>box.classList.add('loaded'), 250 + i*120);
     return box;
   });
-  // Pixelate in parallel
+  // Pixelate in parallel — 8x8 source = coarse blocky pixels per Daniel's spec
   await Promise.all(SONGS.map(async (s,i)=>{
-    const dataUrl=await pixelateImage(s.art, 14);
+    const dataUrl=await pixelateImage(s.art, 8);
     const img=elements[i].querySelector('img');
     if(img) img.src=dataUrl;
   }));
@@ -874,41 +925,83 @@ function dropNext(){
   if(queueIndex>=SONGS.length){endGame();return;}
   const song=SONGS[queueIndex];
   updateCounter();
+  // Find the active queue box BEFORE consuming it, so we can use its
+  // screen position as the album spawn point. Album "protrudes from the
+  // right" by spawning at the box position, then animates to center-top
+  // before gravity activates.
+  const box=document.querySelector('.queue-box[data-idx="'+queueIndex+'"]');
+  const boxRect=box?box.getBoundingClientRect():null;
   consumeQueueBox(queueIndex);
-  spawnDrop(song);
-  startCurrentAudio(song);
+  spawnDrop(song, boxRect);
+  // Audio starts slightly delayed so it kicks in as the album begins to fall
+  setTimeout(()=>startCurrentAudio(song), 320);
 }
 
-function spawnDrop(song){
+function spawnDrop(song, fromRect){
   // Clear any leftover element
   const stage=document.getElementById('drop-stage');
   stage.innerHTML='';
   const vp=document.getElementById('viewport').getBoundingClientRect();
   const albumPx=vp.height*ALBUM_VH/100;
-  // Spawn x: center ± 12% jitter, kept inside safe-x
-  const safeLeftPx=vp.width*0.0556;
-  const safeRightPx=vp.width*0.8333;
-  const usableW=safeRightPx-safeLeftPx-albumPx;
-  const jitter=(Math.random()*0.24-0.12)*usableW;
-  const x=safeLeftPx + usableW*0.5 + jitter;
+
+  // Spawn position:
+  //   if a queue box rect was provided → spawn AT the box (so the album
+  //     visually emerges from the same pixelated box that's being consumed)
+  //   else → fall back to spawning at center above the viewport
+  let startX, startY, startSize;
+  if(fromRect){
+    startX=fromRect.left - vp.left;
+    startY=fromRect.top - vp.top;
+    startSize=fromRect.width;
+  } else {
+    startX=(vp.width - albumPx) / 2;
+    startY=-albumPx*1.2;
+    startSize=albumPx;
+  }
+
   const el=document.createElement('div');
   el.className='drop-album';
   el.innerHTML='<img src="'+song.art+'" alt="'+song.title+' by '+song.artist+'"><div class="drop-label"><span class="dl-title">'+song.title+'</span><span class="dl-artist">'+song.artist+'</span></div>';
-  el.style.width=albumPx+'px';
-  el.style.height=albumPx+'px';
-  el.style.left=x+'px';
-  el.style.top=(-albumPx*1.2)+'px';
+  el.style.width=startSize+'px';
+  el.style.height=startSize+'px';
+  el.style.left=startX+'px';
+  el.style.top=startY+'px';
+  // Animate the "protrude" → grows to album size + moves to center-top
+  el.style.transition='width 0.30s cubic-bezier(0.34, 1.56, 0.64, 1), '
+                      +'height 0.30s cubic-bezier(0.34, 1.56, 0.64, 1), '
+                      +'left 0.30s cubic-bezier(0.22, 1, 0.36, 1), '
+                      +'top 0.30s cubic-bezier(0.22, 1, 0.36, 1)';
   stage.appendChild(el);
-  DROP={song,el,
-    x:x, y:-albumPx*1.2,
-    vx:(Math.random()*2-1)*1.5,
-    vy:0,
-    w:albumPx, h:albumPx,
-    settled:false, picked:false, placed:false,
-    vpW:vp.width, vpH:vp.height,
-  };
-  el.addEventListener('pointerdown',onAlbumPointerDown);
-  startPhysics();
+
+  // Target: center horizontally, just below the carousel (y=29%) — above
+  // the tier list (33%) and well clear of the title/PIP rows above.
+  const targetX=(vp.width - albumPx) / 2;
+  const targetY=vp.height * 0.29;
+
+  // Force layout then trigger transition. Use setTimeout (not rAF) — rAF
+  // stalls in hidden iframes / backgrounded tabs and the size never updates.
+  setTimeout(()=>{
+    el.style.left=targetX+'px';
+    el.style.top=targetY+'px';
+    el.style.width=albumPx+'px';
+    el.style.height=albumPx+'px';
+  }, 20);
+
+  // After the protrude finishes, init physics from current visual position
+  setTimeout(()=>{
+    el.style.transition='';
+    DROP={song,el,
+      x:targetX,
+      y:targetY,
+      vx:(Math.random()*2-1)*1.5,
+      vy:0,
+      w:albumPx, h:albumPx,
+      settled:false, picked:false, placed:false,
+      vpW:vp.width, vpH:vp.height,
+    };
+    el.addEventListener('pointerdown',onAlbumPointerDown);
+    startPhysics();
+  }, 320);
 }
 
 function startPhysics(){
@@ -983,7 +1076,7 @@ function startCurrentAudio(song){
     return;
   }
   const a=new Audio(song.preview);
-  a.volume=0.45;
+  a.volume=0.22;  // Halved per Daniel's request — was 0.45
   a.preload='auto';
   currentAudio=a;
   a.addEventListener('ended', onClipEnded);
@@ -1136,14 +1229,73 @@ function flashScreen(){
 }
 
 function spawnEmojis(x,y,tier){
+  // Dramatic explosion — ~5x the particle count of the original, varied
+  // sizes (0.5x–4x), full 360° trajectories with random distance + rotation,
+  // and a synthesized boom + sparkle layered audio.
   const set=EMOJIS[tier]||EMOJIS.B;
-  const count=tier==='S'?8:tier==='D'?6:4;
+  const counts={S:45,A:28,B:28,C:28,D:32};
+  const count=counts[tier]||25;
+  playExplosionSound(tier);
   for(let i=0;i<count;i++){
-    const el=document.createElement('div');el.className='emoji-particle';
+    const el=document.createElement('div');
+    el.className='explosion-particle';
     el.textContent=set[Math.floor(Math.random()*set.length)];
-    el.style.left=(x+Math.random()*80-40)+'px';
-    el.style.top=(y+Math.random()*50-25)+'px';
-    document.body.appendChild(el);setTimeout(()=>el.remove(),1400);
+    // Trajectory: random angle 360°, biased slightly upward
+    const angle=(Math.random()*Math.PI*2);
+    const distance=80 + Math.random()*320;
+    const dx=Math.cos(angle)*distance;
+    const dy=Math.sin(angle)*distance - 30; // upward bias
+    // Size: heavy variance — half are small, some are massive
+    const scale=0.5 + Math.random()*Math.random()*3.5;  // squared random = more small + occasional huge
+    const rotate=(Math.random()-0.5)*900;
+    const duration=1300 + Math.random()*900;
+    el.style.left=x+'px';
+    el.style.top=y+'px';
+    el.style.setProperty('--dx', dx+'px');
+    el.style.setProperty('--dy', dy+'px');
+    el.style.setProperty('--rot', rotate+'deg');
+    el.style.setProperty('--scale', scale);
+    el.style.setProperty('--dur', duration+'ms');
+    document.body.appendChild(el);
+    setTimeout(()=>el.remove(), duration+50);
+  }
+}
+
+function playExplosionSound(tier){
+  const ctx=getAudioCtx();
+  // Sub-bass thud
+  const sub=ctx.createOscillator(); const subG=ctx.createGain();
+  sub.type='sine'; sub.frequency.setValueAtTime(80,ctx.currentTime);
+  sub.frequency.exponentialRampToValueAtTime(35,ctx.currentTime+0.18);
+  subG.gain.setValueAtTime(0.5,ctx.currentTime);
+  subG.gain.exponentialRampToValueAtTime(0.001,ctx.currentTime+0.35);
+  sub.connect(subG); subG.connect(ctx.destination);
+  sub.start(); sub.stop(ctx.currentTime+0.4);
+  // Mid transient — square for character
+  const mid=ctx.createOscillator(); const midG=ctx.createGain();
+  mid.type='square'; mid.frequency.value=tier==='S'?440:tier==='D'?110:220;
+  midG.gain.setValueAtTime(0.18,ctx.currentTime);
+  midG.gain.exponentialRampToValueAtTime(0.001,ctx.currentTime+0.12);
+  mid.connect(midG); midG.connect(ctx.destination);
+  mid.start(); mid.stop(ctx.currentTime+0.15);
+  // Noise splat
+  const buf=ctx.createBuffer(1,Math.floor(ctx.sampleRate*0.25),ctx.sampleRate);
+  const d=buf.getChannelData(0);
+  for(let i=0;i<buf.length;i++)d[i]=(Math.random()*2-1)*Math.pow(1-i/buf.length,1.6)*0.35;
+  const ns=ctx.createBufferSource(); ns.buffer=buf;
+  const bp=ctx.createBiquadFilter(); bp.type='bandpass';
+  bp.frequency.value=tier==='S'?3500:1800; bp.Q.value=2.5;
+  ns.connect(bp); bp.connect(ctx.destination); ns.start();
+  // Sparkle ping for S-tier
+  if(tier==='S'){
+    [1200, 1800, 2400, 3000].forEach((f,j)=>{
+      const o=ctx.createOscillator(); const g=ctx.createGain();
+      o.type='sine'; o.frequency.value=f;
+      g.gain.setValueAtTime(0.08, ctx.currentTime + j*0.04);
+      g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + j*0.04 + 0.15);
+      o.connect(g); g.connect(ctx.destination);
+      o.start(ctx.currentTime + j*0.04); o.stop(ctx.currentTime + j*0.04 + 0.18);
+    });
   }
 }
 
@@ -1164,7 +1316,41 @@ function endGame(){
   document.getElementById('end-title').textContent=title;
   document.getElementById('end-sub').textContent=placed+' placed · '+skipped+' missed';
   if(placed===SONGS.length){playClear();}
-  setTimeout(()=>{document.getElementById('end-screen').style.display='flex';},600);
+  // Cinematic reveal: zoom in on each tier in sequence, then show end screen
+  endGameReveal();
+}
+
+function endGameReveal(){
+  const game=document.getElementById('game');
+  const tiers=Array.from(document.querySelectorAll('.tier-row'));
+  const vp=document.getElementById('viewport').getBoundingClientRect();
+  game.classList.add('reveal-mode');
+  const DWELL=900; // ms per tier
+  const SCALE=1.55;
+  tiers.forEach((row, i) => {
+    setTimeout(()=>{
+      const r=row.getBoundingClientRect();
+      // Center this row by translating, then scale around the resulting origin
+      const rowCenterY = (r.top - vp.top) + r.height/2;
+      const vpCenterY = vp.height / 2;
+      const offsetY = vpCenterY - rowCenterY;
+      game.style.transformOrigin = 'center center';
+      game.style.transform = `translateY(${offsetY}px) scale(${SCALE})`;
+      row.classList.add('reveal-focus');
+      playTick();
+    }, i * DWELL + 350);
+    setTimeout(()=>{
+      row.classList.remove('reveal-focus');
+    }, i * DWELL + DWELL + 250);
+  });
+  // After the pan, zoom back out + reveal end screen
+  setTimeout(()=>{
+    game.style.transform='';
+    setTimeout(()=>{
+      game.classList.remove('reveal-mode');
+      document.getElementById('end-screen').style.display='flex';
+    }, 700);
+  }, tiers.length * DWELL + 600);
 }
 
 // ========== EPISODE LOADER ==========
