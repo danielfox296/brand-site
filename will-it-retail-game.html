@@ -212,11 +212,13 @@ html, body {
    ============================================= */
 #game{display:none;position:absolute;inset:0;}
 
-/* --- TITLE BAR: full-width band under progress bar --- */
+/* --- TITLE BAR: full-width band against the very top.
+       Lives in the canonical unsafe-top per Daniel — he'll handle the crop
+       at recording time. Frees the middle real estate for gameplay. --- */
 #title-bar{
   position:absolute;
-  top:var(--wir-safe-top);
-  left:var(--wir-safe-left);right:var(--wir-safe-right);
+  top:1.2%;
+  left:0;right:0;
   text-align:center;
   z-index:51;
   padding-top:0.6vh;
@@ -237,7 +239,7 @@ html, body {
        Daniel records himself playing the game here. --- */
 #pip-zone{
   position:absolute;
-  top:21%;left:var(--wir-safe-left);
+  top:9%;left:var(--wir-safe-left);
   width:11vh;height:11vh;
   border:2px dashed rgba(255,255,255,0.28);
   border-radius:10px;
@@ -258,8 +260,8 @@ html, body {
    ============================================= */
 #queue-carousel{
   position:absolute;
-  /* Top-right, beside the PIP zone */
-  top:21%;
+  /* Top-right, beside the PIP zone — moved up with PIP to free middle real estate */
+  top:11%;
   right:var(--wir-safe-right);
   /* left bound so it doesn't overlap PIP at left:5.6% + width:11vh */
   left:calc(var(--wir-safe-left) + 13vh);
@@ -309,11 +311,9 @@ html, body {
    ============================================= */
 #tiers{
   position:absolute;
-  /* Tier list: 33%-72%. Narrow drop column (~50% of previous width) per
-     Daniel's spec — the second column (the drop area) is half-width to
-     leave room on the right for PIP + carousel + falling album space. */
-  top:33%;left:var(--wir-safe-left);right:50%;
-  height:39%;
+  /* Tier list: 23-78%, full safe-area width. Big rows (~11% viewport each). */
+  top:23%;left:var(--wir-safe-left);right:var(--wir-safe-right);
+  height:55%;
   display:flex;flex-direction:column;
   justify-content:space-between;
 }
@@ -337,26 +337,25 @@ html, body {
   background:rgba(255,255,255,0.025);
   display:flex;flex-wrap:wrap;align-items:center;
   padding:0.4vh 0.6vh;gap:0.4vh;
-  /* Bright dashed outline so the drop target reads as "drop here" even
-     when no album is held. Stronger than the previous near-invisible state. */
-  outline:2px dashed rgba(255,255,255,0.45);
-  outline-offset:-2px;
+  /* Stroke is 1/3 the previous weight per Daniel — 2px -> ~0.7px;
+     browsers render 1px more reliably than 0.7px so 1px it is. */
+  outline:1px dashed rgba(255,255,255,0.55);
+  outline-offset:-1px;
   border-radius:4px;
   transition:background 0.18s, box-shadow 0.18s, outline-color 0.18s, transform 0.18s;
 }
 /* While the player is holding an album, all tiers light up as valid targets */
 .tier-drop.active-target{
   background:rgba(255,255,255,0.06);
-  outline-color:rgba(255,255,255,0.75);
+  outline-color:rgba(255,255,255,0.85);
 }
-/* Color-coded hover state — the tier currently under the cursor flashes
-   in ITS OWN tier color so it's unmistakable which tier you're about to
-   place into. */
-.tier-drop[data-tier="S"].hover-target{background:rgba(255,45,85,0.40);   outline:3px solid #FF2D55;  box-shadow:inset 0 0 24px rgba(255,45,85,0.55);}
-.tier-drop[data-tier="A"].hover-target{background:rgba(255,149,0,0.40);   outline:3px solid #FF9500;  box-shadow:inset 0 0 24px rgba(255,149,0,0.55);}
-.tier-drop[data-tier="B"].hover-target{background:rgba(218,180,30,0.40);  outline:3px solid #DAB41E;  box-shadow:inset 0 0 24px rgba(218,180,30,0.55);}
-.tier-drop[data-tier="C"].hover-target{background:rgba(48,176,199,0.40);  outline:3px solid #30B0C7;  box-shadow:inset 0 0 24px rgba(48,176,199,0.55);}
-.tier-drop[data-tier="D"].hover-target{background:rgba(155,149,107,0.40); outline:3px solid #9B956B;  box-shadow:inset 0 0 24px rgba(155,149,107,0.55);}
+/* Color-coded hover — the tier under the cursor flashes in ITS own color
+   so it's unmistakable which tier the placement is about to land in. */
+.tier-drop[data-tier="S"].hover-target{background:rgba(255,45,85,0.40);   outline:1px solid #FF2D55;  box-shadow:inset 0 0 24px rgba(255,45,85,0.55);}
+.tier-drop[data-tier="A"].hover-target{background:rgba(255,149,0,0.40);   outline:1px solid #FF9500;  box-shadow:inset 0 0 24px rgba(255,149,0,0.55);}
+.tier-drop[data-tier="B"].hover-target{background:rgba(218,180,30,0.40);  outline:1px solid #DAB41E;  box-shadow:inset 0 0 24px rgba(218,180,30,0.55);}
+.tier-drop[data-tier="C"].hover-target{background:rgba(48,176,199,0.40);  outline:1px solid #30B0C7;  box-shadow:inset 0 0 24px rgba(48,176,199,0.55);}
+.tier-drop[data-tier="D"].hover-target{background:rgba(155,149,107,0.40); outline:1px solid #9B956B;  box-shadow:inset 0 0 24px rgba(155,149,107,0.55);}
 .tier-drop.hover-target{transform:scale(1.03);}
 /* Old drag-over class is unused now but kept harmless for safety */
 .tier-drop.drag-over{background:rgba(255,255,255,0.07);}
@@ -404,13 +403,20 @@ html, body {
   pointer-events:none;
 }
 .drop-label{
-  position:absolute;bottom:-2.5vh;left:50%;transform:translateX(-50%);
+  position:absolute;
+  /* Sit clearly below the album with breathing room — opaque pill background
+     so the label can't visually merge with the album art above. */
+  top:calc(100% + 1.6vh);
+  left:50%;transform:translateX(-50%);
   white-space:nowrap;text-align:center;pointer-events:none;
-  text-shadow:0 1px 6px rgba(0,0,0,0.95);
+  background:rgba(10,10,10,0.92);
+  border:1px solid rgba(255,255,255,0.15);
+  border-radius:0.5vh;
+  padding:0.45vh 0.95vh;
   opacity:0;transition:opacity 0.18s ease;
 }
-.dl-title{display:block;font-size:1.1vh;font-weight:700;color:white;}
-.dl-artist{display:block;font-size:0.85vh;font-weight:400;color:rgba(255,255,255,0.6);}
+.dl-title{display:block;font-size:1.0vh;font-weight:700;color:white;letter-spacing:0.05em;}
+.dl-artist{display:block;font-size:0.8vh;font-weight:400;color:rgba(255,255,255,0.7);margin-top:0.15vh;}
 /* Label is hidden while falling/settled — reveals only on pickup */
 .drop-album.picked-up .drop-label{opacity:1;}
 .drop-album.settled{
@@ -703,7 +709,10 @@ const BOUNCE=0.20;         // energy retained per bounce — aggressive damping 
 const SETTLE_THRESHOLD=1.5;
 const ALBUM_VH=12;         // falling album size, vh
 const PICKED_SCALE=2.4;    // picked-up size relative to base (80% of the original 3x design)
-const FLOOR_VH_FROM_TOP=82.29; // safe-bottom boundary
+// Floor moved 1 album size below the canonical safe-bottom (82.29% + 12vh).
+// Lives in the unsafe bottom zone — Daniel handles that in the recording crop.
+const FLOOR_VH_FROM_TOP=94.29;
+let tickInterval=null;     // setTimeout id for the ticking clock
 
 // ========== AUDIO ==========
 function getAudioCtx(){
@@ -795,10 +804,81 @@ function playClear(){
 function playBuzzer(){
   const ctx=getAudioCtx();const osc=ctx.createOscillator();const gain=ctx.createGain();
   osc.type='sawtooth';osc.frequency.value=110;
-  gain.gain.setValueAtTime(0.4,ctx.currentTime);
-  gain.gain.setValueAtTime(0.4,ctx.currentTime+0.6);
+  // Halved from 0.4 -> 0.2 per Daniel's request
+  gain.gain.setValueAtTime(0.2,ctx.currentTime);
+  gain.gain.setValueAtTime(0.2,ctx.currentTime+0.6);
   gain.gain.exponentialRampToValueAtTime(0.001,ctx.currentTime+0.9);
   osc.connect(gain);gain.connect(ctx.destination);osc.start();osc.stop(ctx.currentTime+1);
+}
+
+// Loud explosion-style sound for each intro word reveal (replaces playThump
+// in runIntro). More dramatic + more "boom" character.
+function playIntroExplosion(){
+  const ctx=getAudioCtx();
+  // Deep sub thud
+  const sub=ctx.createOscillator(); const sg=ctx.createGain();
+  sub.type='sine'; sub.frequency.setValueAtTime(110,ctx.currentTime);
+  sub.frequency.exponentialRampToValueAtTime(40,ctx.currentTime+0.18);
+  sg.gain.setValueAtTime(0.55,ctx.currentTime);
+  sg.gain.exponentialRampToValueAtTime(0.001,ctx.currentTime+0.32);
+  sub.connect(sg); sg.connect(ctx.destination);
+  sub.start(); sub.stop(ctx.currentTime+0.36);
+  // Crack transient (filtered noise)
+  const buf=ctx.createBuffer(1,Math.floor(ctx.sampleRate*0.18),ctx.sampleRate);
+  const d=buf.getChannelData(0);
+  for(let i=0;i<buf.length;i++)d[i]=(Math.random()*2-1)*Math.pow(1-i/buf.length,1.4)*0.5;
+  const ns=ctx.createBufferSource(); ns.buffer=buf;
+  const bp=ctx.createBiquadFilter(); bp.type='bandpass'; bp.frequency.value=1500; bp.Q.value=1.5;
+  ns.connect(bp); bp.connect(ctx.destination); ns.start();
+}
+
+// Musical chord tied to tier emotion — stacked on top of playDrop bleep and
+// playExplosionSound on placement.
+function playTierChord(tier){
+  const ctx=getAudioCtx();
+  // Major7 / minor / dissonant cluster depending on tier feel
+  const recipes={
+    S:{type:'sine',     notes:[523.25, 659.25, 783.99, 987.77], gain:0.16, dur:0.85}, // C major 7
+    A:{type:'sine',     notes:[440.00, 554.37, 659.25],         gain:0.15, dur:0.70}, // A major
+    B:{type:'triangle', notes:[392.00, 493.88, 587.33],         gain:0.13, dur:0.55}, // G major
+    C:{type:'triangle', notes:[349.23, 415.30, 493.88],         gain:0.13, dur:0.70}, // F minor-ish
+    D:{type:'sawtooth', notes:[207.65, 220.00, 233.08],         gain:0.10, dur:1.10}, // G#/A/A# dissonant cluster
+  };
+  const r=recipes[tier]||recipes.B;
+  r.notes.forEach((freq, i)=>{
+    const osc=ctx.createOscillator(); const g=ctx.createGain();
+    osc.type=r.type; osc.frequency.value=freq;
+    const start=ctx.currentTime + i*0.03; // tiny stagger -> arpeggio shimmer
+    g.gain.setValueAtTime(0, start);
+    g.gain.linearRampToValueAtTime(r.gain, start+0.02);
+    g.gain.exponentialRampToValueAtTime(0.001, start+r.dur);
+    osc.connect(g); g.connect(ctx.destination);
+    osc.start(start); osc.stop(start+r.dur+0.1);
+  });
+}
+
+// Per-clip ticking clock. Starts 700ms baseline, speeds to 350ms when ≤10s
+// of clip remain, 175ms when ≤5s remain. Driven off currentAudio.currentTime.
+function startTicking(){
+  stopTicking();
+  const fire=()=>{
+    if(!gameStarted) return;
+    playTick();
+    let remain;
+    if(currentAudio && currentAudio.duration){
+      remain = currentAudio.duration - currentAudio.currentTime;
+    } else {
+      remain = 15;
+    }
+    let interval = 700;
+    if(remain <= 5) interval = 175;
+    else if(remain <= 10) interval = 350;
+    tickInterval = setTimeout(fire, interval);
+  };
+  tickInterval = setTimeout(fire, 700);
+}
+function stopTicking(){
+  if(tickInterval){clearTimeout(tickInterval); tickInterval=null;}
 }
 
 // (previewSong removed — audio is now lifecycle-managed by the drop sequence)
@@ -821,7 +901,7 @@ function runIntro(){
         el.textContent=w;
         el.style.animation='wordPop 0.1s cubic-bezier(0.34,1.56,0.64,1) forwards';
         container.appendChild(el);
-        playThump();
+        playIntroExplosion();  // bigger boom than playThump
       },i===0?0:83);
     },delay+i*250);
   });
@@ -1082,6 +1162,7 @@ function startCurrentAudio(song){
   a.addEventListener('ended', onClipEnded);
   a.addEventListener('timeupdate', updateClipProgress);
   a.play().catch(()=>{});
+  startTicking();  // clock ticks once audio kicks off
 }
 
 function stopCurrentAudio(){
@@ -1092,6 +1173,7 @@ function stopCurrentAudio(){
     currentAudio=null;
   }
   if(timeoutTimer){clearTimeout(timeoutTimer);timeoutTimer=null;}
+  stopTicking();
 }
 
 function updateClipProgress(){
@@ -1195,8 +1277,11 @@ function placeInTier(tierDrop, x, y){
   // Remove the falling album element
   DROP.el.remove();
   placements.push({song: DROP.song, tier});
-  // FX
-  playDrop(tier); flashScreen(); spawnEmojis(x, y, tier);
+  // FX: bleep + musical chord (tier-emotion) + screen flash + dramatic explosion
+  playDrop(tier);
+  playTierChord(tier);
+  flashScreen();
+  spawnEmojis(x, y, tier);
   if(tier==='D'){
     document.getElementById('game').style.animation='shake 0.3s ease-in-out';
     setTimeout(()=>document.getElementById('game').style.animation='',350);
@@ -1325,20 +1410,23 @@ function endGameReveal(){
   const tiers=Array.from(document.querySelectorAll('.tier-row'));
   const vp=document.getElementById('viewport').getBoundingClientRect();
   game.classList.add('reveal-mode');
-  const DWELL=900; // ms per tier
-  const SCALE=1.55;
+  // 3x slower per Daniel (900 -> 2700) + zoomed in further (1.55 -> 2.4) +
+  // transform-origin at left-center so the tier letter label stays visible.
+  const DWELL=2700;
+  const SCALE=2.4;
   tiers.forEach((row, i) => {
     setTimeout(()=>{
       const r=row.getBoundingClientRect();
-      // Center this row by translating, then scale around the resulting origin
       const rowCenterY = (r.top - vp.top) + r.height/2;
       const vpCenterY = vp.height / 2;
       const offsetY = vpCenterY - rowCenterY;
-      game.style.transformOrigin = 'center center';
-      game.style.transform = `translateY(${offsetY}px) scale(${SCALE})`;
+      // Scale around 0% (left edge) so the S/A/B/C/D letter on the left of
+      // each row stays anchored at the viewport left edge after zoom.
+      game.style.transformOrigin = '0% 50%';
+      game.style.transform = `scale(${SCALE}) translateY(${offsetY}px)`;
       row.classList.add('reveal-focus');
       playTick();
-    }, i * DWELL + 350);
+    }, i * DWELL + 500);
     setTimeout(()=>{
       row.classList.remove('reveal-focus');
     }, i * DWELL + DWELL + 250);
@@ -1349,8 +1437,8 @@ function endGameReveal(){
     setTimeout(()=>{
       game.classList.remove('reveal-mode');
       document.getElementById('end-screen').style.display='flex';
-    }, 700);
-  }, tiers.length * DWELL + 600);
+    }, 900);
+  }, tiers.length * DWELL + 800);
 }
 
 // ========== EPISODE LOADER ==========
