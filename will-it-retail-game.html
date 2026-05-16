@@ -345,10 +345,10 @@ html, body {
   0%,100%{box-shadow:0 6px 24px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.18), 0 0 14px rgba(255,255,255,0.10);}
   50%   {box-shadow:0 6px 24px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.32), 0 0 24px rgba(255,255,255,0.22);}
 }
-/* The "picked up" state — 0.8x scale (smaller, controllable) + strong pulsing rose glow */
+/* The "picked up" state — 2.4x scale (80% of the original 3x design) + strong pulsing rose glow */
 .drop-album.picked-up{
   cursor:grabbing;
-  transform:scale(0.8);
+  transform:scale(2.4);
   transform-origin:center center;
   z-index:200;
   animation:pickedGlow 0.9s ease-in-out infinite;
@@ -604,7 +604,7 @@ const GRAVITY=0.55;        // px per frame squared (scaled by vh below)
 const BOUNCE=0.20;         // energy retained per bounce — aggressive damping for ~2 bounces max
 const SETTLE_THRESHOLD=1.5;
 const ALBUM_VH=12;         // falling album size, vh
-const PICKED_SCALE=0.8;    // picked-up size relative to base (smaller = more controllable)
+const PICKED_SCALE=2.4;    // picked-up size relative to base (80% of the original 3x design)
 const FLOOR_VH_FROM_TOP=82.29; // safe-bottom boundary
 
 // ========== AUDIO ==========
