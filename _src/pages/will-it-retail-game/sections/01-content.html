@@ -651,10 +651,15 @@ function placeInTier(tierDrop, x, y){
   stopCurrentAudio();
   document.querySelectorAll('.tier-drop').forEach(d=>d.classList.remove('active-target','hover-target'));
   const tier = tierDrop.dataset.tier;
-  // Create permanent placed card
+  // Create permanent placed card with metadata label (revealed during recap)
   const card = document.createElement('div');
   card.className = 'song-card placed';
-  card.innerHTML = '<img src="'+DROP.song.art+'" alt="'+DROP.song.title+'">';
+  card.innerHTML =
+    '<img src="'+DROP.song.art+'" alt="'+DROP.song.title+'">'+
+    '<div class="card-meta">'+
+      '<span class="cm-title">'+DROP.song.title+'</span>'+
+      '<span class="cm-artist">'+DROP.song.artist+'</span>'+
+    '</div>';
   tierDrop.appendChild(card);
   // Remove the falling album element
   DROP.el.remove();
@@ -829,6 +834,7 @@ function endGameReveal(){
     game.style.transform=`scale(${SCALE}) translate(${offsetX}px, ${offsetY}px)`;
     const row=card.closest('.tier-row');
     if(row) row.classList.add('reveal-focus');
+    card.classList.add('reveal-card-focus'); // reveals title+artist meta
     playTick();
   }
 
@@ -836,6 +842,8 @@ function endGameReveal(){
     game.style.transform='';
     document.querySelectorAll('.tier-row.reveal-focus')
       .forEach(r=>r.classList.remove('reveal-focus'));
+    document.querySelectorAll('.song-card.reveal-card-focus')
+      .forEach(c=>c.classList.remove('reveal-card-focus'));
   }
 
   function next(){

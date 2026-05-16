@@ -382,11 +382,38 @@ html, body {
 }
 
 /* Cards in tiers — slightly bigger than before since rows are taller */
-.tier-drop .song-card{width:6.5vh;height:6.5vh;}
+.tier-drop .song-card{width:6.5vh;height:6.5vh;position:relative;}
 .tier-drop .card-label{display:none;}
 /* Settled-in-tier card has a brief land animation */
 .tier-drop .song-card.placed{animation:placedLand 0.3s cubic-bezier(0.34,1.56,0.64,1);}
 @keyframes placedLand{0%{transform:scale(0.4);opacity:0.6;}100%{transform:scale(1);opacity:1;}}
+
+/* Placed-card metadata — hidden during play, fades in only when this card
+   is the recap zoom target (.reveal-card-focus). Sized in vh so it scales
+   along with the .reveal-mode transform and ends up readable at 2.4x. */
+.song-card.placed .card-meta{
+  position:absolute;
+  top:calc(100% + 0.6vh);
+  left:50%;transform:translateX(-50%);
+  white-space:nowrap;text-align:center;pointer-events:none;
+  background:rgba(10,10,10,0.94);
+  border:1px solid rgba(255,255,255,0.2);
+  border-radius:0.35vh;
+  padding:0.25vh 0.6vh;
+  opacity:0;
+  transition:opacity 0.35s ease 0.2s; /* slight delay so it appears AFTER the zoom lands */
+}
+.song-card.placed .cm-title{
+  display:block;
+  font-size:0.7vh;       /* x2.4 in reveal-mode = ~13.5px in an 800h viewport */
+  font-weight:700;color:white;letter-spacing:0.04em;
+}
+.song-card.placed .cm-artist{
+  display:block;
+  font-size:0.55vh;
+  font-weight:400;color:rgba(255,255,255,0.75);margin-top:0.08vh;
+}
+.song-card.reveal-card-focus .card-meta{opacity:1;}
 
 /* =============================================
    GHOST (drag preview)
