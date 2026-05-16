@@ -815,16 +815,18 @@ function endGameReveal(){
   let advancing = false; // ignore taps while a zoom-out/zoom-in is in-flight
 
   function applyZoom(card){
-    // Re-measure vp each step in case the page resized
+    // Re-measure each step in case the page resized
     const vpRect=document.getElementById('viewport').getBoundingClientRect();
     const cardRect=card.getBoundingClientRect();
-    const cardCenterY=(cardRect.top - vpRect.top) + cardRect.height/2;
-    const vpCenterY=vpRect.height/2;
-    const offsetY=vpCenterY - cardCenterY;
-    // Scale around left-center so the tier letter (S/A/B/C/D) stays anchored
-    game.style.transformOrigin='0% 50%';
-    game.style.transform=`scale(${SCALE}) translateY(${offsetY}px)`;
-    // Highlight the row containing this card
+    const cardCenterX=(cardRect.left - vpRect.left) + cardRect.width/2;
+    const cardCenterY=(cardRect.top  - vpRect.top ) + cardRect.height/2;
+    // To center any point (Cx, Cy) at viewport center with scale around
+    // center-center: translate by (vw/2 - Cx, vh/2 - Cy) in pre-transform
+    // pixels, then scale. The translation is independent of SCALE.
+    const offsetX=(vpRect.width  / 2) - cardCenterX;
+    const offsetY=(vpRect.height / 2) - cardCenterY;
+    game.style.transformOrigin='50% 50%';
+    game.style.transform=`scale(${SCALE}) translate(${offsetX}px, ${offsetY}px)`;
     const row=card.closest('.tier-row');
     if(row) row.classList.add('reveal-focus');
     playTick();
