@@ -31,6 +31,14 @@
   <div id="flash-overlay"></div>
   <div id="combo-text"></div>
 
+  <!-- SAFE-ZONE DEBUG OVERLAY — toggled by ?safezone=1 -->
+  <div class="safezone-overlay" aria-hidden="true">
+    <div class="safezone-zone top">unsafe — top (status / account)</div>
+    <div class="safezone-zone bottom">unsafe — bottom (captions / engagement bar)</div>
+    <div class="safezone-zone right">unsafe — right (like / comment / share)</div>
+    <div class="safezone-frame"></div>
+  </div>
+
   <div id="end-screen">
     <h2 id="end-title"></h2>
     <p id="end-sub"></p>
@@ -442,6 +450,11 @@ function showLoadError(msg){
   const intro=document.getElementById('intro');
   if(!intro)return;
   intro.innerHTML='<div style="color:#fff;text-align:center;padding:4vh;font-size:2vh;line-height:1.5;font-family:Inter,sans-serif;">'+msg+'</div>';
+}
+
+// Toggle safe-zone debug overlay via ?safezone=1
+if(new URLSearchParams(window.location.search).get('safezone')==='1'){
+  document.body.classList.add('show-safezone');
 }
 
 setTimeout(loadEpisode,100);

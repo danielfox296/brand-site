@@ -1,4 +1,31 @@
 /* =============================================
+   CANONICAL SHORT-FORM SAFE ZONE
+   ---------------------------------------------
+   Source of truth for safe-area placement across TikTok / Instagram Reels /
+   YouTube Shorts. Authoritative reference canvas is 1080×1920 (9:16).
+   All values below are derived from that canonical pixel rect and expressed
+   as percentages so they work at any viewport size.
+   Spec (pixels at 1080×1920):
+     safe:        x=60   y=250   w=840   h=1330
+     unsafe top:    h=250            (13.02% of height)
+     unsafe bot:    h=340 from bot   (17.71% of height)
+     unsafe right:  w=180 from right (16.67% of width)
+     unsafe left:   none defined, but safe x=60 implies a 5.56% buffer
+   Rules:
+     - Critical text MUST stay inside the safe rect
+     - Subtitles above y=1350 (i.e. above 70.31% from top)
+     - Center-weight compositions (avoid right edge for game UI)
+   Any element placed outside the safe zone is a layout violation. The
+   `?safezone=1` URL param overlays the unsafe zones in red for visual QA.
+   ============================================= */
+:root{
+  --wir-safe-top:    13.02%;  /* 250/1920 */
+  --wir-safe-bottom: 17.71%;  /* 340/1920 */
+  --wir-safe-left:    5.56%;  /*  60/1080 */
+  --wir-safe-right:  16.67%;  /* 180/1080 */
+}
+
+/* =============================================
    Full-screen game viewport overrides for SSG main wrapper
    ============================================= */
 body { padding: 0 !important; margin: 0 !important; overflow: hidden !important; background:#000 !important; }
@@ -105,7 +132,8 @@ html, body {
 /* --- Timer + Header: top right of safe area --- */
 #timer-wrap{
   position:absolute;
-  top:14%;right:13%;
+  /* Inside canonical safe zone (top 13.02%, right 16.67%) */
+  top:var(--wir-safe-top);right:var(--wir-safe-right);
   text-align:right;z-index:51;
 }
 #timer{
@@ -128,7 +156,8 @@ html, body {
 /* --- PIP zone --- */
 #pip-zone{
   position:absolute;
-  top:15.5%;left:4%;
+  /* Inside canonical safe zone (left 5.56%) */
+  top:15.5%;left:var(--wir-safe-left);
   width:15vh;height:12vh;
   border:2px dashed rgba(255,255,255,0.1);
   border-radius:10px;
@@ -145,7 +174,8 @@ html, body {
    ============================================= */
 #tiers{
   position:absolute;
-  top:29%;left:4%;right:18%;
+  /* Inside canonical safe zone — right:18% > canonical 16.67% already */
+  top:29%;left:var(--wir-safe-left);right:18%;
   height:42%;
   display:flex;flex-direction:column;
   justify-content:space-between;
@@ -176,7 +206,10 @@ html, body {
    ============================================= */
 #staging{
   position:absolute;
-  top:73%;left:4%;right:13%;
+  /* Inside canonical safe zone (left 5.56%, right 16.67%).
+     Available width drops from 83% to 77.7% of viewport, so card row gap
+     is trimmed below to keep 5 cards on one nowrap row. */
+  top:73%;left:var(--wir-safe-left);right:var(--wir-safe-right);
 }
 #staging-label{
   font-size:1.1vh;font-weight:700;
@@ -186,7 +219,9 @@ html, body {
 }
 #staging-row{
   display:flex;justify-content:center;
-  gap:1.2vh;flex-wrap:nowrap;
+  /* Gap trimmed from 1.2vh to 0.7vh so 5x 8vh cards fit the narrower safe
+     staging area (5*8 + 4*0.7 = 42.8vh < ~43.7vh available width). */
+  gap:0.7vh;flex-wrap:nowrap;
 }
 
 /* =============================================
@@ -295,3 +330,37 @@ html, body {
   transition:transform 0.2s;
 }
 #replay-btn:hover{transform:scale(1.06);}
+
+/* =============================================
+   SAFE-ZONE DEBUG OVERLAY (?safezone=1)
+   Visualizes the three unsafe zones (top/bottom/right) in red so you can
+   verify layout compliance and check what platform UI will cover. Inactive
+   by default — body.show-safezone class is set when ?safezone=1 is present.
+   ============================================= */
+.safezone-overlay{
+  position:absolute;inset:0;pointer-events:none;
+  display:none;z-index:200;
+}
+body.show-safezone .safezone-overlay{display:block;}
+.safezone-zone{
+  position:absolute;
+  background:rgba(255,45,85,0.18);
+  border:1px dashed rgba(255,45,85,0.7);
+  color:rgba(255,255,255,0.7);
+  font-size:1.1vh;font-weight:700;
+  font-family:Inter,sans-serif;
+  letter-spacing:2px;text-transform:uppercase;
+  display:flex;align-items:center;justify-content:center;
+}
+.safezone-zone.top   {top:0;left:0;right:0;height:var(--wir-safe-top);}
+.safezone-zone.bottom{bottom:0;left:0;right:0;height:var(--wir-safe-bottom);}
+.safezone-zone.right {top:0;bottom:0;right:0;width:var(--wir-safe-right);}
+.safezone-frame{
+  position:absolute;
+  top:var(--wir-safe-top);
+  bottom:var(--wir-safe-bottom);
+  left:var(--wir-safe-left);
+  right:var(--wir-safe-right);
+  border:2px dashed rgba(34,197,94,0.7);
+  pointer-events:none;
+}
