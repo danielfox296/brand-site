@@ -1276,7 +1276,9 @@ function placeInTier(tierDrop, x, y){
   tierDrop.appendChild(card);
   // Remove the falling album element
   DROP.el.remove();
-  placements.push({song: DROP.song, tier});
+  // Record placement WITH the card element so the end-reveal can zoom to
+  // each placed card in the order it was placed.
+  placements.push({song: DROP.song, tier, card});
   // FX: bleep + musical chord (tier-emotion) + screen flash + dramatic explosion
   playDrop(tier);
   playTierChord(tier);
@@ -1405,40 +1407,95 @@ function endGame(){
   endGameReveal();
 }
 
+// Tap-controlled, placement-ordered end-reveal:
+//   1. Zoom into where the FIRST placed song landed → pause (for commentary)
+//   2. Wait for tap → zoom out to full → brief beat → zoom into 2nd placement
+//   3. Repeat through all placements (in order of placement, not tier order)
+//   4. Final tap → zoom out → show end-screen overlay
+// Skipped songs (no card) are excluded — only successful placements get a
+// reveal slot.
 function endGameReveal(){
   const game=document.getElementById('game');
-  const tiers=Array.from(document.querySelectorAll('.tier-row'));
   const vp=document.getElementById('viewport').getBoundingClientRect();
   game.classList.add('reveal-mode');
-  // 3x slower per Daniel (900 -> 2700) + zoomed in further (1.55 -> 2.4) +
-  // transform-origin at left-center so the tier letter label stays visible.
-  const DWELL=2700;
-  const SCALE=2.4;
-  tiers.forEach((row, i) => {
-    setTimeout(()=>{
-      const r=row.getBoundingClientRect();
-      const rowCenterY = (r.top - vp.top) + r.height/2;
-      const vpCenterY = vp.height / 2;
-      const offsetY = vpCenterY - rowCenterY;
-      // Scale around 0% (left edge) so the S/A/B/C/D letter on the left of
-      // each row stays anchored at the viewport left edge after zoom.
-      game.style.transformOrigin = '0% 50%';
-      game.style.transform = `scale(${SCALE}) translateY(${offsetY}px)`;
-      row.classList.add('reveal-focus');
-      playTick();
-    }, i * DWELL + 500);
-    setTimeout(()=>{
-      row.classList.remove('reveal-focus');
-    }, i * DWELL + DWELL + 250);
-  });
-  // After the pan, zoom back out + reveal end screen
-  setTimeout(()=>{
-    game.style.transform='';
+
+  const targets = placements.filter(p => p.card);
+  if(targets.length === 0){
     setTimeout(()=>{
       game.classList.remove('reveal-mode');
       document.getElementById('end-screen').style.display='flex';
-    }, 900);
-  }, tiers.length * DWELL + 800);
+    }, 600);
+    return;
+  }
+
+  const SCALE = 2.4;
+  let step = -1;
+  let advancing = false; // ignore taps while a zoom-out/zoom-in is in-flight
+
+  function applyZoom(card){
+    // Re-measure vp each step in case the page resized
+    const vpRect=document.getElementById('viewport').getBoundingClientRect();
+    const cardRect=card.getBoundingClientRect();
+    const cardCenterY=(cardRect.top - vpRect.top) + cardRect.height/2;
+    const vpCenterY=vpRect.height/2;
+    const offsetY=vpCenterY - cardCenterY;
+    // Scale around left-center so the tier letter (S/A/B/C/D) stays anchored
+    game.style.transformOrigin='0% 50%';
+    game.style.transform=`scale(${SCALE}) translateY(${offsetY}px)`;
+    // Highlight the row containing this card
+    const row=card.closest('.tier-row');
+    if(row) row.classList.add('reveal-focus');
+    playTick();
+  }
+
+  function zoomOut(){
+    game.style.transform='';
+    document.querySelectorAll('.tier-row.reveal-focus')
+      .forEach(r=>r.classList.remove('reveal-focus'));
+  }
+
+  function next(){
+    step++;
+    if(step >= targets.length){
+      cleanup();
+      zoomOut();
+      setTimeout(()=>{
+        game.classList.remove('reveal-mode');
+        document.getElementById('end-screen').style.display='flex';
+      }, 800);
+      return;
+    }
+    if(step === 0){
+      // First reveal — zoom in immediately
+      applyZoom(targets[0].card);
+    } else {
+      // Subsequent: zoom out to full, brief beat, zoom in to next placement
+      advancing = true;
+      zoomOut();
+      setTimeout(()=>{
+        applyZoom(targets[step].card);
+        advancing = false;
+      }, 700);
+    }
+  }
+
+  function onAdvance(){
+    if(advancing) return;
+    next();
+  }
+  function cleanup(){
+    document.removeEventListener('pointerdown', onAdvance);
+  }
+
+  // Kick off: brief beat, zoom into first placement, then arm tap-to-advance
+  setTimeout(()=>{
+    next();
+    // Defer attaching listener so the pointerdown that ENDED the game
+    // (the last placement) doesn't immediately advance step 0 -> step 1.
+    setTimeout(()=>{
+      document.addEventListener('pointerdown', onAdvance);
+    }, 250);
+  }, 500);
 }
 
 // ========== EPISODE LOADER ==========
