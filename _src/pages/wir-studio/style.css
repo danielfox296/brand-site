@@ -1,0 +1,125 @@
+/* WIR Studio — creator-only episode picker. Dark, dense, keyboard-friendly. */
+* { box-sizing: border-box; }
+html, body {
+  margin: 0; padding: 0;
+  background: #0a0a0a; color: #eaeaea;
+  font-family: 'Inter','Helvetica Neue',Arial,sans-serif;
+  min-height: 100vh;
+}
+body { padding: 0 !important; margin: 0 !important; }
+main, .main { padding: 0 !important; margin: 0 !important; max-width: none !important; width: 100% !important; }
+
+.studio-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 36px 28px 80px;
+}
+
+.studio-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #222;
+  padding-bottom: 16px;
+}
+.studio-head h1 {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.studio-head .ep-count {
+  font-size: 13px;
+  color: #888;
+  font-variant-numeric: tabular-nums;
+}
+
+.studio-search {
+  width: 100%;
+  background: #141414;
+  border: 1px solid #2a2a2a;
+  color: #fff;
+  padding: 10px 14px;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-bottom: 18px;
+  font-family: inherit;
+}
+.studio-search:focus { outline: none; border-color: #ff2d55; }
+
+.ep-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ep-row {
+  display: grid;
+  grid-template-columns: 56px 1fr auto;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 14px;
+  background: #141414;
+  border: 1px solid #1f1f1f;
+  border-radius: 6px;
+  transition: border-color 0.12s, background 0.12s;
+}
+.ep-row:hover { border-color: #333; background: #181818; }
+
+.ep-num {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ff2d55;
+  letter-spacing: 0.05em;
+  font-variant-numeric: tabular-nums;
+}
+.ep-meta { min-width: 0; }
+.ep-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 2px;
+  letter-spacing: 0.01em;
+}
+.ep-sub {
+  font-size: 12px;
+  color: #888;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ep-actions { display: flex; gap: 8px; }
+.btn {
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border: 1px solid #2a2a2a;
+  background: #111;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.12s, border-color 0.12s, color 0.12s;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn:hover { background: #1d1d1d; border-color: #444; }
+.btn-play {
+  background: #ff2d55;
+  border-color: #ff2d55;
+  color: #000;
+}
+.btn-play:hover { background: #ff436a; border-color: #ff436a; color: #000; }
+
+.empty {
+  padding: 40px;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}

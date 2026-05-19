@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/wir-notes.html">
+  <meta name="robots" content="noindex">
+  <title>WIR Notes — Companion</title>
+  <meta name="description" content="Internal creator tool — companion notes window for Will It Retail recording.">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="rss.xml">
+  <meta property="og:title" content="WIR Notes — Companion">
+  <meta property="og:description" content="Internal creator tool — companion notes window for Will It Retail recording.">
+  <meta property="og:url" content="https://entuned.co/wir-notes.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://entuned.co/img/og-default.png">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="WIR Notes — Companion">
+  <meta name="twitter:description" content="Internal creator tool — companion notes window for Will It Retail recording.">
+  <meta name="twitter:image" content="https://entuned.co/img/og-default.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Entuned",
+  "url": "https://entuned.co",
+  "description": "Entuned engineers original music for retail floors at the parameter level \u2014 tempo, key, lyrical density, energy arc \u2014 tailored to a store's customer profile and tied to its sales outcomes. PRO-indemnified at every tier.",
+  "foundingDate": "2026",
+  "founder": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "knowsAbout": [
+    "retail atmospherics",
+    "music psychology",
+    "in-store customer behavior",
+    "retail analytics",
+    "engineered retail audio",
+    "behavioral retail variables"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/entuned"
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "WIR Notes \u2014 Companion"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css?v=50e4ef94">
+  <style>
+/* WIR Notes — companion window pulled up next to the recording surface. */
+* { box-sizing: border-box; }
+html, body {
+  margin: 0; padding: 0;
+  background: #0a0a0a; color: #eaeaea;
+  font-family: 'Inter','Helvetica Neue',Arial,sans-serif;
+  min-height: 100vh;
+}
+body { padding: 0 !important; margin: 0 !important; }
+main, .main { padding: 0 !important; margin: 0 !important; max-width: none !important; width: 100% !important; }
+
+.notes-wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 26px 22px 80px;
+}
+
+.notes-head {
+  border-bottom: 1px solid #222;
+  padding-bottom: 14px;
+  margin-bottom: 22px;
+}
+.notes-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  color: #ff2d55;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.notes-head h1 {
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: 0.01em;
+  color: #fff;
+}
+
+.song-block {
+  padding: 18px 0;
+  border-bottom: 1px solid #181818;
+}
+.song-block:last-child { border-bottom: none; }
+
+.song-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.song-num {
+  font-size: 11px;
+  font-weight: 700;
+  color: #555;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.08em;
+}
+.song-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+}
+.song-artist {
+  font-size: 13px;
+  color: #888;
+  font-weight: 500;
+}
+
+.notes-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.notes-list li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 4px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.notes-list li .sign {
+  flex-shrink: 0;
+  width: 16px;
+  font-weight: 800;
+  font-size: 13px;
+  font-family: 'SF Mono', Menlo, monospace;
+  margin-top: 2px;
+}
+.notes-list li.pro .sign { color: #22c55e; }
+.notes-list li.con .sign { color: #ef4444; }
+.notes-list li .text { color: #d8d8d8; }
+
+.notes-empty, .notes-error {
+  color: #777;
+  font-size: 14px;
+  padding: 40px 0;
+  text-align: center;
+}
+.notes-error { color: #ef4444; }
+
+.notes-foot {
+  margin-top: 26px;
+  padding-top: 14px;
+  border-top: 1px solid #1a1a1a;
+  font-size: 12px;
+  color: #555;
+  display: flex;
+  justify-content: space-between;
+}
+.notes-foot a {
+  color: #888;
+  text-decoration: none;
+}
+.notes-foot a:hover { color: #fff; }
+  </style>
+</head>
+<body>
+  
+
+  <main>
+  <div class="notes-wrap">
+  <div class="notes-head">
+    <div class="notes-eyebrow" id="notes-eyebrow">WIR — Loading…</div>
+    <h1 id="notes-title">&nbsp;</h1>
+  </div>
+  <div id="notes-body">
+    <div class="notes-empty">Loading…</div>
+  </div>
+  <div class="notes-foot">
+    <span id="notes-foot-left">Companion window</span>
+    <a href="wir-studio.html" target="_blank">↗ Studio</a>
+  </div>
+</div>
+
+<script>
+(async()=>{
+  function escapeHtml(s){return (s||'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+  const params = new URLSearchParams(location.search);
+  const epNum = parseInt(params.get('ep')||'1', 10);
+  const body = document.getElementById('notes-body');
+  const eyebrow = document.getElementById('notes-eyebrow');
+  const title = document.getElementById('notes-title');
+  const footLeft = document.getElementById('notes-foot-left');
+
+  let data;
+  try{
+    const resp = await fetch('data/wir/episodes.json', {cache: 'no-store'});
+    data = await resp.json();
+  }catch(e){
+    body.innerHTML = '<div class="notes-error">Failed to load: '+escapeHtml(e.message)+'</div>';
+    return;
+  }
+  const ep = (data.episodes||[]).find(e => e.number === epNum);
+  if(!ep){
+    body.innerHTML = '<div class="notes-error">Episode '+epNum+' not found.</div>';
+    return;
+  }
+  document.title = 'EP '+epNum+' — '+ep.title+' · WIR Notes';
+  eyebrow.textContent = 'EP '+String(epNum).padStart(2,'0')+' · '+ep.format;
+  title.textContent = ep.title;
+  footLeft.textContent = 'EP '+epNum;
+
+  const notes = ep.notes || [];
+  if(notes.length === 0){
+    body.innerHTML = '<div class="notes-empty">No commentary written yet for this episode.</div>';
+    return;
+  }
+  body.innerHTML = notes.map((n, i) => {
+    const pros = (n.pros||[]).map(t => '<li class="pro"><span class="sign">+</span><span class="text">'+escapeHtml(t)+'</span></li>').join('');
+    const cons = (n.cons||[]).map(t => '<li class="con"><span class="sign">−</span><span class="text">'+escapeHtml(t)+'</span></li>').join('');
+    return ''
+      + '<div class="song-block">'
+      +   '<div class="song-head">'
+      +     '<span class="song-num">'+String(i+1).padStart(2,'0')+'</span>'
+      +     '<span class="song-title">'+escapeHtml(n.title)+'</span>'
+      +     '<span class="song-artist">'+escapeHtml(n.artist)+'</span>'
+      +   '</div>'
+      +   '<ul class="notes-list">'+pros+cons+'</ul>'
+      + '</div>';
+  }).join('');
+})();
+</script>
+  </main>
+
+  
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG', {
+      linker: {
+        domains: ['entuned.co', 'music.entuned.co', 'app.entuned.co']
+      }
+    });
+  </script>
+  <script defer src="js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>

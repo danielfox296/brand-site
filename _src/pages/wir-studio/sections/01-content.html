@@ -1,0 +1,74 @@
+<div class="studio-wrap">
+  <div class="studio-head">
+    <h1>WIR Studio</h1>
+    <div class="ep-count" id="ep-count">— episodes</div>
+  </div>
+
+  <input type="text" id="studio-search" class="studio-search" placeholder="Search episodes…" autofocus>
+
+  <div class="ep-list" id="ep-list">
+    <div class="empty">Loading episodes…</div>
+  </div>
+</div>
+
+<script>
+(async()=>{
+  const list = document.getElementById('ep-list');
+  const search = document.getElementById('studio-search');
+  const count = document.getElementById('ep-count');
+  let episodes = [];
+  try{
+    const resp = await fetch('data/wir/episodes.json', {cache: 'no-store'});
+    const data = await resp.json();
+    episodes = (data.episodes || []).slice().sort((a,b)=>a.number-b.number);
+  }catch(e){
+    list.innerHTML = '<div class="empty">Failed to load episode data: '+e.message+'</div>';
+    return;
+  }
+  count.textContent = episodes.length + ' episodes';
+
+  function render(filter){
+    const q = (filter||'').trim().toLowerCase();
+    const filtered = q ? episodes.filter(e =>
+      String(e.number).includes(q) ||
+      (e.title||'').toLowerCase().includes(q) ||
+      (e.songs||[]).some(s => (s.title||'').toLowerCase().includes(q) || (s.artist||'').toLowerCase().includes(q))
+    ) : episodes;
+    if(filtered.length === 0){
+      list.innerHTML = '<div class="empty">No matches.</div>';
+      return;
+    }
+    list.innerHTML = filtered.map(e => {
+      const songs = (e.songs||[]).map(s=>s.title).join(' · ');
+      const num = String(e.number).padStart(2,'0');
+      const notesBtn = (e.notes && e.notes.length)
+        ? '<button class="btn btn-notes" data-ep="'+e.number+'">Notes</button>'
+        : '<button class="btn" disabled title="No notes for this episode">Notes</button>';
+      return ''
+        + '<div class="ep-row">'
+        +   '<div class="ep-num">EP '+num+'</div>'
+        +   '<div class="ep-meta">'
+        +     '<div class="ep-title">'+escapeHtml(e.title||'')+'</div>'
+        +     '<div class="ep-sub">'+escapeHtml(songs)+'</div>'
+        +   '</div>'
+        +   '<div class="ep-actions">'
+        +     notesBtn
+        +     '<a class="btn btn-play" href="will-it-retail-game.html?ep='+e.number+'">Play</a>'
+        +   '</div>'
+        + '</div>';
+    }).join('');
+  }
+  function escapeHtml(s){return s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+
+  list.addEventListener('click', (e)=>{
+    const btn = e.target.closest('.btn-notes');
+    if(!btn) return;
+    const ep = btn.dataset.ep;
+    // Pop into its own window so it lives separately from the recording surface
+    window.open('wir-notes.html?ep='+ep, 'wir-notes-'+ep, 'width=520,height=900');
+  });
+
+  search.addEventListener('input', e => render(e.target.value));
+  render('');
+})();
+</script>
