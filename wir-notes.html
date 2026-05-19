@@ -183,76 +183,110 @@ main, .main { padding: 0 !important; margin: 0 !important; max-width: none !impo
 }
 .notes-error { color: #ef4444; }
 
-/* Inline citation chip — clickable, jumps to the study card below */
+/* Inline citation chip — looks like a pill, click pops modal */
 .cite-chip {
+  display: inline-block;
+  background: rgba(255, 45, 85, 0.12);
   color: #ff8aa0;
-  text-decoration: none;
-  border-bottom: 1px dotted rgba(255, 138, 160, 0.45);
-  cursor: pointer;
-  transition: color 0.12s, border-color 0.12s;
-}
-.cite-chip:hover { color: #fff; border-bottom-color: #fff; }
-.cite-chip:target,
-.study-card:target { /* visual ping when scrolled-to */ }
-
-/* "Cited studies" block — one card per unique citation in the episode. */
-.notes-studies {
-  margin-top: 36px;
-  padding-top: 22px;
-  border-top: 1px solid #222;
-}
-.studies-head {
+  border: 1px solid rgba(255, 45, 85, 0.28);
+  border-radius: 999px;
+  padding: 1px 8px;
   font-size: 11px;
-  font-weight: 700;
-  color: #ff2d55;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  margin: 0 0 14px;
+  font-weight: 600;
+  font-family: inherit;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  vertical-align: baseline;
+  line-height: 1.4;
+  transition: background 0.12s, color 0.12s, border-color 0.12s;
+  margin-left: 4px;
 }
-.study-card {
-  padding: 14px 16px;
-  background: #131313;
-  border: 1px solid #1f1f1f;
-  border-radius: 6px;
-  margin-bottom: 10px;
-  scroll-margin-top: 16px; /* offset when jumped via #anchor */
+.cite-chip:hover { background: rgba(255, 45, 85, 0.22); color: #fff; border-color: #ff2d55; }
+
+/* Modal — fixed overlay, centered card. Designed for the 520px popup. */
+.cite-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
 }
-.study-card:target {
-  border-color: #ff2d55;
-  box-shadow: 0 0 0 1px rgba(255, 45, 85, 0.5);
+.cite-modal[hidden] { display: none; }
+.cite-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.78);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
+.cite-modal-card {
+  position: relative;
+  background: #141414;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 22px 22px 18px;
+  max-width: 480px;
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+}
+.cite-modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  color: #777;
+  font-size: 24px;
+  line-height: 1;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: inherit;
+}
+.cite-modal-close:hover { color: #fff; background: rgba(255, 255, 255, 0.08); }
+
+body.modal-open { overflow: hidden; }
+
+/* Study card content (shared between modal body and any future inline use) */
 .study-key {
   font-size: 11px;
   font-weight: 700;
   color: #ff8aa0;
   letter-spacing: 0.08em;
   font-family: 'SF Mono', Menlo, monospace;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 .study-title {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 700;
   color: #fff;
-  line-height: 1.35;
-  margin-bottom: 6px;
+  line-height: 1.3;
+  margin-bottom: 8px;
+  padding-right: 28px; /* clear the close button */
 }
 .study-citation {
   font-size: 12px;
   color: #888;
   font-style: italic;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
+  line-height: 1.5;
 }
 .study-summary {
-  font-size: 13px;
-  color: #c8c8c8;
+  font-size: 14px;
+  color: #d0d0d0;
   line-height: 1.5;
-  margin-bottom: 8px;
+  margin-bottom: 14px;
 }
 .study-stat {
   font-size: 13px;
-  color: #d8d8d8;
-  line-height: 1.5;
-  padding: 8px 10px;
+  color: #e2e2e2;
+  line-height: 1.55;
+  padding: 10px 12px;
   background: #0d0d0d;
   border-left: 2px solid #22c55e;
   border-radius: 0 3px 3px 0;
@@ -266,11 +300,8 @@ main, .main { padding: 0 !important; margin: 0 !important; max-width: none !impo
   text-transform: uppercase;
   margin-bottom: 4px;
 }
-.study-card.missing {
-  border-color: #4a2222;
-}
-.study-card.missing .study-meta {
-  font-size: 12px;
+.study-missing {
+  font-size: 13px;
   color: #888;
 }
 
@@ -302,13 +333,18 @@ main, .main { padding: 0 !important; margin: 0 !important; max-width: none !impo
   <div id="notes-body">
     <div class="notes-empty">Loading…</div>
   </div>
-  <div id="notes-studies" class="notes-studies" hidden>
-    <h2 class="studies-head">Cited studies</h2>
-    <div id="studies-list"></div>
-  </div>
   <div class="notes-foot">
     <span id="notes-foot-left">Companion window</span>
     <a href="wir-studio.html" target="_blank">↗ Studio</a>
+  </div>
+</div>
+
+<!-- Citation modal — populated and toggled by the script below. -->
+<div id="cite-modal" class="cite-modal" hidden aria-hidden="true" role="dialog">
+  <div class="cite-modal-backdrop" data-close="1"></div>
+  <div class="cite-modal-card">
+    <button class="cite-modal-close" type="button" aria-label="Close" data-close="1">×</button>
+    <div id="cite-modal-body"></div>
   </div>
 </div>
 
@@ -321,8 +357,8 @@ main, .main { padding: 0 !important; margin: 0 !important; max-width: none !impo
   const eyebrow = document.getElementById('notes-eyebrow');
   const title = document.getElementById('notes-title');
   const footLeft = document.getElementById('notes-foot-left');
-  const studiesWrap = document.getElementById('notes-studies');
-  const studiesList = document.getElementById('studies-list');
+  const modal = document.getElementById('cite-modal');
+  const modalBody = document.getElementById('cite-modal-body');
 
   let data, studies = {};
   try{
@@ -355,15 +391,12 @@ main, .main { padding: 0 !important; margin: 0 !important; max-width: none !impo
   // Citation pattern matches "(Author Year)" — accent-letter aware so
   // "(Doucé 2020)" parses correctly. Year is 4 digits.
   const CITE_RE = /\(([A-Za-zÀ-ÿ&\.\s\-]+?\s\d{4})\)/g;
-  const citedKeys = new Set();
   function chipify(text){
-    // Replace each "(Author Year)" inline with a clickable chip that
-    // scrolls to the matching study card below.
+    // Replace each "(Author Year)" inline with a clickable chip. Click
+    // pops the study details into the modal — no scrolling, no nav.
     return escapeHtml(text).replace(CITE_RE, (m, key) => {
       const cleanKey = key.trim();
-      citedKeys.add(cleanKey);
-      const anchorId = 'study-' + cleanKey.replace(/[^A-Za-z0-9]+/g,'-').toLowerCase();
-      return '<a class="cite-chip" href="#'+anchorId+'">'+escapeHtml(cleanKey)+'</a>';
+      return '<button type="button" class="cite-chip" data-cite="'+escapeHtml(cleanKey)+'">'+escapeHtml(cleanKey)+'</button>';
     });
   }
 
@@ -381,35 +414,46 @@ main, .main { padding: 0 !important; margin: 0 !important; max-width: none !impo
       + '</div>';
   }).join('');
 
-  // Render the "Cited studies" section — one card per study actually
-  // referenced in this episode's bullets, in the order their author tag
-  // first appears across the episode (loosely matches the listening order).
-  const orderedKeys = Array.from(citedKeys).sort((a,b)=>{
-    // Sort by year asc, then author alphabetically — easy to scan
-    const ya = parseInt(a.split(' ').pop(),10), yb = parseInt(b.split(' ').pop(),10);
-    if(ya !== yb) return ya - yb;
-    return a.localeCompare(b);
-  });
-  if(orderedKeys.length === 0){
-    studiesWrap.hidden = true;
-  } else {
-    studiesWrap.hidden = false;
-    studiesList.innerHTML = orderedKeys.map(key => {
-      const s = studies[key];
-      const anchorId = 'study-' + key.replace(/[^A-Za-z0-9]+/g,'-').toLowerCase();
-      if(!s){
-        return '<div class="study-card missing" id="'+anchorId+'"><div class="study-key">'+escapeHtml(key)+'</div><div class="study-meta">No record in studies.json — citation may be malformed.</div></div>';
-      }
-      return ''
-        + '<div class="study-card" id="'+anchorId+'">'
-        +   '<div class="study-key">'+escapeHtml(key)+'</div>'
-        +   (s.title ? '<div class="study-title">'+escapeHtml(s.title)+'</div>' : '')
-        +   (s.citation ? '<div class="study-citation">'+escapeHtml(s.citation)+'</div>' : '')
-        +   (s.summary ? '<div class="study-summary">'+escapeHtml(s.summary)+'</div>' : '')
-        +   (s.killer_stat ? '<div class="study-stat"><span class="stat-label">Killer stat</span>'+escapeHtml(s.killer_stat)+'</div>' : '')
-        + '</div>';
-    }).join('');
+  // Modal open/close handlers — click chip to open, click backdrop / X /
+  // press ESC to close. Modal content is rendered fresh from studies.json
+  // for whichever citation was clicked.
+  function openCite(key){
+    const s = studies[key];
+    if(!s){
+      modalBody.innerHTML = ''
+        + '<div class="study-key">'+escapeHtml(key)+'</div>'
+        + '<div class="study-missing">No record found for this citation. The shorthand may be malformed in studies.json.</div>';
+    } else {
+      modalBody.innerHTML = ''
+        + '<div class="study-key">'+escapeHtml(key)+'</div>'
+        + (s.title    ? '<div class="study-title">'+escapeHtml(s.title)+'</div>' : '')
+        + (s.citation ? '<div class="study-citation">'+escapeHtml(s.citation)+'</div>' : '')
+        + (s.summary  ? '<div class="study-summary">'+escapeHtml(s.summary)+'</div>' : '')
+        + (s.killer_stat ? '<div class="study-stat"><span class="stat-label">Killer stat</span>'+escapeHtml(s.killer_stat)+'</div>' : '');
+    }
+    modal.hidden = false;
+    modal.setAttribute('aria-hidden','false');
+    document.body.classList.add('modal-open');
   }
+  function closeCite(){
+    modal.hidden = true;
+    modal.setAttribute('aria-hidden','true');
+    document.body.classList.remove('modal-open');
+  }
+  document.addEventListener('click', (e)=>{
+    const chip = e.target.closest('.cite-chip');
+    if(chip){
+      e.preventDefault();
+      openCite(chip.dataset.cite);
+      return;
+    }
+    if(e.target.closest('[data-close="1"]')){
+      closeCite();
+    }
+  });
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'Escape' && !modal.hidden) closeCite();
+  });
 })();
 </script>
   </main>

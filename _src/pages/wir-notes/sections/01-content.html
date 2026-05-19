@@ -6,13 +6,18 @@
   <div id="notes-body">
     <div class="notes-empty">Loading…</div>
   </div>
-  <div id="notes-studies" class="notes-studies" hidden>
-    <h2 class="studies-head">Cited studies</h2>
-    <div id="studies-list"></div>
-  </div>
   <div class="notes-foot">
     <span id="notes-foot-left">Companion window</span>
     <a href="wir-studio.html" target="_blank">↗ Studio</a>
+  </div>
+</div>
+
+<!-- Citation modal — populated and toggled by the script below. -->
+<div id="cite-modal" class="cite-modal" hidden aria-hidden="true" role="dialog">
+  <div class="cite-modal-backdrop" data-close="1"></div>
+  <div class="cite-modal-card">
+    <button class="cite-modal-close" type="button" aria-label="Close" data-close="1">×</button>
+    <div id="cite-modal-body"></div>
   </div>
 </div>
 
@@ -25,8 +30,8 @@
   const eyebrow = document.getElementById('notes-eyebrow');
   const title = document.getElementById('notes-title');
   const footLeft = document.getElementById('notes-foot-left');
-  const studiesWrap = document.getElementById('notes-studies');
-  const studiesList = document.getElementById('studies-list');
+  const modal = document.getElementById('cite-modal');
+  const modalBody = document.getElementById('cite-modal-body');
 
   let data, studies = {};
   try{
@@ -59,15 +64,12 @@
   // Citation pattern matches "(Author Year)" — accent-letter aware so
   // "(Doucé 2020)" parses correctly. Year is 4 digits.
   const CITE_RE = /\(([A-Za-zÀ-ÿ&\.\s\-]+?\s\d{4})\)/g;
-  const citedKeys = new Set();
   function chipify(text){
-    // Replace each "(Author Year)" inline with a clickable chip that
-    // scrolls to the matching study card below.
+    // Replace each "(Author Year)" inline with a clickable chip. Click
+    // pops the study details into the modal — no scrolling, no nav.
     return escapeHtml(text).replace(CITE_RE, (m, key) => {
       const cleanKey = key.trim();
-      citedKeys.add(cleanKey);
-      const anchorId = 'study-' + cleanKey.replace(/[^A-Za-z0-9]+/g,'-').toLowerCase();
-      return '<a class="cite-chip" href="#'+anchorId+'">'+escapeHtml(cleanKey)+'</a>';
+      return '<button type="button" class="cite-chip" data-cite="'+escapeHtml(cleanKey)+'">'+escapeHtml(cleanKey)+'</button>';
     });
   }
 
@@ -85,34 +87,45 @@
       + '</div>';
   }).join('');
 
-  // Render the "Cited studies" section — one card per study actually
-  // referenced in this episode's bullets, in the order their author tag
-  // first appears across the episode (loosely matches the listening order).
-  const orderedKeys = Array.from(citedKeys).sort((a,b)=>{
-    // Sort by year asc, then author alphabetically — easy to scan
-    const ya = parseInt(a.split(' ').pop(),10), yb = parseInt(b.split(' ').pop(),10);
-    if(ya !== yb) return ya - yb;
-    return a.localeCompare(b);
-  });
-  if(orderedKeys.length === 0){
-    studiesWrap.hidden = true;
-  } else {
-    studiesWrap.hidden = false;
-    studiesList.innerHTML = orderedKeys.map(key => {
-      const s = studies[key];
-      const anchorId = 'study-' + key.replace(/[^A-Za-z0-9]+/g,'-').toLowerCase();
-      if(!s){
-        return '<div class="study-card missing" id="'+anchorId+'"><div class="study-key">'+escapeHtml(key)+'</div><div class="study-meta">No record in studies.json — citation may be malformed.</div></div>';
-      }
-      return ''
-        + '<div class="study-card" id="'+anchorId+'">'
-        +   '<div class="study-key">'+escapeHtml(key)+'</div>'
-        +   (s.title ? '<div class="study-title">'+escapeHtml(s.title)+'</div>' : '')
-        +   (s.citation ? '<div class="study-citation">'+escapeHtml(s.citation)+'</div>' : '')
-        +   (s.summary ? '<div class="study-summary">'+escapeHtml(s.summary)+'</div>' : '')
-        +   (s.killer_stat ? '<div class="study-stat"><span class="stat-label">Killer stat</span>'+escapeHtml(s.killer_stat)+'</div>' : '')
-        + '</div>';
-    }).join('');
+  // Modal open/close handlers — click chip to open, click backdrop / X /
+  // press ESC to close. Modal content is rendered fresh from studies.json
+  // for whichever citation was clicked.
+  function openCite(key){
+    const s = studies[key];
+    if(!s){
+      modalBody.innerHTML = ''
+        + '<div class="study-key">'+escapeHtml(key)+'</div>'
+        + '<div class="study-missing">No record found for this citation. The shorthand may be malformed in studies.json.</div>';
+    } else {
+      modalBody.innerHTML = ''
+        + '<div class="study-key">'+escapeHtml(key)+'</div>'
+        + (s.title    ? '<div class="study-title">'+escapeHtml(s.title)+'</div>' : '')
+        + (s.citation ? '<div class="study-citation">'+escapeHtml(s.citation)+'</div>' : '')
+        + (s.summary  ? '<div class="study-summary">'+escapeHtml(s.summary)+'</div>' : '')
+        + (s.killer_stat ? '<div class="study-stat"><span class="stat-label">Killer stat</span>'+escapeHtml(s.killer_stat)+'</div>' : '');
+    }
+    modal.hidden = false;
+    modal.setAttribute('aria-hidden','false');
+    document.body.classList.add('modal-open');
   }
+  function closeCite(){
+    modal.hidden = true;
+    modal.setAttribute('aria-hidden','true');
+    document.body.classList.remove('modal-open');
+  }
+  document.addEventListener('click', (e)=>{
+    const chip = e.target.closest('.cite-chip');
+    if(chip){
+      e.preventDefault();
+      openCite(chip.dataset.cite);
+      return;
+    }
+    if(e.target.closest('[data-close="1"]')){
+      closeCite();
+    }
+  });
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'Escape' && !modal.hidden) closeCite();
+  });
 })();
 </script>
