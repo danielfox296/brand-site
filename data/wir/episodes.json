@@ -43,50 +43,66 @@
           "title": "Blinding Lights",
           "artist": "The Weeknd",
           "pros": [
-            "High recognition locks attention instantly"
+            "Everyone knows it — clears the like bar (Broekemier 2008)",
+            "Fast pulse can cut crowding stress (Knoferle 2017)"
           ],
           "cons": [
-            "171 BPM entrains fast movement — customers walk out quicker"
+            "Way too fast — 171 BPM (Milliman 1982)",
+            "Recognition starts the clock — felt time stretches (Yalch 2000)",
+            "Major key kills any dwell lift (Knoferle 2012)"
           ]
         },
         {
           "title": "Dreams",
           "artist": "Fleetwood Mac",
           "pros": [
-            "Mid-tempo, warm texture — ideal browsing pace"
+            "Happy and broadly liked — shopping sweet spot (Broekemier 2008)",
+            "Beats silence by 8 minutes (Andersson 2012)",
+            "Mellow keeps arousal low — longer browsing (Milliman 1982)"
           ],
           "cons": [
-            "Overplayed in playlist rotation since TikTok revival"
+            "Post-TikTok everyone hears the clock ticking (Yalch 2000)",
+            "Major mode cancels the slow-tempo bonus (Knoferle 2012)"
           ]
         },
         {
           "title": "Levitating",
           "artist": "Dua Lipa",
           "pros": [
-            "Disco-pop groove keeps energy without aggression"
+            "Disco-pop arousal nudges cross-category browsing (Sun 2023)",
+            "103 BPM helps when the floor's packed (Knoferle 2017)"
           ],
           "cons": [
-            "Too trendy — risks dating the store to 2021"
+            "Major key flattens the slow-minor dwell premium (Knoferle 2012)",
+            "2020 saturation — recognition compresses perceived time (Yalch 2000)",
+            "Biggest field test ever: no tempo effect here (EMAC 2025)"
           ]
         },
         {
           "title": "Sultans of Swing",
           "artist": "Dire Straits",
           "pros": [
-            "Long instrumental passages fade into background well"
+            "Minor mode actually amplifies slow-music dwell (Knoferle 2012)",
+            "Long instrumentals sit below conscious attention (Andersson 2012)",
+            "Repeated guitar motifs warp time — pulls people in (Margulis 2014)"
           ],
           "cons": [
-            "Niche appeal — alienates younger demographics"
+            "149 BPM — too fast under the relaxed vibe (Milliman 1982)",
+            "Boomers know it cold — clock starts ticking (Yalch 2000)",
+            "Preference splits hard by age (Herrington 1996)"
           ]
         },
         {
           "title": "As It Was",
           "artist": "Harry Styles",
           "pros": [
-            "Universal familiarity without fatigue yet"
+            "Broadly liked — happy-and-liked peak (Broekemier 2008)",
+            "Clears the music-over-silence baseline (Andersson 2012)"
           ],
           "cons": [
-            "Melancholic undertone can subconsciously lower mood"
+            "174 BPM — fastest on the list, pace pushes exit (Milliman 1982)",
+            "Saturation familiarity — felt time stretches (Yalch 2000)",
+            "Sad lyric over upbeat backing — congruence mismatch (Alpert 1990)"
           ]
         }
       ]
@@ -134,50 +150,65 @@
           "title": "Earned It",
           "artist": "The Weeknd",
           "pros": [
-            "Slow tempo, breathy vocal = premium feel"
+            "Slow + minor — dwell sweet spot (Knoferle 2012)",
+            "Premium feel raises the price ceiling (Grossman 2025)",
+            "Hedonic product + pleasure = max WTP lift (Grossman 2025)"
           ],
           "cons": [
-            "50 Shades association can cheapen luxury positioning"
+            "50 Shades baggage breaks brand fit (Beverland 2006)",
+            "Sexual content can drop pleasure for older clientele (Donovan 1994)"
           ]
         },
         {
           "title": "Pink + White",
           "artist": "Frank Ocean",
           "pros": [
-            "Textured, unhurried — invites lingering"
+            "Unhurried tempo extends browsing (Milliman 1982)",
+            "Unfamiliar to most — stretches actual dwell (Yalch 2000)",
+            "Texture-forward, low arousal — low exit pressure (Smith 1966)"
           ],
           "cons": [
-            "Low familiarity outside Frank Ocean fans"
+            "Niche recognition risks the like bar (Herrington 1996)",
+            "Major-key brightness mutes the dwell premium (Knoferle 2012)"
           ]
         },
         {
           "title": "Kiss of Life",
           "artist": "Sade",
           "pros": [
-            "Timeless sophistication, zero trend risk"
+            "Slow, minor-leaning — dwell sweet spot (Knoferle 2012)",
+            "Timeless sophistication signals brand fit (Beverland 2006)",
+            "Hedonic-coded music lifts luxury WTP (Grossman 2025)"
           ],
           "cons": [
-            "Too subdued — can flatten energy in larger spaces"
+            "Too subdued — risks dropping below the silence baseline (Andersson 2012)",
+            "Broadly recognized in 45+ — clock starts ticking (Yalch 2000)"
           ]
         },
         {
           "title": "West Coast",
           "artist": "Lana Del Rey",
           "pros": [
-            "Dreamy pacing matches luxury browsing speed"
+            "Slow + minor verses match dwell sweet spot (Knoferle 2012)",
+            "Cinematic mood reads as premium (Grossman 2025)",
+            "Brand fit for moody luxury (Beverland 2006)"
           ],
           "cons": [
-            "Niche indie appeal — older clientele won't connect"
+            "Tempo shift mid-song spikes arousal — breaks calm (Donovan 1982)",
+            "Older luxury clientele won't like it — preference rules (Herrington 1996)"
           ]
         },
         {
           "title": "Intro",
           "artist": "The xx",
           "pros": [
-            "Minimalist, lets the product be the star"
+            "Minimal arrangement lets product be hero (Mattila 2001)",
+            "Slow, minor — strongest dwell config (Knoferle 2012)",
+            "Below conscious attention — pure ambience (Andersson 2012)"
           ],
           "cons": [
-            "Almost too quiet — risks feeling like dead air"
+            "Near-silent risks slipping under the music-vs-silence line (Andersson 2012)",
+            "Sparse texture can feel cold in big rooms (Sherman 1997)"
           ]
         }
       ]
@@ -225,50 +256,65 @@
           "title": "Skinny Love",
           "artist": "Bon Iver",
           "pros": [
-            "Intimate acoustic texture, perfect scale for small spaces"
+            "Slow tempo extends sit time (Milliman 1986)",
+            "Minor key amplifies dwell premium (Knoferle 2012)",
+            "Soft volume = $3 more per check in restaurants (Lammers 2003)"
           ],
           "cons": [
-            "Emotional weight can feel heavy for casual coffee runs"
+            "Emotional weight can drag pleasure down (Donovan 1994)",
+            "Familiar to indie crowd — felt time stretches (Yalch 2000)"
           ]
         },
         {
           "title": "Put Your Records On",
           "artist": "Corinne Bailey Rae",
           "pros": [
-            "Warm, unhurried, universally pleasant"
+            "Broadly liked — clears the like bar (Broekemier 2008)",
+            "Mid-slow tempo nudges longer stays (Milliman 1986)",
+            "Beats silence on dwell + spend (Andersson 2012)"
           ],
           "cons": [
-            "Overused in coffee shop playlists — invisible now"
+            "Coffee-shop saturation — recognition kills the time bonus (Yalch 2000)",
+            "Major key flattens the slow-tempo lift (Knoferle 2012)"
           ]
         },
         {
           "title": "Sea of Love",
           "artist": "Cat Power",
           "pros": [
-            "Breathy, slow — extends sit time"
+            "Slow + minor — dwell sweet spot (Knoferle 2012)",
+            "Soft delivery keeps check size up (Lammers 2003)",
+            "Unfamiliar version stretches actual dwell (Yalch 2000)"
           ],
           "cons": [
-            "Too sleepy for morning rush energy"
+            "Too low-arousal for morning rush — flips against you when crowded (Knoferle 2017)",
+            "Sad valence can feel heavy for casual drop-ins (Alpert 1990)"
           ]
         },
         {
           "title": "First Day of My Life",
           "artist": "Bright Eyes",
           "pros": [
-            "Genuine warmth without being saccharine"
+            "Warm valence lifts pleasure (Donovan 1994)",
+            "Slow tempo extends restaurant stay (Milliman 1986)",
+            "Unfamiliar to most — actual dwell goes up (Yalch 2000)"
           ],
           "cons": [
-            "Low recognition outside indie listeners"
+            "Major key cancels the tempo-mode dwell bonus (Knoferle 2012)",
+            "Low recognition risks the like guardrail (Herrington 1996)"
           ]
         },
         {
           "title": "Lost in the Light",
           "artist": "Bahamas",
           "pros": [
-            "Laid-back groove, perfect background volume"
+            "Soft volume lifts per-check spend (Lammers 2003)",
+            "Unfamiliar — perceived time compresses (Yalch 2000)",
+            "Low arousal keeps people seated (Donovan 1982)"
           ],
           "cons": [
-            "Almost nobody knows this — zero familiarity hook"
+            "Below silence-baseline risk if too quiet (Andersson 2012)",
+            "No recognition hook for casual customers (Broekemier 2008)"
           ]
         }
       ]
@@ -316,50 +362,65 @@
           "title": "Don't Stop Believin'",
           "artist": "Journey",
           "pros": [
-            "Universal singalong — instant mood lift"
+            "Universal recognition clears the like bar (Broekemier 2008)",
+            "Beats silence on dwell + basket size (Andersson 2012)"
           ],
           "cons": [
-            "So overplayed it triggers eye-rolls in staff within a week"
+            "119 BPM pushes pace — closer to speed-shop tempo (Milliman 1982)",
+            "Major key — no slow-music dwell bonus (Knoferle 2012)",
+            "Saturation familiarity collapses felt time (Yalch 2000)"
           ]
         },
         {
           "title": "Mr. Brightside",
           "artist": "The Killers",
           "pros": [
-            "High energy, broad recognition across demos"
+            "High recognition across age bands (Broekemier 2008)",
+            "Fast tempo can help when the store is packed (Knoferle 2017)"
           ],
           "cons": [
-            "Lyrics are about jealousy and paranoia — weird for groceries"
+            "148 BPM hard-pushes exit pace (Milliman 1982)",
+            "Paranoid lyric clashes with grocery valence (Alpert 1990)",
+            "Major key cancels any dwell premium (Knoferle 2012)"
           ]
         },
         {
           "title": "September",
           "artist": "Earth, Wind & Fire",
           "pros": [
-            "Pure joy, tempo matches brisk shopping pace"
+            "Pure-pleasure peak — the mediator (Donovan 1994)",
+            "Happy + liked = best-case combo (Broekemier 2008)",
+            "Variety-seeking arousal boosts impulse adds (Sun 2023)"
           ],
           "cons": [
-            "Seasonal connotation can feel odd in February"
+            "126 BPM — fast enough to accelerate egress (Smith 1966)",
+            "Major key flattens the slow-music dwell bonus (Knoferle 2012)"
           ]
         },
         {
           "title": "Walking on Sunshine",
           "artist": "Katrina and the Waves",
           "pros": [
-            "Relentless positivity, high familiarity"
+            "Instant mood lift — pleasure mediator (Donovan 1994)",
+            "Familiar to nearly everyone (Broekemier 2008)"
           ],
           "cons": [
-            "Aggressive cheerfulness exhausts after 2 plays"
+            "109 BPM is okay, but the energy reads faster (Milliman 1982)",
+            "Aggressive cheerfulness drops pleasure for staff (Donovan 1994)",
+            "Saturation familiarity — felt time stretches (Yalch 2000)"
           ]
         },
         {
           "title": "Shake It Off",
           "artist": "Taylor Swift",
           "pros": [
-            "Mainstream pop perfection, zero friction"
+            "Broad like — clears the guardrail (Broekemier 2008)",
+            "High arousal lifts cross-category variety seeking (Sun 2023)"
           ],
           "cons": [
-            "Overexposure — staff will mutiny by day 3"
+            "160 BPM — full sprint, accelerates exit (Milliman 1982)",
+            "Major key, no dwell premium (Knoferle 2012)",
+            "Loud chorus density pushes faster turnover (Smith 1966)"
           ]
         }
       ]
@@ -407,50 +468,65 @@
           "title": "Kyoto",
           "artist": "Phoebe Bridgers",
           "pros": [
-            "Indie credibility signals taste without pretension"
+            "Strong identity match for indie boutique (Beverland 2006)",
+            "Unfamiliar to most — actual dwell stretches (Yalch 2000)",
+            "Fits Gen Z taste tribe — preference is what matters (Herrington 1996)"
           ],
           "cons": [
-            "Too niche — most shoppers won't recognize it"
+            "Major key + brisk pace — no slow-music dwell bonus (Knoferle 2012)",
+            "Sad lyric over upbeat backing — congruence mismatch (Alpert 1990)"
           ]
         },
         {
           "title": "Good Days",
           "artist": "SZA",
           "pros": [
-            "Dreamy, aspirational — perfect browsing companion"
+            "Slow + minor leaning — dwell sweet spot (Knoferle 2012)",
+            "Dreamy, aspirational — fits boutique brand (Beverland 2006)",
+            "High pleasure lifts spend via the mediator (Donovan 1994)"
           ],
           "cons": [
-            "Slow build can feel aimless in short shopping visits"
+            "Familiar to the target — felt time compresses (Yalch 2000)",
+            "Slow build can sag in short visits (Sherman 1997)"
           ]
         },
         {
           "title": "Bags",
           "artist": "Clairo",
           "pros": [
-            "Bedroom pop intimacy matches boutique scale"
+            "Bedroom-pop intimacy matches small-store scale (Beverland 2006)",
+            "Soft mix supports higher per-visit spend (Lammers 2003)",
+            "Unfamiliar to most — dwell stretches (Yalch 2000)"
           ],
           "cons": [
-            "So quiet it disappears in any ambient noise"
+            "So quiet it risks slipping under silence baseline (Andersson 2012)",
+            "Tempo-mode mix yields no clear dwell premium (Knoferle 2012)"
           ]
         },
         {
           "title": "Sunflower",
           "artist": "Rex Orange County",
           "pros": [
-            "Warm, upbeat, Gen Z-friendly"
+            "Broadly liked in target — like bar cleared (Broekemier 2008)",
+            "Warm valence drives pleasure (Donovan 1994)",
+            "Brand fit for friendly Gen Z boutique (Beverland 2006)"
           ],
           "cons": [
-            "Verging on too wholesome — could feel like a pediatrician's office"
+            "Major key cancels slow-tempo dwell bonus (Knoferle 2012)",
+            "Cheery tone can read off-axis for moodier brands (Beverland 2006)"
           ]
         },
         {
           "title": "Dark Red",
           "artist": "Steve Lacy",
           "pros": [
-            "Cool factor without trying too hard"
+            "Cool factor signals tribe identity (Beverland 2006)",
+            "Slow + minor — dwell sweet spot (Knoferle 2012)",
+            "Unfamiliar enough to stretch actual dwell (Yalch 2000)"
           ],
           "cons": [
-            "Moody undertone may not match bright boutique lighting"
+            "Moody mood may clash with bright retail lighting (Mattila 2001)",
+            "Niche recognition risks the like guardrail (Herrington 1996)"
           ]
         }
       ]
@@ -498,50 +574,65 @@
           "title": "Stronger",
           "artist": "Kanye West",
           "pros": [
-            "Kanye sample energy, perfect workout association"
+            "Brand fit for performance-coded retail (Beverland 2006)",
+            "104 BPM helps when the floor's busy (Knoferle 2017)",
+            "High arousal lifts variety-seeking buys (Sun 2023)"
           ],
           "cons": [
-            "Aggressive ego energy may not match all activewear brands"
+            "Loud, dense mix pushes faster exit (Smith 1966)",
+            "Ego-energy lyric may misfit calmer brands (Beverland 2006)"
           ]
         },
         {
           "title": "Physical",
           "artist": "Dua Lipa",
           "pros": [
-            "Modern, high BPM, on-brand for movement"
+            "High-arousal pop matches activewear identity (Beverland 2006)",
+            "103 BPM is great for crowded floors (Knoferle 2017)",
+            "Cross-category browsing lifts with fast tempo (Sun 2023)"
           ],
           "cons": [
-            "Overplayed in fitness contexts — invisible now"
+            "Major key + fast tempo — no dwell premium (Knoferle 2012)",
+            "Saturation in fitness contexts — felt time compresses (Yalch 2000)"
           ]
         },
         {
           "title": "Till I Collapse",
           "artist": "Eminem",
           "pros": [
-            "Ultimate motivation track, identity-perfect"
+            "Intensity matches hardcore-fitness identity (Beverland 2006)"
           ],
           "cons": [
-            "Explicit lyrics, aggressive intensity — alienates casual shoppers"
+            "Explicit lyrics drop pleasure for casual shoppers (Donovan 1994)",
+            "Loud and dense — accelerates exit pace (Smith 1966)",
+            "171 BPM hard-pushes egress (Milliman 1982)",
+            "Third high-arousal stimulus tips overload (Doucé 2020)"
           ]
         },
         {
           "title": "Run the World (Girls)",
-          "artist": "Beyonce",
+          "artist": "Beyoncé",
           "pros": [
-            "Empowering, energetic, brand-safe"
+            "Empowerment energy fits brand voice (Beverland 2006)",
+            "High recognition clears the like bar (Broekemier 2008)",
+            "Fast tempo helps under crowding (Knoferle 2017)"
           ],
           "cons": [
-            "Repetitive chant structure gets old fast on loop"
+            "127 BPM still accelerates browsing pace (Milliman 1982)",
+            "Repetitive chant grates on rotation — pleasure drops (Donovan 1994)"
           ]
         },
         {
           "title": "Pump It",
           "artist": "The Black Eyed Peas",
           "pros": [
-            "High energy, fun, universal recognition"
+            "High arousal lifts cross-category adds (Sun 2023)",
+            "Universal recognition — like bar cleared (Broekemier 2008)"
           ],
           "cons": [
-            "Dated production, cheesy association with mid-2000s"
+            "154 BPM is full-sprint pace (Milliman 1982)",
+            "Dated production breaks current brand fit (Beverland 2006)",
+            "Loud, dense mix pushes customers toward exit (Smith 1966)"
           ]
         }
       ]
@@ -589,50 +680,65 @@
           "title": "Nightcall",
           "artist": "Kavinsky",
           "pros": [
-            "Cinematic cool — makes any space feel like a film set"
+            "Slow + minor — strongest dwell config (Knoferle 2012)",
+            "Cinematic mood codes hedonic luxury (Grossman 2025)",
+            "Unfamiliar to many — actual dwell up (Yalch 2000)"
           ],
           "cons": [
-            "Too dark for daytime retail — better after sundown"
+            "Too dark for daytime — congruence mismatch (Alpert 1990)",
+            "Synth menace can drop pleasure for some (Donovan 1994)"
           ]
         },
         {
           "title": "Glory Box",
           "artist": "Portishead",
           "pros": [
-            "Smoky, seductive, unmistakably premium"
+            "Slow + minor — dwell sweet spot (Knoferle 2012)",
+            "Premium texture lifts max WTP on hedonic goods (Grossman 2025)",
+            "Soft delivery lifts per-visit spend (Lammers 2003)"
           ],
           "cons": [
-            "So moody it can make a store feel depressing"
+            "Heavy mood can tank pleasure — the mediator (Donovan 1994)",
+            "Niche recognition risks the like guardrail (Herrington 1996)"
           ]
         },
         {
           "title": "Get Lucky",
           "artist": "Daft Punk",
           "pros": [
-            "Sleek production, broad appeal, timeless groove"
+            "Sleek production reads premium (Grossman 2025)",
+            "Broadly liked — clears the like bar (Broekemier 2008)",
+            "116 BPM helps when the floor is busy (Knoferle 2017)"
           ],
           "cons": [
-            "Still associated with 2013 — risks nostalgic rather than current"
+            "Major key flattens any dwell lift (Knoferle 2012)",
+            "2013 saturation — felt time stretches (Yalch 2000)"
           ]
         },
         {
           "title": "Bizarre Love Triangle",
           "artist": "New Order",
           "pros": [
-            "Synth textures read as sophisticated and modern"
+            "Sophisticated synth texture codes premium (Grossman 2025)",
+            "Mid-tempo, low-arousal — calm browsing (Donovan 1982)",
+            "Unfamiliar to under-35s — actual dwell up (Yalch 2000)"
           ],
           "cons": [
-            "Only recognized by 35+ demographics"
+            "Major key dampens slow-music dwell bonus (Knoferle 2012)",
+            "Older skew splits preference hard (Herrington 1996)"
           ]
         },
         {
           "title": "Bitter Sweet Symphony",
           "artist": "The Verve",
           "pros": [
-            "Orchestral sweep feels expensive instantly"
+            "Orchestral sweep reads as classical-adjacent — WTP lift (Areni 1993)",
+            "Slow tempo extends browsing (Milliman 1982)",
+            "Hedonic-coded for luxury context (Grossman 2025)"
           ],
           "cons": [
-            "Song is about feeling trapped — ironic for retail"
+            "Lyric is about feeling trapped — pleasure drag (Donovan 1994)",
+            "Saturation recognition — clock starts ticking (Yalch 2000)"
           ]
         }
       ]
@@ -680,50 +786,65 @@
           "title": "Holocene",
           "artist": "Bon Iver",
           "pros": [
-            "Spacious, contemplative — invites slow browsing"
+            "Slow tempo extends dwell (Milliman 1982)",
+            "Slow + minor — dwell sweet spot (Knoferle 2012)",
+            "Unfamiliar — distorts time pleasantly (Yalch 2000)"
           ],
           "cons": [
-            "So ethereal it might lull people to sleep"
+            "Heavy sad valence can suppress mood (Broekemier 2008)",
+            "Soft mix loses to HVAC noise (Lammers 2003)"
           ]
         },
         {
           "title": "The Night We Met",
           "artist": "Lord Huron",
           "pros": [
-            "Beautiful, melancholic — matches bookstore introspection"
+            "Slow + minor — lingering browsers (Knoferle 2012)",
+            "Melancholy fits literary introspection (Alpert 1990)"
           ],
           "cons": [
-            "Heavy sadness — people might leave feeling worse than they arrived"
+            "TikTok recognition shortens perceived time (Yalch 2000)",
+            "Heavy sadness can suppress spending (Donovan 1994)",
+            "Lyric focus pulls attention from books (Margulis 2014)"
           ]
         },
         {
           "title": "Bloom",
           "artist": "The Paper Kites",
           "pros": [
-            "Gentle fingerpicking, perfect acoustic scale"
+            "Gentle acoustic — pleasant and unobtrusive (Donovan 1982)",
+            "Soft volume nudges thoughtful choices (Biswas 2019)",
+            "Unfamiliar — extends actual dwell (Yalch 2000)"
           ],
           "cons": [
-            "So quiet you lose it under HVAC noise"
+            "Too quiet to beat silence baseline (Andersson 2012)",
+            "Niche — likeability is a coin flip (Herrington 1996)"
           ]
         },
         {
           "title": "Pink Moon",
           "artist": "Nick Drake",
           "pros": [
-            "Intimate, literary — perfect brand alignment"
+            "Sparse, slow — long dwell (Milliman 1982)",
+            "Literary brand fit is exact (Beverland 2006)",
+            "Unfamiliar — time distortion bonus (Yalch 2000)"
           ],
           "cons": [
-            "Nick Drake's tragic story might feel exploitative commercially"
+            "Real sadness can dent pleasure state (Donovan 1982)",
+            "Soft mix loses to ambient noise (Lammers 2003)"
           ]
         },
         {
           "title": "Such Great Heights",
           "artist": "The Postal Service",
           "pros": [
-            "Bright, optimistic, indie-literate"
+            "Bright valence lifts shopper mood (Broekemier 2008)",
+            "Indie-literate brand fit (Beverland 2006)"
           ],
           "cons": [
-            "Postal Service feels very 2003 — dates the curation"
+            "Faster tempo trims browsing time (Milliman 1982)",
+            "High familiarity shrinks perceived dwell (Yalch 2000)",
+            "Major key mutes the slow-tempo effect (Knoferle 2012)"
           ]
         }
       ]
@@ -771,50 +892,65 @@
           "title": "Thinking Out Loud",
           "artist": "Ed Sheeran",
           "pros": [
-            "Warm, mid-tempo, universally recognized"
+            "Warm mid-tempo lifts pleasure (Donovan 1982)",
+            "Universal recognition feels welcoming (Broekemier 2008)"
           ],
           "cons": [
-            "Wedding song association — feels generic in a lobby"
+            "Wedding-song baggage muddies brand fit (Beverland 2006)",
+            "Generic enough to make lobbies interchangeable (Beverland 2006)",
+            "High familiarity compresses perceived time (Yalch 2000)"
           ]
         },
         {
           "title": "Clocks",
           "artist": "Coldplay",
           "pros": [
-            "Piano loop is iconic and non-intrusive"
+            "Pleasant piano loop — non-intrusive (Donovan 1982)",
+            "Mid-tempo supports calm dwell (Milliman 1982)"
           ],
           "cons": [
-            "So overused in hotels it's become the cliché itself"
+            "Lobby cliché kills sonic differentiation (Beverland 2006)",
+            "So familiar guests stop noticing (Yalch 2000)",
+            "Adds nothing over silence at this point (Andersson 2012)"
           ]
         },
         {
           "title": "Budapest",
           "artist": "George Ezra",
           "pros": [
-            "Charming, upbeat, European feel"
+            "Upbeat valence — friendlier check-in (Broekemier 2008)",
+            "European warmth primes a travel feel (North 1999)"
           ],
           "cons": [
-            "Lightweight — might signal 'budget' rather than 'boutique'"
+            "Lightweight cues budget, not boutique (Beverland 2006)",
+            "Faster tempo nudges guests to keep moving (Milliman 1982)",
+            "Major-key brightness mutes dwell effect (Knoferle 2012)"
           ]
         },
         {
           "title": "Stay With Me",
           "artist": "Sam Smith",
           "pros": [
-            "Gorgeous vocal, emotional warmth"
+            "Gorgeous vocal commands attention (Donovan 1982)",
+            "Slow tempo invites lingering (Milliman 1982)"
           ],
           "cons": [
-            "Heartbreak lyrics clash with welcoming lobby energy"
+            "Heartbreak lyric clashes with welcome (Alpert 1990)",
+            "Sad valence dents arrival pleasure (Broekemier 2008)",
+            "Brand fit for a hotel is loose (Beverland 2006)"
           ]
         },
         {
           "title": "Someone Like You",
           "artist": "Adele",
           "pros": [
-            "Adele's voice commands respect"
+            "Pleasure-rich vocal performance (Donovan 1994)",
+            "Slow + minor extends dwell (Knoferle 2012)"
           ],
           "cons": [
-            "Devastating sadness — guests might cry at check-in"
+            "Devastating sadness at check-in is wrong (Alpert 1990)",
+            "Mismatched valence damages brand impression (Beverland 2006)",
+            "Pulls focus away from the room (Margulis 2014)"
           ]
         }
       ]
@@ -862,50 +998,65 @@
           "title": "Just Like Heaven",
           "artist": "The Cure",
           "pros": [
-            "Jangly guitars, pure joy, perfect vintage signal"
+            "Jangly joy lifts shopper pleasure (Donovan 1982)",
+            "Era fit nails the vintage brand (Beverland 2006)"
           ],
           "cons": [
-            "Only resonates with 35+ or deep indie fans"
+            "Only resonates with 35+ deep cuts (Herrington 1996)",
+            "Faster tempo nudges browsing along (Milliman 1982)",
+            "Younger shoppers won't recognize it (Yalch 2000)"
           ]
         },
         {
           "title": "Everybody Wants to Rule the World",
           "artist": "Tears for Fears",
           "pros": [
-            "Synth-pop perfection, warm nostalgia"
+            "High likeability across generations (Herrington 1996)",
+            "Mid-tempo synth-pop supports browsing (Milliman 1982)"
           ],
           "cons": [
-            "So familiar it risks being ignored entirely"
+            "So familiar it shrinks perceived dwell (Yalch 2000)",
+            "Major key blunts any tempo effect (Knoferle 2012)",
+            "Used everywhere — no differentiation (Beverland 2006)"
           ]
         },
         {
           "title": "This Must Be the Place",
           "artist": "Talking Heads",
           "pros": [
-            "Genuine warmth, art-rock credibility"
+            "Genuine warmth — strong pleasure response (Donovan 1994)",
+            "Art-rock credibility fits curated thrift (Beverland 2006)",
+            "Less familiar — extends actual dwell (Yalch 2000)"
           ],
           "cons": [
-            "Quirky vocal style can confuse unfamiliar listeners"
+            "Quirky vocal can puzzle casual listeners (Herrington 1996)",
+            "Mid-tempo with no clear behavioral target (EMAC 2025)"
           ]
         },
         {
           "title": "There Is a Light That Never Goes Out",
           "artist": "The Smiths",
           "pros": [
-            "Cult classic status = instant credibility"
+            "Cult status earns instant credibility (Beverland 2006)",
+            "Slow + minor extends browsing (Knoferle 2012)"
           ],
           "cons": [
-            "Lyrics are morbid — 'if a double-decker bus crashes into us'"
+            "Morbid bus-crash lyric primes unease (Alpert 1990)",
+            "Polarizing — likeability splits the room (Herrington 1996)",
+            "Sadness can suppress unplanned spending (Donovan 1994)"
           ]
         },
         {
           "title": "Crimson and Clover",
           "artist": "Tommy James & the Shondells",
           "pros": [
-            "Psychedelic warmth, dreamy repetition"
+            "Repetition fuels absorption and time distortion (Margulis 2014)",
+            "Dreamy warmth lifts pleasure (Donovan 1982)",
+            "Slow tempo extends dwell (Milliman 1982)"
           ],
           "cons": [
-            "Very specific 60s vibe — only works in certain aesthetics"
+            "Very specific 60s aesthetic — narrow brand fit (Beverland 2006)",
+            "Unfamiliar to younger shoppers (Yalch 2000)"
           ]
         }
       ]
@@ -953,50 +1104,65 @@
           "title": "Sway",
           "artist": "Dean Martin",
           "pros": [
-            "Timeless Latin swing, universally elegant"
+            "Slow tempo — guests linger, order more (Milliman 1986)",
+            "Elegant style supports premium pricing (Grossman 2025)",
+            "Genre fit lifts the brand (Beverland 2006)"
           ],
           "cons": [
-            "Can feel like a movie set rather than authentic"
+            "Heavy familiarity can read as theme park (Yalch 2000)",
+            "No language prime for any wine region (North 1999)"
           ]
         },
         {
           "title": "La Vie en Rose",
           "artist": "Edith Piaf",
           "pros": [
-            "Instant Paris, instant romance, instant premium"
+            "French priming nudges French-wine choice (North 1999)",
+            "Slow tempo extends time at the table (Milliman 1986)",
+            "Pleasure cue for romantic setting (Donovan 1982)"
           ],
           "cons": [
-            "Cliché in wine/dining contexts — expected to the point of invisible"
+            "Wine-bar cliché — invisible from overuse (Beverland 2006)",
+            "Familiarity shrinks perceived dwell (Yalch 2000)"
           ]
         },
         {
           "title": "Smooth Operator",
           "artist": "Sade",
           "pros": [
-            "Silky, sophisticated, perfect tempo"
+            "Slow + soft — long stays, bigger checks (Lammers 2003)",
+            "Sophisticated fit for upscale brand (Beverland 2006)",
+            "Pleasant — likeability constraint met (Herrington 1996)"
           ],
           "cons": [
-            "Sade is so smooth it can flatten all energy in the room"
+            "Low arousal can flatten the room (Donovan 1982)",
+            "Mid-familiarity — no time-distortion bonus (Yalch 2000)"
           ]
         },
         {
           "title": "Feeling Good",
           "artist": "Nina Simone",
           "pros": [
-            "Dramatic, powerful, signals confidence"
+            "Dramatic vocal builds pleasure (Donovan 1994)",
+            "Slow opening supports lingering (Milliman 1986)"
           ],
           "cons": [
-            "Overused in ads — feels like a car commercial"
+            "Ad overuse weakens emotional impact (Yalch 2000)",
+            "Big crescendo spikes arousal too high (Donovan 1982)",
+            "Doesn't prime any specific wine region (North 1999)"
           ]
         },
         {
           "title": "The Girl from Ipanema",
           "artist": "Stan Getz & Astrud Gilberto",
           "pros": [
-            "Bossa nova perfection, effortlessly classy"
+            "Slow bossa — classic dwell driver (Milliman 1986)",
+            "Soft mix and pleasant valence raise checks (Lammers 2003)",
+            "Sophisticated brand fit (Beverland 2006)"
           ],
           "cons": [
-            "Elevator music association — can cheapen the space"
+            "Elevator-music association cheapens the room (Beverland 2006)",
+            "Portuguese cues don't prime European wines (North 1999)"
           ]
         }
       ]
@@ -1044,50 +1210,65 @@
           "title": "Uptown Girl",
           "artist": "Billy Joel",
           "pros": [
-            "Instantly recognizable, high energy"
+            "Everyone knows it (Herrington 1996)"
           ],
           "cons": [
-            "So bouncy and loud it pushes people toward the exit"
+            "Too fast — pushes people out (Milliman 1982)",
+            "Loud bouncy energy shortens visits (Smith 1966)",
+            "Familiarity kills the time-distortion bonus (Yalch 2000)",
+            "Major key blunts any slow-dwell effect (Knoferle 2012)"
           ]
         },
         {
           "title": "Wannabe",
           "artist": "Spice Girls",
           "pros": [
-            "Massive nostalgia, fun energy"
+            "Massive recognition lifts initial pleasure (Donovan 1982)"
           ],
           "cons": [
-            "Demands attention — impossible to browse quietly"
+            "Demands attention — kills browsing focus (Margulis 2014)",
+            "Fast tempo nudges exits (Milliman 1982)",
+            "High arousal wrong for shopping (Donovan 1994)",
+            "Familiarity collapses perceived dwell (Yalch 2000)"
           ]
         },
         {
           "title": "Eye of the Tiger",
           "artist": "Survivor",
           "pros": [
-            "Iconic pump-up energy"
+            "Universally recognized (Herrington 1996)"
           ],
           "cons": [
-            "Gym association overpowers any retail context"
+            "Gym prime overrides retail context (Beverland 2006)",
+            "High arousal pushes customers to move (Donovan 1982)",
+            "Loud and fast — exit accelerator (Smith 1966)",
+            "No pleasure lift for browsing mode (Donovan 1994)"
           ]
         },
         {
           "title": "Livin' on a Prayer",
           "artist": "Bon Jovi",
           "pros": [
-            "Arena-rock singalong, everyone knows it"
+            "Big sing-along memory hook (Donovan 1982)"
           ],
           "cons": [
-            "So big it shrinks the room — makes stores feel like karaoke"
+            "Arena scale wrong for a retail floor (Beverland 2006)",
+            "Fast tempo trims dwell (Milliman 1982)",
+            "Volume needed to land it shortens visits (Smith 1966)",
+            "Familiarity tanks the time bonus (Yalch 2000)"
           ]
         },
         {
           "title": "We Will Rock You",
           "artist": "Queen",
           "pros": [
-            "Stomp-stomp-clap is primal, unavoidable"
+            "Primal stomp-clap grabs everyone (Donovan 1982)"
           ],
           "cons": [
-            "Literally designed for stadiums, not shopping"
+            "Built for stadiums, not browsing (Beverland 2006)",
+            "High arousal compresses dwell time (Milliman 1982)",
+            "Too loud by design — drives exits (Smith 1966)",
+            "Familiarity erases perceived-time bonus (Yalch 2000)"
           ]
         }
       ]
@@ -1135,50 +1316,65 @@
           "title": "HUMBLE.",
           "artist": "Kendrick Lamar",
           "pros": [
-            "Hard-hitting, culturally dominant, identity-perfect for streetwear"
+            "Identity-perfect for streetwear brand (Beverland 2006)",
+            "High recognition lifts pleasure (Donovan 1982)"
           ],
           "cons": [
-            "Aggressive tone and explicit lyrics limit broad retail use"
+            "Explicit lyrics narrow playable hours (Alpert 1990)",
+            "Aggressive arousal accelerates exits (Smith 1966)",
+            "Familiarity shrinks perceived browse time (Yalch 2000)"
           ]
         },
         {
           "title": "Sicko Mode",
           "artist": "Travis Scott",
           "pros": [
-            "Beat switches keep energy dynamic"
+            "Brand fit for hype sneaker culture (Beverland 2006)",
+            "Beat switches keep arousal dynamic (Donovan 1982)"
           ],
           "cons": [
-            "Chaotic structure is disorienting as background music"
+            "Chaotic structure disrupts focus (Margulis 2014)",
+            "High arousal compresses dwell (Milliman 1982)",
+            "Loud mix nudges customers out (Smith 1966)"
           ]
         },
         {
           "title": "All of the Lights",
           "artist": "Kanye West",
           "pros": [
-            "Cinematic scope, massive production"
+            "Cinematic — big pleasure spike (Donovan 1994)",
+            "Cultural anchor for hype shoppers (Beverland 2006)"
           ],
           "cons": [
-            "Too grandiose — overwhelms a retail floor"
+            "Wall of horns overwhelms the floor (Doucé 2020)",
+            "Too grandiose for background listening (Beverland 2006)",
+            "High arousal trims dwell time (Milliman 1982)"
           ]
         },
         {
           "title": "Started From the Bottom",
           "artist": "Drake",
           "pros": [
-            "Aspirational energy, strong brand fit"
+            "Aspirational fit for sneaker identity (Beverland 2006)",
+            "Mid-tempo — easier dwell than peak trap (Milliman 1982)"
           ],
           "cons": [
-            "Drake's monotone delivery can drone in the background"
+            "Monotone delivery flattens pleasure response (Donovan 1982)",
+            "Familiarity wipes the time bonus (Yalch 2000)",
+            "Serves no clear behavioral goal (EMAC 2025)"
           ]
         },
         {
           "title": "m.A.A.d city",
           "artist": "Kendrick Lamar",
           "pros": [
-            "Lyrical genius, cultural significance"
+            "Cultural credibility for hype stores (Beverland 2006)",
+            "Unfamiliar to casuals — dwell extension (Yalch 2000)"
           ],
           "cons": [
-            "Intense narrative content — way too heavy for shopping"
+            "Intense narrative pulls focus from shoes (Margulis 2014)",
+            "Heavy lyric content lowers shopper mood (Alpert 1990)",
+            "High arousal speeds customers out (Smith 1966)"
           ]
         }
       ]
@@ -1226,50 +1422,65 @@
           "title": "Crazy in Love",
           "artist": "Beyonce",
           "pros": [
-            "Iconic horn intro, instant energy"
+            "Massive recognition — preference is what matters (Herrington 1996)",
+            "Pleasure spike supports captive dwell (Donovan 1994)"
           ],
           "cons": [
-            "So big it dominates the room — hard to talk over"
+            "Horn intro hijacks attention from conversation (Margulis 2014)",
+            "High arousal mismatches the chair experience (Mattila 2001)",
+            "Too foreground to fade into 45-minute service (Yalch 2000)"
           ]
         },
         {
           "title": "No Scrubs",
           "artist": "TLC",
           "pros": [
-            "Sassy, fun, massive recognition"
+            "Liked + happy = best behavior outcome (Broekemier 2008)",
+            "Familiar pleasure drives unplanned spend (Donovan 1994)"
           ],
           "cons": [
-            "Judgmental lyrics might make customers feel scrutinized"
+            "Judgmental lyrics tank pleasure for some clients (Sherman 1997)",
+            "Lyric attention pulls focus off the stylist chat (Margulis 2014)",
+            "Brand-fit risk in upscale salons (Beverland 2006)"
           ]
         },
         {
           "title": "Kiss Me More",
           "artist": "Doja Cat",
           "pros": [
-            "Flirty, modern, perfect salon energy"
+            "Current, liked — likeability is the gate (Herrington 1996)",
+            "Mid-tempo fits the considered service pace (Knoferle 2012)"
           ],
           "cons": [
-            "Explicit version is too sexual for open retail"
+            "Explicit cut wrong for mixed-age floor (Beverland 2006)",
+            "High-arousal vocal can overload alongside scent (Doucé 2020)",
+            "Recognition kills the dwell-distortion bonus (Yalch 2000)"
           ]
         },
         {
           "title": "Golden",
           "artist": "Harry Styles",
           "pros": [
-            "Warm, upbeat, feel-good without trying"
+            "Warm, pleasant — pleasure mediates spend (Donovan 1994)",
+            "Major-key brightness fits feel-good service (Knoferle 2012)"
           ],
           "cons": [
-            "Light enough to disappear entirely"
+            "Any-music-beats-silence floor, not a ceiling (Andersson 2012)",
+            "Too light to anchor a 45-min sit (Yalch 2000)",
+            "Generic warmth weakens brand signal (Beverland 2006)"
           ]
         },
         {
           "title": "Juice",
           "artist": "Lizzo",
           "pros": [
-            "Self-confidence anthem, great energy"
+            "High pleasure, big singalong energy (Donovan 1994)",
+            "Fast tempo helps when the salon is packed (Knoferle 2017)"
           ],
           "cons": [
-            "Lizzo fatigue set in circa 2020"
+            "Fast tempo speeds movement — bad for the chair (Milliman 1982)",
+            "Lyric-heavy track competes with stylist talk (Margulis 2014)",
+            "Overplay fatigue erodes likeability (Herrington 1996)"
           ]
         }
       ]
@@ -1317,50 +1528,65 @@
           "title": "New Rules",
           "artist": "Dua Lipa",
           "pros": [
-            "Empowering, danceable, current"
+            "Liked + upbeat fits the floor energy (Broekemier 2008)",
+            "Fast tempo helps when crowded (Knoferle 2017)"
           ],
           "cons": [
-            "Repetitive structure grates on loop"
+            "Fast tempo speeds shoppers past racks (Milliman 1982)",
+            "Repetition on loop breaks absorption (Margulis 2014)",
+            "Familiarity kills time-distortion advantage (Yalch 2000)"
           ]
         },
         {
           "title": "bad guy",
           "artist": "Billie Eilish",
           "pros": [
-            "Cool factor, distinctive bass"
+            "Distinctive — strong brand-fit for edgy fashion (Beverland 2006)",
+            "Pleasure peak for the target demo (Donovan 1994)"
           ],
           "cons": [
-            "Whisper-singing can feel eerie in a bright store"
+            "Whisper sections force a volume guess (Smith 1966)",
+            "Bass + lights + scent risks overload (Doucé 2020)",
+            "Eerie tone undercuts happy-shopper pleasure (Donovan 1994)"
           ]
         },
         {
           "title": "Señorita",
           "artist": "Shawn Mendes & Camila Cabello",
           "pros": [
-            "Sexy, fun, mainstream appeal"
+            "Mainstream pleasure, low risk of dislike (Broekemier 2008)"
           ],
           "cons": [
-            "So overplayed it's become sonic furniture"
+            "Overplay fatigue tanks the likeability gate (Herrington 1996)",
+            "Familiarity erases the dwell-extension bonus (Yalch 2000)",
+            "Mid-tempo doesn't solve crowding either way (Knoferle 2017)",
+            "Generic — weak brand identity signal (Beverland 2006)"
           ]
         },
         {
           "title": "Savage Love",
           "artist": "Jawsh 685 & Jason Derulo",
           "pros": [
-            "Catchy hook, TikTok-viral energy"
+            "TikTok recognition with the target age (Herrington 1996)",
+            "Fast tempo moves people through a packed floor (Knoferle 2017)"
           ],
           "cons": [
-            "Disposable pop — already feels dated"
+            "Disposable pop — already feels dated (Beverland 2006)",
+            "High BPM speeds shoppers past merchandise (Milliman 1982)",
+            "Lyric content can clash with all-ages floor (Beverland 2006)"
           ]
         },
         {
           "title": "Rain on Me",
           "artist": "Lady Gaga & Ariana Grande",
           "pros": [
-            "Gaga + Grande = event energy"
+            "Event-energy pleasure peak (Donovan 1994)",
+            "Fast tempo for the busiest hours (Knoferle 2017)"
           ],
           "cons": [
-            "Dance-pop intensity too high for casual browsing"
+            "Dance-pop intensity overloads casual browsing (Doucé 2020)",
+            "High arousal speeds exit — fewer items per visit (Milliman 1982)",
+            "Loud + bright + scent = sensory ceiling (Doucé 2020)"
           ]
         }
       ]
@@ -1408,50 +1634,65 @@
           "title": "Budapest",
           "artist": "George Ezra",
           "pros": [
-            "Charming folk-pop, aspirational travel vibe"
+            "Pleasant — pleasure mediates spend (Donovan 1994)",
+            "Mid-tempo supports considered browsing (Milliman 1982)"
           ],
           "cons": [
-            "Lightweight — signals 'affordable' not 'design-forward'"
+            "Folk-pop signals \"affordable,\" weak premium fit (Beverland 2006)",
+            "Recognition removes the dwell-distortion bonus (Yalch 2000)",
+            "Major key blunts the slow-tempo dwell effect (Knoferle 2012)"
           ]
         },
         {
           "title": "Home",
           "artist": "Edward Sharpe & The Magnetic Zeros",
           "pros": [
-            "Communal warmth, family-friendly"
+            "Warm valence boosts hedonic WTP (Grossman 2025)",
+            "\"Home\" framing primes the category (North 1999)"
           ],
           "cons": [
-            "Whistling hook is catchy but repetitive on loop"
+            "Whistling hook breaks absorption on loop (Margulis 2014)",
+            "Big crescendos shift it to foreground (Margulis 2014)",
+            "Communal-folk fit narrow for modern brands (Beverland 2006)"
           ]
         },
         {
           "title": "Ho Hey",
           "artist": "The Lumineers",
           "pros": [
-            "Simple, warm, singalong appeal"
+            "Singalong pleasure — easy to like (Broekemier 2008)",
+            "Mid-tempo holds people in the showroom (Milliman 1982)"
           ],
           "cons": [
-            "So overused in commercials it feels like an ad"
+            "Commercial fatigue tanks likeability (Herrington 1996)",
+            "Stomp-clap cliché weakens brand identity (Beverland 2006)",
+            "Familiarity collapses time-distortion edge (Yalch 2000)"
           ]
         },
         {
           "title": "Riptide",
           "artist": "Vance Joy",
           "pros": [
-            "Breezy, quirky, universally pleasant"
+            "Broad pleasantness — low dislike risk (Broekemier 2008)",
+            "Mid-tempo supports considered, high-ticket buys (Milliman 1982)"
           ],
           "cons": [
-            "Ukulele fatigue is real — triggers 'indie commercial' eye-roll"
+            "Ukulele cliché — \"indie commercial\" eye-roll (Beverland 2006)",
+            "Recognition wipes the unfamiliarity dwell bonus (Yalch 2000)",
+            "Major-key brightness mutes tempo's slow-dwell effect (Knoferle 2012)"
           ]
         },
         {
           "title": "Flaws",
           "artist": "Bastille",
           "pros": [
-            "Anthemic without being aggressive"
+            "Anthemic without being aggressive (Donovan 1994)"
           ],
           "cons": [
-            "Generic inspirational pop — forgettable"
+            "\"Flaws\" lyric primes the wrong category frame (North 1999)",
+            "Generic — no point-of-view signal (Beverland 2006)",
+            "Builds shift foreground over a showroom (Margulis 2014)",
+            "Era-locked 2013 — dates the store (Beverland 2006)"
           ]
         }
       ]
@@ -1499,50 +1740,65 @@
           "title": "Uptown Funk",
           "artist": "Bruno Mars",
           "pros": [
-            "High BPM, impossible not to move"
+            "Helps shopper flow when packed (Knoferle 2017)",
+            "Big pleasure spike for most shoppers (Donovan 1994)"
           ],
           "cons": [
-            "Moves people so fast they skip browsing"
+            "Fast tempo cuts time in store (Milliman 1982)",
+            "Familiar — kills time-distortion bonus (Yalch 2000)",
+            "Lyric-and-horn hook hijacks attention (Margulis 2014)"
           ]
         },
         {
           "title": "I Gotta Feeling",
           "artist": "The Black Eyed Peas",
           "pros": [
-            "Party energy, massive recognition"
+            "Mass-recognition pleasure for big floors (Herrington 1996)",
+            "Fast tempo for peak-hour crowding (Knoferle 2017)"
           ],
           "cons": [
-            "Pre-gaming energy — people want to leave and go somewhere fun"
+            "Pre-game energy — people want to leave (Sherman 1997)",
+            "High BPM rushes browsing (Milliman 1982)",
+            "Overplay erodes likeability (Herrington 1996)"
           ]
         },
         {
           "title": "Titanium",
           "artist": "David Guetta ft. Sia",
           "pros": [
-            "Driving beat, Sia's powerful vocal"
+            "Powerful vocal — high arousal pleasure (Donovan 1994)"
           ],
           "cons": [
-            "EDM drop creates a nightclub moment in a store"
+            "Driving EDM beat accelerates exit (Milliman 1982)",
+            "Drop turns store into a nightclub moment (Margulis 2014)",
+            "Loud + lights + scent risks overload (Doucé 2020)",
+            "Sia's intensity reads as foreground (Margulis 2014)"
           ]
         },
         {
           "title": "Moves Like Jagger",
           "artist": "Maroon 5",
           "pros": [
-            "Catchy, danceable, safe pop"
+            "Safe, broadly liked pop (Broekemier 2008)",
+            "Fast tempo for high-traffic windows (Knoferle 2017)"
           ],
           "cons": [
-            "So cheesy it can undermine store credibility"
+            "Fast tempo shortens dwell on display (Milliman 1982)",
+            "\"Cheesy\" undercuts premium brand fit (Beverland 2006)",
+            "Familiar — no unfamiliarity dwell bonus (Yalch 2000)"
           ]
         },
         {
           "title": "Don't Stop Me Now",
           "artist": "Queen",
           "pros": [
-            "Pure euphoria, scientifically proven mood-lifter"
+            "Scientifically rated euphoria peak (Donovan 1994)",
+            "Fast tempo helps a crowded floor (Knoferle 2017)"
           ],
           "cons": [
-            "So fast it literally speeds up walking pace"
+            "156 BPM literally speeds walking pace (Milliman 1982)",
+            "Anthem demands foreground attention (Margulis 2014)",
+            "Big builds tilt past sensory ceiling (Doucé 2020)"
           ]
         }
       ]
@@ -1590,50 +1846,65 @@
           "title": "Weightless",
           "artist": "Marconi Union",
           "pros": [
-            "Scientifically designed to reduce anxiety by 65%"
+            "Engineered slow tempo extends dwell (Milliman 1982)",
+            "Unfamiliar to most — distorts time longer (Yalch 2000)",
+            "Slow + minor — dwell sweet spot (Knoferle 2012)"
           ],
           "cons": [
-            "So effective at relaxation it can put people to sleep"
+            "So calming it risks sleep on the table (Andersson 2012)",
+            "Soft volume must clear ambient noise (Lammers 2003)"
           ]
         },
         {
           "title": "Gymnopédie No.1",
           "artist": "Erik Satie",
           "pros": [
-            "Timeless, elegant, universally calming"
+            "Classical raises WTP on hedonic services (Grossman 2025)",
+            "Slow + minor extends time in space (Knoferle 2012)",
+            "Classical primes premium price selection (Areni 1993)"
           ],
           "cons": [
-            "Classical association can feel clinical rather than luxurious"
+            "\"Clinical\" framing wrong for sensory luxury (Beverland 2006)",
+            "Recognition collapses the unfamiliarity bonus (Yalch 2000)"
           ]
         },
         {
           "title": "Porcelain",
           "artist": "Moby",
           "pros": [
-            "Delicate, ambient, non-intrusive"
+            "Ambient + slow = dwell sweet spot (Knoferle 2012)",
+            "Quiet volume nudges healthier framing (Biswas 2019)",
+            "Unfamiliar to many — extends actual time (Yalch 2000)"
           ],
           "cons": [
-            "So minimal it barely registers as music"
+            "So minimal it slips below music-vs-silence floor (Andersson 2012)",
+            "Cool tonal palette undercuts warmth-and-WTP win (Zwebner 2014)"
           ]
         },
         {
           "title": "Teardrop",
           "artist": "Massive Attack",
           "pros": [
-            "Iconic, atmospheric, sophisticated"
+            "Slow + minor — dwell engine (Knoferle 2012)",
+            "Hedonic richness raises premium WTP (Grossman 2025)"
           ],
           "cons": [
-            "House MD association — triggers 'hospital' not 'spa'"
+            "House MD prime — \"hospital\" not \"spa\" (North 1999)",
+            "Sad valence misfires outside cards (Alpert 1990)",
+            "Big bass risks the volume-arousal ceiling (Doucé 2020)"
           ]
         },
         {
           "title": "Only Time",
           "artist": "Enya",
           "pros": [
-            "Ethereal, peaceful, broadly known"
+            "Slow tempo + softness extends dwell (Milliman 1982)",
+            "Warm pleasure mediates premium spend (Donovan 1994)"
           ],
           "cons": [
-            "9/11 and meme association — unintended emotional baggage"
+            "9/11 and meme baggage hijack attention (Margulis 2014)",
+            "Recognition kills the time-distortion edge (Yalch 2000)",
+            "Choral familiarity reads as cliché (Beverland 2006)"
           ]
         }
       ]
@@ -1681,50 +1952,65 @@
           "title": "Dancing Queen",
           "artist": "ABBA",
           "pros": [
-            "Pure joy, cross-generational recognition"
+            "Cross-generational pleasure peak (Donovan 1994)",
+            "Liked-and-happy = best behavior quadrant (Broekemier 2008)"
           ],
           "cons": [
-            "So beloved people sing along — disrupts shopping focus"
+            "Singalong stops shopping mid-aisle (Margulis 2014)",
+            "Familiar — no unfamiliarity dwell bonus (Yalch 2000)",
+            "Fast tempo speeds people past displays (Milliman 1982)"
           ]
         },
         {
           "title": "Signed, Sealed, Delivered",
           "artist": "Stevie Wonder",
           "pros": [
-            "Stevie Wonder energy is infectious"
+            "Mass likeability — the only real predictor (Herrington 1996)",
+            "Pleasure mediates unplanned spend (Donovan 1994)"
           ],
           "cons": [
-            "Feels like a Motown greatest hits compilation — safe to a fault"
+            "Fast tempo cuts in-store time (Milliman 1982)",
+            "\"Compilation\" feel weakens brand identity (Beverland 2006)",
+            "Recognition wipes time-distortion advantage (Yalch 2000)"
           ]
         },
         {
           "title": "Valerie",
           "artist": "Mark Ronson ft. Amy Winehouse",
           "pros": [
-            "Amy's vocal is electric, retro-modern production"
+            "Retro-modern fit for broad apparel floor (Beverland 2006)",
+            "High pleasure — likeability gate clears (Broekemier 2008)"
           ],
           "cons": [
-            "So energetic it demands attention over merchandise"
+            "Energetic vocal pulls eyes off merchandise (Margulis 2014)",
+            "Fast tempo accelerates exit (Milliman 1982)",
+            "Familiar — no unfamiliarity dwell win (Yalch 2000)"
           ]
         },
         {
           "title": "Walking on the Moon",
           "artist": "The Police",
           "pros": [
-            "Spacious reggae-pop, unique groove"
+            "Slow tempo extends shopper time (Milliman 1982)",
+            "Slow + minor edge = dwell sweet spot (Knoferle 2012)"
           ],
           "cons": [
-            "Too dreamy for a department store pace"
+            "Spacious dub reads as foreground oddity (Margulis 2014)",
+            "Niche groove caps cross-demo likeability (Herrington 1996)",
+            "Recognition kills time-distortion bonus (Yalch 2000)"
           ]
         },
         {
           "title": "Ain't No Mountain High Enough",
           "artist": "Marvin Gaye & Tammi Terrell",
           "pros": [
-            "Ultimate feel-good, universal recognition"
+            "Universal pleasure — strong floor for spend (Donovan 1994)",
+            "Liked + happy = best behavioral quadrant (Broekemier 2008)"
           ],
           "cons": [
-            "Dramatic builds are hard to ignore"
+            "Dramatic builds hijack attention (Margulis 2014)",
+            "Familiarity erases dwell-distortion edge (Yalch 2000)",
+            "Fast tempo shortens browsing (Milliman 1982)"
           ]
         }
       ]
@@ -1772,50 +2058,65 @@
           "title": "Sunday Morning",
           "artist": "Maroon 5",
           "pros": [
-            "Literally named for the brunch moment"
+            "On-theme lyric — congruence sells (Beverland 2006)",
+            "Soft pop volume keeps checks higher (Lammers 2003)",
+            "Mellow tempo extends the table (Milliman 1986)"
           ],
           "cons": [
-            "Maroon 5 fatigue — Adam Levine is polarizing now"
+            "Maroon 5 polarizes — likeability matters most (Herrington 1996)",
+            "Familiar pop barely beats silence on spend (North 2003)"
           ]
         },
         {
           "title": "Here Comes the Sun",
           "artist": "The Beatles",
           "pros": [
-            "Pure warmth, universally beloved"
+            "Universally liked — the only thing that predicts spend (Herrington 1996)",
+            "Happy + liked = top-quadrant mood (Broekemier 2008)",
+            "Pleasure mediates everything (Donovan 1994)"
           ],
           "cons": [
-            "So iconic it becomes invisible — no one notices it anymore"
+            "So familiar your brain ignores it (Yalch 2000)",
+            "No time-distortion bonus once it's wallpaper (Margulis 2014)"
           ]
         },
         {
           "title": "Three Little Birds",
           "artist": "Bob Marley",
           "pros": [
-            "'Every little thing gonna be alright' — perfect mantra"
+            "\"Everything gonna be alright\" — emotional congruence (Alpert 1990)",
+            "Slow tempo, longer stay, more drinks (Milliman 1986)",
+            "Any music beats silence on dwell (Andersson 2012)"
           ],
           "cons": [
-            "Reggae can feel like a resort rather than a restaurant"
+            "Reggae signals resort, not restaurant (Beverland 2006)",
+            "Soft cheerful background suits brunch (Lammers 2003)"
           ]
         },
         {
           "title": "Lovely Day",
           "artist": "Bill Withers",
           "pros": [
-            "Bill Withers' voice is sunshine itself"
+            "Mood lift drives unplanned spending (Donovan 1994)",
+            "Sustained note builds pleasure (Donovan 1982)",
+            "Liked + upbeat = best behavior quadrant (Broekemier 2008)"
           ],
           "cons": [
-            "Extended 'lovely daaaay' note can feel jarring on repeat"
+            "Heard everywhere — familiarity flattens it (Yalch 2000)",
+            "Pop ≈ silence on per-head spend (North 2003)"
           ]
         },
         {
           "title": "Better Together",
           "artist": "Jack Johnson",
           "pros": [
-            "Acoustic, warm, gentle — brunch perfection"
+            "Soft volume nudges check size up (Lammers 2003)",
+            "Slow tempo lengthens the meal (Milliman 1986)",
+            "Pleasant + low-arousal = brunch fit (Donovan 1982)"
           ],
           "cons": [
-            "Jack Johnson's music all sounds the same — playlist blur"
+            "All Jack Johnson sounds the same — blur (Margulis 2014)",
+            "Too quiet if the room is packed (Knoferle 2017)"
           ]
         }
       ]
@@ -1863,50 +2164,65 @@
           "title": "Bohemian Rhapsody",
           "artist": "Queen",
           "pros": [
-            "Peak familiarity — everyone on earth knows this"
+            "Peak likeability — the one predictor that matters (Herrington 1996)",
+            "Happy + liked = best quadrant (Broekemier 2008)"
           ],
           "cons": [
-            "6 minutes of drama that hijacks all attention"
+            "6 minutes hijacks all attention (Areni 1993)",
+            "Familiar music shortens perceived time (Yalch 2000)",
+            "No dwell bonus once it's wallpaper (Margulis 2014)"
           ]
         },
         {
           "title": "Billie Jean",
           "artist": "Michael Jackson",
           "pros": [
-            "Iconic bassline, universal recognition"
+            "Universal liking lifts pleasure (Donovan 1982)",
+            "Mid-tempo workable across formats (Milliman 1982)"
           ],
           "cons": [
-            "So famous people air-drum and moonwalk — disruptive"
+            "Air-drumming breaks the browse trance (Areni 1993)",
+            "Hyper-familiar — time speeds up (Yalch 2000)",
+            "Pop ≈ silence on per-head spend (North 2003)"
           ]
         },
         {
           "title": "Sweet Caroline",
           "artist": "Neil Diamond",
           "pros": [
-            "Call-and-response singalong, pure joy"
+            "Singalong joy spikes pleasure (Donovan 1994)",
+            "Happy + loved = top quadrant (Broekemier 2008)"
           ],
           "cons": [
-            "'BAM BAM BAM' — customers will literally shout in your store"
+            "Customers shouting \"BAH BAH BAH\" disrupts (Smith 1966)",
+            "Predictability = zero absorption (Margulis 2014)",
+            "Familiar tracks compress perceived dwell (Yalch 2000)"
           ]
         },
         {
           "title": "Don't Stop Believin'",
           "artist": "Journey",
           "pros": [
-            "Journey's masterpiece, karaoke ubiquity"
+            "Liked is the only thing that predicts spend (Herrington 1996)",
+            "Mood lift drives unplanned buys (Donovan 1994)"
           ],
           "cons": [
-            "Ubiquity is the problem — it's everywhere, means nothing"
+            "Ubiquity drains all novelty (Yalch 2000)",
+            "Brain predicts every beat — no absorption (Margulis 2014)",
+            "Too karaoke for high-consideration browsing (Beverland 2006)"
           ]
         },
         {
           "title": "Hotel California",
           "artist": "Eagles",
           "pros": [
-            "Guitar work is mesmerizing, timeless"
+            "Strong likeability across ages (Herrington 1996)",
+            "Slow tempo + minor = longer dwell (Knoferle 2012)"
           ],
           "cons": [
-            "'You can never leave' — subconsciously unsettling for retail"
+            "\"You can never leave\" — wrong subconscious cue (Alpert 1990)",
+            "Familiar — perceived time shrinks (Yalch 2000)",
+            "6+ minutes hijacks attention from product (Areni 1993)"
           ]
         }
       ]
@@ -1954,50 +2270,65 @@
           "title": "Clair de Lune",
           "artist": "Debussy",
           "pros": [
-            "The gold standard for elegant atmosphere"
+            "Classical lifts perceived product value (Areni 1993)",
+            "Classical raises WTP for hedonic buys (Grossman 2025)",
+            "Strong brand fit for luxury (Beverland 2006)",
+            "Slow + soft extends the decision (Milliman 1986)"
           ],
           "cons": [
-            "So associated with luxury it's become a cliché"
+            "So associated with \"luxury\" it reads cliché (Yalch 2000)"
           ]
         },
         {
           "title": "Diamonds",
           "artist": "Rihanna",
           "pros": [
-            "On-theme, Rihanna's voice is commanding"
+            "Theme congruence — lyrics match product (Alpert 1990)",
+            "Liked pop scores on pleasure (Donovan 1982)"
           ],
           "cons": [
-            "Pop production clashes with high-end jewelry subtlety"
+            "Pop ≈ silence on spend (North 2003)",
+            "Production clashes with quiet-luxury fit (Beverland 2006)",
+            "Loud pop accelerates exit (Smith 1966)"
           ]
         },
         {
           "title": "Fly Me to the Moon",
           "artist": "Frank Sinatra",
           "pros": [
-            "Sinatra = instant class, timeless"
+            "Classic standards signal class (Beverland 2006)",
+            "Soft volume = bigger ticket sizes (Lammers 2003)",
+            "Liked across older demos (Herrington 1996)"
           ],
           "cons": [
-            "Can feel like a retirement home soundtrack for younger shoppers"
+            "Reads \"retirement home\" to younger shoppers (Beverland 2006)",
+            "Familiar — perceived browse time shrinks (Yalch 2000)"
           ]
         },
         {
           "title": "The Very Thought of You",
           "artist": "Nat King Cole",
           "pros": [
-            "Nat King Cole's warmth is unmatched"
+            "Soft + slow extends consideration (Milliman 1986)",
+            "Pleasure mediates the spend lift (Donovan 1994)",
+            "Strong luxury congruence (Beverland 2006)"
           ],
           "cons": [
-            "Pre-war recording quality might feel dusty"
+            "Pre-war timbre can read dated (Yalch 2000)",
+            "Sad valence — wrong for celebration purchases (Alpert 1990)"
           ]
         },
         {
           "title": "Fallingwater",
           "artist": "Maggie Rogers",
           "pros": [
-            "Modern, fresh, organic — breaks the classical mold"
+            "Unfamiliar = longer actual dwell (Yalch 2000)",
+            "Slow + minor = dwell sweet spot (Knoferle 2012)",
+            "Modern fit for younger luxury shoppers (Beverland 2006)"
           ],
           "cons": [
-            "Low recognition — most jewelry shoppers won't know it"
+            "Low recognition — likeability untested (Herrington 1996)",
+            "Not classical — loses the WTP lift (Grossman 2025)"
           ]
         }
       ]
@@ -2045,50 +2376,65 @@
           "title": "Where Is My Mind?",
           "artist": "Pixies",
           "pros": [
-            "Instant indie credibility, Fight Club mystique"
+            "Strong fit for indie identity brand (Beverland 2006)",
+            "Mid-tempo holds a browsing pace (Milliman 1982)",
+            "Liked among record-store demos (Herrington 1996)"
           ],
           "cons": [
-            "Dreamy and disorienting — can feel unsettling"
+            "Disorienting — breaks deep browsing (Areni 1993)",
+            "Familiar from films — dwell bonus erodes (Yalch 2000)"
           ]
         },
         {
           "title": "Transmission",
           "artist": "Joy Division",
           "pros": [
-            "Post-punk icon, massive cultural weight"
+            "Slow + minor = dwell sweet spot (Knoferle 2012)",
+            "Cult fit for record-store credibility (Beverland 2006)",
+            "Unfamiliar to general public — longer dwell (Yalch 2000)"
           ],
           "cons": [
-            "Joy Division is dark — 'dance to the radio' is ironic"
+            "Dark valence dampens pleasure (Donovan 1982)",
+            "Sad + niche = bottom quadrant for outsiders (Broekemier 2008)"
           ]
         },
         {
           "title": "Deceptacon",
           "artist": "Le Tigre",
           "pros": [
-            "Riot grrrl energy, cool factor through the roof"
+            "Fast tempo for busy Saturday racks (Knoferle 2017)",
+            "Strong scene-fit signal (Beverland 2006)"
           ],
           "cons": [
-            "Abrasive to anyone not already in the scene"
+            "Abrasive — likeability ceiling (Herrington 1996)",
+            "Loud accelerates exit (Smith 1966)",
+            "High arousal risks overload (Doucé 2020)"
           ]
         },
         {
           "title": "Two Headed Boy",
           "artist": "Neutral Milk Hotel",
           "pros": [
-            "Lo-fi charm, cult classic status"
+            "Unfamiliar to most = real dwell extension (Yalch 2000)",
+            "Cult cred fits the brand (Beverland 2006)",
+            "Slow tempo + minor = browse-friendly (Knoferle 2012)"
           ],
           "cons": [
-            "Jeff Mangum's singing is an acquired taste — very acquired"
+            "Vocal style is acquired — likeability gap (Herrington 1996)",
+            "Sad valence wrong for casual visitors (Alpert 1990)"
           ]
         },
         {
           "title": "Today",
           "artist": "The Smashing Pumpkins",
           "pros": [
-            "Beautiful melody disguised as grunge"
+            "Liked widely — broad pleasure lift (Donovan 1982)",
+            "Mid-tempo holds a steady browse (Milliman 1982)",
+            "Fits the alt-rock store identity (Beverland 2006)"
           ],
           "cons": [
-            "'Today is the greatest day I've ever known' is about depression"
+            "Lyrics are about depression — incongruent (Alpert 1990)",
+            "90s familiarity drains the time-distortion bonus (Yalch 2000)"
           ]
         }
       ]
@@ -2136,50 +2482,65 @@
           "title": "Here Comes the Sun",
           "artist": "The Beatles",
           "pros": [
-            "The definitive morning song — warm, gentle, hopeful"
+            "Liked is the one thing that matters (Herrington 1996)",
+            "Happy + loved = top quadrant (Broekemier 2008)",
+            "Any music > silence on early dwell (Andersson 2012)"
           ],
           "cons": [
-            "Third appearance in this series — overuse proves the point"
+            "Wallpaper-level familiar — no time distortion (Yalch 2000)",
+            "Pop ≈ silence on per-head spend (North 2003)"
           ]
         },
         {
           "title": "Good Morning",
           "artist": "Kanye West",
           "pros": [
-            "Kanye's soulful sampling, positive energy"
+            "Soul-sample warmth lifts pleasure (Donovan 1982)",
+            "Mid-tempo works for empty rooms (Milliman 1982)"
           ],
           "cons": [
-            "'Good morning' loop gets repetitive fast"
+            "Repetitive hook flattens absorption (Margulis 2014)",
+            "Rap may misfit conservative brands (Beverland 2006)",
+            "Polarizing artist — likeability split (Herrington 1996)"
           ]
         },
         {
           "title": "Sunrise",
           "artist": "Norah Jones",
           "pros": [
-            "Norah Jones' voice is liquid warmth"
+            "Soft volume = bigger tickets (Lammers 2003)",
+            "Slow tempo extends early browse (Milliman 1986)",
+            "Pleasant, low-arousal mood (Donovan 1982)"
           ],
           "cons": [
-            "So gentle it might not register over espresso machines"
+            "Too quiet over espresso machine (Knoferle 2017)",
+            "Familiar coffee-shop trope — fit signal dulls (Beverland 2006)"
           ]
         },
         {
           "title": "Morning",
           "artist": "Beck",
           "pros": [
-            "Dreamy Beck, unusual and interesting"
+            "Unfamiliar = longer actual dwell (Yalch 2000)",
+            "Slow + dreamy = dwell quadrant (Knoferle 2012)",
+            "Soft volume nudges check size (Lammers 2003)"
           ],
           "cons": [
-            "Too weird for mainstream morning retail energy"
+            "Weird-Beck likeability gap (Herrington 1996)",
+            "Brand misfit for mainstream retail (Beverland 2006)"
           ]
         },
         {
           "title": "Golden Hour",
           "artist": "Kacey Musgraves",
           "pros": [
-            "Gorgeous, warm, country-pop crossover"
+            "Warm valence, liked widely (Broekemier 2008)",
+            "Soft + slow = spend + dwell (Lammers 2003)",
+            "Pleasure mediates morning mood (Donovan 1994)"
           ],
           "cons": [
-            "Kacey Musgraves is niche — not all demos connect"
+            "Country-pop niche caps the audience (Herrington 1996)",
+            "Familiar enough to skip time-distortion bonus (Yalch 2000)"
           ]
         }
       ]
@@ -2227,50 +2588,65 @@
           "title": "Breathe Me",
           "artist": "Sia",
           "pros": [
-            "Fragile, intimate, emotionally resonant"
+            "Slow + minor = top dwell combo (Knoferle 2012)",
+            "Soft volume lifts ticket size (Lammers 2003)",
+            "Scent + low-arousal music can match (Mattila 2001)"
           ],
           "cons": [
-            "Six Feet Under ending association = literal death"
+            "Sad valence — wrong for gifting mood (Alpert 1990)",
+            "Funeral-scene association = wrong cue (Beverland 2006)"
           ]
         },
         {
           "title": "Skinny Love",
           "artist": "Bon Iver",
           "pros": [
-            "Acoustic intimacy matches small-space retail"
+            "Intimate scale fits small footprint (Beverland 2006)",
+            "Soft + slow = browsing + spending lift (Lammers 2003)",
+            "Low-arousal music matches subtle scent (Mattila 2001)"
           ],
           "cons": [
-            "Second appearance — proves it's overused across contexts"
+            "Familiar from everywhere — no time distortion (Yalch 2000)",
+            "Sad lyric undercuts pleasure (Alpert 1990)"
           ]
         },
         {
           "title": "Cherry Wine",
           "artist": "Hozier",
           "pros": [
-            "Hozier's warmth, organic instrumentation"
+            "Warm timbre lifts pleasure (Donovan 1982)",
+            "Soft acoustic supports check size (Lammers 2003)",
+            "Scent-music arousal match (Mattila 2001)"
           ],
           "cons": [
-            "Lyrics about domestic abuse — devastating if you listen"
+            "Lyric is about domestic abuse (Alpert 1990)",
+            "Familiar enough to lose dwell bonus (Yalch 2000)"
           ]
         },
         {
           "title": "Warm Foothills",
           "artist": "Alt-J",
           "pros": [
-            "Textured, unusual, genuinely interesting"
+            "Unfamiliar to most = longer actual dwell (Yalch 2000)",
+            "Textured, low-arousal — pairs with scent (Mattila 2001)",
+            "Slow + minor = dwell quadrant (Knoferle 2012)"
           ],
           "cons": [
-            "Too experimental for mainstream — Alt-J is niche"
+            "Likeability ceiling — Alt-J is acquired (Herrington 1996)",
+            "Niche brand fit only for indie shops (Beverland 2006)"
           ]
         },
         {
           "title": "Mykonos",
           "artist": "Fleet Foxes",
           "pros": [
-            "Fleet Foxes harmonies are gorgeous, woodsy"
+            "Warm harmonies — pleasure-forward (Donovan 1982)",
+            "Soft volume = higher per-head spend (Lammers 2003)",
+            "Unfamiliar enough to distort time (Yalch 2000)"
           ],
           "cons": [
-            "So pastoral it might feel out of place in a candle store"
+            "Tempo lifts mid-song — breaks low-arousal pairing (Mattila 2001)",
+            "Pastoral fit mismatches urban candle brand (Beverland 2006)"
           ]
         }
       ]
@@ -2318,50 +2694,65 @@
           "title": "La Vie en Rose",
           "artist": "Louis Armstrong",
           "pros": [
-            "Louis Armstrong version is pure warmth and charm"
+            "French priming nudges French-feeling purchases (North 1999)",
+            "Slow tempo extends dwell at the case (Milliman 1982)"
           ],
           "cons": [
-            "French romance cliché — expected in a bakery, not distinctive"
+            "Cliché — recognition without distinction (Yalch 2000)",
+            "Brass timbre cuts through chatter (Smith 1966)",
+            "Could feel like a bistro, not a bakery (Beverland 2006)"
           ]
         },
         {
           "title": "Harvest Moon",
           "artist": "Neil Young",
           "pros": [
-            "Neil Young's gentle croon, timeless"
+            "Slow + warm = pleasure (Donovan 1994)",
+            "Pleasant background lifts spend (Andersson 2012)"
           ],
           "cons": [
-            "Slow and wistful — can make a bakery feel sleepy"
+            "Slow and sleepy in a fast-traffic shop (Knoferle 2017)",
+            "Major key softens the dwell bump (Knoferle 2012)",
+            "Familiar — kills time-distortion bonus (Yalch 2000)"
           ]
         },
         {
           "title": "Come Away With Me",
           "artist": "Norah Jones",
           "pros": [
-            "Norah Jones is the gold standard for cozy"
+            "Soft volume nudges check size up (Lammers 2003)",
+            "Pleasant + liked = the safe win (Broekemier 2008)"
           ],
           "cons": [
-            "So safe it borders on boring"
+            "Coffeeshop default — sonic wallpaper (Beverland 2006)",
+            "Slow tempo can stall a queue (Knoferle 2017)",
+            "Likeable but forgettable (Herrington 1996)"
           ]
         },
         {
           "title": "Better Days",
           "artist": "OneRepublic",
           "pros": [
-            "Optimistic, light, pleasant"
+            "Upbeat lifts mood without rushing (Donovan 1982)"
           ],
           "cons": [
-            "OneRepublic is aggressively mid — signals 'no opinion'"
+            "Pop ≈ silence at the till (North 2003)",
+            "No genre fit with artisan craft (Beverland 2006)",
+            "Familiar radio fare — no time bonus (Yalch 2000)",
+            "Cheerful but generic (Herrington 1996)"
           ]
         },
         {
           "title": "Lucky",
           "artist": "Jason Mraz & Colbie Caillat",
           "pros": [
-            "Sweet duet energy, feel-good"
+            "Happy + liked outperforms sad-and-disliked (Broekemier 2008)",
+            "Pleasant mood mediates impulse buys (Sherman 1997)"
           ],
           "cons": [
-            "Cheesy factor is high — can undermine artisanal positioning"
+            "Major key + cheery dilutes the slow-dwell trick (Knoferle 2012)",
+            "Cheese undermines artisan brand fit (Beverland 2006)",
+            "Overfamiliar — predictable not curious (Yalch 2000)"
           ]
         }
       ]
@@ -2409,50 +2800,65 @@
           "title": "Midnight City",
           "artist": "M83",
           "pros": [
-            "Synth riff is iconic, everyone's heard it"
+            "Half-known — brain stays curious (Yalch 2000)",
+            "Pleasant arousal lifts browsing (Donovan 1994)"
           ],
           "cons": [
-            "Nobody can name it or the band — recognition without attachment"
+            "105 BPM nudges fast — watch dwell (Milliman 1982)",
+            "Sax hook is loud — speeds exit (Smith 1966)",
+            "Major key softens the tempo lever (Knoferle 2012)"
           ]
         },
         {
           "title": "Tongue Tied",
           "artist": "Grouplove",
           "pros": [
-            "Energetic, fun, appeared in every commercial"
+            "Commercial ubiquity = pleasant familiarity (Broekemier 2008)",
+            "Upbeat energy helps crowded floors (Knoferle 2017)"
           ],
           "cons": [
-            "Commercial ubiquity without identity — sonic wallpaper"
+            "Ad-saturated — brand-fit risk (Beverland 2006)",
+            "Recognition with no identity attachment (Yalch 2000)",
+            "Fast + bright = quick exits (Milliman 1982)"
           ]
         },
         {
           "title": "Young Folks",
           "artist": "Peter Bjorn and John",
           "pros": [
-            "Whistle hook is unforgettable"
+            "Whistle hook = unfamiliar-feeling familiarity (Yalch 2000)",
+            "Mid-tempo groove supports dwell (Milliman 1982)"
           ],
           "cons": [
-            "One-hit-wonder status — all hook, no depth"
+            "One-hit-wonder = recognition without depth (Herrington 1996)",
+            "Major key cancels the slow advantage (Knoferle 2012)",
+            "Indie tag may not fit mass retail (Beverland 2006)"
           ]
         },
         {
           "title": "1901",
           "artist": "Phoenix",
           "pros": [
-            "Infectious energy, builds beautifully"
+            "Almost-known sweet spot (Yalch 2000)",
+            "Pleasure-forward = unplanned spend (Donovan 1994)"
           ],
           "cons": [
-            "Phoenix occupies that 'I know this from somewhere' limbo"
+            "144 BPM — too fast for browse (Milliman 1982)",
+            "High arousal can tip into overload (Doucé 2020)",
+            "Frenchness primes Frenchness, not your store (North 1999)"
           ]
         },
         {
           "title": "Two Weeks",
           "artist": "Grizzly Bear",
           "pros": [
-            "Gorgeous falsettos, sophisticated production"
+            "Genuinely unfamiliar = more dwell (Yalch 2000)",
+            "Hedonic vibe lifts WTP on premium goods (Grossman 2025)"
           ],
           "cons": [
-            "Grizzly Bear is too art-rock for casual listeners"
+            "Likeability ceiling caps the upside (Herrington 1996)",
+            "Art-rock fit only matches niche brands (Beverland 2006)",
+            "Pop-listener mismatch tanks pleasure (Broekemier 2008)"
           ]
         }
       ]
@@ -2500,50 +2906,65 @@
           "title": "Home",
           "artist": "Edward Sharpe & The Magnetic Zeros",
           "pros": [
-            "Communal warmth, wanderlust energy"
+            "Communal warmth → pleasure → spending (Donovan 1994)",
+            "Acoustic timbre fits outdoor brand (Beverland 2006)"
           ],
           "cons": [
-            "Second appearance — versatile but overused"
+            "Cross-context overuse blunts identity (Beverland 2006)",
+            "Whistled hook is familiar — no time bonus (Yalch 2000)",
+            "Mid-tempo bright — softens dwell lever (Knoferle 2012)"
           ]
         },
         {
           "title": "I Will Wait",
           "artist": "Mumford & Sons",
           "pros": [
-            "Anthemic, banjo-driven energy matches outdoors"
+            "Banjo-folk timbre = brand fit (Beverland 2006)",
+            "131 BPM moves a busy weekend floor (Knoferle 2017)"
           ],
           "cons": [
-            "Mumford fatigue — everyone got tired of this sound"
+            "Mumford saturation = pleasant but tired (Herrington 1996)",
+            "Fast tempo cuts dwell (Milliman 1982)",
+            "Major key blunts the tempo nudge (Knoferle 2012)"
           ]
         },
         {
           "title": "Big Yellow Taxi",
           "artist": "Joni Mitchell",
           "pros": [
-            "Environmental message on-brand for outdoor stores"
+            "On-theme environmental priming (North 1999)",
+            "Liked + acoustic = pleasant (Broekemier 2008)"
           ],
           "cons": [
-            "'Paved paradise, put up a parking lot' — guilt-trip energy"
+            "\"Paved paradise\" — guilt cue at the till (Alpert 1990)",
+            "Familiar — recognition without curiosity (Yalch 2000)",
+            "Pop-folk ≈ silence on spend (North 2003)"
           ]
         },
         {
           "title": "Into the Mystic",
           "artist": "Van Morrison",
           "pros": [
-            "Van Morrison's warmth, timeless beauty"
+            "Slow + warm = dwell sweet spot (Milliman 1982)",
+            "Pleasure-forward, hedonic lift (Grossman 2025)"
           ],
           "cons": [
-            "So mellow it might not cut through store chatter"
+            "So mellow it can lose to chatter (Smith 1966)",
+            "Familiar standard — no time distortion (Yalch 2000)",
+            "Major key reduces the tempo edge (Knoferle 2012)"
           ]
         },
         {
           "title": "Free Fallin'",
           "artist": "Tom Petty",
           "pros": [
-            "Tom Petty is universally loved, California cool"
+            "Universally liked = pleasure mediator (Sherman 1997)",
+            "Brand-fit with Californian freedom story (Beverland 2006)"
           ],
           "cons": [
-            "Heartbreak lyrics — 'she's a good girl, loves her mama'"
+            "Heartbreak lyrics undercut aspiration (Alpert 1990)",
+            "Familiar radio — no curiosity bonus (Yalch 2000)",
+            "Mid-tempo major key — neutral on dwell (Knoferle 2012)"
           ]
         }
       ]
@@ -2591,50 +3012,65 @@
           "title": "Nude",
           "artist": "Radiohead",
           "pros": [
-            "Ethereal Radiohead, genuinely beautiful"
+            "Hedonic + slow → higher WTP on art (Grossman 2025)",
+            "Genuinely unfamiliar → longer dwell (Yalch 2000)"
           ],
           "cons": [
-            "So fragile any ambient noise destroys it"
+            "Fragile mix loses to ambient chatter (Smith 1966)",
+            "Minor key + slow can flatten mood (Knoferle 2012)",
+            "Brand-fit only with serious galleries (Beverland 2006)"
           ]
         },
         {
           "title": "An Ending (Ascent)",
           "artist": "Brian Eno",
           "pros": [
-            "Pure ambient beauty, gallery-perfect"
+            "Pure ambient = pleasure without distraction (Donovan 1982)",
+            "Lifts WTP on hedonic, premium objects (Grossman 2025)"
           ],
           "cons": [
-            "Zero pulse — can feel like the space is asleep"
+            "Zero pulse can read as empty room (Andersson 2012)",
+            "No tempo = no nudge lever (Milliman 1982)",
+            "Major-key drift may soften emotional reading (Alpert 1990)"
           ]
         },
         {
           "title": "Avril 14th",
           "artist": "Aphex Twin",
           "pros": [
-            "Aphex Twin's most accessible piece, haunting piano"
+            "Slow piano lengthens dwell at works (Milliman 1982)",
+            "Sad valence supports contemplative buying (Alpert 1990)"
           ],
           "cons": [
-            "Kanye sampled it — hip-hop heads might be confused in a gallery"
+            "Familiar via Kanye sample — recognition leak (Yalch 2000)",
+            "Likeability narrow outside design crowd (Herrington 1996)",
+            "Minor key + sparse = low energy floor (Knoferle 2012)"
           ]
         },
         {
           "title": "Music for 18 Musicians (excerpt)",
           "artist": "Steve Reich",
           "pros": [
-            "Hypnotic, pulsing, genuinely avant-garde"
+            "Repetition → absorption → time distortion (Margulis 2014)",
+            "Hedonic tier raises premium-art WTP (Grossman 2025)"
           ],
           "cons": [
-            "Repetitive minimalism can feel clinical, not artistic"
+            "Pulse can read clinical, not warm (Beverland 2006)",
+            "Long-form needs careful edit point (Doucé 2020)",
+            "Likeability ceiling outside art crowd (Herrington 1996)"
           ]
         },
         {
           "title": "Ambient 1: Music for Airports (excerpt)",
           "artist": "Brian Eno",
           "pros": [
-            "Eno literally invented ambient music for spaces like this"
+            "Designed for slow-dwell spaces (Milliman 1982)",
+            "Unfamiliar to most → longer actual time (Yalch 2000)"
           ],
           "cons": [
-            "'Music for Airports' — the name signals transit, not art"
+            "Title primes \"transit\" not \"gallery\" (North 1999)",
+            "No pulse → no crowd-flow lever (Knoferle 2017)",
+            "Risk of feeling like silence (Andersson 2012)"
           ]
         }
       ]
@@ -2682,50 +3118,65 @@
           "title": "I'm Yours",
           "artist": "Jason Mraz",
           "pros": [
-            "Breezy, happy, ukulele charm"
+            "Pleasant + liked = base case win (Broekemier 2008)",
+            "Mid-tempo, supports browsing (Milliman 1982)"
           ],
           "cons": [
-            "Jason Mraz is aggressively pleasant — no edge"
+            "Major key blunts dwell advantage (Knoferle 2012)",
+            "Familiar — no curiosity payoff (Yalch 2000)",
+            "Aggressively neutral — weak brand fit (Beverland 2006)"
           ]
         },
         {
           "title": "What a Wonderful World",
           "artist": "Louis Armstrong",
           "pros": [
-            "Louis Armstrong's voice heals all wounds"
+            "Slow + warm = dwell sweet spot (Milliman 1982)",
+            "Pleasure mediator lifts impulse buys (Sherman 1997)"
           ],
           "cons": [
-            "Overused in every wholesome context — invisible now"
+            "Overused — invisible to regulars (Yalch 2000)",
+            "Soft brass can lose to dog noise (Smith 1966)",
+            "Likeable but predictable (Herrington 1996)"
           ]
         },
         {
           "title": "Somewhere Over the Rainbow",
           "artist": "Israel Kamakawiwo'ole",
           "pros": [
-            "IZ version is pure beauty, emotional"
+            "Emotional ukulele = on-brand warmth (Beverland 2006)",
+            "Pleasant + liked outperforms upbeat-and-cold (Broekemier 2008)"
           ],
           "cons": [
-            "So emotional people might tear up in a pet store"
+            "Sad valence at the till can cool spend (Alpert 1990)",
+            "Slow + soft — risk of feeling like silence (Andersson 2012)",
+            "Familiarity caps time-distortion (Yalch 2000)"
           ]
         },
         {
           "title": "Beautiful Day",
           "artist": "U2",
           "pros": [
-            "U2's optimism, big and warm"
+            "Anthemic mood lift = pleasure (Donovan 1994)",
+            "Highly recognized = liked (Broekemier 2008)"
           ],
           "cons": [
-            "Arena-rock scale feels wrong for a small pet shop"
+            "Arena scale clashes with small-shop fit (Beverland 2006)",
+            "Fast tempo cuts dwell (Milliman 1982)",
+            "Major key cancels the tempo lever (Knoferle 2012)"
           ]
         },
         {
           "title": "You've Got a Friend",
           "artist": "Carole King",
           "pros": [
-            "Carole King warmth, perfectly on-theme"
+            "Slow + warm pace lengthens stay (Milliman 1986)",
+            "Soft volume lifts ticket size (Lammers 2003)"
           ],
           "cons": [
-            "Too earnest — can feel like a Hallmark movie"
+            "Hallmark earnestness can feel forced (Beverland 2006)",
+            "Familiar standard — no curiosity (Yalch 2000)",
+            "Likeability skews older shoppers (Herrington 1996)"
           ]
         }
       ]
@@ -2773,50 +3224,65 @@
           "title": "Here Comes the Sun",
           "artist": "The Beatles",
           "pros": [
-            "Third appearance — proves it's the GOAT background song"
+            "Universal pleasure mediator (Sherman 1997)",
+            "Bright + mid-tempo fits browsing (Donovan 1994)"
           ],
           "cons": [
-            "Third appearance also proves curation laziness"
+            "Overuse — recognition without curiosity (Yalch 2000)",
+            "Major key cancels the dwell lever (Knoferle 2012)",
+            "Curation laziness signal weakens brand (Beverland 2006)"
           ]
         },
         {
           "title": "Bloom",
           "artist": "The Paper Kites",
           "pros": [
-            "Second appearance — its gentleness works everywhere"
+            "Acoustic timbre fits living-things shop (Beverland 2006)",
+            "Slow tempo lengthens dwell at displays (Milliman 1982)"
           ],
           "cons": [
-            "Works everywhere = distinctive nowhere"
+            "Cross-context overuse blunts identity (Beverland 2006)",
+            "Low arousal risks reading as silence (Andersson 2012)",
+            "Likeable but generic (Herrington 1996)"
           ]
         },
         {
           "title": "Yellow",
           "artist": "Coldplay",
           "pros": [
-            "Coldplay warmth, floral association with the title"
+            "Highly liked = pleasure (Broekemier 2008)",
+            "Mid-tempo background — supports browsing (Milliman 1982)"
           ],
           "cons": [
-            "'Look at the stars' has nothing to do with plants"
+            "Lyrics about stars, not plants — weak prime (North 1999)",
+            "Pop ≈ silence on spend (North 2003)",
+            "Familiar — no curiosity payoff (Yalch 2000)"
           ]
         },
         {
           "title": "Fields of Gold",
           "artist": "Sting",
           "pros": [
-            "Sting's vocal warmth, pastoral imagery"
+            "Pastoral imagery primes nature framing (North 1999)",
+            "Slow + warm = dwell sweet spot (Milliman 1982)"
           ],
           "cons": [
-            "Adult contemporary vibes — skews older"
+            "Adult-contemporary skew narrows fit (Beverland 2006)",
+            "Major key blunts the tempo lever (Knoferle 2012)",
+            "Familiar standard — no time distortion (Yalch 2000)"
           ]
         },
         {
           "title": "Landslide",
           "artist": "Fleetwood Mac",
           "pros": [
-            "Fleetwood Mac emotional depth, beautiful"
+            "Slow + minor = dwell sweet spot (Knoferle 2012)",
+            "Hedonic tier supports premium florals (Grossman 2025)"
           ],
           "cons": [
-            "Heavy nostalgia and aging themes — might bum people out"
+            "Aging-themed lyrics can cool mood (Alpert 1990)",
+            "Familiar — no curiosity bonus (Yalch 2000)",
+            "Soft mix can lose to shop traffic (Smith 1966)"
           ]
         }
       ]
@@ -2864,50 +3330,65 @@
           "title": "TPWK",
           "artist": "Harry Styles",
           "pros": [
-            "Harry Styles = Gen Z catnip"
+            "Brand-fit signal for young-skewing retail (Beverland 2006)",
+            "Pleasant mid-tempo supports browsing (Milliman 1982)"
           ],
           "cons": [
-            "Deep cut — even fans might not recognize non-singles"
+            "Deep cut — recognition risk outside fans (Herrington 1996)",
+            "Major key reduces the tempo nudge (Knoferle 2012)",
+            "Familiar to fans only — split pleasure (Broekemier 2008)"
           ]
         },
         {
           "title": "Break My Soul",
           "artist": "Beyonce",
           "pros": [
-            "Beyoncé house music moment, fresh energy"
+            "House energy lifts variety seeking (Sun 2023)",
+            "Crowded-floor friendly tempo (Knoferle 2017)"
           ],
           "cons": [
-            "Dance track energy might be too high for browsing"
+            "115 BPM can push shoppers out (Milliman 1982)",
+            "High arousal risks overload with scent/visual (Doucé 2020)",
+            "Pop tier ≈ silence on spend (North 2003)"
           ]
         },
         {
           "title": "About Damn Time",
           "artist": "Lizzo",
           "pros": [
-            "Lizzo's exuberance, instant mood lift"
+            "Disco energy = pleasure mediator (Sherman 1997)",
+            "Highly liked at peak = base-case win (Broekemier 2008)"
           ],
           "cons": [
-            "Peak overplay in 2022 — already fatigued"
+            "Peak overplay — fatigue replaces curiosity (Yalch 2000)",
+            "Fast tempo trims dwell (Milliman 1982)",
+            "Loud mix speeds exits (Smith 1966)"
           ]
         },
         {
           "title": "As It Was",
           "artist": "Harry Styles",
           "pros": [
-            "Second appearance — its youth signal is reliable"
+            "Massive recognition = pleasure for many (Broekemier 2008)",
+            "Mid-tempo supports browsing (Milliman 1982)"
           ],
           "cons": [
-            "Melancholy undertone still a risk"
+            "Melancholy undercurrent drifts valence (Alpert 1990)",
+            "Familiar — no time-distortion bonus (Yalch 2000)",
+            "Brand-fit narrow without youth positioning (Beverland 2006)"
           ]
         },
         {
           "title": "Espresso",
           "artist": "Sabrina Carpenter",
           "pros": [
-            "2024's catchiest hook, peak Gen Z"
+            "Strong hook = pleasure for Gen Z (Broekemier 2008)",
+            "Brand-fit signal for young-skewing retail (Beverland 2006)"
           ],
           "cons": [
-            "So new it might already be overplayed by the time you air this"
+            "104 BPM brightness speeds exits (Milliman 1982)",
+            "Saturation kills the curiosity edge (Yalch 2000)",
+            "Pop ≈ silence on per-head spend (North 2003)"
           ]
         }
       ]
@@ -2955,50 +3436,65 @@
           "title": "Kokomo",
           "artist": "The Beach Boys",
           "pros": [
-            "Beach Boys = instant beach vibes, on-brand"
+            "On-the-nose beach fit boosts brand (Beverland 2006)",
+            "Slow tempo encourages dwell (Milliman 1982)"
           ],
           "cons": [
-            "Cheesy even by Beach Boys standards — divisive"
+            "Cheese factor hurts likeability (Herrington 1996)",
+            "Too-familiar = perceived-time flips (Yalch 2000)",
+            "Divisive song lowers pleasure scores (Broekemier 2008)"
           ]
         },
         {
           "title": "Island in the Sun",
           "artist": "Weezer",
           "pros": [
-            "Weezer's sunniest song, genuinely pleasant"
+            "Mellow tempo supports browsing (Milliman 1982)",
+            "Major-key sunny pleasure (Knoferle 2012)",
+            "Fits surf/beach brand register (Beverland 2006)"
           ],
           "cons": [
-            "Feels like a rental car commercial"
+            "Commercial-soundtrack ubiquity dulls effect (Yalch 2000)",
+            "Pop familiarity = streaming, not dwell (Yalch 2000)"
           ]
         },
         {
           "title": "Santeria",
           "artist": "Sublime",
           "pros": [
-            "Sublime's laid-back groove, SoCal perfection"
+            "Perfect SoCal brand fit (Beverland 2006)",
+            "Slow groove supports browsing (Milliman 1982)"
           ],
           "cons": [
-            "Lyrics about violence — 'I'd pop a cap in Sancho'"
+            "Violent lyrics break the pleasure path (Sherman 1997)",
+            "Lyric content + brand misfit = damage (Beverland 2006)",
+            "Familiar to core demo only (Herrington 1996)"
           ]
         },
         {
           "title": "No Woman, No Cry",
           "artist": "Bob Marley",
           "pros": [
-            "Bob Marley warmth, universal peace"
+            "Slow tempo = dwell sweet spot (Milliman 1982)",
+            "Broadly liked, low-arousal pleasant (Donovan 1994)",
+            "Strong brand fit for coastal retail (Beverland 2006)"
           ],
           "cons": [
-            "So overused in beach/surf contexts it's wallpaper"
+            "Wallpaper status kills time distortion (Yalch 2000)",
+            "Overplay flattens the pleasure response (Donovan 1994)"
           ]
         },
         {
           "title": "Banana Pancakes",
           "artist": "Jack Johnson",
           "pros": [
-            "Jack Johnson = barefoot chill perfection"
+            "Slow + mellow = dwell-friendly (Milliman 1982)",
+            "High likeability across demos (Broekemier 2008)",
+            "Fits surf-brand emotional register (Beverland 2006)"
           ],
           "cons": [
-            "So chill it induces napping, not shopping"
+            "Low arousal can suppress approach (Donovan 1982)",
+            "Familiar enough to lose time-bend (Yalch 2000)"
           ]
         }
       ]
@@ -3046,50 +3542,65 @@
           "title": "Around the World",
           "artist": "Daft Punk",
           "pros": [
-            "Robotic repetition mirrors tech aesthetics perfectly"
+            "Tech-coded — strong brand fit (Beverland 2006)",
+            "Unfamiliar-as-background = longer dwell (Yalch 2000)"
           ],
           "cons": [
-            "Literally one phrase repeated 144 times"
+            "121 BPM trends fast for browsing (Milliman 1982)",
+            "One phrase × 144 reads monotonous (Broekemier 2008)",
+            "Club-built density wrong for sparse floors (Knoferle 2017)"
           ]
         },
         {
           "title": "Everything in Its Right Place",
           "artist": "Radiohead",
           "pros": [
-            "Radiohead's most accessible electronic moment"
+            "Slow + unfamiliar = dwell + time-bend (Yalch 2000)",
+            "Sophisticated brand signal (Beverland 2006)"
           ],
           "cons": [
-            "Glitchy vocal processing can feel unsettling"
+            "Glitchy vocal can feel unsettling (Sherman 1997)",
+            "Minor-mode heaviness may suppress approach (Donovan 1982)",
+            "Low recognition for general shoppers (Herrington 1996)"
           ]
         },
         {
           "title": "Midnight City",
           "artist": "M83",
           "pros": [
-            "Third appearance — synth riff is universally appealing"
+            "Universally liked synth hook (Broekemier 2008)",
+            "Major-key pleasure, broad appeal (Donovan 1994)",
+            "Fits modern-tech brand register (Beverland 2006)"
           ],
           "cons": [
-            "Familiarity without attachment, again"
+            "Heard-everywhere = perceived time inverts (Yalch 2000)",
+            "105 BPM still trends quick (Milliman 1982)"
           ]
         },
         {
           "title": "Harder, Better, Faster, Stronger",
           "artist": "Daft Punk",
           "pros": [
-            "Tech anthem, vocoder = futurism"
+            "Iconic, instantly recognized (Herrington 1996)",
+            "Tech-brand signal is on-point (Beverland 2006)"
           ],
           "cons": [
-            "Repetitive structure designed for clubs, not browsing"
+            "Club structure designed for arousal, not dwell (Milliman 1982)",
+            "Repetitive vocoder hooks can fatigue (Broekemier 2008)",
+            "Familiar = no time-distortion bonus (Yalch 2000)"
           ]
         },
         {
           "title": "Crystallize",
           "artist": "Lindsey Stirling",
           "pros": [
-            "Violin + dubstep = unique, energetic, visual"
+            "Visual-genre novelty, fits tech-spectacle (Beverland 2006)",
+            "Strong arousal lift in slow rooms (Donovan 1994)"
           ],
           "cons": [
-            "YouTube-era novelty — credibility question in 2026"
+            "Dubstep drop = aggressive register (Donovan 1982)",
+            "Niche recognition outside YouTube demo (Herrington 1996)",
+            "Energy spike fights considered purchase (Knoferle 2012)"
           ]
         }
       ]
@@ -3137,50 +3648,65 @@
           "title": "Fast Car",
           "artist": "Tracy Chapman",
           "pros": [
-            "Tracy Chapman's storytelling, universal emotion"
+            "Slow tempo + minor = dwell sweet spot (Knoferle 2012)",
+            "Storytelling pulls listeners in (Margulis 2014)"
           ],
           "cons": [
-            "Song about escaping poverty — awkward for a dealership"
+            "Lyrics about escaping poverty clash with $50k decision (Alpert 1990)",
+            "Sad-coded valence wrong for premium WTP (Grossman 2025)",
+            "Emotional weight competes with negotiation (Sherman 1997)"
           ]
         },
         {
           "title": "Ride",
           "artist": "Twenty One Pilots",
           "pros": [
-            "Catchy, youthful, driving theme works"
+            "Catchy hook, broad recognition (Herrington 1996)"
           ],
           "cons": [
-            "Twenty One Pilots are polarizing — love or hate"
+            "Polarizing artist = likeability risk (Herrington 1996)",
+            "Mid-fast tempo accelerates browsing (Milliman 1982)",
+            "Teen-coded brand fit wrong for showroom (Beverland 2006)",
+            "Familiarity caps any time-bend (Yalch 2000)"
           ]
         },
         {
           "title": "Shut Up and Drive",
           "artist": "Rihanna",
           "pros": [
-            "Rihanna + driving = on-brand fun"
+            "Rihanna + driving = on-theme (Beverland 2006)",
+            "Major-key arousal lift (Donovan 1994)"
           ],
           "cons": [
-            "Pop-rock production feels dated"
+            "Fast tempo speeds decisions, not deepens them (Milliman 1982)",
+            "Dated pop-rock production hurts premium feel (Beverland 2006)",
+            "Energy register fights considered purchase (Knoferle 2012)"
           ]
         },
         {
           "title": "Life Is a Highway",
           "artist": "Tom Cochrane",
           "pros": [
-            "Anthemic road energy, Cars movie nostalgia"
+            "Anthemic recognition (Herrington 1996)",
+            "Major key, broadly liked (Broekemier 2008)"
           ],
           "cons": [
-            "Too cheesy — undermines premium vehicle positioning"
+            "Cheese factor undercuts premium positioning (Beverland 2006)",
+            "103 BPM trends fast for negotiation tempo (Milliman 1982)",
+            "Disney/Cars baggage = kid energy (Beverland 2006)"
           ]
         },
         {
           "title": "Drive",
           "artist": "Incubus",
           "pros": [
-            "Incubus groove, smooth and contemplative"
+            "Slow + minor = dwell + consideration (Knoferle 2012)",
+            "Premium-feel production (Beverland 2006)",
+            "Pleasant likeability range (Broekemier 2008)"
           ],
           "cons": [
-            "So mellow it contradicts the excitement of buying a car"
+            "Too mellow can suppress purchase arousal (Donovan 1982)",
+            "Familiar-but-loved status = no time-bend (Yalch 2000)"
           ]
         }
       ]
@@ -3228,50 +3754,65 @@
           "title": "Partition",
           "artist": "Beyonce",
           "pros": [
-            "Beyoncé at her most seductive, identity-perfect"
+            "Strong identity fit for the category (Beverland 2006)",
+            "Slow groove supports dwell (Milliman 1982)"
           ],
           "cons": [
-            "Explicit content — 'driver roll up the partition please'"
+            "Explicit lyrics = consent/comfort risk (Beverland 2006)",
+            "Drama competes with confidence framing (Sherman 1997)",
+            "Played-everywhere kills time-bend (Yalch 2000)"
           ]
         },
         {
           "title": "Earned It",
           "artist": "The Weeknd",
           "pros": [
-            "Second appearance — breathy, slow, premium"
+            "Slow tempo, premium feel (Knoferle 2012)",
+            "Sensual register fits the category (Beverland 2006)"
           ],
           "cons": [
-            "50 Shades baggage, again"
+            "50 Shades baggage narrows the brand story (Alpert 1990)",
+            "Cinematic peaks hijack browsing focus (Sherman 1997)",
+            "Heavy familiarity flattens dwell bonus (Yalch 2000)"
           ]
         },
         {
           "title": "Wicked Games",
           "artist": "The Weeknd",
           "pros": [
-            "The Weeknd's signature dark sensuality"
+            "Slow + minor = dwell sweet spot (Knoferle 2012)",
+            "Premium-coded production (Beverland 2006)"
           ],
           "cons": [
-            "Lyrics are explicitly about toxic relationships"
+            "Toxic-relationship lyrics undercut empowerment (Alpert 1990)",
+            "Sad valence suppresses approach pleasure (Donovan 1994)",
+            "Brand fit fails if customer wants joy (Beverland 2006)"
           ]
         },
         {
           "title": "Call Out My Name",
           "artist": "The Weeknd",
           "pros": [
-            "Vocal power, emotional intensity"
+            "Vocal richness = premium signal (Beverland 2006)",
+            "Slow tempo extends browsing (Milliman 1982)"
           ],
           "cons": [
-            "Heartbreak intensity too high for retail"
+            "Heartbreak intensity is too much for fitting rooms (Sherman 1997)",
+            "Sad mood limits unplanned spending (Donovan 1994)",
+            "Emotional peaks competing with customer state (Alpert 1990)"
           ]
         },
         {
           "title": "Body Party",
           "artist": "Ciara",
           "pros": [
-            "Ciara's sultriness, perfect tempo"
+            "Slow groove, on-brand sultry (Beverland 2006)",
+            "Tempo supports dwell (Milliman 1982)",
+            "Confident female-POV lyric (Beverland 2006)"
           ],
           "cons": [
-            "Very sexual — fine for lingerie, risky if kids wander in"
+            "Explicit content risky in family-adjacent stores (Beverland 2006)",
+            "Familiar enough to lose time-bend (Yalch 2000)"
           ]
         }
       ]
@@ -3319,50 +3860,65 @@
           "title": "Space Oddity",
           "artist": "David Bowie",
           "pros": [
-            "Bowie's masterpiece, hypnotic storytelling"
+            "Slow tempo extends dwell (Milliman 1982)",
+            "Hypnotic storytelling = absorption (Margulis 2014)"
           ],
           "cons": [
-            "An astronaut dying alone in space — existential dread"
+            "Astronaut-dying narrative competes with shopping (Sherman 1997)",
+            "Familiar = perceived-time inverts (Yalch 2000)",
+            "Sad arc reduces approach pleasure (Donovan 1994)"
           ]
         },
         {
           "title": "Iris",
           "artist": "Goo Goo Dolls",
           "pros": [
-            "90s emotional peak, massive recognition"
+            "Slow tempo, broadly liked (Broekemier 2008)",
+            "High recognition signals comfort (Herrington 1996)"
           ],
           "cons": [
-            "So emotional shoppers might actually cry"
+            "Emotional peak hijacks browsing focus (Sherman 1997)",
+            "Sad valence wrong for happy purchases (Alpert 1990)",
+            "Ubiquity = no time-bend bonus (Yalch 2000)"
           ]
         },
         {
           "title": "The Sound of Silence",
           "artist": "Simon & Garfunkel",
           "pros": [
-            "Haunting beauty, profound gravitas"
+            "Slow + minor = dwell sweet spot (Knoferle 2012)",
+            "Sophisticated brand signal (Beverland 2006)"
           ],
           "cons": [
-            "Literally about alienation and loneliness"
+            "Loneliness lyric suppresses approach (Donovan 1982)",
+            "Heaviness wrong for impulse spending (Sherman 1997)",
+            "Familiar enough to lose time-bend (Yalch 2000)"
           ]
         },
         {
           "title": "Mad World",
           "artist": "Gary Jules",
           "pros": [
-            "Gary Jules version is devastating and beautiful"
+            "Very slow tempo maximizes dwell (Milliman 1982)",
+            "Minor mode + slow = considered-purchase combo (Knoferle 2012)"
           ],
           "cons": [
-            "'The dreams in which I'm dying' — clinical depression energy"
+            "Clinical-depression lyric kills pleasure (Donovan 1994)",
+            "Funeral-coded valence kills WTP (Grossman 2025)",
+            "Heavy mood actively suppresses approach (Donovan 1982)"
           ]
         },
         {
           "title": "Wish You Were Here",
           "artist": "Pink Floyd",
           "pros": [
-            "Pink Floyd's most human moment"
+            "Slow tempo extends dwell (Milliman 1982)",
+            "Premium brand fit, music-nerd cred (Beverland 2006)"
           ],
           "cons": [
-            "Song about loss and absence — heavy for retail"
+            "Lyric is about loss and absence (Alpert 1990)",
+            "Emotional weight breaks browsing flow (Sherman 1997)",
+            "Too familiar to bend perceived time (Yalch 2000)"
           ]
         }
       ]
@@ -3410,50 +3966,65 @@
           "title": "Happy",
           "artist": "Pharrell Williams",
           "pros": [
-            "Second appearance — still impossible to hate initially"
+            "Major-key happiness — parents tolerate it (Broekemier 2008)",
+            "Everyone knows it — instant recognition (Herrington 1996)"
           ],
           "cons": [
-            "Second appearance proves employee exhaustion is real"
+            "Major key cancels the tempo dwell effect (Knoferle 2012)",
+            "Saturation point hit years ago (Margulis 2014)",
+            "Familiarity collapses time-distortion bonus (Yalch 2000)"
           ]
         },
         {
           "title": "Can't Stop the Feeling",
           "artist": "Justin Timberlake",
           "pros": [
-            "Second appearance — safe family fun"
+            "Safe, parent-friendly, kid-approved (Broekemier 2008)",
+            "Pleasure-positive across ages (Donovan 1994)"
           ],
           "cons": [
-            "Safe to the point of soulless"
+            "113 BPM — pushes browse pace up (Milliman 1982)",
+            "Soundtrack-ubiquitous; zero brand fit signal (Beverland 2006)",
+            "Familiar = real dwell drops (Yalch 2000)"
           ]
         },
         {
           "title": "Shake It Off",
           "artist": "Taylor Swift",
           "pros": [
-            "Second appearance — Taylor's most universal"
+            "High likeability with target shopper (Herrington 1996)",
+            "Pleasure first, optimize second (Donovan 1982)"
           ],
           "cons": [
-            "Every kids' store plays this — zero differentiation"
+            "160 BPM — too fast for dwell (Milliman 1982)",
+            "Every kids' store plays it — no brand fit (Beverland 2006)",
+            "Major key kills the slow-dwell mechanic (Knoferle 2012)"
           ]
         },
         {
           "title": "Best Day of My Life",
           "artist": "American Authors",
           "pros": [
-            "Second appearance — optimistic, on-brand"
+            "Major-key optimism, pleasant baseline (Donovan 1982)",
+            "Beats silence — any music wins (Andersson 2012)"
           ],
           "cons": [
-            "Generic optimism is interchangeable with 100 other songs"
+            "Interchangeable with every commercial-rock optimism cue (Beverland 2006)",
+            "No emotional congruence with kids' joy (Alpert 1990)",
+            "Lyric repetition flips to irritation fast (Margulis 2014)"
           ]
         },
         {
           "title": "On Top of the World",
           "artist": "Imagine Dragons",
           "pros": [
-            "Imagine Dragons' most positive song"
+            "Up-tempo helps when store is crowded (Knoferle 2017)",
+            "Broad family appeal — pleasure baseline (Donovan 1994)"
           ],
           "cons": [
-            "The Imagine Dragons Problem (see Ep 7) applies here too"
+            "Stomp-clap saturation past the half-life (Margulis 2014)",
+            "Major key removes the tempo×mode advantage (Knoferle 2012)",
+            "Same song appears in 100 other categories (Beverland 2006)"
           ]
         }
       ]
@@ -3501,50 +4072,65 @@
           "title": "What a Wonderful World",
           "artist": "Louis Armstrong",
           "pros": [
-            "Second appearance — healing energy, appropriate for health"
+            "Slow tempo — calms stressed shoppers (Milliman 1982)",
+            "Soft volume — healthier choices nudge (Biswas 2019)",
+            "Pleasure-positive across all ages (Donovan 1994)"
           ],
           "cons": [
-            "So expected in care settings it's become sonic wallpaper"
+            "Heard 10,000 times — familiarity ceiling (Yalch 2000)",
+            "Sad-adjacent valence in a stress context (Alpert 1990)"
           ]
         },
         {
           "title": "Three Little Birds",
           "artist": "Bob Marley",
           "pros": [
-            "Second appearance — reassuring, calming"
+            "Reassuring lyric — emotional congruence (Alpert 1990)",
+            "Slow, major, low-arousal — pleasant baseline (Donovan 1982)",
+            "Beats silence by ~8 dwell minutes (Andersson 2012)"
           ],
           "cons": [
-            "Reggae in a pharmacy can feel patronizing"
+            "Major key cancels slow-tempo dwell bonus (Knoferle 2012)",
+            "Cliché waiting-room pick — no brand fit (Beverland 2006)"
           ]
         },
         {
           "title": "Here Comes the Sun",
           "artist": "The Beatles",
           "pros": [
-            "Fourth appearance — unkillable optimism"
+            "Slow + warm — reduces customer stress (Milliman 1986)",
+            "High likeability across demographics (Herrington 1996)",
+            "Pleasure mediates spending — this delivers (Sherman 1997)"
           ],
           "cons": [
-            "At this point you're proving it's a crutch, not a choice"
+            "Familiarity saturation crushes time distortion (Yalch 2000)",
+            "Every pharmacy plays it — zero signal (Beverland 2006)"
           ]
         },
         {
           "title": "Lean on Me",
           "artist": "Bill Withers",
           "pros": [
-            "Community anthem, emotionally supportive"
+            "Lyric matches \"we care\" pharmacy frame (Alpert 1990)",
+            "Slow tempo supports calm browsing (Milliman 1982)",
+            "Universally liked — the constraint is met (Herrington 1996)"
           ],
           "cons": [
-            "Can feel heavy-handed in a health context — 'lean on me' in a pharmacy"
+            "Heavily overplayed — half-life exceeded (Margulis 2014)",
+            "Major key reduces dwell mechanic (Knoferle 2012)"
           ]
         },
         {
           "title": "Stand by Me",
           "artist": "Ben E. King",
           "pros": [
-            "Timeless warmth, universal love"
+            "Slow, warm, classic — pleasure-positive (Donovan 1982)",
+            "Low arousal — soft-volume context fit (Lammers 2003)",
+            "Emotional valence matches care setting (Alpert 1990)"
           ],
           "cons": [
-            "Romantic connotation might feel off in fluorescent lighting"
+            "Hyper-familiar — perceived time shrinks (Yalch 2000)",
+            "Default oldies pick — no differentiation (Beverland 2006)"
           ]
         }
       ]
@@ -3592,50 +4178,65 @@
           "title": "Fast Car",
           "artist": "Tracy Chapman",
           "pros": [
-            "Second appearance — storytelling transcends genre"
+            "Slow tempo extends dwell (Milliman 1982)",
+            "Pleasure-positive across generations (Donovan 1994)",
+            "Emotional valence matches \"belonging\" (Alpert 1990)"
           ],
           "cons": [
-            "Poverty narrative can feel exploitative in commercial use"
+            "Lyric content is heavy, not light (Alpert 1990)",
+            "Familiarity ceiling — perceived time shrinks (Yalch 2000)"
           ]
         },
         {
           "title": "Redemption Song",
           "artist": "Bob Marley",
           "pros": [
-            "Bob Marley acoustic, deeply moving"
+            "Slow + minor = dwell sweet spot (Knoferle 2012)",
+            "Likeability is broad — preference gate met (Herrington 1996)",
+            "Emotional congruence with reflective space (Alpert 1990)"
           ],
           "cons": [
-            "So serious it stops all casual energy"
+            "Heavy lyric weight in a casual context (Beverland 2006)",
+            "Default \"deep cut\" pick — no brand signal (Beverland 2006)"
           ]
         },
         {
           "title": "What's Going On",
           "artist": "Marvin Gaye",
           "pros": [
-            "Marvin Gaye's social consciousness, soulful"
+            "Pleasure mediator firing strong (Sherman 1997)",
+            "Soft, warm — calm browsing baseline (Donovan 1982)",
+            "Beats silence on dwell and spend (Andersson 2012)"
           ],
           "cons": [
-            "Protest song — heavy messaging for retail"
+            "Heavy lyric content in retail context (Alpert 1990)",
+            "Hyper-familiar — time-distortion bonus gone (Yalch 2000)"
           ]
         },
         {
           "title": "A Change Is Gonna Come",
           "artist": "Sam Cooke",
           "pros": [
-            "Sam Cooke's voice is divine, civil rights anthem"
+            "Slow + minor — full dwell mechanic active (Knoferle 2012)",
+            "Emotional valence high — pleasure path (Donovan 1994)",
+            "Likeability is unusually universal (Herrington 1996)"
           ],
           "cons": [
-            "Historical weight makes commercial use feel trivializing"
+            "Heavy lyric weight clashes with browse mode (Alpert 1990)",
+            "Cliché third-place pick — zero differentiation (Beverland 2006)"
           ]
         },
         {
           "title": "Lean on Me",
           "artist": "Bill Withers",
           "pros": [
-            "Second appearance — communal strength"
+            "Lyric matches belonging frame perfectly (Alpert 1990)",
+            "Pleasure-positive, universally liked (Herrington 1996)",
+            "Slow tempo supports lingering (Milliman 1982)"
           ],
           "cons": [
-            "Every song here is heavy — collectively overwhelming"
+            "Major key cancels slow-tempo dwell (Knoferle 2012)",
+            "Overplayed — familiarity saturation (Margulis 2014)"
           ]
         }
       ]
@@ -3683,50 +4284,65 @@
           "title": "Cruel Summer",
           "artist": "Taylor Swift",
           "pros": [
-            "Taylor's catchiest hook, massive 2023 moment"
+            "Pleasure-positive — likeability gate met (Herrington 1996)",
+            "Fast tempo helps crowded summer floor (Knoferle 2017)",
+            "Variety-seeking rises with tempo (Sun 2023)"
           ],
           "cons": [
-            "So overplayed it's already fatigued by 2026"
+            "170 BPM — pushes people out fast (Milliman 1982)",
+            "Major key cancels dwell mechanic (Knoferle 2012)"
           ]
         },
         {
           "title": "Hot Girl Summer",
           "artist": "Megan Thee Stallion",
           "pros": [
-            "Megan's confidence, brand-defining energy"
+            "High arousal — fits energetic stores (Donovan 1982)",
+            "Pleasure for in-demographic shoppers (Donovan 1994)"
           ],
           "cons": [
-            "Explicit content, aggressive tone"
+            "Loud + brash = unhealthy-choice nudge (Biswas 2019)",
+            "Lyric content alienates family shoppers (Beverland 2006)",
+            "Disliked = nothing else works (Herrington 1996)"
           ]
         },
         {
           "title": "Summertime Magic",
           "artist": "Childish Gambino",
           "pros": [
-            "Childish Gambino's smoothest moment, pure bliss"
+            "Slow-ish, warm — dwell-friendly (Milliman 1982)",
+            "Pleasure baseline strong (Donovan 1982)",
+            "Less overplayed than peers — fresh ears (Yalch 2000)"
           ],
           "cons": [
-            "So chill it might not register as 'summer energy'"
+            "Major key cancels tempo×mode dwell (Knoferle 2012)",
+            "Brand-fit narrow — needs the right store (Beverland 2006)"
           ]
         },
         {
           "title": "Summer of '69",
           "artist": "Bryan Adams",
           "pros": [
-            "Classic rock nostalgia, universal singalong"
+            "Boomer/Gen-X recognition is total (Herrington 1996)",
+            "Beats silence baseline (Andersson 2012)"
           ],
           "cons": [
-            "Boomer anthem — alienates younger shoppers"
+            "138 BPM — exit-velocity tempo (Milliman 1982)",
+            "Familiarity ceiling — time bonus gone (Yalch 2000)",
+            "Sing-along nostalgia caps repeat tolerance (Margulis 2014)"
           ]
         },
         {
           "title": "California Gurls",
           "artist": "Katy Perry",
           "pros": [
-            "Katy Perry fun, beach-pop perfection"
+            "Pleasure-positive across mainstream audience (Donovan 1994)",
+            "Up-tempo lifts crowded throughput (Knoferle 2017)"
           ],
           "cons": [
-            "Cartoonish production, dated by 2026"
+            "125 BPM — faster browsing pace (Milliman 1982)",
+            "Heavily saturated — half-life exceeded (Margulis 2014)",
+            "Brand-fit weak outside teen retail (Beverland 2006)"
           ]
         }
       ]
@@ -3774,50 +4390,65 @@
           "title": "After Hours",
           "artist": "The Weeknd",
           "pros": [
-            "The Weeknd's cinematic darkness, perfect for night"
+            "Slow + minor — dwell sweet spot (Knoferle 2012)",
+            "Pleasure mediator strong at night (Sherman 1997)",
+            "Brand-fit obvious — title does the work (Beverland 2006)"
           ],
           "cons": [
-            "So moody it can make a store feel lonely"
+            "Hyper-familiar — perceived time shrinks (Yalch 2000)",
+            "Sad valence — context-dependent value (Alpert 1990)"
           ]
         },
         {
           "title": "The Less I Know the Better",
           "artist": "Tame Impala",
           "pros": [
-            "Tame Impala's groove, cool and catchy"
+            "Mid-tempo groove — pleasure-positive (Donovan 1982)",
+            "Less radio-saturated — time bonus intact (Yalch 2000)",
+            "Likeability is wide in target demo (Herrington 1996)"
           ],
           "cons": [
-            "Jealousy narrative, psychedelic haze can disorient"
+            "Major key cancels slow-tempo dwell (Knoferle 2012)",
+            "Brand-fit narrow outside design-forward retail (Beverland 2006)"
           ]
         },
         {
           "title": "Nights",
           "artist": "Frank Ocean",
           "pros": [
-            "Frank Ocean's masterpiece, the beat switch is legendary"
+            "Tempo shift mid-track — novelty extends dwell (Yalch 2000)",
+            "Pleasure-positive for target shopper (Donovan 1994)",
+            "Slow + minor segments hit dwell sweet spot (Knoferle 2012)"
           ],
           "cons": [
-            "So emotionally complex it demands active listening"
+            "Lyric weight is heavy for browsing (Alpert 1990)",
+            "Likeability ceiling for older shoppers (Herrington 1996)"
           ]
         },
         {
           "title": "Midnight City",
           "artist": "M83",
           "pros": [
-            "Fourth appearance — the ultimate night-retail synth riff"
+            "Big arousal — fits crowded evening floor (Knoferle 2017)",
+            "Pleasure-positive across taste lines (Donovan 1994)",
+            "Less saturated than peers — fresh ears (Yalch 2000)"
           ],
           "cons": [
-            "By now you know: familiar but unattached"
+            "Major key cancels tempo×mode dwell (Knoferle 2012)",
+            "Sax stab divides — preference gate risk (Herrington 1996)"
           ]
         },
         {
           "title": "Moth to a Flame",
           "artist": "Swedish House Mafia & The Weeknd",
           "pros": [
-            "Swedish House Mafia + Weeknd = sleek, dark"
+            "Mid-tempo, minor — dwell mechanic active (Knoferle 2012)",
+            "Arousal-up matches late-night state (Donovan 1982)",
+            "Unfamiliar enough to stretch time (Yalch 2000)"
           ],
           "cons": [
-            "Addiction metaphor — 'you're a moth to a flame'"
+            "Risk of overload with low light + visuals (Doucé 2020)",
+            "Brand-fit narrow outside club-coded retail (Beverland 2006)"
           ]
         }
       ]
@@ -3865,50 +4496,65 @@
           "title": "Nessun Dorma",
           "artist": "Luciano Pavarotti",
           "pros": [
-            "Pavarotti's voice is the pinnacle of human expression"
+            "Classical raises max willingness-to-pay (Grossman 2025)",
+            "Classical → more expensive selections (Areni 1993)",
+            "Classical → £32.52/head in restaurants (North 2003)"
           ],
           "cons": [
-            "Opera in retail is a bold swing — can feel pretentious"
+            "Loud climax — exit-velocity moment (Smith 1966)",
+            "Brand-misfit risk outside premium retail (Beverland 2006)"
           ]
         },
         {
           "title": "At Last",
           "artist": "Etta James",
           "pros": [
-            "Etta James defines timeless romance"
+            "Slow + warm — dwell sweet spot (Milliman 1982)",
+            "Pleasure-positive across ages (Donovan 1994)",
+            "Likeability is unusually universal (Herrington 1996)"
           ],
           "cons": [
-            "Wedding first-dance association — very specific context"
+            "Major key cancels tempo×mode dwell (Knoferle 2012)",
+            "Wedding-cliché ceiling — perceived time shrinks (Yalch 2000)"
           ]
         },
         {
           "title": "Fly Me to the Moon",
           "artist": "Frank Sinatra",
           "pros": [
-            "Second appearance — Sinatra's class is portable"
+            "Classical-adjacent — premium WTP signal (Grossman 2025)",
+            "Slow tempo extends dwell (Milliman 1982)",
+            "Pleasure mediator firing on pleasant baseline (Sherman 1997)"
           ],
           "cons": [
-            "Skews very old — signals 'your grandparents' store'"
+            "Hyper-familiar — time-distortion bonus gone (Yalch 2000)",
+            "Default \"classy\" pick — zero brand signal (Beverland 2006)"
           ]
         },
         {
           "title": "Come Away with Me",
           "artist": "Norah Jones",
           "pros": [
-            "Second appearance — Norah Jones is mature comfort"
+            "Slow + warm — dwell mechanic engaged (Milliman 1982)",
+            "Soft volume — healthier-choice nudge (Biswas 2019)",
+            "Pleasure-positive across mature demographics (Donovan 1982)"
           ],
           "cons": [
-            "So comfortable it's invisible"
+            "Likeability narrows for younger shoppers (Herrington 1996)",
+            "Major key cancels slow-tempo dwell (Knoferle 2012)"
           ]
         },
         {
           "title": "Feeling Good",
           "artist": "Nina Simone",
           "pros": [
-            "Second appearance — dramatic, empowering"
+            "Slow + minor — full dwell sweet spot (Knoferle 2012)",
+            "Pleasure mediator drives spending here (Sherman 1997)",
+            "Premium signal — hedonic WTP up (Grossman 2025)"
           ],
           "cons": [
-            "Car commercial energy — feels licensed, not curated"
+            "Brand overuse in luxury — saturation risk (Margulis 2014)",
+            "Sad-adjacent valence in cheerful contexts (Alpert 1990)"
           ]
         }
       ]
