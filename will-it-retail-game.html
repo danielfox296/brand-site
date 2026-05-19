@@ -433,6 +433,29 @@ html, body {
   animation:skipFade 0.6s ease-in forwards;
   pointer-events:none;
 }
+/* Spinner overlay shown while iTunes preview is still buffering. Sits on
+   top of the album art so it's obvious why the clip hasn't started. */
+.drop-album.audio-loading::after{
+  content:'';
+  position:absolute; inset:0;
+  border-radius:6px;
+  background:rgba(0,0,0,0.55);
+  pointer-events:none;
+}
+.drop-album.audio-loading::before{
+  content:'';
+  position:absolute;
+  top:50%; left:50%;
+  width:34%; height:34%;
+  margin:-17% 0 0 -17%;
+  border:2px solid rgba(255,255,255,0.25);
+  border-top-color:#fff;
+  border-radius:50%;
+  animation:dropLoadSpin 0.8s linear infinite;
+  z-index:2;
+  pointer-events:none;
+}
+@keyframes dropLoadSpin{ to { transform: rotate(360deg); } }
 @keyframes skipFade{
   0%  {opacity:1;}
   100%{opacity:0;transform:scale(0.7);}
@@ -717,6 +740,8 @@ let queueIndex=0;
 const placements=[]; // {song, tier} per song (tier=null = skipped on timeout)
 let currentAudio=null;     // <Audio> playing the current drop
 let timeoutTimer=null;     // fallback for songs without preview URL
+let PRELOADED_AUDIO=[];    // one <Audio> per song, preloaded at game start so
+                           // song 2+ doesn't have to wait on iTunes cold-fetch
 let DROP=null;             // current drop: {song, el, x, y, vx, vy, settled, picked, placed}
 let physicsInterval=null;  // setInterval id (not rAF — survives tab-hidden / iframe)
 let lastPlaceTime=0,comboCount=0;
@@ -935,9 +960,27 @@ function startGame(){
   placements.length=0;
   buildTiers();
   buildQueue();
+  preloadAudio();   // kick off iTunes preview fetch for ALL 5 songs now
   updateCounter();
   // Brief beat for queue to slide in, then first drop
   setTimeout(dropNext, 5 * 120 + 500);
+}
+
+// Pre-fetch all preview URLs at game start. Without this, each new Audio()
+// in startCurrentAudio() pays cold iTunes latency, which the player blows
+// past if they categorize fast — song 2+ ends up silent because the audio
+// hasn't buffered yet. Created on user gesture (PLAY click) so autoplay
+// policies don't block the load.
+function preloadAudio(){
+  PRELOADED_AUDIO = SONGS.map(s=>{
+    if(!s.preview) return null;
+    const a = new Audio();
+    a.preload = 'auto';
+    a.volume = 0.22;
+    a.src = s.preview;
+    try{ a.load(); }catch(e){}
+    return a;
+  });
 }
 
 // ========== QUEUE CAROUSEL ==========
@@ -1171,14 +1214,49 @@ function startCurrentAudio(song){
     requestAnimationFrame(()=>{fill.style.transition='width 15s linear, background-color 0.6s';fill.style.width='0%';});
     return;
   }
-  const a=new Audio(song.preview);
-  a.volume=0.22;  // Halved per Daniel's request — was 0.45
-  a.preload='auto';
+  // Reuse the preloaded <Audio> for this song if available; otherwise fall
+  // back to a fresh one. The preloaded path is the hot path on song 2+ —
+  // it's already buffered, so play() fires instantly.
+  const a = PRELOADED_AUDIO[queueIndex] || new Audio(song.preview);
+  a.volume = 0.22;
+  try{ a.currentTime = 0; }catch(e){}
   currentAudio=a;
   a.addEventListener('ended', onClipEnded);
   a.addEventListener('timeupdate', updateClipProgress);
-  a.play().catch(()=>{});
-  startTicking();  // clock ticks once audio kicks off
+  const launch = ()=>{
+    if(currentAudio !== a) return;  // user already placed/skipped while loading
+    showDropLoading(false);
+    a.play().catch(()=>{});
+    startTicking();
+  };
+  if(a.readyState >= 3){  // HAVE_FUTURE_DATA — safe to play
+    launch();
+  } else {
+    // Not buffered yet (slow network or cold fetch). Show a loading spinner
+    // on the album until canplay fires, then start the clip + clock together.
+    showDropLoading(true);
+    const onReady = ()=>{
+      a.removeEventListener('canplay', onReady);
+      a.removeEventListener('error', onErr);
+      launch();
+    };
+    const onErr = ()=>{
+      a.removeEventListener('canplay', onReady);
+      a.removeEventListener('error', onErr);
+      if(currentAudio !== a) return;
+      // Audio failed to load — fall back to a 15s timer so the game continues
+      showDropLoading(false);
+      timeoutTimer = setTimeout(onClipEnded, 15000);
+    };
+    a.addEventListener('canplay', onReady);
+    a.addEventListener('error', onErr);
+    try{ a.load(); }catch(e){}
+  }
+}
+
+function showDropLoading(show){
+  if(!DROP || !DROP.el) return;
+  DROP.el.classList.toggle('audio-loading', !!show);
 }
 
 function stopCurrentAudio(){

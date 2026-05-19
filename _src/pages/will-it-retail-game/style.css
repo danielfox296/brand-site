@@ -350,6 +350,29 @@ html, body {
   animation:skipFade 0.6s ease-in forwards;
   pointer-events:none;
 }
+/* Spinner overlay shown while iTunes preview is still buffering. Sits on
+   top of the album art so it's obvious why the clip hasn't started. */
+.drop-album.audio-loading::after{
+  content:'';
+  position:absolute; inset:0;
+  border-radius:6px;
+  background:rgba(0,0,0,0.55);
+  pointer-events:none;
+}
+.drop-album.audio-loading::before{
+  content:'';
+  position:absolute;
+  top:50%; left:50%;
+  width:34%; height:34%;
+  margin:-17% 0 0 -17%;
+  border:2px solid rgba(255,255,255,0.25);
+  border-top-color:#fff;
+  border-radius:50%;
+  animation:dropLoadSpin 0.8s linear infinite;
+  z-index:2;
+  pointer-events:none;
+}
+@keyframes dropLoadSpin{ to { transform: rotate(360deg); } }
 @keyframes skipFade{
   0%  {opacity:1;}
   100%{opacity:0;transform:scale(0.7);}
