@@ -1,0 +1,198 @@
+{
+  "Milliman 1982": {
+    "title": "Using Background Music to Affect the Behavior of Supermarket Shoppers",
+    "citation": "Milliman, R.E. (1982). Journal of Marketing, 46(3), 86–91.",
+    "summary": "Slow music → 38% higher daily sales (but didn't replicate at scale)",
+    "killer_stat": "38.2% higher daily sales — a $4,627/day difference — from nothing more than slowing down the background music. That's roughly $1.7 million in annualized revenue for a single store.",
+    "story": "In 1980, Ronald Milliman convinced a medium-sized supermarket in a southwestern U.S. city to let him secretly run an experiment on its shoppers for nine weeks. He piped in three different audio conditions on different days — no music, slow-tempo instrumental music (averaging 60 BPM), and fast-tempo instrumental music (averaging 108 BPM) — and measured two things: how fast people moved through the aisles, and how much money the store made each day."
+  },
+  "Milliman 1986": {
+    "title": "The Influence of Background Music on the Behavior of Restaurant Patrons",
+    "citation": "Milliman, R.E. (1986). Journal of Consumer Research, 13(2), 286–289.",
+    "summary": "Slow music → 11 min longer stay → 3 more drinks per table",
+    "killer_stat": "3.04 additional drinks per table with slow music — roughly a 40% increase in beverage revenue. And an 11-minute longer stay (56 vs 45 minutes).",
+    "story": "Four years after his supermarket breakthrough, Milliman ran the same slow-vs-fast tempo experiment in a restaurant in the Dallas-Fort Worth area. Same BPM cutoffs (≤72 slow, ≥94 fast). But the restaurant context revealed a much richer story than the grocery store."
+  },
+  "North 1999": {
+    "title": "The Influence of In-Store Music on Wine Selections",
+    "citation": "North, A.C., Hargreaves, D.J., & McKendrick, J. (1999). Journal of Applied Psychology, 84(2), 271–276. Also published as a brief in Nature, 390, 132 (1997).",
+    "summary": "French music → 5:1 French wine. German music reversed it. Nobody noticed.",
+    "killer_stat": "5:1 French wine preference with French music. 2:1 German wine preference with German music. And only 14% of shoppers (6 out of 44) realized the music had influenced them.",
+    "story": "This is the most famous study in retail music research, and the one that makes every audience sit up."
+  },
+  "Areni 1993": {
+    "title": "The Influence of Background Music on Shopping Behavior: Classical Versus Top-Forty Music in a Wine Store",
+    "citation": "Areni, C.S. & Kim, D. (1993). Advances in Consumer Research, 20, 336–340.",
+    "summary": "Classical music → more expensive wines selected (not more bottles)",
+    "killer_stat": "Significant shift to higher price tiers — same number of bottles purchased, but more expensive selections. The effect was purely on price-per-item, not on volume.",
+    "story": "Over two months of Friday and Saturday evenings, researchers alternated between classical music and Top-40 hits in a wine store. They wanted to know: does the genre of background music affect what people buy?"
+  },
+  "Smith 1966": {
+    "title": "Arousal Hypothesis and the Effects of Music on Purchasing Behavior",
+    "citation": "Smith, P.C. & Curnow, R. (1966). Journal of Applied Psychology, 50(3), 255–256.",
+    "summary": "Loud = faster exit, but same total sales. Volume controls velocity.",
+    "killer_stat": "1,100 shoppers observed. Loud music = significantly less time in store. But no change in total sales. People speed up, they don't buy less.",
+    "story": "This is the earliest empirical study of music and shopping behavior — published in 1966, when the Beatles were still together. Smith and Curnow tested a brutally simple question in two supermarkets: does loud music make people leave faster?"
+  },
+  "Donovan 1982": {
+    "title": "Store Atmosphere: An Environmental Psychology Approach",
+    "citation": "Donovan, R.J. & Rossiter, J.R. (1982). Journal of Retailing, 58(Spring), 34–57.",
+    "summary": "Pleasure predicts everything. The theoretical foundation.",
+    "killer_stat": "Of the three PAD dimensions, only Pleasure was a significant and consistent predictor of approach behavior (intended time, spending, and return visits). Arousal and Dominance were not.",
+    "story": "Before this paper, retailers thought about store atmosphere the way you'd think about wallpaper — nice to have, hard to quantify. Donovan and Rossiter changed that by importing the Mehrabian-Russell environmental psychology model into retail for the first time."
+  },
+  "Donovan 1994": {
+    "title": "Store Atmosphere and Purchasing Behavior",
+    "citation": "Donovan, R.J., Rossiter, J.R., Marcoolyn, G., & Nesdale, A. (1994). Journal of Retailing, 70(3), 283–294.",
+    "summary": "Pleasure at 5 minutes → predicts real unplanned spending",
+    "killer_stat": "Pleasure measured at the 5-minute mark predicted actual incremental spending — the gap between what shoppers planned to spend and what they actually spent.",
+    "story": "The 1982 study had a fatal flaw: it only measured what people *said* they'd do, using college students. Twelve years later, Donovan came back with the real test: actual shoppers, actual money, measured in the wild."
+  },
+  "Yalch 2000": {
+    "title": "The Effects of Music in a Retail Setting on Real and Perceived Shopping Times",
+    "citation": "Yalch, R.F. & Spangenberg, E.R. (2000). Journal of Business Research, 49(2), 139–147.",
+    "summary": "Unfamiliar music = more actual time, less perceived time. Inverted.",
+    "killer_stat": "Actual time: longer with unfamiliar music. Perceived time: longer with familiar music. The two were inverted. Unfamiliar music extends dwell while compressing time perception — the ideal combination.",
+    "story": "This study uncovered one of the most counterintuitive findings in the field — a genuine paradox that most people get backwards."
+  },
+  "Knoferle 2012": {
+    "title": "It Is All in the Mix",
+    "citation": "Knoferle, K.M. et al. (2012). Marketing Letters, 23(1), 325–337.",
+    "summary": "Slow+minor = best. Major key eliminates the tempo effect entirely.",
+    "killer_stat": "~12% higher sales for slow+minor vs. fast+minor. Major mode eliminated the tempo effect entirely — slow-major ≈ fast-major.",
+    "story": "For 30 years after Milliman, everyone focused on tempo. Slow = more dwell = more sales. Simple. But Knoferle and colleagues suspected something was being missed: the *mode* of the music (major key vs. minor key)."
+  },
+  "Knoferle 2017": {
+    "title": "An Upbeat Crowd: Fast In-store Music Alleviates Negative Effects of High Social Density on Customers' Spending",
+    "citation": "Knoferle, K.M., Paus, V.C., & Vossen, A. (2017). Journal of Retailing, 93(4), 541–549.",
+    "summary": "Fast music helps when crowded (43,676 observations). Slow doesn't.",
+    "killer_stat": "43,676 basket observations. Fast music during crowding → ~8% higher basket value vs. no music. Driven by more items (not more expensive items).",
+    "story": "This study overturns the \"slow is always better\" dogma with the most robust dataset in the field: 43,676 shopping basket observations from six European grocery convenience stores over a six-week experiment."
+  },
+  "Mattila 2001": {
+    "title": "Congruency of Scent and Music as a Driver of In-Store Evaluations and Behavior",
+    "citation": "Mattila, A.S. & Wirtz, J. (2001). Journal of Retailing, 77(2), 273–289.",
+    "summary": "Scent+music must match on arousal. Mismatch is worse than either alone.",
+    "killer_stat": "270 customers in a real gift shop. Congruent arousal conditions → significantly higher approach behavior, impulse purchases, AND satisfaction. Incongruent → worse than either stimulus alone.",
+    "story": "Mattila and Wirtz asked a question most music-only researchers had ignored: what happens when you combine music with scent? Is 1+1=2, or does it depend on whether they match?"
+  },
+  "Sherman 1997": {
+    "title": "Store Environment and Consumer Purchase Behavior: Mediating Role of Consumer Emotions",
+    "citation": "Sherman, E., Mathur, A., & Smith, R.B. (1997). Psychology & Marketing, 14(4), 361–378.",
+    "summary": "Environment → emotion → behavior. Impulse buying is emotional, not cognitive.",
+    "killer_stat": "Both pleasure (→ money spent, store affinity) and arousal (→ money, time, number of items) were significant mediators between store environment and actual purchase behavior.",
+    "story": "Sherman and colleagues ran a large-scale field study to answer a fundamental question: do store environments affect actual purchase behavior through emotions, or through rational evaluation?"
+  },
+  "Andersson 2012": {
+    "title": "Let the Music Play or Not",
+    "citation": "Andersson, P.K. et al. (2012). Journal of Retailing and Consumer Services, 19(6), 553–560.",
+    "summary": "Any music > silence. +8 min dwell, more spending. Table stakes.",
+    "killer_stat": "8 additional minutes of dwell time with music vs. silence, leading to significantly increased spending. N=550 across two retail contexts.",
+    "story": "Before you can argue about tempo, mode, or genre, you need to answer a more basic question: does having music at all make a difference compared to silence?"
+  },
+  "Biswas 2019": {
+    "title": "Sounds Like a Healthy Retail Atmospheric Strategy",
+    "citation": "Biswas, D., Lund, K., & Szocs, C. (2019). Journal of the Academy of Marketing Science, 47(1), 37–55.",
+    "summary": "Low volume → healthier food choices. High volume → junk food.",
+    "killer_stat": "20% more patrons ordered unhealthy food when music was loud (70 dB) vs. quiet (55 dB). 549 items tracked across field experiment days.",
+    "story": "Most music research asks \"does this sell more?\" Biswas and colleagues asked something different: does music volume affect *what* people choose to buy?"
+  },
+  "Beverland 2006": {
+    "title": "In-Store Music and Consumer–Brand Relationships",
+    "citation": "Beverland, M.B. et al. (2006). Journal of Business Research, 59(9), 982–989.",
+    "summary": "Music fit strengthens brand. Misfit actively damages it.",
+    "killer_stat": "No quantitative stat — but the qualitative finding is clear: misfit music actively damages brand perception. It's not a neutral miss; it's a negative event.",
+    "story": "This is a qualitative study, which means no statistical effect sizes — but it tells a story that quantitative studies can't. The researchers did in-depth interviews with 20 consumers plus observational research in themed retail stores across Australia and the US, asking: what happens to your relationship with a brand when the music *fits* versus when it *doesn't*?"
+  },
+  "Spangenberg 2005": {
+    "title": "It's Beginning to Smell (and Sound) a Lot Like Christmas",
+    "citation": "Spangenberg, E.R., Grohmann, B., & Sprott, D.E. (2005). Journal of Business Research, 58(11), 1583–1589.",
+    "summary": "Pine scent alone backfired. Needed Christmas music to work.",
+    "killer_stat": "Congruent (Christmas music + pine scent) → significantly higher store attitudes, visit intentions, and pleasure than all other conditions. Pine scent alone → negative effect.",
+    "story": "The title alone makes this memorable. Spangenberg used the Christmas season as a natural laboratory for multisensory congruence. In a simulated retail store, 140 undergraduate students experienced four conditions: Christmas music + pine scent (congruent), Christmas music alone, pine scent alone, or neither."
+  },
+  "Sun 2023": {
+    "title": "The Effects of Background Music Tempo on Consumer Variety-Seeking Behavior",
+    "citation": "Sun, W., Chang, E.-C., & Xu, Y. (2023). Frontiers in Psychology, 14, 1236006. (Open access)",
+    "summary": "Fast tempo → more variety seeking. Arousal mediates. Lab-only.",
+    "killer_stat": "5 experiments consistently showing fast tempo → increased variety-seeking. Arousal is the confirmed mediator.",
+    "story": "This is one of the few studies connecting music to *what* people buy rather than *how much*. Across five lab experiments at Renmin University of China, the researchers showed that fast-tempo background music increases variety-seeking behavior — when given a choice of snack flavors, people exposed to fast music chose a wider variety."
+  },
+  "Lammers 2003": {
+    "title": "An Oceanside Field Experiment on Background Music Effects on the Restaurant Tab",
+    "citation": "Lammers, H.B. (2003). Perceptual and Motor Skills, 96(3), 1025–1026.",
+    "summary": "Soft music → $3.05 more per check. Genre didn't matter.",
+    "killer_stat": "$3.05 per check more with soft vs. loud music (~15% lift). Genre made zero difference.",
+    "story": "Sometimes the simplest studies tell the clearest story. At an oceanside restaurant in California, Lammers crossed two music variables — volume (soft vs. loud) and genre (soft rock vs. classical) — and tracked restaurant checks."
+  },
+  "Caldwell 1999": {
+    "title": "Play That One Again: The Effect of Music Tempo on Consumer Behaviour in a Restaurant",
+    "citation": "Caldwell, C. & Hibbert, S.A. (1999). European Advances in Consumer Research, 4, 58–62.",
+    "summary": "Slow jazz → 15 min longer. But spending didn't proportionally follow.",
+    "killer_stat": "15 minutes longer dining duration with slow vs. fast tempo jazz. But spending gains did not proportionally match the time extension.",
+    "story": "Caldwell and Hibbert extended Milliman's restaurant work with a tighter design: all jazz music from a single artist (controlling for genre effects), same BPM cutoffs (≤72 slow, ≥94 fast), in a real restaurant. Data was collected from two specific tables on Thursdays and Sundays."
+  },
+  "Alpert 1990": {
+    "title": "Music Influences on Mood and Purchase Intentions",
+    "citation": "Alpert, J.I. & Alpert, M.I. (1990). Psychology & Marketing, 7(2), 109–133.",
+    "summary": "Sad music > happy for greeting cards. Emotional congruence > simple positivity.",
+    "killer_stat": "Sad music > happy music for purchase intention. Music influenced buying intent without affecting intervening cognitions — it bypassed rational processing.",
+    "story": "Alpert and Alpert set up one of the earliest controlled experiments on musical emotion and purchasing. Students were exposed to greeting card advertisements accompanied by happy instrumental music, sad instrumental music, or silence. The music was carefully selected — equally liked but unfamiliar, matched on structural analysis."
+  },
+  "Grossman 2025": {
+    "title": "The Impact of Background Music Style on Price Thresholds",
+    "citation": "Grossman, O. & Rachamim, M. (2025). Marketing Letters. DOI: 10.1007/s11002-025-09803-4",
+    "summary": "Classical raises max WTP — but only for hedonic products + high pleasure.",
+    "killer_stat": "Classical music raises maximum acceptable price for hedonic products when pleasure is high. No effect on minimum price, no effect on utilitarian products, no effect when pleasure is low.",
+    "story": "This study adds precision to the Areni & Kim finding about classical music and pricing. Grossman and Rachamim (Bar-Ilan University, Israel) measured not just \"did they spend more?\" but specifically: did the music change the *minimum* acceptable price, the *maximum* acceptable price, or both?"
+  },
+  "EMAC 2025": {
+    "title": "Background Music in Retail: When Taking It Slow May Benefit You",
+    "citation": "Vrije Universiteit Amsterdam (2025). EMAC 2025 Conference Proceedings. Part of EU project Music360. URL: https://proceedings.emac-online.org/pdfs/A2025-126256.pdf",
+    "summary": "No overall tempo effect at scale. Only loyalty members responded.",
+    "killer_stat": "140 stores. No overall tempo effect on sales. Slow music only boosted spending among loyalty program members. Fast music → higher employee satisfaction.",
+    "story": "This is the study that humbles everyone who cites Milliman. In spring 2024, researchers from Vrije Universiteit Amsterdam partnered with a large Dutch national retailer, Dutch music rights organizations (BUMA and SENA), and music tech company BMAT to run the largest field experiment on music tempo ever conducted: 140 stores, 6 weeks, real sales data."
+  },
+  "Zwebner 2014": {
+    "title": "The Temperature Premium: Warm Temperatures Increase Product Valuation",
+    "citation": "Zwebner, Y., Lee, L., & Goldenberg, J. (2014). Journal of Consumer Psychology, 24(2), 251–259.",
+    "summary": "Warm temps → 10-36% higher WTP. Not music, but a critical covariate.",
+    "killer_stat": "36% higher WTP from holding a warm pad for just 10 seconds. 10.4% overall temperature premium across studies.",
+    "story": "This isn't a music study — and that's exactly why it's in this collection. Zwebner and colleagues (including Leonard Lee from Columbia Business School) ran five studies showing that physical warmth increases how much people will pay for products."
+  },
+  "Margulis 2014": {
+    "title": "On Repeat: How Music Plays the Mind",
+    "citation": "Margulis, E.H. (2014). On Repeat: How Music Plays the Mind. Oxford University Press. Winner of the Wallace Berry Award (Society for Music Theory) and ASCAP Deems Taylor/Virgil Thomson Award.",
+    "summary": "Repetition → absorption → time distortion. 94% of music repeats. Zero retail evidence.",
+    "killer_stat": "94% of musical passages are literally repeated at some point across cultures. And adding repetition to unfamiliar music made listeners rate it as more enjoyable, higher quality, and more human.",
+    "story": "This is a book, not a single study — and it's the theoretical backbone for why musical repetition affects time perception and immersive states."
+  },
+  "Herrington 1996": {
+    "title": "Effects of Music in Service Environments: A Field Study",
+    "citation": "Herrington, J.D. & Capella, L.M. (1996). The Journal of Services Marketing, 10(2), 26–41.",
+    "summary": "Preference was the ONLY significant predictor. Tempo/volume → not significant.",
+    "killer_stat": "Musical preference was the only significant predictor of shopping time and spending. Tempo and volume effects → not significant.",
+    "story": "This study is the cold water on the tidy tempo-and-volume narrative. In a supermarket field study, Herrington and Capella tested three music variables simultaneously: tempo, volume, and personal musical preference. They measured shopping time and spending."
+  },
+  "Broekemier 2008": {
+    "title": "An Exploration of Happy/Sad and Liked/Disliked Music Effects on Shopping Intentions",
+    "citation": "Broekemier, G., Marquardt, R., & Gentry, J.W. (2008). Journal of Services Marketing, 22(1), 59–67.",
+    "summary": "Happy+liked = best. Sad+disliked = worst. Likeability is the constraint.",
+    "killer_stat": "Happy + liked = highest shopping intentions. Sad + disliked = lowest. The interaction matters more than either dimension alone.",
+    "story": "Broekemier and colleagues set up the definitive comparison: which matters more for shopping intentions — whether the music is *happy or sad* (emotional valence, which a system can control) or whether the shopper *likes or dislikes* it (personal preference, which a system can't fully control)?"
+  },
+  "North 2003": {
+    "title": "The Effect of Musical Style on Restaurant Customers' Spending",
+    "citation": "North, A.C., Shilcock, A., & Hargreaves, D.J. (2003). Environment and Behavior, 35(5), 712–718.",
+    "summary": "Classical = £32.52/head. Pop ≈ silence (£29.46 vs £29.73).",
+    "killer_stat": "£32.52 per head with classical music vs. £29.46 with pop and £29.73 with no music. Classical produced ~10% higher spending. Pop ≈ silence.",
+    "story": "Adrian North — the same researcher who ran the famous wine aisle priming study — tested classical vs. pop vs. no music across 18 evenings in a British restaurant. Six evenings per condition. He tracked mean spend per head across every line item: starters, mains, desserts, coffee, bar, wine, total food, total drink, and total spend."
+  },
+  "Doucé 2020": {
+    "title": "Sensory Overload in a Shopping Environment",
+    "citation": "Doucé, L. & Adams, C. (2020). Journal of Retailing and Consumer Services, 57, 102154.",
+    "summary": "Third high-arousal stimulus from a \"higher sense\" → overload → avoidance",
+    "killer_stat": "Sensory overload = third high-arousal stimulus from a \"higher sense.\" Result: arousal up + pleasure down → avoidance.",
+    "story": "Every other study in this collection says \"add this stimulus, improve this outcome.\" Doucé and Adams asked the opposite question: when does adding *too many* stimuli backfire?"
+  }
+}

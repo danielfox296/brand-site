@@ -100,6 +100,97 @@ main, .main { padding: 0 !important; margin: 0 !important; max-width: none !impo
 }
 .notes-error { color: #ef4444; }
 
+/* Inline citation chip — clickable, jumps to the study card below */
+.cite-chip {
+  color: #ff8aa0;
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(255, 138, 160, 0.45);
+  cursor: pointer;
+  transition: color 0.12s, border-color 0.12s;
+}
+.cite-chip:hover { color: #fff; border-bottom-color: #fff; }
+.cite-chip:target,
+.study-card:target { /* visual ping when scrolled-to */ }
+
+/* "Cited studies" block — one card per unique citation in the episode. */
+.notes-studies {
+  margin-top: 36px;
+  padding-top: 22px;
+  border-top: 1px solid #222;
+}
+.studies-head {
+  font-size: 11px;
+  font-weight: 700;
+  color: #ff2d55;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0 0 14px;
+}
+.study-card {
+  padding: 14px 16px;
+  background: #131313;
+  border: 1px solid #1f1f1f;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  scroll-margin-top: 16px; /* offset when jumped via #anchor */
+}
+.study-card:target {
+  border-color: #ff2d55;
+  box-shadow: 0 0 0 1px rgba(255, 45, 85, 0.5);
+}
+.study-key {
+  font-size: 11px;
+  font-weight: 700;
+  color: #ff8aa0;
+  letter-spacing: 0.08em;
+  font-family: 'SF Mono', Menlo, monospace;
+  margin-bottom: 6px;
+}
+.study-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.35;
+  margin-bottom: 6px;
+}
+.study-citation {
+  font-size: 12px;
+  color: #888;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+.study-summary {
+  font-size: 13px;
+  color: #c8c8c8;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+.study-stat {
+  font-size: 13px;
+  color: #d8d8d8;
+  line-height: 1.5;
+  padding: 8px 10px;
+  background: #0d0d0d;
+  border-left: 2px solid #22c55e;
+  border-radius: 0 3px 3px 0;
+}
+.study-stat .stat-label {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  color: #22c55e;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.study-card.missing {
+  border-color: #4a2222;
+}
+.study-card.missing .study-meta {
+  font-size: 12px;
+  color: #888;
+}
+
 .notes-foot {
   margin-top: 26px;
   padding-top: 14px;

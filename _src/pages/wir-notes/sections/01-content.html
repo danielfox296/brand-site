@@ -6,6 +6,10 @@
   <div id="notes-body">
     <div class="notes-empty">Loading…</div>
   </div>
+  <div id="notes-studies" class="notes-studies" hidden>
+    <h2 class="studies-head">Cited studies</h2>
+    <div id="studies-list"></div>
+  </div>
   <div class="notes-foot">
     <span id="notes-foot-left">Companion window</span>
     <a href="wir-studio.html" target="_blank">↗ Studio</a>
@@ -21,11 +25,17 @@
   const eyebrow = document.getElementById('notes-eyebrow');
   const title = document.getElementById('notes-title');
   const footLeft = document.getElementById('notes-foot-left');
+  const studiesWrap = document.getElementById('notes-studies');
+  const studiesList = document.getElementById('studies-list');
 
-  let data;
+  let data, studies = {};
   try{
-    const resp = await fetch('data/wir/episodes.json', {cache: 'no-store'});
-    data = await resp.json();
+    const [respEps, respStudies] = await Promise.all([
+      fetch('data/wir/episodes.json', {cache: 'no-store'}),
+      fetch('data/wir/studies.json', {cache: 'no-store'}),
+    ]);
+    data = await respEps.json();
+    studies = await respStudies.json();
   }catch(e){
     body.innerHTML = '<div class="notes-error">Failed to load: '+escapeHtml(e.message)+'</div>';
     return;
@@ -45,9 +55,25 @@
     body.innerHTML = '<div class="notes-empty">No commentary written yet for this episode.</div>';
     return;
   }
+
+  // Citation pattern matches "(Author Year)" — accent-letter aware so
+  // "(Doucé 2020)" parses correctly. Year is 4 digits.
+  const CITE_RE = /\(([A-Za-zÀ-ÿ&\.\s\-]+?\s\d{4})\)/g;
+  const citedKeys = new Set();
+  function chipify(text){
+    // Replace each "(Author Year)" inline with a clickable chip that
+    // scrolls to the matching study card below.
+    return escapeHtml(text).replace(CITE_RE, (m, key) => {
+      const cleanKey = key.trim();
+      citedKeys.add(cleanKey);
+      const anchorId = 'study-' + cleanKey.replace(/[^A-Za-z0-9]+/g,'-').toLowerCase();
+      return '<a class="cite-chip" href="#'+anchorId+'">'+escapeHtml(cleanKey)+'</a>';
+    });
+  }
+
   body.innerHTML = notes.map((n, i) => {
-    const pros = (n.pros||[]).map(t => '<li class="pro"><span class="sign">+</span><span class="text">'+escapeHtml(t)+'</span></li>').join('');
-    const cons = (n.cons||[]).map(t => '<li class="con"><span class="sign">−</span><span class="text">'+escapeHtml(t)+'</span></li>').join('');
+    const pros = (n.pros||[]).map(t => '<li class="pro"><span class="sign">+</span><span class="text">'+chipify(t)+'</span></li>').join('');
+    const cons = (n.cons||[]).map(t => '<li class="con"><span class="sign">−</span><span class="text">'+chipify(t)+'</span></li>').join('');
     return ''
       + '<div class="song-block">'
       +   '<div class="song-head">'
@@ -58,5 +84,35 @@
       +   '<ul class="notes-list">'+pros+cons+'</ul>'
       + '</div>';
   }).join('');
+
+  // Render the "Cited studies" section — one card per study actually
+  // referenced in this episode's bullets, in the order their author tag
+  // first appears across the episode (loosely matches the listening order).
+  const orderedKeys = Array.from(citedKeys).sort((a,b)=>{
+    // Sort by year asc, then author alphabetically — easy to scan
+    const ya = parseInt(a.split(' ').pop(),10), yb = parseInt(b.split(' ').pop(),10);
+    if(ya !== yb) return ya - yb;
+    return a.localeCompare(b);
+  });
+  if(orderedKeys.length === 0){
+    studiesWrap.hidden = true;
+  } else {
+    studiesWrap.hidden = false;
+    studiesList.innerHTML = orderedKeys.map(key => {
+      const s = studies[key];
+      const anchorId = 'study-' + key.replace(/[^A-Za-z0-9]+/g,'-').toLowerCase();
+      if(!s){
+        return '<div class="study-card missing" id="'+anchorId+'"><div class="study-key">'+escapeHtml(key)+'</div><div class="study-meta">No record in studies.json — citation may be malformed.</div></div>';
+      }
+      return ''
+        + '<div class="study-card" id="'+anchorId+'">'
+        +   '<div class="study-key">'+escapeHtml(key)+'</div>'
+        +   (s.title ? '<div class="study-title">'+escapeHtml(s.title)+'</div>' : '')
+        +   (s.citation ? '<div class="study-citation">'+escapeHtml(s.citation)+'</div>' : '')
+        +   (s.summary ? '<div class="study-summary">'+escapeHtml(s.summary)+'</div>' : '')
+        +   (s.killer_stat ? '<div class="study-stat"><span class="stat-label">Killer stat</span>'+escapeHtml(s.killer_stat)+'</div>' : '')
+        + '</div>';
+    }).join('');
+  }
 })();
 </script>
