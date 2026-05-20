@@ -17,3 +17,7 @@ mockup-*.html
 
 # Claude worktrees
 .claude/worktrees/
+
+# One-off Substack porter (done; kept locally, not part of the site)
+substack-port-work/
+substack-all.md
