@@ -189,7 +189,13 @@ Email for entuned.co is handled by Cloudflare Email Routing (free). See `ops/Ema
 
 ## CTAs and contact
 
-All CTAs that require user contact point to the contact form (`contact.html`) or to the pilot program page (`pilot.html`).
+The pricing CTA topology is intentionally asymmetric — see `CLAUDE.md` → "Pricing CTA topology — locked":
+
+- **Entuned Free** → `https://app.entuned.co/start` (self-onboard activation, no card)
+- **Boost / Pro** → direct Stripe Checkout (links live on the pricing page)
+- **Enterprise** → `contact.html` (high-touch only)
+
+`pilot.html` still exists as a legacy landing surface for inbound links but new CTAs should not point to it.
 
 ## Deploy
 

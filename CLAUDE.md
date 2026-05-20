@@ -14,6 +14,49 @@ Read `ARCHITECTURE.md` for the full site structure, design system, and build pro
 
 Never create `.html` files directly in the repo root or `blog/`. Every output file must come from `_src/pages/<name>/`. This includes redirects — use a `blog-redirect-<slug>/config.json` with a `redirect_to` field. See `ARCHITECTURE.md` for the redirect stub schema. If you write `<!DOCTYPE html>` outside `_src/layouts/base.html`, you're doing it wrong.
 
+## Load-bearing rules
+
+Rules that have bitten in the past and aren't enforceable by the build. **Read `../VOICE.md` and run `/terminology-check` before pushing any copy** — the bans below are a subset of what that skill lints.
+
+### Hard term bans (in any user-facing copy)
+
+- **No "AI"** in page titles or heros. Category term is **"retail music strategy"**.
+- **No "Essentials"** — the free tier is **"Entuned Free"**. (DB value is still `free` server-side; that's invisible to the site.)
+- **No "Core"** — the mid tier is **"Boost"**. (DB value is still `core` server-side.)
+- **No "zones"** — not a product concept. Don't reference it anywhere.
+- **No "day-parting"** except in the single allowed explainer phrase "like day-parting, but better". Use **"Outcome Scheduling"** in all other copy.
+
+### Pricing CTA topology — locked, do not unify
+
+The CTA flow is intentionally asymmetric. Don't "fix" it by sending every tier through the same path.
+
+| Tier | CTA destination | Why |
+|---|---|---|
+| Entuned Free | `https://app.entuned.co/start` | Self-onboard activation flow. No card. |
+| Boost | Direct Stripe Checkout | Skip the dashboard intermediate; reduce friction. |
+| Pro | Direct Stripe Checkout | Same as Boost. |
+| Enterprise | `contact.html` | High-touch only. |
+
+The canonical Start Free copy + button (see blog template above) is the only place `/start` appears. The pricing page hosts the Stripe links for Boost/Pro. Don't add a "pick a tier" selector on the brand site.
+
+### Intentional pages — don't delete
+
+- **`for-cosmetics.html`** is a `noindex` placeholder kept intentionally for a future cosmetics-vertical template build. Don't 410, don't delete, don't redirect.
+
+### ICP discipline before new pages
+
+- **ICP is PLG-primary: small-shop owner-operator.** Read `../marketing/ICP/SSOT.md` before writing any new vertical/landing page or outreach copy. Cultural-identity verticals are anti-ICP and don't ship.
+- **Run `/outreach-precheck` first** when the task is target selection or angle picking for a vertical/listicle/partnership page. Target selection comes *before* drafting.
+- **Run `/adversarial` before publishing** any change to strategic surfaces: pricing copy, public positioning, vertical pages, founder writing, blog posts, investor narrative. The skill spawns a cold-context attack on the draft; surface the punch list before pushing.
+
+### Order of gates on a user-facing push
+
+1. Edit `_src/` source
+2. `python3 build.py`
+3. `/terminology-check` (deterministic lint against the ban list)
+4. `/adversarial` if the surface is strategic (pricing, doctrine, vertical, founder writing, blog post)
+5. `git add -A && git commit && git push origin main`
+
 ## Content Editing (YAML Layer)
 
 Every page has a `content.yaml` file alongside its HTML sections. **When editing text content, edit the YAML file — not the HTML.**
