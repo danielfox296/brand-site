@@ -1,0 +1,7 @@
+{
+  "title": "Banger or Nah? | Entuned",
+  "meta_description": "Sort 5 songs into S/A/B/C/D before the clip runs out.",
+  "output": "banger-or-nah.html",
+  "robots": "noindex",
+  "no_chrome": true
+}

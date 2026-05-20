@@ -1,0 +1,1738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/banger-or-nah.html">
+  <meta name="robots" content="noindex">
+  <title>Banger or Nah? | Entuned</title>
+  <meta name="description" content="Sort 5 songs into S/A/B/C/D before the clip runs out.">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="rss.xml">
+  <meta property="og:title" content="Banger or Nah? | Entuned">
+  <meta property="og:description" content="Sort 5 songs into S/A/B/C/D before the clip runs out.">
+  <meta property="og:url" content="https://entuned.co/banger-or-nah.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://entuned.co/img/og-default.png">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Banger or Nah? | Entuned">
+  <meta name="twitter:description" content="Sort 5 songs into S/A/B/C/D before the clip runs out.">
+  <meta name="twitter:image" content="https://entuned.co/img/og-default.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Entuned",
+  "url": "https://entuned.co",
+  "description": "Entuned engineers original music for retail floors at the parameter level \u2014 tempo, key, lyrical density, energy arc \u2014 tailored to a store's customer profile and tied to its sales outcomes. PRO-indemnified at every tier.",
+  "foundingDate": "2026",
+  "founder": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "knowsAbout": [
+    "retail atmospherics",
+    "music psychology",
+    "in-store customer behavior",
+    "retail analytics",
+    "engineered retail audio",
+    "behavioral retail variables"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/entuned"
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Banger or Nah? | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css?v=ebace452">
+  <style>
+/* =============================================
+   CANONICAL SHORT-FORM SAFE ZONE
+   ---------------------------------------------
+   Source of truth for safe-area placement across TikTok / Instagram Reels /
+   YouTube Shorts. Authoritative reference canvas is 1080×1920 (9:16).
+   All values below are derived from that canonical pixel rect and expressed
+   as percentages so they work at any viewport size.
+   Spec (pixels at 1080×1920):
+     safe:        x=60   y=250   w=840   h=1330
+     unsafe top:    h=250            (13.02% of height)
+     unsafe bot:    h=340 from bot   (17.71% of height)
+     unsafe right:  w=180 from right (16.67% of width)
+     unsafe left:   none defined, but safe x=60 implies a 5.56% buffer
+   Rules:
+     - Critical text MUST stay inside the safe rect
+     - Subtitles above y=1350 (i.e. above 70.31% from top)
+     - Center-weight compositions (avoid right edge for game UI)
+   Any element placed outside the safe zone is a layout violation. The
+   `?safezone=1` URL param overlays the unsafe zones in red for visual QA.
+   ============================================= */
+:root{
+  --wir-safe-top:    13.02%;  /* 250/1920 */
+  --wir-safe-bottom: 17.71%;  /* 340/1920 */
+  --wir-safe-left:    5.56%;  /*  60/1080 */
+  --wir-safe-right:  16.67%;  /* 180/1080 */
+}
+
+/* =============================================
+   Full-screen game viewport overrides for SSG main wrapper
+   ============================================= */
+body { padding: 0 !important; margin: 0 !important; overflow: hidden !important; background:#000 !important; }
+main, .main { padding: 0 !important; margin: 0 !important; max-width: none !important; width:100% !important; height:100vh !important; display:flex !important; align-items:center !important; justify-content:center !important; }
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body {
+  width:100%; height:100%; overflow:hidden;
+  background:#000;
+  font-family:'Inter','Helvetica Neue',Arial,sans-serif;
+  user-select:none; -webkit-user-select:none; touch-action:none;
+}
+
+/* =============================================
+   9:16 VIEWPORT — everything lives inside this
+   ============================================= */
+#viewport{
+  position:relative;
+  aspect-ratio:9/16;
+  height:100vh;
+  max-height:100vh;
+  max-width:calc(100vh * 9 / 16);
+  background:#0a0a0a;
+  overflow:hidden;
+}
+
+/* =============================================
+   PROGRESS BAR — full width, top of viewport
+   ============================================= */
+#progress-bar{
+  position:absolute;
+  top:0;left:0;right:0;
+  height:6px;
+  background:rgba(255,255,255,0.06);
+  z-index:50;
+}
+#progress-fill{
+  position:absolute;
+  top:0;right:0;
+  height:100%;width:100%;
+  background:#22c55e;
+  transition:width 0.4s linear,background-color 0.8s;
+}
+
+/* =============================================
+   INTRO SCREEN
+   ============================================= */
+#intro{
+  position:absolute;inset:0;z-index:100;
+  background:#0a0a0a;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+}
+#intro-bg{
+  position:absolute;inset:0;
+  background:url("img/wir/album-grid-bg.jpg") center/cover no-repeat;
+  opacity:0.3;
+}
+#intro-vignette{
+  position:absolute;inset:0;
+  background:radial-gradient(ellipse at center,transparent 10%,#0a0a0a 65%);
+  z-index:1;
+}
+#intro-content{
+  position:relative;z-index:2;
+  text-align:center;width:80%;
+}
+.intro-word{
+  font-size:10vh;
+  font-weight:900;color:white;
+  opacity:0;transform:scale(0);
+  line-height:1.1;
+  position:absolute;width:100%;
+  top:50%;left:0;margin-top:-0.55em;
+  white-space:nowrap;
+}
+@keyframes wordPop{
+  0%{opacity:1;transform:scale(0);}
+  60%{transform:scale(1.08);}
+  100%{opacity:1;transform:scale(1);}
+}
+@keyframes wordFade{
+  0%{opacity:1;transform:scale(1);}
+  100%{opacity:0;transform:scale(1.6);}
+}
+#play-btn{
+  position:absolute;bottom:28%;left:50%;transform:translateX(-50%);
+  padding:2vh 6vh;
+  font-size:2.2vh;font-weight:900;letter-spacing:3px;
+  color:white;
+  background:linear-gradient(135deg,#FF2D55,#FF9500);
+  border:none;border-radius:60px;cursor:pointer;
+  opacity:0;z-index:3;
+  transition:transform 0.2s;
+}
+#play-btn:hover{transform:translateX(-50%) scale(1.06);}
+@keyframes fadeIn{to{opacity:1;}}
+
+/* =============================================
+   GAME SCREEN
+   ============================================= */
+#game{display:none;position:absolute;inset:0;}
+
+/* --- TITLE BAR: full-width band against the very top.
+       Lives in the canonical unsafe-top per Daniel — he'll handle the crop
+       at recording time. Frees the middle real estate for gameplay. --- */
+#title-bar{
+  position:absolute;
+  top:1.2%;
+  left:0;right:0;
+  text-align:center;
+  z-index:51;
+  padding-top:0.6vh;
+}
+#game-title{
+  font-size:3vh;font-weight:900;
+  color:#ffffff;letter-spacing:4px;
+  text-shadow:0 1px 8px rgba(0,0,0,0.6);
+}
+#ep-info{
+  font-size:1.8vh;font-weight:700;
+  color:rgba(255,255,255,0.85);
+  margin-top:0.2vh;
+  letter-spacing:2px;
+}
+
+/* --- PIP zone removed from the in-game layout. Daniel uses Loom for the
+       webcam overlay during recording, so the game no longer needs a slot
+       for it. The HTML element is kept hidden for backwards-compat. --- */
+#pip-zone{display:none !important;}
+#pip-label{display:none;}
+
+/* =============================================
+   QUEUE CAROUSEL — 5 pixelated upcoming-song boxes
+   Lives on its own row between the header and the tier list so it doesn't
+   collide horizontally with the timer/title block.
+   ============================================= */
+#queue-carousel{
+  position:absolute;
+  /* Full safe-area width, centered horizontally. PIP is gone; Loom overlays
+     the webcam top-left (Loom's own UI), so the carousel can take the full
+     width and the Loom PIP won't conflict. */
+  top:11%;
+  left:var(--wir-safe-left);
+  right:var(--wir-safe-right);
+  height:6vh;
+  display:flex;justify-content:center;align-items:center;gap:0.7vh;
+  z-index:55;
+  /* Soft gradient mask on the LEFT edge so boxes appear to slide in from
+     the right-into-the-frame rather than just pop in */
+  -webkit-mask-image:linear-gradient(to right, transparent 0, black 8%, black 100%);
+  mask-image:linear-gradient(to right, transparent 0, black 8%, black 100%);
+}
+.queue-box{
+  width:6vh;height:6vh;
+  border-radius:4px;
+  background:rgba(255,255,255,0.04);
+  box-shadow:0 0 0 1px rgba(255,255,255,0.06), inset 0 0 0 1px rgba(0,0,0,0.4);
+  overflow:hidden;
+  opacity:0;
+  transform:translateX(60px);
+  transition:opacity 0.45s ease, transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1);
+  position:relative;
+}
+.queue-box.loaded{opacity:1;transform:translateX(0);}
+.queue-box.consumed{
+  animation:queueConsume 0.45s ease-in forwards;
+}
+@keyframes queueConsume{
+  0%  {opacity:1;transform:scale(1) translateY(0);}
+  60% {opacity:0.6;transform:scale(1.25) translateY(-2vh);}
+  100%{opacity:0;transform:scale(0.4) translateY(-6vh);}
+}
+/* Pixelated album art — source is a 14x14 PNG data URL produced via canvas
+   (see pixelateImage in JS). image-rendering:pixelated tells the browser to
+   nearest-neighbor when upscaling from 14px source to the 8vh display box. */
+.queue-box .pixelated-art{
+  width:100%;height:100%;
+  display:block;
+  image-rendering:pixelated;
+  image-rendering:-moz-crisp-edges;
+  image-rendering:crisp-edges;
+  filter:saturate(1.25) brightness(0.9);
+  pointer-events:none;
+}
+
+/* =============================================
+   TIERS
+   ============================================= */
+#tiers{
+  position:absolute;
+  /* Tier list: 23-78%, full safe-area width. Big rows (~11% viewport each). */
+  top:23%;left:var(--wir-safe-left);right:var(--wir-safe-right);
+  height:55%;
+  display:flex;flex-direction:column;
+  justify-content:space-between;
+}
+.tier-row{
+  display:flex;align-items:stretch;
+  /* Each tier: 18.5% of #tiers (46% viewport) = 8.5% viewport — and with
+     gap accounted by space-between, visual row height ~ 9.2% viewport. */
+  height:18.5%;
+  border-radius:4px;overflow:hidden;
+  transition:transform 0.18s, box-shadow 0.18s;
+}
+.tier-label{
+  width:7vh;min-width:7vh;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  font-weight:900;font-size:3.2vh;color:white;
+}
+.tier-sublabel{display:none;}
+.tier-drop{
+  flex:1;
+  background:rgba(255,255,255,0.025);
+  display:flex;flex-wrap:wrap;align-items:center;
+  padding:0.4vh 0.6vh;gap:0.4vh;
+  /* Stroke is 1/3 the previous weight per Daniel — 2px -> ~0.7px;
+     browsers render 1px more reliably than 0.7px so 1px it is. */
+  outline:1px dashed rgba(255,255,255,0.55);
+  outline-offset:-1px;
+  border-radius:4px;
+  transition:background 0.18s, box-shadow 0.18s, outline-color 0.18s, transform 0.18s;
+}
+/* While the player is holding an album, all tiers light up as valid targets */
+.tier-drop.active-target{
+  background:rgba(255,255,255,0.06);
+  outline-color:rgba(255,255,255,0.85);
+}
+/* Color-coded hover — the tier under the cursor flashes in ITS own color
+   so it's unmistakable which tier the placement is about to land in. */
+.tier-drop[data-tier="S"].hover-target{background:rgba(255,45,85,0.40);   outline:1px solid #FF2D55;  box-shadow:inset 0 0 24px rgba(255,45,85,0.55);}
+.tier-drop[data-tier="A"].hover-target{background:rgba(255,149,0,0.40);   outline:1px solid #FF9500;  box-shadow:inset 0 0 24px rgba(255,149,0,0.55);}
+.tier-drop[data-tier="B"].hover-target{background:rgba(218,180,30,0.40);  outline:1px solid #DAB41E;  box-shadow:inset 0 0 24px rgba(218,180,30,0.55);}
+.tier-drop[data-tier="C"].hover-target{background:rgba(48,176,199,0.40);  outline:1px solid #30B0C7;  box-shadow:inset 0 0 24px rgba(48,176,199,0.55);}
+.tier-drop[data-tier="D"].hover-target{background:rgba(155,149,107,0.40); outline:1px solid #9B956B;  box-shadow:inset 0 0 24px rgba(155,149,107,0.55);}
+.tier-drop.hover-target{transform:scale(1.03);}
+/* Old drag-over class is unused now but kept harmless for safety */
+.tier-drop.drag-over{background:rgba(255,255,255,0.07);}
+
+/* End-of-game reveal: pan-and-zoom highlight on each tier */
+.tier-row.reveal-focus{
+  filter:brightness(1.3);
+  outline:3px solid rgba(255,255,255,0.7);
+  outline-offset:3px;
+  transition:filter 0.4s, outline 0.4s;
+}
+#game.reveal-mode{
+  transition:transform 0.7s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+/* =============================================
+   STAGING (removed — drop physics replaces the staged-row metaphor)
+   The element still exists in the HTML for backwards-compat but is hidden.
+   ============================================= */
+#staging{display:none !important;}
+
+/* =============================================
+   DROP STAGE — holds the currently falling / held album
+   Sits at the viewport scope so absolutely-positioned children use
+   viewport-relative coords from physicsStep().
+   ============================================= */
+#drop-stage{
+  position:absolute;inset:0;
+  pointer-events:none; /* only the album itself is interactive */
+  z-index:60;
+}
+.drop-album{
+  position:absolute;
+  border-radius:6px;
+  overflow:visible;
+  cursor:grab;
+  pointer-events:auto;
+  box-shadow:0 6px 24px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.06);
+  transition:transform 0.12s ease-out;
+  will-change:transform, left, top;
+  user-select:none;-webkit-user-select:none;
+}
+.drop-album img{
+  display:block;width:100%;height:100%;object-fit:cover;border-radius:6px;
+  pointer-events:none;
+}
+.drop-label{
+  position:absolute;
+  /* Sit clearly below the album with breathing room — opaque pill background
+     so the label can't visually merge with the album art above. */
+  top:calc(100% + 1.6vh);
+  left:50%;transform:translateX(-50%);
+  white-space:nowrap;text-align:center;pointer-events:none;
+  background:rgba(10,10,10,0.92);
+  border:1px solid rgba(255,255,255,0.15);
+  border-radius:0.5vh;
+  padding:0.45vh 0.95vh;
+  opacity:0;transition:opacity 0.18s ease;
+}
+.dl-title{display:block;font-size:1.0vh;font-weight:700;color:white;letter-spacing:0.05em;}
+.dl-artist{display:block;font-size:0.8vh;font-weight:400;color:rgba(255,255,255,0.7);margin-top:0.15vh;}
+/* Label is hidden while falling/settled — reveals only on pickup */
+.drop-album.picked-up .drop-label{opacity:1;}
+.drop-album.settled{
+  animation:settledPulse 1.6s ease-in-out infinite;
+}
+@keyframes settledPulse{
+  0%,100%{box-shadow:0 6px 24px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.18), 0 0 14px rgba(255,255,255,0.10);}
+  50%   {box-shadow:0 6px 24px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.32), 0 0 24px rgba(255,255,255,0.22);}
+}
+/* The "picked up" state — 2.4x scale (80% of the original 3x design) + strong pulsing rose glow */
+.drop-album.picked-up{
+  cursor:grabbing;
+  transform:scale(2.4);
+  transform-origin:center center;
+  z-index:200;
+  animation:pickedGlow 0.9s ease-in-out infinite;
+}
+/* Pulsing pink glow only — no solid outline. The inner shadow gives depth
+   without the hard border, outer shadow is the dominant pulsing element. */
+@keyframes pickedGlow{
+  0%,100%{box-shadow:0 0 18px 4px rgba(255,45,85,0.55), 0 0 60px 12px rgba(255,45,85,0.30);}
+  50%   {box-shadow:0 0 32px 10px rgba(255,45,85,0.95), 0 0 130px 32px rgba(255,45,85,0.55);}
+}
+.drop-album.skipped{
+  animation:skipFade 0.6s ease-in forwards;
+  pointer-events:none;
+}
+/* Spinner overlay shown while iTunes preview is still buffering. Sits on
+   top of the album art so it's obvious why the clip hasn't started. */
+.drop-album.audio-loading::after{
+  content:'';
+  position:absolute; inset:0;
+  border-radius:6px;
+  background:rgba(0,0,0,0.55);
+  pointer-events:none;
+}
+.drop-album.audio-loading::before{
+  content:'';
+  position:absolute;
+  top:50%; left:50%;
+  width:34%; height:34%;
+  margin:-17% 0 0 -17%;
+  border:2px solid rgba(255,255,255,0.25);
+  border-top-color:#fff;
+  border-radius:50%;
+  animation:dropLoadSpin 0.8s linear infinite;
+  z-index:2;
+  pointer-events:none;
+}
+@keyframes dropLoadSpin{ to { transform: rotate(360deg); } }
+@keyframes skipFade{
+  0%  {opacity:1;}
+  100%{opacity:0;transform:scale(0.7);}
+}
+
+/* =============================================
+   SONG CARDS
+   ============================================= */
+.song-card{
+  width:8vh;height:8vh;
+  border-radius:4px;overflow:hidden;
+  position:relative;cursor:grab;
+  transition:transform 0.12s,box-shadow 0.12s;
+  flex-shrink:0;
+}
+.song-card img{width:100%;height:100%;object-fit:cover;pointer-events:none;}
+.song-card:hover{transform:scale(1.06);box-shadow:0 0 15px rgba(255,255,255,0.15);}
+.card-label{
+  position:absolute;bottom:0;left:0;right:0;
+  background:linear-gradient(transparent,rgba(0,0,0,0.85));
+  padding:0.3vh 0.4vh 0.2vh;pointer-events:none;
+}
+.card-title{
+  font-size:0.75vh;font-weight:700;color:white;
+  display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.card-artist{
+  font-size:0.6vh;font-weight:400;color:rgba(255,255,255,0.55);
+  display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+
+/* Cards in tiers — slightly bigger than before since rows are taller */
+.tier-drop .song-card{width:6.5vh;height:6.5vh;position:relative;}
+.tier-drop .card-label{display:none;}
+/* Settled-in-tier card has a brief land animation */
+.tier-drop .song-card.placed{animation:placedLand 0.3s cubic-bezier(0.34,1.56,0.64,1);}
+@keyframes placedLand{0%{transform:scale(0.4);opacity:0.6;}100%{transform:scale(1);opacity:1;}}
+
+/* Placed-card metadata — hidden during play, fades in only when this card
+   is the recap zoom target (.reveal-card-focus). Sized in vh so it scales
+   along with the .reveal-mode transform and ends up readable at 2.4x. */
+.song-card.placed .card-meta{
+  position:absolute;
+  top:calc(100% + 0.6vh);
+  left:50%;transform:translateX(-50%);
+  white-space:nowrap;text-align:center;pointer-events:none;
+  background:rgba(10,10,10,0.94);
+  border:1px solid rgba(255,255,255,0.2);
+  border-radius:0.35vh;
+  padding:0.25vh 0.6vh;
+  opacity:0;
+  transition:opacity 0.35s ease 0.2s; /* slight delay so it appears AFTER the zoom lands */
+}
+.song-card.placed .cm-title{
+  display:block;
+  font-size:0.7vh;       /* x2.4 in reveal-mode = ~13.5px in an 800h viewport */
+  font-weight:700;color:white;letter-spacing:0.04em;
+}
+.song-card.placed .cm-artist{
+  display:block;
+  font-size:0.55vh;
+  font-weight:400;color:rgba(255,255,255,0.75);margin-top:0.08vh;
+}
+.song-card.reveal-card-focus .card-meta{opacity:1;}
+
+/* =============================================
+   GHOST (drag preview)
+   ============================================= */
+#ghost{
+  position:fixed;
+  width:10vh;height:10vh;
+  border-radius:8px;overflow:hidden;
+  pointer-events:none;z-index:999;
+  display:none;
+  box-shadow:0 0 30px rgba(255,45,85,0.5);
+  transition:box-shadow 0.15s;
+}
+#ghost img{width:100%;height:100%;object-fit:cover;}
+#ghost-label{
+  position:absolute;bottom:-2vh;left:50%;
+  transform:translateX(-50%);
+  white-space:nowrap;
+  font-size:1.2vh;font-weight:700;color:white;
+  text-shadow:0 1px 6px rgba(0,0,0,0.9);
+}
+
+/* =============================================
+   EFFECTS
+   ============================================= */
+@keyframes shake{
+  0%,100%{transform:translateX(0);}
+  25%{transform:translateX(-4px);}
+  75%{transform:translateX(4px);}
+}
+#flash-overlay{
+  position:absolute;inset:0;
+  background:white;opacity:0;
+  pointer-events:none;z-index:90;
+}
+@keyframes flash{0%{opacity:0.3;}100%{opacity:0;}}
+
+/* Original simple emoji particle (kept for backwards compatibility) */
+.emoji-particle{
+  position:fixed;pointer-events:none;z-index:997;
+  font-size:3vh;
+  animation:emojiPop 1.3s ease-out forwards;
+}
+@keyframes emojiPop{
+  0%{opacity:1;transform:scale(0) translateY(0);}
+  30%{opacity:1;transform:scale(1.4) translateY(-3vh);}
+  100%{opacity:0;transform:scale(0.6) translateY(-12vh);}
+}
+
+/* Dramatic explosion particle — emits in all directions with varied
+   size + trajectory + rotation. Driven by CSS custom properties set by
+   spawnExplosion(). */
+.explosion-particle{
+  position:fixed;pointer-events:none;z-index:998;
+  font-size:3vh;
+  --dx:0px; --dy:0px; --rot:0deg; --scale:1;
+  animation:explosionFly var(--dur,1500ms) cubic-bezier(0.16, 0.84, 0.44, 1) forwards;
+  will-change:transform, opacity;
+  text-shadow:0 0 8px rgba(0,0,0,0.6);
+}
+@keyframes explosionFly{
+  0%   {opacity:1; transform:scale(0) rotate(0);}
+  15%  {opacity:1; transform:scale(calc(var(--scale) * 1.3));}
+  100% {opacity:0; transform:translate(var(--dx), var(--dy)) scale(calc(var(--scale) * 0.5)) rotate(var(--rot));}
+}
+#combo-text{
+  position:absolute;top:28%;left:50%;
+  transform:translate(-50%,-50%);
+  font-size:6vh;font-weight:900;
+  color:#FF9500;opacity:0;pointer-events:none;z-index:96;
+  text-shadow:0 0 30px rgba(255,149,0,0.5);
+}
+@keyframes comboFlash{
+  0%{opacity:1;transform:translate(-50%,-50%) scale(0.5);}
+  50%{transform:translate(-50%,-50%) scale(1.2);}
+  100%{opacity:0;transform:translate(-50%,-50%) scale(1);}
+}
+
+/* =============================================
+   END SCREEN
+   ============================================= */
+#end-screen{
+  display:none;position:absolute;inset:0;z-index:101;
+  background:rgba(10,10,10,0.95);
+  flex-direction:column;align-items:center;justify-content:center;
+}
+#end-screen h2{font-size:6vh;font-weight:900;color:white;margin-bottom:1vh;}
+#end-screen p{font-size:2vh;color:rgba(255,255,255,0.5);margin-bottom:3vh;}
+#replay-btn{
+  padding:1.6vh 5vh;font-size:2vh;font-weight:900;
+  color:white;background:linear-gradient(135deg,#FF2D55,#FF9500);
+  border:none;border-radius:50px;cursor:pointer;
+  transition:transform 0.2s;
+}
+#replay-btn:hover{transform:scale(1.06);}
+
+/* =============================================
+   SAFE-ZONE DEBUG OVERLAY (?safezone=1)
+   Visualizes the three unsafe zones (top/bottom/right) in red so you can
+   verify layout compliance and check what platform UI will cover. Inactive
+   by default — body.show-safezone class is set when ?safezone=1 is present.
+   ============================================= */
+.safezone-overlay{
+  position:absolute;inset:0;pointer-events:none;
+  display:none;z-index:200;
+}
+body.show-safezone .safezone-overlay{display:block;}
+.safezone-zone{
+  position:absolute;
+  background:rgba(255,45,85,0.18);
+  border:1px dashed rgba(255,45,85,0.7);
+  color:rgba(255,255,255,0.7);
+  font-size:1.1vh;font-weight:700;
+  font-family:Inter,sans-serif;
+  letter-spacing:2px;text-transform:uppercase;
+  display:flex;align-items:center;justify-content:center;
+}
+.safezone-zone.top   {top:0;left:0;right:0;height:var(--wir-safe-top);}
+.safezone-zone.bottom{bottom:0;left:0;right:0;height:var(--wir-safe-bottom);}
+.safezone-zone.right {top:0;bottom:0;right:0;width:var(--wir-safe-right);}
+.safezone-frame{
+  position:absolute;
+  top:var(--wir-safe-top);
+  bottom:var(--wir-safe-bottom);
+  left:var(--wir-safe-left);
+  right:var(--wir-safe-right);
+  border:2px dashed rgba(34,197,94,0.7);
+  pointer-events:none;
+}
+  </style>
+</head>
+<body>
+  
+
+  <main>
+  <div id="viewport">
+  <div id="progress-bar"><div id="progress-fill"></div></div>
+
+  <!-- INTRO -->
+  <div id="intro">
+    <div id="intro-bg"></div>
+    <div id="intro-vignette"></div>
+    <div id="intro-content">
+      <div id="intro-words"></div>
+    </div>
+    <button id="play-btn" onclick="startGame()">PLAY</button>
+  </div>
+
+  <!-- GAME -->
+  <div id="game">
+    <!-- Title bar: full-width band under progress bar -->
+    <div id="title-bar">
+      <div id="game-title">BANGER OR NAH?</div>
+      <div id="ep-info">EP 1</div>
+    </div>
+    <!-- PIP: front-facing camera placeholder, top-left -->
+    <div id="pip-zone"><span id="pip-label">CAM</span></div>
+    <!-- Queue carousel: 5 pixelated boxes, top-right. Active box ejects
+         leftward toward center on drop. -->
+    <div id="queue-carousel"></div>
+    <div id="tiers"></div>
+    <!-- Drop stage holds the currently falling/held album -->
+    <div id="drop-stage"></div>
+    <!-- Legacy timer-wrap kept hidden for old-handler references -->
+    <div id="timer-wrap" style="display:none"><div id="song-counter">0/5</div></div>
+  </div>
+
+  <div id="flash-overlay"></div>
+  <div id="combo-text"></div>
+
+  <!-- SAFE-ZONE DEBUG OVERLAY — toggled by ?safezone=1 -->
+  <div class="safezone-overlay" aria-hidden="true">
+    <div class="safezone-zone top">unsafe — top (status / account)</div>
+    <div class="safezone-zone bottom">unsafe — bottom (captions / engagement bar)</div>
+    <div class="safezone-zone right">unsafe — right (like / comment / share)</div>
+    <div class="safezone-frame"></div>
+  </div>
+
+  <div id="end-screen">
+    <h2 id="end-title"></h2>
+    <p id="end-sub"></p>
+    <button id="replay-btn" onclick="location.reload()">PLAY AGAIN</button>
+  </div>
+</div>
+
+
+<script>
+// SONGS is loaded from /data/bon/episodes.json based on the ?ep= URL param.
+// Data shape:
+//   { episodes: [{ id, number, title, songs: [{title,artist,art,preview}] }] }
+let SONGS = [];
+let CURRENT_EP = null;
+
+const TIERS = [
+  {id:'S',label:'S',sub:'',color:'#FF2D55'},
+  {id:'A',label:'A',sub:'',color:'#FF9500'},
+  {id:'B',label:'B',sub:'',color:'#8B7500'},
+  {id:'C',label:'C',sub:'',color:'#30B0C7'},
+  {id:'D',label:'D',sub:'',color:'#9B956B'},
+];
+
+const EMOJIS={
+  S:['🎉','✨','🌟','⭐','🎊','💎','🔥'],
+  A:['😊','😄','🙂','😁','🤩'],
+  B:['👍','💪','✅','👌'],
+  C:['😐','😑','🫤','😶','😒'],
+  D:['💀','👎','😬','🚫','💩','☠️'],
+};
+
+// ========== STATE ==========
+// New mechanic: songs DROP one at a time with physics. Preview audio plays
+// for the full clip duration; missing the clip = buzzer + skip. Pick up by
+// clicking the settled album (3x scale + glow), drag to a tier to place.
+let audioCtx;
+let gameStarted=false;
+let queueIndex=0;
+const placements=[]; // {song, tier} per song (tier=null = skipped on timeout)
+let currentAudio=null;     // <Audio> playing the current drop
+let timeoutTimer=null;     // fallback for songs without preview URL
+let PRELOADED_AUDIO=[];    // one <Audio> per song, preloaded at game start so
+                           // song 2+ doesn't have to wait on iTunes cold-fetch
+let DROP=null;             // current drop: {song, el, x, y, vx, vy, settled, picked, placed}
+let physicsInterval=null;  // setInterval id (not rAF — survives tab-hidden / iframe)
+let lastPlaceTime=0,comboCount=0;
+const GRAVITY=0.55;        // px per frame squared (scaled by vh below)
+const BOUNCE=0.20;         // energy retained per bounce — aggressive damping for ~2 bounces max
+const SETTLE_THRESHOLD=1.5;
+const ALBUM_VH=12;         // falling album size, vh
+const PICKED_SCALE=2.4;    // picked-up size relative to base (80% of the original 3x design)
+// Floor moved 1 album size below the canonical safe-bottom (82.29% + 12vh).
+// Lives in the unsafe bottom zone — Daniel handles that in the recording crop.
+const FLOOR_VH_FROM_TOP=94.29;
+let tickInterval=null;     // setTimeout id for the ticking clock
+
+// ========== AUDIO ==========
+function getAudioCtx(){
+  if(!audioCtx)audioCtx=new(window.AudioContext||window.webkitAudioContext)();
+  if(audioCtx.state==='suspended')audioCtx.resume();
+  return audioCtx;
+}
+
+function playThump(){
+  const ctx=getAudioCtx();
+  const osc=ctx.createOscillator();
+  const gain=ctx.createGain();
+  osc.type='sine';
+  osc.frequency.setValueAtTime(55,ctx.currentTime);
+  osc.frequency.exponentialRampToValueAtTime(28,ctx.currentTime+0.15);
+  gain.gain.setValueAtTime(0.5,ctx.currentTime);
+  gain.gain.exponentialRampToValueAtTime(0.001,ctx.currentTime+0.2);
+  osc.connect(gain);gain.connect(ctx.destination);
+  osc.start();osc.stop(ctx.currentTime+0.25);
+  const bufSize=Math.floor(ctx.sampleRate*0.025);
+  const buf=ctx.createBuffer(1,bufSize,ctx.sampleRate);
+  const d=buf.getChannelData(0);
+  for(let i=0;i<bufSize;i++)d[i]=(Math.random()*2-1)*(1-i/bufSize)*0.35;
+  const ns=ctx.createBufferSource();ns.buffer=buf;
+  const lp=ctx.createBiquadFilter();lp.type='lowpass';lp.frequency.value=180;
+  ns.connect(lp);lp.connect(ctx.destination);ns.start();
+}
+
+function playTick(){
+  const ctx=getAudioCtx();
+  const bufSize=Math.floor(ctx.sampleRate*0.006);
+  const buf=ctx.createBuffer(1,bufSize,ctx.sampleRate);
+  const d=buf.getChannelData(0);
+  for(let i=0;i<bufSize;i++){d[i]=(Math.random()*2-1)*Math.pow(1-i/bufSize,4)*0.1;}
+  const ns=ctx.createBufferSource();ns.buffer=buf;
+  const bp=ctx.createBiquadFilter();bp.type='bandpass';bp.frequency.value=4500;bp.Q.value=6;
+  const g=ctx.createGain();g.gain.value=0.5;
+  ns.connect(bp);bp.connect(g);g.connect(ctx.destination);ns.start();
+  const osc=ctx.createOscillator();const g2=ctx.createGain();
+  osc.type='sine';osc.frequency.value=2800;
+  g2.gain.setValueAtTime(0.05,ctx.currentTime);
+  g2.gain.exponentialRampToValueAtTime(0.001,ctx.currentTime+0.015);
+  osc.connect(g2);g2.connect(ctx.destination);
+  osc.start();osc.stop(ctx.currentTime+0.02);
+}
+
+function playDrop(tier){
+  const ctx=getAudioCtx();const osc=ctx.createOscillator();const gain=ctx.createGain();
+  const freqs={S:880,A:660,B:440,C:330,D:220};
+  osc.type='sine';osc.frequency.setValueAtTime(freqs[tier]||440,ctx.currentTime);
+  osc.frequency.exponentialRampToValueAtTime((freqs[tier]||440)*1.5,ctx.currentTime+0.08);
+  gain.gain.setValueAtTime(0.2,ctx.currentTime);
+  gain.gain.exponentialRampToValueAtTime(0.001,ctx.currentTime+0.25);
+  osc.connect(gain);gain.connect(ctx.destination);osc.start();osc.stop(ctx.currentTime+0.3);
+}
+
+function playGrab(){
+  const ctx=getAudioCtx();const osc=ctx.createOscillator();const gain=ctx.createGain();
+  osc.type='sine';osc.frequency.value=600;
+  gain.gain.setValueAtTime(0.05,ctx.currentTime);
+  gain.gain.exponentialRampToValueAtTime(0.001,ctx.currentTime+0.07);
+  osc.connect(gain);gain.connect(ctx.destination);osc.start();osc.stop(ctx.currentTime+0.08);
+}
+
+function playCombo(){
+  const ctx=getAudioCtx();
+  [0,0.08,0.16].forEach((t,i)=>{
+    const osc=ctx.createOscillator();const gain=ctx.createGain();
+    osc.type='triangle';osc.frequency.value=880*(i+1)/2;
+    gain.gain.setValueAtTime(0.1,ctx.currentTime+t);
+    gain.gain.exponentialRampToValueAtTime(0.001,ctx.currentTime+t+0.15);
+    osc.connect(gain);gain.connect(ctx.destination);
+    osc.start(ctx.currentTime+t);osc.stop(ctx.currentTime+t+0.2);
+  });
+}
+
+function playClear(){
+  const ctx=getAudioCtx();
+  [0,0.1,0.2,0.3,0.4].forEach((t,i)=>{
+    const osc=ctx.createOscillator();const gain=ctx.createGain();
+    osc.type='sine';osc.frequency.value=440*Math.pow(2,i/3);
+    gain.gain.setValueAtTime(0.12,ctx.currentTime+t);
+    gain.gain.exponentialRampToValueAtTime(0.001,ctx.currentTime+t+0.3);
+    osc.connect(gain);gain.connect(ctx.destination);
+    osc.start(ctx.currentTime+t);osc.stop(ctx.currentTime+t+0.35);
+  });
+}
+
+function playBuzzer(){
+  const ctx=getAudioCtx();const osc=ctx.createOscillator();const gain=ctx.createGain();
+  osc.type='sawtooth';osc.frequency.value=110;
+  // Halved from 0.4 -> 0.2 per Daniel's request
+  gain.gain.setValueAtTime(0.2,ctx.currentTime);
+  gain.gain.setValueAtTime(0.2,ctx.currentTime+0.6);
+  gain.gain.exponentialRampToValueAtTime(0.001,ctx.currentTime+0.9);
+  osc.connect(gain);gain.connect(ctx.destination);osc.start();osc.stop(ctx.currentTime+1);
+}
+
+// Loud explosion-style sound for each intro word reveal (replaces playThump
+// in runIntro). More dramatic + more "boom" character.
+function playIntroExplosion(){
+  const ctx=getAudioCtx();
+  // Deep sub thud
+  const sub=ctx.createOscillator(); const sg=ctx.createGain();
+  sub.type='sine'; sub.frequency.setValueAtTime(110,ctx.currentTime);
+  sub.frequency.exponentialRampToValueAtTime(40,ctx.currentTime+0.18);
+  sg.gain.setValueAtTime(0.55,ctx.currentTime);
+  sg.gain.exponentialRampToValueAtTime(0.001,ctx.currentTime+0.32);
+  sub.connect(sg); sg.connect(ctx.destination);
+  sub.start(); sub.stop(ctx.currentTime+0.36);
+  // Crack transient (filtered noise)
+  const buf=ctx.createBuffer(1,Math.floor(ctx.sampleRate*0.18),ctx.sampleRate);
+  const d=buf.getChannelData(0);
+  for(let i=0;i<buf.length;i++)d[i]=(Math.random()*2-1)*Math.pow(1-i/buf.length,1.4)*0.5;
+  const ns=ctx.createBufferSource(); ns.buffer=buf;
+  const bp=ctx.createBiquadFilter(); bp.type='bandpass'; bp.frequency.value=1500; bp.Q.value=1.5;
+  ns.connect(bp); bp.connect(ctx.destination); ns.start();
+}
+
+// Musical chord tied to tier emotion — stacked on top of playDrop bleep and
+// playExplosionSound on placement.
+function playTierChord(tier){
+  const ctx=getAudioCtx();
+  // Major7 / minor / dissonant cluster depending on tier feel
+  const recipes={
+    S:{type:'sine',     notes:[523.25, 659.25, 783.99, 987.77], gain:0.16, dur:0.85}, // C major 7
+    A:{type:'sine',     notes:[440.00, 554.37, 659.25],         gain:0.15, dur:0.70}, // A major
+    B:{type:'triangle', notes:[392.00, 493.88, 587.33],         gain:0.13, dur:0.55}, // G major
+    C:{type:'triangle', notes:[349.23, 415.30, 493.88],         gain:0.13, dur:0.70}, // F minor-ish
+    D:{type:'sawtooth', notes:[207.65, 220.00, 233.08],         gain:0.10, dur:1.10}, // G#/A/A# dissonant cluster
+  };
+  const r=recipes[tier]||recipes.B;
+  r.notes.forEach((freq, i)=>{
+    const osc=ctx.createOscillator(); const g=ctx.createGain();
+    osc.type=r.type; osc.frequency.value=freq;
+    const start=ctx.currentTime + i*0.03; // tiny stagger -> arpeggio shimmer
+    g.gain.setValueAtTime(0, start);
+    g.gain.linearRampToValueAtTime(r.gain, start+0.02);
+    g.gain.exponentialRampToValueAtTime(0.001, start+r.dur);
+    osc.connect(g); g.connect(ctx.destination);
+    osc.start(start); osc.stop(start+r.dur+0.1);
+  });
+}
+
+// Per-clip ticking clock. Starts 700ms baseline, speeds to 350ms when ≤10s
+// of clip remain, 175ms when ≤5s remain. Driven off currentAudio.currentTime.
+function startTicking(){
+  stopTicking();
+  const fire=()=>{
+    if(!gameStarted) return;
+    playTick();
+    let remain;
+    if(currentAudio && currentAudio.duration){
+      remain = currentAudio.duration - currentAudio.currentTime;
+    } else {
+      remain = 15;
+    }
+    let interval = 700;
+    if(remain <= 5) interval = 175;
+    else if(remain <= 10) interval = 350;
+    tickInterval = setTimeout(fire, interval);
+  };
+  tickInterval = setTimeout(fire, 700);
+}
+function stopTicking(){
+  if(tickInterval){clearTimeout(tickInterval); tickInterval=null;}
+}
+
+// (previewSong removed — audio is now lifecycle-managed by the drop sequence)
+
+// ========== INTRO ==========
+// Sped up 3x: word interval 750ms -> 250ms, fade 0.2s -> 0.07s, pop 0.3s -> 0.1s,
+// fadeIn 0.6s -> 0.2s, initial delay 400ms -> 133ms. Whole intro now ~1.4s.
+function runIntro(){
+  const words=['BANGER','OR','NAH?'];
+  const container=document.getElementById('intro-words');
+  let delay=133;
+  words.forEach((w,i)=>{
+    setTimeout(()=>{
+      const prev=container.querySelector('.intro-word');
+      if(prev)prev.style.animation='wordFade 0.07s ease-in forwards';
+      setTimeout(()=>{
+        container.innerHTML='';
+        const el=document.createElement('div');
+        el.className='intro-word';
+        el.textContent=w;
+        el.style.animation='wordPop 0.1s cubic-bezier(0.34,1.56,0.64,1) forwards';
+        container.appendChild(el);
+        playIntroExplosion();  // bigger boom than playThump
+      },i===0?0:83);
+    },delay+i*250);
+  });
+  setTimeout(()=>{
+    document.getElementById('play-btn').style.animation='fadeIn 0.2s ease-out forwards';
+  },delay+words.length*250+167);
+}
+
+function startGame(){
+  getAudioCtx();
+  document.getElementById('intro').style.display='none';
+  document.getElementById('game').style.display='block';
+  gameStarted=true;
+  queueIndex=0;
+  placements.length=0;
+  buildTiers();
+  buildQueue();
+  preloadAudio();   // kick off iTunes preview fetch for ALL 5 songs now
+  updateCounter();
+  // Brief beat for queue to slide in, then first drop
+  setTimeout(dropNext, 5 * 120 + 500);
+}
+
+// Pre-fetch all preview URLs at game start. Without this, each new Audio()
+// in startCurrentAudio() pays cold iTunes latency, which the player blows
+// past if they categorize fast — song 2+ ends up silent because the audio
+// hasn't buffered yet. Created on user gesture (PLAY click) so autoplay
+// policies don't block the load.
+function preloadAudio(){
+  PRELOADED_AUDIO = SONGS.map(s=>{
+    if(!s.preview) return null;
+    const a = new Audio();
+    a.preload = 'auto';
+    a.volume = 0.22;
+    a.src = s.preview;
+    try{ a.load(); }catch(e){}
+    return a;
+  });
+}
+
+// ========== QUEUE CAROUSEL ==========
+// 5 pixelated boxes representing the upcoming songs. Slides in left-to-right
+// from offscreen-right on game start (staggered fade + slide for anticipation).
+// Each box is "consumed" when its song begins to drop.
+//
+// Pixelation is done via a canvas: load the full-res album art, draw it onto
+// a 14x14 canvas with imageSmoothingEnabled=false (= nearest-neighbor
+// downsample), then display the canvas data URL at 100% of the box with
+// image-rendering:pixelated (= nearest-neighbor upsample by the browser).
+// CSS transform-scale + image-rendering does NOT pixelate — the browser
+// smooth-downsamples first, then smooth-upscales. Canvas is the only reliable
+// path for true pixelation of arbitrary album art.
+function pixelateImage(src, sourceSize){
+  return new Promise((resolve)=>{
+    const img=new Image();
+    img.onload=()=>{
+      const c=document.createElement('canvas');
+      c.width=sourceSize;c.height=sourceSize;
+      const ctx=c.getContext('2d');
+      ctx.imageSmoothingEnabled=false;
+      ctx.drawImage(img,0,0,sourceSize,sourceSize);
+      resolve(c.toDataURL('image/png'));
+    };
+    img.onerror=()=>resolve(src); // fallback to original on any error
+    img.src=src;
+  });
+}
+
+async function buildQueue(){
+  const car=document.getElementById('queue-carousel');
+  car.innerHTML='';
+  // Pre-create boxes immediately so the slide-in stagger looks crisp even
+  // before pixelation completes — img source swaps in when ready.
+  const elements=SONGS.map((s,i)=>{
+    const box=document.createElement('div');
+    box.className='queue-box';
+    box.dataset.idx=i;
+    box.innerHTML='<img alt="" class="pixelated-art">';
+    car.appendChild(box);
+    setTimeout(()=>box.classList.add('loaded'), 250 + i*120);
+    return box;
+  });
+  // Pixelate in parallel — 8x8 source = coarse blocky pixels per Daniel's spec
+  await Promise.all(SONGS.map(async (s,i)=>{
+    const dataUrl=await pixelateImage(s.art, 8);
+    const img=elements[i].querySelector('img');
+    if(img) img.src=dataUrl;
+  }));
+}
+
+function consumeQueueBox(idx){
+  const box=document.querySelector('.queue-box[data-idx="'+idx+'"]');
+  if(box) box.classList.add('consumed');
+}
+
+// ========== BUILD ==========
+function buildTiers(){
+  const container=document.getElementById('tiers');
+  container.innerHTML='';
+  TIERS.forEach(t=>{
+    const row=document.createElement('div');row.className='tier-row';
+    const label=document.createElement('div');label.className='tier-label';
+    label.style.background=t.color;
+    label.innerHTML=t.label+'<span class="tier-sublabel">'+t.sub+'</span>';
+    const drop=document.createElement('div');drop.className='tier-drop';drop.dataset.tier=t.id;
+    row.appendChild(label);row.appendChild(drop);container.appendChild(row);
+  });
+}
+
+function updateCounter(){
+  document.getElementById('song-counter').textContent=
+    Math.min(queueIndex+1,SONGS.length)+'/'+SONGS.length;
+}
+
+// ========== DROP SEQUENCE ==========
+// One song at a time: spawn album above viewport, gravity + bounce, settle.
+// Audio starts at spawn; if it ends before you place it -> buzzer + skip.
+function dropNext(){
+  if(queueIndex>=SONGS.length){endGame();return;}
+  const song=SONGS[queueIndex];
+  updateCounter();
+  // Find the active queue box BEFORE consuming it, so we can use its
+  // screen position as the album spawn point. Album "protrudes from the
+  // right" by spawning at the box position, then animates to center-top
+  // before gravity activates.
+  const box=document.querySelector('.queue-box[data-idx="'+queueIndex+'"]');
+  const boxRect=box?box.getBoundingClientRect():null;
+  consumeQueueBox(queueIndex);
+  spawnDrop(song, boxRect);
+  // Audio starts slightly delayed so it kicks in as the album begins to fall
+  setTimeout(()=>startCurrentAudio(song), 320);
+}
+
+function spawnDrop(song, fromRect){
+  // Clear any leftover element
+  const stage=document.getElementById('drop-stage');
+  stage.innerHTML='';
+  const vp=document.getElementById('viewport').getBoundingClientRect();
+  const albumPx=vp.height*ALBUM_VH/100;
+
+  // Spawn position:
+  //   if a queue box rect was provided → spawn AT the box (so the album
+  //     visually emerges from the same pixelated box that's being consumed)
+  //   else → fall back to spawning at center above the viewport
+  let startX, startY, startSize;
+  if(fromRect){
+    startX=fromRect.left - vp.left;
+    startY=fromRect.top - vp.top;
+    startSize=fromRect.width;
+  } else {
+    startX=(vp.width - albumPx) / 2;
+    startY=-albumPx*1.2;
+    startSize=albumPx;
+  }
+
+  const el=document.createElement('div');
+  el.className='drop-album';
+  el.innerHTML='<img src="'+song.art+'" alt="'+song.title+' by '+song.artist+'"><div class="drop-label"><span class="dl-title">'+song.title+'</span><span class="dl-artist">'+song.artist+'</span></div>';
+  el.style.width=startSize+'px';
+  el.style.height=startSize+'px';
+  el.style.left=startX+'px';
+  el.style.top=startY+'px';
+  // Animate the "protrude" → grows to album size + moves to center-top
+  el.style.transition='width 0.30s cubic-bezier(0.34, 1.56, 0.64, 1), '
+                      +'height 0.30s cubic-bezier(0.34, 1.56, 0.64, 1), '
+                      +'left 0.30s cubic-bezier(0.22, 1, 0.36, 1), '
+                      +'top 0.30s cubic-bezier(0.22, 1, 0.36, 1)';
+  stage.appendChild(el);
+
+  // Target: center horizontally, just below the carousel (y=29%) — above
+  // the tier list (33%) and well clear of the title/PIP rows above.
+  const targetX=(vp.width - albumPx) / 2;
+  const targetY=vp.height * 0.29;
+
+  // Force layout then trigger transition. Use setTimeout (not rAF) — rAF
+  // stalls in hidden iframes / backgrounded tabs and the size never updates.
+  setTimeout(()=>{
+    el.style.left=targetX+'px';
+    el.style.top=targetY+'px';
+    el.style.width=albumPx+'px';
+    el.style.height=albumPx+'px';
+  }, 20);
+
+  // After the protrude finishes, init physics from current visual position
+  setTimeout(()=>{
+    el.style.transition='';
+    DROP={song,el,
+      x:targetX,
+      y:targetY,
+      vx:(Math.random()*2-1)*1.5,
+      vy:0,
+      w:albumPx, h:albumPx,
+      settled:false, picked:false, placed:false,
+      vpW:vp.width, vpH:vp.height,
+    };
+    el.addEventListener('pointerdown',onAlbumPointerDown);
+    startPhysics();
+  }, 320);
+}
+
+function startPhysics(){
+  stopPhysics();
+  // ~60fps via setInterval (rAF stalls when iframe/tab is hidden, which we
+  // observed in preview and which would also bite a backgrounded recording).
+  physicsInterval = setInterval(physicsStep, 16);
+}
+function stopPhysics(){
+  if(physicsInterval){clearInterval(physicsInterval);physicsInterval=null;}
+}
+
+function physicsStep(){
+  if(!DROP||DROP.placed){stopPhysics();return;}
+  if(DROP.picked){return;}  // no physics while held — pointermove moves it
+  // Apply gravity
+  DROP.vy += GRAVITY * (DROP.vpH/800); // scale by viewport so motion is uniform
+  DROP.x += DROP.vx;
+  DROP.y += DROP.vy;
+  // Floor (catch zone top = bottom of safe area)
+  const floorY = DROP.vpH * (FLOOR_VH_FROM_TOP/100) - DROP.h;
+  if(DROP.y >= floorY){
+    DROP.y = floorY;
+    if(Math.abs(DROP.vy) < SETTLE_THRESHOLD){
+      DROP.vy = 0;
+      if(Math.abs(DROP.vx) < SETTLE_THRESHOLD){
+        DROP.vx = 0;
+        if(!DROP.settled){
+          DROP.settled = true;
+          DROP.el.classList.add('settled');
+        }
+        stopPhysics();
+      }
+    } else {
+      DROP.vy *= -BOUNCE;
+      DROP.vx *= 0.85;
+      playThud();
+    }
+  }
+  // Side walls = canonical safe-x bounds
+  const leftWall = DROP.vpW * 0.0556;
+  const rightWall = DROP.vpW * 0.8333 - DROP.w;
+  if(DROP.x < leftWall){DROP.x = leftWall; DROP.vx *= -BOUNCE;}
+  if(DROP.x > rightWall){DROP.x = rightWall; DROP.vx *= -BOUNCE;}
+  DROP.el.style.left = DROP.x + 'px';
+  DROP.el.style.top = DROP.y + 'px';
+}
+
+function playThud(){
+  const ctx=getAudioCtx();
+  const osc=ctx.createOscillator();const gain=ctx.createGain();
+  osc.type='sine';osc.frequency.setValueAtTime(120,ctx.currentTime);
+  osc.frequency.exponentialRampToValueAtTime(50,ctx.currentTime+0.1);
+  gain.gain.setValueAtTime(0.18,ctx.currentTime);
+  gain.gain.exponentialRampToValueAtTime(0.001,ctx.currentTime+0.18);
+  osc.connect(gain);gain.connect(ctx.destination);
+  osc.start();osc.stop(ctx.currentTime+0.2);
+}
+
+// ========== AUDIO LIFECYCLE (per drop) ==========
+function startCurrentAudio(song){
+  stopCurrentAudio();
+  const fill=document.getElementById('progress-fill');
+  fill.style.transition='width 0.1s linear, background-color 0.6s';
+  fill.style.width='100%';
+  fill.style.background='#22c55e';
+  if(!song.preview){
+    // No preview available — give the player 15s default
+    timeoutTimer=setTimeout(onClipEnded, 15000);
+    // Drain the bar over 15s for visual urgency
+    requestAnimationFrame(()=>{fill.style.transition='width 15s linear, background-color 0.6s';fill.style.width='0%';});
+    return;
+  }
+  // Reuse the preloaded <Audio> for this song if available; otherwise fall
+  // back to a fresh one. The preloaded path is the hot path on song 2+ —
+  // it's already buffered, so play() fires instantly.
+  const a = PRELOADED_AUDIO[queueIndex] || new Audio(song.preview);
+  a.volume = 0.22;
+  try{ a.currentTime = 0; }catch(e){}
+  currentAudio=a;
+  a.addEventListener('ended', onClipEnded);
+  a.addEventListener('timeupdate', updateClipProgress);
+  const launch = ()=>{
+    if(currentAudio !== a) return;  // user already placed/skipped while loading
+    showDropLoading(false);
+    a.play().catch(()=>{});
+    startTicking();
+  };
+  if(a.readyState >= 3){  // HAVE_FUTURE_DATA — safe to play
+    launch();
+  } else {
+    // Not buffered yet (slow network or cold fetch). Show a loading spinner
+    // on the album until canplay fires, then start the clip + clock together.
+    showDropLoading(true);
+    const onReady = ()=>{
+      a.removeEventListener('canplay', onReady);
+      a.removeEventListener('error', onErr);
+      launch();
+    };
+    const onErr = ()=>{
+      a.removeEventListener('canplay', onReady);
+      a.removeEventListener('error', onErr);
+      if(currentAudio !== a) return;
+      // Audio failed to load — fall back to a 15s timer so the game continues
+      showDropLoading(false);
+      timeoutTimer = setTimeout(onClipEnded, 15000);
+    };
+    a.addEventListener('canplay', onReady);
+    a.addEventListener('error', onErr);
+    try{ a.load(); }catch(e){}
+  }
+}
+
+function showDropLoading(show){
+  if(!DROP || !DROP.el) return;
+  DROP.el.classList.toggle('audio-loading', !!show);
+}
+
+function stopCurrentAudio(){
+  if(currentAudio){
+    try{currentAudio.pause();}catch(e){}
+    currentAudio.removeEventListener('ended', onClipEnded);
+    currentAudio.removeEventListener('timeupdate', updateClipProgress);
+    currentAudio=null;
+  }
+  if(timeoutTimer){clearTimeout(timeoutTimer);timeoutTimer=null;}
+  stopTicking();
+}
+
+function updateClipProgress(){
+  if(!currentAudio||!currentAudio.duration)return;
+  const pct=1 - (currentAudio.currentTime/currentAudio.duration);
+  const fill=document.getElementById('progress-fill');
+  fill.style.width = (pct*100) + '%';
+  if(pct<=0.22)fill.style.background='#ef4444';
+  else if(pct<=0.44)fill.style.background='#FF9500';
+  else if(pct<=0.67)fill.style.background='#eab308';
+  else fill.style.background='#22c55e';
+}
+
+function onClipEnded(){
+  // Clip ran out before placement -> buzzer + skip
+  if(!DROP||DROP.placed)return;
+  playBuzzer();
+  document.getElementById('game').style.animation='shake 0.4s ease-in-out';
+  setTimeout(()=>document.getElementById('game').style.animation='',450);
+  // Fade out the album visually then remove
+  DROP.placed=true; // prevent re-place
+  DROP.el.classList.add('skipped');
+  placements.push({song:DROP.song,tier:null});
+  stopCurrentAudio();
+  setTimeout(()=>{
+    if(DROP&&DROP.el)DROP.el.remove();
+    DROP=null;
+    queueIndex++;
+    dropNext();
+  }, 700);
+}
+
+// ========== PICKUP / DRAG / PLACE ==========
+function onAlbumPointerDown(e){
+  if(!DROP||DROP.placed)return;
+  // Allow pickup even mid-fall (you can grab it before it lands)
+  e.preventDefault();
+  DROP.picked=true;
+  DROP.vx=0;DROP.vy=0;
+  DROP.el.classList.add('picked-up');
+  document.querySelectorAll('.tier-drop').forEach(d=>d.classList.add('active-target'));
+  playGrab();
+  // Position so cursor is centered on the (now 3x) album
+  movePickedToPointer(e.clientX, e.clientY);
+}
+
+function movePickedToPointer(x,y){
+  if(!DROP||!DROP.picked)return;
+  // Pointer coords are window-relative but the album's left/top is relative
+  // to #viewport (the centered 9:16 container). Convert to local space.
+  const vp = document.getElementById('viewport').getBoundingClientRect();
+  const localX = x - vp.left;
+  const localY = y - vp.top;
+  // transform-origin is center center, so the visual center stays at
+  // (left + w/2, top + h/2) regardless of scale. Subtract base half-size.
+  DROP.x = localX - DROP.w/2;
+  DROP.y = localY - DROP.h/2;
+  DROP.el.style.left = DROP.x + 'px';
+  DROP.el.style.top  = DROP.y + 'px';
+  // Update target tier highlight (tier rects are window-coord, pointer is too)
+  const hover = getTierUnderPoint(x, y);
+  document.querySelectorAll('.tier-drop').forEach(d=>{
+    d.classList.toggle('hover-target', d===hover);
+  });
+}
+
+document.addEventListener('pointermove', (e)=>{
+  if(!DROP||!DROP.picked)return;
+  e.preventDefault();
+  movePickedToPointer(e.clientX, e.clientY);
+});
+
+document.addEventListener('pointerup', (e)=>{
+  if(!DROP||!DROP.picked)return;
+  const tierDrop = getTierUnderPoint(e.clientX, e.clientY);
+  if(tierDrop){
+    placeInTier(tierDrop, e.clientX, e.clientY);
+  } else {
+    // Released over no tier -> let it fall again
+    DROP.picked=false;
+    DROP.el.classList.remove('picked-up');
+    document.querySelectorAll('.tier-drop').forEach(d=>d.classList.remove('active-target','hover-target'));
+    DROP.settled=false;
+    DROP.el.classList.remove('settled');
+    DROP.vy = 0;
+    startPhysics();
+  }
+});
+
+function placeInTier(tierDrop, x, y){
+  if(!DROP||DROP.placed)return;
+  DROP.placed = true;
+  stopCurrentAudio();
+  document.querySelectorAll('.tier-drop').forEach(d=>d.classList.remove('active-target','hover-target'));
+  const tier = tierDrop.dataset.tier;
+  // Create permanent placed card with metadata label (revealed during recap)
+  const card = document.createElement('div');
+  card.className = 'song-card placed';
+  card.innerHTML =
+    '<img src="'+DROP.song.art+'" alt="'+DROP.song.title+'">'+
+    '<div class="card-meta">'+
+      '<span class="cm-title">'+DROP.song.title+'</span>'+
+      '<span class="cm-artist">'+DROP.song.artist+'</span>'+
+    '</div>';
+  tierDrop.appendChild(card);
+  // Remove the falling album element
+  DROP.el.remove();
+  // Record placement WITH the card element so the end-reveal can zoom to
+  // each placed card in the order it was placed.
+  placements.push({song: DROP.song, tier, card});
+  // FX: bleep + musical chord (tier-emotion) + screen flash + dramatic explosion
+  playDrop(tier);
+  playTierChord(tier);
+  flashScreen();
+  spawnEmojis(x, y, tier);
+  if(tier==='D'){
+    document.getElementById('game').style.animation='shake 0.3s ease-in-out';
+    setTimeout(()=>document.getElementById('game').style.animation='',350);
+  }
+  const now=Date.now();
+  if(now-lastPlaceTime<2500){comboCount++;if(comboCount>=2)showCombo(comboCount);}
+  else{comboCount=1;}
+  lastPlaceTime=now;
+  DROP=null;
+  queueIndex++;
+  // Beat then next drop
+  setTimeout(dropNext, 700);
+}
+
+function getTierUnderPoint(x,y){
+  const drops=document.querySelectorAll('.tier-drop');
+  for(const d of drops){
+    const r=d.getBoundingClientRect();
+    if(x>=r.left&&x<=r.right&&y>=r.top&&y<=r.bottom)return d;
+  }return null;
+}
+
+// (Old DRAG / staging-tap listeners removed — pickup is now album-element-scoped)
+
+// ========== EFFECTS ==========
+function flashScreen(){
+  const el=document.getElementById('flash-overlay');
+  el.style.opacity='0.3';el.style.animation='flash 0.2s ease-out forwards';
+  setTimeout(()=>{el.style.animation='';el.style.opacity='0';},250);
+}
+
+function spawnEmojis(x,y,tier){
+  // Dramatic explosion — ~5x the particle count of the original, varied
+  // sizes (0.5x–4x), full 360° trajectories with random distance + rotation,
+  // and a synthesized boom + sparkle layered audio.
+  const set=EMOJIS[tier]||EMOJIS.B;
+  const counts={S:45,A:28,B:28,C:28,D:32};
+  const count=counts[tier]||25;
+  playExplosionSound(tier);
+  for(let i=0;i<count;i++){
+    const el=document.createElement('div');
+    el.className='explosion-particle';
+    el.textContent=set[Math.floor(Math.random()*set.length)];
+    // Trajectory: random angle 360°, biased slightly upward
+    const angle=(Math.random()*Math.PI*2);
+    const distance=80 + Math.random()*320;
+    const dx=Math.cos(angle)*distance;
+    const dy=Math.sin(angle)*distance - 30; // upward bias
+    // Size: heavy variance — half are small, some are massive
+    const scale=0.5 + Math.random()*Math.random()*3.5;  // squared random = more small + occasional huge
+    const rotate=(Math.random()-0.5)*900;
+    const duration=1300 + Math.random()*900;
+    el.style.left=x+'px';
+    el.style.top=y+'px';
+    el.style.setProperty('--dx', dx+'px');
+    el.style.setProperty('--dy', dy+'px');
+    el.style.setProperty('--rot', rotate+'deg');
+    el.style.setProperty('--scale', scale);
+    el.style.setProperty('--dur', duration+'ms');
+    document.body.appendChild(el);
+    setTimeout(()=>el.remove(), duration+50);
+  }
+}
+
+function playExplosionSound(tier){
+  const ctx=getAudioCtx();
+  // Sub-bass thud
+  const sub=ctx.createOscillator(); const subG=ctx.createGain();
+  sub.type='sine'; sub.frequency.setValueAtTime(80,ctx.currentTime);
+  sub.frequency.exponentialRampToValueAtTime(35,ctx.currentTime+0.18);
+  subG.gain.setValueAtTime(0.5,ctx.currentTime);
+  subG.gain.exponentialRampToValueAtTime(0.001,ctx.currentTime+0.35);
+  sub.connect(subG); subG.connect(ctx.destination);
+  sub.start(); sub.stop(ctx.currentTime+0.4);
+  // Mid transient — square for character
+  const mid=ctx.createOscillator(); const midG=ctx.createGain();
+  mid.type='square'; mid.frequency.value=tier==='S'?440:tier==='D'?110:220;
+  midG.gain.setValueAtTime(0.18,ctx.currentTime);
+  midG.gain.exponentialRampToValueAtTime(0.001,ctx.currentTime+0.12);
+  mid.connect(midG); midG.connect(ctx.destination);
+  mid.start(); mid.stop(ctx.currentTime+0.15);
+  // Noise splat
+  const buf=ctx.createBuffer(1,Math.floor(ctx.sampleRate*0.25),ctx.sampleRate);
+  const d=buf.getChannelData(0);
+  for(let i=0;i<buf.length;i++)d[i]=(Math.random()*2-1)*Math.pow(1-i/buf.length,1.6)*0.35;
+  const ns=ctx.createBufferSource(); ns.buffer=buf;
+  const bp=ctx.createBiquadFilter(); bp.type='bandpass';
+  bp.frequency.value=tier==='S'?3500:1800; bp.Q.value=2.5;
+  ns.connect(bp); bp.connect(ctx.destination); ns.start();
+  // Sparkle ping for S-tier
+  if(tier==='S'){
+    [1200, 1800, 2400, 3000].forEach((f,j)=>{
+      const o=ctx.createOscillator(); const g=ctx.createGain();
+      o.type='sine'; o.frequency.value=f;
+      g.gain.setValueAtTime(0.08, ctx.currentTime + j*0.04);
+      g.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + j*0.04 + 0.15);
+      o.connect(g); g.connect(ctx.destination);
+      o.start(ctx.currentTime + j*0.04); o.stop(ctx.currentTime + j*0.04 + 0.18);
+    });
+  }
+}
+
+function showCombo(n){
+  playCombo();const el=document.getElementById('combo-text');
+  el.textContent=n+'x COMBO';
+  el.style.animation='comboFlash 0.8s ease-out forwards';
+  setTimeout(()=>{el.style.animation='';},900);
+}
+
+function endGame(){
+  gameStarted=false;
+  stopCurrentAudio();
+  stopPhysics();
+  const placed=placements.filter(p=>p.tier).length;
+  const skipped=placements.length - placed;
+  const title = placed===SONGS.length ? 'CLEAR!' : (placed===0 ? 'TIME’S UP' : 'DONE');
+  document.getElementById('end-title').textContent=title;
+  document.getElementById('end-sub').textContent=placed+' placed · '+skipped+' missed';
+  if(placed===SONGS.length){playClear();}
+  // Cinematic reveal: zoom in on each tier in sequence, then show end screen
+  endGameReveal();
+}
+
+// Tap-controlled, placement-ordered end-reveal:
+//   1. Zoom into where the FIRST placed song landed → pause (for commentary)
+//   2. Wait for tap → zoom out to full → brief beat → zoom into 2nd placement
+//   3. Repeat through all placements (in order of placement, not tier order)
+//   4. Final tap → zoom out → show end-screen overlay
+// Skipped songs (no card) are excluded — only successful placements get a
+// reveal slot.
+function endGameReveal(){
+  const game=document.getElementById('game');
+  const vp=document.getElementById('viewport').getBoundingClientRect();
+  game.classList.add('reveal-mode');
+
+  const targets = placements.filter(p => p.card);
+  if(targets.length === 0){
+    setTimeout(()=>{
+      game.classList.remove('reveal-mode');
+      document.getElementById('end-screen').style.display='flex';
+    }, 600);
+    return;
+  }
+
+  const SCALE = 2.4;
+  let step = -1;
+  let advancing = false; // ignore taps while a zoom-out/zoom-in is in-flight
+
+  function applyZoom(card){
+    // Re-measure each step in case the page resized
+    const vpRect=document.getElementById('viewport').getBoundingClientRect();
+    const cardRect=card.getBoundingClientRect();
+    const cardCenterX=(cardRect.left - vpRect.left) + cardRect.width/2;
+    const cardCenterY=(cardRect.top  - vpRect.top ) + cardRect.height/2;
+    // To center any point (Cx, Cy) at viewport center with scale around
+    // center-center: translate by (vw/2 - Cx, vh/2 - Cy) in pre-transform
+    // pixels, then scale. The translation is independent of SCALE.
+    const offsetX=(vpRect.width  / 2) - cardCenterX;
+    const offsetY=(vpRect.height / 2) - cardCenterY;
+    game.style.transformOrigin='50% 50%';
+    game.style.transform=`scale(${SCALE}) translate(${offsetX}px, ${offsetY}px)`;
+    const row=card.closest('.tier-row');
+    if(row) row.classList.add('reveal-focus');
+    card.classList.add('reveal-card-focus'); // reveals title+artist meta
+    playTick();
+  }
+
+  function zoomOut(){
+    game.style.transform='';
+    document.querySelectorAll('.tier-row.reveal-focus')
+      .forEach(r=>r.classList.remove('reveal-focus'));
+    document.querySelectorAll('.song-card.reveal-card-focus')
+      .forEach(c=>c.classList.remove('reveal-card-focus'));
+  }
+
+  function next(){
+    step++;
+    if(step >= targets.length){
+      cleanup();
+      zoomOut();
+      setTimeout(()=>{
+        game.classList.remove('reveal-mode');
+        document.getElementById('end-screen').style.display='flex';
+      }, 800);
+      return;
+    }
+    if(step === 0){
+      // First reveal — zoom in immediately
+      applyZoom(targets[0].card);
+    } else {
+      // Subsequent: zoom out to full, brief beat, zoom in to next placement
+      advancing = true;
+      zoomOut();
+      setTimeout(()=>{
+        applyZoom(targets[step].card);
+        advancing = false;
+      }, 700);
+    }
+  }
+
+  function onAdvance(){
+    if(advancing) return;
+    next();
+  }
+  function cleanup(){
+    document.removeEventListener('pointerdown', onAdvance);
+  }
+
+  // Kick off: brief beat, zoom into first placement, then arm tap-to-advance
+  setTimeout(()=>{
+    next();
+    // Defer attaching listener so the pointerdown that ENDED the game
+    // (the last placement) doesn't immediately advance step 0 -> step 1.
+    setTimeout(()=>{
+      document.addEventListener('pointerdown', onAdvance);
+    }, 250);
+  }, 500);
+}
+
+// ========== EPISODE LOADER ==========
+// Reads ?ep=N from URL (default 1), fetches episodes.json, populates SONGS,
+// updates the game header, then kicks off the intro. Single code path —
+// ep-1 uses the same loader as every other episode.
+function getEpParam(){
+  const params=new URLSearchParams(window.location.search);
+  const raw=params.get('ep');
+  if(!raw)return 1;
+  const n=parseInt(raw,10);
+  return isNaN(n)?1:n;
+}
+
+async function loadEpisode(){
+  const epNum=getEpParam();
+  let data;
+  try{
+    const resp=await fetch('data/bon/episodes.json',{cache:'no-store'});
+    if(!resp.ok)throw new Error('HTTP '+resp.status);
+    data=await resp.json();
+  }catch(e){
+    showLoadError('Could not load episode data: '+e.message);
+    return;
+  }
+  const ep=(data.episodes||[]).find(x=>x.number===epNum);
+  if(!ep){
+    showLoadError('Episode '+epNum+' not found. Available: '+
+      (data.episodes||[]).map(x=>x.number).join(', '));
+    return;
+  }
+  CURRENT_EP=ep;
+  SONGS=ep.songs||[];
+  // Update header text dynamically (game-title + ep-info)
+  const titleEl=document.getElementById('game-title');
+  const epInfoEl=document.getElementById('ep-info');
+  if(titleEl)titleEl.textContent='BANGER OR NAH?';
+  if(epInfoEl)epInfoEl.textContent='EP '+ep.number+(ep.title?' — '+ep.title.toUpperCase():'');
+  // Preload art for snappier card render
+  SONGS.forEach(s=>{const i=new Image();i.src=s.art;});
+  // Kick off intro now that data is ready
+  runIntro();
+}
+
+function showLoadError(msg){
+  const intro=document.getElementById('intro');
+  if(!intro)return;
+  intro.innerHTML='<div style="color:#fff;text-align:center;padding:4vh;font-size:2vh;line-height:1.5;font-family:Inter,sans-serif;">'+msg+'</div>';
+}
+
+// Toggle safe-zone debug overlay via ?safezone=1
+if(new URLSearchParams(window.location.search).get('safezone')==='1'){
+  document.body.classList.add('show-safezone');
+}
+
+setTimeout(loadEpisode,100);
+</script>
+  </main>
+
+  
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG', {
+      linker: {
+        domains: ['entuned.co', 'music.entuned.co', 'app.entuned.co']
+      }
+    });
+  </script>
+  <script defer src="js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>
