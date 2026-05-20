@@ -2,7 +2,7 @@
 """Fetch iTunes metadata + album art for Banger or Nah? episodes.
 
 Reads the EPISODES list below, queries iTunes Search API for each track,
-downloads 600x600 album art to img/bon/epNNN/, writes data/bon/episodes.json.
+downloads 600x600 album art to img/ttt/epNNN/, writes data/ttt/episodes.json.
 
 Re-runnable: skips downloads whose target file already exists.
 """
@@ -16,8 +16,8 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-IMG_ROOT = ROOT / "img" / "bon"
-DATA_OUT = ROOT / "data" / "bon" / "episodes.json"
+IMG_ROOT = ROOT / "img" / "ttt"
+DATA_OUT = ROOT / "data" / "ttt" / "episodes.json"
 
 EPISODES = [
     {
@@ -148,7 +148,7 @@ def itunes_search(title: str, artist: str):
             {"term": term, "entity": "song", "limit": 25, "country": "US"}
         )
     )
-    req = urllib.request.Request(url, headers={"User-Agent": "BoN-fetcher/1.0"})
+    req = urllib.request.Request(url, headers={"User-Agent": "TTT-fetcher/1.0"})
     with urllib.request.urlopen(req, timeout=15) as r:
         data = json.loads(r.read().decode("utf-8"))
     results = data.get("results", [])
@@ -189,7 +189,7 @@ def download(url: str, dest: Path):
     if dest.exists() and dest.stat().st_size > 1000:
         return
     dest.parent.mkdir(parents=True, exist_ok=True)
-    req = urllib.request.Request(url, headers={"User-Agent": "BoN-fetcher/1.0"})
+    req = urllib.request.Request(url, headers={"User-Agent": "TTT-fetcher/1.0"})
     with urllib.request.urlopen(req, timeout=30) as r:
         dest.write_bytes(r.read())
 
@@ -215,7 +215,7 @@ def main():
                 "100x100bb", "600x600bb"
             )
             slug = f"{slugify(title)}_{slugify(artist)}"
-            art_rel = f"img/bon/ep{ep_id}/{slug}.jpg"
+            art_rel = f"img/ttt/ep{ep_id}/{slug}.jpg"
             art_path = ROOT / art_rel
             try:
                 download(art_url, art_path)

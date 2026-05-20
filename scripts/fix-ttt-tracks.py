@@ -3,7 +3,7 @@
 
 Targets the entries that came back as Glee Cast covers, orchestra arrangements,
 wrong remixes, or got rate-limited on the first pass. Merges results back into
-data/bon/episodes.json by (ep_number, search_title) and downloads art.
+data/ttt/episodes.json by (ep_number, search_title) and downloads art.
 """
 import json
 import re
@@ -14,8 +14,8 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-IMG_ROOT = ROOT / "img" / "bon"
-DATA = ROOT / "data" / "bon" / "episodes.json"
+IMG_ROOT = ROOT / "img" / "ttt"
+DATA = ROOT / "data" / "ttt" / "episodes.json"
 
 # (ep_num, search_title, search_artist, accept_substr_in_artist_lower)
 FIXES = [
@@ -51,7 +51,7 @@ def itunes_search(title: str, artist: str, require_artist: str):
             {"term": term, "entity": "song", "limit": 25, "country": "US"}
         )
     )
-    req = urllib.request.Request(url, headers={"User-Agent": "BoN-fetcher/1.0"})
+    req = urllib.request.Request(url, headers={"User-Agent": "TTT-fetcher/1.0"})
     with urllib.request.urlopen(req, timeout=15) as r:
         data = json.loads(r.read().decode("utf-8"))
     results = data.get("results", [])
@@ -91,7 +91,7 @@ def download(url: str, dest: Path):
     if dest.exists() and dest.stat().st_size > 1000:
         return
     dest.parent.mkdir(parents=True, exist_ok=True)
-    req = urllib.request.Request(url, headers={"User-Agent": "BoN-fetcher/1.0"})
+    req = urllib.request.Request(url, headers={"User-Agent": "TTT-fetcher/1.0"})
     with urllib.request.urlopen(req, timeout=30) as r:
         dest.write_bytes(r.read())
 
@@ -128,7 +128,7 @@ def main():
         ep_id = f"{ep_num:03d}"
         art_url = hit.get("artworkUrl100", "").replace("100x100bb", "600x600bb")
         slug = f"{slugify(title)}_{slugify(artist)}"
-        art_rel = f"img/bon/ep{ep_id}/{slug}.jpg"
+        art_rel = f"img/ttt/ep{ep_id}/{slug}.jpg"
         try:
             download(art_url, ROOT / art_rel)
         except Exception as e:
