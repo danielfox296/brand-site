@@ -240,6 +240,13 @@ python3 build.py
 git add -A && git commit -m "Add blog post: Post Title" && git push origin main
 ```
 
+### 8. Cross-post to Substack
+
+Every new blog post ships a Substack-voice version to `fox296.substack.com`.
+Run the `substack-cross-post` skill — it owns the voice rules, the
+`cross_post.py` orchestration, and the Brave/CDP prereq. Don't duplicate
+those instructions here.
+
 ## Content Rules
 
 - Read `../VOICE.md` before writing copy. Lead with outcomes, not technology.
