@@ -1,0 +1,67 @@
+title: "127 BPM in a Target on a Tuesday"
+slug: "127-bpm-target-dwell-time"
+eyebrow: "FIELD NOTES"
+dek: "Most stores have no spec for the music on their floor. The cost shows up in dwell time and basket size."
+date: "2026-05-19"
+last_updated: "2026-05-19"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/everything-designed-except-music.jpg"
+  alt: "Empty retail aisle with overhead speakers visible in the ceiling grid"
+  caption: "Photo: Unsplash"
+meta_description: "Most stores have no spec for the tempo of their background music. Here's what that costs in dwell time and basket size, backed by four decades of research."
+og_image: "/img/blog/everything-designed-except-music.jpg"
+tags: [field-notes, tempo, retail-music, dwell-time]
+sections:
+  - type: key_takeaways
+    items:
+      - "Background music tempo affects how fast customers move through a store"
+      - "127 BPM is dance-floor speed. Slower tempos have been shown to increase sales by as much as 38%"
+      - "Most stores have never specified the tempo of their music"
+
+  - type: prose
+    body: |
+      I was in a Target yesterday. Protein shakes and cat enzyme carpet cleaner. Not a research trip. But I build audio for retail environments, so I hear things in stores that most people feel without noticing.
+
+      There was a song playing over the PA. Electronica-leaning pop, catchy, well-produced. The store was mostly empty, mid-afternoon on a weekday, and this song was at 127 beats per minute. I tapped along on a tempo-tracking app. 127 BPM is dance music. The tempo of a DJ set at 11 p.m., not a retail floor at 2 p.m.
+
+      When the tempo is fast, people walk faster, browse less, and leave sooner. Your body syncs to rhythmic input whether you notice or not.
+
+      Ronald Milliman tested this in grocery stores in 1982. Slow background music increased sales by 38.2% compared to fast. The customers didn't buy different things. They stayed longer, covered more of the store, and put more in the basket.
+
+  - type: stat_callout
+    number: "38.2%"
+    label: "Sales increase with slow background music vs. fast, in Milliman's 1982 grocery-store study"
+    source: "Milliman, R.E. (1982), Journal of Marketing"
+    accent: teal
+
+  - type: prose
+    body: |
+      The research puts the right range for most retail formats at roughly 72 to 96 BPM. A comfortable walking pace. Above 100, dwell time starts to drop. By 120, the customer's body has registered the tempo even if they haven't noticed the music.
+
+  - type: subhead
+    level: 2
+    text: "The music nobody specified"
+
+  - type: prose
+    body: |
+      Retailers spend real money on layout, fixtures, lighting, signage, scent. All designed to affect customer behavior. The music, the most persistent sensory input in the space, gets handed to a playlist algorithm or a store manager's Spotify account.
+
+      Nobody at Target specified 127 BPM. Somebody picked a song because it sounded good. The tempo was never part of the conversation. The behavioral consequence was never measured.
+
+      Go stand on your floor. Listen. Count the tempo. If it's pushing 127, you now know something about your store that you probably didn't know this morning. And you know what it's costing you.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level &mdash; tempo, key, lyrical density, energy arc &mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "what-are-flow-factors"
+      - slug: "how-to-increase-dwell-time"
+      - slug: "science-of-tempo-retail"
