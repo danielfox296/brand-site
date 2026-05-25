@@ -1,0 +1,86 @@
+title: "What If You Licensed Music the Way Film and TV Do?"
+slug: "licensed-music-like-film-and-tv"
+eyebrow: "MARKET INTEL"
+dek: "Film and TV have a model for licensing music with intentional fit. The economics make it impossible for retail. Composition closes the gap."
+date: "2026-05-24"
+last_updated: "2026-05-24"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/licensed-music-like-film-and-tv.jpg"
+  alt: "Film reels stacked in a cinema archive"
+  caption: "Photo: Unsplash"
+meta_description: "Sync licensing gives film and TV music chosen for the scene. Retail can't afford it. Composition is the only model that delivers intentional fit at retail economics."
+og_image: "/img/blog/licensed-music-like-film-and-tv.jpg"
+tags: [market-intel, sync-licensing, music-licensing, retail-music, composition]
+sections:
+  - type: key_takeaways
+    items:
+      - "Sync licensing is the only existing model where music is selected for a specific commercial context with intentional fit, and film and TV have been doing it for decades."
+      - "Mid-tier sync runs $5,000 to $50,000 per placement. Licensing 150 indie tracks for a single retail rotation would cost roughly $37,500 to $750,000 per store."
+      - "Retailers currently spend $500 to $2,500 per year on music in total. The gap between current cost and sync cost is three to four orders of magnitude."
+      - "Composition fills the brief the way sync does, because the composition starts with the brief, without the rights overhead that makes sync impossible at retail scale."
+
+  - type: prose
+    body: |
+      There's already a model for licensing music that's been specifically selected and cleared for a commercial context. It's called sync licensing. Film and TV studios use it constantly. A music supervisor picks a song that fits a scene, negotiates the rights, pays the fee, and the song appears in the show. The turnaround can be fast, sometimes days. The music is chosen for the specific moment it accompanies. The fit is intentional.
+
+      Nobody has applied this model to retail stores. The economics explain why.
+
+      A mid-tier sync license for television runs $5,000 to $50,000 per placement. That's one song, one use, one context. Major label hits start around $20,000 and can exceed $500,000 for a global advertising campaign. Even indie tracks, unsigned artists with small catalogs, range from $250 to $5,000.
+
+      Now think about what a retail store needs. Eight hours of music a day, five to seven days a week. To avoid the kind of repetition that drives staff insane and makes repeat customers tune out, you need at least 120 to 150 tracks in rotation. Some stores want more.
+
+      At the low end, licensing 150 indie tracks through sync deals would cost somewhere around $37,500 to $750,000 to build a single rotation. At mid-tier rates, you're looking at $750,000 to $7.5 million. For one store. Before you rotate anything seasonally.
+
+      Compare that to what retailers actually pay right now. A Rockbot subscription runs $25 per month per location. Soundtrack Your Brand is comparable. Cloud Cover starts at about $17 per month. Even with PRO licenses from ASCAP and BMI layered on top, a typical single-location retailer is spending somewhere between $500 and $2,500 per year on music. Total.
+
+      The gap between current retail music costs and sync licensing costs is three to four orders of magnitude. That's not a pricing discrepancy. That's a different universe.
+
+  - type: subhead
+    level: 2
+    text: "Why sync is the right model and the wrong model"
+
+  - type: prose
+    body: |
+      So why even bring this up? Because sync licensing is the only existing model where music is selected for a specific commercial context with intentional fit. It's the "right" way to license music if your goal is music that actually belongs in the moment it's being used. Film and TV have been doing this for decades. The music supervisors are skilled professionals who understand how a song interacts with a scene, how tempo affects pacing, how lyrical content creates subtext. They're essentially doing for a three-minute scene what a retailer would need done for an eight-hour day.
+
+      And it's wildly impractical for retail.
+
+      This is where the good-fast-cheap triangle becomes useful. You can have good music (specifically selected and cleared for your context), but it will be expensive (sync rates) and slow (negotiation, clearance, rights management for every track). You can have cheap music (playlist subscription) and fast setup (pick a mood, press play), but the music won't be good in the sense that matters, because "good" in a retail context means composed for your specific brand, customer, and business outcome, and a generic playlist by definition isn't that. You can have fast and good, but the cost structure doesn't exist in the current market to deliver it.
+
+  - type: subhead
+    level: 2
+    text: "The two corners of the triangle that already exist"
+
+  - type: prose
+    body: |
+      Current playlist services occupy the cheap-and-fast corner. They're affordable and easy. The tradeoff is that the music is generic, borrowed from other contexts, and unoptimized for any specific retail environment.
+
+      Sync licensing occupies the good-and-expensive corner. The music is intentionally matched to context, but the cost structure makes it inaccessible for a retailer doing $1 million to $5 million in annual revenue. A single sync fee for a recognizable track could exceed their entire annual music budget.
+
+      The gap in the triangle is good, fast, and affordable. Music that's specifically designed for a store's brand, customer profile, and conversion goals. Music that can be generated on a cadence that matches retail operations, because new seasons, new campaigns, and new product lines don't wait for sync negotiations. Music that costs somewhere between a playlist subscription and a single sync license.
+
+  - type: subhead
+    level: 2
+    text: "Composition is the third corner"
+
+  - type: prose
+    body: |
+      That gap is composition. Music composed to specification fills the brief the way a sync-licensed track does, because the composition starts with the brief. The store's brand identity, target customer, desired tempo range, lyrical parameters, seasonal aesthetic. All specified before a note is written. The economics work because composition doesn't carry the rights overhead of licensing existing recordings. There's no master recording to clear, no publisher to negotiate with, no catalog of stakeholders who each take a cut.
+
+      The "proper" licensing model has always existed. Film and TV proved it works. The reason retail never adopted it is that the math was impossible for a store paying $25 a month for background music. Composition makes the math work. Same intentionality. Different economics. And something sync licensing can never provide: music that didn't exist before your store needed it.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level &mdash; tempo, key, lyrical density, energy arc &mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "retail-music-licensing-2026"
+      - slug: "music-licensing-for-retail-stores"
+      - slug: "the-real-cost-of-retail-music"

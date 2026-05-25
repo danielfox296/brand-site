@@ -1,0 +1,85 @@
+title: "The Most Expensive Paperweight in Your Store"
+slug: "most-expensive-paperweight-in-your-store"
+eyebrow: "FIELD NOTES"
+dek: "You bought one of the most powerful behavioral tools in retail. Then you set it once and walked away."
+date: "2026-05-24"
+last_updated: "2026-05-24"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/most-expensive-paperweight-in-your-store.jpg"
+  alt: "Supermarket wine aisle with bottles lined along the shelves"
+  caption: "Photo: Unsplash"
+meta_description: "Music shifts what shoppers buy, how long they stay, and how much they spend. Most stores still treat it as decor. Here is what the research shows."
+og_image: "/img/blog/most-expensive-paperweight-in-your-store.jpg"
+tags: [field-notes, milliman-study, wine-aisle, tempo, retail-music, behavioral]
+sections:
+  - type: key_takeaways
+    items:
+      - "Music in retail is documented to swing receipts and steer purchases at large effect sizes, mostly below conscious awareness"
+      - "Most stores set a playlist once and never adjust it, while every other in-store channel is actively managed"
+      - "The brief for what the music is supposed to do has never been written, so there is no way to tell if it is performing"
+
+  - type: prose
+    body: |
+      Your window display changes with the season. Your promotions rotate weekly. Your staff gets trained on new product lines. Your inventory mix shifts based on what's selling. Your social media follows trends, holidays, weather. Everything in your store moves.
+
+      Your music has been the same playlist since you set it up.
+
+      Most retailers, if asked what their music is doing, would say something like "creating vibe" or "background ambiance." And that's an honest answer. That's genuinely all they're asking it to do. Fill the air with something that sounds roughly appropriate. A kind of sonic furniture.
+
+      But music is doing more than that whether you've asked it to or not.
+
+  - type: subhead
+    level: 2
+    text: "The instrument is real"
+
+  - type: prose
+    body: |
+      In 1999, researchers at the University of Leicester ran an experiment in a supermarket wine aisle. On days when French accordion music played, French wine outsold German wine five to one. On days when German bierkeller music played, the ratio flipped. When surveyed afterward, only one in seven customers said the music influenced their purchase. The rest either didn't notice the music or said it had no effect. The wine aisle didn't change. The prices didn't change. The signage didn't change. The music changed, and the sales followed.
+
+      Ronald Milliman documented something similar in 1982. When a supermarket played slow-tempo music, shoppers moved more slowly through the store and gross receipts increased 38% compared to fast-tempo days. The shoppers didn't report feeling different. They didn't know they were walking slower. The tempo did the work beneath conscious awareness.
+
+      These are large effects. A 38% swing in receipts from tempo alone is bigger than most merchandising changes a store owner will make in a quarter. And the wine study shows something even more specific: that the cultural and semantic content of music can steer purchase behavior toward particular products without the customer realizing it.
+
+      So the instrument is real. The mechanism is documented across dozens of studies over four decades. Music shapes how long people stay, what they pick up, how they perceive quality, how much they're willing to pay, and what category of product they gravitate toward. This is known. It's published. It's been replicated.
+
+      And retailers are using this instrument as a paperweight.
+
+  - type: subhead
+    level: 2
+    text: "The computer you never turned on"
+
+  - type: prose
+    body: |
+      It's the equivalent of buying a computer because you need something heavy to keep your papers from blowing off the desk. The computer does that job. It sits there. It has mass. Papers stay put. You never turn it on.
+
+      Think about what a store owner does with visual merchandising. There's a plan. The plan changes seasonally, sometimes monthly. It accounts for what's in stock, what needs to move, what the brand wants to emphasize. The window display tells a story that connects to the current campaign. The mannequin outfits reflect the featured collection. Even the height at which products sit on shelves is a considered decision because eye-level sells.
+
+      Now compare that to the music. Same playlist, January through August. No connection to what's in stock. No connection to the current campaign. No consideration of who's walking in at 10 AM versus 4 PM, or whether it's a browsing day or a buying day. No adjustment based on whether the store is empty or packed, which changes the social dynamics of the space and the role music plays in it.
+
+  - type: subhead
+    level: 2
+    text: "The brief that was never written"
+
+  - type: prose
+    body: |
+      If a store owner designed their window display once in January and never touched it, you'd notice by March. The winter coats would still be on the mannequins while customers are walking in wearing t-shirts. That's obviously broken. But the musical equivalent of this happens in stores every day, and nobody sees it because nobody defined what the music was supposed to be doing in the first place.
+
+      The job was never articulated. The brief was never written. And because the brief was never written, there's no way to measure whether the music is performing. A window display that's wrong for the season is visibly wrong. A song that's wrong for your store is just a song.
+
+      Your store probably has one of the most powerful behavioral tools in retail sitting in the corner, unplugged, doing the only job nobody ever thought to move past.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level &mdash; tempo, key, lyrical density, energy arc &mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "milliman-study"
+      - slug: "the-wine-aisle"
+      - slug: "the-supermarket-study"

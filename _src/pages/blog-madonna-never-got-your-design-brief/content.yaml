@@ -1,0 +1,83 @@
+title: "Madonna Never Got Your Design Brief"
+slug: "madonna-never-got-your-design-brief"
+eyebrow: "FIELD NOTES"
+dek: "Every other layer of your store gets a design brief. The music skips all of that."
+date: "2026-05-24"
+last_updated: "2026-05-24"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/madonna-never-got-your-design-brief.jpg"
+  alt: "Architectural blueprint with design plans laid out on a desk"
+  caption: "Photo: Unsplash"
+meta_description: "Every layer of your store gets a design brief. The music doesn't. Retailers borrow songs composed for concerts and movies, then wonder why the floor feels off."
+og_image: "/img/blog/madonna-never-got-your-design-brief.jpg"
+tags: [field-notes, music-licensing, design-brief, retail-music, brand-experience]
+sections:
+  - type: key_takeaways
+    items:
+      - "Every other sensory layer of a store goes through a design brief. The music skips that step entirely."
+      - "Songs in playlists were composed for radio, MTV, stadiums, movies. They were never composed for your floor on a Wednesday afternoon."
+      - "A basic music brief, tempo range, lyric themes, emotional register, isn't complicated. Almost no retailer writes one."
+
+  - type: prose
+    body: |
+      Here's a question nobody in retail asks: who briefed the music?
+
+      Your architect got a brief. Square footage, traffic flow, sightlines to the register, fitting room placement. Your lighting designer got one. Color temperature, accent zones, dimming schedules for morning versus evening. Your visual merchandiser gets a new brief every season, sometimes every campaign. Your signage vendor got brand guidelines, Pantone values, type specs, and placement rules down to the inch.
+
+      The music? Nobody briefed the music.
+
+      What plays in most retail stores is a playlist assembled from recordings that already exist. Songs composed for radio play, stadium tours, streaming playlists, movie soundtracks, club sets. Songs written to express what the artist wanted to express, for an audience the artist had in mind, in a context the artist was working in. None of those contexts were your store.
+
+  - type: subhead
+    level: 2
+    text: "Material Girl was never written for your floor"
+
+  - type: prose
+    body: |
+      Take Madonna. "Material Girl" is one of the most recognizable pop songs of the last forty years. It sits at about 111 BPM, which is brisk. Dance-pop production, a vocal performance referencing Marilyn Monroe, lyrics about a woman evaluating men based on what they can buy her. Madonna composed it for a music video. She composed it for MTV. She composed it for a cultural moment in 1984 about performative excess.
+
+      She did not compose it for a 1,200-square-foot women's apparel store in a suburban shopping center on a Wednesday afternoon. She was never asked to.
+
+      And this is the strange part. Retailers will spend months on a floor plan, weeks choosing paint colors, days agonizing over the exact angle of a display shelf. Then they'll subscribe to a playlist service and let someone else's creative decisions fill the room for eight hours a day. The one sensory element that their customers absorb for twenty, thirty, forty minutes straight while they shop. The one that operates below conscious attention, where it has the most behavioral influence and the least scrutiny.
+
+      Every other layer of your store's environment goes through a design process. Somebody states the objective. Somebody specifies the constraints. Somebody considers the customer, the brand positioning, the desired behavior. Somebody signs off. Music skips all of that.
+
+  - type: subhead
+    level: 2
+    text: "Fix You in the shoe store"
+
+  - type: prose
+    body: |
+      Think about what happens when Coldplay's "Fix You" comes on in a shoe store. The song was written about grief. Chris Martin composed it for Gwyneth Paltrow after her father died. The tempo sits around 70 BPM, slow and pulling downward. The lyrics describe tears, failure, being stuck. The build is designed to move a listener from despair toward catharsis over five minutes.
+
+      Your customer is holding a pair of $180 boots and absorbing all of that. Not consciously, probably. They're not listening to the words the way they would at home with headphones. But the tempo is real. The harmonic content is real. The emotional register of the vocal performance is real. And none of it was designed to support the moment they're in, which is a purchase decision that requires confidence and a sense of personal reward.
+
+      A design brief would have caught this. Even a basic one. A brief that said "we want music that supports browsing behavior in the 85 to 100 BPM range, with lyrical content that reinforces self-expression and personal style, avoiding themes of loss, heartbreak, or urgency." That's not complicated. Any brand manager could write that sentence. Nobody does.
+
+  - type: subhead
+    level: 2
+    text: "Why the brief never gets written"
+
+  - type: prose
+    body: |
+      The reason nobody does is that music has always been treated as an off-the-shelf commodity in retail. You pick a genre or a mood, you subscribe, and it shows up. The assumption is that the music already exists and your only job is to select it. And that assumption holds for every other licensed product in your store: you select POS software, you select fixtures, you select mannequins. But those products were designed to do the job you're hiring them for. A cash register was built to process transactions in a retail environment. A mannequin was built to display clothing on a human form. The music was built for something else entirely and you're borrowing it.
+
+      Nobody would accept this from any other part of the store experience. If your lighting designer installed stage lighting designed for a rock concert, you'd fire them. If your architect designed the floor plan based on a nightclub layout, you'd stop construction. But the music, which was literally composed for rock concerts and nightclubs, gets a pass.
+
+      Your store designed everything except the thing your customer hears for thirty minutes while deciding whether to buy.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level &mdash; tempo, key, lyrical density, energy arc &mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "music-was-never-made-for-your-store"
+      - slug: "your-store-deserves-a-score"
+      - slug: "retail-designed-everything"

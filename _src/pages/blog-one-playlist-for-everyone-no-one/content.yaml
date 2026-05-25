@@ -1,0 +1,81 @@
+title: "One Playlist for Everyone Is a Playlist for No One"
+slug: "one-playlist-for-everyone-no-one"
+eyebrow: "FIELD NOTES"
+dek: "A mood filter is a menu. Designed music is a specification. One of those can get precise; the other is always approximating."
+date: "2026-05-24"
+last_updated: "2026-05-24"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/one-playlist-for-everyone-no-one.jpg"
+  alt: "Interior of a specialty boutique with curated merchandise displays"
+  caption: "Photo: Unsplash"
+meta_description: "Picking a mood from a dropdown is selecting from a menu, not designing. Specificity is where retail music value lives, and playlists can't do specificity."
+og_image: "/img/blog/one-playlist-for-everyone-no-one.jpg"
+tags: [field-notes, retail-music, music-design, specification-vs-selection, brand-experience]
+sections:
+  - type: key_takeaways
+    items:
+      - "Picking a mood from a playlist service is selecting from a menu, not designing the sound of your store"
+      - "The same 'upbeat pop' pool is being served to every retailer who picked that mood, so your store sounds like the category, not like your store"
+      - "Every other design decision in your store works on specification; the music is the only thing you are still selecting from a dropdown"
+
+  - type: prose
+    body: |
+      Your playlist service lets you pick a mood. "Upbeat pop." "Chill indie." "Warm acoustic." Maybe you can filter by decade or energy level. It feels like you are making a choice. Like you are customizing your store's sound.
+
+      You are selecting from a menu. That is different from designing.
+
+      Here is what "upbeat pop" means in practice. The playlist service pulls from a catalog of recordings that meet the genre and energy criteria. Those same recordings are being served to every other retailer who selected "upbeat pop." The shoe store down the block, the boutique across town, the gift shop in the airport. You are all getting the same pool of tracks. Your store does not sound like your store. It sounds like the category you selected.
+
+      And within that category, the playlist has to serve everybody. The twenty-two-year-old buying sneakers and the fifty-five-year-old shopping for dress shoes. The couple browsing on a Saturday afternoon and the solo shopper rushing through on a Tuesday lunch break. January and July. 10 AM when the store is empty and 3 PM when it is packed.
+
+      A single playlist trying to work for all of those scenarios is making compromises at every turn. The tempo cannot be optimized for dwell time because dwell time targets change with traffic density. The lyrical content cannot reinforce a specific brand aesthetic because the playlist has to be generic enough for any brand that selected the same mood. The energy cannot match the time of day because the playlist does not know what time it is in your store.
+
+  - type: subhead
+    level: 2
+    text: "No retailer would accept this from a lighting designer"
+
+  - type: prose
+    body: |
+      It is the retail equivalent of one lighting scheme for your entire space. Same brightness, same color temperature, same fixture angle from open to close, regardless of whether you are showcasing evening wear or running shoes. No retailer would accept that from a lighting designer. The lighting changes because the merchandise changes, the time of day changes, the customer changes. That is what design means.
+
+      A store owner I know spent two weeks choosing the exact pendant lights for her fitting rooms. She tested three color temperatures because she knew warm light makes skin look better, which makes customers feel better about what they are trying on, which moves conversion. Two weeks on fitting room lighting. The music playing while her customers are in those fitting rooms? She picked "chill vibes" from a dropdown menu six months ago.
+
+      The specificity is where the value lives, and she knows that. She proved it with the lighting decision. The music just has not gotten the same treatment because the tools have not existed to treat it with the same precision.
+
+  - type: subhead
+    level: 2
+    text: "What specificity actually looks like"
+
+  - type: prose
+    body: |
+      Think about what specificity actually means for in-store music. It means knowing that your target customer is a woman in her 30s to 40s, upper-middle income, shopping for quality basics, and that the music should reflect the aesthetic confidence of someone who already knows what she likes. It means knowing that at 10 AM your store has three browsers who need warmth and permission to linger, and at 2 PM you have fifteen shoppers who need gentle energy and clear sonic space that does not overwhelm conversation with a sales associate. It means knowing that your fall collection launch calls for a different emotional register than your summer clearance.
+
+      A mood filter cannot do any of that. "Upbeat pop" does not know your customer's age. "Chill indie" does not know your average transaction size. "Warm acoustic" does not know that the woman in the fitting room is deciding between a $200 sweater and walking out empty-handed, and that the right musical moment might be the thing that tips it.
+
+  - type: subhead
+    level: 2
+    text: "Selection vs. specification"
+
+  - type: prose
+    body: |
+      This is the structural limitation. Playlists are selected. Designed music is specified. Selection means choosing from what already exists and hoping it is close enough. Specification means stating what you need and building toward it. One of those approaches can get precise. The other one is always approximating.
+
+      Every other design decision in your store works on specification. You specify the paint color. You specify the fixture layout. You specify the signage copy. You specify the staff uniform.
+
+      Your music is the only thing you are still selecting from a dropdown.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level &mdash; tempo, key, lyrical density, energy arc &mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "madonna-never-got-your-design-brief"
+      - slug: "licensing-technology-that-doesnt-work"
+      - slug: "most-expensive-paperweight-in-your-store"

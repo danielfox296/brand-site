@@ -1,0 +1,82 @@
+title: "You're Licensing Technology That Doesn't Work"
+slug: "licensing-technology-that-doesnt-work"
+eyebrow: "FIELD NOTES"
+dek: "Your POS works. Your music doesn't. Nobody noticed because nobody defined the job."
+date: "2026-05-24"
+last_updated: "2026-05-24"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/licensing-technology-that-doesnt-work.jpg"
+  alt: "Point-of-sale technology on a retail store counter"
+  caption: "Photo: Unsplash"
+meta_description: "Retailers license music services that fail the basic technology test. The IP works fine. It just wasn't built to do the job your store actually needs done."
+og_image: "/img/blog/licensing-technology-that-doesnt-work.jpg"
+tags: [field-notes, music-licensing, retail-music, technology-licensing, conversion]
+sections:
+  - type: key_takeaways
+    items:
+      - "Retailers license music services the same way they license a POS, but the music never has to perform the job a POS does"
+      - "The job was never defined, so failure is invisible. The air is full and everyone is legal"
+      - "The songs in your store were engineered for radio, clubs, and headphones. None of that craft was directed at your conversion goals"
+      - "Licensing works when the thing being licensed was built to solve the problem you have. Retail music isn't"
+
+  - type: prose
+    body: |
+      When a retailer licenses a POS system, the expectation is basic: the technology performs the job it was purchased for. It processes transactions. It tracks inventory. It generates reports. If the register froze during every third checkout, or the inventory software miscounted stock by 20%, you'd cancel the contract and find something that works.
+
+      Licensed music in retail is failing this test every day. Stores just haven't noticed because nobody defined the job in the first place.
+
+      Here's how the current model works. A retailer subscribes to a music service. Rockbot, Soundtrack Your Brand, Cloud Cover, Mood Media, pick one. The service provides a catalog of licensed recordings. The retailer selects a genre or a mood or a preset station. The music plays. The licensing is handled. Everybody's legal.
+
+      But legal and functional are different things.
+
+  - type: subhead
+    level: 2
+    text: "Nobody defined the job"
+
+  - type: prose
+    body: |
+      What does the music actually need to do? In a retail store, the answer has always been vague. "Create atmosphere." "Fill the silence." "Make it feel like a store." These are aesthetic answers. They describe a sensory quality, not a business outcome. And the music services deliver on that brief just fine. The air is no longer silent. Something is playing. It sounds like music you'd hear in a store. Job done.
+
+      Except the store exists to sell things. Every other decision in the space, from the floor plan to the staff training to the promotional calendar, points toward that goal. The music is the only element that doesn't have to answer for it.
+
+  - type: subhead
+    level: 2
+    text: "What's actually playing"
+
+  - type: prose
+    body: |
+      Consider what actually plays. A high-end menswear store with a $250 average transaction. The customer profile is a man in his 30s to 50s who needs to feel confident, deliberate, and assured enough to spend real money on clothing. The playlist service delivers The Weeknd. The catalog is built around hedonism, detachment, and dark emotional spaces. The production is moody and atmospheric, the vocal tone is distant and numbed, and the thematic content runs directly against buyer confidence. The customer is trying to feel good about dropping $300 on a jacket. The music is sonically communicating that nothing matters.
+
+      Or take a different example. A specialty footwear store where extended dwell time directly correlates with basket size. Every extra minute a customer spends browsing is worth something. The playlist delivers Doja Cat at 140 BPM. That tempo is doing one thing: it's moving people through the space. Fast tempo creates urgency. It compresses perceived time. It makes people walk faster, browse less, and leave sooner. This isn't theory. Milliman's 1982 study documented a 38% difference in gross receipts based on tempo changes alone.
+
+      So the store is paying a monthly subscription for music that shortens dwell time in an environment where dwell time drives revenue. The IP is performing exactly as designed. The problem is it was designed for a club, a car, a pair of headphones. It was designed to make someone move.
+
+      You wouldn't keep a sales associate on the floor who told every customer "you should probably leave." But that's functionally what a 140 BPM track does in a store where browsing is the conversion mechanism.
+
+  - type: subhead
+    level: 2
+    text: "Licensing works when the IP was built for the job"
+
+  - type: prose
+    body: |
+      The concept of licensing is sound. Retailers license software, fixtures, signage platforms, all kinds of intellectual property. Licensing works when the thing being licensed was built to solve the problem you have. A POS system was designed to process retail transactions. A mannequin was designed to display retail clothing. A planogram was designed to organize retail shelves.
+
+      The song playing in your store was designed to get radio play, or to fill arenas, or to express what an artist was feeling about a breakup. It was designed with extraordinary care and craft, often by very talented people. And none of that care or craft was directed at your store's conversion goals, your customer's psychological state, or your brand's positioning.
+
+      You're paying for intellectual property that doesn't do the job. And because nobody defined the job, nobody notices it isn't getting done.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level &mdash; tempo, key, lyrical density, energy arc &mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "music-was-never-made-for-your-store"
+      - slug: "the-real-cost-of-retail-music"
+      - slug: "retail-music-quality-problem"
