@@ -14,7 +14,7 @@ Four decades of peer-reviewed research on music and consumer behavior sit behind
 
 - [Home](https://entuned.co/): What Entuned does, who it is for, and how to start free.
 - [How It Works](https://entuned.co/how-it-works.html): The product flow from signup through measurement.
-- [Pricing](https://entuned.co/pricing.html): Public four-tier pricing — Entuned Free ($0), Core ($99/loc/mo), Professional ($399/loc/mo), Enterprise (negotiated). Self-serve Stripe checkout on Core and Professional.
+- [Pricing](https://entuned.co/pricing.html): Public four-tier pricing — Entuned Free ($0), Boost ($99/loc/mo), Pro ($399/loc/mo), Enterprise (negotiated). Self-serve Stripe checkout on Boost and Pro.
 - [Science](https://entuned.co/science.html): Peer-reviewed research on music and shopper behavior.
 - [About](https://entuned.co/about.html): Who we are and why the company exists.
 - [Blog](https://entuned.co/blog.html): Operator-facing posts on retail audio.
@@ -191,7 +191,7 @@ Four decades of peer-reviewed research on music and consumer behavior sit behind
 
 ## Partner Program
 
-- [Partner Program](https://entuned.co/partners.html): Referral partner program for retail consultants. 20% recurring commission, 3 months Core free for referrals.
+- [Partner Program](https://entuned.co/partners.html): Referral partner program for retail consultants. 20% recurring commission, 3 months Boost free for referrals.
 
 ## Contact
 
