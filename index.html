@@ -233,6 +233,96 @@
   margin: 0 auto;
   font-style: italic;
 }
+
+/* ===== PILOT BRAND MARK (Untuckit in callout-stat) ===== */
+.pilot-brand-mark {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.pilot-brand-mark img {
+  height: 28px;
+  width: auto;
+  opacity: 0.75;
+  filter: brightness(0) invert(1);
+}
+
+@media (max-width: 768px) {
+  .pilot-brand-mark img {
+    height: 22px;
+  }
+}
+
+/* ===== INTEGRATES WITH — logo wall ===== */
+.section.logo-wall {
+  background: #ffffff;
+  color: #20201c;
+  position: relative;
+  z-index: 1;
+}
+
+.section.logo-wall .section-eyebrow {
+  color: #50929c;
+}
+
+.logo-wall-heading {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 0;
+  color: #20201c;
+}
+
+.logo-wall-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5rem 2.5rem;
+  align-items: center;
+  justify-items: center;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.logo-wall-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  width: 100%;
+  padding: 0 0.5rem;
+}
+
+.logo-wall-cell img {
+  max-height: 42px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.9;
+  transition: opacity 180ms ease;
+}
+
+.logo-wall-cell img:hover {
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .logo-wall-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-wall-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .logo-wall-cell {
+    height: 56px;
+  }
+  .logo-wall-cell img {
+    max-height: 32px;
+  }
+}
   </style>
 </head>
 <body>
@@ -424,6 +514,9 @@
   <section class="callout-stat">
     <div class="container">
       <p class="section-eyebrow" style="text-align: center; margin-bottom: 1rem;">Early signal from the pilot</p>
+      <div class="pilot-brand-mark fade-up">
+        <img src="img/logos/untuckit.png" alt="UNTUCKit" loading="lazy">
+      </div>
       <div class="callout-stat-number">+10 percentage points</div>
       <p class="callout-stat-label">CONVERSION LIFT &mdash; From 18% to 28% in a single day, April 21, 2026.</p>
     </div>
@@ -432,7 +525,7 @@
   <!-- SOCIAL PROOF — TESTIMONIAL CARDS -->
   <section class="section cymatics-over" style="padding-top: 4rem; padding-bottom: 4rem;">
     <div class="container">
-      <div class="card-grid card-grid--2 fade-up" style="max-width: 1080px; margin: 0 auto;">
+      <div class="card-grid card-grid--3 fade-up" style="max-width: 1180px; margin: 0 auto;">
         <div class="card">
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3-2 5-5 5-9V7h6v5c0 4 2 7 5 9"/><path d="M3 7h11"/></svg></div>
           <p class="card-text" style="font-size: 1.0625rem; line-height: 1.75; font-style: italic; opacity: 0.95; margin-bottom: 1rem;">&ldquo;It's probably too early to say this, but our store went from an 18% conversion all day on a Tuesday, April 21, 2026 to 28% conversion after we put on Entuned. I'm sure it doesn't meet your statistical significance standards but I think it counts as anecdote evidence at least.&rdquo;</p>
@@ -442,6 +535,11 @@
           <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3-2 5-5 5-9V7h6v5c0 4 2 7 5 9"/><path d="M3 7h11"/></svg></div>
           <p class="card-text" style="font-size: 1.0625rem; line-height: 1.75; font-style: italic; opacity: 0.95; margin-bottom: 1rem;">&ldquo;This is refreshing!&rdquo;</p>
           <cite style="font-style: normal; font-size: 0.85rem; opacity: 0.65; letter-spacing: 0.04em;">&mdash; Elaine K. &middot; Pilot store, Spring 2026</cite>
+        </div>
+        <div class="card">
+          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3-2 5-5 5-9V7h6v5c0 4 2 7 5 9"/><path d="M3 7h11"/></svg></div>
+          <p class="card-text" style="font-size: 1.0625rem; line-height: 1.75; font-style: italic; opacity: 0.95; margin-bottom: 1rem;">&ldquo;I was literally singing this song &mdash; the chorus to the song &lsquo;add it to the pile&rsquo; &mdash; and then I saw that other shirt and I thought why not &lsquo;add it to the pile&rsquo;. This is brilliant.&rdquo;</p>
+          <cite style="font-style: normal; font-size: 0.85rem; opacity: 0.65; letter-spacing: 0.04em;">&mdash; Customer who made an additional $100+ purchase &middot; Pilot store, Spring 2026</cite>
         </div>
       </div>
       <p class="testimonial-disclaimer fade-up" style="text-align: center; margin-top: 2rem; font-size: 0.85rem; opacity: 0.55;">Anecdotal observations from pilot in progress.</p>
@@ -548,6 +646,24 @@
       </div>
       <div class="fade-up" style="text-align: center; margin-top: 3rem;">
         <a href="pricing.html" class="btn btn-secondary">See Full Pricing</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTEGRATES WITH — POS logo wall -->
+  <section class="section logo-wall">
+    <div class="container">
+      <div class="fade-up" style="text-align: center; margin-bottom: 2.5rem;">
+        <span class="section-eyebrow">Integrates with</span>
+        <h3 class="logo-wall-heading">Plays nicely with your stack.</h3>
+      </div>
+      <div class="logo-wall-grid fade-up">
+        <div class="logo-wall-cell"><img src="img/logos/pos-shopify.webp" alt="Shopify POS" loading="lazy"></div>
+        <div class="logo-wall-cell"><img src="img/logos/pos-square.png" alt="Square" loading="lazy"></div>
+        <div class="logo-wall-cell"><img src="img/logos/pos-clover.png" alt="Clover" loading="lazy"></div>
+        <div class="logo-wall-cell"><img src="img/logos/pos-lightspeed.svg" alt="Lightspeed" loading="lazy"></div>
+        <div class="logo-wall-cell"><img src="img/logos/pos-toast.png" alt="Toast" loading="lazy"></div>
+        <div class="logo-wall-cell"><img src="img/logos/pos-newstore.png" alt="NewStore" loading="lazy"></div>
       </div>
     </div>
   </section>
