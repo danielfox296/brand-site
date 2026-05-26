@@ -108,3 +108,93 @@
   margin: 0 auto;
   font-style: italic;
 }
+
+/* ===== PILOT BRAND MARK (Untuckit in callout-stat) ===== */
+.pilot-brand-mark {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.pilot-brand-mark img {
+  height: 28px;
+  width: auto;
+  opacity: 0.75;
+  filter: brightness(0) invert(1);
+}
+
+@media (max-width: 768px) {
+  .pilot-brand-mark img {
+    height: 22px;
+  }
+}
+
+/* ===== INTEGRATES WITH — logo wall ===== */
+.section.logo-wall {
+  background: #ffffff;
+  color: #20201c;
+  position: relative;
+  z-index: 1;
+}
+
+.section.logo-wall .section-eyebrow {
+  color: #50929c;
+}
+
+.logo-wall-heading {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 0;
+  color: #20201c;
+}
+
+.logo-wall-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5rem 2.5rem;
+  align-items: center;
+  justify-items: center;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.logo-wall-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  width: 100%;
+  padding: 0 0.5rem;
+}
+
+.logo-wall-cell img {
+  max-height: 42px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.9;
+  transition: opacity 180ms ease;
+}
+
+.logo-wall-cell img:hover {
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .logo-wall-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-wall-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .logo-wall-cell {
+    height: 56px;
+  }
+  .logo-wall-cell img {
+    max-height: 32px;
+  }
+}
