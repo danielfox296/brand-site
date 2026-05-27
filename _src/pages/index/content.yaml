@@ -49,7 +49,7 @@ social_disclaimer: "Anecdotal observations from pilot in progress."
 
 # Integrates with — POS logo wall
 integrates:
-  eyebrow: "Integrates with"
+  eyebrow: "Integrations"
   h3: "Plays nicely with your stack."
 
 # Built for

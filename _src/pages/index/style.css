@@ -113,19 +113,23 @@
 .pilot-brand-mark {
   display: flex;
   justify-content: center;
-  margin: 0 auto 1.5rem;
+  margin: 0 auto;
 }
 
 .pilot-brand-mark img {
-  height: 28px;
+  height: 140px;
   width: auto;
-  opacity: 0.75;
+  opacity: 0.85;
   filter: brightness(0) invert(1);
+}
+
+.pilot-mark-section {
+  padding: clamp(3rem, 6vw, 5rem) 2rem;
 }
 
 @media (max-width: 768px) {
   .pilot-brand-mark img {
-    height: 22px;
+    height: 96px;
   }
 }
 
@@ -161,29 +165,49 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 64px;
+  height: 120px;
   width: 100%;
   padding: 0 0.5rem;
+  overflow: hidden;
 }
 
 .logo-wall-cell img {
-  max-height: 42px;
+  max-height: 84px;
   max-width: 100%;
   width: auto;
   height: auto;
   object-fit: contain;
-  opacity: 0.9;
-  transition: opacity 180ms ease;
+  filter: grayscale(100%);
+  opacity: 0.78;
+  transition: opacity 180ms ease, filter 180ms ease;
 }
 
 .logo-wall-cell img:hover {
+  filter: grayscale(0%);
   opacity: 1;
+}
+
+/* NewStore source PNG has ~50% transparent padding; scale 4x to compensate. */
+.logo-wall-cell--xl img {
+  max-height: none;
+  max-width: none;
+  width: auto;
+  height: 336px;
 }
 
 @media (max-width: 900px) {
   .logo-wall-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.75rem 1.5rem;
+  }
+  .logo-wall-cell {
+    height: 96px;
+  }
+  .logo-wall-cell img {
+    max-height: 64px;
+  }
+  .logo-wall-cell--xl img {
+    height: 256px;
   }
 }
 
@@ -192,9 +216,12 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .logo-wall-cell {
-    height: 56px;
+    height: 80px;
   }
   .logo-wall-cell img {
-    max-height: 32px;
+    max-height: 56px;
+  }
+  .logo-wall-cell--xl img {
+    height: 220px;
   }
 }
