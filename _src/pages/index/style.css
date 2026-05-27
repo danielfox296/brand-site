@@ -117,7 +117,7 @@
 }
 
 .pilot-brand-mark img {
-  height: 140px;
+  height: 210px;
   width: auto;
   opacity: 0.85;
   filter: brightness(0) invert(1);
@@ -141,7 +141,7 @@
 
 @media (max-width: 768px) {
   .pilot-brand-mark img {
-    height: 96px;
+    height: 144px;
   }
 }
 
@@ -164,13 +164,25 @@
 }
 
 .logo-wall-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.logo-wall-row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem 2.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.5rem;
   align-items: center;
   justify-items: center;
-  max-width: 960px;
-  margin: 0 auto;
+}
+
+/* Row 2: shrink Lightspeed + Toast columns and give NewStore ~3x basis
+   so the wordmark renders ~4x larger in visual area. */
+.logo-wall-row--newstore {
+  grid-template-columns: 1fr 1fr 3.2fr;
 }
 
 .logo-wall-cell {
@@ -198,21 +210,33 @@
   opacity: 1;
 }
 
+.logo-wall-cell--newstore {
+  height: 140px;
+}
+
+.logo-wall-cell--newstore img {
+  max-height: 110px;
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 720px) {
-  .logo-wall-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem 1.5rem;
+  .logo-wall-row,
+  .logo-wall-row--newstore {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .logo-wall-row--newstore .logo-wall-cell--newstore {
+    grid-column: 1 / -1;
+    height: 110px;
+  }
+  .logo-wall-row--newstore .logo-wall-cell--newstore img {
+    max-height: 80px;
   }
   .logo-wall-cell {
     height: 88px;
   }
   .logo-wall-cell img {
     max-height: 60px;
-  }
-}
-
-@media (max-width: 420px) {
-  .logo-wall-grid {
-    grid-template-columns: 1fr;
   }
 }
