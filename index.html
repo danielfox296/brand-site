@@ -304,10 +304,10 @@
   justify-items: center;
 }
 
-/* Row 2: shrink Lightspeed + Toast columns and give NewStore ~3x basis
-   so the wordmark renders ~4x larger in visual area. */
+/* Row 2: give NewStore a slightly wider column so its wordmark reads,
+   while keeping Lightspeed and Toast at near-row-1 sizes. */
 .logo-wall-row--newstore {
-  grid-template-columns: 1fr 1fr 3.2fr;
+  grid-template-columns: 1fr 1fr 1.5fr;
 }
 
 .logo-wall-cell {
@@ -336,13 +336,13 @@
 }
 
 .logo-wall-cell--newstore {
-  height: 140px;
+  height: 110px;
 }
 
 .logo-wall-cell--newstore img {
-  max-height: 110px;
-  width: 100%;
-  height: auto;
+  height: 55px;
+  width: auto;
+  max-width: 100%;
 }
 
 @media (max-width: 720px) {
