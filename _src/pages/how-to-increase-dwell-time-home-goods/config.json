@@ -1,5 +1,23 @@
 {
   "title": "How to Increase Dwell Time in Furniture and Home Goods Stores | Entuned",
   "meta_description": "Strategies to keep customers browsing longer in furniture showrooms and home goods stores, where purchase decisions require extended consideration.",
-  "output": "how-to-increase-dwell-time-home-goods.html"
+  "output": "how-to-increase-dwell-time-home-goods.html",
+  "faq": [
+    {
+      "q": "Why is dwell time more important in furniture stores than other retail?",
+      "a": "A customer buying a $2,000 sofa doesn't impulse-purchase it in 90 seconds. They sit on it, compare options, discuss with their partner, and decide. The entire process takes time, and if the store environment pushes them out before they complete it, you lose the sale to 'let me think about it.'"
+    },
+    {
+      "q": "How do couples affect furniture purchase decisions?",
+      "a": "Most furniture purchases involve two people who need to reach consensus. That takes conversation, deliberation, and comfort in the space. If the environment makes either person feel rushed or uncomfortable, the default decision is 'let's keep looking.'"
+    },
+    {
+      "q": "What music tempo is best for furniture showrooms?",
+      "a": "Genuinely slow, in the 65-85 BPM range — slower than most retail recommendations because the behavioral target is contemplation, not browsing. You want customers to stay with one product long enough to commit. Sparse, atmospheric arrangements create space for the mental visualization that drives furniture purchases."
+    },
+    {
+      "q": "Why does fresh music matter for furniture stores specifically?",
+      "a": "Furniture customers often visit 2-3 times before buying. If the music is identical on each visit, the store feels static. Fresh music on each visit signals that the store is alive and current, keeping the customer's consideration process active rather than stale."
+    }
+  ]
 }

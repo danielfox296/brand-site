@@ -1,5 +1,23 @@
 {
   "title": "How to Increase Average Order Value in Retail Stores | Entuned",
   "meta_description": "Proven strategies to increase average transaction value in physical retail, including the overlooked role of in-store music and sound.",
-  "output": "how-to-increase-aov-retail.html"
+  "output": "how-to-increase-aov-retail.html",
+  "faq": [
+    {
+      "q": "What are the standard ways to increase AOV in physical retail?",
+      "a": "The three proven tactics are cross-merchandising (placing complementary products near each other), staff-driven upselling (suggesting a second item at the point of decision), and threshold incentives (spend $75 get free gift wrapping). All three work but none address the ambient environment customers make decisions inside of."
+    },
+    {
+      "q": "How does music tempo affect how much customers spend?",
+      "a": "Published research consistently finds that slower tempos in minor keys increase time in store and correlate with higher total spend. Genre congruence — music that fits the store's brand — increases customers' willingness to pay premium prices."
+    },
+    {
+      "q": "Can lyrics in store music actually influence purchase behavior?",
+      "a": "Yes. Lyrics about self-expression, confidence, and treating yourself cognitively prime customers in a way that supports premium purchasing. The lyrics contribute to the overall atmosphere the same way lighting, displays, and staff tone contribute — they're part of the decision environment."
+    },
+    {
+      "q": "How do you measure whether music is affecting AOV?",
+      "a": "You need to correlate what played with what customers spent. Entuned logs what played and when, then correlates that data with your floor performance. Over time, you get a clear picture of which sonic parameters move your specific customers toward larger transactions."
+    }
+  ]
 }

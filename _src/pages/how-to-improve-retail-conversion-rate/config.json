@@ -1,5 +1,23 @@
 {
   "title": "How to Improve Your Retail Store Conversion Rate | Entuned",
   "meta_description": "Strategies to convert more foot traffic into paying customers, including how your store's sound environment influences purchase decisions.",
-  "output": "how-to-improve-retail-conversion-rate.html"
+  "output": "how-to-improve-retail-conversion-rate.html",
+  "faq": [
+    {
+      "q": "What is a good conversion rate for a retail store?",
+      "a": "Specialty retail conversion rates typically fall between 15-30%, depending on location, format, and foot traffic mix. The gap between low and high performers is largely environmental, not product or traffic."
+    },
+    {
+      "q": "How does store atmosphere affect conversion rate?",
+      "a": "Research since Kotler's 1973 paper on atmospherics has confirmed that the ambient environment influences purchasing behavior independent of product, price, and service. Sound is the most pervasive atmospheric variable because it reaches every corner and operates below conscious attention."
+    },
+    {
+      "q": "What is sonic congruence and why does it matter for sales?",
+      "a": "Sonic congruence means the music matches your store's brand positioning. When customers experience it, the store feels right and purchasing friction drops. When music is incongruent, customers experience a low-level disconnect and leave without buying, often unable to articulate why."
+    },
+    {
+      "q": "Can changing store music actually increase conversion?",
+      "a": "Yes. Music that matches your brand profile, customer demographic, and target outcome reduces the psychological friction of the purchase decision. Customers don't think 'this music is making me want to buy things' — they think 'I like being in this store,' and the purchase follows."
+    }
+  ]
 }

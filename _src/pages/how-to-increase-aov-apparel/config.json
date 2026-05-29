@@ -1,5 +1,23 @@
 {
   "title": "How to Increase Average Transaction Value in Clothing Stores | Entuned",
   "meta_description": "Strategies to increase average order value in apparel and clothing retail, including how music influences outfit completion and premium purchasing.",
-  "output": "how-to-increase-aov-apparel.html"
+  "output": "how-to-increase-aov-apparel.html",
+  "faq": [
+    {
+      "q": "Why do apparel customers buy one item instead of a full outfit?",
+      "a": "Customers come in for a specific item and buy exactly that. Outfit completion — adding the matching trousers, the accessories, the complementary pieces — happens inconsistently because it depends on the customer seeing themselves in the clothes, which is shaped by every sensory input in the store."
+    },
+    {
+      "q": "How does store music influence clothing purchase decisions?",
+      "a": "Music works on two levels in apparel. First, sonic characteristics like tempo and production quality signal the store's price-quality positioning — customers calibrate spending expectations to that signal. Second, lyrical content about confidence and personal style reinforces the mindset that leads to outfit completion."
+    },
+    {
+      "q": "What music tempo works best for clothing stores?",
+      "a": "The 80-100 BPM range works best for apparel: slow enough to encourage browsing and trying things on, fast enough to maintain energy and forward momentum through the store. Minor-key bias with rich harmonic content creates a sophisticated feel that signals quality."
+    },
+    {
+      "q": "How does fresh music help apparel stores specifically?",
+      "a": "Apparel's best customers visit frequently. A customer who shops monthly hears the same playlist three times before it cycles in a traditional model. Weekly fresh music keeps the store feeling vital and prevents the staleness that degrades atmosphere and repeat-visit experience."
+    }
+  ]
 }
