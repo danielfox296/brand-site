@@ -217,6 +217,8 @@ Position newer posts higher in the list (after featured card).
 
 ### 5. Add sitemap entry
 
+**Skip this step for any post with `robots: noindex`** — noindexed pages must not appear in `sitemap.xml` (mixed signal: sitemap says "index," meta says "don't"). Only index-eligible posts get a sitemap entry.
+
 In `sitemap.xml`:
 ```xml
   <url>

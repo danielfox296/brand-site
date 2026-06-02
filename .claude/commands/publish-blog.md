@@ -141,6 +141,8 @@ In `_src/pages/blog/sections/01-content.html`, add card(s) inside the `.articles
 
 ### 6. Add sitemap entries
 
+**Only for index-eligible posts.** Any post with `robots: noindex` must NOT get a `sitemap.xml` entry — a noindexed page in the sitemap is a mixed signal (sitemap says "index," meta says "don't").
+
 In `sitemap.xml`, add for each post:
 ```xml
   <url>
