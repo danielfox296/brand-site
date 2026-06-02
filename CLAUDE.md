@@ -39,9 +39,11 @@ The CTA flow is intentionally asymmetric. Don't "fix" it by sending every tier t
 
 The canonical Start Free copy + button (see blog template above) is the only place `/start` appears. The pricing page hosts the Stripe links for Boost/Pro. Don't add a "pick a tier" selector on the brand site.
 
-### Intentional pages — don't delete
+### Vertical pages — all live, all indexed, don't delete
 
-- **`for-cosmetics.html`** is a `noindex` placeholder kept intentionally for a future cosmetics-vertical template build. Don't 410, don't delete, don't redirect.
+The `for-<vertical>.html` family (apparel, beauty-supply, cosmetics, furniture-mattress, home-goods, jewelry, specialty-retail, sporting-goods) are all **fully built, `index, follow`, and linked site-wide from the footer's "For Your Industry" list**. `for-cosmetics.html` was formerly a noindex placeholder; it was built out and is now a normal live vertical — don't treat it (or any sibling) as a stub. Don't 410, delete, or redirect any of them.
+
+Each vertical's `related.others` line cross-links to **all** other verticals (alphabetical, labels matching the footer). Keep that complete and consistent when adding a new vertical — add it to every sibling's `others` line and to the footer.
 
 ### ICP discipline before new pages
 
