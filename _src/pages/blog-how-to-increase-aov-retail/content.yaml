@@ -168,6 +168,7 @@ sections:
 
   - type: related
     posts:
+      - slug: "retail-conversion-and-aov"
       - slug: "luxury-priming-for-non-luxury-brands"
       - slug: "longer-visits"
       - slug: "measure-roi-retail-music"

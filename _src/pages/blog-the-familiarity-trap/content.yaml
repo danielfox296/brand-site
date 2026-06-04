@@ -90,6 +90,7 @@ sections:
 
   - type: related
     posts:
+      - slug: "retail-sound-science"
       - slug: "why-your-best-customers-leave-faster-than-they-should"
       - slug: "sound-check-playlist-problem"
       - slug: "science-of-tempo-retail"

@@ -62,6 +62,7 @@ sections:
 
   - type: related
     posts:
+      - slug: "retail-sound-science"
       - slug: "what-are-flow-factors"
       - slug: "how-to-increase-dwell-time"
       - slug: "science-of-tempo-retail"

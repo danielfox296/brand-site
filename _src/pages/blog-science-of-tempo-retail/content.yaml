@@ -107,6 +107,7 @@ sections:
 
   - type: related
     posts:
+      - slug: "retail-sound-science"
       - slug: "the-dwell-time-variable-nobodys-tracking"
       - slug: "milliman-study"
       - slug: "how-to-measure-if-your-store-music-is-working"

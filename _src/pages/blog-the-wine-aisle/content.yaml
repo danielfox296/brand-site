@@ -82,6 +82,7 @@ sections:
 
   - type: related
     posts:
+      - slug: "retail-sound-science"
       - slug: "the-supermarket-study"
       - slug: "the-pianist-in-the-store"
       - slug: "psychographic-profiling-retail"

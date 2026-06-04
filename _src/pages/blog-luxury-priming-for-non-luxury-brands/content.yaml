@@ -91,6 +91,7 @@ sections:
 
   - type: related
     posts:
+      - slug: "retail-sound-science"
       - slug: "retail-atmospherics-2026"
       - slug: "how-specialty-wine-retailers-use-music-to-sell-more-expensive-bottles"
       - slug: "milliman-study"

@@ -139,6 +139,7 @@ sections:
 
   - type: related
     posts:
+      - slug: "best-retail-music-service"
       - slug: "mood-media-alternatives"
       - slug: "how-much-does-retail-music-cost"
       - slug: "ai-vs-traditional-retail-music"

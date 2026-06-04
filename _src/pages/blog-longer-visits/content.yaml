@@ -113,6 +113,7 @@ sections:
 
   - type: related
     posts:
+      - slug: "retail-conversion-and-aov"
       - slug: "science-of-tempo-retail"
       - slug: "the-dwell-time-variable-nobodys-tracking"
       - slug: "measure-roi-retail-music"

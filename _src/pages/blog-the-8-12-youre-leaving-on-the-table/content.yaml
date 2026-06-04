@@ -96,6 +96,7 @@ sections:
 
   - type: related
     posts:
+      - slug: "retail-conversion-and-aov"
       - slug: "cfos-case-for-retail-audio"
       - slug: "measure-roi-retail-music"
       - slug: "how-specialty-wine-retailers-use-music-to-sell-more-expensive-bottles"

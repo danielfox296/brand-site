@@ -143,6 +143,7 @@ sections:
 
   - type: related
     posts:
+      - slug: "store-music-licensing"
       - slug: "music-licensing-for-retail-stores"
       - slug: "music-licensing-compliance-commercial-landlords-property-managers"
       - slug: "mood-media-alternatives"

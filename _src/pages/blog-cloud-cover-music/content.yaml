@@ -76,6 +76,7 @@ sections:
 
   - type: related
     posts:
+      - slug: "best-retail-music-service"
       - slug: "the-real-cost-of-retail-music"
       - slug: "how-much-does-retail-music-cost"
       - slug: "mood-media-alternatives"

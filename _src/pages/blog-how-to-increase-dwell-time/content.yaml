@@ -163,6 +163,8 @@ sections:
 
   - type: related
     posts:
+      - slug: "retail-sound-science"
+      - slug: "retail-conversion-and-aov"
       - slug: "the-dwell-time-variable-nobodys-tracking"
       - slug: "longer-visits"
       - slug: "measure-roi-retail-music"
