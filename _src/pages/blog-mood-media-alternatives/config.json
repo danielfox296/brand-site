@@ -1,28 +1,28 @@
 {
-  "title": "Mood Media Alternatives: A 2026 Operator's Guide | Entuned",
-  "meta_description": "A retail operator's guide to Mood Media alternatives in 2026. Who the players are, what they cost, and the questions that filter them down to a shortlist.",
+  "title": "Better Than Mood Media: 2026 Alternatives Compared | Entuned",
+  "meta_description": "Want something better than Mood Media? Compare the 2026 alternatives by price, contract, and outcome reporting, and learn how to switch without a penalty.",
   "output": "blog/mood-media-alternatives.html",
   "date_published": "2026-03-26",
   "faq": [
     {
+      "q": "Is there a better alternative to Mood Media?",
+      "a": "It depends on what you want music to do for the store. If you only want a cheaper, no-hardware, no-lock-in version of the same model, Soundtrack Your Brand (roughly $35 to $50 per location per month) or Cloud Cover Music ($10 to $25) is a soft landing. If you want the audio tied to what happens on your floor, that is a different category. Entuned composes original music to a profile of your customer and reports against your store performance, with no catalog, no genre picker, and no lock-in. The honest filter is to ask any vendor what they report on quarterly. If the answer is play counts, you have found a cheaper Mood Media, not a better one."
+    },
+    {
+      "q": "How do I get out of a Mood Media contract?",
+      "a": "Pull the agreement and find two things: the termination clause and the renewal date. Most Mood Media contracts run one to three years, then auto-renew into successive twelve-month terms unless you give written notice in a narrow window, usually thirty to ninety days before the term ends. Notice often has to be in writing, sometimes by certified mail to a specific address. Miss the window by a day and you are locked in for another year. You do not need to be in breach to leave; you need to be organized about the notice clause. Do this before you take a sales call with any alternative."
+    },
+    {
+      "q": "How much does Mood Media cost?",
+      "a": "Mood Media does not publish flat per-location pricing. It is typically bundled with proprietary hardware, install, support, and mandatory add-ons on a multi-year contract, which is what makes the real per-location number hard to compare. Once finance backs out the line item, many operators find it sits well above the $10 to $50 per location per month that no-hardware competitors charge, and that figure does not include the separate ASCAP, BMI, and SESAC fees on licensed catalogs, which run $30K to $60K a year for a 50-location retailer."
+    },
+    {
       "q": "What are the alternatives to Mood Media in 2026?",
-      "a": "The 2026 shortlist splits into three buckets. Cheaper catalog SaaS (Soundtrack Your Brand at roughly $35 to $50 per location per month, Cloud Cover Music at $10 to $25). Legacy broadcast (SiriusXM for Business at $30 to $80). A small number of generative vendors (QSIC in Australia and New Zealand, Entuned in the US for multi-location lifestyle retail). Each bucket has a different tradeoff on price, contract structure, targeting, and performance reporting."
+      "a": "The 2026 shortlist splits into three buckets. Cheaper catalog SaaS (Soundtrack Your Brand at roughly $35 to $50 per location per month, Cloud Cover Music at $10 to $25). Legacy broadcast (SiriusXM for Business at $30 to $80). A small number of generative vendors (QSIC in Australia and New Zealand, Entuned in the US for multi-location specialty retail). Each bucket has a different tradeoff on price, contract structure, customer fit, and performance reporting."
     },
     {
-      "q": "Why are operators leaving Mood Media?",
-      "a": "Five reasons come up repeatedly. Long multi-year contracts with termination penalties. No performance reporting beyond play logs and schedule adherence. Targeting limited to genre and mood channels, with no connection to the retailer's specific customer. Catalog fatigue because staff and regulars hear every track in rotation dozens of times a month. Bundled pricing that hides the real per-location cost until finance goes looking for it."
-    },
-    {
-      "q": "How do the alternatives actually compare on price?",
-      "a": "Cloud Cover Music is the cheapest, roughly $10 to $25 per location per month. Soundtrack Your Brand runs $35 to $50 with licensing included. SiriusXM for Business negotiates enterprise pricing in the $30 to $80 range. Mood Media and legacy providers are typically bundled with hardware and support, which makes direct comparison difficult. Entuned runs a free pilot first."
-    },
-    {
-      "q": "What questions should I ask before signing with any vendor?",
-      "a": "Five questions separate the vendors who can deliver measurable value from the ones who cannot. What do you report on quarterly? What is your termination clause, in writing? Is the music licensed or original, and who owns the PRO liability? How does my customer data shape what plays? Can you show me a before-and-after from a comparable retailer with specific metrics on dwell, conversion, and basket?"
-    },
-    {
-      "q": "What does switching cost a multi-location retailer?",
-      "a": "Two costs. First, the early termination penalty in the current contract, which can run into the tens of thousands depending on locations and remaining term. Second, the operational cost of running a parallel setup during transition. Both are knowable before you make the decision. Pull the contract and read the termination clause before you take the first sales call with an alternative."
+      "q": "What should I ask before signing with any vendor?",
+      "a": "Five questions separate the vendors who can deliver measurable value from the ones who cannot. What do you report on quarterly? What is your termination clause, in writing? Is the music licensed or original, and who owns the PRO liability? How does my customer profile shape what plays? Can you show me a before-and-after from a comparable retailer with specific metrics on dwell, conversion, and basket?"
     }
   ]
 }
