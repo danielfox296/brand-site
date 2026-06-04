@@ -1,0 +1,132 @@
+title: "How to Choose a Music Service for Your Store"
+seo_title: "The Best Retail Music Service: How to Choose (2026)"
+slug: "best-retail-music-service"
+eyebrow: "MARKET INTEL"
+dek: "Seven things to evaluate before you sign, how the major services stack up on each, and why the right answer for a small store usually isn't the biggest catalog."
+date: "2026-06-04"
+last_updated: "2026-06-04"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/best-retail-music-service.jpg"
+  alt: "Modern retail store interior with display shelves and products"
+  caption: "Photo: Unsplash"
+meta_description: "How to choose a music service for your retail store. What to evaluate — licensing, contracts, measurement — and how Mood Media, Soundtrack, and Entuned compare."
+og_image: "/img/blog/best-retail-music-service.jpg"
+tags: [comparison, mood-media, soundtrack, cloud-cover, retail-music, music-service, hub]
+sections:
+  - type: key_takeaways
+    items:
+      - "There are five categories of music service for stores: enterprise catalog (Mood Media), modern catalog (Soundtrack Your Brand), budget catalog (Cloud Cover), consumer-brand business tiers (SiriusXM), and the newer original-music category."
+      - "Evaluate on seven things: licensing coverage, contract length, true per-location cost, how well it fits your customer, measurement, ease of setup, and whether anyone owns the outcome."
+      - "Published self-serve pricing runs roughly $17 to $54 per location per month (2026), but no catalog service will tell you whether the music is helping or hurting sales in a given store."
+      - "For a small owner-operator, the biggest catalog is rarely the right answer. Fit, no contract, and measurable outcomes matter more than 100 million tracks you'll never curate."
+
+  - type: prose
+    body: |
+      An owner-operator choosing store music usually picks on price and the name they recognize, signs a contract, and never revisits it. That's how stores end up paying for a three-year deal nobody remembers signing, playing a catalog nobody chose, reporting on nothing.
+
+      Choosing well isn't complicated, but it takes seven minutes of asking the right questions before you sign instead of after. Here are the questions, how the major services answer them, and how to tell which category you're actually in the market for.
+
+  - type: subhead
+    level: 2
+    text: "The five categories of store music service"
+    anchor: "categories"
+
+  - type: prose
+    body: |
+      **Enterprise catalog (Mood Media).** The default at scale. Deep catalog, professional curation, working scheduling tools. Self-serve plans run $17 to $40 per location per month with no long-term lock-in (Mood Media published pricing, 2026); the multi-year contracts with early-termination penalties apply to its enterprise and managed installs, not the self-serve tiers.
+
+      **Modern catalog (Soundtrack Your Brand).** Formerly Spotify for Business. The largest library on the market, modern interface, month-to-month billing. The common escape hatch for operators leaving Mood.
+
+      **Budget catalog (Cloud Cover Music).** The low end — published pricing around $17 to $30 per location per month, licensing included, with no long-term contract (Cloud Cover Music published pricing, 2026). The "just make it legal and cheap" option.
+
+      **Consumer-brand business tiers (SiriusXM for Business).** A familiar consumer brand hardened for commercial use. Channel selection is the only way to steer the sound.
+
+      **Original-music services.** The newest category. Instead of licensing a catalog, these create original music for the store. No songwriters means no PRO fees, and the music can be built against your customer rather than chosen from a menu.
+
+  - type: subhead
+    level: 2
+    text: "The seven things to evaluate before you sign"
+    anchor: "what-to-evaluate"
+
+  - type: prose
+    body: |
+      **1. Licensing coverage.** Does the service include PRO licensing (ASCAP, BMI, SESAC, GMR), or are you exposed? Catalog services bundle it. If a service doesn't address licensing at all, that's your liability, not theirs.
+
+      **2. Contract length and exit terms.** Month-to-month or multi-year? What's the early-termination penalty? Pull any existing contract and read the renewal language before you're inside the auto-renew window.
+
+      **3. True per-location cost.** The sticker price is rarely the invoice. Ask what bundles in: hardware leasing, support fees, signage, scent. Get the all-in number per location per month.
+
+      **4. Fit to your customer.** Can you steer the sound toward the specific shopper you serve and the outcome you want, or do you get a genre and a mood and nothing finer? For most stores this is the difference between music that moves the floor and music that just fills the air.
+
+      **5. Measurement.** Can the service tell you whether the music is helping or hurting sales in a given store? Most cannot. Reporting stops at schedule adherence and play history.
+
+      **6. Ease of setup.** How long from signing to sound on the floor? Minutes, or a contractor visit and a back-office box?
+
+      **7. Who owns the outcome.** If the music is a managed lever, someone has to own the number it moves. A service that reports only play counts can't help you here — there's no outcome to own.
+
+  - type: stat_callout
+    number: "~$1,300–$1,500"
+    label: "Per-year cost of licensing all four PROs directly — which is what buying one licensed catalog service spares you, since the licensing is folded into the monthly fee"
+    source: "Publicly reported PRO rate summaries, 2026"
+    accent: teal
+
+  - type: comparison_table
+    title: "Retail music services at a glance"
+    columns: ["Service", "Price per location per month (published pricing, 2026)", "Contract", "What it reports"]
+    rows:
+      - ["Mood Media", "$17 to $40 self-serve (enterprise custom-quoted)", "None self-serve; multi-year for managed", "Schedule adherence"]
+      - ["Soundtrack Your Brand", "$29 to $54", "Month to month", "Play history"]
+      - ["Cloud Cover Music", "$17 to $30", "No long-term contract", "Play logs"]
+      - ["SiriusXM for Business", "$26.95", "Varies by tier", "Schedule logs"]
+      - ["QSIC", "Quote-only (no public price)", "Enterprise", "Enterprise reporting"]
+      - ["Original-music (Entuned)", "Free tier; Boost $99; Pro $399", "None", "Outcome reporting (Pro tier)"]
+
+  - type: subhead
+    level: 2
+    text: "Why the biggest catalog is rarely the right answer"
+    anchor: "biggest-catalog"
+
+  - type: prose
+    body: |
+      A hundred million tracks sounds like the strongest pitch on the list. For a small store it's the weakest. You are never going to curate a hundred million tracks. You're going to pick a station that sounds roughly right and let it loop, which means the size of the catalog buys you nothing and the fit to your customer buys you everything.
+
+      The research is clear that what moves the floor isn't variety, it's fit. Areni and Kim (1993) showed musical fit shifts willingness to pay; Milliman (1982) showed tempo moves dwell. Neither effect depends on catalog size. They depend on the sound matching the customer and the outcome — which is a configuration problem, not a library problem.
+
+  - type: pullquote
+    text: "A hundred million tracks sounds like the strongest pitch on the list. For a small store it's the weakest — you'll pick one station and let it loop."
+    accent: gold
+
+  - type: subhead
+    level: 2
+    text: "How Entuned is different"
+    anchor: "how-entuned-differs"
+
+  - type: prose
+    body: |
+      Entuned is the original-music category, built for the seven questions above rather than the size of a library.
+
+      On licensing, there's nothing to cover — the music is original and PRO-indemnified, so ASCAP and BMI don't apply. On contracts, there are none; the free tier needs no card. On fit, the music is engineered at the parameter level — tempo, key, lyrical density, energy arc — against your customer and a chosen outcome, not picked from a genre menu. And on measurement, it's the one category in this comparison built with the audio's effect on the store as part of the premise, rather than reporting play counts after the fact.
+
+      It is not the right answer for everyone. If your customers and staff treat the music as a curated taste signal, a catalog you hand-pick is the better fit. For a practical retail floor where music is a lever and not an identity, the original-music category is built for the questions that actually matter.
+
+  - type: prose
+    body: |
+      For the head-to-head numbers, see <a href="../blog/commercial-music-services-compared.html">commercial music services compared</a> and <a href="../blog/mood-media-alternatives.html">Mood Media alternatives in 2026</a>. The cost breakdown is in <a href="../blog/how-much-does-retail-music-cost.html">how much does in-store music actually cost</a>, the budget option in <a href="../blog/cloud-cover-music.html">Cloud Cover Music</a>, and the choosing playbook in <a href="../blog/how-to-choose-music-for-your-retail-store.html">how to choose music for your retail store</a>.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no credit card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "commercial-music-services-compared"
+      - slug: "mood-media-alternatives"
+      - slug: "how-much-does-retail-music-cost"
+      - slug: "cloud-cover-music"
+      - slug: "how-to-choose-music-for-your-retail-store"

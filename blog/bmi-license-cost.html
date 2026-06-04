@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- First-touch signup attribution. Stamps a `.entuned.co` cookie on the
+       FIRST page view so the original source (referrer + UTM) survives the
+       entuned.co -> app.entuned.co/start hop. The dashboard's /start reads the
+       same cookie (same name + shape) and forwards it to the server. Runs
+       early + first-touch-wins so it never overwrites the true upstream. -->
+  <script>
+    (function () {
+      try {
+        if (/(?:^|; )entuned_attr=/.test(document.cookie)) return;
+        var p = new URLSearchParams(window.location.search);
+        var payload = {
+          r: document.referrer || undefined,
+          lp: (window.location.pathname + window.location.search) || undefined,
+          us: p.get('utm_source') || undefined,
+          um: p.get('utm_medium') || undefined,
+          uc: p.get('utm_campaign') || undefined,
+          ut: p.get('utm_term') || undefined,
+          un: p.get('utm_content') || undefined,
+          t: new Date().toISOString()
+        };
+        var host = window.location.hostname;
+        var domain = (host === 'entuned.co' || /\.entuned\.co$/.test(host)) ? '; domain=.entuned.co' : '';
+        document.cookie = 'entuned_attr=' + encodeURIComponent(JSON.stringify(payload)) +
+          '; path=/' + domain + '; max-age=' + (30 * 24 * 60 * 60) + '; SameSite=Lax';
+      } catch (e) { /* best-effort */ }
+    })();
+  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/blog/bmi-license-cost.html">
+  <meta name="robots" content="index, follow">
+  <title>BMI Fees: What a BMI Music License Costs in 2026 | Entuned</title>
+  <meta name="description" content="BMI fees for a small business run roughly $300 to $600 per year (publicly reported) — but BMI is one of four PROs. Licensing all of them directly runs about $1,300 to $1,500+ a year.">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="../rss.xml">
+  <meta property="og:title" content="BMI Fees: What a BMI Music License Costs in 2026 | Entuned">
+  <meta property="og:description" content="BMI fees for a small business run roughly $300 to $600 per year (publicly reported) — but BMI is one of four PROs. Licensing all of them directly runs about $1,300 to $1,500+ a year.">
+  <meta property="og:url" content="https://entuned.co/blog/bmi-license-cost.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://entuned.co/img/blog/bmi-license-cost.jpg">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-06-04">
+  <meta property="article:author" content="Daniel Fox">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BMI Fees: What a BMI Music License Costs in 2026 | Entuned">
+  <meta name="twitter:description" content="BMI fees for a small business run roughly $300 to $600 per year (publicly reported) — but BMI is one of four PROs. Licensing all of them directly runs about $1,300 to $1,500+ a year.">
+  <meta name="twitter:image" content="https://entuned.co/img/blog/bmi-license-cost.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "BMI Fees: What a BMI Music License Costs in 2026 | Entuned",
+  "author": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "datePublished": "2026-06-04",
+  "dateModified": "2026-06-04",
+  "description": "BMI fees for a small business run roughly $300 to $600 per year (publicly reported) \u2014 but BMI is one of four PROs. Licensing all of them directly runs about $1,300 to $1,500+ a year.",
+  "image": "https://entuned.co/img/blog/bmi-license-cost.jpg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://entuned.co/blog/bmi-license-cost.html"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "retail music strategy"
+    },
+    {
+      "@type": "Thing",
+      "name": "in-store customer behavior"
+    },
+    {
+      "@type": "Thing",
+      "name": "engineered retail audio"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does a BMI music license cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A BMI blanket license for a small retail store runs roughly $300 to $600 per year (publicly reported; sources vary). The fee comes from a rate schedule that varies by business category and scales with square footage, number of speakers, and how the music is used. Larger venues with higher occupancy pay more. BMI licenses renew each year."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are BMI fees the only music licensing cost I'll have?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No \u2014 this is the most common surprise. BMI is one of four U.S. performing rights organizations, alongside ASCAP, SESAC, and GMR. Each represents different songwriters, and a single song often has co-writers across multiple PROs, so paying BMI only covers the BMI writers on a track. Full compliance requires a license from each PRO, which brings the total to roughly $1,300 to $1,500+ per year (publicly reported composite) before the cost of the music itself."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if I don't pay BMI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Playing copyrighted music publicly without a license is copyright infringement. BMI monitors commercial venues and sends demand letters, and unlicensed performance exposes the business to statutory damages of $750 to $30,000 per infringed song under 17 U.S.C. \u00a7 504(c), rising to $150,000 per song for willful infringement. The letter is not a scam \u2014 it's the licensing system catching up to a store that's been playing music without coverage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is BMI different from ASCAP?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "BMI and ASCAP are the two largest U.S. performing rights organizations, and they represent different rosters of songwriters and publishers. They price in a similar range \u2014 BMI runs roughly $300 to $600 per year for a small store and ASCAP carries a minimum around $400 (both publicly reported) \u2014 but paying one does not cover the other. A typical mix of commercial tracks has writers across both, plus SESAC and GMR, which is why full compliance means licenses from all four rather than picking one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a way to avoid BMI fees entirely?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. PRO licensing applies only to copyrighted music with a third-party rights holder. Music that isn't registered with BMI, ASCAP, SESAC, or GMR carries no public performance fee, because there's no one for them to collect on behalf of. That's how Entuned works \u2014 original music owned outright, with no PRO affiliation. Streaming it in your store requires no license, no blanket fee, and no annual renewal. Entuned Free needs no credit card and is PRO-indemnified the moment it plays."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I already got a BMI bill \u2014 what should I do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Three honest options. Negotiate a blanket license with BMI and then the other three PROs (roughly $1,300 to $1,500+ a year total, publicly reported composite, plus a music source). Sign up for a service that bundles PRO licensing into the fee, like Soundtrack Your Brand or Cloud Cover ($17 to $54 a month, vendor published pricing, 2026). Or switch to music no PRO represents, which removes the obligation entirely \u2014 at which point you can respond to the letter explaining you no longer play music under their jurisdiction."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://entuned.co/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "BMI Fees: What a BMI Music License Costs in 2026 | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=ebace452">
+  <link rel="stylesheet" href="../styles/blog.css">
+  
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav aria-label="Main navigation">
+  <div class="container">
+    <a href="/" class="logo"><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="../how-it-works.html">How It Works</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li class="nav-cta-item"><a href="https://app.entuned.co/start" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Start Free</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+  </div>
+</nav>
+
+  <main>
+  
+<!-- Reading progress bar -->
+<div class="blog-progress" aria-hidden="true">
+  <div class="blog-progress__bar" id="reading-progress"></div>
+</div>
+
+<article class="blog-article">
+
+  <!-- Article header -->
+  <header class="blog-article__header">
+    <div class="blog-eyebrow">MARKET INTEL</div>
+    <h1 class="blog-headline">How Much Does a BMI Music License Cost? (And How to Avoid It)</h1>
+    <p class="blog-dek">BMI fees for a small store run roughly $300 to $600 a year (publicly reported). But BMI is one of four PROs, and licensing all of them directly runs roughly $1,300 to $1,500+ a year — before you&#39;ve paid for any music.</p>
+    <div class="blog-byline">
+      <span class="blog-byline__author">Daniel Fox</span>
+      <span class="blog-byline__role">Founder &amp; CEO</span>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <time class="blog-byline__date" datetime="2026-06-04">2026-06-04</time>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <span class="blog-byline__reading-time">5 min read</span>
+    </div>
+  </header>
+
+  <!-- Hero image -->
+  <figure class="blog-hero fade-up">
+    <img src="../img/blog/bmi-license-cost.jpg" alt="Tax forms with a calculator and pen on a desk" class="blog-hero__img" loading="lazy">
+    <figcaption class="blog-hero__caption">Photo: Unsplash</figcaption>
+  </figure>
+
+  <!-- Key takeaways -->
+  <div class="blog-takeaways">
+  <div class="blog-takeaways__title">Key takeaways</div>
+  <ul>
+    <li>A BMI blanket license for a small retail store runs roughly $300 to $600 per year (publicly reported; sources vary), scaling with square footage, speaker count, and how the music is used.</li>
+    <li>BMI is only one of four PROs. ASCAP, SESAC, and GMR each represent different songwriters and bill separately. Full compliance means a license from each.</li>
+    <li>Licensing all four PROs directly runs roughly $1,300 to $1,500+ per year (publicly reported composite) — before the cost of the music itself.</li>
+    <li>There is a third option beyond paying up or ignoring the bill: switch to music that no PRO represents, which removes the obligation entirely.</li>
+  </ul>
+</div>
+
+  <!-- Article body (all sections except key_takeaways, cta, related) -->
+  <div class="blog-article__body">
+    <div class="blog-prose">
+  <p>A BMI music license for a small retail store runs roughly $300 to $600 per year (publicly reported; sources vary). The exact figure depends on your business type, square footage, the number of speakers, and how the music is used. Larger venues with higher occupancy pay more.</p>
+<p>But here&rsquo;s the part that catches most operators off guard: BMI is only one of four performing rights organizations you&rsquo;d need to deal with. ASCAP, SESAC, and GMR each represent different songwriters and publishers, and you need a blanket license from each to be fully compliant. Licensing all four directly runs roughly $1,300 to $1,500+ per year (publicly reported composite).</p>
+<p>That&rsquo;s before you&rsquo;ve paid for the music itself.</p>
+</div>
+
+<h2 id="how-pricing-works" class="blog-subhead blog-subhead--h2">
+  How BMI pricing works
+  <a href="#how-pricing-works" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>BMI doesn&rsquo;t publish a simple flat price. Fees come from rate schedules that vary by business category — a footwear shop is priced differently than a home-goods store, which is priced differently than a jewelry counter or an apparel boutique (food-service venues sit on a separate schedule entirely). Within each category, the fee scales on factors like square footage, the number of speakers or audio devices, and the size of the potential audience.</p>
+<p>For a small retail store, you&rsquo;re generally at the lower end of the range: a few hundred dollars a year. But the number rarely sits alone. BMI represents over 1.4 million songwriters, composers, and publishers and the rights to more than 22 million songs — and a single song often has co-writers registered with different PROs. So the BMI license covers the BMI writers on a track, and you need the others to cover the rest.</p>
+<p>BMI licenses also renew annually. Miss the renewal and you&rsquo;re technically operating unlicensed, which exposes you to statutory damages.</p>
+</div>
+
+<div class="blog-stat blog-stat--gold">
+  <div class="blog-stat__number">$750–$30,000</div>
+  <div class="blog-stat__label">Statutory damages per infringed work under U.S. copyright law for unlicensed public performance — rising to as much as $150,000 per work for willful infringement</div>
+  <div class="blog-stat__source">17 U.S.C. § 504(c)</div>
+</div>
+
+<h2 id="only-part" class="blog-subhead blog-subhead--h2">
+  Why BMI is only part of the bill
+  <a href="#only-part" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>This is the single most common misunderstanding about PRO fees. Paying BMI does not make you compliant. It makes you compliant for the songs whose writers BMI represents.</p>
+<p>There are four PROs in the United States — BMI, ASCAP, SESAC, and GMR — and they represent different rosters. ASCAP is the other large one, with a small-business minimum around $400 a year (publicly reported), so a small store paying both BMI and ASCAP is often looking at $700 to $1,000 a year just for the two majors. SESAC is negotiated rather than published — roughly $600 to $700 a year by public reports — and GMR is negotiated with no publicly disclosed rate. To legally play a typical mix of commercial tracks, where any given song might have writers across multiple PROs, you technically need all four.</p>
+</div>
+
+<figure class="blog-comparison-table">
+  <figcaption class="blog-comparison-table__title">The four U.S. PROs</figcaption>
+  <div class="blog-comparison-table__wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">PRO</th>
+          <th scope="col">Represents</th>
+          <th scope="col">Small-store cost (annual, approx.; publicly reported)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" data-label="PRO">BMI</th>
+          <td data-label="Represents">1.4M+ writers, 22M+ songs</td>
+          <td data-label="Small-store cost (annual, approx.; publicly reported)">$300 to $600 (sources vary)</td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="PRO">ASCAP</th>
+          <td data-label="Represents">Comparable roster</td>
+          <td data-label="Small-store cost (annual, approx.; publicly reported)">~$400 minimum</td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="PRO">SESAC</th>
+          <td data-label="Represents">Smaller, invitation-only roster</td>
+          <td data-label="Small-store cost (annual, approx.; publicly reported)">Negotiated, ~$600 to $700</td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="PRO">GMR</th>
+          <td data-label="Represents">Smaller, high-profile roster</td>
+          <td data-label="Small-store cost (annual, approx.; publicly reported)">Negotiated, not publicly disclosed</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</figure>
+
+<h2 id="why-it-exists" class="blog-subhead blog-subhead--h2">
+  Why this system exists
+  <a href="#why-it-exists" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>BMI&rsquo;s job is to make sure songwriters and publishers get paid when their work is performed publicly — including in commercial spaces. The blanket license lets a business access a large catalog without negotiating rights song by song. The system is legitimate; songwriters deserve to be paid for their work.</p>
+<p>The friction is that the machinery built for radio stations and concert halls lands, unchanged, on a 1,500-square-foot shop. The result is a layer of cost and four separate relationships that feel wildly out of proportion to the simple act of having some music on while customers browse.</p>
+</div>
+
+<h2 id="opt-out" class="blog-subhead blog-subhead--h2">
+  The way to opt out entirely
+  <a href="#opt-out" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>PRO licensing applies only to copyrighted music where a third-party rights holder exists. If you play music that isn&rsquo;t registered with BMI, ASCAP, SESAC, or GMR, there is nothing for them to collect on, and the licensing requirement doesn&rsquo;t apply.</p>
+<p>This is exactly how Entuned works. We create original music for retail and own every track outright — no third-party songwriters, no publishers, no PRO affiliation. When you stream our music in your store, there&rsquo;s no public performance license required. No blanket fee. No annual renewal. No letters.</p>
+<p>Entuned Free gives you outcome-tuned in-store audio with no credit card and no time limit, PRO-indemnified the moment it plays. The music is engineered for retail — tempo, key, energy arc tuned to your customer and your outcome — not pulled from a catalog.</p>
+</div>
+
+<figure class="blog-pullquote blog-pullquote--teal">
+  <blockquote>Remove the third-party rights holder and the BMI bill disappears along with the other three. No registration, no renewal, no letter.</blockquote>
+</figure>
+
+<h2 id="what-to-do" class="blog-subhead blog-subhead--h2">
+  What to do about a BMI bill
+  <a href="#what-to-do" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>If you&rsquo;ve received an invoice or letter from BMI, you have three honest options.</p>
+<p>You can negotiate a blanket license with BMI directly, then repeat with ASCAP, SESAC, and GMR — roughly $1,300 to $1,500+ a year total (publicly reported composite), plus a source of music to actually play.</p>
+<p>You can sign up for a commercial streaming service that bundles PRO licensing into the subscription, like Soundtrack Your Brand or Cloud Cover — roughly $17 to $54 a month (vendor published pricing, 2026), with the paperwork handled for you.</p>
+<p>Or you can switch to music that no PRO represents, which removes the obligation entirely. If you stop playing copyrighted music, you can respond to the letter by explaining that you no longer play music that falls under their jurisdiction.</p>
+</div>
+
+<div class="blog-prose">
+  <p>For the broader letter-and-compliance picture, see <a href="../blog/bmi-license.html">BMI license: what it costs and how to avoid needing one</a> and the <a href="../blog/store-music-licensing.html">store music licensing operator&rsquo;s guide</a>. The ASCAP side of the bill is broken down in <a href="../blog/ascap-license-cost.html">ASCAP license cost</a>, and the Spotify question in <a href="../blog/can-you-play-spotify-in-your-store.html">is it actually illegal to use Spotify in my store?</a>.</p>
+</div>
+  </div>
+
+  <!-- CTA -->
+  <aside class="blog-cta blog-cta--start-free">
+  <div class="blog-cta__headline">Hear it on your floor.</div>
+  <div class="blog-cta__body">Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &amp;mdash; no credit card, no time limit. PRO-indemnified the moment it plays.</div>
+  <a href="https://app.entuned.co/start" class="blog-cta__link">Start Free &rarr;</a>
+</aside>
+
+  <!-- Related posts -->
+  <section class="blog-related" aria-label="Related posts">
+  <h2 class="blog-related__title">Keep reading</h2>
+  <div class="blog-related__grid">
+    <a href="../blog/bmi-license.html" class="blog-related__card">
+      <img src="../img/blog/retail-music-licensing-2026.jpg" alt="BMI License: What It Costs, Why You&#39;re Getting That Letter, and How to Avoid Needing One" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">BMI License: What It Costs, Why You&#39;re Getting That Letter, and How to Avoid Needing One</span>
+      <span class="blog-related__dek">Most small business owners discover public performance licensing the same way: a letter in the mail. Here&#39;s what&#39;s actually going on.</span>
+    </a>
+    <a href="../blog/ascap-license-cost.html" class="blog-related__card">
+      <img src="../img/blog/the-hidden-cost-of-licensing.jpg" alt="ASCAP License Cost: What Small Businesses Actually Pay (and How to Avoid It)" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">ASCAP License Cost: What Small Businesses Actually Pay (and How to Avoid It)</span>
+      <span class="blog-related__dek">ASCAP licenses for small businesses run $250 to $600 per year. But ASCAP is only one of four PROs — and the total bill is usually two to eight times that.</span>
+    </a>
+    <a href="../blog/can-you-play-spotify-in-your-store.html" class="blog-related__card">
+      <img src="../img/blog/can-you-play-spotify-in-your-store.jpg" alt="Is It Actually Illegal to Use Spotify in My Store?" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">Is It Actually Illegal to Use Spotify in My Store?</span>
+      <span class="blog-related__dek">A clean answer for retail operators who just want to know if the Spotify account their store manager set up is going to bite them.</span>
+    </a>
+  </div>
+</section>
+
+</article>
+
+<!-- Blog-specific JS (reading progress + anchor copy) -->
+<script>
+  // Reading progress bar
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    document.getElementById('reading-progress').style.width = pct + '%';
+  });
+
+  // Anchor link copy-to-clipboard
+  document.querySelectorAll('.anchor-link').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      navigator.clipboard.writeText(window.location.origin + window.location.pathname + a.getAttribute('href'));
+      a.textContent = '\u2713'; setTimeout(() => a.textContent = '#', 1500);
+    });
+  });
+</script>
+  </main>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Engineered retail audio. PRO-indemnified.</p>
+      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="../how-it-works.html">How It Works</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="../enterprise.html">Enterprise</a></li>
+        <li><a href="../why-entuned.html">Why Entuned</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For Your Industry</h4>
+      <ul>
+        <li><a href="../for-apparel.html">Apparel</a></li>
+        <li><a href="../for-beauty-supply.html">Beauty Supply</a></li>
+        <li><a href="../for-cosmetics.html">Cosmetics &amp; Beauty</a></li>
+        <li><a href="../for-furniture-mattress.html">Furniture &amp; Mattress</a></li>
+        <li><a href="../for-home-goods.html">Home Goods</a></li>
+        <li><a href="../for-jewelry.html">Jewelry</a></li>
+        <li><a href="../for-specialty-retail.html">Specialty Retail</a></li>
+        <li><a href="../for-sporting-goods.html">Sporting Goods</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
+      <ul>
+        <li><a href="../for-retail-leaders.html">Retail Leaders</a></li>
+        <li><a href="../impact.html">Impact Calculator</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Research</h4>
+      <ul>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../results.html">Results</a></li>
+        <li><a href="../science.html">The Science</a></li>
+        <li><a href="../will-it-retail.html">Will It Retail?</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="../how-music-affects-retail.html">How Music Affects Retail</a></li>
+        <li><a href="../how-to-increase-aov-retail.html">Increase Average Order Value</a></li>
+        <li><a href="../how-to-increase-dwell-time-retail.html">Increase Dwell Time</a></li>
+        <li><a href="../how-to-increase-impulse-purchases-retail.html">Drive Impulse Purchases</a></li>
+        <li><a href="../how-to-improve-retail-conversion-rate.html">Improve Conversion Rate</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../partners.html">Partners</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="../licensing.html">Licensing &amp; PRO Coverage</a></li>
+        <li><a href="../data.html">Data Practices</a></li>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="../pricing/terms.html">Subscription Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG', {
+      linker: {
+        domains: ['entuned.co', 'music.entuned.co', 'app.entuned.co']
+      }
+    });
+  </script>
+  <script defer src="../js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "title": "How Much Does a BMI Music License Cost? | Entuned",
+  "meta_description": "BMI fees for a small business run roughly $300 to $600 per year (publicly reported) — but BMI is one of four PROs. Licensing all of them directly runs about $1,300 to $1,500+ a year.",
+  "output": "blog/bmi-license-cost.html",
+  "date_published": "2026-06-04",
+  "faq": [
+    {
+      "q": "How much does a BMI music license cost?",
+      "a": "A BMI blanket license for a small retail store runs roughly $300 to $600 per year (publicly reported; sources vary). The fee comes from a rate schedule that varies by business category and scales with square footage, number of speakers, and how the music is used. Larger venues with higher occupancy pay more. BMI licenses renew each year."
+    },
+    {
+      "q": "Are BMI fees the only music licensing cost I'll have?",
+      "a": "No — this is the most common surprise. BMI is one of four U.S. performing rights organizations, alongside ASCAP, SESAC, and GMR. Each represents different songwriters, and a single song often has co-writers across multiple PROs, so paying BMI only covers the BMI writers on a track. Full compliance requires a license from each PRO, which brings the total to roughly $1,300 to $1,500+ per year (publicly reported composite) before the cost of the music itself."
+    },
+    {
+      "q": "What happens if I don't pay BMI?",
+      "a": "Playing copyrighted music publicly without a license is copyright infringement. BMI monitors commercial venues and sends demand letters, and unlicensed performance exposes the business to statutory damages of $750 to $30,000 per infringed song under 17 U.S.C. § 504(c), rising to $150,000 per song for willful infringement. The letter is not a scam — it's the licensing system catching up to a store that's been playing music without coverage."
+    },
+    {
+      "q": "How is BMI different from ASCAP?",
+      "a": "BMI and ASCAP are the two largest U.S. performing rights organizations, and they represent different rosters of songwriters and publishers. They price in a similar range — BMI runs roughly $300 to $600 per year for a small store and ASCAP carries a minimum around $400 (both publicly reported) — but paying one does not cover the other. A typical mix of commercial tracks has writers across both, plus SESAC and GMR, which is why full compliance means licenses from all four rather than picking one."
+    },
+    {
+      "q": "Is there a way to avoid BMI fees entirely?",
+      "a": "Yes. PRO licensing applies only to copyrighted music with a third-party rights holder. Music that isn't registered with BMI, ASCAP, SESAC, or GMR carries no public performance fee, because there's no one for them to collect on behalf of. That's how Entuned works — original music owned outright, with no PRO affiliation. Streaming it in your store requires no license, no blanket fee, and no annual renewal. Entuned Free needs no credit card and is PRO-indemnified the moment it plays."
+    },
+    {
+      "q": "I already got a BMI bill — what should I do?",
+      "a": "Three honest options. Negotiate a blanket license with BMI and then the other three PROs (roughly $1,300 to $1,500+ a year total, publicly reported composite, plus a music source). Sign up for a service that bundles PRO licensing into the fee, like Soundtrack Your Brand or Cloud Cover ($17 to $54 a month, vendor published pricing, 2026). Or switch to music no PRO represents, which removes the obligation entirely — at which point you can respond to the letter explaining you no longer play music under their jurisdiction."
+    }
+  ]
+}

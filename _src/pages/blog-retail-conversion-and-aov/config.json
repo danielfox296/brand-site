@@ -1,0 +1,32 @@
+{
+  "title": "Retail Conversion and AOV: The Levers That Move Them | Entuned",
+  "meta_description": "What is conversion in retail and how do you move it? The levers behind conversion rate and average order value — including the one most stores never manage.",
+  "output": "blog/retail-conversion-and-aov.html",
+  "date_published": "2026-06-04",
+  "faq": [
+    {
+      "q": "What is conversion in retail?",
+      "a": "Conversion rate is the percentage of store visitors who make a purchase. If 200 people walk in and 40 buy, conversion is 20 percent. It needs two numbers most stores hold separately and rarely divide: a traffic count from a door counter or camera estimate, and transactions from the POS. The absolute number varies by format; what matters is the trend over time and whether a given change moved it."
+    },
+    {
+      "q": "How do you increase conversion rate in a retail store?",
+      "a": "Five levers, roughly in order of how much operators underweight them. Improve traffic quality so the people walking in are buyers. Cut friction at decision points — fitting rooms, queues, out-of-stocks. Fix staff engagement timing, especially the second engagement after a customer pauses at a display. Use merchandising and pathing to pull people deeper into the floor. And manage the feel of the environment, including the audio, so the store reads as a place worth being in. The environment lever is the one most stores never deliberately manage."
+    },
+    {
+      "q": "What is average order value (AOV) in retail?",
+      "a": "Average order value is total revenue divided by the number of transactions over a period. Ten thousand dollars across 200 sales is a $50 AOV. It measures spend per buyer, not how many people bought. AOV is the metric that compounds fastest to the bottom line because lifting it on customers you already converted is close to free margin — you've already paid the rent and marketing to get them in the door."
+    },
+    {
+      "q": "How do you increase average transaction value in a store?",
+      "a": "Three levers. Basket-building through attachment and add-on prompts at the moment of decision. Price architecture — good-better-best tiers, bundles, and anchoring that raise the average ticket without raising any single price. And willingness to pay, which the store environment touches directly: Areni and Kim (1993) found classical music moved wine shoppers toward more expensive bottles. Price architecture is the cleanest lever and the most under-used in small retail."
+    },
+    {
+      "q": "Does store music affect conversion and AOV?",
+      "a": "It is the only lever that sits across both at once. Music extends dwell, giving more chances to convert (Milliman 1982). It shifts willingness to pay, lifting AOV (Areni and Kim 1993). And it bends time perception so a checkout queue feels shorter than it is (Yalch and Spangenberg 2000). It is also the cheapest lever because it changes in software, not in fixtures or headcount — which is exactly why it gets ignored."
+    },
+    {
+      "q": "Can I test whether a change moved conversion or AOV?",
+      "a": "Yes, in two weeks, with data you already have. Pull a baseline week: traffic, transactions, conversion, and average basket. Change one variable — the audio environment is the easiest because it carries no operational lift. Run it two weeks under similar conditions and pull the same numbers. If conversion or AOV moves directionally, extend it. If nothing moves, you've learned audio wasn't your binding constraint without spending capital. Entuned Free makes the audio test free to run."
+    }
+  ]
+}

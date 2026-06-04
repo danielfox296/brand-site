@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- First-touch signup attribution. Stamps a `.entuned.co` cookie on the
+       FIRST page view so the original source (referrer + UTM) survives the
+       entuned.co -> app.entuned.co/start hop. The dashboard's /start reads the
+       same cookie (same name + shape) and forwards it to the server. Runs
+       early + first-touch-wins so it never overwrites the true upstream. -->
+  <script>
+    (function () {
+      try {
+        if (/(?:^|; )entuned_attr=/.test(document.cookie)) return;
+        var p = new URLSearchParams(window.location.search);
+        var payload = {
+          r: document.referrer || undefined,
+          lp: (window.location.pathname + window.location.search) || undefined,
+          us: p.get('utm_source') || undefined,
+          um: p.get('utm_medium') || undefined,
+          uc: p.get('utm_campaign') || undefined,
+          ut: p.get('utm_term') || undefined,
+          un: p.get('utm_content') || undefined,
+          t: new Date().toISOString()
+        };
+        var host = window.location.hostname;
+        var domain = (host === 'entuned.co' || /\.entuned\.co$/.test(host)) ? '; domain=.entuned.co' : '';
+        document.cookie = 'entuned_attr=' + encodeURIComponent(JSON.stringify(payload)) +
+          '; path=/' + domain + '; max-age=' + (30 * 24 * 60 * 60) + '; SameSite=Lax';
+      } catch (e) { /* best-effort */ }
+    })();
+  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/blog/retail-sound-science.html">
+  <meta name="robots" content="index, follow">
+  <title>Retail Sound Science: How Music Influences Shopper Behavior | Entuned</title>
+  <meta name="description" content="How does music influence consumer behavior? The research on retail dwell time, tempo, volume, familiarity, and musical fit — and what it means for your store.">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="../rss.xml">
+  <meta property="og:title" content="Retail Sound Science: How Music Influences Shopper Behavior | Entuned">
+  <meta property="og:description" content="How does music influence consumer behavior? The research on retail dwell time, tempo, volume, familiarity, and musical fit — and what it means for your store.">
+  <meta property="og:url" content="https://entuned.co/blog/retail-sound-science.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://entuned.co/img/blog/retail-sound-science.jpg">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-06-04">
+  <meta property="article:author" content="Daniel Fox">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Retail Sound Science: How Music Influences Shopper Behavior | Entuned">
+  <meta name="twitter:description" content="How does music influence consumer behavior? The research on retail dwell time, tempo, volume, familiarity, and musical fit — and what it means for your store.">
+  <meta name="twitter:image" content="https://entuned.co/img/blog/retail-sound-science.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Retail Sound Science: How Music Influences Shopper Behavior | Entuned",
+  "author": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "datePublished": "2026-06-04",
+  "dateModified": "2026-06-04",
+  "description": "How does music influence consumer behavior? The research on retail dwell time, tempo, volume, familiarity, and musical fit \u2014 and what it means for your store.",
+  "image": "https://entuned.co/img/blog/retail-sound-science.jpg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://entuned.co/blog/retail-sound-science.html"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "retail music strategy"
+    },
+    {
+      "@type": "Thing",
+      "name": "in-store customer behavior"
+    },
+    {
+      "@type": "Thing",
+      "name": "engineered retail audio"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How does music influence consumer behavior in a store?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Through the nervous system, not taste. Tempo sets the pace customers move at, familiarity bends how long the trip feels, musical fit signals what kind of place the store is and shifts willingness to pay, and volume changes how quickly people leave. Shoppers in these studies routinely report they didn't notice the music; their behavior changed anyway. The effect is documented across decades of peer-reviewed field studies in supermarkets, wine shops, restaurants, and apparel floors."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does slower music really make people shop longer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In Milliman's 1982 supermarket study it did. Holding everything else constant and changing only the tempo, slow music increased gross sales by up to 38 percent versus fast music (dwell moved alongside, but the 38 percent is the sales figure). The mechanism is entrainment \u2014 people unconsciously match their movement to the beat. The effect is real but format-specific, and later work (Knoferle 2012) showed tempo interacts with musical mode, so it works as part of a configured whole rather than a single dial."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What BPM should a retail store play?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no universal number \u2014 the right tempo depends on your format and your outcome. To slow the floor and extend dwell, the research points to slower tempos; to lift energy and pace, faster ones. The mistake is treating tempo as a lone slider. Tempo interacts with key, volume, and familiarity, so the target is a configured range tuned to a specific outcome, then verified against your POS data, not a single BPM copied from another store."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does familiar music make customers leave sooner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yalch and Spangenberg (2000) found familiar songs act as time markers \u2014 you recognize a track, register that time has passed, and your internal clock advances, so the trip feels longer and you leave sooner. Unfamiliar music gives the brain no markers, so the visit feels shorter than it was and shoppers stay longer. For a store trying to extend dwell, defaulting to a familiar-hits station works against the goal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can music make customers spend more per visit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, through musical fit. Areni and Kim (1993) found classical music in a wine cellar shifted shoppers toward more expensive bottles \u2014 they bought pricier items, not more of them. North and Hargreaves showed French music sold French wine and German music sold German wine, with shoppers unaware of the influence. Fit signals the context in which spending more feels appropriate. It is the lever that moves willingness to pay, and it is independent of volume."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this work for a single store, or only big chains?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every documented effect is per-customer, which means it scales the same way in one store as in fifty. None of it requires capital \u2014 the audio environment is changed in software, not concrete. A single-location owner can run a two-week test against existing POS data and read the result the same way a regional chain would. Entuned Free is the lowest-friction way to start: no credit card, no time limit."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://entuned.co/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Retail Sound Science: How Music Influences Shopper Behavior | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=ebace452">
+  <link rel="stylesheet" href="../styles/blog.css">
+  
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav aria-label="Main navigation">
+  <div class="container">
+    <a href="/" class="logo"><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="../how-it-works.html">How It Works</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li class="nav-cta-item"><a href="https://app.entuned.co/start" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Start Free</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+  </div>
+</nav>
+
+  <main>
+  
+<!-- Reading progress bar -->
+<div class="blog-progress" aria-hidden="true">
+  <div class="blog-progress__bar" id="reading-progress"></div>
+</div>
+
+<article class="blog-article">
+
+  <!-- Article header -->
+  <header class="blog-article__header">
+    <div class="blog-eyebrow">FLOW FACTORS</div>
+    <h1 class="blog-headline">Retail Sound Science: How Store Music Drives Shopper Behavior</h1>
+    <p class="blog-dek">Decades of field research — Milliman, Areni and Kim, Yalch and Spangenberg, North and Hargreaves, Knöferle — on how tempo, volume, familiarity, and musical fit move dwell time, willingness to pay, and perceived wait. The complete operator&#39;s map, with links to every lever in depth.</p>
+    <div class="blog-byline">
+      <span class="blog-byline__author">Daniel Fox</span>
+      <span class="blog-byline__role">Founder &amp; CEO</span>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <time class="blog-byline__date" datetime="2026-06-04">2026-06-04</time>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <span class="blog-byline__reading-time">8 min read</span>
+    </div>
+  </header>
+
+  <!-- Hero image -->
+  <figure class="blog-hero fade-up">
+    <img src="../img/blog/retail-sound-science.jpg" alt="Interior of a modern retail store with a wooden arched ceiling" class="blog-hero__img" loading="lazy">
+    <figcaption class="blog-hero__caption">Photo: Unsplash</figcaption>
+  </figure>
+
+  <!-- Key takeaways -->
+  <div class="blog-takeaways">
+  <div class="blog-takeaways__title">Key takeaways</div>
+  <ul>
+    <li>Store music is a measured behavioral lever, not decoration. Six effects are documented in peer-reviewed research: tempo, volume, familiarity, musical fit, perceived wait, and willingness to pay.</li>
+    <li>Milliman&#39;s 1982 supermarket field study found slow tempo raised gross sales by up to 38 percent versus fast tempo, with shoppers reporting they noticed no difference. (The effect was on sales; dwell moved alongside it but the 38 percent figure is the sales lift.)</li>
+    <li>Areni and Kim (1993) found classical music in a wine cellar shifted shoppers toward more expensive bottles — fit, not volume, moved the spend.</li>
+    <li>Yalch and Spangenberg (2000) found unfamiliar music made shoppers underestimate their time in-store and stay longer; familiar music had the reverse effect.</li>
+    <li>Every effect is per-customer, which means it scales the same way in one store as in fifty. None of it requires capital — the audio environment is changed in software.</li>
+  </ul>
+</div>
+
+  <!-- Article body (all sections except key_takeaways, cta, related) -->
+  <div class="blog-article__body">
+    <div class="blog-prose">
+  <p>Your store is playing music right now, and that music is doing something. The question every operator should be able to answer is what.</p>
+<p>Most can&rsquo;t. The audio environment is the one part of the store nobody owns. The lighting plan gets reviewed quarterly. The window display runs on a twelve-month calendar. The fixture layout has a planogram behind it. The music is a subscription somebody set up three years ago and nobody has thought about since.</p>
+<p>That is a missed lever, because the effect of store music on shopper behavior is one of the better-replicated findings in retail research. A handful of controlled field studies over the past few decades — Milliman in supermarkets and restaurants, Areni and Kim in a wine cellar, Yalch and Spangenberg on time perception, North and Hargreaves on musical fit, Knöferle on tempo and mode — point the same direction. When the sound fits the space and the shopper, people stay longer, feel the trip is shorter, and spend more. When it doesn&rsquo;t, they leave sooner and buy less.</p>
+<p>This is the map. Below are the six documented effects, what the research actually says, and where each one is covered in depth.</p>
+</div>
+
+<h2 id="how-music-influences-behavior" class="blog-subhead blog-subhead--h2">
+  How does music influence consumer behavior?
+  <a href="#how-music-influences-behavior" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>The effect is not about taste. It is about the nervous system. Music sets a pace, fills or empties the perception of time, and signals what kind of place a shopper is standing in — all below the level of conscious attention. Shoppers in these studies routinely report they did not notice the music. Their behavior changed anyway.</p>
+<p>That last point is the one operators miss. You are not trying to get customers to like the music. You are trying to change what they do. The two are only loosely related, and chasing the first one is how stores end up with a soundtrack that pleases the owner and moves nothing on the floor.</p>
+</div>
+
+<div class="blog-stat blog-stat--gold">
+  <div class="blog-stat__number">Up to 38%</div>
+  <div class="blog-stat__label">Increase in supermarket gross sales from slow-tempo music versus fast-tempo, in Milliman&#39;s single 1982 controlled field study</div>
+  <div class="blog-stat__source">Milliman, R. E. (1982). Using Background Music to Affect the Behavior of Supermarket Shoppers. Journal of Marketing, 46(3).</div>
+</div>
+
+<h2 id="tempo" class="blog-subhead blog-subhead--h2">
+  Lever 1: Tempo sets the pace of the floor
+  <a href="#tempo" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Tempo is the most direct lever in the research. Ronald Milliman&rsquo;s 1982 supermarket study changed only the tempo of the music — same store, same merchandise, same shoppers — and watched the floor speed up and slow down with it. Under slow tempo, customers moved slower and lingered longer, and gross sales rose by as much as 38 percent against fast tempo. That 38 percent was the sales lift, not a dwell figure. He found a related result in restaurants in 1986: slow music lengthened meals and raised bar tabs.</p>
+<p>The mechanism is entrainment. People unconsciously match their movement to a rhythm. A faster beat moves customers toward the door; a slower one keeps them browsing. The lever is real, but it is not a dial you turn to zero — there is a floor where slow becomes funereal and an energy ceiling above which the store feels frantic. The target depends on your format and the outcome you want.</p>
+<p>Knoferle and colleagues (2012) refined the picture: tempo and mode interact, and a major key can wash out the tempo effect. The takeaway for operators is that &ldquo;play slow music&rdquo; is too blunt. Tempo works as part of a configured whole, not as a single slider.</p>
+</div>
+
+<h2 id="fit" class="blog-subhead blog-subhead--h2">
+  Lever 2: Musical fit moves willingness to pay
+  <a href="#fit" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>The most striking study in the field is Areni and Kim (1993). In a wine cellar, they alternated classical music with Top 40. Shoppers exposed to classical didn&rsquo;t buy more items — they bought more expensive ones. The music signaled a context in which spending more felt appropriate. Willingness to pay shifted without anyone deciding it had.</p>
+<p>North and Hargreaves built this out across the 1990s and 2000s: play French music and French wine outsells German; play German music and the reverse happens, with shoppers unaware the music influenced them. This is musical fit — the congruence between the sound and the product, the brand, and the moment. Fit, not volume, is the lever that moves the basket upward.</p>
+</div>
+
+<figure class="blog-pullquote blog-pullquote--teal">
+  <blockquote>Shoppers exposed to classical music didn&#39;t buy more items. They bought more expensive ones. Nobody decided to spend more — the music decided the context.</blockquote>
+</figure>
+
+<h2 id="familiarity" class="blog-subhead blog-subhead--h2">
+  Lever 3: Familiarity bends the perception of time
+  <a href="#familiarity" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Yalch and Spangenberg (2000) found something counterintuitive. Shoppers exposed to unfamiliar music underestimated how long they had been in the store and stayed longer. Shoppers exposed to familiar music overestimated their time and left sooner.</p>
+<p>Familiar songs act as time markers. You recognize a track, you register that time has passed, your internal clock advances. Unfamiliar music gives the brain no markers, so the trip feels shorter than it was. For a store trying to extend dwell, recognizable hits are working against you — the opposite of what most operators assume when they default to a familiar-hits station. We cover this counterintuitive result on its own, because it is the one operators most often get backwards.</p>
+</div>
+
+<h2 id="volume" class="blog-subhead blog-subhead--h2">
+  Lever 4: Volume changes how fast people leave
+  <a href="#volume" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Volume is the lever operators feel but rarely manage. Too loud and shoppers cut the trip short — the room becomes work to be in. Too quiet and the space reads as empty or uncertain, with nothing to mask the silence between two strangers six feet apart. The research here is less unified than tempo, but the direction is consistent: excessive volume shortens visits, and the right level is set by the format and the time of day, not by a number you pick once and forget.</p>
+</div>
+
+<h2 id="perceived-wait" class="blog-subhead blog-subhead--h2">
+  Lever 5: Music fills the perceived wait
+  <a href="#perceived-wait" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Time spent waiting feels longer than time spent occupied. A checkout queue, a fitting-room line, a service counter — these are where dwell turns from browsing into friction. The right audio fills that perceived wait so a four-minute line feels like two. This is the same time-perception machinery as the familiarity effect, pointed at the part of the visit where impatience does the most damage.</p>
+</div>
+
+<h2 id="brand-signal" class="blog-subhead blog-subhead--h2">
+  Lever 6: Music is a brand signal in the first 10 seconds
+  <a href="#brand-signal" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Before a shopper reaches the first rack, they have already read the room — lighting, temperature, smell, and sound — and decided what kind of place they&rsquo;re in. The audio is part of that snap judgment whether you manage it or not. A flagship feels intentional because someone controlled every sensory detail; a mall location of the same brand feels thinner because the sound got left to the regional default. The music is telling customers something about your brand in the first ten seconds. The only choice is whether it&rsquo;s saying what you want.</p>
+</div>
+
+<h2 id="caveat" class="blog-subhead blog-subhead--h2">
+  The one caveat that ties it together
+  <a href="#caveat" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Every effect above is real, and every one of them is easy to misread on its own. Longer dwell only matters if it co-moves with conversion or basket size — a customer stuck in a 14-minute fitting-room line is dwelling, not buying. Higher willingness to pay only matters if the fit is right for your actual customer, not the customer you wish you had.</p>
+<p>The discipline is to treat the audio as a configured system tuned to one outcome, then to measure that outcome against your existing POS data. Change one variable, hold the rest, and read the number. That is the difference between sound science and a hunch about what sounds nice.</p>
+</div>
+
+<aside class="blog-aside">
+  <div class="blog-aside__title">The researchers worth knowing</div>
+  <div class="blog-aside__body"><p>Milliman (1982, 1986) — tempo and dwell, in supermarkets and restaurants. Areni and Kim (1993) — classical music and wine spend. Yalch and Spangenberg (2000) — familiarity and time perception. North and Hargreaves (1990s–2000s) — musical fit and product choice. Knoferle et al. (2012) — tempo and mode interaction. Together they form the empirical backbone of retail sound science.</p></div>
+</aside>
+
+<div class="blog-prose">
+  <p>To go a level deeper on each lever: the tempo research is broken down in <a href="../blog/science-of-tempo-retail.html">the science of tempo in retail</a> and made concrete in <a href="../blog/127-bpm-target-dwell-time.html">127 BPM in a Target on a Tuesday</a>. The counterintuitive familiarity result has its own treatment in <a href="../blog/the-familiarity-trap.html">the familiarity trap</a>. The willingness-to-pay mechanism is covered in <a href="../blog/the-wine-aisle.html">the wine aisle</a> and <a href="../blog/luxury-priming-for-non-luxury-brands.html">luxury priming is real</a>. For the practical playbook on dwell, see <a href="../blog/how-to-increase-dwell-time.html">how to increase dwell time in retail stores</a>, and for where sound sits among the other senses, <a href="../blog/sensory-marketing-for-retail.html">sensory marketing for retail</a>.</p>
+</div>
+  </div>
+
+  <!-- CTA -->
+  <aside class="blog-cta blog-cta--start-free">
+  <div class="blog-cta__headline">Hear it on your floor.</div>
+  <div class="blog-cta__body">Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &amp;mdash; no credit card, no time limit. PRO-indemnified the moment it plays.</div>
+  <a href="https://app.entuned.co/start" class="blog-cta__link">Start Free &rarr;</a>
+</aside>
+
+  <!-- Related posts -->
+  <section class="blog-related" aria-label="Related posts">
+  <h2 class="blog-related__title">Keep reading</h2>
+  <div class="blog-related__grid">
+    <a href="../blog/science-of-tempo-retail.html" class="blog-related__card">
+      <img src="../img/blog/science-of-tempo-retail.jpg" alt="The Science of Tempo in Retail" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">The Science of Tempo in Retail</span>
+      <span class="blog-related__dek">Tempo is the most studied variable in retail music research. It is also the most misunderstood.</span>
+    </a>
+    <a href="../blog/the-familiarity-trap.html" class="blog-related__card">
+      <img src="../img/blog/familiarity-trap.jpg" alt="The Familiarity Trap" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">The Familiarity Trap</span>
+      <span class="blog-related__dek">Your customers recognize the playlist. And they leave sooner because of it.</span>
+    </a>
+    <a href="../blog/how-to-increase-dwell-time.html" class="blog-related__card">
+      <img src="../img/blog/longer-visits.jpg" alt="How to Increase Dwell Time in Retail Stores" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">How to Increase Dwell Time in Retail Stores</span>
+      <span class="blog-related__dek">Five levers that actually move dwell, why most operators undershoot the easiest one, and a two-week test to run on your own floor.</span>
+    </a>
+    <a href="../blog/the-wine-aisle.html" class="blog-related__card">
+      <img src="../img/blog/the-wine-aisle.jpg" alt="The Wine Aisle" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">The Wine Aisle</span>
+      <span class="blog-related__dek">A 1999 study proved French music sold French wine and German music sold German wine. Shoppers had no idea. Associative priming is the layer nobody uses.</span>
+    </a>
+    <a href="../blog/sensory-marketing-for-retail.html" class="blog-related__card">
+      <img src="../img/blog/sensory-marketing-for-retail.jpg" alt="Sensory Marketing for Retail: Where Sound Fits" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">Sensory Marketing for Retail: Where Sound Fits</span>
+      <span class="blog-related__dek">Scent and lighting get dedicated budgets. Sound gets a playlist.</span>
+    </a>
+  </div>
+</section>
+
+</article>
+
+<!-- Blog-specific JS (reading progress + anchor copy) -->
+<script>
+  // Reading progress bar
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    document.getElementById('reading-progress').style.width = pct + '%';
+  });
+
+  // Anchor link copy-to-clipboard
+  document.querySelectorAll('.anchor-link').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      navigator.clipboard.writeText(window.location.origin + window.location.pathname + a.getAttribute('href'));
+      a.textContent = '\u2713'; setTimeout(() => a.textContent = '#', 1500);
+    });
+  });
+</script>
+  </main>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Engineered retail audio. PRO-indemnified.</p>
+      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="../how-it-works.html">How It Works</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="../enterprise.html">Enterprise</a></li>
+        <li><a href="../why-entuned.html">Why Entuned</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For Your Industry</h4>
+      <ul>
+        <li><a href="../for-apparel.html">Apparel</a></li>
+        <li><a href="../for-beauty-supply.html">Beauty Supply</a></li>
+        <li><a href="../for-cosmetics.html">Cosmetics &amp; Beauty</a></li>
+        <li><a href="../for-furniture-mattress.html">Furniture &amp; Mattress</a></li>
+        <li><a href="../for-home-goods.html">Home Goods</a></li>
+        <li><a href="../for-jewelry.html">Jewelry</a></li>
+        <li><a href="../for-specialty-retail.html">Specialty Retail</a></li>
+        <li><a href="../for-sporting-goods.html">Sporting Goods</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
+      <ul>
+        <li><a href="../for-retail-leaders.html">Retail Leaders</a></li>
+        <li><a href="../impact.html">Impact Calculator</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Research</h4>
+      <ul>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../results.html">Results</a></li>
+        <li><a href="../science.html">The Science</a></li>
+        <li><a href="../will-it-retail.html">Will It Retail?</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="../how-music-affects-retail.html">How Music Affects Retail</a></li>
+        <li><a href="../how-to-increase-aov-retail.html">Increase Average Order Value</a></li>
+        <li><a href="../how-to-increase-dwell-time-retail.html">Increase Dwell Time</a></li>
+        <li><a href="../how-to-increase-impulse-purchases-retail.html">Drive Impulse Purchases</a></li>
+        <li><a href="../how-to-improve-retail-conversion-rate.html">Improve Conversion Rate</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../partners.html">Partners</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="../licensing.html">Licensing &amp; PRO Coverage</a></li>
+        <li><a href="../data.html">Data Practices</a></li>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="../pricing/terms.html">Subscription Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG', {
+      linker: {
+        domains: ['entuned.co', 'music.entuned.co', 'app.entuned.co']
+      }
+    });
+  </script>
+  <script defer src="../js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>

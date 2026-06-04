@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- First-touch signup attribution. Stamps a `.entuned.co` cookie on the
+       FIRST page view so the original source (referrer + UTM) survives the
+       entuned.co -> app.entuned.co/start hop. The dashboard's /start reads the
+       same cookie (same name + shape) and forwards it to the server. Runs
+       early + first-touch-wins so it never overwrites the true upstream. -->
+  <script>
+    (function () {
+      try {
+        if (/(?:^|; )entuned_attr=/.test(document.cookie)) return;
+        var p = new URLSearchParams(window.location.search);
+        var payload = {
+          r: document.referrer || undefined,
+          lp: (window.location.pathname + window.location.search) || undefined,
+          us: p.get('utm_source') || undefined,
+          um: p.get('utm_medium') || undefined,
+          uc: p.get('utm_campaign') || undefined,
+          ut: p.get('utm_term') || undefined,
+          un: p.get('utm_content') || undefined,
+          t: new Date().toISOString()
+        };
+        var host = window.location.hostname;
+        var domain = (host === 'entuned.co' || /\.entuned\.co$/.test(host)) ? '; domain=.entuned.co' : '';
+        document.cookie = 'entuned_attr=' + encodeURIComponent(JSON.stringify(payload)) +
+          '; path=/' + domain + '; max-age=' + (30 * 24 * 60 * 60) + '; SameSite=Lax';
+      } catch (e) { /* best-effort */ }
+    })();
+  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/blog/retail-conversion-and-aov.html">
+  <meta name="robots" content="index, follow">
+  <title>Retail Conversion and Average Order Value: The Operator's Guide | Entuned</title>
+  <meta name="description" content="What is conversion in retail and how do you move it? The levers behind conversion rate and average order value — including the one most stores never manage.">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="../rss.xml">
+  <meta property="og:title" content="Retail Conversion and Average Order Value: The Operator&#x27;s Guide | Entuned">
+  <meta property="og:description" content="What is conversion in retail and how do you move it? The levers behind conversion rate and average order value — including the one most stores never manage.">
+  <meta property="og:url" content="https://entuned.co/blog/retail-conversion-and-aov.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://entuned.co/img/blog/retail-conversion-and-aov.jpg">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-06-04">
+  <meta property="article:author" content="Daniel Fox">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Retail Conversion and Average Order Value: The Operator&#x27;s Guide | Entuned">
+  <meta name="twitter:description" content="What is conversion in retail and how do you move it? The levers behind conversion rate and average order value — including the one most stores never manage.">
+  <meta name="twitter:image" content="https://entuned.co/img/blog/retail-conversion-and-aov.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Retail Conversion and Average Order Value: The Operator's Guide | Entuned",
+  "author": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "datePublished": "2026-06-04",
+  "dateModified": "2026-06-04",
+  "description": "What is conversion in retail and how do you move it? The levers behind conversion rate and average order value \u2014 including the one most stores never manage.",
+  "image": "https://entuned.co/img/blog/retail-conversion-and-aov.jpg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://entuned.co/blog/retail-conversion-and-aov.html"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "retail music strategy"
+    },
+    {
+      "@type": "Thing",
+      "name": "in-store customer behavior"
+    },
+    {
+      "@type": "Thing",
+      "name": "engineered retail audio"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is conversion in retail?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Conversion rate is the percentage of store visitors who make a purchase. If 200 people walk in and 40 buy, conversion is 20 percent. It needs two numbers most stores hold separately and rarely divide: a traffic count from a door counter or camera estimate, and transactions from the POS. The absolute number varies by format; what matters is the trend over time and whether a given change moved it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you increase conversion rate in a retail store?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Five levers, roughly in order of how much operators underweight them. Improve traffic quality so the people walking in are buyers. Cut friction at decision points \u2014 fitting rooms, queues, out-of-stocks. Fix staff engagement timing, especially the second engagement after a customer pauses at a display. Use merchandising and pathing to pull people deeper into the floor. And manage the feel of the environment, including the audio, so the store reads as a place worth being in. The environment lever is the one most stores never deliberately manage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is average order value (AOV) in retail?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Average order value is total revenue divided by the number of transactions over a period. Ten thousand dollars across 200 sales is a $50 AOV. It measures spend per buyer, not how many people bought. AOV is the metric that compounds fastest to the bottom line because lifting it on customers you already converted is close to free margin \u2014 you've already paid the rent and marketing to get them in the door."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you increase average transaction value in a store?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Three levers. Basket-building through attachment and add-on prompts at the moment of decision. Price architecture \u2014 good-better-best tiers, bundles, and anchoring that raise the average ticket without raising any single price. And willingness to pay, which the store environment touches directly: Areni and Kim (1993) found classical music moved wine shoppers toward more expensive bottles. Price architecture is the cleanest lever and the most under-used in small retail."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does store music affect conversion and AOV?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is the only lever that sits across both at once. Music extends dwell, giving more chances to convert (Milliman 1982). It shifts willingness to pay, lifting AOV (Areni and Kim 1993). And it bends time perception so a checkout queue feels shorter than it is (Yalch and Spangenberg 2000). It is also the cheapest lever because it changes in software, not in fixtures or headcount \u2014 which is exactly why it gets ignored."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I test whether a change moved conversion or AOV?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, in two weeks, with data you already have. Pull a baseline week: traffic, transactions, conversion, and average basket. Change one variable \u2014 the audio environment is the easiest because it carries no operational lift. Run it two weeks under similar conditions and pull the same numbers. If conversion or AOV moves directionally, extend it. If nothing moves, you've learned audio wasn't your binding constraint without spending capital. Entuned Free makes the audio test free to run."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://entuned.co/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Retail Conversion and Average Order Value: The Operator's Guide | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=ebace452">
+  <link rel="stylesheet" href="../styles/blog.css">
+  
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav aria-label="Main navigation">
+  <div class="container">
+    <a href="/" class="logo"><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="../how-it-works.html">How It Works</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li class="nav-cta-item"><a href="https://app.entuned.co/start" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Start Free</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+  </div>
+</nav>
+
+  <main>
+  
+<!-- Reading progress bar -->
+<div class="blog-progress" aria-hidden="true">
+  <div class="blog-progress__bar" id="reading-progress"></div>
+</div>
+
+<article class="blog-article">
+
+  <!-- Article header -->
+  <header class="blog-article__header">
+    <div class="blog-eyebrow">FIELD NOTES</div>
+    <h1 class="blog-headline">Retail Conversion and AOV: The Levers That Actually Move Them</h1>
+    <p class="blog-dek">What conversion and average order value really measure, the levers that move each one, and where the store&#39;s sound environment fits among them. A working map for owner-operators.</p>
+    <div class="blog-byline">
+      <span class="blog-byline__author">Daniel Fox</span>
+      <span class="blog-byline__role">Founder &amp; CEO</span>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <time class="blog-byline__date" datetime="2026-06-04">2026-06-04</time>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <span class="blog-byline__reading-time">6 min read</span>
+    </div>
+  </header>
+
+  <!-- Hero image -->
+  <figure class="blog-hero fade-up">
+    <img src="../img/blog/retail-conversion-and-aov.jpg" alt="A retail store interior lined with white display shelves" class="blog-hero__img" loading="lazy">
+    <figcaption class="blog-hero__caption">Photo: Unsplash</figcaption>
+  </figure>
+
+  <!-- Key takeaways -->
+  <div class="blog-takeaways">
+  <div class="blog-takeaways__title">Key takeaways</div>
+  <ul>
+    <li>Conversion rate is the share of visitors who buy. Average order value (AOV) is what each buyer spends. They move on different levers and you should never optimize one blind to the other.</li>
+    <li>Conversion is moved by traffic quality, friction at decision points, staff timing, merchandising, and the feel of the environment. AOV is moved by basket-building, price architecture, and willingness to pay.</li>
+    <li>The store&#39;s sound environment sits across both: it extends dwell (more chances to convert) and shifts willingness to pay (higher AOV) — drawing on Milliman&#39;s 1982 supermarket study, where slow tempo raised sales by up to 38 percent, and Areni and Kim (1993).</li>
+    <li>All three numbers — conversion, AOV, and the dwell that feeds them — are computable from POS data you already have, so you can test a single lever in two weeks without new infrastructure.</li>
+  </ul>
+</div>
+
+  <!-- Article body (all sections except key_takeaways, cta, related) -->
+  <div class="blog-article__body">
+    <div class="blog-prose">
+  <p>Two numbers decide whether a busy day is a good day. Conversion rate tells you how many of the people who walked in actually bought something. Average order value tells you how much each of those buyers spent. Multiply them by traffic and you have revenue. Move either one and the whole line moves.</p>
+<p>Most operators track both and optimize neither, because the levers are scattered across departments and nobody holds the full map. Merchandising owns some of it, staffing owns some, the POS configuration owns some, and one lever — the feel of the room — is owned by nobody at all.</p>
+<p>This is that map: what each number measures, the levers that move it, and where the parts that are usually ignored actually sit.</p>
+</div>
+
+<h2 id="what-is-conversion" class="blog-subhead blog-subhead--h2">
+  What is conversion in retail?
+  <a href="#what-is-conversion" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Conversion rate is the percentage of store visitors who make a purchase. If 200 people walk in and 40 buy, your conversion rate is 20 percent. It requires two numbers most stores have separately and rarely divide: a traffic count (a door counter, or a camera estimate) and transactions (your POS).</p>
+<p>Typical brick-and-mortar conversion runs wide by format — value and convenience formats convert high because intent is high, while browse-heavy specialty retail converts lower because more visits are exploratory. The absolute number matters less than the trend. A store that knows its conversion rate moved from 18 to 21 percent after a change knows something. A store that has never computed it is flying blind on its single most important efficiency metric.</p>
+</div>
+
+<h2 id="conversion-levers" class="blog-subhead blog-subhead--h2">
+  The levers that move conversion
+  <a href="#conversion-levers" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p><strong>Traffic quality.</strong> Not everyone who walks in is a buyer. Marketing that pulls in the wrong visitors lowers conversion even as it raises traffic. The fix is upstream of the floor.</p>
+<p><strong>Friction at decision points.</strong> Fitting-room availability, queue length, out-of-stocks, and confusing layout convert intent into exit. This is the lever with the cleanest before-and-after metrics, which is why consultants love it.</p>
+<p><strong>Staff engagement timing.</strong> The high-leverage moment is not the entry greeting; it&rsquo;s the second engagement, when a customer has lingered at a display without moving to checkout. Acting on it requires staffing density, not just training.</p>
+<p><strong>Merchandising and pathing.</strong> Pulling browse-worthy product deeper into the floor gives customers a reason to walk in rather than turn around at the door.</p>
+<p><strong>The feel of the environment.</strong> A store that feels like a place worth being in converts better than one that signals &ldquo;this is just a store.&rdquo; Lighting and layout get managed for this; the audio almost never does. That is the gap.</p>
+</div>
+
+<div class="blog-stat blog-stat--gold">
+  <div class="blog-stat__number">Up to 38%</div>
+  <div class="blog-stat__label">Lift in supermarket gross sales from slow-tempo music in Milliman&#39;s single 1982 controlled field study — the slower floor also meant more time per visit to convert</div>
+  <div class="blog-stat__source">Milliman, R. E. (1982). Using Background Music to Affect the Behavior of Supermarket Shoppers. Journal of Marketing, 46(3).</div>
+</div>
+
+<h2 id="what-is-aov" class="blog-subhead blog-subhead--h2">
+  What is average order value (AOV)?
+  <a href="#what-is-aov" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Average order value is total revenue divided by number of transactions over a period. If you did $10,000 across 200 sales, your AOV is $50. It answers a different question than conversion: not how many people bought, but how much each buyer spent.</p>
+<p>AOV is the lever that compounds fastest because it falls straight to the bottom line. Lifting conversion costs you more inventory turns and more staff attention. Lifting AOV on the customers you already converted is close to free margin — you&rsquo;ve already paid the rent and the marketing to get them through the door.</p>
+</div>
+
+<h2 id="aov-levers" class="blog-subhead blog-subhead--h2">
+  The levers that move AOV
+  <a href="#aov-levers" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p><strong>Basket-building.</strong> Attachment and add-on prompts at the moment of decision — the complementary item, the care kit, the second pair. Mostly a staff-behavior and merchandising lever.</p>
+<p><strong>Price architecture.</strong> Good-better-best tiers, bundle pricing, and anchoring move the average ticket without raising any single price. This is the cleanest AOV lever and the most under-used in small retail.</p>
+<p><strong>Willingness to pay.</strong> The least obvious lever, and the one the sound environment touches directly. Areni and Kim (1993) found that classical music in a wine cellar moved shoppers toward more expensive bottles — they bought pricier items, not more of them. North and Hargreaves showed musical fit could steer product choice entirely, with shoppers unaware. When the environment signals a context where spending more feels appropriate, AOV moves on its own.</p>
+</div>
+
+<figure class="blog-pullquote blog-pullquote--teal">
+  <blockquote>Lifting AOV on customers you already converted is close to free margin. You&#39;ve already paid the rent and the marketing to get them through the door.</blockquote>
+</figure>
+
+<h2 id="where-audio-fits" class="blog-subhead blog-subhead--h2">
+  Where the sound environment fits across both
+  <a href="#where-audio-fits" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>The store&rsquo;s audio is the only lever that sits across both numbers at once. It slows the floor and extends time per visit, which gives more chances to convert — Milliman&rsquo;s 1982 study put the sales lift at up to 38 percent. It shifts willingness to pay, which lifts AOV (Areni and Kim 1993). It bends the perception of time, so a checkout queue that would have cost you a sale feels shorter than it is (Yalch and Spangenberg 2000).</p>
+<p>And it is the cheapest lever in the building, because it changes in software rather than in fixtures, floor plans, or headcount. The reason it gets ignored isn&rsquo;t that it doesn&rsquo;t work — it&rsquo;s that the commercial music industry spent thirty years selling operators a catalog and a genre picker, then reporting back on play counts. Nobody handed the operator a tool that lets them pick the outcome and have the sound configured to support it.</p>
+</div>
+
+<figure class="blog-comparison-table">
+  <figcaption class="blog-comparison-table__title">Conversion vs. AOV at a glance</figcaption>
+  <div class="blog-comparison-table__wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Metric</th>
+          <th scope="col">What it measures</th>
+          <th scope="col">Primary levers</th>
+          <th scope="col">Where audio helps</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" data-label="Metric">Conversion rate</th>
+          <td data-label="What it measures">Share of visitors who buy</td>
+          <td data-label="Primary levers">Friction, staff timing, merchandising, environment feel</td>
+          <td data-label="Where audio helps">Extends dwell — more time on the floor to convert</td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Metric">Average order value</th>
+          <td data-label="What it measures">Spend per buyer</td>
+          <td data-label="Primary levers">Basket-building, price architecture, willingness to pay</td>
+          <td data-label="Where audio helps">Signals a context where spending more feels right</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</figure>
+
+<h2 id="discipline" class="blog-subhead blog-subhead--h2">
+  The discipline: never optimize one blind to the other
+  <a href="#discipline" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>A change that lifts conversion can quietly lower AOV — drop prices and more people buy, but each spends less. A change that lifts AOV can lower conversion — push premium product and the average ticket rises while some buyers walk. The only honest read is to watch both, plus the traffic and dwell that feed them.</p>
+<p>The good news is that all of it is computable from data you already own. Pull a baseline: traffic, transactions, conversion, average basket. Change one variable. The audio environment is the easiest to change because it carries no operational lift. Run it two weeks under similar conditions and pull the same numbers. If conversion or AOV moves directionally, you have evidence to extend. If nothing moves, you&rsquo;ve learned the audio wasn&rsquo;t your binding constraint, without spending capital to find out.</p>
+</div>
+
+<div class="blog-prose">
+  <p>For the deep playbooks on each number, see <a href="../blog/retail-conversion-rate-levers.html">retail conversion rate: the five levers</a> and <a href="../blog/how-to-increase-aov-retail.html">how to increase average order value in retail</a>. The dwell mechanic that feeds both is in <a href="../blog/how-to-increase-dwell-time.html">how to increase dwell time in retail stores</a>, and the math on why longer visits don&rsquo;t automatically mean bigger receipts is in <a href="../blog/longer-visits.html">longer visits don&rsquo;t mean bigger receipts</a>. For the research behind the willingness-to-pay lever, see <a href="../blog/the-8-12-youre-leaving-on-the-table.html">the 8-12% you&rsquo;re leaving on the table</a>.</p>
+</div>
+  </div>
+
+  <!-- CTA -->
+  <aside class="blog-cta blog-cta--start-free">
+  <div class="blog-cta__headline">Hear it on your floor.</div>
+  <div class="blog-cta__body">Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &amp;mdash; no credit card, no time limit. PRO-indemnified the moment it plays.</div>
+  <a href="https://app.entuned.co/start" class="blog-cta__link">Start Free &rarr;</a>
+</aside>
+
+  <!-- Related posts -->
+  <section class="blog-related" aria-label="Related posts">
+  <h2 class="blog-related__title">Keep reading</h2>
+  <div class="blog-related__grid">
+    <a href="../blog/retail-conversion-rate-levers.html" class="blog-related__card">
+      <img src="../img/blog/the-second-sale-you-already-made.jpg" alt="Retail Conversion Rate: The Five Levers" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">Retail Conversion Rate: The Five Levers</span>
+      <span class="blog-related__dek">Five levers move retail conversion. Why one is consistently undershot, what the Saturday floor walk reveals, and a two-week test for the binding constraint.</span>
+    </a>
+    <a href="../blog/how-to-increase-aov-retail.html" class="blog-related__card">
+      <img src="../img/blog/luxury-priming.jpg" alt="How to Increase Average Order Value in Retail" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">How to Increase Average Order Value in Retail</span>
+      <span class="blog-related__dek">Five levers move retail AOV. Why operators underweight the cheapest one, and what 33 years of wine-shop research says about price acceptance.</span>
+    </a>
+    <a href="../blog/how-to-increase-dwell-time.html" class="blog-related__card">
+      <img src="../img/blog/longer-visits.jpg" alt="How to Increase Dwell Time in Retail Stores" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">How to Increase Dwell Time in Retail Stores</span>
+      <span class="blog-related__dek">Five levers that actually move dwell, why most operators undershoot the easiest one, and a two-week test to run on your own floor.</span>
+    </a>
+    <a href="../blog/longer-visits.html" class="blog-related__card">
+      <img src="../img/blog/longer-visits.jpg" alt="Longer Visits Don&#39;t Mean Bigger Receipts" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">Longer Visits Don&#39;t Mean Bigger Receipts</span>
+      <span class="blog-related__dek">Your dwell time numbers look great. Your average ticket hasn&#39;t moved. That gap costs more than most operators realize.</span>
+    </a>
+    <a href="../blog/the-8-12-youre-leaving-on-the-table.html" class="blog-related__card">
+      <img src="../img/blog/the-8-12-youre-leaving-on-the-table.jpg" alt="The 8-12% You&#39;re Leaving on the Table" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">The 8-12% You&#39;re Leaving on the Table</span>
+      <span class="blog-related__dek">Music congruence increases willingness to pay by 8 to 12 percent. No extra traffic required. No promotions. Just the right music.</span>
+    </a>
+  </div>
+</section>
+
+</article>
+
+<!-- Blog-specific JS (reading progress + anchor copy) -->
+<script>
+  // Reading progress bar
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    document.getElementById('reading-progress').style.width = pct + '%';
+  });
+
+  // Anchor link copy-to-clipboard
+  document.querySelectorAll('.anchor-link').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      navigator.clipboard.writeText(window.location.origin + window.location.pathname + a.getAttribute('href'));
+      a.textContent = '\u2713'; setTimeout(() => a.textContent = '#', 1500);
+    });
+  });
+</script>
+  </main>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Engineered retail audio. PRO-indemnified.</p>
+      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="../how-it-works.html">How It Works</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="../enterprise.html">Enterprise</a></li>
+        <li><a href="../why-entuned.html">Why Entuned</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For Your Industry</h4>
+      <ul>
+        <li><a href="../for-apparel.html">Apparel</a></li>
+        <li><a href="../for-beauty-supply.html">Beauty Supply</a></li>
+        <li><a href="../for-cosmetics.html">Cosmetics &amp; Beauty</a></li>
+        <li><a href="../for-furniture-mattress.html">Furniture &amp; Mattress</a></li>
+        <li><a href="../for-home-goods.html">Home Goods</a></li>
+        <li><a href="../for-jewelry.html">Jewelry</a></li>
+        <li><a href="../for-specialty-retail.html">Specialty Retail</a></li>
+        <li><a href="../for-sporting-goods.html">Sporting Goods</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
+      <ul>
+        <li><a href="../for-retail-leaders.html">Retail Leaders</a></li>
+        <li><a href="../impact.html">Impact Calculator</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Research</h4>
+      <ul>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../results.html">Results</a></li>
+        <li><a href="../science.html">The Science</a></li>
+        <li><a href="../will-it-retail.html">Will It Retail?</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="../how-music-affects-retail.html">How Music Affects Retail</a></li>
+        <li><a href="../how-to-increase-aov-retail.html">Increase Average Order Value</a></li>
+        <li><a href="../how-to-increase-dwell-time-retail.html">Increase Dwell Time</a></li>
+        <li><a href="../how-to-increase-impulse-purchases-retail.html">Drive Impulse Purchases</a></li>
+        <li><a href="../how-to-improve-retail-conversion-rate.html">Improve Conversion Rate</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../partners.html">Partners</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="../licensing.html">Licensing &amp; PRO Coverage</a></li>
+        <li><a href="../data.html">Data Practices</a></li>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="../pricing/terms.html">Subscription Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG', {
+      linker: {
+        domains: ['entuned.co', 'music.entuned.co', 'app.entuned.co']
+      }
+    });
+  </script>
+  <script defer src="../js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>

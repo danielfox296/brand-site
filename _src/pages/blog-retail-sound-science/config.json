@@ -1,0 +1,32 @@
+{
+  "title": "Retail Sound Science: How Music Drives Shopper Behavior | Entuned",
+  "meta_description": "How does music influence consumer behavior? The research on retail dwell time, tempo, volume, familiarity, and musical fit — and what it means for your store.",
+  "output": "blog/retail-sound-science.html",
+  "date_published": "2026-06-04",
+  "faq": [
+    {
+      "q": "How does music influence consumer behavior in a store?",
+      "a": "Through the nervous system, not taste. Tempo sets the pace customers move at, familiarity bends how long the trip feels, musical fit signals what kind of place the store is and shifts willingness to pay, and volume changes how quickly people leave. Shoppers in these studies routinely report they didn't notice the music; their behavior changed anyway. The effect is documented across decades of peer-reviewed field studies in supermarkets, wine shops, restaurants, and apparel floors."
+    },
+    {
+      "q": "Does slower music really make people shop longer?",
+      "a": "In Milliman's 1982 supermarket study it did. Holding everything else constant and changing only the tempo, slow music increased gross sales by up to 38 percent versus fast music (dwell moved alongside, but the 38 percent is the sales figure). The mechanism is entrainment — people unconsciously match their movement to the beat. The effect is real but format-specific, and later work (Knoferle 2012) showed tempo interacts with musical mode, so it works as part of a configured whole rather than a single dial."
+    },
+    {
+      "q": "What BPM should a retail store play?",
+      "a": "There is no universal number — the right tempo depends on your format and your outcome. To slow the floor and extend dwell, the research points to slower tempos; to lift energy and pace, faster ones. The mistake is treating tempo as a lone slider. Tempo interacts with key, volume, and familiarity, so the target is a configured range tuned to a specific outcome, then verified against your POS data, not a single BPM copied from another store."
+    },
+    {
+      "q": "Why does familiar music make customers leave sooner?",
+      "a": "Yalch and Spangenberg (2000) found familiar songs act as time markers — you recognize a track, register that time has passed, and your internal clock advances, so the trip feels longer and you leave sooner. Unfamiliar music gives the brain no markers, so the visit feels shorter than it was and shoppers stay longer. For a store trying to extend dwell, defaulting to a familiar-hits station works against the goal."
+    },
+    {
+      "q": "Can music make customers spend more per visit?",
+      "a": "Yes, through musical fit. Areni and Kim (1993) found classical music in a wine cellar shifted shoppers toward more expensive bottles — they bought pricier items, not more of them. North and Hargreaves showed French music sold French wine and German music sold German wine, with shoppers unaware of the influence. Fit signals the context in which spending more feels appropriate. It is the lever that moves willingness to pay, and it is independent of volume."
+    },
+    {
+      "q": "Does this work for a single store, or only big chains?",
+      "a": "Every documented effect is per-customer, which means it scales the same way in one store as in fifty. None of it requires capital — the audio environment is changed in software, not concrete. A single-location owner can run a two-week test against existing POS data and read the result the same way a regional chain would. Entuned Free is the lowest-friction way to start: no credit card, no time limit."
+    }
+  ]
+}

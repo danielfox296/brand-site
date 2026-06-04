@@ -1,0 +1,136 @@
+title: "Store Music Licensing: The Operator's Guide to Playing Music Legally"
+seo_title: "Music Licensing for Small Business: The Complete Operator's Guide"
+slug: "store-music-licensing"
+eyebrow: "MARKET INTEL"
+dek: "Why your personal Spotify account isn't legal in a store, what the four PROs actually charge, the narrow radio exemption, and the simplest path to a compliant floor."
+date: "2026-06-04"
+last_updated: "2026-06-04"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/store-music-licensing.jpg"
+  alt: "A black perforated speaker grille on a dark background"
+  caption: "Photo: Unsplash"
+meta_description: "Music licensing for small business, explained. Why personal Spotify isn't legal in a store, what ASCAP and BMI fees cost, and the simplest compliant path."
+og_image: "/img/blog/store-music-licensing.jpg"
+tags: [licensing, ascap, bmi, sesac, compliance, retail-music, hub]
+sections:
+  - type: key_takeaways
+    items:
+      - "Playing music in a business is a public performance under U.S. copyright law. Your personal Spotify, Apple Music, or Pandora account explicitly prohibits commercial use in its terms — it is not legal in a store."
+      - "There are four U.S. performing rights organizations: ASCAP, BMI, SESAC, and GMR. Full compliance with copyrighted music means a blanket license from each."
+      - "Licensing all the PROs directly runs roughly $1,300 to $1,500+ per year (publicly reported composite), before the cost of the music itself. The penalty for ignoring it is statutory damages of $750 to $30,000 per work — up to $150,000 per work for willful infringement."
+      - "There are exactly three compliant paths: license through the PROs, pay a service that bundles the licenses, or play music that no PRO represents. The third removes the obligation entirely."
+
+  - type: prose
+    body: |
+      Most small business owners learn about music licensing the same way: a letter in the mail from BMI or ASCAP quoting a fee that seems wildly out of proportion to the act of playing music in a shop. The letter is not a scam. Playing music in a commercial space is a regulated activity, and the letter is the system catching up to you.
+
+      This is the operator's guide to that system: what the law actually says, why the obvious shortcuts aren't legal, what compliance costs, and the three honest paths through it.
+
+  - type: subhead
+    level: 2
+    text: "Is it legal to play Spotify in a business?"
+    anchor: "spotify"
+
+  - type: prose
+    body: |
+      No — not your personal account. This is the single most common compliance mistake in small retail, and it's an easy one to make, because the app works exactly the same whether you're at home or behind the register.
+
+      Spotify's terms of service restrict the consumer product to personal, non-commercial use. The same is true of Apple Music, Amazon Music, and personal Pandora. Playing any of them over your store speakers is a double violation: you breach the streaming service's terms, and you commit copyright infringement by performing the underlying songs publicly without a license. The streaming subscription pays the service. It does not pay the songwriters and publishers for a public performance, which is a separate right.
+
+      Spotify's commercial product, Soundtrack Your Brand, exists precisely because the consumer app can't be used legally in a business.
+
+  - type: subhead
+    level: 2
+    text: "Why a public performance needs a license"
+    anchor: "public-performance"
+
+  - type: prose
+    body: |
+      Under U.S. copyright law, playing a recorded song where the public can hear it — a footwear shop, a home-goods store, a jewelry counter, an apparel boutique — is a "public performance." That right belongs to the songwriters and publishers, separate from whoever sold you the recording or the streaming subscription. Performing rights organizations exist to license that right on their behalf and collect the fee.
+
+      It applies whether you stream, play CDs, or use a digital library. The system is legitimate: songwriters deserve to be paid when their work is performed commercially. The friction is that it lands on a 1,500-square-foot shop with the same machinery built for radio stations and concert halls.
+
+  - type: subhead
+    level: 2
+    text: "The four PROs and what they charge"
+    anchor: "the-four-pros"
+
+  - type: prose
+    body: |
+      There are four performing rights organizations in the United States: ASCAP, BMI, SESAC, and GMR. Each represents a different roster of songwriters and publishers, and a single song can have writers spread across more than one. To be fully compliant playing copyrighted music, you need a blanket license from each.
+
+      ASCAP and BMI are the two largest. ASCAP's small-business minimum is roughly $400 per year (publicly reported); BMI for a small store runs roughly $300 to $600 per year (publicly reported; sources vary). SESAC isn't publicly published — it's negotiated, roughly $600 to $700 per year by public reports. GMR is also negotiated and doesn't disclose its rates, so there's no reliable public figure to quote. Each scales with square footage, speaker count, and how the music is used. Add the four together and licensing all the PROs directly comes to roughly $1,300 to $1,500+ per year (publicly reported composite) — before paying for any actual music. Licenses renew annually, and lapsing exposes you to statutory damages.
+
+  - type: stat_callout
+    number: "$750–$30,000"
+    label: "Statutory damages per infringed work under U.S. copyright law for unlicensed public performance — rising to as much as $150,000 per work for willful infringement"
+    source: "17 U.S.C. § 504(c)"
+    accent: gold
+
+  - type: subhead
+    level: 2
+    text: "The one narrow exemption"
+    anchor: "exemption"
+
+  - type: prose
+    body: |
+      There is a single carve-out worth knowing, and it is far narrower than most operators hope. Under 17 U.S.C. § 110(5)(B), a retail (non-food) store under 2,000 gross square feet can retransmit a licensed radio or TV broadcast — an ordinary radio playing over the speakers — without a PRO license. Below 2,000 square feet there is no speaker-count condition at all. A larger store, at or above 2,000 square feet, can still qualify, but only if the audio runs through no more than six loudspeakers total, with no more than four in any one room. (Food-service and drinking establishments get a higher 3,750-square-foot threshold; the examples here stay retail.)
+
+      Here is the part that kills it as a strategy: the exemption covers only the act of playing a licensed radio or TV broadcast. It does not let you play your own CDs, a personal Spotify or Apple Music account, or any commercial streaming service license-free — those always require licensing or a licensed service, even in a tiny shop. The narrowness is the whole point. The moment you plug in a phone, a streaming box, or your own library, the exemption is gone, which is why most retailers can't actually rely on it.
+
+  - type: aside
+    title: "Quick test: do you owe PRO fees?"
+    body: |
+      If you're playing copyrighted music — anything you'd hear on the radio or a streaming app — over store speakers, the answer is almost certainly yes. The one exception is the narrow § 110(5)(B) exemption, and only if what you're playing is an actual licensed radio or TV broadcast (not your own CDs, a personal Spotify account, or a commercial streaming service). If you're playing music that no PRO represents (original or fully owned tracks), the answer is no, because there's no third-party rights holder to collect on.
+
+  - type: subhead
+    level: 2
+    text: "The three compliant paths"
+    anchor: "three-paths"
+
+  - type: prose
+    body: |
+      Every legal way to play music in a store reduces to one of three options.
+
+      **Path one: license through the PROs directly.** Negotiate blanket licenses with ASCAP, BMI, SESAC, and GMR, renew them annually, and source your own music to play. This is full control and full overhead — roughly $1,300 to $1,500+ per year (publicly reported composite) and four relationships to maintain.
+
+      **Path two: pay a service that bundles the licenses.** Soundtrack Your Brand, Cloud Cover, SiriusXM for Business, and similar services fold PRO licensing into the monthly fee, so you deal with one vendor instead of four PROs. Public pricing runs roughly $17 to $54 per location per month (vendor published pricing, 2026). You stay in the licensed-catalog world; you just stop managing the paperwork.
+
+      **Path three: play music no PRO represents.** PRO licensing exists only because a third-party rights holder owns the song. Remove the third-party rights holder and the obligation disappears. Music that isn't registered with any PRO — original, fully owned tracks — carries no public performance fee, no blanket license, and no annual renewal.
+
+  - type: pullquote
+    text: "Remove the third-party rights holder and the licensing obligation disappears. No registration, no blanket license, no annual renewal, no letters."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "Where Entuned fits"
+    anchor: "where-entuned-fits"
+
+  - type: prose
+    body: |
+      Entuned is the third path. We create original music for retail and own every track outright — no songwriters, no publishers, no PRO affiliation. When you stream it in your store, there is no public performance license to buy, because there is no third-party rights holder to license from. The ASCAP and BMI question simply doesn't apply.
+
+      Entuned Free gives you outcome-tuned in-store audio with no credit card and no time limit, PRO-indemnified the moment it plays. If you've already gotten a letter, the third path lets you answer it honestly: you no longer play music that falls under their jurisdiction.
+
+  - type: prose
+    body: |
+      For the specific questions in this guide, go deeper: the Spotify question is covered in <a href="../blog/can-you-play-spotify-in-your-store.html">is it actually illegal to use Spotify in my store?</a>, the BMI bill in <a href="../blog/bmi-license.html">BMI license: what it costs and how to avoid needing one</a>, and the ASCAP bill in <a href="../blog/ascap-license-cost.html">ASCAP license cost</a>. The full legal picture is in <a href="../blog/music-licensing-for-retail-stores.html">music licensing for retail stores</a>, and the free-and-legal options are laid out in <a href="../blog/free-legal-music-options-retail-stores.html">free and legal music for retail stores</a>.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no credit card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "can-you-play-spotify-in-your-store"
+      - slug: "bmi-license"
+      - slug: "ascap-license-cost"
+      - slug: "music-licensing-for-retail-stores"
+      - slug: "free-legal-music-options-retail-stores"

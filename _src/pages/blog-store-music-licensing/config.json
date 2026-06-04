@@ -1,0 +1,32 @@
+{
+  "title": "Store Music Licensing: The Operator's Guide | Entuned",
+  "meta_description": "Music licensing for small business, explained. Why personal Spotify isn't legal in a store, what ASCAP and BMI fees cost, and the simplest compliant path.",
+  "output": "blog/store-music-licensing.html",
+  "date_published": "2026-06-04",
+  "faq": [
+    {
+      "q": "Is it legal to play Spotify in a business?",
+      "a": "Not on a personal account. Spotify's terms of service restrict the consumer product to personal, non-commercial use, and the same applies to Apple Music, Amazon Music, and personal Pandora. Playing them over store speakers breaches the service's terms and infringes copyright by performing the songs publicly without a license. The subscription pays the streaming service, not the songwriters and publishers for a public performance — that's a separate right. Spotify's commercial product, Soundtrack Your Brand, exists precisely because the consumer app can't be used legally in a business."
+    },
+    {
+      "q": "What is a business music license and who needs one?",
+      "a": "A business music license is permission to publicly perform copyrighted music in a commercial space — a footwear shop, a home-goods store, a jewelry counter, or an apparel boutique. Under U.S. copyright law, playing recorded music where the public can hear it is a public performance, a right that belongs to songwriters and publishers. Any business playing copyrighted music over speakers needs one, unless it fits the narrow broadcast-radio exemption. The license is granted by the performing rights organizations: ASCAP, BMI, SESAC, and GMR."
+    },
+    {
+      "q": "How much are ASCAP and BMI fees for a small store?",
+      "a": "ASCAP's small-business minimum is roughly $400 per year (publicly reported); BMI for a small store runs roughly $300 to $600 per year (publicly reported; sources vary). Both scale with square footage, speaker count, and how the music is used. They are only two of four PROs — SESAC is negotiated, roughly $600 to $700 per year (publicly reported), and GMR is negotiated with no publicly disclosed figure. Licensing all four directly comes to roughly $1,300 to $1,500+ per year (publicly reported composite) before paying for the music itself, and licenses renew annually."
+    },
+    {
+      "q": "What is the penalty for playing music without a license?",
+      "a": "Unlicensed public performance is copyright infringement, exposing the business to statutory damages of $750 to $30,000 per infringed song under 17 U.S.C. § 504(c), and up to $150,000 per song for willful infringement. PROs do monitor commercial venues and send demand letters, which is how most owners first learn they owe fees. The letter is not a scam — it's the system catching up."
+    },
+    {
+      "q": "Is there any way to play music legally without paying PRO fees?",
+      "a": "Two narrow ways. First, under 17 U.S.C. § 110(5)(B), a retail store under 2,000 square feet can retransmit a licensed radio or TV broadcast over its speakers without a PRO license (a store at or above 2,000 square feet can qualify only with no more than six loudspeakers total, four per room). But that exemption covers only an actual licensed radio or TV broadcast — not your own CDs, a personal Spotify or Apple Music account, or any commercial streaming service, all of which still require licensing even in a tiny shop. Second, and more practically, you can play music that no PRO represents: original, fully owned tracks with no third-party rights holder carry no public performance obligation at all. That's how Entuned works, and it removes the ASCAP and BMI question entirely."
+    },
+    {
+      "q": "What are the three compliant paths to store music?",
+      "a": "License through the four PROs directly and source your own music (roughly $1,300 to $1,500+ per year, publicly reported composite, plus four relationships). Pay a service that bundles PRO licensing into the fee, like Soundtrack Your Brand or Cloud Cover ($17 to $54 per location per month, vendor published pricing, 2026). Or play music that no PRO represents — original, fully owned tracks — which removes the licensing obligation entirely. Entuned is the third path: PRO-indemnified original music, no license required, with a free tier that needs no credit card."
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+title: "Retail Sound Science: How Store Music Drives Shopper Behavior"
+seo_title: "Retail Sound Science: How Music Influences Shopper Behavior"
+slug: "retail-sound-science"
+eyebrow: "FLOW FACTORS"
+dek: "Decades of field research — Milliman, Areni and Kim, Yalch and Spangenberg, North and Hargreaves, Knöferle — on how tempo, volume, familiarity, and musical fit move dwell time, willingness to pay, and perceived wait. The complete operator's map, with links to every lever in depth."
+date: "2026-06-04"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/retail-sound-science.jpg"
+  alt: "Interior of a modern retail store with a wooden arched ceiling"
+  caption: "Photo: Unsplash"
+meta_description: "How does music influence consumer behavior? The research on retail dwell time, tempo, volume, familiarity, and musical fit — and what it means for your store."
+og_image: "/img/blog/retail-sound-science.jpg"
+tags: [field-guide, retail-music, customer-behavior, dwell-time, tempo, music-psychology, hub]
+sections:
+  - type: key_takeaways
+    items:
+      - "Store music is a measured behavioral lever, not decoration. Six effects are documented in peer-reviewed research: tempo, volume, familiarity, musical fit, perceived wait, and willingness to pay."
+      - "Milliman's 1982 supermarket field study found slow tempo raised gross sales by up to 38 percent versus fast tempo, with shoppers reporting they noticed no difference. (The effect was on sales; dwell moved alongside it but the 38 percent figure is the sales lift.)"
+      - "Areni and Kim (1993) found classical music in a wine cellar shifted shoppers toward more expensive bottles — fit, not volume, moved the spend."
+      - "Yalch and Spangenberg (2000) found unfamiliar music made shoppers underestimate their time in-store and stay longer; familiar music had the reverse effect."
+      - "Every effect is per-customer, which means it scales the same way in one store as in fifty. None of it requires capital — the audio environment is changed in software."
+
+  - type: prose
+    body: |
+      Your store is playing music right now, and that music is doing something. The question every operator should be able to answer is what.
+
+      Most can't. The audio environment is the one part of the store nobody owns. The lighting plan gets reviewed quarterly. The window display runs on a twelve-month calendar. The fixture layout has a planogram behind it. The music is a subscription somebody set up three years ago and nobody has thought about since.
+
+      That is a missed lever, because the effect of store music on shopper behavior is one of the better-replicated findings in retail research. A handful of controlled field studies over the past few decades — Milliman in supermarkets and restaurants, Areni and Kim in a wine cellar, Yalch and Spangenberg on time perception, North and Hargreaves on musical fit, Knöferle on tempo and mode — point the same direction. When the sound fits the space and the shopper, people stay longer, feel the trip is shorter, and spend more. When it doesn't, they leave sooner and buy less.
+
+      This is the map. Below are the six documented effects, what the research actually says, and where each one is covered in depth.
+
+  - type: subhead
+    level: 2
+    text: "How does music influence consumer behavior?"
+    anchor: "how-music-influences-behavior"
+
+  - type: prose
+    body: |
+      The effect is not about taste. It is about the nervous system. Music sets a pace, fills or empties the perception of time, and signals what kind of place a shopper is standing in — all below the level of conscious attention. Shoppers in these studies routinely report they did not notice the music. Their behavior changed anyway.
+
+      That last point is the one operators miss. You are not trying to get customers to like the music. You are trying to change what they do. The two are only loosely related, and chasing the first one is how stores end up with a soundtrack that pleases the owner and moves nothing on the floor.
+
+  - type: stat_callout
+    number: "Up to 38%"
+    label: "Increase in supermarket gross sales from slow-tempo music versus fast-tempo, in Milliman's single 1982 controlled field study"
+    source: "Milliman, R. E. (1982). Using Background Music to Affect the Behavior of Supermarket Shoppers. Journal of Marketing, 46(3)."
+    accent: gold
+
+  - type: subhead
+    level: 2
+    text: "Lever 1: Tempo sets the pace of the floor"
+    anchor: "tempo"
+
+  - type: prose
+    body: |
+      Tempo is the most direct lever in the research. Ronald Milliman's 1982 supermarket study changed only the tempo of the music — same store, same merchandise, same shoppers — and watched the floor speed up and slow down with it. Under slow tempo, customers moved slower and lingered longer, and gross sales rose by as much as 38 percent against fast tempo. That 38 percent was the sales lift, not a dwell figure. He found a related result in restaurants in 1986: slow music lengthened meals and raised bar tabs.
+
+      The mechanism is entrainment. People unconsciously match their movement to a rhythm. A faster beat moves customers toward the door; a slower one keeps them browsing. The lever is real, but it is not a dial you turn to zero — there is a floor where slow becomes funereal and an energy ceiling above which the store feels frantic. The target depends on your format and the outcome you want.
+
+      Knoferle and colleagues (2012) refined the picture: tempo and mode interact, and a major key can wash out the tempo effect. The takeaway for operators is that "play slow music" is too blunt. Tempo works as part of a configured whole, not as a single slider.
+
+  - type: subhead
+    level: 2
+    text: "Lever 2: Musical fit moves willingness to pay"
+    anchor: "fit"
+
+  - type: prose
+    body: |
+      The most striking study in the field is Areni and Kim (1993). In a wine cellar, they alternated classical music with Top 40. Shoppers exposed to classical didn't buy more items — they bought more expensive ones. The music signaled a context in which spending more felt appropriate. Willingness to pay shifted without anyone deciding it had.
+
+      North and Hargreaves built this out across the 1990s and 2000s: play French music and French wine outsells German; play German music and the reverse happens, with shoppers unaware the music influenced them. This is musical fit — the congruence between the sound and the product, the brand, and the moment. Fit, not volume, is the lever that moves the basket upward.
+
+  - type: pullquote
+    text: "Shoppers exposed to classical music didn't buy more items. They bought more expensive ones. Nobody decided to spend more — the music decided the context."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "Lever 3: Familiarity bends the perception of time"
+    anchor: "familiarity"
+
+  - type: prose
+    body: |
+      Yalch and Spangenberg (2000) found something counterintuitive. Shoppers exposed to unfamiliar music underestimated how long they had been in the store and stayed longer. Shoppers exposed to familiar music overestimated their time and left sooner.
+
+      Familiar songs act as time markers. You recognize a track, you register that time has passed, your internal clock advances. Unfamiliar music gives the brain no markers, so the trip feels shorter than it was. For a store trying to extend dwell, recognizable hits are working against you — the opposite of what most operators assume when they default to a familiar-hits station. We cover this counterintuitive result on its own, because it is the one operators most often get backwards.
+
+  - type: subhead
+    level: 2
+    text: "Lever 4: Volume changes how fast people leave"
+    anchor: "volume"
+
+  - type: prose
+    body: |
+      Volume is the lever operators feel but rarely manage. Too loud and shoppers cut the trip short — the room becomes work to be in. Too quiet and the space reads as empty or uncertain, with nothing to mask the silence between two strangers six feet apart. The research here is less unified than tempo, but the direction is consistent: excessive volume shortens visits, and the right level is set by the format and the time of day, not by a number you pick once and forget.
+
+  - type: subhead
+    level: 2
+    text: "Lever 5: Music fills the perceived wait"
+    anchor: "perceived-wait"
+
+  - type: prose
+    body: |
+      Time spent waiting feels longer than time spent occupied. A checkout queue, a fitting-room line, a service counter — these are where dwell turns from browsing into friction. The right audio fills that perceived wait so a four-minute line feels like two. This is the same time-perception machinery as the familiarity effect, pointed at the part of the visit where impatience does the most damage.
+
+  - type: subhead
+    level: 2
+    text: "Lever 6: Music is a brand signal in the first 10 seconds"
+    anchor: "brand-signal"
+
+  - type: prose
+    body: |
+      Before a shopper reaches the first rack, they have already read the room — lighting, temperature, smell, and sound — and decided what kind of place they're in. The audio is part of that snap judgment whether you manage it or not. A flagship feels intentional because someone controlled every sensory detail; a mall location of the same brand feels thinner because the sound got left to the regional default. The music is telling customers something about your brand in the first ten seconds. The only choice is whether it's saying what you want.
+
+  - type: subhead
+    level: 2
+    text: "The one caveat that ties it together"
+    anchor: "caveat"
+
+  - type: prose
+    body: |
+      Every effect above is real, and every one of them is easy to misread on its own. Longer dwell only matters if it co-moves with conversion or basket size — a customer stuck in a 14-minute fitting-room line is dwelling, not buying. Higher willingness to pay only matters if the fit is right for your actual customer, not the customer you wish you had.
+
+      The discipline is to treat the audio as a configured system tuned to one outcome, then to measure that outcome against your existing POS data. Change one variable, hold the rest, and read the number. That is the difference between sound science and a hunch about what sounds nice.
+
+  - type: aside
+    title: "The researchers worth knowing"
+    body: |
+      Milliman (1982, 1986) — tempo and dwell, in supermarkets and restaurants. Areni and Kim (1993) — classical music and wine spend. Yalch and Spangenberg (2000) — familiarity and time perception. North and Hargreaves (1990s–2000s) — musical fit and product choice. Knoferle et al. (2012) — tempo and mode interaction. Together they form the empirical backbone of retail sound science.
+
+  - type: prose
+    body: |
+      To go a level deeper on each lever: the tempo research is broken down in <a href="../blog/science-of-tempo-retail.html">the science of tempo in retail</a> and made concrete in <a href="../blog/127-bpm-target-dwell-time.html">127 BPM in a Target on a Tuesday</a>. The counterintuitive familiarity result has its own treatment in <a href="../blog/the-familiarity-trap.html">the familiarity trap</a>. The willingness-to-pay mechanism is covered in <a href="../blog/the-wine-aisle.html">the wine aisle</a> and <a href="../blog/luxury-priming-for-non-luxury-brands.html">luxury priming is real</a>. For the practical playbook on dwell, see <a href="../blog/how-to-increase-dwell-time.html">how to increase dwell time in retail stores</a>, and for where sound sits among the other senses, <a href="../blog/sensory-marketing-for-retail.html">sensory marketing for retail</a>.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no credit card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "science-of-tempo-retail"
+      - slug: "the-familiarity-trap"
+      - slug: "how-to-increase-dwell-time"
+      - slug: "the-wine-aisle"
+      - slug: "sensory-marketing-for-retail"

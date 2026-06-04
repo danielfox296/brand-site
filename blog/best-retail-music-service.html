@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- First-touch signup attribution. Stamps a `.entuned.co` cookie on the
+       FIRST page view so the original source (referrer + UTM) survives the
+       entuned.co -> app.entuned.co/start hop. The dashboard's /start reads the
+       same cookie (same name + shape) and forwards it to the server. Runs
+       early + first-touch-wins so it never overwrites the true upstream. -->
+  <script>
+    (function () {
+      try {
+        if (/(?:^|; )entuned_attr=/.test(document.cookie)) return;
+        var p = new URLSearchParams(window.location.search);
+        var payload = {
+          r: document.referrer || undefined,
+          lp: (window.location.pathname + window.location.search) || undefined,
+          us: p.get('utm_source') || undefined,
+          um: p.get('utm_medium') || undefined,
+          uc: p.get('utm_campaign') || undefined,
+          ut: p.get('utm_term') || undefined,
+          un: p.get('utm_content') || undefined,
+          t: new Date().toISOString()
+        };
+        var host = window.location.hostname;
+        var domain = (host === 'entuned.co' || /\.entuned\.co$/.test(host)) ? '; domain=.entuned.co' : '';
+        document.cookie = 'entuned_attr=' + encodeURIComponent(JSON.stringify(payload)) +
+          '; path=/' + domain + '; max-age=' + (30 * 24 * 60 * 60) + '; SameSite=Lax';
+      } catch (e) { /* best-effort */ }
+    })();
+  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/blog/best-retail-music-service.html">
+  <meta name="robots" content="index, follow">
+  <title>The Best Retail Music Service: How to Choose (2026) | Entuned</title>
+  <meta name="description" content="How to choose a music service for your retail store. What to evaluate — licensing, contracts, measurement — and how Mood Media, Soundtrack, and Entuned compare.">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="../rss.xml">
+  <meta property="og:title" content="The Best Retail Music Service: How to Choose (2026) | Entuned">
+  <meta property="og:description" content="How to choose a music service for your retail store. What to evaluate — licensing, contracts, measurement — and how Mood Media, Soundtrack, and Entuned compare.">
+  <meta property="og:url" content="https://entuned.co/blog/best-retail-music-service.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://entuned.co/img/blog/best-retail-music-service.jpg">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-06-04">
+  <meta property="article:author" content="Daniel Fox">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Best Retail Music Service: How to Choose (2026) | Entuned">
+  <meta name="twitter:description" content="How to choose a music service for your retail store. What to evaluate — licensing, contracts, measurement — and how Mood Media, Soundtrack, and Entuned compare.">
+  <meta name="twitter:image" content="https://entuned.co/img/blog/best-retail-music-service.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "The Best Retail Music Service: How to Choose (2026) | Entuned",
+  "author": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "datePublished": "2026-06-04",
+  "dateModified": "2026-06-04",
+  "description": "How to choose a music service for your retail store. What to evaluate \u2014 licensing, contracts, measurement \u2014 and how Mood Media, Soundtrack, and Entuned compare.",
+  "image": "https://entuned.co/img/blog/best-retail-music-service.jpg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://entuned.co/blog/best-retail-music-service.html"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "retail music strategy"
+    },
+    {
+      "@type": "Thing",
+      "name": "in-store customer behavior"
+    },
+    {
+      "@type": "Thing",
+      "name": "engineered retail audio"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the best music service for a retail store?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There's no single best \u2014 it depends on what you're optimizing. Mood Media is the enterprise default for fleets that need legal music in hundreds of locations fast. Soundtrack Your Brand is the modern catalog choice with month-to-month billing. Cloud Cover is the budget option. SiriusXM is the familiar-brand pick. And the newer original-music category (Entuned) is built for stores that want fit and measurable outcomes over the biggest library. For a small owner-operator, fit and no contract usually matter more than catalog size."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I evaluate before signing up for a store music service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Seven things. Licensing coverage \u2014 does it include ASCAP, BMI, SESAC, and GMR. Contract length and the early-termination penalty. True per-location cost, all-in, after hardware and support fees bundle. How well you can fit the sound to your specific customer and outcome. Whether it offers any measurement of the music's effect on sales. How fast setup is. And whether anyone can own the outcome it produces. Most services answer the first three and quietly skip the rest."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a retail music service cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Published self-serve pricing runs roughly $17 to $54 per location per month (2026). Cloud Cover Music is the low end at about $17 to $30, SiriusXM for Business is $26.95, Soundtrack Your Brand is $29 to $54, and Mood Media's self-serve plans are $17 to $40 (all vendor published pricing, 2026) \u2014 though enterprise and managed installs are custom-quoted and contract-based, and the sticker rarely matches the invoice once hardware and support fees bundle in. QSIC is enterprise, quote-only. Entuned offers a free tier with no card, Boost at $99, and Pro at $399 per location per month. The catalog services generally don't sell measurement as part of the subscription."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need the biggest music catalog for my store?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Almost never. A hundred-million-track library sounds like the strongest pitch, but a small store will pick one station that sounds roughly right and let it loop \u2014 so catalog size buys nothing and fit to your customer buys everything. The research shows what moves the floor is fit, not variety: Areni and Kim (1993) found musical fit shifts willingness to pay, and Milliman (1982) found tempo moves dwell. Both depend on the sound matching your customer, not on library size."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is Entuned different from Mood Media or Soundtrack Your Brand?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Three structural differences. There's no licensing to cover \u2014 the music is original and PRO-indemnified, so ASCAP and BMI don't apply. There's no contract, and the free tier needs no card. And the music is engineered at the parameter level against your customer and a chosen outcome, then measured on its effect in the store, rather than chosen from a genre menu and reported on by play count. It's not the right fit for stores where music is a curated taste signal, but it's built for practical retail where music is a lever."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I switch music services if I'm in a contract?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Often, but check the terms first. Multi-year enterprise or managed deals \u2014 like Mood Media's larger installs \u2014 typically carry early-termination penalties, so pull the contract and find the renewal date and exit language before you're inside the auto-renew window. Self-serve and month-to-month services like Mood Media's self-serve tiers, Soundtrack Your Brand, and Cloud Cover Music let you leave anytime. Trying a no-contract option like Entuned Free alongside your current service is a zero-risk way to compare before committing, since it needs no card and has no time limit."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://entuned.co/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "The Best Retail Music Service: How to Choose (2026) | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=ebace452">
+  <link rel="stylesheet" href="../styles/blog.css">
+  
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav aria-label="Main navigation">
+  <div class="container">
+    <a href="/" class="logo"><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="../how-it-works.html">How It Works</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li class="nav-cta-item"><a href="https://app.entuned.co/start" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Start Free</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+  </div>
+</nav>
+
+  <main>
+  
+<!-- Reading progress bar -->
+<div class="blog-progress" aria-hidden="true">
+  <div class="blog-progress__bar" id="reading-progress"></div>
+</div>
+
+<article class="blog-article">
+
+  <!-- Article header -->
+  <header class="blog-article__header">
+    <div class="blog-eyebrow">MARKET INTEL</div>
+    <h1 class="blog-headline">How to Choose a Music Service for Your Store</h1>
+    <p class="blog-dek">Seven things to evaluate before you sign, how the major services stack up on each, and why the right answer for a small store usually isn&#39;t the biggest catalog.</p>
+    <div class="blog-byline">
+      <span class="blog-byline__author">Daniel Fox</span>
+      <span class="blog-byline__role">Founder &amp; CEO</span>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <time class="blog-byline__date" datetime="2026-06-04">2026-06-04</time>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <span class="blog-byline__reading-time">5 min read</span>
+    </div>
+  </header>
+
+  <!-- Hero image -->
+  <figure class="blog-hero fade-up">
+    <img src="../img/blog/best-retail-music-service.jpg" alt="Modern retail store interior with display shelves and products" class="blog-hero__img" loading="lazy">
+    <figcaption class="blog-hero__caption">Photo: Unsplash</figcaption>
+  </figure>
+
+  <!-- Key takeaways -->
+  <div class="blog-takeaways">
+  <div class="blog-takeaways__title">Key takeaways</div>
+  <ul>
+    <li>There are five categories of music service for stores: enterprise catalog (Mood Media), modern catalog (Soundtrack Your Brand), budget catalog (Cloud Cover), consumer-brand business tiers (SiriusXM), and the newer original-music category.</li>
+    <li>Evaluate on seven things: licensing coverage, contract length, true per-location cost, how well it fits your customer, measurement, ease of setup, and whether anyone owns the outcome.</li>
+    <li>Published self-serve pricing runs roughly $17 to $54 per location per month (2026), but no catalog service will tell you whether the music is helping or hurting sales in a given store.</li>
+    <li>For a small owner-operator, the biggest catalog is rarely the right answer. Fit, no contract, and measurable outcomes matter more than 100 million tracks you&#39;ll never curate.</li>
+  </ul>
+</div>
+
+  <!-- Article body (all sections except key_takeaways, cta, related) -->
+  <div class="blog-article__body">
+    <div class="blog-prose">
+  <p>An owner-operator choosing store music usually picks on price and the name they recognize, signs a contract, and never revisits it. That&rsquo;s how stores end up paying for a three-year deal nobody remembers signing, playing a catalog nobody chose, reporting on nothing.</p>
+<p>Choosing well isn&rsquo;t complicated, but it takes seven minutes of asking the right questions before you sign instead of after. Here are the questions, how the major services answer them, and how to tell which category you&rsquo;re actually in the market for.</p>
+</div>
+
+<h2 id="categories" class="blog-subhead blog-subhead--h2">
+  The five categories of store music service
+  <a href="#categories" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p><strong>Enterprise catalog (Mood Media).</strong> The default at scale. Deep catalog, professional curation, working scheduling tools. Self-serve plans run $17 to $40 per location per month with no long-term lock-in (Mood Media published pricing, 2026); the multi-year contracts with early-termination penalties apply to its enterprise and managed installs, not the self-serve tiers.</p>
+<p><strong>Modern catalog (Soundtrack Your Brand).</strong> Formerly Spotify for Business. The largest library on the market, modern interface, month-to-month billing. The common escape hatch for operators leaving Mood.</p>
+<p><strong>Budget catalog (Cloud Cover Music).</strong> The low end — published pricing around $17 to $30 per location per month, licensing included, with no long-term contract (Cloud Cover Music published pricing, 2026). The &ldquo;just make it legal and cheap&rdquo; option.</p>
+<p><strong>Consumer-brand business tiers (SiriusXM for Business).</strong> A familiar consumer brand hardened for commercial use. Channel selection is the only way to steer the sound.</p>
+<p><strong>Original-music services.</strong> The newest category. Instead of licensing a catalog, these create original music for the store. No songwriters means no PRO fees, and the music can be built against your customer rather than chosen from a menu.</p>
+</div>
+
+<h2 id="what-to-evaluate" class="blog-subhead blog-subhead--h2">
+  The seven things to evaluate before you sign
+  <a href="#what-to-evaluate" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p><strong>1. Licensing coverage.</strong> Does the service include PRO licensing (ASCAP, BMI, SESAC, GMR), or are you exposed? Catalog services bundle it. If a service doesn&rsquo;t address licensing at all, that&rsquo;s your liability, not theirs.</p>
+<p><strong>2. Contract length and exit terms.</strong> Month-to-month or multi-year? What&rsquo;s the early-termination penalty? Pull any existing contract and read the renewal language before you&rsquo;re inside the auto-renew window.</p>
+<p><strong>3. True per-location cost.</strong> The sticker price is rarely the invoice. Ask what bundles in: hardware leasing, support fees, signage, scent. Get the all-in number per location per month.</p>
+<p><strong>4. Fit to your customer.</strong> Can you steer the sound toward the specific shopper you serve and the outcome you want, or do you get a genre and a mood and nothing finer? For most stores this is the difference between music that moves the floor and music that just fills the air.</p>
+<p><strong>5. Measurement.</strong> Can the service tell you whether the music is helping or hurting sales in a given store? Most cannot. Reporting stops at schedule adherence and play history.</p>
+<p><strong>6. Ease of setup.</strong> How long from signing to sound on the floor? Minutes, or a contractor visit and a back-office box?</p>
+<p><strong>7. Who owns the outcome.</strong> If the music is a managed lever, someone has to own the number it moves. A service that reports only play counts can&rsquo;t help you here — there&rsquo;s no outcome to own.</p>
+</div>
+
+<div class="blog-stat blog-stat--teal">
+  <div class="blog-stat__number">~$1,300–$1,500</div>
+  <div class="blog-stat__label">Per-year cost of licensing all four PROs directly — which is what buying one licensed catalog service spares you, since the licensing is folded into the monthly fee</div>
+  <div class="blog-stat__source">Publicly reported PRO rate summaries, 2026</div>
+</div>
+
+<figure class="blog-comparison-table">
+  <figcaption class="blog-comparison-table__title">Retail music services at a glance</figcaption>
+  <div class="blog-comparison-table__wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Service</th>
+          <th scope="col">Price per location per month (published pricing, 2026)</th>
+          <th scope="col">Contract</th>
+          <th scope="col">What it reports</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" data-label="Service">Mood Media</th>
+          <td data-label="Price per location per month (published pricing, 2026)">$17 to $40 self-serve (enterprise custom-quoted)</td>
+          <td data-label="Contract">None self-serve; multi-year for managed</td>
+          <td data-label="What it reports">Schedule adherence</td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Service">Soundtrack Your Brand</th>
+          <td data-label="Price per location per month (published pricing, 2026)">$29 to $54</td>
+          <td data-label="Contract">Month to month</td>
+          <td data-label="What it reports">Play history</td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Service">Cloud Cover Music</th>
+          <td data-label="Price per location per month (published pricing, 2026)">$17 to $30</td>
+          <td data-label="Contract">No long-term contract</td>
+          <td data-label="What it reports">Play logs</td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Service">SiriusXM for Business</th>
+          <td data-label="Price per location per month (published pricing, 2026)">$26.95</td>
+          <td data-label="Contract">Varies by tier</td>
+          <td data-label="What it reports">Schedule logs</td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Service">QSIC</th>
+          <td data-label="Price per location per month (published pricing, 2026)">Quote-only (no public price)</td>
+          <td data-label="Contract">Enterprise</td>
+          <td data-label="What it reports">Enterprise reporting</td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Service">Original-music (Entuned)</th>
+          <td data-label="Price per location per month (published pricing, 2026)">Free tier; Boost $99; Pro $399</td>
+          <td data-label="Contract">None</td>
+          <td data-label="What it reports">Outcome reporting (Pro tier)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</figure>
+
+<h2 id="biggest-catalog" class="blog-subhead blog-subhead--h2">
+  Why the biggest catalog is rarely the right answer
+  <a href="#biggest-catalog" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>A hundred million tracks sounds like the strongest pitch on the list. For a small store it&rsquo;s the weakest. You are never going to curate a hundred million tracks. You&rsquo;re going to pick a station that sounds roughly right and let it loop, which means the size of the catalog buys you nothing and the fit to your customer buys you everything.</p>
+<p>The research is clear that what moves the floor isn&rsquo;t variety, it&rsquo;s fit. Areni and Kim (1993) showed musical fit shifts willingness to pay; Milliman (1982) showed tempo moves dwell. Neither effect depends on catalog size. They depend on the sound matching the customer and the outcome — which is a configuration problem, not a library problem.</p>
+</div>
+
+<figure class="blog-pullquote blog-pullquote--gold">
+  <blockquote>A hundred million tracks sounds like the strongest pitch on the list. For a small store it&#39;s the weakest — you&#39;ll pick one station and let it loop.</blockquote>
+</figure>
+
+<h2 id="how-entuned-differs" class="blog-subhead blog-subhead--h2">
+  How Entuned is different
+  <a href="#how-entuned-differs" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Entuned is the original-music category, built for the seven questions above rather than the size of a library.</p>
+<p>On licensing, there&rsquo;s nothing to cover — the music is original and PRO-indemnified, so ASCAP and BMI don&rsquo;t apply. On contracts, there are none; the free tier needs no card. On fit, the music is engineered at the parameter level — tempo, key, lyrical density, energy arc — against your customer and a chosen outcome, not picked from a genre menu. And on measurement, it&rsquo;s the one category in this comparison built with the audio&rsquo;s effect on the store as part of the premise, rather than reporting play counts after the fact.</p>
+<p>It is not the right answer for everyone. If your customers and staff treat the music as a curated taste signal, a catalog you hand-pick is the better fit. For a practical retail floor where music is a lever and not an identity, the original-music category is built for the questions that actually matter.</p>
+</div>
+
+<div class="blog-prose">
+  <p>For the head-to-head numbers, see <a href="../blog/commercial-music-services-compared.html">commercial music services compared</a> and <a href="../blog/mood-media-alternatives.html">Mood Media alternatives in 2026</a>. The cost breakdown is in <a href="../blog/how-much-does-retail-music-cost.html">how much does in-store music actually cost</a>, the budget option in <a href="../blog/cloud-cover-music.html">Cloud Cover Music</a>, and the choosing playbook in <a href="../blog/how-to-choose-music-for-your-retail-store.html">how to choose music for your retail store</a>.</p>
+</div>
+  </div>
+
+  <!-- CTA -->
+  <aside class="blog-cta blog-cta--start-free">
+  <div class="blog-cta__headline">Hear it on your floor.</div>
+  <div class="blog-cta__body">Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &amp;mdash; no credit card, no time limit. PRO-indemnified the moment it plays.</div>
+  <a href="https://app.entuned.co/start" class="blog-cta__link">Start Free &rarr;</a>
+</aside>
+
+  <!-- Related posts -->
+  <section class="blog-related" aria-label="Related posts">
+  <h2 class="blog-related__title">Keep reading</h2>
+  <div class="blog-related__grid">
+    <a href="../blog/commercial-music-services-compared.html" class="blog-related__card">
+      <img src="../img/blog/commercial-music-services-compared.jpg" alt="Mood Media Alternatives in 2026: Services Compared" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">Mood Media Alternatives in 2026: Services Compared</span>
+      <span class="blog-related__dek">A retail operator&#39;s comparison of Mood Media, Soundtrack Your Brand, Cloud Cover, SiriusXM, and the newer AI-original category. Pricing, contracts, and what each one can and cannot tell you about your stores.</span>
+    </a>
+    <a href="../blog/mood-media-alternatives.html" class="blog-related__card">
+      <img src="../img/blog/mood-media-alternatives.jpg" alt="Better Than Mood Media: 2026 Alternatives Compared" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">Better Than Mood Media: 2026 Alternatives Compared</span>
+      <span class="blog-related__dek">Done with long contracts, dated catalogs, and no read on whether the audio does anything? Here is what the market actually offers, and how to switch.</span>
+    </a>
+    <a href="../blog/how-much-does-retail-music-cost.html" class="blog-related__card">
+      <img src="../img/blog/how-much-does-retail-music-cost.jpg" alt="How Much Does In-Store Music Actually Cost?" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">How Much Does In-Store Music Actually Cost?</span>
+      <span class="blog-related__dek">The subscription fee is the number people know. The total bill is bigger, and it sits on nobody&#39;s desk.</span>
+    </a>
+    <a href="../blog/cloud-cover-music.html" class="blog-related__card">
+      <img src="../img/blog/how-much-does-retail-music-cost.jpg" alt="Cloud Cover Music: What It Costs and Why We Think There&#39;s a Better Way" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">Cloud Cover Music: What It Costs and Why We Think There&#39;s a Better Way</span>
+      <span class="blog-related__dek">Cloud Cover starts at $16.95/month per location — $203/year minimum. Entuned generates original music it owns outright, which is why the free tier is unlimited and indefinite.</span>
+    </a>
+    <a href="../blog/how-to-choose-music-for-your-retail-store.html" class="blog-related__card">
+      <img src="../img/blog/how-to-choose-music-for-your-retail-store.jpg" alt="How to Choose Music for Your Retail Store" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">How to Choose Music for Your Retail Store</span>
+      <span class="blog-related__dek">Most retail operators inherit their store music by accident. Choosing well starts with knowing your customer, not knowing your genres.</span>
+    </a>
+  </div>
+</section>
+
+</article>
+
+<!-- Blog-specific JS (reading progress + anchor copy) -->
+<script>
+  // Reading progress bar
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    document.getElementById('reading-progress').style.width = pct + '%';
+  });
+
+  // Anchor link copy-to-clipboard
+  document.querySelectorAll('.anchor-link').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      navigator.clipboard.writeText(window.location.origin + window.location.pathname + a.getAttribute('href'));
+      a.textContent = '\u2713'; setTimeout(() => a.textContent = '#', 1500);
+    });
+  });
+</script>
+  </main>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Engineered retail audio. PRO-indemnified.</p>
+      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="../how-it-works.html">How It Works</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="../enterprise.html">Enterprise</a></li>
+        <li><a href="../why-entuned.html">Why Entuned</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For Your Industry</h4>
+      <ul>
+        <li><a href="../for-apparel.html">Apparel</a></li>
+        <li><a href="../for-beauty-supply.html">Beauty Supply</a></li>
+        <li><a href="../for-cosmetics.html">Cosmetics &amp; Beauty</a></li>
+        <li><a href="../for-furniture-mattress.html">Furniture &amp; Mattress</a></li>
+        <li><a href="../for-home-goods.html">Home Goods</a></li>
+        <li><a href="../for-jewelry.html">Jewelry</a></li>
+        <li><a href="../for-specialty-retail.html">Specialty Retail</a></li>
+        <li><a href="../for-sporting-goods.html">Sporting Goods</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
+      <ul>
+        <li><a href="../for-retail-leaders.html">Retail Leaders</a></li>
+        <li><a href="../impact.html">Impact Calculator</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Research</h4>
+      <ul>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../results.html">Results</a></li>
+        <li><a href="../science.html">The Science</a></li>
+        <li><a href="../will-it-retail.html">Will It Retail?</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="../how-music-affects-retail.html">How Music Affects Retail</a></li>
+        <li><a href="../how-to-increase-aov-retail.html">Increase Average Order Value</a></li>
+        <li><a href="../how-to-increase-dwell-time-retail.html">Increase Dwell Time</a></li>
+        <li><a href="../how-to-increase-impulse-purchases-retail.html">Drive Impulse Purchases</a></li>
+        <li><a href="../how-to-improve-retail-conversion-rate.html">Improve Conversion Rate</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../partners.html">Partners</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="../licensing.html">Licensing &amp; PRO Coverage</a></li>
+        <li><a href="../data.html">Data Practices</a></li>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="../pricing/terms.html">Subscription Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG', {
+      linker: {
+        domains: ['entuned.co', 'music.entuned.co', 'app.entuned.co']
+      }
+    });
+  </script>
+  <script defer src="../js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>

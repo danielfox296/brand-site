@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- First-touch signup attribution. Stamps a `.entuned.co` cookie on the
+       FIRST page view so the original source (referrer + UTM) survives the
+       entuned.co -> app.entuned.co/start hop. The dashboard's /start reads the
+       same cookie (same name + shape) and forwards it to the server. Runs
+       early + first-touch-wins so it never overwrites the true upstream. -->
+  <script>
+    (function () {
+      try {
+        if (/(?:^|; )entuned_attr=/.test(document.cookie)) return;
+        var p = new URLSearchParams(window.location.search);
+        var payload = {
+          r: document.referrer || undefined,
+          lp: (window.location.pathname + window.location.search) || undefined,
+          us: p.get('utm_source') || undefined,
+          um: p.get('utm_medium') || undefined,
+          uc: p.get('utm_campaign') || undefined,
+          ut: p.get('utm_term') || undefined,
+          un: p.get('utm_content') || undefined,
+          t: new Date().toISOString()
+        };
+        var host = window.location.hostname;
+        var domain = (host === 'entuned.co' || /\.entuned\.co$/.test(host)) ? '; domain=.entuned.co' : '';
+        document.cookie = 'entuned_attr=' + encodeURIComponent(JSON.stringify(payload)) +
+          '; path=/' + domain + '; max-age=' + (30 * 24 * 60 * 60) + '; SameSite=Lax';
+      } catch (e) { /* best-effort */ }
+    })();
+  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/blog/store-music-licensing.html">
+  <meta name="robots" content="index, follow">
+  <title>Music Licensing for Small Business: The Complete Operator's Guide | Entuned</title>
+  <meta name="description" content="Music licensing for small business, explained. Why personal Spotify isn&#x27;t legal in a store, what ASCAP and BMI fees cost, and the simplest compliant path.">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="../rss.xml">
+  <meta property="og:title" content="Music Licensing for Small Business: The Complete Operator&#x27;s Guide | Entuned">
+  <meta property="og:description" content="Music licensing for small business, explained. Why personal Spotify isn&#x27;t legal in a store, what ASCAP and BMI fees cost, and the simplest compliant path.">
+  <meta property="og:url" content="https://entuned.co/blog/store-music-licensing.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://entuned.co/img/blog/store-music-licensing.jpg">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-06-04">
+  <meta property="article:author" content="Daniel Fox">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Music Licensing for Small Business: The Complete Operator&#x27;s Guide | Entuned">
+  <meta name="twitter:description" content="Music licensing for small business, explained. Why personal Spotify isn&#x27;t legal in a store, what ASCAP and BMI fees cost, and the simplest compliant path.">
+  <meta name="twitter:image" content="https://entuned.co/img/blog/store-music-licensing.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Music Licensing for Small Business: The Complete Operator's Guide | Entuned",
+  "author": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "datePublished": "2026-06-04",
+  "dateModified": "2026-06-04",
+  "description": "Music licensing for small business, explained. Why personal Spotify isn't legal in a store, what ASCAP and BMI fees cost, and the simplest compliant path.",
+  "image": "https://entuned.co/img/blog/store-music-licensing.jpg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://entuned.co/blog/store-music-licensing.html"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "retail music strategy"
+    },
+    {
+      "@type": "Thing",
+      "name": "in-store customer behavior"
+    },
+    {
+      "@type": "Thing",
+      "name": "engineered retail audio"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is it legal to play Spotify in a business?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not on a personal account. Spotify's terms of service restrict the consumer product to personal, non-commercial use, and the same applies to Apple Music, Amazon Music, and personal Pandora. Playing them over store speakers breaches the service's terms and infringes copyright by performing the songs publicly without a license. The subscription pays the streaming service, not the songwriters and publishers for a public performance \u2014 that's a separate right. Spotify's commercial product, Soundtrack Your Brand, exists precisely because the consumer app can't be used legally in a business."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a business music license and who needs one?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A business music license is permission to publicly perform copyrighted music in a commercial space \u2014 a footwear shop, a home-goods store, a jewelry counter, or an apparel boutique. Under U.S. copyright law, playing recorded music where the public can hear it is a public performance, a right that belongs to songwriters and publishers. Any business playing copyrighted music over speakers needs one, unless it fits the narrow broadcast-radio exemption. The license is granted by the performing rights organizations: ASCAP, BMI, SESAC, and GMR."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much are ASCAP and BMI fees for a small store?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ASCAP's small-business minimum is roughly $400 per year (publicly reported); BMI for a small store runs roughly $300 to $600 per year (publicly reported; sources vary). Both scale with square footage, speaker count, and how the music is used. They are only two of four PROs \u2014 SESAC is negotiated, roughly $600 to $700 per year (publicly reported), and GMR is negotiated with no publicly disclosed figure. Licensing all four directly comes to roughly $1,300 to $1,500+ per year (publicly reported composite) before paying for the music itself, and licenses renew annually."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the penalty for playing music without a license?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unlicensed public performance is copyright infringement, exposing the business to statutory damages of $750 to $30,000 per infringed song under 17 U.S.C. \u00a7 504(c), and up to $150,000 per song for willful infringement. PROs do monitor commercial venues and send demand letters, which is how most owners first learn they owe fees. The letter is not a scam \u2014 it's the system catching up."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there any way to play music legally without paying PRO fees?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Two narrow ways. First, under 17 U.S.C. \u00a7 110(5)(B), a retail store under 2,000 square feet can retransmit a licensed radio or TV broadcast over its speakers without a PRO license (a store at or above 2,000 square feet can qualify only with no more than six loudspeakers total, four per room). But that exemption covers only an actual licensed radio or TV broadcast \u2014 not your own CDs, a personal Spotify or Apple Music account, or any commercial streaming service, all of which still require licensing even in a tiny shop. Second, and more practically, you can play music that no PRO represents: original, fully owned tracks with no third-party rights holder carry no public performance obligation at all. That's how Entuned works, and it removes the ASCAP and BMI question entirely."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the three compliant paths to store music?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "License through the four PROs directly and source your own music (roughly $1,300 to $1,500+ per year, publicly reported composite, plus four relationships). Pay a service that bundles PRO licensing into the fee, like Soundtrack Your Brand or Cloud Cover ($17 to $54 per location per month, vendor published pricing, 2026). Or play music that no PRO represents \u2014 original, fully owned tracks \u2014 which removes the licensing obligation entirely. Entuned is the third path: PRO-indemnified original music, no license required, with a free tier that needs no credit card."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://entuned.co/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Music Licensing for Small Business: The Complete Operator's Guide | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=ebace452">
+  <link rel="stylesheet" href="../styles/blog.css">
+  
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav aria-label="Main navigation">
+  <div class="container">
+    <a href="/" class="logo"><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="../how-it-works.html">How It Works</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li class="nav-cta-item"><a href="https://app.entuned.co/start" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Start Free</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+  </div>
+</nav>
+
+  <main>
+  
+<!-- Reading progress bar -->
+<div class="blog-progress" aria-hidden="true">
+  <div class="blog-progress__bar" id="reading-progress"></div>
+</div>
+
+<article class="blog-article">
+
+  <!-- Article header -->
+  <header class="blog-article__header">
+    <div class="blog-eyebrow">MARKET INTEL</div>
+    <h1 class="blog-headline">Store Music Licensing: The Operator&#39;s Guide to Playing Music Legally</h1>
+    <p class="blog-dek">Why your personal Spotify account isn&#39;t legal in a store, what the four PROs actually charge, the narrow radio exemption, and the simplest path to a compliant floor.</p>
+    <div class="blog-byline">
+      <span class="blog-byline__author">Daniel Fox</span>
+      <span class="blog-byline__role">Founder &amp; CEO</span>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <time class="blog-byline__date" datetime="2026-06-04">2026-06-04</time>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <span class="blog-byline__reading-time">7 min read</span>
+    </div>
+  </header>
+
+  <!-- Hero image -->
+  <figure class="blog-hero fade-up">
+    <img src="../img/blog/store-music-licensing.jpg" alt="A black perforated speaker grille on a dark background" class="blog-hero__img" loading="lazy">
+    <figcaption class="blog-hero__caption">Photo: Unsplash</figcaption>
+  </figure>
+
+  <!-- Key takeaways -->
+  <div class="blog-takeaways">
+  <div class="blog-takeaways__title">Key takeaways</div>
+  <ul>
+    <li>Playing music in a business is a public performance under U.S. copyright law. Your personal Spotify, Apple Music, or Pandora account explicitly prohibits commercial use in its terms — it is not legal in a store.</li>
+    <li>There are four U.S. performing rights organizations: ASCAP, BMI, SESAC, and GMR. Full compliance with copyrighted music means a blanket license from each.</li>
+    <li>Licensing all the PROs directly runs roughly $1,300 to $1,500+ per year (publicly reported composite), before the cost of the music itself. The penalty for ignoring it is statutory damages of $750 to $30,000 per work — up to $150,000 per work for willful infringement.</li>
+    <li>There are exactly three compliant paths: license through the PROs, pay a service that bundles the licenses, or play music that no PRO represents. The third removes the obligation entirely.</li>
+  </ul>
+</div>
+
+  <!-- Article body (all sections except key_takeaways, cta, related) -->
+  <div class="blog-article__body">
+    <div class="blog-prose">
+  <p>Most small business owners learn about music licensing the same way: a letter in the mail from BMI or ASCAP quoting a fee that seems wildly out of proportion to the act of playing music in a shop. The letter is not a scam. Playing music in a commercial space is a regulated activity, and the letter is the system catching up to you.</p>
+<p>This is the operator&rsquo;s guide to that system: what the law actually says, why the obvious shortcuts aren&rsquo;t legal, what compliance costs, and the three honest paths through it.</p>
+</div>
+
+<h2 id="spotify" class="blog-subhead blog-subhead--h2">
+  Is it legal to play Spotify in a business?
+  <a href="#spotify" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>No — not your personal account. This is the single most common compliance mistake in small retail, and it&rsquo;s an easy one to make, because the app works exactly the same whether you&rsquo;re at home or behind the register.</p>
+<p>Spotify&rsquo;s terms of service restrict the consumer product to personal, non-commercial use. The same is true of Apple Music, Amazon Music, and personal Pandora. Playing any of them over your store speakers is a double violation: you breach the streaming service&rsquo;s terms, and you commit copyright infringement by performing the underlying songs publicly without a license. The streaming subscription pays the service. It does not pay the songwriters and publishers for a public performance, which is a separate right.</p>
+<p>Spotify&rsquo;s commercial product, Soundtrack Your Brand, exists precisely because the consumer app can&rsquo;t be used legally in a business.</p>
+</div>
+
+<h2 id="public-performance" class="blog-subhead blog-subhead--h2">
+  Why a public performance needs a license
+  <a href="#public-performance" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Under U.S. copyright law, playing a recorded song where the public can hear it — a footwear shop, a home-goods store, a jewelry counter, an apparel boutique — is a &ldquo;public performance.&rdquo; That right belongs to the songwriters and publishers, separate from whoever sold you the recording or the streaming subscription. Performing rights organizations exist to license that right on their behalf and collect the fee.</p>
+<p>It applies whether you stream, play CDs, or use a digital library. The system is legitimate: songwriters deserve to be paid when their work is performed commercially. The friction is that it lands on a 1,500-square-foot shop with the same machinery built for radio stations and concert halls.</p>
+</div>
+
+<h2 id="the-four-pros" class="blog-subhead blog-subhead--h2">
+  The four PROs and what they charge
+  <a href="#the-four-pros" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>There are four performing rights organizations in the United States: ASCAP, BMI, SESAC, and GMR. Each represents a different roster of songwriters and publishers, and a single song can have writers spread across more than one. To be fully compliant playing copyrighted music, you need a blanket license from each.</p>
+<p>ASCAP and BMI are the two largest. ASCAP&rsquo;s small-business minimum is roughly $400 per year (publicly reported); BMI for a small store runs roughly $300 to $600 per year (publicly reported; sources vary). SESAC isn&rsquo;t publicly published — it&rsquo;s negotiated, roughly $600 to $700 per year by public reports. GMR is also negotiated and doesn&rsquo;t disclose its rates, so there&rsquo;s no reliable public figure to quote. Each scales with square footage, speaker count, and how the music is used. Add the four together and licensing all the PROs directly comes to roughly $1,300 to $1,500+ per year (publicly reported composite) — before paying for any actual music. Licenses renew annually, and lapsing exposes you to statutory damages.</p>
+</div>
+
+<div class="blog-stat blog-stat--gold">
+  <div class="blog-stat__number">$750–$30,000</div>
+  <div class="blog-stat__label">Statutory damages per infringed work under U.S. copyright law for unlicensed public performance — rising to as much as $150,000 per work for willful infringement</div>
+  <div class="blog-stat__source">17 U.S.C. § 504(c)</div>
+</div>
+
+<h2 id="exemption" class="blog-subhead blog-subhead--h2">
+  The one narrow exemption
+  <a href="#exemption" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>There is a single carve-out worth knowing, and it is far narrower than most operators hope. Under 17 U.S.C. § 110(5)(B), a retail (non-food) store under 2,000 gross square feet can retransmit a licensed radio or TV broadcast — an ordinary radio playing over the speakers — without a PRO license. Below 2,000 square feet there is no speaker-count condition at all. A larger store, at or above 2,000 square feet, can still qualify, but only if the audio runs through no more than six loudspeakers total, with no more than four in any one room. (Food-service and drinking establishments get a higher 3,750-square-foot threshold; the examples here stay retail.)</p>
+<p>Here is the part that kills it as a strategy: the exemption covers only the act of playing a licensed radio or TV broadcast. It does not let you play your own CDs, a personal Spotify or Apple Music account, or any commercial streaming service license-free — those always require licensing or a licensed service, even in a tiny shop. The narrowness is the whole point. The moment you plug in a phone, a streaming box, or your own library, the exemption is gone, which is why most retailers can&rsquo;t actually rely on it.</p>
+</div>
+
+<aside class="blog-aside">
+  <div class="blog-aside__title">Quick test: do you owe PRO fees?</div>
+  <div class="blog-aside__body"><p>If you&rsquo;re playing copyrighted music — anything you&rsquo;d hear on the radio or a streaming app — over store speakers, the answer is almost certainly yes. The one exception is the narrow § 110(5)(B) exemption, and only if what you&rsquo;re playing is an actual licensed radio or TV broadcast (not your own CDs, a personal Spotify account, or a commercial streaming service). If you&rsquo;re playing music that no PRO represents (original or fully owned tracks), the answer is no, because there&rsquo;s no third-party rights holder to collect on.</p></div>
+</aside>
+
+<h2 id="three-paths" class="blog-subhead blog-subhead--h2">
+  The three compliant paths
+  <a href="#three-paths" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Every legal way to play music in a store reduces to one of three options.</p>
+<p><strong>Path one: license through the PROs directly.</strong> Negotiate blanket licenses with ASCAP, BMI, SESAC, and GMR, renew them annually, and source your own music to play. This is full control and full overhead — roughly $1,300 to $1,500+ per year (publicly reported composite) and four relationships to maintain.</p>
+<p><strong>Path two: pay a service that bundles the licenses.</strong> Soundtrack Your Brand, Cloud Cover, SiriusXM for Business, and similar services fold PRO licensing into the monthly fee, so you deal with one vendor instead of four PROs. Public pricing runs roughly $17 to $54 per location per month (vendor published pricing, 2026). You stay in the licensed-catalog world; you just stop managing the paperwork.</p>
+<p><strong>Path three: play music no PRO represents.</strong> PRO licensing exists only because a third-party rights holder owns the song. Remove the third-party rights holder and the obligation disappears. Music that isn&rsquo;t registered with any PRO — original, fully owned tracks — carries no public performance fee, no blanket license, and no annual renewal.</p>
+</div>
+
+<figure class="blog-pullquote blog-pullquote--teal">
+  <blockquote>Remove the third-party rights holder and the licensing obligation disappears. No registration, no blanket license, no annual renewal, no letters.</blockquote>
+</figure>
+
+<h2 id="where-entuned-fits" class="blog-subhead blog-subhead--h2">
+  Where Entuned fits
+  <a href="#where-entuned-fits" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Entuned is the third path. We create original music for retail and own every track outright — no songwriters, no publishers, no PRO affiliation. When you stream it in your store, there is no public performance license to buy, because there is no third-party rights holder to license from. The ASCAP and BMI question simply doesn&rsquo;t apply.</p>
+<p>Entuned Free gives you outcome-tuned in-store audio with no credit card and no time limit, PRO-indemnified the moment it plays. If you&rsquo;ve already gotten a letter, the third path lets you answer it honestly: you no longer play music that falls under their jurisdiction.</p>
+</div>
+
+<div class="blog-prose">
+  <p>For the specific questions in this guide, go deeper: the Spotify question is covered in <a href="../blog/can-you-play-spotify-in-your-store.html">is it actually illegal to use Spotify in my store?</a>, the BMI bill in <a href="../blog/bmi-license.html">BMI license: what it costs and how to avoid needing one</a>, and the ASCAP bill in <a href="../blog/ascap-license-cost.html">ASCAP license cost</a>. The full legal picture is in <a href="../blog/music-licensing-for-retail-stores.html">music licensing for retail stores</a>, and the free-and-legal options are laid out in <a href="../blog/free-legal-music-options-retail-stores.html">free and legal music for retail stores</a>.</p>
+</div>
+  </div>
+
+  <!-- CTA -->
+  <aside class="blog-cta blog-cta--start-free">
+  <div class="blog-cta__headline">Hear it on your floor.</div>
+  <div class="blog-cta__body">Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &amp;mdash; no credit card, no time limit. PRO-indemnified the moment it plays.</div>
+  <a href="https://app.entuned.co/start" class="blog-cta__link">Start Free &rarr;</a>
+</aside>
+
+  <!-- Related posts -->
+  <section class="blog-related" aria-label="Related posts">
+  <h2 class="blog-related__title">Keep reading</h2>
+  <div class="blog-related__grid">
+    <a href="../blog/can-you-play-spotify-in-your-store.html" class="blog-related__card">
+      <img src="../img/blog/can-you-play-spotify-in-your-store.jpg" alt="Is It Actually Illegal to Use Spotify in My Store?" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">Is It Actually Illegal to Use Spotify in My Store?</span>
+      <span class="blog-related__dek">A clean answer for retail operators who just want to know if the Spotify account their store manager set up is going to bite them.</span>
+    </a>
+    <a href="../blog/bmi-license.html" class="blog-related__card">
+      <img src="../img/blog/retail-music-licensing-2026.jpg" alt="BMI License: What It Costs, Why You&#39;re Getting That Letter, and How to Avoid Needing One" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">BMI License: What It Costs, Why You&#39;re Getting That Letter, and How to Avoid Needing One</span>
+      <span class="blog-related__dek">Most small business owners discover public performance licensing the same way: a letter in the mail. Here&#39;s what&#39;s actually going on.</span>
+    </a>
+    <a href="../blog/ascap-license-cost.html" class="blog-related__card">
+      <img src="../img/blog/the-hidden-cost-of-licensing.jpg" alt="ASCAP License Cost: What Small Businesses Actually Pay (and How to Avoid It)" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">ASCAP License Cost: What Small Businesses Actually Pay (and How to Avoid It)</span>
+      <span class="blog-related__dek">ASCAP licenses for small businesses run $250 to $600 per year. But ASCAP is only one of four PROs — and the total bill is usually two to eight times that.</span>
+    </a>
+    <a href="../blog/music-licensing-for-retail-stores.html" class="blog-related__card">
+      <img src="../img/blog/retail-music-licensing-2026.jpg" alt="Music Licensing for Retail Stores: Fines, Lawsuits, and What Every Store Owner Should Know" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">Music Licensing for Retail Stores: Fines, Lawsuits, and What Every Store Owner Should Know</span>
+      <span class="blog-related__dek">Part 1 of 3. A personal Spotify account is not a business license. Here is what the law actually says, what the fines look like, and what compliance actually costs.</span>
+    </a>
+    <a href="../blog/free-legal-music-options-retail-stores.html" class="blog-related__card">
+      <img src="../img/blog/how-to-choose-music-for-your-retail-store.jpg" alt="Free and Legal Music for Retail Stores: Every Option for Playing Music Without PRO Fees" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">Free and Legal Music for Retail Stores: Every Option for Playing Music Without PRO Fees</span>
+      <span class="blog-related__dek">Part 3 of 3. A complete guide to every compliant option — from direct PRO licenses to commercial streaming to original music that carries no licensing obligation at all.</span>
+    </a>
+  </div>
+</section>
+
+</article>
+
+<!-- Blog-specific JS (reading progress + anchor copy) -->
+<script>
+  // Reading progress bar
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    document.getElementById('reading-progress').style.width = pct + '%';
+  });
+
+  // Anchor link copy-to-clipboard
+  document.querySelectorAll('.anchor-link').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      navigator.clipboard.writeText(window.location.origin + window.location.pathname + a.getAttribute('href'));
+      a.textContent = '\u2713'; setTimeout(() => a.textContent = '#', 1500);
+    });
+  });
+</script>
+  </main>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Engineered retail audio. PRO-indemnified.</p>
+      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="../how-it-works.html">How It Works</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="../enterprise.html">Enterprise</a></li>
+        <li><a href="../why-entuned.html">Why Entuned</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For Your Industry</h4>
+      <ul>
+        <li><a href="../for-apparel.html">Apparel</a></li>
+        <li><a href="../for-beauty-supply.html">Beauty Supply</a></li>
+        <li><a href="../for-cosmetics.html">Cosmetics &amp; Beauty</a></li>
+        <li><a href="../for-furniture-mattress.html">Furniture &amp; Mattress</a></li>
+        <li><a href="../for-home-goods.html">Home Goods</a></li>
+        <li><a href="../for-jewelry.html">Jewelry</a></li>
+        <li><a href="../for-specialty-retail.html">Specialty Retail</a></li>
+        <li><a href="../for-sporting-goods.html">Sporting Goods</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
+      <ul>
+        <li><a href="../for-retail-leaders.html">Retail Leaders</a></li>
+        <li><a href="../impact.html">Impact Calculator</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Research</h4>
+      <ul>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../results.html">Results</a></li>
+        <li><a href="../science.html">The Science</a></li>
+        <li><a href="../will-it-retail.html">Will It Retail?</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="../how-music-affects-retail.html">How Music Affects Retail</a></li>
+        <li><a href="../how-to-increase-aov-retail.html">Increase Average Order Value</a></li>
+        <li><a href="../how-to-increase-dwell-time-retail.html">Increase Dwell Time</a></li>
+        <li><a href="../how-to-increase-impulse-purchases-retail.html">Drive Impulse Purchases</a></li>
+        <li><a href="../how-to-improve-retail-conversion-rate.html">Improve Conversion Rate</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../partners.html">Partners</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="../licensing.html">Licensing &amp; PRO Coverage</a></li>
+        <li><a href="../data.html">Data Practices</a></li>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="../pricing/terms.html">Subscription Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG', {
+      linker: {
+        domains: ['entuned.co', 'music.entuned.co', 'app.entuned.co']
+      }
+    });
+  </script>
+  <script defer src="../js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>

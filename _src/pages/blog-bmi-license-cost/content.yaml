@@ -1,0 +1,131 @@
+title: "How Much Does a BMI Music License Cost? (And How to Avoid It)"
+seo_title: "BMI Fees: What a BMI Music License Costs in 2026"
+slug: "bmi-license-cost"
+eyebrow: "MARKET INTEL"
+dek: "BMI fees for a small store run roughly $300 to $600 a year (publicly reported). But BMI is one of four PROs, and licensing all of them directly runs roughly $1,300 to $1,500+ a year — before you've paid for any music."
+date: "2026-06-04"
+last_updated: "2026-06-04"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/bmi-license-cost.jpg"
+  alt: "Tax forms with a calculator and pen on a desk"
+  caption: "Photo: Unsplash"
+meta_description: "BMI fees for a small business run roughly $300 to $600 per year (publicly reported) — but BMI is one of four PROs. Licensing all of them directly runs about $1,300 to $1,500+ a year."
+og_image: "/img/blog/bmi-license-cost.jpg"
+tags: [bmi, bmi-fees, music-licensing, compliance, retail-music, ascap, sesac]
+sections:
+  - type: key_takeaways
+    items:
+      - "A BMI blanket license for a small retail store runs roughly $300 to $600 per year (publicly reported; sources vary), scaling with square footage, speaker count, and how the music is used."
+      - "BMI is only one of four PROs. ASCAP, SESAC, and GMR each represent different songwriters and bill separately. Full compliance means a license from each."
+      - "Licensing all four PROs directly runs roughly $1,300 to $1,500+ per year (publicly reported composite) — before the cost of the music itself."
+      - "There is a third option beyond paying up or ignoring the bill: switch to music that no PRO represents, which removes the obligation entirely."
+
+  - type: prose
+    body: |
+      A BMI music license for a small retail store runs roughly $300 to $600 per year (publicly reported; sources vary). The exact figure depends on your business type, square footage, the number of speakers, and how the music is used. Larger venues with higher occupancy pay more.
+
+      But here's the part that catches most operators off guard: BMI is only one of four performing rights organizations you'd need to deal with. ASCAP, SESAC, and GMR each represent different songwriters and publishers, and you need a blanket license from each to be fully compliant. Licensing all four directly runs roughly $1,300 to $1,500+ per year (publicly reported composite).
+
+      That's before you've paid for the music itself.
+
+  - type: subhead
+    level: 2
+    text: "How BMI pricing works"
+    anchor: "how-pricing-works"
+
+  - type: prose
+    body: |
+      BMI doesn't publish a simple flat price. Fees come from rate schedules that vary by business category — a footwear shop is priced differently than a home-goods store, which is priced differently than a jewelry counter or an apparel boutique (food-service venues sit on a separate schedule entirely). Within each category, the fee scales on factors like square footage, the number of speakers or audio devices, and the size of the potential audience.
+
+      For a small retail store, you're generally at the lower end of the range: a few hundred dollars a year. But the number rarely sits alone. BMI represents over 1.4 million songwriters, composers, and publishers and the rights to more than 22 million songs — and a single song often has co-writers registered with different PROs. So the BMI license covers the BMI writers on a track, and you need the others to cover the rest.
+
+      BMI licenses also renew annually. Miss the renewal and you're technically operating unlicensed, which exposes you to statutory damages.
+
+  - type: stat_callout
+    number: "$750–$30,000"
+    label: "Statutory damages per infringed work under U.S. copyright law for unlicensed public performance — rising to as much as $150,000 per work for willful infringement"
+    source: "17 U.S.C. § 504(c)"
+    accent: gold
+
+  - type: subhead
+    level: 2
+    text: "Why BMI is only part of the bill"
+    anchor: "only-part"
+
+  - type: prose
+    body: |
+      This is the single most common misunderstanding about PRO fees. Paying BMI does not make you compliant. It makes you compliant for the songs whose writers BMI represents.
+
+      There are four PROs in the United States — BMI, ASCAP, SESAC, and GMR — and they represent different rosters. ASCAP is the other large one, with a small-business minimum around $400 a year (publicly reported), so a small store paying both BMI and ASCAP is often looking at $700 to $1,000 a year just for the two majors. SESAC is negotiated rather than published — roughly $600 to $700 a year by public reports — and GMR is negotiated with no publicly disclosed rate. To legally play a typical mix of commercial tracks, where any given song might have writers across multiple PROs, you technically need all four.
+
+  - type: comparison_table
+    title: "The four U.S. PROs"
+    columns: ["PRO", "Represents", "Small-store cost (annual, approx.; publicly reported)"]
+    rows:
+      - ["BMI", "1.4M+ writers, 22M+ songs", "$300 to $600 (sources vary)"]
+      - ["ASCAP", "Comparable roster", "~$400 minimum"]
+      - ["SESAC", "Smaller, invitation-only roster", "Negotiated, ~$600 to $700"]
+      - ["GMR", "Smaller, high-profile roster", "Negotiated, not publicly disclosed"]
+
+  - type: subhead
+    level: 2
+    text: "Why this system exists"
+    anchor: "why-it-exists"
+
+  - type: prose
+    body: |
+      BMI's job is to make sure songwriters and publishers get paid when their work is performed publicly — including in commercial spaces. The blanket license lets a business access a large catalog without negotiating rights song by song. The system is legitimate; songwriters deserve to be paid for their work.
+
+      The friction is that the machinery built for radio stations and concert halls lands, unchanged, on a 1,500-square-foot shop. The result is a layer of cost and four separate relationships that feel wildly out of proportion to the simple act of having some music on while customers browse.
+
+  - type: subhead
+    level: 2
+    text: "The way to opt out entirely"
+    anchor: "opt-out"
+
+  - type: prose
+    body: |
+      PRO licensing applies only to copyrighted music where a third-party rights holder exists. If you play music that isn't registered with BMI, ASCAP, SESAC, or GMR, there is nothing for them to collect on, and the licensing requirement doesn't apply.
+
+      This is exactly how Entuned works. We create original music for retail and own every track outright — no third-party songwriters, no publishers, no PRO affiliation. When you stream our music in your store, there's no public performance license required. No blanket fee. No annual renewal. No letters.
+
+      Entuned Free gives you outcome-tuned in-store audio with no credit card and no time limit, PRO-indemnified the moment it plays. The music is engineered for retail — tempo, key, energy arc tuned to your customer and your outcome — not pulled from a catalog.
+
+  - type: pullquote
+    text: "Remove the third-party rights holder and the BMI bill disappears along with the other three. No registration, no renewal, no letter."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "What to do about a BMI bill"
+    anchor: "what-to-do"
+
+  - type: prose
+    body: |
+      If you've received an invoice or letter from BMI, you have three honest options.
+
+      You can negotiate a blanket license with BMI directly, then repeat with ASCAP, SESAC, and GMR — roughly $1,300 to $1,500+ a year total (publicly reported composite), plus a source of music to actually play.
+
+      You can sign up for a commercial streaming service that bundles PRO licensing into the subscription, like Soundtrack Your Brand or Cloud Cover — roughly $17 to $54 a month (vendor published pricing, 2026), with the paperwork handled for you.
+
+      Or you can switch to music that no PRO represents, which removes the obligation entirely. If you stop playing copyrighted music, you can respond to the letter by explaining that you no longer play music that falls under their jurisdiction.
+
+  - type: prose
+    body: |
+      For the broader letter-and-compliance picture, see <a href="../blog/bmi-license.html">BMI license: what it costs and how to avoid needing one</a> and the <a href="../blog/store-music-licensing.html">store music licensing operator's guide</a>. The ASCAP side of the bill is broken down in <a href="../blog/ascap-license-cost.html">ASCAP license cost</a>, and the Spotify question in <a href="../blog/can-you-play-spotify-in-your-store.html">is it actually illegal to use Spotify in my store?</a>.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no credit card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "bmi-license"
+      - slug: "ascap-license-cost"
+      - slug: "can-you-play-spotify-in-your-store"
