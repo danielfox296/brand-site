@@ -1,0 +1,96 @@
+title: "What Music Should a Bar Play? Why the Volume Matters More Than the Song"
+slug: "what-music-should-a-bar-play"
+eyebrow: "FIELD NOTES"
+dek: "Researchers turned the music up in real bars and watched the drinking change. The lever wasn't which songs were playing — it was the dial on the wall. Which is exactly why it's worth setting on purpose."
+date: "2026-06-05"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/bar-music.jpg"
+  alt: "A bar's back counter lined with bottles and beer taps, flanked by large speakers"
+  caption: "Photo: Unsplash"
+meta_description: "In a field experiment, a bar's music volume measurably changed the pace of the room. The sound level, not the song, sets your bar's energy — worth setting on purpose."
+og_image: "/img/blog/bar-music.jpg"
+tags: [bar, pub, volume, arousal, field-notes, retail-music]
+sections:
+  - type: key_takeaways
+    items:
+      - "In a field experiment in real bars, raising the music from a normal level to loud led young beer drinkers to order more and drink faster — in the reported figures, about 3.4 versus 2.6 drinks and roughly 11.5 versus 14.5 minutes per glass (Guéguen et al., 2008)"
+      - "The mechanism is arousal: louder music raises arousal and cuts down conversation, which speeds the pace of the whole room. It was the volume doing the work, not the choice of songs"
+      - "That makes the sound level a genuine lever on a bar's energy — one worth setting deliberately for the night you're running, a building peak versus a slow wind-down, not just left wherever it landed"
+
+  - type: prose
+    body: |
+      Two versions of the same bar. At nine, it's a low hum — people settling in, talking, a drink nursed across half an hour. By midnight it's a different organism: louder, faster, the room moving as one. Some of that is just the night progressing. But a measurable part of it is a single setting most bars never touch on purpose: how loud the music is.
+
+      There's a real experiment behind that claim, and it's worth knowing exactly what it found — and what to do with it responsibly.
+
+  - type: subhead
+    level: 2
+    text: "What happened when researchers turned it up"
+
+  - type: prose
+    body: |
+      In 2008, Guéguen and colleagues ran a field experiment in two ordinary bars over several Saturday nights. Without telling anyone, they set the music either to a normal level or a loud one, and quietly recorded what young male beer drinkers did. The result was clean and a little startling: under the louder music, drinkers ordered more and finished each glass faster. In the figures the study reported, that was roughly 3.4 drinks versus 2.6, and about 11.5 minutes per glass versus 14.5.
+
+      The song selection wasn't the variable — the same kind of music played in both conditions. The only thing that changed was the volume. The researchers' explanation: loud music raises physiological arousal and makes conversation harder, so people talk a little less and drink a little more, a little faster. The sound level was setting the metabolism of the room.
+
+  - type: stat_callout
+    number: "72 → 88 dB"
+    label: "Raising bar music from a normal to a loud level measurably changed the pace of the room — the volume, not the song choice, setting the energy"
+    source: "Guéguen et al., 2008"
+    accent: gold
+
+  - type: prose
+    body: |
+      One honest caveat: it was a small study — a few dozen young men, in one region, over a handful of nights. Treat it as a vivid, directional finding rather than a precise law. But the direction is consistent with everything else we know about loudness and arousal.
+
+  - type: subhead
+    level: 2
+    text: "Why volume, and not tempo"
+
+  - type: prose
+    body: |
+      The intuitive lever would be tempo — surely fast songs make people drink fast. The research there is thin and contradictory: the studies are old, some used soft drinks in a lab rather than alcohol in a bar, and at least one found slower music sped drinking up. Tempo is a real lever in other rooms, but for a bar, the clean, well-measured one is loudness. It's a knob most operators treat as a single fixed setting, when it's really one of the strongest controls they have over the feel of the night.
+
+  - type: pullquote
+    text: "Same songs, two volumes, two different rooms. The dial on the wall is doing more than the song choice."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "The responsible way to read this"
+
+  - type: prose
+    body: |
+      It would be easy to turn this into "crank it to sell more drinks." That's the wrong takeaway, and not just ethically — it's bad operating. A bar that's too loud too early empties the tables that were there to linger and talk; a bar that's flat at peak feels dead. The point isn't maximum volume. It's the right energy for the moment: quiet enough early that people stay and settle in, lifting as the night builds, easing back at last call. Responsible service still applies, and a room that respects its regulars outlasts one that just turns everyone over.
+
+      Read that way, the finding is genuinely useful. The sound of your bar is already shaping how the night moves, whether you set it or inherited it. The opportunity is to run that deliberately — to make the room's energy a thing you choose by the hour rather than a level someone nudged once and forgot.
+
+  - type: subhead
+    level: 2
+    text: "What this means for your bar"
+
+  - type: prose
+    body: |
+      The sound level in your bar is a live control on its energy and pace — backed by real, if small, evidence — and almost nobody is using it on purpose. That's the lever: not a clever song, but the deliberate shaping of how the room feels across a night — warming up, peaking, winding down — matched to the kind of place you're trying to run.
+
+      That's the part a fixed feed at a fixed volume can't do. A bar isn't one room all night; it's three or four, and the sound should know which one it's in.
+
+  - type: prose
+    body: |
+      The wider research record on volume, arousal, and behavior is catalogued on <a href="../science.html">the science page</a>.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it in your bar."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "the-science-of-store-music"
+      - slug: "what-music-should-a-restaurant-play"
+      - slug: "best-music-tempo-for-a-coffee-shop"
