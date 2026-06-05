@@ -1,0 +1,84 @@
+title: "What Music Should a Clothing Store Play? Why Letting Staff Pick Cost One Brand 11%"
+slug: "what-music-should-a-clothing-store-play"
+eyebrow: "FIELD NOTES"
+dek: "A fashion brand ran a real experiment: let store staff control the music. Sales fell — up to 11% in womenswear. The lesson isn't that music doesn't matter. It's the opposite."
+date: "2026-06-05"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/clothing-store-music.jpg"
+  alt: "Interior of a boutique clothing store with garments on racks"
+  caption: "Photo: Unsplash"
+meta_description: "When one fashion brand let staff pick the music, sales fell up to 11%. Your store's music is a brand signal — and letting it drift has a measured cost."
+og_image: "/img/blog/clothing-store-music.jpg"
+tags: [apparel, brand-identity, curation, field-notes, retail-music]
+sections:
+  - type: key_takeaways
+    items:
+      - "In a 56-week field experiment across eight fashion stores, letting staff control the in-store music reduced sales by about 6% overall — and roughly 11% in womenswear (Daunfeldt et al., 2021)"
+      - "The cause wasn't music itself. Staff tended to pick high-energy tracks and change them often. Inconsistent, whim-driven music is what cost the sales — not the presence of music"
+      - "For a first-time shopper, music is a signal of what your brand is and what it's worth, read before they touch a single garment (Beverland et al., 2006). Letting that signal wander is the expensive mistake"
+
+  - type: prose
+    body: |
+      A first-time customer crosses your threshold and starts forming a verdict on your brand before they've touched anything. The lighting, the smell, the spacing of the racks — and the music — are all telling them, in the first few seconds, what kind of place this is and what they should expect to pay. For a clothing store, where so much of the value is identity and taste, the sound in the room is doing an unusual amount of that work.
+
+      Which is exactly why one of the most useful pieces of research here is a cautionary tale.
+
+  - type: subhead
+    level: 2
+    text: "The experiment where music cost sales"
+
+  - type: prose
+    body: |
+      In a 2021 study, Daunfeldt and colleagues ran a genuine field experiment across eight stores of a fashion retailer over more than a year. In the treatment stores, staff were given the ability to influence the in-store music through an app. The intuition is obvious: the people on the floor know the customers, so let them choose.
+
+      It backfired. Sales in the treatment stores fell by roughly 6% overall, and around 11% in womenswear. When the researchers looked at why, the pattern was clear: staff tended to reach for high-intensity tracks and to change the music frequently — energetic for them, restless for the room. The takeaway is not that music hurts sales. It's that undisciplined, constantly-shifting music does, measured against the steadier, curated baseline it replaced.
+
+  - type: stat_callout
+    number: "−11%"
+    label: "The drop in womenswear sales when staff were allowed to control the music — high-energy, frequently-changed tracks replacing a consistent baseline"
+    source: "Daunfeldt et al., 2021"
+    accent: gold
+
+  - type: subhead
+    level: 2
+    text: "Music is your brand's voice to a stranger"
+
+  - type: prose
+    body: |
+      Why would the wrong music cost that much? Because in a clothing store, music isn't background — it's positioning. In a study of how shoppers relate music to brands, Beverland and colleagues found that customers with no prior experience of a brand lean on its music as a signaling cue to the brand's image, position and quality. A first-time visitor is reading the room to decide who this brand is for, and whether it's for them. When the music fits, it confirms the brand. When it doesn't — a jarring track, a constant shuffle of moods — it introduces doubt at the exact moment you're trying to remove it.
+
+      That research is about meaning, not minutes; it doesn't come with a sales figure, and shouldn't be quoted as one. But paired with the field experiment, the picture is consistent: the music is part of how a stranger decides what your brand is, and inconsistency in it has a real cost.
+
+  - type: pullquote
+    text: "A first-time shopper reads your music to decide who your brand is for. Let it wander, and you're answering that question differently every hour."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "What this means for your store"
+
+  - type: prose
+    body: |
+      The instinct to hand the aux cord to whoever's working is the exact move the research punishes. Not because their taste is bad, but because a brand's sound has to be consistent and deliberately matched to who the brand is — the same way you'd never let each shift redesign the window or rewrite the labels. The music is part of the identity, and identity only works when it holds still long enough to be recognized.
+
+      That's the real lever for an apparel store: not a clever tempo trick, but a coherent, brand-fit sound that says the same thing to every customer who walks in. The field experiment is a rare, hard number on what the absence of that discipline costs. It's the opposite of "music doesn't matter" — it's proof that it does, in the direction of getting it wrong.
+
+  - type: prose
+    body: |
+      The wider research record on music, brand image, and store atmosphere is catalogued on <a href="../science.html">the science page</a>.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it in your store."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "the-science-of-store-music"
+      - slug: "what-music-should-a-jewelry-store-play"
+      - slug: "how-does-music-shape-brand-perception"

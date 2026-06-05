@@ -1,0 +1,94 @@
+title: "What Music Should a Restaurant Play? It Changes How the Food Tastes"
+slug: "what-music-should-a-restaurant-play"
+eyebrow: "FIELD NOTES"
+dek: "Sound is closer to an ingredient than a backdrop. The right music can make a dish taste sweeter than it is, nudge diners toward indulgence, and quietly pour an extra round."
+date: "2026-06-05"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/restaurant-music.jpg"
+  alt: "A warmly lit restaurant interior with set tables"
+  caption: "Photo: Unsplash"
+meta_description: "Sound changes how food tastes and what diners choose. The research on sonic seasoning, volume, and the slow-tempo lever that pours more drinks."
+og_image: "/img/blog/restaurant-music.jpg"
+tags: [restaurant, sonic-seasoning, volume, field-notes, retail-music]
+sections:
+  - type: key_takeaways
+    items:
+      - "In a controlled study, the same toffee was rated sweeter when a high-pitched piano soundtrack played and more bitter under low brass — sound shifts which flavors a diner notices (Crisinel & Spence, 2012)"
+      - "Volume steers choice: low-volume music nudges diners toward healthier orders, while loud music raises arousal and pushes them toward indulgent ones (Biswas et al., 2019)"
+      - "Slow-tempo music lengthens a meal and lifts spending — but the lift lands on the bar, not the kitchen (Milliman, 1986). A café has no bar to use that lever. A restaurant does"
+
+  - type: prose
+    body: |
+      A restaurant is the one room in retail where the sound and the product end up in the same mouth. Diners think the music is atmosphere — a backdrop to the meal. The research says it's closer to an ingredient. It changes how the food tastes, what people decide to order, and how long they stay. Most kitchens obsess over the plate and leave the soundtrack to whatever was on someone's phone.
+
+      Three separate effects are worth knowing, and none of them is the one the listicles lead with.
+
+  - type: subhead
+    level: 2
+    text: "Music can change how a dish tastes"
+
+  - type: prose
+    body: |
+      This sounds like a stretch until you see the experiment. In 2012, Crisinel, Spence and colleagues had people eat the same bittersweet cinder toffee while listening to one of two soundtracks: a "sweet" one, built from higher-pitched piano notes, or a "bitter" one, built from low brass. The identical toffee was rated significantly sweeter under the high-pitched soundtrack and more bitter under the brass. Researchers call this sonic seasoning.
+
+      Be careful how you read it. Later work suggests the music isn't rewriting your chemistry so much as shifting which notes you pay attention to — nudging perceived sweetness, not literally changing the sugar. But the practical point holds: the sound in the room is one of the inputs to how your food is experienced, and right now in most restaurants that input is an accident.
+
+  - type: stat_callout
+    number: "Sweeter"
+    label: "The same toffee was rated significantly sweeter under a high-pitched soundtrack and more bitter under low brass — sound shifting perceived flavor"
+    source: "Crisinel & Spence, 2012"
+    accent: gold
+
+  - type: subhead
+    level: 2
+    text: "Volume steers what people order"
+
+  - type: prose
+    body: |
+      The next lever isn't tempo — it's loudness. In a 2019 study spanning field experiments and lab work, Biswas and colleagues found that low-volume ambient music put diners in a calmer, more relaxed state and nudged them toward healthier choices, while louder music raised arousal and pushed them toward indulgent ones — the dessert, the richer plate. The shift was in the volume knob, not the song.
+
+      That gives a restaurant a real, specific dial. A room turned up runs hotter and looser, and people order like it; a quieter room runs calmer, and people order like that instead. Which one you want depends on what you're serving and when — and it's a setting most restaurants never think to set on purpose.
+
+  - type: pullquote
+    text: "Turn the room up and people order the dessert. Turn it down and they order the salad. Same menu, different volume."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "The lever a café doesn't have"
+
+  - type: prose
+    body: |
+      The famous restaurant finding is Milliman's 1986 study: under slow-tempo music, diners lingered noticeably longer — about 56 minutes versus 45 — and spent more. But the extra spend didn't come from food. It came from the bar. The longer sit meant more drinks; the kitchen ticket barely moved.
+
+      This is worth isolating because it's the lever a coffee shop can't pull. A café has no bar, so slowing people down mostly just ties up a table. A sit-down restaurant with a drinks list is the room this mechanism was actually built for: pace the room a little slower in the right service, and the additional time turns into beverages, not just occupied seats.
+
+  - type: subhead
+    level: 2
+    text: "What this means for your restaurant"
+
+  - type: prose
+    body: |
+      Put the three together and sound stops being decor and starts being part of the service. It tilts how the food tastes, it steers the room toward lighter or richer ordering through volume, and at the right tempo it lengthens the meal in a way that actually pays — through the bar. None of these are huge, magic levers; the broader research is clear that store-music effects are real but modest. But they compound across every table, every night, and almost no restaurant is setting them on purpose.
+
+      That's the gap a phone on shuffle can't close: sound chosen to match the dish, the moment, and the kind of evening you're trying to run. The room is already seasoning the food and steering the order. The only question is whether anyone decided how.
+
+  - type: prose
+    body: |
+      The wider research record on tempo, volume, and taste is catalogued on <a href="../science.html">the science page</a>.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it in your dining room."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "the-science-of-store-music"
+      - slug: "best-music-tempo-for-a-coffee-shop"
+      - slug: "what-music-should-a-flower-shop-play"

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- First-touch signup attribution. Stamps a `.entuned.co` cookie on the
+       FIRST page view so the original source (referrer + UTM) survives the
+       entuned.co -> app.entuned.co/start hop. The dashboard's /start reads the
+       same cookie (same name + shape) and forwards it to the server. Runs
+       early + first-touch-wins so it never overwrites the true upstream. -->
+  <script>
+    (function () {
+      try {
+        if (/(?:^|; )entuned_attr=/.test(document.cookie)) return;
+        var p = new URLSearchParams(window.location.search);
+        var payload = {
+          r: document.referrer || undefined,
+          lp: (window.location.pathname + window.location.search) || undefined,
+          us: p.get('utm_source') || undefined,
+          um: p.get('utm_medium') || undefined,
+          uc: p.get('utm_campaign') || undefined,
+          ut: p.get('utm_term') || undefined,
+          un: p.get('utm_content') || undefined,
+          t: new Date().toISOString()
+        };
+        var host = window.location.hostname;
+        var domain = (host === 'entuned.co' || /\.entuned\.co$/.test(host)) ? '; domain=.entuned.co' : '';
+        document.cookie = 'entuned_attr=' + encodeURIComponent(JSON.stringify(payload)) +
+          '; path=/' + domain + '; max-age=' + (30 * 24 * 60 * 60) + '; SameSite=Lax';
+      } catch (e) { /* best-effort */ }
+    })();
+  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/blog/what-music-should-a-restaurant-play.html">
+  <meta name="robots" content="index, follow">
+  <title>What Music Should a Restaurant Play? It Changes How the Food Tastes | Entuned</title>
+  <meta name="description" content="Sound changes how food tastes and what diners choose. The research on sonic seasoning, volume, and the slow-tempo lever that pours more drinks.">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="../rss.xml">
+  <meta property="og:title" content="What Music Should a Restaurant Play? It Changes How the Food Tastes | Entuned">
+  <meta property="og:description" content="Sound changes how food tastes and what diners choose. The research on sonic seasoning, volume, and the slow-tempo lever that pours more drinks.">
+  <meta property="og:url" content="https://entuned.co/blog/what-music-should-a-restaurant-play.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://entuned.co/img/blog/restaurant-music.jpg">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-06-05">
+  <meta property="article:author" content="Daniel Fox">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="What Music Should a Restaurant Play? It Changes How the Food Tastes | Entuned">
+  <meta name="twitter:description" content="Sound changes how food tastes and what diners choose. The research on sonic seasoning, volume, and the slow-tempo lever that pours more drinks.">
+  <meta name="twitter:image" content="https://entuned.co/img/blog/restaurant-music.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What Music Should a Restaurant Play? It Changes How the Food Tastes | Entuned",
+  "author": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "datePublished": "2026-06-05",
+  "dateModified": "2026-06-05",
+  "description": "Sound changes how food tastes and what diners choose. The research on sonic seasoning, volume, and the slow-tempo lever that pours more drinks.",
+  "image": "https://entuned.co/img/blog/restaurant-music.jpg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://entuned.co/blog/what-music-should-a-restaurant-play.html"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "retail music strategy"
+    },
+    {
+      "@type": "Thing",
+      "name": "in-store customer behavior"
+    },
+    {
+      "@type": "Thing",
+      "name": "engineered retail audio"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://entuned.co/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "What Music Should a Restaurant Play? It Changes How the Food Tastes | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=f83c77c3">
+  <link rel="stylesheet" href="../styles/blog.css">
+  
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav aria-label="Main navigation">
+  <div class="container">
+    <a href="/" class="logo"><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="../how-it-works.html">How It Works</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li class="nav-cta-item"><a href="https://app.entuned.co/start" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Start Free</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+  </div>
+</nav>
+
+  <main>
+  
+<!-- Reading progress bar -->
+<div class="blog-progress" aria-hidden="true">
+  <div class="blog-progress__bar" id="reading-progress"></div>
+</div>
+
+<article class="blog-article">
+
+  <!-- Article header -->
+  <header class="blog-article__header">
+    <div class="blog-eyebrow">FIELD NOTES</div>
+    <h1 class="blog-headline">What Music Should a Restaurant Play? It Changes How the Food Tastes</h1>
+    <p class="blog-dek">Sound is closer to an ingredient than a backdrop. The right music can make a dish taste sweeter than it is, nudge diners toward indulgence, and quietly pour an extra round.</p>
+    <div class="blog-byline">
+      <span class="blog-byline__author">Daniel Fox</span>
+      <span class="blog-byline__role">Founder &amp; CEO</span>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <time class="blog-byline__date" datetime="2026-06-05">2026-06-05</time>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <span class="blog-byline__reading-time">4 min read</span>
+    </div>
+  </header>
+
+  <!-- Hero image -->
+  <figure class="blog-hero fade-up">
+    <img src="../img/blog/restaurant-music.jpg" alt="A warmly lit restaurant interior with set tables" class="blog-hero__img" loading="lazy">
+    <figcaption class="blog-hero__caption">Photo: Unsplash</figcaption>
+  </figure>
+
+  <!-- Key takeaways -->
+  <div class="blog-takeaways">
+  <div class="blog-takeaways__title">Key takeaways</div>
+  <ul>
+    <li>In a controlled study, the same toffee was rated sweeter when a high-pitched piano soundtrack played and more bitter under low brass — sound shifts which flavors a diner notices (Crisinel &amp; Spence, 2012)</li>
+    <li>Volume steers choice: low-volume music nudges diners toward healthier orders, while loud music raises arousal and pushes them toward indulgent ones (Biswas et al., 2019)</li>
+    <li>Slow-tempo music lengthens a meal and lifts spending — but the lift lands on the bar, not the kitchen (Milliman, 1986). A café has no bar to use that lever. A restaurant does</li>
+  </ul>
+</div>
+
+  <!-- Article body (all sections except key_takeaways, cta, related) -->
+  <div class="blog-article__body">
+    <div class="blog-prose">
+  <p>A restaurant is the one room in retail where the sound and the product end up in the same mouth. Diners think the music is atmosphere — a backdrop to the meal. The research says it&rsquo;s closer to an ingredient. It changes how the food tastes, what people decide to order, and how long they stay. Most kitchens obsess over the plate and leave the soundtrack to whatever was on someone&rsquo;s phone.</p>
+<p>Three separate effects are worth knowing, and none of them is the one the listicles lead with.</p>
+</div>
+
+<h2 id="music-can-change-how-a-dish-tastes" class="blog-subhead blog-subhead--h2">
+  Music can change how a dish tastes
+  <a href="#music-can-change-how-a-dish-tastes" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>This sounds like a stretch until you see the experiment. In 2012, Crisinel, Spence and colleagues had people eat the same bittersweet cinder toffee while listening to one of two soundtracks: a &ldquo;sweet&rdquo; one, built from higher-pitched piano notes, or a &ldquo;bitter&rdquo; one, built from low brass. The identical toffee was rated significantly sweeter under the high-pitched soundtrack and more bitter under the brass. Researchers call this sonic seasoning.</p>
+<p>Be careful how you read it. Later work suggests the music isn&rsquo;t rewriting your chemistry so much as shifting which notes you pay attention to — nudging perceived sweetness, not literally changing the sugar. But the practical point holds: the sound in the room is one of the inputs to how your food is experienced, and right now in most restaurants that input is an accident.</p>
+</div>
+
+<div class="blog-stat blog-stat--gold">
+  <div class="blog-stat__number">Sweeter</div>
+  <div class="blog-stat__label">The same toffee was rated significantly sweeter under a high-pitched soundtrack and more bitter under low brass — sound shifting perceived flavor</div>
+  <div class="blog-stat__source">Crisinel &amp; Spence, 2012</div>
+</div>
+
+<h2 id="volume-steers-what-people-order" class="blog-subhead blog-subhead--h2">
+  Volume steers what people order
+  <a href="#volume-steers-what-people-order" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>The next lever isn&rsquo;t tempo — it&rsquo;s loudness. In a 2019 study spanning field experiments and lab work, Biswas and colleagues found that low-volume ambient music put diners in a calmer, more relaxed state and nudged them toward healthier choices, while louder music raised arousal and pushed them toward indulgent ones — the dessert, the richer plate. The shift was in the volume knob, not the song.</p>
+<p>That gives a restaurant a real, specific dial. A room turned up runs hotter and looser, and people order like it; a quieter room runs calmer, and people order like that instead. Which one you want depends on what you&rsquo;re serving and when — and it&rsquo;s a setting most restaurants never think to set on purpose.</p>
+</div>
+
+<figure class="blog-pullquote blog-pullquote--teal">
+  <blockquote>Turn the room up and people order the dessert. Turn it down and they order the salad. Same menu, different volume.</blockquote>
+</figure>
+
+<h2 id="the-lever-a-café-doesnt-have" class="blog-subhead blog-subhead--h2">
+  The lever a café doesn&#39;t have
+  <a href="#the-lever-a-café-doesnt-have" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>The famous restaurant finding is Milliman&rsquo;s 1986 study: under slow-tempo music, diners lingered noticeably longer — about 56 minutes versus 45 — and spent more. But the extra spend didn&rsquo;t come from food. It came from the bar. The longer sit meant more drinks; the kitchen ticket barely moved.</p>
+<p>This is worth isolating because it&rsquo;s the lever a coffee shop can&rsquo;t pull. A café has no bar, so slowing people down mostly just ties up a table. A sit-down restaurant with a drinks list is the room this mechanism was actually built for: pace the room a little slower in the right service, and the additional time turns into beverages, not just occupied seats.</p>
+</div>
+
+<h2 id="what-this-means-for-your-restaurant" class="blog-subhead blog-subhead--h2">
+  What this means for your restaurant
+  <a href="#what-this-means-for-your-restaurant" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Put the three together and sound stops being decor and starts being part of the service. It tilts how the food tastes, it steers the room toward lighter or richer ordering through volume, and at the right tempo it lengthens the meal in a way that actually pays — through the bar. None of these are huge, magic levers; the broader research is clear that store-music effects are real but modest. But they compound across every table, every night, and almost no restaurant is setting them on purpose.</p>
+<p>That&rsquo;s the gap a phone on shuffle can&rsquo;t close: sound chosen to match the dish, the moment, and the kind of evening you&rsquo;re trying to run. The room is already seasoning the food and steering the order. The only question is whether anyone decided how.</p>
+</div>
+
+<div class="blog-prose">
+  <p>The wider research record on tempo, volume, and taste is catalogued on <a href="../science.html">the science page</a>.</p>
+</div>
+  </div>
+
+  <!-- CTA -->
+  <aside class="blog-cta blog-cta--start-free">
+  <div class="blog-cta__headline">Hear it in your dining room.</div>
+  <div class="blog-cta__body">Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &amp;mdash; no card, no time limit. PRO-indemnified the moment it plays.</div>
+  <a href="https://app.entuned.co/start" class="blog-cta__link">Start Free &rarr;</a>
+</aside>
+
+  <!-- Related posts -->
+  <section class="blog-related" aria-label="Related posts">
+  <h2 class="blog-related__title">Keep reading</h2>
+  <div class="blog-related__grid">
+    <a href="../blog/the-science-of-store-music.html" class="blog-related__card">
+      <img src="../img/blog/science-of-store-music.jpg" alt="The Science of Store Music: How Sound Quietly Changes What People Buy" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">The Science of Store Music: How Sound Quietly Changes What People Buy</span>
+      <span class="blog-related__dek">Store music really does move behavior — but the honest version is smaller and stranger than the listicles claim. Here&#39;s what the evidence actually supports, and what it doesn&#39;t.</span>
+    </a>
+    <a href="../blog/best-music-tempo-for-a-coffee-shop.html" class="blog-related__card">
+      <img src="../img/blog/coffee-shop-music-tempo.jpg" alt="What Music Tempo Should a Coffee Shop Play? The Honest Answer" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">What Music Tempo Should a Coffee Shop Play? The Honest Answer</span>
+      <span class="blog-related__dek">Slow music slows people down — that part is real. But the famous &#39;slow music makes you spend more&#39; study ran in a restaurant with a bar. A café is a different room.</span>
+    </a>
+    <a href="../blog/what-music-should-a-flower-shop-play.html" class="blog-related__card">
+      <img src="../img/blog/flower-shop-music.jpg" alt="What Music Should a Flower Shop Play? There&#39;s Actually a Study" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">What Music Should a Flower Shop Play? There&#39;s Actually a Study</span>
+      <span class="blog-related__dek">Researchers ran the experiment in a real florist. Romantic music lifted what people spent. Ordinary pop did no better than silence. The difference is the whole lesson.</span>
+    </a>
+  </div>
+</section>
+
+</article>
+
+<!-- Blog-specific JS (reading progress + anchor copy) -->
+<script>
+  // Reading progress bar
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    document.getElementById('reading-progress').style.width = pct + '%';
+  });
+
+  // Anchor link copy-to-clipboard
+  document.querySelectorAll('.anchor-link').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      navigator.clipboard.writeText(window.location.origin + window.location.pathname + a.getAttribute('href'));
+      a.textContent = '\u2713'; setTimeout(() => a.textContent = '#', 1500);
+    });
+  });
+</script>
+  </main>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Engineered retail audio. PRO-indemnified.</p>
+      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="../how-it-works.html">How It Works</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="../enterprise.html">Enterprise</a></li>
+        <li><a href="../why-entuned.html">Why Entuned</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For Your Industry</h4>
+      <ul>
+        <li><a href="../for-apparel.html">Apparel</a></li>
+        <li><a href="../for-beauty-supply.html">Beauty Supply</a></li>
+        <li><a href="../for-cosmetics.html">Cosmetics &amp; Beauty</a></li>
+        <li><a href="../for-furniture-mattress.html">Furniture &amp; Mattress</a></li>
+        <li><a href="../for-home-goods.html">Home Goods</a></li>
+        <li><a href="../for-jewelry.html">Jewelry</a></li>
+        <li><a href="../for-specialty-retail.html">Specialty Retail</a></li>
+        <li><a href="../for-sporting-goods.html">Sporting Goods</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
+      <ul>
+        <li><a href="../for-retail-leaders.html">Retail Leaders</a></li>
+        <li><a href="../impact.html">Impact Calculator</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Research</h4>
+      <ul>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../results.html">Results</a></li>
+        <li><a href="../science.html">The Science</a></li>
+        <li><a href="../will-it-retail.html">Will It Retail?</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="../how-music-affects-retail.html">How Music Affects Retail</a></li>
+        <li><a href="../how-to-increase-aov-retail.html">Increase Average Order Value</a></li>
+        <li><a href="../how-to-increase-dwell-time-retail.html">Increase Dwell Time</a></li>
+        <li><a href="../how-to-increase-impulse-purchases-retail.html">Drive Impulse Purchases</a></li>
+        <li><a href="../how-to-improve-retail-conversion-rate.html">Improve Conversion Rate</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../partners.html">Partners</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="../licensing.html">Licensing &amp; PRO Coverage</a></li>
+        <li><a href="../data.html">Data Practices</a></li>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="../pricing/terms.html">Subscription Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG', {
+      linker: {
+        domains: ['entuned.co', 'music.entuned.co', 'app.entuned.co']
+      }
+    });
+  </script>
+  <script defer src="../js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>

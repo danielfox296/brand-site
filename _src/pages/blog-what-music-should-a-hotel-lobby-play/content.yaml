@@ -1,0 +1,90 @@
+title: "What Music Should a Hotel Lobby Play? It's the Brand's First Sentence"
+slug: "what-music-should-a-hotel-lobby-play"
+eyebrow: "FIELD NOTES"
+dek: "A guest forms a verdict on your hotel in the first few seconds of the lobby. Music is one of the loudest things in that judgment — and one of the least deliberately chosen."
+date: "2026-06-05"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/hotel-lobby-music.jpg"
+  alt: "A grand, warmly lit hotel lobby atrium with a dramatic latticed light wall"
+  caption: "Photo: Unsplash"
+meta_description: "A lobby is the brand's first sentence. Research on servicescape and atmosphere shows music sets perceived quality and sophistication the moment a guest arrives."
+og_image: "/img/blog/hotel-lobby-music.jpg"
+tags: [hotel, hospitality, servicescape, brand-perception, field-notes, retail-music]
+sections:
+  - type: key_takeaways
+    items:
+      - "The foundational framework in services marketing names music as part of the 'servicescape' — the physical environment that shapes how customers perceive and behave toward a business (Bitner, 1992)"
+      - "Music style sets perceived sophistication: in one study, the same venue was rated as more upmarket and refined under classical music, and merely upbeat under pop (Wilson, 2003)"
+      - "Music makes a wait feel better, not shorter. Its benefit at check-in runs through emotion and approach, not through compressing the clock (Hui, Dubé & Chébat, 1997)"
+
+  - type: prose
+    body: |
+      A guest walks in off a delayed flight, rolling a bag, and in the first few seconds the lobby tells them what kind of place they've booked. Is this calm and considered, or harried and generic? Are they about to be looked after, or processed? Most of that verdict forms before they reach the desk — and the music is one of the loudest contributors to it, while usually being the least deliberately chosen.
+
+      A lobby is the brand's first sentence. The research on service environments is unusually clear that the sentence lands whether or not anyone wrote it.
+
+  - type: subhead
+    level: 2
+    text: "The lobby is a servicescape"
+
+  - type: prose
+    body: |
+      In 1992, Mary Jo Bitner gave the field its founding idea: the servicescape — the built physical environment of a service — shapes the perceptions, emotions, and behavior of both customers and staff. Among the ambient conditions she names as doing this work, alongside lighting, temperature, and scent, is music. It's a framework rather than an experiment, so it doesn't prove a number; what it establishes is that the sound of a space is not neutral decoration. It's one of the levers by which a guest decides how they feel about being there.
+
+      For a hotel, the lobby is where that lever is most exposed. It's the threshold, the moment of arrival, the first and last impression of every stay.
+
+  - type: subhead
+    level: 2
+    text: "Music sets perceived sophistication"
+
+  - type: prose
+    body: |
+      What does the music actually move? Perceived class. In a 2003 study of how musical style shapes the atmosphere of a dining venue, Wilson found that the same space was judged more sophisticated and upmarket when classical music played, and merely upbeat under pop, with silence rated lower than either. The setting was a restaurant rather than a lobby, but the mechanism — music tuning how refined a space feels — is exactly what a lobby trades on. The music didn't change the room. It changed how refined the room felt.
+
+      That's the asset a lobby is trading on. A guest's sense of whether a hotel is a three-star or a boutique four often forms atmospherically, before any concrete evidence. Music congruent with the position you're claiming reinforces it; music that's a degree too generic, or a decade out of date, quietly undercuts it — at the exact moment first impressions are being set.
+
+  - type: stat_callout
+    number: "Sophistication"
+    label: "The same venue was rated more upmarket and refined under classical music, and merely upbeat under pop — sound shaping perceived class"
+    source: "Wilson, 2003"
+    accent: gold
+
+  - type: subhead
+    level: 2
+    text: "About the wait — get this one right"
+
+  - type: prose
+    body: |
+      It's tempting to claim music makes the check-in wait feel shorter. The research doesn't support that, and it's worth being precise. In a study of music and waiting for service, Hui, Dubé and Chébat found that pleasant music improved how customers felt about the wait and increased their approach toward the business — but it did not compress the perceived duration. If anything, pleasant music can make people aware of a little more time passing, not less.
+
+      So the honest claim is that the right music makes the wait feel better, not faster — warmer, more cared-for, more in keeping with the brand. That's still a real win at a check-in desk; it's just a different one than the myth. And because a lobby is a low-pressure, welcoming moment rather than a tense, task-loaded one, it's a setting where music's emotional lever tends to help rather than grate.
+
+  - type: subhead
+    level: 2
+    text: "What this means for your hotel"
+
+  - type: prose
+    body: |
+      The lobby's sound is making a first impression on every guest, every arrival, whether you composed that impression or inherited it from a default channel. The research supports a specific, modest, real set of effects: music sets the perceived class of the space, colors the emotional tone of the welcome, and shapes how the wait feels. None of these is a dramatic lever on its own; together they're the difference between a lobby that confirms your brand and one that subtly contradicts it.
+
+      That's the part a generic feed can't deliver: a sound matched to the exact position your hotel is claiming, holding that line from the door to the desk. The first sentence is being spoken regardless. The only question is whether it's the one you'd choose.
+
+  - type: prose
+    body: |
+      The wider research record on servicescape, atmosphere, and brand perception is catalogued on <a href="../science.html">the science page</a>.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it in your lobby."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "the-science-of-store-music"
+      - slug: "what-music-should-a-jewelry-store-play"
+      - slug: "how-does-music-shape-brand-perception"
