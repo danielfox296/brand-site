@@ -7,6 +7,12 @@
     </div>
   </section>
 
+  <div class="blog-filter fade-up" role="group" aria-label="Filter posts by type">
+    <button type="button" class="blog-filter-chip is-active" data-filter="all" aria-pressed="true">All</button>
+    <button type="button" class="blog-filter-chip" data-filter="watch" aria-pressed="false">Watch</button>
+    <button type="button" class="blog-filter-chip" data-filter="read" aria-pressed="false">Read</button>
+  </div>
+
   <div class="articles-grid">
     <!-- What Should Retailers Look for in a Music Provider? -->
     <a href="blog/what-should-retailers-look-for-in-a-music-provider-video.html" class="article-card fade-up">
@@ -1851,3 +1857,38 @@
     </a>
 
   </div>
+
+  <script>
+  (function () {
+    var grid = document.querySelector('.articles-grid');
+    var chips = document.querySelectorAll('.blog-filter-chip');
+    if (!grid || !chips.length) return;
+    var cards = Array.prototype.slice.call(grid.querySelectorAll('.article-card'));
+
+    // Classify each card once by its eyebrow: video posts read "WATCH".
+    cards.forEach(function (card) {
+      var meta = card.querySelector('.article-date');
+      var isWatch = meta && /\bWATCH\b/i.test(meta.textContent);
+      card.setAttribute('data-type', isWatch ? 'watch' : 'read');
+    });
+
+    function apply(filter) {
+      cards.forEach(function (card) {
+        var show = filter === 'all' || card.getAttribute('data-type') === filter;
+        card.style.display = show ? '' : 'none';
+      });
+    }
+
+    chips.forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        chips.forEach(function (c) {
+          c.classList.remove('is-active');
+          c.setAttribute('aria-pressed', 'false');
+        });
+        chip.classList.add('is-active');
+        chip.setAttribute('aria-pressed', 'true');
+        apply(chip.getAttribute('data-filter'));
+      });
+    });
+  })();
+  </script>
