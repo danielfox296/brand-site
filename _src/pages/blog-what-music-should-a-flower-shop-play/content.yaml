@@ -1,0 +1,92 @@
+title: "What Music Should a Flower Shop Play? There's Actually a Study"
+slug: "what-music-should-a-flower-shop-play"
+eyebrow: "FIELD NOTES"
+dek: "Researchers ran the experiment in a real florist. Romantic music lifted what people spent. Ordinary pop did no better than silence. The difference is the whole lesson."
+date: "2026-06-05"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/flower-shop-music.jpg"
+  alt: "A flower shop storefront with buckets of bouquets and arrangements on display"
+  caption: "Photo: Unsplash"
+meta_description: "A field experiment in an actual florist found romantic music lifted spending — and ordinary pop did nothing. The lever is fit, not just nice music."
+og_image: "/img/blog/flower-shop-music.jpg"
+tags: [florist, musical-fit, willingness-to-pay, field-notes, retail-music]
+sections:
+  - type: key_takeaways
+    items:
+      - "In a field experiment run in an actual flower shop, customers spent significantly more when romantic music played than when pop music or no music played (Jacob et al., 2009)"
+      - "The shop's ordinary pop music did no better than silence. The lift came specifically from music that fit what flowers are for — emotion, romance, occasion"
+      - "This is the clearest version of a well-established idea: music nudges behavior when it fits the product and the moment. Music chosen for nobody does little (Garlin & Owen, 2006)"
+
+  - type: prose
+    body: |
+      Most of what a flower shop sells is not really the flowers. It's an apology, an anniversary, a sympathy, a first date. The customer standing at your counter is buying an emotion and hoping the arrangement carries it. That makes a florist one of the most feeling-driven rooms in retail — and it turns out the sound in that room has been measured doing real work.
+
+      Unusually, there is a study run in an actual flower shop. Not a supermarket, not a lab dressed up to look like a store. A florist.
+
+  - type: subhead
+    level: 2
+    text: "What happened when a florist changed the music"
+
+  - type: prose
+    body: |
+      In 2009, a team of researchers led by Céline Jacob and Nicolas Guéguen ran an experiment in a real flower shop. They rotated three conditions: romantic music — love songs — the shop's usual pop music, and no music at all. Then they measured what customers spent.
+
+      Under the romantic music, average spending rose significantly. Here is the part that matters: the shop's ordinary pop music did no better than silence. The lift wasn't from "having music on." It was from music that matched what flowers mean. Love songs primed the romance-and-occasion associations a flower purchase already lives inside, and people leaned a little further into the gesture. Generic pop primed nothing, and did no better than silence.
+
+  - type: stat_callout
+    number: "Romantic only"
+    label: "In an actual florist, romantic music lifted spending — while the shop's usual pop music performed no better than silence"
+    source: "Jacob, Guéguen et al., 2009"
+    accent: gold
+
+  - type: subhead
+    level: 2
+    text: "Why 'fit' is the whole mechanism"
+
+  - type: prose
+    body: |
+      The florist result is one instance of a principle researchers call musical fit. Music carries associations — romance, prestige, a place, a season — and when those associations match the product, they quietly raise the relevant frame in the customer's mind. The same research group showed it elsewhere: French music in a wine aisle sold French wine; German music sold German wine, with shoppers insisting the music hadn't influenced them at all.
+
+      The flip side is the honest part. Music that fits nothing does nothing. The flower-shop study is unusually clean on this point because it included the shop's own everyday pop as a condition — and that everyday music was statistically indistinguishable from turning the speakers off.
+
+  - type: pullquote
+    text: "The shop's normal music performed no better than silence. 'Having music on' is not the lever. Fit is."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "How big is the effect, honestly?"
+
+  - type: prose
+    body: |
+      Worth keeping in proportion. The broadest evidence — a meta-analysis of dozens of retail-music studies — finds these effects are real but small, working through mood, arousal, and time perception rather than reaching directly into the wallet (Garlin and Owen, 2006). A florist isn't going to double its average ticket by changing a song. What the research supports is a modest, real nudge that compounds across every customer who walks in — and only when the music genuinely fits.
+
+  - type: subhead
+    level: 2
+    text: "What this means for your shop"
+
+  - type: prose
+    body: |
+      The takeaway is not "play love songs." It's that the sound in a flower shop is either doing emotional work that matches the purchase or it's idling like a radio left on. Most shops are in the second category — pleasant music chosen for the staff, fitting nothing in particular, performing about as well as silence. The opportunity is to treat the music as part of the gesture the customer is buying, tuned to the occasion the room is built around.
+
+      That's the part a generic feed can't do: fit. The flower-shop study is the rare piece of research that tested "nice but unfitted" music directly and found it inert. The lever is real, it's specific to this kind of emotional purchase, and it only turns when the music belongs in the room.
+
+  - type: prose
+    body: |
+      The wider research record on musical fit and spending is catalogued on <a href="../science.html">the science page</a>.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it in your shop."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "the-science-of-store-music"
+      - slug: "what-music-should-a-jewelry-store-play"
+      - slug: "calming-music-for-dog-grooming-salons"

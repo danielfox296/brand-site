@@ -62,7 +62,7 @@ sections:
 
   - type: prose
     body: |
-      The wine study works because the music fit the product — Frenchness priming French wine. The same team found that classical music in a restaurant raised average spend per head modestly (about £32.50 versus £29.50 under pop or no music), interpreted as upscale connotations priming an upmarket frame. And tempo's effect on pace — slow music slowing people down, established by Milliman in 1982 — is itself a kind of fit between the music and the behavior you want.
+      The wine study works because the music fit the product — Frenchness priming French wine. The same team found that classical music in a restaurant raised average spend per head modestly — on the order of 10%, concentrated in the discretionary items — versus pop or no music, interpreted as upscale connotations priming an upmarket frame. And tempo's effect on pace — slow music slowing people down, established by Milliman in 1982 — is itself a kind of fit between the music and the behavior you want.
 
       The counterexample is just as instructive. When Areni and Kim played classical versus pop in a wine store in 1993, the classical music shifted customers toward pricier bottles — but didn't change how long they stayed at all. Music landed on selection and left dwell untouched. The lesson across all of it: music does something specific when it fits a specific goal. Generic "nice" music, fit to nothing, mostly just fills the air.
 
@@ -78,7 +78,7 @@ sections:
 
   - type: prose
     body: |
-      The full catalogue of studies behind these levers lives on <a href="../science.html">the science page</a>. For the vertical-specific versions, see how the research plays out in a <a href="../blog/best-music-tempo-for-a-coffee-shop.html">coffee shop</a>, a <a href="../blog/best-bpm-for-workout-music.html">fitness studio</a>, a <a href="../blog/what-music-should-a-bookshop-play.html">bookshop</a>, and a <a href="../blog/calming-music-for-dog-grooming-salons.html">dog grooming salon</a>.
+      The full catalogue of studies behind these levers lives on <a href="../science.html">the science page</a>. For the vertical-specific versions, see how the research plays out in a <a href="../blog/best-music-tempo-for-a-coffee-shop.html">coffee shop</a>, a <a href="../blog/best-bpm-for-workout-music.html">fitness studio</a>, a <a href="../blog/what-music-should-a-bookshop-play.html">bookshop</a>, a <a href="../blog/what-music-should-a-flower-shop-play.html">flower shop</a>, a <a href="../blog/what-music-should-a-jewelry-store-play.html">jewelry store</a>, and a <a href="../blog/calming-music-for-dog-grooming-salons.html">dog grooming salon</a>.
 
   - type: cta
     variant: start-free

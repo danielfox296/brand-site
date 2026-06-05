@@ -1,0 +1,84 @@
+title: "What Music Should a Jewelry Store Play? What the Research Suggests"
+slug: "what-music-should-a-jewelry-store-play"
+eyebrow: "FIELD NOTES"
+dek: "No one has studied music in a jewelry store. But the closest research is a clean match: upscale music nudges shoppers toward the more expensive choice — without changing how long they stay."
+date: "2026-06-05"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/jewelry-store-music.jpg"
+  alt: "Glass display cases in a bright, modern jewelry store interior"
+  caption: "Photo: Unsplash"
+meta_description: "There's no jewelry-store study — but the closest research is a clean match: upscale music nudges shoppers toward the premium choice without anyone noticing."
+og_image: "/img/blog/jewelry-store-music.jpg"
+tags: [jewelry, willingness-to-pay, musical-fit, field-notes, retail-music]
+sections:
+  - type: key_takeaways
+    items:
+      - "No study has tested music in a jewelry store. The honest case rests on transfer from the closest analog — a wine shop, where classical music led customers to choose more expensive bottles (Areni & Kim, 1993)"
+      - "Crucially, that music shifted which item people chose, not how many they bought or how long they stayed. The lever sets the register of the purchase, it doesn't make people linger or buy more pieces"
+      - "A second study found upscale-connoted music raised spending on discretionary items by roughly 10% in a restaurant (North et al., 2003), and a meta-analysis confirms the effect is real but small and depends on fit (Garlin & Owen, 2006)"
+
+  - type: prose
+    body: |
+      A jewelry purchase is a strange transaction. The customer usually can't independently judge what a piece is worth, the prices have wide latitude, and the decision carries weight — it's an engagement, an anniversary, a once-in-a-decade splurge. So the buyer reads the room for cues about what's appropriate to spend here. The lighting does that. The cases do that. The staff does that. The music has been doing it too, whether or not anyone chose it on purpose.
+
+      I'll be straight about the evidence up front, because the honest version is the credible one: nobody has run a study on music in a jewelry store. What we have is the next closest thing, and it happens to transfer unusually well.
+
+  - type: subhead
+    level: 2
+    text: "The closest study we have"
+
+  - type: prose
+    body: |
+      In 1993, Areni and Kim ran a field experiment in a wine store, alternating classical and Top-40 music. A wine store is structurally a lot like a jewelry store: a single category, prestige pricing, a buyer who mostly can't evaluate quality on their own and defers to the room.
+
+      Under classical music, customers bought more expensive items. But — and this is the part that keeps the claim honest — the music did not change how many bottles they bought or how long they stayed. It moved one thing: the price register they selected within. Classical music quietly told shoppers that this is a place where the upscale choice is the normal choice, and they chose accordingly, without believing the music had anything to do with it.
+
+  - type: stat_callout
+    number: "Register, not dwell"
+    label: "In the closest analog study, upscale music moved customers toward pricier items — but did not change quantity or time in store"
+    source: "Areni & Kim, 1993"
+    accent: gold
+
+  - type: subhead
+    level: 2
+    text: "What it doesn't do"
+
+  - type: prose
+    body: |
+      It's worth being clear about what this research does not support, because the listicles blur it. Upscale music in this kind of store did not make people linger longer, and it did not make them buy more pieces. So don't expect a soundtrack to increase foot-dwell or units per sale. What the evidence points to is narrower and more interesting: it shifts the register — the price tier a customer treats as appropriate — upward.
+
+      A second study supports the same direction. When researchers played classical versus pop in a restaurant, classical raised spending on the discretionary items by something on the order of 10%, concentrated exactly where choice is most elastic (North and colleagues, 2003). Different room, same mechanism: upscale-connoted music priming an upscale frame.
+
+  - type: pullquote
+    text: "It doesn't make people stay longer or buy more. It changes which price feels normal to pay."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "Keep it in proportion — and make it fit"
+
+  - type: prose
+    body: |
+      The broadest evidence is a meta-analysis of dozens of retail-music studies, and its verdict is sobering: the effects are real but small, and they depend on the music actually fitting the room and being liked (Garlin and Owen, 2006). Upscale music that reads as stuffy, or that the customer plainly dislikes, can do nothing — or quietly work against you. The lever isn't "play classical." It's "make the sound match the register of the purchase the customer is there to make."
+
+      For a jewelry store, that's the whole game. The room is already telling every customer what's appropriate to spend. The music is part of that message, and right now, in most stores, it's an accident.
+
+  - type: prose
+    body: |
+      The wider research record on quality inference and musical fit is catalogued on <a href="../science.html">the science page</a>.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it in your store."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "the-science-of-store-music"
+      - slug: "what-music-should-a-flower-shop-play"
+      - slug: "how-does-music-affect-perceived-value"
