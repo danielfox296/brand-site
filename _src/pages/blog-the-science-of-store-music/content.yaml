@@ -1,0 +1,95 @@
+title: "The Science of Store Music: How Sound Quietly Changes What People Buy"
+slug: "the-science-of-store-music"
+eyebrow: "FIELD NOTES"
+dek: "Store music really does move behavior — but the honest version is smaller and stranger than the listicles claim. Here's what the evidence actually supports, and what it doesn't."
+date: "2026-06-05"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/science-of-store-music.jpg"
+  alt: "A specialty retail boutique storefront with a clothing window display"
+  caption: "Photo: Unsplash"
+meta_description: "What the research really says about store music: the effects are real but small and depend on fit. A meta-analysis of 32 studies, and what it means for your store."
+og_image: "/img/blog/science-of-store-music.jpg"
+tags: [retail-music, pillar, willingness-to-pay, dwell-time, field-notes]
+sections:
+  - type: key_takeaways
+    items:
+      - "The strongest evidence — a meta-analysis of 32 studies — finds store music has real but small effects on shoppers, working through mood, arousal, and time perception rather than directly on the wallet (Garlin & Owen, 2006)"
+      - "Music that fits the product can shift choice without shoppers noticing: French music sold French wine, German music sold German wine, and almost no one believed the music had affected them (North, Hargreaves & McKendrick, 1997/1999)"
+      - "The lever is conditional. Music that fits the room and the customer nudges behavior; music chosen for nobody — or music people actively dislike — does little, or backfires"
+
+  - type: prose
+    body: |
+      Search for "how music affects sales" and you'll get a wall of confident numbers: slow music lifts spending 38%, classical makes people buy premium, the right soundtrack transforms your store. Some of that traces to real studies. Most of it has been inflated, stripped of its conditions, and repeated until it sounds like a law of nature.
+
+      The actual science is more interesting than the hype, partly because it's more honest. Store music does change what people do. The effect is just smaller, stranger, and more dependent on getting it right than the listicles admit. Here's what the evidence genuinely supports.
+
+  - type: subhead
+    level: 2
+    text: "How big is the effect, really?"
+
+  - type: prose
+    body: |
+      Start with the strongest evidence available, because it's also the most sobering. In 2006, Garlin and Owen pooled 32 studies of music in retail settings into a single meta-analysis — the kind of evidence that beats any one dramatic field experiment. Their verdict: the effects are real, and they are small.
+
+      Music reliably nudges three things: how people feel (pleasure and arousal), how much time they perceive passing, and, more weakly, what they buy. And the active ingredients weren't the mere presence of music — they were tempo and how much people liked it. Music works through mood and pace, not by reaching directly into the buying decision. Any article that leads with a giant sales-lift number and skips the meta-analysis is cherry-picking.
+
+  - type: stat_callout
+    number: "Small but real"
+    label: "A meta-analysis of 32 retail-music studies found consistent but small effects on spend, time, and mood — driven by tempo and liking, not by music's mere presence"
+    source: "Garlin & Owen, 2006"
+    accent: gold
+
+  - type: subhead
+    level: 2
+    text: "The part that's genuinely uncanny"
+
+  - type: prose
+    body: |
+      Small on average doesn't mean weak everywhere. The most striking demonstration is the wine-aisle study by North, Hargreaves and McKendrick. Over two weeks, a supermarket display alternated French and German music above a shelf of matched French and German wines. On French-music days, French wine outsold German by roughly five bottles to one. On German-music days, German wine outsold French by about two to one.
+
+      Then the researchers asked buyers whether the music had influenced their choice. The overwhelming majority said no. Their behavior had swung hard with the soundtrack while their conscious explanation of that behavior had nothing to do with it. That gap — strong influence, near-zero awareness — is the most reliable and most unsettling finding in this whole literature. (Worth noting: the absolute bottle counts were small, one display over two weeks. The effect is vivid, not a precise commercial estimate.)
+
+  - type: pullquote
+    text: "Their behavior swung hard with the music. Almost none of them believed the music had anything to do with it."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "Why 'fit' is the whole game"
+
+  - type: prose
+    body: |
+      The wine study works because the music fit the product — Frenchness priming French wine. The same team found that classical music in a restaurant raised average spend per head modestly (about £32.50 versus £29.50 under pop or no music), interpreted as upscale connotations priming an upmarket frame. And tempo's effect on pace — slow music slowing people down, established by Milliman in 1982 — is itself a kind of fit between the music and the behavior you want.
+
+      The counterexample is just as instructive. When Areni and Kim played classical versus pop in a wine store in 1993, the classical music shifted customers toward pricier bottles — but didn't change how long they stayed at all. Music landed on selection and left dwell untouched. The lesson across all of it: music does something specific when it fits a specific goal. Generic "nice" music, fit to nothing, mostly just fills the air.
+
+  - type: subhead
+    level: 2
+    text: "What this means for your store"
+
+  - type: prose
+    body: |
+      Put the honest version together and it's a sharper tool than the hype. The effect of store music is small but real; it works through mood, arousal, and time perception; it can shift choice without anyone noticing; and it only does these things when the music fits the customer and the outcome you want. Music chosen for no one is the default in most stores, and the default is leaving the lever on the floor.
+
+      This is exactly why the same advice doesn't fit every shop. A café, a gym, a bookshop, and a grooming salon each want a different thing from their sound — turnover, effort, browsing, calm — and the research is specific to each. The point isn't to play more music. It's to play music tuned to what your particular room is for.
+
+  - type: prose
+    body: |
+      The full catalogue of studies behind these levers lives on <a href="../science.html">the science page</a>. For the vertical-specific versions, see how the research plays out in a <a href="../blog/best-music-tempo-for-a-coffee-shop.html">coffee shop</a>, a <a href="../blog/best-bpm-for-workout-music.html">fitness studio</a>, a <a href="../blog/what-music-should-a-bookshop-play.html">bookshop</a>, and a <a href="../blog/calming-music-for-dog-grooming-salons.html">dog grooming salon</a>.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "best-music-tempo-for-a-coffee-shop"
+      - slug: "best-bpm-for-workout-music"
+      - slug: "what-music-should-a-bookshop-play"
+      - slug: "the-wine-aisle"

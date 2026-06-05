@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- First-touch signup attribution. Stamps a `.entuned.co` cookie on the
+       FIRST page view so the original source (referrer + UTM) survives the
+       entuned.co -> app.entuned.co/start hop. The dashboard's /start reads the
+       same cookie (same name + shape) and forwards it to the server. Runs
+       early + first-touch-wins so it never overwrites the true upstream. -->
+  <script>
+    (function () {
+      try {
+        if (/(?:^|; )entuned_attr=/.test(document.cookie)) return;
+        var p = new URLSearchParams(window.location.search);
+        var payload = {
+          r: document.referrer || undefined,
+          lp: (window.location.pathname + window.location.search) || undefined,
+          us: p.get('utm_source') || undefined,
+          um: p.get('utm_medium') || undefined,
+          uc: p.get('utm_campaign') || undefined,
+          ut: p.get('utm_term') || undefined,
+          un: p.get('utm_content') || undefined,
+          t: new Date().toISOString()
+        };
+        var host = window.location.hostname;
+        var domain = (host === 'entuned.co' || /\.entuned\.co$/.test(host)) ? '; domain=.entuned.co' : '';
+        document.cookie = 'entuned_attr=' + encodeURIComponent(JSON.stringify(payload)) +
+          '; path=/' + domain + '; max-age=' + (30 * 24 * 60 * 60) + '; SameSite=Lax';
+      } catch (e) { /* best-effort */ }
+    })();
+  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/blog/best-bpm-for-workout-music.html">
+  <meta name="robots" content="index, follow">
+  <title>What's the Best BPM for Workout Music? What the Research Actually Says | Entuned</title>
+  <meta name="description" content="The research on music tempo and exercise: the 125-140 BPM band, the ~140 ceiling, and why the beat itself — not the hype — does most of the work.">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="../rss.xml">
+  <meta property="og:title" content="What&#x27;s the Best BPM for Workout Music? What the Research Actually Says | Entuned">
+  <meta property="og:description" content="The research on music tempo and exercise: the 125-140 BPM band, the ~140 ceiling, and why the beat itself — not the hype — does most of the work.">
+  <meta property="og:url" content="https://entuned.co/blog/best-bpm-for-workout-music.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://entuned.co/img/blog/workout-music-bpm.jpg">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-06-05">
+  <meta property="article:author" content="Daniel Fox">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="What&#x27;s the Best BPM for Workout Music? What the Research Actually Says | Entuned">
+  <meta name="twitter:description" content="The research on music tempo and exercise: the 125-140 BPM band, the ~140 ceiling, and why the beat itself — not the hype — does most of the work.">
+  <meta name="twitter:image" content="https://entuned.co/img/blog/workout-music-bpm.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What's the Best BPM for Workout Music? What the Research Actually Says | Entuned",
+  "author": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "datePublished": "2026-06-05",
+  "dateModified": "2026-06-05",
+  "description": "The research on music tempo and exercise: the 125-140 BPM band, the ~140 ceiling, and why the beat itself \u2014 not the hype \u2014 does most of the work.",
+  "image": "https://entuned.co/img/blog/workout-music-bpm.jpg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://entuned.co/blog/best-bpm-for-workout-music.html"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "retail music strategy"
+    },
+    {
+      "@type": "Thing",
+      "name": "in-store customer behavior"
+    },
+    {
+      "@type": "Thing",
+      "name": "engineered retail audio"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is there really an ideal tempo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Roughly, yes. The leading body of work here belongs to Costas Karageorghis at Brunel University, and the practical band that comes out of it is about 125 to 140 beats per minute for exercise music across a range of intensities. Music tends to read as more stimulating above roughly 120 BPM and more sedative below it \u2014 a gradient, not a hard switch. The more interesting finding is the ceiling. Preferred tempo rises as people work harder \u2014 but it plateaus around 140 BPM. Past that point, cranking the speed of the track doesn't buy you more. So the instinct to just play the fastest, most frantic\u2026"
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://entuned.co/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "What's the Best BPM for Workout Music? What the Research Actually Says | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=f83c77c3">
+  <link rel="stylesheet" href="../styles/blog.css">
+  
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav aria-label="Main navigation">
+  <div class="container">
+    <a href="/" class="logo"><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="../how-it-works.html">How It Works</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li class="nav-cta-item"><a href="https://app.entuned.co/start" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Start Free</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+  </div>
+</nav>
+
+  <main>
+  
+<!-- Reading progress bar -->
+<div class="blog-progress" aria-hidden="true">
+  <div class="blog-progress__bar" id="reading-progress"></div>
+</div>
+
+<article class="blog-article">
+
+  <!-- Article header -->
+  <header class="blog-article__header">
+    <div class="blog-eyebrow">FIELD NOTES</div>
+    <h1 class="blog-headline">What&#39;s the Best BPM for Workout Music? What the Research Actually Says</h1>
+    <p class="blog-dek">There&#39;s a real tempo band for exercise music — and a ceiling where faster stops helping. But the most useful finding is that the beat itself, not the hype, does most of the work.</p>
+    <div class="blog-byline">
+      <span class="blog-byline__author">Daniel Fox</span>
+      <span class="blog-byline__role">Founder &amp; CEO</span>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <time class="blog-byline__date" datetime="2026-06-05">2026-06-05</time>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <span class="blog-byline__reading-time">4 min read</span>
+    </div>
+  </header>
+
+  <!-- Hero image -->
+  <figure class="blog-hero fade-up">
+    <img src="../img/blog/workout-music-bpm.jpg" alt="A boutique fitness studio with exercise equipment and warm lighting" class="blog-hero__img" loading="lazy">
+    <figcaption class="blog-hero__caption">Photo: Unsplash</figcaption>
+  </figure>
+
+  <!-- Key takeaways -->
+  <div class="blog-takeaways">
+  <div class="blog-takeaways__title">Key takeaways</div>
+  <ul>
+    <li>Across the research synthesized by sport psychologist Costas Karageorghis, the useful tempo band for exercise music is roughly 125-140 BPM, and preference plateaus around 140 — faster than that stops adding benefit</li>
+    <li>Music reduces perceived effort by about 10%, but only at low-to-moderate intensity (Szmedra &amp; Bacharach, 1998). Push past your threshold and the effect fades, because the body&#39;s fatigue signals take over</li>
+    <li>The most useful finding for a studio: moving in time to the beat drove endurance gains even when the music was emotionally neutral — it&#39;s the synchronization, not the pump-up factor, doing most of the work</li>
+  </ul>
+</div>
+
+  <!-- Article body (all sections except key_takeaways, cta, related) -->
+  <div class="blog-article__body">
+    <div class="blog-prose">
+  <p>Picture the 6am class. Half the room is still half-asleep, coffee not yet landed, quietly negotiating with themselves about how hard they&rsquo;re actually going to go today. The first track starts. In the next thirty seconds, the room either leans into the work or coasts through it — and a surprising amount of that is set by what comes out of the speakers, not by the coach.</p>
+<p>Music and exercise is one of the few corners of this research where the effects are well measured and genuinely strong. There&rsquo;s a real answer to &ldquo;what tempo should I play.&rdquo; There are also two places the popular version of that answer is wrong.</p>
+</div>
+
+<h2 id="is-there-really-an-ideal-tempo" class="blog-subhead blog-subhead--h2">
+  Is there really an ideal tempo?
+  <a href="#is-there-really-an-ideal-tempo" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Roughly, yes. The leading body of work here belongs to Costas Karageorghis at Brunel University, and the practical band that comes out of it is about 125 to 140 beats per minute for exercise music across a range of intensities. Music tends to read as more stimulating above roughly 120 BPM and more sedative below it — a gradient, not a hard switch.</p>
+<p>The more interesting finding is the ceiling. Preferred tempo rises as people work harder — but it plateaus around 140 BPM. Past that point, cranking the speed of the track doesn&rsquo;t buy you more. So the instinct to just play the fastest, most frantic music you can find for a hard class is not supported. There&rsquo;s a sweet spot, and it has a top.</p>
+</div>
+
+<div class="blog-stat blog-stat--gold">
+  <div class="blog-stat__number">125-140</div>
+  <div class="blog-stat__label">The useful BPM band for exercise music. Preference plateaus around 140 — faster than that stops adding benefit</div>
+  <div class="blog-stat__source">Karageorghis et al.</div>
+</div>
+
+<h2 id="the-10-that-isnt-always-there" class="blog-subhead blog-subhead--h2">
+  The 10% that isn&#39;t always there
+  <a href="#the-10-that-isnt-always-there" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>The number you&rsquo;ll see everywhere is that music cuts perceived effort by about 10%. It&rsquo;s real — it traces to Szmedra and Bacharach in 1998 — but it comes with a condition the fitness blogs almost always drop. That 10% holds at low-to-moderate intensity. Once you push past your ventilatory threshold, into the genuinely hard part of a workout, the body&rsquo;s own fatigue signals flood your attention and music&rsquo;s effect on perceived effort largely disappears.</p>
+<p>Karageorghis and Priest put the upside plainly in their 2012 review: when music improves performance by delaying fatigue or raising work capacity, it can be thought of as &ldquo;a type of legal performance-enhancing drug.&rdquo; But the drug works on the warm-up and the steady-state middle, not on the all-out final interval. Knowing where in a class the lever actually pulls is more useful than knowing it exists.</p>
+</div>
+
+<h2 id="its-the-beat-not-the-hype" class="blog-subhead blog-subhead--h2">
+  It&#39;s the beat, not the hype
+  <a href="#its-the-beat-not-the-hype" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Here&rsquo;s the finding most worth building around. When people move in time to the beat — synchronously — the gains are real and measurable: in one study, motivational music raised treadmill endurance by as much as about 15% over silence (a best case, not a guarantee), and synchronizing pedaling to music used roughly 7% less oxygen for the same work. But the telling detail came from a study of triathletes, where emotionally neutral music synchronized to their stride boosted endurance just as much as deliberately motivating music did.</p>
+<p>That points somewhere specific. It isn&rsquo;t the lyrics or the anthem quality doing the heavy lifting. It&rsquo;s the tempo locking to the movement. Which means the most controllable, most reliable thing you can do with a studio&rsquo;s sound is get the beat right for what the body is doing — not just queue up songs that feel intense.</p>
+</div>
+
+<figure class="blog-pullquote blog-pullquote--teal">
+  <blockquote>Neutral music synchronized to the movement worked as well as pump-up music. The beat is the lever. The hype is decoration.</blockquote>
+</figure>
+
+<h2 id="what-this-means-for-your-studio" class="blog-subhead blog-subhead--h2">
+  What this means for your studio
+  <a href="#what-this-means-for-your-studio" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Three practical points fall out of the research. Keep the tempo in the 125-140 band for most work, and don&rsquo;t assume faster is always better — there&rsquo;s a ceiling. Expect the perceived-effort benefit on warm-ups and steady-state blocks, not on the hardest intervals, and program accordingly. And treat the beat itself as the real instrument: matching tempo to the phase of the class is doing more than any particular song choice.</p>
+<p>The catch is that a fixed mix can&rsquo;t do that. A class moves through phases — warm-up, build, peak, recover — and the tempo that helps in one phase is wrong for the next. The lever is real, well-documented, and stronger than in almost any other room. It just has to track what the body is doing.</p>
+</div>
+
+<div class="blog-prose">
+  <p>The wider research record on tempo, arousal, and performance is catalogued on <a href="../science.html">the science page</a>.</p>
+</div>
+  </div>
+
+  <!-- CTA -->
+  <aside class="blog-cta blog-cta--start-free">
+  <div class="blog-cta__headline">Hear it in your studio.</div>
+  <div class="blog-cta__body">Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &amp;mdash; no card, no time limit. PRO-indemnified the moment it plays.</div>
+  <a href="https://app.entuned.co/start" class="blog-cta__link">Start Free &rarr;</a>
+</aside>
+
+  <!-- Related posts -->
+  <section class="blog-related" aria-label="Related posts">
+  <h2 class="blog-related__title">Keep reading</h2>
+  <div class="blog-related__grid">
+    <a href="../blog/the-science-of-store-music.html" class="blog-related__card">
+      <img src="../img/blog/science-of-store-music.jpg" alt="The Science of Store Music: How Sound Quietly Changes What People Buy" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">The Science of Store Music: How Sound Quietly Changes What People Buy</span>
+      <span class="blog-related__dek">Store music really does move behavior — but the honest version is smaller and stranger than the listicles claim. Here&#39;s what the evidence actually supports, and what it doesn&#39;t.</span>
+    </a>
+    <a href="../blog/best-music-tempo-for-a-coffee-shop.html" class="blog-related__card">
+      <img src="../img/blog/coffee-shop-music-tempo.jpg" alt="What Music Tempo Should a Coffee Shop Play? The Honest Answer" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">What Music Tempo Should a Coffee Shop Play? The Honest Answer</span>
+      <span class="blog-related__dek">Slow music slows people down — that part is real. But the famous &#39;slow music makes you spend more&#39; study ran in a restaurant with a bar. A café is a different room.</span>
+    </a>
+    <a href="../blog/what-music-should-a-bookshop-play.html" class="blog-related__card">
+      <img src="../img/blog/bookshop-music.jpg" alt="What Music Should a Bookshop Play? The Research Is Counterintuitive" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">What Music Should a Bookshop Play? The Research Is Counterintuitive</span>
+      <span class="blog-related__dek">Music can change how long people browse, or what they pick up, or neither — and the obvious choice is rarely the effective one. What the research says about sound and the unplanned browse.</span>
+    </a>
+  </div>
+</section>
+
+</article>
+
+<!-- Blog-specific JS (reading progress + anchor copy) -->
+<script>
+  // Reading progress bar
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    document.getElementById('reading-progress').style.width = pct + '%';
+  });
+
+  // Anchor link copy-to-clipboard
+  document.querySelectorAll('.anchor-link').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      navigator.clipboard.writeText(window.location.origin + window.location.pathname + a.getAttribute('href'));
+      a.textContent = '\u2713'; setTimeout(() => a.textContent = '#', 1500);
+    });
+  });
+</script>
+  </main>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Engineered retail audio. PRO-indemnified.</p>
+      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="../how-it-works.html">How It Works</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="../enterprise.html">Enterprise</a></li>
+        <li><a href="../why-entuned.html">Why Entuned</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For Your Industry</h4>
+      <ul>
+        <li><a href="../for-apparel.html">Apparel</a></li>
+        <li><a href="../for-beauty-supply.html">Beauty Supply</a></li>
+        <li><a href="../for-cosmetics.html">Cosmetics &amp; Beauty</a></li>
+        <li><a href="../for-furniture-mattress.html">Furniture &amp; Mattress</a></li>
+        <li><a href="../for-home-goods.html">Home Goods</a></li>
+        <li><a href="../for-jewelry.html">Jewelry</a></li>
+        <li><a href="../for-specialty-retail.html">Specialty Retail</a></li>
+        <li><a href="../for-sporting-goods.html">Sporting Goods</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
+      <ul>
+        <li><a href="../for-retail-leaders.html">Retail Leaders</a></li>
+        <li><a href="../impact.html">Impact Calculator</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Research</h4>
+      <ul>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../results.html">Results</a></li>
+        <li><a href="../science.html">The Science</a></li>
+        <li><a href="../will-it-retail.html">Will It Retail?</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="../how-music-affects-retail.html">How Music Affects Retail</a></li>
+        <li><a href="../how-to-increase-aov-retail.html">Increase Average Order Value</a></li>
+        <li><a href="../how-to-increase-dwell-time-retail.html">Increase Dwell Time</a></li>
+        <li><a href="../how-to-increase-impulse-purchases-retail.html">Drive Impulse Purchases</a></li>
+        <li><a href="../how-to-improve-retail-conversion-rate.html">Improve Conversion Rate</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../partners.html">Partners</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="../licensing.html">Licensing &amp; PRO Coverage</a></li>
+        <li><a href="../data.html">Data Practices</a></li>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="../pricing/terms.html">Subscription Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG', {
+      linker: {
+        domains: ['entuned.co', 'music.entuned.co', 'app.entuned.co']
+      }
+    });
+  </script>
+  <script defer src="../js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>

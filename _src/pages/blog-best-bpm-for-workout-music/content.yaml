@@ -1,0 +1,94 @@
+title: "What's the Best BPM for Workout Music? What the Research Actually Says"
+slug: "best-bpm-for-workout-music"
+eyebrow: "FIELD NOTES"
+dek: "There's a real tempo band for exercise music — and a ceiling where faster stops helping. But the most useful finding is that the beat itself, not the hype, does most of the work."
+date: "2026-06-05"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/workout-music-bpm.jpg"
+  alt: "A boutique fitness studio with exercise equipment and warm lighting"
+  caption: "Photo: Unsplash"
+meta_description: "The research on music tempo and exercise: the 125-140 BPM band, the ~140 ceiling, and why the beat itself — not the hype — does most of the work."
+og_image: "/img/blog/workout-music-bpm.jpg"
+tags: [fitness-studio, gym, tempo, performance, field-notes, retail-music]
+sections:
+  - type: key_takeaways
+    items:
+      - "Across the research synthesized by sport psychologist Costas Karageorghis, the useful tempo band for exercise music is roughly 125-140 BPM, and preference plateaus around 140 — faster than that stops adding benefit"
+      - "Music reduces perceived effort by about 10%, but only at low-to-moderate intensity (Szmedra & Bacharach, 1998). Push past your threshold and the effect fades, because the body's fatigue signals take over"
+      - "The most useful finding for a studio: moving in time to the beat drove endurance gains even when the music was emotionally neutral — it's the synchronization, not the pump-up factor, doing most of the work"
+
+  - type: prose
+    body: |
+      Picture the 6am class. Half the room is still half-asleep, coffee not yet landed, quietly negotiating with themselves about how hard they're actually going to go today. The first track starts. In the next thirty seconds, the room either leans into the work or coasts through it — and a surprising amount of that is set by what comes out of the speakers, not by the coach.
+
+      Music and exercise is one of the few corners of this research where the effects are well measured and genuinely strong. There's a real answer to "what tempo should I play." There are also two places the popular version of that answer is wrong.
+
+  - type: subhead
+    level: 2
+    text: "Is there really an ideal tempo?"
+
+  - type: prose
+    body: |
+      Roughly, yes. The leading body of work here belongs to Costas Karageorghis at Brunel University, and the practical band that comes out of it is about 125 to 140 beats per minute for exercise music across a range of intensities. Music tends to read as more stimulating above roughly 120 BPM and more sedative below it — a gradient, not a hard switch.
+
+      The more interesting finding is the ceiling. Preferred tempo rises as people work harder — but it plateaus around 140 BPM. Past that point, cranking the speed of the track doesn't buy you more. So the instinct to just play the fastest, most frantic music you can find for a hard class is not supported. There's a sweet spot, and it has a top.
+
+  - type: stat_callout
+    number: "125-140"
+    label: "The useful BPM band for exercise music. Preference plateaus around 140 — faster than that stops adding benefit"
+    source: "Karageorghis et al."
+    accent: gold
+
+  - type: subhead
+    level: 2
+    text: "The 10% that isn't always there"
+
+  - type: prose
+    body: |
+      The number you'll see everywhere is that music cuts perceived effort by about 10%. It's real — it traces to Szmedra and Bacharach in 1998 — but it comes with a condition the fitness blogs almost always drop. That 10% holds at low-to-moderate intensity. Once you push past your ventilatory threshold, into the genuinely hard part of a workout, the body's own fatigue signals flood your attention and music's effect on perceived effort largely disappears.
+
+      Karageorghis and Priest put the upside plainly in their 2012 review: when music improves performance by delaying fatigue or raising work capacity, it can be thought of as "a type of legal performance-enhancing drug." But the drug works on the warm-up and the steady-state middle, not on the all-out final interval. Knowing where in a class the lever actually pulls is more useful than knowing it exists.
+
+  - type: subhead
+    level: 2
+    text: "It's the beat, not the hype"
+
+  - type: prose
+    body: |
+      Here's the finding most worth building around. When people move in time to the beat — synchronously — the gains are real and measurable: in one study, motivational music raised treadmill endurance by as much as about 15% over silence (a best case, not a guarantee), and synchronizing pedaling to music used roughly 7% less oxygen for the same work. But the telling detail came from a study of triathletes, where emotionally neutral music synchronized to their stride boosted endurance just as much as deliberately motivating music did.
+
+      That points somewhere specific. It isn't the lyrics or the anthem quality doing the heavy lifting. It's the tempo locking to the movement. Which means the most controllable, most reliable thing you can do with a studio's sound is get the beat right for what the body is doing — not just queue up songs that feel intense.
+
+  - type: pullquote
+    text: "Neutral music synchronized to the movement worked as well as pump-up music. The beat is the lever. The hype is decoration."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "What this means for your studio"
+
+  - type: prose
+    body: |
+      Three practical points fall out of the research. Keep the tempo in the 125-140 band for most work, and don't assume faster is always better — there's a ceiling. Expect the perceived-effort benefit on warm-ups and steady-state blocks, not on the hardest intervals, and program accordingly. And treat the beat itself as the real instrument: matching tempo to the phase of the class is doing more than any particular song choice.
+
+      The catch is that a fixed mix can't do that. A class moves through phases — warm-up, build, peak, recover — and the tempo that helps in one phase is wrong for the next. The lever is real, well-documented, and stronger than in almost any other room. It just has to track what the body is doing.
+
+  - type: prose
+    body: |
+      The wider research record on tempo, arousal, and performance is catalogued on <a href="../science.html">the science page</a>.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it in your studio."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "the-science-of-store-music"
+      - slug: "best-music-tempo-for-a-coffee-shop"
+      - slug: "what-music-should-a-bookshop-play"

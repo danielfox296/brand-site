@@ -1,0 +1,96 @@
+title: "What Music Should a Bookshop Play? The Research Is Counterintuitive"
+slug: "what-music-should-a-bookshop-play"
+eyebrow: "FIELD NOTES"
+dek: "Music can change how long people browse, or what they pick up, or neither — and the obvious choice is rarely the effective one. What the research says about sound and the unplanned browse."
+date: "2026-06-05"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/bookshop-music.jpg"
+  alt: "Interior of an independent bookshop with full wooden shelves"
+  caption: "Photo: Unsplash"
+meta_description: "What the research says about music and browsing in a bookshop: it can change how long people stay, what they pick up, or neither — so you have to choose the outcome."
+og_image: "/img/blog/bookshop-music.jpg"
+tags: [bookshop, familiarity, dwell-time, field-notes, retail-music]
+sections:
+  - type: key_takeaways
+    items:
+      - "In a controlled study, people actually shopped longer when the music was unfamiliar — but they felt like they'd spent more time when the music was familiar. Real time and felt time moved in opposite directions (Yalch & Spangenberg, 2000)"
+      - "Slow-tempo music slows the pace of movement through a space (Milliman, 1982), which is the lever most people reach for when they want browsing"
+      - "But a famous wine-store study is a warning: music changed which products people chose without changing how long they stayed at all (Areni & Kim, 1993). Music can land on selection, not dwell — so you have to be clear which one you're after"
+
+  - type: prose
+    body: |
+      A customer comes in for one specific title. Twenty minutes later they're three sections away from where they started, holding four books they didn't know they wanted. That drift — the unplanned browse — is much of the delight, and a real part of the margin, in a bookshop. The question worth asking is whether the music in the room is encouraging that drift or quietly ending it.
+
+      The honest answer runs against instinct. The music that makes people stay and browse is often not the music that feels best to stand in. Two findings explain why, and the gap between them is the whole point.
+
+  - type: subhead
+    level: 2
+    text: "Does familiar music keep people browsing longer?"
+
+  - type: prose
+    body: |
+      You'd assume yes — comfortable, recognizable music should make people relax and linger. The data says the opposite. In a 2000 study, Yalch and Spangenberg had people shop while either familiar or unfamiliar music played, and measured both how long they actually stayed and how long they thought they'd stayed.
+
+      People exposed to unfamiliar music actually browsed longer. But people exposed to familiar music reported feeling like they'd spent more time in the store. Real time and perceived time ran in opposite directions: familiar music made the visit feel longer while actually shortening it; unfamiliar music quietly stretched the visit while making it feel shorter. The researchers tied the shorter actual times under familiar music to higher arousal, and chalked the longer perceived time up to unmeasured cognitive factors. In plain terms: exactly why it works this way isn't fully settled — the surprising part is the direction.
+
+  - type: stat_callout
+    number: "Opposite ways"
+    label: "Familiar music made shoppers feel they'd stayed longer while actually leaving sooner; unfamiliar music stretched actual browsing time while feeling shorter"
+    source: "Yalch & Spangenberg, 2000"
+    accent: gold
+
+  - type: prose
+    body: |
+      One honest caveat: that study was run in a controlled setting made up to look like a clothing store, not in an actual bookshop. The mechanism — familiarity and arousal shaping how long people stay — is what travels. The exact minutes don't.
+
+  - type: subhead
+    level: 2
+    text: "The other lever: tempo and pace"
+
+  - type: prose
+    body: |
+      The more reliable, better-replicated lever is tempo. Ronald Milliman's 1982 supermarket work established that slow-tempo music slows the physical pace at which people move through a space, and faster music speeds it up. For a bookshop, where the goal is usually to keep people moving slowly enough to notice the next shelf, slower tempo is the more straightforward tool. It doesn't depend on the familiarity puzzle above; it just changes the speed of the room.
+
+  - type: subhead
+    level: 2
+    text: "The warning nobody includes"
+
+  - type: prose
+    body: |
+      Here's the finding that should keep you honest. In a 1993 study, Areni and Kim played classical versus pop music in a wine store. The classical music led customers to buy more expensive bottles — but it did not change how long they stayed at all. The effect landed entirely on what they selected, not on how long they browsed.
+
+      That's the trap in assuming any music change buys you more dwell. Sometimes music moves time in the room; sometimes it moves choice and leaves time untouched; sometimes it does neither because it was chosen for no one. You can't get all of it by accident. You have to decide which outcome you're actually after — longer browsing, a calmer felt experience, a nudge toward certain shelves — and choose the sound for that.
+
+  - type: pullquote
+    text: "Music can change how long people stay, or what they pick up, or neither. Which one you get is not something to leave to chance."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "What this means for your shop"
+
+  - type: prose
+    body: |
+      The takeaway isn't a single track recommendation. It's that the sound in a bookshop is already shaping the browse, and the obvious instinct — play comfortable, familiar favorites — may be gently moving people toward the door while feeling like hospitality. If browsing time is what you want, the levers are slower tempo and music that holds a little attention rather than washing past. If you want a particular section to move, that's a different setting again.
+
+      That is the part a fixed feed of crowd-pleasers can't give you: a deliberate choice about which outcome the room is tuned for. The research is unusually clear that the obvious choice and the effective choice are not the same.
+
+  - type: prose
+    body: |
+      The wider research record on familiarity, tempo, and browsing is catalogued on <a href="../science.html">the science page</a>.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it in your shop."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "the-science-of-store-music"
+      - slug: "best-music-tempo-for-a-coffee-shop"
+      - slug: "how-does-tempo-affect-shoppers"

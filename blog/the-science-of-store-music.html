@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- First-touch signup attribution. Stamps a `.entuned.co` cookie on the
+       FIRST page view so the original source (referrer + UTM) survives the
+       entuned.co -> app.entuned.co/start hop. The dashboard's /start reads the
+       same cookie (same name + shape) and forwards it to the server. Runs
+       early + first-touch-wins so it never overwrites the true upstream. -->
+  <script>
+    (function () {
+      try {
+        if (/(?:^|; )entuned_attr=/.test(document.cookie)) return;
+        var p = new URLSearchParams(window.location.search);
+        var payload = {
+          r: document.referrer || undefined,
+          lp: (window.location.pathname + window.location.search) || undefined,
+          us: p.get('utm_source') || undefined,
+          um: p.get('utm_medium') || undefined,
+          uc: p.get('utm_campaign') || undefined,
+          ut: p.get('utm_term') || undefined,
+          un: p.get('utm_content') || undefined,
+          t: new Date().toISOString()
+        };
+        var host = window.location.hostname;
+        var domain = (host === 'entuned.co' || /\.entuned\.co$/.test(host)) ? '; domain=.entuned.co' : '';
+        document.cookie = 'entuned_attr=' + encodeURIComponent(JSON.stringify(payload)) +
+          '; path=/' + domain + '; max-age=' + (30 * 24 * 60 * 60) + '; SameSite=Lax';
+      } catch (e) { /* best-effort */ }
+    })();
+  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/blog/the-science-of-store-music.html">
+  <meta name="robots" content="index, follow">
+  <title>The Science of Store Music: How Sound Quietly Changes What People Buy | Entuned</title>
+  <meta name="description" content="What the research really says about store music: the effects are real but small and depend on fit. A meta-analysis of 32 studies, and what it means for your store.">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="../rss.xml">
+  <meta property="og:title" content="The Science of Store Music: How Sound Quietly Changes What People Buy | Entuned">
+  <meta property="og:description" content="What the research really says about store music: the effects are real but small and depend on fit. A meta-analysis of 32 studies, and what it means for your store.">
+  <meta property="og:url" content="https://entuned.co/blog/the-science-of-store-music.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://entuned.co/img/blog/science-of-store-music.jpg">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-06-05">
+  <meta property="article:author" content="Daniel Fox">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Science of Store Music: How Sound Quietly Changes What People Buy | Entuned">
+  <meta name="twitter:description" content="What the research really says about store music: the effects are real but small and depend on fit. A meta-analysis of 32 studies, and what it means for your store.">
+  <meta name="twitter:image" content="https://entuned.co/img/blog/science-of-store-music.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "The Science of Store Music: How Sound Quietly Changes What People Buy | Entuned",
+  "author": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "datePublished": "2026-06-05",
+  "dateModified": "2026-06-05",
+  "description": "What the research really says about store music: the effects are real but small and depend on fit. A meta-analysis of 32 studies, and what it means for your store.",
+  "image": "https://entuned.co/img/blog/science-of-store-music.jpg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://entuned.co/blog/the-science-of-store-music.html"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "retail music strategy"
+    },
+    {
+      "@type": "Thing",
+      "name": "in-store customer behavior"
+    },
+    {
+      "@type": "Thing",
+      "name": "engineered retail audio"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How big is the effect, really?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Start with the strongest evidence available, because it's also the most sobering. In 2006, Garlin and Owen pooled 32 studies of music in retail settings into a single meta-analysis \u2014 the kind of evidence that beats any one dramatic field experiment. Their verdict: the effects are real, and they are small. Music reliably nudges three things: how people feel (pleasure and arousal), how much time they perceive passing, and, more weakly, what they buy. And the active ingredients weren't the mere presence of music \u2014 they were tempo and how much people liked it. Music works through mood and pace,\u2026"
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://entuned.co/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "The Science of Store Music: How Sound Quietly Changes What People Buy | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=f83c77c3">
+  <link rel="stylesheet" href="../styles/blog.css">
+  
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav aria-label="Main navigation">
+  <div class="container">
+    <a href="/" class="logo"><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="../how-it-works.html">How It Works</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li class="nav-cta-item"><a href="https://app.entuned.co/start" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Start Free</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+  </div>
+</nav>
+
+  <main>
+  
+<!-- Reading progress bar -->
+<div class="blog-progress" aria-hidden="true">
+  <div class="blog-progress__bar" id="reading-progress"></div>
+</div>
+
+<article class="blog-article">
+
+  <!-- Article header -->
+  <header class="blog-article__header">
+    <div class="blog-eyebrow">FIELD NOTES</div>
+    <h1 class="blog-headline">The Science of Store Music: How Sound Quietly Changes What People Buy</h1>
+    <p class="blog-dek">Store music really does move behavior — but the honest version is smaller and stranger than the listicles claim. Here&#39;s what the evidence actually supports, and what it doesn&#39;t.</p>
+    <div class="blog-byline">
+      <span class="blog-byline__author">Daniel Fox</span>
+      <span class="blog-byline__role">Founder &amp; CEO</span>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <time class="blog-byline__date" datetime="2026-06-05">2026-06-05</time>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <span class="blog-byline__reading-time">5 min read</span>
+    </div>
+  </header>
+
+  <!-- Hero image -->
+  <figure class="blog-hero fade-up">
+    <img src="../img/blog/science-of-store-music.jpg" alt="A specialty retail boutique storefront with a clothing window display" class="blog-hero__img" loading="lazy">
+    <figcaption class="blog-hero__caption">Photo: Unsplash</figcaption>
+  </figure>
+
+  <!-- Key takeaways -->
+  <div class="blog-takeaways">
+  <div class="blog-takeaways__title">Key takeaways</div>
+  <ul>
+    <li>The strongest evidence — a meta-analysis of 32 studies — finds store music has real but small effects on shoppers, working through mood, arousal, and time perception rather than directly on the wallet (Garlin &amp; Owen, 2006)</li>
+    <li>Music that fits the product can shift choice without shoppers noticing: French music sold French wine, German music sold German wine, and almost no one believed the music had affected them (North, Hargreaves &amp; McKendrick, 1997/1999)</li>
+    <li>The lever is conditional. Music that fits the room and the customer nudges behavior; music chosen for nobody — or music people actively dislike — does little, or backfires</li>
+  </ul>
+</div>
+
+  <!-- Article body (all sections except key_takeaways, cta, related) -->
+  <div class="blog-article__body">
+    <div class="blog-prose">
+  <p>Search for &ldquo;how music affects sales&rdquo; and you&rsquo;ll get a wall of confident numbers: slow music lifts spending 38%, classical makes people buy premium, the right soundtrack transforms your store. Some of that traces to real studies. Most of it has been inflated, stripped of its conditions, and repeated until it sounds like a law of nature.</p>
+<p>The actual science is more interesting than the hype, partly because it&rsquo;s more honest. Store music does change what people do. The effect is just smaller, stranger, and more dependent on getting it right than the listicles admit. Here&rsquo;s what the evidence genuinely supports.</p>
+</div>
+
+<h2 id="how-big-is-the-effect-really" class="blog-subhead blog-subhead--h2">
+  How big is the effect, really?
+  <a href="#how-big-is-the-effect-really" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Start with the strongest evidence available, because it&rsquo;s also the most sobering. In 2006, Garlin and Owen pooled 32 studies of music in retail settings into a single meta-analysis — the kind of evidence that beats any one dramatic field experiment. Their verdict: the effects are real, and they are small.</p>
+<p>Music reliably nudges three things: how people feel (pleasure and arousal), how much time they perceive passing, and, more weakly, what they buy. And the active ingredients weren&rsquo;t the mere presence of music — they were tempo and how much people liked it. Music works through mood and pace, not by reaching directly into the buying decision. Any article that leads with a giant sales-lift number and skips the meta-analysis is cherry-picking.</p>
+</div>
+
+<div class="blog-stat blog-stat--gold">
+  <div class="blog-stat__number">Small but real</div>
+  <div class="blog-stat__label">A meta-analysis of 32 retail-music studies found consistent but small effects on spend, time, and mood — driven by tempo and liking, not by music&#39;s mere presence</div>
+  <div class="blog-stat__source">Garlin &amp; Owen, 2006</div>
+</div>
+
+<h2 id="the-part-thats-genuinely-uncanny" class="blog-subhead blog-subhead--h2">
+  The part that&#39;s genuinely uncanny
+  <a href="#the-part-thats-genuinely-uncanny" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Small on average doesn&rsquo;t mean weak everywhere. The most striking demonstration is the wine-aisle study by North, Hargreaves and McKendrick. Over two weeks, a supermarket display alternated French and German music above a shelf of matched French and German wines. On French-music days, French wine outsold German by roughly five bottles to one. On German-music days, German wine outsold French by about two to one.</p>
+<p>Then the researchers asked buyers whether the music had influenced their choice. The overwhelming majority said no. Their behavior had swung hard with the soundtrack while their conscious explanation of that behavior had nothing to do with it. That gap — strong influence, near-zero awareness — is the most reliable and most unsettling finding in this whole literature. (Worth noting: the absolute bottle counts were small, one display over two weeks. The effect is vivid, not a precise commercial estimate.)</p>
+</div>
+
+<figure class="blog-pullquote blog-pullquote--teal">
+  <blockquote>Their behavior swung hard with the music. Almost none of them believed the music had anything to do with it.</blockquote>
+</figure>
+
+<h2 id="why-fit-is-the-whole-game" class="blog-subhead blog-subhead--h2">
+  Why &#39;fit&#39; is the whole game
+  <a href="#why-fit-is-the-whole-game" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>The wine study works because the music fit the product — Frenchness priming French wine. The same team found that classical music in a restaurant raised average spend per head modestly (about £32.50 versus £29.50 under pop or no music), interpreted as upscale connotations priming an upmarket frame. And tempo&rsquo;s effect on pace — slow music slowing people down, established by Milliman in 1982 — is itself a kind of fit between the music and the behavior you want.</p>
+<p>The counterexample is just as instructive. When Areni and Kim played classical versus pop in a wine store in 1993, the classical music shifted customers toward pricier bottles — but didn&rsquo;t change how long they stayed at all. Music landed on selection and left dwell untouched. The lesson across all of it: music does something specific when it fits a specific goal. Generic &ldquo;nice&rdquo; music, fit to nothing, mostly just fills the air.</p>
+</div>
+
+<h2 id="what-this-means-for-your-store" class="blog-subhead blog-subhead--h2">
+  What this means for your store
+  <a href="#what-this-means-for-your-store" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Put the honest version together and it&rsquo;s a sharper tool than the hype. The effect of store music is small but real; it works through mood, arousal, and time perception; it can shift choice without anyone noticing; and it only does these things when the music fits the customer and the outcome you want. Music chosen for no one is the default in most stores, and the default is leaving the lever on the floor.</p>
+<p>This is exactly why the same advice doesn&rsquo;t fit every shop. A café, a gym, a bookshop, and a grooming salon each want a different thing from their sound — turnover, effort, browsing, calm — and the research is specific to each. The point isn&rsquo;t to play more music. It&rsquo;s to play music tuned to what your particular room is for.</p>
+</div>
+
+<div class="blog-prose">
+  <p>The full catalogue of studies behind these levers lives on <a href="../science.html">the science page</a>. For the vertical-specific versions, see how the research plays out in a <a href="../blog/best-music-tempo-for-a-coffee-shop.html">coffee shop</a>, a <a href="../blog/best-bpm-for-workout-music.html">fitness studio</a>, a <a href="../blog/what-music-should-a-bookshop-play.html">bookshop</a>, and a <a href="../blog/calming-music-for-dog-grooming-salons.html">dog grooming salon</a>.</p>
+</div>
+  </div>
+
+  <!-- CTA -->
+  <aside class="blog-cta blog-cta--start-free">
+  <div class="blog-cta__headline">Hear it on your floor.</div>
+  <div class="blog-cta__body">Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &amp;mdash; no card, no time limit. PRO-indemnified the moment it plays.</div>
+  <a href="https://app.entuned.co/start" class="blog-cta__link">Start Free &rarr;</a>
+</aside>
+
+  <!-- Related posts -->
+  <section class="blog-related" aria-label="Related posts">
+  <h2 class="blog-related__title">Keep reading</h2>
+  <div class="blog-related__grid">
+    <a href="../blog/best-music-tempo-for-a-coffee-shop.html" class="blog-related__card">
+      <img src="../img/blog/coffee-shop-music-tempo.jpg" alt="What Music Tempo Should a Coffee Shop Play? The Honest Answer" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">What Music Tempo Should a Coffee Shop Play? The Honest Answer</span>
+      <span class="blog-related__dek">Slow music slows people down — that part is real. But the famous &#39;slow music makes you spend more&#39; study ran in a restaurant with a bar. A café is a different room.</span>
+    </a>
+    <a href="../blog/best-bpm-for-workout-music.html" class="blog-related__card">
+      <img src="../img/blog/workout-music-bpm.jpg" alt="What&#39;s the Best BPM for Workout Music? What the Research Actually Says" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">What&#39;s the Best BPM for Workout Music? What the Research Actually Says</span>
+      <span class="blog-related__dek">There&#39;s a real tempo band for exercise music — and a ceiling where faster stops helping. But the most useful finding is that the beat itself, not the hype, does most of the work.</span>
+    </a>
+    <a href="../blog/what-music-should-a-bookshop-play.html" class="blog-related__card">
+      <img src="../img/blog/bookshop-music.jpg" alt="What Music Should a Bookshop Play? The Research Is Counterintuitive" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">What Music Should a Bookshop Play? The Research Is Counterintuitive</span>
+      <span class="blog-related__dek">Music can change how long people browse, or what they pick up, or neither — and the obvious choice is rarely the effective one. What the research says about sound and the unplanned browse.</span>
+    </a>
+    <a href="../blog/the-wine-aisle.html" class="blog-related__card">
+      <img src="../img/blog/the-wine-aisle.jpg" alt="The Wine Aisle" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">The Wine Aisle</span>
+      <span class="blog-related__dek">A 1999 study proved French music sold French wine and German music sold German wine. Shoppers had no idea. Associative priming is the layer nobody uses.</span>
+    </a>
+  </div>
+</section>
+
+</article>
+
+<!-- Blog-specific JS (reading progress + anchor copy) -->
+<script>
+  // Reading progress bar
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    document.getElementById('reading-progress').style.width = pct + '%';
+  });
+
+  // Anchor link copy-to-clipboard
+  document.querySelectorAll('.anchor-link').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      navigator.clipboard.writeText(window.location.origin + window.location.pathname + a.getAttribute('href'));
+      a.textContent = '\u2713'; setTimeout(() => a.textContent = '#', 1500);
+    });
+  });
+</script>
+  </main>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Engineered retail audio. PRO-indemnified.</p>
+      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="../how-it-works.html">How It Works</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="../enterprise.html">Enterprise</a></li>
+        <li><a href="../why-entuned.html">Why Entuned</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For Your Industry</h4>
+      <ul>
+        <li><a href="../for-apparel.html">Apparel</a></li>
+        <li><a href="../for-beauty-supply.html">Beauty Supply</a></li>
+        <li><a href="../for-cosmetics.html">Cosmetics &amp; Beauty</a></li>
+        <li><a href="../for-furniture-mattress.html">Furniture &amp; Mattress</a></li>
+        <li><a href="../for-home-goods.html">Home Goods</a></li>
+        <li><a href="../for-jewelry.html">Jewelry</a></li>
+        <li><a href="../for-specialty-retail.html">Specialty Retail</a></li>
+        <li><a href="../for-sporting-goods.html">Sporting Goods</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
+      <ul>
+        <li><a href="../for-retail-leaders.html">Retail Leaders</a></li>
+        <li><a href="../impact.html">Impact Calculator</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Research</h4>
+      <ul>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../results.html">Results</a></li>
+        <li><a href="../science.html">The Science</a></li>
+        <li><a href="../will-it-retail.html">Will It Retail?</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="../how-music-affects-retail.html">How Music Affects Retail</a></li>
+        <li><a href="../how-to-increase-aov-retail.html">Increase Average Order Value</a></li>
+        <li><a href="../how-to-increase-dwell-time-retail.html">Increase Dwell Time</a></li>
+        <li><a href="../how-to-increase-impulse-purchases-retail.html">Drive Impulse Purchases</a></li>
+        <li><a href="../how-to-improve-retail-conversion-rate.html">Improve Conversion Rate</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../partners.html">Partners</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="../licensing.html">Licensing &amp; PRO Coverage</a></li>
+        <li><a href="../data.html">Data Practices</a></li>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="../pricing/terms.html">Subscription Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG', {
+      linker: {
+        domains: ['entuned.co', 'music.entuned.co', 'app.entuned.co']
+      }
+    });
+  </script>
+  <script defer src="../js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+title: "What Music Tempo Should a Coffee Shop Play? The Honest Answer"
+slug: "best-music-tempo-for-a-coffee-shop"
+eyebrow: "FIELD NOTES"
+dek: "Slow music slows people down — that part is real. But the famous 'slow music makes you spend more' study ran in a restaurant with a bar. A café is a different room."
+date: "2026-06-05"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/coffee-shop-music-tempo.jpg"
+  alt: "An espresso machine and grinders on the counter of a small coffee shop"
+  caption: "Photo: Unsplash"
+meta_description: "Slow music slows customers down — but the famous spend lift came from a restaurant bar, not a café. What the tempo research really says for a coffee shop."
+og_image: "/img/blog/coffee-shop-music-tempo.jpg"
+tags: [coffee-shop, tempo, dwell-time, field-notes, retail-music]
+sections:
+  - type: key_takeaways
+    items:
+      - "In Ronald Milliman's 1982 supermarket study, slow-tempo music slowed the pace of customer movement, and daily sales ran about 38% higher under slow music than under fast — a pace effect, not proof that slow music makes people spend more everywhere"
+      - "The restaurant version of that result (Milliman, 1986) came almost entirely from diners ordering more drinks over a longer sit. Food spend did not move — and a café has no bar"
+      - "A later study found tempo was not even the deciding factor: customers lingered when they liked the music, and longer stays drove higher spend (Caldwell & Hibbert, 2002). For a café, the real question is whether this hour needs turnover or lingering"
+
+  - type: prose
+    body: |
+      Two moments from the same café. At 8:15 the line is six deep and every second of dithering at the register costs you the morning rush. At 3:30 the room is half-empty and one laptop has been nursing a single drip coffee for two hours. Same speakers, same loop of songs — and the music is almost certainly pulling in one direction while your business needs two.
+
+      Most café owners pick music by taste and never think about it again. That is a missed lever, but it is also where most "play slow music to sell more" advice quietly goes wrong. The research is real. It just doesn't say what the listicles say it says.
+
+  - type: subhead
+    level: 2
+    text: "Does slower music really make people stay — and spend?"
+
+  - type: prose
+    body: |
+      The foundational study is Ronald Milliman's 1982 field experiment in a supermarket. He rotated the store through slow-tempo music, fast-tempo music, and none, and measured how people moved and what they bought. Under slow music, in-store traffic flow was measurably slower. And daily gross sales were about 38% higher under slow music than under fast.
+
+      Note the comparison carefully, because this is where it gets misquoted: the 38% is slow versus fast, not slow versus a normal day. It is a real, striking number, and it is a pace effect — slower music, slower movement, more time in the aisles.
+
+  - type: stat_callout
+    number: "38%"
+    label: "Higher daily sales under slow-tempo vs fast-tempo music in Milliman's supermarket study. A pace effect — not a guarantee of more spend in every kind of store"
+    source: "Milliman, 1982"
+    accent: gold
+
+  - type: subhead
+    level: 2
+    text: "Why a café is not a restaurant"
+
+  - type: prose
+    body: |
+      Milliman ran the same idea in a restaurant in 1986, and the result is the one everyone half-remembers. Diners stayed significantly longer under slow music — about 56 minutes versus 45. But here is the part that gets dropped: food spending did not meaningfully change. The extra money came almost entirely from people ordering more drinks during the longer sit.
+
+      That is the engine behind "slow music makes people spend more," and it runs on a bar. A café mostly doesn't have one. Worse, in a café longer dwell can cut the other way: a laptop camper holding a two-top for three hours on one drip coffee is slow music working exactly as designed and quietly costing you the seat. The supermarket and restaurant findings are real. They were just not measured in your room.
+
+  - type: subhead
+    level: 2
+    text: "The lever that actually moved the needle"
+
+  - type: prose
+    body: |
+      The most useful study here is the one that complicates the tempo story. In 2002, Caldwell and Hibbert varied both the tempo and the likability of music in a restaurant. Tempo, on its own, was not statistically significant. What predicted how long people stayed was whether they liked the music — and how long they stayed was the strongest predictor of how much they spent.
+
+      In other words, the path to spend did not run through beats per minute. It ran through dwell time, and dwell time ran through fit. Music the room actually likes keeps people there. Music chosen for nobody in particular, fast or slow, mostly just plays.
+
+  - type: pullquote
+    text: "The spend didn't come from slow music. It came from people staying — and people stay for music that fits them, not music that happens to be slow."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "So: speed up, or slow down?"
+
+  - type: prose
+    body: |
+      The honest answer is that there is no single right tempo, because your café is not trying to do one thing all day. At the morning rush, leaning faster keeps the line moving and turns the seats you need to turn. In the slow mid-afternoon, slower, well-liked music invites the lingering and loyalty that fills an empty room. The mistake is not picking the wrong tempo. It is picking one tempo and letting it run from open to close.
+
+      That is the whole idea behind matching your sound to what each part of the day is actually for — like day-parting, but better. The lever is real. It just has to point where the hour needs it to.
+
+  - type: prose
+    body: |
+      The wider research record on tempo, dwell, and spend is catalogued on <a href="../science.html">the science page</a>.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it in your café."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "the-science-of-store-music"
+      - slug: "best-bpm-for-workout-music"
+      - slug: "does-slow-music-increase-sales"
