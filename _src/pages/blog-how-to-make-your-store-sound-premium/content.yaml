@@ -18,7 +18,7 @@ sections:
   - type: key_takeaways
     items:
       - "The genre label on your music does not predict whether customers perceive the store as premium"
-      - "Areni and Kim documented a 2.5x increase in average wine purchase price when the audio environment shifted"
+      - "Areni and Kim documented customers trading up to more expensive wine when the audio environment shifted to classical — with no increase in the number of bottles sold"
       - "Research shows an 8-12% increase in willingness to pay when music matches customer identity"
       - "You do not need a luxury brand to benefit from premium audio. Any store positioned above commodity can use it."
 
@@ -37,13 +37,13 @@ sections:
     body: |
       A VP of store experience at a 25-location chain once told me every visual element in her stores was spec'd to the inch. The fixtures, the lighting color temperature, the folding technique on the display table. Then I asked about the music. She shrugged. "Whoever opens picks the Sonos playlist."
 
-      That gap shows up in the data. Areni and Kim ran a study in 1993 where they changed nothing in a wine store except the audio. When the audio environment shifted to classical selections, the average purchase price went up 2.5x. Customers did not suddenly develop better taste in wine. Their perception of what kind of store they were standing in changed. That perception moved their spending.
+      That gap shows up in the data. Areni and Kim ran a study in 1993 where they changed nothing in a wine store except the audio. When the audio environment shifted to classical selections, customers traded up to more expensive bottles — without buying any more of them. Customers did not suddenly develop better taste in wine. Their perception of what kind of store they were standing in changed. That perception moved their spending.
 
       The takeaway for operators is not "play classical music." Classical is not a magic word. The takeaway is that audio carries quality signals the same way lighting and materials do. Customers read those signals whether you set them intentionally or not.
 
   - type: stat_callout
-    number: "2.5x"
-    label: "increase in average purchase price when audio matched the store's quality positioning"
+    number: "Pricier"
+    label: "the bottles customers chose when audio matched the store's quality positioning — the number of bottles sold did not change"
     source: "Areni & Kim, 1993"
     accent: gold
 

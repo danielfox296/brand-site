@@ -39,8 +39,8 @@ sections:
       On classical music days, customers selected significantly more expensive bottles. They were not wine experts responding to some sophisticated cue. Most of them probably could not have named the piece playing. But they heard something that changed their sense of what kind of store they were in, and that changed what they were willing to spend.
 
   - type: stat_callout
-    number: "2.5x"
-    label: "increase in average wine purchase price with classical music vs. pop"
+    number: "Pricier"
+    label: "the wine customers chose with classical music vs. pop — they traded up to costlier bottles without buying more of them"
     source: "Areni & Kim, 1993"
     accent: gold
 
