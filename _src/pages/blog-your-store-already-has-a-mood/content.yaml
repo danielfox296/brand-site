@@ -58,9 +58,9 @@ sections:
       The research tells a different story. Areni and Kim showed in 1993 that when music matched the positioning of a wine store, customers chose more expensive bottles and spent more per visit. The key was congruence, not energy. Customers in a space that felt aspirational made purchasing decisions that reflected that aspiration.
 
   - type: stat_callout
-    number: "8-12%"
-    label: "Increase in willingness to pay when music matches store positioning"
-    source: "Areni and Kim, 1993"
+    number: "Higher"
+    label: "Willingness to pay when music matches store positioning, versus generic music"
+    source: "North, Sheridan & Areni, 2016; Flynn et al., 2022"
     accent: gold
 
   - type: prose

@@ -11,7 +11,7 @@ hero:
   src: "../img/blog/how-to-make-your-store-sound-premium.jpg"
   alt: "Warm-lit boutique interior with curated merchandise displays"
   caption: "Photo: Unsplash"
-meta_description: "What makes a store sound expensive? Not the genre. The right music lifts willingness to pay 8-12%. What operators at any price point should learn."
+meta_description: "What makes a store sound expensive? Not the genre. The right music lifts willingness to pay. What operators at any price point should learn."
 og_image: "/img/blog/how-to-make-your-store-sound-premium.jpg"
 tags: [premium-audio, luxury-priming, willingness-to-pay, store-experience, retail-music]
 sections:
@@ -19,7 +19,7 @@ sections:
     items:
       - "The genre label on your music does not predict whether customers perceive the store as premium"
       - "Areni and Kim documented customers trading up to more expensive wine when the audio environment shifted to classical — with no increase in the number of bottles sold"
-      - "Research shows an 8-12% increase in willingness to pay when music matches customer identity"
+      - "Research shows music matched to customer identity raises willingness to pay (North, Sheridan and Areni, 2016; Flynn et al., 2022)"
       - "You do not need a luxury brand to benefit from premium audio. Any store positioned above commodity can use it."
 
   - type: prose
@@ -69,16 +69,16 @@ sections:
 
   - type: prose
     body: |
-      The 8 to 12 percent increase in willingness to pay that researchers document when music matches customer identity applies across price points. A $200 dress. A $45 candle. A $75 skincare set. These are all purchases where quality perception directly affects what the customer is willing to spend.
+      The increase in willingness to pay that researchers document when music matches customer identity applies across price points. A $200 dress. A $45 candle. A $75 skincare set. These are all purchases where quality perception directly affects what the customer is willing to spend.
 
       Luxury brands figured this out early because they design every sensory detail. But mid-market and premium-casual brands leave the most on the table, because they invest in visual merchandising and ignore the one sense that hits the customer before they even see the product.
 
       The question is not whether your store is fancy enough to care about audio. The question is whether your store sells anything where the customer's perception of quality matters to the transaction. If the answer is yes, your audio is either reinforcing that perception or undermining it. There is no neutral setting.
 
   - type: stat_callout
-    number: "8-12%"
-    label: "increase in willingness to pay when music matches customer identity"
-    source: "Aggregate retail music research"
+    number: "Higher"
+    label: "willingness to pay when music matches customer identity, versus generic music"
+    source: "North, Sheridan & Areni, 2016; Flynn et al., 2022"
     accent: gold
 
   - type: subhead

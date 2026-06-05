@@ -68,9 +68,9 @@ sections:
       That difference between a flagship and a mall location, by the way, is one of the hardest problems in multi-location retail. Same brand, same merchandise, completely different context. The visual merchandising team already adjusts for this. Nobody adjusts the music.
 
   - type: stat_callout
-    number: "8-12%"
-    label: "Increase in willingness to pay when music matches product positioning"
-    source: "Areni & Kim, 1993"
+    number: "Higher"
+    label: "Willingness to pay when music matches product positioning, versus generic music"
+    source: "North, Sheridan & Areni, 2016; Flynn et al., 2022"
     accent: gold
 
   - type: subhead
