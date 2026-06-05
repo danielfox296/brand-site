@@ -51,6 +51,28 @@ sections:
     In this video I break down the full behavioral chain — from a 1966 study on volume and foot traffic to the subconscious priming effect, the emotional pathway that drives impulse buying, and the critical finding that mismatched sensory cues can backfire and drive customers away.
 
     '
+- type: prose
+  body: If I told you that playing French accordion music in a wine shop made customers buy five times more French wine than German — and that 86% of those customers swore the music had zero influence on their decision — would you believe me? Because that’s exactly what happened. And it tells us something profound about how music rewires customer behavior without anyone realizing it.
+- type: subhead
+  text: The Priming Study
+- type: prose
+  body: 'This study was published in the Journal of Applied Psychology in 1999 — and it was so striking that Nature ran a brief on it. Researchers set up a wine display in a supermarket with an equal number of French and German wines, matched on price and sweetness. On alternating days, they piped in stereotypically French or German music. When French music played, French wine outsold German wine 5-to-1. Flip the music, flip the ratio. But here’s the punchline: when researchers intercepted shoppers and asked why they chose what they chose, only 14% identified music as a factor. The rest confabulated — they said things like “I just felt like French tonight.” The music didn’t suggest. It primed. It shifted behavior at a level below conscious awareness.'
+- type: subhead
+  text: Behavior Is Emotional, Not Rational
+- type: prose
+  body: 'This finding plugs into a broader model. Back in 1982, research published in the Journal of Retailing introduced the PAD framework — Pleasure, Arousal, Dominance — showing that the emotional state a store environment creates is the primary driver of whether customers approach or avoid. Pleasure was the strongest predictor. A decade later, the same team validated this with real purchase data: the pleasure a shopper felt within five minutes of entering a store predicted how much unplanned purchasing they did. We’re not talking about survey intentions. We’re talking about actual receipts. And a 1997 study in Psychology and Marketing confirmed the full chain: environment shapes emotion, emotion shapes behavior. Impulse buying isn’t a personality trait — it’s an emotional response to sensory conditions.'
+- type: subhead
+  text: Music Changes How Time Feels
+- type: prose
+  body: 'Here’s something even stranger. A study in the Journal of Business Research found that music doesn’t just change what people buy — it changes how they experience time itself. When shoppers heard unfamiliar music, they actually stayed longer in the store. But — and this is the paradox — they perceived their visit as shorter. Familiar music did the opposite: people left sooner but felt like they’d been there longer. Think about what that means. The right music makes customers stay longer while feeling like they stayed less. That’s the dream for any retailer — more browsing time with zero impatience.'
+- type: subhead
+  text: Volume and Speed Change the Pace
+- type: prose
+  body: Music also acts as a behavioral throttle. One of the earliest experiments, published in the Journal of Applied Psychology in 1966, showed that loud music made people move through a store faster — but didn’t reduce their total spending. Volume controls foot traffic velocity, not purchase behavior. Meanwhile, a study from Frontiers in Psychology found that fast tempo increases variety-seeking — customers exposed to up-tempo music picked a wider range of products. So you’re not just changing mood. You’re changing pace, movement patterns, and decision-making style.
+- type: subhead
+  text: The Entuned Connection
+- type: prose
+  body: This is what makes music the most underutilized tool in retail. It operates on behavior at a subconscious level — priming choices, shaping emotions, bending time perception. And yet most stores are running a Spotify playlist that someone on staff picked because they liked it. At Entuned, we saw these studies and built a system that lets you dial in the specific behavioral outcome you want — longer dwell, higher average ticket, calmer browsing pace — and generates music calibrated to deliver it. No licensing headaches. No stale playlists. Just research turned into sound.
 - type: transcript
   chapters: *id001
 - type: subhead

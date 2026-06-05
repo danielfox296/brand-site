@@ -51,6 +51,28 @@ sections:
     In this video I make the case for why music deserves the same strategic attention as visual merchandising — covering the 60-year evidence base, what makes music unique among sensory levers, its role as the anchor that gives meaning to your other senses, and the ROI math that makes it the highest-leverage investment in retail operations.
 
     '
+- type: prose
+  body: 'Retailers obsess over product, pricing, and merchandising — and then treat their audio environment like an afterthought. Someone on staff connects their phone to a Bluetooth speaker and hits shuffle. But here’s what 40 years of research tells us: music isn’t decoration. It’s infrastructure. It controls how fast people move, what they choose, how long they stay, and how much they spend. And most retailers are running theirs on autopilot.'
+- type: subhead
+  text: Music Controls Movement and Pace
+- type: prose
+  body: 'The very first controlled study on music in retail, published in the Journal of Marketing in 1982, found that slow-tempo music increased daily supermarket sales by 38% — a $4,627-per-day difference. Customers moved through the store more slowly, browsed more, and bought more. And here’s the critical detail: 216 shoppers were surveyed and the vast majority had no idea what was playing or even that music was on. Music was controlling their physical behavior without their awareness. On the flip side, early research in the Journal of Applied Psychology from 1966 showed that loud music made people exit faster — but didn’t reduce how much they bought. So volume controls velocity. Tempo controls dwell time. These are separate levers that do separate things, and both are important depending on what your store needs at any given moment.'
+- type: subhead
+  text: Music Shapes Product Choices
+- type: prose
+  body: Music doesn’t just affect how people move — it affects what they pick up. The famous wine priming study in the Journal of Applied Psychology showed that French music drove a 5-to-1 preference for French wine, and German music flipped the ratio. The music primed cultural associations below conscious awareness, steering product selection without customers realizing it. And research in Advances in Consumer Research demonstrated that classical music in a wine store shifted customers toward more expensive bottles — same number of purchases, higher price point. The music acted as a quality signal. It told customers, implicitly, that this was a place for premium products. And they responded accordingly. Music isn’t ambient filler. It’s a product positioning tool.
+- type: subhead
+  text: Music Is the Emotional Thermostat
+- type: prose
+  body: 'The reason music is so powerful is that retail behavior is fundamentally emotional. Research in the Journal of Retailing established the framework: your store creates an emotional response in shoppers — pleasure, arousal, comfort — and that emotional response directly predicts whether they spend or leave. A follow-up using actual purchase data showed that the pleasure felt in the first five minutes predicts unplanned spending for the rest of the visit. Music is the single most adjustable emotional lever a retailer has. You can’t easily change your lighting on the fly. You can’t swap your scent every hour. But you can change your music — and when you do, you’re directly manipulating the emotional thermostat that drives buying behavior. Research in Psychology and Marketing confirmed the full chain: environment creates emotion, emotion creates spending. Music is the fastest, cheapest way to shift that chain.'
+- type: subhead
+  text: Music Can Also Hurt You
+- type: prose
+  body: 'Here’s why this matters even if you don’t care about optimization: bad music actively hurts your brand. Research published in the Journal of Business Research found that music-brand misfit doesn’t just fail to help — it damages brand perception. Customers who experience incongruent music downgrade their opinion of your store. And it gets worse when you stack sensory signals incorrectly. A study in the Journal of Business Research tested Christmas music and pine scent. Pine scent alone — without Christmas music — backfired. It created a dissonant sensory experience that made customers uncomfortable. A 2020 study in the Journal of Retailing and Consumer Services showed the ultimate risk: too many high-arousal stimuli triggers sensory overload, flipping customer behavior from approach to avoidance. Playing the wrong music isn’t just wasteful. It’s actively pushing customers away.'
+- type: subhead
+  text: The Entuned Connection
+- type: prose
+  body: Music is important in retail because it’s operating on every dimension of the customer experience simultaneously — pace, product selection, emotion, brand perception, dwell time. There is no other single variable that touches all of these at once. And yet it’s the least systematically managed element of most stores. We built Entuned because we saw this gap between what the research proves and what retailers actually do. Entuned generates original music calibrated to these research-backed variables — so your audio environment is finally working as hard as your merchandising, your layout, and your staff.
 - type: transcript
   chapters: *id001
 - type: subhead

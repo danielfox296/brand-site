@@ -54,6 +54,28 @@ sections:
     In this video I cover how music primes brand narrative, why genre choice positions your price point, and why customer preference for your music matters more than any single musical variable.
 
     '
+- type: prose
+  body: 'Here’s something that should scare every brand manager in retail: music that doesn’t fit your brand doesn’t just fail to help. It actively damages how people perceive your brand. Not neutral. Negative. And most stores have no idea this is happening. I’m Daniel Fox, founder of Entuned, and the research on music and brand perception is some of the most consequential — and most ignored — work in retail psychology.'
+- type: subhead
+  text: The Brand Fit Study
+- type: prose
+  body: A study published in the Journal of Business Research in 2006 studied what happens when in-store music does or doesn’t fit the brand. They didn’t just measure preference — they measured whether the music changed how customers perceived the brand itself. When the music fit, it reinforced brand identity. Customers described the brand as more authentic, more coherent, more trustworthy. The music became invisible — it just felt right, part of the experience, seamlessly integrated. When the music didn’t fit, customers noticed. And not in a “hmm, interesting choice” way. In a “this doesn’t belong here” way. Misfit music made the brand feel less genuine. Less put-together. Less worthy of trust. The researchers found that music misfit actively damages brand perception — it’s not a zero, it’s a negative. Think about what that means. Every store playing a random Spotify playlist chosen by whoever’s working the register is rolling the dice on brand perception. Sometimes they’ll land on something that fits. Sometimes they’ll undercut every other brand investment the store has made.
+- type: subhead
+  text: Priming and Association
+- type: prose
+  body: 'The brand perception effect goes beyond just fit. That famous wine study from the Journal of Applied Psychology in 1999 — French music making people buy French wine at a 5-to-1 ratio — is fundamentally a branding study. The music primed a national association, and that association shaped what products felt right, what felt premium, what felt worth purchasing. Only 14 percent of shoppers said the music influenced their choice. But the purchasing data was unambiguous. Music creates brand associations below conscious awareness. Your customers are forming opinions about your brand based on what they hear, and they can’t tell you about it in a survey because they don’t know it’s happening. This is why “do your customers like the music?” is the wrong question. The right question is: “does the music tell the same story as the rest of the brand?” Customers might love a song that completely contradicts your brand positioning. Their enjoyment and their brand perception are two different systems.'
+- type: subhead
+  text: The Likeability Constraint
+- type: prose
+  body: But here’s the tension. Research published in the Journal of Services Marketing in 1996 found that customer preference — whether they actually liked the music — was the only statistically significant predictor of shopping behavior. Tempo, volume, the structural variables? Not significant. Only likeability mattered. A follow-up study in the same journal in 2008 confirmed the pattern. Happy music that shoppers liked produced the best outcomes. Sad music that shoppers disliked produced the worst. Likeability was the necessary condition — the floor you can’t drop below. So you’re caught between two forces. The music must fit the brand — or it damages perception. But the music must also be liked — or nothing else works. Brand fit and likeability are both necessary, and they’re not always the same thing. A jazz standard might perfectly fit a luxury boutique’s brand but annoy a 22-year-old customer. A pop hit might delight that same customer but make the boutique feel like a mall store.
+- type: subhead
+  text: How Entuned Resolves This
+- type: prose
+  body: This is the exact problem we designed Entuned to solve. Generative music can be parameterized for brand fit — tempo, mode, instrumentation, energy level, all aligned to the brand identity. But because it’s generated, it avoids the familiarity trap. No one has strong negative associations with a song they’ve never heard before. You get brand alignment without the polarization of recognizable tracks. The likeability floor is maintained because the music is always pleasant, always well-structured, always within the aesthetic range that the research says produces positive emotional responses. But it’s never “that song I hate” — because it’s not a song anyone has heard.
+- type: subhead
+  text: The Takeaway
+- type: prose
+  body: 'Music shapes brand perception through two pathways: conscious fit and subconscious association. When the music fits, the brand feels authentic. When it doesn’t, the brand feels fake. And underneath both, the music has to be liked — or the customer disengages entirely. Managing both of these forces simultaneously is the actual challenge of retail music. And most stores aren’t doing either one deliberately.'
 - type: transcript
   chapters: *id001
 - type: subhead

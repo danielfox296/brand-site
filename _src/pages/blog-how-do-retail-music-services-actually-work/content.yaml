@@ -52,6 +52,24 @@ sections:
     In this video I break down the three tiers of retail music services — licensed playlists, scheduled programming, and adaptive generative systems — explain how each one works, and show what the research says separates background noise from a business tool.
 
     '
+- type: prose
+  body: Here’s something that should bother you. You’re paying someone to play music in your store — and you probably have no idea what that music is actually doing to your customers. Is it helping? Hurting? Just filling silence? Most retail music services don’t know either. Let’s fix that.
+- type: subhead
+  text: What’s Out There
+- type: prose
+  body: Retail music services basically fall into three buckets. First, you’ve got the playlist curators — companies that build playlists, license the tracks, and stream them to your store. Think of it like Spotify, but legal for commercial use. Second, you’ve got the scheduling platforms — same idea, but they let you set daypart schedules so your morning mix is different from your Friday night energy. And third — the newest category — you’ve got adaptive and generative systems that actually respond to what’s happening in your store in real time. The differences between these aren’t cosmetic. They’re structural. And the research tells us why that matters.
+- type: subhead
+  text: Why the Old Model Is Broken
+- type: prose
+  body: 'A landmark study in the Journal of Marketing back in 1982 found that simply slowing down the music tempo in a supermarket increased daily gross sales by 38 percent. Thirty-eight percent — from tempo alone. A follow-up in Journal of Consumer Research a few years later showed that slower music in restaurants kept diners seated about 11 minutes longer, ordering roughly three extra drinks per table. So tempo matters. Enormously. But here’s the problem: a static playlist doesn’t adapt tempo. It plays what it plays. Your slow Sunday morning playlist runs the same whether you’ve got five customers or fifty. And research from the Journal of Retailing in 2017, analyzing over 43,000 shopping baskets, found that fast tempo actually helps when the store is crowded — about an 8 percent sales lift. But when it’s empty? You want slow. A playlist can’t make that call. It’s locked in.'
+- type: subhead
+  text: Context
+- type: prose
+  body: This is where most services fall short. They treat music as a set-it-and-forget-it utility, like the thermostat. But the research says music is more like lighting — it needs to shift with context. A 2001 study in the Journal of Retailing tested 270 customers and found that when music and scent matched in arousal level, shoppers rated the environment significantly higher. Mismatch killed the effect entirely. And research in Marketing Letters from 2012 showed that the interaction between tempo and musical mode — major versus minor key — produced roughly a 12 percent spending lift when slow tempo was paired with minor mode. But major key actually canceled out the tempo benefit. These are subtle variables. Mode, tempo, arousal matching, daypart alignment. No human curator is tracking all of this in real time across your store hours. That’s not a criticism — it’s just physics. There’s too much happening.
+- type: subhead
+  text: How the New Model Works
+- type: prose
+  body: This is exactly why we built Entuned. Instead of licensing other people’s songs and hoping the playlist fits, Entuned generates original music that adapts to your store’s actual conditions — time of day, traffic patterns, brand energy. The music shifts because the system understands what the research says should shift. No licensing fees. No DMCA risk. No generic playlists that sound like every other store on the block. Just music that’s built for your brand, informed by decades of consumer behavior research, and flexible enough to respond when conditions change.
 - type: transcript
   chapters: *id001
 - type: subhead

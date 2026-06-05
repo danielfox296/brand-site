@@ -52,6 +52,24 @@ sections:
     In this video I trace the full research arc from the foundational 1982 grocery store experiment through restaurant studies and the critical discovery that musical mode — major vs. minor key — is what makes or breaks the slow-tempo effect.
 
     '
+- type: prose
+  body: You’ve probably heard that slow music increases sales. It’s the most repeated claim in retail music. And it’s based on real research. But the full story is way more interesting — and more useful — than the headline. I’m Daniel Fox. I build Entuned, which makes generative music for retail spaces. And here’s what the research actually says about slowing things down.
+- type: subhead
+  text: The Evidence for Slow
+- type: prose
+  body: 'The case starts in 1982. A supermarket study published in the Journal of Marketing tested slow versus fast background music. Slow tempo days averaged $16,740 in sales. Fast tempo days: $12,113. That’s a 38 percent difference. Shoppers moved slower, stayed longer, bought more. And — this is the part people forget — only 6 out of 216 shoppers said they even noticed the music. Four years later, the same researcher ran the test in a restaurant. Published in the Journal of Consumer Research. Slow music made diners stay 11 minutes longer on average. They ordered three more drinks per table. Bar revenue went up roughly 40 percent. The food spend was about the same — it was the extra time that unlocked the extra spend. So far, so good for slow. But there’s a catch.'
+- type: subhead
+  text: Where Slow Breaks Down
+- type: prose
+  body: 'A 1999 study from the European Advances in Consumer Research looked at slow jazz in a restaurant. Slow tempo did keep people at the table about 15 minutes longer. But here’s the problem: spending didn’t proportionally follow. People sat longer but they didn’t order proportionally more. You got longer table occupancy without the revenue to justify it. That’s a critical distinction. In a restaurant with a waitlist on Friday night, slow music that keeps tables occupied without increasing check size is actually costing you money. It’s tying up capacity. And then there’s the key signature problem. That 2012 Marketing Letters study I keep coming back to — the one that tested tempo and mode together. Slow tempo only produced that 12 percent lift when the music was in a minor key. Minor key — think contemplative, slightly melancholic. When they switched to a major key, which is what most playlists default to, the slow tempo advantage vanished. So it’s not just “play slow music.” It’s “play slow music in a minor key, and make sure you have the capacity to absorb longer visits.”'
+- type: subhead
+  text: The Mechanism
+- type: prose
+  body: Here’s what’s actually happening underneath. Slow music doesn’t make people want to buy things. It changes the pace of their movement through the space. They walk slower. They stop more. They linger at displays. And that extra time creates more decision points — more chances to pick something up, consider it, and add it to the basket. The 1982 supermarket study tracked pace of movement through the aisles. Slow music shoppers moved measurably slower. They didn’t report feeling different. They didn’t say they liked the store more. They just moved at a different speed. And that speed change cascaded into different purchasing behavior. This is why at Entuned we think about tempo as a flow-rate control, not a mood button. You’re programming the pace of foot traffic through a physical space. That’s an operational variable, not an aesthetic one.
+- type: subhead
+  text: The Takeaway
+- type: prose
+  body: 'Does slow music increase sales? It can. Under the right conditions: minor key, adequate store capacity, a product category where browsing time actually converts to purchases. But “just play slow music” is about as useful as “just eat less.” Technically true, practically useless without the context.'
 - type: transcript
   chapters: *id001
 - type: subhead

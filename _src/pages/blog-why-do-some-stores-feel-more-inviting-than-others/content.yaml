@@ -54,6 +54,32 @@ sections:
     In this video I explain the science behind inviting retail spaces — why pleasure predicts approach behavior, how congruence between music and scent amplifies the effect, and why the line between "I want to stay" and "I want to leave" is thinner than most retailers realize.
 
     '
+- type: prose
+  body: 'You’ve walked into a store and immediately felt welcome. You’ve also walked into a store and turned around within 30 seconds. You probably couldn’t explain why. But the research can. The difference between an inviting store and an uncomfortable one often comes down to something invisible: whether the sensory signals in the space are coherent or contradictory. And when they contradict each other, the damage is worse than you’d expect. I’m Daniel Fox, I build Entuned, and this is the science of why some stores just feel right.'
+- type: subhead
+  text: The Coherence Principle
+- type: prose
+  body: 'In 2001, a study published in the Journal of Retailing ran an experiment that changed how I think about retail environments. They tested what happens when you combine ambient scent and background music. Two dimensions: high arousal versus low arousal, for both scent and music. When the arousal levels matched — relaxing scent with relaxing music, or energizing scent with energizing music — customers reported higher pleasure, better evaluations, and more approach behavior. When they mismatched — calming lavender with high-energy music, or peppermint with slow ambient tracks — the results were worse than using just one sensory channel alone. Read that again. A mismatch between music and scent didn’t just cancel out. It actively made the experience worse. Customers who encountered mismatched sensory signals were less comfortable than those who only had one stimulus present. This is the coherence principle. Your store is a sensory system, and the parts have to agree with each other.'
+- type: subhead
+  text: The Christmas Proof
+- type: prose
+  body: A study published in the Journal of Business Research in 2005 turned this into a holiday cautionary tale. Researchers tested the effect of pine scent in a retail environment around Christmas. Pine scent alone — with no Christmas music — actually backfired. Shoppers rated the environment negatively. The scent felt random, out of place, disconnected. But when they added Christmas music, the pine scent worked. Evaluations went up. The two signals together — the smell of pine plus the sound of holiday music — created a coherent narrative. Each one made sense because of the other. Without the music, the scent was just a weird smell in a store. This is why stores that invest in great scenting but ignore their music — or vice versa — are leaving money on the table. Worse, they might be actively creating discomfort. A beautiful candle display loses its magic if the overhead speakers are blasting something that clashes with the mood.
+- type: subhead
+  text: The Overload Threshold
+- type: prose
+  body: There’s a limit to this, though. A study published in the Journal of Retailing and Consumer Services in 2020 investigated sensory overload. They found that when a store adds a third high-arousal stimulus on top of two that are already working, the system breaks. Specifically, when the third stimulus comes from a “higher sense” — vision dominates hearing, hearing dominates smell — it overwhelms the customer. They shift from approach to avoidance. So a store with energetic music and a bold scent might be working great. Add a flashing visual display on top of that, and suddenly you’ve crossed the threshold. The customer feels bombarded. The space goes from inviting to oppressive. The takeaway is that more sensory stimulation isn’t always better. There’s an optimal level, and exceeding it flips the response. The stores that feel most inviting aren’t the ones doing the most — they’re the ones where everything is calibrated to the same level of intensity.
+- type: subhead
+  text: The Pleasure Foundation
+- type: prose
+  body: 'Underneath all of this is the principle from a foundational 1982 study in the Journal of Retailing: pleasure predicts approach. If the environment produces pleasure, people move toward it, explore it, stay in it. If it produces anything else — confusion, overstimulation, discomfort — they withdraw. The stores that feel inviting are the ones that produce pleasure consistently. Not excitement, not novelty, not spectacle. Pleasure. A calm, positive emotional state that makes you want to keep being there. And that pleasure is built from coherent sensory signals — music that matches the scent that matches the visuals that matches the brand.'
+- type: subhead
+  text: The Entuned Approach
+- type: prose
+  body: 'This is why we built Entuned to be one coherent sensory layer, not just a music player. The music is parameterized to match the arousal level, the emotional register, and the brand identity of the space. Because the research is unanimous: the stores that feel inviting aren’t guessing about their sensory design. They’re engineering coherence.'
+- type: subhead
+  text: The Takeaway
+- type: prose
+  body: Why do some stores feel more inviting? Sensory coherence. Music, scent, visuals, and brand identity all pointing in the same direction, at the same intensity level, telling the same story. Mismatch any element and you create discomfort. Overload on any dimension and you create avoidance. Get them aligned and you create a space people don’t want to leave.
 - type: transcript
   chapters: *id001
 - type: subhead

@@ -54,6 +54,28 @@ sections:
     In this video I break down the distraction mechanisms — cognitive absorption, familiarity hijack, emotional mismatch, volume-driven attention — and why the stores trying hardest to get the music right are often the ones getting it most wrong.
 
     '
+- type: prose
+  body: 'You’ve heard me talk about how music drives sales. But here’s something I almost never see discussed: music can also prevent sales. The same tool that keeps customers browsing can hijack their attention, override their purchase intent, and send them out the door with less than they came in for. And the line between helping and hurting is thinner than you think.'
+- type: subhead
+  text: The Attention Hijack
+- type: prose
+  body: Music is designed to capture attention. That’s literally what makes a good song — it demands that you listen. But in a retail environment, you don’t want captured attention. You want shaped mood. The moment a customer starts actively listening to your music — recognizing lyrics, following a melody, mentally singing along — their cognitive resources shift from shopping to processing the song. A 1999 study in the Journal of Applied Psychology demonstrated this beautifully. French music in a wine store made customers buy French wine at a five-to-one ratio. But only fourteen percent of those customers reported being influenced by the music. The music worked because it operated below conscious attention. The moment it surfaces into awareness, it stops being atmospheric and starts competing with the products for mental bandwidth.
+- type: subhead
+  text: The Lyric Problem
+- type: prose
+  body: This is why lyrics are particularly dangerous in retail. Your signage says one thing. Your product descriptions say another. And the song playing overhead is literally talking at your customer about heartbreak or partying or whatever else has nothing to do with buying a candle. A 2019 study in the Journal of the Academy of Marketing Science showed that even volume changes what people decide to buy — low volume pushed customers toward healthier food choices, while high volume pushed them toward comfort food. The music wasn’t just background. It was actively participating in the decision-making process. Now imagine lyrics stacking on top of that — another layer of semantic content your customer’s brain has to process while trying to evaluate whether they want the blue one or the green one.
+- type: subhead
+  text: The Emotional Override
+- type: prose
+  body: Here’s where it gets really counterintuitive. A 1990 study in Psychology & Marketing found that sad music outperformed happy music for selling greeting cards. Not because sadness is better — because sad music was emotionally congruent with the product. The music matched the emotional context of the purchase. Now flip that. If your store sells luxury goods and your music is aggressively upbeat pop, you’ve got an emotional mismatch. The music is saying “party” while the product is saying “sophistication.” A 2025 study in Marketing Letters confirmed this — classical music raised customers’ maximum willingness to pay, but only for hedonic products and only when it generated genuine pleasure. Wrong music for wrong products didn’t just fail — it introduced noise into the emotional signal that drives willingness to pay.
+- type: subhead
+  text: The Sensory Overload Path
+- type: prose
+  body: And then there’s the overload scenario. A 2020 study in the Journal of Retailing and Consumer Services showed that stacking too many high-arousal sensory inputs triggers avoidance behavior. Your music doesn’t exist in isolation — it’s competing with your lighting, your scent, your visual merchandising, the conversations in your store, the notifications on your customer’s phone. Every element that demands attention reduces the bandwidth available for purchasing decisions. The 1982 framework published in the Journal of Retailing called this the arousal dimension of the PAD model — and it predicted exactly this. Past a certain arousal threshold, customers stop approaching and start avoiding. Your music pushed them over the line.
+- type: subhead
+  text: The Entuned Angle
+- type: prose
+  body: 'This is why we don’t make songs. Entuned generates environments. No lyrics competing with your signage. No hooks demanding active listening. No emotional content that contradicts your brand. Just a calibrated atmospheric layer that shapes mood without consuming attention. The research is clear: music helps when it operates below conscious processing, when it matches the emotional context of the purchase, and when it doesn’t overload an already stimulated brain. That’s a design problem, not a curation problem. And it’s the one we built a company to solve.'
 - type: transcript
   chapters: *id001
 - type: subhead

@@ -54,6 +54,28 @@ sections:
     In this video I cover the classical music effect on pricing, how volume modulates spending, and why genre-brand congruence is the mechanism that makes willingness to pay shift.
 
     '
+- type: prose
+  body: Can the right music make someone pay more for the exact same product? Not buy more units. Not add items to the cart. Actually pay a higher price for the same thing. The research says yes. But with a condition most people miss entirely. I’m Daniel Fox, I run Entuned, and willingness to pay is one of the most directly profitable things music can affect. Let me show you the data.
+- type: subhead
+  text: The Classical Effect
+- type: prose
+  body: 'Let’s start with the oldest finding. In 1993, researchers published a study in Advances in Consumer Research about a wine store experiment. They alternated between classical music and Top 40. When classical music played, shoppers didn’t buy more bottles. The volume of purchases was the same. But they selected significantly more expensive bottles. Same number of transactions. Higher average ticket. The music didn’t drive more traffic to the register. It shifted what people reached for when they got there. Classical music made shoppers trade up. A study in Environment and Behavior in 2003 confirmed this in restaurants. Classical music background: diners spent about 32 and a half pounds per head. Pop music: about 29 and a half. And here’s the kicker — no music at all came in at virtually the same as pop, around 29 pounds 73. Pop music added nothing over silence. Classical added roughly 10 percent.'
+- type: subhead
+  text: The Pleasure Condition
+- type: prose
+  body: 'But a 2025 study published in Marketing Letters found the boundary. The researchers tested whether classical music raises the maximum price someone would pay. And it does — but only under two conditions. First, the product has to be hedonic. That means experiential, pleasure-driven. Think specialty food, wine, candles, artisan goods. For utilitarian products — batteries, cleaning supplies, basics — classical music did nothing to willingness to pay. Second, and this is the part that matters most: the shopper had to be experiencing high pleasure. If they weren’t in a positive emotional state, classical music didn’t lift their price ceiling. The music has to make them feel good first. Only then does it expand what they’re willing to spend. This is huge. It means willingness to pay isn’t a simple genre effect. It’s an emotional sequence. Step one: create pleasure. Step two: the price ceiling rises. Skip step one, and the music is just background noise.'
+- type: subhead
+  text: The Temperature Parallel
+- type: prose
+  body: 'There’s a fascinating parallel from outside music research. A 2014 study in the Journal of Consumer Psychology found that physical warmth — literally warm ambient temperature — increases willingness to pay by 10 to 36 percent. The mechanism is emotional: warmth creates a feeling of comfort and safety, which loosens spending constraints. This isn’t a music study. But it underscores the same principle. Willingness to pay is tied to emotional state, not to rational evaluation. Temperature raises it. Music raises it. And both do it through the same channel — creating a subjective sense of comfort and pleasure. For retail operators, this means your HVAC and your sound system are working on the same psychological pathway. They should be thought of together, not separately.'
+- type: subhead
+  text: How We Think About This At Entuned
+- type: prose
+  body: This is why Entuned doesn’t just optimize for “good music.” The research tells us that willingness to pay depends on a pleasure state — and that pleasure state depends on the right music for the right context. Classical works in a wine shop. It might feel absurd in a surf store. The genre isn’t the point. The pleasure is the point. Generative music lets us tune for pleasure across different retail contexts without defaulting to one genre. Because the 2025 study made it clear — the genre is just the vehicle. The destination is the emotional state.
+- type: subhead
+  text: The Takeaway
+- type: prose
+  body: Music can raise willingness to pay by 10 percent or more. But only when the product is experiential, and only when the customer is in a positive emotional state. The mechanism is pleasure, not sophistication. Classical music isn’t magic — it just happens to be very good at creating a certain kind of pleasure in certain environments. Match the music to the context, optimize for how it makes people feel, and the price ceiling lifts.
 - type: transcript
   chapters: *id001
 - type: subhead

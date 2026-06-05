@@ -54,6 +54,28 @@ sections:
     In this video I break down how music moves from neutral to actively harmful — genre mismatch, key-tempo interactions that cancel each other out, and when silence literally outperforms your playlist.
 
     '
+- type: prose
+  body: 'Here’s a question that should terrify every store owner: is your music actively losing you money? Not “failing to help.” Not “underperforming.” Actually making things worse than silence. The research says yes — and it’s probably happening right now.'
+- type: subhead
+  text: Worse Than Silence
+- type: prose
+  body: Most retailers assume music is a net positive. At worst, it’s neutral, right? Background noise. But multiple studies show that the wrong music doesn’t just zero out the benefit — it creates negative outcomes you wouldn’t have if you turned the speakers off entirely. A 2006 study in the Journal of Business Research found that when background music didn’t fit the brand, customers left with actively damaged brand perception. Not neutral. Damaged. They thought less of the brand than customers who shopped in silence. Your music isn’t just failing to sell — it’s sabotaging the relationship.
+- type: subhead
+  text: The Christmas Disaster
+- type: prose
+  body: Here’s a perfect example. A study in the Journal of Business Research in 2005 tested pine scent in a retail environment. Pine scent with Christmas music? Positive lift across the board. Pine scent alone — no Christmas music? It backfired. Customers rated the environment lower than having no scent at all. The sensory element was fine in context and actively harmful without it. Now translate that to music. Every time you play a track that doesn’t fit your store’s context, you’re not adding ambiance. You’re adding confusion. And confused customers don’t buy — they leave.
+- type: subhead
+  text: The Volume Mistake
+- type: prose
+  body: Let’s talk about volume — the easiest thing to get wrong. A 1966 study in the Journal of Applied Psychology showed that loud music made customers exit faster. Same total spending, less time in the store. You’re compressing the visit without getting more out of it. Fast-forward to 2003 — a study in Perceptual and Motor Skills found that soft music in a restaurant increased the average check by $3.05 per person. Genre didn’t even matter. Just the volume. Soft outperformed loud regardless of what was playing. So if your staff is cranking the dial because they like it loud? That’s coming directly off your receipts. And a 2019 study in the Journal of the Academy of Marketing Science found that volume doesn’t just affect how long people stay — it affects what they buy. Low volume pushed customers toward healthier food choices. High volume pushed them toward junk food. Volume literally changes the decision-making process.
+- type: subhead
+  text: The Tempo Trap
+- type: prose
+  body: 'Now here’s where it gets really interesting. Everyone knows the classic finding: slow music, more sales. But a massive 2025 study — 140 real stores, presented at the European Marketing Academy conference — found no overall tempo effect. None. The only group that responded to tempo changes at all was loyalty members. For casual shoppers? Fast, slow — didn’t matter. But it gets worse. A 2012 study in Marketing Letters found that tempo interacts with musical key. Slow tempo in a minor key? About a twelve percent sales lift. Slow tempo in a major key? The effect vanished completely. So if you’re playing slow, upbeat pop — which is what most retailers default to — you might be getting zero benefit from the tempo while losing the minor-key advantage you didn’t know existed.'
+- type: subhead
+  text: The Cost of Getting It Wrong
+- type: prose
+  body: 'Add it all up. Wrong brand fit damages perception. Wrong volume compresses visits. Wrong tempo-key combination eliminates the lift. Wrong sensory combinations create overload. And every one of these mistakes is worse than doing nothing. This is why we built Entuned to be adaptive rather than static. Generative music doesn’t have a playlist that can drift out of alignment with your brand. It doesn’t have a volume setting that your staff can override. It doesn’t randomly serve up a major-key banger when your store needs minor-key calm. Every parameter — tempo, mode, energy, density — is set to match your specific environment. Because the research is clear: the wrong music isn’t neutral. It’s expensive.'
 - type: transcript
   chapters: *id001
 - type: subhead

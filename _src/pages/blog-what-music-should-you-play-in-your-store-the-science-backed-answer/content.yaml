@@ -51,6 +51,32 @@ sections:
     In this video I break down the five-variable framework the research gives us: brand fit, product-emotion matching, customer preference, familiarity avoidance, and cross-sensory arousal alignment — with studies from the Journal of Business Research, Journal of Services Marketing, and more.
 
     '
+- type: prose
+  body: 'Every retailer asks the same question: what music should I play in my store? And nearly every answer out there is wrong. Because the research doesn’t say “play jazz” or “play lo-fi.” It says the only thing that consistently matters is something almost no one is measuring. And it’s not genre. It’s not tempo. It’s fit.'
+- type: subhead
+  text: The Preference Bombshell
+- type: prose
+  body: A study published in the Journal of Services Marketing tested what actually predicts whether music helps or hurts a retail environment. They measured tempo, volume, and customer preference. The result? Preference was the only statistically significant predictor. Tempo didn’t reach significance. Volume didn’t reach significance. Whether customers actually liked the music — that was the entire game. This challenges everything the industry assumes. You can obsess over BPM and genre all day, but if your customers don’t connect with what’s playing, none of it matters.
+- type: subhead
+  text: Fit Is
+- type: prose
+  body: 'But it’s more nuanced than “play what people like.” Research published in the Journal of Business Research found that when music doesn’t fit the brand, it actively damages perception. Not neutral — damaging. Customers who perceive a mismatch between the music and the store’s identity downgrade their opinion of the brand. And a separate study from the Journal of Services Marketing confirmed this with emotional data: the best outcomes came from music that was both liked and emotionally congruent — happy music that matched a positive environment. Sad music that was also disliked? Worst possible outcome. So you need two things simultaneously: music customers enjoy AND music that fits your brand.'
+- type: subhead
+  text: The Classical Wine Experiment
+- type: prose
+  body: 'Here’s a clean example of fit in action. A study in Advances in Consumer Research placed classical music versus Top 40 in a wine store. Classical music didn’t make people buy more bottles — they purchased the same number either way. But they bought more expensive bottles. The classical music elevated perceived quality of the environment, which primed customers to reach for higher-shelf wines. The genre signal matched the product category. And a follow-up study in Environment and Behavior replicated this in restaurants: diners spent about £3 more per head when classical music played versus pop — and interestingly, pop performed almost identically to silence. The pop music wasn’t bad. It just didn’t add anything.'
+- type: subhead
+  text: The Christmas Congruence Trap
+- type: prose
+  body: 'Want to see what happens when fit goes wrong? A study in the Journal of Business Research tested pine scent and Christmas music in a retail setting. Pine scent alone — no Christmas music — actually backfired. It felt weird. Incongruent. But pine scent paired with Christmas music? That worked. The lesson is powerful: sensory signals need to tell the same story. A mismatch between what customers hear and what they see, smell, or expect creates cognitive friction. And cognitive friction kills spending. This is why a surf shop playing classical piano feels off, even if classical piano is “pleasant.” It’s not about pleasant. It’s about coherent.'
+- type: subhead
+  text: The Real Answer
+- type: prose
+  body: 'So what music should you play? The research gives us a clear framework: Music that your specific customers enjoy. Music that fits your brand identity. Music where the emotional tone matches the experience you’re selling. That’s three constraints simultaneously, and they change by store, by season, by time of day. This is why playlists fail — a static playlist can’t adapt to shifting customer demographics throughout the day or evolving brand needs across seasons.'
+- type: subhead
+  text: The Entuned Connection
+- type: prose
+  body: This is the exact problem Entuned was built to solve. We don’t give you a genre recommendation and wish you luck. We generate music — original, on-brand music — that’s calibrated to your store’s identity and your customers’ context. Because the research doesn’t say “play lo-fi beats.” The research says play music that fits. And fit is dynamic. It changes. Your music should change with it.
 - type: transcript
   chapters: *id001
 - type: subhead

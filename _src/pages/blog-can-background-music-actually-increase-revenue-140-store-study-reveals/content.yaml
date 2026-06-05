@@ -51,6 +51,28 @@ sections:
     In this video I reconcile the positive findings (38% grocery lifts, 40% bar revenue increases, 12% tempo-mode effects) with the nuanced 140-store null result, and explain the context-dependency principle that determines whether music moves your revenue.
 
     '
+- type: prose
+  body: Can background music actually increase revenue? Not “make people feel nice” — actually move the top line? The answer is yes, and the effect sizes in the research are frankly embarrassing for any retailer who’s still running their store in silence or off a random playlist. We’re talking 15% per check in restaurants. 38% in daily grocery sales. And in one case, a 40% lift in bar revenue from changing a single variable.
+- type: subhead
+  text: Restaurants
+- type: prose
+  body: Let’s start with the cleanest revenue data. A field experiment published in Perceptual and Motor Skills tested what happened when a restaurant simply turned the volume down. Not changed the genre. Not changed the tempo. Just… softer. The average check went up by $3.05 — roughly 15%. Genre didn’t matter. That’s pure revenue lift from a volume knob. A separate study in the Journal of Consumer Research found an even bigger effect through tempo. Slow-tempo background music in a restaurant kept diners at the table 11 minutes longer. Those extra minutes translated into approximately 3 additional drinks per table, driving bar revenue up by roughly 40%. The food bill stayed the same. The profit came entirely from lingering — from customers who felt comfortable enough to stay and order another round.
+- type: subhead
+  text: Retail
+- type: prose
+  body: 'In retail, the foundational study was published in the Journal of Marketing in 1982. A supermarket alternated between slow-tempo, fast-tempo, and no music across a two-month period. Slow-tempo days averaged $16,740 in daily sales. Fast-tempo days averaged $12,113. That’s a $4,627-per-day revenue gap. Annualized, we’re talking hundreds of thousands of dollars — from background music. And the mechanism was straightforward: slow music made people move through the store more slowly, which increased browsing time, which increased basket size.'
+- type: subhead
+  text: But It’s Not Just “play Slow Music”
+- type: prose
+  body: Now, here’s where most people stop and conclude “just play slow music.” That’s wrong. A massive real-world study from the Journal of Retailing tracked 43,676 shopping baskets and found that tempo’s revenue effect depends entirely on store density. In crowded conditions, fast tempo actually outperformed — by roughly 8%. Why? Because when a store is packed, slow music creates a traffic jam. People feel stuck and frustrated, and frustrated shoppers buy less. Fast music helped them navigate efficiently and still purchase. The revenue-maximizing tempo flips depending on how many people are in your store at any given moment.
+- type: subhead
+  text: The Quality Escalator
+- type: prose
+  body: 'There’s also a subtler revenue mechanism: music can shift customers toward higher-priced products without changing purchase volume. A study in Advances in Consumer Research found that classical music in a wine store didn’t increase the number of bottles sold — but it significantly increased the price point of bottles selected. Same transaction count. Higher average ticket. And a study in Environment and Behavior replicated this in restaurants: classical music pushed the average spend to about £32.50 per head versus roughly £29.50 for pop — which was basically identical to silence. The right music doesn’t just increase volume. It increases the quality tier of what people choose.'
+- type: subhead
+  text: The Entuned Connection
+- type: prose
+  body: 'The research is unambiguous: background music can increase revenue. But only if it’s the right music, at the right tempo, at the right volume, for the right context. And that context changes — by hour, by traffic level, by season. This is why Entuned exists. We generate music that’s calibrated to your store’s real-time conditions, using the same variables these studies identified as revenue drivers. Not a playlist someone vibes with. A system that’s engineered to perform.'
 - type: transcript
   chapters: *id001
 - type: subhead

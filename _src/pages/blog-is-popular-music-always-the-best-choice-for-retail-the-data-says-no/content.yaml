@@ -54,6 +54,28 @@ sections:
     In this video I break down why chart-toppers fail as store music — the attention hijack, the preference misconception, the volume mismatch — and what the data says actually works.
 
     '
+- type: prose
+  body: 'If you run a store and you’re playing Top 40, I need you to hear this: popular music is optimized for listening. It is not optimized for selling. And those are two completely different jobs. The research says the music that charts best might be the worst possible choice for your register.'
+- type: subhead
+  text: The Popularity Trap
+- type: prose
+  body: Popular music has a specific design. Big hooks, strong vocal melodies, major keys, high production value. It’s built to grab attention and hold it. In a car, on headphones, at a party — that’s exactly what you want. In a retail environment, grabbing attention is the last thing you need. A study in the Journal of Business Research in 2000 found that the more processable and familiar a piece of music was, the faster customers left. Popular music is, by definition, the most familiar music available. Every recognizable chorus is a mental timestamp that tells the shopper’s brain exactly how long they’ve been standing there.
+- type: subhead
+  text: What Actually Drives Spending
+- type: prose
+  body: 'So what does work? Let’s go to the data. A 1993 study published in Advances in Consumer Research tested classical music versus Top 40 in a wine store. Classical music didn’t make people buy more bottles — they bought the same number of bottles. But they chose more expensive ones. The music shifted perceived quality upward without changing purchase volume. A 2003 study in Environment and Behavior ran a similar test in restaurants. Classical music: about thirty-three pounds per head. Pop music: about twenty-nine fifty. Silence: about twenty-nine seventy. Pop didn’t just underperform classical — it performed at the level of silence. Pop music, in a restaurant setting, added literally zero value over turning the speakers off.'
+- type: subhead
+  text: The Genre Illusion
+- type: prose
+  body: 'Here’s what’s really interesting: genre might matter less than you think, and the variables within the music matter more than you’d guess. A 2003 study in Perceptual and Motor Skills tested genre in restaurants and found that genre had no significant effect on check size. What mattered? Volume. Soft music — regardless of genre — increased the average check by $3.05. The genre was noise. The volume was signal. A 2012 study in Marketing Letters drilled deeper: tempo and musical mode interacted to drive a twelve percent sales lift — but only in the slow-minor combination. Slow-major? Nothing. Fast? Nothing. The specific acoustic properties of the music mattered enormously. Whether it was “popular” was irrelevant.'
+- type: subhead
+  text: The Preference Paradox
+- type: prose
+  body: 'Now, I know what you’re thinking: “But my customers like pop music.” Fair. And a 1996 study in the Journal of Services Marketing did find that preference was the only significant predictor of shopping behavior. People need to like what they hear. But here’s the paradox — liking and popularity aren’t the same thing. People can like new music. People can like ambient music. People can like instrumental compositions they’ve never heard before. What they can’t do is shop effectively while their brain is singing along to the chorus of a song they’ve heard four hundred times. That’s not preference driving sales — that’s familiarity driving distraction. A 2008 study, also in the Journal of Services Marketing, confirmed it: happy music that shoppers liked produced the best outcomes. Not happy music that was popular. Happy music that was liked. There’s a crucial difference. You can generate likeable music that has no cultural baggage, no lyrical distraction, no familiarity penalty.'
+- type: subhead
+  text: The Entuned Angle
+- type: prose
+  body: This is the bet we made with Entuned. Instead of licensing popular tracks and hoping they serve a commercial function they were never designed for, we generate music that’s purpose-built for retail environments. The right tempo. The right mode. The right energy level. Instantly pleasant without being recognizable. Liked without being familiar. Popular music is a product designed for listeners. Your store needs music designed for shoppers. Those are different people with different needs, even when they’re the same person.
 - type: transcript
   chapters: *id001
 - type: subhead

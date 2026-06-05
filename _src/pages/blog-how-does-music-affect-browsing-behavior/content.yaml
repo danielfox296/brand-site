@@ -54,6 +54,28 @@ sections:
     In this video I cover how music primes product selection, why unfamiliar music stretches real dwell time while compressing perceived time, and how any music vs. silence adds 8 minutes of browsing on average.
 
     '
+- type: prose
+  body: 'In 1999, researchers set up a wine display in a supermarket and alternated between French and German music on different days. When French music played, customers bought French wine over German at a ratio of five to one. When German music played, the ratio reversed. But here’s the most important finding: only 14 percent of shoppers said the music had any influence on their choice. The other 86 percent had no idea. Their browsing behavior was being steered, and they couldn’t feel the hand on the wheel. I’m Daniel Fox. I built Entuned because of studies like this. Let’s talk about what music actually does to how people browse.'
+- type: subhead
+  text: Browsing Is Not Rational
+- type: prose
+  body: We like to think that shopping is a decision-making process. You walk in, you evaluate options, you choose the best one. But the research tells a completely different story. That wine study was published in the Journal of Applied Psychology and also covered in Nature. It’s one of the most elegant demonstrations of priming in consumer behavior. The music didn’t make people like French wine more. It didn’t change their taste preferences. It just made French wine more mentally accessible — more top-of-mind — so when they scanned the shelf, their eyes and hands drifted toward it. This is a fundamentally different model of browsing. People aren’t evaluating every option. They’re navigating by feel, by association, by whatever the environment makes salient. And music is one of the strongest salience drivers we have.
+- type: subhead
+  text: The Familiarity Effect
+- type: prose
+  body: There’s another layer to this. A study published in the Journal of Business Research in 2000 discovered what I call the familiarity paradox. When shoppers heard unfamiliar music — music they didn’t recognize — they actually spent more time in the store. But they perceived themselves as spending less time. The unfamiliar music distorted their sense of how long they’d been browsing. Familiar music did the opposite. People spent less actual time but felt like they’d been there longer. Think about what that means for browsing. Unfamiliar music extends the browse without triggering the “I’ve been here too long” alarm. People explore more shelves, more categories, more products — and they don’t feel like they’re lingering. That’s the ideal browsing state. This is one of the core reasons we use generative music at Entuned. Every track is inherently unfamiliar — it’s never been heard before. And according to this research, that novelty is a feature, not a bug. It keeps people in the exploration state longer.
+- type: subhead
+  text: The Emotional Channel
+- type: prose
+  body: But browsing isn’t just about time. It’s about what state you’re in while you browse. A 1997 study in Psychology and Marketing showed that the path from store environment to purchasing behavior runs through emotion. The environment triggers an emotional state — pleasure, arousal, a sense of comfort — and that emotional state determines whether someone approaches or avoids, lingers or leaves, picks something up or walks past it. This means music doesn’t just set a backdrop for browsing. It shapes the emotional filter through which every product gets evaluated. A shopper in a pleasant emotional state literally sees the merchandise differently than someone who’s irritated or bored.
+- type: subhead
+  text: The Baseline
+- type: prose
+  body: And if you’re wondering whether you should even bother — a 2012 study in the Journal of Retailing and Consumer Services settled the baseline question. They compared music versus silence across 550 shoppers. Any music — regardless of genre, tempo, or volume — produced 8 more minutes of dwell time and more spending than silence. Music doesn’t have to be perfect to beat nothing. The bar for baseline impact is just… being there.
+- type: subhead
+  text: The Takeaway
+- type: prose
+  body: Music affects browsing at three levels. It primes what people reach for — that’s the French wine effect. It controls how long they browse — that’s the familiarity paradox. And it shapes the emotional state they’re browsing in — that’s the pleasure pathway. None of these operate through conscious awareness. Your customers won’t tell you the music changed their behavior, because they genuinely don’t know.
 - type: transcript
   chapters: *id001
 - type: subhead

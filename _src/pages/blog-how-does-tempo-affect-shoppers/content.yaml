@@ -50,6 +50,24 @@ sections:
     In this video I break down four decades of tempo research — from the foundational 1982 grocery store study to a 2025 field experiment across 140 stores — and show you why tempo is a conditional lever, not a universal switch.
 
     '
+- type: prose
+  body: The single most-studied variable in retail music research is tempo. Beats per minute. Fast or slow. And after forty years of studies, the answer to “what tempo should I play?” is… it depends on three things most people have never heard of. I’m Daniel Fox, founder of Entuned, and I’ve read every major study on this. Let me walk you through what tempo actually does to shoppers — and why the simple advice is wrong.
+- type: subhead
+  text: The Simple Story (and Why It Breaks)
+- type: prose
+  body: 'Here’s the version you’ll find on every background music blog: slow music equals more sales. And they’ll cite a 1982 study from the Journal of Marketing — the most famous experiment in retail music history. Supermarket. Two conditions: slow tempo, fast tempo. Slow music produced 38 percent higher daily gross sales. That’s $4,627 more per day. Open and shut, right? Play slow music. Done. Except that study had 216 shoppers in a single store. And when a massive 2025 study presented at EMAC tried to replicate this across 140 real stores — 140 — they found no overall tempo effect. Zero. The simple prescription collapsed at scale. So what’s actually going on?'
+- type: subhead
+  text: The Three Moderators
+- type: prose
+  body: 'Tempo doesn’t operate in a vacuum. It interacts with at least three other variables, and if you don’t account for them, you’re guessing. Number one: musical mode. A 2012 study in Marketing Letters tested tempo and mode together — major key versus minor key, fast versus slow. Slow tempo in a minor key produced roughly a 12 percent spending lift. But here’s the twist: switch to major key, and the tempo effect disappeared entirely. Major key music neutralized whatever tempo was doing. So when someone says “play slow music,” the next question has to be: in what key? Number two: store density. A massive study published in the Journal of Retailing in 2017 analyzed 43,676 shopping baskets. And they found that fast tempo actually helped — but only when the store was crowded. About an 8 percent lift in dense conditions. When the store was empty, fast tempo did nothing useful. So the optimal tempo depends on how many people are in your store right now. Number three: who your customer is. That EMAC study I mentioned — the one across 140 stores that found no overall effect? They did find something buried in the data. Loyalty program members responded to tempo. General walk-in traffic didn’t. Your most engaged customers are the ones tempo actually reaches.'
+- type: subhead
+  text: What This Actually Means
+- type: prose
+  body: This is why we built Entuned the way we did. A static playlist can’t respond to whether your store is crowded or empty at 2 PM on a Tuesday. It can’t shift mode when the context changes. It just loops. Generative music can adapt to these variables in real time. Not because we think AI is magic — but because the research says tempo is conditional. It only works when it matches the context. And context changes constantly.
+- type: subhead
+  text: The Takeaway
+- type: prose
+  body: 'If you take one thing from this video, it’s this: tempo matters, but it’s not a dial you set once. It interacts with key, with crowding, and with who’s actually in your store. The studies that found big effects controlled for these interactions. The ones that didn’t — found nothing. That’s the difference between playing music and programming an environment.'
 - type: transcript
   chapters: *id001
 - type: subhead

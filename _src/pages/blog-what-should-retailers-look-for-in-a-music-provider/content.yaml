@@ -54,6 +54,28 @@ sections:
     In this video I walk through each criterion with the specific studies behind it, explain why standard evaluation frameworks (catalog size, UI, pricing) miss what actually drives results, and give you a checklist to score any provider you''re considering.
 
     '
+- type: prose
+  body: You’re about to sign up for a retail music service. Maybe you’ve already got one and you’re wondering if there’s something better. Before you spend another dollar, I want to give you the five criteria that actually matter — based on the research, not marketing fluff.
+- type: subhead
+  text: Brand Congruence
+- type: prose
+  body: 'This is the one almost everyone skips, and it’s the most important. A study published in the Journal of Business Research in 2006 found that when music didn’t fit the brand identity, it didn’t just fail to help — it actively damaged the brand perception. Misfit hurt more than silence. And it’s not just brand. Research in the same journal from 2005 showed that a pleasant scent — pine — actually backfired when it wasn’t paired with matching music. The sensory elements have to tell the same story. So your first question to any provider should be: how do you ensure the music matches my brand, not just a genre category?'
+- type: subhead
+  text: Adaptive Capability
+- type: prose
+  body: 'Static playlists have a fundamental problem. That 2017 study in the Journal of Retailing — over 43,000 baskets — showed that the ideal tempo literally depends on how many people are in your store. Fast tempo lifted sales about 8 percent when the floor was crowded. But when it’s quiet, you want slow. Ask your provider: does the music change based on real conditions, or does it play the same thing regardless? If the answer is “we schedule dayparts,” that’s a start. But it’s not responsive. It’s a guess about what conditions will be, made days or weeks in advance.'
+- type: subhead
+  text: Emotional Precision
+- type: prose
+  body: Here’s a nuance most providers miss entirely. Marketing Letters published research in 2012 showing that tempo alone isn’t the full picture. You need the right combination of tempo and musical mode. Slow tempo in a minor key produced roughly a 12 percent spending lift. But slow tempo in a major key? The benefit disappeared. Major mode canceled it out. This means “chill vibes” isn’t a strategy. Your provider needs to understand the emotional mechanics of music — not just fast versus slow, but the interaction of every variable that drives how customers feel.
+- type: subhead
+  text: Measurability
+- type: prose
+  body: A foundational study in the Journal of Retailing from 1994 showed that a customer’s pleasure level at just five minutes into the shopping experience predicted unplanned spending. Five minutes. That’s a measurable window with a measurable outcome. If your music provider can’t tell you what changed when the music changed, you’re flying blind. Ask for data. Ask what they track. If the answer is “we have a great team of curators,” that’s an opinion, not a metric.
+- type: subhead
+  text: Originality and Licensing
+- type: prose
+  body: This is the unsexy one, but it matters. Licensed music means you’re playing the same tracks your competitors might be playing. It means sync rights, performance royalties, and the risk that a song gets pulled from a catalog mid-playlist. Generative music — original compositions built for your brand — eliminates all of that. No licensing fees stacking up. No shared identity with the store next door. No legal gray areas. This is the approach we took with Entuned. We generate original music that adapts in real time, aligns with your brand identity, and gives you data on what’s working. Not because we think playlists are evil — but because the research kept pointing us toward variables that playlists can’t control.
 - type: transcript
   chapters: *id001
 - type: subhead

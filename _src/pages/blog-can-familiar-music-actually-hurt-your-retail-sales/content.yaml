@@ -52,6 +52,28 @@ sections:
     In this video I break down the familiarity paradox — why the songs your customers know are costing you sales, how cognitive hijack pulls attention from merchandise to music, and what the research says about the difference between music people like and music people recognize.
 
     '
+- type: prose
+  body: You know what most retailers tell me when I ask about their store music? “We play what our customers like.” Sounds logical. Sounds obvious. And the research says it might be costing them money.
+- type: subhead
+  text: The Counterintuitive Claim
+- type: prose
+  body: 'Here’s what nobody talks about: familiar music — the stuff your customers already know and love — actually makes them leave faster. Not because they hate it. Because they’re too good at processing it. A study out of the Journal of Business Research in 2000 tested this directly. They split shoppers into two groups — one heard familiar music, the other heard unfamiliar music. The unfamiliar group stayed longer. Significantly longer. But here’s the twist — they perceived their shopping time as shorter. The familiar music group? Opposite. They left sooner but felt like they’d been there forever. Think about what that means. Familiar music makes the clock feel slow while pushing people out the door. Unfamiliar music makes time disappear while keeping them browsing.'
+- type: subhead
+  text: Why This Happens
+- type: prose
+  body: Your brain is an efficiency machine. When it hears a song it knows, it clocks the structure — verse, chorus, bridge — and uses that structure as a mental timer. You know exactly where you are in the song. You know how long you’ve been standing there. Unfamiliar music strips that away. There’s no internal clock to reference. Your brain shifts into exploratory mode — it’s processing the music and the products at the same time, and that dual processing creates a kind of pleasant absorption. Elizabeth Margulis at Oxford University Press wrote an entire book on this — the way musical unfamiliarity creates absorption and time distortion. Ninety-four percent of the music we hear uses repetition, but novel repetition hits differently than a song you’ve heard four hundred times.
+- type: subhead
+  text: The Preference Trap
+- type: prose
+  body: 'Now, here’s where it gets uncomfortable for playlist builders. A 1996 study in the Journal of Services Marketing found that customer preference was the only significant predictor of shopping behavior. Not tempo. Not volume. Just whether they liked the music. So you need music people enjoy — but not music they already know inside-out. That’s a razor-thin target. A follow-up in 2008, also in the Journal of Services Marketing, confirmed it: happy music that shoppers liked produced the best outcomes. Sad music they disliked? Worst possible scenario. The problem is that most retailers solve for “liked” by defaulting to “familiar.” Top 40. Recognizable hits. Spotify playlists. And they accidentally trigger the familiarity paradox — liked but known, which means faster mental clock, which means shorter dwell time.'
+- type: subhead
+  text: The Real-world Math
+- type: prose
+  body: Let’s put numbers on it. A 2012 study in the Journal of Retailing and Consumer Services — 550 real customers — found that the right music added eight extra minutes of dwell time and increased spending compared to silence. Eight minutes. In retail, that’s not a rounding error. That’s another lap through the store, another impulse buy, another item in the basket. But you only get those eight minutes if the music creates the right emotional state without handing your customer a mental stopwatch. Familiar hits hand them the stopwatch.
+- type: subhead
+  text: The Entuned Angle
+- type: prose
+  body: This is one of the core problems we built Entuned to solve. Generative music is inherently unfamiliar — every track is new — but it’s composed to be instantly pleasant. No learning curve, no “what is this?” confusion. Just music that feels right without giving the brain anything to clock against. That’s the unlock. You get the likeability without the familiarity penalty. Your customers stay longer, perceive time as shorter, and never once think “oh, this is that song from three years ago — how long have I been in here?”
 - type: transcript
   chapters: *id001
 - type: subhead

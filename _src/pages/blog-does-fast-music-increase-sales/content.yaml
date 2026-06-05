@@ -54,6 +54,32 @@ sections:
     In this video I challenge the old "slow is always better" playbook and show you the growing evidence that fast music has legitimate advantages — for discovery-oriented retail, crowded conditions, and variety-seeking behavior.
 
     '
+- type: prose
+  body: Everyone talks about slow music in retail. But what about fast? Is there ever a case where cranking up the BPM actually makes you more money? The answer is yes — but only in one very specific situation. And it’s a situation most stores deal with every single day. I’m Daniel Fox, I run Entuned, and this is what the research says about fast music and sales.
+- type: subhead
+  text: The Default Assumption
+- type: prose
+  body: 'The conventional wisdom says fast music is bad for retail. People move faster, spend less time, buy less. And that story comes from a real place — the 1966 study in the Journal of Applied Psychology that tested volume and pace. Loud music made people exit faster. Same total sales, just compressed into less time. People have been extending that logic to fast tempo ever since. But here’s the thing: that study was about volume, not tempo. And the conflation of loud-and-fast has been muddying this conversation for sixty years.'
+- type: subhead
+  text: When Fast Actually Wins
+- type: prose
+  body: In 2017, the Journal of Retailing published a study that analyzed 43,676 shopping baskets in a real grocery store. Not a lab. Not a simulation. Actual purchases over weeks. And they tested tempo against store density — how crowded the store was at any given time. Here’s what they found. When the store was crowded, fast music produced roughly an 8 percent lift in basket size compared to slow music. Fast music in a dense store worked. Why? Because crowding is stressful. When you’re bumping into people and the aisles feel tight, slow music creates a mismatch — the environment is telling your body to hurry, but the music is telling you to linger. That conflict is uncomfortable. Fast music resolves the tension. It matches the energy of the room. And when the sensory environment is coherent, people relax enough to actually shop. When the store was empty, fast music didn’t help. No density, no stress to resolve. But during peak hours — lunch rush, weekend afternoons, holiday season — fast tempo was the better play.
+- type: subhead
+  text: What Fast Does to Product Choice
+- type: prose
+  body: 'There’s another angle. A 2023 study in Frontiers in Psychology found that fast tempo increased variety-seeking behavior. People exposed to faster music were more likely to choose a range of different products rather than sticking with one category. The mechanism is arousal — fast music activates you, and that activation translates into a wider exploration pattern. Now, this was a lab study, not a field study, so take it with appropriate caution. But the implication is interesting: if your business model benefits from customers exploring your full assortment — think gift shops, specialty food stores, boutiques with diverse inventory — fast music might push them to browse more broadly.'
+- type: subhead
+  text: The Scale Problem
+- type: prose
+  body: 'But here’s where it gets complicated. That 2025 EMAC study — 140 stores — found no overall tempo effect in either direction. Not slow, not fast. The only subgroup that responded was loyalty program members. The general population of walk-in shoppers? Nothing. So fast music works in specific contexts: high density, engaged customers, assortment-driven retail. It fails as a blanket prescription applied to every store at every hour.'
+- type: subhead
+  text: Why This Matters for How We Built Entuned
+- type: prose
+  body: This is exactly the problem static playlists can’t solve. Your store is empty at 10 AM and packed at 1 PM. The optimal tempo is literally different at different times of day. A playlist doesn’t know that. It just plays the next track. We built Entuned’s generative engine to respond to contextual inputs precisely because the research says there’s no single right answer. The right tempo depends on what’s happening in your store right now.
+- type: subhead
+  text: The Takeaway
+- type: prose
+  body: Fast music isn’t the enemy of retail sales. It’s a tool — and like any tool, it works when applied to the right problem. Crowded store? Fast tempo resolves sensory conflict. Empty store? It just rushes people out. The research is clear on this. The question is whether your music system is smart enough to know the difference.
 - type: transcript
   chapters: *id001
 - type: subhead
