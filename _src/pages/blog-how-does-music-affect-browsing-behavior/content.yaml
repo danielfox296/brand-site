@@ -1,0 +1,99 @@
+title: How Does Music Affect Browsing Behavior?
+slug: how-does-music-affect-browsing-behavior
+eyebrow: WATCH
+dek: Music affects what customers pick up, which direction they turn, and how many categories they explore — all without conscious awareness.
+date: '2026-05-31'
+last_updated: '2026-05-31'
+author:
+  name: Daniel Fox
+  role: Founder & CEO
+hero:
+  src: ../img/blog/how-does-music-affect-browsing-behavior.jpg
+  alt: How Does Music Affect Browsing Behavior?
+  caption: ''
+meta_description: Music affects what customers pick up, which direction they turn, and how many categories they explore — all without conscious awareness. A landmark 1999...
+og_image: /img/blog/how-does-music-affect-browsing-behavior.jpg
+tags:
+- music-browsing-behavior
+- how-music-affects-shopping
+- music-priming-retail
+- wine-study-music
+video:
+  id: Mh_pAwB7c18
+  title: How Does Music Affect Browsing Behavior?
+  upload_date: '2026-05-31'
+  duration: PT4M56S
+  chapters: &id001
+  - time: 0
+    label: 'Hook: The wine study that changes everything'
+  - time: 18
+    label: 'The surprising claim: Music as a silent navigation system'
+  - time: 40
+    label: The wine study in depth (priming)
+  - time: 95
+    label: 'The familiarity paradox: Real vs. perceived time'
+  - time: 150
+    label: 'The exploration effect: Tempo and variety-seeking'
+  - time: 205
+    label: The emotional mechanism
+  - time: 240
+    label: Practical takeaway
+  - time: 285
+    label: CTA
+sections:
+- type: key_takeaways
+  items:
+  - Music shapes what customers pick up, which categories they explore, and how long they stay — all below conscious awareness.
+  - They do — and they don't know it. In the wine study, only 14% of customers even noticed music was playing.
+  - For product discovery and exploration, use unfamiliar music at moderate-to-fast tempos — customers stay longer without realizing it and cover more ground.
+- type: video
+- type: prose
+  body: 'Music affects what customers pick up, which direction they turn, and how many categories they explore — all without conscious awareness. A landmark 1999 study found French music made French wine outsell German 5-to-1, then German music reversed the ratio, yet only 14% of customers noticed music was playing (Journal of Applied Psychology).
+
+
+    In this video I cover how music primes product selection, why unfamiliar music stretches real dwell time while compressing perceived time, and how any music vs. silence adds 8 minutes of browsing on average.
+
+    '
+- type: transcript
+  chapters: *id001
+- type: subhead
+  level: 2
+  text: How does music affect browsing behavior?
+- type: prose
+  body: 'Music shapes what customers pick up, which categories they explore, and how long they stay — all below conscious awareness. A 1999 study showed French music made French wine outsell German 5-to-1. A 2000 study found unfamiliar music stretches real browsing time while making it feel shorter. And any music vs. silence adds ~8 minutes of browsing on average.
+
+    '
+- type: subhead
+  level: 2
+  text: Customers don't really change what they buy based on music, do they?
+- type: prose
+  body: 'They do — and they don''t know it. In the wine study, only 14% of customers even noticed music was playing. When asked what influenced their choice, they cited price, labels, or recommendations. The music operated entirely below conscious awareness through a mechanism called priming.
+
+    '
+- type: subhead
+  level: 2
+  text: How should I use music to improve browsing in my store?
+- type: prose
+  body: 'For product discovery and exploration, use unfamiliar music at moderate-to-fast tempos — customers stay longer without realizing it and cover more ground. For deep engagement with specific categories (luxury, high-consideration), use slower, atmospheric music. Either way, don''t play silence — it costs you 8 minutes of browsing. Entuned (entuned.co, free tier) handles this automatically. Full citations in the description. This is video 14 of 50 in this series.
+
+    '
+- type: references
+  heading: References
+  items:
+  - North, A. C., Hargreaves, D. J., & McKendrick, J. (1999). The influence of in-store music on wine selections. Journal of Applied Psychology, 84(2), 271–276.
+  - Yalch, R. F., & Spangenberg, E. R. (2000). The effects of music in a retail setting on real and perceived shopping times. Journal of Business Research, 49(2), 139–147.
+  - Sun, L., Bhatt, S., & Bhatt, G. (2023). Effect of music tempo on consumer variety-seeking behavior. Frontiers in Psychology, 14, 1171498.
+  - 'Andersson, P. K., Kristensson, P., Wästlund, E., & Gustafsson, A. (2012). Let the music play or not: The influence of background music on consumer behavior. Journal of Retailing and Consumer Services, 19(6), 553–560.'
+  - 'Sherman, E., Mathur, A., & Smith, R. B. (1997). Store environment and consumer purchase behavior: Mediating role of consumer emotions. Psychology & Marketing, 14(4), 361–378.'
+  - 'Margulis, E. H. (2014). On Repeat: How Music Plays the Mind. Oxford University Press.'
+- type: cta
+  variant: start-free
+  headline: Hear it on your floor.
+  body: Entuned engineers original music for your store at the parameter level &mdash; tempo, key, lyrical density, energy arc &mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays.
+  link: https://app.entuned.co/start
+  link_text: Start Free
+- type: related
+  posts:
+  - slug: how-much-does-retail-music-cost
+  - slug: why-music-is-the-most-underrated-tool-in-retail
+  - slug: the-real-cost-of-retail-music

@@ -1,0 +1,98 @@
+title: How Do Retail Music Services Actually Work?
+slug: how-do-retail-music-services-actually-work
+eyebrow: WATCH
+dek: Retail music services range from basic licensed playlists to adaptive, generative platforms that adjust in real time.
+date: '2026-06-05'
+last_updated: '2026-06-05'
+author:
+  name: Daniel Fox
+  role: Founder & CEO
+hero:
+  src: ../img/blog/how-do-retail-music-services-actually-work.jpg
+  alt: How Do Retail Music Services Actually Work?
+  caption: ''
+meta_description: 'Retail music services range from basic licensed playlists to adaptive, generative platforms that adjust in real time. The difference matters: a 1982 study...'
+og_image: /img/blog/how-do-retail-music-services-actually-work.jpg
+tags:
+- how-do-retail-music-services-work
+- retail-music-service
+- background-music-for-stores
+- store-music-system
+video:
+  id: QHP5tm_5eSQ
+  title: How Do Retail Music Services Actually Work?
+  upload_date: '2026-06-05'
+  duration: PT3M56S
+  chapters: &id001
+  - time: 0
+    label: Most retailers treat music like a light switch
+  - time: 25
+    label: The problem with "just playing music"
+  - time: 55
+    label: How basic services work
+  - time: 90
+    label: 'The evolution: data-driven music'
+  - time: 135
+    label: What separates the three tiers
+  - time: 190
+    label: Why it matters for your bottom line
+  - time: 230
+    label: What to do next
+sections:
+- type: key_takeaways
+  items:
+  - They range from basic licensed playlist players (pick a station, press play) to adaptive generative systems that create and adjust music in real time based on store conditions.
+  - Yes. A 2017 study of 43,000+ shopping baskets found that the optimal music changes based on crowd density — fast tempo helps when it's crowded, slow tempo lifts spending when it's not.
+  - At minimum, look for a platform that gives you real-time adaptation, not just scheduled playlists.
+- type: video
+- type: prose
+  body: 'Retail music services range from basic licensed playlists to adaptive, generative platforms that adjust in real time. The difference matters: a 1982 study found that simply optimizing tempo increased daily sales by 38%, but a static playlist can''t respond to changing store conditions the way a data-driven system can.
+
+
+    In this video I break down the three tiers of retail music services — licensed playlists, scheduled programming, and adaptive generative systems — explain how each one works, and show what the research says separates background noise from a business tool.
+
+    '
+- type: transcript
+  chapters: *id001
+- type: subhead
+  level: 2
+  text: How do retail music services actually work?
+- type: prose
+  body: 'They range from basic licensed playlist players (pick a station, press play) to adaptive generative systems that create and adjust music in real time based on store conditions. The key difference is whether the system responds to what''s happening in your store or just runs on autopilot.
+
+    '
+- type: subhead
+  level: 2
+  text: Does the type of service actually matter for sales?
+- type: prose
+  body: 'Yes. A 2017 study of 43,000+ shopping baskets found that the optimal music changes based on crowd density — fast tempo helps when it''s crowded, slow tempo lifts spending when it''s not. A static playlist can''t make that adjustment. A system that adapts to conditions can capture upside that a fixed playlist leaves on the table.
+
+    '
+- type: subhead
+  level: 2
+  text: So what should I look for?
+- type: prose
+  body: 'At minimum, look for a platform that gives you real-time adaptation, not just scheduled playlists. The research shows that controlling specific music parameters (tempo, mode, energy) independently — and adjusting them based on actual store conditions — is what produces measurable sales lifts. Entuned''s free tier at entuned.co lets you see what this looks like in practice. Full citations in the description. This is video 31 of 50 in this series.
+
+    '
+- type: references
+  heading: References
+  items:
+  - Milliman, R.E. (1982). "Using Background Music to Affect the Behavior of Supermarket Shoppers." Journal of Marketing, 46(3), 86-91.
+  - Milliman, R.E. (1986). "The Influence of Background Music on the Behavior of Restaurant Patrons." Journal of Consumer Research, 13(2), 286-289.
+  - Mattila, A.S. & Wirtz, J. (2001). "Congruency of Scent and Music as a Driver of In-Store Evaluations and Behavior." Journal of Retailing, 77(2), 273-289.
+  - 'Knoferle, K.M. et al. (2012). "It Is All in the Mix: The Interactive Effect of Music Tempo and Mode on In-Store Sales." Marketing Letters, 23(1), 325-337.'
+  - 'Knoferle, K.M. et al. (2017). "An Upbeat Crowd: Fast In-Store Music Alleviates Negative Effects of High Social Density on Customers'' Spending." Journal of Retailing, 93(4), 541-549.'
+  - Sherman, E. et al. (1997). "Store Environment and Consumer Purchase Behavior." Psychology & Marketing, 14(4), 361-378.
+  - Andersson, P.K. et al. (2012). "Let the Music Play or Not." Journal of Retailing and Consumer Services, 19(6), 553-560.
+- type: cta
+  variant: start-free
+  headline: Hear it on your floor.
+  body: Entuned engineers original music for your store at the parameter level &mdash; tempo, key, lyrical density, energy arc &mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays.
+  link: https://app.entuned.co/start
+  link_text: Start Free
+- type: related
+  posts:
+  - slug: can-background-music-actually-increase-revenue-140-store-study-reveals
+  - slug: best-background-music-for-retail-stores-2026
+  - slug: music-licensing-for-retail-stores

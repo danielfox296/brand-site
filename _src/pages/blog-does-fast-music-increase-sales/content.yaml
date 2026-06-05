@@ -1,0 +1,99 @@
+title: Does Fast Music Increase Sales?
+slug: does-fast-music-increase-sales
+eyebrow: WATCH
+dek: Fast music can increase retail sales by approximately 8% — but only in crowded stores.
+date: '2026-05-31'
+last_updated: '2026-05-31'
+author:
+  name: Daniel Fox
+  role: Founder & CEO
+hero:
+  src: ../img/blog/does-fast-music-increase-sales.jpg
+  alt: Does Fast Music Increase Sales?
+  caption: ''
+meta_description: Fast music can increase retail sales by approximately 8% — but only in crowded stores. A 2017 Journal of Retailing study analyzing 43,676 shopping baskets...
+og_image: /img/blog/does-fast-music-increase-sales.jpg
+tags:
+- fast-music-retail-sales
+- does-fast-music-increase-sales
+- uptempo-shopping
+- fast-tempo-retail
+video:
+  id: r_ljPL10oI0
+  title: Does Fast Music Increase Sales?
+  upload_date: '2026-05-31'
+  duration: PT4M40S
+  chapters: &id001
+  - time: 0
+    label: 'Hook: Fast music might be better'
+  - time: 15
+    label: 'The surprising claim: 8% lift in crowded stores'
+  - time: 35
+    label: The case against fast music (1966–1986)
+  - time: 85
+    label: The case for fast music (2017 landmark study)
+  - time: 145
+    label: The variety-seeking effect (2023)
+  - time: 185
+    label: Who's in your store? The 140-store nuance
+  - time: 220
+    label: Practical takeaway
+  - time: 260
+    label: CTA
+sections:
+- type: key_takeaways
+  items:
+  - Yes — under specific conditions. A 2017 Journal of Retailing study tracking 43,676 baskets found fast music increased spending ~8% in crowded stores through arousal congruence.
+  - That was the finding in older studies (1966, 1982, 1986), and it's true in empty, quiet stores.
+  - 'Three scenarios: (1) crowded periods like weekends and sale events, (2) if you''re a discovery-oriented retailer who wants customers exploring more categories, (3) high-energy brand environments.'
+- type: video
+- type: prose
+  body: 'Fast music can increase retail sales by approximately 8% — but only in crowded stores. A 2017 Journal of Retailing study analyzing 43,676 shopping baskets found that uptempo music in crowded conditions lifts spending through arousal congruence, while a 2023 study showed fast tempo also drives variety-seeking behavior across product categories.
+
+
+    In this video I challenge the old "slow is always better" playbook and show you the growing evidence that fast music has legitimate advantages — for discovery-oriented retail, crowded conditions, and variety-seeking behavior.
+
+    '
+- type: transcript
+  chapters: *id001
+- type: subhead
+  level: 2
+  text: Does fast music increase sales?
+- type: prose
+  body: 'Yes — under specific conditions. A 2017 Journal of Retailing study tracking 43,676 baskets found fast music increased spending ~8% in crowded stores through arousal congruence. A 2023 Frontiers in Psychology study also found fast tempo drives variety-seeking, meaning customers explore more categories.
+
+    '
+- type: subhead
+  level: 2
+  text: But doesn't fast music make people rush out?
+- type: prose
+  body: 'That was the finding in older studies (1966, 1982, 1986), and it''s true in empty, quiet stores. But in crowded environments, fast music matches the high-energy atmosphere instead of fighting it. Slow music in a packed store actually creates a mismatch — "relax" vs. "too many people" — that pushes customers toward the exit.
+
+    '
+- type: subhead
+  level: 2
+  text: When should I use fast music in my store?
+- type: prose
+  body: 'Three scenarios: (1) crowded periods like weekends and sale events, (2) if you''re a discovery-oriented retailer who wants customers exploring more categories, (3) high-energy brand environments. For quiet periods with repeat customers, slow tempo is still better. Entuned (entuned.co, free tier) adapts tempo to real-time store conditions. Full citations in the description. This is video 13 of 50 in this series.
+
+    '
+- type: references
+  heading: References
+  items:
+  - Milliman, R. E. (1982). Using background music to affect the behavior of supermarket shoppers. Journal of Marketing, 46(3), 86–91.
+  - Smith, P. C., & Curnow, R. (1966). "Arousal hypothesis" and the effects of music on purchasing behavior. Journal of Applied Psychology, 50(3), 255–256.
+  - Milliman, R. E. (1986). The influence of background music on the behavior of restaurant patrons. Journal of Consumer Research, 13(2), 286–289.
+  - 'Knoferle, K. M., Paus, V. C., & Vossen, A. (2017). An upbeat crowd: Fast in-store music alleviates the negative effects of crowding on customers'' spending. Journal of Retailing, 93(4), 541–549.'
+  - Sun, L., Bhatt, S., & Bhatt, G. (2023). Effect of music tempo on consumer variety-seeking behavior. Frontiers in Psychology, 14, 1171498.
+  - 'EMAC Conference Proceedings (2025). Tempo effects across 140 retail stores: A large-scale field study. European Marketing Academy.'
+- type: cta
+  variant: start-free
+  headline: Hear it on your floor.
+  body: Entuned engineers original music for your store at the parameter level &mdash; tempo, key, lyrical density, energy arc &mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays.
+  link: https://app.entuned.co/start
+  link_text: Start Free
+- type: related
+  posts:
+  - slug: does-slow-music-increase-sales
+  - slug: how-much-does-retail-music-cost
+  - slug: why-music-is-the-most-underrated-tool-in-retail

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- First-touch signup attribution. Stamps a `.entuned.co` cookie on the
+       FIRST page view so the original source (referrer + UTM) survives the
+       entuned.co -> app.entuned.co/start hop. The dashboard's /start reads the
+       same cookie (same name + shape) and forwards it to the server. Runs
+       early + first-touch-wins so it never overwrites the true upstream. -->
+  <script>
+    (function () {
+      try {
+        if (/(?:^|; )entuned_attr=/.test(document.cookie)) return;
+        var p = new URLSearchParams(window.location.search);
+        var payload = {
+          r: document.referrer || undefined,
+          lp: (window.location.pathname + window.location.search) || undefined,
+          us: p.get('utm_source') || undefined,
+          um: p.get('utm_medium') || undefined,
+          uc: p.get('utm_campaign') || undefined,
+          ut: p.get('utm_term') || undefined,
+          un: p.get('utm_content') || undefined,
+          t: new Date().toISOString()
+        };
+        var host = window.location.hostname;
+        var domain = (host === 'entuned.co' || /\.entuned\.co$/.test(host)) ? '; domain=.entuned.co' : '';
+        document.cookie = 'entuned_attr=' + encodeURIComponent(JSON.stringify(payload)) +
+          '; path=/' + domain + '; max-age=' + (30 * 24 * 60 * 60) + '; SameSite=Lax';
+      } catch (e) { /* best-effort */ }
+    })();
+  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/blog/how-do-retail-music-services-actually-work-video.html">
+  <meta name="robots" content="index, follow">
+  <title>How Do Retail Music Services Actually Work? | Entuned</title>
+  <meta name="description" content="Retail music services range from basic licensed playlists to adaptive, generative platforms that adjust in real time. The difference matters: a 1982 study...">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="../rss.xml">
+  <meta property="og:title" content="How Do Retail Music Services Actually Work? | Entuned">
+  <meta property="og:description" content="Retail music services range from basic licensed playlists to adaptive, generative platforms that adjust in real time. The difference matters: a 1982 study...">
+  <meta property="og:url" content="https://entuned.co/blog/how-do-retail-music-services-actually-work-video.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://entuned.co/img/blog/how-do-retail-music-services-actually-work-video.jpg">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-06-05">
+  <meta property="article:author" content="Daniel Fox">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How Do Retail Music Services Actually Work? | Entuned">
+  <meta name="twitter:description" content="Retail music services range from basic licensed playlists to adaptive, generative platforms that adjust in real time. The difference matters: a 1982 study...">
+  <meta name="twitter:image" content="https://entuned.co/img/blog/how-do-retail-music-services-actually-work-video.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How Do Retail Music Services Actually Work? | Entuned",
+  "author": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "datePublished": "2026-06-05",
+  "dateModified": "2026-06-05",
+  "description": "Retail music services range from basic licensed playlists to adaptive, generative platforms that adjust in real time. The difference matters: a 1982 study...",
+  "image": "https://entuned.co/img/blog/how-do-retail-music-services-actually-work-video.jpg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://entuned.co/blog/how-do-retail-music-services-actually-work-video.html"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "retail music strategy"
+    },
+    {
+      "@type": "Thing",
+      "name": "in-store customer behavior"
+    },
+    {
+      "@type": "Thing",
+      "name": "engineered retail audio"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "How Do Retail Music Services Actually Work?",
+  "description": "Retail music services range from basic licensed playlists to adaptive, generative platforms that adjust in real time. The difference matters: a 1982 study...",
+  "thumbnailUrl": [
+    "https://entuned.co/img/blog/how-do-retail-music-services-actually-work-video.jpg"
+  ],
+  "uploadDate": "2026-06-05",
+  "contentUrl": "https://www.youtube.com/watch?v=QHP5tm_5eSQ",
+  "embedUrl": "https://www.youtube.com/embed/QHP5tm_5eSQ",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "duration": "PT3M56S",
+  "hasPart": [
+    {
+      "@type": "Clip",
+      "name": "Most retailers treat music like a light switch",
+      "startOffset": 0,
+      "url": "https://www.youtube.com/watch?v=QHP5tm_5eSQ&t=0s"
+    },
+    {
+      "@type": "Clip",
+      "name": "The problem with \"just playing music\"",
+      "startOffset": 25,
+      "url": "https://www.youtube.com/watch?v=QHP5tm_5eSQ&t=25s"
+    },
+    {
+      "@type": "Clip",
+      "name": "How basic services work",
+      "startOffset": 55,
+      "url": "https://www.youtube.com/watch?v=QHP5tm_5eSQ&t=55s"
+    },
+    {
+      "@type": "Clip",
+      "name": "The evolution: data-driven music",
+      "startOffset": 90,
+      "url": "https://www.youtube.com/watch?v=QHP5tm_5eSQ&t=90s"
+    },
+    {
+      "@type": "Clip",
+      "name": "What separates the three tiers",
+      "startOffset": 135,
+      "url": "https://www.youtube.com/watch?v=QHP5tm_5eSQ&t=135s"
+    },
+    {
+      "@type": "Clip",
+      "name": "Why it matters for your bottom line",
+      "startOffset": 190,
+      "url": "https://www.youtube.com/watch?v=QHP5tm_5eSQ&t=190s"
+    },
+    {
+      "@type": "Clip",
+      "name": "What to do next",
+      "startOffset": 230,
+      "url": "https://www.youtube.com/watch?v=QHP5tm_5eSQ&t=230s"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do retail music services actually work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They range from basic licensed playlist players (pick a station, press play) to adaptive generative systems that create and adjust music in real time based on store conditions. The key difference is whether the system responds to what's happening in your store or just runs on autopilot."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the type of service actually matter for sales?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. A 2017 study of 43,000+ shopping baskets found that the optimal music changes based on crowd density \u2014 fast tempo helps when it's crowded, slow tempo lifts spending when it's not. A static playlist can't make that adjustment. A system that adapts to conditions can capture upside that a fixed playlist leaves on the table."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "So what should I look for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "At minimum, look for a platform that gives you real-time adaptation, not just scheduled playlists. The research shows that controlling specific music parameters (tempo, mode, energy) independently \u2014 and adjusting them based on actual store conditions \u2014 is what produces measurable sales lifts. Entuned's free tier at entuned.co lets you see what this looks like in practice. Full citations in the description. This is video 31 of 50 in this series."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://entuned.co/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How Do Retail Music Services Actually Work? | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=ebace452">
+  <link rel="stylesheet" href="../styles/blog.css">
+  
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav aria-label="Main navigation">
+  <div class="container">
+    <a href="/" class="logo"><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="../how-it-works.html">How It Works</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li class="nav-cta-item"><a href="https://app.entuned.co/start" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Start Free</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+  </div>
+</nav>
+
+  <main>
+  
+<!-- Reading progress bar -->
+<div class="blog-progress" aria-hidden="true">
+  <div class="blog-progress__bar" id="reading-progress"></div>
+</div>
+
+<article class="blog-article">
+
+  <!-- Article header -->
+  <header class="blog-article__header">
+    <div class="blog-eyebrow">WATCH</div>
+    <h1 class="blog-headline">How Do Retail Music Services Actually Work?</h1>
+    <p class="blog-dek">Retail music services range from basic licensed playlists to adaptive, generative platforms that adjust in real time.</p>
+    <div class="blog-byline">
+      <span class="blog-byline__author">Daniel Fox</span>
+      <span class="blog-byline__role">Founder &amp; CEO</span>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <time class="blog-byline__date" datetime="2026-06-05">2026-06-05</time>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <span class="blog-byline__reading-time">2 min read</span>
+    </div>
+  </header>
+
+  <!-- Hero image -->
+  <figure class="blog-hero fade-up">
+    <img src="../img/blog/how-do-retail-music-services-actually-work-video.jpg" alt="How Do Retail Music Services Actually Work?" class="blog-hero__img" loading="lazy">
+  </figure>
+
+  <!-- Key takeaways -->
+  <div class="blog-takeaways">
+  <div class="blog-takeaways__title">Key takeaways</div>
+  <ul>
+    <li>They range from basic licensed playlist players (pick a station, press play) to adaptive generative systems that create and adjust music in real time based on store conditions.</li>
+    <li>Yes. A 2017 study of 43,000+ shopping baskets found that the optimal music changes based on crowd density — fast tempo helps when it&#39;s crowded, slow tempo lifts spending when it&#39;s not.</li>
+    <li>At minimum, look for a platform that gives you real-time adaptation, not just scheduled playlists.</li>
+  </ul>
+</div>
+
+  <!-- Article body (all sections except key_takeaways, cta, related) -->
+  <div class="blog-article__body">
+    <div class="blog-video fade-up">
+  <div class="blog-video__frame">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/QHP5tm_5eSQ?rel=0"
+      title="How Do Retail Music Services Actually Work?"
+      loading="lazy"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
+  </div>
+</div>
+
+
+<div class="blog-prose">
+  <p>Retail music services range from basic licensed playlists to adaptive, generative platforms that adjust in real time. The difference matters: a 1982 study found that simply optimizing tempo increased daily sales by 38%, but a static playlist can&rsquo;t respond to changing store conditions the way a data-driven system can.</p>
+<p>In this video I break down the three tiers of retail music services — licensed playlists, scheduled programming, and adaptive generative systems — explain how each one works, and show what the research says separates background noise from a business tool.</p>
+</div>
+
+<div class="blog-transcript fade-up">
+  <h2 class="blog-transcript__heading" id="chapters">Chapters</h2>
+  <ol class="blog-transcript__toc">
+    <li>
+      <a href="https://www.youtube.com/watch?v=QHP5tm_5eSQ&amp;t=0s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">0:00</span>
+        Most retailers treat music like a light switch
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=QHP5tm_5eSQ&amp;t=25s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">0:25</span>
+        The problem with &#34;just playing music&#34;
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=QHP5tm_5eSQ&amp;t=55s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">0:55</span>
+        How basic services work
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=QHP5tm_5eSQ&amp;t=90s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">1:30</span>
+        The evolution: data-driven music
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=QHP5tm_5eSQ&amp;t=135s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">2:15</span>
+        What separates the three tiers
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=QHP5tm_5eSQ&amp;t=190s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">3:10</span>
+        Why it matters for your bottom line
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=QHP5tm_5eSQ&amp;t=230s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">3:50</span>
+        What to do next
+      </a>
+    </li>
+  </ol>
+
+</div>
+
+<h2 id="how-do-retail-music-services-actually-work" class="blog-subhead blog-subhead--h2">
+  How do retail music services actually work?
+  <a href="#how-do-retail-music-services-actually-work" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>They range from basic licensed playlist players (pick a station, press play) to adaptive generative systems that create and adjust music in real time based on store conditions. The key difference is whether the system responds to what&rsquo;s happening in your store or just runs on autopilot.</p>
+</div>
+
+<h2 id="does-the-type-of-service-actually-matter-for-sales" class="blog-subhead blog-subhead--h2">
+  Does the type of service actually matter for sales?
+  <a href="#does-the-type-of-service-actually-matter-for-sales" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Yes. A 2017 study of 43,000+ shopping baskets found that the optimal music changes based on crowd density — fast tempo helps when it&rsquo;s crowded, slow tempo lifts spending when it&rsquo;s not. A static playlist can&rsquo;t make that adjustment. A system that adapts to conditions can capture upside that a fixed playlist leaves on the table.</p>
+</div>
+
+<h2 id="so-what-should-i-look-for" class="blog-subhead blog-subhead--h2">
+  So what should I look for?
+  <a href="#so-what-should-i-look-for" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>At minimum, look for a platform that gives you real-time adaptation, not just scheduled playlists. The research shows that controlling specific music parameters (tempo, mode, energy) independently — and adjusting them based on actual store conditions — is what produces measurable sales lifts. Entuned&rsquo;s free tier at entuned.co lets you see what this looks like in practice. Full citations in the description. This is video 31 of 50 in this series.</p>
+</div>
+
+<div class="blog-references fade-up">
+  <h2 class="blog-references__heading" id="references">References</h2>
+  <ol class="blog-references__list">
+    <li>Milliman, R.E. (1982). &#34;Using Background Music to Affect the Behavior of Supermarket Shoppers.&#34; Journal of Marketing, 46(3), 86-91.</li>
+    <li>Milliman, R.E. (1986). &#34;The Influence of Background Music on the Behavior of Restaurant Patrons.&#34; Journal of Consumer Research, 13(2), 286-289.</li>
+    <li>Mattila, A.S. &amp; Wirtz, J. (2001). &#34;Congruency of Scent and Music as a Driver of In-Store Evaluations and Behavior.&#34; Journal of Retailing, 77(2), 273-289.</li>
+    <li>Knoferle, K.M. et al. (2012). &#34;It Is All in the Mix: The Interactive Effect of Music Tempo and Mode on In-Store Sales.&#34; Marketing Letters, 23(1), 325-337.</li>
+    <li>Knoferle, K.M. et al. (2017). &#34;An Upbeat Crowd: Fast In-Store Music Alleviates Negative Effects of High Social Density on Customers&#39; Spending.&#34; Journal of Retailing, 93(4), 541-549.</li>
+    <li>Sherman, E. et al. (1997). &#34;Store Environment and Consumer Purchase Behavior.&#34; Psychology &amp; Marketing, 14(4), 361-378.</li>
+    <li>Andersson, P.K. et al. (2012). &#34;Let the Music Play or Not.&#34; Journal of Retailing and Consumer Services, 19(6), 553-560.</li>
+  </ol>
+</div>
+
+  </div>
+
+  <!-- CTA -->
+  <aside class="blog-cta blog-cta--start-free">
+  <div class="blog-cta__headline">Hear it on your floor.</div>
+  <div class="blog-cta__body">Entuned engineers original music for your store at the parameter level &amp;mdash; tempo, key, lyrical density, energy arc &amp;mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &amp;mdash; no card, no time limit. PRO-indemnified the moment it plays.</div>
+  <a href="https://app.entuned.co/start" class="blog-cta__link">Start Free &rarr;</a>
+</aside>
+
+  <!-- Related posts -->
+  <section class="blog-related" aria-label="Related posts">
+  <h2 class="blog-related__title">Keep reading</h2>
+  <div class="blog-related__grid">
+    <a href="../blog/how-do-retail-music-services-actually-work.html" class="blog-related__card">
+      <img src="../img/blog/how-do-retail-music-services-actually-work.jpg" alt="How Do Retail Music Services Actually Work?" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">WATCH</span>
+      <span class="blog-related__card-title">How Do Retail Music Services Actually Work?</span>
+      <span class="blog-related__dek">Retail music services range from basic licensed playlists to adaptive, generative platforms that adjust in real time.</span>
+    </a>
+    <a href="../blog/can-background-music-actually-increase-revenue-140-store-study-reveals-video.html" class="blog-related__card">
+      <img src="../img/blog/can-background-music-actually-increase-revenue-140-store-study-reveals-video.jpg" alt="Can Background Music Actually Increase Revenue? (140-Store Study Reveals the Truth)" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">WATCH</span>
+      <span class="blog-related__card-title">Can Background Music Actually Increase Revenue? (140-Store Study Reveals the Truth)</span>
+      <span class="blog-related__dek">Yes — background music can increase revenue, but the effect is conditional.</span>
+    </a>
+    <a href="../blog/can-background-music-actually-increase-revenue-140-store-study-reveals.html" class="blog-related__card">
+      <img src="../img/blog/can-background-music-actually-increase-revenue-140-store-study-reveals.jpg" alt="Can Background Music Actually Increase Revenue? (140-Store Study Reveals the Truth)" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">WATCH</span>
+      <span class="blog-related__card-title">Can Background Music Actually Increase Revenue? (140-Store Study Reveals the Truth)</span>
+      <span class="blog-related__dek">Yes — background music can increase revenue, but the effect is conditional.</span>
+    </a>
+  </div>
+</section>
+
+</article>
+
+<!-- Blog-specific JS (reading progress + anchor copy) -->
+<script>
+  // Reading progress bar
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    document.getElementById('reading-progress').style.width = pct + '%';
+  });
+
+  // Anchor link copy-to-clipboard
+  document.querySelectorAll('.anchor-link').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      navigator.clipboard.writeText(window.location.origin + window.location.pathname + a.getAttribute('href'));
+      a.textContent = '\u2713'; setTimeout(() => a.textContent = '#', 1500);
+    });
+  });
+</script>
+  </main>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Engineered retail audio. PRO-indemnified.</p>
+      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="../how-it-works.html">How It Works</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="../enterprise.html">Enterprise</a></li>
+        <li><a href="../why-entuned.html">Why Entuned</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For Your Industry</h4>
+      <ul>
+        <li><a href="../for-apparel.html">Apparel</a></li>
+        <li><a href="../for-beauty-supply.html">Beauty Supply</a></li>
+        <li><a href="../for-cosmetics.html">Cosmetics &amp; Beauty</a></li>
+        <li><a href="../for-furniture-mattress.html">Furniture &amp; Mattress</a></li>
+        <li><a href="../for-home-goods.html">Home Goods</a></li>
+        <li><a href="../for-jewelry.html">Jewelry</a></li>
+        <li><a href="../for-specialty-retail.html">Specialty Retail</a></li>
+        <li><a href="../for-sporting-goods.html">Sporting Goods</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
+      <ul>
+        <li><a href="../for-retail-leaders.html">Retail Leaders</a></li>
+        <li><a href="../impact.html">Impact Calculator</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Research</h4>
+      <ul>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../results.html">Results</a></li>
+        <li><a href="../science.html">The Science</a></li>
+        <li><a href="../will-it-retail.html">Will It Retail?</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="../how-music-affects-retail.html">How Music Affects Retail</a></li>
+        <li><a href="../how-to-increase-aov-retail.html">Increase Average Order Value</a></li>
+        <li><a href="../how-to-increase-dwell-time-retail.html">Increase Dwell Time</a></li>
+        <li><a href="../how-to-increase-impulse-purchases-retail.html">Drive Impulse Purchases</a></li>
+        <li><a href="../how-to-improve-retail-conversion-rate.html">Improve Conversion Rate</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../partners.html">Partners</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="../licensing.html">Licensing &amp; PRO Coverage</a></li>
+        <li><a href="../data.html">Data Practices</a></li>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="../pricing/terms.html">Subscription Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG', {
+      linker: {
+        domains: ['entuned.co', 'music.entuned.co', 'app.entuned.co']
+      }
+    });
+  </script>
+  <script defer src="../js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>

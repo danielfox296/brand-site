@@ -1,0 +1,99 @@
+title: How Does Music Influence Emotions in Retail?
+slug: how-does-music-influence-emotions-in-retail
+eyebrow: WATCH
+dek: Music is the fastest emotional lever in any retail environment — faster than lighting, scent, or visual merchandising.
+date: '2026-05-31'
+last_updated: '2026-05-31'
+author:
+  name: Daniel Fox
+  role: Founder & CEO
+hero:
+  src: ../img/blog/how-does-music-influence-emotions-in-retail.jpg
+  alt: How Does Music Influence Emotions in Retail?
+  caption: ''
+meta_description: Music is the fastest emotional lever in any retail environment — faster than lighting, scent, or visual merchandising. A 1994 Journal of Retailing study...
+og_image: /img/blog/how-does-music-influence-emotions-in-retail.jpg
+tags:
+- music-emotions-retail
+- how-music-influences-emotions
+- retail-emotional-lever
+- music-and-buying-mood
+video:
+  id: FkVFzQjgUKU
+  title: How Does Music Influence Emotions in Retail?
+  upload_date: '2026-05-31'
+  duration: PT5M13S
+  chapters: &id001
+  - time: 0
+    label: 'Hook: Every purchase is an emotional decision'
+  - time: 20
+    label: 'The surprising claim: Music is the fastest emotional lever'
+  - time: 42
+    label: The five-minute window (1994 study)
+  - time: 85
+    label: 'The PAD model: Pleasure, Arousal, Dominance'
+  - time: 145
+    label: Happy music isn't always best (1990, 2008)
+  - time: 200
+    label: 'Congruence: The multiplier effect'
+  - time: 250
+    label: Practical takeaway
+  - time: 295
+    label: CTA
+sections:
+- type: key_takeaways
+  items:
+  - 'Music directly modulates the two key emotional dimensions in retail: pleasure and arousal.'
+  - No. A 1990 study found that emotionally complex (sad/minor) music generated stronger purchase intentions in a card shop — because it matched the emotional depth of the products.
+  - 'Three rules: (1) Treat the first five minutes like prime time — that window sets the trajectory.'
+- type: video
+- type: prose
+  body: 'Music is the fastest emotional lever in any retail environment — faster than lighting, scent, or visual merchandising. A 1994 Journal of Retailing study found that pleasure experienced within the first five minutes of a shopping trip significantly predicted unplanned purchases, more than total time in store or number of aisles visited.
+
+
+    In this video I cover the PAD model (pleasure, arousal, dominance), why "happy" music isn''t always best, and how congruence between music and other sensory elements either amplifies or cancels emotional effects.
+
+    '
+- type: transcript
+  chapters: *id001
+- type: subhead
+  level: 2
+  text: How does music influence emotions in retail?
+- type: prose
+  body: 'Music directly modulates the two key emotional dimensions in retail: pleasure and arousal. Tempo controls arousal (energy level), while mode, harmony, and familiarity control pleasure. A 1994 study found pleasure at the five-minute mark predicted unplanned spending better than total time in store or aisles visited. Music sets the emotional trajectory from the moment customers walk in.
+
+    '
+- type: subhead
+  level: 2
+  text: Shouldn't I just play happy, upbeat music?
+- type: prose
+  body: 'No. A 1990 study found that emotionally complex (sad/minor) music generated stronger purchase intentions in a card shop — because it matched the emotional depth of the products. A 2008 study found "liked" matters more than "happy." Customers who enjoy atmospheric or melancholic music are in a better buying state than customers hearing "happy" music they find annoying.
+
+    '
+- type: subhead
+  level: 2
+  text: How do I get the emotional layer right?
+- type: prose
+  body: 'Three rules: (1) Treat the first five minutes like prime time — that window sets the trajectory. (2) Match emotional complexity of music to your product — luxury needs depth, not pop hits. (3) Check congruence — if your scent, lighting, and music tell different stories, they cancel each other out. Entuned (entuned.co, free tier) creates coherent emotional environments grounded in 40 years of research. Full citations in the description. This is video 18 of 50 in this series.
+
+    '
+- type: references
+  heading: References
+  items:
+  - Donovan, R. J., Rossiter, J. R., Marcoolyn, G., & Nesdale, A. (1994). Store atmosphere and purchasing behavior. Journal of Retailing, 70(3), 283–294.
+  - 'Donovan, R. J., & Rossiter, J. R. (1982). Store atmosphere: An environmental psychology approach. Journal of Retailing, 58(1), 34–57.'
+  - Alpert, J. I., & Alpert, M. I. (1990). Music influences on mood and purchase intentions. Psychology & Marketing, 7(2), 109–133.
+  - Broekemier, G., Marquardt, R., & Gentry, J. W. (2008). An exploration of happy/sad and liked/disliked music effects on shopping intentions in a women's clothing store service setting. Journal of Services Marketing, 22(1), 59–67.
+  - Mattila, A. S., & Wirtz, J. (2001). Congruency of scent and music as a driver of in-store evaluations and behavior. Journal of Retailing, 77(2), 273–289.
+  - 'Sherman, E., Mathur, A., & Smith, R. B. (1997). Store environment and consumer purchase behavior: Mediating role of consumer emotions. Psychology & Marketing, 14(4), 361–378.'
+- type: cta
+  variant: start-free
+  headline: Hear it on your floor.
+  body: Entuned engineers original music for your store at the parameter level &mdash; tempo, key, lyrical density, energy arc &mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays.
+  link: https://app.entuned.co/start
+  link_text: Start Free
+- type: related
+  posts:
+  - slug: how-much-does-retail-music-cost
+  - slug: why-music-is-the-most-underrated-tool-in-retail
+  - slug: the-real-cost-of-retail-music

@@ -619,6 +619,43 @@ def build():
 
         schema_json = f'<script type="application/ld+json">\n{json.dumps(schema, indent=2)}\n  </script>'
 
+        # VideoObject schema — emitted for new-format blog posts that embed a
+        # YouTube video (frontmatter `video:` block). Chapters become Clip
+        # parts so Google and AI engines can deep-link key moments.
+        if is_blog and use_new_renderer and post_data.get('video'):
+            _v = post_data['video']
+            _vid = _v.get('id', '')
+            _watch = f'https://www.youtube.com/watch?v={_vid}'
+            video_schema = {
+                "@context": "https://schema.org",
+                "@type": "VideoObject",
+                "name": _v.get('title', og_title),
+                "description": description,
+                "thumbnailUrl": [og_image],
+                "uploadDate": _v.get('upload_date', date_published),
+                "contentUrl": _watch,
+                "embedUrl": f'https://www.youtube.com/embed/{_vid}',
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Entuned",
+                    "url": SITE_URL
+                }
+            }
+            if _v.get('duration'):
+                video_schema["duration"] = _v["duration"]
+            _chapters = _v.get('chapters') or []
+            if _chapters:
+                video_schema["hasPart"] = [
+                    {
+                        "@type": "Clip",
+                        "name": c.get('label', ''),
+                        "startOffset": c.get('time', 0),
+                        "url": f"{_watch}&t={c.get('time', 0)}s",
+                    }
+                    for c in _chapters
+                ]
+            schema_json += f'\n  <script type="application/ld+json">\n{json.dumps(video_schema, indent=2)}\n  </script>'
+
         # WebSite schema — added to homepage only
         if output == 'index.html':
             website_schema = {

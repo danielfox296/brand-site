@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- First-touch signup attribution. Stamps a `.entuned.co` cookie on the
+       FIRST page view so the original source (referrer + UTM) survives the
+       entuned.co -> app.entuned.co/start hop. The dashboard's /start reads the
+       same cookie (same name + shape) and forwards it to the server. Runs
+       early + first-touch-wins so it never overwrites the true upstream. -->
+  <script>
+    (function () {
+      try {
+        if (/(?:^|; )entuned_attr=/.test(document.cookie)) return;
+        var p = new URLSearchParams(window.location.search);
+        var payload = {
+          r: document.referrer || undefined,
+          lp: (window.location.pathname + window.location.search) || undefined,
+          us: p.get('utm_source') || undefined,
+          um: p.get('utm_medium') || undefined,
+          uc: p.get('utm_campaign') || undefined,
+          ut: p.get('utm_term') || undefined,
+          un: p.get('utm_content') || undefined,
+          t: new Date().toISOString()
+        };
+        var host = window.location.hostname;
+        var domain = (host === 'entuned.co' || /\.entuned\.co$/.test(host)) ? '; domain=.entuned.co' : '';
+        document.cookie = 'entuned_attr=' + encodeURIComponent(JSON.stringify(payload)) +
+          '; path=/' + domain + '; max-age=' + (30 * 24 * 60 * 60) + '; SameSite=Lax';
+      } catch (e) { /* best-effort */ }
+    })();
+  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/blog/how-does-music-affect-browsing-behavior.html">
+  <meta name="robots" content="index, follow">
+  <title>How Does Music Affect Browsing Behavior? | Entuned</title>
+  <meta name="description" content="Music affects what customers pick up, which direction they turn, and how many categories they explore — all without conscious awareness. A landmark 1999...">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="../rss.xml">
+  <meta property="og:title" content="How Does Music Affect Browsing Behavior? | Entuned">
+  <meta property="og:description" content="Music affects what customers pick up, which direction they turn, and how many categories they explore — all without conscious awareness. A landmark 1999...">
+  <meta property="og:url" content="https://entuned.co/blog/how-does-music-affect-browsing-behavior.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://entuned.co/img/blog/how-does-music-affect-browsing-behavior.jpg">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-05-31">
+  <meta property="article:author" content="Daniel Fox">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How Does Music Affect Browsing Behavior? | Entuned">
+  <meta name="twitter:description" content="Music affects what customers pick up, which direction they turn, and how many categories they explore — all without conscious awareness. A landmark 1999...">
+  <meta name="twitter:image" content="https://entuned.co/img/blog/how-does-music-affect-browsing-behavior.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How Does Music Affect Browsing Behavior? | Entuned",
+  "author": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "datePublished": "2026-05-31",
+  "dateModified": "2026-05-31",
+  "description": "Music affects what customers pick up, which direction they turn, and how many categories they explore \u2014 all without conscious awareness. A landmark 1999...",
+  "image": "https://entuned.co/img/blog/how-does-music-affect-browsing-behavior.jpg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://entuned.co/blog/how-does-music-affect-browsing-behavior.html"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "retail music strategy"
+    },
+    {
+      "@type": "Thing",
+      "name": "in-store customer behavior"
+    },
+    {
+      "@type": "Thing",
+      "name": "engineered retail audio"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "How Does Music Affect Browsing Behavior?",
+  "description": "Music affects what customers pick up, which direction they turn, and how many categories they explore \u2014 all without conscious awareness. A landmark 1999...",
+  "thumbnailUrl": [
+    "https://entuned.co/img/blog/how-does-music-affect-browsing-behavior.jpg"
+  ],
+  "uploadDate": "2026-05-31",
+  "contentUrl": "https://www.youtube.com/watch?v=Mh_pAwB7c18",
+  "embedUrl": "https://www.youtube.com/embed/Mh_pAwB7c18",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "duration": "PT4M56S",
+  "hasPart": [
+    {
+      "@type": "Clip",
+      "name": "Hook: The wine study that changes everything",
+      "startOffset": 0,
+      "url": "https://www.youtube.com/watch?v=Mh_pAwB7c18&t=0s"
+    },
+    {
+      "@type": "Clip",
+      "name": "The surprising claim: Music as a silent navigation system",
+      "startOffset": 18,
+      "url": "https://www.youtube.com/watch?v=Mh_pAwB7c18&t=18s"
+    },
+    {
+      "@type": "Clip",
+      "name": "The wine study in depth (priming)",
+      "startOffset": 40,
+      "url": "https://www.youtube.com/watch?v=Mh_pAwB7c18&t=40s"
+    },
+    {
+      "@type": "Clip",
+      "name": "The familiarity paradox: Real vs. perceived time",
+      "startOffset": 95,
+      "url": "https://www.youtube.com/watch?v=Mh_pAwB7c18&t=95s"
+    },
+    {
+      "@type": "Clip",
+      "name": "The exploration effect: Tempo and variety-seeking",
+      "startOffset": 150,
+      "url": "https://www.youtube.com/watch?v=Mh_pAwB7c18&t=150s"
+    },
+    {
+      "@type": "Clip",
+      "name": "The emotional mechanism",
+      "startOffset": 205,
+      "url": "https://www.youtube.com/watch?v=Mh_pAwB7c18&t=205s"
+    },
+    {
+      "@type": "Clip",
+      "name": "Practical takeaway",
+      "startOffset": 240,
+      "url": "https://www.youtube.com/watch?v=Mh_pAwB7c18&t=240s"
+    },
+    {
+      "@type": "Clip",
+      "name": "CTA",
+      "startOffset": 285,
+      "url": "https://www.youtube.com/watch?v=Mh_pAwB7c18&t=285s"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How does music affect browsing behavior?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Music shapes what customers pick up, which categories they explore, and how long they stay \u2014 all below conscious awareness. A 1999 study showed French music made French wine outsell German 5-to-1. A 2000 study found unfamiliar music stretches real browsing time while making it feel shorter. And any music vs. silence adds ~8 minutes of browsing on average."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Customers don't really change what they buy based on music, do they?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They do \u2014 and they don't know it. In the wine study, only 14% of customers even noticed music was playing. When asked what influenced their choice, they cited price, labels, or recommendations. The music operated entirely below conscious awareness through a mechanism called priming."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How should I use music to improve browsing in my store?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For product discovery and exploration, use unfamiliar music at moderate-to-fast tempos \u2014 customers stay longer without realizing it and cover more ground. For deep engagement with specific categories (luxury, high-consideration), use slower, atmospheric music. Either way, don't play silence \u2014 it costs you 8 minutes of browsing. Entuned (entuned.co, free tier) handles this automatically. Full citations in the description. This is video 14 of 50 in this series."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://entuned.co/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How Does Music Affect Browsing Behavior? | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=ebace452">
+  <link rel="stylesheet" href="../styles/blog.css">
+  
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav aria-label="Main navigation">
+  <div class="container">
+    <a href="/" class="logo"><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="../how-it-works.html">How It Works</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li class="nav-cta-item"><a href="https://app.entuned.co/start" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Start Free</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+  </div>
+</nav>
+
+  <main>
+  
+<!-- Reading progress bar -->
+<div class="blog-progress" aria-hidden="true">
+  <div class="blog-progress__bar" id="reading-progress"></div>
+</div>
+
+<article class="blog-article">
+
+  <!-- Article header -->
+  <header class="blog-article__header">
+    <div class="blog-eyebrow">WATCH</div>
+    <h1 class="blog-headline">How Does Music Affect Browsing Behavior?</h1>
+    <p class="blog-dek">Music affects what customers pick up, which direction they turn, and how many categories they explore — all without conscious awareness.</p>
+    <div class="blog-byline">
+      <span class="blog-byline__author">Daniel Fox</span>
+      <span class="blog-byline__role">Founder &amp; CEO</span>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <time class="blog-byline__date" datetime="2026-05-31">2026-05-31</time>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <span class="blog-byline__reading-time">2 min read</span>
+    </div>
+  </header>
+
+  <!-- Hero image -->
+  <figure class="blog-hero fade-up">
+    <img src="../img/blog/how-does-music-affect-browsing-behavior.jpg" alt="How Does Music Affect Browsing Behavior?" class="blog-hero__img" loading="lazy">
+  </figure>
+
+  <!-- Key takeaways -->
+  <div class="blog-takeaways">
+  <div class="blog-takeaways__title">Key takeaways</div>
+  <ul>
+    <li>Music shapes what customers pick up, which categories they explore, and how long they stay — all below conscious awareness.</li>
+    <li>They do — and they don&#39;t know it. In the wine study, only 14% of customers even noticed music was playing.</li>
+    <li>For product discovery and exploration, use unfamiliar music at moderate-to-fast tempos — customers stay longer without realizing it and cover more ground.</li>
+  </ul>
+</div>
+
+  <!-- Article body (all sections except key_takeaways, cta, related) -->
+  <div class="blog-article__body">
+    <div class="blog-video fade-up">
+  <div class="blog-video__frame">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/Mh_pAwB7c18?rel=0"
+      title="How Does Music Affect Browsing Behavior?"
+      loading="lazy"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
+  </div>
+</div>
+
+
+<div class="blog-prose">
+  <p>Music affects what customers pick up, which direction they turn, and how many categories they explore — all without conscious awareness. A landmark 1999 study found French music made French wine outsell German 5-to-1, then German music reversed the ratio, yet only 14% of customers noticed music was playing (Journal of Applied Psychology).</p>
+<p>In this video I cover how music primes product selection, why unfamiliar music stretches real dwell time while compressing perceived time, and how any music vs. silence adds 8 minutes of browsing on average.</p>
+</div>
+
+<div class="blog-transcript fade-up">
+  <h2 class="blog-transcript__heading" id="chapters">Chapters</h2>
+  <ol class="blog-transcript__toc">
+    <li>
+      <a href="https://www.youtube.com/watch?v=Mh_pAwB7c18&amp;t=0s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">0:00</span>
+        Hook: The wine study that changes everything
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=Mh_pAwB7c18&amp;t=18s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">0:18</span>
+        The surprising claim: Music as a silent navigation system
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=Mh_pAwB7c18&amp;t=40s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">0:40</span>
+        The wine study in depth (priming)
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=Mh_pAwB7c18&amp;t=95s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">1:35</span>
+        The familiarity paradox: Real vs. perceived time
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=Mh_pAwB7c18&amp;t=150s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">2:30</span>
+        The exploration effect: Tempo and variety-seeking
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=Mh_pAwB7c18&amp;t=205s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">3:25</span>
+        The emotional mechanism
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=Mh_pAwB7c18&amp;t=240s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">4:00</span>
+        Practical takeaway
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=Mh_pAwB7c18&amp;t=285s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">4:45</span>
+        CTA
+      </a>
+    </li>
+  </ol>
+
+</div>
+
+<h2 id="how-does-music-affect-browsing-behavior" class="blog-subhead blog-subhead--h2">
+  How does music affect browsing behavior?
+  <a href="#how-does-music-affect-browsing-behavior" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Music shapes what customers pick up, which categories they explore, and how long they stay — all below conscious awareness. A 1999 study showed French music made French wine outsell German 5-to-1. A 2000 study found unfamiliar music stretches real browsing time while making it feel shorter. And any music vs. silence adds ~8 minutes of browsing on average.</p>
+</div>
+
+<h2 id="customers-dont-really-change-what-they-buy-based-on-music-do-they" class="blog-subhead blog-subhead--h2">
+  Customers don&#39;t really change what they buy based on music, do they?
+  <a href="#customers-dont-really-change-what-they-buy-based-on-music-do-they" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>They do — and they don&rsquo;t know it. In the wine study, only 14% of customers even noticed music was playing. When asked what influenced their choice, they cited price, labels, or recommendations. The music operated entirely below conscious awareness through a mechanism called priming.</p>
+</div>
+
+<h2 id="how-should-i-use-music-to-improve-browsing-in-my-store" class="blog-subhead blog-subhead--h2">
+  How should I use music to improve browsing in my store?
+  <a href="#how-should-i-use-music-to-improve-browsing-in-my-store" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>For product discovery and exploration, use unfamiliar music at moderate-to-fast tempos — customers stay longer without realizing it and cover more ground. For deep engagement with specific categories (luxury, high-consideration), use slower, atmospheric music. Either way, don&rsquo;t play silence — it costs you 8 minutes of browsing. Entuned (entuned.co, free tier) handles this automatically. Full citations in the description. This is video 14 of 50 in this series.</p>
+</div>
+
+<div class="blog-references fade-up">
+  <h2 class="blog-references__heading" id="references">References</h2>
+  <ol class="blog-references__list">
+    <li>North, A. C., Hargreaves, D. J., &amp; McKendrick, J. (1999). The influence of in-store music on wine selections. Journal of Applied Psychology, 84(2), 271–276.</li>
+    <li>Yalch, R. F., &amp; Spangenberg, E. R. (2000). The effects of music in a retail setting on real and perceived shopping times. Journal of Business Research, 49(2), 139–147.</li>
+    <li>Sun, L., Bhatt, S., &amp; Bhatt, G. (2023). Effect of music tempo on consumer variety-seeking behavior. Frontiers in Psychology, 14, 1171498.</li>
+    <li>Andersson, P. K., Kristensson, P., Wästlund, E., &amp; Gustafsson, A. (2012). Let the music play or not: The influence of background music on consumer behavior. Journal of Retailing and Consumer Services, 19(6), 553–560.</li>
+    <li>Sherman, E., Mathur, A., &amp; Smith, R. B. (1997). Store environment and consumer purchase behavior: Mediating role of consumer emotions. Psychology &amp; Marketing, 14(4), 361–378.</li>
+    <li>Margulis, E. H. (2014). On Repeat: How Music Plays the Mind. Oxford University Press.</li>
+  </ol>
+</div>
+
+  </div>
+
+  <!-- CTA -->
+  <aside class="blog-cta blog-cta--start-free">
+  <div class="blog-cta__headline">Hear it on your floor.</div>
+  <div class="blog-cta__body">Entuned engineers original music for your store at the parameter level &amp;mdash; tempo, key, lyrical density, energy arc &amp;mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &amp;mdash; no card, no time limit. PRO-indemnified the moment it plays.</div>
+  <a href="https://app.entuned.co/start" class="blog-cta__link">Start Free &rarr;</a>
+</aside>
+
+  <!-- Related posts -->
+  <section class="blog-related" aria-label="Related posts">
+  <h2 class="blog-related__title">Keep reading</h2>
+  <div class="blog-related__grid">
+    <a href="../blog/how-much-does-retail-music-cost.html" class="blog-related__card">
+      <img src="../img/blog/how-much-does-retail-music-cost.jpg" alt="How Much Does In-Store Music Actually Cost?" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">How Much Does In-Store Music Actually Cost?</span>
+      <span class="blog-related__dek">The subscription fee is the number people know. The total bill is bigger, and it sits on nobody&#39;s desk.</span>
+    </a>
+    <a href="../blog/why-music-is-the-most-underrated-tool-in-retail.html" class="blog-related__card">
+      <img src="../img/blog/why-music-is-the-most-underrated-tool-in-retail.jpg" alt="Why Music Is the Most Underrated Tool in Retail" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">WATCH</span>
+      <span class="blog-related__card-title">Why Music Is the Most Underrated Tool in Retail</span>
+      <span class="blog-related__dek">Music is the most underrated tool in retail because it operates across more psychological dimensions than any other environmental variable — tempo, volume, mode, genre, familiarity, and cultural assoc</span>
+    </a>
+    <a href="../blog/the-real-cost-of-retail-music.html" class="blog-related__card">
+      <img src="../img/blog/the-real-cost-of-retail-music.jpg" alt="The Real Cost of Your Retail Music" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">The Real Cost of Your Retail Music</span>
+      <span class="blog-related__dek">The invoice line for store music is the smallest number in this conversation. The interesting number is what bad audio costs you in revenue you never see on any report.</span>
+    </a>
+  </div>
+</section>
+
+</article>
+
+<!-- Blog-specific JS (reading progress + anchor copy) -->
+<script>
+  // Reading progress bar
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    document.getElementById('reading-progress').style.width = pct + '%';
+  });
+
+  // Anchor link copy-to-clipboard
+  document.querySelectorAll('.anchor-link').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      navigator.clipboard.writeText(window.location.origin + window.location.pathname + a.getAttribute('href'));
+      a.textContent = '\u2713'; setTimeout(() => a.textContent = '#', 1500);
+    });
+  });
+</script>
+  </main>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Engineered retail audio. PRO-indemnified.</p>
+      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="../how-it-works.html">How It Works</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="../enterprise.html">Enterprise</a></li>
+        <li><a href="../why-entuned.html">Why Entuned</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For Your Industry</h4>
+      <ul>
+        <li><a href="../for-apparel.html">Apparel</a></li>
+        <li><a href="../for-beauty-supply.html">Beauty Supply</a></li>
+        <li><a href="../for-cosmetics.html">Cosmetics &amp; Beauty</a></li>
+        <li><a href="../for-furniture-mattress.html">Furniture &amp; Mattress</a></li>
+        <li><a href="../for-home-goods.html">Home Goods</a></li>
+        <li><a href="../for-jewelry.html">Jewelry</a></li>
+        <li><a href="../for-specialty-retail.html">Specialty Retail</a></li>
+        <li><a href="../for-sporting-goods.html">Sporting Goods</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
+      <ul>
+        <li><a href="../for-retail-leaders.html">Retail Leaders</a></li>
+        <li><a href="../impact.html">Impact Calculator</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Research</h4>
+      <ul>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../results.html">Results</a></li>
+        <li><a href="../science.html">The Science</a></li>
+        <li><a href="../will-it-retail.html">Will It Retail?</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="../how-music-affects-retail.html">How Music Affects Retail</a></li>
+        <li><a href="../how-to-increase-aov-retail.html">Increase Average Order Value</a></li>
+        <li><a href="../how-to-increase-dwell-time-retail.html">Increase Dwell Time</a></li>
+        <li><a href="../how-to-increase-impulse-purchases-retail.html">Drive Impulse Purchases</a></li>
+        <li><a href="../how-to-improve-retail-conversion-rate.html">Improve Conversion Rate</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../partners.html">Partners</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="../licensing.html">Licensing &amp; PRO Coverage</a></li>
+        <li><a href="../data.html">Data Practices</a></li>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="../pricing/terms.html">Subscription Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG', {
+      linker: {
+        domains: ['entuned.co', 'music.entuned.co', 'app.entuned.co']
+      }
+    });
+  </script>
+  <script defer src="../js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>

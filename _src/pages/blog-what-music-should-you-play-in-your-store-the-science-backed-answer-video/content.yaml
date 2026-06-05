@@ -1,0 +1,98 @@
+title: What Music Should You Play in Your Store? (The Science-Backed Answer)
+slug: what-music-should-you-play-in-your-store-the-science-backed-answer-video
+eyebrow: WATCH
+dek: The right store music isn't a genre — it's a system.
+date: '2026-05-27'
+last_updated: '2026-05-27'
+author:
+  name: Daniel Fox
+  role: Founder & CEO
+hero:
+  src: ../img/blog/what-music-should-you-play-in-your-store-the-science-backed-answer-video.jpg
+  alt: What Music Should You Play in Your Store? (The Science-Backed Answer)
+  caption: ''
+meta_description: The right store music isn't a genre — it's a system. Research shows music must (1) fit your brand identity, (2) match your product's emotional register,...
+og_image: /img/blog/what-music-should-you-play-in-your-store-the-science-backed-answer-video.jpg
+tags:
+- what-music-should-retailers-play
+- best-music-for-retail-stores
+- store-music-selection
+- retail-music-genre
+video:
+  id: NuAiq6IQFs0
+  title: What Music Should You Play in Your Store? (The Science-Backed Answer)
+  upload_date: '2026-05-27'
+  duration: PT5M1S
+  chapters: &id001
+  - time: 0
+    label: 'Hook: Pine Scent Backfired Without Christmas Music'
+  - time: 30
+    label: The Brand Fit Imperative
+  - time: 60
+    label: The Preference Problem
+  - time: 105
+    label: 'The Matrix: Mood x Liking'
+  - time: 150
+    label: Product Category Matters
+  - time: 210
+    label: The Practical 5-Point Framework
+  - time: 255
+    label: Try Entuned Free
+sections:
+- type: key_takeaways
+  items:
+  - 'There''s no single genre answer. The research gives a framework: (1) Music must fit your brand — misfit music damages brand perception worse than silence (Beverland et al.'
+  - Unfortunately, no. A 1996 study found customer preference was the strongest predictor of behavior, but a 1999 study showed 86% of customers don't consciously register the music that's changing their buying patterns.
+  - Start with brand fit — that's the highest-stakes variable.
+- type: video
+- type: prose
+  body: 'The right store music isn''t a genre — it''s a system. Research shows music must (1) fit your brand identity, (2) match your product''s emotional register, and (3) be liked by your target customer — but customers can''t reliably tell you what they like, because 86% don''t consciously notice the music influencing them.
+
+    In this video I break down the five-variable framework the research gives us: brand fit, product-emotion matching, customer preference, familiarity avoidance, and cross-sensory arousal alignment — with studies from the Journal of Business Research, Journal of Services Marketing, and more.
+
+    '
+- type: transcript
+  chapters: *id001
+- type: subhead
+  level: 2
+  text: What kind of music should I play in my store?
+- type: prose
+  body: 'There''s no single genre answer. The research gives a framework: (1) Music must fit your brand — misfit music damages brand perception worse than silence (Beverland et al., 2006). (2) Match the emotional register to your product — sad music outsells happy music for sentimental products (Alpert & Alpert, 1990). (3) Classical raises willingness to pay, but only for hedonic/pleasure products (Grossman & Rachamim, 2025). (4) Avoid familiar hits — they shorten dwell time. (5) Match your music''s arousal level to your scent and lighting.
+
+    '
+- type: subhead
+  level: 2
+  text: Can't I just ask my customers what they want to hear?
+- type: prose
+  body: 'Unfortunately, no. A 1996 study found customer preference was the strongest predictor of behavior, but a 1999 study showed 86% of customers don''t consciously register the music that''s changing their buying patterns. They can''t reliably tell you what works because the effects are subconscious. You need to test and measure, not survey.
+
+    '
+- type: subhead
+  level: 2
+  text: This sounds really complicated. Is there a simpler approach?
+- type: prose
+  body: 'Start with brand fit — that''s the highest-stakes variable. If your music clashes with your brand identity, it''s actively hurting you. Then match energy level across senses (music + scent + lighting should agree). For a system that manages all five variables automatically, Entuned generates music matched to retail contexts. Free tier at entuned.co. Full citations in the description. This is video 5 of 50 in this series.
+
+    '
+- type: references
+  heading: References
+  items:
+  - Spangenberg, E. R., Grohmann, B., & Sprott, D. E. (2005). It's beginning to smell (and sound) a lot like Christmas. Journal of Business Research, 58(11), 1583–1589.
+  - Beverland, M., et al. (2006). In-store music and consumer–brand relationships. Journal of Business Research, 59(9), 982–989.
+  - 'Herrington, J. D., & Capella, L. M. (1996). Effects of music in service environments: A field study. Journal of Services Marketing, 10(2), 26–41.'
+  - North, A. C., Hargreaves, D. J., & McKendrick, J. (1999). The influence of in-store music on wine selections. Journal of Applied Psychology, 84(2), 271–276.
+  - Broekemier, G., Marquardt, R., & Gentry, J. W. (2008). An exploration of happy/sad and liked/disliked music effects on shopping intentions. Journal of Services Marketing, 22(1), 59–67.
+  - Alpert, J. I., & Alpert, M. I. (1990). Music influences on mood and purchase intentions. Psychology & Marketing, 7(2), 109–133.
+  - Grossman, D., & Rachamim, M. (2025). The effect of classical background music on willingness to pay for hedonic vs. utilitarian products. Marketing Letters.
+  - North, A. C., Shilcock, A., & Hargreaves, D. J. (2003). The effect of musical style on restaurant customers' spending. Environment and Behavior, 35(5), 712–718.
+- type: cta
+  variant: start-free
+  headline: Hear it on your floor.
+  body: Entuned engineers original music for your store at the parameter level &mdash; tempo, key, lyrical density, energy arc &mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays.
+  link: https://app.entuned.co/start
+  link_text: Start Free
+- type: related
+  posts:
+  - slug: what-music-should-you-play-in-your-store-the-science-backed-answer
+  - slug: what-should-retailers-look-for-in-a-music-provider
+  - slug: what-music-to-play-in-a-high-end-store

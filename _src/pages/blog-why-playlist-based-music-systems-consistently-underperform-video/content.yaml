@@ -1,0 +1,101 @@
+title: Why Playlist-Based Music Systems Consistently Underperform
+slug: why-playlist-based-music-systems-consistently-underperform-video
+eyebrow: WATCH
+dek: Professionally curated playlists showed no significant sales effect across a 140-store field study — the largest retail music experiment ever conducted.
+date: '2026-06-04'
+last_updated: '2026-06-04'
+author:
+  name: Daniel Fox
+  role: Founder & CEO
+hero:
+  src: ../img/blog/why-playlist-based-music-systems-consistently-underperform-video.jpg
+  alt: Why Playlist-Based Music Systems Consistently Underperform
+  caption: ''
+meta_description: Professionally curated playlists showed no significant sales effect across a 140-store field study — the largest retail music experiment ever conducted....
+og_image: /img/blog/why-playlist-based-music-systems-consistently-underperform-video.jpg
+tags:
+- retail-playlist-problems
+- store-playlist-underperform
+- curated-music-retail
+- retail-music-service
+video:
+  id: 0mDoHs-z_Nk
+  title: Why Playlist-Based Music Systems Consistently Underperform
+  upload_date: '2026-06-04'
+  duration: PT4M47S
+  chapters: &id001
+  - time: 0
+    label: The counterintuitive claim
+  - time: 30
+    label: The largest field study ever done
+  - time: 80
+    label: 'Structural flaw 1: static tempo'
+  - time: 115
+    label: 'Structural flaw 2: repetition'
+  - time: 165
+    label: 'Structural flaw 3: preference mismatch'
+  - time: 210
+    label: 'Structural flaw 4: congruence drift'
+  - time: 250
+    label: The alternative
+  - time: 280
+    label: Try Entuned free
+sections:
+- type: key_takeaways
+  items:
+  - A 2025 field study across 140 stores — the largest ever conducted — found that professionally curated, brand-matched playlists produced no significant overall effect on sales.
+  - Four things. They're static in a dynamic environment (can't adjust tempo for crowd density).
+  - Generative music — music created in real time for your specific environment.
+- type: video
+- type: prose
+  body: 'Professionally curated playlists showed no significant sales effect across a 140-store field study — the largest retail music experiment ever conducted. The playlist model has four structural flaws that no amount of curation can fix: static tempo, repetition, preference mismatch, and congruence drift.
+
+
+    In this video I break down why the entire playlist-based approach to retail music is fundamentally broken, regardless of how good the curation is, and what the research says about the alternative.
+
+    '
+- type: transcript
+  chapters: *id001
+- type: subhead
+  level: 2
+  text: Do curated playlists actually underperform?
+- type: prose
+  body: 'A 2025 field study across 140 stores — the largest ever conducted — found that professionally curated, brand-matched playlists produced no significant overall effect on sales. The only customers who responded were existing loyalty members. The playlist format has structural problems no amount of curation can fix.
+
+    '
+- type: subhead
+  level: 2
+  text: What's structurally wrong with playlists?
+- type: prose
+  body: 'Four things. They''re static in a dynamic environment (can''t adjust tempo for crowd density). They repeat (torturing staff and degrading the experience). They can''t match individual preferences across a diverse customer base. And they drift out of brand congruence over time — and even slight incongruence reverses the positive effects.
+
+    '
+- type: subhead
+  level: 2
+  text: What's the alternative to playlists?
+- type: prose
+  body: 'Generative music — music created in real time for your specific environment. No repetition, no congruence drift, no static tempo locked to the wrong conditions. That''s what Entuned does. It''s not a better playlist — it''s the end of playlists. Free tier at entuned.co. Full citations in the description. This is video 26 of 50 in this series.
+
+    '
+- type: references
+  heading: References
+  items:
+  - EMAC Conference (2025). Field experiment across 140 retail stores testing effects of curated background music on sales.
+  - 'Knoferle, Paus & Vossen (2017). An upbeat crowd: Fast in-store music alleviates negative effects of high social density. Journal of Retailing, 93(4), 541–549.'
+  - 'Margulis (2014). On Repeat: How Music Plays the Mind. Oxford University Press.'
+  - Sherman, Mathur & Smith (1997). Store environment and consumer purchase behavior. Psychology & Marketing, 14(4), 361–378.
+  - Herrington & Capella (1996). Effects of music in service environments. Journal of Services Marketing, 10(2), 26–41.
+  - Broekemier, Marquardt & Gentry (2008). Happy/sad and liked/disliked music effects on shopping intentions. Journal of Services Marketing, 22(1), 59–67.
+  - Mattila & Wirtz (2001). Congruency of scent and music as a driver of in-store evaluations and behavior. Journal of Retailing, 77(2), 273–289.
+  - Beverland et al. (2006). In-store music and consumer–brand relationships. Journal of Business Research, 59(9), 982–989.
+- type: cta
+  variant: start-free
+  headline: Hear it on your floor.
+  body: Entuned engineers original music for your store at the parameter level &mdash; tempo, key, lyrical density, energy arc &mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays.
+  link: https://app.entuned.co/start
+  link_text: Start Free
+- type: related
+  posts:
+  - slug: why-playlist-based-music-systems-consistently-underperform
+  - slug: how-to-choose-music-for-your-retail-store
+  - slug: best-retail-music-service

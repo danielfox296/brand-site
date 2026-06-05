@@ -42,12 +42,13 @@ from _src.lib.reading_time import calculate_reading_time
 # Constants
 # ---------------------------------------------------------------------------
 
-VALID_EYEBROWS = {'FLOW FACTORS', 'FIELD NOTES', 'MARKET INTEL', 'PRODUCT'}
+VALID_EYEBROWS = {'FLOW FACTORS', 'FIELD NOTES', 'MARKET INTEL', 'PRODUCT', 'WATCH'}
 
 KNOWN_BLOCK_TYPES = {
     'prose', 'subhead', 'pullquote', 'stat_callout', 'data_viz',
     'figure', 'aside', 'comparison_table', 'key_takeaways',
     'methodology', 'cta', 'related',
+    'video', 'transcript', 'references',
 }
 
 # Fields required at the top level of every new-format content.yaml.

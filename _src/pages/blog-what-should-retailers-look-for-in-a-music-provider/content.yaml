@@ -1,0 +1,99 @@
+title: What Should Retailers Look for in a Music Provider?
+slug: what-should-retailers-look-for-in-a-music-provider
+eyebrow: WATCH
+dek: 'Retailers should evaluate music providers on six research-backed criteria: real-time adaptability, parametric control, brand congruence, measurement capability, licensing clarity, and customer prefere'
+date: '2026-06-05'
+last_updated: '2026-06-05'
+author:
+  name: Daniel Fox
+  role: Founder & CEO
+hero:
+  src: ../img/blog/what-should-retailers-look-for-in-a-music-provider.jpg
+  alt: What Should Retailers Look for in a Music Provider?
+  caption: ''
+meta_description: 'Retailers should evaluate music providers on six research-backed criteria: real-time adaptability, parametric control, brand congruence, measurement...'
+og_image: /img/blog/what-should-retailers-look-for-in-a-music-provider.jpg
+tags:
+- what-to-look-for-music-provider
+- retail-music-provider
+- best-music-service-retail
+- background-music-provider
+video:
+  id: Z3GMW_szR88
+  title: What Should Retailers Look for in a Music Provider?
+  upload_date: '2026-06-05'
+  duration: PT3M38S
+  chapters: &id001
+  - time: 0
+    label: Most provider promises are meaningless
+  - time: 20
+    label: 'Criterion 1: Adaptability'
+  - time: 55
+    label: 'Criterion 2: Parametric control'
+  - time: 90
+    label: 'Criterion 3: Brand congruence'
+  - time: 135
+    label: 'Criterion 4: Measurement capability'
+  - time: 175
+    label: 'Criterion 5: Licensing clarity'
+  - time: 210
+    label: 'Criterion 6: Customer preference alignment'
+  - time: 235
+    label: Your checklist
+sections:
+- type: key_takeaways
+  items:
+  - 'Six things backed by research: (1) real-time adaptability to store conditions, (2) independent control over tempo, mode, and energy — not just preset moods, (3) genuine brand congruence beyond genre filters, (4) measurement tools that tie music to sales data, (5) clean public performance licensing, and (6) the ability to learn from your specific customers'' preferences.'
+  - Catalog size tells you almost nothing about performance.
+  - Run any provider through the six-criterion checklist in this video.
+- type: video
+- type: prose
+  body: 'Retailers should evaluate music providers on six research-backed criteria: real-time adaptability, parametric control, brand congruence, measurement capability, licensing clarity, and customer preference alignment. Most providers check one or two — the research says all six matter for measurable sales impact.
+
+
+    In this video I walk through each criterion with the specific studies behind it, explain why standard evaluation frameworks (catalog size, UI, pricing) miss what actually drives results, and give you a checklist to score any provider you''re considering.
+
+    '
+- type: transcript
+  chapters: *id001
+- type: subhead
+  level: 2
+  text: What should I look for in a retail music provider?
+- type: prose
+  body: 'Six things backed by research: (1) real-time adaptability to store conditions, (2) independent control over tempo, mode, and energy — not just preset moods, (3) genuine brand congruence beyond genre filters, (4) measurement tools that tie music to sales data, (5) clean public performance licensing, and (6) the ability to learn from your specific customers'' preferences.
+
+    '
+- type: subhead
+  level: 2
+  text: Can't I just pick the one with the biggest catalog?
+- type: prose
+  body: 'Catalog size tells you almost nothing about performance. A 2012 study showed that specific interactions between tempo and mode drive a 12% spending lift — but only if those variables are controlled independently. A provider with 10 million songs and no parametric control can''t execute on what the research shows works.
+
+    '
+- type: subhead
+  level: 2
+  text: What's the practical first step?
+- type: prose
+  body: 'Run any provider through the six-criterion checklist in this video. Most will check one or two boxes. The ones that check all six are built around the research, not just around a music library. Entuned was designed against these exact criteria — try the free tier at entuned.co and score it yourself. Full citations in the description. This is video 32 of 50 in this series.
+
+    '
+- type: references
+  heading: References
+  items:
+  - 'Knoferle, K.M. et al. (2017). "An Upbeat Crowd: Fast In-Store Music Alleviates Negative Effects of High Social Density on Customers'' Spending." Journal of Retailing, 93(4), 541-549.'
+  - 'Knoferle, K.M. et al. (2012). "It Is All in the Mix: The Interactive Effect of Music Tempo and Mode on In-Store Sales." Marketing Letters, 23(1), 325-337.'
+  - Beverland, M. et al. (2006). "In-Store Music and Consumer-Brand Relationships." Journal of Business Research, 59(9), 982-989.
+  - North, A.C. et al. (2003). "The Effect of Musical Style on Restaurant Customers' Spending." Environment and Behavior, 35(5), 712-718.
+  - Sherman, E. et al. (1997). "Store Environment and Consumer Purchase Behavior." Psychology & Marketing, 14(4), 361-378.
+  - 'Herrington, J.D. & Capella, L.M. (1996). "Effects of Music in Service Environments: A Field Study." Journal of Services Marketing, 10(2), 26-41.'
+- type: cta
+  variant: start-free
+  headline: Hear it on your floor.
+  body: Entuned engineers original music for your store at the parameter level &mdash; tempo, key, lyrical density, energy arc &mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays.
+  link: https://app.entuned.co/start
+  link_text: Start Free
+- type: related
+  posts:
+  - slug: best-retail-music-service
+  - slug: best-background-music-for-retail-stores-2026
+  - slug: what-music-should-you-play-in-your-store-the-science-backed-answer

@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- First-touch signup attribution. Stamps a `.entuned.co` cookie on the
+       FIRST page view so the original source (referrer + UTM) survives the
+       entuned.co -> app.entuned.co/start hop. The dashboard's /start reads the
+       same cookie (same name + shape) and forwards it to the server. Runs
+       early + first-touch-wins so it never overwrites the true upstream. -->
+  <script>
+    (function () {
+      try {
+        if (/(?:^|; )entuned_attr=/.test(document.cookie)) return;
+        var p = new URLSearchParams(window.location.search);
+        var payload = {
+          r: document.referrer || undefined,
+          lp: (window.location.pathname + window.location.search) || undefined,
+          us: p.get('utm_source') || undefined,
+          um: p.get('utm_medium') || undefined,
+          uc: p.get('utm_campaign') || undefined,
+          ut: p.get('utm_term') || undefined,
+          un: p.get('utm_content') || undefined,
+          t: new Date().toISOString()
+        };
+        var host = window.location.hostname;
+        var domain = (host === 'entuned.co' || /\.entuned\.co$/.test(host)) ? '; domain=.entuned.co' : '';
+        document.cookie = 'entuned_attr=' + encodeURIComponent(JSON.stringify(payload)) +
+          '; path=/' + domain + '; max-age=' + (30 * 24 * 60 * 60) + '; SameSite=Lax';
+      } catch (e) { /* best-effort */ }
+    })();
+  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/blog/the-science-of-impulse-purchases-and-how-music-triggers-them.html">
+  <meta name="robots" content="index, follow">
+  <title>The Science of Impulse Purchases (And How Music Triggers Them) | Entuned</title>
+  <meta name="description" content="Impulse purchases are driven by emotional state, not product displays — and the pleasure a customer feels in the first 5 minutes of entering a store is...">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="../rss.xml">
+  <meta property="og:title" content="The Science of Impulse Purchases (And How Music Triggers Them) | Entuned">
+  <meta property="og:description" content="Impulse purchases are driven by emotional state, not product displays — and the pleasure a customer feels in the first 5 minutes of entering a store is...">
+  <meta property="og:url" content="https://entuned.co/blog/the-science-of-impulse-purchases-and-how-music-triggers-them.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://entuned.co/img/blog/the-science-of-impulse-purchases-and-how-music-triggers-them.jpg">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-05-29">
+  <meta property="article:author" content="Daniel Fox">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Science of Impulse Purchases (And How Music Triggers Them) | Entuned">
+  <meta name="twitter:description" content="Impulse purchases are driven by emotional state, not product displays — and the pleasure a customer feels in the first 5 minutes of entering a store is...">
+  <meta name="twitter:image" content="https://entuned.co/img/blog/the-science-of-impulse-purchases-and-how-music-triggers-them.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "The Science of Impulse Purchases (And How Music Triggers Them) | Entuned",
+  "author": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "datePublished": "2026-05-29",
+  "dateModified": "2026-05-29",
+  "description": "Impulse purchases are driven by emotional state, not product displays \u2014 and the pleasure a customer feels in the first 5 minutes of entering a store is...",
+  "image": "https://entuned.co/img/blog/the-science-of-impulse-purchases-and-how-music-triggers-them.jpg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://entuned.co/blog/the-science-of-impulse-purchases-and-how-music-triggers-them.html"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "retail music strategy"
+    },
+    {
+      "@type": "Thing",
+      "name": "in-store customer behavior"
+    },
+    {
+      "@type": "Thing",
+      "name": "engineered retail audio"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "The Science of Impulse Purchases (And How Music Triggers Them)",
+  "description": "Impulse purchases are driven by emotional state, not product displays \u2014 and the pleasure a customer feels in the first 5 minutes of entering a store is...",
+  "thumbnailUrl": [
+    "https://entuned.co/img/blog/the-science-of-impulse-purchases-and-how-music-triggers-them.jpg"
+  ],
+  "uploadDate": "2026-05-29",
+  "contentUrl": "https://www.youtube.com/watch?v=QYF2o4PTm8I",
+  "embedUrl": "https://www.youtube.com/embed/QYF2o4PTm8I",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "duration": "PT5M1S",
+  "hasPart": [
+    {
+      "@type": "Clip",
+      "name": "Hook: The First 5 Minutes",
+      "startOffset": 0,
+      "url": "https://www.youtube.com/watch?v=QYF2o4PTm8I&t=0s"
+    },
+    {
+      "@type": "Clip",
+      "name": "The Emotional Chain",
+      "startOffset": 30,
+      "url": "https://www.youtube.com/watch?v=QYF2o4PTm8I&t=30s"
+    },
+    {
+      "@type": "Clip",
+      "name": "Why Music Is the Lever",
+      "startOffset": 80,
+      "url": "https://www.youtube.com/watch?v=QYF2o4PTm8I&t=80s"
+    },
+    {
+      "@type": "Clip",
+      "name": "The Wrong Music Kills Impulse",
+      "startOffset": 125,
+      "url": "https://www.youtube.com/watch?v=QYF2o4PTm8I&t=125s"
+    },
+    {
+      "@type": "Clip",
+      "name": "Warm Environments and Willingness to Pay",
+      "startOffset": 170,
+      "url": "https://www.youtube.com/watch?v=QYF2o4PTm8I&t=170s"
+    },
+    {
+      "@type": "Clip",
+      "name": "The Familiarity Paradox Angle",
+      "startOffset": 205,
+      "url": "https://www.youtube.com/watch?v=QYF2o4PTm8I&t=205s"
+    },
+    {
+      "@type": "Clip",
+      "name": "The Practical Takeaway",
+      "startOffset": 230,
+      "url": "https://www.youtube.com/watch?v=QYF2o4PTm8I&t=230s"
+    },
+    {
+      "@type": "Clip",
+      "name": "Try Entuned Free",
+      "startOffset": 265,
+      "url": "https://www.youtube.com/watch?v=QYF2o4PTm8I&t=265s"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does music really affect impulse purchases?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes \u2014 and the mechanism is well-documented. A 1997 Psychology & Marketing study established the chain: store environment creates emotional state, and emotional state drives impulse buying. The 1994 Journal of Retailing study showed that pleasure in the first 5 minutes is the strongest predictor of unplanned spending. Music is the fastest environmental lever to shape that pleasure response."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Isn't impulse buying more about product placement and sale signs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The research says otherwise. Environmental variables don't directly predict impulse buying \u2014 they predict emotion, and emotion predicts impulse buying (Sherman et al., 1997). Product placement matters, but it matters less than how the customer feels. The 1982 grocery study showed a 38% sales lift from tempo changes alone, with identical product placement. The emotional environment outweighs the visual merchandising."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the simplest thing I can do to increase impulse purchases through music?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Focus on the first 5 minutes. Play pleasant, unfamiliar, moderate-tempo music that matches your brand \u2014 the research shows this creates the positive emotional state that opens the impulse window. Avoid recognizable hits (they shorten dwell time via the familiarity paradox) and avoid volume that's too high (it triggers faster movement, not browsing). Entuned is built around this chain \u2014 try it free at entuned.co. Full citations in the description. This is video 8 of 50 in this series."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://entuned.co/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "The Science of Impulse Purchases (And How Music Triggers Them) | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=ebace452">
+  <link rel="stylesheet" href="../styles/blog.css">
+  
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav aria-label="Main navigation">
+  <div class="container">
+    <a href="/" class="logo"><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="../how-it-works.html">How It Works</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li class="nav-cta-item"><a href="https://app.entuned.co/start" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Start Free</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+  </div>
+</nav>
+
+  <main>
+  
+<!-- Reading progress bar -->
+<div class="blog-progress" aria-hidden="true">
+  <div class="blog-progress__bar" id="reading-progress"></div>
+</div>
+
+<article class="blog-article">
+
+  <!-- Article header -->
+  <header class="blog-article__header">
+    <div class="blog-eyebrow">WATCH</div>
+    <h1 class="blog-headline">The Science of Impulse Purchases (And How Music Triggers Them)</h1>
+    <p class="blog-dek">Impulse purchases are driven by emotional state, not product displays — and the pleasure a customer feels in the first 5 minutes of entering a store is the strongest predictor of unplanned spending.</p>
+    <div class="blog-byline">
+      <span class="blog-byline__author">Daniel Fox</span>
+      <span class="blog-byline__role">Founder &amp; CEO</span>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <time class="blog-byline__date" datetime="2026-05-29">2026-05-29</time>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <span class="blog-byline__reading-time">2 min read</span>
+    </div>
+  </header>
+
+  <!-- Hero image -->
+  <figure class="blog-hero fade-up">
+    <img src="../img/blog/the-science-of-impulse-purchases-and-how-music-triggers-them.jpg" alt="The Science of Impulse Purchases (And How Music Triggers Them)" class="blog-hero__img" loading="lazy">
+  </figure>
+
+  <!-- Key takeaways -->
+  <div class="blog-takeaways">
+  <div class="blog-takeaways__title">Key takeaways</div>
+  <ul>
+    <li>Yes — and the mechanism is well-documented.</li>
+    <li>The research says otherwise. Environmental variables don&#39;t directly predict impulse buying — they predict *emotion*, and emotion predicts impulse buying (Sherman et al.</li>
+    <li>Focus on the first 5 minutes. Play pleasant, unfamiliar, moderate-tempo music that matches your brand — the research shows this creates the positive emotional state that opens the impulse window.</li>
+  </ul>
+</div>
+
+  <!-- Article body (all sections except key_takeaways, cta, related) -->
+  <div class="blog-article__body">
+    <div class="blog-video fade-up">
+  <div class="blog-video__frame">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/QYF2o4PTm8I?rel=0"
+      title="The Science of Impulse Purchases (And How Music Triggers Them)"
+      loading="lazy"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
+  </div>
+</div>
+
+
+<div class="blog-prose">
+  <p>Impulse purchases are driven by emotional state, not product displays — and the pleasure a customer feels in the first 5 minutes of entering a store is the strongest predictor of unplanned spending. Music is the fastest, cheapest tool to shape that emotional state.
+In this video I break down the environment-to-emotion-to-purchase chain, why the wrong music kills impulse buying, how the familiarity paradox suppresses the window for unplanned purchases, and the role of warm environments in increasing willingness to pay by 10–36%.</p>
+</div>
+
+<div class="blog-transcript fade-up">
+  <h2 class="blog-transcript__heading" id="chapters">Chapters</h2>
+  <ol class="blog-transcript__toc">
+    <li>
+      <a href="https://www.youtube.com/watch?v=QYF2o4PTm8I&amp;t=0s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">0:00</span>
+        Hook: The First 5 Minutes
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=QYF2o4PTm8I&amp;t=30s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">0:30</span>
+        The Emotional Chain
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=QYF2o4PTm8I&amp;t=80s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">1:20</span>
+        Why Music Is the Lever
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=QYF2o4PTm8I&amp;t=125s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">2:05</span>
+        The Wrong Music Kills Impulse
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=QYF2o4PTm8I&amp;t=170s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">2:50</span>
+        Warm Environments and Willingness to Pay
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=QYF2o4PTm8I&amp;t=205s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">3:25</span>
+        The Familiarity Paradox Angle
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=QYF2o4PTm8I&amp;t=230s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">3:50</span>
+        The Practical Takeaway
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=QYF2o4PTm8I&amp;t=265s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">4:25</span>
+        Try Entuned Free
+      </a>
+    </li>
+  </ol>
+
+</div>
+
+<h2 id="does-music-really-affect-impulse-purchases" class="blog-subhead blog-subhead--h2">
+  Does music really affect impulse purchases?
+  <a href="#does-music-really-affect-impulse-purchases" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Yes — and the mechanism is well-documented. A 1997 Psychology &amp; Marketing study established the chain: store environment creates emotional state, and emotional state drives impulse buying. The 1994 Journal of Retailing study showed that pleasure in the first 5 minutes is the strongest predictor of unplanned spending. Music is the fastest environmental lever to shape that pleasure response.</p>
+</div>
+
+<h2 id="isnt-impulse-buying-more-about-product-placement-and-sale-signs" class="blog-subhead blog-subhead--h2">
+  Isn&#39;t impulse buying more about product placement and sale signs?
+  <a href="#isnt-impulse-buying-more-about-product-placement-and-sale-signs" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>The research says otherwise. Environmental variables don&rsquo;t directly predict impulse buying — they predict <em>emotion</em>, and emotion predicts impulse buying (Sherman et al., 1997). Product placement matters, but it matters less than how the customer <em>feels</em>. The 1982 grocery study showed a 38% sales lift from tempo changes alone, with identical product placement. The emotional environment outweighs the visual merchandising.</p>
+</div>
+
+<h2 id="whats-the-simplest-thing-i-can-do-to-increase-impulse-purchases-through-music" class="blog-subhead blog-subhead--h2">
+  What&#39;s the simplest thing I can do to increase impulse purchases through music?
+  <a href="#whats-the-simplest-thing-i-can-do-to-increase-impulse-purchases-through-music" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Focus on the first 5 minutes. Play pleasant, unfamiliar, moderate-tempo music that matches your brand — the research shows this creates the positive emotional state that opens the impulse window. Avoid recognizable hits (they shorten dwell time via the familiarity paradox) and avoid volume that&rsquo;s too high (it triggers faster movement, not browsing). Entuned is built around this chain — try it free at entuned.co. Full citations in the description. This is video 8 of 50 in this series.</p>
+</div>
+
+<div class="blog-references fade-up">
+  <h2 class="blog-references__heading" id="references">References</h2>
+  <ol class="blog-references__list">
+    <li>Sherman, E., Mathur, A., &amp; Smith, R. B. (1997). Store environment and consumer purchase behavior: Mediating role of consumer emotions. Psychology &amp; Marketing, 14(4), 361–378.</li>
+    <li>Donovan, R. J., et al. (1994). Store atmosphere and purchasing behavior. Journal of Retailing, 70(3), 283–294.</li>
+    <li>Milliman, R. E. (1982). Using background music to affect the behavior of supermarket shoppers. Journal of Marketing, 46(3), 86–91.</li>
+    <li>Donovan, R. J., &amp; Rossiter, J. R. (1982). Store atmosphere: An environmental psychology approach. Journal of Retailing, 58(1), 34–57.</li>
+    <li>Beverland, M., et al. (2006). In-store music and consumer–brand relationships. Journal of Business Research, 59(9), 982–989.</li>
+    <li>Doucé, L., &amp; Adams, C. (2020). Sensory overload in a shopping environment. Journal of Retailing and Consumer Services, 57, 102219.</li>
+    <li>Zwebner, Y., Lee, L., &amp; Goldenberg, J. (2014). The temperature premium: Warm temperatures increase product valuation. Journal of Consumer Psychology, 24(2), 251–259.</li>
+    <li>Yalch, R. F., &amp; Spangenberg, E. R. (2000). The effects of music in a retail setting on real and perceived shopping times. Journal of Business Research, 49(2), 139–147.</li>
+  </ol>
+</div>
+
+  </div>
+
+  <!-- CTA -->
+  <aside class="blog-cta blog-cta--start-free">
+  <div class="blog-cta__headline">Hear it on your floor.</div>
+  <div class="blog-cta__body">Entuned engineers original music for your store at the parameter level &amp;mdash; tempo, key, lyrical density, energy arc &amp;mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &amp;mdash; no card, no time limit. PRO-indemnified the moment it plays.</div>
+  <a href="https://app.entuned.co/start" class="blog-cta__link">Start Free &rarr;</a>
+</aside>
+
+  <!-- Related posts -->
+  <section class="blog-related" aria-label="Related posts">
+  <h2 class="blog-related__title">Keep reading</h2>
+  <div class="blog-related__grid">
+    <a href="../blog/why-background-music-costs-you-sales.html" class="blog-related__card">
+      <img src="../img/blog/why-background-music-costs-you-sales.jpg" alt="Why Your Store&#39;s Background Music Is Costing You Sales" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">Why Your Store&#39;s Background Music Is Costing You Sales</span>
+      <span class="blog-related__dek">Generic playlists built for retail in general create cognitive friction that shortens visits and suppresses transaction values.</span>
+    </a>
+    <a href="../blog/what-music-should-you-play-in-your-store-the-science-backed-answer.html" class="blog-related__card">
+      <img src="../img/blog/what-music-should-you-play-in-your-store-the-science-backed-answer.jpg" alt="What Music Should You Play in Your Store? (The Science-Backed Answer)" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">WATCH</span>
+      <span class="blog-related__card-title">What Music Should You Play in Your Store? (The Science-Backed Answer)</span>
+      <span class="blog-related__dek">The right store music isn&#39;t a genre — it&#39;s a system.</span>
+    </a>
+    <a href="../blog/how-music-controls-customer-behavior-without-them-knowing.html" class="blog-related__card">
+      <img src="../img/blog/how-music-controls-customer-behavior-without-them-knowing.jpg" alt="How Music Controls Customer Behavior (Without Them Knowing)" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">WATCH</span>
+      <span class="blog-related__card-title">How Music Controls Customer Behavior (Without Them Knowing)</span>
+      <span class="blog-related__dek">Music controls customer behavior through at least four mechanisms: it changes walking speed (volume), dwell time (tempo), product selection (cultural priming), and impulse purchases (emotional state).</span>
+    </a>
+  </div>
+</section>
+
+</article>
+
+<!-- Blog-specific JS (reading progress + anchor copy) -->
+<script>
+  // Reading progress bar
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    document.getElementById('reading-progress').style.width = pct + '%';
+  });
+
+  // Anchor link copy-to-clipboard
+  document.querySelectorAll('.anchor-link').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      navigator.clipboard.writeText(window.location.origin + window.location.pathname + a.getAttribute('href'));
+      a.textContent = '\u2713'; setTimeout(() => a.textContent = '#', 1500);
+    });
+  });
+</script>
+  </main>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Engineered retail audio. PRO-indemnified.</p>
+      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="../how-it-works.html">How It Works</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="../enterprise.html">Enterprise</a></li>
+        <li><a href="../why-entuned.html">Why Entuned</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For Your Industry</h4>
+      <ul>
+        <li><a href="../for-apparel.html">Apparel</a></li>
+        <li><a href="../for-beauty-supply.html">Beauty Supply</a></li>
+        <li><a href="../for-cosmetics.html">Cosmetics &amp; Beauty</a></li>
+        <li><a href="../for-furniture-mattress.html">Furniture &amp; Mattress</a></li>
+        <li><a href="../for-home-goods.html">Home Goods</a></li>
+        <li><a href="../for-jewelry.html">Jewelry</a></li>
+        <li><a href="../for-specialty-retail.html">Specialty Retail</a></li>
+        <li><a href="../for-sporting-goods.html">Sporting Goods</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
+      <ul>
+        <li><a href="../for-retail-leaders.html">Retail Leaders</a></li>
+        <li><a href="../impact.html">Impact Calculator</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Research</h4>
+      <ul>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../results.html">Results</a></li>
+        <li><a href="../science.html">The Science</a></li>
+        <li><a href="../will-it-retail.html">Will It Retail?</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="../how-music-affects-retail.html">How Music Affects Retail</a></li>
+        <li><a href="../how-to-increase-aov-retail.html">Increase Average Order Value</a></li>
+        <li><a href="../how-to-increase-dwell-time-retail.html">Increase Dwell Time</a></li>
+        <li><a href="../how-to-increase-impulse-purchases-retail.html">Drive Impulse Purchases</a></li>
+        <li><a href="../how-to-improve-retail-conversion-rate.html">Improve Conversion Rate</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../partners.html">Partners</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="../licensing.html">Licensing &amp; PRO Coverage</a></li>
+        <li><a href="../data.html">Data Practices</a></li>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="../pricing/terms.html">Subscription Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG', {
+      linker: {
+        domains: ['entuned.co', 'music.entuned.co', 'app.entuned.co']
+      }
+    });
+  </script>
+  <script defer src="../js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>

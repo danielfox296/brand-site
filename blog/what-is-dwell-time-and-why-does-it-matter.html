@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- First-touch signup attribution. Stamps a `.entuned.co` cookie on the
+       FIRST page view so the original source (referrer + UTM) survives the
+       entuned.co -> app.entuned.co/start hop. The dashboard's /start reads the
+       same cookie (same name + shape) and forwards it to the server. Runs
+       early + first-touch-wins so it never overwrites the true upstream. -->
+  <script>
+    (function () {
+      try {
+        if (/(?:^|; )entuned_attr=/.test(document.cookie)) return;
+        var p = new URLSearchParams(window.location.search);
+        var payload = {
+          r: document.referrer || undefined,
+          lp: (window.location.pathname + window.location.search) || undefined,
+          us: p.get('utm_source') || undefined,
+          um: p.get('utm_medium') || undefined,
+          uc: p.get('utm_campaign') || undefined,
+          ut: p.get('utm_term') || undefined,
+          un: p.get('utm_content') || undefined,
+          t: new Date().toISOString()
+        };
+        var host = window.location.hostname;
+        var domain = (host === 'entuned.co' || /\.entuned\.co$/.test(host)) ? '; domain=.entuned.co' : '';
+        document.cookie = 'entuned_attr=' + encodeURIComponent(JSON.stringify(payload)) +
+          '; path=/' + domain + '; max-age=' + (30 * 24 * 60 * 60) + '; SameSite=Lax';
+      } catch (e) { /* best-effort */ }
+    })();
+  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/blog/what-is-dwell-time-and-why-does-it-matter.html">
+  <meta name="robots" content="index, follow">
+  <title>What Is Dwell Time and Why Does It Matter? | Entuned</title>
+  <meta name="description" content="Dwell time — total time a customer spends in your store — is one of the strongest predictors of unplanned purchases, but only when paired with the right...">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="../rss.xml">
+  <meta property="og:title" content="What Is Dwell Time and Why Does It Matter? | Entuned">
+  <meta property="og:description" content="Dwell time — total time a customer spends in your store — is one of the strongest predictors of unplanned purchases, but only when paired with the right...">
+  <meta property="og:url" content="https://entuned.co/blog/what-is-dwell-time-and-why-does-it-matter.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://entuned.co/img/blog/what-is-dwell-time-and-why-does-it-matter.jpg">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-05-31">
+  <meta property="article:author" content="Daniel Fox">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="What Is Dwell Time and Why Does It Matter? | Entuned">
+  <meta name="twitter:description" content="Dwell time — total time a customer spends in your store — is one of the strongest predictors of unplanned purchases, but only when paired with the right...">
+  <meta name="twitter:image" content="https://entuned.co/img/blog/what-is-dwell-time-and-why-does-it-matter.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What Is Dwell Time and Why Does It Matter? | Entuned",
+  "author": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "datePublished": "2026-05-31",
+  "dateModified": "2026-05-31",
+  "description": "Dwell time \u2014 total time a customer spends in your store \u2014 is one of the strongest predictors of unplanned purchases, but only when paired with the right...",
+  "image": "https://entuned.co/img/blog/what-is-dwell-time-and-why-does-it-matter.jpg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://entuned.co/blog/what-is-dwell-time-and-why-does-it-matter.html"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "retail music strategy"
+    },
+    {
+      "@type": "Thing",
+      "name": "in-store customer behavior"
+    },
+    {
+      "@type": "Thing",
+      "name": "engineered retail audio"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "What Is Dwell Time and Why Does It Matter?",
+  "description": "Dwell time \u2014 total time a customer spends in your store \u2014 is one of the strongest predictors of unplanned purchases, but only when paired with the right...",
+  "thumbnailUrl": [
+    "https://entuned.co/img/blog/what-is-dwell-time-and-why-does-it-matter.jpg"
+  ],
+  "uploadDate": "2026-05-31",
+  "contentUrl": "https://www.youtube.com/watch?v=kxG8In4KgHI",
+  "embedUrl": "https://www.youtube.com/embed/kxG8In4KgHI",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "duration": "PT5M17S",
+  "hasPart": [
+    {
+      "@type": "Clip",
+      "name": "Hook: The metric that predicts spending",
+      "startOffset": 0,
+      "url": "https://www.youtube.com/watch?v=kxG8In4KgHI&t=0s"
+    },
+    {
+      "@type": "Clip",
+      "name": "The surprising claim: More time doesn't always mean more spending",
+      "startOffset": 15,
+      "url": "https://www.youtube.com/watch?v=kxG8In4KgHI&t=15s"
+    },
+    {
+      "@type": "Clip",
+      "name": "What the research says (1994, 1999)",
+      "startOffset": 40,
+      "url": "https://www.youtube.com/watch?v=kxG8In4KgHI&t=40s"
+    },
+    {
+      "@type": "Clip",
+      "name": "The music-dwell time connection",
+      "startOffset": 105,
+      "url": "https://www.youtube.com/watch?v=kxG8In4KgHI&t=105s"
+    },
+    {
+      "@type": "Clip",
+      "name": "Real vs. perceived time",
+      "startOffset": 175,
+      "url": "https://www.youtube.com/watch?v=kxG8In4KgHI&t=175s"
+    },
+    {
+      "@type": "Clip",
+      "name": "Practical takeaway",
+      "startOffset": 230,
+      "url": "https://www.youtube.com/watch?v=kxG8In4KgHI&t=230s"
+    },
+    {
+      "@type": "Clip",
+      "name": "CTA",
+      "startOffset": 280,
+      "url": "https://www.youtube.com/watch?v=kxG8In4KgHI&t=280s"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is dwell time and why does it matter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dwell time is the total time a customer spends in your store. It matters because it predicts unplanned purchases \u2014 but only when the customer is in a positive emotional state. A 1994 study found pleasure at the five-minute mark predicted unplanned spending. Music vs. silence adds ~8 minutes of dwell time on average."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Doesn't more time always mean more spending?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. A 1999 restaurant study found slow music added 15 minutes of dwell time with zero additional revenue. The extra time was passive \u2014 waiting, not emotionally engaged. Dwell time without emotional activation is just time. The feeling matters more than the duration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I increase quality dwell time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Three things: (1) Use curated, somewhat unfamiliar music \u2014 it stretches real time while making it feel shorter. (2) Prioritize the first five minutes \u2014 that emotional window predicts the whole visit. (3) Skip top-40 hits customers tune out and skip silence (it costs you 8 minutes). Entuned (entuned.co, free tier) engineers the emotional texture of dwell time, not just the duration. Full citations in the description. This is video 15 of 50 in this series."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://entuned.co/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "What Is Dwell Time and Why Does It Matter? | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=ebace452">
+  <link rel="stylesheet" href="../styles/blog.css">
+  
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav aria-label="Main navigation">
+  <div class="container">
+    <a href="/" class="logo"><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="../how-it-works.html">How It Works</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li class="nav-cta-item"><a href="https://app.entuned.co/start" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Start Free</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+  </div>
+</nav>
+
+  <main>
+  
+<!-- Reading progress bar -->
+<div class="blog-progress" aria-hidden="true">
+  <div class="blog-progress__bar" id="reading-progress"></div>
+</div>
+
+<article class="blog-article">
+
+  <!-- Article header -->
+  <header class="blog-article__header">
+    <div class="blog-eyebrow">WATCH</div>
+    <h1 class="blog-headline">What Is Dwell Time and Why Does It Matter?</h1>
+    <p class="blog-dek">Dwell time — total time a customer spends in your store — is one of the strongest predictors of unplanned purchases, but only when paired with the right emotional state.</p>
+    <div class="blog-byline">
+      <span class="blog-byline__author">Daniel Fox</span>
+      <span class="blog-byline__role">Founder &amp; CEO</span>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <time class="blog-byline__date" datetime="2026-05-31">2026-05-31</time>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <span class="blog-byline__reading-time">2 min read</span>
+    </div>
+  </header>
+
+  <!-- Hero image -->
+  <figure class="blog-hero fade-up">
+    <img src="../img/blog/what-is-dwell-time-and-why-does-it-matter.jpg" alt="What Is Dwell Time and Why Does It Matter?" class="blog-hero__img" loading="lazy">
+  </figure>
+
+  <!-- Key takeaways -->
+  <div class="blog-takeaways">
+  <div class="blog-takeaways__title">Key takeaways</div>
+  <ul>
+    <li>Dwell time is the total time a customer spends in your store.</li>
+    <li>No. A 1999 restaurant study found slow music added 15 minutes of dwell time with zero additional revenue.</li>
+    <li>Three things: (1) Use curated, somewhat unfamiliar music — it stretches real time while making it feel shorter.</li>
+  </ul>
+</div>
+
+  <!-- Article body (all sections except key_takeaways, cta, related) -->
+  <div class="blog-article__body">
+    <div class="blog-video fade-up">
+  <div class="blog-video__frame">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/kxG8In4KgHI?rel=0"
+      title="What Is Dwell Time and Why Does It Matter?"
+      loading="lazy"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
+  </div>
+</div>
+
+
+<div class="blog-prose">
+  <p>Dwell time — total time a customer spends in your store — is one of the strongest predictors of unplanned purchases, but only when paired with the right emotional state. A 1994 Journal of Retailing study found that pleasure measured at the five-minute mark predicted unplanned spending, while a 1999 restaurant study showed 15 extra minutes of dwell time produced zero additional revenue.</p>
+<p>In this video I explain why dwell time alone is a vanity metric, how music extends quality dwell time, and why the first five minutes of a shopping trip matter more than the total duration.</p>
+</div>
+
+<div class="blog-transcript fade-up">
+  <h2 class="blog-transcript__heading" id="chapters">Chapters</h2>
+  <ol class="blog-transcript__toc">
+    <li>
+      <a href="https://www.youtube.com/watch?v=kxG8In4KgHI&amp;t=0s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">0:00</span>
+        Hook: The metric that predicts spending
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=kxG8In4KgHI&amp;t=15s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">0:15</span>
+        The surprising claim: More time doesn&#39;t always mean more spending
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=kxG8In4KgHI&amp;t=40s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">0:40</span>
+        What the research says (1994, 1999)
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=kxG8In4KgHI&amp;t=105s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">1:45</span>
+        The music-dwell time connection
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=kxG8In4KgHI&amp;t=175s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">2:55</span>
+        Real vs. perceived time
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=kxG8In4KgHI&amp;t=230s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">3:50</span>
+        Practical takeaway
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=kxG8In4KgHI&amp;t=280s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">4:40</span>
+        CTA
+      </a>
+    </li>
+  </ol>
+
+</div>
+
+<h2 id="what-is-dwell-time-and-why-does-it-matter" class="blog-subhead blog-subhead--h2">
+  What is dwell time and why does it matter?
+  <a href="#what-is-dwell-time-and-why-does-it-matter" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Dwell time is the total time a customer spends in your store. It matters because it predicts unplanned purchases — but only when the customer is in a positive emotional state. A 1994 study found pleasure at the five-minute mark predicted unplanned spending. Music vs. silence adds ~8 minutes of dwell time on average.</p>
+</div>
+
+<h2 id="doesnt-more-time-always-mean-more-spending" class="blog-subhead blog-subhead--h2">
+  Doesn&#39;t more time always mean more spending?
+  <a href="#doesnt-more-time-always-mean-more-spending" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>No. A 1999 restaurant study found slow music added 15 minutes of dwell time with zero additional revenue. The extra time was passive — waiting, not emotionally engaged. Dwell time without emotional activation is just time. The feeling matters more than the duration.</p>
+</div>
+
+<h2 id="how-do-i-increase-quality-dwell-time" class="blog-subhead blog-subhead--h2">
+  How do I increase quality dwell time?
+  <a href="#how-do-i-increase-quality-dwell-time" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Three things: (1) Use curated, somewhat unfamiliar music — it stretches real time while making it feel shorter. (2) Prioritize the first five minutes — that emotional window predicts the whole visit. (3) Skip top-40 hits customers tune out and skip silence (it costs you 8 minutes). Entuned (entuned.co, free tier) engineers the emotional texture of dwell time, not just the duration. Full citations in the description. This is video 15 of 50 in this series.</p>
+</div>
+
+<div class="blog-references fade-up">
+  <h2 class="blog-references__heading" id="references">References</h2>
+  <ol class="blog-references__list">
+    <li>Donovan, R. J., Rossiter, J. R., Marcoolyn, G., &amp; Nesdale, A. (1994). Store atmosphere and purchasing behavior. Journal of Retailing, 70(3), 283–294.</li>
+    <li>Caldwell, C., &amp; Hibbert, S. A. (1999). Play that one again: The effect of music tempo on consumer behaviour in a restaurant. European Advances in Consumer Research, 4, 58–62.</li>
+    <li>Andersson, P. K., Kristensson, P., Wästlund, E., &amp; Gustafsson, A. (2012). Let the music play or not: The influence of background music on consumer behavior. Journal of Retailing and Consumer Services, 19(6), 553–560.</li>
+    <li>Milliman, R. E. (1982). Using background music to affect the behavior of supermarket shoppers. Journal of Marketing, 46(3), 86–91.</li>
+    <li>Yalch, R. F., &amp; Spangenberg, E. R. (2000). The effects of music in a retail setting on real and perceived shopping times. Journal of Business Research, 49(2), 139–147.</li>
+    <li>Margulis, E. H. (2014). On Repeat: How Music Plays the Mind. Oxford University Press.</li>
+  </ol>
+</div>
+
+  </div>
+
+  <!-- CTA -->
+  <aside class="blog-cta blog-cta--start-free">
+  <div class="blog-cta__headline">Hear it on your floor.</div>
+  <div class="blog-cta__body">Entuned engineers original music for your store at the parameter level &amp;mdash; tempo, key, lyrical density, energy arc &amp;mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &amp;mdash; no card, no time limit. PRO-indemnified the moment it plays.</div>
+  <a href="https://app.entuned.co/start" class="blog-cta__link">Start Free &rarr;</a>
+</aside>
+
+  <!-- Related posts -->
+  <section class="blog-related" aria-label="Related posts">
+  <h2 class="blog-related__title">Keep reading</h2>
+  <div class="blog-related__grid">
+    <a href="../blog/the-dwell-time-secret-how-music-keeps-customers-in-your-store.html" class="blog-related__card">
+      <img src="../img/blog/the-dwell-time-secret-how-music-keeps-customers-in-your-store.jpg" alt="The Dwell Time Secret: How Music Keeps Customers in Your Store" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">WATCH</span>
+      <span class="blog-related__card-title">The Dwell Time Secret: How Music Keeps Customers in Your Store</span>
+      <span class="blog-related__dek">Music increases dwell time by up to 15 minutes per visit.</span>
+    </a>
+    <a href="../blog/how-much-does-retail-music-cost.html" class="blog-related__card">
+      <img src="../img/blog/how-much-does-retail-music-cost.jpg" alt="How Much Does In-Store Music Actually Cost?" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">How Much Does In-Store Music Actually Cost?</span>
+      <span class="blog-related__dek">The subscription fee is the number people know. The total bill is bigger, and it sits on nobody&#39;s desk.</span>
+    </a>
+    <a href="../blog/why-music-is-the-most-underrated-tool-in-retail.html" class="blog-related__card">
+      <img src="../img/blog/why-music-is-the-most-underrated-tool-in-retail.jpg" alt="Why Music Is the Most Underrated Tool in Retail" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">WATCH</span>
+      <span class="blog-related__card-title">Why Music Is the Most Underrated Tool in Retail</span>
+      <span class="blog-related__dek">Music is the most underrated tool in retail because it operates across more psychological dimensions than any other environmental variable — tempo, volume, mode, genre, familiarity, and cultural assoc</span>
+    </a>
+  </div>
+</section>
+
+</article>
+
+<!-- Blog-specific JS (reading progress + anchor copy) -->
+<script>
+  // Reading progress bar
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    document.getElementById('reading-progress').style.width = pct + '%';
+  });
+
+  // Anchor link copy-to-clipboard
+  document.querySelectorAll('.anchor-link').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      navigator.clipboard.writeText(window.location.origin + window.location.pathname + a.getAttribute('href'));
+      a.textContent = '\u2713'; setTimeout(() => a.textContent = '#', 1500);
+    });
+  });
+</script>
+  </main>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Engineered retail audio. PRO-indemnified.</p>
+      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="../how-it-works.html">How It Works</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="../enterprise.html">Enterprise</a></li>
+        <li><a href="../why-entuned.html">Why Entuned</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For Your Industry</h4>
+      <ul>
+        <li><a href="../for-apparel.html">Apparel</a></li>
+        <li><a href="../for-beauty-supply.html">Beauty Supply</a></li>
+        <li><a href="../for-cosmetics.html">Cosmetics &amp; Beauty</a></li>
+        <li><a href="../for-furniture-mattress.html">Furniture &amp; Mattress</a></li>
+        <li><a href="../for-home-goods.html">Home Goods</a></li>
+        <li><a href="../for-jewelry.html">Jewelry</a></li>
+        <li><a href="../for-specialty-retail.html">Specialty Retail</a></li>
+        <li><a href="../for-sporting-goods.html">Sporting Goods</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
+      <ul>
+        <li><a href="../for-retail-leaders.html">Retail Leaders</a></li>
+        <li><a href="../impact.html">Impact Calculator</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Research</h4>
+      <ul>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../results.html">Results</a></li>
+        <li><a href="../science.html">The Science</a></li>
+        <li><a href="../will-it-retail.html">Will It Retail?</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="../how-music-affects-retail.html">How Music Affects Retail</a></li>
+        <li><a href="../how-to-increase-aov-retail.html">Increase Average Order Value</a></li>
+        <li><a href="../how-to-increase-dwell-time-retail.html">Increase Dwell Time</a></li>
+        <li><a href="../how-to-increase-impulse-purchases-retail.html">Drive Impulse Purchases</a></li>
+        <li><a href="../how-to-improve-retail-conversion-rate.html">Improve Conversion Rate</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../partners.html">Partners</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="../licensing.html">Licensing &amp; PRO Coverage</a></li>
+        <li><a href="../data.html">Data Practices</a></li>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="../pricing/terms.html">Subscription Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG', {
+      linker: {
+        domains: ['entuned.co', 'music.entuned.co', 'app.entuned.co']
+      }
+    });
+  </script>
+  <script defer src="../js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>

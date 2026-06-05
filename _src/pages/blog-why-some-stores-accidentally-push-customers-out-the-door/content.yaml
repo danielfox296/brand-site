@@ -1,0 +1,100 @@
+title: Why Some Stores Accidentally Push Customers Out the Door
+slug: why-some-stores-accidentally-push-customers-out-the-door
+eyebrow: WATCH
+dek: Stores push customers away with well-intentioned sensory choices they think are improving the experience.
+date: '2026-06-04'
+last_updated: '2026-06-04'
+author:
+  name: Daniel Fox
+  role: Founder & CEO
+hero:
+  src: ../img/blog/why-some-stores-accidentally-push-customers-out-the-door.jpg
+  alt: Why Some Stores Accidentally Push Customers Out the Door
+  caption: ''
+meta_description: Stores push customers away with well-intentioned sensory choices they think are improving the experience. Research shows that adding a third sensory...
+og_image: /img/blog/why-some-stores-accidentally-push-customers-out-the-door.jpg
+tags:
+- store-sensory-overload
+- why-customers-leave-store
+- retail-avoidance-behavior
+- store-music-too-loud
+video:
+  id: nEeOpuC4hL8
+  title: Why Some Stores Accidentally Push Customers Out the Door
+  upload_date: '2026-06-04'
+  duration: PT4M29S
+  chapters: &id001
+  - time: 0
+    label: The counterintuitive claim
+  - time: 35
+    label: The pleasure-avoidance mechanism
+  - time: 85
+    label: The sensory overload trap
+  - time: 135
+    label: The matching problem
+  - time: 190
+    label: 'Loud music: the original push-out'
+  - time: 235
+    label: The invisible exit door
+  - time: 260
+    label: What Entuned does differently
+  - time: 285
+    label: Try Entuned free
+sections:
+- type: key_takeaways
+  items:
+  - Yes. Research shows that adding a third sensory stimulus (e.
+  - Two congruent stimuli outperform three. A pine scent without matching Christmas music actually backfired in one study — customers evaluated the store more negatively than the control.
+  - Audit your sensory environment for conflicts.
+- type: video
+- type: prose
+  body: 'Stores push customers away with well-intentioned sensory choices they think are improving the experience. Research shows that adding a third sensory stimulus on top of two congruent ones doesn''t enhance the experience — it overloads it, and the benefits collapse. Mismatched music and scent actually reverse positive effects.
+
+
+    In this video I break down how stores accidentally build invisible exit doors — through sensory overload, mismatched atmosphere elements, and volume that compresses visits — and how the customers who leave never tell you why.
+
+    '
+- type: transcript
+  chapters: *id001
+- type: subhead
+  level: 2
+  text: Can store design actually push customers away?
+- type: prose
+  body: 'Yes. Research shows that adding a third sensory stimulus (e.g., music + scent + video screens) causes sensory overload — the benefits don''t just diminish, they collapse entirely. Mismatched music and scent actively reverse positive effects, producing outcomes worse than no music at all. And loud music drives away browsers while committed buyers compress their visit.
+
+    '
+- type: subhead
+  level: 2
+  text: But I thought more atmosphere was better?
+- type: prose
+  body: 'Two congruent stimuli outperform three. A pine scent without matching Christmas music actually backfired in one study — customers evaluated the store more negatively than the control. The key is congruence, not quantity. Every sensory element needs to pull in the same direction.
+
+    '
+- type: subhead
+  level: 2
+  text: What's the fix?
+- type: prose
+  body: 'Audit your sensory environment for conflicts. Make sure music, scent, and visuals are telling the same story. Keep volume low enough that browsers feel comfortable lingering. And use music designed to complement your space, not compete with it. Entuned generates music that fits — free tier at entuned.co. Full citations in the description. This is video 24 of 50 in this series.
+
+    '
+- type: references
+  heading: References
+  items:
+  - 'Donovan & Rossiter (1982). Store atmosphere: An environmental psychology approach. Journal of Retailing, 58(1), 34–57.'
+  - Donovan et al. (1994). Store atmosphere and purchasing behavior. Journal of Retailing, 70(3), 283–294.
+  - Douce & Adams (2020). Sensory overload in a shopping environment. Journal of Retailing and Consumer Services, 57, 102219.
+  - Mattila & Wirtz (2001). Congruency of scent and music as a driver of in-store evaluations and behavior. Journal of Retailing, 77(2), 273–289.
+  - Spangenberg, Grohmann & Sprott (2005). It's beginning to smell (and sound) a lot like Christmas. Journal of Business Research, 58(11), 1583–1589.
+  - Smith & Curnow (1966). "Arousal hypothesis" and the effects of music on purchasing behavior. Journal of Applied Psychology, 50(3), 255–256.
+  - Lammers (2003). An oceanside field experiment on background music effects on the restaurant tab. Perceptual and Motor Skills, 96(3), 1025–1026.
+- type: cta
+  variant: start-free
+  headline: Hear it on your floor.
+  body: Entuned engineers original music for your store at the parameter level &mdash; tempo, key, lyrical density, energy arc &mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays.
+  link: https://app.entuned.co/start
+  link_text: Start Free
+- type: related
+  posts:
+  - slug: the-dwell-time-secret-how-music-keeps-customers-in-your-store
+  - slug: music-licensing-for-retail-stores
+  - slug: music-for-retail-stores

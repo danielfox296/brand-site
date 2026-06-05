@@ -1,0 +1,98 @@
+title: Can Background Music Actually Increase Revenue? (140-Store Study Reveals the Truth)
+slug: can-background-music-actually-increase-revenue-140-store-study-reveals-video
+eyebrow: WATCH
+dek: Yes — background music can increase revenue, but the effect is conditional.
+date: '2026-05-29'
+last_updated: '2026-05-29'
+author:
+  name: Daniel Fox
+  role: Founder & CEO
+hero:
+  src: ../img/blog/can-background-music-actually-increase-revenue-140-store-study-reveals-video.jpg
+  alt: Can Background Music Actually Increase Revenue? (140-Store Study Reveals the Truth)
+  caption: ''
+meta_description: Yes — background music can increase revenue, but the effect is conditional. A landmark 1982 study showed a 38% daily revenue lift from slow music. But a...
+og_image: /img/blog/can-background-music-actually-increase-revenue-140-store-study-reveals-video.jpg
+tags:
+- can-background-music-increase-revenue
+- background-music-revenue
+- music-revenue-retail
+- store-music-sales-data
+video:
+  id: V_yig1H1yH8
+  title: Can Background Music Actually Increase Revenue? (140-Store Study Reveals the Truth)
+  upload_date: '2026-05-29'
+  duration: PT4M17S
+  chapters: &id001
+  - time: 0
+    label: 'Hook: The 140-Store Study'
+  - time: 30
+    label: The Nuance Beneath the Null
+  - time: 75
+    label: Studies That DO Show Revenue Lifts
+  - time: 135
+    label: The Context-Dependency Principle
+  - time: 180
+    label: The Sensory Alignment Requirement
+  - time: 225
+    label: The Practical Takeaway
+  - time: 260
+    label: Try Entuned Free
+sections:
+- type: key_takeaways
+  items:
+  - Yes, but the size of the effect depends on context.
+  - 'No — it refines it. Think of it like aspirin: it works on headaches, but if you test it on 140 people and only some have headaches, the average effect looks small.'
+  - 'The research identifies six: tempo, volume, mode (major/minor key), brand fit, crowd density, and sensory alignment (music + scent + lighting should match energy level).'
+- type: video
+- type: prose
+  body: 'Yes — background music can increase revenue, but the effect is conditional. A landmark 1982 study showed a 38% daily revenue lift from slow music. But a 2025 field study across 140 real stores found tempo alone showed no overall effect — until they looked at loyalty members and context variables, revealing that music''s revenue impact depends on who''s in the store.
+
+    In this video I reconcile the positive findings (38% grocery lifts, 40% bar revenue increases, 12% tempo-mode effects) with the nuanced 140-store null result, and explain the context-dependency principle that determines whether music moves your revenue.
+
+    '
+- type: transcript
+  chapters: *id001
+- type: subhead
+  level: 2
+  text: Can background music actually increase revenue?
+- type: prose
+  body: 'Yes, but the size of the effect depends on context. The 1982 grocery study showed a 38% daily revenue lift ($4,627/day) from slow music. The 1986 restaurant study showed a 40% bar revenue lift. But a 2025 study of 140 stores found that tempo alone didn''t produce a significant overall effect — the lift appeared primarily among loyalty members and depended on other variables like crowd density, mode, and sensory alignment.
+
+    '
+- type: subhead
+  level: 2
+  text: If a 140-store study found no overall effect, doesn't that disprove the earlier research?
+- type: prose
+  body: 'No — it refines it. Think of it like aspirin: it works on headaches, but if you test it on 140 people and only some have headaches, the average effect looks small. The 2017 study (43,676 transactions) showed the same thing — fast music helped revenue in crowded stores but hurt it in empty ones. The effect is real but conditional. You have to manage the full set of variables.
+
+    '
+- type: subhead
+  level: 2
+  text: So what variables do I actually need to get right?
+- type: prose
+  body: 'The research identifies six: tempo, volume, mode (major/minor key), brand fit, crowd density, and sensory alignment (music + scent + lighting should match energy level). Getting one right and the others wrong can produce zero effect. For a system that manages all of these together, try Entuned free at entuned.co. Full citations in the description. This is video 7 of 50 in this series.
+
+    '
+- type: references
+  heading: References
+  items:
+  - EMAC (2025). Field study across 140 retail stores on the effect of music tempo on sales and employee satisfaction. European Marketing Academy Conference Proceedings.
+  - Milliman, R. E. (1982). Using background music to affect the behavior of supermarket shoppers. Journal of Marketing, 46(3), 86–91.
+  - Milliman, R. E. (1986). The influence of background music on the behavior of restaurant patrons. Journal of Consumer Research, 13(2), 286–289.
+  - Lammers, H. B. (2003). An oceanside field experiment on background music effects on the restaurant tab. Perceptual and Motor Skills, 96(3), 1025–1026.
+  - 'Knoferle, K. M., et al. (2012). It is all in the mix: The interactive effect of music tempo and mode on in-store sales. Marketing Letters, 23(1), 325–337.'
+  - 'Knoferle, K. M., et al. (2017). It is all in the mix: The interactive effect of music tempo and mode on in-store sales. Journal of Retailing, 93(4), 580–592.'
+  - Mattila, A. S., & Wirtz, J. (2001). Congruency of scent and music as a driver of in-store evaluations and behavior. Journal of Retailing, 77(2), 273–289.
+  - Spangenberg, E. R., et al. (2005). It's beginning to smell (and sound) a lot like Christmas. Journal of Business Research, 58(11), 1583–1589.
+- type: cta
+  variant: start-free
+  headline: Hear it on your floor.
+  body: Entuned engineers original music for your store at the parameter level &mdash; tempo, key, lyrical density, energy arc &mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays.
+  link: https://app.entuned.co/start
+  link_text: Start Free
+- type: related
+  posts:
+  - slug: can-background-music-actually-increase-revenue-140-store-study-reveals
+  - slug: can-familiar-music-actually-hurt-your-retail-sales
+  - slug: why-background-music-costs-you-sales

@@ -1,0 +1,98 @@
+title: How Music Secretly Influences What You Buy (The Psychology of Purchasing)
+slug: how-music-secretly-influences-what-you-buy-the-psychology-of-purchasin
+eyebrow: WATCH
+dek: 'Music influences purchasing decisions through four pathways: tempo drives variety-seeking behavior, cultural cues prime product selection, emotional state triggers impulse buys, and volume shifts cogn'
+date: '2026-05-29'
+last_updated: '2026-05-29'
+author:
+  name: Daniel Fox
+  role: Founder & CEO
+hero:
+  src: ../img/blog/how-music-secretly-influences-what-you-buy-the-psychology-of-purchasin.jpg
+  alt: How Music Secretly Influences What You Buy (The Psychology of Purchasing)
+  caption: ''
+meta_description: 'Music influences purchasing decisions through four pathways: tempo drives variety-seeking behavior, cultural cues prime product selection, emotional state...'
+og_image: /img/blog/how-music-secretly-influences-what-you-buy-the-psychology-of-purchasin.jpg
+tags:
+- how-does-music-influence-purchasing-decisions
+- music-and-purchasing-behavior
+- music-influence-buying
+- background-music-purchasing
+video:
+  id: -2-GO3KfhNI
+  title: How Music Secretly Influences What You Buy (The Psychology of Purchasing)
+  upload_date: '2026-05-29'
+  duration: PT4M30S
+  chapters: &id001
+  - time: 0
+    label: 'Hook: Fast Tempo and Variety-Seeking'
+  - time: 30
+    label: Variety Seeking and Tempo
+  - time: 75
+    label: The Subconscious Priming Engine
+  - time: 120
+    label: Emotional State as a Purchase Driver
+  - time: 170
+    label: The Volume Dimension
+  - time: 210
+    label: The Tempo-Mode Interaction
+  - time: 235
+    label: The Practical Takeaway
+  - time: 270
+    label: Try Entuned Free
+sections:
+- type: key_takeaways
+  items:
+  - 'Music shapes purchasing through four pathways: (1) Fast tempo triggers variety-seeking — customers buy across more categories (Sun et al.'
+  - Yes. A 2012 Marketing Letters study found that slow tempo in a minor key produced a 12% sales lift, but the same slow tempo in a major key produced zero lift.
+  - 'Focus on what''s actionable: (1) If you want customers to explore your range, uptempo helps.'
+- type: video
+- type: prose
+  body: 'Music influences purchasing decisions through four pathways: tempo drives variety-seeking behavior, cultural cues prime product selection, emotional state triggers impulse buys, and volume shifts cognitive mode. A 2019 study found that low-volume music (55 dB) led customers to make healthier food choices by activating more deliberate thinking.
+
+    In this video I break down how music shapes the structure of purchasing decisions — from a 2023 Frontiers in Psychology study on tempo and variety-seeking to the tempo-mode interaction where two songs at the same BPM produce opposite sales effects depending on key signature.
+
+    '
+- type: transcript
+  chapters: *id001
+- type: subhead
+  level: 2
+  text: How does music influence what customers buy?
+- type: prose
+  body: 'Music shapes purchasing through four pathways: (1) Fast tempo triggers variety-seeking — customers buy across more categories (Sun et al., 2023). (2) Cultural cues prime product selection — French music drove 5:1 French wine purchases (North et al., 1999). (3) Emotional state drives impulse buying — pleasure in the first 5 minutes predicts unplanned spending (Donovan et al., 1994). (4) Volume shifts cognitive mode — low volume (55 dB) leads to more deliberate, healthier choices (Biswas et al., 2019).
+
+    '
+- type: subhead
+  level: 2
+  text: Two songs at the same tempo can really have opposite effects?
+- type: prose
+  body: 'Yes. A 2012 Marketing Letters study found that slow tempo in a minor key produced a 12% sales lift, but the same slow tempo in a major key produced zero lift. The harmonic character (major vs. minor key) modulates whether tempo effects even work. Any system that only tracks BPM is missing half the equation.
+
+    '
+- type: subhead
+  level: 2
+  text: How do I use this in my store without a music theory degree?
+- type: prose
+  body: 'Focus on what''s actionable: (1) If you want customers to explore your range, uptempo helps. If you want them to commit to premium items, go slower. (2) Turn volume down slightly — it shifts customers toward more deliberate purchasing. (3) For a system that manages tempo, mode, and volume together based on the research, try Entuned free at entuned.co. Full citations in the description. This is video 6 of 50 in this series.
+
+    '
+- type: references
+  heading: References
+  items:
+  - Sun, J., et al. (2023). The effect of background music tempo on variety-seeking behavior. Frontiers in Psychology, 14, 1131498.
+  - North, A. C., Hargreaves, D. J., & McKendrick, J. (1999). The influence of in-store music on wine selections. Journal of Applied Psychology, 84(2), 271–276.
+  - 'Sherman, E., Mathur, A., & Smith, R. B. (1997). Store environment and consumer purchase behavior: Mediating role of consumer emotions. Psychology & Marketing, 14(4), 361–378.'
+  - Donovan, R. J., et al. (1994). Store atmosphere and purchasing behavior. Journal of Retailing, 70(3), 283–294.
+  - 'Biswas, D., et al. (2019). Sounds like a healthy retail atmospheric strategy: Effects of ambient music and background noise on food sales. Journal of the Academy of Marketing Science, 47(1), 37–55.'
+  - 'Knoferle, K. M., et al. (2012). It is all in the mix: The interactive effect of music tempo and mode on in-store sales. Marketing Letters, 23(1), 325–337.'
+- type: cta
+  variant: start-free
+  headline: Hear it on your floor.
+  body: Entuned engineers original music for your store at the parameter level &mdash; tempo, key, lyrical density, energy arc &mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays.
+  link: https://app.entuned.co/start
+  link_text: Start Free
+- type: related
+  posts:
+  - slug: why-background-music-costs-you-sales
+  - slug: what-your-music-is-saying-about-your-brand
+  - slug: what-music-to-play-in-a-high-end-store

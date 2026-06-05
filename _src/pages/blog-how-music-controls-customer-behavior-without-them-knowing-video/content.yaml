@@ -1,0 +1,97 @@
+title: How Music Controls Customer Behavior (Without Them Knowing)
+slug: how-music-controls-customer-behavior-without-them-knowing-video
+eyebrow: WATCH
+dek: 'Music controls customer behavior through at least four mechanisms: it changes walking speed (volume), dwell time (tempo), product selection (cultural priming), and impulse purchases (emotional state).'
+date: '2026-05-27'
+last_updated: '2026-05-27'
+author:
+  name: Daniel Fox
+  role: Founder & CEO
+hero:
+  src: ../img/blog/how-music-controls-customer-behavior-without-them-knowing-video.jpg
+  alt: How Music Controls Customer Behavior (Without Them Knowing)
+  caption: ''
+meta_description: 'Music controls customer behavior through at least four mechanisms: it changes walking speed (volume), dwell time (tempo), product selection (cultural...'
+og_image: /img/blog/how-music-controls-customer-behavior-without-them-knowing-video.jpg
+tags:
+- how-does-music-affect-customer-behavior
+- music-customer-behavior
+- music-influence-shopping
+- background-music-behavior
+video:
+  id: iVCVzUV4hnQ
+  title: How Music Controls Customer Behavior (Without Them Knowing)
+  upload_date: '2026-05-27'
+  duration: PT3M52S
+  chapters: &id001
+  - time: 0
+    label: 'Hook: Loud Music and Walking Speed'
+  - time: 30
+    label: The Velocity Effect
+  - time: 75
+    label: The Priming Effect
+  - time: 115
+    label: The Emotional Pathway
+  - time: 165
+    label: When Music Backfires
+  - time: 210
+    label: The Practical Takeaway
+  - time: 255
+    label: Try Entuned Free
+sections:
+- type: key_takeaways
+  items:
+  - 'Music controls behavior through four documented mechanisms: (1) Volume controls walking speed — loud music makes people move faster (Smith & Curnow, 1966).'
+  - That's exactly why it's powerful. Music works below conscious awareness.
+  - The most common mistake is sensory mismatch.
+- type: video
+- type: prose
+  body: 'Music controls customer behavior through at least four mechanisms: it changes walking speed (volume), dwell time (tempo), product selection (cultural priming), and impulse purchases (emotional state). In one study, 86% of customers had no idea music was influencing their buying decisions.
+
+    In this video I break down the full behavioral chain — from a 1966 study on volume and foot traffic to the subconscious priming effect, the emotional pathway that drives impulse buying, and the critical finding that mismatched sensory cues can backfire and drive customers away.
+
+    '
+- type: transcript
+  chapters: *id001
+- type: subhead
+  level: 2
+  text: How does music affect customer behavior?
+- type: prose
+  body: 'Music controls behavior through four documented mechanisms: (1) Volume controls walking speed — loud music makes people move faster (Smith & Curnow, 1966). (2) Tempo controls dwell time — slow music increased grocery sales by 38% (Milliman, 1982). (3) Cultural associations prime product selection — French music drove 5:1 French wine purchases (North et al., 1999). (4) Emotional state drives impulse buying — pleasure in the first 5 minutes predicts unplanned spending (Donovan et al., 1994).
+
+    '
+- type: subhead
+  level: 2
+  text: If 86% of customers don't notice the music, how can it really be that powerful?
+- type: prose
+  body: 'That''s exactly why it''s powerful. Music works below conscious awareness. Customers don''t think "the music is making me buy this" — they think "I just feel like this one." The 1999 wine study proved this: customers chose French wine 5:1 when French music played, but when asked, they attributed it to personal preference. Subconscious influence is stronger than conscious persuasion because it bypasses skepticism.
+
+    '
+- type: subhead
+  level: 2
+  text: What's the biggest mistake I'm probably making with my store music right now?
+- type: prose
+  body: 'The most common mistake is sensory mismatch. If your music''s energy level clashes with your scent, lighting, or brand identity, it actively hurts — satisfaction drops below baseline (Mattila & Wirtz, 2001). Start by checking whether your music''s energy matches the rest of your environment. If you want a system that handles this automatically, try Entuned free at entuned.co. Full citations in the description. This is video 3 of 50 in this series.
+
+    '
+- type: references
+  heading: References
+  items:
+  - Smith, P. C., & Curnow, R. (1966). "Arousal hypothesis" and the effects of music on purchasing behavior. Journal of Applied Psychology, 50(3), 255–256.
+  - Milliman, R. E. (1982). Using background music to affect the behavior of supermarket shoppers. Journal of Marketing, 46(3), 86–91.
+  - North, A. C., Hargreaves, D. J., & McKendrick, J. (1999). The influence of in-store music on wine selections. Journal of Applied Psychology, 84(2), 271–276.
+  - 'Sherman, E., Mathur, A., & Smith, R. B. (1997). Store environment and consumer purchase behavior: Mediating role of consumer emotions. Psychology & Marketing, 14(4), 361–378.'
+  - Donovan, R. J., et al. (1994). Store atmosphere and purchasing behavior. Journal of Retailing, 70(3), 283–294.
+  - Mattila, A. S., & Wirtz, J. (2001). Congruency of scent and music as a driver of in-store evaluations and behavior. Journal of Retailing, 77(2), 273–289.
+  - 'Doucé, L., & Adams, C. (2020). Sensory overload in a shopping environment: Not every sensory modality leads to too much stimulation. Journal of Retailing and Consumer Services, 57, 102219.'
+- type: cta
+  variant: start-free
+  headline: Hear it on your floor.
+  body: Entuned engineers original music for your store at the parameter level &mdash; tempo, key, lyrical density, energy arc &mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays.
+  link: https://app.entuned.co/start
+  link_text: Start Free
+- type: related
+  posts:
+  - slug: how-music-controls-customer-behavior-without-them-knowing
+  - slug: how-does-music-affect-browsing-behavior
+  - slug: how-does-music-influence-emotions-in-retail

@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- First-touch signup attribution. Stamps a `.entuned.co` cookie on the
+       FIRST page view so the original source (referrer + UTM) survives the
+       entuned.co -> app.entuned.co/start hop. The dashboard's /start reads the
+       same cookie (same name + shape) and forwards it to the server. Runs
+       early + first-touch-wins so it never overwrites the true upstream. -->
+  <script>
+    (function () {
+      try {
+        if (/(?:^|; )entuned_attr=/.test(document.cookie)) return;
+        var p = new URLSearchParams(window.location.search);
+        var payload = {
+          r: document.referrer || undefined,
+          lp: (window.location.pathname + window.location.search) || undefined,
+          us: p.get('utm_source') || undefined,
+          um: p.get('utm_medium') || undefined,
+          uc: p.get('utm_campaign') || undefined,
+          ut: p.get('utm_term') || undefined,
+          un: p.get('utm_content') || undefined,
+          t: new Date().toISOString()
+        };
+        var host = window.location.hostname;
+        var domain = (host === 'entuned.co' || /\.entuned\.co$/.test(host)) ? '; domain=.entuned.co' : '';
+        document.cookie = 'entuned_attr=' + encodeURIComponent(JSON.stringify(payload)) +
+          '; path=/' + domain + '; max-age=' + (30 * 24 * 60 * 60) + '; SameSite=Lax';
+      } catch (e) { /* best-effort */ }
+    })();
+  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/blog/why-do-some-stores-feel-more-inviting-than-others-video.html">
+  <meta name="robots" content="index, follow">
+  <title>Why Do Some Stores Feel More Inviting Than Others? | Entuned</title>
+  <meta name="description" content="Whether a store feels inviting comes down to measurable sensory variables — and more stimuli can actually be worse. A 2020 Journal of Retailing and...">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="../rss.xml">
+  <meta property="og:title" content="Why Do Some Stores Feel More Inviting Than Others? | Entuned">
+  <meta property="og:description" content="Whether a store feels inviting comes down to measurable sensory variables — and more stimuli can actually be worse. A 2020 Journal of Retailing and...">
+  <meta property="og:url" content="https://entuned.co/blog/why-do-some-stores-feel-more-inviting-than-others-video.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://entuned.co/img/blog/why-do-some-stores-feel-more-inviting-than-others-video.jpg">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-06-01">
+  <meta property="article:author" content="Daniel Fox">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Why Do Some Stores Feel More Inviting Than Others? | Entuned">
+  <meta name="twitter:description" content="Whether a store feels inviting comes down to measurable sensory variables — and more stimuli can actually be worse. A 2020 Journal of Retailing and...">
+  <meta name="twitter:image" content="https://entuned.co/img/blog/why-do-some-stores-feel-more-inviting-than-others-video.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Why Do Some Stores Feel More Inviting Than Others? | Entuned",
+  "author": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "datePublished": "2026-06-01",
+  "dateModified": "2026-06-01",
+  "description": "Whether a store feels inviting comes down to measurable sensory variables \u2014 and more stimuli can actually be worse. A 2020 Journal of Retailing and...",
+  "image": "https://entuned.co/img/blog/why-do-some-stores-feel-more-inviting-than-others-video.jpg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://entuned.co/blog/why-do-some-stores-feel-more-inviting-than-others-video.html"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "retail music strategy"
+    },
+    {
+      "@type": "Thing",
+      "name": "in-store customer behavior"
+    },
+    {
+      "@type": "Thing",
+      "name": "engineered retail audio"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Why Do Some Stores Feel More Inviting Than Others?",
+  "description": "Whether a store feels inviting comes down to measurable sensory variables \u2014 and more stimuli can actually be worse. A 2020 Journal of Retailing and...",
+  "thumbnailUrl": [
+    "https://entuned.co/img/blog/why-do-some-stores-feel-more-inviting-than-others-video.jpg"
+  ],
+  "uploadDate": "2026-06-01",
+  "contentUrl": "https://www.youtube.com/watch?v=oQKXTLbMH5g",
+  "embedUrl": "https://www.youtube.com/embed/oQKXTLbMH5g",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "duration": "PT5M45S",
+  "hasPart": [
+    {
+      "@type": "Clip",
+      "name": "Hook: Why you stay or leave within 30 seconds",
+      "startOffset": 0,
+      "url": "https://www.youtube.com/watch?v=oQKXTLbMH5g&t=0s"
+    },
+    {
+      "@type": "Clip",
+      "name": "The surprising claim: More can be worse",
+      "startOffset": 15,
+      "url": "https://www.youtube.com/watch?v=oQKXTLbMH5g&t=15s"
+    },
+    {
+      "@type": "Clip",
+      "name": "The sensory overload trap (2020 study)",
+      "startOffset": 38,
+      "url": "https://www.youtube.com/watch?v=oQKXTLbMH5g&t=38s"
+    },
+    {
+      "@type": "Clip",
+      "name": "The pleasure-approach connection (PAD model)",
+      "startOffset": 90,
+      "url": "https://www.youtube.com/watch?v=oQKXTLbMH5g&t=90s"
+    },
+    {
+      "@type": "Clip",
+      "name": "Congruence: The secret to inviting spaces",
+      "startOffset": 140,
+      "url": "https://www.youtube.com/watch?v=oQKXTLbMH5g&t=140s"
+    },
+    {
+      "@type": "Clip",
+      "name": "What music specifically contributes",
+      "startOffset": 195,
+      "url": "https://www.youtube.com/watch?v=oQKXTLbMH5g&t=195s"
+    },
+    {
+      "@type": "Clip",
+      "name": "Practical takeaway",
+      "startOffset": 255,
+      "url": "https://www.youtube.com/watch?v=oQKXTLbMH5g&t=255s"
+    },
+    {
+      "@type": "Clip",
+      "name": "CTA",
+      "startOffset": 300,
+      "url": "https://www.youtube.com/watch?v=oQKXTLbMH5g&t=300s"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why do some stores feel more inviting than others?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It comes down to sensory congruence \u2014 having 2-3 aligned sensory inputs instead of piling everything on. A 2020 study found that two congruent stimuli (e.g., matching music + scent) improved approach behavior, but adding a third caused sensory overload and flipped customers to avoidance. Pleasure \u2014 the simple feeling of \"this feels good\" \u2014 is the strongest predictor of approach behavior."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Don't more sensory elements make a better experience?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Research consistently shows diminishing and then negative returns. Three pleasant stimuli in combination were worse than two. And individual elements that don't match \u2014 calming music with energizing scent, for example \u2014 cancel each other out. It's not about doing more. It's about alignment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I make my store feel more inviting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Three things: (1) Limit to 2-3 congruent sensory elements instead of stacking everything. (2) Choose music your target customer enjoys that matches your brand \u2014 preference is the strongest predictor of positive evaluations. (3) Eliminate silence (it costs 8 minutes of dwell time) without creating overload. Entuned (entuned.co, free tier) generates brand-matched music calibrated to avoid sensory noise. Full citations in the description. This is video 19 of 50 in this series."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://entuned.co/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Why Do Some Stores Feel More Inviting Than Others? | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=ebace452">
+  <link rel="stylesheet" href="../styles/blog.css">
+  
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav aria-label="Main navigation">
+  <div class="container">
+    <a href="/" class="logo"><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="../how-it-works.html">How It Works</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li class="nav-cta-item"><a href="https://app.entuned.co/start" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Start Free</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+  </div>
+</nav>
+
+  <main>
+  
+<!-- Reading progress bar -->
+<div class="blog-progress" aria-hidden="true">
+  <div class="blog-progress__bar" id="reading-progress"></div>
+</div>
+
+<article class="blog-article">
+
+  <!-- Article header -->
+  <header class="blog-article__header">
+    <div class="blog-eyebrow">WATCH</div>
+    <h1 class="blog-headline">Why Do Some Stores Feel More Inviting Than Others?</h1>
+    <p class="blog-dek">Whether a store feels inviting comes down to measurable sensory variables — and more stimuli can actually be worse.</p>
+    <div class="blog-byline">
+      <span class="blog-byline__author">Daniel Fox</span>
+      <span class="blog-byline__role">Founder &amp; CEO</span>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <time class="blog-byline__date" datetime="2026-06-01">2026-06-01</time>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <span class="blog-byline__reading-time">2 min read</span>
+    </div>
+  </header>
+
+  <!-- Hero image -->
+  <figure class="blog-hero fade-up">
+    <img src="../img/blog/why-do-some-stores-feel-more-inviting-than-others-video.jpg" alt="Why Do Some Stores Feel More Inviting Than Others?" class="blog-hero__img" loading="lazy">
+  </figure>
+
+  <!-- Key takeaways -->
+  <div class="blog-takeaways">
+  <div class="blog-takeaways__title">Key takeaways</div>
+  <ul>
+    <li>It comes down to sensory congruence — having 2-3 aligned sensory inputs instead of piling everything on.</li>
+    <li>No. Research consistently shows diminishing and then negative returns.</li>
+    <li>Three things: (1) Limit to 2-3 congruent sensory elements instead of stacking everything.</li>
+  </ul>
+</div>
+
+  <!-- Article body (all sections except key_takeaways, cta, related) -->
+  <div class="blog-article__body">
+    <div class="blog-video fade-up">
+  <div class="blog-video__frame">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/oQKXTLbMH5g?rel=0"
+      title="Why Do Some Stores Feel More Inviting Than Others?"
+      loading="lazy"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
+  </div>
+</div>
+
+
+<div class="blog-prose">
+  <p>Whether a store feels inviting comes down to measurable sensory variables — and more stimuli can actually be worse. A 2020 Journal of Retailing and Consumer Services study found that adding a third sensory stimulus to an environment with two congruent ones flipped customers from approach to avoidance behavior through sensory overload.</p>
+<p>In this video I explain the science behind inviting retail spaces — why pleasure predicts approach behavior, how congruence between music and scent amplifies the effect, and why the line between &ldquo;I want to stay&rdquo; and &ldquo;I want to leave&rdquo; is thinner than most retailers realize.</p>
+</div>
+
+<div class="blog-transcript fade-up">
+  <h2 class="blog-transcript__heading" id="chapters">Chapters</h2>
+  <ol class="blog-transcript__toc">
+    <li>
+      <a href="https://www.youtube.com/watch?v=oQKXTLbMH5g&amp;t=0s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">0:00</span>
+        Hook: Why you stay or leave within 30 seconds
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=oQKXTLbMH5g&amp;t=15s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">0:15</span>
+        The surprising claim: More can be worse
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=oQKXTLbMH5g&amp;t=38s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">0:38</span>
+        The sensory overload trap (2020 study)
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=oQKXTLbMH5g&amp;t=90s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">1:30</span>
+        The pleasure-approach connection (PAD model)
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=oQKXTLbMH5g&amp;t=140s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">2:20</span>
+        Congruence: The secret to inviting spaces
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=oQKXTLbMH5g&amp;t=195s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">3:15</span>
+        What music specifically contributes
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=oQKXTLbMH5g&amp;t=255s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">4:15</span>
+        Practical takeaway
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=oQKXTLbMH5g&amp;t=300s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">5:00</span>
+        CTA
+      </a>
+    </li>
+  </ol>
+
+</div>
+
+<h2 id="why-do-some-stores-feel-more-inviting-than-others" class="blog-subhead blog-subhead--h2">
+  Why do some stores feel more inviting than others?
+  <a href="#why-do-some-stores-feel-more-inviting-than-others" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>It comes down to sensory congruence — having 2-3 aligned sensory inputs instead of piling everything on. A 2020 study found that two congruent stimuli (e.g., matching music + scent) improved approach behavior, but adding a third caused sensory overload and flipped customers to avoidance. Pleasure — the simple feeling of &ldquo;this feels good&rdquo; — is the strongest predictor of approach behavior.</p>
+</div>
+
+<h2 id="dont-more-sensory-elements-make-a-better-experience" class="blog-subhead blog-subhead--h2">
+  Don&#39;t more sensory elements make a better experience?
+  <a href="#dont-more-sensory-elements-make-a-better-experience" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>No. Research consistently shows diminishing and then negative returns. Three pleasant stimuli in combination were worse than two. And individual elements that don&rsquo;t match — calming music with energizing scent, for example — cancel each other out. It&rsquo;s not about doing more. It&rsquo;s about alignment.</p>
+</div>
+
+<h2 id="how-do-i-make-my-store-feel-more-inviting" class="blog-subhead blog-subhead--h2">
+  How do I make my store feel more inviting?
+  <a href="#how-do-i-make-my-store-feel-more-inviting" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Three things: (1) Limit to 2-3 congruent sensory elements instead of stacking everything. (2) Choose music your target customer enjoys that matches your brand — preference is the strongest predictor of positive evaluations. (3) Eliminate silence (it costs 8 minutes of dwell time) without creating overload. Entuned (entuned.co, free tier) generates brand-matched music calibrated to avoid sensory noise. Full citations in the description. This is video 19 of 50 in this series.</p>
+</div>
+
+<div class="blog-references fade-up">
+  <h2 class="blog-references__heading" id="references">References</h2>
+  <ol class="blog-references__list">
+    <li>Doucé, L., &amp; Adams, C. (2020). Sensory overload in a shopping environment: Not every sensory modality leads to too much stimulation. Journal of Retailing and Consumer Services, 57, 102154.</li>
+    <li>Donovan, R. J., &amp; Rossiter, J. R. (1982). Store atmosphere: An environmental psychology approach. Journal of Retailing, 58(1), 34–57.</li>
+    <li>Mattila, A. S., &amp; Wirtz, J. (2001). Congruency of scent and music as a driver of in-store evaluations and behavior. Journal of Retailing, 77(2), 273–289.</li>
+    <li>Spangenberg, E. R., Grohmann, B., &amp; Sprott, D. E. (2005). It&#39;s beginning to smell (and sound) a lot like Christmas: The interactive effects of ambient scent and music in a retail setting. Journal of Business Research, 58(11), 1583–1589.</li>
+    <li>Andersson, P. K., Kristensson, P., Wästlund, E., &amp; Gustafsson, A. (2012). Let the music play or not: The influence of background music on consumer behavior. Journal of Retailing and Consumer Services, 19(6), 553–560.</li>
+    <li>Beverland, M., Lim, E. A. C., Morrison, M., &amp; Terziovski, M. (2006). In-store music and consumer–brand relationships: Relational transformation following experiences of (mis)fit. Journal of Business Research, 59(9), 982–989.</li>
+    <li>Herrington, J. D., &amp; Capella, L. M. (1996). Effects of music in service environments: A field study. Journal of Services Marketing, 10(2), 26–41.</li>
+  </ol>
+</div>
+
+  </div>
+
+  <!-- CTA -->
+  <aside class="blog-cta blog-cta--start-free">
+  <div class="blog-cta__headline">Hear it on your floor.</div>
+  <div class="blog-cta__body">Entuned engineers original music for your store at the parameter level &amp;mdash; tempo, key, lyrical density, energy arc &amp;mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &amp;mdash; no card, no time limit. PRO-indemnified the moment it plays.</div>
+  <a href="https://app.entuned.co/start" class="blog-cta__link">Start Free &rarr;</a>
+</aside>
+
+  <!-- Related posts -->
+  <section class="blog-related" aria-label="Related posts">
+  <h2 class="blog-related__title">Keep reading</h2>
+  <div class="blog-related__grid">
+    <a href="../blog/why-do-some-stores-feel-more-inviting-than-others.html" class="blog-related__card">
+      <img src="../img/blog/why-do-some-stores-feel-more-inviting-than-others.jpg" alt="Why Do Some Stores Feel More Inviting Than Others?" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">WATCH</span>
+      <span class="blog-related__card-title">Why Do Some Stores Feel More Inviting Than Others?</span>
+      <span class="blog-related__dek">Whether a store feels inviting comes down to measurable sensory variables — and more stimuli can actually be worse.</span>
+    </a>
+    <a href="../blog/music-licensing-for-retail-stores.html" class="blog-related__card">
+      <img src="../img/blog/retail-music-licensing-2026.jpg" alt="Music Licensing for Retail Stores: Fines, Lawsuits, and What Every Store Owner Should Know" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">Music Licensing for Retail Stores: Fines, Lawsuits, and What Every Store Owner Should Know</span>
+      <span class="blog-related__dek">Part 1 of 3. A personal Spotify account is not a business license. Here is what the law actually says, what the fines look like, and what compliance actually costs.</span>
+    </a>
+    <a href="../blog/music-for-retail-stores.html" class="blog-related__card">
+      <img src="../img/blog/retail-designed-everything.jpg" alt="Music for Retail Stores: How to Get It Right Without Overpaying" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">Music for Retail Stores: How to Get It Right Without Overpaying</span>
+      <span class="blog-related__dek">Most retail music is an afterthought. Here is how to get it right — legally, strategically, and without a subscription — in about five minutes.</span>
+    </a>
+  </div>
+</section>
+
+</article>
+
+<!-- Blog-specific JS (reading progress + anchor copy) -->
+<script>
+  // Reading progress bar
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    document.getElementById('reading-progress').style.width = pct + '%';
+  });
+
+  // Anchor link copy-to-clipboard
+  document.querySelectorAll('.anchor-link').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      navigator.clipboard.writeText(window.location.origin + window.location.pathname + a.getAttribute('href'));
+      a.textContent = '\u2713'; setTimeout(() => a.textContent = '#', 1500);
+    });
+  });
+</script>
+  </main>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Engineered retail audio. PRO-indemnified.</p>
+      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="../how-it-works.html">How It Works</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="../enterprise.html">Enterprise</a></li>
+        <li><a href="../why-entuned.html">Why Entuned</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For Your Industry</h4>
+      <ul>
+        <li><a href="../for-apparel.html">Apparel</a></li>
+        <li><a href="../for-beauty-supply.html">Beauty Supply</a></li>
+        <li><a href="../for-cosmetics.html">Cosmetics &amp; Beauty</a></li>
+        <li><a href="../for-furniture-mattress.html">Furniture &amp; Mattress</a></li>
+        <li><a href="../for-home-goods.html">Home Goods</a></li>
+        <li><a href="../for-jewelry.html">Jewelry</a></li>
+        <li><a href="../for-specialty-retail.html">Specialty Retail</a></li>
+        <li><a href="../for-sporting-goods.html">Sporting Goods</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
+      <ul>
+        <li><a href="../for-retail-leaders.html">Retail Leaders</a></li>
+        <li><a href="../impact.html">Impact Calculator</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Research</h4>
+      <ul>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../results.html">Results</a></li>
+        <li><a href="../science.html">The Science</a></li>
+        <li><a href="../will-it-retail.html">Will It Retail?</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="../how-music-affects-retail.html">How Music Affects Retail</a></li>
+        <li><a href="../how-to-increase-aov-retail.html">Increase Average Order Value</a></li>
+        <li><a href="../how-to-increase-dwell-time-retail.html">Increase Dwell Time</a></li>
+        <li><a href="../how-to-increase-impulse-purchases-retail.html">Drive Impulse Purchases</a></li>
+        <li><a href="../how-to-improve-retail-conversion-rate.html">Improve Conversion Rate</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../partners.html">Partners</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="../licensing.html">Licensing &amp; PRO Coverage</a></li>
+        <li><a href="../data.html">Data Practices</a></li>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="../pricing/terms.html">Subscription Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG', {
+      linker: {
+        domains: ['entuned.co', 'music.entuned.co', 'app.entuned.co']
+      }
+    });
+  </script>
+  <script defer src="../js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>
