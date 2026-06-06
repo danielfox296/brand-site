@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- First-touch signup attribution. Stamps a `.entuned.co` cookie on the
+       FIRST page view so the original source (referrer + UTM) survives the
+       entuned.co -> app.entuned.co/start hop. The dashboard's /start reads the
+       same cookie (same name + shape) and forwards it to the server. Runs
+       early + first-touch-wins so it never overwrites the true upstream. -->
+  <script>
+    (function () {
+      try {
+        if (/(?:^|; )entuned_attr=/.test(document.cookie)) return;
+        var p = new URLSearchParams(window.location.search);
+        var payload = {
+          r: document.referrer || undefined,
+          lp: (window.location.pathname + window.location.search) || undefined,
+          us: p.get('utm_source') || undefined,
+          um: p.get('utm_medium') || undefined,
+          uc: p.get('utm_campaign') || undefined,
+          ut: p.get('utm_term') || undefined,
+          un: p.get('utm_content') || undefined,
+          t: new Date().toISOString()
+        };
+        var host = window.location.hostname;
+        var domain = (host === 'entuned.co' || /\.entuned\.co$/.test(host)) ? '; domain=.entuned.co' : '';
+        document.cookie = 'entuned_attr=' + encodeURIComponent(JSON.stringify(payload)) +
+          '; path=/' + domain + '; max-age=' + (30 * 24 * 60 * 60) + '; SameSite=Lax';
+      } catch (e) { /* best-effort */ }
+    })();
+  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/spotify-for-business.html">
+  <meta name="robots" content="index, follow">
+  <title>Spotify for Business — It Doesn't Exist. Here Are the Legal Paths | Entuned</title>
+  <meta name="description" content="Spotify doesn&#x27;t sell a business tier — personal accounts can&#x27;t legally play in stores. The three legal paths for retail, priced honestly. One is free.">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="rss.xml">
+  <meta property="og:title" content="Spotify for Business — It Doesn&#x27;t Exist. Here Are the Legal Paths | Entuned">
+  <meta property="og:description" content="Spotify doesn&#x27;t sell a business tier — personal accounts can&#x27;t legally play in stores. The three legal paths for retail, priced honestly. One is free.">
+  <meta property="og:url" content="https://entuned.co/spotify-for-business.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://entuned.co/img/og-default.png">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Spotify for Business — It Doesn&#x27;t Exist. Here Are the Legal Paths | Entuned">
+  <meta name="twitter:description" content="Spotify doesn&#x27;t sell a business tier — personal accounts can&#x27;t legally play in stores. The three legal paths for retail, priced honestly. One is free.">
+  <meta name="twitter:image" content="https://entuned.co/img/og-default.png">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Entuned",
+  "url": "https://entuned.co",
+  "description": "Entuned engineers original music for retail floors at the parameter level \u2014 tempo, key, lyrical density, energy arc \u2014 tailored to a store's customer profile and tied to its sales outcomes. PRO-indemnified at every tier.",
+  "foundingDate": "2026",
+  "founder": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "knowsAbout": [
+    "retail atmospherics",
+    "music psychology",
+    "in-store customer behavior",
+    "retail analytics",
+    "engineered retail audio",
+    "behavioral retail variables"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/entuned"
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Spotify for Business \u2014 It Doesn't Exist. Here Are the Legal Paths | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css?v=20ced8ab">
+  <style>
+/* ==================== /spotify-for-business ==================== */
+
+.sfb-answer {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 1.75rem 2rem;
+  border-left: 3px solid var(--accent);
+  background: rgba(212, 225, 229, 0.04);
+  border-radius: 0 8px 8px 0;
+}
+
+.sfb-answer p {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  opacity: 0.92;
+}
+
+.sfb-paths {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.sfb-path {
+  padding: 2rem 1.75rem;
+  border: 1px solid rgba(212, 225, 229, 0.12);
+  border-radius: 10px;
+}
+
+.sfb-path.is-entuned {
+  border-color: var(--accent);
+}
+
+.sfb-path h3 {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.sfb-path .sfb-path-price {
+  font-size: 0.9rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.sfb-path p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+@media (max-width: 900px) {
+  .sfb-paths {
+    grid-template-columns: 1fr;
+  }
+}
+
+.alt-final {
+  padding: 6rem 0;
+  text-align: center;
+  border-top: 1px solid rgba(212, 225, 229, 0.08);
+}
+
+.alt-final h2 {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  margin-bottom: 1.5rem;
+}
+
+.alt-final p {
+  font-size: 1.0625rem;
+  opacity: 0.85;
+  max-width: 640px;
+  margin: 0 auto 2rem;
+}
+
+.alt-internal-links {
+  margin-top: 2.5rem;
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+.alt-internal-links a {
+  color: var(--accent);
+}
+  </style>
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav aria-label="Main navigation">
+  <div class="container">
+    <a href="/" class="logo"><img src="img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="how-it-works.html">How It Works</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="nav-cta-item"><a href="https://app.entuned.co/start" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Start Free</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+  </div>
+</nav>
+
+  <main>
+  <!-- HERO -->
+<section class="hero-image-bg" style="--hero-bg: url('img/parallax-vinyl-records.jpg');">
+  <div class="container">
+    <div class="fade-up" style="max-width: 820px; margin: 0 auto;">
+      <span class="section-eyebrow">Spotify for Business</span>
+      <h1>There is no Spotify for Business.</h1>
+      <p class="subline">Spotify doesn't sell a commercial tier. The account playing in your store right now is a personal license &mdash; which makes it a legal problem with three honest fixes. Here they are, priced.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DIRECT ANSWER -->
+<section class="section">
+  <div class="container">
+    <div class="sfb-answer fade-up">
+      <p><strong>The short version:</strong> Spotify does not offer a business or commercial tier in the United States. Spotify's Terms of Use license every account &mdash; including Premium and Family &mdash; for personal, non-commercial use only. Playing it in a store, restaurant, gym, or office is a public performance under U.S. copyright law, and the licenses that cover public performance aren't included in any consumer subscription, at any price.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section section--tinted">
+  <div class="container">
+    <div class="fade-up" style="max-width: 820px; margin: 0 auto;">
+      <span class="section-eyebrow">Why there's no business tier</span>
+      <h2>The royalty math doesn't allow one.</h2>
+      <p style="font-size: 1.0625rem; line-height: 1.75; opacity: 0.9;">Consumer streaming royalties are negotiated for one listener in a private setting. A store with two hundred customers walking through per day sits outside that math entirely. In the U.S., music played in a commercial space needs public performance licenses administered by the four major performing rights organizations &mdash; ASCAP, BMI, SESAC, and GMR. Your Premium subscription &mdash; whatever Spotify charges this year &mdash; doesn't buy any of them. Paying somebody for music is not the same as paying the right somebody.</p>
+      <p style="font-size: 1.0625rem; line-height: 1.75; opacity: 0.9; margin-top: 1rem;">This isn't a gray area Spotify forgot to close. It's Section 3 of their Terms of Use, in plain language. Apple Music, Amazon Music, and YouTube Music all carry the same restriction.</p>
+    </div>
+  </div>
+</section>
+
+<!-- STAT -->
+<section class="callout-stat">
+  <div class="container">
+    <div class="callout-stat-number">$750&ndash;$30,000</div>
+    <p class="callout-stat-label">Statutory damages <strong>per song</strong> for infringement &mdash; up to $150,000 per song if a court finds it willful. A forty-song rotation is forty separate violations.</p>
+    <p class="callout-stat-source">U.S. Copyright Act, 17 U.S.C. &sect; 504(c) &middot; Most real-world outcomes settle from a few thousand dollars to low five figures &mdash; <a href="blog/can-you-play-spotify-in-your-store.html" style="color: inherit;">what enforcement actually looks like</a></p>
+  </div>
+</section>
+
+<!-- THREE PATHS -->
+<section class="section">
+  <div class="container" style="max-width: 1080px;">
+    <div class="fade-up" style="text-align: center; max-width: 720px; margin: 0 auto;">
+      <span class="section-eyebrow">The legal paths</span>
+      <h2>Three ways to fix it &mdash; and what each honestly costs.</h2>
+    </div>
+    <div class="sfb-paths">
+      <div class="sfb-path fade-up">
+        <h3>Rent a licensed catalog</h3>
+        <span class="sfb-path-price">from roughly $20 / month</span>
+        <p>Services like Soundtrack Your Brand and SoundMachine bundle the PRO licenses into a subscription and feel the most like Spotify &mdash; some are built around importing the playlists you already use. Credit where it's due: if "the same songs, legally" is the whole goal, this works. The trade: you're renting the same shared catalog your competitors stream, and the billing can multiply inside a single location as you add areas and speakers.</p>
+      </div>
+      <div class="sfb-path fade-up">
+        <h3>License the PROs directly</h3>
+        <span class="sfb-path-price">$1,000s / year, per location</span>
+        <p>You can buy public performance licenses straight from ASCAP, BMI, SESAC, and GMR. You'd need all four to safely cover a streaming catalog, each priced separately by venue size and use. This mostly makes sense for live music, DJs, and special cases &mdash; not for an owner-operator who just wants the floor covered. <a href="music-license-cost-calculator.html">Run your numbers</a>.</p>
+      </div>
+      <div class="sfb-path is-entuned fade-up">
+        <h3>Play music nobody has to license</h3>
+        <span class="sfb-path-price">Free &mdash; $0 / location</span>
+        <p>Entuned composes and owns every track outright, so there's no PRO obligation passed to you at all &mdash; indemnified the moment it plays. The music isn't a catalog made for radio; it's engineered for your store's customer and tied to outcomes like dwell time and conversion. Entuned Free has no card, no trial timer, no expiry &mdash; it's the legal fix on its own. Paid tiers ($99&ndash;$399/mo) add deeper customization and measurement when you want them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE REFRAME -->
+<section class="section section--tinted">
+  <div class="container">
+    <div class="fade-up" style="max-width: 820px; margin: 0 auto;">
+      <span class="section-eyebrow">The part nobody tells you</span>
+      <h2>Legality is the smaller problem.</h2>
+      <p style="font-size: 1.0625rem; line-height: 1.75; opacity: 0.9;">Every option above makes you legal. Only one asks what the music is <em>for</em>. Spotify's catalog &mdash; and every licensed copy of it &mdash; was produced to hold a listener's attention on headphones, not to move a customer through a floor. Forty years of retail research says tempo, key, and energy measurably shift dwell time, spend, and willingness to pay. If you're fixing the licensing anyway, it's worth fixing the strategy in the same move. That's the case we make in <a href="how-music-affects-retail.html">How Music Affects Retail</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container" style="max-width: 760px;">
+    <div class="fade-up" style="margin-bottom: 2rem;">
+      <span class="section-eyebrow">Common questions</span>
+      <h2>Spotify in a business, answered straight</h2>
+    </div>
+    <div class="faq-list fade-up">
+      <details class="pricing-faq-item">
+        <summary class="pricing-faq-q">Does Spotify for Business exist?</summary>
+        <div class="pricing-faq-a">No. Spotify does not sell a business, commercial, or venue tier in the United States. Every Spotify plan &mdash; Free, Premium, Family, Duo &mdash; is licensed for personal, non-commercial use only under their Terms of Use.</div>
+      </details>
+      <details class="pricing-faq-item">
+        <summary class="pricing-faq-q">Can I play Spotify in my store if I pay for Premium?</summary>
+        <div class="pricing-faq-a">No. Price isn't the issue &mdash; license scope is. Premium removes ads for personal listening; it doesn't add the public performance rights a commercial space requires. The same applies to Apple Music, Amazon Music, and YouTube Music. <a href="spotify-business-risk-check.html">Check your store's exposure</a>.</div>
+      </details>
+      <details class="pricing-faq-item">
+        <summary class="pricing-faq-q">What are the fines for playing Spotify in a business?</summary>
+        <div class="pricing-faq-a">Statutory damages under 17 U.S.C. &sect; 504(c) run $750 to $30,000 per song, up to $150,000 per song for willful infringement. In practice most cases settle after a PRO demand letter, typically from a few thousand dollars to low five figures &mdash; still many years of what a legal option costs.</div>
+      </details>
+      <details class="pricing-faq-item">
+        <summary class="pricing-faq-q">Is Soundtrack Your Brand the same as Spotify for Business?</summary>
+        <div class="pricing-faq-a">It's the closest thing on the market &mdash; and the history helps explain the confusion: it launched as a Spotify-backed venture marketed as "Spotify Business" before becoming the independent Soundtrack Your Brand. Today it's a legitimate fix for "the same songs, legally." It's still a shared catalog rented per month, which is a different product than music engineered for your specific store.</div>
+      </details>
+      <details class="pricing-faq-item">
+        <summary class="pricing-faq-q">How is Entuned legal without ASCAP or BMI licenses?</summary>
+        <div class="pricing-faq-a">PRO licenses exist to pay third-party rights holders. Entuned composes and owns its music outright, so for audio Entuned delivers there are no third-party performance rights to license &mdash; and we indemnify the operator on top of it. Details on the <a href="licensing.html">licensing page</a>.</div>
+      </details>
+      <details class="pricing-faq-item">
+        <summary class="pricing-faq-q">Nobody's caught us in five years. Why change now?</summary>
+        <div class="pricing-faq-a">Enforcement is uneven, but it's real and it's per-song, with exposure accumulating the entire time the speakers are on. Most operators fix it as soon as they learn how the licensing actually works &mdash; usually because the fix costs less than the worry. The free path costs nothing at all.</div>
+      </details>
+      <details class="pricing-faq-item">
+        <summary class="pricing-faq-q">Isn't my store too small to need a license?</summary>
+        <div class="pricing-faq-a">There's a real small-establishment exemption in U.S. copyright law (17 U.S.C. &sect; 110(5)(B)), and it's worth knowing what it actually covers: over-the-air radio and TV broadcasts, in stores under certain square-footage and speaker limits. It has never covered streaming services. A small store playing Spotify is not exempt. <a href="music-license-exemption-checker.html">Check whether your setup qualifies for anything</a>.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="alt-final">
+  <div class="container">
+    <div class="fade-up">
+      <h2>Fix the license. Upgrade the strategy.</h2>
+      <p>Entuned Free &mdash; no credit card, no time limit. Original music engineered for your customer and your store, owned outright and indemnified the moment it plays.</p>
+      <a href="https://app.entuned.co/start" class="btn btn-primary">Start Free</a>
+      <div class="alt-internal-links">
+        Keep reading: <a href="spotify-business-risk-check.html">Spotify business risk check</a> &middot;
+        <a href="blog/can-you-play-spotify-in-your-store.html">Is it actually illegal to use Spotify in my store?</a> &middot;
+        <a href="licensing.html">Licensing &amp; PRO coverage</a> &middot;
+        <a href="retail-music-faq.html">Retail music FAQ</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JSON-LD: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Does Spotify for Business exist?", "acceptedAnswer": {"@type": "Answer", "text": "No. Spotify does not sell a business, commercial, or venue tier in the United States. Every Spotify plan is licensed for personal, non-commercial use only under Spotify's Terms of Use."}},
+    {"@type": "Question", "name": "Can I play Spotify in my store if I pay for Premium?", "acceptedAnswer": {"@type": "Answer", "text": "No. Premium removes ads for personal listening; it does not add the public performance rights a commercial space requires. The same applies to Apple Music, Amazon Music, and YouTube Music."}},
+    {"@type": "Question", "name": "What are the fines for playing Spotify in a business?", "acceptedAnswer": {"@type": "Answer", "text": "Statutory damages under 17 U.S.C. § 504(c) run $750 to $30,000 per song, up to $150,000 per song for willful infringement. Most cases settle after a PRO demand letter, typically from a few thousand dollars to low five figures."}},
+    {"@type": "Question", "name": "Is Soundtrack Your Brand the same as Spotify for Business?", "acceptedAnswer": {"@type": "Answer", "text": "It is the closest thing on the market — it launched as a Spotify-backed venture marketed as Spotify Business before becoming the independent Soundtrack Your Brand. It is still a shared rented catalog, a different product than music engineered for a specific store."}},
+    {"@type": "Question", "name": "Isn't my store too small to need a license?", "acceptedAnswer": {"@type": "Answer", "text": "The small-establishment exemption in 17 U.S.C. § 110(5)(B) covers over-the-air radio and TV broadcasts only, under square-footage and speaker limits. It has never covered streaming services. A small store playing Spotify is not exempt."}},
+    {"@type": "Question", "name": "How is Entuned legal without ASCAP or BMI licenses?", "acceptedAnswer": {"@type": "Answer", "text": "PRO licenses pay third-party rights holders. Entuned composes and owns its music outright, so for audio Entuned delivers there are no third-party performance rights to license, and Entuned indemnifies the operator."}},
+    {"@type": "Question", "name": "Nobody has caught us in five years. Why change now?", "acceptedAnswer": {"@type": "Answer", "text": "Enforcement is uneven but real and per-song, with exposure accumulating while the speakers are on. The fix costs less than the uncertainty, and the free path costs nothing."}}
+  ]
+}
+</script>
+  </main>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4><img src="img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Engineered retail audio. PRO-indemnified.</p>
+      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
+      <div class="footer-newsletter">
+        <h4>Newsletter</h4>
+        <p class="footer-newsletter-tagline">Retail music, from the floor. Research and field notes, in your inbox.</p>
+        <iframe src="https://entuned.substack.com/embed" title="Subscribe to the Entuned newsletter" loading="lazy" frameborder="0" scrolling="no"></iframe>
+      </div>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="enterprise.html">Enterprise</a></li>
+        <li><a href="why-entuned.html">Why Entuned</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For Your Industry</h4>
+      <ul>
+        <li><a href="for-apparel.html">Apparel</a></li>
+        <li><a href="for-beauty-supply.html">Beauty Supply</a></li>
+        <li><a href="for-cosmetics.html">Cosmetics &amp; Beauty</a></li>
+        <li><a href="for-furniture-mattress.html">Furniture &amp; Mattress</a></li>
+        <li><a href="for-home-goods.html">Home Goods</a></li>
+        <li><a href="for-jewelry.html">Jewelry</a></li>
+        <li><a href="for-specialty-retail.html">Specialty Retail</a></li>
+        <li><a href="for-sporting-goods.html">Sporting Goods</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
+      <ul>
+        <li><a href="for-retail-leaders.html">Retail Leaders</a></li>
+        <li><a href="impact.html">Impact Calculator</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Research</h4>
+      <ul>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="science.html">The Science</a></li>
+        <li><a href="will-it-retail.html">Will It Retail?</a></li>
+        <li><a href="https://entuned.substack.com" target="_blank" rel="noopener">Newsletter</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="how-music-affects-retail.html">How Music Affects Retail</a></li>
+        <li><a href="how-to-increase-aov-retail.html">Increase Average Order Value</a></li>
+        <li><a href="how-to-increase-dwell-time-retail.html">Increase Dwell Time</a></li>
+        <li><a href="how-to-increase-impulse-purchases-retail.html">Drive Impulse Purchases</a></li>
+        <li><a href="how-to-improve-retail-conversion-rate.html">Improve Conversion Rate</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="partners.html">Partners</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="licensing.html">Licensing &amp; PRO Coverage</a></li>
+        <li><a href="data.html">Data Practices</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="pricing/terms.html">Subscription Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG', {
+      linker: {
+        domains: ['entuned.co', 'music.entuned.co', 'app.entuned.co']
+      }
+    });
+  </script>
+  <script defer src="js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>
