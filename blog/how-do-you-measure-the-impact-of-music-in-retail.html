@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- First-touch signup attribution. Stamps a `.entuned.co` cookie on the
+       FIRST page view so the original source (referrer + UTM) survives the
+       entuned.co -> app.entuned.co/start hop. The dashboard's /start reads the
+       same cookie (same name + shape) and forwards it to the server. Runs
+       early + first-touch-wins so it never overwrites the true upstream. -->
+  <script>
+    (function () {
+      try {
+        if (/(?:^|; )entuned_attr=/.test(document.cookie)) return;
+        var p = new URLSearchParams(window.location.search);
+        var payload = {
+          r: document.referrer || undefined,
+          lp: (window.location.pathname + window.location.search) || undefined,
+          us: p.get('utm_source') || undefined,
+          um: p.get('utm_medium') || undefined,
+          uc: p.get('utm_campaign') || undefined,
+          ut: p.get('utm_term') || undefined,
+          un: p.get('utm_content') || undefined,
+          t: new Date().toISOString()
+        };
+        var host = window.location.hostname;
+        var domain = (host === 'entuned.co' || /\.entuned\.co$/.test(host)) ? '; domain=.entuned.co' : '';
+        document.cookie = 'entuned_attr=' + encodeURIComponent(JSON.stringify(payload)) +
+          '; path=/' + domain + '; max-age=' + (30 * 24 * 60 * 60) + '; SameSite=Lax';
+      } catch (e) { /* best-effort */ }
+    })();
+  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/blog/how-do-you-measure-the-impact-of-music-in-retail.html">
+  <meta name="robots" content="index, follow">
+  <title>How Do You Measure the Impact of Music in Retail? | Entuned</title>
+  <meta name="description" content="Measuring music&#x27;s retail impact requires tracking three links: environment to emotion, emotion to behavior, behavior to purchase. The key metrics are...">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="../rss.xml">
+  <meta property="og:title" content="How Do You Measure the Impact of Music in Retail? | Entuned">
+  <meta property="og:description" content="Measuring music&#x27;s retail impact requires tracking three links: environment to emotion, emotion to behavior, behavior to purchase. The key metrics are...">
+  <meta property="og:url" content="https://entuned.co/blog/how-do-you-measure-the-impact-of-music-in-retail.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://entuned.co/img/blog/how-do-you-measure-the-impact-of-music-in-retail.jpg">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-06-06">
+  <meta property="article:author" content="Daniel Fox">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How Do You Measure the Impact of Music in Retail? | Entuned">
+  <meta name="twitter:description" content="Measuring music&#x27;s retail impact requires tracking three links: environment to emotion, emotion to behavior, behavior to purchase. The key metrics are...">
+  <meta name="twitter:image" content="https://entuned.co/img/blog/how-do-you-measure-the-impact-of-music-in-retail.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How Do You Measure the Impact of Music in Retail? | Entuned",
+  "author": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "datePublished": "2026-06-06",
+  "dateModified": "2026-06-06",
+  "description": "Measuring music's retail impact requires tracking three links: environment to emotion, emotion to behavior, behavior to purchase. The key metrics are...",
+  "image": "https://entuned.co/img/blog/how-do-you-measure-the-impact-of-music-in-retail.jpg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://entuned.co/blog/how-do-you-measure-the-impact-of-music-in-retail.html"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "retail music strategy"
+    },
+    {
+      "@type": "Thing",
+      "name": "in-store customer behavior"
+    },
+    {
+      "@type": "Thing",
+      "name": "engineered retail audio"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "How Do You Measure the Impact of Music in Retail?",
+  "description": "Measuring music's retail impact requires tracking three links: environment to emotion, emotion to behavior, behavior to purchase. The key metrics are...",
+  "thumbnailUrl": [
+    "https://entuned.co/img/blog/how-do-you-measure-the-impact-of-music-in-retail.jpg"
+  ],
+  "uploadDate": "2026-06-06",
+  "contentUrl": "https://www.youtube.com/watch?v=JSJljS-hdF8",
+  "embedUrl": "https://www.youtube.com/embed/JSJljS-hdF8",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "duration": "PT4M47S",
+  "hasPart": [
+    {
+      "@type": "Clip",
+      "name": "Nobody measures music. That's the problem.",
+      "startOffset": 0,
+      "url": "https://www.youtube.com/watch?v=JSJljS-hdF8&t=0s"
+    },
+    {
+      "@type": "Clip",
+      "name": "The three-link chain you need to measure",
+      "startOffset": 22,
+      "url": "https://www.youtube.com/watch?v=JSJljS-hdF8&t=22s"
+    },
+    {
+      "@type": "Clip",
+      "name": "The metrics that matter",
+      "startOffset": 70,
+      "url": "https://www.youtube.com/watch?v=JSJljS-hdF8&t=70s"
+    },
+    {
+      "@type": "Clip",
+      "name": "The testing framework",
+      "startOffset": 125,
+      "url": "https://www.youtube.com/watch?v=JSJljS-hdF8&t=125s"
+    },
+    {
+      "@type": "Clip",
+      "name": "What \"no effect\" actually means",
+      "startOffset": 175,
+      "url": "https://www.youtube.com/watch?v=JSJljS-hdF8&t=175s"
+    },
+    {
+      "@type": "Clip",
+      "name": "Building your measurement system",
+      "startOffset": 215,
+      "url": "https://www.youtube.com/watch?v=JSJljS-hdF8&t=215s"
+    },
+    {
+      "@type": "Clip",
+      "name": "Start measuring",
+      "startOffset": 245,
+      "url": "https://www.youtube.com/watch?v=JSJljS-hdF8&t=245s"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I measure whether music is actually helping my store?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Track three things: dwell time (music adds ~8 min vs. silence), basket size (slow tempo produced 38% higher daily sales in the foundational study), and items per transaction. Log what music parameters are playing each hour and correlate with hourly sales data from your POS. The mechanism is: environment shapes emotion, emotion shapes behavior, behavior shapes spend."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A study of 140 stores found no effect \u2014 so does music even work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "That 2025 EMAC study used generic, non-adaptive music across all 140 stores and found no overall effect. But loyalty members did respond. The takeaway isn't \"music doesn't work\" \u2014 it's \"generic music doesn't produce measurable results in generic conditions.\" Adapted, targeted music is what shows up in the data."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the minimum I need to start measuring?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Log music parameters by hour, track hourly sales and basket size from your POS, add a basic foot traffic counter, and correlate weekly. Change one variable at a time and measure for 2-4 weeks per condition. Entuned automates this entire process \u2014 try the free tier at entuned.co to see your own data. Full citations in the description. This is video 36 of 50 in this series."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://entuned.co/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How Do You Measure the Impact of Music in Retail? | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=f83c77c3">
+  <link rel="stylesheet" href="../styles/blog.css">
+  
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav aria-label="Main navigation">
+  <div class="container">
+    <a href="/" class="logo"><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="../how-it-works.html">How It Works</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li class="nav-cta-item"><a href="https://app.entuned.co/start" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Start Free</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+  </div>
+</nav>
+
+  <main>
+  
+<!-- Reading progress bar -->
+<div class="blog-progress" aria-hidden="true">
+  <div class="blog-progress__bar" id="reading-progress"></div>
+</div>
+
+<article class="blog-article">
+
+  <!-- Article header -->
+  <header class="blog-article__header">
+    <div class="blog-eyebrow">WATCH</div>
+    <h1 class="blog-headline">How Do You Measure the Impact of Music in Retail?</h1>
+    <p class="blog-dek">Measuring music&#39;s retail impact requires tracking three links: environment to emotion, emotion to behavior, behavior to purchase.</p>
+    <div class="blog-byline">
+      <span class="blog-byline__author">Daniel Fox</span>
+      <span class="blog-byline__role">Founder &amp; CEO</span>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <time class="blog-byline__date" datetime="2026-06-06">2026-06-06</time>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <span class="blog-byline__reading-time">5 min read</span>
+    </div>
+  </header>
+
+  <!-- Hero image -->
+  <figure class="blog-hero fade-up">
+    <img src="../img/blog/how-do-you-measure-the-impact-of-music-in-retail.jpg" alt="How Do You Measure the Impact of Music in Retail?" class="blog-hero__img" loading="lazy">
+  </figure>
+
+  <!-- Key takeaways -->
+  <div class="blog-takeaways">
+  <div class="blog-takeaways__title">Key takeaways</div>
+  <ul>
+    <li>Track three things: dwell time (music adds ~8 min vs.</li>
+    <li>That 2025 EMAC study used generic, non-adaptive music across all 140 stores and found no overall effect.</li>
+    <li>Log music parameters by hour, track hourly sales and basket size from your POS, add a basic foot traffic counter, and correlate weekly.</li>
+  </ul>
+</div>
+
+  <!-- Article body (all sections except key_takeaways, cta, related) -->
+  <div class="blog-article__body">
+    <div class="blog-video fade-up">
+  <div class="blog-video__frame">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/JSJljS-hdF8?rel=0"
+      title="How Do You Measure the Impact of Music in Retail?"
+      loading="lazy"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
+  </div>
+</div>
+
+
+<div class="blog-prose">
+  <p>Measuring music&rsquo;s retail impact requires tracking three links: environment to emotion, emotion to behavior, behavior to purchase. The key metrics are dwell time (music adds ~8 minutes vs. silence), basket size (slow tempo produced 38% higher daily sales), and items per transaction. Most retailers never measure any of them.</p>
+<p>In this video I walk through the specific metrics that matter, the testing framework the research uses (controlled variation, sufficient sample size, consistent conditions), and how to build a minimum viable measurement system for your store.</p>
+</div>
+
+<div class="blog-prose">
+  <p>Here’s a challenge for you. Go ask the person who chose the music in your store what it’s doing to your sales. I’ll wait. If they can’t answer with a number, you don’t have a music strategy. You have a playlist. There’s a difference.</p>
+</div>
+
+<h2 id="why-measurement-matters-more-than-selection" class="blog-subhead blog-subhead--h2">
+  Why Measurement Matters More Than Selection
+  <a href="#why-measurement-matters-more-than-selection" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Everyone obsesses over what music to play. Almost nobody measures what it does. And that’s backwards, because the research shows that the measurable effects are massive — but also highly conditional. The classic Journal of Marketing study from 1982 found a 38 percent lift in supermarket sales from tempo alone. But a large-scale study presented at the European Marketing Academy conference in 2025 — 140 stores — found no overall tempo effect at all. Zero. The only group that responded was loyalty program members. Same variable. Radically different outcomes. Why? Context. Your store is not that supermarket from 1982. The only way to know what works for you is to measure it.</p>
+</div>
+
+<h2 id="the-four-metrics-that-matter" class="blog-subhead blog-subhead--h2">
+  The Four Metrics That Matter
+  <a href="#the-four-metrics-that-matter" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Based on the research, here are the four things you should actually be tracking. Dwell time. A study in the Journal of Retailing and Consumer Services from 2012 showed that music versus silence added about 8 minutes of browsing time across 550 participants. Track how long customers stay. If you change the music and dwell time shifts, that’s signal. Average transaction value. The Journal of Consumer Research restaurant study from 1986 showed that slow music led to about three additional drink orders per table. In Perceptual and Motor Skills in 2003, soft music added roughly $3.05 per check. Track your average ticket before and after music changes. Conversion rate. More dwell time should lead to more purchases. If it doesn’t, your music might be pleasant but not motivating. The Journal of Retailing found in 1994 that pleasure at five minutes predicted unplanned spending — so the music needs to create pleasant dwell time, not just longer visits. Basket composition. Research in Frontiers in Psychology from 2023 found that fast tempo increased variety-seeking behavior — customers chose more different products. Track not just how much people spend, but what they buy.</p>
+</div>
+
+<h2 id="how-to-set-up-a-basic-test" class="blog-subhead blog-subhead--h2">
+  How to Set Up a Basic Test
+  <a href="#how-to-set-up-a-basic-test" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>You don’t need a PhD to measure this. Here’s a simple framework. Pick one variable to change. Don’t swap your entire playlist — change tempo, or change energy level, or change volume. One thing at a time. Run it for at least two comparable weeks. Same days of the week, similar traffic patterns. A versus B. Track the four metrics above. Most POS systems can give you dwell time proxies, average ticket, and basket data without any new tools. Compare. If the numbers move meaningfully — and consistently — you’ve found something. If they don’t, try another variable. The key insight from the research is that interactions matter more than main effects. That 2012 Marketing Letters study showed tempo and mode interact — slow tempo only worked in minor key. So if your single-variable test doesn’t show results, it might be the combination that matters.</p>
+</div>
+
+<h2 id="why-most-services-cant-help-you-here" class="blog-subhead blog-subhead--h2">
+  Why Most Services Can’t Help You Here
+  <a href="#why-most-services-cant-help-you-here" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Here’s the problem with most retail music providers: they give you music, but not measurement. You get a playlist and a scheduler, maybe a dashboard showing what songs played. But no connection to business outcomes. That’s like a marketing agency that runs ads but doesn’t track conversions. You’re spending money and hoping. This is one of the core reasons we built Entuned the way we did. Because if you can’t measure what the music does, you can’t improve it. And if you can’t improve it, you’re leaving the most leveraged variable in your store environment completely unoptimized. Entuned tracks what’s playing against what’s happening in the store, so changes aren’t guesses — they’re informed.</p>
+</div>
+
+<h2 id="the-mindset-shift" class="blog-subhead blog-subhead--h2">
+  The Mindset Shift
+  <a href="#the-mindset-shift" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Stop thinking of music as an amenity. Start thinking of it as a testable input — like pricing, like merchandising, like lighting. The research gives us the variables. Measurement tells us which ones work in your specific context. Every other part of your store gets optimized. Music should too.</p>
+</div>
+
+<div class="blog-transcript fade-up">
+  <h2 class="blog-transcript__heading" id="chapters">Chapters</h2>
+  <ol class="blog-transcript__toc">
+    <li>
+      <a href="https://www.youtube.com/watch?v=JSJljS-hdF8&amp;t=0s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">0:00</span>
+        Nobody measures music. That&#39;s the problem.
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=JSJljS-hdF8&amp;t=22s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">0:22</span>
+        The three-link chain you need to measure
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=JSJljS-hdF8&amp;t=70s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">1:10</span>
+        The metrics that matter
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=JSJljS-hdF8&amp;t=125s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">2:05</span>
+        The testing framework
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=JSJljS-hdF8&amp;t=175s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">2:55</span>
+        What &#34;no effect&#34; actually means
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=JSJljS-hdF8&amp;t=215s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">3:35</span>
+        Building your measurement system
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=JSJljS-hdF8&amp;t=245s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">4:05</span>
+        Start measuring
+      </a>
+    </li>
+  </ol>
+
+</div>
+
+<h2 id="how-do-i-measure-whether-music-is-actually-helping-my-store" class="blog-subhead blog-subhead--h2">
+  How do I measure whether music is actually helping my store?
+  <a href="#how-do-i-measure-whether-music-is-actually-helping-my-store" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Track three things: dwell time (music adds ~8 min vs. silence), basket size (slow tempo produced 38% higher daily sales in the foundational study), and items per transaction. Log what music parameters are playing each hour and correlate with hourly sales data from your POS. The mechanism is: environment shapes emotion, emotion shapes behavior, behavior shapes spend.</p>
+</div>
+
+<h2 id="a-study-of-140-stores-found-no-effect-so-does-music-even-work" class="blog-subhead blog-subhead--h2">
+  A study of 140 stores found no effect — so does music even work?
+  <a href="#a-study-of-140-stores-found-no-effect-so-does-music-even-work" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>That 2025 EMAC study used generic, non-adaptive music across all 140 stores and found no overall effect. But loyalty members did respond. The takeaway isn&rsquo;t &ldquo;music doesn&rsquo;t work&rdquo; — it&rsquo;s &ldquo;generic music doesn&rsquo;t produce measurable results in generic conditions.&rdquo; Adapted, targeted music is what shows up in the data.</p>
+</div>
+
+<h2 id="whats-the-minimum-i-need-to-start-measuring" class="blog-subhead blog-subhead--h2">
+  What&#39;s the minimum I need to start measuring?
+  <a href="#whats-the-minimum-i-need-to-start-measuring" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Log music parameters by hour, track hourly sales and basket size from your POS, add a basic foot traffic counter, and correlate weekly. Change one variable at a time and measure for 2-4 weeks per condition. Entuned automates this entire process — try the free tier at entuned.co to see your own data. Full citations in the description. This is video 36 of 50 in this series.</p>
+</div>
+
+<div class="blog-references fade-up">
+  <h2 class="blog-references__heading" id="references">References</h2>
+  <ol class="blog-references__list">
+    <li>Sherman, E. et al. (1997). &#34;Store Environment and Consumer Purchase Behavior.&#34; Psychology &amp; Marketing, 14(4), 361-378.</li>
+    <li>Andersson, P.K. et al. (2012). &#34;Let the Music Play or Not.&#34; Journal of Retailing and Consumer Services, 19(6), 553-560.</li>
+    <li>Milliman, R.E. (1982). &#34;Using Background Music to Affect the Behavior of Supermarket Shoppers.&#34; Journal of Marketing, 46(3), 86-91.</li>
+    <li>Milliman, R.E. (1986). &#34;The Influence of Background Music on the Behavior of Restaurant Patrons.&#34; Journal of Consumer Research, 13(2), 286-289.</li>
+    <li>Yalch, R.F. &amp; Spangenberg, E.R. (2000). &#34;The Effects of Music in a Retail Setting on Real and Perceived Shopping Times.&#34; Journal of Business Research, 49(2), 139-147.</li>
+    <li>Knoferle, K.M. et al. (2012). &#34;It Is All in the Mix: The Interactive Effect of Music Tempo and Mode on In-Store Sales.&#34; Marketing Letters, 23(1), 325-337.</li>
+    <li>Knoferle, K.M. et al. (2017). &#34;An Upbeat Crowd: Fast In-Store Music Alleviates Negative Effects of High Social Density on Customers&#39; Spending.&#34; Journal of Retailing, 93(4), 541-549.</li>
+    <li>EMAC Conference Proceedings (2025). Field experiment across 140 retail stores examining music&#39;s effect on sales performance.</li>
+  </ol>
+</div>
+
+  </div>
+
+  <!-- CTA -->
+  <aside class="blog-cta blog-cta--start-free">
+  <div class="blog-cta__headline">Hear it on your floor.</div>
+  <div class="blog-cta__body">Entuned engineers original music for your store at the parameter level &amp;mdash; tempo, key, lyrical density, energy arc &amp;mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &amp;mdash; no card, no time limit. PRO-indemnified the moment it plays.</div>
+  <a href="https://app.entuned.co/start" class="blog-cta__link">Start Free &rarr;</a>
+</aside>
+
+  <!-- Related posts -->
+  <section class="blog-related" aria-label="Related posts">
+  <h2 class="blog-related__title">Keep reading</h2>
+  <div class="blog-related__grid">
+    <a href="../blog/measure-roi-retail-music.html" class="blog-related__card">
+      <img src="../img/blog/measure-roi-retail-music.jpg" alt="How to Measure the ROI of In-Store Music" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">How to Measure the ROI of In-Store Music</span>
+      <span class="blog-related__dek">Your music is a line item with no return number next to it. Here is why, and what to do about it at your next QBR.</span>
+    </a>
+    <a href="../blog/how-to-measure-if-your-store-music-is-working.html" class="blog-related__card">
+      <img src="../img/blog/how-to-measure-if-your-store-music-is-working.jpg" alt="How to Measure If Your Store Music Is Working" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">How to Measure If Your Store Music Is Working</span>
+      <span class="blog-related__dek">A short operator audit for telling whether the music in your stores is pulling its weight or costing you sales.</span>
+    </a>
+    <a href="../blog/how-to-choose-music-for-your-retail-store.html" class="blog-related__card">
+      <img src="../img/blog/how-to-choose-music-for-your-retail-store.jpg" alt="How to Choose Music for Your Retail Store" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">How to Choose Music for Your Retail Store</span>
+      <span class="blog-related__dek">Most retail operators inherit their store music by accident. Choosing well starts with knowing your customer, not knowing your genres.</span>
+    </a>
+  </div>
+</section>
+
+</article>
+
+<!-- Blog-specific JS (reading progress + anchor copy) -->
+<script>
+  // Reading progress bar
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    document.getElementById('reading-progress').style.width = pct + '%';
+  });
+
+  // Anchor link copy-to-clipboard
+  document.querySelectorAll('.anchor-link').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      navigator.clipboard.writeText(window.location.origin + window.location.pathname + a.getAttribute('href'));
+      a.textContent = '\u2713'; setTimeout(() => a.textContent = '#', 1500);
+    });
+  });
+</script>
+  </main>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Engineered retail audio. PRO-indemnified.</p>
+      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="../how-it-works.html">How It Works</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="../enterprise.html">Enterprise</a></li>
+        <li><a href="../why-entuned.html">Why Entuned</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For Your Industry</h4>
+      <ul>
+        <li><a href="../for-apparel.html">Apparel</a></li>
+        <li><a href="../for-beauty-supply.html">Beauty Supply</a></li>
+        <li><a href="../for-cosmetics.html">Cosmetics &amp; Beauty</a></li>
+        <li><a href="../for-furniture-mattress.html">Furniture &amp; Mattress</a></li>
+        <li><a href="../for-home-goods.html">Home Goods</a></li>
+        <li><a href="../for-jewelry.html">Jewelry</a></li>
+        <li><a href="../for-specialty-retail.html">Specialty Retail</a></li>
+        <li><a href="../for-sporting-goods.html">Sporting Goods</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
+      <ul>
+        <li><a href="../for-retail-leaders.html">Retail Leaders</a></li>
+        <li><a href="../impact.html">Impact Calculator</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Research</h4>
+      <ul>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../results.html">Results</a></li>
+        <li><a href="../science.html">The Science</a></li>
+        <li><a href="../will-it-retail.html">Will It Retail?</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="../how-music-affects-retail.html">How Music Affects Retail</a></li>
+        <li><a href="../how-to-increase-aov-retail.html">Increase Average Order Value</a></li>
+        <li><a href="../how-to-increase-dwell-time-retail.html">Increase Dwell Time</a></li>
+        <li><a href="../how-to-increase-impulse-purchases-retail.html">Drive Impulse Purchases</a></li>
+        <li><a href="../how-to-improve-retail-conversion-rate.html">Improve Conversion Rate</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../partners.html">Partners</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="../licensing.html">Licensing &amp; PRO Coverage</a></li>
+        <li><a href="../data.html">Data Practices</a></li>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="../pricing/terms.html">Subscription Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG', {
+      linker: {
+        domains: ['entuned.co', 'music.entuned.co', 'app.entuned.co']
+      }
+    });
+  </script>
+  <script defer src="../js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>

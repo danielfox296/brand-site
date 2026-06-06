@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- First-touch signup attribution. Stamps a `.entuned.co` cookie on the
+       FIRST page view so the original source (referrer + UTM) survives the
+       entuned.co -> app.entuned.co/start hop. The dashboard's /start reads the
+       same cookie (same name + shape) and forwards it to the server. Runs
+       early + first-touch-wins so it never overwrites the true upstream. -->
+  <script>
+    (function () {
+      try {
+        if (/(?:^|; )entuned_attr=/.test(document.cookie)) return;
+        var p = new URLSearchParams(window.location.search);
+        var payload = {
+          r: document.referrer || undefined,
+          lp: (window.location.pathname + window.location.search) || undefined,
+          us: p.get('utm_source') || undefined,
+          um: p.get('utm_medium') || undefined,
+          uc: p.get('utm_campaign') || undefined,
+          ut: p.get('utm_term') || undefined,
+          un: p.get('utm_content') || undefined,
+          t: new Date().toISOString()
+        };
+        var host = window.location.hostname;
+        var domain = (host === 'entuned.co' || /\.entuned\.co$/.test(host)) ? '; domain=.entuned.co' : '';
+        document.cookie = 'entuned_attr=' + encodeURIComponent(JSON.stringify(payload)) +
+          '; path=/' + domain + '; max-age=' + (30 * 24 * 60 * 60) + '; SameSite=Lax';
+      } catch (e) { /* best-effort */ }
+    })();
+  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/blog/how-much-should-retailers-spend-on-music-the-roi-math.html">
+  <meta name="robots" content="index, follow">
+  <title>How Much Should Retailers Spend on Music? The ROI Math | Entuned</title>
+  <meta name="description" content="Retail music services cost $15-100/month per location, but the real question is ROI, not cost. A conservative 5% sales lift on $500K in annual revenue...">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="../rss.xml">
+  <meta property="og:title" content="How Much Should Retailers Spend on Music? The ROI Math | Entuned">
+  <meta property="og:description" content="Retail music services cost $15-100/month per location, but the real question is ROI, not cost. A conservative 5% sales lift on $500K in annual revenue...">
+  <meta property="og:url" content="https://entuned.co/blog/how-much-should-retailers-spend-on-music-the-roi-math.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://entuned.co/img/blog/how-much-should-retailers-spend-on-music-the-roi-math.jpg">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-06-06">
+  <meta property="article:author" content="Daniel Fox">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How Much Should Retailers Spend on Music? The ROI Math | Entuned">
+  <meta name="twitter:description" content="Retail music services cost $15-100/month per location, but the real question is ROI, not cost. A conservative 5% sales lift on $500K in annual revenue...">
+  <meta name="twitter:image" content="https://entuned.co/img/blog/how-much-should-retailers-spend-on-music-the-roi-math.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How Much Should Retailers Spend on Music? The ROI Math | Entuned",
+  "author": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "datePublished": "2026-06-06",
+  "dateModified": "2026-06-06",
+  "description": "Retail music services cost $15-100/month per location, but the real question is ROI, not cost. A conservative 5% sales lift on $500K in annual revenue...",
+  "image": "https://entuned.co/img/blog/how-much-should-retailers-spend-on-music-the-roi-math.jpg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://entuned.co/blog/how-much-should-retailers-spend-on-music-the-roi-math.html"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "retail music strategy"
+    },
+    {
+      "@type": "Thing",
+      "name": "in-store customer behavior"
+    },
+    {
+      "@type": "Thing",
+      "name": "engineered retail audio"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "How Much Should Retailers Spend on Music? The ROI Math",
+  "description": "Retail music services cost $15-100/month per location, but the real question is ROI, not cost. A conservative 5% sales lift on $500K in annual revenue...",
+  "thumbnailUrl": [
+    "https://entuned.co/img/blog/how-much-should-retailers-spend-on-music-the-roi-math.jpg"
+  ],
+  "uploadDate": "2026-06-06",
+  "contentUrl": "https://www.youtube.com/watch?v=U9kbTgGIMwM",
+  "embedUrl": "https://www.youtube.com/embed/U9kbTgGIMwM",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "duration": "PT4M29S",
+  "hasPart": [
+    {
+      "@type": "Clip",
+      "name": "You're asking the wrong budget question",
+      "startOffset": 0,
+      "url": "https://www.youtube.com/watch?v=U9kbTgGIMwM&t=0s"
+    },
+    {
+      "@type": "Clip",
+      "name": "The cost of doing nothing (silence isn't free)",
+      "startOffset": 18,
+      "url": "https://www.youtube.com/watch?v=U9kbTgGIMwM&t=18s"
+    },
+    {
+      "@type": "Clip",
+      "name": "What the market actually charges",
+      "startOffset": 55,
+      "url": "https://www.youtube.com/watch?v=U9kbTgGIMwM&t=55s"
+    },
+    {
+      "@type": "Clip",
+      "name": "The ROI framework",
+      "startOffset": 100,
+      "url": "https://www.youtube.com/watch?v=U9kbTgGIMwM&t=100s"
+    },
+    {
+      "@type": "Clip",
+      "name": "Where most retailers waste money",
+      "startOffset": 150,
+      "url": "https://www.youtube.com/watch?v=U9kbTgGIMwM&t=150s"
+    },
+    {
+      "@type": "Clip",
+      "name": "How to think about your budget",
+      "startOffset": 195,
+      "url": "https://www.youtube.com/watch?v=U9kbTgGIMwM&t=195s"
+    },
+    {
+      "@type": "Clip",
+      "name": "The bottom line",
+      "startOffset": 235,
+      "url": "https://www.youtube.com/watch?v=U9kbTgGIMwM&t=235s"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much should I spend on music for my store?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Retail music services range from $15-100/month per location. But the better question is ROI. Even a conservative 5% sales lift on $500K annual revenue produces $25,000 in additional revenue against a ~$600-1,200 annual cost. The research supports lifts of 12-38% when music parameters are properly optimized."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the most cost-effective approach?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Don't compare music costs to each other \u2014 compare them to the revenue opportunity. Prioritize adaptability and measurement over catalog size. Run a free trial (Entuned offers one at entuned.co), measure the results against your baseline for a few weeks, and let the data make the budget decision for you. Full citations in the description. This is video 35 of 50 in this series."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://entuned.co/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How Much Should Retailers Spend on Music? The ROI Math | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=f83c77c3">
+  <link rel="stylesheet" href="../styles/blog.css">
+  
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav aria-label="Main navigation">
+  <div class="container">
+    <a href="/" class="logo"><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="../how-it-works.html">How It Works</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li class="nav-cta-item"><a href="https://app.entuned.co/start" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Start Free</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+  </div>
+</nav>
+
+  <main>
+  
+<!-- Reading progress bar -->
+<div class="blog-progress" aria-hidden="true">
+  <div class="blog-progress__bar" id="reading-progress"></div>
+</div>
+
+<article class="blog-article">
+
+  <!-- Article header -->
+  <header class="blog-article__header">
+    <div class="blog-eyebrow">WATCH</div>
+    <h1 class="blog-headline">How Much Should Retailers Spend on Music? The ROI Math</h1>
+    <p class="blog-dek">Retail music services cost $15-100/month per location, but the real question is ROI, not cost.</p>
+    <div class="blog-byline">
+      <span class="blog-byline__author">Daniel Fox</span>
+      <span class="blog-byline__role">Founder &amp; CEO</span>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <time class="blog-byline__date" datetime="2026-06-06">2026-06-06</time>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <span class="blog-byline__reading-time">5 min read</span>
+    </div>
+  </header>
+
+  <!-- Hero image -->
+  <figure class="blog-hero fade-up">
+    <img src="../img/blog/how-much-should-retailers-spend-on-music-the-roi-math.jpg" alt="How Much Should Retailers Spend on Music? The ROI Math" class="blog-hero__img" loading="lazy">
+  </figure>
+
+  <!-- Key takeaways -->
+  <div class="blog-takeaways">
+  <div class="blog-takeaways__title">Key takeaways</div>
+  <ul>
+    <li>Retail music services range from $15-100/month per location.</li>
+    <li>Spotify and Apple Music are not licensed for commercial use — playing them in a store violates terms of service and exposes you to fines from performance rights organizations.</li>
+    <li>Don&#39;t compare music costs to each other — compare them to the revenue opportunity.</li>
+  </ul>
+</div>
+
+  <!-- Article body (all sections except key_takeaways, cta, related) -->
+  <div class="blog-article__body">
+    <div class="blog-video fade-up">
+  <div class="blog-video__frame">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/U9kbTgGIMwM?rel=0"
+      title="How Much Should Retailers Spend on Music? The ROI Math"
+      loading="lazy"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
+  </div>
+</div>
+
+
+<div class="blog-prose">
+  <p>Retail music services cost $15-100/month per location, but the real question is ROI, not cost. A conservative 5% sales lift on $500K in annual revenue produces $25,000 in additional revenue — against a $600-1,200 annual music cost, that&rsquo;s a 20-to-1 return. The research supports lifts of 12-38% when music is properly optimized.</p>
+<p>In this video I break down the actual cost landscape for retail music (from consumer streaming to custom scoring), run the ROI math against peer-reviewed findings, explain where most retailers waste money on music, and give you a framework for thinking about your budget.</p>
+</div>
+
+<div class="blog-prose">
+  <p>Retailers ask me this all the time: “What should I budget for music?” And my honest answer is — you’re asking the wrong question. The right question is: what’s the cost of getting it wrong? Because the research puts a number on that, and it’s way bigger than any subscription fee.</p>
+</div>
+
+<h2 id="the-cost-of-silence" class="blog-subhead blog-subhead--h2">
+  The Cost of Silence
+  <a href="#the-cost-of-silence" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Let’s start with the baseline. What happens when you play nothing? A study published in the Journal of Retailing and Consumer Services in 2012, with 550 participants, found that any music — compared to silence — added roughly 8 minutes of dwell time. Eight minutes. In retail, dwell time correlates directly with spending. If your average transaction is $40 and music keeps a customer browsing long enough to add one more item, that’s real revenue. And a study in Environment and Behavior from 2003 found that classical music in a restaurant drove average spend to about £32 per head — while pop music performed roughly the same as silence. The gap between the right music and no music is enormous. So step one: silence is not free. Silence has a cost, and it’s measured in lost dwell time and lower tickets.</p>
+</div>
+
+<h2 id="the-cost-of-wrong-music" class="blog-subhead blog-subhead--h2">
+  The Cost of Wrong Music
+  <a href="#the-cost-of-wrong-music" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Worse than silence? The wrong music. Research in the Journal of Business Research from 2006 showed that music-brand misfit didn’t just fail to generate lift — it actively damaged brand perception. Customers noticed the disconnect and it lowered their opinion of the store. That’s not a neutral outcome. That’s negative ROI on your music spend. And a 1966 study from the Journal of Applied Psychology demonstrated that cranking volume too high pushed customers out the door faster without increasing how much they bought. Same sales, fewer minutes in the store, worse experience. You paid for that music, and it worked against you. So the cost of wrong music isn’t just the subscription — it’s the damage it does while playing.</p>
+</div>
+
+<h2 id="what-the-right-music-is-worth" class="blog-subhead blog-subhead--h2">
+  What the Right Music Is Worth
+  <a href="#what-the-right-music-is-worth" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Now let’s look at the upside. The original supermarket tempo study from the Journal of Marketing in 1982 found a 38 percent increase in daily gross sales just from slowing the tempo. The restaurant study in Journal of Consumer Research a few years later showed 11 extra minutes and three additional drinks per table. A study in Perceptual and Motor Skills from 2003 found that soft background music added about $3.05 per check in a restaurant. Genre didn’t even matter — just keeping it soft. Run the math on your own numbers. If music adds even 5 percent to your average ticket across hundreds of transactions per week, what’s that worth annually? For most retailers, it’s thousands. For multi-location operators, tens of thousands. The music subscription is almost certainly the cheapest line item generating the highest percentage lift in your entire operating budget.</p>
+</div>
+
+<h2 id="how-to-think-about-pricing" class="blog-subhead blog-subhead--h2">
+  How to Think About Pricing
+  <a href="#how-to-think-about-pricing" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Here’s how I’d frame the budget decision. There are really three cost tiers in the market. The low end — $15 to $30 a month — usually gets you a basic commercial license and pre-built playlists. Better than silence, but no adaptation, no brand customization, and you’re playing the same catalog as everyone else. The mid tier — $30 to $100 a month — adds scheduling, some curation, and maybe genre filtering. Better, but still static. The upper tier — $100-plus — is where you start seeing adaptive systems, brand-specific sound design, analytics, and generative music. This is where the ROI research actually starts to apply, because these are the tools that can control for the variables the studies identify. At Entuned, we built a free tier because we believe the product should prove its value before you pay. If you can hear the difference in your store — and your data confirms it — the investment case makes itself. We didn’t want the pricing conversation to happen before the experience.</p>
+</div>
+
+<div class="blog-transcript fade-up">
+  <h2 class="blog-transcript__heading" id="chapters">Chapters</h2>
+  <ol class="blog-transcript__toc">
+    <li>
+      <a href="https://www.youtube.com/watch?v=U9kbTgGIMwM&amp;t=0s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">0:00</span>
+        You&#39;re asking the wrong budget question
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=U9kbTgGIMwM&amp;t=18s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">0:18</span>
+        The cost of doing nothing (silence isn&#39;t free)
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=U9kbTgGIMwM&amp;t=55s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">0:55</span>
+        What the market actually charges
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=U9kbTgGIMwM&amp;t=100s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">1:40</span>
+        The ROI framework
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=U9kbTgGIMwM&amp;t=150s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">2:30</span>
+        Where most retailers waste money
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=U9kbTgGIMwM&amp;t=195s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">3:15</span>
+        How to think about your budget
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=U9kbTgGIMwM&amp;t=235s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">3:55</span>
+        The bottom line
+      </a>
+    </li>
+  </ol>
+
+</div>
+
+<h2 id="how-much-should-i-spend-on-music-for-my-store" class="blog-subhead blog-subhead--h2">
+  How much should I spend on music for my store?
+  <a href="#how-much-should-i-spend-on-music-for-my-store" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Retail music services range from $15-100/month per location. But the better question is ROI. Even a conservative 5% sales lift on $500K annual revenue produces $25,000 in additional revenue against a ~$600-1,200 annual cost. The research supports lifts of 12-38% when music parameters are properly optimized.</p>
+</div>
+
+<h2 id="cant-i-just-play-spotify-its-basically-free" class="blog-subhead blog-subhead--h2">
+  Can&#39;t I just play Spotify? It&#39;s basically free.
+  <a href="#cant-i-just-play-spotify-its-basically-free" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Spotify and Apple Music are not licensed for commercial use — playing them in a store violates terms of service and exposes you to fines from performance rights organizations. Beyond the legal risk, a 2025 study across 140 stores found no measurable sales effect from generic, unadapted music. You need a system that adapts to conditions, not just a playlist.</p>
+</div>
+
+<h2 id="whats-the-most-cost-effective-approach" class="blog-subhead blog-subhead--h2">
+  What&#39;s the most cost-effective approach?
+  <a href="#whats-the-most-cost-effective-approach" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Don&rsquo;t compare music costs to each other — compare them to the revenue opportunity. Prioritize adaptability and measurement over catalog size. Run a free trial (Entuned offers one at entuned.co), measure the results against your baseline for a few weeks, and let the data make the budget decision for you. Full citations in the description. This is video 35 of 50 in this series.</p>
+</div>
+
+<div class="blog-references fade-up">
+  <h2 class="blog-references__heading" id="references">References</h2>
+  <ol class="blog-references__list">
+    <li>Andersson, P.K. et al. (2012). &#34;Let the Music Play or Not.&#34; Journal of Retailing and Consumer Services, 19(6), 553-560.</li>
+    <li>Lammers, H.B. (2003). &#34;An Oceanside Field Experiment on Background Music Effects on the Restaurant Tab.&#34; Perceptual and Motor Skills, 96(3), 1025-1026.</li>
+    <li>Milliman, R.E. (1982). &#34;Using Background Music to Affect the Behavior of Supermarket Shoppers.&#34; Journal of Marketing, 46(3), 86-91.</li>
+    <li>Knoferle, K.M. et al. (2012). &#34;It Is All in the Mix: The Interactive Effect of Music Tempo and Mode on In-Store Sales.&#34; Marketing Letters, 23(1), 325-337.</li>
+    <li>EMAC Conference Proceedings (2025). Field experiment across 140 retail stores examining music&#39;s effect on sales performance.</li>
+    <li>Milliman, R.E. (1986). &#34;The Influence of Background Music on the Behavior of Restaurant Patrons.&#34; Journal of Consumer Research, 13(2), 286-289.</li>
+  </ol>
+</div>
+
+  </div>
+
+  <!-- CTA -->
+  <aside class="blog-cta blog-cta--start-free">
+  <div class="blog-cta__headline">Hear it on your floor.</div>
+  <div class="blog-cta__body">Entuned engineers original music for your store at the parameter level &amp;mdash; tempo, key, lyrical density, energy arc &amp;mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &amp;mdash; no card, no time limit. PRO-indemnified the moment it plays.</div>
+  <a href="https://app.entuned.co/start" class="blog-cta__link">Start Free &rarr;</a>
+</aside>
+
+  <!-- Related posts -->
+  <section class="blog-related" aria-label="Related posts">
+  <h2 class="blog-related__title">Keep reading</h2>
+  <div class="blog-related__grid">
+    <a href="../blog/how-much-does-retail-music-cost.html" class="blog-related__card">
+      <img src="../img/blog/how-much-does-retail-music-cost.jpg" alt="How Much Does In-Store Music Actually Cost?" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">How Much Does In-Store Music Actually Cost?</span>
+      <span class="blog-related__dek">The subscription fee is the number people know. The total bill is bigger, and it sits on nobody&#39;s desk.</span>
+    </a>
+    <a href="../blog/what-should-retailers-look-for-in-a-music-provider.html" class="blog-related__card">
+      <img src="../img/blog/what-should-retailers-look-for-in-a-music-provider.jpg" alt="What Should Retailers Look for in a Music Provider?" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">WATCH</span>
+      <span class="blog-related__card-title">What Should Retailers Look for in a Music Provider?</span>
+      <span class="blog-related__dek">Retailers should evaluate music providers on six research-backed criteria: real-time adaptability, parametric control, brand congruence, measurement capability, licensing clarity, and customer prefere</span>
+    </a>
+    <a href="../blog/the-real-cost-of-retail-music.html" class="blog-related__card">
+      <img src="../img/blog/the-real-cost-of-retail-music.jpg" alt="The Real Cost of Your Retail Music" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">The Real Cost of Your Retail Music</span>
+      <span class="blog-related__dek">The invoice line for store music is the smallest number in this conversation. The interesting number is what bad audio costs you in revenue you never see on any report.</span>
+    </a>
+  </div>
+</section>
+
+</article>
+
+<!-- Blog-specific JS (reading progress + anchor copy) -->
+<script>
+  // Reading progress bar
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    document.getElementById('reading-progress').style.width = pct + '%';
+  });
+
+  // Anchor link copy-to-clipboard
+  document.querySelectorAll('.anchor-link').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      navigator.clipboard.writeText(window.location.origin + window.location.pathname + a.getAttribute('href'));
+      a.textContent = '\u2713'; setTimeout(() => a.textContent = '#', 1500);
+    });
+  });
+</script>
+  </main>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Engineered retail audio. PRO-indemnified.</p>
+      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="../how-it-works.html">How It Works</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="../enterprise.html">Enterprise</a></li>
+        <li><a href="../why-entuned.html">Why Entuned</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For Your Industry</h4>
+      <ul>
+        <li><a href="../for-apparel.html">Apparel</a></li>
+        <li><a href="../for-beauty-supply.html">Beauty Supply</a></li>
+        <li><a href="../for-cosmetics.html">Cosmetics &amp; Beauty</a></li>
+        <li><a href="../for-furniture-mattress.html">Furniture &amp; Mattress</a></li>
+        <li><a href="../for-home-goods.html">Home Goods</a></li>
+        <li><a href="../for-jewelry.html">Jewelry</a></li>
+        <li><a href="../for-specialty-retail.html">Specialty Retail</a></li>
+        <li><a href="../for-sporting-goods.html">Sporting Goods</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
+      <ul>
+        <li><a href="../for-retail-leaders.html">Retail Leaders</a></li>
+        <li><a href="../impact.html">Impact Calculator</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Research</h4>
+      <ul>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../results.html">Results</a></li>
+        <li><a href="../science.html">The Science</a></li>
+        <li><a href="../will-it-retail.html">Will It Retail?</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="../how-music-affects-retail.html">How Music Affects Retail</a></li>
+        <li><a href="../how-to-increase-aov-retail.html">Increase Average Order Value</a></li>
+        <li><a href="../how-to-increase-dwell-time-retail.html">Increase Dwell Time</a></li>
+        <li><a href="../how-to-increase-impulse-purchases-retail.html">Drive Impulse Purchases</a></li>
+        <li><a href="../how-to-improve-retail-conversion-rate.html">Improve Conversion Rate</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../partners.html">Partners</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="../licensing.html">Licensing &amp; PRO Coverage</a></li>
+        <li><a href="../data.html">Data Practices</a></li>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="../pricing/terms.html">Subscription Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG', {
+      linker: {
+        domains: ['entuned.co', 'music.entuned.co', 'app.entuned.co']
+      }
+    });
+  </script>
+  <script defer src="../js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>

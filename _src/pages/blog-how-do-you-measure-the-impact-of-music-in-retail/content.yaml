@@ -1,0 +1,121 @@
+title: How Do You Measure the Impact of Music in Retail?
+slug: how-do-you-measure-the-impact-of-music-in-retail
+eyebrow: WATCH
+dek: 'Measuring music''s retail impact requires tracking three links: environment to emotion, emotion to behavior, behavior to purchase.'
+date: '2026-06-06'
+last_updated: '2026-06-06'
+author:
+  name: Daniel Fox
+  role: Founder & CEO
+hero:
+  src: ../img/blog/how-do-you-measure-the-impact-of-music-in-retail.jpg
+  alt: How Do You Measure the Impact of Music in Retail?
+  caption: ''
+meta_description: 'Measuring music''s retail impact requires tracking three links: environment to emotion, emotion to behavior, behavior to purchase. The key metrics are...'
+og_image: /img/blog/how-do-you-measure-the-impact-of-music-in-retail.jpg
+tags:
+- measure-music-impact-retail
+- retail-music-analytics
+- music-roi-measurement
+- store-music-metrics
+video:
+  id: JSJljS-hdF8
+  title: How Do You Measure the Impact of Music in Retail?
+  upload_date: '2026-06-06'
+  duration: PT4M47S
+  chapters: &id001
+  - time: 0
+    label: Nobody measures music. That's the problem.
+  - time: 22
+    label: The three-link chain you need to measure
+  - time: 70
+    label: The metrics that matter
+  - time: 125
+    label: The testing framework
+  - time: 175
+    label: What "no effect" actually means
+  - time: 215
+    label: Building your measurement system
+  - time: 245
+    label: Start measuring
+sections:
+- type: key_takeaways
+  items:
+  - 'Track three things: dwell time (music adds ~8 min vs.'
+  - That 2025 EMAC study used generic, non-adaptive music across all 140 stores and found no overall effect.
+  - Log music parameters by hour, track hourly sales and basket size from your POS, add a basic foot traffic counter, and correlate weekly.
+- type: video
+- type: prose
+  body: 'Measuring music''s retail impact requires tracking three links: environment to emotion, emotion to behavior, behavior to purchase. The key metrics are dwell time (music adds ~8 minutes vs. silence), basket size (slow tempo produced 38% higher daily sales), and items per transaction. Most retailers never measure any of them.
+
+
+    In this video I walk through the specific metrics that matter, the testing framework the research uses (controlled variation, sufficient sample size, consistent conditions), and how to build a minimum viable measurement system for your store.
+
+    '
+- type: prose
+  body: Here’s a challenge for you. Go ask the person who chose the music in your store what it’s doing to your sales. I’ll wait. If they can’t answer with a number, you don’t have a music strategy. You have a playlist. There’s a difference.
+- type: subhead
+  text: Why Measurement Matters More Than Selection
+- type: prose
+  body: Everyone obsesses over what music to play. Almost nobody measures what it does. And that’s backwards, because the research shows that the measurable effects are massive — but also highly conditional. The classic Journal of Marketing study from 1982 found a 38 percent lift in supermarket sales from tempo alone. But a large-scale study presented at the European Marketing Academy conference in 2025 — 140 stores — found no overall tempo effect at all. Zero. The only group that responded was loyalty program members. Same variable. Radically different outcomes. Why? Context. Your store is not that supermarket from 1982. The only way to know what works for you is to measure it.
+- type: subhead
+  text: The Four Metrics That Matter
+- type: prose
+  body: Based on the research, here are the four things you should actually be tracking. Dwell time. A study in the Journal of Retailing and Consumer Services from 2012 showed that music versus silence added about 8 minutes of browsing time across 550 participants. Track how long customers stay. If you change the music and dwell time shifts, that’s signal. Average transaction value. The Journal of Consumer Research restaurant study from 1986 showed that slow music led to about three additional drink orders per table. In Perceptual and Motor Skills in 2003, soft music added roughly $3.05 per check. Track your average ticket before and after music changes. Conversion rate. More dwell time should lead to more purchases. If it doesn’t, your music might be pleasant but not motivating. The Journal of Retailing found in 1994 that pleasure at five minutes predicted unplanned spending — so the music needs to create pleasant dwell time, not just longer visits. Basket composition. Research in Frontiers in Psychology from 2023 found that fast tempo increased variety-seeking behavior — customers chose more different products. Track not just how much people spend, but what they buy.
+- type: subhead
+  text: How to Set Up a Basic Test
+- type: prose
+  body: You don’t need a PhD to measure this. Here’s a simple framework. Pick one variable to change. Don’t swap your entire playlist — change tempo, or change energy level, or change volume. One thing at a time. Run it for at least two comparable weeks. Same days of the week, similar traffic patterns. A versus B. Track the four metrics above. Most POS systems can give you dwell time proxies, average ticket, and basket data without any new tools. Compare. If the numbers move meaningfully — and consistently — you’ve found something. If they don’t, try another variable. The key insight from the research is that interactions matter more than main effects. That 2012 Marketing Letters study showed tempo and mode interact — slow tempo only worked in minor key. So if your single-variable test doesn’t show results, it might be the combination that matters.
+- type: subhead
+  text: Why Most Services Can’t Help You Here
+- type: prose
+  body: 'Here’s the problem with most retail music providers: they give you music, but not measurement. You get a playlist and a scheduler, maybe a dashboard showing what songs played. But no connection to business outcomes. That’s like a marketing agency that runs ads but doesn’t track conversions. You’re spending money and hoping. This is one of the core reasons we built Entuned the way we did. Because if you can’t measure what the music does, you can’t improve it. And if you can’t improve it, you’re leaving the most leveraged variable in your store environment completely unoptimized. Entuned tracks what’s playing against what’s happening in the store, so changes aren’t guesses — they’re informed.'
+- type: subhead
+  text: The Mindset Shift
+- type: prose
+  body: Stop thinking of music as an amenity. Start thinking of it as a testable input — like pricing, like merchandising, like lighting. The research gives us the variables. Measurement tells us which ones work in your specific context. Every other part of your store gets optimized. Music should too.
+- type: transcript
+  chapters: *id001
+- type: subhead
+  level: 2
+  text: How do I measure whether music is actually helping my store?
+- type: prose
+  body: 'Track three things: dwell time (music adds ~8 min vs. silence), basket size (slow tempo produced 38% higher daily sales in the foundational study), and items per transaction. Log what music parameters are playing each hour and correlate with hourly sales data from your POS. The mechanism is: environment shapes emotion, emotion shapes behavior, behavior shapes spend.
+
+    '
+- type: subhead
+  level: 2
+  text: A study of 140 stores found no effect — so does music even work?
+- type: prose
+  body: 'That 2025 EMAC study used generic, non-adaptive music across all 140 stores and found no overall effect. But loyalty members did respond. The takeaway isn''t "music doesn''t work" — it''s "generic music doesn''t produce measurable results in generic conditions." Adapted, targeted music is what shows up in the data.
+
+    '
+- type: subhead
+  level: 2
+  text: What's the minimum I need to start measuring?
+- type: prose
+  body: 'Log music parameters by hour, track hourly sales and basket size from your POS, add a basic foot traffic counter, and correlate weekly. Change one variable at a time and measure for 2-4 weeks per condition. Entuned automates this entire process — try the free tier at entuned.co to see your own data. Full citations in the description. This is video 36 of 50 in this series.
+
+    '
+- type: references
+  heading: References
+  items:
+  - Sherman, E. et al. (1997). "Store Environment and Consumer Purchase Behavior." Psychology & Marketing, 14(4), 361-378.
+  - Andersson, P.K. et al. (2012). "Let the Music Play or Not." Journal of Retailing and Consumer Services, 19(6), 553-560.
+  - Milliman, R.E. (1982). "Using Background Music to Affect the Behavior of Supermarket Shoppers." Journal of Marketing, 46(3), 86-91.
+  - Milliman, R.E. (1986). "The Influence of Background Music on the Behavior of Restaurant Patrons." Journal of Consumer Research, 13(2), 286-289.
+  - Yalch, R.F. & Spangenberg, E.R. (2000). "The Effects of Music in a Retail Setting on Real and Perceived Shopping Times." Journal of Business Research, 49(2), 139-147.
+  - 'Knoferle, K.M. et al. (2012). "It Is All in the Mix: The Interactive Effect of Music Tempo and Mode on In-Store Sales." Marketing Letters, 23(1), 325-337.'
+  - 'Knoferle, K.M. et al. (2017). "An Upbeat Crowd: Fast In-Store Music Alleviates Negative Effects of High Social Density on Customers'' Spending." Journal of Retailing, 93(4), 541-549.'
+  - EMAC Conference Proceedings (2025). Field experiment across 140 retail stores examining music's effect on sales performance.
+- type: cta
+  variant: start-free
+  headline: Hear it on your floor.
+  body: Entuned engineers original music for your store at the parameter level &mdash; tempo, key, lyrical density, energy arc &mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays.
+  link: https://app.entuned.co/start
+  link_text: Start Free
+- type: related
+  posts:
+  - slug: measure-roi-retail-music
+  - slug: how-to-measure-if-your-store-music-is-working
+  - slug: how-to-choose-music-for-your-retail-store

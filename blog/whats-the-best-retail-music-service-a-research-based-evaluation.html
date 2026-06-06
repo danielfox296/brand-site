@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- First-touch signup attribution. Stamps a `.entuned.co` cookie on the
+       FIRST page view so the original source (referrer + UTM) survives the
+       entuned.co -> app.entuned.co/start hop. The dashboard's /start reads the
+       same cookie (same name + shape) and forwards it to the server. Runs
+       early + first-touch-wins so it never overwrites the true upstream. -->
+  <script>
+    (function () {
+      try {
+        if (/(?:^|; )entuned_attr=/.test(document.cookie)) return;
+        var p = new URLSearchParams(window.location.search);
+        var payload = {
+          r: document.referrer || undefined,
+          lp: (window.location.pathname + window.location.search) || undefined,
+          us: p.get('utm_source') || undefined,
+          um: p.get('utm_medium') || undefined,
+          uc: p.get('utm_campaign') || undefined,
+          ut: p.get('utm_term') || undefined,
+          un: p.get('utm_content') || undefined,
+          t: new Date().toISOString()
+        };
+        var host = window.location.hostname;
+        var domain = (host === 'entuned.co' || /\.entuned\.co$/.test(host)) ? '; domain=.entuned.co' : '';
+        document.cookie = 'entuned_attr=' + encodeURIComponent(JSON.stringify(payload)) +
+          '; path=/' + domain + '; max-age=' + (30 * 24 * 60 * 60) + '; SameSite=Lax';
+      } catch (e) { /* best-effort */ }
+    })();
+  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/blog/whats-the-best-retail-music-service-a-research-based-evaluation.html">
+  <meta name="robots" content="index, follow">
+  <title>What's the Best Retail Music Service? A Research-Based Evaluation | Entuned</title>
+  <meta name="description" content="The best retail music service is the one that meets five research-backed criteria: real-time adaptability, parametric precision, brand congruence,...">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="../rss.xml">
+  <meta property="og:title" content="What&#x27;s the Best Retail Music Service? A Research-Based Evaluation | Entuned">
+  <meta property="og:description" content="The best retail music service is the one that meets five research-backed criteria: real-time adaptability, parametric precision, brand congruence,...">
+  <meta property="og:url" content="https://entuned.co/blog/whats-the-best-retail-music-service-a-research-based-evaluation.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://entuned.co/img/blog/whats-the-best-retail-music-service-a-research-based-evaluation.jpg">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-06-06">
+  <meta property="article:author" content="Daniel Fox">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="What&#x27;s the Best Retail Music Service? A Research-Based Evaluation | Entuned">
+  <meta name="twitter:description" content="The best retail music service is the one that meets five research-backed criteria: real-time adaptability, parametric precision, brand congruence,...">
+  <meta name="twitter:image" content="https://entuned.co/img/blog/whats-the-best-retail-music-service-a-research-based-evaluation.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What's the Best Retail Music Service? A Research-Based Evaluation | Entuned",
+  "author": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "datePublished": "2026-06-06",
+  "dateModified": "2026-06-06",
+  "description": "The best retail music service is the one that meets five research-backed criteria: real-time adaptability, parametric precision, brand congruence,...",
+  "image": "https://entuned.co/img/blog/whats-the-best-retail-music-service-a-research-based-evaluation.jpg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://entuned.co/blog/whats-the-best-retail-music-service-a-research-based-evaluation.html"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "retail music strategy"
+    },
+    {
+      "@type": "Thing",
+      "name": "in-store customer behavior"
+    },
+    {
+      "@type": "Thing",
+      "name": "engineered retail audio"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "What's the Best Retail Music Service? A Research-Based Evaluation",
+  "description": "The best retail music service is the one that meets five research-backed criteria: real-time adaptability, parametric precision, brand congruence,...",
+  "thumbnailUrl": [
+    "https://entuned.co/img/blog/whats-the-best-retail-music-service-a-research-based-evaluation.jpg"
+  ],
+  "uploadDate": "2026-06-06",
+  "contentUrl": "https://www.youtube.com/watch?v=m-kRSKNzSuo",
+  "embedUrl": "https://www.youtube.com/embed/m-kRSKNzSuo",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "duration": "PT4M51S",
+  "hasPart": [
+    {
+      "@type": "Clip",
+      "name": "Most \"best of\" lists miss the point",
+      "startOffset": 0,
+      "url": "https://www.youtube.com/watch?v=m-kRSKNzSuo&t=0s"
+    },
+    {
+      "@type": "Clip",
+      "name": "The wrong way to evaluate",
+      "startOffset": 22,
+      "url": "https://www.youtube.com/watch?v=m-kRSKNzSuo&t=22s"
+    },
+    {
+      "@type": "Clip",
+      "name": "Criterion 1: Real-time adaptability",
+      "startOffset": 48,
+      "url": "https://www.youtube.com/watch?v=m-kRSKNzSuo&t=48s"
+    },
+    {
+      "@type": "Clip",
+      "name": "Criterion 2: Parametric precision",
+      "startOffset": 90,
+      "url": "https://www.youtube.com/watch?v=m-kRSKNzSuo&t=90s"
+    },
+    {
+      "@type": "Clip",
+      "name": "Criterion 3: Congruence without compromise",
+      "startOffset": 125,
+      "url": "https://www.youtube.com/watch?v=m-kRSKNzSuo&t=125s"
+    },
+    {
+      "@type": "Clip",
+      "name": "Criterion 4: Avoiding familiarity distortion",
+      "startOffset": 170,
+      "url": "https://www.youtube.com/watch?v=m-kRSKNzSuo&t=170s"
+    },
+    {
+      "@type": "Clip",
+      "name": "Criterion 5: Measurement and iteration",
+      "startOffset": 210,
+      "url": "https://www.youtube.com/watch?v=m-kRSKNzSuo&t=210s"
+    },
+    {
+      "@type": "Clip",
+      "name": "So what's the answer?",
+      "startOffset": 250,
+      "url": "https://www.youtube.com/watch?v=m-kRSKNzSuo&t=250s"
+    },
+    {
+      "@type": "Clip",
+      "name": "How to evaluate for yourself",
+      "startOffset": 280,
+      "url": "https://www.youtube.com/watch?v=m-kRSKNzSuo&t=280s"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the best retail music service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The one that checks five research-backed boxes: (1) real-time adaptability to store conditions, (2) independent control over multiple music parameters, (3) genuine brand congruence built into the system, (4) avoidance of familiar-music time distortion, and (5) measurement tools that tie music changes to sales outcomes. Most services check one or two."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Don't bigger catalogs mean better music?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Catalog size is table stakes. A 2017 study of 43,000+ baskets showed that the optimal music changes based on crowd density \u2014 something a fixed catalog can't respond to. And a 2000 study found familiar music (the selling point of big catalogs) actually distorts time perception in ways that hurt retailers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I actually decide?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Run any service through the five criteria in this video. Ask: can it adapt in real time? Can I control tempo, mode, and energy independently? Does it match my brand without a curator guessing? Does it avoid familiarity distortion? Can I see what the music is doing to my numbers? Entuned was built against these criteria \u2014 try the free tier at entuned.co and score it yourself. Full citations in the description. This is video 34 of 50 in this series."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://entuned.co/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "What's the Best Retail Music Service? A Research-Based Evaluation | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=f83c77c3">
+  <link rel="stylesheet" href="../styles/blog.css">
+  
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav aria-label="Main navigation">
+  <div class="container">
+    <a href="/" class="logo"><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="../how-it-works.html">How It Works</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li class="nav-cta-item"><a href="https://app.entuned.co/start" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Start Free</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+  </div>
+</nav>
+
+  <main>
+  
+<!-- Reading progress bar -->
+<div class="blog-progress" aria-hidden="true">
+  <div class="blog-progress__bar" id="reading-progress"></div>
+</div>
+
+<article class="blog-article">
+
+  <!-- Article header -->
+  <header class="blog-article__header">
+    <div class="blog-eyebrow">WATCH</div>
+    <h1 class="blog-headline">What&#39;s the Best Retail Music Service? A Research-Based Evaluation</h1>
+    <p class="blog-dek">The best retail music service is the one that meets five research-backed criteria: real-time adaptability, parametric precision, brand congruence, familiarity avoidance, and measurement capability.</p>
+    <div class="blog-byline">
+      <span class="blog-byline__author">Daniel Fox</span>
+      <span class="blog-byline__role">Founder &amp; CEO</span>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <time class="blog-byline__date" datetime="2026-06-06">2026-06-06</time>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <span class="blog-byline__reading-time">5 min read</span>
+    </div>
+  </header>
+
+  <!-- Hero image -->
+  <figure class="blog-hero fade-up">
+    <img src="../img/blog/whats-the-best-retail-music-service-a-research-based-evaluation.jpg" alt="What&#39;s the Best Retail Music Service? A Research-Based Evaluation" class="blog-hero__img" loading="lazy">
+  </figure>
+
+  <!-- Key takeaways -->
+  <div class="blog-takeaways">
+  <div class="blog-takeaways__title">Key takeaways</div>
+  <ul>
+    <li>The one that checks five research-backed boxes: (1) real-time adaptability to store conditions, (2) independent control over multiple music parameters, (3) genuine brand congruence built into the system, (4) avoidance of familiar-music time distortion, and (5) measurement tools that tie music changes to sales outcomes.</li>
+    <li>No. Catalog size is table stakes.</li>
+    <li>Run any service through the five criteria in this video.</li>
+  </ul>
+</div>
+
+  <!-- Article body (all sections except key_takeaways, cta, related) -->
+  <div class="blog-article__body">
+    <div class="blog-video fade-up">
+  <div class="blog-video__frame">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/m-kRSKNzSuo?rel=0"
+      title="What&#39;s the Best Retail Music Service? A Research-Based Evaluation"
+      loading="lazy"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
+  </div>
+</div>
+
+
+<div class="blog-prose">
+  <p>The best retail music service is the one that meets five research-backed criteria: real-time adaptability, parametric precision, brand congruence, familiarity avoidance, and measurement capability. Most comparison articles evaluate catalog size and pricing — the science says those are table stakes, not differentiators.</p>
+<p>In this video I skip the affiliate listicle approach and evaluate retail music platforms against what four decades of peer-reviewed research says actually drives sales results. I&rsquo;ll walk through each criterion, explain the study behind it, and show you how to score any platform yourself.</p>
+</div>
+
+<div class="blog-prose">
+  <p>If you Google “best retail music service,” you’ll get a list of ten companies, all claiming to be the answer. I’m the founder of one of them, so I’m biased — but I’m going to do something unusual. I’m going to give you the framework the research supports, and let you decide. Including whether we’re the right fit.</p>
+</div>
+
+<h2 id="why-most-comparisons-are-useless" class="blog-subhead blog-subhead--h2">
+  Why Most Comparisons Are Useless
+  <a href="#why-most-comparisons-are-useless" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Most “best of” lists compare retail music services on features: library size, number of genres, app interface, pricing tiers. That stuff matters logistically. But it completely ignores the question that actually determines ROI: does the music change customer behavior? A study in Psychology &amp; Marketing from 1997 mapped the entire chain: environment shapes emotion, emotion shapes behavior. If your music isn’t designed to move through that chain intentionally, feature lists are irrelevant. You’re comparing wrapping paper when you should be comparing what’s inside the box.</p>
+</div>
+
+<h2 id="what-the-research-says-matters" class="blog-subhead blog-subhead--h2">
+  What the Research Says Matters
+  <a href="#what-the-research-says-matters" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Let me walk you through what the data actually values. Adaptability. Research in the Journal of Retailing from 2017 — over 43,000 baskets — showed that the effect of tempo literally reverses based on crowd density. Fast tempo helps when crowded. Slow tempo helps when sparse. Any service using fixed playlists is going to be right roughly half the time and wrong the other half. The best service adapts. Emotional precision. A 2012 study in Marketing Letters demonstrated that tempo interacts with musical mode. Slow and minor key produced about a 12 percent spending lift. Slow and major key? Nothing. So the best service doesn’t just control tempo — it understands the interaction effects between musical variables. Brand congruence. Work published in the Journal of Business Research in 2006 found that music-brand misfit actively damaged brand perception. Not neutral — negative. The best service ensures every track reinforces your identity.</p>
+</div>
+
+<h2 id="honestly-compared" class="blog-subhead blog-subhead--h2">
+  Honestly Compared
+  <a href="#honestly-compared" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Playlist services — companies that license commercial tracks and let you pick genres or moods. Pros: familiar music, easy to set up, artists your customers might recognize. Cons: static, no adaptation, licensing costs scale with library size, and you’re playing the same tracks as potentially thousands of other stores. Curated scheduling platforms — same licensed music, but with daypart scheduling and some seasonal programming. Pros: better than random, shows intent. Cons: still based on assumptions about what your store will need at a given time, not what it actually needs. Adaptive generative platforms — original music created dynamically based on brand parameters, time of day, and store conditions. Pros: unlimited variety, no licensing, real-time response, brand-unique sound. Cons: newer category, requires trust in the algorithm, and the music won’t be recognizable hits. That third category is where Entuned sits. We built it because the research kept pointing to variables — tempo response to crowding, mode interactions, brand congruence — that static playlists structurally can’t address. I won’t pretend that makes us objectively “best” for every store. But I will say the science favors this approach.</p>
+</div>
+
+<h2 id="the-question-most-people-skip" class="blog-subhead blog-subhead--h2">
+  The Question Most People Skip
+  <a href="#the-question-most-people-skip" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Here’s the thing nobody asks: does recognizable music actually help? Most people assume it does. But research published in the Journal of Business Research from 2000 found something counterintuitive — unfamiliar music made shoppers spend more actual time in the store while perceiving they’d spent less. Familiar music did the opposite. Customers left sooner but felt like they’d been there longer. Read that again. Unfamiliar music made the experience feel shorter while keeping people in the store longer. That’s the ideal outcome. And it directly challenges the assumption that you need popular hits to create a good atmosphere.</p>
+</div>
+
+<h2 id="how-to-decide" class="blog-subhead blog-subhead--h2">
+  How to Decide
+  <a href="#how-to-decide" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>My honest recommendation: evaluate any service on three questions. Does it adapt to real conditions? Does it control for the variables the research identifies — not just tempo, but mode, arousal, congruence? And can it tell you what changed when the music changed? If a service can answer all three, consider it seriously. If it can’t, you’re paying for a fancy radio.</p>
+</div>
+
+<div class="blog-transcript fade-up">
+  <h2 class="blog-transcript__heading" id="chapters">Chapters</h2>
+  <ol class="blog-transcript__toc">
+    <li>
+      <a href="https://www.youtube.com/watch?v=m-kRSKNzSuo&amp;t=0s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">0:00</span>
+        Most &#34;best of&#34; lists miss the point
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=m-kRSKNzSuo&amp;t=22s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">0:22</span>
+        The wrong way to evaluate
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=m-kRSKNzSuo&amp;t=48s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">0:48</span>
+        Criterion 1: Real-time adaptability
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=m-kRSKNzSuo&amp;t=90s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">1:30</span>
+        Criterion 2: Parametric precision
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=m-kRSKNzSuo&amp;t=125s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">2:05</span>
+        Criterion 3: Congruence without compromise
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=m-kRSKNzSuo&amp;t=170s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">2:50</span>
+        Criterion 4: Avoiding familiarity distortion
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=m-kRSKNzSuo&amp;t=210s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">3:30</span>
+        Criterion 5: Measurement and iteration
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=m-kRSKNzSuo&amp;t=250s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">4:10</span>
+        So what&#39;s the answer?
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/watch?v=m-kRSKNzSuo&amp;t=280s" target="_blank" rel="noopener">
+        <span class="blog-transcript__time">4:40</span>
+        How to evaluate for yourself
+      </a>
+    </li>
+  </ol>
+
+</div>
+
+<h2 id="whats-the-best-retail-music-service" class="blog-subhead blog-subhead--h2">
+  What&#39;s the best retail music service?
+  <a href="#whats-the-best-retail-music-service" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>The one that checks five research-backed boxes: (1) real-time adaptability to store conditions, (2) independent control over multiple music parameters, (3) genuine brand congruence built into the system, (4) avoidance of familiar-music time distortion, and (5) measurement tools that tie music changes to sales outcomes. Most services check one or two.</p>
+</div>
+
+<h2 id="dont-bigger-catalogs-mean-better-music" class="blog-subhead blog-subhead--h2">
+  Don&#39;t bigger catalogs mean better music?
+  <a href="#dont-bigger-catalogs-mean-better-music" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>No. Catalog size is table stakes. A 2017 study of 43,000+ baskets showed that the optimal music changes based on crowd density — something a fixed catalog can&rsquo;t respond to. And a 2000 study found familiar music (the selling point of big catalogs) actually distorts time perception in ways that hurt retailers.</p>
+</div>
+
+<h2 id="how-do-i-actually-decide" class="blog-subhead blog-subhead--h2">
+  How do I actually decide?
+  <a href="#how-do-i-actually-decide" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Run any service through the five criteria in this video. Ask: can it adapt in real time? Can I control tempo, mode, and energy independently? Does it match my brand without a curator guessing? Does it avoid familiarity distortion? Can I see what the music is doing to my numbers? Entuned was built against these criteria — try the free tier at entuned.co and score it yourself. Full citations in the description. This is video 34 of 50 in this series.</p>
+</div>
+
+<div class="blog-references fade-up">
+  <h2 class="blog-references__heading" id="references">References</h2>
+  <ol class="blog-references__list">
+    <li>Knoferle, K.M. et al. (2017). &#34;An Upbeat Crowd: Fast In-Store Music Alleviates Negative Effects of High Social Density on Customers&#39; Spending.&#34; Journal of Retailing, 93(4), 541-549.</li>
+    <li>Knoferle, K.M. et al. (2012). &#34;It Is All in the Mix: The Interactive Effect of Music Tempo and Mode on In-Store Sales.&#34; Marketing Letters, 23(1), 325-337.</li>
+    <li>Beverland, M. et al. (2006). &#34;In-Store Music and Consumer-Brand Relationships.&#34; Journal of Business Research, 59(9), 982-989.</li>
+    <li>North, A.C. et al. (2003). &#34;The Effect of Musical Style on Restaurant Customers&#39; Spending.&#34; Environment and Behavior, 35(5), 712-718.</li>
+    <li>Yalch, R.F. &amp; Spangenberg, E.R. (2000). &#34;The Effects of Music in a Retail Setting on Real and Perceived Shopping Times.&#34; Journal of Business Research, 49(2), 139-147.</li>
+    <li>Sherman, E. et al. (1997). &#34;Store Environment and Consumer Purchase Behavior.&#34; Psychology &amp; Marketing, 14(4), 361-378.</li>
+  </ol>
+</div>
+
+  </div>
+
+  <!-- CTA -->
+  <aside class="blog-cta blog-cta--start-free">
+  <div class="blog-cta__headline">Hear it on your floor.</div>
+  <div class="blog-cta__body">Entuned engineers original music for your store at the parameter level &amp;mdash; tempo, key, lyrical density, energy arc &amp;mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &amp;mdash; no card, no time limit. PRO-indemnified the moment it plays.</div>
+  <a href="https://app.entuned.co/start" class="blog-cta__link">Start Free &rarr;</a>
+</aside>
+
+  <!-- Related posts -->
+  <section class="blog-related" aria-label="Related posts">
+  <h2 class="blog-related__title">Keep reading</h2>
+  <div class="blog-related__grid">
+    <a href="../blog/best-background-music-for-retail-stores-2026.html" class="blog-related__card">
+      <img src="../img/blog/best-background-music-for-retail-stores-2026.jpg" alt="Best Background Music for Retail Stores (2026)" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">Best Background Music for Retail Stores (2026)</span>
+      <span class="blog-related__dek">Every store plays music. Almost none of them know whether it is helping or hurting. Here is what to look for, what to avoid, and what the legally safe options actually are.</span>
+    </a>
+    <a href="../blog/best-retail-music-service.html" class="blog-related__card">
+      <img src="../img/blog/best-retail-music-service.jpg" alt="How to Choose a Music Service for Your Store" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">How to Choose a Music Service for Your Store</span>
+      <span class="blog-related__dek">Seven things to evaluate before you sign, how the major services stack up on each, and why the right answer for a small store usually isn&#39;t the biggest catalog.</span>
+    </a>
+    <a href="../blog/music-licensing-for-retail-stores.html" class="blog-related__card">
+      <img src="../img/blog/retail-music-licensing-2026.jpg" alt="Music Licensing for Retail Stores: Fines, Lawsuits, and What Every Store Owner Should Know" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">Music Licensing for Retail Stores: Fines, Lawsuits, and What Every Store Owner Should Know</span>
+      <span class="blog-related__dek">Part 1 of 3. A personal Spotify account is not a business license. Here is what the law actually says, what the fines look like, and what compliance actually costs.</span>
+    </a>
+  </div>
+</section>
+
+</article>
+
+<!-- Blog-specific JS (reading progress + anchor copy) -->
+<script>
+  // Reading progress bar
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    document.getElementById('reading-progress').style.width = pct + '%';
+  });
+
+  // Anchor link copy-to-clipboard
+  document.querySelectorAll('.anchor-link').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      navigator.clipboard.writeText(window.location.origin + window.location.pathname + a.getAttribute('href'));
+      a.textContent = '\u2713'; setTimeout(() => a.textContent = '#', 1500);
+    });
+  });
+</script>
+  </main>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Engineered retail audio. PRO-indemnified.</p>
+      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="../how-it-works.html">How It Works</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="../enterprise.html">Enterprise</a></li>
+        <li><a href="../why-entuned.html">Why Entuned</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For Your Industry</h4>
+      <ul>
+        <li><a href="../for-apparel.html">Apparel</a></li>
+        <li><a href="../for-beauty-supply.html">Beauty Supply</a></li>
+        <li><a href="../for-cosmetics.html">Cosmetics &amp; Beauty</a></li>
+        <li><a href="../for-furniture-mattress.html">Furniture &amp; Mattress</a></li>
+        <li><a href="../for-home-goods.html">Home Goods</a></li>
+        <li><a href="../for-jewelry.html">Jewelry</a></li>
+        <li><a href="../for-specialty-retail.html">Specialty Retail</a></li>
+        <li><a href="../for-sporting-goods.html">Sporting Goods</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
+      <ul>
+        <li><a href="../for-retail-leaders.html">Retail Leaders</a></li>
+        <li><a href="../impact.html">Impact Calculator</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Research</h4>
+      <ul>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../results.html">Results</a></li>
+        <li><a href="../science.html">The Science</a></li>
+        <li><a href="../will-it-retail.html">Will It Retail?</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="../how-music-affects-retail.html">How Music Affects Retail</a></li>
+        <li><a href="../how-to-increase-aov-retail.html">Increase Average Order Value</a></li>
+        <li><a href="../how-to-increase-dwell-time-retail.html">Increase Dwell Time</a></li>
+        <li><a href="../how-to-increase-impulse-purchases-retail.html">Drive Impulse Purchases</a></li>
+        <li><a href="../how-to-improve-retail-conversion-rate.html">Improve Conversion Rate</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../partners.html">Partners</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="../licensing.html">Licensing &amp; PRO Coverage</a></li>
+        <li><a href="../data.html">Data Practices</a></li>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="../pricing/terms.html">Subscription Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG', {
+      linker: {
+        domains: ['entuned.co', 'music.entuned.co', 'app.entuned.co']
+      }
+    });
+  </script>
+  <script defer src="../js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>
