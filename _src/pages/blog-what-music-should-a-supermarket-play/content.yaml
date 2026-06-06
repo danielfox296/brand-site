@@ -1,0 +1,92 @@
+title: "What Music Should a Supermarket Play? When It's Crowded, Speed Up"
+slug: "what-music-should-a-supermarket-play"
+eyebrow: "FIELD NOTES"
+dek: "The famous rule says slow music makes shoppers linger and spend more. In a packed supermarket, the rule flips — and a study of 43,676 baskets shows exactly how."
+date: "2026-06-05"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/supermarket-music.jpg"
+  alt: "A busy, well-stocked grocery store interior packed with goods"
+  caption: "Photo: Unsplash"
+meta_description: "The rule says slow music makes shoppers spend more. In a crowded supermarket it flips: fast music lifts spending, across 43,676 baskets. Here's why."
+og_image: "/img/blog/supermarket-music.jpg"
+tags: [supermarket, grocery, tempo, crowding, field-notes, retail-music]
+sections:
+  - type: key_takeaways
+    items:
+      - "The classic rule — slow music makes shoppers move slower and spend more — was first found in a supermarket (Milliman, 1982). But it ignores one thing supermarkets are full of: crowds"
+      - "In a more recent study of 43,676 shopping baskets, fast-tempo music raised spending specifically when the store was crowded, offsetting the drop a packed store normally causes (Knoeferle et al., 2017)"
+      - "The lift came from shoppers buying more items, not pricier ones. In a busy grocery, tempo's real job isn't to slow people down — it's to take the edge off the crowd"
+
+  - type: prose
+    body: |
+      It's late Saturday morning and the store is packed. Carts jockey at the ends of aisles, the deli line is a dozen deep, and you can feel the room tighten. This is the moment a supermarket quietly starts losing money — not to theft or pricing, but to friction. A crowded store is a stressful store, and stressed shoppers cut the trip short. The surprising part is that the music overhead has a measurable say in how that moment goes, and the obvious move is the wrong one.
+
+  - type: subhead
+    level: 2
+    text: "The rule everyone repeats"
+
+  - type: prose
+    body: |
+      Almost every article about store music traces back to Ronald Milliman's 1982 experiment — run, as it happens, in a supermarket. He found that slow-tempo music slowed the pace of shoppers and was associated with higher sales than fast music. That finding hardened into a rule of thumb: slow it down, people linger, people spend. For a quiet store with room to wander, that holds up well.
+
+      But Milliman's study didn't vary one thing that defines a real supermarket on a weekend: how many other people are in it. And when researchers tested that, the rule didn't just weaken. It reversed.
+
+  - type: subhead
+    level: 2
+    text: "Where the rule flips"
+
+  - type: prose
+    body: |
+      In 2017, Knoeferle and colleagues analyzed 43,676 shopping baskets across several European grocery stores, this time accounting for how crowded the store was at the time. In an empty or quiet store, the old logic roughly held. But under high social density — a genuinely crowded store — fast-tempo music significantly increased what people spent, reversing the spending dip that crowding normally causes.
+
+      And the lift had a specific shape: crowded shoppers under fast music bought more items, not more expensive ones. The music wasn't talking them into premium choices. It was keeping them in the aisles long enough, and in a good enough mood, to finish the shop they came to abandon.
+
+  - type: stat_callout
+    number: "43,676"
+    label: "Baskets analyzed. In a crowded store, fast-tempo music raised spending — the opposite of the slow-down rule — by keeping shoppers buying more items"
+    source: "Knoeferle et al., 2017"
+    accent: gold
+
+  - type: subhead
+    level: 2
+    text: "It's about stress, not pace"
+
+  - type: prose
+    body: |
+      The reason the rule flips is that tempo isn't really doing what we think it's doing. The slow-music story assumes the lever is walking speed — slower music, slower feet, more time in front of the shelves. But in a crowded store the binding problem isn't speed; it's stress. A packed aisle raises everyone's arousal in an unpleasant way, and unpleasant arousal sends people toward the exit. Up-tempo music shifts that arousal toward something energizing rather than grating, and the shopper who would have bailed stays and finishes.
+
+      So the honest model isn't "slow music sells." It's that tempo regulates the energy of the room, and the right setting depends entirely on what the room is doing. Empty and calm, slower can invite lingering. Packed and fraught, faster keeps people from giving up.
+
+  - type: pullquote
+    text: "In an empty store, slow it down. In a packed one, speed it up. The same dial, set the same way all day, is wrong half the time."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "What this means for your store"
+
+  - type: prose
+    body: |
+      A supermarket isn't one environment — it's a calm one at 10am and a crowded one at noon, and the tempo that helps in one actively hurts in the other. The single biggest mistake is the one almost every store makes: one setting, running unchanged from open to close, optimized for neither state. The lever the research actually supports is matching the music's energy to the live condition of the floor, crowd included.
+
+      One honest caveat: this came from a set of European grocery stores, and it's the energy-of-the-crowd mechanism that travels, not a precise dial you can copy. But the direction is clear, and it's the opposite of the rule everyone repeats. The room tells you what it needs. Most stores just aren't set up to listen.
+
+  - type: prose
+    body: |
+      The wider research record on tempo, arousal, and crowding is catalogued on <a href="../science.html">the science page</a>.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it in your store."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "the-science-of-store-music"
+      - slug: "best-music-tempo-for-a-coffee-shop"
+      - slug: "what-music-should-a-bar-play"

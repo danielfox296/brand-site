@@ -1,0 +1,88 @@
+title: "Your Store Music Has a Second Audience: Your Staff"
+slug: "what-store-music-does-to-your-staff"
+eyebrow: "FIELD NOTES"
+dek: "A customer hears your music for eight minutes. Your staff hear it for eight hours. The music that's right for one audience is not automatically right for the other — and the research says that gap has a cost."
+date: "2026-06-05"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/store-staff-music.jpg"
+  alt: "A worker behind a café counter, surrounded by menu boards and cups"
+  caption: "Photo: Unsplash"
+meta_description: "Your in-store music has a second audience: the people who work in it all day. The research on how it helps — or quietly grates on — your staff."
+og_image: "/img/blog/store-staff-music.jpg"
+tags: [staff, employees, workplace, field-notes, retail-music]
+sections:
+  - type: key_takeaways
+    items:
+      - "Music genuinely affects workers: in a study of software developers, both mood and work quality were lowest with no music, and people took longest to finish when music was taken away (Lesiuk, 2005)"
+      - "But it's task-dependent. Music — especially with lyrics — measurably impairs focused, verbal work (Salamé & Baddeley, 1989), so what helps on the floor can hurt at the back-office desk"
+      - "And there's a trap: letting staff pick the music raises their job satisfaction (Sanseverino et al., 2022) but cut customer sales about 6% in a fashion field experiment, because staff optimize for their own energy, not the buyer's (Daunfeldt et al., 2021)"
+
+  - type: prose
+    body: |
+      Every conversation about store music is about the customer — how it makes them linger, spend, feel. But there's a second audience nobody designs for, standing behind the counter: your staff. A customer is exposed to your music for the eight minutes they're in the store. The person who works there is marinating in it for eight hours, on repeat, shift after shift. If the music is wrong, they're the ones who feel it most — and the research says that's not just a morale footnote.
+
+      It turns out the sound you choose is doing real work on the people you employ, in both directions.
+
+  - type: subhead
+    level: 2
+    text: "Music genuinely changes how people work"
+
+  - type: prose
+    body: |
+      The cleanest evidence comes from a 2005 study by Teresa Lesiuk, who tracked software developers in their actual offices over five weeks. The finding wasn't that music made them faster in a simple way — it was subtler and more telling. Their mood and the quality of their work were lowest when there was no music at all, and they took the longest to finish tasks during the period when music was removed. Taking the music away hurt. The mechanism, in her data, ran through mood: music lifted positive affect, and the better mood carried the work.
+
+      But that's a creative, complex task, and music doesn't treat all work the same. A separate line of research — going back to Salamé and Baddeley in 1989 — shows that music, and lyrics especially, impairs focused verbal work like reading, counting, or remembering a sequence. So the same audio that makes restocking and folding feel better can actively interfere with someone doing inventory math in the back. On the floor, music helps. At the desk, the wrong music gets in the way.
+
+  - type: subhead
+    level: 2
+    text: "The aux-cord trap"
+
+  - type: prose
+    body: |
+      The intuitive fix is to let the staff choose — they're the ones living in it, after all. And for their happiness, that's right: a 2022 study found that workers who use music intentionally to manage their mood report higher job satisfaction, while music experienced as passive sonic wallpaper actually drags satisfaction down. People want a say, and giving them one helps how they feel.
+
+      Here's the catch, and it's a real one. When a fashion retailer ran a field experiment letting staff control the in-store music, sales fell about 6%. Not because the staff had bad taste, but because they reached for high-energy tracks and changed them constantly — choices tuned to their own energy across a long shift, not to the customer's buying state. A separate 2025 study found that on days when the music was a poor fit, employees were measurably more likely to slip into counterproductive behavior and less likely to help each other. The wrong music doesn't just bore your staff; it changes how they work.
+
+  - type: pullquote
+    text: "Staff want to pick the music, and it makes them happier when they do. It also, in one experiment, cost the store 6% of its sales."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "You don't actually have to choose"
+
+  - type: prose
+    body: |
+      Laid out plainly, it looks like a forced trade: music your staff like, or music that sells. But that framing is the problem, not the answer. The reason staff-chosen music hurt sales is that it was undisciplined — picked for personal energy, switched constantly, optimized for nobody. And the reason imposed music hurts satisfaction is that it's sonic wallpaper — generic, unconsidered, clearly chosen for no one in the room.
+
+      The way out is the same thing that serves the customer: music that's actually good and actually intentional. A coherent, well-made program your staff can stand to hear all day, tuned to the floor's outcomes rather than handed to whoever's working — that's a sound both audiences can live with. The goal isn't to win the argument over the aux cord. It's to make the argument unnecessary.
+
+  - type: subhead
+    level: 2
+    text: "What this means for your store"
+
+  - type: prose
+    body: |
+      Two practical things follow. First, the music on your floor is shaping your team's mood and behavior every shift, so it's worth choosing as deliberately for them as for your customers — and keeping lyric-heavy, high-distraction music away from anyone doing focused, verbal work. Second, the aux-cord free-for-all that feels generous is the one move the research specifically punishes; what staff actually need isn't control, it's music worth listening to.
+
+      That's the quiet case for treating your store's sound as a real instrument rather than a feed left on default: it's the difference between a soundtrack your team endures and one they'd choose — without it costing you the floor.
+
+  - type: prose
+    body: |
+      The wider research record on music, mood, and behavior is catalogued on <a href="../science.html">the science page</a>.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "the-science-of-store-music"
+      - slug: "what-music-should-a-hotel-lobby-play"
+      - slug: "best-music-tempo-for-a-coffee-shop"
