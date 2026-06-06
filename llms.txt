@@ -1,8 +1,8 @@
 # Entuned
 
-> Original music for multi-location retail stores, measured against the same operational data retailers already use for everything else. Not licensed catalog. Not a playlist service.
+> Original music for retail stores, engineered from customer psychology and measured against the operational data retailers already track. Not licensed catalog. Not a playlist service. Self-serve, starts free.
 
-Entuned makes original music for retail environments and works with multi-location lifestyle retailers on pilot deployments that produce measurable outcomes against their existing analytics data.
+Entuned makes original music for retail stores. An owner-operator signs up free at app.entuned.co/start, picks an outcome (more dwell, more energy, bigger baskets), and the music plays in-browser the same day — no hardware, no contract, no card. Because the music is original and carries no PRO obligation, it removes the ASCAP/BMI/SESAC/GMR licensing question entirely. Paid tiers (Boost, $99/location/month; Professional, $399/location/month) tailor the music to the store's ideal customer profile and tie it to sales outcomes.
 
 The category we operate in sits between the traditional in-store music business (Mood Media, Soundtrack Your Brand, SiriusXM Business, Cloud Cover) and the retail analytics business (RetailNext, Sensormatic, Standard AI). Those two categories have never shared data. That gap is where audio fails to show up as a measured variable in retail performance.
 
