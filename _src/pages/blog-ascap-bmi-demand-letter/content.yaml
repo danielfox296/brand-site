@@ -1,0 +1,142 @@
+title: "What to Do About an ASCAP or BMI Demand Letter"
+seo_title: "ASCAP & BMI Demand Letters: What to Do in 2026"
+slug: "ascap-bmi-demand-letter-what-to-do"
+eyebrow: "MARKET INTEL"
+dek: "A plain-language walkthrough for the store owner holding the envelope: what the letter means, what it can actually cost, the small-store radio exemption nobody volunteers, and the three honest ways to make it stop."
+date: "2026-06-06"
+last_updated: "2026-06-06"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/ascap-bmi-demand-letter.jpg"
+  alt: "Opened envelope and letter resting on a wooden shop counter"
+  caption: "Photo: Unsplash"
+meta_description: "An ASCAP or BMI letter is a licensing demand, not a lawsuit. What it really costs, the radio exemption in 17 U.S.C. 110(5)(B), and three ways to resolve it."
+og_image: "/img/blog/ascap-bmi-demand-letter.jpg"
+tags: [ascap, bmi, demand-letter, music-licensing, compliance, retail-music]
+sections:
+  - type: key_takeaways
+    items:
+      - "A letter from ASCAP or BMI is a licensing demand backed by a documented file, usually built from investigator visits and calls. In most cases, nobody has sued you yet."
+      - "Respond in writing and change what's playing while you decide. The lawsuits PROs file are overwhelmingly against operators who never responded."
+      - "Statutory damages run $750 to $30,000 per work under 17 U.S.C. § 504(c). The $150,000 figure applies only to willful infringement; public reports of small-business outcomes generally run from a few thousand dollars to the low five figures."
+      - "Three honest exits: license all four PROs directly (roughly $1,300 to $1,500+ a year, publicly reported), switch to a commercial service that bundles the licenses (about $17 to $54 a month), or switch to music no PRO represents, which removes the obligation entirely."
+
+  - type: prose
+    body: |
+      A letter from ASCAP or BMI is a licensing demand. The organization believes your store has been playing songs its writers own without a public performance license, and it wants to sell you one. By the time the envelope reaches you there is usually a file behind it: dated visits from a field investigator, notes on what was playing, sometimes a record of a call a staff member took and forgot to mention. Nobody has sued you. The letter is the stage where a lawsuit is still cheap to avoid, and what you do over the next few weeks largely decides whether it stays that way.
+
+      One caveat before anything else. If what you are holding is a court summons or a filed complaint rather than a letter, deadlines are already running. Call a copyright attorney today, not this week.
+
+      What follows is written for a store owner holding that envelope, so you can act this week. This is general information, not legal advice. For an active dispute, an hour with a copyright attorney is worth more than anything you'll read online, this page included.
+
+  - type: subhead
+    level: 2
+    text: "What the letter actually means"
+    anchor: "what-it-means"
+
+  - type: prose
+    body: |
+      Under U.S. copyright law, playing recorded music for customers in a store is a public performance, the same category of use as a radio broadcast, scaled down to your four walls. Songwriters own that right, and most assign it to a performing rights organization to enforce. In the United States, the four that will write to you are ASCAP, BMI, SESAC, and GMR. The letter means one of them believes your store performs songs from its catalog without the license that use requires.
+
+      Operators call these demand letters. The PROs call them licensing outreach. Both names fit, because the letter demands, and what it demands is that you buy a blanket license at the standard rate, sometimes with back fees attached. Litigation is expensive for the PRO too; a signed license is the outcome the whole sequence is built to produce.
+
+      The letter does one more thing. It builds a record. Every notice you receive and ignore becomes evidence that you knew, and copyright law treats an operator who didn't know very differently from one who was told repeatedly and kept the music on. That distinction has a dollar figure attached to it.
+
+  - type: subhead
+    level: 2
+    text: "Why you got it"
+    anchor: "why-you-got-it"
+
+  - type: prose
+    body: |
+      Probably because someone came to your store. ASCAP and BMI employ licensing representatives and field investigators who visit businesses, note what's coming out of the speakers, and identify specific songs on specific dates. They also work phone lists, and a surprising number of demand letters land months after a licensing rep called the store and a staff member said something noncommittal and hung up. By the time the letter arrives, there is usually a documented sequence behind it: a visit, a call or two, an earlier and friendlier letter that got tossed with the rest of the mail.
+
+      That sequence explains the escalation pattern. The letters keep coming, each one less friendly, and the last one typically carries a law firm's letterhead. The PROs file infringement suits in federal court, and they generally wait until the documentation is complete: dated observations, identified works, a record of every attempt to resolve it. That preparation is why they win nearly every case they bring, and why the operators who become case names are overwhelmingly the ones who spent a year not answering.
+
+  - type: subhead
+    level: 2
+    text: "What it can cost, with real numbers"
+    anchor: "what-it-costs"
+
+  - type: prose
+    body: |
+      Less than the letter implies, if you engage. The statutory range is the number the letters lean on, so start there.
+
+  - type: stat_callout
+    number: "$750–$30,000"
+    label: "Statutory damages per infringed work for unlicensed public performance. Willful infringement can reach $150,000 per work, a ceiling courts reserve for operators who were notified and kept going."
+    source: "17 U.S.C. § 504(c)"
+    accent: gold
+
+  - type: prose
+    body: |
+      Both ends of that range matter. The floor is $750 per work, and "per work" is the multiplier that makes these cases expensive: an investigator who logged ten songs in one afternoon has logged ten separate claims. The $150,000 ceiling applies only to willful infringement, which courts find when the defendant knew and continued, and the stack of unanswered letters is exactly how that gets proven. The ceiling is real, it appears in every scary article on this subject, and it almost never describes a small store that responded to its mail.
+
+      What actually happens is smaller. Public reports of small-business outcomes generally run from a few thousand dollars to the low five figures, usually after the operator ignored the early letters and the PRO filed or prepared to file. A court can also award the PRO its attorney's fees under 17 U.S.C. § 505, which in a small case can rival the damages themselves. Set against a full licensing bill of roughly $1,300 to $1,500+ a year across the four PROs (publicly reported composite), settlement is the rational move once a complaint is filed. The cheap exits are gone by then.
+
+  - type: subhead
+    level: 2
+    text: "What to do this week"
+    anchor: "this-week"
+
+  - type: prose
+    body: |
+      Answer it. The lawsuits PROs file are overwhelmingly against operators who never responded; the case files are full of people who let a year of mail go unanswered.
+
+      Before you respond, establish two facts. First, what is actually playing in your store and through what account. If the speakers run a personal Spotify login or somebody's phone, the claim is probably accurate, and your response should account for that. If you already pay for a commercial service like SiriusXM for Business or Soundtrack Your Brand, your subscription probably includes the performance licenses, and your response is a copy of the account, because these letters do sometimes reach businesses that are already covered. Second, your square footage, because the small-store radio exemption turns on it.
+
+      While you decide, change what's playing. Liability accrues per performance, so every day the unlicensed catalog keeps running adds to the file. Switching the source today, whether to broadcast radio if you qualify for the exemption, to a licensed commercial service, or to music no PRO represents, changes nothing about the past. It stops the meter.
+
+      Then reply in writing, plainly, by the deadline if the letter has one. Say what's true: you've stopped, you're evaluating a license, you believe you're exempt, you dispute the claim. The people who send these letters resolve files all day, and an operator who engages is routine to them. If the letter names specific songs and dates, demands a sum, or comes from outside counsel, spend the money on an hour with a copyright attorney before you reply. That hour is cheap against every number in the previous section.
+
+  - type: subhead
+    level: 2
+    text: "The radio exemption almost nobody explains"
+    anchor: "radio-exemption"
+
+  - type: prose
+    body: |
+      If your store is under 2,000 square feet, you can play over-the-air radio for your customers without any PRO license. Food and drink establishments get the same treatment under 3,750 square feet. (The statute covers broadcast television too, with separate limits on device count and screen size; this section sticks to radio.) That is 17 U.S.C. § 110(5)(B), added by the Fairness in Music Licensing Act in 1998, and it is the most useful fact in this whole area that no demand letter will volunteer.
+
+      Larger stores can still qualify if the equipment stays modest: no more than six loudspeakers, no more than four of them in any one room. The hard boundary is the source. The exemption covers transmissions from an FCC-licensed broadcast station, received over the air, with no admission charge. An FM tuner on a shelf qualifies. A streaming app does not. A CD does not, satellite radio does not, custom audio does not, and the radio station's own website stream does not, because the signal has to arrive by broadcast. The moment your audio source is anything other than an antenna, the exemption is gone and the full licensing obligation is back.
+
+      Two ways this matters while the letter sits on your desk. If your shop is 1,400 square feet and the only music you've ever played came from a radio behind the register, the letter may simply not apply to you, and your written response can say so, with your square footage included. Don't claim the exemption unless you actually measure and qualify. Copyright law adds extra damages for exemption claims made without reasonable grounds (17 U.S.C. § 504(d)). Our <a href="../music-license-exemption-checker.html">music license exemption checker</a> walks through the square footage and equipment tests in about a minute. And if you need sound on the floor today while you work out a permanent answer: if your footage and speaker count qualify, a $30 FM tuner is legal by statute the moment you plug it in.
+
+  - type: subhead
+    level: 2
+    text: "How to make the problem permanently go away"
+    anchor: "permanent-fix"
+
+  - type: prose
+    body: |
+      Three options, in ascending order of how permanent they are.
+
+      You can buy the licenses. A blanket license from each PRO runs roughly $1,300 to $1,500+ a year across all four (publicly reported composite), renews annually, and sits on top of whatever you pay for the music itself. This is the path the letter is designed to produce, and it is a legitimate one. The fee structures are broken down in our <a href="../blog/ascap-license-cost.html">ASCAP cost guide</a> and <a href="../blog/bmi-license-cost.html">BMI cost guide</a>.
+
+      You can move to a commercial service that bundles the licensing. Pandora CloudCover, SiriusXM for Business, Soundtrack Your Brand and the rest run roughly $17 to $54 a month per location (vendor-published pricing, 2026) and handle the PRO paperwork inside the subscription. You are still paying the licensing bill every month; the service collects it for you and keeps the certificate on file.
+
+      Or you can play music no PRO represents. The blanket license exists because the songs in a commercial catalog have writers and publishers spread across four organizations. Original music owned outright by the company that made it carries no PRO registration, so there is nothing for ASCAP or BMI to collect on and no license to buy. That holds only as long as it is the only thing playing. One staff phone running Spotify through the floor speakers brings the whole obligation back. This is what Entuned is: we compose and own every track, with no third-party writers, no publishers, and no PRO affiliation, and the music is engineered for retail outcomes rather than pulled from a catalog. Entuned Free runs with no card and no time limit, and every track is PRO-indemnified the moment it plays.
+
+      Full disclosure on that last paragraph: we sell option three, so read it as a vendor's claim and check it the way you'd check any vendor's claim. The first two options are real and they work. The difference is that options one and two pay the obligation every year, and option three ends it.
+
+      Whichever you choose, an investigator can still walk in next year. What changes is what there is to hear. With a license on file, the visit produces nothing. With music no PRO represents, the response to any future letter is one sentence: this store no longer plays music in your repertoire.
+
+  - type: prose
+    body: |
+      For the wider compliance picture, see the <a href="../blog/store-music-licensing.html">store music licensing operator's guide</a>. If the music in question came from a consumer streaming account, <a href="../blog/can-you-play-spotify-in-your-store.html">is it actually illegal to use Spotify in my store?</a> covers exactly how that exposure works.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no credit card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "store-music-licensing"
+      - slug: "bmi-license-cost"
+      - slug: "ascap-license-cost"
+      - slug: "can-you-play-spotify-in-your-store"
