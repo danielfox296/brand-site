@@ -47,13 +47,13 @@ sections:
 
   - type: prose
     body: |
-      Areni and Kim ran a study in 1993 showing that classical music in a wine store pushed customers toward more expensive bottles without changing total units sold. North, Hargreaves, and McKendrick extended that in 1999 with a now-famous experiment: French music playing in a wine shop made French wine outsell German wine five to one. German music reversed the ratio. Customers surveyed afterward denied the music had any effect on their choices.
+      Areni and Kim ran a study in 1993 showing that classical music in a wine store pushed customers toward more expensive bottles without changing total units sold. North, Hargreaves, and McKendrick extended that in 1999 with a now-famous experiment: French music playing in a wine shop made French wine outsell German wine. German music reversed it. Customers surveyed afterward denied the music had any effect on their choices.
 
       That denial is the point. Your customers are not making conscious evaluations of the playlist. They are absorbing an ambient signal that either confirms their perception of the brand or contradicts it. A customer who walks into a store that positions itself as curated and premium will spend differently depending on whether the audio reinforces that position. When the music clashes with the brand, the customer does not think "bad song." The customer thinks "this place feels off." Then the customer leaves, and your store manager never connects the two events.
 
   - type: stat_callout
-    number: "5:1"
-    label: "French wine outsold German wine when French music played. The ratio reversed with German music. Customers denied the music influenced them."
+    number: "Flipped"
+    label: "Whichever country's music played, that country's wine outsold the other. Customers denied the music influenced them."
     source: "North, Hargreaves & McKendrick, 1999"
     accent: gold
 

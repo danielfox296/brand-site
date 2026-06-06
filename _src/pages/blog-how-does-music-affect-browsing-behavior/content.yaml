@@ -55,7 +55,7 @@ sections:
 
     '
 - type: prose
-  body: 'In 1999, researchers set up a wine display in a supermarket and alternated between French and German music on different days. When French music played, customers bought French wine over German at a ratio of five to one. When German music played, the ratio reversed. But here’s the most important finding: only 14 percent of shoppers said the music had any influence on their choice. The other 86 percent had no idea. Their browsing behavior was being steered, and they couldn’t feel the hand on the wheel. I’m Daniel Fox. I built Entuned because of studies like this. Let’s talk about what music actually does to how people browse.'
+  body: 'In 1999, researchers set up a wine display in a supermarket and alternated between French and German music on different days. When French music played, customers bought more French wine than German. When German music played, it reversed. But here’s the most important finding: almost none of the shoppers said the music had any influence on their choice. Their browsing behavior was being steered, and they couldn’t feel the hand on the wheel. I’m Daniel Fox. I built Entuned because of studies like this. Let’s talk about what music actually does to how people browse.'
 - type: subhead
   text: Browsing Is Not Rational
 - type: prose
@@ -104,7 +104,7 @@ sections:
   items:
   - North, A. C., Hargreaves, D. J., & McKendrick, J. (1999). The influence of in-store music on wine selections. Journal of Applied Psychology, 84(2), 271–276.
   - Yalch, R. F., & Spangenberg, E. R. (2000). The effects of music in a retail setting on real and perceived shopping times. Journal of Business Research, 49(2), 139–147.
-  - Sun, L., Bhatt, S., & Bhatt, G. (2023). Effect of music tempo on consumer variety-seeking behavior. Frontiers in Psychology, 14, 1171498.
+  - Sun, W., Chang, E.-C., & Xu, Y. (2023). The effects of background music tempo on consumer variety-seeking behavior: the mediating role of arousal. Frontiers in Psychology, 14, 1236006.
   - 'Andersson, P. K., Kristensson, P., Wästlund, E., & Gustafsson, A. (2012). Let the music play or not: The influence of background music on consumer behavior. Journal of Retailing and Consumer Services, 19(6), 553–560.'
   - 'Sherman, E., Mathur, A., & Smith, R. B. (1997). Store environment and consumer purchase behavior: Mediating role of consumer emotions. Psychology & Marketing, 14(4), 361–378.'
   - 'Margulis, E. H. (2014). On Repeat: How Music Plays the Mind. Oxford University Press.'

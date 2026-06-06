@@ -31,7 +31,7 @@ video:
   - time: 38
     label: The classical music effect (2025 study)
   - time: 95
-    label: The volume lever ($3.05 per customer)
+    label: The volume lever ($3.05 per check)
   - time: 160
     label: The restaurant price experiment
   - time: 200
@@ -48,7 +48,7 @@ sections:
   - 'Three moves: (1) If you sell premium hedonic products, use sophisticated instrumental music to raise the price ceiling — this is free margin.'
 - type: video
 - type: prose
-  body: 'Music can increase the maximum price a customer is willing to pay — but only for hedonic (pleasure-driven) products. A 2025 Marketing Letters study found classical music raised willingness to pay for items like wine and artisanal goods, with zero effect on utilitarian products. Separately, soft background music increased average restaurant checks by $3.05 per person (Perceptual and Motor Skills, 2003).
+  body: 'Music can increase the maximum price a customer is willing to pay — but only for hedonic (pleasure-driven) products. A 2025 Marketing Letters study found classical music raised willingness to pay for items like wine and artisanal goods, with zero effect on utilitarian products. Separately, soft background music increased the average restaurant check by about $3.05 (Perceptual and Motor Skills, 2003).
 
 
     In this video I cover the classical music effect on pricing, how volume modulates spending, and why genre-brand congruence is the mechanism that makes willingness to pay shift.
@@ -82,7 +82,7 @@ sections:
   level: 2
   text: Does music affect willingness to pay?
 - type: prose
-  body: 'Yes — for hedonic (pleasure-driven) products. A 2025 study found classical music raised the maximum price customers would pay for wine, chocolate, and artisanal goods. For utilitarian products (practical necessities), classical music had zero effect. Volume matters too: soft music increased average restaurant checks by $3.05/person.
+  body: 'Yes — for hedonic (pleasure-driven) products. A 2025 study found classical music raised the maximum price customers would pay for wine, chocolate, and artisanal goods. For utilitarian products (practical necessities), classical music had zero effect. Volume matters too: soft music increased the average restaurant check by about $3.05.
 
     '
 - type: subhead

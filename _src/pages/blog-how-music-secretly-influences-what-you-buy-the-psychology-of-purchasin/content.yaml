@@ -54,7 +54,7 @@ sections:
 
     '
 - type: prose
-  body: French music plays in a grocery store. French wine outsells German wine 5 to 1. The music switches to German oompah. German wine outsells French. And when you ask the shoppers why they chose what they chose — 86% say the music had nothing to do with it. This is how music influences purchasing decisions. Not through persuasion. Through priming. And you never see it coming.
+  body: French music plays in a grocery store. French wine outsells German wine. The music switches to German oompah. German wine outsells French. And when you ask the shoppers why they chose what they chose — the overwhelming majority say the music had nothing to do with it. This is how music influences purchasing decisions. Not through persuasion. Through priming. And you never see it coming.
 - type: subhead
   text: The Invisible Hand
 - type: prose
@@ -81,7 +81,7 @@ sections:
   level: 2
   text: How does music influence what customers buy?
 - type: prose
-  body: 'Music shapes purchasing through four pathways: (1) Fast tempo triggers variety-seeking — customers buy across more categories (Sun et al., 2023). (2) Cultural cues prime product selection — French music drove 5:1 French wine purchases (North et al., 1999). (3) Emotional state drives impulse buying — pleasure in the first 5 minutes predicts unplanned spending (Donovan et al., 1994). (4) Volume shifts cognitive mode — low volume (55 dB) leads to more deliberate, healthier choices (Biswas et al., 2019).
+  body: 'Music shapes purchasing through four pathways: (1) Fast tempo triggers variety-seeking — customers buy across more categories (Sun et al., 2023). (2) Cultural cues prime product selection — French music drove French wine purchases over German (North et al., 1999). (3) Emotional state drives impulse buying — pleasure in the first 5 minutes predicts unplanned spending (Donovan et al., 1994). (4) Volume shifts cognitive mode — low volume (55 dB) leads to more deliberate, healthier choices (Biswas et al., 2019).
 
     '
 - type: subhead
@@ -101,7 +101,7 @@ sections:
 - type: references
   heading: References
   items:
-  - Sun, J., et al. (2023). The effect of background music tempo on variety-seeking behavior. Frontiers in Psychology, 14, 1131498.
+  - Sun, W., Chang, E.-C., & Xu, Y. (2023). The effects of background music tempo on consumer variety-seeking behavior: the mediating role of arousal. Frontiers in Psychology, 14, 1236006.
   - North, A. C., Hargreaves, D. J., & McKendrick, J. (1999). The influence of in-store music on wine selections. Journal of Applied Psychology, 84(2), 271–276.
   - 'Sherman, E., Mathur, A., & Smith, R. B. (1997). Store environment and consumer purchase behavior: Mediating role of consumer emotions. Psychology & Marketing, 14(4), 361–378.'
   - Donovan, R. J., et al. (1994). Store atmosphere and purchasing behavior. Journal of Retailing, 70(3), 283–294.

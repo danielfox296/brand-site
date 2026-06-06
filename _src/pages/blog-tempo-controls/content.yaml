@@ -34,7 +34,7 @@ sections:
 
   - type: prose
     body: |
-      In 1982, Ronald Milliman published a study in the Journal of Marketing showing that the tempo of background music in a supermarket changed how fast customers moved through the store and how much they spent. Slower tempo, longer visits, bigger receipts. The meta-analytic effect size across eight follow-up studies is r=.40. In behavioral science, that qualifies as strong. Tempo literally entrains the nervous system to its pulse.
+      In 1982, Ronald Milliman published a study in the Journal of Marketing showing that the tempo of background music in a supermarket changed how fast customers moved through the store and how much they spent. Slower tempo, longer visits, bigger receipts. Across eight studies, the meta-analytic effect of music tempo on people's behavioral pace is r=.40 (Kämpfe, Sedlmeier & Renkewitz, 2011). In behavioral science, that qualifies as strong. Tempo literally entrains the nervous system to its pulse.
 
       The mechanism is well documented. The body's internal rhythms, including gait and respiration, synchronize to a dominant external beat. A 65 BPM ambient track produces slower walking than a 120 BPM pop track. The customer is not deciding to walk slower. Their legs are following the beat.
 
@@ -43,7 +43,7 @@ sections:
   - type: stat_callout
     number: "r = .40"
     label: "Meta-analytic effect size for tempo on motor behavior across eight studies"
-    source: "Meta-analysis of retail music tempo studies"
+    source: "Kämpfe, Sedlmeier & Renkewitz, 2011 (Psychology of Music)"
     accent: teal
 
   - type: subhead
@@ -57,7 +57,7 @@ sections:
   - type: stat_callout
     number: "140"
     label: "Retail stores in a 2025 experiment that found no overall sales effect from tempo alone"
-    source: "Field experiment, 2025"
+    source: "EMAC 2025 (Music360 project), 140-store field experiment"
     accent: gold
 
   - type: prose

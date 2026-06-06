@@ -61,7 +61,7 @@ sections:
   - type: stat_callout
     number: "140 stores"
     label: "found no overall sales effect from tempo manipulation alone"
-    source: "Retail field study, 2025"
+    source: "EMAC 2025 (Music360 project), 140-store field experiment"
     accent: teal
 
   - type: subhead

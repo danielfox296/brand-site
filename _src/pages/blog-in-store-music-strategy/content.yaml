@@ -19,8 +19,8 @@ sections:
   - type: key_takeaways
     items:
       - "Song selection inherits every cultural association a track has ever carried. Mood, tempo, era, and lyrical context all come with it."
-      - "A song at 136 BPM moves shoppers toward the exit faster regardless of genre or mood"
-      - "41% of shoppers spend more time in stores with the right background music"
+      - "Faster-tempo music moves shoppers toward the exit faster regardless of genre or mood (Milliman's 'fast' threshold: ≥94 BPM)"
+      - "The right background music keeps shoppers engaged longer; generic, mismatched music quietly forfeits that effect"
       - "Music strategy starts with the behavioral outcome, not the playlist"
 
   - type: prose
@@ -50,9 +50,9 @@ sections:
       The same logic applies in a different direction with high-energy tracks. A retailer who puts on an upbeat song because it feels right for the customer is correct about the feeling. What they're also doing is running a tempo that moves shoppers through the store faster and toward the exit sooner. A [1982 study by Ronald Milliman](../blog/milliman-study.html) found that fast-tempo music quickened shopper pace in a supermarket, while slow-tempo music encouraged customers to slow down, examine more items, and buy more. That finding has held across store types for 40 years.
 
   - type: stat_callout
-    number: "136 BPM"
-    label: "tempo fast enough to push customers toward the exit regardless of genre"
-    source: "Milliman tempo research, replicated 1982-2025"
+    number: "≥94 BPM"
+    label: "Milliman's 'fast' tempo threshold — fast enough to push customers toward the exit regardless of genre"
+    source: "Milliman, 1982"
     accent: teal
 
   - type: prose
@@ -69,14 +69,14 @@ sections:
       When music matches the environment, customers experience the brand as authentic and cohesive. When it doesn't, the experience becomes confusing. Playlist services frame this as a curation problem, something solvable by choosing the right genre or mood category. But genre and mood are properties of songs that already exist, songs that were written for a specific artist, audience, and cultural moment. A retailer deploying them inherits all of that.
 
   - type: stat_callout
-    number: "41%"
-    label: "of shoppers spend more time in stores with the right background music"
-    source: "Retail music behavioral research"
+    number: "Small but robust"
+    label: "the measured effect of background music on retail sales, pooled across 32 studies"
+    source: "Garlin & Owen, 2006 (meta-analysis)"
     accent: teal
 
   - type: prose
     body: |
-      The instinct to use music as a behavioral tool is correct. Research shows that the right background music causes 41% of shoppers to spend more time in a store. The variable that determines whether any individual store captures that effect isn't which playlist service they subscribe to. It's whether the music playing actually matches the shopper in front of the product, at that tempo, in that moment, without the cultural baggage of a song most of her customers have an opinion about.
+      The instinct to use music as a behavioral tool is correct. Across decades of studies, the right background music reliably nudges dwell time, pace, and spending — a small but robust effect (Garlin & Owen, 2006). The variable that determines whether any individual store captures that effect isn't which playlist service they subscribe to. It's whether the music playing actually matches the shopper in front of the product, at that tempo, in that moment, without the cultural baggage of a song most of her customers have an opinion about.
 
       Playlist curation gets you closer. It doesn't get you there. For more on why the gap between curation and strategy matters, see [the familiarity trap](../blog/the-familiarity-trap.html) and [what your music is saying about your brand](../blog/what-your-music-is-saying-about-your-brand.html).
 

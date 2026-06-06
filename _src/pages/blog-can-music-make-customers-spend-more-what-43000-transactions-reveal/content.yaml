@@ -39,12 +39,12 @@ video:
 sections:
 - type: key_takeaways
   items:
-  - Yes. A 1999 study in the Journal of Applied Psychology showed French music made customers buy French wine at a 5:1 ratio — and 86% had no idea.
+  - Yes. A 1999 study in the Journal of Applied Psychology showed French music made customers buy more French wine than German — and almost none realized the music influenced them.
   - These are controlled experiments, not observational studies.
   - 'Three things to try: (1) Lower your volume slightly — the research shows softer music increases check size.'
 - type: video
 - type: prose
-  body: 'Yes — music can increase customer spending by 8–15% depending on tempo, volume, genre, and context. In one famous study, playing French music made customers buy French wine at a 5:1 ratio, and 86% had no idea the music influenced their choice.
+  body: 'Yes — music can increase customer spending by 8–15% depending on tempo, volume, genre, and context. In one famous study, playing French music made customers buy more French wine than German, and almost none realized the music influenced their choice.
 
     In this video I break down exactly how music moves the register — from cultural priming (the wine study) to volume effects ($3.05 more per check from softer music) to the tempo-mode interaction that produced a 12% spending lift — drawing on 43,676 transactions of real sales data.
 
@@ -66,7 +66,7 @@ sections:
 - type: subhead
   text: What Kind of Spending?
 - type: prose
-  body: 'But here’s where it gets interesting. Research out of Marketing Letters tested what happens when you combine tempo with musical mode — major key versus minor key. Slow tempo in a minor key produced roughly a 12% lift in spending. But here’s the kicker: switch to a major key and the tempo effect disappeared entirely. The emotional character of the music matters as much as the speed. You can’t just throw on a “chill playlist” and expect results. The specific combination of musical properties is what moves the needle. And a study in Perceptual and Motor Skills found that in restaurant settings, simply playing softer music increased the average check by about $3.05 — roughly 15% more per table. Genre didn’t even matter. Volume alone was enough to shift spending behavior.'
+  body: 'But here’s where it gets interesting. Research out of Marketing Letters tested what happens when you combine tempo with musical mode — major key versus minor key. Slow tempo in a minor key produced roughly a 12% lift in spending. But here’s the kicker: switch to a major key and the tempo effect disappeared entirely. The emotional character of the music matters as much as the speed. You can’t just throw on a “chill playlist” and expect results. The specific combination of musical properties is what moves the needle. And a study in Perceptual and Motor Skills found that in restaurant settings, simply playing softer music increased the average check by about $3 — roughly 15%, soft versus loud. Genre didn’t even matter. Volume alone was enough to shift spending behavior.'
 - type: subhead
   text: The Entuned Connection
 - type: prose
@@ -77,7 +77,7 @@ sections:
   level: 2
   text: Can music actually make customers spend more?
 - type: prose
-  body: 'Yes. A 1999 study in the Journal of Applied Psychology showed French music made customers buy French wine at a 5:1 ratio — and 86% had no idea. A 2003 study found softer music increased restaurant checks by ~15%. A 2012 study found slow tempo in a minor key lifted sales by 12%. The effect is real and replicated across settings.
+  body: 'Yes. A 1999 study in the Journal of Applied Psychology showed French music made customers buy more French wine than German — and almost none realized. A 2003 study found softer music increased restaurant checks by ~15%. A 2012 study found slow tempo in a minor key lifted sales by 12%. The effect is real and replicated across settings.
 
     '
 - type: subhead
@@ -100,7 +100,7 @@ sections:
   - North, A. C., Hargreaves, D. J., & McKendrick, J. (1999). The influence of in-store music on wine selections. Journal of Applied Psychology, 84(2), 271–276.
   - Lammers, H. B. (2003). An oceanside field experiment on background music effects on the restaurant tab. Perceptual and Motor Skills, 96(3), 1025–1026.
   - 'Knoferle, K. M., et al. (2012). It is all in the mix: The interactive effect of music tempo and mode on in-store sales. Marketing Letters, 23(1), 325–337.'
-  - 'Knoferle, K. M., et al. (2017). It is all in the mix: The interactive effect of music tempo and mode on in-store sales. Journal of Retailing, 93(4), 580–592.'
+  - 'Knoferle, K. M., Paus, V. C., & Vossen, A. (2017). An upbeat crowd: Fast in-store music alleviates the negative effects of high social density on customers'' spending. Journal of Retailing, 93(4), 541–549.'
   - 'Areni, C. S., & Kim, D. (1993). The influence of background music on shopping behavior: Classical versus top-forty music in a wine store. Advances in Consumer Research, 20, 336–340.'
   - Grossman, O., & Rachamim, M. (2025). The impact of background music style on price thresholds for food and beverage products. Marketing Letters.
 - type: cta

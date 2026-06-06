@@ -44,7 +44,7 @@ sections:
   - type: stat_callout
     number: "0%"
     label: "sales lift from tempo manipulation alone in a 140-store retail field study"
-    source: "Retail field study, 2025"
+    source: "EMAC 2025 (Music360 project), 140-store field experiment"
     accent: teal
 
   - type: prose

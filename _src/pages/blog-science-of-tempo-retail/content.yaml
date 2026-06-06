@@ -77,9 +77,9 @@ sections:
       The same is true for music. Tempo interacts with genre, energy, familiarity, and a dozen other properties of the composition. The magnitude of the dwell time effect changes depending on what else is happening in the music. The conversion from dwell time to spending depends on variables that tempo does not address on its own.
 
   - type: stat_callout
-    number: "120+ BPM"
-    label: "Tempo threshold above which research consistently associates faster movement and shorter visits"
-    source: "Milliman, 1982; Caldwell & Hibbert, 2002"
+    number: "≥94 BPM"
+    label: "Milliman's 'fast' tempo threshold, associated with quicker shopper movement and shorter visits"
+    source: "Milliman, 1982"
     accent: teal
 
   - type: subhead
