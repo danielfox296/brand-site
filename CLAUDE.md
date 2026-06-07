@@ -185,7 +185,7 @@ For posts using the **structured YAML blog renderer** (`type: cta` block), the c
 - External links get `target="_blank" rel="noopener"`
 - Use `&mdash;` for em dashes, `&middot;` for mid-dots
 - Link to other Entuned blog posts where relevant (cross-linking helps SEO)
-- CTA always points to `https://app.entuned.co/start` (the live self-onboard activation flow). The legacy `waitlist.html` email-capture page still exists as a fallback for inbound links, but new CTAs should go straight to the activation flow.
+- CTA always points to `https://app.entuned.co/start` (the live self-onboard activation flow). The legacy `waitlist.html` and `pilot.html` pages no longer exist — do not link to them. Public-facing sales motion is PLG only; pilot / 1:1 offers are private founder-led motion and never appear in site copy.
 - Do NOT use the old "Ask About a Pilot Program" / "Learn About the Free Pilot Program" / "Start a conversation" CTAs anywhere
 
 ### 3. Add hero image
