@@ -12,12 +12,12 @@ what:
   eyebrow: "What this tier is for"
   h2: "Multi-store operators who need the lift to show up in the report."
   p1: "If you run a region or a fleet, your bonus is tied to store performance, and your existing measurement stack already tracks dwell, conversion, and basket — Enterprise turns the audio environment into a measurable lever inside that stack. Same engine as Boost and Professional, deployed against a multi-location operating reality and paired with a structured measurement protocol."
-  p2: "Common entry shape: a structured pilot in a paired set of test and control stores, 12 weeks of measurement against your existing reporting, a written readout, then a across all locations rollout if the numbers clear the bar you set."
+  p2: "Common entry shape: a structured pilot in a paired set of test and control stores, 12 weeks of measurement against your existing reporting, a written readout, then an all-locations rollout if the numbers clear the bar you set."
 
 # The Enterprise pilot — absorbs prior pilot.html content
 pilot:
   eyebrow: "The Enterprise Pilot"
-  h2: "A measured pilot before your locations rollout."
+  h2: "A measured pilot before the all-locations rollout."
   description: "Twelve weeks. Matched test and control stores. Your existing analytics stack as the measurement layer. The pilot answers the question every operator's CFO asks: did the audio lever move what we said it would move?"
 
   step1_label: "Week 1"
@@ -38,7 +38,7 @@ pilot:
 
   step5_label: "Week 13"
   step5_title: "Readout and rollout decision."
-  step5_text: "Written readout against the metrics you set: dwell, conversion, basket, traffic, return visits — whatever your reporting tracks. If the numbers cleared the bar, we talk across all locations rollout terms. If they did not, you keep the data and the relationship ends cleanly."
+  step5_text: "Written readout against the metrics you set: dwell, conversion, basket, traffic, return visits — whatever your reporting tracks. If the numbers cleared the bar, we talk all-locations rollout terms. If they did not, you keep the data and the relationship ends cleanly."
 
 # What's included at Enterprise
 includes:
@@ -55,7 +55,7 @@ includes:
   card3_text: "Where lift can be cleanly measured against your existing reporting infrastructure, we will negotiate a performance guarantee tied to a specific outcome metric over a specific window. Negotiated per-engagement; not a public commitment."
 
   card4_title: "Dedicated success contact"
-  card4_text: "A single point of contact at Entuned for the duration of the engagement. Founder consults during the initial deployment. Quarterly business reviews against your reporting once your locations is live."
+  card4_text: "A single point of contact at Entuned for the duration of the engagement. Founder consults during the initial deployment. Quarterly business reviews against your reporting once your locations are live."
 
   card5_title: "White-glove rollout"
   card5_text: "We handle deployment store-by-store across your locations. Coordination with your store ops team, audio system audits where needed, training material for store managers on the manual controls available to them on the floor."
@@ -84,7 +84,7 @@ bring:
 pricing:
   eyebrow: "Pricing"
   h2: "Negotiated per-location, structured around the engagement."
-  body: "Enterprise pricing is per-location, negotiated as part of the agreement, and structured around the specific deployment shape — number of stores, number of ICPs, integration depth, and any negotiated performance terms. The pilot has its own commercial structure separate from across all locations rollout terms."
+  body: "Enterprise pricing is per-location, negotiated as part of the agreement, and structured around the specific deployment shape — number of stores, number of ICPs, integration depth, and any negotiated performance terms. The pilot has its own commercial structure separate from all-locations rollout terms."
   cta_primary: "Talk to Enterprise"
 
 # CTA / contact form
