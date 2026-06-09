@@ -1,0 +1,119 @@
+title: Can Music Be Optimized for Sales? Yes — Here's How
+slug: can-music-be-optimized-for-sales-yes-heres-how
+eyebrow: WATCH
+dek: Yes, music can be optimized for sales the same way you'd optimize a landing page — by controlling individual variables and testing systematically.
+date: '2026-06-09'
+last_updated: '2026-06-09'
+author:
+  name: Daniel Fox
+  role: Founder & CEO
+hero:
+  src: ../img/blog/can-music-be-optimized-for-sales-yes-heres-how.jpg
+  alt: Can Music Be Optimized for Sales? Yes — Here's How
+  caption: ''
+meta_description: Yes, music can be optimized for sales the same way you'd optimize a landing page — by controlling individual variables and testing systematically. The...
+og_image: /img/blog/can-music-be-optimized-for-sales-yes-heres-how.jpg
+tags:
+- optimize-music-for-sales
+- retail-music-optimization
+- music-ab-testing-retail
+- music-tempo-optimization
+video:
+  id: QbbSZx75m4c
+  title: Can Music Be Optimized for Sales? Yes — Here's How
+  upload_date: '2026-06-09'
+  duration: PT5M6S
+  chapters: &id001
+  - time: 0
+    label: Can you optimize music like a landing page?
+  - time: 20
+    label: The four variables you can control
+  - time: 85
+    label: Why playlists can't be optimized
+  - time: 135
+    label: The adaptation layer
+  - time: 190
+    label: What optimization looks like in practice
+  - time: 235
+    label: Start optimizing
+sections:
+- type: key_takeaways
+  items:
+  - 'Yes. The research identifies four independently controllable levers: tempo (38% sales lift in the foundational study), mode/key (12% lift when combined with tempo), volume (soft music adds $3.'
+  - No — that's like A/B testing a landing page where version B changes the headline, image, CTA, layout, and colors all at once.
+  - 'Weeks 1-2: baseline with current settings.'
+- type: video
+- type: prose
+  body: 'Yes, music can be optimized for sales the same way you''d optimize a landing page — by controlling individual variables and testing systematically. The research identifies four key levers: tempo (38% sales lift), mode (12% lift when combined with tempo), volume (soft music increases check size by $3.05), and genre congruence. But playlists can''t be optimized because every song changes all variables at once.
+
+
+    In this video I break down the four optimization levers the research has identified, explain why playlist-based services structurally can''t be optimized, show how dynamic adaptation creates a feedback loop, and walk through a practical 8-week optimization cycle.
+
+    '
+- type: prose
+  body: Can you actually optimize music for sales the way you optimize a landing page or a product display? The short answer is yes — and the long answer is yes, but it’s more complex than anyone in the retail music industry wants to admit. Let me show you what works, what doesn’t, and where most people get it wrong.
+- type: subhead
+  text: The Evidence That It Works
+- type: prose
+  body: 'Let’s get the skepticism out of the way. This isn’t vibes. The data is real. The Journal of Marketing published the foundational study in 1982: changing music tempo in a supermarket produced a 38 percent swing in daily gross sales. A study in the Journal of Applied Psychology from 1999 showed that playing French music made customers choose French wine at a 5-to-1 ratio over German wine — and most of them didn’t even notice the music influenced their choice. And research in Environment and Behavior from 2003 found that classical music in a restaurant pushed average spend to about £32 per head, while pop music performed roughly the same as silence. These aren’t marginal effects. These are business-changing numbers driven by a variable most retailers treat as background noise.'
+- type: subhead
+  text: Why Simple Optimization Fails
+- type: prose
+  body: Now here’s where it gets tricky. You can’t just say “play slow classical music” and call it optimized. A large-scale field study presented at the European Marketing Academy conference in 2025 — 140 stores — tested tempo effects and found no overall impact. None. The only segment that responded was loyalty program members. Everyone else was unaffected. And research in the Journal of Retailing from 2017 showed that the optimal tempo depends on crowding — fast music helped when stores were dense, slow music helped when they were empty. The “right answer” literally changes hour by hour. Then there’s the interaction problem. Marketing Letters published a study in 2012 showing that tempo and musical mode interact — slow tempo only lifted sales in a minor key. Pair it with a major key and the benefit vanished. You can optimize for one variable and accidentally neutralize it with another. This is why the “just pick a playlist” approach hits a ceiling. Optimization requires controlling for multiple interacting variables simultaneously.
+- type: subhead
+  text: The Emotional Mechanism
+- type: prose
+  body: 'To optimize music, you need to understand why it works. And the answer isn’t about the music itself — it’s about emotion. A foundational study in the Journal of Retailing from 1982 established the PAD model: pleasure, arousal, and dominance predict consumer behavior in a retail environment. The pleasure dimension predicts essentially everything — approach behavior, time spent, willingness to spend. The 1994 follow-up in the same journal got even more specific: a customer’s pleasure level at just five minutes into the shopping experience predicted unplanned spending. Five minutes. That’s your optimization window. So you’re not optimizing music for sales directly. You’re optimizing music for emotional response — specifically, pleasant arousal at the right level for your store and your customers. Sales are the downstream result.'
+- type: subhead
+  text: What Real Optimization Looks Like
+- type: prose
+  body: 'Real music optimization has three layers. Layer one: brand alignment. Research in the Journal of Business Research from 2006 shows misfit actively hurts. Your music must reinforce your brand identity before anything else. This is the foundation — get it wrong and no amount of tempo tweaking saves you. Layer two: contextual adaptation. Tempo, mode, volume, and energy need to respond to real-time conditions — traffic, time of day, day of week. The research is unambiguous: fixed settings leave performance on the table. Layer three: measurement and iteration. You optimize by testing, measuring, and adjusting. Not by picking a playlist and hoping. This three-layer approach is exactly what Entuned is designed to do. We generate brand-aligned music that adapts to store conditions, and we track the relationship between what’s playing and what’s happening. It’s music optimization as a system, not a one-time decision.'
+- type: subhead
+  text: The Honest Caveat
+- type: prose
+  body: 'One thing I want to be straight about: music optimization isn’t magic. It won’t fix a bad product, a dirty store, or unfriendly staff. What it does is amplify everything else that’s working. When your fundamentals are solid, the right music acts as a multiplier. When they’re not, even perfect music can’t compensate. Think of it as the highest-leverage low-cost variable in your environment. Not a silver bullet — a force multiplier.'
+- type: transcript
+  chapters: *id001
+- type: subhead
+  level: 2
+  text: Can music really be optimized for sales?
+- type: prose
+  body: 'Yes. The research identifies four independently controllable levers: tempo (38% sales lift in the foundational study), mode/key (12% lift when combined with tempo), volume (soft music adds $3.05 to average checks), and genre congruence (classical music lifted wine spend to 2x vs. pop). Each can be tested and tuned like any other business variable.
+
+    '
+- type: subhead
+  level: 2
+  text: Can't I just swap playlists and see what works?
+- type: prose
+  body: 'No — that''s like A/B testing a landing page where version B changes the headline, image, CTA, layout, and colors all at once. You can''t isolate what worked. Playlists bundle all variables together. Real optimization requires changing one parameter at a time while holding everything else constant — which requires a system that controls parameters independently.
+
+    '
+- type: subhead
+  level: 2
+  text: What does an optimization cycle actually look like?
+- type: prose
+  body: 'Weeks 1-2: baseline with current settings. Weeks 3-4: shift tempo, measure. Weeks 5-6: test mode/key, measure. Weeks 7-8: adjust volume, measure. After 8 weeks you have data on three variables and can implement winning combinations. Entuned automates this — try the free tier at entuned.co to start testing. Full citations in the description. This is video 37 of 50 in this series.
+
+    '
+- type: references
+  heading: References
+  items:
+  - Milliman, R.E. (1982). "Using Background Music to Affect the Behavior of Supermarket Shoppers." Journal of Marketing, 46(3), 86-91.
+  - 'Knoferle, K.M. et al. (2017). "An Upbeat Crowd: Fast In-Store Music Alleviates Negative Effects of High Social Density on Customers'' Spending." Journal of Retailing, 93(4), 541-549.'
+  - 'Knoferle, K.M. et al. (2012). "It Is All in the Mix: The Interactive Effect of Music Tempo and Mode on In-Store Sales." Marketing Letters, 23(1), 325-337.'
+  - Smith, P.C. & Curnow, R. (1966). "'Arousal Hypothesis' and the Effects of Music on Purchasing Behavior." Journal of Applied Psychology, 50(3), 255-256.
+  - Lammers, H.B. (2003). "An Oceanside Field Experiment on Background Music Effects on the Restaurant Tab." Perceptual and Motor Skills, 96(3), 1025-1026.
+  - North, A.C. et al. (2003). "The Effect of Musical Style on Restaurant Customers' Spending." Environment and Behavior, 35(5), 712-718.
+  - 'Donovan, R.J. & Rossiter, J.R. (1982). "Store Atmosphere: An Environmental Psychology Approach." Journal of Retailing, 58(1), 34-57.'
+  - Donovan, R.J. et al. (1994). "Store Atmosphere and Purchasing Behavior." Journal of Retailing, 70(3), 283-294.
+- type: cta
+  variant: start-free
+  headline: Hear it on your floor.
+  body: Entuned engineers original music for your store at the parameter level &mdash; tempo, key, lyrical density, energy arc &mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays.
+  link: https://app.entuned.co/start
+  link_text: Start Free
+- type: related
+  posts:
+  - slug: can-familiar-music-actually-hurt-your-retail-sales
+  - slug: why-music-is-the-most-underrated-tool-in-retail
+  - slug: why-background-music-costs-you-sales
