@@ -88,14 +88,14 @@ sections:
     body: |
       Some customers walked in, registered the audio environment as a mismatch with the customer they perceive themselves to be, and left without consciously knowing why.
 
-      This is the exit operators almost never look at, because it does not feel actionable and it does not feel measurable. Both feelings are wrong. The audio in your store is doing something to the customers in it. The peer-reviewed evidence has been clear on this for forty years. Tempo affects the pace customers walk through the floor (Milliman 1982). Familiar music compresses perceived dwell while unfamiliar music expands it (Yalch and Spangenberg 2000). Music that fits the customer category lifts willingness to pay; music that clashes actively reduces basket size (Andersson 2012, on 601 real transactions in a Swedish chain). The variable is doing work in the room. The question is whether you chose what.
+      This is the exit operators almost never look at, because it does not feel actionable and it does not feel measurable. Both feelings are wrong. The audio in your store is doing something to the customers in it. The peer-reviewed evidence has been clear on this for forty years. Tempo affects the pace customers walk through the floor (Milliman 1982). Familiar music compresses perceived dwell while unfamiliar music expands it (Yalch and Spangenberg 2000). Music that fits the customer lifts what shoppers spend; music that clashes gives that lift back (Areni and Kim 1993; North, Shilcock and Hargreaves 2003). The variable is doing work in the room. The question is whether you chose what.
 
       The audio mismatch exit has one feature the other five exits do not. It costs nothing to test. The audio is changed in software, not concrete. There is no fixture move, no labor reallocation, no inventory risk. Of the six exits, this is the one where a two-week test produces the most signal per dollar of operator effort.
 
   - type: stat_callout
-    number: "Mismatched music reduces basket size"
-    label: "Andersson and colleagues (2012) studied 601 real transactions in a Swedish retail chain and found that music that clashed with the store's customer category actively reduced what customers spent — not just compared to fitted music, compared to no music at all"
-    source: "Andersson, P. K., Kristensson, P., Wästlund, E., & Gustafsson, A. (2012). Let the music play or not. Journal of Retailing and Consumer Services"
+    number: "Mismatched music forfeits the lift"
+    label: "North, Shilcock and Hargreaves (2003) found that prestige-fit music lifted spend per head, while music that did not fit landed level with no music at all"
+    source: "North, A. C., Shilcock, A., & Hargreaves, D. J. (2003). The effect of musical style on restaurant customers' spending. Environment and Behavior"
     accent: gold
 
   - type: subhead

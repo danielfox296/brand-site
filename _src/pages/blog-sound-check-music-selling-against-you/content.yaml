@@ -1,7 +1,7 @@
 title: "Your Music Is Selling Against You"
 slug: "sound-check-music-selling-against-you"
 eyebrow: "FIELD NOTES"
-dek: "Incongruent music does not just fail to help. It actively reduces willingness to pay."
+dek: "Incongruent music does not just fail to help. It costs you the lift the right music would have produced."
 date: "2026-04-01"
 last_updated: "2026-04-15"
 author:
@@ -11,13 +11,13 @@ hero:
   src: "../img/blog/sound-check-priming.jpg"
   alt: "Retail store interior with speakers visible among merchandise displays"
   caption: "Photo: Unsplash"
-meta_description: "The wrong music in your store reduces willingness to pay and shortens visits. Here is how to tell if your current audio is working against your brand."
+meta_description: "The wrong music in your store can cost you sales and work against your brand. Here is how to tell if your current audio is helping or hurting."
 og_image: "/img/blog/sound-check-priming.jpg"
 tags: [retail-music, willingness-to-pay, music-mismatch, brand-congruence]
 sections:
   - type: key_takeaways
     items:
-      - "Mismatched music actively reduces willingness to pay, not just fails to help"
+      - "Mismatched music underperforms music that fits — you forfeit the lift, not just break even"
       - "Customers process what they hear below the threshold of awareness, especially under time pressure and decision fatigue"
       - "Most retailers have never audited the specific claims their playlist makes about their brand"
 
@@ -44,17 +44,17 @@ sections:
     body: |
       Retail operators spend months on visual merchandising. They test lighting. They debate fixture placement. They obsess over the window display. Then they hand the audio to a subscription service and never think about it again.
 
-      The research on what happens next is not ambiguous. A 2012 field study by Andersson and colleagues tracked 601 real transactions in real stores. When the background music matched the brand and the customer, average sale values went up. Brand perception improved. Customer satisfaction scores rose. When the music did not match, every one of those measures moved in the opposite direction.
+      The research on what happens next is not ambiguous. North, Hargreaves and McKendrick (1999) found that the right music steers what customers choose — and that shoppers denied it had any effect on them. North, Shilcock and Hargreaves (2003) found that prestige-fit music lifted spend per head, while music that did not fit landed level with no music at all. Areni and Kim (1993) found the same direction on price: when the music fit the setting, shoppers reached for more expensive items, not more of them. When the music does not fit, that lift is what you forfeit.
 
   - type: stat_callout
-    number: "601"
-    label: "Real transactions tracked in a field study measuring the effect of music-brand congruence on sales, perception, and satisfaction"
-    source: "Andersson et al., Journal of Retailing and Consumer Services, 2012"
+    number: "Fitting music lifted spend; the wrong fit did not"
+    label: "In a restaurant field experiment, prestige-fit classical music lifted spend per head — while music that did not fit landed level with no music at all"
+    source: "North, Shilcock & Hargreaves (2003). The effect of musical style on restaurant customers' spending. Environment and Behavior"
     accent: teal
 
   - type: prose
     body: |
-      The customers in that study did not report noticing the music. They were not asked to evaluate it. The effect showed up in their receipts and their survey responses, not in their conscious awareness. People process background audio below the threshold of attention, especially when they are distracted, rushed, or comparing options. A retail floor is all three of those conditions at once.
+      The customers in North's wine study did not believe the music had influenced them. Asked directly, almost none said it had. The effect showed up in what they chose, not in their conscious awareness. People process background audio below the threshold of attention, especially when they are distracted, rushed, or comparing options. A retail floor is all three of those conditions at once.
 
   - type: subhead
     level: 2
