@@ -11,8 +11,8 @@
     <h2>{{content.h2_1}}</h2>
     <div class="stats-grid">
       <div class="stat-item cfo-stat">
-        <div class="stat-number">40:1</div>
-        <div class="stat-label">Return Ratio<br><span class="small-text">Conservative scenario</span></div>
+        <div class="stat-number">38%</div>
+        <div class="stat-label">Daily Sales Lift<br><span class="small-text">Slow vs fast tempo; Milliman 1982 (supermarket)</span></div>
       </div>
       <div class="stat-item cfo-stat">
         <div class="stat-number">Higher</div>
@@ -20,11 +20,7 @@
       </div>
       <div class="stat-item cfo-stat">
         <div class="stat-number">15–25%</div>
-        <div class="stat-label">Dwell Time Increase<br><span class="small-text">Peer-reviewed studies</span></div>
-      </div>
-      <div class="stat-item cfo-stat">
-        <div class="stat-number">95%+</div>
-        <div class="stat-label">Margin at 3% Lift<br><span class="small-text">Based on published research</span></div>
+        <div class="stat-label">Longer Dwell Time<br><span class="small-text">Slower pace, longer stay; Milliman 1982, 1986</span></div>
       </div>
     </div>
   </div>
@@ -35,40 +31,14 @@
     <h2>{{content.h2_2}}</h2>
     <p>{{content.p_2}}</p>
     
-    <div class="card-grid card-grid--3" style="margin-top: 2.5rem;">
-      <div class="card cfo-card">
-        <div class="card-title cfo-card-title">{{content.card_title_1}}</div>
-        <div style="margin-top: 1rem;">
-          <div style="font-size: 2rem; font-weight: 700; color: #50929c; margin-bottom: 0.5rem;">$15,000</div>
-          <div class="card-text">Incremental monthly per location</div>
-          <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(80, 146, 156, 0.2);">
-            <div style="font-size: 0.875rem; color: #d4e1e5;">Modeled per location</div>
-            <div style="font-size: 1.25rem; font-weight: 600; color: #50929c; margin-top: 0.5rem;">100% incremental</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card cfo-card">
-        <div class="card-title cfo-card-title">{{content.card_title_2}}</div>
-        <div style="margin-top: 1rem;">
-          <div style="font-size: 2rem; font-weight: 700; color: #50929c; margin-bottom: 0.5rem;">$25,000</div>
-          <div class="card-text">Incremental monthly per location</div>
-          <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(80, 146, 156, 0.2);">
-            <div style="font-size: 0.875rem; color: #d4e1e5;">Modeled per location</div>
-            <div style="font-size: 1.25rem; font-weight: 600; color: #50929c; margin-top: 0.5rem;">100% incremental</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card cfo-card">
-        <div class="card-title cfo-card-title">{{content.card_title_3}}</div>
-        <div style="margin-top: 1rem;">
-          <div style="font-size: 2rem; font-weight: 700; color: #50929c; margin-bottom: 0.5rem;">$40,000</div>
-          <div class="card-text">Incremental monthly per location</div>
-          <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(80, 146, 156, 0.2);">
-            <div style="font-size: 0.875rem; color: #d4e1e5;">Modeled per location</div>
-            <div style="font-size: 1.25rem; font-weight: 600; color: #50929c; margin-top: 0.5rem;">100% incremental</div>
-          </div>
+    <div class="card cfo-card" style="margin-top: 2.5rem;">
+      <div class="card-title cfo-card-title">{{content.card_title_1}}</div>
+      <div style="margin-top: 1.5rem;">
+        <div style="font-size: 1.35rem; font-weight: 700; color: #50929c; line-height: 1.5;">Average ticket &times; Monthly transactions per location &times; Lift % = Monthly incremental per location</div>
+        <p class="card-text" style="margin-top: 1.5rem;">{{content.math_explainer}}</p>
+        <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(80, 146, 156, 0.2);">
+          <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: rgba(232, 228, 222, 0.6); margin-bottom: 0.75rem;">Illustrative only &mdash; substitute your own figures</div>
+          <div class="card-text">{{content.math_example}}</div>
         </div>
       </div>
     </div>
