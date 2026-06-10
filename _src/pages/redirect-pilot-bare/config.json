@@ -1,6 +1,6 @@
 {
   "title": "Redirecting… | Entuned",
   "output": "pilot/index.html",
-  "redirect_to": "https://entuned.co/enterprise.html",
+  "redirect_to": "https://entuned.co/pilot.html",
   "robots": "noindex"
 }

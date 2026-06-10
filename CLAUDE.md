@@ -26,18 +26,19 @@ Rules that have bitten in the past and aren't enforceable by the build. **Read `
 - **No "zones"** — not a product concept. Don't reference it anywhere.
 - **No "day-parting"** except in the single allowed explainer phrase "like day-parting, but better". Use **"Outcome Scheduling"** in all other copy.
 
-### Pricing CTA topology — locked, do not unify
+### Pricing CTA topology — locked plumbing, ICP v2 hierarchy
 
 The CTA flow is intentionally asymmetric. Don't "fix" it by sending every tier through the same path.
 
-| Tier | CTA destination | Why |
+| Path | CTA destination | Why |
 |---|---|---|
 | Entuned Free | `https://app.entuned.co/start` | Self-onboard activation flow. No card. |
 | Boost | Direct Stripe Checkout | Skip the dashboard intermediate; reduce friction. |
 | Pro | Direct Stripe Checkout | Same as Boost. |
-| Enterprise | `contact.html` | High-touch only. |
+| **Multi-location pilot** | `pilot.html` → `contact.html?topic=pilot` | **The prioritized buyer path (ICP v2, 2026-06-09).** 5–50-door specialty retail; founder-led, pilot-first. |
+| Enterprise | `contact.html?topic=enterprise` | >50 doors. High-touch, inbound only. |
 
-The canonical Start Free copy + button (see blog template above) is the only place `/start` appears. The pricing page hosts the Stripe links for Boost/Pro. Don't add a "pick a tier" selector on the brand site.
+**Hierarchy (ICP v2, 2026-06-09):** on buyer-intent surfaces (homepage, pricing, verticals, for-retail-leaders, for-cfos) the pilot CTA takes the primary slot; Start Free stays present but secondary. The blog cluster keeps Start Free primary. Don't restore Free to the lead slot on buyer-intent surfaces, and don't add a "pick a tier" selector on the brand site. Rollout plan: `../projects/icp-v2-routing/SSOT.md`.
 
 ### Vertical pages — all live, all indexed, don't delete
 
@@ -47,7 +48,7 @@ Each vertical's `related.others` line cross-links to **all** other verticals (al
 
 ### ICP discipline before new pages
 
-- **ICP is PLG-primary: small-shop owner-operator.** Read `../marketing/ICP/SSOT.md` before writing any new vertical/landing page or outreach copy. Cultural-identity verticals are anti-ICP and don't ship.
+- **ICP v2 (2026-06-09): the sales target is multi-location specialty retail, 5–50 doors; single-store stays self-serve.** Read `../marketing/ICP/SSOT.md` before writing any new vertical/landing page or outreach copy. Excluded verticals (grocery/convenience/pharmacy, luxury flagship, restaurants/hospitality) and cultural-identity verticals don't ship.
 - **Run `/outreach-precheck` first** when the task is target selection or angle picking for a vertical/listicle/partnership page. Target selection comes *before* drafting.
 - **Run `/adversarial` before publishing** any change to strategic surfaces: pricing copy, public positioning, vertical pages, founder writing, blog posts, investor narrative. The skill spawns a cold-context attack on the draft; surface the punch list before pushing.
 
@@ -185,8 +186,8 @@ For posts using the **structured YAML blog renderer** (`type: cta` block), the c
 - External links get `target="_blank" rel="noopener"`
 - Use `&mdash;` for em dashes, `&middot;` for mid-dots
 - Link to other Entuned blog posts where relevant (cross-linking helps SEO)
-- CTA always points to `https://app.entuned.co/start` (the live self-onboard activation flow). The legacy `waitlist.html` and `pilot.html` pages no longer exist — do not link to them. Public-facing sales motion is PLG only; pilot / 1:1 offers are private founder-led motion and never appear in site copy.
-- Do NOT use the old "Ask About a Pilot Program" / "Learn About the Free Pilot Program" / "Start a conversation" CTAs anywhere
+- Blog CTA always points to `https://app.entuned.co/start` (the live self-onboard activation flow). The legacy `waitlist.html` page no longer exists — do not link to it. `pilot.html` is live again as of 2026-06-09 (ICP v2): the multi-location pilot page for the 5–50-door buyer. Linking to it from buyer-intent surfaces is correct; the blog CTA box stays Start Free until the planned template-level fork lands (see `../projects/icp-v2-routing/SSOT.md`, Phase 4).
+- Do NOT use the old "Ask About a Pilot Program" / "Learn About the Free Pilot Program" CTA phrasings — the pilot CTA copy is "Start the pilot conversation" pointing at `pilot.html` or `contact.html?topic=pilot`
 
 ### 3. Add hero image
 

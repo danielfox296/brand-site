@@ -81,6 +81,7 @@ textarea:valid:not(:placeholder-shown) {
       <div class="fade-up">
         <p class="section-eyebrow" style="margin-bottom: 1rem;">What's this about?</p>
         <div class="topic-chips" id="topic-chips">
+          <button type="button" class="topic-chip" data-topic="pilot">Multi-location pilot</button>
           <button type="button" class="topic-chip" data-topic="enterprise">Enterprise rollout</button>
           <button type="button" class="topic-chip" data-topic="essentials">Entuned Free</button>
           <button type="button" class="topic-chip" data-topic="professional">Professional inquiry</button>
@@ -127,19 +128,19 @@ textarea:valid:not(:placeholder-shown) {
           <input type="email" id="contact-email" name="email" required placeholder="jane@company.com">
         </div>
 
-        <div class="form-group">
-          <label for="contact-company">Company <span style="opacity: 0.4; font-weight: 400;">(optional)</span></label>
-          <input type="text" id="contact-company" name="company" placeholder="Acme Retail">
-        </div>
-
         <div class="form-group" id="routing-locations" style="display:none;">
-          <label for="contact-locations">Number of locations <span style="opacity: 0.4; font-weight: 400;">(optional)</span></label>
+          <label for="contact-locations">Number of locations <span id="locations-optional" style="opacity: 0.4; font-weight: 400;">(optional)</span></label>
           <input type="number" id="contact-locations" name="num_locations" placeholder="5" min="1">
         </div>
 
         <div class="form-group" id="routing-vendor" style="display:none;">
-          <label for="contact-vendor">Current music vendor <span style="opacity: 0.4; font-weight: 400;">(optional)</span></label>
+          <label for="contact-vendor">Current music vendor <span id="vendor-optional" style="opacity: 0.4; font-weight: 400;">(optional)</span></label>
           <input type="text" id="contact-vendor" name="current_vendor" placeholder="Soundtrack Your Brand, Mood Media, Spotify, none, other...">
+        </div>
+
+        <div class="form-group">
+          <label for="contact-company">Company <span style="opacity: 0.4; font-weight: 400;">(optional)</span></label>
+          <input type="text" id="contact-company" name="company" placeholder="Acme Retail">
         </div>
 
         <div class="form-group">
@@ -165,7 +166,8 @@ textarea:valid:not(:placeholder-shown) {
   <script>
   (function() {
     var topicMessages = {
-      enterprise: '<strong>Enterprise rollout.</strong> Multi-store deployment of engineered audio against your customer and outcome. Standard entry shape is a 12-week pilot in matched test and control stores. Tell us about your locations below.',
+      pilot: '<strong>Multi-location pilot.</strong> A measured deployment across a subset of your stores: matched test and control locations, twelve weeks, free. Daniel computes the read from the numbers your stores already produce. Tell us your door count and who handles your music today; he responds personally within one business day.',
+      enterprise: '<strong>Enterprise rollout.</strong> Multi-store deployment of engineered audio against your customer and outcome, for chains beyond fifty locations. Tell us about your fleet below.',
       essentials: '<strong>Entuned Free.</strong> The free tier is live. <a href="https://app.entuned.co/start" style="color: #50929c;">Sign up at app.entuned.co/start</a> (no credit card, you get a player URL immediately), or message us below if you want to talk to a human.',
       professional: '<strong>Professional inquiry.</strong> POS integration, Outcome Scheduling, multiple ICPs, self-improving refinement. Most operators on this tier are running 1–4 stores with a real measurement stack.',
       partnership: '<strong>Partnership inquiry.</strong> Integration partners, audio system vendors, retail analytics platforms. Tell us what you are building and where Entuned fits.',
@@ -174,6 +176,7 @@ textarea:valid:not(:placeholder-shown) {
     };
 
     var roleByTopic = {
+      pilot: 'Retail Operator',
       enterprise: 'Retail Operator',
       essentials: 'Retail Operator',
       professional: 'Retail Operator',
@@ -208,10 +211,22 @@ textarea:valid:not(:placeholder-shown) {
 
     function toggleRoutingFields() {
       var isOperator = roleSelect && roleSelect.value === 'Retail Operator';
+      var isPilot = topicField && topicField.value === 'pilot';
       var locEl = document.getElementById('routing-locations');
       var vendorEl = document.getElementById('routing-vendor');
       if (locEl) locEl.style.display = isOperator ? 'block' : 'none';
       if (vendorEl) vendorEl.style.display = isOperator ? 'block' : 'none';
+      // For the pilot topic, door count + vendor are required — but only while visible,
+      // so a hidden required field can never block submission.
+      var locInput = document.getElementById('contact-locations');
+      var vendorInput = document.getElementById('contact-vendor');
+      var locOpt = document.getElementById('locations-optional');
+      var vendorOpt = document.getElementById('vendor-optional');
+      var requireBoth = isPilot && isOperator;
+      if (locInput) locInput.required = requireBoth;
+      if (vendorInput) vendorInput.required = requireBoth;
+      if (locOpt) locOpt.style.display = requireBoth ? 'none' : 'inline';
+      if (vendorOpt) vendorOpt.style.display = requireBoth ? 'none' : 'inline';
     }
 
     // Wire chip clicks
@@ -231,8 +246,6 @@ textarea:valid:not(:placeholder-shown) {
     var params = new URLSearchParams(window.location.search);
     var topic = params.get('topic');
     if (topic) {
-      // Map legacy 'pilot' topic to 'enterprise'
-      if (topic === 'pilot') topic = 'enterprise';
       setTopic(topic);
     }
   })();

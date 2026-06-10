@@ -1,0 +1,53 @@
+hero:
+  eyebrow: "For multi-location specialty retail"
+  h1: "Music is the last unmeasured variable in your stores."
+  subline: "You can pull traffic, conversion, and basket for every door you run. Audio has never had a number next to it. Entuned runs a measured pilot across a subset of your locations and puts one there."
+
+line_item:
+  eyebrow: "The line item"
+  h2: "You already pay for music. Ask what it returns."
+  p1: "Most chains in the 5-to-50 band signed a music vendor years ago. The contract solved licensing, the per-location fee went into the budget, and the question of what the music does on the floor never came up again. The fee renews. Nobody owns the answer."
+  p2: "Your other environmental spend gets scrutiny. Lighting gets a remodel budget and a walkthrough. Layout gets planograms and a conversion number. The soundtrack plays all day in every store you run, touches every customer who walks in, and reports to no one."
+
+pilot:
+  eyebrow: "The pilot"
+  h2: "A subset of your stores, measured against the rest."
+  body: "We take a handful of your stores and engineer original music for those floors against the outcome you pick: basket, conversion, or dwell where you measure it. The rest of your stores stay exactly as they are. Twelve weeks, free. Your reporting stays the instrument, same traffic counters, same POS, same dashboards. At the end you have a store-by-store comparison against control, and a defensible decision either way."
+
+changes:
+  eyebrow: "What changes"
+  h2: "What the pilot leaves you with."
+  card1_title: "A per-door number for audio"
+  card1_text: "Basket, conversion, dwell where you measure it. Moved or not, store by store. Audio joins the metrics you already manage by."
+  card2_title: "Each floor tuned to its outcome"
+  card2_text: "Original music engineered for every pilot store against its own customer and the outcome you picked, consistent across the subset."
+  card3_title: "Per-door economics"
+  card3_text: "You already carry a per-location music fee. At the end of the pilot you have a defensible answer on what one returns."
+  card4_title: "Original, licensed, indemnified"
+  card4_text: "Original music, PRO-indemnified the moment it plays. Every track Entuned puts on your floor is covered."
+
+steps:
+  eyebrow: "How it runs"
+  h2: "Store selection to read-out in fourteen weeks."
+  step1_title: "A conversation"
+  step1_text: "Thirty minutes with Daniel, the founder. Your doors, your current vendor, your numbers, and which outcome matters most right now."
+  step2_title: "Store selection"
+  step2_text: "We pick the pilot subset together and match it against control stores."
+  step3_title: "Engineered audio"
+  step3_text: "Original music built for each pilot floor and scheduled around your trading day. Live within two weeks of store selection."
+  step4_title: "The read"
+  step4_text: "Twelve weeks. You export the numbers your stores already produce, Daniel runs the comparison against control, and you get the read store by store: what moved, where, and by how much."
+
+fit:
+  eyebrow: "Fit"
+  h2: "Built for 5 to 50 doors."
+  body: "Specialty retail. Apparel and footwear, outdoor and sporting goods, beauty and personal care, home goods, gift and lifestyle. Operators who already treat the environment as part of the offer and spend on lighting, layout, and scent. The strongest fit is a chain with a music vendor already on the books, because the decision at the end of the pilot is a switch, not a new line item. Running a single store? <a href=\"https://app.entuned.co/start\" style=\"color: var(--accent);\">Entuned Free</a> is live, no card required."
+
+further_reading_eyebrow: "The evidence"
+further_reading_headline: "Read the research first if you want."
+further_reading_links: "Start with <a href=\"results.html\">the peer-reviewed research on music and store behavior</a>, <a href=\"science.html\">how the engineering works</a>, or <a href=\"for-cfos.html\">the finance view on retail audio</a>."
+
+cta:
+  eyebrow: "Start"
+  h2: "Bring your door count."
+  subline: "Tell us how many locations you run and who handles your music today. The pilot is free, and Daniel responds personally within one business day."

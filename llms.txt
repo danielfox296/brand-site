@@ -15,6 +15,7 @@ Four decades of peer-reviewed research on music and consumer behavior sit behind
 - [Home](https://entuned.co/): What Entuned does, who it is for, and how to start free.
 - [How It Works](https://entuned.co/how-it-works.html): The product flow from signup through measurement.
 - [Pricing](https://entuned.co/pricing.html): Public four-tier pricing — Entuned Free ($0), Boost ($99/loc/mo), Pro ($399/loc/mo), Enterprise (negotiated). Self-serve Stripe checkout on Boost and Pro.
+- [Multi-Location Pilot](https://entuned.co/pilot.html): Measured in-store audio pilot for specialty retail chains running 5 to 50 locations.
 - [Science](https://entuned.co/science.html): Peer-reviewed research on music and shopper behavior.
 - [About](https://entuned.co/about.html): Who we are and why the company exists.
 - [Blog](https://entuned.co/blog.html): Operator-facing posts on retail audio.
