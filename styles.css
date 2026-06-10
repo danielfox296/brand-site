@@ -812,6 +812,60 @@ main > article > p,
   margin-bottom: 1.5rem;
 }
 
+/* New-format blog CTA (templates/blocks/cta.html) — mirrors .article-cta box + .cta button */
+.blog-cta {
+  max-width: 720px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background: rgba(80, 146, 156, 0.06);
+  border-left: 3px solid #50929c;
+  border-radius: 4px;
+}
+
+.blog-cta__headline {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.blog-cta__body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+}
+
+.blog-cta__link {
+  background-color: #50929c;
+  color: #20201c;
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.blog-cta__link:hover {
+  background-color: #6aacb5;
+}
+
+.blog-cta__fork {
+  margin-top: 1.25rem;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  opacity: 0.75;
+}
+
+.blog-cta__fork a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.blog-cta__fork a:hover {
+  opacity: 0.7;
+}
+
 .back-link {
   max-width: 720px;
   margin: 0 auto;

@@ -40,7 +40,7 @@ sections:
       You cannot play music from a personal streaming account in your store. Spotify, Apple Music, Pandora, YouTube Music. All of them explicitly prohibit commercial use in their terms of service. Playing a personal account in a business setting constitutes a public performance of copyrighted material, and copyright law allows fines between $750 and $30,000 per song.
 
   - type: stat_callout
-    number: "$750&ndash;$30,000"
+    number: "$750–$30,000"
     label: "Statutory fine per song for unlicensed public performance (U.S. Copyright Act 17 U.S.C. &sect;504(c))"
     source: "U.S. Copyright Act"
     accent: gold
@@ -75,9 +75,9 @@ sections:
     title: "Commercial in-store music services (2026)"
     columns: ["Service", "Monthly cost per location", "Notes"]
     rows:
-      - ["Pandora CloudCover", "$16.95&ndash;$26.95", "Lowest entry price in the catalog category"]
+      - ["Pandora CloudCover", "$16.95–$26.95", "Lowest entry price in the catalog category"]
       - ["SiriusXM for Business", "$26.95+", "Requires $99 hardware purchase"]
-      - ["SoundMachine", "$26.95&ndash;$33.95", "Browser and app-based"]
+      - ["SoundMachine", "$26.95–$33.95", "Browser and app-based"]
       - ["Soundtrack Your Brand", "~$29", "Spotify-backed; clean interface"]
       - ["Epidemic Sound", "Varies", "In-store plans available"]
 
@@ -145,7 +145,7 @@ sections:
   - type: cta
     variant: start-free
     headline: "Hear it on your floor."
-    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no credit card, no time limit. PRO-indemnified the moment it plays."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free — no credit card, no time limit. PRO-indemnified the moment it plays."
     link: "https://app.entuned.co/start"
     link_text: "Start Free"
 
