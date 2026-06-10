@@ -3,8 +3,10 @@
 hero:
   eyebrow: "A new design system for retail audio"
   h1: "Can music increase your sales?"
-  subline: "Forty years of peer-reviewed research says yes. Tempo controls dwell time. Identity-fit music lifts what customers spend. Familiar music drives them out faster. Entuned produces original music designed for your customer and your store. Free forever, no credit card."
+  subline: "Forty years of peer-reviewed research says yes. Tempo controls dwell time. Identity-fit music lifts what customers spend. Familiar music drives them out faster. Entuned produces original music designed for your customer and your store."
+  cta_pilot: "Start a measured pilot"
   cta_primary: "Start Free"
+  cta_microcopy: "Running 5&ndash;50 locations? Start a measured pilot. Single store or just a few? Start free &middot; no card &middot; no time limit."
 
 # Pillar 1 — Yes (research)
 pillar1:
@@ -96,4 +98,5 @@ home_faq_a5: 'Sign in with your email or Google at <a href="https://app.entuned.
 final:
   h2: "Three minutes from sign-up to music in your store."
   subline: "Free to stream. More power when you outgrow it."
+  cta_pilot: "Start a measured pilot"
   cta_primary: "Start Free"

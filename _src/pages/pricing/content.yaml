@@ -19,6 +19,15 @@ stripe_pro_payment_link: "https://api.entuned.co/billing/checkout?tier=pro"
 contact_enterprise_url: "contact.html?topic=enterprise"
 # Free-tier self-onboard. Magic-link / Google sign-in. No card required.
 essentials_signup_url: "https://app.entuned.co/start"
+# Multi-location pilot — the prioritized path for 5–50-door operators (ICP v2).
+pilot_url: "pilot.html"
+
+# Pilot band — sits above the self-serve tier grid.
+pilot:
+  eyebrow: "Running 5 to 50 locations?"
+  headline: "Start with a measured pilot, not a tier."
+  body: "For a multi-location operator the question isn't which tier — it's what the audio does to behavior across your doors. We engineer original music for a subset of your stores, run it twelve weeks against matched control locations, and Daniel reads the result from the numbers your stores already produce. The pilot is free and sits outside the self-serve tiers below: no card, no subscription, a conversation."
+  cta_label: "Start a measured pilot"
 
 hero:
   eyebrow: "Pricing"
@@ -125,5 +134,7 @@ final:
   text_links_lead: "Or"
   text_links_essentials_label: "start free with Entuned Free"
   text_links_separator: "·"
-  text_links_enterprise_lead: "Multi-fleet rollout?"
+  text_links_pilot_lead: "Running 5&ndash;50 locations?"
+  text_links_pilot_label: "Start a measured pilot"
+  text_links_enterprise_lead: "More than 50?"
   text_links_enterprise_label: "Talk to Enterprise"
