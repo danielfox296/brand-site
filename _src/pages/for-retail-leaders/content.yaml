@@ -26,40 +26,33 @@ questions:
 # What changes
 changes:
   eyebrow: "What Changes"
-  h2: "Same engine. Three deployment shapes."
+  h2: "Same engine. A few ways in."
 
-  card1_title: "Test in one store"
-  card1_text: "Spin up Entuned Free in a single store this week — no credit card, no time limit. Pick Linger or Lift Energy and watch what your existing reporting shows for that store against its own trailing baseline. Useful as the first look before a multi-store Ideal Customer Profile (ICP) build."
+  card1_title: "Start with a measured pilot"
+  card1_text: "If you run 5 to 50 locations, the pilot is the entry. We engineer original music for a subset of your stores, run it twelve weeks against matched control locations, and read the result in the reporting you already use. The pilot is free, and it answers the only question that matters before a wider rollout: what does the audio move."
 
-  card2_title: "Deploy across the format"
-  card2_text: "Move to Boost ($99/location/month) once you want music tailored to a specific customer profile rather than a general catalogue. Most regional retailers run Boost in stores that share a customer profile and deploy multiple ICPs through Professional in stores that don't."
+  card2_title: "Look first in a single store"
+  card2_text: "Want a feel before the pilot conversation? Spin up Entuned Free in one store this week — no credit card, no time limit. Pick Linger or Lift Energy and watch what your reporting shows for that store against its own trailing baseline."
 
-  card3_title: "Measure across your locations"
-  card3_text: "Professional ($399/location/month) integrates with your POS, day-parts the audio against your traffic profile, and refines the music against your store's outcomes as the dataset grows. The lift shows up in the reports you already run."
+  card3_title: "Deploy and measure across locations"
+  card3_text: "Boost ($99/location/month) tailors music to a specific customer profile. Professional ($399/location/month) integrates with your POS, schedules the audio against your traffic profile, and refines against your store's outcomes as the dataset grows. The lift shows up in the reports you already run."
 
-  card4_title: "Roll out the network"
-  card4_text: "Enterprise is for across all locations deployments. Custom ICP design, performance guarantees where lift can be cleanly measured, dedicated success contact, white-glove rollout. Standard entry shape is a 12-week pilot in a paired set of test and control stores."
+  card4_title: "Beyond 50 stores"
+  card4_text: "Past 50 locations, Enterprise adds custom ICP design, performance guarantees where lift can be cleanly measured, a dedicated success contact, and white-glove rollout. The entry shape is still a 12-week pilot in a paired set of test and control stores."
 
 # How to bring this in
 buy_in:
   eyebrow: "Getting Buy-In"
   h2: "What your CFO will want to see."
-  body: "Most retail finance teams approve a single-store Entuned Free trial without a procurement conversation — there is no spend. Boost and Professional move on standard SaaS approval ($99 or $399 per location per month, monthly, no long-term contract). Enterprise gets a structured pilot with a written readout against your existing reporting before any across all locations commitment. The financial case sits on the <a href=\"for-cfos.html\" style=\"color: #50929c;\">CFO page</a>."
-
-# Pilot anchor (un-named)
-anchor:
-  eyebrow: "What's Already Running"
-  h2: "Currently in pilot with an 80+ store retailer."
-  body: "Entuned is currently running a deployment with a major mid-market men's fashion retailer with 80+ stores. Multi-store deployment, ICP-tailored audio against the retailer's existing reporting stack. Pilot data accumulating; brand name not yet authorized for public reference."
+  body: "Most retail finance teams approve a free pilot without a procurement conversation — there is no spend, and the readout lands in reporting they already trust. Boost and Professional move on standard SaaS approval ($99 or $399 per location per month, monthly, no long-term contract) for single-store and small deployments. The financial case sits on the <a href=\"for-cfos.html\" style=\"color: #50929c;\">CFO page</a>."
 
 # CTA
 cta:
   eyebrow: "Get Started"
-  h2: "Three minutes to put music in your store."
-  subline: "Free with Entuned Free. Public pricing at Boost and Professional. Talk to us about Enterprise rollouts."
+  h2: "Start with a measured pilot across your stores."
+  subline: "If you run 5 to 50 locations, the pilot is how you find out what the audio moves before you commit. Free, twelve weeks, read out in your own reporting. Running a single store or just a few? Entuned Free is live."
+  cta_pilot: "Start a measured pilot"
   cta_primary: "Start Free"
-  cta_secondary: "See Pricing"
-  cta_tertiary: "Talk to Enterprise"
 
 further_reading_eyebrow: "Related Reading"
 further_reading_headline: "Go Deeper"

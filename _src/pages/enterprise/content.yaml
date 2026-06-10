@@ -3,15 +3,15 @@
 hero:
   eyebrow: "Enterprise"
   h1: "Music as a measurable variable. Across your locations."
-  subline: "Multi-location rollouts of music engineered to your customer and your outcome. Custom Ideal Customer Profile (ICP) design, performance guarantees where lift can be cleanly measured, dedicated success contact, white-glove deployment."
+  subline: "For operators past fifty locations. Multi-location rollouts of music engineered to your customer and your outcome — custom Ideal Customer Profile (ICP) design, performance guarantees where lift can be cleanly measured, a dedicated success contact, and white-glove deployment."
   cta_primary: "Talk to Enterprise"
   cta_secondary: "See Pricing"
 
 # What Enterprise is for
 what:
   eyebrow: "What this tier is for"
-  h2: "Multi-store operators who need the lift to show up in the report."
-  p1: "If you run a region or a fleet, your bonus is tied to store performance, and your existing measurement stack already tracks dwell, conversion, and basket — Enterprise turns the audio environment into a measurable lever inside that stack. Same engine as Boost and Professional, deployed against a multi-location operating reality and paired with a structured measurement protocol."
+  h2: "For fleets past fifty doors who need the lift to show up in the report."
+  p1: "If you run more than fifty locations across regions, your bonus is tied to store performance, and your existing measurement stack already tracks dwell, conversion, and basket — Enterprise turns the audio environment into a measurable lever inside that stack. Same engine as Boost and Professional, deployed against a fleet operating reality and paired with a structured measurement protocol. Running 5 to 50 locations? Start with the <a href=\"pilot.html\" style=\"color: #50929c;\">measured pilot</a> — free, twelve weeks, read out in your own reporting."
   p2: "Common entry shape: a structured pilot in a paired set of test and control stores, 12 weeks of measurement against your existing reporting, a written readout, then an all-locations rollout if the numbers clear the bar you set."
 
 # The Enterprise pilot — absorbs prior pilot.html content
