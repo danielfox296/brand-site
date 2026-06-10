@@ -40,6 +40,7 @@ jobs:
           cp -r blog _site/blog 2>/dev/null || true
           cp -r raise _site/raise 2>/dev/null || true
           cp -r pricing _site/pricing 2>/dev/null || true
+          cp -r pilot _site/pilot 2>/dev/null || true
           cp -r js _site/js 2>/dev/null || true
 
       - name: Upload Pages artifact
