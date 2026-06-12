@@ -51,7 +51,7 @@ science:
   description: "Forty years of peer-reviewed work say in-store audio measurably affects customer behavior. Entuned engineers around that work — every parameter the research identifies as load-bearing is something we specify on purpose."
 
 science1:
-  stat: "+15–25%"
+  stat: "Longer"
   label: "DWELL TIME"
   title: "Tempo affects pace through the store."
   desc: "Slower tempo holds shoppers in the room longer. Milliman's 1982 supermarket study found shoppers walked more slowly to slower music; sales rose with extended dwell."
@@ -72,11 +72,11 @@ science3:
   cite: "Yalch &amp; Spangenberg (2000). Journal of Business Research."
 
 science4:
-  stat: "1.9B"
+  stat: "The gap"
   label: "WHAT THE INDUSTRY MEASURES"
-  title: "Footsteps, heatmaps, dwell zones — but no one measures the audio."
-  desc: "In-store analytics is a $1.9B industry that counts everything except the one variable a manager can change while a customer is still in the store. We are filling the gap the measurement industry never filled."
-  cite: "Industry analyst data, 2024."
+  title: "Footsteps, heatmaps, dwell tracking — but no one measures the audio."
+  desc: "In-store analytics is a billion-dollar industry that counts everything except the one variable a manager can change while the customer is in the store. We are filling the gap the measurement industry never filled."
+  cite: "In-store analytics category."
 
 # CTA
 cta:

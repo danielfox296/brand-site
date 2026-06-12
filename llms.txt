@@ -15,7 +15,11 @@ Four decades of peer-reviewed research on music and consumer behavior sit behind
 - [Home](https://entuned.co/): What Entuned does, who it is for, and how to start free.
 - [How It Works](https://entuned.co/how-it-works.html): The product flow from signup through measurement.
 - [Pricing](https://entuned.co/pricing.html): Public four-tier pricing — Entuned Free ($0), Boost ($99/loc/mo), Pro ($399/loc/mo), Enterprise (negotiated). Self-serve Stripe checkout on Boost and Pro.
-- [Multi-Location Pilot](https://entuned.co/pilot.html): Measured in-store audio pilot for specialty retail chains running 5 to 50 locations.
+- [Multi-Location Pilot](https://entuned.co/pilot.html): Free 12-week measured pilot across matched test and control stores for 5–50-location specialty retail; the founder computes the read from your own POS and traffic numbers.
+- [Enterprise](https://entuned.co/enterprise.html): Engineered in-store audio for operators running more than 50 locations. High-touch, inbound rollout.
+- [Impact Calculator](https://entuned.co/impact.html): Interactive what-if calculator for modeling how a lift in average transaction value flows through your store's revenue. Illustrative scenarios, not predictions — a pilot replaces them with your numbers.
+- [Licensing](https://entuned.co/licensing.html): How Entuned's original, PRO-free music removes the ASCAP/BMI/SESAC/GMR licensing obligation entirely, with the indemnification Entuned carries the moment it plays.
+- [Results](https://entuned.co/results.html): What the research on music and shopper behavior actually supports, and how a measured pilot reads the effect in a retailer's own reporting.
 - [Science](https://entuned.co/science.html): Peer-reviewed research on music and shopper behavior.
 - [About](https://entuned.co/about.html): Who we are and why the company exists.
 - [Blog](https://entuned.co/blog.html): Operator-facing posts on retail audio.
@@ -43,6 +47,7 @@ Four decades of peer-reviewed research on music and consumer behavior sit behind
 - [Music License Cost Calculator](https://entuned.co/music-license-cost-calculator.html): Estimates 2026 annual licensing costs across all four US PROs (ASCAP, BMI, SESAC, GMR) by business type, square footage, occupancy, and live-music status. Every line cited to a published rate sheet.
 - [Retail Music Decibel Guide](https://entuned.co/retail-music-decibel-guide.html): Sortable reference table of typical sound levels for retail stores, restaurants, salons, gyms, and offices, with CDC NIOSH and OSHA threshold context. Sourced from peer-reviewed acoustics research and SoundPrint.
 - [PRO Enforcement Map](https://entuned.co/pro-enforcement-map.html): Interactive US map of 46 verified ASCAP music-licensing lawsuits filed in 2024-2025 against bars, restaurants, and venues. Sortable by state, year, and business type. Public-record dataset.
+- [Will It Retail?](https://entuned.co/will-it-retail.html): A tier-list ranking of real songs by how well they work in a retail environment — S through F — with a breakdown of what each tier actually means for in-store performance.
 
 ## SEO Landing Pages
 
@@ -54,8 +59,6 @@ Four decades of peer-reviewed research on music and consumer behavior sit behind
 - [How to Increase Average Transaction Value in Clothing Stores](https://entuned.co/how-to-increase-aov-apparel.html): Apparel-specific AOV dynamics, outfit completion psychology, and how lyrical content reinforces the self-image that drives multi-piece purchases.
 - [How to Increase Dwell Time in Furniture and Home Goods Stores](https://entuned.co/how-to-increase-dwell-time-home-goods.html): Why high-ticket browsing requires contemplation-mode sound design, and how slow tempos and spacious arrangements support couple decision-making.
 - [How to Drive Impulse Purchases in Beauty and Cosmetics Retail](https://entuned.co/how-to-increase-impulse-purchases-beauty.html): The self-reward loop in beauty retail and how lyrical content aligned to self-care themes reinforces the motivation that drives add-on purchases.
-
-- [Will It Retail?](https://entuned.co/will-it-retail.html): A tier-list ranking of real songs by how well they work in a retail environment — S through F — with a breakdown of what each tier actually means for in-store performance.
 
 ## Blog Posts
 
@@ -89,28 +92,20 @@ Four decades of peer-reviewed research on music and consumer behavior sit behind
 - [Mood Media Alternatives in 2026](https://entuned.co/blog/mood-media-alternatives.html): A straight look at what the market offers operators who are done with long contracts and flat playlists.
 - [ASCAP License Cost: What Small Businesses Actually Pay (and How to Avoid It)](https://entuned.co/blog/ascap-license-cost.html): ASCAP runs $250 to $600 per year for small businesses — but it's one of four PROs. Total compliance costs a typical small retailer $500 to $2,000+ annually. There is a third option.
 - [Music Licensing for Business: The Complete Guide (and How to Skip It Entirely)](https://entuned.co/blog/music-licensing-for-business.html): How music licensing for businesses actually works — ASCAP, BMI, SESAC, GMR — what it costs, and how to opt out of the entire system legally with PRO-free original music.
-- [Retail Music Licensing in 2026: What Every Store Owner Needs to Know](https://entuned.co/blog/retail-music-licensing-2026.html): ASCAP, BMI, SESAC. What licenses your stores need, what they cost, and the question most operators never ask their music vendor.
 - [AI-Generated Music for Retail: What's Real](https://entuned.co/blog/ai-generated-music-retail.html): Generative music crossed the commercial quality threshold in late 2025. Here is what changed for retail and what the hype is still ahead of.
 - [AI vs. Traditional In-Store Music](https://entuned.co/blog/ai-vs-traditional-retail-music.html): The in-store music industry has run on the same model since 1934. Generative music changes the options retailers actually have.
-- [$2 Billion in Sensors. No Real-Time Levers.](https://entuned.co/blog/2-billion-sensors-no-real-time-levers.html): The in-store analytics market is approaching 2 billion dollars. It still cannot tell a retailer what to change in real time.
-- [What Happens After Ninety Days](https://entuned.co/blog/after-ninety-days.html): The first week is setup. The first month is noise. By day ninety, the numbers start telling you how music works in your store specifically.
 - [AI Music for Business in 2026: What Works](https://entuned.co/blog/ai-music-for-business-2026.html): AI music generation crossed the commercial quality threshold in late 2025. Three things changed for retailers who pay attention to what plays in their stores.
-- [The Battery Ventures Thesis, Extended](https://entuned.co/blog/battery-ventures-thesis-extended.html): Battery Ventures backed RetailNext to build the physical retail data layer. The next logical surface for that thesis is the one nobody has connected yet.
 - [Best Background Music for Retail Stores (2026)](https://entuned.co/blog/best-background-music-for-retail-stores-2026.html): Every store plays music. Almost none of them know whether it is helping or hurting. Here is what to look for, what to avoid, and what the legally safe options actually are.
 - [Is It Actually Illegal to Use Spotify in My Store?](https://entuned.co/blog/can-you-play-spotify-in-your-store.html): A clean answer for retail operators who just want to know if the Spotify account their store manager set up is going to bite them.
-- [How to Get More Out of the Sensor Data You Already Pay For](https://entuned.co/blog/closing-the-loop-on-retail-analytics.html): Most multi-location retailers pay for traffic counters, zone tracking, and conversion data. Very few use that data to change what actually happens inside the store.
 - [The Difference Between Art and Design](https://entuned.co/blog/difference-between-art-and-design.html): Art is craft for self-expression. Design is craft for an intended outcome. Retail music is a design problem nobody had solved.
 - [Your Store Deserves a Score, Not a Playlist](https://entuned.co/blog/your-store-deserves-a-score.html): A commercial composer designs every second of a thirty-second score to hit a specific emotional target. Generative audio finally lets retail be designed the same way.
 - [How Do I Get My Staff to Stop Turning Off the Music?](https://entuned.co/blog/employees-hear-it.html): Your associates are telling you something when they mute the speakers. Here is what they are saying and what it costs you in the aisle.
-- [Every Song Is Either Working Or It Isn't](https://entuned.co/blog/every-song-working-or-not.html): Your store plays hundreds of tracks a week. Some of them are helping. Some of them are costing you money. The difference matters more than most operators think.
-- [Running Controlled Tests Across Multiple Stores](https://entuned.co/blog/fleet-learning.html): Most multi-location retailers test new ideas by rolling them out everywhere and hoping. There's a better way.
 - [How Much Does In-Store Music Actually Cost?](https://entuned.co/blog/how-much-does-retail-music-cost.html): The subscription fee is the number people know. The total bill is bigger, and it sits on nobody's desk.
 - [The Complete Guide to Store Music in 2026](https://entuned.co/blog/complete-guide-store-music.html): Licensing rules, what the current providers offer, and why outcome-designed music is a different category. Everything a store owner needs to know.
 - [How Wine Retailers Use Music to Sell Premium Bottles](https://entuned.co/blog/how-specialty-wine-retailers-use-music-to-sell-more-expensive-bottles.html): A 1993 study found that classical music in a wine shop moved customers toward more expensive bottles. Same wine, same prices, different receipts.
 - [How to Choose Music for Your Retail Store](https://entuned.co/blog/how-to-choose-music-for-your-retail-store.html): A research-backed guide to selecting music that fits your store's customer, format, and brand — not just what sounds good to the manager on duty.
 - [How to Make Your Store Sound Premium](https://entuned.co/blog/how-to-make-your-store-sound-premium.html): Luxury brands don't play better playlists. They treat audio like they treat lighting, fixtures, and scent: as a design decision with measurable consequences.
 - [Audio Advertising vs. Audio Strategy](https://entuned.co/blog/in-store-audio-advertising-vs-audio-strategy.html): QSIC sells ads through your speakers. Audio strategy uses music to sell your products. Know the difference.
-- [Song Selection Is Not Music Strategy](https://entuned.co/blog/in-store-music-strategy.html): Every song carries its cultural baggage into your store. Music strategy starts with the outcome, not the playlist.
 - [Longer Visits Don't Mean Bigger Receipts](https://entuned.co/blog/longer-visits.html): Your dwell time numbers look great. Your average ticket hasn't moved. That gap costs more than most operators realize.
 - [Luxury Priming Is Real](https://entuned.co/blog/luxury-priming-for-non-luxury-brands.html): Customers in a wine store spent more on expensive bottles when the background music changed. The products were identical. The prices were identical. Only the audio was different.
 - [Music Strategy for the One-Store Brand](https://entuned.co/blog/single-store-music-strategy.html): Most retail music writing assumes a fleet. The foundational research was actually run on single stores. Here's what changes when you only have one location, and how to A/B test in two weeks instead of a quarter.
@@ -123,54 +118,36 @@ Four decades of peer-reviewed research on music and consumer behavior sit behind
 - [What Is AI Music for Retail Stores?](https://entuned.co/blog/ai-music-for-retail-stores.html): A definitive primer on the category as of 2026. AI retail music is original audio generated by ML models, configured for the parameters that affect customer behavior. Three things change vs catalog: no PRO royalties, no catalog fatigue, customer-driven configuration.
 - [Major Key Does Not Mean Happy Customer.](https://entuned.co/blog/major-key.html): The assumption behind most retail playlists is that cheerful music drives sales. Stores that test this find a more complicated answer.
 - [How to Measure the ROI of In-Store Music](https://entuned.co/blog/measure-roi-retail-music.html): Your music is a line item with no return number next to it. Here is why, and what to do about it at your next QBR.
-- [The Store-Level KPI You're Not Tracking Yet](https://entuned.co/blog/measure-what-you-ignore.html): Most operators track sales, traffic, and conversion. The stores that pull ahead of their peers track one more thing, and it's usually something everyone else treats as fixed.
 - [The Milliman Study Is Wrong. Sort Of.](https://entuned.co/blog/milliman-study.html): The most cited finding in retail music is 42 years old, from one grocery store. The dwell time effect holds up. The sales number does not.
 - [Multi-Location Music: Why Every Store Sounds Different](https://entuned.co/blog/multi-location-music-management.html): Ten locations, ten managers, ten soundtracks.
 - [Music for Boutiques: What Should Your Store Actually Sound Like?](https://entuned.co/blog/music-for-boutique-clothing-stores.html): Most boutique owners pick music the way they pick lunch. The research says that's costing them customers.
 - [Music for Home Goods Stores](https://entuned.co/blog/music-for-home-goods-stores.html): Your home goods customers are doing something different from apparel shoppers. Most stores ignore that completely.
-- [Your Music Provider Doesn't Know What Your Analytics Platform Knows](https://entuned.co/blog/music-provider-doesnt-know-retailnext.html): Your analytics vendor and your music vendor share the same store and have never exchanged a single data point. That gap is where unexplained variance lives.
-- [Music Was Never Made For Your Store](https://entuned.co/blog/music-was-never-made-for-your-store.html): The songs playing in your stores right now were written for something else. Here is how you tell whether that is costing you.
-- [Why the Next Big Retail Tech Acquisition Will Be in Audio](https://entuned.co/blog/next-retail-tech-acquisition.html): Retail tech acquisitions follow a pattern. Audio is the surface that has been left out of the stack, and the window to fix that is open now.
 - [What Kind of Music Should a Store Like Mine Play?](https://entuned.co/blog/psychographic-profiling-retail.html): The question every multi-location operator eventually asks. The answer has less to do with genre than most people think.
 - [Nobody Read the Lyrics](https://entuned.co/blog/read-the-lyrics-on-your-speakers-right-now.html): Every song on your in-store playlist was written for a different reason than why it is playing. Sometimes that reason is one you would never put on a wall.
 - [What Your Store Sounds Like in the First 10 Seconds (And Why It Matters)](https://entuned.co/blog/retail-atmospherics-2026.html): Customers decide whether to stay or leave before they reach the first rack. Most of that decision has nothing to do with merchandise.
-- [Retail Designed Everything Except the Most Powerful Thing](https://entuned.co/blog/retail-designed-everything.html): Every surface, fixture, and light in a well-run store is a deliberate choice. Then the music comes on.
 - [The Science of Tempo in Retail](https://entuned.co/blog/science-of-tempo-retail.html): Tempo is the most studied variable in retail music research. It is also the most misunderstood.
 - [No Gaps. No Silence. No Jolt.](https://entuned.co/blog/seamless-playback.html): Every rough transition between tracks pulls your customer out of the browsing state that drives purchases.
 - [Sensory Marketing for Retail: Where Sound Fits in the Strategy](https://entuned.co/blog/sensory-marketing-for-retail.html): Scent and lighting get dedicated budgets. Sound gets a playlist.
 - [Sound Check: How Do You Know If Your Music Is Hurting Sales?](https://entuned.co/blog/sound-check-close-the-loop.html): Most retailers track everything about their stores except the one variable playing on repeat for every open hour.
-- [Music Is a Variable. Start Treating It Like One.](https://entuned.co/blog/sound-check-music-is-a-variable.html): Your lighting has a spec. Your scent has a spec. Your music is whatever the opening manager felt like playing.
 - [Your Music Is Selling Against You](https://entuned.co/blog/sound-check-music-selling-against-you.html): Incongruent music does not just fail to help. It actively reduces willingness to pay.
-- [Sound Check: The Playlist Problem](https://entuned.co/blog/sound-check-playlist-problem.html): Personal streaming accounts are illegal in commercial spaces. Employee-picked music serves the staff, not the customer. And the songs everyone recognizes are probably costing you floor time.
-- [Sound Check: The Science You're Already Ignoring](https://entuned.co/blog/sound-check-science-youre-ignoring.html): Forty years of field research says your store music changes what customers buy. Most operators have never seen the data.
 - [You Hired a Lighting Designer. Why Not a Sound Designer?](https://entuned.co/blog/sound-designer.html): Lighting and sound operate on the same nervous-system mechanisms. The industry treats one as design and the other as a subscription.
 - [The Store Manager Problem](https://entuned.co/blog/store-manager-problem.html): Ten locations means ten managers making independent sonic decisions. The brand sounds like ten different stores.
-- [Tempo Controls Bodies, Not Wallets](https://entuned.co/blog/tempo-controls.html): Slower tempo gets customers to stay longer. That alone does not make them spend more. Here's what operators need to know.
 - [Tempo and Volume Are Free. The Revenue Isn't.](https://entuned.co/blog/tempo-volume-free.html): Every retailer already has a volume knob. The part that moves revenue costs money, and most stores never get there.
-- [The 8-12% You're Leaving on the Table](https://entuned.co/blog/the-8-12-youre-leaving-on-the-table.html): Music congruence increases willingness to pay by 8 to 12 percent. No extra traffic required. No promotions. Just the right music.
+- [The Margin You're Leaving on the Table](https://entuned.co/blog/the-margin-youre-leaving-on-the-table.html): Music congruence raises willingness to pay. No extra traffic required. No promotions. Just the right music.
 - [The Audio Gap in Retail Customer Experience](https://entuned.co/blog/the-audio-gap-in-retail-customer-experience.html): You signed off on six figures of lighting. You signed off on a $35 a month music subscription. The customer hears both.
-- [The Dwell Time Variable Nobody's Tracking](https://entuned.co/blog/the-dwell-time-variable-nobodys-tracking.html): Your audio environment is invisible to your analytics because it never changes. Start treating it as a variable.
 - [The Familiarity Trap](https://entuned.co/blog/the-familiarity-trap.html): Your customers recognize the playlist. And they leave sooner because of it.
-- [The Metrics Your Audio Environment Should Be Producing](https://entuned.co/blog/the-metrics-your-audio-environment-should-be-producing.html): If your audio environment is doing its job, you should be able to see it in four metrics. Most stores have never looked.
-- [The Real Cost of Your Retail Music](https://entuned.co/blog/the-real-cost-of-retail-music.html): The invoice line for store music is the smallest number in this conversation. The interesting number is what bad audio costs you in revenue you never see on any report.
-- [The Second Sale You Already Made](https://entuned.co/blog/the-second-sale-you-already-made.html): Extending dwell time doesn't just increase spending. It makes the storefront look busier, which draws more foot traffic. It compounds.
 - [The Store Is Not a Set](https://entuned.co/blog/the-store-is-not-a-set.html): Retail experience design borrows from theater. The store could be closer to a jazz ensemble than to a stage play.
-- [Welcoming Mrinmayi Katti to Entuned](https://entuned.co/blog/welcoming-mrinmayi-katti.html): Mrinmayi joins Entuned to lead data science work. The right person reached out at the right time.
 - [What a Producer Hears That You Don't](https://entuned.co/blog/what-a-producer-hears.html): Your store manager has heard the playlist so many times they've stopped noticing what's wrong. The customer walks in fresh.
 - [What Churches, Concert Halls, and Film Composers Know That Retail Doesn't](https://entuned.co/blog/what-church-concert-halls-and-film-composers-know-that-retail-doesnt.html): Every serious application of music engineers it for a specific outcome. Retail is the one high-stakes context that never tried.
 - [What Happens to Employee Performance When the Music Is Right](https://entuned.co/blog/what-happens-to-employee-performance-when-the-music-is-right.html): Your staff spend eight hours a day inside the audio environment your customers pass through in thirty minutes. When that environment is wrong, your team notices before anyone else.
 - [What Music to Play in a High-End Store](https://entuned.co/blog/what-music-to-play-in-a-high-end-store.html): Classical music increased average wine purchase price 2.5x in the Areni and Kim study. What your store sounds like is shaping what your customers are willing to spend.
 - [What Your Music Is Saying About Your Brand](https://entuned.co/blog/what-your-music-is-saying-about-your-brand.html): One incongruent track at the moment of peak purchase intention can undo everything your brand team built.
-- [Why Your Store's Background Music Is Costing You Sales](https://entuned.co/blog/why-background-music-costs-you-sales.html): Generic playlists built for retail in general create cognitive friction that shortens visits and suppresses transaction values.
 - [Why I Went Back to Folding Shirts](https://entuned.co/blog/why-i-went-back-to-folding-shirts.html): A hiring sign at Park Meadows Mall led to a retail floor job, a wrong playlist, and a question that became Entuned.
 - [She Said Exactly What the Music Told Her to Say](https://entuned.co/blog/add-it-to-the-pile.html): A customer at the UNTUCKit pilot repeated an Entuned song lyric back as her buying decision without knowing it. Semantic priming through parameterized music.
 - [The Most Expensive Air in Retail](https://entuned.co/blog/most-expensive-air-in-retail.html): Every variable in a retail store gets designed except the music. Six vignettes showing what borrowed catalog tracks are actually doing to a purchase in progress.
-- [Why Your Best Customers Leave Faster Than They Should](https://entuned.co/blog/why-your-best-customers-leave-faster-than-they-should.html): Your highest-value shoppers spend less time in your store than your browsers do. Most operators never ask why.
-- [Your Store Already Has a Mood](https://entuned.co/blog/your-store-already-has-a-mood.html): Something is playing in every one of your locations right now. Whether anyone chose it with intent is a different question.
 - [How to Get Out of a Mood Media Contract](https://entuned.co/blog/get-out-of-mood-media-contract.html): A practical walkthrough for operators with an auto-renewing contract. What to look for in the paperwork, when to give notice, and how to exit without breach.
 - [What to Ask Your Music Vendor at the Next QBR](https://entuned.co/blog/qbr-questions-music-vendor.html): Ten questions a VP of Retail Ops should put to the music vendor at the next quarterly review. Half of them will not have answers. That is the information you need.
 - [Tuesday vs. Saturday Traffic: What Your Data Actually Says](https://entuned.co/blog/tuesday-vs-saturday-traffic.html): The two days look like different stores. They often are. What the Tuesday-Saturday gap reveals about your customer mix and what to do about it.
-- [Mall vs. Street: Making the Same Brand Feel Right in Both](https://entuned.co/blog/mall-vs-street-location.html): The same merchandise, the same signage, and a completely different customer. What multi-location operators get wrong about keeping brand coherence across formats.
 - [Your Music Is Already Talking to Your Customers. The Question Is What It's Saying.](https://entuned.co/blog/music-already-talking-to-customers.html): How in-store music sets the customer's emotional register before your sales associate says a word — and which playlist staples are actively working against your floor team.
 - [The Composer Who Wanted You to Ignore Him](https://entuned.co/blog/the-composer-who-wanted-you-to-ignore-him.html): Erik Satie invented furniture music in 1917 and discovered the central problem of background music on his first public performance: people don't respond to music the way you design them to.
 - [The Organ in the Department Store](https://entuned.co/blog/the-organ-in-the-department-store.html): John Wanamaker built the world's largest pipe organ into his Philadelphia department store in 1911 and played it twice a day for over a century. He understood that sound shapes a retail space. He just had no way to measure it.
@@ -208,15 +185,6 @@ Four decades of peer-reviewed research on music and consumer behavior sit behind
 - [One Playlist for Everyone Is a Playlist for No One](https://entuned.co/blog/one-playlist-for-everyone-no-one.html): A mood filter is a menu, not a design tool. Every other element of a store works by specification. The music is the only thing still selected from a dropdown.
 - [Every Store Is About to Sound Different](https://entuned.co/blog/every-store-about-to-sound-different.html): Music is following scent design's trajectory into the brand experience layer. Early movers compound an outcome-data advantage that late adopters can't buy back.
 - [What If You Licensed Music the Way Film and TV Do?](https://entuned.co/blog/licensed-music-like-film-and-tv.html): Sync licensing gives film and TV music chosen for the scene, but the economics make it impossible for retail. Composition delivers the same intentional fit at retail rates.
-
-## Partner Program
-
-- [Partner Program](https://entuned.co/partners.html): Referral partner program for retail consultants. 20% recurring commission, 3 months Boost free for referrals.
-
-## Contact
-
-- Contact: https://entuned.co/contact.html
-- Founder: Daniel Fox
 - [Can Music Make Customers Spend MORE? (What 43,000 Transactions Reveal)](https://entuned.co/blog/can-music-make-customers-spend-more-what-43000-transactions-reveal.html): Yes — music can increase customer spending by 8–15% depending on tempo, volume, genre, and context.
 - [How Music Controls Customer Behavior (Without Them Knowing)](https://entuned.co/blog/how-music-controls-customer-behavior-without-them-knowing.html): Music controls customer behavior through at least four mechanisms: it changes walking speed (volume), dwell time (tempo), product selection (cultural priming), and impulse purchases (emotional state).
 - [The Dwell Time Secret: How Music Keeps Customers in Your Store](https://entuned.co/blog/the-dwell-time-secret-how-music-keeps-customers-in-your-store.html): Music increases dwell time by up to 15 minutes per visit.
@@ -249,3 +217,12 @@ Four decades of peer-reviewed research on music and consumer behavior sit behind
 - [What's the Best Retail Music Service? A Research-Based Evaluation](https://entuned.co/blog/whats-the-best-retail-music-service-a-research-based-evaluation.html): The best retail music service is the one that meets five research-backed criteria: real-time adaptability, parametric precision, brand congruence, familiarity avoidance, and measurement capability.
 - [Can Music Be Optimized for Sales? Yes — Here's How](https://entuned.co/blog/can-music-be-optimized-for-sales-yes-heres-how.html): Yes, music can be optimized for sales the same way you'd optimize a landing page — by controlling individual variables and testing systematically.
 - [What Makes a Retail Music Strategy Effective? 5 Research-Backed Pillars](https://entuned.co/blog/what-makes-a-retail-music-strategy-effective-5-research-backed-pillars.html): An effective retail music strategy rests on five pillars: emotional targeting (especially in the first 5 minutes), sensory congruence across all channels, dynamic responsiveness to real-time condition
+
+## Partner Program
+
+- [Partner Program](https://entuned.co/partners.html): Referral partner program for retail consultants. 20% recurring commission, 3 months Boost free for referrals.
+
+## Contact
+
+- Contact: https://entuned.co/contact.html
+- Founder: Daniel Fox

@@ -1,5 +1,5 @@
 {
-  "title": "How to Increase Dwell Time in Retail Stores | Entuned",
+  "title": "Five Levers That Move Retail Dwell Time — and the Cheapest One to Test | Entuned",
   "meta_description": "Five levers that move retail dwell time. Why operators undershoot the easiest one. A two-week test you can run on your own floor against your POS data.",
   "output": "blog/how-to-increase-dwell-time.html",
   "date_published": "2026-05-05",
@@ -18,7 +18,7 @@
     },
     {
       "q": "How can I measure dwell time without expensive sensors?",
-      "a": "Three options, in order of cost. A door counter plus your POS lets you compute average visit duration as foot traffic divided by transactions, then refined by daypart. A security camera review of two hours on a Saturday afternoon gives you a directional sample for the cost of one staff hour. A simple stopwatch sample of 20 customers gives you a baseline you can compare against later. None requires a six-figure analytics deployment."
+      "a": "Three options, in order of cost. A door counter plus your POS lets you compute average visit duration as foot traffic divided by transactions, then refined by time of day. A security camera review of two hours on a Saturday afternoon gives you a directional sample for the cost of one staff hour. A simple stopwatch sample of 20 customers gives you a baseline you can compare against later. None requires a six-figure analytics deployment."
     },
     {
       "q": "What is the cheapest test I can run this month?",

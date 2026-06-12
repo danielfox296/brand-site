@@ -5,7 +5,7 @@
 hero:
   eyebrow: "For apparel &amp; footwear retail"
   h1: "Music that works for the first 10 seconds."
-  subline: "Apparel customers decide on sensory evidence in the first ten seconds. Entuned produces original music tuned to your customer&rsquo;s pace, energy, and identity &mdash; engineered to win the threshold moment. Free, no credit card."
+  subline: "Apparel customers decide on sensory evidence in the first ten seconds. Entuned produces original music tuned to your customer&rsquo;s pace, energy, and identity &mdash; engineered to win the threshold moment. Running 5&ndash;50 stores? Start a measured pilot &mdash; twelve weeks, no cost, read in your own reporting. Single store? Stream Entuned Free, no card."
 
 # The gap
 gap:
@@ -26,7 +26,7 @@ tiers:
   card2_text: "Music tailored to your single Ideal Customer Profile. For most apparel retailers, that is the customer your buyers are already merchandising for — same person, just specified to the music engine on purpose. About 420 tracks in the first month, refreshed against what holds the floor and culled against what doesn't."
 
   card3_title: "Professional ($399/location/mo)"
-  card3_text: "POS integration. Day-parted music against your traffic profile (lunchtime browsers, evening conversion, weekend volume). Multiple ICPs for stores that draw distinct customer types across the day. Self-improving refinement against your basket and conversion data."
+  card3_text: "POS integration. Outcome Scheduling against your traffic profile (lunchtime browsers, evening conversion, weekend volume). Multiple ICPs for stores that draw distinct customer types across the day. Self-improving refinement against your basket and conversion data."
 
   card4_title: "Enterprise"
   card4_text: "Multi-fleet rollouts across regions and formats. Custom ICP design and brand voice consultation. Performance guarantees where lift can be cleanly measured against your existing reporting. Standard entry shape is a 12-week pilot in matched test and control stores."
@@ -37,7 +37,7 @@ research:
   h2: "Forty years of evidence on the levers that matter for high-traffic apparel."
 
   card1_title: "Tempo affects pace and basket."
-  card1_text: "Milliman (1982) measured slower music increasing dwell. Knoferle et al. (2011) showed the effect depends on tempo paired with the right tonal choice — most catalogue vendors have the thermostat without the room."
+  card1_text: "Milliman (1982) measured slower music increasing dwell. Knoferle et al. (2012) showed the effect depends on tempo paired with the right tonal choice — most catalogue vendors have the thermostat without the room."
 
   card2_title: "Music customers read as theirs moves what they spend."
   card2_text: "Areni and Kim (1993) found that in a wine cellar, customers chose more expensive bottles &mdash; not more of them &mdash; when the music matched the customer profile. North, Shilcock and Hargreaves (2003) found the same prestige-fit effect lifted spend per head in a restaurant. Same items on the rack, different customer read."
@@ -52,7 +52,7 @@ research:
 cta:
   eyebrow: "Get Started"
   h2: "Hear it on your floor."
-  subline: "Start free in a single store. Upgrade to Boost or Professional when you want music tailored to a specific customer profile. No card, no time limit, no auto-renew trap."
+  subline: "Running 5&ndash;50 locations? Start a measured pilot &mdash; twelve weeks, no cost, matched test and control stores, read in your own reporting. Single store? Stream Entuned Free below."
   cta_primary: "Start Free"
 
 related:

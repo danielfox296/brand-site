@@ -144,7 +144,7 @@ sections:
     body: |
       Three actions, in order.
 
-      **Pull two weeks of conversion and basket** from your POS. You will need this baseline to test against. Get familiar with the daypart pattern.
+      **Pull two weeks of conversion and basket** from your POS. You will need this baseline to test against. Get familiar with the time-of-day pattern.
 
       **Walk your stores and listen.** Stand at the door for two minutes on a Saturday afternoon. Ask: does the music match the customer I want? Is it loud enough that two people would have to raise their voices six feet apart? Did anyone choose this?
 
@@ -152,7 +152,7 @@ sections:
 
   - type: prose
     body: |
-      For a deeper read on why dwell is structurally under-tracked in retail, see <a href="../blog/the-dwell-time-variable-nobodys-tracking.html">the dwell time variable nobody's tracking</a>. For the math on why longer visits do not always mean bigger receipts, see <a href="../blog/longer-visits.html">longer visits don't mean bigger receipts</a>. The full <a href="../pricing.html">pricing page</a> walks through what each tier includes if you outgrow Entuned Free.
+      For the strategy hub on this topic — the full playbook for keeping customers browsing longer — see <a href="../how-to-increase-dwell-time-retail.html">how to increase dwell time in retail stores</a>. For a deeper read on why dwell is structurally under-tracked in retail, see <a href="../blog/the-dwell-time-variable-nobodys-tracking.html">the dwell time variable nobody's tracking</a>. For the math on why longer visits do not always mean bigger receipts, see <a href="../blog/longer-visits.html">longer visits don't mean bigger receipts</a>. The full <a href="../pricing.html">pricing page</a> walks through what each tier includes if you outgrow Entuned Free.
 
   - type: cta
     variant: start-free

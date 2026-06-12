@@ -5,7 +5,7 @@
 hero:
   eyebrow: "For furniture &amp; mattress retail"
   h1: "Music to extend the comfortable browse."
-  subline: "Furniture and mattress visits are long, high-ticket, and often joint &mdash; the customer brought a partner and a question they need to feel good about answering. Entuned produces original music tuned to soften the room, ease the consideration, and make the lifestyle fit feel right. Free, no credit card."
+  subline: "Furniture and mattress visits are long, high-ticket, and often joint &mdash; the customer brought a partner and a question they need to feel good about answering. Entuned produces original music tuned to soften the room, ease the consideration, and make the lifestyle fit feel right. Running 5&ndash;50 stores? Start a measured pilot &mdash; twelve weeks, no cost, read in your own reporting. Single store? Stream Entuned Free, no card."
 
 # The gap
 gap:
@@ -37,7 +37,7 @@ research:
   h2: "Forty years of evidence on the audio levers that matter for high-ticket dwell."
 
   card1_title: "Tempo affects pace through the store."
-  card1_text: "Milliman (1982) measured slower music increasing grocery dwell by ~38%. The mechanism &mdash; tempo affects walking pace &mdash; maps cleanly to furniture and mattress retail, where slower pace means more sit-tests, more lie-downs, more product interactions per visit."
+  card1_text: "Milliman (1982) measured slower music slowing in-store traffic flow and lifting sales. The mechanism &mdash; tempo affects walking pace &mdash; maps cleanly to furniture and mattress retail, where slower pace means more sit-tests, more lie-downs, more product interactions per visit."
 
   card2_title: "Music customers read as theirs moves willingness to pay."
   card2_text: "Areni and Kim (1993) found that in a wine cellar, customers chose more expensive bottles &mdash; not more of them &mdash; when the music matched the customer&rsquo;s frame. North, Shilcock and Hargreaves (2003) found the same prestige-fit effect lifted spend per head in a restaurant. Same product on the floor, different customer read &mdash; and on a $2,400 sofa or a $1,800 mattress, the difference is not trivial."
@@ -52,7 +52,7 @@ research:
 cta:
   eyebrow: "Get Started"
   h2: "Hear it on your floor."
-  subline: "Start free at Entuned Free in your store. Move to Boost or Professional once you want music tailored to your specific customer."
+  subline: "Running 5&ndash;50 locations? Start a measured pilot &mdash; twelve weeks, no cost, matched test and control stores, read in your own reporting. Single store? Stream Entuned Free below."
   cta_primary: "Start Free"
 
 related:

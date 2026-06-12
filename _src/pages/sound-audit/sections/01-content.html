@@ -5,7 +5,7 @@
       <p class="section-eyebrow">Sound Audit</p>
       <h1>Your music is selling against you. Find out by how much.</h1>
       <p class="audit-subline">A 60-second self-assessment for retail owners and operators. Ten questions, an honest score, and the two behavioral levers you're underusing.</p>
-      <p>Most stores treat the music like wallpaper. The research has been clear for forty years that it isn't &mdash; tempo changes how long customers stay (<a href="https://scholar.google.com/scholar?q=milliman+1982+using+background+music+affect+behavior+supermarket+shoppers+journal+of+marketing" target="_blank" rel="noopener">Milliman 1982</a>), genre changes what they're willing to pay (<a href="https://scholar.google.com/scholar?q=areni+kim+1993+influence+background+music+shopping+behavior+wine+store" target="_blank" rel="noopener">Areni &amp; Kim 1993</a>), familiarity changes perceived time in store (<a href="https://scholar.google.com/scholar?q=yalch+spangenberg+2000+effects+music+retail+setting+real+perceived+shopping+times" target="_blank" rel="noopener">Yalch &amp; Spangenberg 2000</a>). This audit doesn't grade your taste. It grades whether your store soundtrack is doing measurable work, or just running.</p>
+      <p>Most stores treat the music like wallpaper. The research has been clear for forty years that it isn't &mdash; tempo changes how long customers stay (<a href="https://scholar.google.com/scholar?q=milliman+1982+using+background+music+affect+behavior+supermarket+shoppers+journal+of+marketing" target="_blank" rel="noopener">Milliman 1982</a>), genre changes the price tier customers buy at (<a href="https://scholar.google.com/scholar?q=areni+kim+1993+influence+background+music+shopping+behavior+wine+store" target="_blank" rel="noopener">Areni &amp; Kim 1993</a>), familiarity changes perceived time in store (<a href="https://scholar.google.com/scholar?q=yalch+spangenberg+2000+effects+music+retail+setting+real+perceived+shopping+times" target="_blank" rel="noopener">Yalch &amp; Spangenberg 2000</a>). This audit doesn't grade your taste. It grades whether your store soundtrack is doing measurable work, or just running.</p>
     </div>
   </div>
 </section>
@@ -27,7 +27,7 @@
 
       <div class="audit-question fade-up" data-q="2" data-lever="audio">
         <span class="audit-q-number">Question 2 of 10</span>
-        <p class="audit-q-text" id="q2-label">Is the same playlist running across every one of your locations?</p>
+        <p class="audit-q-text" id="q2-label">Was your music chosen once, centrally, with no per-location read on results?</p>
         <div class="audit-options" role="radiogroup" aria-labelledby="q2-label">
           <div class="audit-option"><input type="radio" id="q2-yes" name="q2" value="concerning"><label for="q2-yes">Yes</label></div>
           <div class="audit-option"><input type="radio" id="q2-some" name="q2" value="neutral"><label for="q2-some">Sometimes</label></div>
@@ -137,6 +137,7 @@
       <div class="audit-results-cta">
         <p>Entuned engineers original music for your store at the parameter level &mdash; tempo, key, lyrical density, energy arc &mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no credit card, no time limit. PRO-indemnified the moment it plays.</p>
         <a href="https://app.entuned.co/start" class="btn btn-primary">Start Free &mdash; see what intentional audio sounds like in your store</a>
+        <p class="audit-pilot-fork">Running 5&ndash;50 locations? <a href="pilot.html">Start a measured pilot</a>. Single store or just a few? Start Free.</p>
       </div>
     </div>
   </div>
@@ -180,10 +181,10 @@
                 text: 'When managers pick the music by personal taste &mdash; or staff quietly turn it off &mdash; nobody owns the outcome. Audio without a target is decoration, not strategy.' },
     visual:   { name: 'Visual merchandising fit',   post: 'blog/employees-hear-it.html',                    postLabel: 'Your employees hear it before customers do',
                 text: 'Brand-fit is not a vibe check. If your music doesn\'t survive a customer asking "why this?" your audio is contradicting your visuals.' },
-    friction: { name: 'Friction at decision points',post: 'blog/the-8-12-youre-leaving-on-the-table.html',  postLabel: 'The margin you\'re leaving on the table',
+    friction: { name: 'Friction at decision points',post: 'blog/the-margin-youre-leaving-on-the-table.html',  postLabel: 'The margin you\'re leaving on the table',
                 text: 'High-intent customers leave faster than browsers when audio adds friction. The fix is rarely volume &mdash; it\'s tempo and lyrical density at the decision point.' },
     layout:   { name: 'Layout &amp; merchandising', post: 'blog/why-customers-leave-without-buying.html',   postLabel: 'Why customers leave without buying',
-                text: 'Audio interacts with traffic flow. Wrong tempo in the wrong zone collapses dwell exactly where you need it most.' }
+                text: 'Audio interacts with traffic flow. Wrong tempo in the wrong part of the floor collapses dwell exactly where you need it most.' }
   };
 
   function getAnswers() {
@@ -221,13 +222,13 @@
     if (score >= 80) {
       return {
         title: 'Your store sounds intentional. Most don\'t.',
-        diagnosis: 'You\'re in the top decile of operators on audio discipline. Music is owned, measured, and treated as a behavioral lever &mdash; not wallpaper. The remaining gains are at the parameter level: tempo curves through the day, lyrical density at decision points, and tying changes to POS data so the next 5&ndash;10 percent of lift is auditable.'
+        diagnosis: 'You\'re in the top decile of operators on audio discipline. Music is owned, measured, and treated as a behavioral lever &mdash; not wallpaper. The remaining gains are at the parameter level: tempo curves through the day, lyrical density at decision points, and tying changes to POS data so the next increment of lift is auditable.'
       };
     }
     if (score >= 50) {
       return {
         title: 'Your audio is half-designed. The other half is leaving money on the table.',
-        diagnosis: 'You\'ve got instincts, not a system. Some shifts sound right; others contradict the brand. The research says a coherent store soundtrack moves dwell time 15&ndash;25 percent and willingness to pay (<a href="https://scholar.google.com/scholar?q=areni+kim+1993+influence+background+music+shopping+behavior+wine+store" target="_blank" rel="noopener">Areni &amp; Kim 1993</a>, <a href="https://scholar.google.com/scholar?q=milliman+1982+using+background+music+affect+behavior+supermarket+shoppers+journal+of+marketing" target="_blank" rel="noopener">Milliman 1982</a>, <a href="https://scholar.google.com/scholar?q=yalch+spangenberg+2000+effects+music+retail+setting+real+perceived+shopping+times" target="_blank" rel="noopener">Yalch &amp; Spangenberg 2000</a>). Right now you\'re capturing maybe a third of that. The fix isn\'t a better playlist &mdash; it\'s ownership and measurement.'
+        diagnosis: 'You\'ve got instincts, not a system. Some shifts sound right; others contradict the brand. The research is clear on the mechanism: slower tempo extends time in store (<a href="https://scholar.google.com/scholar?q=milliman+1982+using+background+music+affect+behavior+supermarket+shoppers+journal+of+marketing" target="_blank" rel="noopener">Milliman 1982</a>), genre fit raises what customers pay per item (<a href="https://scholar.google.com/scholar?q=areni+kim+1993+influence+background+music+shopping+behavior+wine+store" target="_blank" rel="noopener">Areni &amp; Kim 1993</a>), and the right music compresses perceived shopping time (<a href="https://scholar.google.com/scholar?q=yalch+spangenberg+2000+effects+music+retail+setting+real+perceived+shopping+times" target="_blank" rel="noopener">Yalch &amp; Spangenberg 2000</a>). The fix isn\'t a better playlist &mdash; it\'s ownership and measurement.'
       };
     }
     return {

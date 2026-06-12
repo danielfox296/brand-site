@@ -1,5 +1,5 @@
 title: "The Margin You're Leaving on the Table"
-slug: "the-8-12-youre-leaving-on-the-table"
+slug: "the-margin-youre-leaving-on-the-table"
 eyebrow: "MARKET INTEL"
 dek: "When in-store music matches who your customer is, willingness to pay rises. Same products, same prices. Most stores leave that margin on the table."
 date: "2026-03-01"
@@ -8,11 +8,11 @@ author:
   name: "Daniel Fox"
   role: "Founder & CEO"
 hero:
-  src: "../img/blog/the-8-12-youre-leaving-on-the-table.jpg"
+  src: "../img/blog/the-margin-youre-leaving-on-the-table.jpg"
   alt: "Data visualization of willingness-to-pay research"
   caption: "Photo: Unsplash"
 meta_description: "When music matches customer identity, willingness to pay rises. Same products, same prices. Most retail stores are giving that margin back every day."
-og_image: "/img/blog/the-8-12-youre-leaving-on-the-table.jpg"
+og_image: "/img/blog/the-margin-youre-leaving-on-the-table.jpg"
 tags: [willingness-to-pay, research, roi, genre-congruence]
 sections:
   - type: key_takeaways

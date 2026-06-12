@@ -559,7 +559,7 @@
   "@type": "WebApplication",
   "name": "Music License Cost Calculator",
   "url": "https://entuned.co/music-license-cost-calculator.html",
-  "description": "Estimate annual ASCAP, BMI, SESAC, and GMR fees for your retail store, restaurant, salon, gym, office, or hotel. Sourced from published 2026 rate cards.",
+  "description": "Estimate annual ASCAP, BMI, SESAC, and GMR fees for your retail store, restaurant, salon, gym, office, or hotel. Sourced from current published rate cards, checked 2026-05.",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "All",
   "browserRequirements": "Requires JavaScript",
@@ -582,7 +582,7 @@
     <div class="fade-up" style="max-width: 820px;">
       <p class="section-eyebrow">License Calculator</p>
       <h1>How much will your store pay the four US music PROs this year?</h1>
-      <p class="calc-subline">A free estimator across ASCAP, BMI, SESAC, and GMR &mdash; sourced from published 2026 rate cards. No email, no signup.</p>
+      <p class="calc-subline">A free estimator across ASCAP, BMI, SESAC, and GMR &mdash; sourced from current published rate cards, checked 2026-05. No email, no signup.</p>
       <p>Every business that plays recorded music in a customer-facing space owes blanket licensing fees to four separate performance rights organizations. ASCAP and BMI publish their rate cards. SESAC and GMR don't &mdash; they negotiate individually, which is why most operators don't discover them until a notice arrives. The four bills together usually run more than business owners expect.</p>
       <p>Enforcement has stepped up across all four PROs in the past three years, with infringement suits filed against single-location operators in retail, hospitality, and fitness. This calculator gives you a defensible band for budgeting &mdash; not a quote &mdash; using the published rate-card structure for ASCAP and BMI and observed SMB ranges for SESAC and GMR. As of 2026-05-09.</p>
     </div>
@@ -666,6 +666,8 @@
       <p class="calc-result-headline">Estimated annual cost to license all four US PROs directly</p>
       <div class="calc-result-range" id="calc-range">$0 &ndash; $0</div>
       <p class="calc-result-sub" id="calc-result-sub"></p>
+
+      <div id="calc-pilot-line"></div>
 
       <div id="calc-live-warning"></div>
 
@@ -947,6 +949,15 @@
       (input.sqft ? ' (' + input.sqft.toLocaleString() + ' sq ft, ~' + input.occupancy + ' peak occupancy)' : '') +
       '. Across ASCAP, BMI, SESAC, and GMR combined.';
 
+    // Multi-location pilot line — the 5–50-door buyer's better entry.
+    var pilotHost = document.getElementById('calc-pilot-line');
+    if (loc >= 5) {
+      pilotHost.innerHTML =
+        '<div class="calc-alert"><strong>At ' + loc + ' locations, the better entry is a free measured pilot.</strong> Twelve weeks across matched test and control stores, read in your own reporting. <a href="pilot.html">Start a measured pilot &rarr;</a></div>';
+    } else {
+      pilotHost.innerHTML = '';
+    }
+
     // PRO breakdown table
     var tbody = document.getElementById('calc-pro-tbody');
     var rows = [
@@ -1050,6 +1061,7 @@
       <ul>
         <li><a href="how-it-works.html">How It Works</a></li>
         <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="pilot.html">Multi-Location Pilot</a></li>
         <li><a href="enterprise.html">Enterprise</a></li>
         <li><a href="why-entuned.html">Why Entuned</a></li>
       </ul>
@@ -1068,7 +1080,7 @@
       </ul>
       <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
       <ul>
-        <li><a href="for-retail-leaders.html">Retail Leaders</a></li>
+        <li><a href="for-retail-leaders.html">Retail Operators</a></li>
         <li><a href="impact.html">Impact Calculator</a></li>
       </ul>
     </div>
@@ -1090,6 +1102,21 @@
         <li><a href="how-to-increase-dwell-time-retail.html">Increase Dwell Time</a></li>
         <li><a href="how-to-increase-impulse-purchases-retail.html">Drive Impulse Purchases</a></li>
         <li><a href="how-to-improve-retail-conversion-rate.html">Improve Conversion Rate</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Tools &amp; Comparisons</h4>
+      <ul>
+        <li><a href="music-license-cost-calculator.html">Music License Cost Calculator</a></li>
+        <li><a href="sound-audit.html">Sound Audit</a></li>
+        <li><a href="spotify-business-risk-check.html">Spotify Business Risk Check</a></li>
+        <li><a href="pro-enforcement-map.html">PRO Enforcement Map</a></li>
+        <li><a href="retail-music-decibel-guide.html">Retail Music Decibel Guide</a></li>
+        <li><a href="spotify-for-business.html">Spotify for Business</a></li>
+        <li><a href="property-managers.html">For Property Managers</a></li>
+        <li><a href="mood-media-alternative.html">Mood Media Alternative</a></li>
+        <li><a href="soundtrack-your-brand-alternative.html">Soundtrack Your Brand Alternative</a></li>
+        <li><a href="pandora-for-business-alternative.html">Pandora for Business Alternative</a></li>
       </ul>
     </div>
     <div class="footer-section">

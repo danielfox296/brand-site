@@ -37,7 +37,7 @@ sections:
 
   - type: prose
     body: |
-      QSIC's platform integrates point-of-sale data, curated background music, and audio ads. The ads are targeted by store, daypart, and product category. They are measured against incremental sales of the advertised product.
+      QSIC's platform integrates point-of-sale data, curated background music, and audio ads. The ads are targeted by store, time of day, and product category. They are measured against incremental sales of the advertised product.
 
       The value proposition is to the CPG advertiser, not to the shopper. The advertiser pays for audio impressions. The retailer earns media revenue. The measurement proves that the ad drove sales of the advertised SKU.
 

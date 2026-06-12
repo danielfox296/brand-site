@@ -73,7 +73,7 @@ sections:
 - type: subhead
   text: The Shortcut
 - type: prose
-  body: Look — you can do all of this manually. Curate playlists, schedule dayparts, swap them seasonally, hope the tempo-mode interaction is right. Or you can use a system that already has the research baked in and adjusts automatically. Entuned generates original music tuned to your brand and responsive to your store’s conditions. No guessing. No licensing headaches. Just the science, applied.
+  body: Look — you can do all of this manually. Curate playlists, schedule by time of day, swap them seasonally, hope the tempo-mode interaction is right. Or you can use a system that already has the research baked in and adjusts automatically. Entuned generates original music tuned to your brand and responsive to your store’s conditions. No guessing. No licensing headaches. Just the science, applied.
 - type: transcript
   chapters: *id001
 - type: subhead

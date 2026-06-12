@@ -5,7 +5,7 @@
 hero:
   eyebrow: "For specialty jewelry retail"
   h1: "Music to hook the second visit."
-  subline: "Most jewelry visits don&rsquo;t close today. Entuned produces original music designed to make your store feel like a place worth coming back to &mdash; calibrated to your customer, your category, and the trust your floor needs to earn. Free, no credit card."
+  subline: "Most jewelry visits don&rsquo;t close today. Entuned produces original music designed to make your store feel like a place worth coming back to &mdash; calibrated to your customer, your category, and the trust your floor needs to earn. Running 5&ndash;50 stores? Start a measured pilot &mdash; twelve weeks, no cost, read in your own reporting. Single store? Stream Entuned Free, no card."
 
 # The gap
 gap:
@@ -26,10 +26,10 @@ tiers:
   card2_text: "Music tailored to your single Ideal Customer Profile. For most independent jewelers, that is the customer your buyers are already merchandising for — the considered shopper who is in your store because they want a real jeweler, not because Yelp ranked you third. About 420 tracks in the first month, refreshed against what holds the floor and culled against what does not."
 
   card3_title: "Professional ($399/location/mo)"
-  card3_text: "POS integration. Day-parted music against your traffic profile (slower weekday consideration, busier Saturday browsing, evening repair-pickup rhythm). Self-improving refinement against your basket and conversion data. Founder consult in your first month."
+  card3_text: "POS integration. Outcome Scheduling against your traffic profile (slower weekday consideration, busier Saturday browsing, evening repair-pickup rhythm). Self-improving refinement against your basket and conversion data."
 
   card4_title: "Enterprise"
-  card4_text: "Multi-store rollouts where you operate more than a single location. Custom ICP design and brand voice consultation. Performance terms where lift can be cleanly measured against your existing reporting."
+  card4_text: "Multi-store rollouts where you operate more than a handful of locations. Custom ICP design and brand voice consultation. Performance terms where lift can be cleanly measured against your existing reporting. Standard entry shape is a free 12-week pilot in matched test and control stores."
 
 # What the research says
 research:
@@ -52,7 +52,7 @@ research:
 cta:
   eyebrow: "Get Started"
   h2: "Hear it on your floor."
-  subline: "Start free at Entuned Free in your store. Move to Boost once you want music tailored to your specific customer."
+  subline: "Running 5&ndash;50 locations? Start a measured pilot &mdash; twelve weeks, no cost, matched test and control stores, read in your own reporting. Single store? Stream Entuned Free below."
   cta_primary: "Start Free"
 
 related:

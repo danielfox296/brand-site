@@ -57,7 +57,7 @@ sections:
 - type: subhead
   text: What’s Out There
 - type: prose
-  body: Retail music services basically fall into three buckets. First, you’ve got the playlist curators — companies that build playlists, license the tracks, and stream them to your store. Think of it like Spotify, but legal for commercial use. Second, you’ve got the scheduling platforms — same idea, but they let you set daypart schedules so your morning mix is different from your Friday night energy. And third — the newest category — you’ve got adaptive and generative systems that actually respond to what’s happening in your store in real time. The differences between these aren’t cosmetic. They’re structural. And the research tells us why that matters.
+  body: Retail music services basically fall into three buckets. First, you’ve got the playlist curators — companies that build playlists, license the tracks, and stream them to your store. Think of it like Spotify, but legal for commercial use. Second, you’ve got the scheduling platforms — same idea, but they let you set time-of-day schedules so your morning mix is different from your Friday night energy. And third — the newest category — you’ve got adaptive and generative systems that actually respond to what’s happening in your store in real time. The differences between these aren’t cosmetic. They’re structural. And the research tells us why that matters.
 - type: subhead
   text: Why the Old Model Is Broken
 - type: prose
@@ -65,7 +65,7 @@ sections:
 - type: subhead
   text: Context
 - type: prose
-  body: This is where most services fall short. They treat music as a set-it-and-forget-it utility, like the thermostat. But the research says music is more like lighting — it needs to shift with context. A 2001 study in the Journal of Retailing tested 270 customers and found that when music and scent matched in arousal level, shoppers rated the environment significantly higher. Mismatch killed the effect entirely. And research in Marketing Letters from 2012 showed that the interaction between tempo and musical mode — major versus minor key — produced roughly a 12 percent spending lift when slow tempo was paired with minor mode. But major key actually canceled out the tempo benefit. These are subtle variables. Mode, tempo, arousal matching, daypart alignment. No human curator is tracking all of this in real time across your store hours. That’s not a criticism — it’s just physics. There’s too much happening.
+  body: This is where most services fall short. They treat music as a set-it-and-forget-it utility, like the thermostat. But the research says music is more like lighting — it needs to shift with context. A 2001 study in the Journal of Retailing tested 270 customers and found that when music and scent matched in arousal level, shoppers rated the environment significantly higher. Mismatch killed the effect entirely. And research in Marketing Letters from 2012 showed that the interaction between tempo and musical mode — major versus minor key — produced roughly a 12 percent spending lift when slow tempo was paired with minor mode. But major key actually canceled out the tempo benefit. These are subtle variables. Mode, tempo, arousal matching, time-of-day alignment. No human curator is tracking all of this in real time across your store hours. That’s not a criticism — it’s just physics. There’s too much happening.
 - type: subhead
   text: How the New Model Works
 - type: prose

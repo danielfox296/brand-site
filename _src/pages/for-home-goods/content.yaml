@@ -5,8 +5,8 @@
 
 hero:
   eyebrow: "For home goods retail"
-  h1: "Music to soothe the savage browser."
-  subline: "Home goods customers come in to wander &mdash; decor, bedding, kitchen, accents, the items that finish a room. Entuned produces original music tuned to extend the comfortable browse, ease the considered purchase, and make the lifestyle fit feel right. Free, no credit card."
+  h1: "Music engineered for the browse &mdash; and measured in the basket."
+  subline: "Home goods customers come in to wander &mdash; decor, bedding, kitchen, accents, the items that finish a room. Entuned produces original music tuned to extend the comfortable browse, ease the considered purchase, and make the lifestyle fit feel right. Running 5&ndash;50 stores? Start a measured pilot &mdash; twelve weeks, no cost, read in your own reporting. Single store? Stream Entuned Free, no card."
 
 # The gap
 gap:
@@ -38,7 +38,7 @@ research:
   h2: "Forty years of evidence, focused on the levers that matter for big-ticket retail."
 
   card1_title: "Tempo affects pace through the store."
-  card1_text: "Milliman (1982) measured slower music increasing grocery dwell by ~38%. The mechanism &mdash; tempo affects walking pace &mdash; maps cleanly to home goods, where slower pace means more product interactions per visit and more items added to the basket."
+  card1_text: "Milliman (1982) measured slower music slowing in-store traffic flow and lifting sales. The mechanism &mdash; tempo affects walking pace &mdash; maps cleanly to home goods, where slower pace means more product interactions per visit and more items added to the basket."
 
   card2_title: "Music customers read as theirs moves willingness to pay."
   card2_text: "Areni and Kim (1993) found that in a wine cellar, customers chose more expensive bottles &mdash; not more of them &mdash; when the music matched the customer. North, Shilcock and Hargreaves (2003) found the same prestige-fit effect lifted spend per head in a restaurant. Same product on the shelf, different customer read."
@@ -53,7 +53,7 @@ research:
 cta:
   eyebrow: "Get Started"
   h2: "Hear it on your floor."
-  subline: "Start free at Entuned Free in a single store. Move to Boost or Professional once you want music tailored to a specific customer."
+  subline: "Running 5&ndash;50 locations? Start a measured pilot &mdash; twelve weeks, no cost, matched test and control stores, read in your own reporting. Single store? Stream Entuned Free below."
   cta_primary: "Start Free"
 
 related:

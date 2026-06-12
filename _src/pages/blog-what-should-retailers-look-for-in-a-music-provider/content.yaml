@@ -63,7 +63,7 @@ sections:
 - type: subhead
   text: Adaptive Capability
 - type: prose
-  body: 'Static playlists have a fundamental problem. That 2017 study in the Journal of Retailing — over 43,000 baskets — showed that the ideal tempo literally depends on how many people are in your store. Fast tempo lifted sales about 8 percent when the floor was crowded. But when it’s quiet, you want slow. Ask your provider: does the music change based on real conditions, or does it play the same thing regardless? If the answer is “we schedule dayparts,” that’s a start. But it’s not responsive. It’s a guess about what conditions will be, made days or weeks in advance.'
+  body: 'Static playlists have a fundamental problem. That 2017 study in the Journal of Retailing — over 43,000 baskets — showed that the ideal tempo literally depends on how many people are in your store. Fast tempo lifted sales about 8 percent when the floor was crowded. But when it’s quiet, you want slow. Ask your provider: does the music change based on real conditions, or does it play the same thing regardless? If the answer is “we schedule by time of day,” that’s a start. But it’s not responsive. It’s a guess about what conditions will be, made days or weeks in advance.'
 - type: subhead
   text: Emotional Precision
 - type: prose

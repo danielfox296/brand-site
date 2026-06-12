@@ -771,7 +771,7 @@ def build():
                     },
                     {
                         "@type": "Offer",
-                        "name": "Core",
+                        "name": "Boost",
                         "price": "99",
                         "priceCurrency": "USD",
                         "description": "Music tailored to your single Ideal Customer Profile. $99/store/month."

@@ -9,15 +9,15 @@ card_title_1: "Increase in Dwell Time"
 card_title_2: "Increase in Willingness to Pay"
 card_title_3: "Familiarity Drives Customers Out"
 card_title_4: "Congruence Lifts Spending"
-btn_1: "Talk to Enterprise"
+btn_1: "Start a measured pilot"
 btn_2: "Start Free"
 p_1: "Findings from peer-reviewed retail studies. Anchor pilot data accumulating from a multi-store deployment."
 
 p_2: "Forty years of controlled experiments in real retail settings. These are not projections. They are published findings with named researchers, sample sizes, and effect magnitudes. Entuned engineers against them — every parameter the research identifies as load-bearing is something the engine specifies on purpose."
 
-p_3: "Milliman (1982) found slow-tempo music increased grocery dwell by 38%. Knoferle et al. (2011) refined the finding. Tempo on its own did not move sales. The lift came when tempo and other musical choices fit together. Most retail music vendors have the thermostat. They do not have the room."
+p_3: "Milliman (1982) found shoppers walked more slowly under slow-tempo music and daily sales rose. Knoferle et al. (2011) refined the finding. Tempo on its own did not move sales. The lift came when tempo and other musical choices fit together. Most retail music vendors have the thermostat. They do not have the room."
 
-p_4: "Areni and Kim (1993) found classical music in a wine store led customers to choose more expensive bottles, not more bottles. North et al. (1999) found French music tripled French wine sales. When music matches how the customer reads herself, willingness to pay rises (North, Sheridan & Areni, 2016)."
+p_4: "Areni and Kim (1993) found classical music in a wine store led customers to choose more expensive bottles, not more bottles. North et al. (1999) found shoppers chose French wine over German roughly three-to-one when French music played. When music matches how the customer reads herself, willingness to pay rises (North, Sheridan & Areni, 2016)."
 
 p_5: "Yalch and Spangenberg (2000) tested familiar and unfamiliar music in a department store. Shoppers exposed to familiar music left 8 percent sooner. They enjoyed it more. They left faster. Original music is unfamiliar by definition. That is why it works."
 
@@ -27,20 +27,20 @@ p_7: "Entuned is currently running a deployment with a major mid-market men's fa
 
 p_8: "We make no lift claims from that deployment. It is a live technical validation, not a case study, and we don't publish anecdote as proof. The published research above is what we stand behind for outcome claims today."
 
-p_9: "Enterprise pilots deploy in your stores against your existing reporting, with a written readout against the metrics you set. If you want what the research predicts to show up in the report your operators already run, the entry is a structured pilot."
+p_9: "A measured pilot deploys in a matched subset of your stores against your existing reporting, with a written readout against the metrics you set. If you run 5&ndash;50 locations and want what the research predicts to show up in the report your operators already run, the entry is a free twelve-week pilot."
 
 p_10: "Milliman (1982)"
-p_11: "Slow-tempo music increased grocery dwell by 38 percent and daily gross receipts by 32 percent. Tempo alone did not predict the lift. Knoferle et al. (2011) later showed the effect depends on tempo being paired with the right tonal choice."
+p_11: "Slow-tempo music slowed shoppers' pace and lifted daily gross sales meaningfully. Tempo alone did not predict the lift. Knoferle et al. (2011) later showed the effect depends on tempo being paired with the right tonal choice."
 p_12: "Smith &amp; Curnow (1966)"
 p_13: "One of the earliest controlled studies of music volume in retail. Loud music reduced shopping time without increasing sales. Volume is a blunt tool."
 p_14: "Areni &amp; Kim (1993)"
 p_15: "Classical music in a wine cellar led customers to choose more expensive bottles, not more bottles. The music changed perceived value, not purchase intent."
 p_16: "North et al. (1999)"
-p_17: "French music tripled French wine sales over a two-week period. German music had the same effect on German wine. Customers denied being influenced. The effect happened below conscious awareness."
+p_17: "Shoppers chose French wine over German roughly three-to-one when French music played, and the pattern reversed for German wine under German music. Customers denied being influenced. The effect happened below conscious awareness."
 p_18: "Chebat &amp; Michon (2003)"
 p_19: "Tested how music shapes perceived product quality through affect. Music shifted shoppers' emotional state, which shifted how they evaluated what they were looking at. The audio environment changed what the product felt like it was worth."
-p_20: "Engineered audio in your stores. Free to start with Entuned Free. Talk to Enterprise about a structured pilot in your locations."
+p_20: "Engineered audio in your stores. Running 5&ndash;50 locations? Start a measured pilot &mdash; free, twelve weeks, read in your own reporting. Single store or just a few? Start free with Entuned Free."
 
 further_reading_eyebrow: "Related Reading"
 further_reading_headline: "From the Blog"
-further_reading_links: <a href="blog/the-dwell-time-variable-nobodys-tracking.html">The Dwell Time Variable Nobody's Tracking</a> &middot; <a href="blog/why-your-best-customers-leave-faster-than-they-should.html">Why Your Best Customers Leave Faster Than They Should</a> &middot; <a href="blog/measure-roi-retail-music.html">How to Measure the ROI of In-Store Music</a> &middot; <a href="blog/the-8-12-youre-leaving-on-the-table.html">The Margin You're Leaving on the Table</a>
+further_reading_links: <a href="blog/the-dwell-time-variable-nobodys-tracking.html">The Dwell Time Variable Nobody's Tracking</a> &middot; <a href="blog/why-your-best-customers-leave-faster-than-they-should.html">Why Your Best Customers Leave Faster Than They Should</a> &middot; <a href="blog/measure-roi-retail-music.html">How to Measure the ROI of In-Store Music</a> &middot; <a href="blog/the-margin-youre-leaving-on-the-table.html">The Margin You're Leaving on the Table</a>

@@ -98,11 +98,11 @@ sections:
       For the broader comparison of what the category offers operators, see <a href="../why-entuned.html">why Entuned exists</a>.
 
   - type: cta
-    variant: start-free
-    headline: "Hear it on your floor."
-    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no credit card, no time limit. PRO-indemnified the moment it plays."
-    link: "https://app.entuned.co/start"
-    link_text: "Start Free"
+    variant: pilot
+    headline: "Run it across your stores."
+    body: "Entuned engineers original music tuned to your customer and your sales outcomes — tempo, key, lyrical density, energy arc. For 5–50-location operators, the entry is a free twelve-week pilot across a matched subset of your stores, read in your own POS and traffic numbers."
+    link: "../pilot.html"
+    link_text: "Start a measured pilot"
 
   - type: related
     posts:

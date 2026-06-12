@@ -16,7 +16,7 @@ tags: [field-notes, walk-out-rate, conversion, retail-operations, customer-behav
 sections:
   - type: key_takeaways
     items:
-      - "Walk-out rate is knowable from data you already have. Door counts minus transactions, segmented by daypart"
+      - "Walk-out rate is knowable from data you already have. Door counts minus transactions, segmented by time of day"
       - "Six exit patterns explain most retail walk-outs. The exit you're losing customers to is probably not the one you're fixing"
       - "The audio mismatch exit is the cheapest of the six to test because it has no operational cost and no inventory risk"
       - "A two-week diagnostic against your POS data tells you which exit is binding before you spend capital fixing the wrong one"
@@ -38,7 +38,7 @@ sections:
     body: |
       Walk-out rate is the share of visitors who enter your store and leave without making a purchase. It is the inverse of conversion rate, but framed from the customer's exit instead of the cashier's drawer, and it is a more useful framing because it forces you to ask why somebody who walked in walked back out.
 
-      The math is uncomplicated. Take your door-counter footfall for a daypart, subtract your transactions for that same window, and divide by the footfall. You will get a percentage. For most specialty retail formats that number sits between 60 and 85 percent on a normal Saturday afternoon. That is not a defect. Most foot traffic is browsing. The question is whether your walk-out rate is moving over time and whether the segments inside it are shifting in ways your store experience can act on.
+      The math is uncomplicated. Take your door-counter footfall for a time-of-day window, subtract your transactions for that same window, and divide by the footfall. You will get a percentage. For most specialty retail formats that number sits between 60 and 85 percent on a normal Saturday afternoon. That is not a defect. Most foot traffic is browsing. The question is whether your walk-out rate is moving over time and whether the segments inside it are shifting in ways your store experience can act on.
 
       If you do not have a door counter, a security-camera review of two hours on a Saturday gives you a directional sample for the cost of one staff hour. A simple stopwatch sample of 20 entries also works as a baseline.
 
@@ -133,9 +133,9 @@ sections:
     body: |
       You do not have to fix all six exits at once. You have to find which one is binding your conversion right now and act on that one first.
 
-      Start with your data. Pull walk-out rate by daypart for the last six weeks. Note the dayparts where the rate is highest. Look at which dayparts also have the lowest staffing, the lowest fresh assortment, the longest checkout queue, the loudest or quietest audio. The exit pattern that co-moves with your highest walk-out daypart is your candidate.
+      Start with your data. Pull walk-out rate by time of day for the last six weeks. Note the times of day where the rate is highest. Look at which times of day also have the lowest staffing, the lowest fresh assortment, the longest checkout queue, the loudest or quietest audio. The exit pattern that co-moves with your highest walk-out time of day is your candidate.
 
-      Then go stand on the floor for two hours during that daypart. Count exits. For each one, write down what the customer did in the thirty seconds before they walked out. Did they pause at a price tag? Did they scan the floor and turn around? Did they retreat from a staff approach? Did they appear to react to something in the audio environment? Did they encounter a queue or a missing tag? Two hours of structured observation will produce more diagnostic clarity than a quarter of theoretical strategy.
+      Then go stand on the floor for two hours during that window. Count exits. For each one, write down what the customer did in the thirty seconds before they walked out. Did they pause at a price tag? Did they scan the floor and turn around? Did they retreat from a staff approach? Did they appear to react to something in the audio environment? Did they encounter a queue or a missing tag? Two hours of structured observation will produce more diagnostic clarity than a quarter of theoretical strategy.
 
       The customer is telling you which exit they are using. The data tells you when. Your job is to listen to both before you spend capital on a fix.
 
@@ -148,11 +148,11 @@ sections:
     body: |
       Three actions, in order.
 
-      **Pull six weeks of walk-out rate** by daypart. Most operators have not actually computed this number at this granularity. You will need a baseline before you can tell whether anything you change is moving it.
+      **Pull six weeks of walk-out rate** by time of day. Most operators have not actually computed this number at this granularity. You will need a baseline before you can tell whether anything you change is moving it.
 
-      **Stand on the floor for two hours** during your highest walk-out daypart. Count exits. Write down what each customer did in the thirty seconds before they left. The pattern that emerges is your diagnostic, not the framework.
+      **Stand on the floor for two hours** during your highest walk-out time of day. Count exits. Write down what each customer did in the thirty seconds before they left. The pattern that emerges is your diagnostic, not the framework.
 
-      **Run a free audio test.** Of the six exits, the audio-mismatch exit is the one with no inventory risk, no operational lift, and no capital outlay. Entuned Free gives you outcome-tuned music for no credit card, no time limit. Pick the Linger preset, run it for two weeks during your highest walk-out daypart against the baseline you just pulled. If walk-out rate moves, you have evidence. If it does not, you have learned that audio is not the binding exit, which is also worth knowing — and you can re-allocate to one of the other five without spending capital first.
+      **Run a free audio test.** Of the six exits, the audio-mismatch exit is the one with no inventory risk, no operational lift, and no capital outlay. Entuned Free gives you outcome-tuned music for no credit card, no time limit. Pick the Linger preset, run it for two weeks during your highest walk-out time of day against the baseline you just pulled. If walk-out rate moves, you have evidence. If it does not, you have learned that audio is not the binding exit, which is also worth knowing — and you can re-allocate to one of the other five without spending capital first.
 
   - type: prose
     body: |

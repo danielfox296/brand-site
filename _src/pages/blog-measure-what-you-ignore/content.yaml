@@ -37,7 +37,7 @@ sections:
 
   - type: prose
     body: |
-      Retail operators get good at watching the KPIs their ops stack already produces. Sales per square foot. Units per transaction. Basket size. Conversion by day-part. These are the numbers the CFO asks about and the numbers your district managers can pull in a meeting.
+      Retail operators get good at watching the KPIs their ops stack already produces. Sales per square foot. Units per transaction. Basket size. Conversion by time of day. These are the numbers the CFO asks about and the numbers your district managers can pull in a meeting.
 
       The problem is that everybody in the industry tracks the same five or six metrics. If your peer chain is doing 4% better this quarter, the reason is almost never hiding in a column on the dashboard you already have. It's sitting in a variable nobody on either team has named yet.
 

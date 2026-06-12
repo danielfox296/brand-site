@@ -134,7 +134,7 @@ sections:
     body: |
       AOV is one of the easiest retail metrics to read cleanly. Every POS reports it natively. Week-over-week comparison filters out most of the seasonal noise that makes month-over-month tricky.
 
-      Pick a baseline week. Pull AOV by daypart and by day of week. Note any promotions, weather anomalies, staffing changes. That is your control.
+      Pick a baseline week. Pull AOV by time of day and by day of week. Note any promotions, weather anomalies, staffing changes. That is your control.
 
       Change one variable for the next two weeks. The audio environment is the easiest because it has no operational cost and no inventory risk — no fixture moves, no restocking, no labor overhead. Pull AOV the same way at the end of week three.
 
@@ -149,7 +149,7 @@ sections:
     body: |
       Three actions, in order.
 
-      **Pull six weeks of AOV** by daypart. Get familiar with the noise band before you start changing anything. Most operators have not actually looked at AOV at this granularity in months.
+      **Pull six weeks of AOV** by time of day. Get familiar with the noise band before you start changing anything. Most operators have not actually looked at AOV at this granularity in months.
 
       **Walk your stores and listen.** Stand at the door for two minutes on a Saturday afternoon. Ask: does the music match the price point I want customers to anchor to? Does it sound like a $40 store or a $140 store? Did anyone choose this?
 
@@ -157,7 +157,7 @@ sections:
 
   - type: prose
     body: |
-      For more on the priming mechanism behind upmarket cueing, see <a href="../blog/luxury-priming-for-non-luxury-brands.html">luxury priming for non-luxury brands</a>. For why dwell time and AOV are not the same conversation, see <a href="../blog/longer-visits.html">longer visits don't mean bigger receipts</a>. For the broader case on retail music ROI, see <a href="../blog/measure-roi-retail-music.html">how to measure the ROI of in-store music</a>. The full <a href="../pricing.html">pricing page</a> walks through what each tier includes.
+      For the strategy hub on this topic — the full playbook for moving average order value in physical retail — see <a href="../how-to-increase-aov-retail.html">how to increase average order value in retail stores</a>. For more on the priming mechanism behind upmarket cueing, see <a href="../blog/luxury-priming-for-non-luxury-brands.html">luxury priming for non-luxury brands</a>. For why dwell time and AOV are not the same conversation, see <a href="../blog/longer-visits.html">longer visits don't mean bigger receipts</a>. For the broader case on retail music ROI, see <a href="../blog/measure-roi-retail-music.html">how to measure the ROI of in-store music</a>. The full <a href="../pricing.html">pricing page</a> walks through what each tier includes.
 
   - type: cta
     variant: start-free

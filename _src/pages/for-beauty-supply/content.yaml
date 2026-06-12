@@ -6,7 +6,7 @@
 hero:
   eyebrow: "For beauty supply retail"
   h1: "Music for the customer who knows what she came in for."
-  subline: "Beauty supply runs on regulars, missions, and replenishment &mdash; the customer walked in for a specific product and the staff she trusts to talk her through it. Entuned produces original music tuned to your customer and your shelf, not the generic catalogue she hears in every other store. Free, no credit card."
+  subline: "Beauty supply runs on regulars, missions, and replenishment &mdash; the customer walked in for a specific product and the staff she trusts to talk her through it. Entuned produces original music tuned to your customer and your shelf, not the generic catalogue she hears in every other store. Running 5&ndash;50 stores? Start a measured pilot &mdash; twelve weeks, no cost, read in your own reporting. Single store? Stream Entuned Free, no card."
 
 # The gap
 gap:
@@ -30,7 +30,7 @@ tiers:
   card3_text: "POS integration. Outcome Scheduling against your traffic profile (Saturday-morning regulars are a different mood than Wednesday-afternoon professional restocking). Multiple ICPs for stores that draw distinct customer types. Self-improving refinement against your basket and dwell data."
 
   card4_title: "Enterprise"
-  card4_text: "Multi-store rollouts where you operate more than a handful of locations. Custom ICP design and brand voice consultation. Performance terms where lift can be cleanly measured against your existing reporting."
+  card4_text: "Multi-store rollouts where you operate more than a handful of locations. Custom ICP design and brand voice consultation. Performance terms where lift can be cleanly measured against your existing reporting. Standard entry shape is a free 12-week pilot in matched test and control stores."
 
 # What the research says
 research:
@@ -53,7 +53,7 @@ research:
 cta:
   eyebrow: "Get Started"
   h2: "Hear it on your floor."
-  subline: "Start free at Entuned Free in your store. Move to Boost once you want music tailored to your specific customer."
+  subline: "Running 5&ndash;50 locations? Start a measured pilot &mdash; twelve weeks, no cost, matched test and control stores, read in your own reporting. Single store? Stream Entuned Free below."
   cta_primary: "Start Free"
 
 related:

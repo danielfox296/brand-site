@@ -84,7 +84,7 @@ bring:
 pricing:
   eyebrow: "Pricing"
   h2: "Negotiated per-location, structured around the engagement."
-  body: "Enterprise pricing is per-location, negotiated as part of the agreement, and structured around the specific deployment shape — number of stores, number of ICPs, integration depth, and any negotiated performance terms. The pilot has its own commercial structure separate from all-locations rollout terms."
+  body: "Enterprise pricing is per-location, negotiated as part of the agreement, and structured around the specific deployment shape — number of stores, number of ICPs, integration depth, and any negotiated performance terms. The pilot itself is free — twelve weeks in a matched set of test and control stores, with scope set in the discovery call; pricing applies only to the all-locations rollout."
   cta_primary: "Talk to Enterprise"
 
 # CTA / contact form

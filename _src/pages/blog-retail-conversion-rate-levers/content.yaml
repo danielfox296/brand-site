@@ -19,7 +19,7 @@ sections:
       - "Five levers move retail conversion: traffic quality, floor merchandising, staff confidence and timing, the audio environment, and friction at decision points"
       - "Conversion math is downstream of experience math. The leak almost always reveals itself on a 20-minute Saturday floor walk"
       - "Music does not close a sale. It buys the time in which the close happens"
-      - "Pull conversion by daypart, not by month. The leverage shows up in the hourly noise band"
+      - "Pull conversion by time of day, not by month. The leverage shows up in the hourly noise band"
 
   - type: prose
     body: |
@@ -46,7 +46,7 @@ sections:
 
       **Mall versus street-front in the same brand.** Up to a 15-point spread. The traffic is different, the customer intent is different, and the right benchmark for one location is not the right benchmark for the other.
 
-      The right comparison is not your category average from a trade publication. It is your store today versus your store six months ago, segmented by daypart. The leverage shows up in the hourly noise band, not the monthly headline.
+      The right comparison is not your category average from a trade publication. It is your store today versus your store six months ago, segmented by time of day. The leverage shows up in the hourly noise band, not the monthly headline.
 
   - type: subhead
     level: 2
@@ -126,7 +126,7 @@ sections:
 
   - type: prose
     body: |
-      Conversion rate is one of the cleanest retail metrics to read at the daypart level. Pull it for a baseline week — by hour, by day of week, by store if you have multiple. That is your control.
+      Conversion rate is one of the cleanest retail metrics to read at the hour-of-day level. Pull it for a baseline week — by hour, by day of week, by store if you have multiple. That is your control.
 
       Change one variable for the next two weeks. The audio environment is the easiest to change because it has no operational cost — no fixture moves, no staffing changes, no training. Pull conversion the same way at the end of week three.
 
@@ -145,9 +145,9 @@ sections:
 
       **Walk your store as a customer.** Not as a manager checking fixtures. Time how long it takes you to reach a staff member from entry. Note where the path felt confusing, where the displays felt stale, where the audio felt loud or off. That is your leak diagnosis. It is faster and more honest than any dashboard.
 
-      **Pull two weeks of conversion by daypart** from your POS. Get familiar with the noise band before you change anything.
+      **Pull two weeks of conversion by time of day** from your POS. Get familiar with the noise band before you change anything.
 
-      **Run a free audio pilot.** Entuned Free gives you outcome-tuned music for no credit card, no time limit. Run it for two weeks against the baseline. If conversion moves at the daypart level, you have evidence. If it does not, you have ruled out one lever cleanly.
+      **Run a free audio pilot.** Entuned Free gives you outcome-tuned music for no credit card, no time limit. Run it for two weeks against the baseline. If conversion moves at the hour-of-day level, you have evidence. If it does not, you have ruled out one lever cleanly.
 
   - type: prose
     body: |

@@ -73,6 +73,8 @@ Every page has a `content.yaml` file alongside its HTML sections. **When editing
 
 ## Publishing a Blog Post
 
+> **Canonical path is the structured YAML renderer (`content.yaml`), not raw HTML.** As of 2026-06, **all** posts are authored via `content.yaml` (see memory `feedback_blog_posts_yaml_only`). Create `blog-<slug>/config.json` + `blog-<slug>/content.yaml` and let the renderer emit the HTML — body blocks (`type: heading`, `type: paragraph`, `type: cta`, etc.) live in YAML. The `sections/01-content.html` walkthrough below is **legacy/reference only**; do not start new posts from it. The `type: cta` block uses the canonical CTA copy shown later in this section. Easiest path: use the `substack-cross-post` skill, which owns the YAML template end-to-end.
+
 Every blog post requires **6 touchpoints**. Miss one and the post is orphaned.
 
 ### 1. Create the post directory
@@ -94,9 +96,9 @@ _src/pages/blog-<slug>/
 
 **No `style.css` needed** — all blog layout is handled by global classes. Only add a page-specific `style.css` if the post has a truly unique component (e.g., a data visualization grid).
 
-### 2. Write the HTML content (`sections/01-content.html`)
+### 2. Write the content (LEGACY HTML pattern — prefer `content.yaml`; see callout above)
 
-Template:
+Template (legacy reference only):
 ```html
 <div class="back-link fade-up">
     <a href="../blog.html">&larr; Back to Blog</a>
