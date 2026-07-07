@@ -11,6 +11,7 @@ The category we operate in sits between the traditional in-store music business 
 Four decades of peer-reviewed research on music and consumer behavior sit behind the category. Milliman (1982) established that tempo changes shopper pace and spending. Areni and Kim (1993) showed classical music in a wine shop moved customers toward more expensive bottles. Yalch and Spangenberg (2000) documented that familiar music shortens visits. These findings have been replicated across retail formats and decades.
 
 ## Pages
+- [Press](https://entuned.co/press.html): Boilerplate, founder and team bios, brand assets (logos + headshots), and citable retail-audio data tools for journalists and partners.
 
 - [Home](https://entuned.co/): What Entuned does, who it is for, and how to start free.
 - [How It Works](https://entuned.co/how-it-works.html): The product flow from signup through measurement.
