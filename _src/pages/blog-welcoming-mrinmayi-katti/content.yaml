@@ -13,7 +13,6 @@ hero:
 meta_description: "Mrinmayi Katti joins Entuned as Data Scientist. A short welcome from the founder — her background, what she'll work on, and what comes next."
 og_image: "/img/katti-headshot.png"
 tags: [team, data-science, entuned, product]
-robots: noindex
 sections:
   - type: key_takeaways
     items:

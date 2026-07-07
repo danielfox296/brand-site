@@ -14,7 +14,6 @@ hero:
 meta_description: "Why three months is the minimum useful window for treating store audio as a measurable variable. The first weeks are noise. The back half is signal."
 og_image: "/img/blog/after-ninety-days.jpg"
 tags: [field-notes, measurement, pilots, store-operations]
-robots: noindex
 sections:
   - type: key_takeaways
     items:

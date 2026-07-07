@@ -14,7 +14,6 @@ hero:
 meta_description: "Your analytics platform and your music provider occupy the same store and have never spoken. That gap is where your unexplained variance has been hiding."
 og_image: "/img/blog/music-provider-retailnext.jpg"
 tags: [retail-analytics, vendor-gaps, store-operations, market-intel]
-robots: noindex
 sections:
   - type: key_takeaways
     items:

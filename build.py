@@ -495,6 +495,11 @@ def build():
             canonical_url = f'{SITE_URL}/'
         else:
             canonical_url = f'{SITE_URL}/{output}'
+        # Frontmatter canonical override (new-format posts): consolidate a
+        # near-duplicate spoke onto its hub without a destructive 301 — the page
+        # stays live for readers/internal links, ranking signal points to the hub.
+        if use_new_renderer and post_data.get('canonical'):
+            canonical_url = post_data['canonical']
 
         # Determine if blog post
         is_blog = output.startswith('blog/')

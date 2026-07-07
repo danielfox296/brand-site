@@ -14,7 +14,6 @@ hero:
 meta_description: "Audio never changes in most stores, so it never shows up in your dwell time analysis. That blind spot is costing you more than you think."
 og_image: "/img/blog/the-dwell-time-variable.jpg"
 tags: [field-notes, dwell-time, analytics, operations]
-robots: noindex
 sections:
   - type: key_takeaways
     items:
