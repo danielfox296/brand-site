@@ -3,7 +3,7 @@ slug: "can-you-play-spotify-in-your-store"
 eyebrow: "MARKET INTEL"
 dek: "A clean answer for retail operators who just want to know if the Spotify account their store manager set up is going to bite them."
 date: "2026-04-01"
-last_updated: "2026-06-06"
+last_updated: "2026-07-07"
 author:
   name: "Daniel Fox"
   role: "Founder & CEO"
@@ -14,6 +14,11 @@ hero:
 meta_description: "Is it illegal to play Spotify in your store? Short answer: yes. Here's what the fines look like and what multi-location operators actually use instead."
 og_image: "/img/blog/can-you-play-spotify-in-your-store.jpg"
 tags: [licensing, commercial-music, compliance, retail-music]
+video:
+  id: S47i5g6Hhco
+  title: "Why Spotify Doesn't Work for Retail (And the Data Proves It)"
+  upload_date: '2026-06-01'
+  duration: PT6M1S
 sections:
   - type: key_takeaways
     items:
@@ -40,6 +45,9 @@ sections:
       The pricing math is why. Consumer streaming services pay royalties to rights holders at per-stream rates negotiated for individual listeners in a private setting. A retail store with two hundred customers walking through per day sits outside that math. The platform never bought public performance rights on your behalf because the subscription price does not account for it.
 
       Public performance rights in the United States get administered by four performing rights organizations: ASCAP, BMI, SESAC, and GMR. Any music you play in a commercial space needs a public performance license from each one whose catalog you are touching. Your Spotify subscription does not include these licenses. Neither does your Apple Music subscription. The fact that you are paying somebody for music does not mean you are paying the right somebody.
+
+  - type: video
+    caption: "Watch: even when you license it, Spotify falls short for retail — the operational case in six minutes."
 
   - type: subhead
     level: 2
