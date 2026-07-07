@@ -103,6 +103,10 @@ sections:
 
       The licensing system exists to protect songwriters, and that's legitimate. But if you're a small business owner who just wants legal music playing in your store without navigating a bureaucratic maze, there's now a way to opt out of the entire structure.
 
+  - type: prose
+    body: |
+      Not certain you are even required to pay? <a href="../music-license-exemption-checker.html">The music licensing exemption checker</a> walks the exemptions for your setup.
+
   - type: cta
     variant: start-free
     headline: "Hear it on your floor."

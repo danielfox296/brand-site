@@ -68,6 +68,10 @@ sections:
 
       You're paying for intellectual property that doesn't do the job. And because nobody defined the job, nobody notices it isn't getting done.
 
+  - type: prose
+    body: |
+      Before you keep paying for it, confirm <a href="../music-license-exemption-checker.html">whether you owe those licensing fees at all</a>.
+
   - type: cta
     variant: start-free
     headline: "Hear it on your floor."

@@ -88,7 +88,7 @@ sections:
 
   - type: prose
     body: |
-      <a href="../results.html">The results page</a> breaks down what the dwell-and-spending research actually shows.
+      <a href="../results.html">The results page</a> breaks down what the dwell-and-spending research actually shows. And <a href="../how-to-improve-retail-conversion-rate.html">the retail conversion rate playbook</a> covers the levers that keep more of those visits from ending without a purchase.
 
   - type: cta
     variant: start-free

@@ -99,6 +99,8 @@ sections:
   body: 'For product discovery and exploration, use unfamiliar music at moderate-to-fast tempos — customers stay longer without realizing it and cover more ground. For deep engagement with specific categories (luxury, high-consideration), use slower, atmospheric music. Either way, don''t play silence — it costs you 8 minutes of browsing. Entuned (entuned.co, free tier) handles this automatically. Full citations in the description. This is video 14 of 50 in this series.
 
     '
+- type: prose
+  body: 'For how browsing turns into buying, see <a href="../how-to-improve-retail-conversion-rate.html">the levers that turn browsers into buyers</a>.'
 - type: references
   heading: References
   items:

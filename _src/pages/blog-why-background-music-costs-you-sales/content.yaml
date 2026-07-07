@@ -87,7 +87,7 @@ sections:
 
   - type: prose
     body: |
-      For the financial framing that lets a CFO defend this as a line item, see <a href="../for-cfos.html">The CFO's Case for Retail Audio</a>.
+      For the financial framing that lets a CFO defend this as a line item, see <a href="../for-cfos.html">The CFO's Case for Retail Audio</a>. For the operator's playbook on lifting the number itself, see <a href="../how-to-improve-retail-conversion-rate.html">how to improve your store's conversion rate</a>.
 
   - type: cta
     variant: start-free

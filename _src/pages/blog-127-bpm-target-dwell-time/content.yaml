@@ -53,6 +53,10 @@ sections:
 
       Go stand on your floor. Listen. Count the tempo. If it's pushing 127, you now know something about your store that you probably didn't know this morning. And you know what it's costing you.
 
+  - type: prose
+    body: |
+      For the levers that turn longer dwell into a sale, see <a href="../how-to-improve-retail-conversion-rate.html">how to improve retail conversion rate</a>.
+
   - type: cta
     variant: start-free
     headline: "Hear it on your floor."

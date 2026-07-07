@@ -74,6 +74,10 @@ sections:
     body: |
       Sign up at entuned.co. Start streaming in about five minutes. The ASCAP question goes away when the music isn't in their catalog.
 
+  - type: prose
+    body: |
+      Before you pay, confirm the bill is even yours: <a href="../music-license-exemption-checker.html">the music license exemption checker</a> walks the exemptions, and <a href="../pro-enforcement-map.html">the PRO enforcement map</a> shows how aggressively PROs pursue businesses in your state.
+
   - type: cta
     variant: start-free
     headline: "Hear it on your floor."

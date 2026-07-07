@@ -92,7 +92,7 @@ sections:
 
   - type: prose
     body: |
-      For the broader picture of why retail analytics has a response-layer gap, see <a href="../why-entuned.html">why Entuned exists</a>. If you want practical levers for extending how long customers stay, see <a href="../how-to-increase-dwell-time-retail.html">how to increase dwell time in retail stores</a>.
+      For the broader picture of why retail analytics has a response-layer gap, see <a href="../why-entuned.html">why Entuned exists</a>. If you want practical levers for extending how long customers stay, see <a href="../how-to-increase-dwell-time-retail.html">how to increase dwell time in retail stores</a>. And for how those longer visits translate into a higher close rate, see <a href="../how-to-improve-retail-conversion-rate.html">the levers that lift retail conversion</a>.
 
   - type: cta
     variant: start-free
