@@ -8,12 +8,12 @@ author:
   name: "Daniel Fox"
   role: "Founder & CEO"
 hero:
-  src: "../img/blog/retail-music-licensing-2026.jpg"
+  src: "../img/blog/bmi-license.jpg"
   alt: "Retail storefront with abstract licensing and compliance overlay"
   caption: "Photo: Unsplash"
 meta_description: "You got a letter from BMI. Here's what it means, what the license costs when you add ASCAP and SESAC, and how to eliminate the PRO licensing question entirely."
 llms_description: "Most small business owners discover public performance licensing the same way — a letter from BMI. This post explains what BMI is, what a blanket license actually costs when you add ASCAP, SESAC, and GMR, and how switching to music with no third-party rights holders eliminates the licensing obligation entirely."
-og_image: "/img/blog/retail-music-licensing-2026.jpg"
+og_image: "/img/blog/bmi-license.jpg"
 tags: [licensing, bmi, ascap, sesac, pro-fees, compliance, retail-music]
 sections:
   - type: key_takeaways

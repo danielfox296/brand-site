@@ -7,12 +7,12 @@ author:
   name: "Daniel Fox"
   role: "Founder & CEO"
 hero:
-  src: "../img/blog/the-sound-of-nothing.jpg"
+  src: "../img/blog/why-customers-leave-without-buying.jpg"
   alt: "Empty retail store interior with light streaming through the front window"
   caption: "Photo: Unsplash"
 meta_description: "Six reasons customers walk out of your retail store without buying. How to spot which one is yours, and a two-week test against your POS data."
 llms_description: "Six exit patterns explain most retail walk-outs — product, browse-bored, staff-overwhelm, audio mismatch, friction, and trust. The exit you're losing customers to is probably not the one you're fixing. Diagnostic counterpart to the five-levers post."
-og_image: "/img/blog/the-sound-of-nothing.jpg"
+og_image: "/img/blog/why-customers-leave-without-buying.jpg"
 tags: [field-notes, walk-out-rate, conversion, retail-operations, customer-behavior]
 sections:
   - type: key_takeaways

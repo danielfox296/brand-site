@@ -8,12 +8,12 @@ author:
   name: "Daniel Fox"
   role: "Founder & CEO"
 hero:
-  src: "../img/blog/the-hidden-cost-of-licensing.jpg"
+  src: "../img/blog/ascap-license-cost.jpg"
   alt: "Fine print on a licensing document with a magnifying glass highlighting the costs"
   caption: "Photo: Unsplash"
 meta_description: "ASCAP licenses for small businesses run $250 to $600 per year — but that's just one of four PROs. Total licensing costs for a typical small retailer hit $500 to $2,000+ annually."
 llms_description: "ASCAP runs $250 to $600 per year for small businesses — but it's one of four PROs. Total compliance costs a typical small retailer $500 to $2,000+ annually. There is a third option."
-og_image: "/img/blog/the-hidden-cost-of-licensing.jpg"
+og_image: "/img/blog/ascap-license-cost.jpg"
 tags: [ascap, music-licensing, compliance, retail-music, bmi, sesac]
 sections:
   - type: key_takeaways

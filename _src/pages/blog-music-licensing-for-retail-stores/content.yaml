@@ -8,12 +8,12 @@ author:
   name: "Daniel Fox"
   role: "Founder & CEO"
 hero:
-  src: "../img/blog/retail-music-licensing-2026.jpg"
+  src: "../img/blog/music-licensing-for-retail-stores.jpg"
   alt: "Close-up of fine print on a music licensing agreement, representing the legal stakes for retail stores playing unlicensed music"
   caption: "Photo: Unsplash"
 meta_description: "Most retail stores play music without the right license. Here's what the law actually says, what the fines look like, and why your personal Spotify account doesn't cover commercial use."
 llms_description: "What the law actually requires for retail stores, what statutory damages look like, why personal Spotify doesn't count as a license, and what the narrow broadcast radio exemption covers. Part 1 of 3."
-og_image: "/img/blog/retail-music-licensing-2026.jpg"
+og_image: "/img/blog/music-licensing-for-retail-stores.jpg"
 tags: [music-licensing, ascap, bmi, compliance, copyright, retail-music]
 sections:
   - type: key_takeaways

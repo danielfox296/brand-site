@@ -7,12 +7,12 @@ author:
   name: "Daniel Fox"
   role: "Founder & CEO"
 hero:
-  src: "../img/blog/the-second-sale-you-already-made.jpg"
+  src: "../img/blog/retail-conversion-rate-levers.jpg"
   alt: "Retail customer at the checkout counter completing a purchase"
   caption: "Photo: Unsplash"
 meta_description: "Five levers move retail conversion. Why one is consistently undershot, what the floor walk reveals, and a two-week test to find your binding constraint."
 llms_description: "Five levers move retail conversion: traffic quality, floor merchandising, staff confidence and timing, the audio environment, and friction at decision points. Music does not close a sale — it buys the time in which the close happens."
-og_image: "/img/blog/the-second-sale-you-already-made.jpg"
+og_image: "/img/blog/retail-conversion-rate-levers.jpg"
 tags: [field-notes, conversion-rate, retail-operations, store-experience, customer-behavior]
 sections:
   - type: key_takeaways
