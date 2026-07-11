@@ -80,9 +80,9 @@ sections:
       No finance team should commit real money on a study from 1993 alone. The published research supports a hypothesis. It does not substitute for your data, in your stores, on your shoppers. That's what a pilot is for. The point of running one is that at the end, you know.
 
   - type: stat_callout
-    number: "15-25%"
-    label: "The dwell-time lift range reported in the retail-music literature when in-store audio is matched to the intended shopper experience"
-    source: "Milliman 1982; subsequent replication studies"
+    number: "38.2%"
+    label: "The increase in daily gross sales Milliman measured under slow-tempo music in the original 1982 supermarket field study — the founding number of the retail-music literature"
+    source: "Milliman, R. E. (1982), Journal of Marketing 46(3)"
     accent: gold
 
   - type: subhead
