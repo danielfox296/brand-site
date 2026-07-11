@@ -432,13 +432,54 @@ footer .footer-section:first-child p {
   margin-top: 0.5rem;
 }
 
-.footer-newsletter iframe {
-  width: 100%;
+.footer-newsletter-form {
+  display: flex;
+  gap: 0.5rem;
   max-width: 420px;
-  height: 150px;
-  border: 0;
   margin-top: 0.75rem;
-  border-radius: 6px;
+}
+
+.footer-newsletter-form input[type="email"] {
+  flex: 1;
+  min-width: 0;
+  height: 42px;
+  padding: 0 0.9rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(212, 225, 229, 0.18);
+  border-radius: 0;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+}
+
+.footer-newsletter-form input[type="email"]::placeholder {
+  color: var(--text-muted);
+}
+
+.footer-newsletter-form input[type="email"]:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.footer-newsletter-form button {
+  height: 42px;
+  line-height: 1;
+  padding: 0 1.1rem;
+  background: #d4e1e5;
+  color: #20201c;
+  border: 2px solid transparent;
+  border-radius: 0;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer-newsletter-form button:hover {
+  background: #e8eff2;
 }
 
 .footer-bottom {

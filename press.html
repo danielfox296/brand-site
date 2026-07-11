@@ -107,7 +107,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
-  <link rel="stylesheet" href="styles.css?v=7b2b50fc">
+  <link rel="stylesheet" href="styles.css?v=331834bf">
   <style>
 /* Press & Media Kit — page-scoped styles. All classes prefixed .press- to avoid
    colliding with global components. Colors/fonts from :root variables. */
@@ -385,7 +385,10 @@
       <div class="footer-newsletter">
         <h4>Newsletter</h4>
         <p class="footer-newsletter-tagline">Retail music, from the floor. Research and field notes, in your inbox.</p>
-        <iframe src="https://entuned.substack.com/embed" title="Subscribe to the Entuned newsletter" loading="lazy" frameborder="0" scrolling="no"></iframe>
+        <form class="footer-newsletter-form" action="https://entuned.substack.com/subscribe" method="get" target="_blank" rel="noopener">
+          <input type="email" name="email" placeholder="you@yourstore.com" required aria-label="Email address for the Entuned newsletter">
+          <button type="submit">Subscribe</button>
+        </form>
       </div>
     </div>
     <div class="footer-section">
