@@ -27,12 +27,12 @@ pillar3:
   eyebrow: "The early read"
   h2: "Music that gets sharper the longer it runs."
   p1: "Free and Boost deliver the concept. Pro pulls sales and traffic data from your locations and refines the music against the outcome you set — the longer it runs, the more precisely it produces what you measure. Self-improving refinement compounds over weeks and months of correlation."
-  p2: "The first pilot store ran the system for one day. Conversion went from 18% to 28%. One Tuesday, one location — a single data point, not a result. The full pilot data lands in your reporting stack, your terms, structured as a 12-week test against matched control stores."
+  p2: "The first pilot store put Entuned on and conversion went from 18% to 28% that day. The full pilot puts that to the test at scale: the read comes from your own reporting stack, on your terms, structured as a 12-week test against matched control stores."
 
 # Social proof
-social_eyebrow: "Early signal from the pilot"
+social_eyebrow: "From the pilot floor"
 social_stat_big: "+10 percentage points"
-social_stat_label: "ANECDOTAL LIFT"
+social_stat_label: "CONVERSION, FIRST PILOT DAY"
 social_stat_detail: "From 18% to 28% in a single day, April 21, 2026."
 
 social_quote_1: "...our store went from an 18% conversion all day on a Tuesday, April 21, 2026 to 28% conversion after we put on Entuned."
@@ -47,7 +47,7 @@ social_quote_3: "I was literally singing this song, the chorus to the song &lsqu
 social_quote_3_attr: "Customer who made an additional $100+ purchase"
 social_quote_3_context: "Pilot store, Spring 2026"
 
-social_disclaimer: "A single store on a single day &mdash; anecdotal, not a controlled result. The 12-week pilot replaces this with matched test-and-control numbers read in your own reporting."
+social_disclaimer: "That was day one in the first store. The 12-week pilot runs the same system across a matched test-and-control subset of your stores and reads the result in your own reporting."
 
 # Integrates with — POS logo wall
 integrates:

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- First-touch signup attribution. Stamps a `.entuned.co` cookie on the
+       FIRST page view so the original source (referrer + UTM) survives the
+       entuned.co -> app.entuned.co/start hop. The dashboard's /start reads the
+       same cookie (same name + shape) and forwards it to the server. Runs
+       early + first-touch-wins so it never overwrites the true upstream. -->
+  <script>
+    (function () {
+      try {
+        if (/(?:^|; )entuned_attr=/.test(document.cookie)) return;
+        var p = new URLSearchParams(window.location.search);
+        var payload = {
+          r: document.referrer || undefined,
+          lp: (window.location.pathname + window.location.search) || undefined,
+          us: p.get('utm_source') || undefined,
+          um: p.get('utm_medium') || undefined,
+          uc: p.get('utm_campaign') || undefined,
+          ut: p.get('utm_term') || undefined,
+          un: p.get('utm_content') || undefined,
+          t: new Date().toISOString()
+        };
+        var host = window.location.hostname;
+        var domain = (host === 'entuned.co' || /\.entuned\.co$/.test(host)) ? '; domain=.entuned.co' : '';
+        document.cookie = 'entuned_attr=' + encodeURIComponent(JSON.stringify(payload)) +
+          '; path=/' + domain + '; max-age=' + (30 * 24 * 60 * 60) + '; SameSite=Lax';
+      } catch (e) { /* best-effort */ }
+    })();
+  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/blog/music-vendor-claims-audit.html">
+  <meta name="robots" content="index, follow">
+  <title>Every Music Vendor Now Claims Music Boosts Sales. We Audited the Claims. | Entuned</title>
+  <meta name="description" content="Mood Media, Soundtrack, Pandora, Startle and more — what each vendor claims music does to behavior, what backs it up, and who will measure it in your stores.">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="../rss.xml">
+  <meta property="og:title" content="Every Music Vendor Now Claims Music Boosts Sales. We Audited the Claims. | Entuned">
+  <meta property="og:description" content="Mood Media, Soundtrack, Pandora, Startle and more — what each vendor claims music does to behavior, what backs it up, and who will measure it in your stores.">
+  <meta property="og:url" content="https://entuned.co/blog/music-vendor-claims-audit.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://entuned.co/img/blog/measure-what-you-ignore.jpg">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-07-11">
+  <meta property="article:author" content="Daniel Fox">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Every Music Vendor Now Claims Music Boosts Sales. We Audited the Claims. | Entuned">
+  <meta name="twitter:description" content="Mood Media, Soundtrack, Pandora, Startle and more — what each vendor claims music does to behavior, what backs it up, and who will measure it in your stores.">
+  <meta name="twitter:image" content="https://entuned.co/img/blog/measure-what-you-ignore.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Every Music Vendor Now Claims Music Boosts Sales. We Audited the Claims. | Entuned",
+  "author": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "datePublished": "2026-07-11",
+  "dateModified": "2026-07-11",
+  "description": "Mood Media, Soundtrack, Pandora, Startle and more \u2014 what each vendor claims music does to behavior, what backs it up, and who will measure it in your stores.",
+  "image": "https://entuned.co/img/blog/measure-what-you-ignore.jpg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://entuned.co/blog/music-vendor-claims-audit.html"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "retail music strategy"
+    },
+    {
+      "@type": "Thing",
+      "name": "in-store customer behavior"
+    },
+    {
+      "@type": "Thing",
+      "name": "engineered retail audio"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://entuned.co/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Every Music Vendor Now Claims Music Boosts Sales. We Audited the Claims. | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=7b2b50fc">
+  <link rel="stylesheet" href="../styles/blog.css">
+  
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav aria-label="Main navigation">
+  <div class="container">
+    <a href="/" class="logo"><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="../how-it-works.html">How It Works</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li class="nav-cta-item"><a href="https://app.entuned.co/start" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Start Free</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+  </div>
+</nav>
+
+  <main>
+  
+<!-- Reading progress bar -->
+<div class="blog-progress" aria-hidden="true">
+  <div class="blog-progress__bar" id="reading-progress"></div>
+</div>
+
+<article class="blog-article">
+
+  <!-- Article header -->
+  <header class="blog-article__header">
+    <div class="blog-eyebrow">FIELD NOTES</div>
+    <h1 class="blog-headline">Every Music Vendor Now Claims Music Boosts Sales. We Audited the Claims.</h1>
+    <p class="blog-dek">Nine in-store music vendors, their own marketing language, and one question none of their products can answer: what did the music contribute in your stores last quarter?</p>
+    <div class="blog-byline">
+      <span class="blog-byline__author">Daniel Fox</span>
+      <span class="blog-byline__role">Founder &amp; CEO</span>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <time class="blog-byline__date" datetime="2026-07-11">2026-07-11</time>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <span class="blog-byline__reading-time">5 min read</span>
+    </div>
+  </header>
+
+  <!-- Hero image -->
+  <figure class="blog-hero fade-up">
+    <img src="../img/blog/measure-what-you-ignore.jpg" alt="Retail analytics dashboard beside an empty store floor" class="blog-hero__img" loading="lazy">
+    <figcaption class="blog-hero__caption">Photo: Unsplash</figcaption>
+  </figure>
+
+  <!-- Key takeaways -->
+  <div class="blog-takeaways">
+  <div class="blog-takeaways__title">Key takeaways</div>
+  <ul>
+    <li>Every major in-store music vendor now makes some version of a behavioral claim — influence behavior, drive sales, increase dwell. The claims are converging on Entuned&#39;s category</li>
+    <li>Audit the substantiation and it sorts into three tiers: no evidence, shopper surveys, and commissioned studies run once in someone else&#39;s stores</li>
+    <li>No vendor in the field will measure what its own product does in your stores. That single question separates the whole market</li>
+  </ul>
+</div>
+
+  <!-- Article body (all sections except key_takeaways, cta, related) -->
+  <div class="blog-article__body">
+    <div class="blog-prose">
+  <p>Something changed in how in-store music gets marketed. Ten years ago the pitch was licensing compliance: play music legally, avoid the PRO demand letter. Today, walk the websites of the major vendors and nearly every one claims the music does something to customer behavior. Mood Media&rsquo;s homepage promises to &ldquo;shape perceptions, influence behaviors and prove business results.&rdquo; Startle sells playlists &ldquo;designed to drive specific outcomes, like energy, dwell time, and sales.&rdquo; Even SiriusXM&rsquo;s $26.95-a-month business tier says it will &ldquo;boost sales.&rdquo;</p>
+<p>This is good news for anyone who reads the retail atmospherics literature, because the claims are directionally true — <a href="../results.html">forty years of peer-reviewed research</a> says music measurably moves dwell time, spend, and product choice. The vendors finally caught up to the science, at least in their marketing.</p>
+<p>So we audited the claims. In July 2026 we walked the public websites of nine vendors and recorded three things: what each one claims music does, what evidence they offer, and whether anything in the product measures the effect in a customer&rsquo;s own stores.</p>
+</div>
+
+<h2 id="what-each-vendor-claims-and-what-backs-it-up" class="blog-subhead blog-subhead--h2">
+  What each vendor claims, and what backs it up
+  <a href="#what-each-vendor-claims-and-what-backs-it-up" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<figure class="blog-comparison-table">
+  <figcaption class="blog-comparison-table__title">The claims audit, July 2026</figcaption>
+  <div class="blog-comparison-table__wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Vendor</th>
+          <th scope="col">The behavioral claim</th>
+          <th scope="col">The evidence behind it</th>
+          <th scope="col">Measures it in your stores?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" data-label="Vendor">Mood Media</th>
+          <td data-label="The behavioral claim">&#34;Shape perceptions, influence behaviors and prove business results&#34;; music that can &#34;inspire action&#34; and &#34;increase time spent in store&#34;</td>
+          <td data-label="The evidence behind it">Shopper self-report surveys and brand case studies</td>
+          <td data-label="Measures it in your stores?">None offered</td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Vendor">Soundtrack Your Brand</th>
+          <td data-label="The behavioral claim">&#34;92% of businesses find that the right music leads to longer stays and higher customer spend&#34;</td>
+          <td data-label="The evidence behind it">A commissioned survey of brand leaders — plus real field studies (see below) run in other companies&#39; stores</td>
+          <td data-label="Measures it in your stores?">None offered</td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Vendor">Pandora CloudCover</th>
+          <td data-label="The behavioral claim">&#34;Improve your bottom line&#34;; cites +9.1% and +37% sales lifts</td>
+          <td data-label="The evidence behind it">The numbers come from Soundtrack&#39;s commissioned studies — a competitor&#39;s research on a different product</td>
+          <td data-label="Measures it in your stores?">None offered</td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Vendor">SiriusXM for Business</th>
+          <td data-label="The behavioral claim">&#34;Create atmosphere, boost sales, and build your brand&#39;s soundtrack&#34;</td>
+          <td data-label="The evidence behind it">None offered</td>
+          <td data-label="Measures it in your stores?">None offered</td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Vendor">Rockbot</th>
+          <td data-label="The behavioral claim">Retail media that can &#34;drive purchases&#34;</td>
+          <td data-label="The evidence behind it">Case studies about brand consistency and ease of management, not customer behavior</td>
+          <td data-label="Measures it in your stores?">None offered</td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Vendor">Qsic</th>
+          <td data-label="The behavioral claim">In-store audio ads &#34;influence 90% of total transactions at the moment of purchase&#34;</td>
+          <td data-label="The evidence behind it">First-party ad attribution — for the ads between the songs, not the music</td>
+          <td data-label="Measures it in your stores?">Ads only</td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Vendor">Startle</th>
+          <td data-label="The behavioral claim">Playlists &#34;designed to drive specific outcomes, like energy, dwell time, and sales&#34;</td>
+          <td data-label="The evidence behind it">A curation methodology and customer testimonials about vibe and service</td>
+          <td data-label="Measures it in your stores?">None offered</td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Vendor">Soundsuit</th>
+          <td data-label="The behavioral claim">Music for business — legality, scheduling, multi-site control</td>
+          <td data-label="The evidence behind it">No behavioral claim made</td>
+          <td data-label="Measures it in your stores?">None offered</td>
+        </tr>
+        <tr>
+          <th scope="row" data-label="Vendor">Ambie</th>
+          <td data-label="The behavioral claim">&#34;Positive guest experiences which drive sales&#34;</td>
+          <td data-label="The evidence behind it">Testimonials</td>
+          <td data-label="Measures it in your stores?">None offered</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</figure>
+
+<div class="blog-prose">
+  <p>Source: each vendor&rsquo;s public website, retrieved July 2026. The quoted phrases are their own marketing language.</p>
+</div>
+
+<h2 id="the-strongest-evidence-in-the-field-belongs-to-soundtrack-and-it-proves-the-category-not-the-product" class="blog-subhead blog-subhead--h2">
+  The strongest evidence in the field belongs to Soundtrack — and it proves the category, not the product
+  <a href="#the-strongest-evidence-in-the-field-belongs-to-soundtrack-and-it-proves-the-category-not-the-product" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>One vendor deserves to be taken seriously on evidence. Soundtrack Your Brand commissioned real field research with HUI Research in Sweden, and the results are the best numbers any incumbent has published. Their Gant study — in-store observations and customer surveys, not a controlled experiment — reports sales up 37% when brand-fit music replaced random music. A field experiment across 1.8 million transactions at a global restaurant chain found a 9.1% sales lift from brand-fit playlists over random hits. A third experiment found roughly 6% higher revenue when head office controlled the music instead of store staff — that one was peer-reviewed in the <em>Journal of Retailing and Consumer Services</em> in 2021.</p>
+<p>Read those numbers again from an operator&rsquo;s chair. A streaming vendor&rsquo;s own research says <strong>which music plays in your store is a revenue variable worth mid-single to double digits.</strong> That is the entire premise of treating audio as an engineered, measured part of the store — published by an incumbent, in their own marketing.</p>
+<p>Then ask what Soundtrack did with the proof. It became content for a research page, in service of selling a streaming subscription. The product doesn&rsquo;t engineer music toward an outcome, and nothing in it measures what the streams do to basket, conversion, or dwell in a customer&rsquo;s stores. The studies ran once, in someone else&rsquo;s stores, and the measurement never shipped. Pandora&rsquo;s CloudCover site then borrowed the same numbers to sell a $16.95 product the studies never tested.</p>
+</div>
+
+<figure class="blog-pullquote blog-pullquote--teal">
+  <blockquote>Ask any vendor on this list what the music contributed in your stores last quarter. That is where the category goes quiet.</blockquote>
+</figure>
+
+<h2 id="the-two-things-nobody-in-the-field-sells" class="blog-subhead blog-subhead--h2">
+  The two things nobody in the field sells
+  <a href="#the-two-things-nobody-in-the-field-sells" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Strip the marketing and the audit reduces to two structural gaps, the same two everywhere.</p>
+<p><strong>Nobody composes the variable.</strong> Every behavioral claim in the table runs through selecting leased tracks — songs whose tempo, lyrics, energy, and cultural reference were fixed by the original artist for reasons that had nothing to do with any retail floor. Curation, however scientific, can only choose among those tracks. The research levers — tempo, harmonic character, familiarity, lyrical content — are exactly the parameters a curator cannot change. Entuned composes original music to specification instead: the parameters are set on purpose, per store, per outcome. <a href="../science.html">How that works is documented here.</a></p>
+<p><strong>Nobody measures in your stores.</strong> Mood says &ldquo;prove business results&rdquo; and means case studies. Soundtrack proved it once, at Gant. Qsic runs closed-loop attribution — for ad campaigns. Not one product in the table will put a number next to the music in the buyer&rsquo;s own reporting. Entuned&rsquo;s answer is a <a href="../pilot.html">free twelve-week pilot</a>: a matched subset of your stores against control, read in the POS and traffic numbers you already produce, store by store.</p>
+</div>
+
+<h2 id="what-to-do-with-this-at-your-next-vendor-review" class="blog-subhead blog-subhead--h2">
+  What to do with this at your next vendor review
+  <a href="#what-to-do-with-this-at-your-next-vendor-review" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>If you already pay one of these vendors, the audit converts directly into renewal leverage. Take your vendor&rsquo;s own behavioral claim — it is on their homepage — and ask them to substantiate it in your stores before the contract renews. We keep a full list of questions for that meeting in <a href="qbr-questions-music-vendor.html">What to Ask Your Music Vendor at the Next QBR</a>; questions one and eight do most of the work.</p>
+<p>Their answer will be a survey, a study from someone else&rsquo;s stores, or silence. All three are the same answer: the claim is marketing. A vendor that believed its own behavioral claim would offer to measure it. We do.</p>
+</div>
+  </div>
+
+  <!-- CTA -->
+  <aside class="blog-cta blog-cta--start-free">
+  <div class="blog-cta__headline">Hear it on your floor.</div>
+  <div class="blog-cta__body">Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays.</div>
+  <a href="https://app.entuned.co/start" class="blog-cta__link">Start Free &rarr;</a>
+  <p class="blog-cta__fork">Running 5&ndash;50 locations? <a href="../pilot.html">Start a measured pilot &rarr;</a></p>
+</aside>
+
+  <!-- Related posts -->
+  <section class="blog-related" aria-label="Related posts">
+  <h2 class="blog-related__title">Keep reading</h2>
+  <div class="blog-related__grid">
+    <a href="../blog/commercial-music-services-compared.html" class="blog-related__card">
+      <img src="../img/blog/commercial-music-services-compared.jpg" alt="Mood Media Alternatives in 2026: Services Compared" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">Mood Media Alternatives in 2026: Services Compared</span>
+      <span class="blog-related__dek">A retail operator&#39;s comparison of Mood Media, Soundtrack Your Brand, Cloud Cover, SiriusXM, and the newer AI-original category. Pricing, contracts, and what each one can and cannot tell you about your stores.</span>
+    </a>
+    <a href="../blog/qbr-questions-music-vendor.html" class="blog-related__card">
+      <img src="../img/blog/qbr-questions-music-vendor.jpg" alt="What to Ask Your Music Vendor at the Next QBR" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">What to Ask Your Music Vendor at the Next QBR</span>
+      <span class="blog-related__dek">Ten questions a VP of Retail Ops should put to the music vendor at the next quarterly review. Half of them will not have answers. That is the information you need.</span>
+    </a>
+    <a href="../blog/how-do-you-measure-the-impact-of-music-in-retail.html" class="blog-related__card">
+      <img src="../img/blog/how-do-you-measure-the-impact-of-music-in-retail.jpg" alt="How Do You Measure the Impact of Music in Retail?" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">WATCH</span>
+      <span class="blog-related__card-title">How Do You Measure the Impact of Music in Retail?</span>
+      <span class="blog-related__dek">Measuring music&#39;s retail impact requires tracking three links: environment to emotion, emotion to behavior, behavior to purchase.</span>
+    </a>
+  </div>
+</section>
+
+</article>
+
+<!-- Blog-specific JS (reading progress + anchor copy) -->
+<script>
+  // Reading progress bar
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    document.getElementById('reading-progress').style.width = pct + '%';
+  });
+
+  // Anchor link copy-to-clipboard
+  document.querySelectorAll('.anchor-link').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      navigator.clipboard.writeText(window.location.origin + window.location.pathname + a.getAttribute('href'));
+      a.textContent = '\u2713'; setTimeout(() => a.textContent = '#', 1500);
+    });
+  });
+</script>
+  </main>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Engineered retail audio. PRO-indemnified.</p>
+      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
+      <div class="footer-newsletter">
+        <h4>Newsletter</h4>
+        <p class="footer-newsletter-tagline">Retail music, from the floor. Research and field notes, in your inbox.</p>
+        <iframe src="https://entuned.substack.com/embed" title="Subscribe to the Entuned newsletter" loading="lazy" frameborder="0" scrolling="no"></iframe>
+      </div>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="../how-it-works.html">How It Works</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="../pilot.html">Multi-Location Pilot</a></li>
+        <li><a href="../enterprise.html">Enterprise</a></li>
+        <li><a href="../why-entuned.html">Why Entuned</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For Your Industry</h4>
+      <ul>
+        <li><a href="../for-apparel.html">Apparel</a></li>
+        <li><a href="../for-beauty-supply.html">Beauty Supply</a></li>
+        <li><a href="../for-cosmetics.html">Cosmetics &amp; Beauty</a></li>
+        <li><a href="../for-furniture-mattress.html">Furniture &amp; Mattress</a></li>
+        <li><a href="../for-home-goods.html">Home Goods</a></li>
+        <li><a href="../for-jewelry.html">Jewelry</a></li>
+        <li><a href="../for-specialty-retail.html">Specialty Retail</a></li>
+        <li><a href="../for-sporting-goods.html">Sporting Goods</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
+      <ul>
+        <li><a href="../for-retail-leaders.html">Retail Operators</a></li>
+        <li><a href="../impact.html">Impact Calculator</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Research</h4>
+      <ul>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../results.html">Results</a></li>
+        <li><a href="../science.html">The Science</a></li>
+        <li><a href="../will-it-retail.html">Will It Retail?</a></li>
+        <li><a href="https://entuned.substack.com" target="_blank" rel="noopener">Newsletter</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="../how-music-affects-retail.html">How Music Affects Retail</a></li>
+        <li><a href="../how-to-increase-aov-retail.html">Increase Average Order Value</a></li>
+        <li><a href="../how-to-increase-dwell-time-retail.html">Increase Dwell Time</a></li>
+        <li><a href="../how-to-increase-impulse-purchases-retail.html">Drive Impulse Purchases</a></li>
+        <li><a href="../how-to-improve-retail-conversion-rate.html">Improve Conversion Rate</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Tools &amp; Comparisons</h4>
+      <ul>
+        <li><a href="../music-license-cost-calculator.html">Music License Cost Calculator</a></li>
+        <li><a href="../sound-audit.html">Sound Audit</a></li>
+        <li><a href="../spotify-business-risk-check.html">Spotify Business Risk Check</a></li>
+        <li><a href="../pro-enforcement-map.html">PRO Enforcement Map</a></li>
+        <li><a href="../retail-music-decibel-guide.html">Retail Music Decibel Guide</a></li>
+        <li><a href="../spotify-for-business.html">Spotify for Business</a></li>
+        <li><a href="../property-managers.html">For Property Managers</a></li>
+        <li><a href="../mood-media-alternative.html">Mood Media Alternative</a></li>
+        <li><a href="../soundtrack-your-brand-alternative.html">Soundtrack Your Brand Alternative</a></li>
+        <li><a href="../pandora-for-business-alternative.html">Pandora for Business Alternative</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../partners.html">Partners</a></li>
+        <li><a href="../press.html">Press</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="../licensing.html">Licensing &amp; PRO Coverage</a></li>
+        <li><a href="../data.html">Data Practices</a></li>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="../pricing/terms.html">Subscription Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG', {
+      linker: {
+        domains: ['entuned.co', 'music.entuned.co', 'app.entuned.co']
+      }
+    });
+  </script>
+  <script defer src="../js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>

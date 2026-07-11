@@ -1,0 +1,103 @@
+title: "Every Music Vendor Now Claims Music Boosts Sales. We Audited the Claims."
+slug: "music-vendor-claims-audit"
+eyebrow: "FIELD NOTES"
+dek: "Nine in-store music vendors, their own marketing language, and one question none of their products can answer: what did the music contribute in your stores last quarter?"
+date: "2026-07-11"
+last_updated: "2026-07-11"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/measure-what-you-ignore.jpg"
+  alt: "Retail analytics dashboard beside an empty store floor"
+  caption: "Photo: Unsplash"
+meta_description: "Mood Media, Soundtrack, Pandora, Startle and more — what each vendor claims music does to behavior, what backs it up, and who will measure it in your stores."
+og_image: "/img/blog/measure-what-you-ignore.jpg"
+tags: [field-notes, vendor-management, competitive-landscape, measurement]
+sections:
+  - type: key_takeaways
+    items:
+      - "Every major in-store music vendor now makes some version of a behavioral claim — influence behavior, drive sales, increase dwell. The claims are converging on Entuned's category"
+      - "Audit the substantiation and it sorts into three tiers: no evidence, shopper surveys, and commissioned studies run once in someone else's stores"
+      - "No vendor in the field will measure what its own product does in your stores. That single question separates the whole market"
+
+  - type: prose
+    body: |
+      Something changed in how in-store music gets marketed. Ten years ago the pitch was licensing compliance: play music legally, avoid the PRO demand letter. Today, walk the websites of the major vendors and nearly every one claims the music does something to customer behavior. Mood Media's homepage promises to "shape perceptions, influence behaviors and prove business results." Startle sells playlists "designed to drive specific outcomes, like energy, dwell time, and sales." Even SiriusXM's $26.95-a-month business tier says it will "boost sales."
+
+      This is good news for anyone who reads the retail atmospherics literature, because the claims are directionally true — <a href="../results.html">forty years of peer-reviewed research</a> says music measurably moves dwell time, spend, and product choice. The vendors finally caught up to the science, at least in their marketing.
+
+      So we audited the claims. In July 2026 we walked the public websites of nine vendors and recorded three things: what each one claims music does, what evidence they offer, and whether anything in the product measures the effect in a customer's own stores.
+
+  - type: subhead
+    level: 2
+    text: "What each vendor claims, and what backs it up"
+
+  - type: comparison_table
+    title: "The claims audit, July 2026"
+    columns: ["Vendor", "The behavioral claim", "The evidence behind it", "Measures it in your stores?"]
+    rows:
+      - ["Mood Media", "\"Shape perceptions, influence behaviors and prove business results\"; music that can \"inspire action\" and \"increase time spent in store\"", "Shopper self-report surveys and brand case studies", "None offered"]
+      - ["Soundtrack Your Brand", "\"92% of businesses find that the right music leads to longer stays and higher customer spend\"", "A commissioned survey of brand leaders — plus real field studies (see below) run in other companies' stores", "None offered"]
+      - ["Pandora CloudCover", "\"Improve your bottom line\"; cites +9.1% and +37% sales lifts", "The numbers come from Soundtrack's commissioned studies — a competitor's research on a different product", "None offered"]
+      - ["SiriusXM for Business", "\"Create atmosphere, boost sales, and build your brand's soundtrack\"", "None offered", "None offered"]
+      - ["Rockbot", "Retail media that can \"drive purchases\"", "Case studies about brand consistency and ease of management, not customer behavior", "None offered"]
+      - ["Qsic", "In-store audio ads \"influence 90% of total transactions at the moment of purchase\"", "First-party ad attribution — for the ads between the songs, not the music", "Ads only"]
+      - ["Startle", "Playlists \"designed to drive specific outcomes, like energy, dwell time, and sales\"", "A curation methodology and customer testimonials about vibe and service", "None offered"]
+      - ["Soundsuit", "Music for business — legality, scheduling, multi-site control", "No behavioral claim made", "None offered"]
+      - ["Ambie", "\"Positive guest experiences which drive sales\"", "Testimonials", "None offered"]
+
+  - type: prose
+    body: |
+      Source: each vendor's public website, retrieved July 2026. The quoted phrases are their own marketing language.
+
+  - type: subhead
+    level: 2
+    text: "The strongest evidence in the field belongs to Soundtrack — and it proves the category, not the product"
+
+  - type: prose
+    body: |
+      One vendor deserves to be taken seriously on evidence. Soundtrack Your Brand commissioned real field research with HUI Research in Sweden, and the results are the best numbers any incumbent has published. Their Gant study — in-store observations and customer surveys, not a controlled experiment — reports sales up 37% when brand-fit music replaced random music. A field experiment across 1.8 million transactions at a global restaurant chain found a 9.1% sales lift from brand-fit playlists over random hits. A third experiment found roughly 6% higher revenue when head office controlled the music instead of store staff — that one was peer-reviewed in the <em>Journal of Retailing and Consumer Services</em> in 2021.
+
+      Read those numbers again from an operator's chair. A streaming vendor's own research says <strong>which music plays in your store is a revenue variable worth mid-single to double digits.</strong> That is the entire premise of treating audio as an engineered, measured part of the store — published by an incumbent, in their own marketing.
+
+      Then ask what Soundtrack did with the proof. It became content for a research page, in service of selling a streaming subscription. The product doesn't engineer music toward an outcome, and nothing in it measures what the streams do to basket, conversion, or dwell in a customer's stores. The studies ran once, in someone else's stores, and the measurement never shipped. Pandora's CloudCover site then borrowed the same numbers to sell a $16.95 product the studies never tested.
+
+  - type: pullquote
+    text: "Ask any vendor on this list what the music contributed in your stores last quarter. That is where the category goes quiet."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "The two things nobody in the field sells"
+
+  - type: prose
+    body: |
+      Strip the marketing and the audit reduces to two structural gaps, the same two everywhere.
+
+      <strong>Nobody composes the variable.</strong> Every behavioral claim in the table runs through selecting leased tracks — songs whose tempo, lyrics, energy, and cultural reference were fixed by the original artist for reasons that had nothing to do with any retail floor. Curation, however scientific, can only choose among those tracks. The research levers — tempo, harmonic character, familiarity, lyrical content — are exactly the parameters a curator cannot change. Entuned composes original music to specification instead: the parameters are set on purpose, per store, per outcome. <a href="../science.html">How that works is documented here.</a>
+
+      <strong>Nobody measures in your stores.</strong> Mood says "prove business results" and means case studies. Soundtrack proved it once, at Gant. Qsic runs closed-loop attribution — for ad campaigns. Not one product in the table will put a number next to the music in the buyer's own reporting. Entuned's answer is a <a href="../pilot.html">free twelve-week pilot</a>: a matched subset of your stores against control, read in the POS and traffic numbers you already produce, store by store.
+
+  - type: subhead
+    level: 2
+    text: "What to do with this at your next vendor review"
+
+  - type: prose
+    body: |
+      If you already pay one of these vendors, the audit converts directly into renewal leverage. Take your vendor's own behavioral claim — it is on their homepage — and ask them to substantiate it in your stores before the contract renews. We keep a full list of questions for that meeting in <a href="qbr-questions-music-vendor.html">What to Ask Your Music Vendor at the Next QBR</a>; questions one and eight do most of the work.
+
+      Their answer will be a survey, a study from someone else's stores, or silence. All three are the same answer: the claim is marketing. A vendor that believed its own behavioral claim would offer to measure it. We do.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level — tempo, key, lyrical density, energy arc — tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "commercial-music-services-compared"
+      - slug: "qbr-questions-music-vendor"
+      - slug: "how-do-you-measure-the-impact-of-music-in-retail"

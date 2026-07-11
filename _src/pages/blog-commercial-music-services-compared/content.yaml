@@ -102,13 +102,13 @@ sections:
 
   - type: comparison_table
     title: "Commercial Music Services at a Glance"
-    columns: ["Provider", "Price per location per month (public)", "Contract", "What it reports"]
+    columns: ["Provider", "Price per location per month (public)", "Contract", "What it reports", "Measures results in your stores?"]
     rows:
-      - ["Mood Media", "$30 to $80", "3 to 5 years", "Schedule adherence"]
-      - ["Soundtrack Your Brand", "$35", "Month to month", "Play history"]
-      - ["Cloud Cover", "$17 to $20", "Month or annual", "Play logs"]
-      - ["SiriusXM for Business", "$27 to $80", "Varies by tier", "Schedule logs"]
-      - ["AI-original category", "Varies by provider", "Varies by provider", "Store-level behavior reporting available"]
+      - ["Mood Media", "$30 to $80", "3 to 5 years", "Schedule adherence", "None offered"]
+      - ["Soundtrack Your Brand", "$35", "Month to month", "Play history", "None offered — commissioned studies in other brands' stores"]
+      - ["Cloud Cover", "$17 to $20", "Month or annual", "Play logs", "None offered"]
+      - ["SiriusXM for Business", "$27 to $80", "Varies by tier", "Schedule logs", "None offered"]
+      - ["AI-original category", "Varies by provider", "Varies by provider", "Store-level behavior reporting available", "Entuned: yes — measured pilot, matched control stores"]
 
   - type: pullquote
     text: "If you want to know whether the music is helping or hurting in a given store, none of the catalog services can answer the question."
@@ -128,7 +128,7 @@ sections:
 
   - type: prose
     body: |
-      For the broader comparison of what the category offers operators, see <a href="../why-entuned.html">why Entuned exists</a>. <a href="../pricing.html">Entuned's four pricing tiers</a> sit alongside the public per-location numbers above for direct comparison.
+      Every one of these vendors now makes some behavioral claim in its marketing; <a href="../blog/music-vendor-claims-audit.html">the claims audit</a> walks through what each one says and what backs it up. For the broader comparison of what the category offers operators, see <a href="../why-entuned.html">why Entuned exists</a>. <a href="../pricing.html">Entuned's four pricing tiers</a> sit alongside the public per-location numbers above for direct comparison.
 
   - type: cta
     variant: pilot

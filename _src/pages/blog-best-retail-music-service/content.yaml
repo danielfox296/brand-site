@@ -75,14 +75,14 @@ sections:
 
   - type: comparison_table
     title: "Retail music services at a glance"
-    columns: ["Service", "Price per location per month (published pricing, 2026)", "Contract", "What it reports"]
+    columns: ["Service", "Price per location per month (published pricing, 2026)", "Contract", "What it reports", "Measures results in your stores?"]
     rows:
-      - ["Mood Media", "$17 to $40 self-serve (enterprise custom-quoted)", "None self-serve; multi-year for managed", "Schedule adherence"]
-      - ["Soundtrack Your Brand", "$29 to $54", "Month to month", "Play history"]
-      - ["Cloud Cover Music", "$17 to $30", "No long-term contract", "Play logs"]
-      - ["SiriusXM for Business", "$26.95", "Varies by tier", "Schedule logs"]
-      - ["QSIC", "Quote-only (no public price)", "Enterprise", "Enterprise reporting"]
-      - ["Original-music (Entuned)", "Free tier; Boost $99; Pro $399", "None", "Outcome reporting (Pro tier)"]
+      - ["Mood Media", "$17 to $40 self-serve (enterprise custom-quoted)", "None self-serve; multi-year for managed", "Schedule adherence", "None offered"]
+      - ["Soundtrack Your Brand", "$29 to $54", "Month to month", "Play history", "None offered"]
+      - ["Cloud Cover Music", "$17 to $30", "No long-term contract", "Play logs", "None offered"]
+      - ["SiriusXM for Business", "$26.95", "Varies by tier", "Schedule logs", "None offered"]
+      - ["QSIC", "Quote-only (no public price)", "Enterprise", "Enterprise reporting", "Ad attribution only"]
+      - ["Original-music (Entuned)", "Free tier; Boost $99; Pro $399", "None", "Outcome reporting (Pro tier)", "Yes — measured pilot and Pro-tier Lift Reports"]
 
   - type: subhead
     level: 2
@@ -114,7 +114,7 @@ sections:
 
   - type: prose
     body: |
-      For the head-to-head numbers, see <a href="../blog/commercial-music-services-compared.html">commercial music services compared</a> and <a href="../blog/mood-media-alternatives.html">Mood Media alternatives in 2026</a>. The cost breakdown is in <a href="../blog/how-much-does-retail-music-cost.html">how much does in-store music actually cost</a>, the budget option in <a href="../blog/cloud-cover-music.html">Cloud Cover Music</a>, and the choosing playbook in <a href="../blog/how-to-choose-music-for-your-retail-store.html">how to choose music for your retail store</a>.
+      For the head-to-head numbers, see <a href="../blog/commercial-music-services-compared.html">commercial music services compared</a> and <a href="../blog/mood-media-alternatives.html">Mood Media alternatives in 2026</a>. For what each vendor claims music does to behavior — and what actually backs it up — see <a href="../blog/music-vendor-claims-audit.html">the claims audit</a>. The cost breakdown is in <a href="../blog/how-much-does-retail-music-cost.html">how much does in-store music actually cost</a>, the budget option in <a href="../blog/cloud-cover-music.html">Cloud Cover Music</a>, and the choosing playbook in <a href="../blog/how-to-choose-music-for-your-retail-store.html">how to choose music for your retail store</a>.
 
   - type: cta
     variant: start-free

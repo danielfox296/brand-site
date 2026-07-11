@@ -7,6 +7,13 @@
   <language>en-us</language>
   <atom:link href="https://entuned.co/rss.xml" rel="self" type="application/rss+xml"/>
   <item>
+    <title>Every Music Vendor Now Claims Music Boosts Sales. We Audited the Claims.</title>
+    <link>https://entuned.co/blog/music-vendor-claims-audit.html</link>
+    <description>Mood Media, Soundtrack, Pandora, Startle and more — what each vendor claims music does to behavior, what backs it up, and who will measure it in your stores.</description>
+    <pubDate>Sat, 11 Jul 2026 00:00:00 +0000</pubDate>
+    <guid>https://entuned.co/blog/music-vendor-claims-audit.html</guid>
+  </item>
+  <item>
     <title>Can Music Be Optimized for Sales? Yes — Here's How</title>
     <link>https://entuned.co/blog/can-music-be-optimized-for-sales-yes-heres-how.html</link>
     <description>Yes, music can be optimized for sales the same way you'd optimize a landing page — by controlling individual variables and testing systematically. The...</description>
@@ -138,13 +145,6 @@
     <description>Sound changes how food tastes and what diners choose. The research on sonic seasoning, volume, and the slow-tempo lever that pours more drinks.</description>
     <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
     <guid>https://entuned.co/blog/what-music-should-a-restaurant-play.html</guid>
-  </item>
-  <item>
-    <title>What Music Should a Supermarket Play? When It's Crowded, Speed Up</title>
-    <link>https://entuned.co/blog/what-music-should-a-supermarket-play.html</link>
-    <description>The rule says slow music makes shoppers spend more. In a crowded supermarket it flips: fast music lifts spending, across 43,676 baskets. Here's why.</description>
-    <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
-    <guid>https://entuned.co/blog/what-music-should-a-supermarket-play.html</guid>
   </item>
 </channel>
 </rss>

@@ -136,6 +136,7 @@ sections:
 
   - type: related
     posts:
+      - slug: "music-vendor-claims-audit"
       - slug: "best-retail-music-service"
       - slug: "get-out-of-mood-media-contract"
       - slug: "commercial-music-services-compared"
