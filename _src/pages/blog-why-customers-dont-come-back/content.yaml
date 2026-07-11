@@ -7,12 +7,12 @@ author:
   name: "Daniel Fox"
   role: "Founder & CEO"
 hero:
-  src: "../img/blog/closing-the-loop.jpg"
+  src: "../img/blog/why-customers-dont-come-back.jpg"
   alt: "Retail customer returning to a familiar storefront"
   caption: "Photo: Unsplash"
 meta_description: "Six reasons customers don't return to your retail store, why most operators fix the wrong one, and a two-week test against your repeat-customer data."
 llms_description: "Six reasons customers don't return — no differentiation, no freshness, no reminder, no atmosphere memory hook, surviving small frictions, and natural need-shift. Anchored on Bitner's 1992 servicescape framework. Cheapest test is on the atmosphere lever."
-og_image: "/img/blog/closing-the-loop.jpg"
+og_image: "/img/blog/why-customers-dont-come-back.jpg"
 tags: [field-notes, customer-retention, repeat-customers, retail-operations, customer-behavior]
 sections:
   - type: key_takeaways

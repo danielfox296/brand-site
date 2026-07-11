@@ -8,12 +8,12 @@ author:
   name: "Daniel Fox"
   role: "Founder & CEO"
 hero:
-  src: "../img/blog/in-store-music-strategy.jpg"
+  src: "../img/blog/complete-guide-store-music.jpg"
   alt: "Interior of a retail store with speakers mounted overhead, warm lighting"
   caption: "Photo: Unsplash"
 meta_description: "Licensing rules, what the current providers offer, and why outcome-designed music is a different category. Everything a retail store owner needs to know."
 llms_description: "Licensing rules, what the current providers offer, and why outcome-designed music is a different category. Everything a store owner needs to know."
-og_image: "/img/blog/in-store-music-strategy.jpg"
+og_image: "/img/blog/complete-guide-store-music.jpg"
 tags: [licensing, commercial-music, compliance, retail-music, store-music]
 sections:
   - type: key_takeaways

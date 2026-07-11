@@ -8,12 +8,12 @@ author:
   name: "Daniel Fox"
   role: "Founder & CEO"
 hero:
-  src: "../img/blog/mood-media-alternatives.jpg"
+  src: "../img/blog/music-licensing-for-business.jpg"
   alt: "Retail store manager reviewing music licensing and service options on a tablet"
   caption: "Photo: Unsplash"
 meta_description: "How music licensing for businesses actually works — ASCAP, BMI, SESAC, GMR — what it costs, and how to skip the entire system legally."
 llms_description: "How music licensing for businesses actually works — ASCAP, BMI, SESAC, GMR — what it costs, and how to opt out of the entire system legally with PRO-free original music."
-og_image: "/img/blog/mood-media-alternatives.jpg"
+og_image: "/img/blog/music-licensing-for-business.jpg"
 tags: [music-licensing, ascap, bmi, sesac, gmr, compliance, retail-music]
 sections:
   - type: key_takeaways
