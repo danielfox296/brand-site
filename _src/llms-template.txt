@@ -1,0 +1,75 @@
+# Entuned
+
+> Original music for retail stores, engineered from customer psychology and measured against the operational data retailers already track. Not licensed catalog. Not a playlist service. Self-serve, starts free.
+
+Entuned makes original music for retail stores. An owner-operator signs up free at app.entuned.co/start, picks an outcome (more dwell, more energy, bigger baskets), and the music plays in-browser the same day — no hardware, no contract, no card. Because the music is original and carries no PRO obligation, it removes the ASCAP/BMI/SESAC/GMR licensing question entirely. Paid tiers (Boost, $99/location/month; Professional, $399/location/month) tailor the music to the store's ideal customer profile and tie it to sales outcomes.
+
+The category we operate in sits between the traditional in-store music business (Mood Media, Soundtrack Your Brand, SiriusXM Business, Cloud Cover) and the retail analytics business (RetailNext, Sensormatic, Standard AI). Those two categories have never shared data. That gap is where audio fails to show up as a measured variable in retail performance.
+
+## Research Foundation
+
+Four decades of peer-reviewed research on music and consumer behavior sit behind the category. Milliman (1982) established that tempo changes shopper pace and spending. Areni and Kim (1993) showed classical music in a wine shop moved customers toward more expensive bottles. Yalch and Spangenberg (2000) documented that familiar music shortens visits. These findings have been replicated across retail formats and decades.
+
+## Pages
+- [Press](https://entuned.co/press.html): Boilerplate, founder and team bios, brand assets (logos + headshots), and citable retail-audio data tools for journalists and partners.
+
+- [Home](https://entuned.co/): What Entuned does, who it is for, and how to start free.
+- [How It Works](https://entuned.co/how-it-works.html): The product flow from signup through measurement.
+- [Pricing](https://entuned.co/pricing.html): Public four-tier pricing — Entuned Free ($0), Boost ($99/loc/mo), Pro ($399/loc/mo), Enterprise (negotiated). Self-serve Stripe checkout on Boost and Pro.
+- [Multi-Location Pilot](https://entuned.co/pilot.html): Free 12-week measured pilot across matched test and control stores for 5–50-location specialty retail; the founder computes the read from your own POS and traffic numbers.
+- [Enterprise](https://entuned.co/enterprise.html): Engineered in-store audio for operators running more than 50 locations. High-touch, inbound rollout.
+- [Impact Calculator](https://entuned.co/impact.html): Interactive what-if calculator for modeling how a lift in average transaction value flows through your store's revenue. Illustrative scenarios, not predictions — a pilot replaces them with your numbers.
+- [Licensing](https://entuned.co/licensing.html): How Entuned's original, PRO-free music removes the ASCAP/BMI/SESAC/GMR licensing obligation entirely, with the indemnification Entuned carries the moment it plays.
+- [Results](https://entuned.co/results.html): What the research on music and shopper behavior actually supports, and how a measured pilot reads the effect in a retailer's own reporting.
+- [Science](https://entuned.co/science.html): Peer-reviewed research on music and shopper behavior.
+- [About](https://entuned.co/about.html): Who we are and why the company exists.
+- [Blog](https://entuned.co/blog.html): Operator-facing posts on retail audio.
+- [For Retail Leaders](https://entuned.co/for-retail-leaders.html): The VP of Retail operations view.
+- [For CFOs](https://entuned.co/for-cfos.html): The finance view on retail audio.
+- [For Apparel](https://entuned.co/for-apparel.html): Apparel and footwear retail specifics.
+- [For Jewelry](https://entuned.co/for-jewelry.html): Independent specialty jewelry retail.
+- [For Cosmetics](https://entuned.co/for-cosmetics.html): Cosmetics and prestige beauty retail.
+- [For Beauty Supply](https://entuned.co/for-beauty-supply.html): Beauty supply retail (multicultural haircare, professional supply, salon-adjacent).
+- [For Home Goods](https://entuned.co/for-home-goods.html): Home goods retail (bedding, decor, kitchen, accents).
+- [For Furniture & Mattress](https://entuned.co/for-furniture-mattress.html): Furniture and mattress retail (long dwell, big ticket).
+- [For Sporting Goods](https://entuned.co/for-sporting-goods.html): Sporting goods, athletic, and outdoor retail.
+- [For Specialty Retail](https://entuned.co/for-specialty-retail.html): Independent specialty retail (bookstore, wine, gift, gourmet, vinyl, craft).
+- [For Property Managers](https://entuned.co/property-managers.html): Music licensing compliance resources for commercial landlords and property managers — tenant risk, free one-pager PDF, and a free compliant music option for retail tenants.
+- [Why Entuned](https://entuned.co/why-entuned.html): How Entuned differs from the catalog business.
+- [Contact](https://entuned.co/contact.html): How to reach us.
+- [Sound Audit](https://entuned.co/sound-audit.html): A free 60-second self-assessment of a store's audio environment. 10 questions, scored, with a diagnosis and the two levers most operators are underusing.
+- [Retail Music Licensing FAQ](https://entuned.co/retail-music-faq.html): 20 sourced answers about retail music licensing — ASCAP, BMI, SESAC, GMR, Spotify TOS, the homestyle exemption, and how to legally play music in a store without dealing with PROs at all.
+- [Mood Media Alternative](https://entuned.co/mood-media-alternative.html): Honest comparison of Mood Media's pricing, contract terms, and per-zone billing model against Entuned's free tier and per-location pricing. All claims primary-sourced.
+- [Soundtrack Your Brand Alternative](https://entuned.co/soundtrack-your-brand-alternative.html): How Soundtrack's per-zone licensed-catalog model compares to Entuned's per-location, brand-owned, PRO-free original music.
+- [Pandora for Business Alternative](https://entuned.co/pandora-for-business-alternative.html): Why algorithmic Pandora stations drift between locations, what it costs through Mood Media or CloudCover, and how Entuned plays the same brand-owned music in every location.
+- [Startle Alternative](https://entuned.co/startle-alternative.html): Startle curates playlists "designed to drive outcomes" but never measures them. How outcome-curation compares to Entuned's composed-to-spec music and measured pilot.
+- [Music License Exemption Checker](https://entuned.co/music-license-exemption-checker.html): Interactive 5-question walkthrough of the 17 USC § 110(5)(B) homestyle exemption. Tells small-business operators whether they qualify, with statute citations.
+- [Spotify for Business](https://entuned.co/spotify-for-business.html): Spotify sells no commercial tier — every consumer plan is personal-use only. The three legal paths for a store (licensed catalog rental, direct PRO licenses, owned original music), priced honestly.
+- [Spotify-in-Business Risk Check](https://entuned.co/spotify-business-risk-check.html): 6-question diagnostic that scores your store's exposure for playing Spotify, Apple Music, or YouTube Music in a commercial space. Sourced from Spotify TOS, 17 USC §§ 504-505, and 2024-2025 ASCAP enforcement filings.
+- [Music License Cost Calculator](https://entuned.co/music-license-cost-calculator.html): Estimates 2026 annual licensing costs across all four US PROs (ASCAP, BMI, SESAC, GMR) by business type, square footage, occupancy, and live-music status. Every line cited to a published rate sheet.
+- [Retail Music Decibel Guide](https://entuned.co/retail-music-decibel-guide.html): Sortable reference table of typical sound levels for retail stores, restaurants, salons, gyms, and offices, with CDC NIOSH and OSHA threshold context. Sourced from peer-reviewed acoustics research and SoundPrint.
+- [PRO Enforcement Map](https://entuned.co/pro-enforcement-map.html): Interactive US map of 46 verified ASCAP music-licensing lawsuits filed in 2024-2025 against bars, restaurants, and venues. Sortable by state, year, and business type. Public-record dataset.
+- [Will It Retail?](https://entuned.co/will-it-retail.html): A tier-list ranking of real songs by how well they work in a retail environment — S through F — with a breakdown of what each tier actually means for in-store performance.
+
+## SEO Landing Pages
+
+- [How Music Affects Customer Behavior in Retail Stores](https://entuned.co/how-music-affects-retail.html): Research-backed pillar guide covering tempo, mode, genre congruence, lyrical priming, and the measurement gap that makes most music strategy useless in practice.
+- [How to Increase Average Order Value in Retail Stores](https://entuned.co/how-to-increase-aov-retail.html): Physical retail AOV mechanics, including how sonic environment primes premium purchasing and what the Elevate outcome mode targets.
+- [How to Increase Dwell Time in Retail Stores](https://entuned.co/how-to-increase-dwell-time-retail.html): How music tempo acts as an unconscious pacemaker, and how the Linger outcome mode extends browsing duration without layout changes.
+- [How to Drive Impulse Purchases In-Store](https://entuned.co/how-to-increase-impulse-purchases-retail.html): How arousal state drives impulse decisions and how the Energize outcome mode targets the emotional conditions that produce spontaneous buying.
+- [How to Improve Your Retail Store Conversion Rate](https://entuned.co/how-to-improve-retail-conversion-rate.html): The fifth conversion lever most retailers ignore: atmospheric congruence between music and brand positioning.
+- [How to Increase Average Transaction Value in Clothing Stores](https://entuned.co/how-to-increase-aov-apparel.html): Apparel-specific AOV dynamics, outfit completion psychology, and how lyrical content reinforces the self-image that drives multi-piece purchases.
+- [How to Increase Dwell Time in Furniture and Home Goods Stores](https://entuned.co/how-to-increase-dwell-time-home-goods.html): Why high-ticket browsing requires contemplation-mode sound design, and how slow tempos and spacious arrangements support couple decision-making.
+- [How to Drive Impulse Purchases in Beauty and Cosmetics Retail](https://entuned.co/how-to-increase-impulse-purchases-beauty.html): The self-reward loop in beauty retail and how lyrical content aligned to self-care themes reinforces the motivation that drives add-on purchases.
+
+## Blog Posts
+{{blog_entries}}
+
+## Partner Program
+
+- [Partner Program](https://entuned.co/partners.html): Referral partner program for retail consultants. 20% recurring commission, 3 months Boost free for referrals.
+
+## Contact
+
+- Contact: https://entuned.co/contact.html
+- Founder: Daniel Fox

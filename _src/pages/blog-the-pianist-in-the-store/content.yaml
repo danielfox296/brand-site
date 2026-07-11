@@ -10,6 +10,7 @@ hero:
   src: "../img/blog/the-pianist-in-the-store.jpg"
   alt: "Grand piano silhouette in a large open building with floor-to-ceiling windows at sunset"
 meta_description: "Nordstrom employed live pianists in 75% of its stores by 1985. By 2020, they were gone. The only retail music that ever adapted to the room in real time."
+llms_description: "Nordstrom's live pianists were the only retail music system that adapted to the room in real time. By 2020, the last one was gone — and with him, that capability entirely."
 og_image: "/img/blog/the-pianist-in-the-store.jpg"
 tags: [music-history, nordstrom, sound-on-the-floor, adaptive-music]
 sections:

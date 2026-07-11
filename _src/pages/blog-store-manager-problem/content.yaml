@@ -12,6 +12,7 @@ hero:
   alt: "Retail store interior with customer browsing"
   caption: "Photo: Unsplash"
 meta_description: "Multi-location retailers with no central audio spec get a different soundtrack in every store. Ten locations, ten brands. Here's what to do about it."
+llms_description: "Ten locations means ten managers making independent sonic decisions. The brand sounds like ten different stores."
 og_image: "/img/blog/store-manager-problem.jpg"
 tags: [multi-location, brand-consistency, operations]
 sections:

@@ -19,14 +19,14 @@ stripe_pro_payment_link: "https://api.entuned.co/billing/checkout?tier=pro"
 contact_enterprise_url: "contact.html?topic=enterprise"
 # Free-tier self-onboard. Magic-link / Google sign-in. No card required.
 essentials_signup_url: "https://app.entuned.co/start"
-# Multi-location pilot — the prioritized path for 5–50-door operators (ICP v2).
+# Multi-location pilot — secondary door for 5–50-door operators (Free-first hierarchy, 2026-07-11).
 pilot_url: "pilot.html"
 
-# Pilot band — sits above the self-serve tier grid.
+# Pilot band — sits below the self-serve tier grid.
 pilot:
   eyebrow: "Running 5 to 50 locations?"
-  headline: "Start with a measured pilot, not a tier."
-  body: "For a multi-location operator the question isn't which tier — it's what the audio does to behavior across your doors. We engineer original music for a subset of your stores, run it twelve weeks against matched control locations, and Daniel reads the result from the numbers your stores already produce. The pilot is free and sits outside the self-serve tiers below: no card, no subscription, a conversation."
+  headline: "Prefer proof before a tier? Run a measured pilot."
+  body: "For a multi-location operator the question isn't which tier — it's what the audio does to behavior across your doors. We engineer original music for a subset of your stores, run it twelve weeks against matched control locations, and Daniel reads the result from the numbers your stores already produce. The pilot is free and sits outside the self-serve tiers above: no card, no subscription, a conversation."
   cta_label: "Start a measured pilot"
 
 hero:
@@ -121,7 +121,7 @@ faq:
   q4: "Can I cancel?"
   a4: "Yes, monthly. No long-term contract on Boost or Professional. Enterprise pricing is negotiated as part of the agreement."
   q5: "What's the difference between Boost and Professional?"
-  a5: "Our Boost offering builds music around one Ideal Customer Profile and gives you all manual outcome control. Professional adds POS integration, multiple ICPs (Professional tailors music to each distinct customer type your store serves, instead of a single profile), Outcome Scheduling, scheduled interstitial promotional messaging, and self-improving refinement that compounds using your store's POS data. Most single-store shop owners start on Boost. Multi-location retailers with a real measurement stack start on Professional."
+  a5: "Our Boost offering builds music around one Ideal Customer Profile and gives you all manual outcome control. Professional adds POS integration, multiple ICPs (Professional tailors music to each distinct customer type your store serves, instead of a single profile), Outcome Scheduling, scheduled interstitial promotional messaging, and self-improving refinement that compounds using your store's POS data. Most single-store shop owners start free, then move to Boost when they want the music built around their specific customer profile. Multi-location retailers with a real measurement stack tend to land on Professional."
   q6: "I already pay Soundtrack Your Brand or Mood Media. How does this compare?"
   a6: "Those vendors license catalogue music and pass the cost through your subscription. The catalogue was written for an artist's self-expression, not for your store's customer. Entuned generates original music engineered to specific parameters — tempo, key, lyrics, all for the customer your store is built to serve. Entuned is a different product, a sales lever. See the side-by-side comparisons: <a href=\"mood-media-alternative.html\">Mood Media</a>, <a href=\"soundtrack-your-brand-alternative.html\">Soundtrack Your Brand</a>, and <a href=\"pandora-for-business-alternative.html\">Pandora for Business</a>."
 
@@ -129,10 +129,10 @@ faq:
 # Per the post-launch fixes: avoid three-button decision paralysis at the bottom of the page.
 final:
   header: "Pick the tier that fits your business."
-  subhead: "Most shop owners start with Boost."
-  cta_primary_label: "Start Boost — $99/mo"
-  text_links_lead: "Or"
-  text_links_essentials_label: "start free with Entuned Free"
+  subhead: "Start free and hear it on your floor today — no card, no time limit."
+  cta_primary_label: "Start Free"
+  text_links_lead: "Ready for a tighter fit?"
+  text_links_boost_label: "Start Boost — $99/mo"
   text_links_separator: "·"
   text_links_pilot_lead: "Running 5&ndash;50 locations?"
   text_links_pilot_label: "Start a measured pilot"

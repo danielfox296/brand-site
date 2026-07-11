@@ -12,6 +12,7 @@ hero:
   alt: "Empty retail aisle with overhead speakers visible in the ceiling grid"
   caption: "Photo: Unsplash"
 meta_description: "Most stores have no spec for the tempo of their background music. Here's what that costs in dwell time and basket size, backed by four decades of research."
+llms_description: "Field note. The background music in a mostly-empty Target was running at dance-floor tempo. The research on what that costs in dwell time and basket size is four decades old."
 og_image: "/img/blog/everything-designed-except-music.jpg"
 tags: [field-notes, tempo, retail-music, dwell-time]
 sections:

@@ -10,6 +10,7 @@ hero:
   src: "../img/blog/the-composer-who-wanted-you-to-ignore-him.jpg"
   alt: "Empty concert hall interior with rows of wooden seats and a lit stage"
 meta_description: "Erik Satie invented furniture music in 1917 to disappear. His first performance failed because the audience kept listening. The problem is still here."
+llms_description: "Erik Satie invented furniture music in 1917 and discovered the central problem of background music on his first public performance: people don't respond to music the way you design them to."
 og_image: "/img/blog/the-composer-who-wanted-you-to-ignore-him.jpg"
 tags: [music-history, satie, sound-on-the-floor, furniture-music]
 sections:

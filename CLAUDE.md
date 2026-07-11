@@ -26,19 +26,19 @@ Rules that have bitten in the past and aren't enforceable by the build. **Read `
 - **No "zones"** — not a product concept. Don't reference it anywhere.
 - **No "day-parting"** except in the single allowed explainer phrase "like day-parting, but better". Use **"Outcome Scheduling"** in all other copy.
 
-### Pricing CTA topology — locked plumbing, ICP v2 hierarchy
+### Pricing CTA topology — locked plumbing, Free-first hierarchy
 
 The CTA flow is intentionally asymmetric. Don't "fix" it by sending every tier through the same path.
 
 | Path | CTA destination | Why |
 |---|---|---|
-| Entuned Free | `https://app.entuned.co/start` | Self-onboard activation flow. No card. |
+| **Entuned Free** | `https://app.entuned.co/start` | **The primary CTA site-wide (Daniel, 2026-07-11): lead people to the listen-now path.** Self-onboard activation flow. No card. |
 | Boost | Direct Stripe Checkout | Skip the dashboard intermediate; reduce friction. |
 | Pro | Direct Stripe Checkout | Same as Boost. |
-| **Multi-location pilot** | `pilot.html` → `contact.html?topic=pilot` | **The prioritized buyer path (ICP v2, 2026-06-09).** 5–50-door specialty retail; founder-led, pilot-first. |
+| Multi-location pilot | `pilot.html` → `contact.html?topic=pilot` | Secondary door on buyer-intent surfaces (demoted 2026-07-11). 5–50-door specialty retail; founder-led. |
 | Enterprise | `contact.html?topic=enterprise` | >50 doors. High-touch, inbound only. |
 
-**Hierarchy (ICP v2, 2026-06-09):** on buyer-intent surfaces (homepage, pricing, verticals, for-retail-leaders, for-cfos) the pilot CTA takes the primary slot; Start Free stays present but secondary. The blog cluster keeps Start Free primary. Don't restore Free to the lead slot on buyer-intent surfaces, and don't add a "pick a tier" selector on the brand site. Rollout plan: `../projects/icp-v2-routing/SSOT.md`.
+**Hierarchy (re-inverted 2026-07-11, Daniel):** Start Free is the primary CTA on every surface — the GTM is the listen-now path: free signup, music on the floor the same day. The multi-location pilot stays live as the secondary CTA on buyer-intent surfaces (homepage, pricing, verticals, for-retail-leaders, for-cfos) with the 5–50-door routing microcopy — don't remove it. Don't add a "pick a tier" selector on the brand site. History: the pilot held the primary slot 2026-06-09 → 2026-07-11 (ICP v2 Phases 2–3); see `../projects/icp-v2-routing/SSOT.md`.
 
 ### Vertical pages — all live, all indexed, don't delete
 
@@ -88,11 +88,13 @@ _src/pages/blog-<slug>/
 **config.json:**
 ```json
 {
-  "title": "Post Title — Entuned Blog",
+  "title": "Post Title",
   "meta_description": "150-160 chars. Summarize what the reader will learn.",
   "output": "blog/<slug>.html"
 }
 ```
+
+**Title suffix:** don't append one. The build normalizes every page title (blog and non-blog) to `" | Entuned"` — it strips any legacy `" — Entuned Blog"` suffix and re-appends `" | Entuned"`. The shorter suffix wastes less of the ~60-char SERP title budget. (Convention ratified 2026-07-11; the old em-dash blog suffix is retired.)
 
 **No `style.css` needed** — all blog layout is handled by global classes. Only add a page-specific `style.css` if the post has a truly unique component (e.g., a data visualization grid).
 
@@ -218,26 +220,13 @@ In `_src/pages/blog/sections/01-content.html`, add inside `.articles-grid`:
 
 Position newer posts higher in the list (after featured card).
 
-### 5. Add sitemap entry
+### 5. sitemap.xml — automatic (since 2026-07-11)
 
-**Skip this step for any post with `robots: noindex`** — noindexed pages must not appear in `sitemap.xml` (mixed signal: sitemap says "index," meta says "don't"). Only index-eligible posts get a sitemap entry.
+`build.py` generates `sitemap.xml` on every build. Never edit it by hand. Noindexed posts, redirect stubs, and posts whose YAML `canonical` points at a different page are excluded automatically. Blog `lastmod` comes from YAML `last_updated`/`date`; root pages read `lastmod` from their `config.json`.
 
-In `sitemap.xml`:
-```xml
-  <url>
-    <loc>https://entuned.co/blog/<slug>.html</loc>
-    <lastmod>YYYY-MM-DD</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-```
+### 6. llms.txt — automatic (since 2026-07-11)
 
-### 6. Add llms.txt entry
-
-In `llms.txt`, under the blog section:
-```
-- [Post Title](https://entuned.co/blog/<slug>.html): One-sentence description of what the post covers.
-```
+`build.py` generates `llms.txt` from `_src/llms-template.txt` (hand-maintained non-blog sections) + one line per post. The per-post description comes from the post's `llms_description` YAML field, falling back to `meta_description`. Set `llms_description` in the post's `content.yaml` if you want the llms.txt line to differ from the meta description.
 
 ### 7. Build and push
 
@@ -267,6 +256,6 @@ those instructions here.
 
 - **Use CSS custom properties** — colors and fonts are defined as variables in `:root` in `styles.css`. Use `var(--accent)`, `var(--text)`, `var(--bg)`, etc. instead of hardcoding hex values in page-specific CSS.
 - **Never override global class names in page CSS.** If a page needs a variant, prefix it (e.g., `.cfo-hero` not `.hero-alt`). See `for-cfos/style.css` for the pattern.
-- **Avoid inline `style` attributes.** Use a class in `styles.css` or the page's `style.css` instead. Existing inline styles are technical debt — don't add more.
+- **Avoid inline `style` attributes.** Use a class in `styles.css` or the page's `style.css` instead. Existing inline styles are technical debt — don't add more. **Do not mass-convert the existing ~1,000 inline styles to classes** (audited 2026-07-11): many sit on elements also matched by descendant rules (`.feature-row-text p`, page-level `p` rules, etc.) that inline styles currently out-rank but a single class would lose to — a mechanical sweep silently reflows typography. Convert opportunistically, page by page, checking the cascade.
 - **All `<img>` tags need descriptive `alt` text.** Never use `alt=""` on content images.
 - **Images must be under 500KB.** Compress before committing with `sips --resampleWidth 1600 -s format jpeg -s formatOptions 80`.

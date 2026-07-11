@@ -10,6 +10,7 @@ hero:
   src: "../img/blog/the-wine-aisle.jpg"
   alt: "Rows of wine bottles arranged on retail store shelves, showing French and European wines in a well-lit shop interior"
 meta_description: "A 1999 study proved French music sold French wine and German music sold German wine. Shoppers had no idea. Associative priming is the layer nobody uses."
+llms_description: "A 1999 study proved French music sold French wine and German music sold German wine — and the shoppers had no idea the music was influencing them. This is associative priming, Layer 3 in Entuned's model."
 og_image: "/img/blog/the-wine-aisle.jpg"
 tags: [research, north-hargreaves, sound-on-the-floor, associative-priming, wine]
 sections:

@@ -10,6 +10,7 @@ hero:
   src: "../img/blog/jazz-musicians-hear.jpg"
   alt: "Close-up of a jazz pianist's hands on the keys of a grand piano, black and white"
 meta_description: "Genre and tempo are the surface. A jazz musician hears harmonic density, voice leading, and rhythmic feel — the variables that actually change customer."
+llms_description: "The gap between what a trained musician hears and what streaming metadata captures is the same gap that makes most in-store music ineffective. Harmonic density, voice leading, and rhythmic feel are the variables that move behavior — and none of them live in a tag."
 og_image: "/img/blog/jazz-musicians-hear.jpg"
 tags: [jazz, harmonic-density, voice-leading, flow-factors, parameter-level]
 sections:

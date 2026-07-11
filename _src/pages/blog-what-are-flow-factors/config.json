@@ -1,5 +1,6 @@
 {
   "title": "Does Your Store's Music Actually Matter? | Entuned",
   "meta_description": "Does in-store music actually affect sales and dwell time? Peer-reviewed research says yes. Here's what retail operators should know and what to do about.",
-  "output": "blog/what-are-flow-factors.html"
+  "output": "blog/what-are-flow-factors.html",
+  "sitemap_priority": 0.8
 }

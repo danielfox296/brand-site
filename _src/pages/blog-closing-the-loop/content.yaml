@@ -10,6 +10,7 @@ hero:
   src: "../img/blog/closing-the-loop-retail.jpg"
   alt: "Abstract flowing blue data streams with glowing nodes representing connected information flow"
 meta_description: "Every era of retail music discovered that sound changes behavior. Every era operated without connecting the music to the outcome. Entuned closes that loop."
+llms_description: "Every era of retail music discovered that sound changes behavior and operated without connecting the music to the outcome. Entuned closes that loop with 31 Flow Factors, in-store behavioral measurement, and a compounding Specification-Outcome Map."
 og_image: "/img/blog/closing-the-loop-retail.jpg"
 tags: [retail-music-history, measurement, specification-outcome-map, sound-on-the-floor]
 sections:

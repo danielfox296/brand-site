@@ -11,6 +11,7 @@ hero:
   src: "../img/katti-headshot.png"
   alt: "Mrinmayi Katti, Data Scientist at Entuned"
 meta_description: "Mrinmayi Katti joins Entuned as Data Scientist. A short welcome from the founder — her background, what she'll work on, and what comes next."
+llms_description: "Mrinmayi Katti joins Entuned as Data Scientist. A short welcome from the founder — her background, what she'll work on, and what comes next."
 og_image: "/img/katti-headshot.png"
 tags: [team, data-science, entuned, product]
 sections:

@@ -12,6 +12,7 @@ hero:
   alt: "Abstract representation of customer profiling and behavioral data"
   caption: "Photo: Unsplash"
 meta_description: "The music question every retail operator asks. Why genre is the wrong starting point, and what to consider instead."
+llms_description: "The question every multi-location operator eventually asks. The answer has less to do with genre than most people think."
 og_image: "/img/blog/psychographic-profiling-retail.jpg"
 tags: [psychographics, customer-profiling, retail-experience, music-strategy]
 sections:

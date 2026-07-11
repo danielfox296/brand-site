@@ -12,6 +12,7 @@ hero:
   alt: "Academic research papers and data charts on a desk"
   caption: "Photo: Unsplash"
 meta_description: "Milliman's 1982 study found 38% more sales from slow music. The dwell effect replicates. The sales link does not. What that means for your stores."
+llms_description: "The most cited finding in retail music is 42 years old, from one grocery store. The dwell time effect holds up. The sales number does not."
 og_image: "/img/blog/milliman-study.jpg"
 tags: [tempo, dwell-time, research, milliman]
 sections:

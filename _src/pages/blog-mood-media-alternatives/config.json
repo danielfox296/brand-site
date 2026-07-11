@@ -24,5 +24,6 @@
       "q": "What should I ask before signing with any vendor?",
       "a": "Five questions separate the vendors who can deliver measurable value from the ones who cannot. What do you report on quarterly? What is your termination clause, in writing? Is the music licensed or original, and who owns the PRO liability? How does my customer profile shape what plays? Can you show me a before-and-after from a comparable retailer with specific metrics on dwell, conversion, and basket?"
     }
-  ]
+  ],
+  "sitemap_priority": 0.8
 }

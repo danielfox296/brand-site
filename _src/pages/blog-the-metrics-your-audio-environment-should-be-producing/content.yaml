@@ -12,6 +12,7 @@ hero:
   alt: "Retail analytics dashboard on a monitor in a store back office"
   caption: "Photo: Unsplash"
 meta_description: "Most retailers never measure their audio environment. Four store-level KPIs respond to audio changes. Here is what operators should be watching."
+llms_description: "Most retailers never measure their audio environment. Four store-level KPIs respond to audio changes. Here is what operators should be watching."
 og_image: "/img/blog/metrics-audio-environment.jpg"
 tags: [metrics, analytics, dwell-time, roi, retail-operations]
 question_bank: "Q3"

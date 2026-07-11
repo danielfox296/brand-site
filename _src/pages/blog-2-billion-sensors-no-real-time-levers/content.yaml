@@ -12,6 +12,7 @@ hero:
   alt: "Retail store sensor infrastructure and analytics dashboard"
   caption: "Photo: Unsplash"
 meta_description: "Retail operators have spent a decade buying sensors. The response menu is still quarterly. Here is the gap that defines retail tech for the next three years."
+llms_description: "Retail operators have spent a decade buying sensors. The response menu is still quarterly. Here is the gap that defines retail tech for the next three years."
 og_image: "/img/blog/sensors-no-levers.jpg"
 tags: [retail-analytics, real-time, sensors, inv]
 sections:

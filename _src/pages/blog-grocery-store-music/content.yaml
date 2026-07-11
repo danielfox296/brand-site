@@ -10,6 +10,7 @@ hero:
   src: "../img/blog/grocery-store-music.jpg"
   alt: "Brightly lit grocery store aisle with colorful produce and shoppers browsing"
 meta_description: "Grocery is where tempo-driven music research is most direct. Slow music, slower shoppers, bigger baskets. Here's what the research says and what most stores are still missing."
+llms_description: "Grocery is the retail environment where Milliman's landmark tempo-pacing research is most direct. Slower music means slower shoppers, and slower shoppers spend measurably more. This post explains the mechanism, what most grocery operators are doing wrong, and how Entuned's dwell time outcome mode applies to the category."
 og_image: "/img/blog/grocery-store-music.jpg"
 tags: [grocery, tempo, milliman, dwell-time, retail-music]
 sections:

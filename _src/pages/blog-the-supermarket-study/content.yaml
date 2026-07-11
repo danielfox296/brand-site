@@ -10,6 +10,7 @@ hero:
   src: "../img/blog/the-supermarket-study.jpg"
   alt: "Brightly lit supermarket aisle with shelves full of colorful packaged products"
 meta_description: "In 1982, Ronald Milliman proved slow-tempo music increases retail spending by 38%. The study has over 600 citations. It's been implemented almost nowhere."
+llms_description: "Ronald Milliman proved in 1982 that slow-tempo music increases retail spending by 38%. Over 600 citations. Almost no implementation. Entuned controls 31 variables where Milliman measured one."
 og_image: "/img/blog/the-supermarket-study.jpg"
 tags: [milliman, music-history, sound-on-the-floor, tempo, research]
 sections:

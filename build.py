@@ -936,6 +936,184 @@ def build():
         f.write(rss_xml)
     print('  ✓ rss.xml')
 
+    # --- Generate sitemap.xml ---
+    generate_sitemap(page_dirs)
+
+    # --- Generate llms.txt ---
+    generate_llms()
+
+
+def _sitemap_url_entry(loc, lastmod, changefreq, priority):
+    """Render one <url> block. Omits <lastmod> when not set."""
+    lines = ['  <url>', f'    <loc>{loc}</loc>']
+    if lastmod:
+        lines.append(f'    <lastmod>{lastmod}</lastmod>')
+    lines.append(f'    <changefreq>{changefreq}</changefreq>')
+    lines.append(f'    <priority>{float(priority):.1f}</priority>')
+    lines.append('  </url>')
+    return '\n'.join(lines) + '\n'
+
+
+def generate_sitemap(page_dirs):
+    """Generate sitemap.xml from page configs (config.json is the SSOT for
+    lastmod/changefreq/priority overrides on root pages; new-format blog
+    posts pull lastmod from YAML `last_updated`/`date` and can still override
+    changefreq/priority via config.json).
+
+    Exclusions: skip pages, redirect stubs, 404.html, any page whose
+    effective robots value contains "noindex", and any new-format blog post
+    whose YAML `canonical` points somewhere other than its own URL (it has
+    consolidated onto a hub page and shouldn't compete with it in the
+    sitemap).
+
+    Order: homepage, then root pages alphabetical by output, then blog
+    posts by lastmod (last_updated-or-date) descending.
+    """
+    print('\nGenerating sitemap...')
+
+    br = None  # lazy — only needed if a new-format blog post is encountered
+    homepage_entry = None
+    root_entries = []   # (output, xml)
+    blog_entries = []   # (sort_key, output, xml)
+
+    for page_path in sorted(page_dirs):
+        page_name = os.path.relpath(page_path, PAGES)
+        config_path = os.path.join(page_path, 'config.json')
+        config = json.loads(read(config_path))
+
+        if config.get('skip') or config.get('redirect_to'):
+            continue
+
+        output = config.get('output', f'{page_name}.html')
+        if output == '404.html':
+            continue
+
+        is_blog = output.startswith('blog/')
+        is_new_format = is_blog and _is_new_format_blog(page_path)
+
+        if is_new_format:
+            if br is None:
+                br, _ = _ensure_blog_renderer()
+            data = br.load_post(os.path.join(page_path, 'content.yaml'))
+            robots_value = data.get('robots') or config.get('robots', 'index, follow')
+            if 'noindex' in robots_value:
+                continue
+            canonical = data.get('canonical')
+            own_url = f'{SITE_URL}/{output}'
+            if canonical and canonical != own_url:
+                print(f'  ↷ sitemap: excluding {output} (canonical → {canonical})')
+                continue
+            lastmod = data.get('last_updated') or data.get('date')
+            default_cf, default_pr = 'monthly', 0.7
+            loc = own_url
+        elif is_blog:
+            # Old-format blog post fallback (none exist today, but keep the
+            # pipeline correct if one shows up before being migrated).
+            robots_value = config.get('robots', 'index, follow')
+            if 'noindex' in robots_value:
+                continue
+            lastmod = config.get('date_modified') or config.get('date_published')
+            default_cf, default_pr = 'monthly', 0.7
+            loc = f'{SITE_URL}/{output}'
+        else:
+            robots_value = config.get('robots', 'index, follow')
+            if 'noindex' in robots_value:
+                continue
+            lastmod = config.get('lastmod')
+            if output == 'index.html':
+                default_cf, default_pr = 'weekly', 1.0
+                loc = f'{SITE_URL}/'
+            else:
+                default_cf, default_pr = 'monthly', 0.8
+                loc = f'{SITE_URL}/{output}'
+
+        changefreq = config.get('sitemap_changefreq', default_cf)
+        priority = config.get('sitemap_priority', default_pr)
+        xml = _sitemap_url_entry(loc, lastmod, changefreq, priority)
+
+        if is_blog:
+            blog_entries.append((lastmod or '', output, xml))
+        elif output == 'index.html':
+            homepage_entry = xml
+        else:
+            root_entries.append((output, xml))
+
+    root_entries.sort(key=lambda x: x[0])
+    # Newest lastmod first; fall back to output name for determinism on ties.
+    blog_entries.sort(key=lambda x: (x[0], x[1]), reverse=True)
+
+    parts = ['<?xml version="1.0" encoding="UTF-8"?>',
+             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    if homepage_entry:
+        parts.append(homepage_entry.rstrip('\n'))
+    parts.extend(xml.rstrip('\n') for _, xml in root_entries)
+    parts.extend(xml.rstrip('\n') for _, _, xml in blog_entries)
+    parts.append('</urlset>')
+    sitemap_xml = '\n'.join(parts) + '\n'
+
+    with open(os.path.join(REPO, 'sitemap.xml'), 'w', encoding='utf-8') as f:
+        f.write(sitemap_xml)
+    print(f'  ✓ sitemap.xml ({1 if homepage_entry else 0}+{len(root_entries)} root, {len(blog_entries)} blog)')
+
+
+def generate_llms():
+    """Generate llms.txt from _src/llms-template.txt (hand-maintained prose
+    and non-blog sections) plus a generated blog-post list.
+
+    Each blog line is `- [title](url): llms_description-or-meta_description`.
+    Excludes new-format blog posts whose effective robots value contains
+    "noindex" (none exist today, but the rule mirrors the sitemap gate).
+    Order: lastmod (last_updated-or-date) descending — the current
+    hand-maintained file has no single clear sort rule (checked: not date
+    ascending, not date descending, not directory/alphabetical order — it's
+    organic insertion order from manual edits over time), so per the
+    fallback rule this uses date descending, newest first.
+    """
+    print('\nGenerating llms.txt...')
+
+    br, _ = _ensure_blog_renderer()
+
+    entries = []  # (sort_key, line)
+    for entry in sorted(os.listdir(PAGES)):
+        if not entry.startswith('blog-'):
+            continue
+        page_path = os.path.join(PAGES, entry)
+        config_path = os.path.join(page_path, 'config.json')
+        yaml_path = os.path.join(page_path, 'content.yaml')
+        if not os.path.exists(config_path) or not os.path.exists(yaml_path):
+            continue
+        config = json.loads(read(config_path))
+        if config.get('skip') or config.get('redirect_to'):
+            continue
+        if not br.is_new_format(yaml_path):
+            continue  # old-format posts: none exist today
+
+        data = br.load_post(yaml_path)
+        robots_value = data.get('robots') or config.get('robots', 'index, follow')
+        if 'noindex' in robots_value:
+            continue
+
+        output = config.get('output', f'{entry}.html')
+        slug = data.get('slug', entry.replace('blog-', '', 1))
+        url = f'{SITE_URL}/blog/{slug}.html'
+        title = data.get('title', 'Entuned')
+        description = data.get('llms_description') or data.get('meta_description', '')
+        lastmod = data.get('last_updated') or data.get('date') or ''
+
+        line = f'- [{title}]({url}): {description}'
+        entries.append((lastmod, output, line))
+
+    entries.sort(key=lambda x: (x[0], x[1]), reverse=True)
+    blog_block = '\n'.join(line for _, _, line in entries)
+
+    template_path = os.path.join(SRC, 'llms-template.txt')
+    template = read(template_path)
+    llms_txt = template.replace('{{blog_entries}}', blog_block)
+
+    with open(os.path.join(REPO, 'llms.txt'), 'w', encoding='utf-8') as f:
+        f.write(llms_txt)
+    print(f'  ✓ llms.txt ({len(entries)} blog entries)')
+
 
 if __name__ == '__main__':
     if '--lint' in sys.argv:

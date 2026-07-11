@@ -10,6 +10,7 @@ hero:
   src: "../img/blog/tis-the-season.jpg"
   alt: "Colorful Christmas lights in close-up with starburst effects against a dark background"
 meta_description: "Holiday music creates a saturation problem no one accounts for. Each song plays roughly 136 times per season — and customers feel every repetition."
+llms_description: "Holiday music creates a saturation problem for retail staff that nobody accounts for — each song plays 136 times per season per employee. The customer hears it once. The employee lives inside it for 40 hours a week."
 og_image: "/img/blog/tis-the-season.jpg"
 tags: [holiday-music, sound-on-the-floor, employee-experience, saturation]
 sections:

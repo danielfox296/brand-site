@@ -10,6 +10,7 @@ hero:
   src: "../img/blog/turning-on-the-radio.jpg"
   alt: "Vintage Universum portable radio on a wooden surface surrounded by other old radios"
 meta_description: "In the 1950s, most shop owners solved the background music problem by turning on the radio. It was free, it was varied, and it was entirely someone else's."
+llms_description: "When shop owners turned off Muzak and flipped on the radio, they traded one problem for another — free music with someone else's ads, opinions, and a DJ who'd never walked their floor."
 og_image: "/img/blog/turning-on-the-radio.jpg"
 tags: [music-history, radio, sound-on-the-floor, brand-control]
 sections:

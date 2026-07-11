@@ -12,6 +12,7 @@ hero:
   alt: "Letterpress type blocks arranged in close detail"
   caption: "Photo: Unsplash"
 meta_description: "In 2012, Errol Morris ran a typography experiment in the NYT. Forty thousand readers saw the same passage in different fonts, and Baskerville changed belief."
+llms_description: "Errol Morris's 2012 typography experiment. The same passage in different fonts produced measurably different levels of belief."
 og_image: "/img/blog/invisible-obvious-02-letters.jpg"
 tags: [essay-series, invisible-obvious, typography, baskerville, perception]
 sections:

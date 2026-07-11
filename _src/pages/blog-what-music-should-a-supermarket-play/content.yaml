@@ -11,6 +11,7 @@ hero:
   alt: "A busy, well-stocked grocery store interior packed with goods"
   caption: "Photo: Unsplash"
 meta_description: "The rule says slow music makes shoppers spend more. In a crowded supermarket it flips: fast music lifts spending, across 43,676 baskets. Here's why."
+llms_description: "The slow-music rule (Milliman 1982) flips under crowding — a study of 43,676 baskets found fast-tempo music raised spending specifically when the store was crowded, by buying more items not pricier ones (Knoeferle et al. 2017). Tempo's real job in a grocery is regulating the energy of the crowd."
 og_image: "/img/blog/supermarket-music.jpg"
 tags: [supermarket, grocery, tempo, crowding, field-notes, retail-music]
 sections:

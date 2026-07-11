@@ -1,5 +1,7 @@
 {
   "title": "PRO Music License Enforcement Map — ASCAP and BMI Lawsuits 2024–2025, updated as waves are verified | Entuned",
   "meta_description": "Public dataset of ASCAP and BMI copyright infringement suits against bars, restaurants, and stores. Sortable map and case list from primary records.",
-  "output": "pro-enforcement-map.html"
+  "output": "pro-enforcement-map.html",
+  "lastmod": "2026-05-09",
+  "sitemap_priority": 0.9
 }

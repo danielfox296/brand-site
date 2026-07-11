@@ -12,6 +12,7 @@ hero:
   alt: "Interior of a well-lit retail store with merchandise displays"
   caption: "Photo: Unsplash"
 meta_description: "How multi-location retailers can run controlled store-level tests instead of guessing. A practical guide to isolating what actually moves the numbers."
+llms_description: "How multi-location retailers can run controlled store-level tests instead of guessing. A practical guide to isolating what actually moves the numbers."
 og_image: "/img/blog/fleet-learning.jpg"
 tags: [multi-location, testing, store-operations, measurement, retail-analytics]
 sections:

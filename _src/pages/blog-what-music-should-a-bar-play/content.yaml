@@ -11,6 +11,7 @@ hero:
   alt: "A bar's back counter lined with bottles and beer taps, flanked by large speakers"
   caption: "Photo: Unsplash"
 meta_description: "In a field experiment, a bar's music volume measurably changed the pace of the room. The sound level, not the song, sets your bar's energy — worth setting on purpose."
+llms_description: "A field experiment found raising bar music from ~72 to ~88 dB led beer drinkers to order more and drink faster (Guéguen et al. 2008) — the volume, not the song, drives the room's arousal and pace. Framed responsibly as a lever for setting a bar's energy by the hour, not maximizing consumption."
 og_image: "/img/blog/bar-music.jpg"
 tags: [bar, pub, volume, arousal, field-notes, retail-music]
 sections:

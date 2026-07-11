@@ -10,6 +10,7 @@ hero:
   src: "../img/blog/retail-dwell-time.jpg"
   alt: "Empty retail aisle with shoppers drifting toward the exit at the far end"
 meta_description: "A song looped the word 'leave' 30 times and shoppers drifted to the exit. Filtering lyrics won't fix it. Most dwell loss is below the lyrics."
+llms_description: "A song looped the word \"leave\" thirty times in a thrift store and shoppers drifted toward the exit. The mechanism doesn't care about price point. Filtering for negative lyrics won't catch most of it — tempo, harmonic density, and arrangement push people out below the level any content review would flag."
 og_image: "/img/blog/retail-dwell-time.jpg"
 tags: [dwell-time, lyrics, retail-music, playlists]
 sections:

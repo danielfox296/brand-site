@@ -19,5 +19,6 @@
       "q": "How do you measure whether music is affecting AOV?",
       "a": "You need to correlate what played with what customers spent. Entuned logs what played and when, then correlates that data with your floor performance. Over time, you get a clear picture of which sonic parameters move your specific customers toward larger transactions."
     }
-  ]
+  ],
+  "lastmod": "2026-05-13"
 }

@@ -10,6 +10,7 @@ hero:
   src: "../img/blog/the-sound-of-nothing.jpg"
   alt: "Empty modern warehouse with polished concrete floor stretching into the distance under industrial lighting"
 meta_description: "Costco's silence is a deliberate brand choice. Most retail silence is just neglect. Every store broadcasts a soundscape — programmed or not."
+llms_description: "Costco doesn't play music and it's a deliberate brand choice. Most retail silence is just neglect. Every store has a soundscape whether it programmed one or not."
 og_image: "/img/blog/the-sound-of-nothing.jpg"
 tags: [silence, costco, sound-on-the-floor, soundscape]
 sections:

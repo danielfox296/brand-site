@@ -11,6 +11,7 @@ hero:
   alt: "A warmly lit restaurant interior with set tables"
   caption: "Photo: Unsplash"
 meta_description: "Sound changes how food tastes and what diners choose. The research on sonic seasoning, volume, and the slow-tempo lever that pours more drinks."
+llms_description: "Sound is closer to an ingredient than a backdrop — sonic seasoning shifts perceived taste (Crisinel & Spence 2012), volume steers diners toward healthy vs indulgent choices (Biswas et al. 2019), and slow tempo lengthens the meal and pours more drinks (Milliman 1986) — the bar lever a café has no bar to use."
 og_image: "/img/blog/restaurant-music.jpg"
 tags: [restaurant, sonic-seasoning, volume, field-notes, retail-music]
 sections:

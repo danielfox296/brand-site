@@ -10,6 +10,7 @@ hero:
   src: "../img/blog/playlist-era.jpg"
   alt: "Close-up of a vintage audio cassette tape internals against a black background"
 meta_description: "The playlist era solved curation and licensing. It didn't solve measurement. A century after Muzak, music still goes into retail stores and nothing comes."
+llms_description: "The playlist era solved curation and licensing but never solved measurement. From Muzak's retirement in 2013 to the manager's personal Spotify account, the loop between music and outcome has been open for a century."
 og_image: "/img/blog/playlist-era.jpg"
 tags: [playlists, music-history, sound-on-the-floor, measurement, muzak]
 sections:

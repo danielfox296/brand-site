@@ -12,6 +12,7 @@ hero:
   alt: "Retail analytics dashboard with store performance metrics"
   caption: "Photo: Unsplash"
 meta_description: "If you cannot answer whether your store music helps or hurts sales, you are not alone. A short audit for operators who want a defensible answer."
+llms_description: "A short operator audit for telling whether the music in your stores is pulling its weight or costing you sales."
 og_image: "/img/blog/how-to-measure-if-your-store-music-is-working.jpg"
 tags: [measurement, dwell-time, conversion, retail-analytics]
 sections:

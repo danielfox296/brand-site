@@ -11,6 +11,7 @@ hero:
   alt: "Interior of an independent bookshop with full wooden shelves"
   caption: "Photo: Unsplash"
 meta_description: "What the research says about music and browsing in a bookshop: it can change how long people stay, what they pick up, or neither — so you have to choose the outcome."
+llms_description: "Counterintuitive — familiar music shortens actual browsing while feeling longer; unfamiliar music stretches it while feeling shorter (Yalch & Spangenberg 2000); and music can shift selection without changing dwell at all (Areni & Kim 1993), so you have to choose the outcome."
 og_image: "/img/blog/bookshop-music.jpg"
 tags: [bookshop, familiarity, dwell-time, field-notes, retail-music]
 sections:

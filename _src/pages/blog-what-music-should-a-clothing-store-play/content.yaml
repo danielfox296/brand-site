@@ -11,6 +11,7 @@ hero:
   alt: "Interior of a boutique clothing store with garments on racks"
   caption: "Photo: Unsplash"
 meta_description: "When one fashion brand let staff pick the music, sales fell up to 11%. Your store's music is a brand signal — and letting it drift has a measured cost."
+llms_description: "A field experiment found letting staff control the music cut sales ~6% (~11% in womenswear) because whim-driven, high-energy tracks replaced a consistent baseline (Daunfeldt et al. 2021); music is a brand-identity signal to first-time shoppers (Beverland 2006), so the lever is curation discipline, not a tempo trick."
 og_image: "/img/blog/clothing-store-music.jpg"
 tags: [apparel, brand-identity, curation, field-notes, retail-music]
 sections:

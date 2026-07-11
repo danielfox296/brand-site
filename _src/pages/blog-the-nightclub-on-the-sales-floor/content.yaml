@@ -10,6 +10,7 @@ hero:
   src: "../img/blog/the-nightclub-on-the-sales-floor.jpg"
   alt: "Dimly lit bar interior with glowing counter and moody atmospheric lighting, empty of patrons"
 meta_description: "Abercrombie & Fitch ran their stores at 90 decibels on purpose. Every store's music selects for an audience."
+llms_description: "Abercrombie & Fitch ran stores at 90 decibels as a deliberate demographic filter. Every store's music selects for an audience — most retailers just aren't doing it on purpose."
 og_image: "/img/blog/the-nightclub-on-the-sales-floor.jpg"
 tags: [audience-selection, abercrombie, retail-music, sound-on-the-floor, volume]
 sections:

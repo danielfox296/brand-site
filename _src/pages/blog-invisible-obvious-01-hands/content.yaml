@@ -12,6 +12,7 @@ hero:
   alt: "Antique medical instruments laid out on a wooden surface"
   caption: "Photo: Unsplash"
 meta_description: "Why doctors in 1847 refused to wash their hands, and what it took to change. Part 1 of a 5-part series about variables hiding in plain sight."
+llms_description: "How handwashing went from \"ridiculous\" to \"obvious\" in one generation. The Semmelweis story and the pattern that recurs in every field."
 og_image: "/img/blog/invisible-obvious-01-hands.jpg"
 tags: [essay-series, invisible-obvious, semmelweis, scientific-paradigms]
 sections:

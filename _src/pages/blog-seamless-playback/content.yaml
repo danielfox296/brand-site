@@ -12,6 +12,7 @@ hero:
   alt: "Abstract waveform visualization showing smooth audio transitions"
   caption: "Photo: Unsplash"
 meta_description: "Rough music transitions break the browsing state that drives purchases. Here is what to listen for in your stores and what the fix looks like."
+llms_description: "Every rough transition between tracks pulls your customer out of the browsing state that drives purchases."
 og_image: "/img/blog/seamless-playback.jpg"
 tags: [product, seamless-playback, transitions, store-experience]
 sections:

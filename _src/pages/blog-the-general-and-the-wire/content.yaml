@@ -10,6 +10,7 @@ hero:
   src: "../img/blog/the-general-and-the-wire.jpg"
   alt: "Industrial corridor lined with aged pipes, cables, and overhead industrial lighting"
 meta_description: "Muzak was the first company to treat background music as a controlled variable with a measurable outcome. The instinct was right. The instruments weren't."
+llms_description: "Muzak was the first company to treat background music as a controlled variable with a measurable outcome. The instinct was right. The connection between music and outcome never actually closed."
 og_image: "/img/blog/the-general-and-the-wire.jpg"
 tags: [muzak, music-history, sound-on-the-floor, stimulus-progression]
 sections:

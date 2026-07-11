@@ -1,5 +1,6 @@
 {
   "title": "The CFO's Case for Retail Audio | Entuned",
   "meta_description": "A finance-team view of the in-store music line item. What the public research supports, and how to test it in your own stores before committing.",
-  "output": "blog/cfos-case-for-retail-audio.html"
+  "output": "blog/cfos-case-for-retail-audio.html",
+  "sitemap_priority": 0.8
 }

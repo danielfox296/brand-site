@@ -2,16 +2,6 @@
 <section id="plans" class="section pricing-plans">
   <div class="container">
 
-    <!-- MULTI-LOCATION PILOT — prioritized path for 5–50 doors (ICP v2) -->
-    <div class="fade-up" style="max-width: 880px; margin: 0 auto 3.5rem; padding: 2.25rem 2.5rem; background: rgba(80,146,156,0.08); border: 1px solid var(--accent); display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap;">
-      <div style="max-width: 52ch;">
-        <p class="section-eyebrow is-gold" style="margin-bottom: 0.5rem;">{{content.pilot.eyebrow}}</p>
-        <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem;">{{content.pilot.headline}}</h3>
-        <p style="font-size: 0.95rem; opacity: 0.85; margin: 0;">{{content.pilot.body}}</p>
-      </div>
-      <a href="{{content.pilot_url}}" class="btn btn-primary">{{content.pilot.cta_label}}</a>
-    </div>
-
     <div class="plan-grid plan-grid--three fade-up">
 
       <!-- ENTUNED FREE -->
@@ -33,7 +23,7 @@
           <li class="plan-includes-neg">{{content.tiers.essentials.inc_neg}}</li>
         </ul>
 
-        <a href="{{content.essentials_signup_url}}" class="btn btn-secondary btn-block">{{content.tiers.essentials.cta_label}}</a>
+        <a href="{{content.essentials_signup_url}}" class="btn btn-primary btn-block">{{content.tiers.essentials.cta_label}}</a>
         <p class="plan-cta-footnote">{{content.tiers.essentials.cta_footnote}}</p>
       </article>
 
@@ -56,7 +46,7 @@
           <li>{{content.tiers.core.inc6}}</li>
         </ul>
 
-        <a href="{{content.stripe_payment_link}}" class="btn btn-primary btn-block">{{content.tiers.core.cta_label}}</a>
+        <a href="{{content.stripe_payment_link}}" class="btn btn-secondary btn-block">{{content.tiers.core.cta_label}}</a>
         <p class="plan-cta-footnote">{{content.tiers.core.cta_footnote}}</p>
       </article>
 
@@ -80,10 +70,20 @@
           <li>{{content.tiers.professional.inc7}}</li>
         </ul>
 
-        <a href="{{content.stripe_pro_payment_link}}" class="btn btn-primary btn-block">{{content.tiers.professional.cta_label}}</a>
+        <a href="{{content.stripe_pro_payment_link}}" class="btn btn-secondary btn-block">{{content.tiers.professional.cta_label}}</a>
         <p class="plan-cta-footnote">{{content.tiers.professional.cta_footnote}}</p>
       </article>
 
+    </div>
+
+    <!-- MULTI-LOCATION PILOT — secondary door for 5–50 doors -->
+    <div class="fade-up" style="max-width: 880px; margin: 3.5rem auto 0; padding: 2.25rem 2.5rem; background: rgba(80,146,156,0.08); border: 1px solid var(--accent); display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap;">
+      <div style="max-width: 52ch;">
+        <p class="section-eyebrow is-gold" style="margin-bottom: 0.5rem;">{{content.pilot.eyebrow}}</p>
+        <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem;">{{content.pilot.headline}}</h3>
+        <p style="font-size: 0.95rem; opacity: 0.85; margin: 0;">{{content.pilot.body}}</p>
+      </div>
+      <a href="{{content.pilot_url}}" class="btn btn-secondary">{{content.pilot.cta_label}}</a>
     </div>
 
     <!-- ENTERPRISE — secondary callout -->

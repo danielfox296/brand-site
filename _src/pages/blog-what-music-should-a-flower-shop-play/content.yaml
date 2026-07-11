@@ -11,6 +11,7 @@ hero:
   alt: "A flower shop storefront with buckets of bouquets and arrangements on display"
   caption: "Photo: Unsplash"
 meta_description: "A field experiment in an actual florist found romantic music lifted spending — and ordinary pop did nothing. The lever is fit, not just nice music."
+llms_description: "A field experiment in an actual florist (Jacob et al. 2009) found romantic music lifted spending while the shop's usual pop music did no better than silence — the lever is musical fit, not just having music on."
 og_image: "/img/blog/flower-shop-music.jpg"
 tags: [florist, musical-fit, willingness-to-pay, field-notes, retail-music]
 sections:

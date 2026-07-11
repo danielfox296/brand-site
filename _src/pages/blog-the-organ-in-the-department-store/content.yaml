@@ -10,6 +10,7 @@ hero:
   src: "../img/blog/the-organ-in-the-department-store.jpg"
   alt: "Ornate pipe organ in a grand cathedral with gilded architecture and vaulted ceiling"
 meta_description: "John Wanamaker installed the world's largest pipe organ in his Philadelphia store. He played it twice daily for a century and couldn't measure it."
+llms_description: "John Wanamaker built the world's largest pipe organ into his Philadelphia department store in 1911 and played it twice a day for over a century. He understood that sound shapes a retail space. He just had no way to measure it."
 og_image: "/img/blog/the-organ-in-the-department-store.jpg"
 tags: [music-history, wanamaker, sound-on-the-floor, sonic-identity]
 sections:
