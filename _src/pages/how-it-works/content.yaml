@@ -65,10 +65,10 @@ science2:
   cite: "Areni &amp; Kim (1993); North, Sheridan &amp; Areni (2016)."
 
 science3:
-  stat: "−8%"
-  label: "PERCEIVED DWELL"
-  title: "Familiar songs make time feel shorter — and the visit shorter."
-  desc: "Yalch and Spangenberg measured shoppers' perception of dwell against actual dwell. Familiar music compressed the perceived stay. The songs your customers already know are working against you."
+  stat: "Sooner"
+  label: "TIME IN STORE"
+  title: "Familiar songs make time feel long — so shoppers leave sooner."
+  desc: "Yalch and Spangenberg measured shoppers' perception of time against their actual stay. Familiar music made the visit feel longer, and shoppers left sooner than they otherwise would. The songs your customers already know are working against you."
   cite: "Yalch &amp; Spangenberg (2000). Journal of Business Research."
 
 science4:
