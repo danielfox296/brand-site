@@ -1094,6 +1094,15 @@ def generate_llms():
             continue
 
         output = config.get('output', f'{entry}.html')
+        # Mirror the sitemap gate: a post whose canonical points at a different
+        # page (a slug shared with a distinct root asset) is consolidated away —
+        # list only the canonical URL, not this duplicate. (WEB-F1/F2, 2026-07-12)
+        canonical = data.get('canonical')
+        own_url = f'{SITE_URL}/{output}'
+        if canonical and canonical != own_url:
+            print(f'  ↷ llms: excluding {output} (canonical → {canonical})')
+            continue
+
         slug = data.get('slug', entry.replace('blog-', '', 1))
         url = f'{SITE_URL}/blog/{slug}.html'
         title = data.get('title', 'Entuned')
