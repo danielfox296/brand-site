@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- First-touch signup attribution. Stamps a `.entuned.co` cookie on the
+       FIRST page view so the original source (referrer + UTM) survives the
+       entuned.co -> app.entuned.co/start hop. The dashboard's /start reads the
+       same cookie (same name + shape) and forwards it to the server. Runs
+       early + first-touch-wins so it never overwrites the true upstream. -->
+  <script>
+    (function () {
+      try {
+        if (/(?:^|; )entuned_attr=/.test(document.cookie)) return;
+        var p = new URLSearchParams(window.location.search);
+        var payload = {
+          r: document.referrer || undefined,
+          lp: (window.location.pathname + window.location.search) || undefined,
+          us: p.get('utm_source') || undefined,
+          um: p.get('utm_medium') || undefined,
+          uc: p.get('utm_campaign') || undefined,
+          ut: p.get('utm_term') || undefined,
+          un: p.get('utm_content') || undefined,
+          t: new Date().toISOString()
+        };
+        var host = window.location.hostname;
+        var domain = (host === 'entuned.co' || /\.entuned\.co$/.test(host)) ? '; domain=.entuned.co' : '';
+        document.cookie = 'entuned_attr=' + encodeURIComponent(JSON.stringify(payload)) +
+          '; path=/' + domain + '; max-age=' + (30 * 24 * 60 * 60) + '; SameSite=Lax';
+      } catch (e) { /* best-effort */ }
+    })();
+  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/blog/what-in-the-music-moves-the-sale.html">
+  <meta name="robots" content="index, follow">
+  <title>What in the Music Actually Moves the Sale | Entuned</title>
+  <meta name="description" content="Which parts of music actually change buying behavior? Tempo, mode, lyrics, familiarity, and volume, ranked against the field research on retail sales.">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="../rss.xml">
+  <meta property="og:title" content="What in the Music Actually Moves the Sale | Entuned">
+  <meta property="og:description" content="Which parts of music actually change buying behavior? Tempo, mode, lyrics, familiarity, and volume, ranked against the field research on retail sales.">
+  <meta property="og:url" content="https://entuned.co/blog/what-in-the-music-moves-the-sale.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://entuned.co/img/blog/what-in-the-music-moves-the-sale.jpg">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-07-13">
+  <meta property="article:author" content="Daniel Fox">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="What in the Music Actually Moves the Sale | Entuned">
+  <meta name="twitter:description" content="Which parts of music actually change buying behavior? Tempo, mode, lyrics, familiarity, and volume, ranked against the field research on retail sales.">
+  <meta name="twitter:image" content="https://entuned.co/img/blog/what-in-the-music-moves-the-sale.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "What in the Music Actually Moves the Sale | Entuned",
+  "author": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "datePublished": "2026-07-13",
+  "dateModified": "2026-07-13",
+  "description": "Which parts of music actually change buying behavior? Tempo, mode, lyrics, familiarity, and volume, ranked against the field research on retail sales.",
+  "image": "https://entuned.co/img/blog/what-in-the-music-moves-the-sale.jpg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://entuned.co/blog/what-in-the-music-moves-the-sale.html"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "retail music strategy"
+    },
+    {
+      "@type": "Thing",
+      "name": "in-store customer behavior"
+    },
+    {
+      "@type": "Thing",
+      "name": "engineered retail audio"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://entuned.co/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "What in the Music Actually Moves the Sale | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=331834bf">
+  <link rel="stylesheet" href="../styles/blog.css">
+  
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav aria-label="Main navigation">
+  <div class="container">
+    <a href="/" class="logo"><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="../how-it-works.html">How It Works</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li class="nav-cta-item"><a href="https://app.entuned.co/start" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Start Free</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+  </div>
+</nav>
+
+  <main>
+  
+<!-- Reading progress bar -->
+<div class="blog-progress" aria-hidden="true">
+  <div class="blog-progress__bar" id="reading-progress"></div>
+</div>
+
+<article class="blog-article">
+
+  <!-- Article header -->
+  <header class="blog-article__header">
+    <div class="blog-eyebrow">FIELD NOTES</div>
+    <h1 class="blog-headline">What in the Music Actually Moves the Sale</h1>
+    <p class="blog-dek">Eight extra minutes is just the baseline. Tempo, mode, lyrics, familiarity, volume, and structure, ranked by what they actually do to the person holding the basket.</p>
+    <div class="blog-byline">
+      <span class="blog-byline__author">Daniel Fox</span>
+      <span class="blog-byline__role">Founder &amp; CEO</span>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <time class="blog-byline__date" datetime="2026-07-13">2026-07-13</time>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <span class="blog-byline__reading-time">11 min read</span>
+    </div>
+  </header>
+
+  <!-- Hero image -->
+  <figure class="blog-hero fade-up">
+    <img src="../img/blog/what-in-the-music-moves-the-sale.jpg" alt="Close-up of faders and knobs on an audio mixing console" class="blog-hero__img" loading="lazy">
+    <figcaption class="blog-hero__caption">Photo: Unsplash</figcaption>
+  </figure>
+
+  <!-- Key takeaways -->
+  <div class="blog-takeaways">
+  <div class="blog-takeaways__title">Key takeaways</div>
+  <ul>
+    <li>Music versus silence is worth roughly eight extra minutes of dwell time (Andersson et al., 2012). Everything past that baseline comes from the components.</li>
+    <li>Tempo entrains the body, but mode gates the effect: slow music lifted sales only in minor keys, and major mode washed the tempo effect out entirely (Knoferle et al., 2012). The key a song sits in is the most overrated variable.</li>
+    <li>Familiar hits compress real dwell time (Yalch &amp; Spangenberg, 2000). Familiar genre with unfamiliar songs keeps the belonging without starting the clock.</li>
+    <li>Lyrics are the most powerful and least used component. No field study has ever isolated them in a store, because nobody could produce two versions of the same song with different words. That&#39;s the gap Entuned was built to close.</li>
+  </ul>
+</div>
+
+  <!-- Article body (all sections except key_takeaways, cta, related) -->
+  <div class="blog-article__body">
+    <div class="blog-prose">
+  <p>Store owners ask me some version of the same question every week. Does the music itself matter, or is the point just to have something playing?</p>
+<p>Both, in sequence.</p>
+<p>In 2012, researchers tracked 550 shoppers across two retail settings, alternating music with silence (Andersson et al., <em>Journal of Retailing and Consumer Services</em>). With music playing, customers stayed roughly eight minutes longer and spent significantly more. Eight minutes of a stranger standing inside your merchandising, near your staff, inside the experience you built. Those are the cheapest minutes you will ever buy, and silence forfeits them. Playing music at all is the baseline.</p>
+<p>Everything past the baseline comes from the parts. Tempo, mode, lyrics, familiarity, volume, structure. Each one is doing something specific to the person holding the basket, and most of it happens below their ability to notice it happening. Some of these parts carry far more than others, and the ranking is nowhere near what most people assume.</p>
+</div>
+
+<h2 id="tempo-is-a-suggestion-to-the-body" class="blog-subhead blog-subhead--h2">
+  Tempo is a suggestion to the body
+  <a href="#tempo-is-a-suggestion-to-the-body" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>The most famous study in this field is Milliman, 1982. A supermarket alternated slow and fast instrumental music for nine weeks. Under the slow condition, shoppers moved measurably slower through the aisles and daily sales rose 38.2% (Milliman, <em>Journal of Marketing</em>, 1982).</p>
+<p>The number gets quoted constantly. The mechanism rarely does.</p>
+<p>A beat is a suggestion to the body to move at its pace. Musicians call it entrainment. Some fraction of the people in your store, the ones in the right frame of mind, accept the suggestion without knowing they were offered one. Slow the beat and they walk slower. And a person walking slower has time to consider, to browse one more table, to catch a staff member&rsquo;s eye, to read the card next to the thing they were about to walk past.</p>
+<p>That&rsquo;s dwell time, and dwell compounds. The more time someone spends around your products, your staff, your room, the more familiar all of it becomes. Familiar reads as predictable. Predictable reads as safe, and safe is most of what affinity is. So a longer visit does two jobs at once. It raises the odds of a purchase today, and it builds the sense of belonging that brings the person back. Milliman&rsquo;s own follow-up in restaurants made the pattern vivid: slow music held tables about eleven minutes longer, and the bar tabs grew accordingly (<em>Journal of Consumer Research</em>, 1986).</p>
+<p>One honest caveat before tempo gets crowned. The largest replication attempt to date, a 140-store study presented at EMAC in 2025, found no overall tempo effect on sales. Slow music moved spending only among loyalty-program members. So &ldquo;just play slow music&rdquo; is a 1982 prescription, and it doesn&rsquo;t survive 2025 data on its own. Tempo works when it fits the customer actually standing in the store, and it has a second dependency almost nobody controls for. We&rsquo;ll get to that one in a moment.</p>
+</div>
+
+<h2 id="the-key-is-the-most-overrated-part" class="blog-subhead blog-subhead--h2">
+  The key is the most overrated part
+  <a href="#the-key-is-the-most-overrated-part" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Ask people which musical decisions matter and someone will eventually bring up the key, as if E-flat sells and C-sharp doesn&rsquo;t. Nothing in the research supports that, and there&rsquo;s a good reason.</p>
+<p>We don&rsquo;t hear pitches in absolute terms. We hear every note in a song relative to its grounding note, the root. The emotional information lives in those relationships, not in where the root happens to sit. Move the whole song up a half step and every relationship survives the trip.</p>
+<p>The record industry proves this daily. Plenty of songs get sped up slightly during production to add energy, which nudges the pitch along with the tempo, so the final master sits between concert keys entirely. Millions of people love these records. The only listeners who ever notice are the ones with perfect pitch, or the ones who pick up a guitar in standard tuning and try to play along.</p>
+<p>The key is where the house sits on the street. What matters is the floor plan.</p>
+</div>
+
+<h2 id="mode-is-where-the-emotion-lives" class="blog-subhead blog-subhead--h2">
+  Mode is where the emotion lives
+  <a href="#mode-is-where-the-emotion-lives" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>The floor plan is the mode: which notes the song uses relative to that root. This is where the emotional information actually lives, and the differences can be startlingly small. Dorian and Aeolian are both minor modes separated by a single note, and listeners still report an emotional difference between them. And the heaviest single piece of information in either one is the flat third, the interval that makes them minor at all. One relationship against the root carries most of what a listener says they feel.</p>
+<p>And mode turns out to be the dependency hiding under thirty years of tempo research. In 2012, Knoferle and colleagues ran a field experiment across three retail stores, crossing slow and fast tempo with major and minor mode (<em>Marketing Letters</em>, 2012). Slow tempo raised sales only when the music was in a minor mode, beating the fast condition by about 12%. In major mode, tempo stopped mattering. Slow-major and fast-major sold identically. Major washed the effect out.</p>
+<p>Which means a store that controls tempo and lets mode float is flipping a coin on whether the tempo work counts for anything.</p>
+</div>
+
+<h2 id="lyrics-are-the-most-underrated-part-and-until-now-nobody-could-use-them" class="blog-subhead blog-subhead--h2">
+  Lyrics are the most underrated part, and until now nobody could use them
+  <a href="#lyrics-are-the-most-underrated-part-and-until-now-nobody-could-use-them" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>If I had to name the single most powerful and least used component, it&rsquo;s the words. And here I have to be straight about the evidence, because every buying-behavior claim above came from published field experiments and this section can&rsquo;t. Lyric-level effects on buying behavior have never been studied in a store. Nobody has had an instrument that could isolate them; you&rsquo;d need two versions of the same song with different words, and until recently that was a fantasy. So what follows is my read as a musician watching rooms, and it&rsquo;s the lever I expect to prove biggest once someone can finally measure it.</p>
+<p>Take Eric Clapton&rsquo;s &ldquo;I Can&rsquo;t Stand It.&rdquo; Great record, comfortable tempo, sounds right in a hundred kinds of rooms. The hook repeats, which is exactly the problem, because repeated hooks get sung along with internally whether the listener wants to or not. That sentence becomes the most readily available language in the shopper&rsquo;s head, and my bet is that available language shapes how the shopper reads whatever she&rsquo;s looking at. Someone is walking your sales floor right now with that sentence looping, and most of the loop runs below her ability to observe it.</p>
+<p>Retailers already know the other side of this intuitively. The hook of The Weeknd&rsquo;s &ldquo;Earned It&rdquo; tells the listener she&rsquo;s worth it, over and over, and that message lands directly on the self-reward pathway that a luxury purchase runs on. A treat-yourself lyric supports a treat-yourself sale. A utility purchase leans on different psychology, a different customer, a different brand, and wants different words. The lyric either supports the purchase the room is built for or it works against it.</p>
+<p>And the failures hide in beloved songs. &ldquo;Born to Run&rdquo; fills dance floors at weddings. Its first verse describes the town as a machine that grinds people down and reaches for suicide imagery to do it. Sonically, a fit for half the stores in America. Lyrically, a countdown you&rsquo;d never choose on purpose.</p>
+<p>So why has no one built on the most powerful component? Because using lyrics deliberately meant writing them, finding an artist, and producing a record, per store, per intent. The economics were absurd. The fallback was catalogue licensing, where you pick from whatever existing songs happen to roughly match, and every pick drags in unwanted parameters along with the wanted ones, so the data gets too noisy to ever connect the words to the sale. This wall is the reason Entuned produces music instead of licensing it: lyrics, tempo, mode, and genre become parameters Entuned sets for a store, at a cost and speed that makes setting them per store economically sane. It&rsquo;s also what finally makes the lyric question testable, because for the first time the words can change while everything else holds still.</p>
+</div>
+
+<h2 id="familiarity-cuts-both-ways" class="blog-subhead blog-subhead--h2">
+  Familiarity cuts both ways
+  <a href="#familiarity-cuts-both-ways" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Here&rsquo;s the finding I&rsquo;ve watched surprise the most store owners. In 2000, Yalch and Spangenberg alternated familiar hits with unfamiliar tracks in a national apparel chain and measured both how long shoppers stayed and how long they felt they&rsquo;d stayed (<em>Journal of Business Research</em>, 2000). The two numbers pointed in opposite directions. With familiar music, shoppers reported longer visits while actually leaving about 8% sooner. With unfamiliar music they lost track of time and lingered.</p>
+<p>Familiar songs work like a clock. You recognize the track, you notice the next one, and your brain assembles a timeline: three songs, been here a while, time to go. Unfamiliar music gives the brain novel patterns to chew on and the timeline never gets built. Playing the hits, the strategy most stores default to, is a dwell compression strategy wearing a customer-friendly costume.</p>
+<p>But there&rsquo;s a version of familiarity that does the opposite job, and it operates at the level of genre and era rather than individual songs. We call it the formation era: the music your specific customer was discovering during the years they were forming their identity. A cowboy boot store and a streetwear sneaker store are serving different people with different formation eras, and both stores&rsquo; owners can name the era without much prompting. Play inside a customer&rsquo;s formation era and the room says &ldquo;you belong here&rdquo; without anyone speaking a word. Play unfamiliar songs from inside that familiar territory and you get the belonging without starting the clock.</p>
+<p>Familiar genre, unfamiliar songs. That combination does both jobs at once.</p>
+</div>
+
+<h2 id="volume-has-one-rule" class="blog-subhead blog-subhead--h2">
+  Volume has one rule
+  <a href="#volume-has-one-rule" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Comfortable, and just under the threshold where it competes with speech. That second clause is the controversial half, because plenty of retail spaces run louder on the theory that loud means energy. The oldest volume study in the field found that louder music cut visit length (Smith &amp; Curnow, 1966). The revenue argument is mine, and it runs through the staff: the moment a customer and an employee have to raise their voices, the audio is taxing the highest-value interaction in the store. Every lever above works through people staying, noticing, and talking. Volume is the one part that can switch all three off at once.</p>
+</div>
+
+<h2 id="structure-is-the-language" class="blog-subhead blog-subhead--h2">
+  Structure is the language
+  <a href="#structure-is-the-language" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>One more part, and this one is conviction rather than a published finding, because nobody has run the retail field study on song structure yet. Music works by setting expectations and then either paying them off or twisting. A song that&rsquo;s all twist reads as too complex, and the listener never gets the small dopamine payoff of a fulfilled expectation. A song that&rsquo;s all repetition pays off constantly and bores instantly. Contemporary popular music mixes the two in proportions that play with attention and reward it on schedule, and every customer in your store has been trained on those proportions since childhood.</p>
+<p>My position is that in-store music has to speak that same language. When it drifts into sonic wallpaper, formless and payoff-free, I&rsquo;d expect the customer&rsquo;s brain to file it as noise and stop granting it the attention the other levers ride on. The music in your store should be built the way the music in their car is built.</p>
+</div>
+
+<h2 id="monday-morning" class="blog-subhead blog-subhead--h2">
+  Monday morning
+  <a href="#monday-morning" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>A store owner standing under the ceiling speaker can act on most of this today, in order:</p>
+<p>First, licensing. A personal streaming account is not licensed for commercial spaces, and in the U.S. the statutory damages run per song, $750 to $30,000 for each one. Whatever you do next, do it inside a properly licensed service.</p>
+<p>Then the levers within reach: pick the customer&rsquo;s formation era and stay inside its genres while avoiding the actual hits. Favor slower, minor-mode material where it fits the person actually walking your floor. Keep the volume just under conversation. And screen the words of every song on the rotation, because the words are riding along whether you chose them or not.</p>
+<p>The lyric screen is where the owner&rsquo;s tooling runs out. You can pull &ldquo;Born to Run&rdquo; off the rotation. Commissioning music written to support your specific customer&rsquo;s purchase took a record label&rsquo;s budget until very recently. That gap is the product I ended up building.</p>
+<p>Somewhere today, a shopper is pacing a sales floor with &ldquo;I Can&rsquo;t Stand It&rdquo; on loop in her head. Nobody in the building picked that sentence.</p>
+</div>
+  </div>
+
+  <!-- CTA -->
+  <aside class="blog-cta blog-cta--start-free">
+  <div class="blog-cta__headline">Hear it on your floor.</div>
+  <div class="blog-cta__body">Entuned engineers original music for your store at the parameter level &mdash; tempo, key, lyrical density, energy arc &mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays.</div>
+  <a href="https://app.entuned.co/start" class="blog-cta__link">Start Free &rarr;</a>
+  <p class="blog-cta__fork">Running 5&ndash;50 locations? <a href="../pilot.html">Start a measured pilot &rarr;</a></p>
+</aside>
+
+  <!-- Related posts -->
+  <section class="blog-related" aria-label="Related posts">
+  <h2 class="blog-related__title">Keep reading</h2>
+  <div class="blog-related__grid">
+    <a href="../blog/can-familiar-music-actually-hurt-your-retail-sales.html" class="blog-related__card">
+      <img src="../img/blog/can-familiar-music-actually-hurt-your-retail-sales.jpg" alt="Can Familiar Music Actually HURT Your Retail Sales?" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">WATCH</span>
+      <span class="blog-related__card-title">Can Familiar Music Actually HURT Your Retail Sales?</span>
+      <span class="blog-related__dek">Yes — familiar music makes customers leave faster.</span>
+    </a>
+    <a href="../blog/does-slow-music-increase-sales.html" class="blog-related__card">
+      <img src="../img/blog/does-slow-music-increase-sales.jpg" alt="Does Slow Music Increase Sales?" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">WATCH</span>
+      <span class="blog-related__card-title">Does Slow Music Increase Sales?</span>
+      <span class="blog-related__dek">Slow music does not reliably increase sales on its own.</span>
+    </a>
+    <a href="../blog/can-you-play-spotify-in-your-store.html" class="blog-related__card">
+      <img src="../img/blog/can-you-play-spotify-in-your-store.jpg" alt="Is It Actually Illegal to Use Spotify in My Store?" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">Is It Actually Illegal to Use Spotify in My Store?</span>
+      <span class="blog-related__dek">A clean answer for retail operators who just want to know if the Spotify account their store manager set up is going to bite them.</span>
+    </a>
+  </div>
+</section>
+
+</article>
+
+<!-- Blog-specific JS (reading progress + anchor copy) -->
+<script>
+  // Reading progress bar
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    document.getElementById('reading-progress').style.width = pct + '%';
+  });
+
+  // Anchor link copy-to-clipboard
+  document.querySelectorAll('.anchor-link').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      navigator.clipboard.writeText(window.location.origin + window.location.pathname + a.getAttribute('href'));
+      a.textContent = '\u2713'; setTimeout(() => a.textContent = '#', 1500);
+    });
+  });
+</script>
+  </main>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Engineered retail audio. PRO-indemnified.</p>
+      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
+      <div class="footer-newsletter">
+        <h4>Newsletter</h4>
+        <p class="footer-newsletter-tagline">Retail music, from the floor. Research and field notes, in your inbox.</p>
+        <form class="footer-newsletter-form" action="https://entuned.substack.com/subscribe" method="get" target="_blank" rel="noopener">
+          <input type="email" name="email" placeholder="you@yourstore.com" required aria-label="Email address for the Entuned newsletter">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="../how-it-works.html">How It Works</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="../pilot.html">Multi-Location Pilot</a></li>
+        <li><a href="../enterprise.html">Enterprise</a></li>
+        <li><a href="../why-entuned.html">Why Entuned</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For Your Industry</h4>
+      <ul>
+        <li><a href="../for-apparel.html">Apparel</a></li>
+        <li><a href="../for-beauty-supply.html">Beauty Supply</a></li>
+        <li><a href="../for-cosmetics.html">Cosmetics &amp; Beauty</a></li>
+        <li><a href="../for-furniture-mattress.html">Furniture &amp; Mattress</a></li>
+        <li><a href="../for-home-goods.html">Home Goods</a></li>
+        <li><a href="../for-jewelry.html">Jewelry</a></li>
+        <li><a href="../for-specialty-retail.html">Specialty Retail</a></li>
+        <li><a href="../for-sporting-goods.html">Sporting Goods</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
+      <ul>
+        <li><a href="../for-retail-leaders.html">Retail Operators</a></li>
+        <li><a href="../for-cfos.html">CFOs</a></li>
+        <li><a href="../impact.html">Impact Calculator</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Research</h4>
+      <ul>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../results.html">Results</a></li>
+        <li><a href="../science.html">The Science</a></li>
+        <li><a href="../will-it-retail.html">Will It Retail?</a></li>
+        <li><a href="https://entuned.substack.com" target="_blank" rel="noopener">Newsletter</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="../how-music-affects-retail.html">How Music Affects Retail</a></li>
+        <li><a href="../how-to-increase-aov-retail.html">Increase Average Order Value</a></li>
+        <li><a href="../how-to-increase-dwell-time-retail.html">Increase Dwell Time</a></li>
+        <li><a href="../how-to-increase-impulse-purchases-retail.html">Drive Impulse Purchases</a></li>
+        <li><a href="../how-to-improve-retail-conversion-rate.html">Improve Conversion Rate</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Tools &amp; Comparisons</h4>
+      <ul>
+        <li><a href="../music-license-cost-calculator.html">Music License Cost Calculator</a></li>
+        <li><a href="../sound-audit.html">Sound Audit</a></li>
+        <li><a href="../spotify-business-risk-check.html">Spotify Business Risk Check</a></li>
+        <li><a href="../pro-enforcement-map.html">PRO Enforcement Map</a></li>
+        <li><a href="../retail-music-decibel-guide.html">Retail Music Decibel Guide</a></li>
+        <li><a href="../spotify-for-business.html">Spotify for Business</a></li>
+        <li><a href="../property-managers.html">For Property Managers</a></li>
+        <li><a href="../mood-media-alternative.html">Mood Media Alternative</a></li>
+        <li><a href="../soundtrack-your-brand-alternative.html">Soundtrack Your Brand Alternative</a></li>
+        <li><a href="../pandora-for-business-alternative.html">Pandora for Business Alternative</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../partners.html">Partners</a></li>
+        <li><a href="../press.html">Press</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="../licensing.html">Licensing &amp; PRO Coverage</a></li>
+        <li><a href="../data.html">Data Practices</a></li>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="../pricing/terms.html">Subscription Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG', {
+      linker: {
+        domains: ['entuned.co', 'music.entuned.co', 'app.entuned.co']
+      }
+    });
+  </script>
+  <script defer src="../js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>
