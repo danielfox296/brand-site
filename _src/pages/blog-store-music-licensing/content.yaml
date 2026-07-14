@@ -21,7 +21,7 @@ sections:
     items:
       - "Playing music in a business is a public performance under U.S. copyright law. Your personal Spotify, Apple Music, or Pandora account explicitly prohibits commercial use in its terms — it is not legal in a store."
       - "There are four U.S. performing rights organizations: ASCAP, BMI, SESAC, and GMR. Full compliance with copyrighted music means a blanket license from each."
-      - "Licensing all the PROs directly runs roughly $1,300 to $1,500+ per year (publicly reported composite), before the cost of the music itself. The penalty for ignoring it is statutory damages of $750 to $30,000 per work — up to $150,000 per work for willful infringement."
+      - "Licensing all the PROs directly runs roughly $1,059 to $1,552 per year for a small store (published rate cards plus observed SESAC/GMR ranges, May 2026), before the cost of the music itself. The penalty for ignoring it is statutory damages of $750 to $30,000 per work — up to $150,000 per work for willful infringement."
       - "There are exactly three compliant paths: license through the PROs, pay a service that bundles the licenses, or play music that no PRO represents. The third removes the obligation entirely."
 
   - type: prose
@@ -63,7 +63,7 @@ sections:
     body: |
       There are four performing rights organizations in the United States: ASCAP, BMI, SESAC, and GMR. Each represents a different roster of songwriters and publishers, and a single song can have writers spread across more than one. To be fully compliant playing copyrighted music, you need a blanket license from each.
 
-      ASCAP and BMI are the two largest. ASCAP's small-business minimum is roughly $400 per year (publicly reported); BMI for a small store runs roughly $300 to $600 per year (publicly reported; sources vary). SESAC isn't publicly published — it's negotiated, roughly $600 to $700 per year by public reports. GMR is also negotiated and doesn't disclose its rates, so there's no reliable public figure to quote. Each scales with square footage, speaker count, and how the music is used. Add the four together and licensing all the PROs directly comes to roughly $1,300 to $1,500+ per year (publicly reported composite) — before paying for any actual music. <a href="../music-license-cost-calculator.html">The music license cost calculator</a> puts a band on your own footprint across all four PROs in under a minute. Licenses renew annually, and lapsing exposes you to statutory damages.
+      ASCAP and BMI are the two largest, and both publish rate cards. ASCAP's retail rate starts at roughly $1 a day — $365 to $402 per year for the smallest stores. BMI's published small-retail minimum is about $294 per year for a single location under 2,000 square feet. SESAC and GMR don't publish rates — both negotiate per business, and small retailers typically land $200 to $400 per year with each (observed ranges). Each scales with square footage, occupancy, and how the music is used. Add the four together and licensing all the PROs directly comes to roughly $1,059 to $1,552 per year for a small store (as of May 2026) — before paying for any actual music. <a href="../music-license-cost-calculator.html">The music license cost calculator</a> puts a band on your own footprint across all four PROs in under a minute. Licenses renew annually, and lapsing exposes you to statutory damages.
 
   - type: stat_callout
     number: "$750–$30,000"
@@ -96,7 +96,7 @@ sections:
     body: |
       Every legal way to play music in a store reduces to one of three options.
 
-      **Path one: license through the PROs directly.** Negotiate blanket licenses with ASCAP, BMI, SESAC, and GMR, renew them annually, and source your own music to play. This is full control and full overhead — roughly $1,300 to $1,500+ per year (publicly reported composite) and four relationships to maintain.
+      **Path one: license through the PROs directly.** Negotiate blanket licenses with ASCAP, BMI, SESAC, and GMR, renew them annually, and source your own music to play. This is full control and full overhead — roughly $1,059 to $1,552 per year for a small store (published rate cards plus observed ranges, May 2026) and four relationships to maintain.
 
       **Path two: pay a service that bundles the licenses.** Soundtrack Your Brand, Cloud Cover, SiriusXM for Business, and similar services fold PRO licensing into the monthly fee, so you deal with one vendor instead of four PROs. Public pricing runs roughly $17 to $54 per location per month (vendor published pricing, 2026). You stay in the licensed-catalog world; you just stop managing the paperwork.
 

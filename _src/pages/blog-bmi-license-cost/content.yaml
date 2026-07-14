@@ -2,7 +2,7 @@ title: "How Much Does a BMI Music License Cost? (And How to Avoid It)"
 seo_title: "BMI Fees: What a BMI Music License Costs in 2026"
 slug: "bmi-license-cost"
 eyebrow: "MARKET INTEL"
-dek: "BMI fees for a small store run roughly $300 to $600 a year (publicly reported). But BMI is one of four PROs, and licensing all of them directly runs roughly $1,300 to $1,500+ a year — before you've paid for any music."
+dek: "BMI's published small-retail minimum is about $294 a year. But BMI is one of four PROs, and licensing all of them directly runs roughly $1,059 to $1,552 a year for a small store — before you've paid for any music."
 date: "2026-06-04"
 last_updated: "2026-06-04"
 author:
@@ -12,23 +12,23 @@ hero:
   src: "../img/blog/bmi-license-cost.jpg"
   alt: "Tax forms with a calculator and pen on a desk"
   caption: "Photo: Unsplash"
-meta_description: "BMI fees for a small business run roughly $300 to $600 per year (publicly reported) — but BMI is one of four PROs. Licensing all of them directly runs about $1,300 to $1,500+ a year."
-llms_description: "BMI fees run roughly $300 to $600 a year (publicly reported), but BMI is one of four PROs — the full licensing bill, and how to avoid needing it."
+meta_description: "BMI's published small-retail minimum is about $294 per year — but BMI is one of four PROs. Licensing all four directly runs $1,059 to $1,552 a year for a small store."
+llms_description: "BMI's published small-retail minimum is about $294 a year, but BMI is one of four PROs — the full licensing bill, and how to avoid needing it."
 og_image: "/img/blog/bmi-license-cost.jpg"
 tags: [bmi, bmi-fees, music-licensing, compliance, retail-music, ascap, sesac]
 sections:
   - type: key_takeaways
     items:
-      - "A BMI blanket license for a small retail store runs roughly $300 to $600 per year (publicly reported; sources vary), scaling with square footage, speaker count, and how the music is used."
+      - "A BMI blanket license for a small retail store starts at a published minimum of about $294 per year, scaling with square footage and how the music is used — up to roughly $2,500 for multi-location retail."
       - "BMI is only one of four PROs. ASCAP, SESAC, and GMR each represent different songwriters and bill separately. Full compliance means a license from each."
-      - "Licensing all four PROs directly runs roughly $1,300 to $1,500+ per year (publicly reported composite) — before the cost of the music itself."
+      - "Licensing all four PROs directly runs roughly $1,059 to $1,552 per year for a small store (published rate cards plus observed SESAC/GMR ranges, May 2026) — before the cost of the music itself."
       - "There is a third option beyond paying up or ignoring the bill: switch to music that no PRO represents, which removes the obligation entirely."
 
   - type: prose
     body: |
-      A BMI music license for a small retail store runs roughly $300 to $600 per year (publicly reported; sources vary). The exact figure depends on your business type, square footage, the number of speakers, and how the music is used. Larger venues with higher occupancy pay more.
+      A BMI music license for a small retail store starts at a published minimum of about $294 per year for a single location under 2,000 square feet. The exact figure depends on your business type, square footage, the number of speakers, and how the music is used. Larger venues with higher occupancy pay more, and multi-location retail scales to roughly $2,500 a year.
 
-      But here's the part that catches most operators off guard: BMI is only one of four performing rights organizations you'd need to deal with. ASCAP, SESAC, and GMR each represent different songwriters and publishers, and you need a blanket license from each to be fully compliant. Licensing all four directly runs roughly $1,300 to $1,500+ per year (publicly reported composite).
+      But here's the part that catches most operators off guard: BMI is only one of four performing rights organizations you'd need to deal with. ASCAP, SESAC, and GMR each represent different songwriters and publishers, and you need a blanket license from each to be fully compliant. Licensing all four directly runs roughly $1,059 to $1,552 per year for a small store (published rate cards plus observed SESAC and GMR ranges, as of May 2026).
 
       That's before you've paid for the music itself.
 
@@ -60,16 +60,16 @@ sections:
     body: |
       This is the single most common misunderstanding about PRO fees. Paying BMI does not make you compliant. It makes you compliant for the songs whose writers BMI represents.
 
-      There are four PROs in the United States — BMI, ASCAP, SESAC, and GMR — and they represent different rosters. ASCAP is the other large one, with a small-business minimum around $400 a year (publicly reported), so a small store paying both BMI and ASCAP is often looking at $700 to $1,000 a year just for the two majors. SESAC is negotiated rather than published — roughly $600 to $700 a year by public reports — and GMR is negotiated with no publicly disclosed rate. To legally play a typical mix of commercial tracks, where any given song might have writers across multiple PROs, you technically need all four.
+      There are four PROs in the United States — BMI, ASCAP, SESAC, and GMR — and they represent different rosters. ASCAP is the other large one, with a published retail rate of $365 to $402 a year for the smallest stores, so a small store paying both BMI and ASCAP is looking at roughly $659 to $752 a year just for the two majors. SESAC and GMR are negotiated rather than published — small retailers typically land $200 to $400 a year with each (observed ranges). To legally play a typical mix of commercial tracks, where any given song might have writers across multiple PROs, you technically need all four.
 
   - type: comparison_table
     title: "The four U.S. PROs"
-    columns: ["PRO", "Represents", "Small-store cost (annual, approx.; publicly reported)"]
+    columns: ["PRO", "Represents", "Small-store cost (annual, approx.; as of May 2026)"]
     rows:
-      - ["BMI", "1.4M+ writers, 22M+ songs", "$300 to $600 (sources vary)"]
-      - ["ASCAP", "Comparable roster", "~$400 minimum"]
-      - ["SESAC", "Smaller, invitation-only roster", "Negotiated, ~$600 to $700"]
-      - ["GMR", "Smaller, high-profile roster", "Negotiated, not publicly disclosed"]
+      - ["BMI", "1.4M+ writers, 22M+ songs", "$294 published minimum (under 2,000 sq ft)"]
+      - ["ASCAP", "Comparable roster", "$365 to $402 (published rate card)"]
+      - ["SESAC", "Smaller, invitation-only roster", "Negotiated; ~$200 to $400 observed"]
+      - ["GMR", "Smaller, high-profile roster", "Negotiated, not published; ~$200 to $400 observed"]
 
   - type: subhead
     level: 2
@@ -108,7 +108,7 @@ sections:
     body: |
       If you've received an invoice or letter from BMI, you have three honest options.
 
-      You can negotiate a blanket license with BMI directly, then repeat with ASCAP, SESAC, and GMR — roughly $1,300 to $1,500+ a year total (publicly reported composite), plus a source of music to actually play.
+      You can negotiate a blanket license with BMI directly, then repeat with ASCAP, SESAC, and GMR — roughly $1,059 to $1,552 a year total for a small store (published rate cards plus observed ranges, May 2026), plus a source of music to actually play.
 
       You can sign up for a commercial streaming service that bundles PRO licensing into the subscription, like Soundtrack Your Brand or Cloud Cover — roughly $17 to $54 a month (vendor published pricing, 2026), with the paperwork handled for you.
 

@@ -19,8 +19,8 @@ sections:
   - type: key_takeaways
     items:
       - "Playing music in a commercial space is a regulated activity. The BMI letter is not a scam."
-      - "A BMI blanket license runs $250 to $415 per year as a starting point for a small store. That's one of four PROs — ASCAP, SESAC, and GMR are separate bills."
-      - "Total PRO licensing across all four organizations runs $500 to $2,000+ per year, before the cost of the music itself."
+      - "A BMI blanket license starts at a published minimum of about $294 per year for a small store. That's one of four PROs — ASCAP, SESAC, and GMR are separate bills."
+      - "Total PRO licensing across all four organizations runs roughly $1,059 to $1,552 per year for a small store (published rate cards plus observed ranges, May 2026), before the cost of the music itself."
       - "Music that isn't registered with any PRO eliminates the licensing obligation entirely. No copyright, no fee."
 
   - type: prose
@@ -55,16 +55,16 @@ sections:
     anchor: "what-it-costs"
 
   - type: stat_callout
-    number: "$500–$2,000+"
-    label: "Estimated total annual PRO licensing cost across ASCAP, BMI, SESAC, and GMR for a small retail store"
-    source: "Published PRO rate schedules, 2026"
+    number: "$1,059–$1,552"
+    label: "Estimated total annual PRO licensing cost across ASCAP, BMI, SESAC, and GMR for a small retail store (under 2,000 sq ft)"
+    source: "ASCAP and BMI published rate cards; observed SESAC and GMR ranges. As of May 2026"
     accent: gold
 
   - type: prose
     body: |
-      A BMI blanket license for a small retail store typically runs $250 to $415 per year as a starting point. Fees scale based on your store's square footage, speaker setup, and how the music is used. Larger venues with higher occupancy can pay $2,000 or more annually.
+      A BMI blanket license for a small retail store starts at a published minimum of about $294 per year. Fees scale based on your store's square footage, speaker setup, and how the music is used. Larger venues with higher occupancy pay more, and multi-location retail scales to roughly $2,500 or more annually.
 
-      But BMI is only one of four PROs. Add ASCAP (similar pricing structure), SESAC, and GMR, and you're looking at $500 to $2,000+ per year in total PRO licensing — before you've paid for the music itself.
+      But BMI is only one of four PROs. Add ASCAP (similar pricing structure), SESAC, and GMR, and you're looking at roughly $1,059 to $1,552 per year in total PRO licensing for a small store (published rate cards plus observed ranges, May 2026) — before you've paid for the music itself.
 
   - type: pullquote
     text: "If you're also using a commercial streaming service like CloudCover ($16.95/mo) or Soundtrack Your Brand ($29/mo), your total annual cost for background music can easily exceed $700 to $900 for a single location."
@@ -96,7 +96,7 @@ sections:
     body: |
       If you've already received a BMI letter, you have a few options.
 
-      You can negotiate a blanket license directly with BMI, then repeat the process with ASCAP, SESAC, and GMR. You'll pay $500 to $2,000+ per year total and still need a source of music to play.
+      You can negotiate a blanket license directly with BMI, then repeat the process with ASCAP, SESAC, and GMR. You'll pay roughly $1,059 to $1,552 per year total for a small store and still need a source of music to play.
 
       You can sign up for a commercial streaming service that bundles PRO licensing into the subscription. CloudCover and SoundMachine both do this. You'll pay $17 to $34 per month but avoid dealing with PROs directly.
 
