@@ -18,8 +18,11 @@ mockup-*.html
 # Claude worktrees
 .claude/worktrees/
 
-# One-off Substack porter (done; kept locally, not part of the site)
-substack-port-work/
+# Substack cross-post pipeline: scripts + publish records ARE tracked
+# (the whole dir was ignored here before, which is how the tooling got
+# lost twice). Only runtime debris stays ignored.
+substack-port-work/shots/
+substack-port-work/*.log
 substack-all.md
 
 # --- Credential hardening (added 2026-07-12, SECR-2) ---
