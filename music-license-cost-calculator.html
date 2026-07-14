@@ -582,7 +582,7 @@
     <div class="fade-up" style="max-width: 820px;">
       <p class="section-eyebrow">License Calculator</p>
       <h1>How much will your store pay the four US music PROs this year?</h1>
-      <p class="calc-subline">A free estimator across ASCAP, BMI, SESAC, and GMR &mdash; sourced from current published rate cards, checked 2026-05. No email, no signup.</p>
+      <p class="calc-subline">A free license fee calculator across ASCAP, BMI, SESAC, and GMR &mdash; sourced from current published rate cards, checked 2026-05. No email, no signup.</p>
       <p>Every business that plays recorded music in a customer-facing space owes blanket licensing fees to four separate performance rights organizations. ASCAP and BMI publish their rate cards. SESAC and GMR don't &mdash; they negotiate individually, which is why most operators don't discover them until a notice arrives. The four bills together usually run more than business owners expect.</p>
       <p>Enforcement has stepped up across all four PROs in the past three years, with infringement suits filed against single-location operators in retail, hospitality, and fitness. This calculator gives you a defensible band for budgeting &mdash; not a quote &mdash; using the published rate-card structure for ASCAP and BMI and observed SMB ranges for SESAC and GMR. As of 2026-05-09.</p>
     </div>
@@ -662,7 +662,7 @@
 
       <div id="calc-source-alert"></div>
 
-      <p class="calc-result-asof">As of 2026-05-09 &middot; per location</p>
+      <p class="calc-result-asof" id="calc-asof">As of 2026-05-09 &middot; per location</p>
       <p class="calc-result-headline">Estimated annual cost to license all four US PROs directly</p>
       <div class="calc-result-range" id="calc-range">$0 &ndash; $0</div>
       <p class="calc-result-sub" id="calc-result-sub"></p>
@@ -760,13 +760,15 @@
       </ul>
 
       <h3>The bands the calculator returns</h3>
-      <p>For a small retail store (under 2,000 sq ft, fewer than 50 occupants, no live music), the four-PRO total typically lands $1,059&ndash;$1,496/yr. A mid-size retail store (2,000&ndash;10,000 sq ft) jumps to $1,402&ndash;$3,600. A small restaurant under 50 occupancy: $1,708&ndash;$3,900. A larger restaurant with regular live music can clear $8,000+ once you stack ASCAP + BMI live-music surcharges. Salon, gym, office, and hotel bands are derived from the same rate-card structure with category-specific multipliers.</p>
+      <p>For a small retail store (under 2,000 sq ft, fewer than 50 occupants, no live music), the four-PRO total typically lands $1,059&ndash;$1,552/yr. A mid-size retail store (2,000&ndash;10,000 sq ft) jumps to $1,202&ndash;$3,600. A small restaurant under 50 occupancy: $1,708&ndash;$3,900. A larger restaurant with regular live music can clear $8,000+ once you stack ASCAP + BMI live-music surcharges. Salon, gym, office, and hotel bands are derived from the same rate-card structure with category-specific multipliers.</p>
       <p>The calculator gives you a band, not a quote. Actual numbers vary significantly within each band based on negotiation, exact square footage, music duration, and PRO discretion.</p>
 
       <div class="calc-internal-links">
         <strong>Related tools and reading:</strong>
         <ul style="margin-top: 0.5rem;">
           <li><a href="retail-music-faq.html">Retail music licensing FAQ</a> &mdash; the full rules in plain English</li>
+          <li><a href="blog/ascap-license-cost.html">ASCAP license cost</a> &mdash; what small businesses actually pay, in detail</li>
+          <li><a href="blog/bmi-license-cost.html">BMI license cost</a> &mdash; the published minimums and how they scale</li>
           <li><a href="music-license-exemption-checker.html">Music license exemption checker</a> &mdash; do you qualify for the small-business exemption?</li>
           <li><a href="spotify-business-risk-check.html">Spotify Business risk check</a> &mdash; what your personal Spotify account doesn&rsquo;t cover</li>
           <li><a href="pricing.html">Entuned pricing</a> &mdash; including the always-free tier</li>
@@ -944,6 +946,9 @@
 
     document.getElementById('calc-range').textContent =
       fmt(totalLow * loc) + ' – ' + fmt(totalHigh * loc) + ' / yr';
+
+    document.getElementById('calc-asof').textContent =
+      'As of 2026-05-09 · ' + (loc > 1 ? 'all ' + loc + ' locations combined' : 'per location');
 
     document.getElementById('calc-result-sub').innerHTML =
       'For ' + (loc > 1 ? '<strong>' + loc + ' locations</strong> of a ' : 'a ') + bizLabel(input.businessType) +

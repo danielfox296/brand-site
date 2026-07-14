@@ -106,7 +106,7 @@ sections:
 
   - type: prose
     body: |
-      Not sure the letter even applies to you? <a href="../music-license-exemption-checker.html">Check whether your store needs a license at all</a>, and see <a href="../pro-enforcement-map.html">how actively the PROs are enforcing</a> in your state.
+      Not sure the letter even applies to you? <a href="../music-license-exemption-checker.html">Check whether your store needs a license at all</a>, see <a href="../pro-enforcement-map.html">how actively the PROs are enforcing</a> in your state, and run <a href="../music-license-cost-calculator.html">the music license cost calculator</a> to see what full four-PRO compliance would cost you.
 
   - type: cta
     variant: start-free

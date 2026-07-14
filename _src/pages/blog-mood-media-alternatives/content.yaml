@@ -56,18 +56,31 @@ sections:
 
   - type: subhead
     level: 2
+    text: "How much does Mood Media cost in 2026?"
+    anchor: "mood-media-pricing"
+
+  - type: prose
+    body: |
+      Mood's self-serve tiers, as of 2026-05: Fundamentals at $17/mo, Signature at $35/mo, and Engage at $40.15/mo. Two things inflate the real line item. First, those prices are billed per audio feed inside a location, not per location — run the sales floor and a fitting area or patio on separate feeds and you pay for each. Second, enterprise accounts are quoted rather than listed, and hardware (the Mood Harmony player, $139, free on an annual commitment) and add-ons ride on top. A single store on one feed lands around $420 to $482 a year on the mid and top tiers before hardware; a second feed doubles it — a two-feed store on the top tier runs about $960 a year.
+
+      The full teardown — the contract terms, the billing complaints on file with the BBB, and the side-by-side against Entuned's per-location pricing — is on <a href="../mood-media-alternative.html">the Mood Media alternative page</a>.
+
+  - type: subhead
+    level: 2
     text: "The 2026 shortlist"
     anchor: "alternatives"
 
   - type: prose
     body: |
-      The replacements fall into three buckets. Cheaper catalog software, legacy broadcast, and a small set of generative vendors. The first four below are catalog or broadcast models that fix Mood Media's contract and hardware problems but leave the deeper one untouched: you still pick a channel and the audio still knows nothing about your customer. The fifth is a different category. For a wider field, see our <a href="../blog/commercial-music-services-compared.html">side-by-side of commercial music services</a>.
+      The replacements fall into three buckets. Cheaper catalog software, legacy broadcast, and a small set of generative vendors. All but the last below are catalog or broadcast models that fix Mood Media's contract and hardware problems but leave the deeper one untouched: you still pick a channel and the audio still knows nothing about your customer. The last is a different category. For a wider field, see our <a href="../blog/commercial-music-services-compared.html">side-by-side of commercial music services</a>.
 
-      **Soundtrack Your Brand.** A cleaner catalog model. Monthly subscription, no proprietary hardware, roughly $35 to $50 per location per month with licensing included. If your only problem is the contract and the hardware, this is a soft landing. You still get a catalog and a genre picker. You still do not get performance data.
+      **Soundtrack Your Brand.** A cleaner catalog model. Monthly subscription, no proprietary hardware, roughly $35 to $50 per location per month with licensing included. If your only problem is the contract and the hardware, this is a soft landing. You still get a catalog and a genre picker. You still do not get performance data. <a href="../soundtrack-your-brand-alternative.html">The Soundtrack Your Brand alternative page</a> has the full side-by-side.
 
       **Cloud Cover Music.** Built for small multi-unit operators. Roughly $10 to $25 per location per month. Handles licensing. Fine for one location or a ten-store chain. At 40 stores it starts to feel thin. We go deeper on the <a href="../blog/cloud-cover-music.html">Cloud Cover Music model and what it costs</a> in a separate piece.
 
       **SiriusXM for Business.** A large library of curated channels, name recognition, negotiated pricing in the $30 to $80 range per location per month. Same model as the consumer product. No reporting on what the audio does to behavior.
+
+      **Rockbot.** The comparison Mood switchers ask about. A licensed catalog priced per location per month, with a guest-facing song-request app and TV and digital signage add-ons as the differentiators. If guest interaction is the goal — bars, gyms, casual dining — it is a real alternative to Mood. For a retail floor it is the same catalog model with a jukebox on top: still no read on what the audio does to behavior.
 
       **QSIC.** An Australian and New Zealand player with early traction in quick-service. Uses generative tooling to tune catalog selection to time of day and basic location signals. Limited US footprint. Worth a look in those markets or in quick-service.
 
@@ -75,7 +88,7 @@ sections:
 
   - type: stat_callout
     number: "$30K-$60K"
-    label: "annual ASCAP, BMI, and SESAC fees for a 50-location retailer using licensed catalog music, on top of the subscription"
+    label: "annual ASCAP, BMI, and SESAC fees for a 50-location retailer licensing the PROs directly instead of through a bundled service"
     source: "PRO published rate schedules"
     accent: gold
 

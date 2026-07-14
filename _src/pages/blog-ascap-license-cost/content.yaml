@@ -77,7 +77,7 @@ sections:
 
   - type: prose
     body: |
-      Before you pay, confirm the bill is even yours: <a href="../music-license-exemption-checker.html">the music license exemption checker</a> walks the exemptions, and <a href="../pro-enforcement-map.html">the PRO enforcement map</a> shows how aggressively PROs pursue businesses in your state.
+      Before you pay, confirm the bill is even yours: <a href="../music-license-exemption-checker.html">the music license exemption checker</a> walks the exemptions, and <a href="../pro-enforcement-map.html">the PRO enforcement map</a> shows how aggressively PROs pursue businesses in your state. To see the full four-PRO bill for your footprint — ASCAP plus BMI, SESAC, and GMR — run <a href="../music-license-cost-calculator.html">the music license cost calculator</a>.
 
   - type: cta
     variant: start-free
