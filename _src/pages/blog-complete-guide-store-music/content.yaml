@@ -102,14 +102,14 @@ sections:
       But the ownership model is only half of it. The other half is what the music is designed to do.
 
   - type: pullquote
-    text: "Every track we generate targets a specific retail outcome. The free tier covers the two most robustly validated effects in the retail atmospherics literature: increasing energy and extending dwell time."
+    text: "Every track on a paid tier targets a specific retail outcome. The free tier is tuned to mood instead: Chill, Steady, Upbeat."
     accent: teal
 
   - type: prose
     body: |
-      You sign up, pick an outcome, press play. Music streams continuously through your existing speakers. No special hardware.
+      You sign up, pick a mood, press play. Music streams continuously through your existing speakers. No special hardware.
 
-      Paid tiers unlock eight to ten additional outcome modes and music generated for your specific customer demographic. The free tier covers what most single-location retailers need. The paid tiers exist for businesses that want precision.
+      Paid tiers unlock the outcome modes and music generated for your specific customer demographic. The free tier covers a store that wants better sound today. The paid tiers exist for businesses that want a specific behavior.
 
       For more on the research behind the outcome modes, see <a href="../blog/what-are-flow-factors.html">what flow factors are and why they matter</a> and <a href="../blog/retail-atmospherics-2026.html">the state of retail atmospherics research in 2026</a>.
 
