@@ -45,9 +45,19 @@ def new_tab(url, port=PORT):
     endpoint = f"http://localhost:{port}/json/new?url={urllib.parse.quote(url, safe='')}"
     try:
         req = urllib.request.Request(endpoint, method="PUT")
-        return json.load(urllib.request.urlopen(req))
+        t = json.load(urllib.request.urlopen(req))
     except urllib.error.HTTPError:
-        return json.load(urllib.request.urlopen(endpoint))
+        t = json.load(urllib.request.urlopen(endpoint))
+    # Current Brave builds create the tab but leave it on about:blank
+    # regardless of the url param (observed 2026-07-17) — navigate explicitly.
+    if url and not url.startswith("about:"):
+        try:
+            tab = Tab(t)
+            if not (tab.js("window.location.href") or "").startswith(("http://", "https://")):
+                tab.goto(url)
+        except Exception:
+            pass
+    return t
 
 
 # ---------------------------------------------------------------- Brave

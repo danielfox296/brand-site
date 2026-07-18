@@ -101,7 +101,9 @@ def main():
         die(f"editor text suspiciously short ({got_len} chars)")
     fix_leading_h3(tab)
     first_h = tab.js(f"document.querySelector('{ED} h1, {ED} h3')?.innerText || ''")
-    if p["title"] not in first_h:
+    # Medium replaces the title's final space with a non-breaking space
+    # (widow prevention) — normalize before comparing.
+    if p["title"] not in first_h.replace(" ", " "):
         die(f"title graf wrong after h3 fix: {first_h!r}")
     print(f"draft ok: {got_len} chars, title graf set")
 
