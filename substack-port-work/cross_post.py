@@ -7,7 +7,10 @@ Hard-halts (non-zero exit) on the first failed check — fix the underlying
 problem, never stub around it.
 
 Usage:
-    python3 cross_post.py blog-<slug> --json /tmp/rewrite.json [--medium] [--no-send]
+    python3 cross_post.py blog-<slug> --json /tmp/rewrite.json [--no-medium] [--no-send]
+
+Medium is published by default after Substack verifies (mandatory leg,
+Daniel 2026-07-17); pass --no-medium only with Daniel's explicit say-so.
 
 The JSON payload:
     {
@@ -166,7 +169,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("page", help="source page dir name, e.g. blog-my-slug")
     ap.add_argument("--json", required=True, help="rewrite payload JSON path")
-    ap.add_argument("--medium", action="store_true", help="also cross-post to Medium")
+    ap.add_argument("--medium", action="store_true",
+                    help="(deprecated, now the default) also cross-post to Medium")
+    ap.add_argument("--no-medium", action="store_true",
+                    help="skip the Medium leg (requires Daniel's explicit say-so)")
     ap.add_argument("--no-send", action="store_true", help="Substack draft only, don't publish")
     ap.add_argument("--skip-live", action="store_true",
                     help="skip live-URL checks (pre-push dry run; publish will still need them)")
@@ -221,11 +227,19 @@ def main():
     if r.returncode != 0:
         sys.exit(r.returncode)
 
-    if args.medium:
+    # Medium is a mandatory leg (Daniel, 2026-07-17). --no-medium is the
+    # explicit opt-out; --medium is kept for backward compatibility.
+    if not args.no_medium:
         print("— publish (Medium) —")
         r = subprocess.run([sys.executable, os.path.join(HERE, "publish_to_medium.py"),
                             "--payload", record,
                             "--canonical-url", f"https://entuned.co/blog/{slug}.html"], cwd=HERE)
+        if r.returncode == 3:
+            print("MEDIUM SIGNED OUT: sign in manually (Google account), then re-run\n"
+                  f"  python3 publish_to_medium.py --payload {record} "
+                  f"--canonical-url https://entuned.co/blog/{slug}.html",
+                  file=sys.stderr)
+            sys.exit(3)
         if r.returncode != 0:
             sys.exit(r.returncode)
 

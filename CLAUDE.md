@@ -236,12 +236,13 @@ python3 build.py
 git add -A && git commit -m "Add blog post: Post Title" && git push origin main
 ```
 
-### 8. Cross-post to Substack
+### 8. Cross-post to Substack + Medium
 
-Every new blog post ships a Substack-voice version to `entuned.substack.com`.
-Run the `substack-cross-post` skill — it owns the voice rules, the
-`cross_post.py` orchestration, and the Brave/CDP prereq. Don't duplicate
-those instructions here.
+Every new blog post ships a Substack-voice version to `entuned.substack.com`
+AND a Medium cross-post (mandatory as of 2026-07-17, canonical-linked back
+to entuned.co). Run the `substack-cross-post` skill — it owns the voice
+rules, the `cross_post.py` orchestration (Medium runs by default), and the
+Brave/CDP prereq. Don't duplicate those instructions here.
 
 ## Content Rules
 
