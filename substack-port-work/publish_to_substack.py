@@ -250,6 +250,10 @@ def main():
 
     tab = Tab(new_tab(EDITOR_URL))
     time.sleep(6)
+    if not (tab.js("window.location.href") or "").startswith("https://"):
+        # tab stuck on about:blank — navigate in-place and retry
+        tab.goto(EDITOR_URL)
+        time.sleep(6)
     if not tab.wait_js("!!document.querySelector('textarea[placeholder=\"Title\"]')", timeout=30):
         die("editor never loaded (no Title textarea)")
 

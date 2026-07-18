@@ -15,6 +15,7 @@ import json
 import subprocess
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 
 import websocket
@@ -38,7 +39,10 @@ def find_tab(substr, port=PORT):
 
 def new_tab(url, port=PORT):
     """Open a new tab. Newer Chromium wants PUT; fall back to GET."""
-    endpoint = f"http://localhost:{port}/json/new?url={url}"
+    # url must be percent-encoded: an unencoded `?` in the target (e.g.
+    # /publish/post?type=newsletter) truncates the /json/new url param and
+    # the tab lands on about:blank.
+    endpoint = f"http://localhost:{port}/json/new?url={urllib.parse.quote(url, safe='')}"
     try:
         req = urllib.request.Request(endpoint, method="PUT")
         return json.load(urllib.request.urlopen(req))
