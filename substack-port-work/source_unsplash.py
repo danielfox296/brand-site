@@ -66,6 +66,21 @@ def main() -> int:
     final = os.path.getsize(out)
     if final > 500_000:
         print(f"warning: {out} is {final} bytes (>500KB)", file=sys.stderr)
+
+    # Dedup: an identical hero on two posts means one of them reused a
+    # photo id. Website CLAUDE.md requires this check; enforce it here.
+    import hashlib
+    new_md5 = hashlib.md5(open(out, "rb").read()).hexdigest()
+    for f in os.listdir(OUT_DIR):
+        path = os.path.join(OUT_DIR, f)
+        if path == out or not f.lower().endswith((".jpg", ".jpeg", ".png")):
+            continue
+        if hashlib.md5(open(path, "rb").read()).hexdigest() == new_md5:
+            os.remove(out)
+            print(f"refuse: identical to existing {path} — pick a different "
+                  "photo id", file=sys.stderr)
+            return 3
+
     print(f"ok: {out} ({final} bytes)")
     return 0
 

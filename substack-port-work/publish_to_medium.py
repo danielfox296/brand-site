@@ -165,6 +165,24 @@ def main():
     live = tab.js("window.location.href")
     tab.close()
     print(f"PUBLISHED: {live}")
+
+    # Postflight: load the live post (curl gets Medium's bot-wall 403, so
+    # verify in-browser) — right account in the resolved URL, title graf,
+    # canonical footer.
+    post_id = live.split("?")[0].rstrip("/").split("/")[-1]
+    v = Tab(new_tab(f"https://medium.com/p/{post_id}"))
+    time.sleep(6)
+    v_url = v.js("window.location.href") or ""
+    v_txt = v.js("document.body.innerText") or ""
+    v.close()
+    if EXPECTED_HANDLE not in v_url:
+        die(f"postflight: live URL resolved outside {EXPECTED_HANDLE}: {v_url}")
+    if p["title"].replace(" ", " ") not in v_txt.replace(" ", " "):
+        die("postflight: title not found on live post")
+    if "Originally published" not in v_txt:
+        die("postflight: canonical footer missing on live post")
+    print(f"postflight ok: {v_url}")
+    live = v_url  # record the clean resolved URL, not the ?postPublishedType one
     print("MANUAL STEP: add topic tags on Medium (Retail, Music, Consumer "
           "Behavior, Marketing, Small Business) — tags can't be set over CDP.")
 
