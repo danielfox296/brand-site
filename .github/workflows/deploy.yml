@@ -32,7 +32,7 @@ jobs:
           mkdir -p _site
           # Copy built HTML files and static assets
           cp -r *.html styles.css CNAME _site/ 2>/dev/null || true
-          cp -r sitemap.xml rss.xml robots.txt llms.txt llms-full.txt _site/ 2>/dev/null || true
+          cp -r sitemap.xml rss.xml robots.txt llms.txt llms-full.txt a90a24496d14307cb0567d7dc9281578.txt _site/ 2>/dev/null || true
           cp -r img _site/img 2>/dev/null || true
           cp -r styles _site/styles 2>/dev/null || true
           cp -r audio _site/audio 2>/dev/null || true
