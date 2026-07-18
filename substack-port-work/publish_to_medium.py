@@ -18,7 +18,8 @@ Usage:
         --canonical-url https://entuned.co/blog/<slug>.html [--no-publish]
 
 Reuses the Substack payload (title, subtitle, body_html, hero_url,
-hero_alt, slug). Exit codes: 0 published, 3 signed out, 1 anything else.
+hero_alt, slug). Exit codes: 0 published, 3 signed out, 4 wrong Medium
+account (expected EXPECTED_HANDLE), 1 anything else.
 """
 import argparse
 import json
@@ -31,6 +32,12 @@ from cdp import Tab, ensure_brave, find_tab, new_tab
 HERE = os.path.dirname(os.path.abspath(__file__))
 PROGRESS = os.path.join(HERE, "progress.json")
 ED = "div[contenteditable=true]"
+
+# The Entuned Medium account. Brave is shared with Daniel's personal
+# Medium account (@danielfox) — on 2026-07-17 a post shipped to the
+# wrong one. Abort rather than publish anywhere else (same rule as the
+# LinkedIn autopost's company-page guard).
+EXPECTED_HANDLE = "@daniel_35520"
 
 
 def die(msg, code=1):
@@ -80,6 +87,22 @@ def main():
     )
 
     ensure_brave()
+
+    # Account guard: medium.com/me redirects to the signed-in profile.
+    # Wrong account → exit 4, publish nothing.
+    who = Tab(new_tab("https://medium.com/me"))
+    time.sleep(6)
+    who_url = who.js("window.location.href") or ""
+    who.close()
+    if "signin" in who_url or "login" in who_url or "/m/" in who_url:
+        print("FAIL: Medium session expired — sign in manually in Brave "
+              "(medium.com, the Entuned account), then re-run.", file=sys.stderr)
+        sys.exit(3)
+    if EXPECTED_HANDLE not in who_url:
+        die(f"signed into the wrong Medium account ({who_url or 'unknown'}); "
+            f"expected {EXPECTED_HANDLE}. Log into the Entuned account in "
+            "Brave and re-run.", code=4)
+
     tab = Tab(new_tab("https://medium.com/new-story"))
     time.sleep(8)
     url = tab.js("window.location.href") or ""
