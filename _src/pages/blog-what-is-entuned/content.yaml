@@ -11,7 +11,7 @@ hero:
   src: "../img/blog/what-is-entuned.jpg"
   alt: "Abstract data visualization representing retail music performance"
   caption: "Photo: Unsplash"
-meta_description: "Entuned makes original music for retail stores and measures what it does to store performance. Currently piloting with multi-location lifestyle retailers."
+meta_description: "Entuned makes original music for retail stores and measures what it does to store performance. Built for specialty retailers running 5 to 50 stores."
 llms_description: "Original music for retail stores. Measured like every other line item."
 og_image: "/img/blog/what-is-entuned.jpg"
 tags: [entuned, product, retail-music]
@@ -27,7 +27,7 @@ sections:
     body: |
       Your stores play music every hour they are open. Somebody picked it, or nobody did, and either way you have no idea whether it is helping or hurting the business. You pay a vendor. The vendor sends a playlist. The playlist plays. That is the entire relationship.
 
-      Entuned is a retail music company that does two things differently. We make original music for your stores. And we measure what that music does to your store performance.
+      Entuned is a retail music strategy platform that turns customer psychology into store soundtracks — driving measurable sales lift. In practice that means two things: we make original music for your stores, and we measure what that music does to your store performance.
 
   - type: subhead
     level: 2

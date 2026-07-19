@@ -580,6 +580,7 @@ def build():
                 },
                 "publisher": {
                     "@type": "Organization",
+                    "@id": f"{SITE_URL}/#organization",
                     "name": "Entuned",
                     "url": SITE_URL
                 },
@@ -598,16 +599,29 @@ def build():
                 ]
             }
         else:
+            # The ONE Organization block sitewide (entity consolidation, audit S3/D6).
+            # Facts ratified by Daniel 2026-07-19: foundingDate 2026; description =
+            # VOICE.md positioning sentence; LinkedIn slug is /company/entunedllc
+            # (/company/entuned belongs to an unrelated Dubai coaching business).
             schema = {
                 "@context": "https://schema.org",
                 "@type": "Organization",
+                "@id": f"{SITE_URL}/#organization",
                 "name": "Entuned",
+                "legalName": "Entuned LLC",
                 "url": SITE_URL,
-                "description": "Entuned engineers original music for retail floors at the parameter level — tempo, key, lyrical density, energy arc — tailored to a store's customer profile and tied to its sales outcomes. PRO-indemnified at every tier.",
+                "logo": f"{SITE_URL}/img/entuned-logo-ice.svg",
+                "description": "Entuned is a retail music strategy platform that turns customer psychology into store soundtracks — driving measurable sales lift.",
                 "foundingDate": "2026",
                 "founder": {
                     "@type": "Person",
                     "name": "Daniel Fox"
+                },
+                "areaServed": "United States",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "contactType": "Sales",
+                    "url": f"{SITE_URL}/contact.html"
                 },
                 "knowsAbout": [
                     "retail atmospherics",
@@ -618,7 +632,9 @@ def build():
                     "behavioral retail variables"
                 ],
                 "sameAs": [
-                    "https://www.linkedin.com/company/entuned"
+                    "https://www.linkedin.com/company/entunedllc",
+                    "https://www.youtube.com/@entuned",
+                    "https://entuned.substack.com"
                 ]
             }
 
@@ -668,9 +684,10 @@ def build():
                 "@type": "WebSite",
                 "name": "Entuned",
                 "url": SITE_URL,
-                "description": "Music engineered to your customer and your outcome. Original compositions specified at the parameter level and PRO-indemnified at every tier.",
+                "description": "Entuned is a retail music strategy platform that turns customer psychology into store soundtracks — driving measurable sales lift.",
                 "publisher": {
                     "@type": "Organization",
+                    "@id": f"{SITE_URL}/#organization",
                     "name": "Entuned"
                 }
             }
@@ -760,6 +777,7 @@ def build():
                 "name": "Entuned Engineered Retail Audio",
                 "provider": {
                     "@type": "Organization",
+                    "@id": f"{SITE_URL}/#organization",
                     "name": "Entuned",
                     "url": SITE_URL
                 },
