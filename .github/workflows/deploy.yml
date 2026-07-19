@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Checkout brand-site
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # full history so the IndexNow step can diff the push range
 
       # --- Install blog renderer dependencies ---
       - name: Install Python dependencies
@@ -52,3 +54,8 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      # --- Notify IndexNow (Bing feeds ChatGPT search + Copilot) of changed pages ---
+      - name: IndexNow ping
+        if: github.event_name == 'push'
+        run: python3 tools/indexnow_ping.py --diff "${{ github.event.before }}" "${{ github.sha }}"
