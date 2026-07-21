@@ -7,6 +7,13 @@
   <language>en-us</language>
   <atom:link href="https://entuned.co/rss.xml" rel="self" type="application/rss+xml"/>
   <item>
+    <title>What One Chord Does</title>
+    <link>https://entuned.co/blog/what-one-chord-does.html</link>
+    <description>A pop song fuses a hundred decisions into one object, so you never learn which one moved the room. Generative music lets you hold the song still and change one thing.</description>
+    <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
+    <guid>https://entuned.co/blog/what-one-chord-does.html</guid>
+  </item>
+  <item>
     <title>Chill, Steady, Upbeat, All: What Each Free Mode Is For</title>
     <link>https://entuned.co/blog/free-modes.html</link>
     <description>Entuned Free gives your floor three mood modes, Chill, Steady, and Upbeat, plus an All setting that mixes them. What each is for, and what changes at Boost.</description>
@@ -138,13 +145,6 @@
     <description>A field experiment in an actual florist found romantic music lifted spending — and ordinary pop did nothing. The lever is fit, not just nice music.</description>
     <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
     <guid>https://entuned.co/blog/what-music-should-a-flower-shop-play.html</guid>
-  </item>
-  <item>
-    <title>What Music Should a Hotel Lobby Play? It's the Brand's First Sentence</title>
-    <link>https://entuned.co/blog/what-music-should-a-hotel-lobby-play.html</link>
-    <description>A lobby is the brand's first sentence. Research on servicescape and atmosphere shows music sets perceived quality and sophistication the moment a guest arrives.</description>
-    <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
-    <guid>https://entuned.co/blog/what-music-should-a-hotel-lobby-play.html</guid>
   </item>
 </channel>
 </rss>

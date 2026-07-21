@@ -1,0 +1,96 @@
+title: "What One Chord Does"
+slug: "what-one-chord-does"
+eyebrow: "FIELD NOTES"
+dek: "For a hundred years the only honest answer was that we couldn't know. Now we can find out."
+date: "2026-07-21"
+last_updated: "2026-07-21"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/what-one-chord-does.jpg"
+  alt: "Abstract dark background of wavy blue and purple lines resembling a sound waveform"
+  caption: "Photo: Unsplash"
+meta_description: "A pop song fuses a hundred decisions into one object, so you never learn which one moved the room. Generative music lets you hold the song still and change one thing."
+llms_description: "A founder essay on why musicology could never hold a single fixed song still and move one internal parameter, and why generative models finally make that experiment cheap and repeatable."
+og_image: "/img/blog/what-one-chord-does.jpg"
+tags: [field-notes, music-research, generative-music, founder-writing]
+sections:
+  - type: key_takeaways
+    items:
+      - "A pop song fuses a hundred simultaneous decisions into one object, so when it moves a room you never learn which decision did the work, or whether the same one would do anything at a different tempo."
+      - "For a century musicology could only correlate across whole songs that differ in hundreds of ways at once. Nobody could hold a song still and change one thing, because making one variant per variable would have cost a studio month and no one would fund it."
+      - "Generative music makes the experiment repeatable: produce a track, produce it again with a single parameter moved and everything else held still, put the stack in front of a real room, and watch what the room does."
+
+  - type: prose
+    body: |
+      I want to know what makes people dance.
+
+      Not dancing in general. The specific moment. Which part of the song, arriving at which second, takes a person who is standing still and makes them stop standing still. I want to know what makes people cry, and I mean the actual mechanism, the thing that happens in the two bars before the tears rather than the story we tell afterward about the song being sad. I want to know what makes someone remember a lover they haven't thought about in eleven years. What makes a person feel something close to repentance in the middle of a grocery aisle. What makes somebody forget, for three and a half minutes, the thing they have been afraid of all week.
+
+      These are not rhetorical. I have wanted answers to them since I was producing records, and I have never gotten one.
+
+      Here is why.
+
+  - type: subhead
+    level: 2
+    text: "A hundred decisions, pulled at once"
+
+  - type: prose
+    body: |
+      A pop song is roughly a hundred decisions made at a hundred different moments, and a songwriter makes all of them at once. Tempo. Whether the third is major or minor and whether it stays that way. Where the snare sits against the grid. The vowel sound in the hook, which changes what the singer's throat does, which changes what your throat does when you sing along. Compression on the drum bus. Whether the pre-chorus resolves or hangs. The word "back" instead of the word "again."
+
+      Every one of those is a lever. They all get pulled simultaneously, by one person, in one afternoon, and then the song is fused and it is a single object forever.
+
+      So when a song moves a room, you have learned nothing. You know that the object worked. You have no idea which of the hundred decisions did the work, or whether it was three of them together, or whether the same three would do anything at all in a different tempo. And you cannot go back and check, because there is no version of that song with one thing changed and everything else held still. Nobody ever made one. Making one would have cost thirty thousand dollars and a studio month, per variable, and no label was funding that, and no artist would have agreed to it anyway, because asking a songwriter to render ninety variants of their song with one parameter moved is asking them to do something that has nothing to do with why they write songs.
+
+      Musicology has spent a century working around this. The famous studies did what they could: play a store slow one week and fast the next and count the receipts, swap a major-key recording for a minor one and watch the room. Careful people, real rigor, real findings, and I lean on them. But each of them changes the tempo by changing the song, or changes the mode by changing the song. None of them could hold one song still and move a single thing inside it, because nobody could make that song. The literature is correlations across recordings that differ in four hundred ways at once. It was the best anyone could do with what existed.
+
+  - type: subhead
+    level: 2
+    text: "Now you can hold a song still and move one thing"
+
+  - type: prose
+    body: |
+      That changed about two years ago, and I don't think most people have noticed what specifically changed.
+
+      Generative models let you hold a song still and move one thing. You can produce a track, then produce the same track with the harmonic rhythm halved and nothing else touched. Then again with the lyric shifted from second person to third. Then again at 94 beats per minute instead of 102. You can build a stack of thirty variants that differ from each other along exactly one axis, put them in front of actual human beings in an actual room, and watch what the room does. Dwell time. Where people stop walking. Whether they touch the merchandise. Whether they come back through the same aisle a second time.
+
+      That is as controlled a comparison as music has ever allowed, one variable moved and everything else held, run at a cost that makes it repeatable. It is the first time you can hold a single song still and move one thing inside it, instead of swapping one whole song for another and hoping the rest cancels out.
+
+      I have been running these for a while now, and some of what comes back is not what I expected. I am not going to publish the interesting parts yet. But the reason I can run them at all is worth naming plainly, because it is the thing that makes this post uncomfortable to write.
+
+  - type: subhead
+    level: 2
+    text: "The part I'm not going to make comfortable"
+
+  - type: prose
+    body: |
+      There is a charge against all of this, and it is serious. These models learned from an enormous amount of recorded music, and the heart of the objection, the thing the lawsuits are actually about, is that the people who made that music did not agree to it and were not paid. Whether that lands as theft or as fair use is being fought in courtrooms right now, and I am not the one who gets to rule on it. What I won't do is pretend the question isn't in the room. Generated music also competes for placement with human songwriters, in a market that was already unkind to them, and it competes on price in a way that is hard for them to answer. I have heard the argument that retail was already running on catalog from artists who are doing fine, and there is something to it, and I am not going to lean on it here, because I know what it is for. It is for making me feel better, and I would rather keep the discomfort where it is.
+
+      I am not going to tell you the trade was worth it. I don't think that is mine to declare, and the people with the most standing to declare it mostly haven't been asked.
+
+  - type: subhead
+    level: 2
+    text: "Why it should be someone who came up making records"
+
+  - type: prose
+    body: |
+      What I will say is that the questions I opened with have been sitting there for as long as there have been songs, and for all of that time the only honest answer was that we couldn't know. Now we can find out. Somebody was going to, and I would rather it be someone who came up making records and cares what the answer does to the people who make them.
+
+      Entuned is one arm of this. It is where the findings go to be useful, in stores, on floors, with real customers moving through real space, which is the only place the findings can be tested at scale. It is not the reason the work matters. The work matters because I want to know what makes people cry.
+
+      The next batch renders tomorrow morning. Thirty variants, one variable, everything else held still.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level &mdash; tempo, key, lyrical density, energy arc &mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "every-song-working-or-not"
+      - slug: "every-store-about-to-sound-different"
+      - slug: "can-music-be-optimized-for-sales-yes-heres-how"
