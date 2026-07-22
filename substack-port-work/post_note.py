@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""One-off: post a Substack Note for the What One Chord Does essay.
+"""Post a Substack Note. Default payload is the What One Chord Does note;
+pass --html-file and --verify-text for any other post.
 Follows the verified 2026-07-17 path: /notes -> open composer -> paste_html
 -> Post. Screenshots at each step for verification."""
-import time, sys
+import argparse, json, time, sys
 from cdp import ensure_brave, new_tab, Tab
 
 NOTE_HTML = (
@@ -15,6 +16,16 @@ NOTE_HTML = (
 )
 
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--html-file", help="file containing the note HTML (paragraph <p> blocks)")
+    ap.add_argument("--verify-text", help="substring that must appear in the posted note")
+    args = ap.parse_args()
+    note_html = NOTE_HTML
+    verify_text = "hold a single song still and move one thing inside it"
+    if args.html_file:
+        note_html = open(args.html_file).read()
+    if args.verify_text:
+        verify_text = args.verify_text
     ensure_brave()
     t = Tab(new_tab("https://substack.com/notes"))
     time.sleep(6)
@@ -49,7 +60,7 @@ def main():
     # focus + paste
     t.js(f"document.querySelector('{sel}').focus()")
     time.sleep(0.5)
-    print("paste:", t.paste_html(sel, NOTE_HTML))
+    print("paste:", t.paste_html(sel, note_html))
     time.sleep(6)  # let the link auto-embed as a card
     t.screenshot("/tmp/note_3_pasted.jpg")
     editor_text = t.js(f"document.querySelector('{sel}').innerText")
@@ -68,14 +79,15 @@ def main():
     time.sleep(6)
     t.screenshot("/tmp/note_4_after_post.jpg")
     # verify: composer closed AND a note with our text near top of feed
-    check = t.js(r"""
+    check = t.js("""
 (() => {
+  const VERIFY_TEXT = %s;
   const body = document.body.innerText || '';
   const composerGone = !document.querySelector('[contenteditable="true"]');
-  const present = body.includes('hold a single song still and move one thing inside it');
+  const present = body.includes(VERIFY_TEXT);
   return JSON.stringify({composerGone, present});
 })()
-""")
+""" % json.dumps(verify_text))
     print("verify:", check)
 
 if __name__ == "__main__":
