@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- First-touch signup attribution. Stamps a `.entuned.co` cookie on the
+       FIRST page view so the original source (referrer + UTM) survives the
+       entuned.co -> app.entuned.co/start hop. The dashboard's /start reads the
+       same cookie (same name + shape) and forwards it to the server. Runs
+       early + first-touch-wins so it never overwrites the true upstream. -->
+  <script>
+    (function () {
+      try {
+        if (/(?:^|; )entuned_attr=/.test(document.cookie)) return;
+        var p = new URLSearchParams(window.location.search);
+        var payload = {
+          r: document.referrer || undefined,
+          lp: (window.location.pathname + window.location.search) || undefined,
+          us: p.get('utm_source') || undefined,
+          um: p.get('utm_medium') || undefined,
+          uc: p.get('utm_campaign') || undefined,
+          ut: p.get('utm_term') || undefined,
+          un: p.get('utm_content') || undefined,
+          t: new Date().toISOString()
+        };
+        var host = window.location.hostname;
+        var domain = (host === 'entuned.co' || /\.entuned\.co$/.test(host)) ? '; domain=.entuned.co' : '';
+        document.cookie = 'entuned_attr=' + encodeURIComponent(JSON.stringify(payload)) +
+          '; path=/' + domain + '; max-age=' + (30 * 24 * 60 * 60) + '; SameSite=Lax';
+      } catch (e) { /* best-effort */ }
+    })();
+  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/blog/sandwich-shop-funeral-music.html">
+  <meta name="robots" content="index, follow">
+  <title>The Sandwich Shop Was Playing Music for a Funeral | Entuned</title>
+  <meta name="description" content="A field note from an empty Firehouse Subs dining room: why the slow-music dwell-time play fails at quick service, and what a room sounds like when nobody closes the loop.">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="../rss.xml">
+  <meta property="og:title" content="The Sandwich Shop Was Playing Music for a Funeral | Entuned">
+  <meta property="og:description" content="A field note from an empty Firehouse Subs dining room: why the slow-music dwell-time play fails at quick service, and what a room sounds like when nobody closes the loop.">
+  <meta property="og:url" content="https://entuned.co/blog/sandwich-shop-funeral-music.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://entuned.co/img/blog/sandwich-shop-funeral-music.jpg">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-07-22">
+  <meta property="article:author" content="Daniel Fox">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Sandwich Shop Was Playing Music for a Funeral | Entuned">
+  <meta name="twitter:description" content="A field note from an empty Firehouse Subs dining room: why the slow-music dwell-time play fails at quick service, and what a room sounds like when nobody closes the loop.">
+  <meta name="twitter:image" content="https://entuned.co/img/blog/sandwich-shop-funeral-music.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "The Sandwich Shop Was Playing Music for a Funeral | Entuned",
+  "author": {
+    "@type": "Person",
+    "name": "Daniel Fox"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://entuned.co/#organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "datePublished": "2026-07-22",
+  "dateModified": "2026-07-22",
+  "description": "A field note from an empty Firehouse Subs dining room: why the slow-music dwell-time play fails at quick service, and what a room sounds like when nobody closes the loop.",
+  "image": "https://entuned.co/img/blog/sandwich-shop-funeral-music.jpg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://entuned.co/blog/sandwich-shop-funeral-music.html"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "retail music strategy"
+    },
+    {
+      "@type": "Thing",
+      "name": "in-store customer behavior"
+    },
+    {
+      "@type": "Thing",
+      "name": "engineered retail audio"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://entuned.co/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "The Sandwich Shop Was Playing Music for a Funeral | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=331834bf">
+  <link rel="stylesheet" href="../styles/blog.css">
+  
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav aria-label="Main navigation">
+  <div class="container">
+    <a href="/" class="logo"><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="../how-it-works.html">How It Works</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li class="nav-cta-item"><a href="https://app.entuned.co/start" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Start Free</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+  </div>
+</nav>
+
+  <main>
+  
+<!-- Reading progress bar -->
+<div class="blog-progress" aria-hidden="true">
+  <div class="blog-progress__bar" id="reading-progress"></div>
+</div>
+
+<article class="blog-article">
+
+  <!-- Article header -->
+  <header class="blog-article__header">
+    <div class="blog-eyebrow">FIELD NOTES</div>
+    <h1 class="blog-headline">The Sandwich Shop Was Playing Music for a Funeral</h1>
+    <p class="blog-dek">We got sandwiches at 4:30 on a weekday. The dining room was empty, the music was for a funeral, and nothing about the room suggested anyone was positioned to notice.</p>
+    <div class="blog-byline">
+      <span class="blog-byline__author">Daniel Fox</span>
+      <span class="blog-byline__role">Founder &amp; CEO</span>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <time class="blog-byline__date" datetime="2026-07-22">2026-07-22</time>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <span class="blog-byline__reading-time">6 min read</span>
+    </div>
+  </header>
+
+  <!-- Hero image -->
+  <figure class="blog-hero fade-up">
+    <img src="../img/blog/sandwich-shop-funeral-music.jpg" alt="Empty sub shop dining room with firefighter helmets and gear displayed on a brick wall" class="blog-hero__img" loading="lazy">
+    <figcaption class="blog-hero__caption">Photo: Unsplash</figcaption>
+  </figure>
+
+  <!-- Key takeaways -->
+  <div class="blog-takeaways">
+  <div class="blog-takeaways__title">Key takeaways</div>
+  <ul>
+    <li>Slow music extends visits in grocery and apparel, where extra minutes mean more merchandise passed. At a quick-service restaurant the customer buys first and sits second, so the extra minute buys a maybe-cookie against a definitely-soda</li>
+    <li>The dining room was empty at dinner hour, and nothing about the room suggested anyone had ever checked the music against it. There was a channel, but no loop</li>
+    <li>The music muted itself for the TV ads, in perfect sync, which means the interruption is designed. The ad break is the system</li>
+  </ul>
+</div>
+
+  <!-- Article body (all sections except key_takeaways, cta, related) -->
+  <div class="blog-article__body">
+    <div class="blog-prose">
+  <p>My daughter graduated high school this spring. She starts nursing school in the fall. The day before she flew to Buffalo to see Djo and stay with friends, we went and got sandwiches at the Firehouse Subs on Wadsworth in Littleton.</p>
+<p>The food was good. That part isn&rsquo;t the story.</p>
+<p>We sat down a little after 4:30. Plenty of tables, and we were the only party using one. Three or four people behind the counter, a steady trickle of customers coming in for to-go bags and leaving with them. Nobody else stayed.</p>
+<p>The music was slow. Not calm slow. Slow the way music gets when somebody has decided in advance how you&rsquo;re supposed to feel and then never checked whether it worked.</p>
+<p>So I started guessing what each song was actually for. Occupational hazard.</p>
+<p>&ldquo;Funeral.&rdquo;</p>
+<p>Next track. &ldquo;Spa day for the grief stricken.&rdquo;</p>
+<p>She was mostly on her phone. Eighteen years old, flying out in the morning, thinking about the show. At some point I said out loud, to nobody, that this music sounded like it had never once been played in a room with people in it. She did not look up.</p>
+<p>Then a commercial started on the TV screen by the drink station and the music stopped. Not ducked under. Stopped cold. Bright, fast, loud ad audio for thirty seconds, then back into the funeral spa. This happened every five minutes or so for as long as we were sitting there. Nobody working there reacted. It&rsquo;s just the condition of the room now.</p>
+</div>
+
+<h2 id="what-they-were-going-for" class="blog-subhead blog-subhead--h2">
+  What they were going for
+  <a href="#what-they-were-going-for" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Slow music in a retail space almost always means somebody wants customers to stay longer.</p>
+<p>The idea comes out of grocery and apparel, where it holds up reasonably well. A shopper who spends more minutes in the store walks past more merchandise, and some share of that extra exposure turns into things in the cart that weren&rsquo;t on the list. Slow the tempo, slow the walking pace, extend the visit, sell more. Retailers have been running that play for decades and there&rsquo;s real research behind it.</p>
+<p>I believe the play was deliberate here. There was a provider logo on the screen between ads. Somebody at some level of that organization signed a contract, and somebody built a channel, and somebody decided this was the sound of a sandwich shop in the late afternoon.</p>
+</div>
+
+<h2 id="where-the-idea-stops-working" class="blog-subhead blog-subhead--h2">
+  Where the idea stops working
+  <a href="#where-the-idea-stops-working" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>At a quick service restaurant, the customer buys first and sits second.</p>
+<p>By the time anyone hears the music, the transaction is finished. There&rsquo;s no merchandise to walk past. There&rsquo;s no cart to add to. The extra minute you&rsquo;ve bought with a slow tempo doesn&rsquo;t put a shopper in front of anything they can purchase, because the only thing in front of them is a sandwich they already paid for.</p>
+<p>So what does the marginal minute actually buy the operator? A cookie, maybe, on the way out. That&rsquo;s the honest best case.</p>
+<p>In full-service dining the same minute buys another round from the bar, which is why the slow-tempo play has real results in sit-down restaurants. The famous restaurant research was measuring exactly that. Counter service has no bar and no another round.</p>
+<p>What does it cost? A refill, which is free. A table, which at peak has real value and at 4:30 in an empty dining room has none. So the return on the extra minute is a maybe-cookie against a definitely-soda.</p>
+<p>The one upside I can construct is social proof. Cars pulling into a strip mall see occupied tables through the glass and read the place as worth stopping at. That&rsquo;s real in a dense pedestrian corridor. On Wadsworth, where everyone is arriving at 40 miles an hour and looking for a parking spot, it rounds to nothing.</p>
+</div>
+
+<h2 id="the-room-was-empty" class="blog-subhead blog-subhead--h2">
+  The room was empty
+  <a href="#the-room-was-empty" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Here&rsquo;s the part I keep coming back to.</p>
+<p>If anybody involved in that decision were measuring dwell time, they would have noticed there was nobody there to dwell. Empty tables at dinner hour is not a subtle signal. It doesn&rsquo;t require sensors or a data science contract. It requires walking into the store once at 4:30 on a weekday.</p>
+<p>Music got selected somewhere, by somebody, and then never checked against what was happening in the one room I could see. Nobody closed the loop. There was a channel, and the channel played.</p>
+<p>That&rsquo;s a different failure than picking the wrong songs. Wrong songs get fixed when somebody notices. This doesn&rsquo;t get fixed, because the arrangement that produced it has no step where noticing happens.</p>
+</div>
+
+<h2 id="the-ad-break-is-the-system" class="blog-subhead blog-subhead--h2">
+  The ad break is the system
+  <a href="#the-ad-break-is-the-system" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Here&rsquo;s the detail that unravels the mood programming completely. The mute was synchronized. The song stopped the instant the commercial started and came back the instant it ended. Two systems that have never met don&rsquo;t do that. Somebody built it to do that. The interruption isn&rsquo;t a glitch in the channel. It is the channel.</p>
+<p>So the customer experience is a slow sad song, hard cut, an aggressive commercial at full brightness, hard cut, back to the slow sad song. Six or seven times over the length of a meal. And the same screen carrying those ads carried the provider&rsquo;s logo in between. Whatever the music was supposed to be doing to the room, the thing actually being optimized was the ad break.</p>
+<p>Nobody working there reacted, and I doubt any of it is their call. The sound of that room belongs to a vendor relationship somewhere above the store, and nothing I heard suggested anyone in that relationship had ever sat at one of these tables and listened.</p>
+</div>
+
+<h2 id="what-i-would-have-played" class="blog-subhead blog-subhead--h2">
+  What I would have played
+  <a href="#what-i-would-have-played" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>First I&rsquo;d question dwell time extension at a quick service restaurant at all. If the goal is another visit rather than another minute, the music has a completely different job.</p>
+<p>Firehouse sells you a good sandwich and thirty pleasant minutes. That&rsquo;s the product. So the music should sound like the thing people came in for, which is a small ordinary pleasure in the middle of a Tuesday. Celebration. Indulgence. A little bit of appetite.</p>
+<p>And it should sound like it&rsquo;s for these customers. South suburban Denver, late afternoon, people coming off shift, families in June with kids who just graduated. Not a generic national channel that assumes a customer with no location, no hour, and no reason for being there.</p>
+<p>That&rsquo;s not a bigger budget. It&rsquo;s a different question at the front of the process.</p>
+</div>
+
+<h2 id="the-number-nobody-logged" class="blog-subhead blog-subhead--h2">
+  The number nobody logged
+  <a href="#the-number-nobody-logged" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>I like the food. My daughter liked the food. We finished our sandwiches faster than we would have, because the room was working against us the entire time, and we left.</p>
+<p>Next time dine-in is the option, we&rsquo;ll go somewhere else. I&rsquo;ll still order Firehouse. I&rsquo;ll take it to the car.</p>
+</div>
+  </div>
+
+  <!-- CTA -->
+  <aside class="blog-cta blog-cta--bridge">
+  <div class="blog-cta__headline">Who closed the loop on your sound?</div>
+  <div class="blog-cta__body">If you run a store rather than a sandwich line, the question is the same. Something is playing on your floor right now, somebody chose it, and the only measure that matters is whether anyone ever checked it against what your customers actually do. The writeups below are where I'd start.</div>
+  <a href="https://entuned.co/blog/closing-the-loop.html" class="blog-cta__link">Read: Closing the Loop &rarr;</a>
+  <p class="blog-cta__fork">Running 5&ndash;50 locations? <a href="../pilot.html">Start a measured pilot &rarr;</a></p>
+</aside>
+
+  <!-- Related posts -->
+  <section class="blog-related" aria-label="Related posts">
+  <h2 class="blog-related__title">Keep reading</h2>
+  <div class="blog-related__grid">
+    <a href="../blog/does-slow-music-increase-sales.html" class="blog-related__card">
+      <img src="../img/blog/does-slow-music-increase-sales.jpg" alt="Does Slow Music Increase Sales?" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">WATCH</span>
+      <span class="blog-related__card-title">Does Slow Music Increase Sales?</span>
+      <span class="blog-related__dek">Slow music does not reliably increase sales on its own.</span>
+    </a>
+    <a href="../blog/bye-bye-bye-dwell-time.html" class="blog-related__card">
+      <img src="../img/blog/retail-dwell-time.jpg" alt="How Your Playlist Is Tanking Retail Dwell Time" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">How Your Playlist Is Tanking Retail Dwell Time</span>
+      <span class="blog-related__dek">A song looped the word &#34;leave&#34; thirty times in a thrift store and shoppers drifted toward the exit. Filtering lyrics won&#39;t catch most of it.</span>
+    </a>
+    <a href="../blog/every-song-working-or-not.html" class="blog-related__card">
+      <img src="../img/blog/every-song-working-or-not.jpg" alt="Every Song Is Either Working Or It Isn&#39;t" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">Every Song Is Either Working Or It Isn&#39;t</span>
+      <span class="blog-related__dek">Your store plays hundreds of tracks a week. Some of them are helping. Some of them are costing you money. The difference matters more than most operators think.</span>
+    </a>
+  </div>
+</section>
+
+</article>
+
+<!-- Blog-specific JS (reading progress + anchor copy) -->
+<script>
+  // Reading progress bar
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    document.getElementById('reading-progress').style.width = pct + '%';
+  });
+
+  // Anchor link copy-to-clipboard
+  document.querySelectorAll('.anchor-link').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      navigator.clipboard.writeText(window.location.origin + window.location.pathname + a.getAttribute('href'));
+      a.textContent = '\u2713'; setTimeout(() => a.textContent = '#', 1500);
+    });
+  });
+</script>
+  </main>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Engineered retail audio. PRO-indemnified.</p>
+      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
+      <div class="footer-newsletter">
+        <h4>Newsletter</h4>
+        <p class="footer-newsletter-tagline">Retail music, from the floor. Research and field notes, in your inbox.</p>
+        <form class="footer-newsletter-form" action="https://entuned.substack.com/subscribe" method="get" target="_blank" rel="noopener">
+          <input type="email" name="email" placeholder="you@yourstore.com" required aria-label="Email address for the Entuned newsletter">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="../how-it-works.html">How It Works</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="../pilot.html">Multi-Location Pilot</a></li>
+        <li><a href="../enterprise.html">Enterprise</a></li>
+        <li><a href="../why-entuned.html">Why Entuned</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For Your Industry</h4>
+      <ul>
+        <li><a href="../for-apparel.html">Apparel</a></li>
+        <li><a href="../for-beauty-supply.html">Beauty Supply</a></li>
+        <li><a href="../for-cosmetics.html">Cosmetics &amp; Beauty</a></li>
+        <li><a href="../for-furniture-mattress.html">Furniture &amp; Mattress</a></li>
+        <li><a href="../for-home-goods.html">Home Goods</a></li>
+        <li><a href="../for-jewelry.html">Jewelry</a></li>
+        <li><a href="../for-specialty-retail.html">Specialty Retail</a></li>
+        <li><a href="../for-sporting-goods.html">Sporting Goods</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
+      <ul>
+        <li><a href="../for-retail-leaders.html">Retail Operators</a></li>
+        <li><a href="../for-cfos.html">CFOs</a></li>
+        <li><a href="../impact.html">Impact Calculator</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Research</h4>
+      <ul>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../results.html">Results</a></li>
+        <li><a href="../science.html">The Science</a></li>
+        <li><a href="../will-it-retail.html">Will It Retail?</a></li>
+        <li><a href="https://entuned.substack.com" target="_blank" rel="noopener">Newsletter</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="../how-music-affects-retail.html">How Music Affects Retail</a></li>
+        <li><a href="../how-to-increase-aov-retail.html">Increase Average Order Value</a></li>
+        <li><a href="../how-to-increase-dwell-time-retail.html">Increase Dwell Time</a></li>
+        <li><a href="../how-to-increase-impulse-purchases-retail.html">Drive Impulse Purchases</a></li>
+        <li><a href="../how-to-improve-retail-conversion-rate.html">Improve Conversion Rate</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Tools &amp; Comparisons</h4>
+      <ul>
+        <li><a href="../music-license-cost-calculator.html">Music License Cost Calculator</a></li>
+        <li><a href="../sound-audit.html">Sound Audit</a></li>
+        <li><a href="../spotify-business-risk-check.html">Spotify Business Risk Check</a></li>
+        <li><a href="../pro-enforcement-map.html">PRO Enforcement Map</a></li>
+        <li><a href="../retail-music-decibel-guide.html">Retail Music Decibel Guide</a></li>
+        <li><a href="../spotify-for-business.html">Spotify for Business</a></li>
+        <li><a href="../property-managers.html">For Property Managers</a></li>
+        <li><a href="../mood-media-alternative.html">Mood Media Alternative</a></li>
+        <li><a href="../soundtrack-your-brand-alternative.html">Soundtrack Your Brand Alternative</a></li>
+        <li><a href="../pandora-for-business-alternative.html">Pandora for Business Alternative</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../partners.html">Partners</a></li>
+        <li><a href="../press.html">Press</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="../licensing.html">Licensing &amp; PRO Coverage</a></li>
+        <li><a href="../data.html">Data Practices</a></li>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="../pricing/terms.html">Subscription Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG', {
+      linker: {
+        domains: ['entuned.co', 'music.entuned.co', 'app.entuned.co']
+      }
+    });
+  </script>
+  <script defer src="../js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>

@@ -100,7 +100,7 @@ def body_to_html(body):
     return "\n".join(out)
 
 
-def preflight(page, slug, payload, skip_live=False):
+def preflight(page, slug, payload, skip_live=False, custom_cta=False):
     print("— preflight —")
     src = os.path.join(WEBSITE, "_src", "pages", page)
     check(os.path.isdir(src), f"source dir {src}")
@@ -150,11 +150,19 @@ def preflight(page, slug, payload, skip_live=False):
     for pat, name in BANNED:
         hits = re.findall(pat, payload["body_html"] + payload["subtitle"] + payload["title"])
         check(not hits, f"no banned term: {name}")
-    check(payload["body_html"].count('href="https://app.entuned.co/start"') == 1,
-          "canonical CTA link present exactly once")
-    check(payload["body_html"].rstrip().endswith("</p>")
-          and "app.entuned.co/start" in payload["body_html"][-300:],
-          "CTA is the final paragraph")
+    if custom_cta:
+        # --custom-cta (Daniel-approved per post): no listen invite — the
+        # /start link must be ABSENT, and the body must still end cleanly.
+        check("app.entuned.co/start" not in payload["body_html"],
+              "custom CTA: no /start link anywhere (no listen invite)")
+        check(payload["body_html"].rstrip().endswith("</p>"),
+              "body ends with a closing paragraph")
+    else:
+        check(payload["body_html"].count('href="https://app.entuned.co/start"') == 1,
+              "canonical CTA link present exactly once")
+        check(payload["body_html"].rstrip().endswith("</p>")
+              and "app.entuned.co/start" in payload["body_html"][-300:],
+              "CTA is the final paragraph")
 
     m = re.search(r"^title:\s*[\"']?(.+?)[\"']?\s*$", y, re.M)
     if m:
@@ -178,6 +186,9 @@ def main():
                     help="skip live-URL checks (pre-push dry run; publish will still need them)")
     ap.add_argument("--preflight-only", action="store_true",
                     help="run all checks and stop — no payload record, no browser")
+    ap.add_argument("--custom-cta", action="store_true",
+                    help="post ends with a Daniel-approved custom close instead of the "
+                         "canonical Start Free CTA; /start link must be absent")
     args = ap.parse_args()
 
     page = args.page
@@ -189,10 +200,11 @@ def main():
         payload = json.load(f)
     if not payload.get("body_html") and payload.get("body"):
         payload["body_html"] = body_to_html(payload["body"])
-    if payload.get("body_html") and "app.entuned.co/start" not in payload["body_html"]:
+    if (not args.custom_cta and payload.get("body_html")
+            and "app.entuned.co/start" not in payload["body_html"]):
         payload["body_html"] = payload["body_html"].rstrip() + "\n" + CTA_HTML
 
-    preflight(page, slug, payload, skip_live=args.skip_live)
+    preflight(page, slug, payload, skip_live=args.skip_live, custom_cta=args.custom_cta)
     if args.preflight_only:
         print("PREFLIGHT OK (stopped before publish)")
         return
@@ -222,8 +234,11 @@ def main():
         return
 
     print("— postflight —")
-    r = subprocess.run([sys.executable, os.path.join(HERE, "verify_post.py"),
-                        "--slug", slug, "--expected-title", payload["title"]], cwd=HERE)
+    verify_cmd = [sys.executable, os.path.join(HERE, "verify_post.py"),
+                  "--slug", slug, "--expected-title", payload["title"]]
+    if args.custom_cta:
+        verify_cmd.append("--no-cta-check")
+    r = subprocess.run(verify_cmd, cwd=HERE)
     if r.returncode != 0:
         sys.exit(r.returncode)
 

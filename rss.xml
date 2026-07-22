@@ -7,6 +7,13 @@
   <language>en-us</language>
   <atom:link href="https://entuned.co/rss.xml" rel="self" type="application/rss+xml"/>
   <item>
+    <title>The Sandwich Shop Was Playing Music for a Funeral</title>
+    <link>https://entuned.co/blog/sandwich-shop-funeral-music.html</link>
+    <description>A field note from an empty Firehouse Subs dining room: why the slow-music dwell-time play fails at quick service, and what a room sounds like when nobody closes the loop.</description>
+    <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+    <guid>https://entuned.co/blog/sandwich-shop-funeral-music.html</guid>
+  </item>
+  <item>
     <title>What One Chord Does</title>
     <link>https://entuned.co/blog/what-one-chord-does.html</link>
     <description>A pop song fuses a hundred decisions into one object, so you never learn which one moved the room. Generative music lets you hold the song still and change one thing.</description>
@@ -138,13 +145,6 @@
     <description>When one fashion brand let staff pick the music, sales fell up to 11%. Your store's music is a brand signal — and letting it drift has a measured cost.</description>
     <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
     <guid>https://entuned.co/blog/what-music-should-a-clothing-store-play.html</guid>
-  </item>
-  <item>
-    <title>What Music Should a Flower Shop Play? There's Actually a Study</title>
-    <link>https://entuned.co/blog/what-music-should-a-flower-shop-play.html</link>
-    <description>A field experiment in an actual florist found romantic music lifted spending — and ordinary pop did nothing. The lever is fit, not just nice music.</description>
-    <pubDate>Fri, 05 Jun 2026 00:00:00 +0000</pubDate>
-    <guid>https://entuned.co/blog/what-music-should-a-flower-shop-play.html</guid>
   </item>
 </channel>
 </rss>

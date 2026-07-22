@@ -63,6 +63,7 @@ Four decades of peer-reviewed research on music and consumer behavior sit behind
 - [How to Drive Impulse Purchases in Beauty and Cosmetics Retail](https://entuned.co/how-to-increase-impulse-purchases-beauty.html): The self-reward loop in beauty retail and how lyrical content aligned to self-care themes reinforces the motivation that drives add-on purchases.
 
 ## Blog Posts
+- [The Sandwich Shop Was Playing Music for a Funeral](https://entuned.co/blog/sandwich-shop-funeral-music.html): Field note: the slow-music dwell-time play from grocery and apparel fails at quick service, where the customer buys before the music reaches them — and an empty dining room at dinner hour suggested nobody was checking.
 - [What One Chord Does](https://entuned.co/blog/what-one-chord-does.html): A founder essay on why musicology could never hold a single fixed song still and move one internal parameter, and why generative models finally make that experiment cheap and repeatable.
 - [Chill, Steady, Upbeat, All: What Each Free Mode Is For](https://entuned.co/blog/free-modes.html): Entuned Free gives your floor three mood modes, Chill, Steady, and Upbeat, plus an All setting that mixes them. What each is for, and what changes at Boost.
 - [What in the Music Actually Moves the Sale](https://entuned.co/blog/what-in-the-music-moves-the-sale.html): Founder essay ranking the components of music by their effect on buying behavior: tempo entrainment, mode over key, the untested lyric lever, the familiarity paradox, volume, and song structure, each held against the field research.

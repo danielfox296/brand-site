@@ -33,6 +33,8 @@ def main():
     ap.add_argument("--slug")
     ap.add_argument("--expected-title", required=True)
     ap.add_argument("--min-words", type=int, default=400)
+    ap.add_argument("--no-cta-check", action="store_true",
+                    help="post uses a Daniel-approved custom close; skip the /start link check")
     args = ap.parse_args()
 
     url = args.url
@@ -58,7 +60,7 @@ def main():
 
     if args.expected_title not in html:
         failures.append(f"title not found: {args.expected_title!r}")
-    if CTA_LINK not in html:
+    if not args.no_cta_check and CTA_LINK not in html:
         failures.append(f"CTA link missing: {CTA_LINK}")
     if "substackcdn.com/image" not in html:
         failures.append("no Substack CDN image (hero missing?)")

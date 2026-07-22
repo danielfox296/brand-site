@@ -1,0 +1,136 @@
+title: "The Sandwich Shop Was Playing Music for a Funeral"
+slug: "sandwich-shop-funeral-music"
+eyebrow: "FIELD NOTES"
+dek: "We got sandwiches at 4:30 on a weekday. The dining room was empty, the music was for a funeral, and nothing about the room suggested anyone was positioned to notice."
+date: "2026-07-22"
+last_updated: "2026-07-22"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/sandwich-shop-funeral-music.jpg"
+  alt: "Empty sub shop dining room with firefighter helmets and gear displayed on a brick wall"
+  caption: "Photo: Unsplash"
+meta_description: "A field note from an empty Firehouse Subs dining room: why the slow-music dwell-time play fails at quick service, and what a room sounds like when nobody closes the loop."
+llms_description: "Field note: the slow-music dwell-time play from grocery and apparel fails at quick service, where the customer buys before the music reaches them — and an empty dining room at dinner hour suggested nobody was checking."
+og_image: "/img/blog/sandwich-shop-funeral-music.jpg"
+tags: [field-notes, dwell-time, tempo, quick-service]
+sections:
+  - type: key_takeaways
+    items:
+      - "Slow music extends visits in grocery and apparel, where extra minutes mean more merchandise passed. At a quick-service restaurant the customer buys first and sits second, so the extra minute buys a maybe-cookie against a definitely-soda"
+      - "The dining room was empty at dinner hour, and nothing about the room suggested anyone had ever checked the music against it. There was a channel, but no loop"
+      - "The music muted itself for the TV ads, in perfect sync, which means the interruption is designed. The ad break is the system"
+
+  - type: prose
+    body: |
+      My daughter graduated high school this spring. She starts nursing school in the fall. The day before she flew to Buffalo to see Djo and stay with friends, we went and got sandwiches at the Firehouse Subs on Wadsworth in Littleton.
+
+      The food was good. That part isn't the story.
+
+      We sat down a little after 4:30. Plenty of tables, and we were the only party using one. Three or four people behind the counter, a steady trickle of customers coming in for to-go bags and leaving with them. Nobody else stayed.
+
+      The music was slow. Not calm slow. Slow the way music gets when somebody has decided in advance how you're supposed to feel and then never checked whether it worked.
+
+      So I started guessing what each song was actually for. Occupational hazard.
+
+      "Funeral."
+
+      Next track. "Spa day for the grief stricken."
+
+      She was mostly on her phone. Eighteen years old, flying out in the morning, thinking about the show. At some point I said out loud, to nobody, that this music sounded like it had never once been played in a room with people in it. She did not look up.
+
+      Then a commercial started on the TV screen by the drink station and the music stopped. Not ducked under. Stopped cold. Bright, fast, loud ad audio for thirty seconds, then back into the funeral spa. This happened every five minutes or so for as long as we were sitting there. Nobody working there reacted. It's just the condition of the room now.
+
+  - type: subhead
+    level: 2
+    text: "What they were going for"
+
+  - type: prose
+    body: |
+      Slow music in a retail space almost always means somebody wants customers to stay longer.
+
+      The idea comes out of grocery and apparel, where it holds up reasonably well. A shopper who spends more minutes in the store walks past more merchandise, and some share of that extra exposure turns into things in the cart that weren't on the list. Slow the tempo, slow the walking pace, extend the visit, sell more. Retailers have been running that play for decades and there's real research behind it.
+
+      I believe the play was deliberate here. There was a provider logo on the screen between ads. Somebody at some level of that organization signed a contract, and somebody built a channel, and somebody decided this was the sound of a sandwich shop in the late afternoon.
+
+  - type: subhead
+    level: 2
+    text: "Where the idea stops working"
+
+  - type: prose
+    body: |
+      At a quick service restaurant, the customer buys first and sits second.
+
+      By the time anyone hears the music, the transaction is finished. There's no merchandise to walk past. There's no cart to add to. The extra minute you've bought with a slow tempo doesn't put a shopper in front of anything they can purchase, because the only thing in front of them is a sandwich they already paid for.
+
+      So what does the marginal minute actually buy the operator? A cookie, maybe, on the way out. That's the honest best case.
+
+      In full-service dining the same minute buys another round from the bar, which is why the slow-tempo play has real results in sit-down restaurants. The famous restaurant research was measuring exactly that. Counter service has no bar and no another round.
+
+      What does it cost? A refill, which is free. A table, which at peak has real value and at 4:30 in an empty dining room has none. So the return on the extra minute is a maybe-cookie against a definitely-soda.
+
+      The one upside I can construct is social proof. Cars pulling into a strip mall see occupied tables through the glass and read the place as worth stopping at. That's real in a dense pedestrian corridor. On Wadsworth, where everyone is arriving at 40 miles an hour and looking for a parking spot, it rounds to nothing.
+
+  - type: subhead
+    level: 2
+    text: "The room was empty"
+
+  - type: prose
+    body: |
+      Here's the part I keep coming back to.
+
+      If anybody involved in that decision were measuring dwell time, they would have noticed there was nobody there to dwell. Empty tables at dinner hour is not a subtle signal. It doesn't require sensors or a data science contract. It requires walking into the store once at 4:30 on a weekday.
+
+      Music got selected somewhere, by somebody, and then never checked against what was happening in the one room I could see. Nobody closed the loop. There was a channel, and the channel played.
+
+      That's a different failure than picking the wrong songs. Wrong songs get fixed when somebody notices. This doesn't get fixed, because the arrangement that produced it has no step where noticing happens.
+
+  - type: subhead
+    level: 2
+    text: "The ad break is the system"
+
+  - type: prose
+    body: |
+      Here's the detail that unravels the mood programming completely. The mute was synchronized. The song stopped the instant the commercial started and came back the instant it ended. Two systems that have never met don't do that. Somebody built it to do that. The interruption isn't a glitch in the channel. It is the channel.
+
+      So the customer experience is a slow sad song, hard cut, an aggressive commercial at full brightness, hard cut, back to the slow sad song. Six or seven times over the length of a meal. And the same screen carrying those ads carried the provider's logo in between. Whatever the music was supposed to be doing to the room, the thing actually being optimized was the ad break.
+
+      Nobody working there reacted, and I doubt any of it is their call. The sound of that room belongs to a vendor relationship somewhere above the store, and nothing I heard suggested anyone in that relationship had ever sat at one of these tables and listened.
+
+  - type: subhead
+    level: 2
+    text: "What I would have played"
+
+  - type: prose
+    body: |
+      First I'd question dwell time extension at a quick service restaurant at all. If the goal is another visit rather than another minute, the music has a completely different job.
+
+      Firehouse sells you a good sandwich and thirty pleasant minutes. That's the product. So the music should sound like the thing people came in for, which is a small ordinary pleasure in the middle of a Tuesday. Celebration. Indulgence. A little bit of appetite.
+
+      And it should sound like it's for these customers. South suburban Denver, late afternoon, people coming off shift, families in June with kids who just graduated. Not a generic national channel that assumes a customer with no location, no hour, and no reason for being there.
+
+      That's not a bigger budget. It's a different question at the front of the process.
+
+  - type: subhead
+    level: 2
+    text: "The number nobody logged"
+
+  - type: prose
+    body: |
+      I like the food. My daughter liked the food. We finished our sandwiches faster than we would have, because the room was working against us the entire time, and we left.
+
+      Next time dine-in is the option, we'll go somewhere else. I'll still order Firehouse. I'll take it to the car.
+
+  - type: cta
+    variant: bridge
+    headline: "Who closed the loop on your sound?"
+    body: "If you run a store rather than a sandwich line, the question is the same. Something is playing on your floor right now, somebody chose it, and the only measure that matters is whether anyone ever checked it against what your customers actually do. The writeups below are where I'd start."
+    link: "https://entuned.co/blog/closing-the-loop.html"
+    link_text: "Read: Closing the Loop"
+
+  - type: related
+    posts:
+      - slug: "does-slow-music-increase-sales"
+      - slug: "bye-bye-bye-dwell-time"
+      - slug: "every-song-working-or-not"
