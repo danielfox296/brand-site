@@ -391,6 +391,7 @@ def render_post(post_dir: str, env: jinja2.Environment,
 
     # Separate hoisted blocks from body sections
     key_takeaways_html = ''
+    video_html = ''
     cta_html = ''
     related_html = ''
     body_blocks = []
@@ -399,6 +400,11 @@ def render_post(post_dir: str, env: jinja2.Environment,
         btype = block.get('type')
         if btype == 'key_takeaways':
             key_takeaways_html = render_block(block, ctx, env)
+        elif btype == 'video':
+            # Hoisted above the fold, ahead of the hero image and key
+            # takeaways — the player has to be the page's main content or
+            # Google won't treat it as a video watch page.
+            video_html = render_block(block, ctx, env)
         elif btype == 'cta':
             cta_html = render_block(block, ctx, env)
         elif btype == 'related':
@@ -434,6 +440,7 @@ def render_post(post_dir: str, env: jinja2.Environment,
         # Pre-rendered HTML blocks
         sections_html=sections_html,
         key_takeaways_html=key_takeaways_html,
+        video_html=video_html,
         cta_html=cta_html,
         related_html=related_html,
     )

@@ -1,13 +1,19 @@
 {# Video embed block — responsive 16:9 privacy-enhanced YouTube embed.
-   Reads the video id from post frontmatter (ctx.post.video.id). #}
+   Reads the video id from post frontmatter (ctx.post.video.id).
+
+   NO `fade-up` and NO `loading="lazy"` here — both are load-bearing for video
+   indexing. `fade-up` paints the player at opacity:0 until an IntersectionObserver
+   fires on scroll, and `loading="lazy"` means the iframe is never fetched at all
+   for a crawler that renders without scrolling. Together they made Google class
+   all 33 video posts as "Video isn't on a watch page" (GSC, first detected
+   2026-06-11). The player must be opaque and loaded at first paint. #}
 {% set v = ctx.post.video %}
 {% if v and v.id %}
-<div class="blog-video fade-up">
+<div class="blog-video">
   <div class="blog-video__frame">
     <iframe
       src="https://www.youtube-nocookie.com/embed/{{ v.id }}?rel=0"
       title="{{ v.title or ctx.post.title }}"
-      loading="lazy"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerpolicy="strict-origin-when-cross-origin"

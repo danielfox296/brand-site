@@ -34,8 +34,19 @@
     </div>
   </header>
 
+  {# Video (watch posts only) — the player IS the hero.
+     It sits directly under the byline, above the hero image and the key
+     takeaways, because Google only indexes a video when the page reads as a
+     watch page: video first, prominent, loaded at first paint. On these posts
+     hero.src is the same 1280x720 YouTube thumbnail the player shows anyway,
+     so the static hero image is suppressed rather than duplicated. #}
+  {% if video_html %}
+  {{ video_html|safe }}
+  {% endif %}
+
+  {# Suppressed on video posts — see above #}
+  {% if hero and not video_html %}
   <!-- Hero image -->
-  {% if hero %}
   <figure class="blog-hero fade-up">
     <img src="{{ hero.src }}" alt="{{ hero.alt }}" class="blog-hero__img" loading="lazy">
     {% if hero.caption %}
