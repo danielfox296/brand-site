@@ -46,6 +46,16 @@ The `for-<vertical>.html` family (apparel, beauty-supply, cosmetics, furniture-m
 
 Each vertical's `related.others` line cross-links to **all** other verticals (alphabetical, labels matching the footer). Keep that complete and consistent when adding a new vertical — add it to every sibling's `others` line and to the footer.
 
+### Video posts must stay watch pages
+
+Posts with a `video:` block in `content.yaml` are **watch pages** — pages whose main content is the player. Google only indexes a video when the page reads that way, so the player's render state is load-bearing SEO, not styling.
+
+**Never add `fade-up` or `loading="lazy"` to the video block** (`_src/templates/blocks/video.html`). `fade-up` paints at `opacity: 0` until an IntersectionObserver fires on scroll; `loading="lazy"` means a crawler that renders without scrolling never fetches the iframe at all. The player must be **opaque and loaded at first paint**.
+
+**Keep the player first.** `blog_post.html` renders it directly under the byline, above the hero image and key takeaways, and suppresses the hero `<img>` on video posts — `hero.src` there is the same 1280×720 YouTube thumbnail the player already shows. Don't reintroduce the hero image or push the player below the fold.
+
+History: all 32 video posts sat at **0 indexed** under GSC's single reason *"Video isn't on a watch page"* (detected 2026-06-11, fixed and validation started 2026-07-25). Measured cause was exactly the three above — `opacity: 0`, lazy iframe at 879px, hero image on top. If the Videos report regresses, check these first.
+
 ### ICP discipline before new pages
 
 - **ICP v2 (2026-06-09): the sales target is multi-location specialty retail, 5–50 doors; single-store stays self-serve.** Read `../marketing/ICP/SSOT.md` before writing any new vertical/landing page or outreach copy. Excluded verticals (grocery/convenience/pharmacy, luxury flagship, restaurants/hospitality) and cultural-identity verticals don't ship.
