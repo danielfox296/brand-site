@@ -54,7 +54,19 @@ Posts with a `video:` block in `content.yaml` are **watch pages** — pages whos
 
 **Keep the player first.** `blog_post.html` renders it directly under the byline, above the hero image and key takeaways, and suppresses the hero `<img>` on video posts — `hero.src` there is the same 1280×720 YouTube thumbnail the player already shows. Don't reintroduce the hero image or push the player below the fold.
 
-History: all 32 video posts sat at **0 indexed** under GSC's single reason *"Video isn't on a watch page"* (detected 2026-06-11, fixed and validation started 2026-07-25). Measured cause was exactly the three above — `opacity: 0`, lazy iframe at 879px, hero image on top. If the Videos report regresses, check these first.
+**The markup must agree that the video owns the page.** Rendering it prominently is only half — Google reads the structured data to decide what the page *is*. On video posts `build.py` therefore:
+
+- gives the **VideoObject** the `mainEntityOfPage` (plus `@id` and `url`) and **takes it away from the Article**. Two competing claims and Google picks Article.
+- emits **no `contentUrl`**. It must point at a real media file; we don't host one. Pointing it at `youtube.com/watch` produced GSC's *"Multiple video URLs discovered as belonging to this video"* and resolved the video's home to YouTube. `embedUrl` alone is correct for an embed.
+- points every **Clip `url`** at this page with `?t=<seconds>`, never at YouTube — Google's Clip spec requires the URL to be the page holding the video. The chapter links and the `?t=` deep-link handler in `blocks/transcript.html` exist to make those URLs real; don't turn the chapter links back into outbound YouTube links.
+- **suppresses the auto-extracted FAQPage.** Most of these posts have question-shaped H2s, and an FAQPage is a third competing claim about what the page primarily is.
+
+History: all 33 video posts sat at **0 indexed** under GSC's single reason *"Video isn't on a watch page"* (detected 2026-06-11). Two rounds:
+
+1. **2026-07-25** — render fix (`opacity: 0`, lazy iframe at 879px, hero image on top). Confirmed working: the Jul 26 recrawl reported *"One video detected on page"*. But validation **failed** 7/27, now with the sharper diagnostic *"Is on a watch page? No — the video is supplementary content on the page."*
+2. **2026-07-27** — the structured-data changes above; validation restarted.
+
+If the Videos report regresses, check the render facts first, then run URL inspection → Video indexing on one page: the *"Is on a watch page?"* line and the *"Multiple video URLs"* list are the two diagnostics that actually name the cause.
 
 ### ICP discipline before new pages
 
