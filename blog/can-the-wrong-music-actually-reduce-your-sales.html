@@ -389,43 +389,47 @@
 </div>
 
 <script>
-  // Chapter links seek the embedded player (YouTube IFrame API via postMessage).
-  // Falls back to a plain ?t= navigation if the player isn't there.
+  // Chapter links seek the embedded player. The ?t= URLs these links carry are
+  // the exact URLs the VideoObject's Clip markup advertises to Google, so they
+  // have to genuinely land on the right moment — every layer here degrades to a
+  // plain ?t= navigation rather than to a dead link.
   (function () {
-    var player = document.getElementById('blog-video-player');
-    if (!player) return;
-    var ORIGIN = 'https://www.youtube-nocookie.com';
+    var frame = document.getElementById('blog-video-player');
+    if (!frame) return;
 
-    function seek(seconds) {
-      player.contentWindow.postMessage(JSON.stringify({
-        event: 'command', func: 'seekTo', args: [seconds, true]
-      }), ORIGIN);
-      player.contentWindow.postMessage(JSON.stringify({
-        event: 'command', func: 'playVideo', args: []
-      }), ORIGIN);
+    // Deep link (?t=90): bake it into the embed as YouTube's own `start` param
+    // before the frame loads. Doesn't need the API and doesn't need autoplay —
+    // the viewer presses play and it begins there. postMessage can't do this:
+    // seeking an unstarted player is a no-op, and programmatic play with no
+    // user gesture is blocked.
+    var t0 = parseInt(new URLSearchParams(location.search).get('t'), 10);
+    if (t0 > 0 && frame.src.indexOf('start=') === -1) {
+      frame.src = frame.src + '&start=' + t0;
     }
+
+    // In-page seeking uses the real IFrame Player API. A chapter click is a user
+    // gesture, so playVideo() is allowed and the seek is visible immediately.
+    var player = null;
+    window.onYouTubeIframeAPIReady = function () {
+      player = new YT.Player('blog-video-player');
+    };
+    var api = document.createElement('script');
+    api.src = 'https://www.youtube.com/iframe_api';
+    document.head.appendChild(api);
 
     document.querySelectorAll('.blog-chapter-link').forEach(function (a) {
       a.addEventListener('click', function (e) {
+        // No player yet (API blocked or still loading)? Don't preventDefault —
+        // let the href navigate to ?t=N, which reloads with start=N baked in.
+        if (!player || typeof player.seekTo !== 'function') return;
         e.preventDefault();
         var t = parseInt(a.dataset.t, 10) || 0;
-        seek(t);
-        player.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        player.seekTo(t, true);
+        player.playVideo();
+        frame.scrollIntoView({ behavior: 'smooth', block: 'center' });
         history.replaceState(null, '', '?t=' + t);
       });
     });
-
-    // Deep link: /blog/<slug>.html?t=90 starts at that chapter. These are the
-    // exact URLs the Clip structured data advertises, so they have to work.
-    var t0 = parseInt(new URLSearchParams(location.search).get('t'), 10);
-    if (t0 > 0) {
-      // Not the iframe's own 'load' — if the frame already finished before this
-      // inline script ran, that event never fires and the deep link silently
-      // does nothing. Window load always resolves.
-      var start = function () { setTimeout(function () { seek(t0); }, 600); };
-      if (document.readyState === 'complete') start();
-      else window.addEventListener('load', start);
-    }
   })();
 </script>
 
