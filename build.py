@@ -561,6 +561,12 @@ def build():
             f'<meta name="twitter:image" content="{og_image}">',
         ])
 
+        # Watch-page posts (frontmatter `video:` block) get different schema
+        # treatment throughout — see the VideoObject block below.
+        _post_has_video = bool(
+            is_blog and use_new_renderer and post_data.get('video')
+        )
+
         # Build JSON-LD schema
         if is_blog:
             if use_new_renderer:
@@ -598,6 +604,13 @@ def build():
                     {"@type": "Thing", "name": "engineered retail audio"}
                 ]
             }
+            # On watch pages the VideoObject — not the Article — is the page's
+            # main entity. Two competing mainEntityOfPage claims is exactly what
+            # made GSC report "the video is supplementary content on the page"
+            # (URL inspection, 2026-07-26 crawl). The Article block stays for
+            # author/date/publisher context; it just stops claiming the page.
+            if _post_has_video:
+                schema.pop("mainEntityOfPage", None)
         else:
             # The ONE Organization block sitewide (entity consolidation, audit S3/D6).
             # Facts ratified by Daniel 2026-07-19: foundingDate 2026; description =
@@ -643,21 +656,32 @@ def build():
         # VideoObject schema — emitted for new-format blog posts that embed a
         # YouTube video (frontmatter `video:` block). Chapters become Clip
         # parts so Google and AI engines can deep-link key moments.
-        if is_blog and use_new_renderer and post_data.get('video'):
+        if _post_has_video:
             _v = post_data['video']
             _vid = _v.get('id', '')
-            _watch = f'https://www.youtube.com/watch?v={_vid}'
+            # NO contentUrl. It must point at an actual media file, and we don't
+            # host one — pointing it at youtube.com/watch made GSC report
+            # "Multiple video URLs discovered as belonging to this video" and
+            # resolved the video's home to YouTube instead of this page.
+            # embedUrl alone is the correct markup for an embedded player.
             video_schema = {
                 "@context": "https://schema.org",
                 "@type": "VideoObject",
+                "@id": f"{canonical_url}#video",
                 "name": _v.get('title', og_title),
                 "description": description,
                 "thumbnailUrl": [og_image],
                 "uploadDate": _v.get('upload_date', date_published),
-                "contentUrl": _watch,
                 "embedUrl": f'https://www.youtube.com/embed/{_vid}',
+                # This page is the watch page, and the video is what it's about.
+                "url": canonical_url,
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": canonical_url
+                },
                 "publisher": {
                     "@type": "Organization",
+                    "@id": f"{SITE_URL}/#organization",
                     "name": "Entuned",
                     "url": SITE_URL
                 }
@@ -666,15 +690,34 @@ def build():
                 video_schema["duration"] = _v["duration"]
             _chapters = _v.get('chapters') or []
             if _chapters:
-                video_schema["hasPart"] = [
-                    {
+                # Clip URLs must point at the page holding the VideoObject, with
+                # a timestamp param — NOT off to YouTube. `?t=` is handled by the
+                # chapter-seek script in the transcript block.
+                # endOffset is a recommended Clip property: each clip runs until
+                # the next chapter starts, the last one until the video ends.
+                _dur_m = re.match(
+                    r'^PT(?:(\d+)M)?(?:(\d+)S)?$', _v.get('duration', '') or ''
+                )
+                _dur_s = (
+                    int(_dur_m.group(1) or 0) * 60 + int(_dur_m.group(2) or 0)
+                    if _dur_m else 0
+                )
+                video_schema["hasPart"] = []
+                for _i, c in enumerate(_chapters):
+                    _start = c.get('time', 0)
+                    _end = (
+                        _chapters[_i + 1].get('time', 0)
+                        if _i + 1 < len(_chapters) else _dur_s
+                    )
+                    _clip = {
                         "@type": "Clip",
                         "name": c.get('label', ''),
-                        "startOffset": c.get('time', 0),
-                        "url": f"{_watch}&t={c.get('time', 0)}s",
+                        "startOffset": _start,
+                        "url": f"{canonical_url}?t={_start}",
                     }
-                    for c in _chapters
-                ]
+                    if _end > _start:
+                        _clip["endOffset"] = _end
+                    video_schema["hasPart"].append(_clip)
             schema_json += f'\n  <script type="application/ld+json">\n{json.dumps(video_schema, indent=2)}\n  </script>'
 
         # WebSite schema — added to homepage only
@@ -695,8 +738,11 @@ def build():
 
         # FAQPage schema — manual `faq` in config.json wins; otherwise
         # auto-extract Q-A pairs from question H2s in YAML-format blog posts.
+        # Never auto-extracted on watch pages: most of these posts have
+        # question-shaped H2s, and an FAQPage is one more competing claim about
+        # what the page primarily is. The video owns the page or nothing does.
         faq_items = config.get('faq', [])
-        if not faq_items and is_blog and use_new_renderer:
+        if not faq_items and is_blog and use_new_renderer and not _post_has_video:
             faq_items = auto_extract_faqs(post_data)
         if faq_items:
             faq_schema = {

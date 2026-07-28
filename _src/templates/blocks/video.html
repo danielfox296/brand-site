@@ -12,7 +12,8 @@
 <div class="blog-video">
   <div class="blog-video__frame">
     <iframe
-      src="https://www.youtube-nocookie.com/embed/{{ v.id }}?rel=0"
+      id="blog-video-player"
+      src="https://www.youtube-nocookie.com/embed/{{ v.id }}?rel=0&amp;enablejsapi=1"
       title="{{ v.title or ctx.post.title }}"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

@@ -2,8 +2,12 @@
    block.chapters: list of {label, time (seconds), body? (markdown)}.
    Renders a jump-linked chapter outline always, and a full chaptered
    transcript when chapter bodies are present (degrades to outline-only). #}
+{# Chapter links point at THIS page with a ?t= param and seek the embedded
+   player, rather than sending the visitor off to YouTube. Two reasons: the
+   VideoObject's Clip URLs must point at the page holding the video (Google's
+   Clip spec), and every chapter link that left for youtube.com was one more
+   signal that the real watch page was over there. #}
 {% set v = ctx.post.video %}
-{% set watch = 'https://www.youtube.com/watch?v=' ~ (v.id if v else '') %}
 {% set has_body = block.chapters | selectattr('body') | list | length > 0 %}
 <div class="blog-transcript fade-up">
   <h2 class="blog-transcript__heading" id="chapters">Chapters</h2>
@@ -11,7 +15,7 @@
     {% for c in block.chapters %}
     <li>
       {% if v and v.id %}
-      <a href="{{ watch }}&amp;t={{ c.time }}s" target="_blank" rel="noopener">
+      <a href="?t={{ c.time }}" class="blog-chapter-link" data-t="{{ c.time }}">
         <span class="blog-transcript__time">{{ '%d:%02d' | format(c.time // 60, c.time % 60) }}</span>
         {{ c.label }}
       </a>
@@ -36,3 +40,41 @@
   {% endfor %}
   {% endif %}
 </div>
+
+{% if v and v.id %}
+<script>
+  // Chapter links seek the embedded player (YouTube IFrame API via postMessage).
+  // Falls back to a plain ?t= navigation if the player isn't there.
+  (function () {
+    var player = document.getElementById('blog-video-player');
+    if (!player) return;
+    var ORIGIN = 'https://www.youtube-nocookie.com';
+
+    function seek(seconds) {
+      player.contentWindow.postMessage(JSON.stringify({
+        event: 'command', func: 'seekTo', args: [seconds, true]
+      }), ORIGIN);
+      player.contentWindow.postMessage(JSON.stringify({
+        event: 'command', func: 'playVideo', args: []
+      }), ORIGIN);
+    }
+
+    document.querySelectorAll('.blog-chapter-link').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        var t = parseInt(a.dataset.t, 10) || 0;
+        seek(t);
+        player.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        history.replaceState(null, '', '?t=' + t);
+      });
+    });
+
+    // Deep link: /blog/<slug>.html?t=90 starts at that chapter. These are the
+    // exact URLs the Clip structured data advertises, so they have to work.
+    var t0 = parseInt(new URLSearchParams(location.search).get('t'), 10);
+    if (t0 > 0) {
+      player.addEventListener('load', function () { setTimeout(function () { seek(t0); }, 400); });
+    }
+  })();
+</script>
+{% endif %}
