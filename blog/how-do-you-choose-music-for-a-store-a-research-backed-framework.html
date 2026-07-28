@@ -397,9 +397,20 @@
 
     // In-page seeking uses the real IFrame Player API. A chapter click is a user
     // gesture, so playVideo() is allowed and the seek is visible immediately.
+    // The API rewrites the iframe src when it attaches, dropping the `start`
+    // above — so re-cue through the API too. cueVideoById holds on the thumbnail
+    // at startSeconds instead of trying (and failing) to autoplay.
     var player = null;
     window.onYouTubeIframeAPIReady = function () {
-      player = new YT.Player('blog-video-player');
+      player = new YT.Player('blog-video-player', {
+        events: {
+          onReady: function () {
+            if (t0 > 0) {
+              player.cueVideoById({ videoId: 'EuXSuBwe76Q', startSeconds: t0 });
+            }
+          }
+        }
+      });
     };
     var api = document.createElement('script');
     api.src = 'https://www.youtube.com/iframe_api';
