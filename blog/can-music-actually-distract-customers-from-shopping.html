@@ -420,7 +420,12 @@
     // exact URLs the Clip structured data advertises, so they have to work.
     var t0 = parseInt(new URLSearchParams(location.search).get('t'), 10);
     if (t0 > 0) {
-      player.addEventListener('load', function () { setTimeout(function () { seek(t0); }, 400); });
+      // Not the iframe's own 'load' — if the frame already finished before this
+      // inline script ran, that event never fires and the deep link silently
+      // does nothing. Window load always resolves.
+      var start = function () { setTimeout(function () { seek(t0); }, 600); };
+      if (document.readyState === 'complete') start();
+      else window.addEventListener('load', start);
     }
   })();
 </script>
