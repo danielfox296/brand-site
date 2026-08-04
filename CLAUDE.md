@@ -58,15 +58,17 @@ Posts with a `video:` block in `content.yaml` are **watch pages** — pages whos
 
 - gives the **VideoObject** the `mainEntityOfPage` (plus `@id` and `url`) and **takes it away from the Article**. Two competing claims and Google picks Article.
 - emits **no `contentUrl`**. It must point at a real media file; we don't host one. Pointing it at `youtube.com/watch` produced GSC's *"Multiple video URLs discovered as belonging to this video"* and resolved the video's home to YouTube. `embedUrl` alone is correct for an embed.
+- makes **`embedUrl` byte-match the iframe src** in `blocks/video.html` — host and params (`youtube-nocookie.com/embed/<id>?rel=0&enablejsapi=1`). A bare `youtube.com/embed` next to the nocookie iframe re-triggered the same *"Multiple video URLs"* flag (Aug 2 crawl). Change the two together, always.
 - points every **Clip `url`** at this page with `?t=<seconds>`, never at YouTube — Google's Clip spec requires the URL to be the page holding the video. The chapter links and the `?t=` deep-link handler in `blocks/transcript.html` exist to make those URLs real; don't turn the chapter links back into outbound YouTube links.
 - **suppresses the auto-extracted FAQPage.** Most of these posts have question-shaped H2s, and an FAQPage is a third competing claim about what the page primarily is.
 
 History: all 33 video posts sat at **0 indexed** under GSC's single reason *"Video isn't on a watch page"* (detected 2026-06-11). Two rounds:
 
 1. **2026-07-25** — render fix (`opacity: 0`, lazy iframe at 879px, hero image on top). Confirmed working: the Jul 26 recrawl reported *"One video detected on page"*. But validation **failed** 7/27, now with the sharper diagnostic *"Is on a watch page? No — the video is supplementary content on the page."*
-2. **2026-07-27** — the structured-data changes above; validation restarted.
+2. **2026-07-27** — the structured-data changes above; validation restarted. **Failed 8/3** on the one page recrawled (Aug 2): GSC re-flagged *"Multiple video URLs"* — JSON-LD `embedUrl` said `youtube.com/embed` while the iframe was `youtube-nocookie.com/embed/…?rel=0&enablejsapi=1`; watch-page verdict still *"supplementary content."*
+3. **2026-08-03** — `embedUrl` now byte-matches the iframe src; validation restarted.
 
-If the Videos report regresses, check the render facts first, then run URL inspection → Video indexing on one page: the *"Is on a watch page?"* line and the *"Multiple video URLs"* list are the two diagnostics that actually name the cause.
+If the Videos report regresses, check the render facts first, then run URL inspection → Video indexing on one page: the *"Is on a watch page?"* line and the *"Multiple video URLs"* list are the two diagnostics that actually name the cause. Note GSC ignores our declared `thumbnailUrl` and uses YouTube's (`i.ytimg.com`) — "provided by video hosting platform" is normal, not a defect.
 
 ### ICP discipline before new pages
 

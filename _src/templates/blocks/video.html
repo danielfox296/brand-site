@@ -6,7 +6,11 @@
    fires on scroll, and `loading="lazy"` means the iframe is never fetched at all
    for a crawler that renders without scrolling. Together they made Google class
    all 33 video posts as "Video isn't on a watch page" (GSC, first detected
-   2026-06-11). The player must be opaque and loaded at first paint. #}
+   2026-06-11). The player must be opaque and loaded at first paint.
+
+   The src URL below must BYTE-MATCH the VideoObject embedUrl emitted by
+   build.py — same host, same params. Any drift re-triggers GSC's "Multiple
+   video URLs discovered as belonging to this video". Change them together. #}
 {% set v = ctx.post.video %}
 {% if v and v.id %}
 <div class="blog-video">

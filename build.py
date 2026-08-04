@@ -663,7 +663,10 @@ def build():
             # host one — pointing it at youtube.com/watch made GSC report
             # "Multiple video URLs discovered as belonging to this video" and
             # resolved the video's home to YouTube instead of this page.
-            # embedUrl alone is the correct markup for an embedded player.
+            # embedUrl alone is the correct markup for an embedded player, and
+            # it must BYTE-MATCH the iframe src in blocks/video.html (host and
+            # params included) — a bare youtube.com/embed here next to the
+            # youtube-nocookie.com iframe re-triggered the same GSC flag.
             video_schema = {
                 "@context": "https://schema.org",
                 "@type": "VideoObject",
@@ -672,7 +675,7 @@ def build():
                 "description": description,
                 "thumbnailUrl": [og_image],
                 "uploadDate": _v.get('upload_date', date_published),
-                "embedUrl": f'https://www.youtube.com/embed/{_vid}',
+                "embedUrl": f'https://www.youtube-nocookie.com/embed/{_vid}?rel=0&enablejsapi=1',
                 # This page is the watch page, and the video is what it's about.
                 "url": canonical_url,
                 "mainEntityOfPage": {
