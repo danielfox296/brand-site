@@ -1,0 +1,115 @@
+title: "Why Hit Songs Make Bad Store Music"
+slug: "why-hit-songs-make-bad-store-music"
+eyebrow: "FIELD NOTES"
+dek: "A hit is engineered to win a fight for attention. Your store soundtrack runs all day for people who never chose it."
+date: "2026-08-06"
+last_updated: "2026-08-06"
+author:
+  name: "Daniel Fox"
+  role: "Founder & CEO"
+hero:
+  src: "../img/blog/why-hit-songs-make-bad-store-music.jpg"
+  alt: "Record display hanging in a shop alongside musical instruments"
+  caption: "Photo: Unsplash"
+meta_description: "Hit songs are built to win attention. Store music runs all day for people who did not choose it. Why Entuned composes original instead. Start free."
+llms_description: "Why charting music underperforms as in-store audio: a hit is engineered to win a fight for attention, while a store soundtrack has to hold a room without being noticed. Covers the Yalch and Spangenberg 2000 familiarity finding and the case for stylistic familiarity."
+og_image: "/img/blog/why-hit-songs-make-bad-store-music.jpg"
+tags: [field-notes, music-strategy, store-atmosphere, customer-psychology]
+sections:
+  - type: key_takeaways
+    items:
+      - "A hit song is engineered to win a fight for attention and hold it. A store soundtrack runs all day for a room full of people who never chose it. The two jobs pull in opposite directions."
+      - "Recognition is the variable that costs a store, not the presence of a hook or a voice. A shopper who places the track stops looking at the merchandise, and chart position measures how many people in the room will."
+      - "Yalch and Spangenberg (2000) found shoppers left sooner under familiar music while believing they had stayed longer. Stylistic familiarity, a known style in an unheard song, gets the comfort without the clock."
+      - "Original music shaped to sound like the charts fails twice. A listener measures it against the real artist, and fans of a genre hear the imitation before the chorus lands."
+
+  - type: prose
+    body: |
+      Put a week of the Hot 100 next to what Entuned composes for a store floor and the overlap is zero. Not one charting song. Nothing a customer might hum on the way out.
+
+      That looks like an oversight. It is the whole design.
+
+      The reasoning starts with what a hit song is built to do.
+
+  - type: subhead
+    level: 2
+    text: "What is a hit song built to do?"
+
+  - type: prose
+    body: |
+      A hit has one job. Win a fight for your attention and hold it. Every choice serves that job. The hook that arrives early. The voice you can name in one bar. The lyric specific enough to feel like it was written about you. Songwriters build against the skip button, and the only reliable weapon is being impossible to ignore.
+
+      That fight happens on headphones, in cars, in kitchens, anywhere a listener has a thumb on the controls. Pop music is astonishingly good at winning it.
+
+  - type: subhead
+    level: 2
+    text: "What does a store actually buy?"
+
+  - type: prose
+    body: |
+      A store buys a full trading day of sound for a room full of people who never chose it. A home goods floor on a Tuesday afternoon holds a retiree hunting a replacement lamp, a couple arguing about a rug, and somebody killing twenty minutes before a lunch reservation. They never agreed to share taste. The staff behind the counter will hear every track again tomorrow, and the day after that.
+
+      In that room, the person most likely to object casts the deciding vote. One explicit verse decides it. So does a song one shopper loves at a volume the next shopper cannot stand. A store soundtrack survives by giving nobody a reason to complain, all day, for months.
+
+      Then there is the cost operators rarely price. A song does its work on a floor as long as the shopper never turns to look at it, and recognition is what breaks that. The moment a customer places the track, names the artist, or starts waiting for a chorus they already know is coming, attention moves off the shelf and onto the speakers. Chart position is a direct measure of how many people in the room will do exactly that.
+
+  - type: pullquote
+    text: "Chart position is a direct measure of how many people in the room will stop looking at your merchandise."
+    accent: teal
+
+  - type: subhead
+    level: 2
+    text: "What does the research say about familiar music?"
+
+  - type: prose
+    body: |
+      Yalch and Spangenberg put this on the record in the Journal of Business Research in 2000. Shoppers browsed a national apparel store under either familiar or unfamiliar music. Under familiar music they believed they had been there longer, and they left sooner. Under unfamiliar music they stayed longer and thought they had not.
+
+      You recognize the third song since you walked in, and now you know roughly how long you have been standing in an aisle. Familiar music hands the shopper a clock.
+
+      That does not make strangeness the goal. Music a customer finds genuinely alien withholds the ease every other element of the room was built to produce, which is <a href="../blog/the-familiarity-trap.html">the trap on the other side of this</a>. Neither end works on its own.
+
+      The obvious objection: plenty of good stores play current hits and do fine. That is true, and fine is roughly the ceiling. A floor running the same chart as the food court and the gym down the street sounds like every other room that customer walked through today.
+
+  - type: subhead
+    level: 2
+    text: "Which music actually wins in a store?"
+
+  - type: prose
+    body: |
+      A song the shopper has never heard, in a style they have known for years. The groove conventions, the production texture, the tonal palette all land as familiar, so nothing about it asks to be decoded. The song itself has no history with them. There is nothing to place, no artist to name, no chorus to wait for.
+
+      That is stylistic familiarity, and it is the version of familiarity that pays. The comfort arrives without the clock.
+
+  - type: subhead
+    level: 2
+    text: "Why do soundalikes fail twice?"
+
+  - type: prose
+    body: |
+      There is still a tempting middle path. Original music shaped to sound like the charts. Something close enough to a current artist to feel familiar.
+
+      It fails twice. Put a track near a living artist and a listener measures it against the real thing, which wins immediately. And listeners police the genres they love. Get modern country slightly wrong and a rancher hears it before the chorus lands. Nobody polices a pedal steel drifting under the fluorescents.
+
+  - type: subhead
+    level: 2
+    text: "Current-sounding, never current-charting"
+
+  - type: prose
+    body: |
+      That is the rule Entuned composes to, and it is stylistic familiarity written as a production brief. Contemporary low end, close-mic warmth, no reverb that stamps a track with a decade. Music built for the room it plays in, tuned to the customer standing in it, written to hold a floor rather than win a chart.
+
+      None of it will chart. It was never entered in that contest.
+
+  - type: cta
+    variant: start-free
+    headline: "Hear it on your floor."
+    body: "Entuned engineers original music for your store at the parameter level &mdash; tempo, key, lyrical density, energy arc &mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays."
+    link: "https://app.entuned.co/start"
+    link_text: "Start Free"
+
+  - type: related
+    posts:
+      - slug: "the-familiarity-trap"
+      - slug: "is-popular-music-always-the-best-choice-for-retail-the-data-says-no"
+      - slug: "music-was-never-made-for-your-store"

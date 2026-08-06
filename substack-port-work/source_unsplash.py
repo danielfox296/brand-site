@@ -15,25 +15,66 @@ Downloads at 1600px, center-crops to 1600x900 landscape, compresses to
 <500KB JPEG, and writes website/img/blog/<slug>.jpg. Refuses to overwrite an
 existing image (intentional: don't clobber a published post's hero).
 """
-import argparse, os, subprocess, sys, tempfile, urllib.request
+import argparse, os, re, subprocess, sys, tempfile, urllib.request
+from html import unescape as html_unescape
 
 WEBSITE = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 OUT_DIR = os.path.join(WEBSITE, "img", "blog")
-UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
+UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+      "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36")
+HEADERS = {
+    "User-Agent": UA,
+    "Accept": "text/html,application/xhtml+xml,image/avif,image/webp,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+}
+
+
+def _curl(url: str, dest: str | None = None) -> bytes:
+    """urllib gets 401'd by Unsplash's bot detection even with browser headers
+    (TLS fingerprinting); curl passes. Raises CalledProcessError on failure."""
+    cmd = ["curl", "-sSL", "--fail", "--max-time", "60"]
+    for k, v in HEADERS.items():
+        cmd += ["-H", f"{k}: {v}"]
+    if dest:
+        cmd += ["-o", dest]
+    cmd.append(url)
+    return subprocess.run(cmd, check=True, capture_output=True).stdout
+
+
+def _fetch(url: str, dest: str) -> int:
+    _curl(url, dest)
+    return os.path.getsize(dest)
+
+
+def _cdn_url(photo_id: str) -> str:
+    """Resolve a photo id to its images.unsplash.com base via the photo page's
+    og:image tag, then request a clean 1600px JPEG (no opengraph watermark)."""
+    page = f"https://unsplash.com/photos/{photo_id}"
+    html = _curl(page).decode("utf-8", "replace")
+    m = re.search(r'<meta[^>]+property="og:image"[^>]+content="([^"]+)"', html)
+    if not m:
+        raise ValueError(f"no og:image on {page}")
+    base = html_unescape(m.group(1)).split("?")[0]
+    return f"{base}?w=1600&q=80&fm=jpg&fit=max"
 
 
 def download(photo_id: str, dest: str) -> int:
     """Returns bytes written, or 0 on any HTTP/network failure (caller retries
-    with a different id). Unsplash 403s some ids via urllib — don't crash."""
-    url = f"https://unsplash.com/photos/{photo_id}/download?force=true&w=1600"
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    with a different id). Unsplash 403s some ids via urllib — don't crash.
+
+    The /download endpoint started returning 401 for anonymous requests
+    (2026-08-06), so fall back to the CDN URL resolved from the photo page.
+    """
     try:
-        with urllib.request.urlopen(req, timeout=60) as r, open(dest, "wb") as f:
-            f.write(r.read())
-    except (urllib.error.HTTPError, urllib.error.URLError, OSError) as e:
+        return _fetch(
+            f"https://unsplash.com/photos/{photo_id}/download?force=true&w=1600", dest)
+    except (subprocess.CalledProcessError, OSError) as e:
+        print(f"/download failed for id={photo_id} ({e}); trying CDN", file=sys.stderr)
+    try:
+        return _fetch(_cdn_url(photo_id), dest)
+    except (subprocess.CalledProcessError, OSError, ValueError) as e:
         print(f"download error for id={photo_id}: {e}", file=sys.stderr)
         return 0
-    return os.path.getsize(dest)
 
 
 def process(src: str, out: str) -> None:
