@@ -25,6 +25,9 @@
       {% endif %}
       <span class="blog-byline__author">{{ author.name }}</span>
       {% if author.role %}
+      {# .blog-byline is display:flex, so whitespace between spans collapses to
+         nothing — the separator has to be a real element, not a newline. #}
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
       <span class="blog-byline__role">{{ author.role }}</span>
       {% endif %}
       <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
