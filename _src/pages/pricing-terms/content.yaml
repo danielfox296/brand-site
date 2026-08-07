@@ -2,7 +2,7 @@
 #
 
 h1_1: "Subscription Terms"
-p_1: "Last updated: May 9, 2026"
+p_1: "Last updated: August 6, 2026"
 p_intro: "These terms apply when you subscribe to or activate any tier of Entuned (Entuned Free, Boost, Professional, or Enterprise) on entuned.co. They form a binding agreement between you and Entuned LLC (\"Entuned,\" \"we,\" \"us\"), a Wyoming limited liability company. If you do not agree to these terms, do not subscribe or activate the service."
 
 h2_1: "1. The service"
@@ -10,7 +10,7 @@ p_2: "Entuned delivers an original audio stream engineered for your store. The s
 
 h2_2: "2. Tiers and pricing"
 p_3: "Entuned offers four service tiers with the following commercial terms:"
-li_1: "<strong>Entuned Free.</strong> Free, indefinite access. Shared general catalogue, three mood modes (Chill, Steady, Upbeat), one mode active at a time. No customer-profile customization. Subject to fair use limits for the audio stream."
+li_1: "<strong>Entuned Free.</strong> Free, indefinite access. Shared general catalogue, one outcome (Dwell). No customer-profile customization. Subject to fair use limits for the audio stream."
 li_2: "<strong>Boost.</strong> $99 per location per month, billed monthly in advance through Stripe. Includes ICP-tailored music for one Ideal Customer Profile, all research-backed outcomes, regular catalogue refresh and culling."
 li_3: "<strong>Professional.</strong> $399 per location per month, billed monthly in advance through Stripe. Includes everything in Boost plus POS integration, Outcome Scheduling, interstitial messaging, multiple ICPs, and self-improving refinement."
 li_4: "<strong>Enterprise.</strong> Negotiated per-location pricing under a separate written agreement. Custom ICP design, performance terms, and rollout details are specified in that agreement and supersede these public terms where they differ."

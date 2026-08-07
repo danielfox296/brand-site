@@ -1,0 +1,42 @@
+{# Dated-post notice bar.
+   Opt in per post with `update_notice: true` in content.yaml frontmatter.
+
+   The copy lives HERE, in one file, on purpose. It applies verbatim to every
+   post that predates the 2026-08-06 Dwell repoint (13 of them), and 13 copies
+   of the same paragraph in 13 content.yaml files would drift the first time
+   anyone edited one. Edit this file to change the notice everywhere.
+
+   Placement is load-bearing: blog_post.html renders this BELOW the video
+   player on watch posts. The player has to stay the first thing under the
+   byline or Google stops reading those pages as watch pages. See the video
+   section in ../../CLAUDE.md before moving it. (No watch post currently
+   carries this banner, but the ordering is there so one safely can.)
+
+   Four VOICE.md rules constrain this copy. Read them before editing:
+   1. Capital-D Dwell is the product, lowercase dwell time is the metric.
+      Never "Dwell extends dwell time". Say what the music does.
+   2. Never attach the Milliman 38.2% figure to Dwell, and never place Dwell
+      copy beside it. This is why blog-how-to-increase-dwell-time does NOT
+      carry this banner: that post's only pull-stat is the 38.2% figure, and
+      a Dwell banner four lines under its H1 invites exactly the false read
+      the rule exists to prevent. Its stale line was edited in place instead.
+   3. No em dashes in new copy (Daniel, 2026-08-03).
+   4. No negative self-assertions (VOICE.md, claim ladder). "Anything below is
+      out of date" tells the reader the article is wrong; "the rest of this
+      post predates that change" states the same fact forward.
+
+   "research-backed" was deliberately cut: no citation appears near this
+   banner, and the claim ladder puts an uncited research assertion on the
+   wrong rung. "Engineered to" is a mechanism claim (Rung 2), which is what
+   we can actually support. #}
+<aside class="blog-update-notice" role="note">
+  <span class="blog-update-notice__label">Update &middot; August 2026</span>
+  <p class="blog-update-notice__body">
+    Entuned Free has changed since this was published. Where it used to offer three mood
+    modes (Chill, Steady, and Upbeat), it now runs a single outcome:
+    <strong>Dwell</strong>, music engineered to hold browsers on the floor longer.
+    Still free, still the shared catalogue, still no card. The rest of this post
+    predates that change.
+    <a href="{{ nav_prefix }}how-it-works.html">See how Entuned Free works now &rarr;</a>
+  </p>
+</aside>

@@ -47,6 +47,15 @@
   {{ video_html|safe }}
   {% endif %}
 
+  {#- Dated-post notice. Sits directly under the byline on ordinary posts, and
+     directly under the player on watch posts, never above it, because the
+     player has to remain the first content under the byline for Google to
+     read those pages as watch pages. See CLAUDE.md "Video posts must stay
+     watch pages" before changing this position. -#}
+  {%- if update_notice %}
+  {% include 'blocks/update_notice.html' %}
+  {%- endif %}
+
   {# Suppressed on video posts — see above #}
   {% if hero and not video_html %}
   <!-- Hero image -->

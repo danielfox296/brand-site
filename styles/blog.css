@@ -533,6 +533,49 @@ h3.blog-subhead,
    Background raised, thin gold left border. Slightly inset or same width.
    -------------------------------------------------------------------------- */
 
+/* --------------------------------------------------------------------------
+   UPDATE NOTICE — dated-post banner
+   Opt in with `update_notice: true` in a post's content.yaml. Rendered by
+   blocks/update_notice.html, which also owns the copy.
+
+   Uses the teal callout treatment (3px teal left rule on a tinted ground),
+   not the gold .blog-aside: gold reads as an editorial pull-out inside the
+   argument, and this is a correction ABOUT the post, sitting outside it.
+   -------------------------------------------------------------------------- */
+
+.blog-update-notice {
+  max-width: var(--blog-prose-width);
+  margin: 0 auto 2.25rem;
+  padding: 1.15rem 1.5rem;
+  background: var(--blog-teal-light);
+  border-left: 3px solid var(--blog-teal);
+  border-radius: 0 4px 4px 0;
+}
+
+.blog-update-notice__label {
+  display: block;
+  font-family: var(--blog-font-display);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--blog-teal);
+  margin-bottom: 0.5rem;
+}
+
+.blog-update-notice__body {
+  font-family: var(--blog-font-body);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--blog-text);
+  margin: 0;
+}
+
+.blog-update-notice__body a {
+  color: var(--blog-teal);
+  font-weight: 600;
+}
+
 .blog-aside {
   max-width: var(--blog-prose-width);
   background: var(--blog-bg-raised);

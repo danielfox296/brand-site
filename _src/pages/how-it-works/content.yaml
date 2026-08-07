@@ -2,12 +2,12 @@
 
 hero:
   headline: "Three minutes from sign-up to music in your store."
-  subline: "Pick an outcome. Stream from the speakers you already have. Add your customer profile when you're ready. Each tier adds specificity without changing the engine underneath."
+  subline: "Start on one outcome. Stream from the speakers you already have. Add your customer profile when you're ready. Each tier adds specificity without changing the engine underneath."
 
 step1:
   label: "Step 01 — Entuned Free"
-  title: "Pick a starting mode."
-  text: "Three mood modes — Chill, Steady, or Upbeat — built from the research on tempo, key, and density. Pick one, the music starts. No card required, no time limit. The catalogue is shared by every free store and deliberately broad — tuned to a mood, not yet to your customer. When a track doesn't sound like your store, that's the line Boost removes."
+  title: "Turn it on."
+  text: "One outcome, Dwell, engineered to hold browsers on the floor longer. Open the player and the music starts. No card required, no time limit. The catalogue is shared by every free store and deliberately broad, not yet built around your customer. When a track doesn't sound like your store, that's the line Boost removes."
 
 step2:
   label: "Step 02 — Any tier"
@@ -31,7 +31,7 @@ tiers:
 
 card1:
   title: "Entuned Free"
-  text: "Shared catalogue, three mood modes, manual selection. Indefinite free access. The floor has music engineered for a mood instead of whatever the vendor sent over — broad by design until Boost builds it around your customer."
+  text: "Shared catalogue, one outcome, nothing to configure. Indefinite free access. The floor has music engineered to hold browsers longer instead of whatever the vendor sent over. It stays broad until Boost builds it around your customer."
 
 card2:
   title: "Boost"

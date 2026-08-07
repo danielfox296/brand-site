@@ -437,6 +437,8 @@ def render_post(post_dir: str, env: jinja2.Environment,
         tags=data.get('tags', []),
         reading_time=reading_time,
         nav_prefix=nav_prefix,
+        # Opt-in dated-post banner. Copy lives in blocks/update_notice.html.
+        update_notice=data.get('update_notice', False),
         # Pre-rendered HTML blocks
         sections_html=sections_html,
         key_takeaways_html=key_takeaways_html,
