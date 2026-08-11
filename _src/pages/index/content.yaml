@@ -27,17 +27,10 @@ pillar3:
   eyebrow: "The early read"
   h2: "Music that gets sharper the longer it runs."
   p1: "Free and Boost deliver the concept. Pro pulls sales and traffic data from your locations and refines the music against the outcome you set — the longer it runs, the more precisely it produces what you measure. Self-improving refinement compounds over weeks and months of correlation."
-  p2: "The first pilot store put Entuned on and conversion went from 18% to 28% that day. The full pilot puts that to the test at scale: the read comes from your own reporting stack, on your terms, structured as a 12-week test against matched control stores."
+  p2: "The full pilot is structured as a 12-week test against matched control stores — the read comes from your own reporting stack, on your terms."
 
 # Social proof
 social_eyebrow: "From the pilot floor"
-social_stat_big: "+10 percentage points"
-social_stat_label: "CONVERSION, FIRST PILOT DAY"
-social_stat_detail: "From 18% to 28% in a single day, April 21, 2026."
-
-social_quote_1: "...our store went from an 18% conversion all day on a Tuesday, April 21, 2026 to 28% conversion after we put on Entuned."
-social_quote_1_attr: "Kari S. Assistant Manager"
-social_quote_1_context: "Pilot store, Spring 2026"
 
 social_quote_2: "This is refreshing!"
 social_quote_2_attr: "Elaine K."
@@ -64,7 +57,7 @@ tiers:
   h2: "Four options. Start free."
   essentials_name: "Entuned Free"
   essentials_price: "Free"
-  essentials_body: "The shared starter catalogue running one outcome, Dwell, engineered to hold browsers on the floor longer. Not yet built around your customer. Free indefinitely, no credit card."
+  essentials_body: "The shared starter catalogue, engineered to hold browsers on the floor longer. Not yet built around your customer. Free indefinitely, no credit card."
   core_name: "Boost"
   core_price: "$99/mo"
   core_body: "Music designed for your single Ideal Customer Profile (ICP). All research-backed outcomes unlocked. Per location."
