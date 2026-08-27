@@ -429,8 +429,13 @@ textarea:valid:not(:placeholder-shown) { border-color: #27ae60; }
         <textarea id="ent-notes" name="notes" rows="3" placeholder="e.g. basket lift in our women's footwear stores; dwell in the lounge area; conversion in our outlet locations..."></textarea>
       </div>
 
-      <!-- Honeypot -->
-      <input type="text" name="_gotcha" style="display:none">
+      <!-- No honeypot, on purpose: formspree silently discards any
+           submission with _gotcha set while still reporting success, and
+           browser autofill fills hidden fields it can classify. The same
+           silent-drop mechanism (formsubmit's _honey) killed a real enquiry
+           on signetartists.com the week of 2026-08-24. Formspree's own spam
+           filtering is the spam layer; if spam grows, escalate to a relay
+           that logs submissions, never a silent trap. -->
 
       <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">Talk to Enterprise</button>
 
