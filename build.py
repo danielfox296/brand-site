@@ -47,6 +47,19 @@ PARTIALS = os.path.join(SRC, 'partials')
 PAGES    = os.path.join(SRC, 'pages')
 SITE_URL = 'https://entuned.co'
 
+# The founder as one entity across the estate: danielchristopherfox.com declares
+# the full Person under this @id, and this site (Organization.founder, blog
+# Article.author) and signetartists.com (LocalBusiness.founder) reference it.
+FOUNDER_ID = 'https://danielchristopherfox.com/#person'
+FOUNDER_URL = 'https://danielchristopherfox.com/'
+FOUNDER = {
+    "@type": "Person",
+    "@id": FOUNDER_ID,
+    "name": "Daniel Christopher Fox",
+    "alternateName": "Daniel Fox",
+    "url": FOUNDER_URL,
+}
+
 # ---------------------------------------------------------------------------
 # New blog renderer (Jinja2 + YAML pipeline)
 # ---------------------------------------------------------------------------
@@ -575,15 +588,15 @@ def build():
             else:
                 date_published = config.get('date_published', '2026-03-25')
                 date_modified = config.get('date_modified', '2026-03-25')
-            _schema_author = _author_name
+            _schema_author = (
+                FOUNDER if _author_name in ("Daniel Fox", "Daniel Christopher Fox")
+                else {"@type": "Person", "name": _author_name}
+            )
             schema = {
                 "@context": "https://schema.org",
                 "@type": "Article",
                 "headline": og_title,
-                "author": {
-                    "@type": "Person",
-                    "name": _schema_author
-                },
+                "author": _schema_author,
                 "publisher": {
                     "@type": "Organization",
                     "@id": f"{SITE_URL}/#organization",
@@ -626,10 +639,7 @@ def build():
                 "logo": f"{SITE_URL}/img/entuned-logo-ice.svg",
                 "description": "Entuned is a retail music strategy platform that turns customer psychology into store soundtracks — driving measurable sales lift.",
                 "foundingDate": "2026",
-                "founder": {
-                    "@type": "Person",
-                    "name": "Daniel Fox"
-                },
+                "founder": FOUNDER,
                 "areaServed": "United States",
                 "contactPoint": {
                     "@type": "ContactPoint",
