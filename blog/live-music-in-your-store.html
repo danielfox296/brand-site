@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- First-touch signup attribution. Stamps a `.entuned.co` cookie on the
+       FIRST page view so the original source (referrer + UTM) survives the
+       entuned.co -> app.entuned.co/start hop. The dashboard's /start reads the
+       same cookie (same name + shape) and forwards it to the server. Runs
+       early + first-touch-wins so it never overwrites the true upstream. -->
+  <script>
+    (function () {
+      try {
+        if (/(?:^|; )entuned_attr=/.test(document.cookie)) return;
+        var p = new URLSearchParams(window.location.search);
+        var payload = {
+          r: document.referrer || undefined,
+          lp: (window.location.pathname + window.location.search) || undefined,
+          us: p.get('utm_source') || undefined,
+          um: p.get('utm_medium') || undefined,
+          uc: p.get('utm_campaign') || undefined,
+          ut: p.get('utm_term') || undefined,
+          un: p.get('utm_content') || undefined,
+          t: new Date().toISOString()
+        };
+        var host = window.location.hostname;
+        var domain = (host === 'entuned.co' || /\.entuned\.co$/.test(host)) ? '; domain=.entuned.co' : '';
+        document.cookie = 'entuned_attr=' + encodeURIComponent(JSON.stringify(payload)) +
+          '; path=/' + domain + '; max-age=' + (30 * 24 * 60 * 60) + '; SameSite=Lax';
+      } catch (e) { /* best-effort */ }
+    })();
+  </script>
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="canonical" href="https://entuned.co/blog/live-music-in-your-store.html">
+  <meta name="robots" content="index, follow">
+  <title>Live Music in a Retail Store: When to Book a Band for an Event | Entuned</title>
+  <meta name="description" content="When a store should book live music, when the soundtrack is the better tool, and the licensing rule a band brings: the radio exemption covers no performer.">
+  <meta name="theme-color" content="#20201c">
+
+  <!-- Open Graph -->
+  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="../rss.xml">
+  <meta property="og:title" content="Live Music in a Retail Store: When to Book a Band for an Event | Entuned">
+  <meta property="og:description" content="When a store should book live music, when the soundtrack is the better tool, and the licensing rule a band brings: the radio exemption covers no performer.">
+  <meta property="og:url" content="https://entuned.co/blog/live-music-in-your-store.html">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://entuned.co/img/blog/live-music-in-your-store.jpg">
+  <meta property="og:site_name" content="Entuned">
+  <meta property="og:locale" content="en_US">
+  <meta property="article:published_time" content="2026-09-21">
+  <meta property="article:author" content="Daniel Fox">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Live Music in a Retail Store: When to Book a Band for an Event | Entuned">
+  <meta name="twitter:description" content="When a store should book live music, when the soundtrack is the better tool, and the licensing rule a band brings: the radio exemption covers no performer.">
+  <meta name="twitter:image" content="https://entuned.co/img/blog/live-music-in-your-store.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Live Music in a Retail Store: When to Book a Band for an Event | Entuned",
+  "author": {
+    "@type": "Person",
+    "@id": "https://danielchristopherfox.com/#person",
+    "name": "Daniel Christopher Fox",
+    "alternateName": "Daniel Fox",
+    "url": "https://danielchristopherfox.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://entuned.co/#organization",
+    "name": "Entuned",
+    "url": "https://entuned.co"
+  },
+  "datePublished": "2026-09-21",
+  "dateModified": "2026-09-21",
+  "description": "When a store should book live music, when the soundtrack is the better tool, and the licensing rule a band brings: the radio exemption covers no performer.",
+  "image": "https://entuned.co/img/blog/live-music-in-your-store.jpg",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://entuned.co/blog/live-music-in-your-store.html"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "retail music strategy"
+    },
+    {
+      "@type": "Thing",
+      "name": "in-store customer behavior"
+    },
+    {
+      "@type": "Thing",
+      "name": "engineered retail audio"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "When does live music beat the store soundtrack?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A performance has a start time. The soundtrack is on when the doors open and off when they lock, and nobody plans a Tuesday around it. A duo playing from six to eight is an event, and an event is something a customer can put on a calendar and mention on Thursday to someone who missed it. Four occasions come up again and again. The grand opening, where the store has no regulars yet and the first hundred people through the door decide what they will say about it. The holiday open house, where every calendar is crowded and a live set is the reason to pick your store over the one across the\u2026"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When is the soundtrack still the better tool?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every ordinary day. A store is open something like ten hours, and the person behind the register hears every minute of it, five days a week. Nordstrom put pianists on its floors in 1985 and spent more than a decade taking them off: recorded music in the Seattle stores by 2007, two days a week in thirty stores by 2013, the last one gone by 2020. The company's stated reason was that recorded music was \"more modern.\" Whatever the reason, the ordinary day was what the live program lost first. Milliman showed in 1982 that slower music slowed shoppers down and lifted daily sales. What a store needs\u2026"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the radio exemption cover a live band?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, and this is the part operators miss. The store takes on the obligation the moment the band starts, whether anyone planned for it or not. The exemption most small stores lean on, 17 U.S.C. \u00a7 110(5)(B), covers the communication of a transmission: a licensed radio or television broadcast played in a store under 2,000 square feet, or in a larger store that stays inside the statute's loudspeaker limits. The operative word is transmission. A guitarist playing Van Morrison by the register is a public performance of a copyrighted song, and the exemption says nothing about her. Who holds the\u2026"
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://entuned.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://entuned.co/blog.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Live Music in a Retail Store: When to Book a Band for an Event | Entuned"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="../styles.css?v=331834bf">
+  <link rel="stylesheet" href="../styles/blog.css">
+  
+</head>
+<body>
+  <!-- NAVIGATION -->
+<nav aria-label="Main navigation">
+  <div class="container">
+    <a href="/" class="logo"><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
+    <ul class="nav-links">
+      <li><a href="../how-it-works.html">How It Works</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="../blog.html">Blog</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li class="nav-cta-item"><a href="https://app.entuned.co/start" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Start Free</a></li>
+    </ul>
+    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+  </div>
+</nav>
+
+  <main>
+  
+<!-- Reading progress bar -->
+<div class="blog-progress" aria-hidden="true">
+  <div class="blog-progress__bar" id="reading-progress"></div>
+</div>
+
+<article class="blog-article">
+
+  <!-- Article header -->
+  <header class="blog-article__header">
+    <div class="blog-eyebrow">MARKET INTEL</div>
+    <h1 class="blog-headline">Live Music in Your Store: When to Book a Band</h1>
+    <p class="blog-dek">Four occasions when a musician on the floor beats the store soundtrack, why recorded music runs the ordinary days, and the licensing rule that comes with a band.</p>
+    <div class="blog-byline">
+      <span class="blog-byline__author">Daniel Fox</span>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <span class="blog-byline__role">Founder &amp; CEO</span>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <time class="blog-byline__date" datetime="2026-09-21">2026-09-21</time>
+      <span class="blog-byline__sep" aria-hidden="true">&middot;</span>
+      <span class="blog-byline__reading-time">9 min read</span>
+    </div>
+  </header>
+
+
+  <!-- Hero image -->
+  <figure class="blog-hero fade-up">
+    <img src="../img/blog/live-music-in-your-store.jpg" alt="Close-up of a guitarist&#39;s hand on an electric guitar under stage lights" class="blog-hero__img" loading="lazy">
+    <figcaption class="blog-hero__caption">Photo: Unsplash</figcaption>
+  </figure>
+
+  <!-- Key takeaways -->
+  <div class="blog-takeaways">
+  <div class="blog-takeaways__title">Key takeaways</div>
+  <ul>
+    <li>Live music pays off on an occasion: a grand opening, a holiday open house, a customer appreciation night, a loyalty event. A performance gives people a reason to be in the store at a set hour and something to tell each other about afterward.</li>
+    <li>The ordinary day belongs to the soundtrack. A band moves the tempo on the performer&#39;s terms, and a soundtrack moves it on the store&#39;s, at the level the store set, for every hour the doors are open. Entuned Free runs the ordinary day at no fee.</li>
+    <li>The radio exemption in 17 U.S.C. § 110(5) covers a broadcast. A band playing copyrighted songs in your store is a public performance, and ASCAP&#39;s own FAQ says the business owner obtains the license, because the business owner is the one who benefits from the performance.</li>
+    <li>Plan the night as a handoff. The soundtrack fills the set break at a level that matches the band, and the closing hour comes back down to the tempo the store plays on a regular Tuesday.</li>
+  </ul>
+</div>
+
+  <!-- Article body (all sections except key_takeaways, cta, related) -->
+  <div class="blog-article__body">
+    <div class="blog-prose">
+  <p>Every so often a store has a reason for people to show up at six o&rsquo;clock instead of whenever they happen to pass: a grand opening, the holiday open house, or the night you thank the customers who kept you in business all year. The question on those nights is whether to bring in a musician or let the soundtrack run.</p>
+<p>The answer is both, in a particular order, and it starts with what a performance does in a store full of people who came for it.</p>
+</div>
+
+<h2 id="when-live-wins" class="blog-subhead blog-subhead--h2">
+  When does live music beat the store soundtrack?
+  <a href="#when-live-wins" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>A performance has a start time. The soundtrack is on when the doors open and off when they lock, and nobody plans a Tuesday around it. A duo playing from six to eight is an event, and an event is something a customer can put on a calendar and mention on Thursday to someone who missed it.</p>
+<p>Four occasions come up again and again. The grand opening, where the store has no regulars yet and the first hundred people through the door decide what they will say about it. The holiday open house, where every calendar is crowded and a live set is the reason to pick your store over the one across the street. The customer appreciation night, where the people in the building already like you and the music is how you show it. And the loyalty event, the trunk show, the product launch, any night the store invited people to, where the crowd came for something and a performer gives them that.</p>
+<p>There&rsquo;s research behind the instinct. In 2024, Wiebke Trost and colleagues, writing in <a href="https://doi.org/10.1073/pnas.2316306121" target="_blank" rel="noopener noreferrer">PNAS</a>, had pianists perform live for listeners lying in an MRI scanner and compared the response with comparable recorded music. The live performances produced higher and more consistent activity in the amygdala, the part of the brain that handles emotional response, and the listeners&rsquo; brain activity locked to the music only when it was live. A 2019 study from McMaster University&rsquo;s LIVELab, published in <a href="https://doi.org/10.3389/fpsyg.2018.02682" target="_blank" rel="noopener noreferrer">Frontiers in Psychology</a>, measured a different signal from the outside: audience members moved their heads about twice as fast during a live concert as during playback of the same band&rsquo;s album, and self-described fans moved the most.</p>
+<p>Fans moved more whether the band was in the room or on the speakers, and everyone moved more when it was live. That is the argument for booking an act on a night people are already coming for. Notice, too, what the scanner rewarded. The pianists in Trost&rsquo;s study were playing to the listeners&rsquo; responses as they happened, and the coupling between the music and the brain showed up only when they could. That responsiveness is the same thing <a href="../blog/the-pianist-in-the-store.html">Nordstrom&rsquo;s pianists</a> were prized for, from 1985 until the last one closed the lid in 2019 or 2020.</p>
+</div>
+
+<h2 id="when-the-soundtrack-wins" class="blog-subhead blog-subhead--h2">
+  When is the soundtrack still the better tool?
+  <a href="#when-the-soundtrack-wins" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Every ordinary day. A store is open something like ten hours, and the person behind the register hears every minute of it, five days a week. Nordstrom put pianists on its floors in 1985 and spent more than a decade taking them off: recorded music in the Seattle stores by 2007, two days a week in thirty stores by 2013, the last one gone by 2020. The company&rsquo;s stated reason was that recorded music was &ldquo;more modern.&rdquo; Whatever the reason, the ordinary day was what the live program lost first.</p>
+<p>Milliman showed in <a href="../blog/the-supermarket-study.html">1982</a> that slower music slowed shoppers down and lifted daily sales. What a store needs from that finding is control of the tempo, and control is where the two tools differ. An act booked for a party drifts upward on purpose, because a performance is built to lift a crowd, and the drift is the point of a Friday night in December. On a Tuesday afternoon in March the same drift moves customers out the door faster than they came in. The soundtrack moves the tempo on the store&rsquo;s terms: it plays the tempo the store chose and changes when the store says so, which is the whole reason a store can run one tempo in the morning and another at closing.</p>
+<p>Then there&rsquo;s recognition. Cover bands play songs the crowd knows, because that is what a crowd wants from a band. In 2000, Yalch and Spangenberg found that shoppers browsing under familiar music left sooner while believing they had stayed longer. On event night that recognition is what the crowd came for. On an ordinary afternoon a song the shopper knows tells her roughly how long she has been standing in the aisle, and <a href="../blog/why-hit-songs-make-bad-store-music.html">our post on why hit songs make bad store music</a> goes through the mechanism.</p>
+<p>And the cost is shaped differently. A booking is one evening&rsquo;s fee with a date on it; the soundtrack is a monthly fee for every hour the store is open, and Entuned Free streams its shared catalogue for nothing.</p>
+</div>
+
+<h2 id="exemption" class="blog-subhead blog-subhead--h2">
+  Does the radio exemption cover a live band?
+  <a href="#exemption" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>No, and this is the part operators miss. The store takes on the obligation the moment the band starts, whether anyone planned for it or not.</p>
+<p>The exemption most small stores lean on, <a href="https://www.law.cornell.edu/uscode/text/17/110" target="_blank" rel="noopener noreferrer">17 U.S.C. § 110(5)(B)</a>, covers the communication of a transmission: a licensed radio or television broadcast played in a store under 2,000 square feet, or in a larger store that stays inside the statute&rsquo;s loudspeaker limits. The operative word is transmission. A guitarist playing Van Morrison by the register is a public performance of a copyrighted song, and the exemption says nothing about her.</p>
+<p>Who holds the license is settled too. <a href="https://www.ascap.com/help/ascap-licensing" target="_blank" rel="noopener noreferrer">ASCAP&rsquo;s licensing FAQ</a> takes the question head on: some people assume the musicians must obtain the license, the law says everyone who participates in or is responsible for a performance is liable, and since the business owner gets the benefit of the performance, the business owner obtains the license. A band that plays covers in your store exposes the store to the statutory damages below, unless your license already covers live performance or the act plays material no performing rights organization (PRO) represents.</p>
+</div>
+
+<div class="blog-stat blog-stat--gold">
+  <div class="blog-stat__number">$750–$30,000</div>
+  <div class="blog-stat__label">Statutory damages per infringed work for an unlicensed public performance, rising to as much as $150,000 per work when the infringement is willful</div>
+  <div class="blog-stat__source">17 U.S.C. § 504(c)</div>
+</div>
+
+<aside class="blog-aside">
+  <div class="blog-aside__title">Quick test: does the band need you to hold a license?</div>
+  <div class="blog-aside__body"><p>Ask the act two things: what they play, and whether their own songs are registered with a PRO. Covers of songs you would hear on the radio are public performances of someone else&rsquo;s work, and the store is the party the PROs license for them. Originals by a writer who is an ASCAP or BMI member are performances the store licenses too. Originals by a writer with no PRO affiliation are one of the two cases no PRO can collect on; the other is music in the public domain. The first is the same reason Entuned&rsquo;s catalogue carries no PRO fee. The radio exemption applies to none of it, because nothing is being broadcast.</p></div>
+</aside>
+
+<figure class="blog-pullquote blog-pullquote--teal">
+  <blockquote>The radio exemption covers a broadcast. A band playing in your store is a performance, and the store is the party the PROs license.</blockquote>
+</figure>
+
+<h2 id="before-you-book" class="blog-subhead blog-subhead--h2">
+  What to settle before the band arrives
+  <a href="#before-you-book" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Settle four things a few weeks out.</p>
+<p>Volume comes first. <a href="../retail-music-decibel-guide.html">Our decibel guide</a> puts an apparel floor at 60 to 68 dB, under the 70 dB line it marks as the World Health Organization&rsquo;s threshold, and an acoustic drum kit plays well above that in any store. Ask for a lineup that fits the floor, such as a solo guitarist, a duo or a drummerless jazz trio, and ask what level they play at when they are booked as background for a dinner.</p>
+<p>The handoff comes next. A band plays a set and takes a break, and the break is when your soundtrack has to be ready at a level that matches, so the floor does not go from a trio to silence to a jolt. Tell the act what will be playing when they stop, and set the closing hour to come back down to the store&rsquo;s everyday tempo before the last customers leave.</p>
+<p>Power and floor space are the third question, and the act will tell you if you ask: how many outlets and how much floor they need, and how long they need in the store before the doors open.</p>
+<p>The last question is the act itself. A local booking agency will know who plays at conversation volume, and so will the events desk at a hotel you already use. On Colorado&rsquo;s Front Range, <a href="https://signetartists.com/corporate/">Signet Artists, a Denver live music agency</a>, books acts for business events in the city and the mountain towns, and it is our founder&rsquo;s company.</p>
+</div>
+
+<h2 id="where-entuned-fits" class="blog-subhead blog-subhead--h2">
+  Where Entuned fits
+  <a href="#where-entuned-fits" class="anchor-link" aria-label="Link to section">#</a>
+</h2>
+
+<div class="blog-prose">
+  <p>Entuned is the soundtrack: the music that runs the ordinary days and takes the floor back when the band packs up. It is original music we own outright, so there is no PRO fee on any of it and no demand letter afterward. Entuned Free runs with no card and no time limit, and it is PRO-indemnified the moment it plays.</p>
+<p>Book the trio for the open house. Then stand on the floor at two on a Tuesday in March and listen to what&rsquo;s playing.</p>
+</div>
+
+<div class="blog-prose">
+  <p>For the questions behind this one: <a href="../blog/store-music-licensing.html">the operator&rsquo;s guide to store music licensing</a> covers the four PROs and the exemption in full, <a href="../blog/the-pianist-in-the-store.html">the pianist in the store</a> is the history of live music on a retail floor, and <a href="../retail-music-decibel-guide.html">the decibel guide</a> has the measured levels by vertical.</p>
+</div>
+
+<div class="blog-references fade-up">
+  <h2 class="blog-references__heading" id="references">References</h2>
+  <ol class="blog-references__list">
+    <li>Trost, W., Trevor, C., Fernandez, N., Steiner, F., &amp; Frühholz, S. (2024). Live music stimulates the affective brain and emotionally entrains listeners in real time. Proceedings of the National Academy of Sciences, 121(10). https://doi.org/10.1073/pnas.2316306121</li>
+    <li>Swarbrick, D., Bosnyak, D., Livingstone, S. R., Bansal, J., Marsh-Rollo, S., Woolhouse, M. H., &amp; Trainor, L. J. (2019). How live music moves us: Head movement differences in audiences to live versus recorded music. Frontiers in Psychology, 9, 2682. https://doi.org/10.3389/fpsyg.2018.02682</li>
+    <li>Yalch, R. F., &amp; Spangenberg, E. R. (2000). The effects of music in a retail setting on real and perceived shopping times. Journal of Business Research, 49(2), 139–147.</li>
+    <li>Milliman, R. E. (1982). Using background music to affect the behavior of supermarket shoppers. Journal of Marketing, 46(3), 86–91.</li>
+    <li>17 U.S.C. § 110(5)(B), limitations on exclusive rights: exemption of certain performances and displays. https://www.law.cornell.edu/uscode/text/17/110</li>
+    <li>17 U.S.C. § 504(c), statutory damages. https://www.law.cornell.edu/uscode/text/17/504</li>
+    <li>ASCAP. ASCAP Music Licensing FAQs: Aren&#39;t musicians, entertainers and DJ&#39;s responsible for obtaining permission for music they perform? https://www.ascap.com/help/ascap-licensing</li>
+  </ol>
+</div>
+
+  </div>
+
+  <!-- CTA -->
+  <aside class="blog-cta blog-cta--start-free">
+  <div class="blog-cta__headline">Hear it on your floor.</div>
+  <div class="blog-cta__body">Entuned engineers original music for your store at the parameter level &mdash; tempo, key, lyrical density, energy arc &mdash; tailored to your customer and tied to your sales outcomes. Entuned Free &mdash; no card, no time limit. PRO-indemnified the moment it plays.</div>
+  <a href="https://app.entuned.co/start" class="blog-cta__link">Start Free &rarr;</a>
+  <p class="blog-cta__fork">Running 5&ndash;50 locations? <a href="../pilot.html">Start a measured pilot &rarr;</a></p>
+</aside>
+
+  <!-- Related posts -->
+  <section class="blog-related" aria-label="Related posts">
+  <h2 class="blog-related__title">Keep reading</h2>
+  <div class="blog-related__grid">
+    <a href="../blog/the-pianist-in-the-store.html" class="blog-related__card">
+      <img src="../img/blog/the-pianist-in-the-store.jpg" alt="The Pianist in the Store" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">The Pianist in the Store</span>
+      <span class="blog-related__dek">Nordstrom employed live pianists in 75% of its stores by 1985. By 2020, they were gone. The only retail music that ever adapted to the room in real time.</span>
+    </a>
+    <a href="../blog/store-music-licensing.html" class="blog-related__card">
+      <img src="../img/blog/store-music-licensing.jpg" alt="Store Music Licensing: The Operator&#39;s Guide to Playing Music Legally" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">MARKET INTEL</span>
+      <span class="blog-related__card-title">Store Music Licensing: The Operator&#39;s Guide to Playing Music Legally</span>
+      <span class="blog-related__dek">Why your personal Spotify account isn&#39;t legal in a store, what the four PROs actually charge, the narrow radio exemption, and the simplest path to a compliant floor.</span>
+    </a>
+    <a href="../blog/why-hit-songs-make-bad-store-music.html" class="blog-related__card">
+      <img src="../img/blog/why-hit-songs-make-bad-store-music.jpg" alt="Why Hit Songs Make Bad Store Music" class="blog-related__img" loading="lazy">
+      <span class="blog-related__eyebrow">FIELD NOTES</span>
+      <span class="blog-related__card-title">Why Hit Songs Make Bad Store Music</span>
+      <span class="blog-related__dek">A hit is engineered to win a fight for attention. Your store soundtrack runs all day for people who never chose it.</span>
+    </a>
+  </div>
+</section>
+
+</article>
+
+<!-- Blog-specific JS (reading progress + anchor copy) -->
+<script>
+  // Reading progress bar
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    document.getElementById('reading-progress').style.width = pct + '%';
+  });
+
+  // Anchor link copy-to-clipboard
+  document.querySelectorAll('.anchor-link').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      navigator.clipboard.writeText(window.location.origin + window.location.pathname + a.getAttribute('href'));
+      a.textContent = '\u2713'; setTimeout(() => a.textContent = '#', 1500);
+    });
+  });
+</script>
+  </main>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-section">
+      <h4><img src="../img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
+      <p style="opacity: 0.7; font-size: 0.95rem;">Engineered retail audio. PRO-indemnified.</p>
+      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
+      <div class="footer-newsletter">
+        <h4>Newsletter</h4>
+        <p class="footer-newsletter-tagline">Retail music, from the floor. Research and field notes, in your inbox.</p>
+        <form class="footer-newsletter-form" action="https://entuned.substack.com/subscribe" method="get" target="_blank" rel="noopener">
+          <input type="email" name="email" placeholder="you@yourstore.com" required aria-label="Email address for the Entuned newsletter">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-section">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="../how-it-works.html">How It Works</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="../pilot.html">Multi-Location Pilot</a></li>
+        <li><a href="../enterprise.html">Enterprise</a></li>
+        <li><a href="../why-entuned.html">Why Entuned</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>For Your Industry</h4>
+      <ul>
+        <li><a href="../for-apparel.html">Apparel</a></li>
+        <li><a href="../for-beauty-supply.html">Beauty Supply</a></li>
+        <li><a href="../for-cosmetics.html">Cosmetics &amp; Beauty</a></li>
+        <li><a href="../for-furniture-mattress.html">Furniture &amp; Mattress</a></li>
+        <li><a href="../for-home-goods.html">Home Goods</a></li>
+        <li><a href="../for-jewelry.html">Jewelry</a></li>
+        <li><a href="../for-specialty-retail.html">Specialty Retail</a></li>
+        <li><a href="../for-sporting-goods.html">Sporting Goods</a></li>
+      </ul>
+      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
+      <ul>
+        <li><a href="../for-retail-leaders.html">Retail Operators</a></li>
+        <li><a href="../for-cfos.html">CFOs</a></li>
+        <li><a href="../impact.html">Impact Calculator</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Research</h4>
+      <ul>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../results.html">Results</a></li>
+        <li><a href="../science.html">The Science</a></li>
+        <li><a href="../will-it-retail.html">Will It Retail?</a></li>
+        <li><a href="https://entuned.substack.com" target="_blank" rel="noopener">Newsletter</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Learn</h4>
+      <ul>
+        <li><a href="../how-music-affects-retail.html">How Music Affects Retail</a></li>
+        <li><a href="../how-to-increase-aov-retail.html">Increase Average Order Value</a></li>
+        <li><a href="../how-to-increase-dwell-time-retail.html">Increase Dwell Time</a></li>
+        <li><a href="../how-to-increase-impulse-purchases-retail.html">Drive Impulse Purchases</a></li>
+        <li><a href="../how-to-improve-retail-conversion-rate.html">Improve Conversion Rate</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Tools &amp; Comparisons</h4>
+      <ul>
+        <li><a href="../music-license-cost-calculator.html">Music License Cost Calculator</a></li>
+        <li><a href="../sound-audit.html">Sound Audit</a></li>
+        <li><a href="../spotify-business-risk-check.html">Spotify Business Risk Check</a></li>
+        <li><a href="../pro-enforcement-map.html">PRO Enforcement Map</a></li>
+        <li><a href="../retail-music-decibel-guide.html">Retail Music Decibel Guide</a></li>
+        <li><a href="../spotify-for-business.html">Spotify for Business</a></li>
+        <li><a href="../property-managers.html">For Property Managers</a></li>
+        <li><a href="../mood-media-alternative.html">Mood Media Alternative</a></li>
+        <li><a href="../soundtrack-your-brand-alternative.html">Soundtrack Your Brand Alternative</a></li>
+        <li><a href="../pandora-for-business-alternative.html">Pandora for Business Alternative</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../partners.html">Partners</a></li>
+        <li><a href="../press.html">Press</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="../licensing.html">Licensing &amp; PRO Coverage</a></li>
+        <li><a href="../data.html">Data Practices</a></li>
+        <li><a href="../privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="../pricing/terms.html">Subscription Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- Google Analytics (GA4) — loaded after page content -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-SGMVDBYXFG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SGMVDBYXFG', {
+      linker: {
+        domains: ['entuned.co', 'music.entuned.co', 'app.entuned.co']
+      }
+    });
+  </script>
+  <script defer src="../js/ga4-cta-tracking.js"></script>
+
+  <script>
+    // Navigation active state
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      }
+    });
+
+    // Intersection Observer for fade-up animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinksEl = document.querySelector('.nav-links');
+    if (menuToggle && navLinksEl) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinksEl.classList.toggle('mobile-open');
+        menuToggle.textContent = isOpen ? '✕' : '☰';
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    }
+
+    // Nav dropdown toggle (mobile)
+    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const dropdown = trigger.closest('.nav-dropdown');
+        dropdown.classList.toggle('open');
+      });
+    });
+
+    // Accordion toggle
+    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const accordion = trigger.parentElement;
+        const isOpen = accordion.getAttribute('data-open') === 'true';
+        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
+        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      });
+    });
+
+  </script>
+</body>
+</html>
