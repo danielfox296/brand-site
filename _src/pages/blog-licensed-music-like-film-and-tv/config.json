@@ -1,3 +1,6 @@
 {
-  "output": "blog/licensed-music-like-film-and-tv.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/licensed-music-like-film-and-tv.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

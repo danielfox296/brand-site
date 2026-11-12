@@ -1,3 +1,6 @@
 {
-  "output": "blog/how-does-music-shape-brand-perception.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/how-does-music-shape-brand-perception.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

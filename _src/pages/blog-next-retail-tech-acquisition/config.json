@@ -1,5 +1,6 @@
 {
-  "title": "The Next Big Retail Tech Acquisition Is Audio | Entuned",
-  "meta_description": "Retail tech acquisitions follow a pattern. Audio is the next surface — and the window is open now.",
-  "output": "blog/next-retail-tech-acquisition.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/next-retail-tech-acquisition.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

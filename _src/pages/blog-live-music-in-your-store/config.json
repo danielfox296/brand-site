@@ -1,1 +1,6 @@
-{ "output": "blog/live-music-in-your-store.html" }
+{
+  "title": "Redirecting… | Entuned",
+  "output": "blog/live-music-in-your-store.html",
+  "redirect_to": "https://signetartists.com/blog/live-music-in-your-store/",
+  "robots": "noindex"
+}

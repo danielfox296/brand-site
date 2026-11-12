@@ -1,3 +1,6 @@
 {
-  "output": "blog/can-music-actually-distract-customers-from-shopping.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/can-music-actually-distract-customers-from-shopping.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

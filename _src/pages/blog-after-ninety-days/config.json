@@ -1,5 +1,6 @@
 {
-  "title": "What Happens After Ninety Days | Entuned",
-  "meta_description": "The first week is setup. The first month is noise. By day ninety, the data starts telling you how music matters in your specific store.",
-  "output": "blog/after-ninety-days.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/after-ninety-days.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

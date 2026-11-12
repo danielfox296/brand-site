@@ -1,3 +1,6 @@
 {
-  "output": "blog/does-music-affect-willingness-to-pay.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/does-music-affect-willingness-to-pay.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

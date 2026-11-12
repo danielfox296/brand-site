@@ -1,28 +1,6 @@
 {
-  "title": "What Your Store Sounds Like in 10 Seconds | Entuned",
-  "meta_description": "Customers judge your store in 10 seconds. A field guide to the signals retail operators miss, and the one sensory channel nobody measures.",
+  "title": "Redirecting… | Entuned",
   "output": "blog/retail-atmospherics-2026.html",
-  "faq": [
-    {
-      "q": "What signals does a store send to customers in the first 10 seconds?",
-      "a": "Customers read the room before they evaluate merchandise. Lighting, temperature, smell, sound, and spatial layout all register within seconds of crossing the threshold. Research on retail environments shows these snap judgments influence how long a customer stays and how much they spend."
-    },
-    {
-      "q": "Why are customers leaving stores faster than they used to?",
-      "a": "Average visit duration is down across most lifestyle retail categories. Beyond economic factors and merchandise, a common overlooked cause is the store environment itself. When sensory details like audio feel mismatched or generic, customers leave sooner without being able to articulate why."
-    },
-    {
-      "q": "How do I make a flagship store feel different from a mall location?",
-      "a": "The difference between a flagship that feels intentional and a mall location that feels generic usually comes down to the details nobody owns. Extending the same discipline you apply to visual merchandising to audio and other sensory channels closes the gap without requiring a flagship budget."
-    },
-    {
-      "q": "Does background music actually affect retail sales?",
-      "a": "Four decades of peer-reviewed research, starting with Milliman's 1982 field study, show that audio conditions measurably affect customer movement speed, dwell time, and purchasing behavior. The effects are consistent across store formats and product categories."
-    },
-    {
-      "q": "What should retail leaders do about their in-store audio?",
-      "a": "Start with a diagnostic audit. Walk three stores at different times of day and ask: who chose this music, what informed the choice, and how do we know it is working? If you cannot answer the third question, your audio environment is running without the measurement discipline you apply to every other part of the store."
-    }
-  ],
-  "sitemap_priority": 0.8
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

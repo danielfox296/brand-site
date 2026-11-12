@@ -1,3 +1,6 @@
 {
-  "output": "blog/how-does-music-affect-browsing-behavior.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/how-does-music-affect-browsing-behavior.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

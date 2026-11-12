@@ -1,7 +1,6 @@
 {
-  "title": "Will It Retail? The Music Tier List | Entuned",
-  "meta_description": "Not every song belongs in your store. We ranked real music S through F by how well it works in a retail environment. Most of it doesn't make the cut.",
+  "title": "Redirecting… | Entuned",
   "output": "will-it-retail.html",
-  "lastmod": "2026-05-14",
-  "sitemap_priority": 0.7
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

@@ -1,5 +1,6 @@
 {
-  "title": "Get More From the Sensor Data You Already Pay For | Entuned",
-  "meta_description": "Most retailers pay for in-store sensor data but only use it for reporting. Here's how to turn traffic, dwell, and conversion numbers into store-level.",
-  "output": "blog/closing-the-loop-on-retail-analytics.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/closing-the-loop-on-retail-analytics.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

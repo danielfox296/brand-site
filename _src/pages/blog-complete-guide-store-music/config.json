@@ -1,5 +1,6 @@
 {
-  "title": "The Complete Guide to Store Music in 2026 | Entuned",
-  "meta_description": "Licensing rules, what the current providers offer, and why outcome-designed music is a different category. Everything a retail store owner needs to know.",
-  "output": "blog/complete-guide-store-music.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/complete-guide-store-music.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

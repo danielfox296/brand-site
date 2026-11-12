@@ -1,5 +1,6 @@
 {
-  "title": "What Music Should a Restaurant Play? | Entuned",
-  "meta_description": "Sound changes how food tastes and what diners choose. The research on sonic seasoning, volume, and the slow-tempo lever that pours more drinks.",
-  "output": "blog/what-music-should-a-restaurant-play.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/what-music-should-a-restaurant-play.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

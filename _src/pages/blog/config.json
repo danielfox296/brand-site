@@ -1,7 +1,6 @@
 {
-  "title": "Retail Music Strategy Blog | Entuned",
-  "meta_description": "Insights on in-store music strategy, customer psychology, dwell time optimization, and the science of sound in retail environments.",
+  "title": "Redirecting… | Entuned",
   "output": "blog.html",
-  "lastmod": "2026-05-05",
-  "sitemap_changefreq": "weekly"
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

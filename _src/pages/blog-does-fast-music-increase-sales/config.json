@@ -1,3 +1,6 @@
 {
-  "output": "blog/does-fast-music-increase-sales.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/does-fast-music-increase-sales.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

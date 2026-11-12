@@ -1,1 +1,6 @@
-{ "output": "blog/what-one-chord-does.html" }
+{
+  "title": "Redirecting… | Entuned",
+  "output": "blog/what-one-chord-does.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
+}

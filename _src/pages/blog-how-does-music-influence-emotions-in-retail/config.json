@@ -1,3 +1,6 @@
 {
-  "output": "blog/how-does-music-influence-emotions-in-retail.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/how-does-music-influence-emotions-in-retail.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

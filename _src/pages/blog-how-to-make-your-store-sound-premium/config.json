@@ -1,5 +1,6 @@
 {
-  "title": "How to Make Your Store Sound Premium | Entuned",
-  "meta_description": "What makes a store sound expensive? Not the genre. The right music lifts willingness to pay.",
-  "output": "blog/how-to-make-your-store-sound-premium.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/how-to-make-your-store-sound-premium.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

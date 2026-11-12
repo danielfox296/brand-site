@@ -1,5 +1,6 @@
 {
-  "title": "When the Music's Right, Employees Perform Better | Entuned",
-  "meta_description": "Staff spend eight hours in the audio environment customers spend thirty minutes in. The effect on sales behavior is larger than most operators realize.",
-  "output": "blog/what-happens-to-employee-performance-when-the-music-is-right.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/what-happens-to-employee-performance-when-the-music-is-right.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

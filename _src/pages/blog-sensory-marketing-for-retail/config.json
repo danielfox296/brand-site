@@ -1,5 +1,6 @@
 {
-  "title": "Sensory Marketing: Where Sound Fits the Strategy | Entuned",
-  "meta_description": "Your store sends signals the second a customer walks in. Scent and lighting get real budgets. Sound gets a playlist. That gap is measurable.",
-  "output": "blog/sensory-marketing-for-retail.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/sensory-marketing-for-retail.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

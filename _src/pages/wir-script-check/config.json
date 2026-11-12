@@ -1,7 +1,6 @@
 {
-  "title": "Script Check — Will It Retail?",
-  "meta_description": "Paste a Will It Retail script. Get feedback on hooks, hedging, structure, and word count.",
+  "title": "Redirecting… | Entuned",
   "output": "script-check.html",
-  "robots": "noindex",
-  "no_chrome": true
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

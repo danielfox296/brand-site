@@ -1,6 +1,6 @@
 {
-  "title": "Contact | Entuned",
-  "meta_description": "Reach Entuned. Start the pilot conversation for 5–50 locations, talk Enterprise rollout, ask about Entuned Free, or route partner / press.",
+  "title": "Redirecting… | Entuned",
   "output": "contact.html",
-  "lastmod": "2026-05-05"
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

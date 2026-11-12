@@ -1,5 +1,6 @@
 {
-  "title": "Tempo Controls Bodies, Not Wallets | Entuned",
-  "meta_description": "Slower music keeps customers in your store longer. But dwell time and spending are different variables.",
-  "output": "blog/tempo-controls.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/tempo-controls.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

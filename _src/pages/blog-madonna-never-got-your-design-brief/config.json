@@ -1,1 +1,6 @@
-{ "output": "blog/madonna-never-got-your-design-brief.html" }
+{
+  "title": "Redirecting… | Entuned",
+  "output": "blog/madonna-never-got-your-design-brief.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
+}

@@ -1,5 +1,6 @@
 {
-  "title": "Tempo and Volume Are Free. The Revenue Isn't. | Entuned",
-  "meta_description": "Every retailer already has a volume knob and playlists at any tempo. The free levers give you better conditions. The hard work is what moves revenue.",
-  "output": "blog/tempo-volume-free.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/tempo-volume-free.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

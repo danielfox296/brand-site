@@ -1,6 +1,6 @@
 {
-  "title": "The Science | Entuned",
-  "meta_description": "Four decades of peer-reviewed research prove music changes retail behavior. Tempo, genre congruence, and volume measurably affect dwell time and spending.",
+  "title": "Redirecting… | Entuned",
   "output": "science.html",
-  "lastmod": "2026-05-05"
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

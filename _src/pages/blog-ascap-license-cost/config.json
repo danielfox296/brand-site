@@ -1,5 +1,6 @@
 {
-  "title": "ASCAP License Cost: What Small Businesses Actually Pay | Entuned",
-  "meta_description": "ASCAP retail licenses start at $365 to $402 per year — but that's just one of four PROs. Licensing all four directly runs $1,059 to $1,552 a year for a small store.",
-  "output": "blog/ascap-license-cost.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/ascap-license-cost.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

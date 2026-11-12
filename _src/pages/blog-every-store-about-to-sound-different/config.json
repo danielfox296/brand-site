@@ -1,1 +1,6 @@
-{ "output": "blog/every-store-about-to-sound-different.html" }
+{
+  "title": "Redirecting… | Entuned",
+  "output": "blog/every-store-about-to-sound-different.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
+}

@@ -1,3 +1,6 @@
 {
-  "output": "blog/how-do-you-measure-the-impact-of-music-in-retail.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/how-do-you-measure-the-impact-of-music-in-retail.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

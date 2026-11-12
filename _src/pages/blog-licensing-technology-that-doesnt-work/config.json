@@ -1,1 +1,6 @@
-{ "output": "blog/licensing-technology-that-doesnt-work.html" }
+{
+  "title": "Redirecting… | Entuned",
+  "output": "blog/licensing-technology-that-doesnt-work.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
+}

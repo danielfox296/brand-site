@@ -1,5 +1,6 @@
 {
-  "title": "What Music to Play in a High-End Store | Entuned",
-  "meta_description": "Classical music moved wine shoppers toward pricier bottles, no extra units sold. What your store sounds like shapes what customers spend. Here is what operators get wrong.",
-  "output": "blog/what-music-to-play-in-a-high-end-store.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/what-music-to-play-in-a-high-end-store.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

@@ -1,5 +1,6 @@
 {
-  "title": "Retail Designed Everything Except the Soundtrack | Entuned",
-  "meta_description": "Every surface, every fixture, every light in a well-run store is a deliberate choice. Then the music comes on and the spell breaks.",
-  "output": "blog/retail-designed-everything.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/retail-designed-everything.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

@@ -1,1 +1,6 @@
-{ "output": "blog/why-hit-songs-make-bad-store-music.html" }
+{
+  "title": "Redirecting… | Entuned",
+  "output": "blog/why-hit-songs-make-bad-store-music.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
+}

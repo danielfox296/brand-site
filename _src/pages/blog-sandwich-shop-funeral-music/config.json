@@ -1,1 +1,6 @@
-{ "output": "blog/sandwich-shop-funeral-music.html" }
+{
+  "title": "Redirecting… | Entuned",
+  "output": "blog/sandwich-shop-funeral-music.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
+}

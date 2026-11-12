@@ -1,5 +1,6 @@
 {
-  "title": "Your Store Already Has a Mood | Entuned",
-  "meta_description": "Your store is already setting a mood for every customer who walks in. Here is how to tell whether your current music is helping sales or quietly hurting.",
-  "output": "blog/your-store-already-has-a-mood.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/your-store-already-has-a-mood.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

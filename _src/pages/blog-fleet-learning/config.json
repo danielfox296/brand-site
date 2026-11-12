@@ -1,5 +1,6 @@
 {
-  "title": "Running Controlled Tests Across Multiple Stores | Entuned",
-  "meta_description": "How multi-location retailers can run controlled store-level tests instead of guessing. A practical guide to isolating what actually moves the numbers.",
-  "output": "blog/fleet-learning.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/fleet-learning.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

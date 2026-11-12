@@ -1,1 +1,6 @@
-{ "output": "blog/what-in-the-music-moves-the-sale.html" }
+{
+  "title": "Redirecting… | Entuned",
+  "output": "blog/what-in-the-music-moves-the-sale.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
+}

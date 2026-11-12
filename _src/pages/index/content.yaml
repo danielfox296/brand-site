@@ -1,95 +1,20 @@
-# index — editable text content
+# index — editable text content (Entuned, LLC parent-company page)
 
-hero:
-  eyebrow: "A new design system for retail audio"
-  h1: "Can music increase your sales?"
-  subline: "Forty years of peer-reviewed research says yes. Tempo controls dwell time. Identity-fit music lifts what customers spend. Familiar music drives them out faster. Entuned produces original music designed for your customer and your store."
-  cta_pilot: "Start a measured pilot"
-  cta_primary: "Start Free"
-  cta_microcopy: "Start free and hear it on your floor today &middot; no card &middot; no time limit. Running 5&ndash;50 locations? Start a measured pilot."
+h1_1: Entuned, LLC
+p_intro: Entuned, LLC is the company behind Signet Artists and Daniel Fox's work in music, media and marketing.
+h2_ventures: Ventures
 
-# Pillar 1 — Yes (research)
-pillar1:
-  eyebrow: "The short answer"
-  h2: "Yes. The research is older and more specific than most shop owners realize."
-  p1: "Music isn't ambient — it's a behavioral variable, peer-reviewed since 1982. Tempo controls how customers move through your store. Identity-fit music lifts what they're willing to pay. Familiar songs drive them out faster, even when they say they like it. The receipts are below."
-  p2: "Most stores still play music chosen by a vendor who has never set foot inside. Visual merchandising got an intentional plan. Interior design picked the paint. The audio environment running over every customer all day is whatever the music vendor sent over. Forty years of evidence says that audio is doing measurable work in the room — the only question is whether you chose its effect."
+signet_name: Signet Artists
+signet_line: Live music for private and corporate events in Colorado, plus event photo and video and artist development.
+signet_url: https://signetartists.com
+signet_domain: signetartists.com
 
-# Pillar 2 — The mechanism (design spec)
-pillar2:
-  eyebrow: "The mechanism"
-  h2: "Background music has been a creative endeavor for decades. We turned it into a design spec."
-  p1: "Entuned is a retail music strategy platform that turns customer psychology into store soundtracks — driving measurable sales lift. Background music vendors lease songs artists wrote for other reasons — and the lyrics, tempo, energy, and cultural reference were never chosen with your retail floor in mind. Entuned produces original music to specification: your customer, your category, your outcome. Tempo tuned to your floor pace. Identity calibrated to your customer. Lyrics screened to avoid actively negative-priming the people you're trying to convert."
-  p2: "The Boost tier starts with the customer your store is built for. We produce music that speaks to them, motivates a shopping experience that fits, and gets out of the way. Original, commercial-use cleared, no PRO obligation passed to you. Not a playlist. Not a curated library. A design specification, executed."
+fox_name: Daniel Fox
+fox_line: Marketing consulting.
+fox_url: https://daniel-fox.com
+fox_domain: daniel-fox.com
 
-# Pillar 3 — The proof (pilot + improvement)
-pillar3:
-  eyebrow: "The early read"
-  h2: "Music that gets sharper the longer it runs."
-  p1: "Free and Boost deliver the concept. Pro pulls sales and traffic data from your locations and refines the music against the outcome you set — the longer it runs, the more precisely it produces what you measure. Self-improving refinement compounds over weeks and months of correlation."
-  p2: "The full pilot is structured as a 12-week test against matched control stores — the read comes from your own reporting stack, on your terms."
-
-# Social proof
-social_eyebrow: "From the pilot floor"
-
-social_quote_2: "This is refreshing!"
-social_quote_2_attr: "Elaine K."
-social_quote_2_context: "Pilot store, Spring 2026"
-
-social_quote_3: "I was literally singing this song, the chorus to the song &lsquo;add it to the pile&rsquo;, and then I saw that other shirt and I thought why not &lsquo;add it to the pile&rsquo;. This is brilliant."
-social_quote_3_attr: "Customer who made an additional $100+ purchase"
-social_quote_3_context: "Pilot store, Spring 2026"
-
-social_disclaimer: "That was day one in the first store. The 12-week pilot runs the same system across a matched test-and-control subset of your stores and reads the result in your own reporting."
-
-# Integrates with — POS logo wall
-integrates:
-  eyebrow: "Integrations"
-  h3: "Plays nicely with your stack."
-
-# Built for
-built_for_eyebrow: "Built for"
-built_for_text: "Apparel, footwear, jewelry, home goods, cosmetics, furniture, mattress, sporting goods, beauty supply. Real customer dwell, real conversion, real return visits."
-
-# Tier preview
-tiers:
-  eyebrow: "Pricing"
-  h2: "Four options. Start free."
-  essentials_name: "Entuned Free"
-  essentials_price: "Free"
-  essentials_body: "The shared starter catalogue, engineered to hold browsers on the floor longer. Not yet built around your customer. Free indefinitely, no credit card."
-  core_name: "Boost"
-  core_price: "$99/mo"
-  core_body: "Music designed for your single Ideal Customer Profile (ICP). All research-backed outcomes unlocked. Per location."
-  professional_name: "Professional"
-  professional_price: "$399/mo"
-  professional_body: "Music designed for your location's multiple ICPs. POS integration, Outcome Scheduling (like day-parting, but better), self-improving refinement, monthly founder consults."
-  enterprise_name: "Enterprise"
-  enterprise_price: "Contact"
-  enterprise_body: "Multi-location rollouts, custom ICP design, performance terms."
-  cta_primary: "See Full Pricing"
-
-# FAQ
-home_faq_h2: "Common questions."
-
-home_faq_q1: "How much does it cost?"
-home_faq_a1: 'Entuned Free &mdash; no credit card, no invoice, no time limit. Entuned Boost is $99 per location per month. Professional is $399 per location per month. Contact us for Enterprise pricing. <a href="pricing.html">See full pricing →</a>'
-
-home_faq_q2: "Do I need new speakers or hardware?"
-home_faq_a2: "No. Entuned streams through whatever audio system you already have — Sonos, AirPlay, Bluetooth, line-in, hardwired. The stream plays in a web browser. Internet, connected device, and speaker system required (obvi.)"
-
-home_faq_q3: "What about music licensing — am I covered?"
-home_faq_a3: 'Yes. Every song Entuned plays is original, commercial-use cleared, and PRO-indemnified the moment it starts. No ASCAP, BMI, SESAC, or SoundExchange royalties. Every subscription includes an indemnification certificate. <a href="licensing.html">Full details on the licensing page →</a>'
-
-home_faq_q4: "What if I run multiple stores?"
-home_faq_a4: 'Running 5&ndash;50 locations? The entry is a free 12-week measured pilot &mdash; <a href="pilot.html">start there</a>. Entuned Professional handles multi-store deployments with POS integration, Outcome Scheduling (like day-parting, but better), and self-improving features. For fleets requiring custom ICP design, performance guarantees, or white-glove rollout, talk to <a href="enterprise.html">Enterprise</a>.'
-
-home_faq_q5: "How do I get started on Entuned Free?"
-home_faq_a5: 'Sign in with your email or Google at <a href="https://app.entuned.co/start">app.entuned.co/start</a>. No credit card. No invoices. You get a unique player URL the moment you finish that you can play from any tablet, mobile device or computer.'
-
-# Final CTA
-final:
-  h2: "Three minutes from sign-up to music in your store."
-  subline: "Free to stream. More power when you outgrow it."
-  cta_pilot: "Start a measured pilot"
-  cta_primary: "Start Free"
+mb_name: Music Behaviorist
+mb_line: Writing and research on music and human behavior.
+mb_url: https://danielchristopherfox.com
+mb_domain: danielchristopherfox.com

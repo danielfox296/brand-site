@@ -1,1 +1,6 @@
-{ "output": "blog/one-playlist-for-everyone-no-one.html" }
+{
+  "title": "Redirecting… | Entuned",
+  "output": "blog/one-playlist-for-everyone-no-one.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
+}

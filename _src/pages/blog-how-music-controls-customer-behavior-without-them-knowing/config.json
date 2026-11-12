@@ -1,3 +1,6 @@
 {
-  "output": "blog/how-music-controls-customer-behavior-without-them-knowing.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/how-music-controls-customer-behavior-without-them-knowing.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

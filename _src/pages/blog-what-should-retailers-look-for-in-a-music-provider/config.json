@@ -1,3 +1,6 @@
 {
-  "output": "blog/what-should-retailers-look-for-in-a-music-provider.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/what-should-retailers-look-for-in-a-music-provider.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

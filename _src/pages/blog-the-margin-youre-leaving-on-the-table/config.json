@@ -1,5 +1,6 @@
 {
-  "title": "The Margin You're Leaving on the Table | Entuned",
-  "meta_description": "When music matches customer identity, willingness to pay rises. Same products, same prices.",
-  "output": "blog/the-margin-youre-leaving-on-the-table.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/the-margin-youre-leaving-on-the-table.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

@@ -1,6 +1,6 @@
 {
-  "title": "Results | Entuned",
-  "meta_description": "Forty years of peer-reviewed retail audio research underneath every Entuned claim — named researchers, sample sizes, and effect magnitudes.",
+  "title": "Redirecting… | Entuned",
   "output": "results.html",
-  "lastmod": "2026-07-12"
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

@@ -1,7 +1,6 @@
 {
-  "title": "Sound Audit — Free 60-Second Retail Music Self-Assessment | Entuned",
-  "meta_description": "Score whether your store music does measurable work. 10 questions, an honest read, the two levers you're underusing. Free measured pilot for 5–50 stores.",
+  "title": "Redirecting… | Entuned",
   "output": "sound-audit.html",
-  "lastmod": "2026-05-09",
-  "sitemap_priority": 0.9
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

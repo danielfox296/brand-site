@@ -1,5 +1,6 @@
 {
-  "title": "You Hired a Lighting Designer. Hire a Sound One. | Entuned",
-  "meta_description": "Retail stores specify lighting down to the Kelvin temperature. Nobody does this with sound. The parallel is exact — and the gap is costing you.",
-  "output": "blog/sound-designer.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/sound-designer.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

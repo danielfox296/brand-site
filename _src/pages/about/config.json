@@ -1,6 +1,6 @@
 {
-  "title": "About | Entuned",
-  "meta_description": "The story behind Entuned: why retail music never had to prove it worked, and the founder building the version that does.",
+  "title": "Redirecting… | Entuned",
   "output": "about.html",
-  "lastmod": "2026-05-05"
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

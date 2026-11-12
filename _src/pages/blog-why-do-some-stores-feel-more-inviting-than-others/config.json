@@ -1,3 +1,6 @@
 {
-  "output": "blog/why-do-some-stores-feel-more-inviting-than-others.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/why-do-some-stores-feel-more-inviting-than-others.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

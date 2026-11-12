@@ -1,5 +1,6 @@
 {
-  "title": "127 BPM in a Target on a Tuesday | Entuned",
-  "meta_description": "Most stores have no spec for the tempo of their background music. Here's what that costs in dwell time and basket size, backed by four decades of research.",
-  "output": "blog/127-bpm-target-dwell-time.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/127-bpm-target-dwell-time.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

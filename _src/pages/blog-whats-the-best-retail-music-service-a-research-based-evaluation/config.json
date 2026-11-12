@@ -1,3 +1,6 @@
 {
-  "output": "blog/whats-the-best-retail-music-service-a-research-based-evaluation.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/whats-the-best-retail-music-service-a-research-based-evaluation.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

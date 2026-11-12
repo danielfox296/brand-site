@@ -1,3 +1,6 @@
 {
-  "output": "blog/why-some-stores-accidentally-push-customers-out-the-door.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/why-some-stores-accidentally-push-customers-out-the-door.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

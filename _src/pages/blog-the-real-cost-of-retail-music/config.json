@@ -1,5 +1,6 @@
 {
-  "title": "The Real Cost of Your Retail Music | Entuned",
-  "meta_description": "The music invoice is the smallest cost of bad store audio. The real cost is revenue that never shows up on any report.",
-  "output": "blog/the-real-cost-of-retail-music.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/the-real-cost-of-retail-music.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

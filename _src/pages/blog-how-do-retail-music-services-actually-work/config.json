@@ -1,3 +1,6 @@
 {
-  "output": "blog/how-do-retail-music-services-actually-work.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/how-do-retail-music-services-actually-work.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

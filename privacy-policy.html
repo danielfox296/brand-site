@@ -4,33 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- First-touch signup attribution. Stamps a `.entuned.co` cookie on the
-       FIRST page view so the original source (referrer + UTM) survives the
-       entuned.co -> app.entuned.co/start hop. The dashboard's /start reads the
-       same cookie (same name + shape) and forwards it to the server. Runs
-       early + first-touch-wins so it never overwrites the true upstream. -->
-  <script>
-    (function () {
-      try {
-        if (/(?:^|; )entuned_attr=/.test(document.cookie)) return;
-        var p = new URLSearchParams(window.location.search);
-        var payload = {
-          r: document.referrer || undefined,
-          lp: (window.location.pathname + window.location.search) || undefined,
-          us: p.get('utm_source') || undefined,
-          um: p.get('utm_medium') || undefined,
-          uc: p.get('utm_campaign') || undefined,
-          ut: p.get('utm_term') || undefined,
-          un: p.get('utm_content') || undefined,
-          t: new Date().toISOString()
-        };
-        var host = window.location.hostname;
-        var domain = (host === 'entuned.co' || /\.entuned\.co$/.test(host)) ? '; domain=.entuned.co' : '';
-        document.cookie = 'entuned_attr=' + encodeURIComponent(JSON.stringify(payload)) +
-          '; path=/' + domain + '; max-age=' + (30 * 24 * 60 * 60) + '; SameSite=Lax';
-      } catch (e) { /* best-effort */ }
-    })();
-  </script>
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192x192.png">
@@ -38,14 +11,13 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="canonical" href="https://entuned.co/privacy-policy.html">
   <meta name="robots" content="index, follow">
-  <title>Privacy Policy | Entuned</title>
-  <meta name="description" content="Entuned&#x27;s privacy policy. What data we collect, how we use it, how we protect it, and your rights over your information as a visitor or customer.">
+  <title>Privacy Policy | Entuned, LLC</title>
+  <meta name="description" content="How Entuned, LLC and its ventures, including Signet Artists, collect, use and protect personal information, and how to ask us to see, correct or delete it.">
   <meta name="theme-color" content="#20201c">
 
   <!-- Open Graph -->
-  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="rss.xml">
-  <meta property="og:title" content="Privacy Policy | Entuned">
-  <meta property="og:description" content="Entuned&#x27;s privacy policy. What data we collect, how we use it, how we protect it, and your rights over your information as a visitor or customer.">
+  <meta property="og:title" content="Privacy Policy | Entuned, LLC">
+  <meta property="og:description" content="How Entuned, LLC and its ventures, including Signet Artists, collect, use and protect personal information, and how to ask us to see, correct or delete it.">
   <meta property="og:url" content="https://entuned.co/privacy-policy.html">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://entuned.co/img/og-default.png">
@@ -54,8 +26,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Privacy Policy | Entuned">
-  <meta name="twitter:description" content="Entuned&#x27;s privacy policy. What data we collect, how we use it, how we protect it, and your rights over your information as a visitor or customer.">
+  <meta name="twitter:title" content="Privacy Policy | Entuned, LLC">
+  <meta name="twitter:description" content="How Entuned, LLC and its ventures, including Signet Artists, collect, use and protect personal information, and how to ask us to see, correct or delete it.">
   <meta name="twitter:image" content="https://entuned.co/img/og-default.png">
 
   <!-- Structured Data -->
@@ -64,12 +36,11 @@
   "@context": "https://schema.org",
   "@type": "Organization",
   "@id": "https://entuned.co/#organization",
-  "name": "Entuned",
-  "legalName": "Entuned LLC",
-  "url": "https://entuned.co",
-  "logo": "https://entuned.co/img/entuned-logo-ice.svg",
-  "description": "Entuned is a retail music strategy platform that turns customer psychology into store soundtracks \u2014 driving measurable sales lift.",
-  "foundingDate": "2026",
+  "name": "Entuned, LLC",
+  "legalName": "Entuned, LLC",
+  "url": "https://entuned.co/",
+  "logo": "https://entuned.co/img/entuned-logo-ice.png",
+  "description": "Entuned, LLC is the company behind Signet Artists and Daniel Fox's work in music, media and marketing.",
   "founder": {
     "@type": "Person",
     "@id": "https://danielchristopherfox.com/#person",
@@ -77,24 +48,11 @@
     "alternateName": "Daniel Fox",
     "url": "https://danielchristopherfox.com/"
   },
-  "areaServed": "United States",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "Sales",
-    "url": "https://entuned.co/contact.html"
-  },
-  "knowsAbout": [
-    "retail atmospherics",
-    "music psychology",
-    "in-store customer behavior",
-    "retail analytics",
-    "engineered retail audio",
-    "behavioral retail variables"
-  ],
+  "email": "hello@entuned.co",
   "sameAs": [
-    "https://www.linkedin.com/company/entunedllc",
-    "https://www.youtube.com/@entuned",
-    "https://entuned.substack.com"
+    "https://signetartists.com",
+    "https://daniel-fox.com",
+    "https://danielchristopherfox.com"
   ]
 }
   </script>
@@ -112,7 +70,7 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Privacy Policy | Entuned"
+      "name": "Privacy Policy | Entuned, LLC"
     }
   ]
 }
@@ -121,22 +79,19 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
-  <link rel="stylesheet" href="styles.css?v=331834bf">
-  
+  <link rel="stylesheet" href="styles.css?v=ee14d3ab">
+  <style>
+.privacy-body { line-height: 1.8; font-size: 1rem; opacity: 0.9; }
+.privacy-body h2 { font-size: 1.4rem; margin-top: 2.5rem; }
+.privacy-body ul { margin: 1rem 0 1.5rem 1.5rem; }
+.privacy-body li { margin-bottom: 0.6rem; }
+  </style>
 </head>
 <body>
   <!-- NAVIGATION -->
 <nav aria-label="Main navigation">
   <div class="container">
-    <a href="/" class="logo"><img src="img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
-    <ul class="nav-links">
-      <li><a href="how-it-works.html">How It Works</a></li>
-      <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li class="nav-cta-item"><a href="https://app.entuned.co/start" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Start Free</a></li>
-    </ul>
-    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+    <a href="/" class="logo"><img src="img/entuned-logo-ice.svg" alt="Entuned, LLC" class="logo-img"></a>
   </div>
 </nav>
 
@@ -144,154 +99,66 @@
   <section class="section" style="padding-top: 10rem;">
   <div class="container" style="max-width: 800px;">
     <h1 style="font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 0.5rem;">Privacy Policy</h1>
-    <p style="opacity: 0.5; margin-bottom: 3rem;">Last updated: March 23, 2026</p>
+    <p style="opacity: 0.5; margin-bottom: 3rem;">Last updated: November 12, 2026</p>
 
-    <div style="line-height: 1.8; font-size: 1rem; opacity: 0.85;">
-
-      <h2 style="font-size: 1.4rem; margin-top: 2.5rem;">1. Information We Collect</h2>
-      <p>When you visit our website or interact with our services, we may collect the following types of information:</p>
-      <ul style="margin: 1rem 0 1.5rem 1.5rem;">
-        <li style="margin-bottom: 0.5rem;"><strong>Contact information</strong> you provide voluntarily, such as your name and email address when you reach out to us.</li>
-        <li style="margin-bottom: 0.5rem;"><strong>Usage data</strong> collected automatically, including pages visited, time spent on site, browser type, and referring URL.</li>
-        <li style="margin-bottom: 0.5rem;"><strong>Device information</strong> such as IP address, operating system, and screen resolution.</li>
+    <div class="privacy-body">
+      <h2>What this policy covers</h2>
+      <p>This policy covers Entuned, LLC, a Wyoming limited liability company, and everything it runs: Signet Artists (signetartists.com), Daniel Fox&rsquo;s marketing consulting (daniel-fox.com), Music Behaviorist (danielchristopherfox.com) and this site (entuned.co). It also covers the records we still hold from the Entuned retail music service, which has ended. &ldquo;We&rdquo; and &ldquo;us&rdquo; mean Entuned, LLC.</p>
+      <h2>1. What we collect</h2>
+      <ul>
+        <li><strong>Booking inquiries.</strong> When you ask Signet Artists about an event, through the website form, by email or by phone, we keep your name, email address, phone number, the date and place of the event and what you tell us about it.</li>
+        <li><strong>Website chat.</strong> Signet&rsquo;s website chat keeps the messages you send, the contact details you give and the page you started the chat on.</li>
+        <li><strong>Artist and vendor submissions.</strong> When a musician applies through Signet&rsquo;s For Artists form, or a vendor applies to Signet&rsquo;s Preferred Vendor List, we keep what they send: name, contact details, links, recordings, photographs and details of their work.</li>
+        <li><strong>Consulting inquiries.</strong> When you get in touch through daniel-fox.com or danielchristopherfox.com, or book a call there, we keep your name, email address and what you write.</li>
+        <li><strong>Clients and payments.</strong> When you hire us, we keep the agreement, the invoices and the payment records. Card payments go through Stripe. We see the amount, the date, the name on the card and its last four digits, and never the full card number.</li>
+        <li><strong>Former Entuned service subscribers.</strong> We keep the account and billing records from the Entuned retail music service for as long as tax and accounting law requires.</li>
+        <li><strong>Newsletter subscribers.</strong> If you subscribe to a newsletter on Substack, Substack holds your email address under its own privacy policy, and we can see the subscriber list.</li>
+        <li><strong>Website visits.</strong> Our websites use Google Analytics, which records the pages you visit, the site that sent you, your browser and device type, and an approximate location worked out from your IP address.</li>
       </ul>
-
-      <h2 style="font-size: 1.4rem; margin-top: 2.5rem;">2. How We Use Your Information</h2>
-      <p>We use the information we collect to:</p>
-      <ul style="margin: 1rem 0 1.5rem 1.5rem;">
-        <li style="margin-bottom: 0.5rem;">Respond to your inquiries and provide customer support.</li>
-        <li style="margin-bottom: 0.5rem;">Improve our website, products, and services.</li>
-        <li style="margin-bottom: 0.5rem;">Analyze usage trends to enhance the user experience.</li>
-        <li style="margin-bottom: 0.5rem;">Send you information you have requested or that may be relevant to your interests.</li>
+      <h2>2. How we use it</h2>
+      <ul>
+        <li>To answer you, send a quote and plan and run your event or project.</li>
+        <li>To book and pay the artists and vendors who work on it, and to invoice and collect payment from clients.</li>
+        <li>To keep our books and meet our tax and legal obligations.</li>
+        <li>To see which pages people read, so we can fix what isn&rsquo;t working.</li>
       </ul>
-
-      <h2 style="font-size: 1.4rem; margin-top: 2.5rem;">3. Cookies and Analytics</h2>
-      <p>We use Google Analytics to understand how visitors interact with our website. Google Analytics uses cookies to collect anonymous usage data. You can opt out of Google Analytics by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-on</a>.</p>
-
-      <h2 style="font-size: 1.4rem; margin-top: 2.5rem;">4. Data Sharing</h2>
-      <p>We do not sell, rent, or trade your personal information to third parties. We may share information with trusted service providers who assist us in operating our website and conducting our business, provided they agree to keep your information confidential.</p>
-
-      <h2 style="font-size: 1.4rem; margin-top: 2.5rem;">5. Data Security</h2>
-      <p>We implement reasonable security measures to protect the information we collect. However, no method of transmission over the internet or electronic storage is completely secure, and we cannot guarantee absolute security.</p>
-
-      <h2 style="font-size: 1.4rem; margin-top: 2.5rem;">6. Third-Party Links</h2>
-      <p>Our website may contain links to third-party websites. We are not responsible for the privacy practices or content of those sites. We encourage you to review the privacy policies of any third-party sites you visit.</p>
-
-      <h2 style="font-size: 1.4rem; margin-top: 2.5rem;">7. Your Rights</h2>
-      <p>You may request access to, correction of, or deletion of your personal information at any time by contacting us. Depending on your jurisdiction, you may have additional rights under applicable data protection laws.</p>
-
-      <h2 style="font-size: 1.4rem; margin-top: 2.5rem;">8. Changes to This Policy</h2>
-      <p>We may update this privacy policy from time to time. Any changes will be posted on this page with a revised "Last updated" date.</p>
-
-      <h2 style="font-size: 1.4rem; margin-top: 2.5rem;">9. Contact Us</h2>
-      <p>If you have questions about this privacy policy, please reach out via our <a href="contact.html">contact page</a>.</p>
-
+      <p>We don&rsquo;t sell or rent personal information, and we don&rsquo;t share it for anyone else&rsquo;s advertising.</p>
+      <h2>3. Who we share it with</h2>
+      <ul>
+        <li><strong>The people working on your event.</strong> Signet gives the artists and vendors booked for your event your name, the event details and the contact on the day.</li>
+        <li><strong>Companies that run parts of the business for us.</strong> Stripe (card payments), Mercury (banking and invoices), Google (email, documents, forms and website analytics), Crisp (website chat), FormSubmit (website forms), Calendly (call booking), Substack (newsletters), GitHub (website hosting) and Railway (hosting for the former Entuned service). Each one handles the information to provide its service to us.</li>
+        <li><strong>When the law requires it,</strong> for example in response to a court order, or to protect someone&rsquo;s safety.</li>
+      </ul>
+      <h2>4. Cookies</h2>
+      <p>Google Analytics sets cookies to tell one visit from the next. Signet&rsquo;s chat sets a cookie so a conversation can carry on from page to page. Videos on our sites play from YouTube in its privacy-enhanced mode, and YouTube may set cookies once you press play. You can block cookies in your browser settings, and you can turn off Google Analytics with the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics opt-out add-on</a>.</p>
+      <h2>5. How long we keep it</h2>
+      <p>We keep agreements, invoices and payment records for as long as tax law requires. We keep inquiries, chats and submissions while they&rsquo;re useful for the work, and we delete them sooner if you ask.</p>
+      <h2>6. Security</h2>
+      <p>We keep personal information in accounts protected by passwords and two-step sign-in where the service offers it, and we give access only to the people who need it for the work. No storage or transmission over the internet is completely secure, so we can&rsquo;t guarantee it.</p>
+      <h2>7. Your choices</h2>
+      <p>You can ask us what we hold about you, ask us to correct it or ask us to delete it, and you can unsubscribe from any email we send. Depending on where you live, the law there may give you more rights, and we&rsquo;ll honor them. Write to the address below and we&rsquo;ll answer within 30 days.</p>
+      <h2>8. Children</h2>
+      <p>Our sites and services are for adults. We don&rsquo;t knowingly collect personal information from children under 13, and we delete it if we learn we have.</p>
+      <h2>9. Other websites</h2>
+      <p>Our sites link to other websites, including artists&rsquo; and vendors&rsquo; own sites. Their privacy practices are their own.</p>
+      <h2>10. Changes</h2>
+      <p>When we change this policy, we post the new version here with a new date at the top.</p>
+      <h2>11. Contact</h2>
+      <p>Questions or requests about your information: <a href="mailto:hello@entuned.co">hello@entuned.co</a>. Entuned, LLC, a Wyoming limited liability company, Colorado, USA.</p>
     </div>
   </div>
 </section>
   </main>
 
   <!-- FOOTER -->
-<footer>
+<footer class="llc-footer">
   <div class="container">
-    <div class="footer-section">
-      <h4><img src="img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
-      <p style="opacity: 0.7; font-size: 0.95rem;">Engineered retail audio. PRO-indemnified.</p>
-      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
-      <div class="footer-newsletter">
-        <h4>Newsletter</h4>
-        <p class="footer-newsletter-tagline">Retail music, from the floor. Research and field notes, in your inbox.</p>
-        <form class="footer-newsletter-form" action="https://entuned.substack.com/subscribe" method="get" target="_blank" rel="noopener">
-          <input type="email" name="email" placeholder="you@yourstore.com" required aria-label="Email address for the Entuned newsletter">
-          <button type="submit">Subscribe</button>
-        </form>
-      </div>
-    </div>
-    <div class="footer-section">
-      <h4>Product</h4>
-      <ul>
-        <li><a href="how-it-works.html">How It Works</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="pilot.html">Multi-Location Pilot</a></li>
-        <li><a href="enterprise.html">Enterprise</a></li>
-        <li><a href="why-entuned.html">Why Entuned</a></li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h4>For Your Industry</h4>
-      <ul>
-        <li><a href="for-apparel.html">Apparel</a></li>
-        <li><a href="for-beauty-supply.html">Beauty Supply</a></li>
-        <li><a href="for-cosmetics.html">Cosmetics &amp; Beauty</a></li>
-        <li><a href="for-furniture-mattress.html">Furniture &amp; Mattress</a></li>
-        <li><a href="for-home-goods.html">Home Goods</a></li>
-        <li><a href="for-jewelry.html">Jewelry</a></li>
-        <li><a href="for-specialty-retail.html">Specialty Retail</a></li>
-        <li><a href="for-sporting-goods.html">Sporting Goods</a></li>
-      </ul>
-      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
-      <ul>
-        <li><a href="for-retail-leaders.html">Retail Operators</a></li>
-        <li><a href="for-cfos.html">CFOs</a></li>
-        <li><a href="impact.html">Impact Calculator</a></li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h4>Research</h4>
-      <ul>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="results.html">Results</a></li>
-        <li><a href="science.html">The Science</a></li>
-        <li><a href="will-it-retail.html">Will It Retail?</a></li>
-        <li><a href="https://entuned.substack.com" target="_blank" rel="noopener">Newsletter</a></li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h4>Learn</h4>
-      <ul>
-        <li><a href="how-music-affects-retail.html">How Music Affects Retail</a></li>
-        <li><a href="how-to-increase-aov-retail.html">Increase Average Order Value</a></li>
-        <li><a href="how-to-increase-dwell-time-retail.html">Increase Dwell Time</a></li>
-        <li><a href="how-to-increase-impulse-purchases-retail.html">Drive Impulse Purchases</a></li>
-        <li><a href="how-to-improve-retail-conversion-rate.html">Improve Conversion Rate</a></li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h4>Tools &amp; Comparisons</h4>
-      <ul>
-        <li><a href="music-license-cost-calculator.html">Music License Cost Calculator</a></li>
-        <li><a href="sound-audit.html">Sound Audit</a></li>
-        <li><a href="spotify-business-risk-check.html">Spotify Business Risk Check</a></li>
-        <li><a href="pro-enforcement-map.html">PRO Enforcement Map</a></li>
-        <li><a href="retail-music-decibel-guide.html">Retail Music Decibel Guide</a></li>
-        <li><a href="spotify-for-business.html">Spotify for Business</a></li>
-        <li><a href="property-managers.html">For Property Managers</a></li>
-        <li><a href="mood-media-alternative.html">Mood Media Alternative</a></li>
-        <li><a href="soundtrack-your-brand-alternative.html">Soundtrack Your Brand Alternative</a></li>
-        <li><a href="pandora-for-business-alternative.html">Pandora for Business Alternative</a></li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h4>Company</h4>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="partners.html">Partners</a></li>
-        <li><a href="press.html">Press</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h4>Legal</h4>
-      <ul>
-        <li><a href="licensing.html">Licensing &amp; PRO Coverage</a></li>
-        <li><a href="data.html">Data Practices</a></li>
-        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        <li><a href="pricing/terms.html">Subscription Terms</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+    <p class="llc-footer-name">Entuned, LLC</p>
+    <p class="llc-footer-links">
+      <a href="mailto:hello@entuned.co">hello@entuned.co</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="pricing/terms.html">Terms</a>
+    </p>
   </div>
 </footer>
 
@@ -301,73 +168,8 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-SGMVDBYXFG', {
-      linker: {
-        domains: ['entuned.co', 'music.entuned.co', 'app.entuned.co']
-      }
-    });
+    gtag('config', 'G-SGMVDBYXFG');
   </script>
-  <script defer src="js/ga4-cta-tracking.js"></script>
 
-  <script>
-    // Navigation active state
-    const navLinks = document.querySelectorAll('.nav-links a');
-    navLinks.forEach(link => {
-      if (link.href === window.location.href) {
-        link.classList.add('active');
-        link.setAttribute('aria-current', 'page');
-      }
-    });
-
-    // Intersection Observer for fade-up animations
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, observerOptions);
-
-    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
-      observer.observe(el);
-    });
-
-    // Mobile menu toggle
-    const menuToggle = document.querySelector('.mobile-menu-toggle');
-    const navLinksEl = document.querySelector('.nav-links');
-    if (menuToggle && navLinksEl) {
-      menuToggle.addEventListener('click', () => {
-        const isOpen = navLinksEl.classList.toggle('mobile-open');
-        menuToggle.textContent = isOpen ? '✕' : '☰';
-        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-      });
-    }
-
-    // Nav dropdown toggle (mobile)
-    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
-      trigger.addEventListener('click', (e) => {
-        e.preventDefault();
-        const dropdown = trigger.closest('.nav-dropdown');
-        dropdown.classList.toggle('open');
-      });
-    });
-
-    // Accordion toggle
-    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
-      trigger.addEventListener('click', () => {
-        const accordion = trigger.parentElement;
-        const isOpen = accordion.getAttribute('data-open') === 'true';
-        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
-        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
-      });
-    });
-
-  </script>
 </body>
 </html>

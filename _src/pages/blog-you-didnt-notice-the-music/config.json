@@ -1,5 +1,6 @@
 {
-  "title": "You Didn't Notice the Music. That's the Point. — Entuned Blog",
-  "meta_description": "If you ran a shift on Entuned and didn't really notice the music, that's the system working. Retail music is environmental design — judged by what moves, not what gets noticed.",
-  "output": "blog/you-didnt-notice-the-music.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/you-didnt-notice-the-music.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

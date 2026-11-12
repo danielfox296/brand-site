@@ -4,33 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- First-touch signup attribution. Stamps a `.entuned.co` cookie on the
-       FIRST page view so the original source (referrer + UTM) survives the
-       entuned.co -> app.entuned.co/start hop. The dashboard's /start reads the
-       same cookie (same name + shape) and forwards it to the server. Runs
-       early + first-touch-wins so it never overwrites the true upstream. -->
-  <script>
-    (function () {
-      try {
-        if (/(?:^|; )entuned_attr=/.test(document.cookie)) return;
-        var p = new URLSearchParams(window.location.search);
-        var payload = {
-          r: document.referrer || undefined,
-          lp: (window.location.pathname + window.location.search) || undefined,
-          us: p.get('utm_source') || undefined,
-          um: p.get('utm_medium') || undefined,
-          uc: p.get('utm_campaign') || undefined,
-          ut: p.get('utm_term') || undefined,
-          un: p.get('utm_content') || undefined,
-          t: new Date().toISOString()
-        };
-        var host = window.location.hostname;
-        var domain = (host === 'entuned.co' || /\.entuned\.co$/.test(host)) ? '; domain=.entuned.co' : '';
-        document.cookie = 'entuned_attr=' + encodeURIComponent(JSON.stringify(payload)) +
-          '; path=/' + domain + '; max-age=' + (30 * 24 * 60 * 60) + '; SameSite=Lax';
-      } catch (e) { /* best-effort */ }
-    })();
-  </script>
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192x192.png">
@@ -38,25 +11,24 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="canonical" href="https://entuned.co/">
   <meta name="robots" content="index, follow">
-  <title>Music That Moves Store Metrics — Engineered for Your Customer | Entuned</title>
-  <meta name="description" content="Original music tuned to the people who walk into your store. PRO-indemnified, plays through the speakers you already have. Free forever, no card.">
+  <title>Entuned, LLC</title>
+  <meta name="description" content="Entuned, LLC is the company behind Signet Artists and Daniel Fox&#x27;s work in music, media and marketing.">
   <meta name="theme-color" content="#20201c">
 
   <!-- Open Graph -->
-  <link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="rss.xml">
-  <meta property="og:title" content="Music That Moves Store Metrics — Engineered for Your Customer | Entuned">
-  <meta property="og:description" content="Original music tuned to the people who walk into your store. PRO-indemnified, plays through the speakers you already have. Free forever, no card.">
+  <meta property="og:title" content="Entuned, LLC">
+  <meta property="og:description" content="Entuned, LLC is the company behind Signet Artists and Daniel Fox&#x27;s work in music, media and marketing.">
   <meta property="og:url" content="https://entuned.co/">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://entuned.co/img/og-default.png">
+  <meta property="og:image" content="https://entuned.co/img/entuned-logo-ice.png">
   <meta property="og:site_name" content="Entuned">
   <meta property="og:locale" content="en_US">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Music That Moves Store Metrics — Engineered for Your Customer | Entuned">
-  <meta name="twitter:description" content="Original music tuned to the people who walk into your store. PRO-indemnified, plays through the speakers you already have. Free forever, no card.">
-  <meta name="twitter:image" content="https://entuned.co/img/og-default.png">
+  <meta name="twitter:title" content="Entuned, LLC">
+  <meta name="twitter:description" content="Entuned, LLC is the company behind Signet Artists and Daniel Fox&#x27;s work in music, media and marketing.">
+  <meta name="twitter:image" content="https://entuned.co/img/entuned-logo-ice.png">
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -64,12 +36,11 @@
   "@context": "https://schema.org",
   "@type": "Organization",
   "@id": "https://entuned.co/#organization",
-  "name": "Entuned",
-  "legalName": "Entuned LLC",
-  "url": "https://entuned.co",
-  "logo": "https://entuned.co/img/entuned-logo-ice.svg",
-  "description": "Entuned is a retail music strategy platform that turns customer psychology into store soundtracks \u2014 driving measurable sales lift.",
-  "foundingDate": "2026",
+  "name": "Entuned, LLC",
+  "legalName": "Entuned, LLC",
+  "url": "https://entuned.co/",
+  "logo": "https://entuned.co/img/entuned-logo-ice.png",
+  "description": "Entuned, LLC is the company behind Signet Artists and Daniel Fox's work in music, media and marketing.",
   "founder": {
     "@type": "Person",
     "@id": "https://danielchristopherfox.com/#person",
@@ -77,24 +48,11 @@
     "alternateName": "Daniel Fox",
     "url": "https://danielchristopherfox.com/"
   },
-  "areaServed": "United States",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "Sales",
-    "url": "https://entuned.co/contact.html"
-  },
-  "knowsAbout": [
-    "retail atmospherics",
-    "music psychology",
-    "in-store customer behavior",
-    "retail analytics",
-    "engineered retail audio",
-    "behavioral retail variables"
-  ],
+  "email": "hello@entuned.co",
   "sameAs": [
-    "https://www.linkedin.com/company/entunedllc",
-    "https://www.youtube.com/@entuned",
-    "https://entuned.substack.com"
+    "https://signetartists.com",
+    "https://daniel-fox.com",
+    "https://danielchristopherfox.com"
   ]
 }
   </script>
@@ -102,311 +60,41 @@
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "Entuned",
-  "url": "https://entuned.co",
-  "description": "Entuned is a retail music strategy platform that turns customer psychology into store soundtracks \u2014 driving measurable sales lift.",
+  "name": "Entuned, LLC",
+  "url": "https://entuned.co/",
+  "description": "Entuned, LLC is the company behind Signet Artists and Daniel Fox's work in music, media and marketing.",
   "publisher": {
     "@type": "Organization",
     "@id": "https://entuned.co/#organization",
-    "name": "Entuned"
+    "name": "Entuned, LLC"
   }
-}
-  </script>
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How much does Entuned cost?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Entuned Free is free forever, no credit card. Boost is $99 per location per month. Professional is $399 per location per month. Enterprise is negotiated per-location for multi-location rollouts."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need new hardware to use Entuned?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Entuned streams through whatever audio system you already have \u2014 Sonos, AirPlay, Bluetooth, line-in, or hardwired. The stream plays from a URL we hand you."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What about music licensing \u2014 am I covered?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Every track Entuned plays is original, commercial-use cleared, and PRO-indemnified the moment it starts. No ASCAP, BMI, SESAC, or SoundExchange royalties. Every subscription includes a written indemnification certificate."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What if I run multiple stores?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The Professional tier handles multi-store deployments with POS integration, Outcome Scheduling, and self-improving refinement. For fleets requiring custom ICP design, performance guarantees, or white-glove rollout, the Enterprise tier is negotiated per-location."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I get started on Entuned Free?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sign in with your email or Google at app.entuned.co/start. No card. You get a player URL the moment you finish \u2014 typically under three minutes from sign-up to music in your store."
-      }
-    }
-  ]
 }
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
-  <link rel="stylesheet" href="styles.css?v=331834bf">
+  <link rel="stylesheet" href="styles.css?v=ee14d3ab">
   <style>
-/* ===== HOME PILLAR GRID ===== */
-.home-pillar-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-}
-
-@media (max-width: 768px) {
-  .home-pillar-grid {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
-}
-
-/* ===== SOCIAL PROOF ===== */
-.testimonial-feature {
-  display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  gap: 4rem;
-  align-items: center;
-  max-width: 1100px;
-  margin: 0 auto 4rem;
-  padding: 3rem;
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(80, 146, 156, 0.18);
-}
-
-@media (max-width: 768px) {
-  .testimonial-feature {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 2rem 1.5rem;
-  }
-}
-
-.testimonial-stat-big {
-  font-family: var(--font-heading);
-  font-size: clamp(2rem, 4vw, 2.75rem);
-  font-weight: 700;
-  color: var(--gold);
-  line-height: 1.1;
-  margin-bottom: 0.5rem;
-}
-
-.testimonial-stat-label {
-  font-size: 0.75rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--text);
-  opacity: 0.6;
-  margin-bottom: 1rem;
-}
-
-.testimonial-stat-detail {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  opacity: 0.8;
-}
-
-.testimonial-quote {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
-.testimonial-quote p {
-  font-size: 1.0625rem;
-  line-height: 1.7;
-  font-style: italic;
-  margin-bottom: 1.25rem;
-  opacity: 0.92;
-}
-
-.testimonial-quote cite {
-  font-size: 0.85rem;
-  opacity: 0.7;
-  font-style: normal;
-}
-
-.testimonial-secondary {
-  max-width: 720px;
-  margin: 0 auto 3rem;
-  padding: 1.75rem 2rem;
-  background: rgba(255, 255, 255, 0.02);
-  border-left: 3px solid var(--accent);
-  text-align: left;
-}
-
-.testimonial-secondary p {
-  font-size: 1.0625rem;
-  font-style: italic;
-  margin-bottom: 0.75rem;
-  opacity: 0.92;
-}
-
-.testimonial-secondary cite {
-  font-size: 0.85rem;
-  opacity: 0.7;
-  font-style: normal;
-}
-
-.testimonial-disclaimer {
-  text-align: center;
-  font-size: 0.85rem;
-  opacity: 0.55;
-  max-width: 720px;
-  margin: 0 auto;
-  font-style: italic;
-}
-
-/* ===== PILOT BRAND MARK (Untuckit in callout-stat) ===== */
-.pilot-brand-mark {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-.pilot-brand-mark img {
-  height: 210px;
-  width: auto;
-  opacity: 0.85;
-  filter: brightness(0) invert(1);
-}
-
-.pilot-mark-section {
-  padding: clamp(3rem, 6vw, 5rem) 2rem 2rem;
-  border-bottom: none !important;
-}
-
-/* Unify pilot module: the testimonial cards share the callout-stat bg
-   so the eyebrow, brand mark, and quotes read as one section. */
-.pilot-testimonials {
-  position: relative;
-  z-index: 1;
-  background: rgba(80, 146, 156, 0.08);
-  border-bottom: 1px solid rgba(80, 146, 156, 0.2);
-  padding-top: 2rem;
-  padding-bottom: clamp(3.5rem, 6vw, 5rem);
-}
-
-@media (max-width: 768px) {
-  .pilot-brand-mark img {
-    height: 144px;
-  }
-}
-
-/* ===== INTEGRATES WITH — logo wall ===== */
-.section.logo-wall {
-  background: #ffffff;
-  color: #20201c;
-  position: relative;
-  z-index: 1;
-}
-
-.section.logo-wall .section-eyebrow {
-  color: #50929c;
-}
-
-.logo-wall-heading {
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  margin-bottom: 0;
-  color: #20201c;
-}
-
-.logo-wall-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  max-width: 1040px;
-  margin: 0 auto;
-}
-
-.logo-wall-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2.5rem;
-  align-items: center;
-  justify-items: center;
-}
-
-/* Row 2: give NewStore a slightly wider column so its wordmark reads,
-   while keeping Lightspeed and Toast at near-row-1 sizes. */
-.logo-wall-row--newstore {
-  grid-template-columns: 1fr 1fr 1.5fr;
-}
-
-.logo-wall-cell {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 110px;
-  width: 100%;
-  padding: 0 0.5rem;
-}
-
-.logo-wall-cell img {
-  max-height: 80px;
-  max-width: 100%;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  filter: grayscale(100%);
-  opacity: 0.78;
-  transition: opacity 180ms ease, filter 180ms ease;
-}
-
-.logo-wall-cell img:hover {
-  filter: grayscale(0%);
-  opacity: 1;
-}
-
-.logo-wall-cell--newstore {
-  height: 110px;
-}
-
-.logo-wall-cell--newstore img {
-  height: 55px;
-  width: auto;
-  max-width: 100%;
-}
-
-@media (max-width: 720px) {
-  .logo-wall-row,
-  .logo-wall-row--newstore {
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-  }
-  .logo-wall-row--newstore .logo-wall-cell--newstore {
-    grid-column: 1 / -1;
-    height: 110px;
-  }
-  .logo-wall-row--newstore .logo-wall-cell--newstore img {
-    max-height: 80px;
-  }
-  .logo-wall-cell {
-    height: 88px;
-  }
-  .logo-wall-cell img {
-    max-height: 60px;
-  }
+.llc { padding: 9rem 0 5rem; }
+.llc-wrap { max-width: 760px; margin: 0 auto; padding: 0 1.25rem; }
+.llc-title { font-size: clamp(2.25rem, 6vw, 3.5rem); margin: 0 0 1rem; }
+.llc-intro { font-size: 1.15rem; line-height: 1.7; color: var(--text); opacity: 0.85; margin: 0 0 3.5rem; max-width: 36em; }
+.llc-label { font-family: var(--font-body); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); margin: 0 0 1rem; }
+.llc-ventures { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--accent-light); }
+.llc-venture { border-bottom: 1px solid var(--accent-light); }
+.llc-venture-link { display: grid; grid-template-columns: 200px 1fr; grid-template-rows: auto auto; column-gap: 2rem; row-gap: 0.4rem; align-items: center; padding: 1.75rem 0; color: var(--text); text-decoration: none; }
+.llc-venture-logo, .llc-venture-name { grid-row: 1 / span 2; }
+.llc-venture-logo { width: 150px; height: auto; display: block; }
+.llc-venture-name { font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; line-height: 1.2; }
+.llc-venture-line { line-height: 1.6; opacity: 0.85; }
+.llc-venture-domain { font-size: 0.9rem; color: var(--accent); }
+.llc-venture-link:hover .llc-venture-domain, .llc-venture-link:focus-visible .llc-venture-domain { text-decoration: underline; }
+@media (max-width: 640px) {
+  .llc { padding: 7rem 0 3.5rem; }
+  .llc-venture-link { grid-template-columns: 1fr; grid-template-rows: none; }
+  .llc-venture-logo, .llc-venture-name { grid-row: auto; margin-bottom: 0.4rem; }
+  .llc-venture-logo { width: 130px; }
 }
   </style>
 </head>
@@ -414,667 +102,54 @@
   <!-- NAVIGATION -->
 <nav aria-label="Main navigation">
   <div class="container">
-    <a href="/" class="logo"><img src="img/entuned-logo-ice.svg" alt="Entuned" class="logo-img"></a>
-    <ul class="nav-links">
-      <li><a href="how-it-works.html">How It Works</a></li>
-      <li><a href="pricing.html">Pricing</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li class="nav-cta-item"><a href="https://app.entuned.co/start" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.875rem;">Start Free</a></li>
-    </ul>
-    <button class="mobile-menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+    <a href="/" class="logo"><img src="img/entuned-logo-ice.svg" alt="Entuned, LLC" class="logo-img"></a>
   </div>
 </nav>
 
   <main>
   <!-- Organization JSON-LD comes from build.py — the single sitewide block. Do not add one here. -->
+<section class="llc">
+  <div class="llc-wrap">
+    <h1 class="llc-title">Entuned, LLC</h1>
+    <p class="llc-intro">Entuned, LLC is the company behind Signet Artists and Daniel Fox's work in music, media and marketing.</p>
 
-  <!-- CYMATICS CANVAS — fixed behind all content, scroll-driven -->
-  <canvas id="cymaticsCanvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 0; pointer-events: none;"></canvas>
-
-  <!-- HERO -->
-  <section class="hero hero-home" id="heroSection">
-    <div class="hero-home-bg" aria-hidden="true"></div>
-    <div class="container" style="position: relative; z-index: 1;">
-      <div class="fade-up">
-        <span class="eyebrow">A new design system for retail audio</span>
-        <h1>Can music increase your sales?</h1>
-        <p class="subline">Forty years of peer-reviewed research says yes. Tempo controls dwell time. Identity-fit music lifts what customers spend. Familiar music drives them out faster. Entuned produces original music designed for your customer and your store.</p>
-        <p class="fade-up" style="margin-bottom: 1.25rem; font-size: 0.95rem; opacity: 0.78;">Start free and hear it on your floor today &middot; no card &middot; no time limit. Running 5&ndash;50 locations? Start a measured pilot.</p>
-        <div class="btn-group">
-          <a href="https://app.entuned.co/start" class="btn btn-primary">Start Free</a>
-          <a href="pilot.html" class="btn btn-secondary">Start a measured pilot</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PILLAR 1 — DIAGNOSTIC -->
-  <section class="section cymatics-over">
-    <div class="container">
-      <div class="feature-row fade-up">
-        <div class="feature-row-media">
-          <img src="img/modern-store.jpg" alt="Interior of a modern retail store with designed lighting">
-        </div>
-        <div class="feature-row-text">
-          <span class="section-eyebrow">The short answer</span>
-          <h2>Yes. The research is older and more specific than most shop owners realize.</h2>
-          <p class="lede">Music isn't ambient — it's a behavioral variable, peer-reviewed since 1982. Tempo controls how customers move through your store. Identity-fit music lifts what they're willing to pay. Familiar songs drive them out faster, even when they say they like it. The receipts are below.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PILLAR 1 SUPPORT — RESEARCH CARDS -->
-  <section class="section section--tinted cymatics-over" style="padding-top: 4rem; padding-bottom: 4rem;">
-    <div class="container">
-      <div class="fade-up" style="max-width: 720px; margin: 0 auto 3rem; text-align: center;">
-        <span class="section-eyebrow">Forty years of evidence</span>
-        <h3 style="font-size: clamp(1.5rem, 3vw, 2rem);">Music is doing work whether you chose its effect or not</h3>
-      </div>
-      <div class="card-grid card-grid--3 fade-up">
-        <div class="card">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg></div>
-          <div style="display: flex; align-items: baseline; gap: 0.5rem; margin-bottom: 0.5rem;">
-            <span style="font-family: var(--font-heading); font-size: 1.75rem; font-weight: 700; color: var(--accent); line-height: 1;">Slower</span>
-            <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.18em; opacity: 0.55; font-weight: 600;">Milliman, 1982</span>
-          </div>
-          <div class="card-title">Tempo controls pace</div>
-          <p class="card-text">Shoppers walked more slowly to slower-tempo music, and daily sales rose with the longer visits.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/><circle cx="12" cy="12" r="6"/></svg></div>
-          <div style="display: flex; align-items: baseline; gap: 0.5rem; margin-bottom: 0.5rem;">
-            <span style="font-family: var(--font-heading); font-size: 1.75rem; font-weight: 700; color: var(--accent); line-height: 1;">Pricier</span>
-            <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.18em; opacity: 0.55; font-weight: 600;">Areni &amp; Kim, 1993</span>
-          </div>
-          <div class="card-title">Quality cues lift the basket</div>
-          <p class="card-text">Classical music in a wine store led customers to choose more expensive bottles &mdash; not more bottles.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-9-9c2.5 0 4.8 1 6.5 2.5L21 3"/><path d="M21 3v6h-6"/></svg></div>
-          <div style="display: flex; align-items: baseline; gap: 0.5rem; margin-bottom: 0.5rem;">
-            <span style="font-family: var(--font-heading); font-size: 1.75rem; font-weight: 700; color: var(--accent); line-height: 1;">Sooner</span>
-            <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.18em; opacity: 0.55; font-weight: 600;">Yalch &amp; Spangenberg</span>
-          </div>
-          <div class="card-title">Familiar music shortens visits</div>
-          <p class="card-text">Familiar songs send shoppers out the door sooner &mdash; they report liking the music more, then leave before they&rsquo;ve browsed.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PILLAR 2 — ENGINEERING -->
-  <section class="section cymatics-over">
-    <div class="container">
-      <div class="feature-row is-reverse fade-up">
-        <div class="feature-row-media">
-          <img src="img/shopping.jpg" alt="Customer browsing inside a retail store">
-        </div>
-        <div class="feature-row-text">
-          <span class="section-eyebrow is-gold">The mechanism</span>
-          <h2>Background music has been a creative endeavor for decades. We turned it into a design spec.</h2>
-          <p class="lede">Entuned is a retail music strategy platform that turns customer psychology into store soundtracks — driving measurable sales lift. Background music vendors lease songs artists wrote for other reasons — and the lyrics, tempo, energy, and cultural reference were never chosen with your retail floor in mind. Entuned produces original music to specification: your customer, your category, your outcome. Tempo tuned to your floor pace. Identity calibrated to your customer. Lyrics screened to avoid actively negative-priming the people you're trying to convert.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PILLAR 2 SUPPORT — OUTCOMES ROW -->
-  <section class="section cymatics-over" style="padding-top: 2rem; padding-bottom: 4rem;">
-    <div class="container">
-      <div class="card-grid card-grid--4 fade-up">
-        <div class="card">
-          <div class="card-icon is-gold"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
-          <div class="card-title">Linger longer</div>
-          <p class="card-text">Tempo, key, and energy shaped to slow customer pace and extend dwell.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon is-gold"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg></div>
-          <div class="card-title">Larger basket size</div>
-          <p class="card-text">Identity-fit programming that lifts what customers are willing to spend.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon is-gold"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg></div>
-          <div class="card-title">Higher conversion</div>
-          <p class="card-text">Energy arc and lyrical density tuned to the decision moment on your floor.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon is-gold"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
-          <div class="card-title">Brand reinforcement</div>
-          <p class="card-text">Original music your store actually owns &mdash; never plays in a competitor's store.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PILLAR 3 — SELF-IMPROVING -->
-  <section class="section cymatics-over">
-    <div class="container">
-      <div class="feature-row fade-up">
-        <div class="feature-row-media">
-          <img src="img/parallax-retail-tech.jpg" alt="Retail analytics dashboard showing store performance data">
-        </div>
-        <div class="feature-row-text">
-          <span class="section-eyebrow">The early read</span>
-          <h2>Music that gets sharper the longer it runs.</h2>
-          <p class="lede">Free and Boost deliver the concept. Pro pulls sales and traffic data from your locations and refines the music against the outcome you set — the longer it runs, the more precisely it produces what you measure. Self-improving refinement compounds over weeks and months of correlation.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SOCIAL PROOF — PILOT BRAND MARK -->
-  <section class="callout-stat cymatics-over pilot-mark-section">
-    <div class="container">
-      <p class="section-eyebrow" style="text-align: center; margin-bottom: 1.5rem;">From the pilot floor</p>
-      <div class="pilot-brand-mark fade-up">
-        <img src="img/logos/untuckit.png" alt="UNTUCKit" loading="lazy">
-      </div>
-    </div>
-  </section>
-
-  <!-- SOCIAL PROOF — TESTIMONIAL CARDS -->
-  <section class="section pilot-testimonials">
-    <div class="container">
-      <div class="card-grid card-grid--3 fade-up" style="max-width: 1180px; margin: 0 auto;">
-        <div class="card">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.6L18.5 9 14.7 12.2 16 17l-4-2.6L8 17l1.3-4.8L5.5 9l4.7-1.4z"/></svg></div>
-          <p class="card-text" style="font-size: 1.0625rem; line-height: 1.75; font-style: italic; opacity: 0.95; margin-bottom: 1rem;">&ldquo;This is refreshing!&rdquo;</p>
-          <cite style="font-style: normal; font-size: 0.85rem; opacity: 0.65; letter-spacing: 0.04em;">&mdash; Elaine K. &middot; Pilot store, Spring 2026</cite>
-        </div>
-        <div class="card">
-          <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V6l10-2v12"/><circle cx="6" cy="18" r="2.5"/><circle cx="16" cy="16" r="2.5"/></svg></div>
-          <p class="card-text" style="font-size: 1.0625rem; line-height: 1.75; font-style: italic; opacity: 0.95; margin-bottom: 1rem;">&ldquo;I was literally singing this song, the chorus to the song &lsquo;add it to the pile&rsquo;, and then I saw that other shirt and I thought why not &lsquo;add it to the pile&rsquo;. This is brilliant.&rdquo;</p>
-          <cite style="font-style: normal; font-size: 0.85rem; opacity: 0.65; letter-spacing: 0.04em;">&mdash; Customer who made an additional $100+ purchase &middot; Pilot store, Spring 2026</cite>
-        </div>
-      </div>
-      <p class="testimonial-disclaimer fade-up" style="text-align: center; margin-top: 2rem; font-size: 0.85rem; opacity: 0.55;">That was day one in the first store. The 12-week pilot runs the same system across a matched test-and-control subset of your stores and reads the result in your own reporting.</p>
-    </div>
-  </section>
-
-  <!-- BUILT FOR — vertical tile grid -->
-  <section class="section cymatics-over" style="padding-top: 4rem; padding-bottom: 4rem;">
-    <div class="container">
-      <div class="fade-up" style="text-align: center; margin-bottom: 3rem;">
-        <p class="section-eyebrow">Built for</p>
-        <h3 style="font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 0;">All kinds of retail</h3>
-      </div>
-      <div class="vertical-tile-grid fade-up">
-        <a href="for-apparel.html" class="vertical-tile">
-          <img src="img/hero-apparel.jpg" alt="Apparel store interior" loading="lazy">
-          <div class="vertical-tile-overlay">
-            <span class="vertical-tile-title">Apparel &amp; footwear</span>
-            <span class="vertical-tile-cta">Explore &rarr;</span>
-          </div>
+    <h2 class="llc-label">Ventures</h2>
+    <ul class="llc-ventures">
+      <li class="llc-venture">
+        <a class="llc-venture-link" href="https://signetartists.com">
+          <img class="llc-venture-logo" src="img/ventures/signet-artists.png" alt="Signet Artists" width="186" height="72">
+          <span class="llc-venture-line">Live music for private and corporate events in Colorado, plus event photo and video and artist development.</span>
+          <span class="llc-venture-domain">signetartists.com &rarr;</span>
         </a>
-        <a href="for-jewelry.html" class="vertical-tile">
-          <img src="img/hero-jewelry.jpg" alt="Jewelry store interior" loading="lazy">
-          <div class="vertical-tile-overlay">
-            <span class="vertical-tile-title">Jewelry</span>
-            <span class="vertical-tile-cta">Explore &rarr;</span>
-          </div>
+      </li>
+      <li class="llc-venture">
+        <a class="llc-venture-link" href="https://daniel-fox.com">
+          <span class="llc-venture-name">Daniel Fox</span>
+          <span class="llc-venture-line">Marketing consulting.</span>
+          <span class="llc-venture-domain">daniel-fox.com &rarr;</span>
         </a>
-        <a href="for-home-goods.html" class="vertical-tile">
-          <img src="img/hero-home-goods.jpg" alt="Home goods store interior" loading="lazy">
-          <div class="vertical-tile-overlay">
-            <span class="vertical-tile-title">Home goods</span>
-            <span class="vertical-tile-cta">Explore &rarr;</span>
-          </div>
+      </li>
+      <li class="llc-venture">
+        <a class="llc-venture-link" href="https://danielchristopherfox.com">
+          <span class="llc-venture-name">Music Behaviorist</span>
+          <span class="llc-venture-line">Writing and research on music and human behavior.</span>
+          <span class="llc-venture-domain">danielchristopherfox.com &rarr;</span>
         </a>
-        <a href="for-cosmetics.html" class="vertical-tile">
-          <img src="img/hero-cosmetics.jpg" alt="Cosmetics store interior" loading="lazy">
-          <div class="vertical-tile-overlay">
-            <span class="vertical-tile-title">Cosmetics</span>
-            <span class="vertical-tile-cta">Explore &rarr;</span>
-          </div>
-        </a>
-        <a href="for-furniture-mattress.html" class="vertical-tile">
-          <img src="img/hero-furniture-mattress.jpg" alt="Furniture showroom interior with sofas and a wooden floor" loading="lazy">
-          <div class="vertical-tile-overlay">
-            <span class="vertical-tile-title">Furniture &amp; mattress</span>
-            <span class="vertical-tile-cta">Explore &rarr;</span>
-          </div>
-        </a>
-        <a href="for-sporting-goods.html" class="vertical-tile">
-          <img src="img/hero-sporting-goods.jpg" alt="Athletic shoes displayed on shelves in a sporting goods store" loading="lazy">
-          <div class="vertical-tile-overlay">
-            <span class="vertical-tile-title">Sporting goods</span>
-            <span class="vertical-tile-cta">Explore &rarr;</span>
-          </div>
-        </a>
-        <a href="for-beauty-supply.html" class="vertical-tile">
-          <img src="img/hero-beauty-supply.jpg" alt="Beauty supply store shelves stocked with skincare bottles" loading="lazy">
-          <div class="vertical-tile-overlay">
-            <span class="vertical-tile-title">Beauty supply</span>
-            <span class="vertical-tile-cta">Explore &rarr;</span>
-          </div>
-        </a>
-        <a href="for-specialty-retail.html" class="vertical-tile">
-          <img src="img/hero-specialty-retail.jpg" alt="Bright independent bookstore interior with seating area" loading="lazy">
-          <div class="vertical-tile-overlay">
-            <span class="vertical-tile-title">Specialty retail</span>
-            <span class="vertical-tile-cta">Explore &rarr;</span>
-          </div>
-        </a>
-      </div>
-      <p class="fade-up" style="text-align: center; margin-top: 2.5rem; font-size: 0.95rem; opacity: 0.7; max-width: 720px; margin-left: auto; margin-right: auto;">Real customer dwell. Real conversion. Real performance.</p>
-    </div>
-  </section>
-
-  <!-- TIER PREVIEW -->
-  <section class="section section--tinted cymatics-over">
-    <div class="container">
-      <div class="fade-up" style="text-align: center; margin-bottom: 3.5rem;">
-        <span class="section-eyebrow">Pricing</span>
-        <h2>Four options. Start free.</h2>
-      </div>
-      <div class="card-grid card-grid--4 fade-up">
-        <div class="card">
-          <div style="font-family: var(--font-heading); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-muted); margin-bottom: 0.5rem;">Entuned Free</div>
-          <div style="font-family: var(--font-heading); font-size: 2.25rem; font-weight: 700; color: var(--text); margin-bottom: 1rem; line-height: 1; letter-spacing: -0.01em;">Free</div>
-          <p class="card-text">The shared starter catalogue, engineered to hold browsers on the floor longer. Not yet built around your customer. Free indefinitely, no credit card.</p>
-        </div>
-        <div class="card">
-          <div style="font-family: var(--font-heading); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-muted); margin-bottom: 0.5rem;">Boost</div>
-          <div style="font-family: var(--font-heading); font-size: 2.25rem; font-weight: 700; color: var(--text); margin-bottom: 1rem; line-height: 1; letter-spacing: -0.01em;">$99/mo</div>
-          <p class="card-text">Music designed for your single Ideal Customer Profile (ICP). All research-backed outcomes unlocked. Per location.</p>
-        </div>
-        <div class="card" style="border-color: var(--accent); background: rgba(80, 146, 156, 0.06);">
-          <div style="font-family: var(--font-heading); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--accent); margin-bottom: 0.5rem;">Professional</div>
-          <div style="font-family: var(--font-heading); font-size: 2.25rem; font-weight: 700; color: var(--text); margin-bottom: 1rem; line-height: 1; letter-spacing: -0.01em;">$399/mo</div>
-          <p class="card-text">Music designed for your location's multiple ICPs. POS integration, Outcome Scheduling (like day-parting, but better), self-improving refinement, monthly founder consults.</p>
-        </div>
-        <div class="card">
-          <div style="font-family: var(--font-heading); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-muted); margin-bottom: 0.5rem;">Enterprise</div>
-          <div style="font-family: var(--font-heading); font-size: 2.25rem; font-weight: 700; color: var(--text); margin-bottom: 1rem; line-height: 1; letter-spacing: -0.01em;">Contact</div>
-          <p class="card-text">Multi-location rollouts, custom ICP design, performance terms.</p>
-        </div>
-      </div>
-      <div class="fade-up" style="text-align: center; margin-top: 3rem;">
-        <a href="pricing.html" class="btn btn-secondary">See Full Pricing</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- INTEGRATES WITH — POS logo wall -->
-  <section class="section logo-wall">
-    <div class="container">
-      <div class="fade-up" style="text-align: center; margin-bottom: 2.5rem;">
-        <span class="section-eyebrow">Integrations</span>
-        <h3 class="logo-wall-heading">Plays nicely with your stack.</h3>
-      </div>
-      <div class="logo-wall-grid fade-up">
-        <div class="logo-wall-row">
-          <div class="logo-wall-cell"><img src="img/logos/pos-shopify.webp" alt="Shopify POS" loading="lazy"></div>
-          <div class="logo-wall-cell"><img src="img/logos/pos-square.png" alt="Square" loading="lazy"></div>
-          <div class="logo-wall-cell"><img src="img/logos/pos-clover.png" alt="Clover" loading="lazy"></div>
-        </div>
-        <div class="logo-wall-row logo-wall-row--newstore">
-          <div class="logo-wall-cell"><img src="img/logos/pos-lightspeed.svg" alt="Lightspeed" loading="lazy"></div>
-          <div class="logo-wall-cell"><img src="img/logos/pos-toast.png" alt="Toast" loading="lazy"></div>
-          <div class="logo-wall-cell logo-wall-cell--newstore"><img src="img/logos/pos-newstore.png" alt="NewStore" loading="lazy"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="section cymatics-over">
-    <div class="container" style="max-width: 760px;">
-      <div class="fade-up" style="margin-bottom: 2.5rem;">
-        <h2>Common questions.</h2>
-      </div>
-      <div class="faq-list fade-up">
-        <details class="pricing-faq-item">
-          <summary class="pricing-faq-q">How much does it cost?</summary>
-          <div class="pricing-faq-a">Entuned Free &mdash; no credit card, no invoice, no time limit. Entuned Boost is $99 per location per month. Professional is $399 per location per month. Contact us for Enterprise pricing. <a href="pricing.html">See full pricing →</a></div>
-        </details>
-        <details class="pricing-faq-item">
-          <summary class="pricing-faq-q">Do I need new speakers or hardware?</summary>
-          <div class="pricing-faq-a">No. Entuned streams through whatever audio system you already have — Sonos, AirPlay, Bluetooth, line-in, hardwired. The stream plays in a web browser. Internet, connected device, and speaker system required (obvi.)</div>
-        </details>
-        <details class="pricing-faq-item">
-          <summary class="pricing-faq-q">What about music licensing — am I covered?</summary>
-          <div class="pricing-faq-a">Yes. Every song Entuned plays is original, commercial-use cleared, and PRO-indemnified the moment it starts. No ASCAP, BMI, SESAC, or SoundExchange royalties. Every subscription includes an indemnification certificate. <a href="licensing.html">Full details on the licensing page →</a></div>
-        </details>
-        <details class="pricing-faq-item">
-          <summary class="pricing-faq-q">What if I run multiple stores?</summary>
-          <div class="pricing-faq-a">Running 5&ndash;50 locations? The entry is a free 12-week measured pilot &mdash; <a href="pilot.html">start there</a>. Entuned Professional handles multi-store deployments with POS integration, Outcome Scheduling (like day-parting, but better), and self-improving features. For fleets requiring custom ICP design, performance guarantees, or white-glove rollout, talk to <a href="enterprise.html">Enterprise</a>.</div>
-        </details>
-        <details class="pricing-faq-item">
-          <summary class="pricing-faq-q">How do I get started on Entuned Free?</summary>
-          <div class="pricing-faq-a">Sign in with your email or Google at <a href="https://app.entuned.co/start">app.entuned.co/start</a>. No credit card. No invoices. You get a unique player URL the moment you finish that you can play from any tablet, mobile device or computer.</div>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- FINAL CTA -->
-  <section class="section section--accent cymatics-over" style="text-align: center;">
-    <div class="container">
-      <h2 style="margin-bottom: 1rem;">Three minutes from sign-up to music in your store.</h2>
-      <p class="subline" style="max-width: 620px; margin-left: auto; margin-right: auto;">Free to stream. More power when you outgrow it.</p>
-      <div class="btn-group" style="margin-top: 2rem; justify-content: center;">
-        <a href="https://app.entuned.co/start" class="btn btn-primary">Start Free</a>
-        <a href="pilot.html" class="btn btn-secondary">Start a measured pilot</a>
-      </div>
-      <p style="margin-top: 1.5rem; font-size: 0.95rem; opacity: 0.7;">Start free &middot; no card &middot; no time limit. Running 5&ndash;50 locations? Start a measured pilot. <a href="pricing.html" style="color: var(--accent);">See full pricing &rarr;</a></p>
-    </div>
-  </section>
-
-  <script>
-  (function() {
-    const canvas = document.getElementById('cymaticsCanvas');
-    if (!canvas) return;
-    const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const ctx = canvas.getContext('2d');
-    const freqEl = null;
-
-    let W, H, cx, cy;
-    let mouseX = 0.5, mouseY = 0.5, mouseSmX = 0.5, mouseSmY = 0.5;
-    const DPR = Math.min(window.devicePixelRatio || 1, 2);
-
-    // Mobile detection — lower resolution for performance
-    const isMobile = window.innerWidth < 768;
-    const GRID = isMobile ? 160 : 260;
-    const field = new Float32Array(GRID * GRID);
-
-    function resize() {
-      W = window.innerWidth; H = window.innerHeight;
-      canvas.width = W * DPR; canvas.height = H * DPR;
-      ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
-      cx = W / 2; cy = H / 2;
-    }
-    resize();
-    window.addEventListener('resize', resize);
-    window.addEventListener('mousemove', function(e) {
-      mouseX = e.clientX / W;
-      mouseY = e.clientY / H;
-    });
-
-    // --- Chladni function ---
-    function chladni(x, y, n, m, mix) {
-      var PI = Math.PI;
-      var a = Math.sin(n * PI * x) * Math.sin(m * PI * y);
-      var b = Math.sin(m * PI * x) * Math.sin(n * PI * y);
-      return a * mix + b * (1 - mix);
-    }
-
-    function chladniBlend(x, y, n1, m1, n2, m2, blend, mix) {
-      var v1 = chladni(x, y, n1, m1, mix);
-      var v2 = chladni(x, y, n2, m2, mix);
-      return v1 * (1 - blend) + v2 * blend;
-    }
-
-    // --- Marching squares ---
-    function marchingSquares(field, cols, rows, threshold) {
-      var segments = [];
-      for (var j = 0; j < rows - 1; j++) {
-        for (var i = 0; i < cols - 1; i++) {
-          var tl = field[j * cols + i];
-          var tr = field[j * cols + i + 1];
-          var br = field[(j+1) * cols + i + 1];
-          var bl = field[(j+1) * cols + i];
-          var idx = 0;
-          if (tl > threshold) idx |= 8;
-          if (tr > threshold) idx |= 4;
-          if (br > threshold) idx |= 2;
-          if (bl > threshold) idx |= 1;
-          if (idx === 0 || idx === 15) continue;
-
-          var t = threshold;
-          function lerp(v1, v2) {
-            if (Math.abs(v2 - v1) < 0.0001) return 0.5;
-            return (t - v1) / (v2 - v1);
-          }
-          var top    = { x: i + lerp(tl, tr), y: j };
-          var right  = { x: i + 1, y: j + lerp(tr, br) };
-          var bottom = { x: i + lerp(bl, br), y: j + 1 };
-          var left   = { x: i, y: j + lerp(tl, bl) };
-
-          switch (idx) {
-            case 1: case 14: segments.push(left, bottom); break;
-            case 2: case 13: segments.push(bottom, right); break;
-            case 3: case 12: segments.push(left, right); break;
-            case 4: case 11: segments.push(top, right); break;
-            case 5: segments.push(top, left); segments.push(bottom, right); break;
-            case 6: case 9: segments.push(top, bottom); break;
-            case 7: case 8: segments.push(top, left); break;
-            case 10: segments.push(top, right); segments.push(bottom, left); break;
-          }
-        }
-      }
-      return segments;
-    }
-
-    // --- Mode sequence (scroll-driven) ---
-    var modes = [
-      [1, 1], [1, 2], [2, 2], [2, 3], [3, 3], [3, 4],
-      [4, 4], [4, 5], [5, 5], [5, 6], [6, 6], [6, 7],
-      [7, 7], [7, 8], [8, 8], [8, 9], [9, 9], [9, 10],
-      [10, 10], [10, 12], [12, 12], [12, 14], [14, 14],
-      [14, 16], [16, 16], [16, 18], [18, 20], [20, 22],
-      [22, 25], [25, 28]
-    ];
-
-    // Color palette — tuned to Entuned brand
-    // Primary nodal lines: cream (#cac3bf)
-    var CREAM = 'rgba(202, 195, 191,';
-    // Secondary contours: teal (#50929c)
-    var TEAL = 'rgba(80, 146, 156,';
-
-    var smoothScroll = 0;
-    var time = 0;
-
-    function draw() {
-      if (!reduceMotion) {
-        time += 0.016;
-      }
-
-      // Scroll progress across full page
-      var scrollMax = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
-      var rawScroll = window.scrollY / scrollMax;
-      if (reduceMotion) {
-        smoothScroll = 0.3;
-      } else {
-        smoothScroll += (rawScroll - smoothScroll) * 0.08;
-      }
-
-      mouseSmX += (mouseX - mouseSmX) * 0.03;
-      mouseSmY += (mouseY - mouseSmY) * 0.03;
-
-      // Map scroll to mode progression
-      var modeProgress = smoothScroll * (modes.length - 1);
-      var modeIdx = Math.floor(modeProgress);
-      var modeFrac = modeProgress - modeIdx;
-      modeIdx = Math.min(modeIdx, modes.length - 2);
-
-      var n1 = modes[modeIdx][0], m1 = modes[modeIdx][1];
-      var n2 = modes[modeIdx + 1][0], m2 = modes[modeIdx + 1][1];
-
-      // Mouse X subtly shifts the ± balance
-      var mix = 0.35 + mouseSmX * 0.3;
-      var timeDrift = Math.sin(time * 0.15) * 0.02;
-
-      // Frequency label
-      if (freqEl) {
-        var dn = n1 + (n2 - n1) * modeFrac;
-        var dm = m1 + (m2 - m1) * modeFrac;
-        freqEl.textContent = 'mode ' + dn.toFixed(1) + ' · ' + dm.toFixed(1);
-      }
-
-      // Compute field
-      for (var j = 0; j < GRID; j++) {
-        for (var i = 0; i < GRID; i++) {
-          var x = (i / (GRID - 1)) * 2 - 1;
-          var y = (j / (GRID - 1)) * 2 - 1;
-          var dist = Math.sqrt(x * x + y * y);
-          if (dist > 1.0) {
-            field[j * GRID + i] = 999;
-            continue;
-          }
-          var val = chladniBlend(x, y, n1 + timeDrift, m1, n2 + timeDrift, m2, modeFrac, mix);
-          if (dist > 0.85) {
-            var edge = (dist - 0.85) / 0.15;
-            val *= (1 - edge * edge);
-          }
-          field[j * GRID + i] = val;
-        }
-      }
-
-      // Clear — match site background
-      ctx.fillStyle = '#20201c';
-      ctx.fillRect(0, 0, W, H);
-
-      // Plate sizing — 2x zoom so circle edge is off-screen
-      var plateSize = Math.min(W, H) * 1.8;
-      var offX = (W - plateSize) / 2;
-      var offY = (H - plateSize) / 2;
-      var cellW = plateSize / (GRID - 1);
-      var cellH = plateSize / (GRID - 1);
-
-      // Primary nodal lines — cream (40% intensity)
-      var segs0 = marchingSquares(field, GRID, GRID, 0);
-      drawSegs(segs0, CREAM, 0.18, 0.7, offX, offY, cellW, cellH);
-
-      // Secondary contours — teal (40% intensity)
-      var segs1 = marchingSquares(field, GRID, GRID, 0.12);
-      drawSegs(segs1, TEAL, 0.06, 0.4, offX, offY, cellW, cellH);
-      var segs2 = marchingSquares(field, GRID, GRID, -0.12);
-      drawSegs(segs2, TEAL, 0.06, 0.4, offX, offY, cellW, cellH);
-
-      // Faint tertiary — cream at low opacity (40% intensity)
-      var segs3 = marchingSquares(field, GRID, GRID, 0.3);
-      drawSegs(segs3, CREAM, 0.03, 0.2, offX, offY, cellW, cellH);
-      var segs4 = marchingSquares(field, GRID, GRID, -0.3);
-      drawSegs(segs4, CREAM, 0.03, 0.2, offX, offY, cellW, cellH);
-
-      if (!reduceMotion) {
-        requestAnimationFrame(draw);
-      }
-    }
-
-    function drawSegs(segs, colorStr, alpha, lineWidth, offX, offY, cellW, cellH) {
-      if (segs.length < 2) return;
-      ctx.strokeStyle = colorStr + alpha + ')';
-      ctx.lineWidth = lineWidth;
-      ctx.lineCap = 'round';
-      ctx.beginPath();
-      for (var i = 0; i < segs.length; i += 2) {
-        var a = segs[i], b = segs[i + 1];
-        ctx.moveTo(offX + a.x * cellW, offY + a.y * cellH);
-        ctx.lineTo(offX + b.x * cellW, offY + b.y * cellH);
-      }
-      ctx.stroke();
-    }
-
-    requestAnimationFrame(draw);
-  })();
-  </script>
+      </li>
+    </ul>
+  </div>
+</section>
   </main>
 
   <!-- FOOTER -->
-<footer>
+<footer class="llc-footer">
   <div class="container">
-    <div class="footer-section">
-      <h4><img src="img/entuned-logo-ice.svg" alt="Entuned" class="footer-logo-img"></h4>
-      <p style="opacity: 0.7; font-size: 0.95rem;">Engineered retail audio. PRO-indemnified.</p>
-      <p style="margin-top: 1rem;"><a href="https://www.linkedin.com/company/entunedllc" target="_blank" rel="noopener" style="opacity: 0.5; font-size: 0.85rem;">LinkedIn</a></p>
-      <div class="footer-newsletter">
-        <h4>Newsletter</h4>
-        <p class="footer-newsletter-tagline">Retail music, from the floor. Research and field notes, in your inbox.</p>
-        <form class="footer-newsletter-form" action="https://entuned.substack.com/subscribe" method="get" target="_blank" rel="noopener">
-          <input type="email" name="email" placeholder="you@yourstore.com" required aria-label="Email address for the Entuned newsletter">
-          <button type="submit">Subscribe</button>
-        </form>
-      </div>
-    </div>
-    <div class="footer-section">
-      <h4>Product</h4>
-      <ul>
-        <li><a href="how-it-works.html">How It Works</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="pilot.html">Multi-Location Pilot</a></li>
-        <li><a href="enterprise.html">Enterprise</a></li>
-        <li><a href="why-entuned.html">Why Entuned</a></li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h4>For Your Industry</h4>
-      <ul>
-        <li><a href="for-apparel.html">Apparel</a></li>
-        <li><a href="for-beauty-supply.html">Beauty Supply</a></li>
-        <li><a href="for-cosmetics.html">Cosmetics &amp; Beauty</a></li>
-        <li><a href="for-furniture-mattress.html">Furniture &amp; Mattress</a></li>
-        <li><a href="for-home-goods.html">Home Goods</a></li>
-        <li><a href="for-jewelry.html">Jewelry</a></li>
-        <li><a href="for-specialty-retail.html">Specialty Retail</a></li>
-        <li><a href="for-sporting-goods.html">Sporting Goods</a></li>
-      </ul>
-      <h4 style="margin-top: 1.5rem;">For Decision-Makers</h4>
-      <ul>
-        <li><a href="for-retail-leaders.html">Retail Operators</a></li>
-        <li><a href="for-cfos.html">CFOs</a></li>
-        <li><a href="impact.html">Impact Calculator</a></li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h4>Research</h4>
-      <ul>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="results.html">Results</a></li>
-        <li><a href="science.html">The Science</a></li>
-        <li><a href="will-it-retail.html">Will It Retail?</a></li>
-        <li><a href="https://entuned.substack.com" target="_blank" rel="noopener">Newsletter</a></li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h4>Learn</h4>
-      <ul>
-        <li><a href="how-music-affects-retail.html">How Music Affects Retail</a></li>
-        <li><a href="how-to-increase-aov-retail.html">Increase Average Order Value</a></li>
-        <li><a href="how-to-increase-dwell-time-retail.html">Increase Dwell Time</a></li>
-        <li><a href="how-to-increase-impulse-purchases-retail.html">Drive Impulse Purchases</a></li>
-        <li><a href="how-to-improve-retail-conversion-rate.html">Improve Conversion Rate</a></li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h4>Tools &amp; Comparisons</h4>
-      <ul>
-        <li><a href="music-license-cost-calculator.html">Music License Cost Calculator</a></li>
-        <li><a href="sound-audit.html">Sound Audit</a></li>
-        <li><a href="spotify-business-risk-check.html">Spotify Business Risk Check</a></li>
-        <li><a href="pro-enforcement-map.html">PRO Enforcement Map</a></li>
-        <li><a href="retail-music-decibel-guide.html">Retail Music Decibel Guide</a></li>
-        <li><a href="spotify-for-business.html">Spotify for Business</a></li>
-        <li><a href="property-managers.html">For Property Managers</a></li>
-        <li><a href="mood-media-alternative.html">Mood Media Alternative</a></li>
-        <li><a href="soundtrack-your-brand-alternative.html">Soundtrack Your Brand Alternative</a></li>
-        <li><a href="pandora-for-business-alternative.html">Pandora for Business Alternative</a></li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h4>Company</h4>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="partners.html">Partners</a></li>
-        <li><a href="press.html">Press</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h4>Legal</h4>
-      <ul>
-        <li><a href="licensing.html">Licensing &amp; PRO Coverage</a></li>
-        <li><a href="data.html">Data Practices</a></li>
-        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        <li><a href="pricing/terms.html">Subscription Terms</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p class="small-text">&copy; 2026 Entuned. All rights reserved.</p>
+    <p class="llc-footer-name">Entuned, LLC</p>
+    <p class="llc-footer-links">
+      <a href="mailto:hello@entuned.co">hello@entuned.co</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="pricing/terms.html">Terms</a>
+    </p>
   </div>
 </footer>
 
@@ -1084,73 +159,8 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-SGMVDBYXFG', {
-      linker: {
-        domains: ['entuned.co', 'music.entuned.co', 'app.entuned.co']
-      }
-    });
+    gtag('config', 'G-SGMVDBYXFG');
   </script>
-  <script defer src="js/ga4-cta-tracking.js"></script>
 
-  <script>
-    // Navigation active state
-    const navLinks = document.querySelectorAll('.nav-links a');
-    navLinks.forEach(link => {
-      if (link.href === window.location.href) {
-        link.classList.add('active');
-        link.setAttribute('aria-current', 'page');
-      }
-    });
-
-    // Intersection Observer for fade-up animations
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, observerOptions);
-
-    document.querySelectorAll('.fade-up, .fade-in').forEach(el => {
-      observer.observe(el);
-    });
-
-    // Mobile menu toggle
-    const menuToggle = document.querySelector('.mobile-menu-toggle');
-    const navLinksEl = document.querySelector('.nav-links');
-    if (menuToggle && navLinksEl) {
-      menuToggle.addEventListener('click', () => {
-        const isOpen = navLinksEl.classList.toggle('mobile-open');
-        menuToggle.textContent = isOpen ? '✕' : '☰';
-        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-      });
-    }
-
-    // Nav dropdown toggle (mobile)
-    document.querySelectorAll('.nav-dropdown-trigger').forEach(trigger => {
-      trigger.addEventListener('click', (e) => {
-        e.preventDefault();
-        const dropdown = trigger.closest('.nav-dropdown');
-        dropdown.classList.toggle('open');
-      });
-    });
-
-    // Accordion toggle
-    document.querySelectorAll('.accordion-trigger').forEach(trigger => {
-      trigger.addEventListener('click', () => {
-        const accordion = trigger.parentElement;
-        const isOpen = accordion.getAttribute('data-open') === 'true';
-        accordion.setAttribute('data-open', isOpen ? 'false' : 'true');
-        trigger.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
-      });
-    });
-
-  </script>
 </body>
 </html>

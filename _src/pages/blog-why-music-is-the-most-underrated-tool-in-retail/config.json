@@ -1,3 +1,6 @@
 {
-  "output": "blog/why-music-is-the-most-underrated-tool-in-retail.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/why-music-is-the-most-underrated-tool-in-retail.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

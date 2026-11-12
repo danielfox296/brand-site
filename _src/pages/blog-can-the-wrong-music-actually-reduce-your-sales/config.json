@@ -1,3 +1,6 @@
 {
-  "output": "blog/can-the-wrong-music-actually-reduce-your-sales.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/can-the-wrong-music-actually-reduce-your-sales.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

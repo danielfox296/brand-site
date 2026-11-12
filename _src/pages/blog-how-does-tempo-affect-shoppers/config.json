@@ -1,3 +1,6 @@
 {
-  "output": "blog/how-does-tempo-affect-shoppers.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/how-does-tempo-affect-shoppers.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

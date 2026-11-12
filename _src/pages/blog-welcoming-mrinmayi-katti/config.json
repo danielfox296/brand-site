@@ -1,5 +1,6 @@
 {
-  "title": "Welcoming Mrinmayi Katti to Entuned | Entuned",
-  "meta_description": "Mrinmayi Katti joins Entuned as Data Scientist, bringing production-grade pipeline experience and A/B testing infrastructure to the team building retail.",
-  "output": "blog/welcoming-mrinmayi-katti.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/welcoming-mrinmayi-katti.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

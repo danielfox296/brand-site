@@ -1,5 +1,6 @@
 {
-  "title": "The Nightclub on the Sales Floor | Entuned",
-  "meta_description": "Abercrombie & Fitch ran their stores at 90 decibels on purpose. Every store's music selects for an audience.",
-  "output": "blog/the-nightclub-on-the-sales-floor.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/the-nightclub-on-the-sales-floor.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

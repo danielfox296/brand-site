@@ -1,28 +1,7 @@
 {
-  "title": "Music That Moves Store Metrics — Engineered for Your Customer | Entuned",
-  "meta_description": "Original music tuned to the people who walk into your store. PRO-indemnified, plays through the speakers you already have. Free forever, no card.",
+  "title": "Entuned, LLC",
+  "meta_description": "Entuned, LLC is the company behind Signet Artists and Daniel Fox's work in music, media and marketing.",
   "output": "index.html",
-  "faq": [
-    {
-      "q": "How much does Entuned cost?",
-      "a": "Entuned Free is free forever, no credit card. Boost is $99 per location per month. Professional is $399 per location per month. Enterprise is negotiated per-location for multi-location rollouts."
-    },
-    {
-      "q": "Do I need new hardware to use Entuned?",
-      "a": "No. Entuned streams through whatever audio system you already have — Sonos, AirPlay, Bluetooth, line-in, or hardwired. The stream plays from a URL we hand you."
-    },
-    {
-      "q": "What about music licensing — am I covered?",
-      "a": "Yes. Every track Entuned plays is original, commercial-use cleared, and PRO-indemnified the moment it starts. No ASCAP, BMI, SESAC, or SoundExchange royalties. Every subscription includes a written indemnification certificate."
-    },
-    {
-      "q": "What if I run multiple stores?",
-      "a": "The Professional tier handles multi-store deployments with POS integration, Outcome Scheduling, and self-improving refinement. For fleets requiring custom ICP design, performance guarantees, or white-glove rollout, the Enterprise tier is negotiated per-location."
-    },
-    {
-      "q": "How do I get started on Entuned Free?",
-      "a": "Sign in with your email or Google at app.entuned.co/start. No card. You get a player URL the moment you finish — typically under three minutes from sign-up to music in your store."
-    }
-  ],
-  "lastmod": "2026-07-11"
+  "og_image": "img/entuned-logo-ice.png",
+  "lastmod": "2026-11-12"
 }

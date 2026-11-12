@@ -1,5 +1,6 @@
 {
-  "title": "Turning On the Radio | Entuned",
-  "meta_description": "In the 1950s, most shop owners solved the background music problem by turning on the radio. It was free, it was varied, and it was entirely someone else's.",
-  "output": "blog/turning-on-the-radio.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/turning-on-the-radio.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

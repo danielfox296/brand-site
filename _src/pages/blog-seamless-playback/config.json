@@ -1,5 +1,6 @@
 {
-  "title": "No Gaps. No Silence. No Jolt. | Entuned",
-  "meta_description": "Why seamless music transitions matter in retail — and why most background music services still can't clear a bar that any wedding DJ would.",
-  "output": "blog/seamless-playback.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/seamless-playback.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

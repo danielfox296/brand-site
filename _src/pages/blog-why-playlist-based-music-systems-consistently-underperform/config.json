@@ -1,3 +1,6 @@
 {
-  "output": "blog/why-playlist-based-music-systems-consistently-underperform.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/why-playlist-based-music-systems-consistently-underperform.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

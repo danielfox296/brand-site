@@ -1,7 +1,6 @@
 {
-  "title": "Will It Retail? — Ep 1: Dwell Time | Entuned",
-  "meta_description": "Sort 5 songs into retail tiers before time runs out.",
+  "title": "Redirecting… | Entuned",
   "output": "will-it-retail-game.html",
-  "robots": "noindex",
-  "no_chrome": true
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

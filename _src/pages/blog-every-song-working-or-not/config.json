@@ -1,5 +1,6 @@
 {
-  "title": "Every Song Is Either Working Or It Isn't | Entuned",
-  "meta_description": "Your store's music is either helping sales or hurting them. Here's how to tell the difference and what to do about it.",
-  "output": "blog/every-song-working-or-not.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/every-song-working-or-not.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

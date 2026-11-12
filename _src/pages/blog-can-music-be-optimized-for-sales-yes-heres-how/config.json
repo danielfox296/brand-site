@@ -1,3 +1,6 @@
 {
-  "output": "blog/can-music-be-optimized-for-sales-yes-heres-how.html"
+  "title": "Redirecting… | Entuned",
+  "output": "blog/can-music-be-optimized-for-sales-yes-heres-how.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

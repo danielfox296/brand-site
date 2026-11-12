@@ -1,7 +1,6 @@
 {
-  "title": "WIR Notes — Companion",
-  "meta_description": "Internal creator tool — companion notes window for Will It Retail recording.",
+  "title": "Redirecting… | Entuned",
   "output": "wir-notes.html",
-  "robots": "noindex",
-  "no_chrome": true
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
 }

@@ -1,1 +1,6 @@
-{ "output": "blog/most-expensive-paperweight-in-your-store.html" }
+{
+  "title": "Redirecting… | Entuned",
+  "output": "blog/most-expensive-paperweight-in-your-store.html",
+  "redirect_to": "https://entuned.co/",
+  "robots": "noindex"
+}

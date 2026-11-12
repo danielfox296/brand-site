@@ -46,6 +46,13 @@ LAYOUTS  = os.path.join(SRC, 'layouts')
 PARTIALS = os.path.join(SRC, 'partials')
 PAGES    = os.path.join(SRC, 'pages')
 SITE_URL = 'https://entuned.co'
+CONTACT_EMAIL = 'hello@entuned.co'  # footer contact; confirm with Daniel
+LLC_LINE = "Entuned, LLC is the company behind Signet Artists and Daniel Fox's work in music, media and marketing."
+VENTURE_URLS = [
+    'https://signetartists.com',
+    'https://daniel-fox.com',
+    'https://danielchristopherfox.com',
+]
 
 # The founder as one entity across the estate: danielchristopherfox.com declares
 # the full Person under this @id, and this site (Organization.founder, blog
@@ -625,40 +632,20 @@ def build():
             if _post_has_video:
                 schema.pop("mainEntityOfPage", None)
         else:
-            # The ONE Organization block sitewide (entity consolidation, audit S3/D6).
-            # Facts ratified by Daniel 2026-07-19: foundingDate 2026; description =
-            # VOICE.md positioning sentence; LinkedIn slug is /company/entunedllc
-            # (/company/entuned belongs to an unrelated Dubai coaching business).
+            # The ONE Organization block sitewide. entuned.co is the Entuned, LLC
+            # parent-company page (2026-11-12); sameAs points at the ventures.
             schema = {
                 "@context": "https://schema.org",
                 "@type": "Organization",
                 "@id": f"{SITE_URL}/#organization",
-                "name": "Entuned",
-                "legalName": "Entuned LLC",
-                "url": SITE_URL,
-                "logo": f"{SITE_URL}/img/entuned-logo-ice.svg",
-                "description": "Entuned is a retail music strategy platform that turns customer psychology into store soundtracks — driving measurable sales lift.",
-                "foundingDate": "2026",
+                "name": "Entuned, LLC",
+                "legalName": "Entuned, LLC",
+                "url": f"{SITE_URL}/",
+                "logo": f"{SITE_URL}/img/entuned-logo-ice.png",
+                "description": LLC_LINE,
                 "founder": FOUNDER,
-                "areaServed": "United States",
-                "contactPoint": {
-                    "@type": "ContactPoint",
-                    "contactType": "Sales",
-                    "url": f"{SITE_URL}/contact.html"
-                },
-                "knowsAbout": [
-                    "retail atmospherics",
-                    "music psychology",
-                    "in-store customer behavior",
-                    "retail analytics",
-                    "engineered retail audio",
-                    "behavioral retail variables"
-                ],
-                "sameAs": [
-                    "https://www.linkedin.com/company/entunedllc",
-                    "https://www.youtube.com/@entuned",
-                    "https://entuned.substack.com"
-                ]
+                "email": CONTACT_EMAIL,
+                "sameAs": VENTURE_URLS
             }
 
         schema_json = f'<script type="application/ld+json">\n{json.dumps(schema, indent=2)}\n  </script>'
@@ -738,13 +725,13 @@ def build():
             website_schema = {
                 "@context": "https://schema.org",
                 "@type": "WebSite",
-                "name": "Entuned",
-                "url": SITE_URL,
-                "description": "Entuned is a retail music strategy platform that turns customer psychology into store soundtracks — driving measurable sales lift.",
+                "name": "Entuned, LLC",
+                "url": f"{SITE_URL}/",
+                "description": LLC_LINE,
                 "publisher": {
                     "@type": "Organization",
                     "@id": f"{SITE_URL}/#organization",
-                    "name": "Entuned"
+                    "name": "Entuned, LLC"
                 }
             }
             schema_json += f'\n  <script type="application/ld+json">\n{json.dumps(website_schema, indent=2)}\n  </script>'
@@ -882,8 +869,6 @@ def build():
         html = html.replace('{{canonical_url}}',    canonical_url)
         html = html.replace('{{css_path}}',         css_path)
         html = html.replace('{{page_style}}',       page_style)
-        # Add RSS autodiscovery link
-        og_tags = f'<link rel="alternate" type="application/rss+xml" title="Entuned Blog" href="{css_path}rss.xml">\n  ' + og_tags
 
         html = html.replace('{{og_tags}}',          og_tags)
         html = html.replace('{{twitter_tags}}',     twitter_tags)
@@ -891,6 +876,7 @@ def build():
         html = html.replace('{{header}}',           page_header)
         html = html.replace('{{content}}',          content)
         html = html.replace('{{footer}}',           page_footer)
+        html = html.replace('{{contact_email}}',    CONTACT_EMAIL)
 
         # Write output file (validate path stays within repo)
         out_path = os.path.join(REPO, output)
@@ -905,113 +891,6 @@ def build():
         print(f'  ✓ {output}')
 
     print(f'\nBuilt {len(pages_built)} pages.')
-
-    # --- Generate RSS Feed ---
-    print('\nGenerating RSS feed...')
-    import datetime
-
-    rss_items = []
-    # Track slugs already added by the new renderer to avoid duplicates
-    new_format_slugs = set()
-    if hasattr(build, '_new_format_posts'):
-        for post_data in build._new_format_posts:
-            slug = post_data.get('slug', '')
-            new_format_slugs.add(slug)
-
-            rss_title = post_data.get('title', 'Entuned')
-            rss_desc = post_data.get('meta_description', post_data.get('dek', ''))
-            rss_date = post_data.get('date', '2026-03-25')
-            rss_link = f'{SITE_URL}/blog/{slug}.html'
-
-            try:
-                dt = datetime.datetime.strptime(rss_date, '%Y-%m-%d')
-                pub_date = dt.strftime('%a, %d %b %Y 00:00:00 +0000')
-            except Exception:
-                pub_date = 'Tue, 25 Mar 2026 00:00:00 +0000'
-
-            rss_items.append({
-                'title': rss_title,
-                'link': rss_link,
-                'description': rss_desc,
-                'pubDate': pub_date,
-                'date_sort': rss_date,
-            })
-
-    # Old-format posts (from config.json)
-    for page_path in sorted(page_dirs):
-        config_path = os.path.join(page_path, 'config.json')
-        config = json.loads(read(config_path))
-        if config.get('skip') or config.get('redirect_to'):
-            continue
-        output = config.get('output', '')
-        if not output.startswith('blog/'):
-            continue
-
-        # Skip if this post was already added by the new renderer
-        old_slug = output.replace('blog/', '').replace('.html', '')
-        if old_slug in new_format_slugs:
-            continue
-
-        title = config.get('title', 'Entuned')
-        # Clean title
-        for suffix in [' — Entuned Blog', ' — Entuned']:
-            if title.endswith(suffix):
-                title = title[:-len(suffix)]
-                break
-
-        description = config.get('description', '') or config.get('meta_description', '')
-        date_published = config.get('date_published', '2026-03-25')
-        link = f'{SITE_URL}/{output}'
-
-        # Convert date to RFC 822 format
-        try:
-            dt = datetime.datetime.strptime(date_published, '%Y-%m-%d')
-            pub_date = dt.strftime('%a, %d %b %Y 00:00:00 +0000')
-        except:
-            pub_date = 'Tue, 25 Mar 2026 00:00:00 +0000'
-
-        rss_items.append({
-            'title': title,
-            'link': link,
-            'description': description,
-            'pubDate': pub_date,
-            'date_sort': date_published
-        })
-
-    # Sort by date descending
-    rss_items.sort(key=lambda x: x['date_sort'], reverse=True)
-
-    # Build RSS XML
-    rss_xml = '''<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-<channel>
-  <title>Entuned Blog | Retail Music Strategy</title>
-  <link>{site_url}/blog.html</link>
-  <description>Research-backed insights on retail music strategy, in-store customer behavior, and AI-powered audio optimization.</description>
-  <language>en-us</language>
-  <atom:link href="{site_url}/rss.xml" rel="self" type="application/rss+xml"/>
-'''.format(site_url=SITE_URL)
-
-    for item in rss_items[:20]:  # Last 20 posts
-        # Escape XML special chars in description
-        desc = item['description'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
-        title = item['title'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
-        rss_xml += f'''  <item>
-    <title>{title}</title>
-    <link>{item['link']}</link>
-    <description>{desc}</description>
-    <pubDate>{item['pubDate']}</pubDate>
-    <guid>{item['link']}</guid>
-  </item>
-'''
-
-    rss_xml += '''</channel>
-</rss>'''
-
-    rss_path = os.path.join(REPO, 'rss.xml')
-    with open(rss_path, 'w', encoding='utf-8') as f:
-        f.write(rss_xml)
-    print('  ✓ rss.xml')
 
     # --- Generate sitemap.xml ---
     generate_sitemap(page_dirs)
