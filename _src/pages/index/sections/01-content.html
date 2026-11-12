@@ -1,32 +1,57 @@
 <!-- Organization JSON-LD comes from build.py — the single sitewide block. Do not add one here. -->
 <section class="llc">
-  <div class="llc-wrap">
-    <h1 class="llc-title">{{content.h1_1}}</h1>
-    <p class="llc-intro">{{content.p_intro}}</p>
+  <div class="container">
+    <header class="llc-hero">
+      <h1 class="llc-title llc-rise">{{content.h1_1}}</h1>
+      <p class="llc-intro llc-rise">{{content.p_intro}}</p>
+    </header>
 
-    <h2 class="llc-label">{{content.h2_ventures}}</h2>
+    <h2 class="llc-label llc-rise">{{content.h2_ventures}}</h2>
     <ul class="llc-ventures">
-      <li class="llc-venture">
-        <a class="llc-venture-link" href="{{content.signet_url}}">
-          <img class="llc-venture-logo" src="img/ventures/signet-artists.png" alt="{{content.signet_name}}" width="186" height="72">
-          <span class="llc-venture-line">{{content.signet_line}}</span>
-          <span class="llc-venture-domain">{{content.signet_domain}} &rarr;</span>
+      <li class="llc-rise">
+        <a class="llc-card" href="{{content.signet_url}}">
+          <span class="llc-card-index" aria-hidden="true">01</span>
+          <span class="llc-card-mark"><img class="llc-card-logo" src="img/ventures/signet-artists.png" alt="{{content.signet_name}}" width="372" height="144"></span>
+          <span class="llc-card-line">{{content.signet_line}}</span>
+          <span class="llc-card-foot"><span class="llc-card-domain">{{content.signet_domain}}</span><span class="llc-card-arrow" aria-hidden="true">&rarr;</span></span>
         </a>
       </li>
-      <li class="llc-venture">
-        <a class="llc-venture-link" href="{{content.fox_url}}">
-          <span class="llc-venture-name">{{content.fox_name}}</span>
-          <span class="llc-venture-line">{{content.fox_line}}</span>
-          <span class="llc-venture-domain">{{content.fox_domain}} &rarr;</span>
+      <li class="llc-rise">
+        <a class="llc-card" href="{{content.fox_url}}">
+          <span class="llc-card-index" aria-hidden="true">02</span>
+          <span class="llc-card-mark"><span class="llc-card-name">{{content.fox_name}}</span></span>
+          <span class="llc-card-line">{{content.fox_line}}</span>
+          <span class="llc-card-foot"><span class="llc-card-domain">{{content.fox_domain}}</span><span class="llc-card-arrow" aria-hidden="true">&rarr;</span></span>
         </a>
       </li>
-      <li class="llc-venture">
-        <a class="llc-venture-link" href="{{content.mb_url}}">
-          <span class="llc-venture-name">{{content.mb_name}}</span>
-          <span class="llc-venture-line">{{content.mb_line}}</span>
-          <span class="llc-venture-domain">{{content.mb_domain}} &rarr;</span>
+      <li class="llc-rise">
+        <a class="llc-card" href="{{content.mb_url}}">
+          <span class="llc-card-index" aria-hidden="true">03</span>
+          <span class="llc-card-mark"><span class="llc-card-name">{{content.mb_name}}</span></span>
+          <span class="llc-card-line">{{content.mb_line}}</span>
+          <span class="llc-card-foot"><span class="llc-card-domain">{{content.mb_domain}}</span><span class="llc-card-arrow" aria-hidden="true">&rarr;</span></span>
         </a>
       </li>
     </ul>
   </div>
 </section>
+
+<script>
+  // Card glow follows the pointer. Fine pointers only; without JS the cards
+  // keep their hover lift and border, just no glow.
+  (function () {
+    if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+    document.querySelectorAll('.llc-card').forEach(function (card) {
+      var frame = 0;
+      card.addEventListener('pointermove', function (e) {
+        if (frame) return;
+        frame = requestAnimationFrame(function () {
+          frame = 0;
+          var r = card.getBoundingClientRect();
+          card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+          card.style.setProperty('--my', (e.clientY - r.top) + 'px');
+        });
+      }, { passive: true });
+    });
+  })();
+</script>

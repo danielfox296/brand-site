@@ -12,12 +12,12 @@
   <link rel="canonical" href="https://entuned.co/">
   <meta name="robots" content="index, follow">
   <title>Entuned, LLC</title>
-  <meta name="description" content="Entuned, LLC is the company behind Signet Artists and Daniel Fox&#x27;s work in music, media and marketing.">
+  <meta name="description" content="Entuned, LLC is the company behind three ventures in music, media and marketing.">
   <meta name="theme-color" content="#20201c">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Entuned, LLC">
-  <meta property="og:description" content="Entuned, LLC is the company behind Signet Artists and Daniel Fox&#x27;s work in music, media and marketing.">
+  <meta property="og:description" content="Entuned, LLC is the company behind three ventures in music, media and marketing.">
   <meta property="og:url" content="https://entuned.co/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://entuned.co/img/entuned-logo-ice.png">
@@ -27,7 +27,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Entuned, LLC">
-  <meta name="twitter:description" content="Entuned, LLC is the company behind Signet Artists and Daniel Fox&#x27;s work in music, media and marketing.">
+  <meta name="twitter:description" content="Entuned, LLC is the company behind three ventures in music, media and marketing.">
   <meta name="twitter:image" content="https://entuned.co/img/entuned-logo-ice.png">
 
   <!-- Structured Data -->
@@ -40,7 +40,7 @@
   "legalName": "Entuned, LLC",
   "url": "https://entuned.co/",
   "logo": "https://entuned.co/img/entuned-logo-ice.png",
-  "description": "Entuned, LLC is the company behind Signet Artists and Daniel Fox's work in music, media and marketing.",
+  "description": "Entuned, LLC is the company behind three ventures in music, media and marketing.",
   "founder": {
     "@type": "Person",
     "@id": "https://danielchristopherfox.com/#person",
@@ -62,7 +62,7 @@
   "@type": "WebSite",
   "name": "Entuned, LLC",
   "url": "https://entuned.co/",
-  "description": "Entuned, LLC is the company behind Signet Artists and Daniel Fox's work in music, media and marketing.",
+  "description": "Entuned, LLC is the company behind three ventures in music, media and marketing.",
   "publisher": {
     "@type": "Organization",
     "@id": "https://entuned.co/#organization",
@@ -74,27 +74,233 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
-  <link rel="stylesheet" href="styles.css?v=ee14d3ab">
+  <link rel="stylesheet" href="styles.css?v=f8438dfd">
   <style>
-.llc { padding: 9rem 0 5rem; }
-.llc-wrap { max-width: 760px; margin: 0 auto; padding: 0 1.25rem; }
-.llc-title { font-size: clamp(2.25rem, 6vw, 3.5rem); margin: 0 0 1rem; }
-.llc-intro { font-size: 1.15rem; line-height: 1.7; color: var(--text); opacity: 0.85; margin: 0 0 3.5rem; max-width: 36em; }
-.llc-label { font-family: var(--font-body); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); margin: 0 0 1rem; }
-.llc-ventures { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--accent-light); }
-.llc-venture { border-bottom: 1px solid var(--accent-light); }
-.llc-venture-link { display: grid; grid-template-columns: 200px 1fr; grid-template-rows: auto auto; column-gap: 2rem; row-gap: 0.4rem; align-items: center; padding: 1.75rem 0; color: var(--text); text-decoration: none; }
-.llc-venture-logo, .llc-venture-name { grid-row: 1 / span 2; }
-.llc-venture-logo { width: 150px; height: auto; display: block; }
-.llc-venture-name { font-family: var(--font-heading); font-size: 1.35rem; font-weight: 700; line-height: 1.2; }
-.llc-venture-line { line-height: 1.6; opacity: 0.85; }
-.llc-venture-domain { font-size: 0.9rem; color: var(--accent); }
-.llc-venture-link:hover .llc-venture-domain, .llc-venture-link:focus-visible .llc-venture-domain { text-decoration: underline; }
-@media (max-width: 640px) {
-  .llc { padding: 7rem 0 3.5rem; }
-  .llc-venture-link { grid-template-columns: 1fr; grid-template-rows: none; }
-  .llc-venture-logo, .llc-venture-name { grid-row: auto; margin-bottom: 0.4rem; }
-  .llc-venture-logo { width: 130px; }
+/* Entuned, LLC homepage.
+   Type spec (Manrope display, Inter text):
+     display   Manrope 700  clamp(44px, 6.4vw, 80px) / 1.0   -0.035em
+     lead      Inter   400  clamp(18px, 1.7vw, 22px) / 1.5   -0.005em
+     label     Inter   500  12px / 16px                       0.16em caps
+     card name Manrope 700  clamp(22px, 2vw, 26px) / 1.1     -0.015em
+     card text Inter   400  15px / 24px
+     meta      Inter   500  13px / 20px                       0.02em, tabular */
+
+.llc {
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --card-radius: 14px;
+  position: relative;
+  padding: clamp(8.5rem, 16vh, 11rem) 0 clamp(4rem, 10vh, 7rem);
+  background:
+    radial-gradient(60rem 32rem at 12% 0%, var(--accent-glow), transparent 70%);
+}
+
+/* ---------- hero ---------- */
+.llc-hero { max-width: 44rem; margin-bottom: clamp(4rem, 9vh, 6.5rem); }
+.llc-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(2.75rem, 6.4vw, 5rem);
+  line-height: 1;
+  letter-spacing: -0.035em;
+  margin: 0 0 1.5rem;
+}
+.llc-intro {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: clamp(1.125rem, 1.7vw, 1.375rem);
+  line-height: 1.5;
+  letter-spacing: -0.005em;
+  color: var(--text);
+  opacity: 0.78;
+  max-width: 30em;
+  margin: 0;
+  text-wrap: pretty;
+}
+
+/* ---------- ventures ---------- */
+.llc-label {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 0 0 1.25rem;
+}
+.llc-ventures {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(0.875rem, 1.6vw, 1.5rem);
+}
+.llc-ventures > li { display: flex; }
+
+.llc-card {
+  --mx: 50%;
+  --my: 0%;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 19rem;
+  padding: clamp(1.5rem, 2.2vw, 2rem);
+  border-radius: var(--card-radius);
+  border: 1px solid rgba(80, 146, 156, 0.16);
+  background: var(--bg-card);
+  color: var(--text);
+  text-decoration: none;
+  transition:
+    transform 0.5s var(--ease-out),
+    border-color 0.4s var(--ease-out),
+    background-color 0.4s var(--ease-out),
+    box-shadow 0.5s var(--ease-out);
+}
+/* pointer glow, painted under the content */
+.llc-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(22rem circle at var(--mx) var(--my), rgba(80, 146, 156, 0.16), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.5s var(--ease-out);
+}
+.llc-card:hover,
+.llc-card:focus-visible {
+  opacity: 1;
+  transform: translateY(-4px);
+  border-color: rgba(80, 146, 156, 0.5);
+  background-color: rgba(80, 146, 156, 0.1);
+  box-shadow: 0 18px 40px -24px rgba(0, 0, 0, 0.7);
+}
+.llc-card:hover::before,
+.llc-card:focus-visible::before { opacity: 1; }
+.llc-card:active { transform: translateY(-1px); transition-duration: 0.15s; }
+.llc-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+.llc-card-index {
+  position: absolute;
+  top: clamp(1.5rem, 2.2vw, 2rem);
+  right: clamp(1.5rem, 2.2vw, 2rem);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-muted);
+}
+
+/* the mark area is one height for every card, logo or name */
+.llc-card-mark {
+  display: flex;
+  align-items: flex-end;
+  height: 4rem;
+  margin-bottom: 1.75rem;
+}
+.llc-card-logo {
+  display: block;
+  height: 3.5rem;
+  width: auto;
+  transition: transform 0.5s var(--ease-out);
+  transform-origin: left bottom;
+}
+.llc-card-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(1.375rem, 2vw, 1.625rem);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  color: var(--text);
+}
+.llc-card:hover .llc-card-logo { transform: scale(1.03); }
+
+.llc-card-line {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text);
+  opacity: 0.74;
+  text-wrap: pretty;
+}
+
+.llc-card-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(80, 146, 156, 0.14);
+}
+.llc-card-line { margin-bottom: 1.75rem; }
+.llc-card-domain {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+  white-space: nowrap;
+}
+.llc-card-arrow {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid rgba(80, 146, 156, 0.3);
+  color: var(--accent);
+  font-size: 0.875rem;
+  transition: transform 0.5s var(--ease-out), background-color 0.4s var(--ease-out), color 0.4s var(--ease-out), border-color 0.4s var(--ease-out);
+}
+.llc-card:hover .llc-card-arrow,
+.llc-card:focus-visible .llc-card-arrow {
+  transform: translateX(3px);
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: var(--bg);
+}
+
+/* ---------- entrance ---------- */
+.llc-rise { animation: llc-rise 0.9s var(--ease-out) both; }
+.llc-hero .llc-rise:nth-child(2) { animation-delay: 0.08s; }
+.llc-label.llc-rise { animation-delay: 0.16s; }
+.llc-ventures > li:nth-child(1) { animation-delay: 0.22s; }
+.llc-ventures > li:nth-child(2) { animation-delay: 0.3s; }
+.llc-ventures > li:nth-child(3) { animation-delay: 0.38s; }
+@keyframes llc-rise {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* ---------- below laptop width the row stacks ---------- */
+@media (max-width: 979px) {
+  .llc-ventures { grid-template-columns: 1fr; }
+  .llc-card { min-height: 0; }
+  .llc-card-mark { height: auto; margin-bottom: 1.25rem; }
+  .llc-card-logo { height: 3rem; }
+  .llc-card-line { max-width: 34em; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .llc-rise { animation: none; }
+  .llc-card,
+  .llc-card-logo,
+  .llc-card-arrow,
+  .llc-card::before { transition: none; }
+  .llc-card:hover,
+  .llc-card:focus-visible,
+  .llc-card:active,
+  .llc-card:hover .llc-card-logo,
+  .llc-card:hover .llc-card-arrow,
+  .llc-card:focus-visible .llc-card-arrow { transform: none; }
 }
   </style>
 </head>
@@ -109,36 +315,61 @@
   <main>
   <!-- Organization JSON-LD comes from build.py — the single sitewide block. Do not add one here. -->
 <section class="llc">
-  <div class="llc-wrap">
-    <h1 class="llc-title">Entuned, LLC</h1>
-    <p class="llc-intro">Entuned, LLC is the company behind Signet Artists and Daniel Fox's work in music, media and marketing.</p>
+  <div class="container">
+    <header class="llc-hero">
+      <h1 class="llc-title llc-rise">Entuned, LLC</h1>
+      <p class="llc-intro llc-rise">Entuned, LLC is the company behind three ventures in music, media and marketing.</p>
+    </header>
 
-    <h2 class="llc-label">Ventures</h2>
+    <h2 class="llc-label llc-rise">Ventures</h2>
     <ul class="llc-ventures">
-      <li class="llc-venture">
-        <a class="llc-venture-link" href="https://signetartists.com">
-          <img class="llc-venture-logo" src="img/ventures/signet-artists.png" alt="Signet Artists" width="186" height="72">
-          <span class="llc-venture-line">Live music for private and corporate events in Colorado, plus event photo and video and artist development.</span>
-          <span class="llc-venture-domain">signetartists.com &rarr;</span>
+      <li class="llc-rise">
+        <a class="llc-card" href="https://signetartists.com">
+          <span class="llc-card-index" aria-hidden="true">01</span>
+          <span class="llc-card-mark"><img class="llc-card-logo" src="img/ventures/signet-artists.png" alt="Signet Artists" width="372" height="144"></span>
+          <span class="llc-card-line">Live music for private and corporate events in Colorado, plus event photo and video and artist development.</span>
+          <span class="llc-card-foot"><span class="llc-card-domain">signetartists.com</span><span class="llc-card-arrow" aria-hidden="true">&rarr;</span></span>
         </a>
       </li>
-      <li class="llc-venture">
-        <a class="llc-venture-link" href="https://daniel-fox.com">
-          <span class="llc-venture-name">Daniel Fox</span>
-          <span class="llc-venture-line">Marketing consulting.</span>
-          <span class="llc-venture-domain">daniel-fox.com &rarr;</span>
+      <li class="llc-rise">
+        <a class="llc-card" href="https://daniel-fox.com">
+          <span class="llc-card-index" aria-hidden="true">02</span>
+          <span class="llc-card-mark"><span class="llc-card-name">Fractional CMO</span></span>
+          <span class="llc-card-line">Marketing consulting.</span>
+          <span class="llc-card-foot"><span class="llc-card-domain">daniel-fox.com</span><span class="llc-card-arrow" aria-hidden="true">&rarr;</span></span>
         </a>
       </li>
-      <li class="llc-venture">
-        <a class="llc-venture-link" href="https://danielchristopherfox.com">
-          <span class="llc-venture-name">Music Behaviorist</span>
-          <span class="llc-venture-line">Writing and research on music and human behavior.</span>
-          <span class="llc-venture-domain">danielchristopherfox.com &rarr;</span>
+      <li class="llc-rise">
+        <a class="llc-card" href="https://danielchristopherfox.com">
+          <span class="llc-card-index" aria-hidden="true">03</span>
+          <span class="llc-card-mark"><span class="llc-card-name">Music Behaviorist</span></span>
+          <span class="llc-card-line">Writing and research on music and human behavior.</span>
+          <span class="llc-card-foot"><span class="llc-card-domain">danielchristopherfox.com</span><span class="llc-card-arrow" aria-hidden="true">&rarr;</span></span>
         </a>
       </li>
     </ul>
   </div>
 </section>
+
+<script>
+  // Card glow follows the pointer. Fine pointers only; without JS the cards
+  // keep their hover lift and border, just no glow.
+  (function () {
+    if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+    document.querySelectorAll('.llc-card').forEach(function (card) {
+      var frame = 0;
+      card.addEventListener('pointermove', function (e) {
+        if (frame) return;
+        frame = requestAnimationFrame(function () {
+          frame = 0;
+          var r = card.getBoundingClientRect();
+          card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+          card.style.setProperty('--my', (e.clientY - r.top) + 'px');
+        });
+      }, { passive: true });
+    });
+  })();
+</script>
   </main>
 
   <!-- FOOTER -->
