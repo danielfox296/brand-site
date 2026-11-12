@@ -46,7 +46,7 @@ LAYOUTS  = os.path.join(SRC, 'layouts')
 PARTIALS = os.path.join(SRC, 'partials')
 PAGES    = os.path.join(SRC, 'pages')
 SITE_URL = 'https://entuned.co'
-CONTACT_EMAIL = 'hello@entuned.co'  # footer contact; confirm with Daniel
+CONTACT_EMAIL = 'hello@signetartists.com'  # footer + privacy contact (Daniel, 2026-11-12)
 LLC_LINE = "Entuned, LLC is the company behind Signet Artists and Daniel Fox's work in music, media and marketing."
 VENTURE_URLS = [
     'https://signetartists.com',
