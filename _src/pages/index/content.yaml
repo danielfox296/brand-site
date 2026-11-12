@@ -1,19 +1,22 @@
 # index — editable text content (Entuned, LLC parent-company page)
 
 h1_1: Entuned, LLC
-p_intro: Entuned, LLC is the company behind three ventures in music, media and marketing.
+p_intro: "Entuned: ventures in music, media and marketing."
 
 signet_name: Signet Artists
 signet_line: Live music for private and corporate events in Colorado, plus event photo and video and artist development.
 signet_url: https://signetartists.com
 signet_domain: signetartists.com
+signet_img_alt: A band performing on stage, in black and white.
 
 fox_name: Fractional CMO
-fox_line: Marketing consulting.
+fox_line: "Marketing leadership for established consumer businesses, typically $3M to $12M in revenue, that sell a considered, high-ticket purchase. One part-time leader runs the whole marketing function, strategy through pipeline, and answers for the number."
 fox_url: https://daniel-fox.com
 fox_domain: daniel-fox.com
+fox_img_alt: A craftsman working at a bench in a workshop.
 
 mb_name: Music Behaviorist
-mb_line: Writing and research on music and human behavior.
+mb_line: "Research on how sound and music shape what people do: what they buy, how they use the spaces they&rsquo;re in, how they heal. Published as essays and research notes, and offered as talks and consulting."
 mb_url: https://danielchristopherfox.com
 mb_domain: danielchristopherfox.com
+mb_img_alt: A Chladni figure, the pattern sound draws on a vibrating plate.
