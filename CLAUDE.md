@@ -6,7 +6,7 @@ Root rules and memory policy live in `../CLAUDE.md`. Build details in `ARCHITECT
 
 ## What's live
 
-- `/` — company line, three ventures (Signet Artists, Daniel Fox, Music Behaviorist), footer with contact email, Privacy Policy, Terms. Organization JSON-LD comes from `build.py` (`LLC_LINE`, `VENTURE_URLS`, `CONTACT_EMAIL`).
+- `/` — company line, Entuned logo, company line, three venture cards (Signet Artists, Fractional CMO, Music Behaviorist). No header; the footer carries the contact email, Privacy Policy and Terms. Daniel's name stays off the page and out of the schema (Daniel, 2026-11-12). Organization JSON-LD comes from `build.py` (`LLC_LINE`, `VENTURE_URLS`, `CONTACT_EMAIL`).
 - `/privacy-policy.html` — covers Entuned, LLC and every venture, Signet included; Signet may link to it. Approved by Daniel 2026-11-12.
 - `/pricing/terms.html` — archive of the old subscription terms for past customers. Don't delete.
 - `404.html`.

@@ -10,7 +10,6 @@ Usage:
 Structure:
     _src/
       layouts/base.html       — HTML shell template
-      partials/header.html    — shared nav (edit once, updates everywhere)
       partials/footer.html    — shared footer
       pages/
         <page-name>/
@@ -334,7 +333,6 @@ def auto_extract_faqs(post_data, max_answer_chars=600, min_answer_chars=40):
 def build():
     # Load shared pieces
     base   = read(os.path.join(LAYOUTS,  'base.html'))
-    header = read(os.path.join(PARTIALS, 'header.html'))
     footer = read(os.path.join(PARTIALS, 'footer.html'))
 
     # Cache-bust styles.css with a content fingerprint so Cloudflare CDN
@@ -503,11 +501,9 @@ def build():
             blog_css_link = f'<link rel="stylesheet" href="{css_path}styles/blog.css">'
             page_style = blog_css_link + '\n  ' + page_style
 
-        # Apply nav_prefix to header and footer
-        page_header = header.strip().replace('{{nav_prefix}}', nav_prefix)
+        # Apply nav_prefix to the footer
         page_footer = footer.strip().replace('{{nav_prefix}}', nav_prefix)
         if config.get('no_chrome'):
-            page_header = ''
             page_footer = ''
 
         # Compute canonical URL
@@ -643,7 +639,6 @@ def build():
                 "url": f"{SITE_URL}/",
                 "logo": f"{SITE_URL}/img/entuned-logo-ice.png",
                 "description": LLC_LINE,
-                "founder": FOUNDER,
                 "email": CONTACT_EMAIL,
                 "sameAs": VENTURE_URLS
             }
@@ -873,7 +868,6 @@ def build():
         html = html.replace('{{og_tags}}',          og_tags)
         html = html.replace('{{twitter_tags}}',     twitter_tags)
         html = html.replace('{{schema_json}}',      schema_json)
-        html = html.replace('{{header}}',           page_header)
         html = html.replace('{{content}}',          content)
         html = html.replace('{{footer}}',           page_footer)
         html = html.replace('{{contact_email}}',    CONTACT_EMAIL)

@@ -2000,6 +2000,7 @@ a.vertical-tile:hover .vertical-tile-cta {
 footer.llc-footer { padding: 2rem 0; margin-top: 0; background: transparent; border-top: 1px solid rgba(80, 146, 156, 0.12); }
 footer.llc-footer .container { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem 2rem; margin: 0 auto; padding: 0 clamp(1.5rem, 5vw, 4rem); border: 0; }
 .llc-footer-name { margin: 0; font-family: var(--font-heading); font-weight: 600; font-size: 0.875rem; letter-spacing: 0.01em; color: var(--text); }
+.llc-footer-name a { color: inherit; }
 .llc-footer-links { margin: 0; display: flex; flex-wrap: wrap; gap: 0.5rem 1.75rem; font-size: 0.8125rem; line-height: 1.25rem; font-weight: 400; }
 .llc-footer-links a { color: var(--text-muted); transition: color 0.3s ease; }
 .llc-footer-links a:hover { color: var(--text); opacity: 1; }
